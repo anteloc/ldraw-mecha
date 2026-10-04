@@ -137,6 +137,16 @@ class Document:
             raise ValueError(f"Unknown section {name!r}")
         return self.sections[key]
 
+    def resolve(self, reference):
+        """Load adjacent assemblies once; share resolution with inventory tools."""
+        ref = normalized(reference)
+        if ref.endswith(".ldr") and ref not in self.sections:
+            external = self.path.parent / reference.replace("\\", "/")
+            if not external.is_file():
+                raise ValueError(f"Unresolved external assembly {reference!r}")
+            self.sections[ref] = self._load(external.resolve())
+        return self.sections.get(ref)
+
     def manifest(self, section=None, max_instances=100000):
         selected = self.section(section)
         nodes = []
@@ -152,17 +162,7 @@ class Document:
                         f"Instance budget {max_instances} exceeded; select a section"
                     )
                 ref = normalized(p.reference)
-                if ref.endswith(".ldr") and ref not in self.sections:
-                    # Standalone LDRs may reference adjacent LDR assemblies.
-                    external = self.path.parent / p.reference.replace("\\", "/")
-                    if external.is_file():
-                        loaded = self._load(external.resolve())
-                        self.sections[ref] = loaded
-                    else:
-                        raise ValueError(
-                            f"Unresolved external assembly {p.reference!r}"
-                        )
-                child = self.sections.get(ref)
+                child = self.resolve(p.reference)
                 assembly = child is not None and not ref.endswith(".dat")
                 local = pose(jsonable(p.position), p.matrix.rows)
                 node_id = f"{parent_id}/{index}" if parent_id != "root" else str(index)

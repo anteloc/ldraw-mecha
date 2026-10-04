@@ -3,14 +3,21 @@
 Build a controllable mechanism, check its propagation, and report the coverage
 of the evidence. Do not mistake a suggestive description for a working joint.
 
-1. Run `./ldraw-mecha inspect MODEL --output output/study/inspection.json`. Read
+1. Start with `./ldraw-mecha submodels MODEL --match engine --format table`
+   to compare recursive part counts and parent sections. Rank complexity by
+   pistons/gear coupling, then size; do not trust names alone. Run
+   `./ldraw-mecha inspect MODEL --format table --mechanical-only` for positions
+   and transformed part-local axes. Save the full manifest with
+   `./ldraw-mecha inspect MODEL --output output/study/inspection.json`. Read
    the counts, candidate list, source diagnostics and exact occurrence IDs. Use
    `--section 'exact FILE name'` to study a smaller assembly; the selection has
    its own root coordinate frame and IDs. Keep the surrounding parent in view.
-2. Find precedents with `search submodels 'steering rack' --engine jev --limit 5`
-   or `search parts 'hinge' --engine keyword`. Jev errors are explicit; use the
-   named offline keyword mode when it is unavailable. Jev requires its executable
-   and a nonempty `TYPESAFE_API_KEY`; never print credentials. Its scores rank
+2. Find precedents with `search submodels 'steering rack' --engine fts --limit 5`
+   (the offline default), or use explicit `--engine jev` for semantic reranking.
+   Jev checks availability with one small billable inference before a batch;
+   `jev-status` runs just that check. HTTP 402 stops before reranking; continue
+   with FTS. No balance endpoint is assumed. Jev requires its executable
+   and a nonempty `TYPESAFE_API_KEY`; never print credentials. Search scores rank
    relevance, not mechanical fit. Source identities are in `model`, `section`
    and `part`, rather than unstable database view row numbers.
 3. Inspect connector frames with `connectors MODEL --instance ID`. Ask about a
@@ -19,8 +26,12 @@ of the evidence. Do not mistake a suggestive description for a working joint.
    Connector `position`/`frame` are part-local; `world_position`/`world_axis`
    are in the selected model. Contacts return transformed connector frames.
    Axis convention is local Y for LDCad metadata; body joint axes are explicit.
+   `gear-meshes MODEL` reports reviewed parallel-axis mesh candidates;
+   `coaxial MODEL --instances ID1 ID2` reports rotational connector-line evidence
+   even for arbitrary source rotations. Residual tolerances are LDU and explicitly
+   named degrees. Coaxial lines alone do not establish contact or coupling.
 4. Write a plan with `plan MODEL --output output/study/plan.json`, or use a
-   studied `--recipe 106|928|42000`. A draft deliberately cannot rig a scene.
+   studied `--recipe 106|928|42000|42083`. A draft deliberately cannot rig a scene.
    Specify rigid groups, axes, origins, limits and equations following the
    [contract](docs/motion-plan.md). Keep `source` untouched. Use exact leaf IDs,
    including each rim and tyre, rather than Blender display names. Record
@@ -36,13 +47,24 @@ of the evidence. Do not mistake a suggestive description for a working joint.
    after success. It uses a separate background Blender process. Existing open
    scenes need not be replaced. Use `ldraw_mechanisms.blender.build(plan, root)`
    inside Blender for an explicit imported root. `remove(root)` restores it.
+   The callable `blender_tools.apply_plan` and `check_clearance` APIs avoid fake
+   argv in live sessions. Sampling restores controller animation and pose.
 8. Reopen the file and verify persistence; render or inspect several poses,
    particularly limits. Use `scripts/blender/apply_plan.py --verify-existing`
    and `preview_plan.py` with Blender's usual `--` script argument separator.
    Report any clearance checks that remain unperformed. Deliver the exact plan,
    blend, reports and preview used for review.
 
-All angles in JSON/CLI are radians, all geometry and slide lengths are LDU.
+See [discovery and Blender workflows](docs/discovery-and-blender.md) for copyable
+commands, compact filters, `extract`, and live Python APIs. `--section` studies
+the original source in place; use `extract` only when a standalone MPD is needed.
+Run clearance before finalizing limitations. `blender.update_plan_notes` updates
+embedded prose without rebuilding; save the revised JSON/blend explicitly.
+`blender.set_moving_only` exposes rigged parts and restores prior visibility on
+disable; `preview_plan.py --moving-only` renders that view.
+
+Motion angles in JSON/CLI are radians, all geometry and slide lengths are LDU.
+Discovery's explicitly named `angle_degrees` / `--angle-tolerance` uses degrees.
 Blender's angle UI displays the chosen angle unit, normally degrees. Motion
 values are offsets from the source pose. A body's `parent` composes its motion
 with the parent's, so front wheel spin naturally follows steering knuckles.
@@ -58,8 +80,10 @@ coverage or zero contacts never proves that parts are free or disconnected.
 The supplied categories are descriptive/dimensional hints; inspect the actual
 library and shadow frames before choosing an axis or pivot.
 
-Code map: `source.py` owns parsing/identities; `analysis.py` evidence;
+Code map: `source.py` owns parsing/identities; `analysis.py` connector evidence;
+`discovery.py` compact reports/inventory; `geometry.py` mesh/coaxial candidates;
 `search.py` discovery; `plan.py` validation/evaluation; `recipes.py` studied
-examples; `glb.py` conversion/binding; `blender.py` scene construction. The
+examples; `glb.py` conversion/binding; `blender.py` scene construction/state;
+`blender_tools.py` callable import/verification/clearance workflows. The
 plan/equation layer imports neither bpy nor pyldraw3. Tests run with
 `.venv/bin/pytest -q`; Blender integration scripts live in `scripts/blender`.

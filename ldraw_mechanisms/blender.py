@@ -7,6 +7,7 @@ binds verified GLB occurrence IDs, and creates ordinary, persistent drivers.
 from __future__ import annotations
 
 import json
+from contextlib import contextmanager
 
 import bpy
 from mathutils import Matrix
@@ -111,6 +112,8 @@ def remove(root):
     rig_id = root.get("mecha_active_rig")
     if not rig_id:
         return
+    # A rebuild/removal should not strand the user in the diagnostic view.
+    set_moving_only({"root": root}, False)
     objects = _objects(root)
     by_id = {o.get("mecha_id"): o for o in objects if "mecha_id" in o}
     for o in objects:
@@ -301,19 +304,10 @@ def verify(rig, plan, samples=None, tolerance=0.002):
     """Compare the evaluated Blender scene with the independent numeric contract."""
     samples = samples or [{}]
     ctrl = rig["controller"]
-    saved = {k: ctrl[k] for k in plan["controls"]}
-    animation = ctrl.animation_data
-    saved_action = (
-        (animation.action, animation.action_slot)
-        if animation and animation.action
-        else None
-    )
-    if saved_action:
-        animation.action = None
     moving = {i for b in plan["bodies"].values() for i in b["instances"]}
     source_nodes = {n["id"]: n for n in plan["source"]["nodes"]}
     reports = []
-    try:
+    with preserve_controls(rig):
         for values in samples:
             expected = contract.evaluate(plan, values)
             for k, v in expected["controls"].items():
@@ -396,13 +390,6 @@ def verify(rig, plan, samples=None, tolerance=0.002):
                     and not invalid,
                 )
             )
-    finally:
-        for k, v in saved.items():
-            ctrl[k] = v
-        if saved_action:
-            animation.action, animation.action_slot = saved_action
-        ctrl.update_tag()
-        bpy.context.view_layer.update()
     return dict(
         passed=all(r["passed"] for r in reports),
         samples=reports,
@@ -426,3 +413,104 @@ def context_from_scene(plan, root=None):
             o["mecha_anchor"]: o for o in objects if o.get("mecha_role") == "anchor"
         },
     )
+
+
+@contextmanager
+def preserve_controls(rig):
+    """Temporarily release animation for diagnostic samples; always restore it.
+
+    Keep action slots, NLA tracks, controller drivers, raw slider values and time.
+    This context does not rebuild the rig or change selection/visibility.
+    """
+    ctrl = rig["controller"]
+    plan = json.loads(rig["root"]["mecha_plan"])
+    values = {k: ctrl[k] for k in plan["controls"]}
+    scene = bpy.context.scene
+    time = (scene.frame_current, scene.frame_subframe)
+    animation = ctrl.animation_data
+    if animation and animation.use_tweak_mode:
+        raise ValueError("Exit NLA tweak mode before sampling controller motion")
+    action = animation.action if animation else None
+    slot = animation.action_slot if action else None
+    tracks = [(t, t.mute) for t in animation.nla_tracks] if animation else []
+    drivers = [(f, f.mute) for f in animation.drivers] if animation else []
+    try:
+        if action:
+            animation.action = None
+        for item, _ in tracks + drivers:
+            item.mute = True
+        yield
+    finally:
+        if action:
+            animation.action = action
+            animation.action_slot = slot
+        for item, mute in tracks + drivers:
+            item.mute = mute
+        if time != (scene.frame_current, scene.frame_subframe):
+            scene.frame_set(time[0], subframe=time[1])
+        for k, v in values.items():
+            ctrl[k] = v
+        ctrl.update_tag()
+        bpy.context.view_layer.update()
+
+
+def update_plan_notes(rig, notes):
+    """Update embedded prose without changing drivers, animation or geometry.
+
+    Only notes are accepted, so mechanical edits cannot bypass a rebuild.
+    Saving the .blend (and the external plan JSON) is the caller's choice.
+    """
+    if not isinstance(notes, list) or any(not isinstance(n, str) for n in notes):
+        raise ValueError("notes must be a list of strings")
+    plan = json.loads(rig["root"]["mecha_plan"])
+    plan["notes"] = notes
+    contract.validate(plan)
+    rig["root"]["mecha_plan"] = json.dumps(plan, separators=(",", ":"))
+    return plan
+
+
+def set_moving_only(rig, enabled=True):
+    """Reversible viewport/render view of parts assigned to rig bodies.
+
+    The first enable stores prior mesh visibility on the root (survives saving).
+    Repeated enables retain that snapshot. Other models are never touched.
+    Collection exclusions and a hidden model root still take precedence.
+    """
+    root = rig["root"]
+    key = "mecha_visibility"
+    if not enabled:
+        if key in root:
+            meshes = {o.name: o for o in root.children_recursive if o.type == "MESH"}
+            for name, state in json.loads(root[key]).items():
+                if name in meshes:
+                    o = meshes[name]
+                    o.hide_set(state[0])
+                    o.hide_render, o.hide_viewport = state[1:]
+            del root[key]
+        return
+    if key in root:
+        return
+    plan = json.loads(root["mecha_plan"])
+    moving = {i for b in plan["bodies"].values() for i in b["instances"]}
+    meshes = {o for o in root.children_recursive if o.type == "MESH"}
+    visible = {
+        o for i in moving for o in _objects(rig["mapping"][i]) if o.type == "MESH"
+    }
+    root[key] = json.dumps(
+        {o.name: [o.hide_get(), o.hide_render, o.hide_viewport] for o in meshes}
+    )
+    for o in meshes:
+        o.hide_set(o not in visible)
+        o.hide_render = o not in visible
+        o.hide_viewport = False
+
+
+@contextmanager
+def moving_only(rig):
+    already_enabled = "mecha_visibility" in rig["root"]
+    set_moving_only(rig)
+    try:
+        yield
+    finally:
+        if not already_enabled:
+            set_moving_only(rig, False)

@@ -1,4 +1,5 @@
 import copy
+import math
 from pathlib import Path
 
 import pytest
@@ -86,6 +87,43 @@ def test_standalone_hatch():
     assert len(p["source"]["nodes"]) == 2
     assert len(p["bodies"]["hatch"]["instances"]) == 2
     assert plan.sweep(p)["passed"]
+
+
+@pytest.fixture(scope="module")
+def w16():
+    return create(
+        ROOT / "data/models-annotated/42083-1.mpd", "42083", "42083 - engine.ldr"
+    )
+
+
+def test_w16_gear_train_and_link_closure(w16):
+    kinds = [b["kind"] for b in w16["bodies"].values()]
+    assert (kinds.count("revolute"), kinds.count("prismatic"), kinds.count("rod")) == (
+        4,
+        16,
+        16,
+    )
+    for drive in (0.37, -2.9, 7.3):
+        p = plan.evaluate(w16, dict(drive=drive))
+        s = p["signals"]
+        assert s["crank_c"] == pytest.approx(-5 / 3 * drive)
+        assert s["crank_l"] == s["crank_r"] == pytest.approx(5 / 3 * drive)
+        assert len(p["checks"]) == 16 and all(c["passed"] for c in p["checks"])
+        assert all(abs(s[f"piston{i}"]) > 0.1 for i in range(16))
+    assert plan.sweep(w16, 49)["passed"]
+
+
+def test_w16_stroke_is_twice_the_throw(w16):
+    strokes = []
+    for i in range(16):
+        x = [
+            plan.evaluate(w16, dict(drive=k * 1.2 * math.pi / 60))["signals"][
+                f"piston{i}"
+            ]
+            for k in range(61)
+        ]
+        strokes.append(max(x) - min(x))
+    assert strokes == pytest.approx([20] * 16, abs=0.05)
 
 
 def test_general_affine_inverse():

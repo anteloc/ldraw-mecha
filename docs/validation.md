@@ -8,9 +8,29 @@ plans and end-to-end builds with:
 .venv/bin/python examples/build_examples.py --blender
 ```
 
-All 20 Python tests passed. The committed [result summary](validation-results.json)
+The initial 20 Python tests passed. The committed [result summary](validation-results.json)
 records counts, source hashes, measured Blender errors and report paths for the
 four completed cases. Generated motion, reopening and lifecycle checks passed.
+
+The toolkit improvement pass now has **38 passing Python tests**. Evidence is
+under `output/toolkit-improvements/`: `gear-meshes.json` recovers exactly the
+three W16 meshes, `coaxial.json` records the rotated central crank's axis
+evidence, and `jev-status.json` records a single-request HTTP 402 failure.
+The inventory reports 223 physical pieces, 16 pistons, 16 rods and 15 crank
+pieces in the engine section. New tests cover FTS identities/syntax/read-only
+access, stopping before reranking on 402, nested counts, compact output, and
+gear/coaxial near misses including rotated, translated and scaled inputs.
+
+`w16/workflow-check.json` records background Blender 4.5.6 checks of callable
+import/verification/clearance, animated control and action-slot restoration,
+NLA/driver preservation, injected-exception cleanup, reversible visibility after
+reopening, notes-only updates and duplicate imports. Its nine clearance samples
+reported no new surface crossings under the exclusions below.
+`w16/reopen-check.json` verifies the saved rig in a fresh process;
+`w16/moving-only.png` shows its exposed mechanism. `f1-reopen.json` includes
+asymmetric wheel/steering inputs; `f1-lifecycle.json` passes rebuild/removal,
+two-copy isolation, nonzero defaults and clamping. The original W16 artifacts
+and the user's live Blender scene were not changed by this pass.
 
 The study progressed from the 65-part 106 car to the nested 928 spaceship hatch
 and then the 1,377-part 42000 Technic car. A two-part standalone 928 hatch checks
@@ -46,7 +66,8 @@ reference does not constitute testing the adapter in 5.2.
 
 `scripts/blender/check_clearance.py` reuses the supplied BVH helpers. It samples
 control poses, excludes parts within one rigid body and pairs already touching
-at source rest, and reports new surface crossings. A projection check in both
+at declared control defaults, and reports new surface crossings. Sampling restores
+the controller's animation and pose on success or failure. A projection check in both
 part frames filters touching faces within 0.05 LDU; this was necessary because
 triangle overlaps flickered at the ramp/wing boundary after GLB compression.
 The report lists excluded touching pairs and uses a 0.4 LDU normal shrink.
@@ -100,8 +121,11 @@ and bounded contact queries. It does not automatically infer rigid bodies or
 solve arbitrary mechanisms. Embedded DATs are preserved as physical parts;
 connector/contact inspection of their custom geometry fails explicitly rather
 than substituting a library part. Contact status reports pyldraw3's metadata
-agreement, not a mobility classification. Basic keyword search is explicitly
-offline token ranking; semantic discovery uses Jev when requested.
+agreement, not a mobility classification. Offline FTS5/BM25 is the default search;
+keyword substring ranking remains available, and semantic discovery uses Jev
+when requested. Geometric gear/coaxial reports add candidates, not automatic
+coupling or mobility decisions. See the [workflow guide](discovery-and-blender.md)
+for supported profiles and evidence limits.
 
 Rigid revolute/prismatic groups, dependency equations and planar connecting rods
 are supported. Backlash, friction, forces, suspension compliance, flexible hoses,

@@ -28,6 +28,10 @@ controller exposes steering and four wheel angles; steering propagates through
 the gear train, rack, tie rods and knuckles, while the rear wheels drive the
 differential and V8. The supplied specialized rig still provides vehicle path
 integration through speed. The generic adapter operates the mechanisms in place.
+Recipe `42083` studies the Bugatti Chiron W16 section `42083 - engine.ldr`:
+one `drive` control turns the input shaft, a 20:12 double-bevel pair drives the
+centre crank and 24:24 gears drive two lower cranks, moving 16 pistons and
+conrods. Generated artifacts live in `output/42083-w16`.
 
 For a standalone assembly:
 
@@ -40,6 +44,15 @@ For a standalone assembly:
 
 Agents start at [instructions.md](instructions.md). Read the [plan contract](docs/motion-plan.md),
 [implementation plan](docs/implementation-plan.md) and [validation evidence](docs/validation.md).
+The [discovery and Blender API guide](docs/discovery-and-blender.md) covers offline
+FTS search, recursive submodel summaries, compact coordinate tables, gear meshes,
+coaxial evidence, callable clearance checks and reversible moving-parts views.
+
+```sh
+./ldraw-mecha search submodels 'engine piston' --engine fts
+./ldraw-mecha submodels data/models-annotated/42083-1.mpd --match engine --format table
+./ldraw-mecha gear-meshes data/models-annotated/42083-1.mpd --section '42083 - engine.ldr'
+```
 
 Requirements: Python 3.12+, `uv`, Bun for the supplied exporter, an LDraw parts
 library, and Blender for rigging. Headless rigs were tested in Blender 4.5.6 LTS;

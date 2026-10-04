@@ -64,7 +64,7 @@ def inspect(path, section=None, max_instances=100000):
     )
 
 
-def connectors(manifest, occurrence, library=None, shadow=None):
+def connectors(manifest, occurrence, library=None, shadow=None, *, parts=None):
     matches = [
         n for n in manifest["nodes"] if n["id"] == occurrence and n["kind"] == "part"
     ]
@@ -75,7 +75,7 @@ def connectors(manifest, occurrence, library=None, shadow=None):
         raise ValueError(
             "Embedded DAT connector inspection is not supported; inspect its authored source instead of substituting a library part"
         )
-    parts = parts_library(library, shadow)
+    parts = parts or parts_library(library, shadow)
     report = parts.connection_metadata(n["ref"].removesuffix(".dat"))
     features = []
     for f in report.features:

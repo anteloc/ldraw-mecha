@@ -21,15 +21,12 @@ from .math3d import (
 from .source import Document, normalized
 
 
-def one(nodes, ref, position=None):
+def one(nodes, ref, position=None, key="local"):
     hits = [
         n
         for n in nodes
         if normalized(n["ref"]) == normalized(ref)
-        and (
-            position is None
-            or length(sub(point(n["local"], [0, 0, 0]), position)) < 0.5
-        )
+        and (position is None or length(sub(point(n[key], [0, 0, 0]), position)) < 0.5)
     ]
     if len(hits) != 1:
         raise ValueError(f"Expected one {ref} at {position}, found {len(hits)}")
@@ -103,6 +100,54 @@ class Builder:
         self.plan.update(status="ready", notes=notes)
         contract.validate(self.plan)
         return self.plan
+
+
+def slider_cranks(b, crank, centre, rods, pistons, key="local", first=0):
+    """Pistons and conrods on a crank about +Z; `crank` names its body and signal."""
+    for i, rod in enumerate(rods, first):
+        pin = point(rod[key], [0, 0, 0])
+        ball = point(rod[key], [0, -40, 0])
+        piston = min(pistons, key=lambda p: length(sub(point(p[key], [0, 0, 0]), ball)))
+        pp = point(piston[key], [0, 0, 0])
+        if length(sub(pp, ball)) > 1:
+            raise ValueError("Conrod does not meet piston ball")
+        cr, pr = sub(pin, centre), sub(pp, centre)
+        r, s0 = math.hypot(*cr[:2]), math.hypot(*pr[:2])
+        bank = unit([pr[0], pr[1], 0])
+        # Lateral offset (LDU) of the piston's own axis from the crank centre.
+        if length(cross(direction(piston[key], [0, 1, 0]), [pr[0], pr[1], 0])) > 0.5:
+            raise ValueError("Cylinder axis does not pass through the crank centre")
+        phase = math.atan2(cr[1], cr[0]) - math.atan2(pr[1], pr[0])
+        rod_length = math.hypot(pp[0] - pin[0], pp[1] - pin[1])
+        b.signal(
+            f"piston{i}",
+            f"{r!r}*cos({phase!r}+a)+sqrt({rod_length**2!r}-pow({r!r}*sin({phase!r}+a),2))-{s0!r}",
+            a=crank,
+        )
+        b.body(
+            f"piston{i}",
+            [piston],
+            pp,
+            bank,
+            f"piston{i}",
+            kind="prismatic",
+            x_hint=[0, 0, 1],
+        )
+        b.anchor(f"crank_pin{i}", crank, pin)
+        b.anchor(f"piston_pin{i}", f"piston{i}", pp)
+        b.body(
+            f"conrod{i}",
+            [rod],
+            pin,
+            [0, 0, 1],
+            kind="rod",
+            x_hint=cross(sub(pp, pin), [0, 0, 1]),
+            start=f"crank_pin{i}",
+            end=f"piston_pin{i}",
+        )
+        b.distance(
+            f"conrod{i}", f"crank_pin{i}", f"piston_pin{i}", length(sub(pp, pin))
+        )
 
 
 def car106(manifest):
@@ -298,52 +343,13 @@ def technic42000(manifest):
             parent=parent,
             x_hint=hint,
         )
-    centre = FRAMES["crank"][1]
-    pistons = [n for n in nodes if normalized(n["ref"]) == "2851.dat"]
-    rods = [n for n in nodes if normalized(n["ref"]) == "2852.dat"]
-    for i, rod in enumerate(rods):
-        pin = point(rod["local"], [0, 0, 0])
-        ball = point(rod["local"], [0, -40, 0])
-        piston = min(
-            pistons, key=lambda p: length(sub(point(p["local"], [0, 0, 0]), ball))
-        )
-        pp = point(piston["local"], [0, 0, 0])
-        if length(sub(pp, ball)) > 1:
-            raise ValueError("Conrod does not meet piston ball")
-        cr, pr = sub(pin, centre), sub(pp, centre)
-        r, s0 = math.hypot(*cr[:2]), math.hypot(*pr[:2])
-        bank = unit([pr[0], pr[1], 0])
-        phase = math.atan2(cr[1], cr[0]) - math.atan2(pr[1], pr[0])
-        rod_length = math.hypot(pp[0] - pin[0], pp[1] - pin[1])
-        b.signal(
-            f"piston{i}",
-            f"{r!r}*cos({phase!r}+a)+sqrt({rod_length**2!r}-pow({r!r}*sin({phase!r}+a),2))-{s0!r}",
-            a="crank",
-        )
-        b.body(
-            f"piston{i}",
-            [piston],
-            pp,
-            bank,
-            f"piston{i}",
-            kind="prismatic",
-            x_hint=[0, 0, 1],
-        )
-        b.anchor(f"crank_pin{i}", "crank", pin)
-        b.anchor(f"piston_pin{i}", f"piston{i}", pp)
-        b.body(
-            f"conrod{i}",
-            [rod],
-            pin,
-            [0, 0, 1],
-            kind="rod",
-            x_hint=cross(sub(pp, pin), [0, 0, 1]),
-            start=f"crank_pin{i}",
-            end=f"piston_pin{i}",
-        )
-        b.distance(
-            f"conrod{i}", f"crank_pin{i}", f"piston_pin{i}", length(sub(pp, pin))
-        )
+    slider_cranks(
+        b,
+        "crank",
+        FRAMES["crank"][1],
+        [n for n in nodes if normalized(n["ref"]) == "2852.dat"],
+        [n for n in nodes if normalized(n["ref"]) == "2851.dat"],
+    )
     return b.finish(
         [
             "Mechanism geometry and selectors adapted from the supplied rig_42000.py.",
@@ -356,7 +362,103 @@ def technic42000(manifest):
     )
 
 
-RECIPES = {"106": car106, "928": spaceship928, "42000": technic42000}
+def w16_42083(manifest):
+    # Section frame throughout: the lower banks are nested submodel occurrences.
+    if normalized(manifest["section"]) != "42083 - engine.ldr":
+        raise ValueError("Recipe 42083 studies the section '42083 - engine.ldr'")
+    parts = [n for n in manifest["nodes"] if n["kind"] == "part"]
+    b = Builder(manifest, "w16_42083")
+    z = [0, 0, 1]
+    # (gear ref, gear centre, teeth, expected crank-group size) per shaft.
+    shafts = {
+        "input_shaft": ("18575.dat", [0, 90, -40], 20, None),
+        "crank_c": ("24505.dat", [0, 50, 200], 24, 11),
+        "crank_l": ("24505.dat", [-36, 98, 200], 24, 10),
+        "crank_r": ("24505.dat", [36, 98, 200], 24, 10),
+    }
+    for ref, centre, _, _ in shafts.values():
+        gear = one(parts, ref, centre, "world")
+        if length(cross(direction(gear["world"], [0, 0, 1]), z)) > 1e-6:
+            raise ValueError(f"Gear {gear['id']} axis is not parallel to Z")
+    crank_refs = {"2853.dat", "2854.dat", "32062.dat", "32073.dat", "4519.dat"}
+    crank_refs |= {"24505.dat", "32270.dat"}
+
+    def near(n, centre, radius):
+        p = point(n["world"], [0, 0, 0])
+        return math.hypot(p[0] - centre[0], p[1] - centre[1]) <= radius
+
+    groups = {
+        "input_shaft": [
+            one(parts, ref, p, "world")
+            for ref, p in (
+                ("55013.dat", [0, 90, -68]),
+                ("18575.dat", [0, 90, -40]),
+                ("59443.dat", [0, 90, -150]),
+            )
+        ]
+    }
+    for name, (_, centre, _, size) in shafts.items():
+        if size is None:
+            continue
+        groups[name] = [
+            n
+            for n in parts
+            if normalized(n["ref"]) in crank_refs and near(n, centre, 10.5)
+        ]
+        if len(groups[name]) != size:
+            raise ValueError(
+                f"{name}: expected {size} parts, found {len(groups[name])}"
+            )
+    bevel = signed_gear_ratio(z, [0, 90, -40], 20, z, [0, 50, -40], 12)
+    one(parts, "32270.dat", [0, 50, -40], "world")  # 12T meshing the input 20T
+    b.control(
+        "drive",
+        -4 * math.pi,
+        4 * math.pi,
+        "Input shaft angle at the gearbox joiner; turns all three crankshafts",
+    )
+    b.signal("crank_c", f"{bevel!r}*s", s="drive")
+    for side in ("l", "r"):
+        k = signed_gear_ratio(
+            z, shafts["crank_c"][1], 24, z, shafts["crank_" + side][1], 24
+        )
+        b.signal("crank_" + side, f"{k!r}*s", s="crank_c")
+    for name, (_, centre, _, _) in shafts.items():
+        b.body(
+            name, groups[name], centre, z, "drive" if name == "input_shaft" else name
+        )
+    rods = [n for n in parts if normalized(n["ref"]) == "2852.dat"]
+    pistons = [n for n in parts if normalized(n["ref"]) == "2851.dat"]
+    first = 0
+    for name in ("crank_c", "crank_l", "crank_r"):
+        centre = shafts[name][1]
+        own = [r for r in rods if near(r, centre, 10.5)]
+        slider_cranks(b, name, centre, own, pistons, "world", first)
+        first += len(own)
+    if first != 16 or len(pistons) != 16:
+        raise ValueError(
+            f"Expected 16 conrods and pistons, found {first}/{len(pistons)}"
+        )
+    return b.finish(
+        [
+            "Source: 42083 Bugatti Chiron W16 engine section by Philippe Hurbain [Philo], CCAL 2.0.",
+            "Input axle 9 carries 20T double bevel 83 and joiner 111 (pyldraw3 axle contacts); 111 is the missing gearbox interface in chassisrear.",
+            "20T (0,90) meshes the 12T double bevel on the centre crank (0,50): coplanar at z=-40, centre distance 40 LDU.",
+            "Centre 24T (0,50) meshes both lower 24T gears (-36,98) and (36,98): coplanar at z=200, centre distance 60 LDU; the lower gears are 72 LDU apart and do not mesh.",
+            "Gear/axle/crank chains for the lower banks are pyldraw3 contacts; the 15-degree centre crank reports none, but its axles are coaxial with the 12T and 24T axle holes.",
+            "Crank groups are selected within 10.5 LDU of each axis and counted; Beam 1 (110) has a round hole and stays static.",
+            "Sixteen slider cranks: 10 LDU throw, 40 LDU conrods; each cylinder axis passes within 0.5 LDU of its crank centre.",
+            "Ideal rigid kinematics: no gear tooth phasing, backlash, friction or force simulation; no collision proof or bore containment check.",
+        ]
+    )
+
+
+RECIPES = {
+    "106": car106,
+    "928": spaceship928,
+    "42000": technic42000,
+    "42083": w16_42083,
+}
 
 
 def create(path, recipe=None, section=None):

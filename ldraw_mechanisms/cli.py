@@ -17,21 +17,40 @@ def parser():
     )
     p.add_argument("--library", help="LDraw library; otherwise LDRAW_DIR / LDRAWDIR")
     s = p.add_subparsers(dest="command", required=True)
-    for name in ("inspect", "connectors", "contacts", "plan", "convert"):
+    for name in (
+        "inspect",
+        "connectors",
+        "contacts",
+        "coaxial",
+        "gear-meshes",
+        "extract",
+        "plan",
+        "convert",
+    ):
         q = s.add_parser(name)
         q.add_argument("model")
         q.add_argument("--section")
         q.add_argument("--output")
         if name == "inspect":
             q.add_argument("--max-instances", type=int, default=100000)
+            q.add_argument("--compact", action="store_true")
+            q.add_argument("--format", choices=["json", "table"], default="json")
+            q.add_argument("--ref", action="append")
+            q.add_argument("--instances", nargs="+")
+            q.add_argument("--mechanical-only", action="store_true")
+            q.add_argument("--limit", type=int, default=100)
+            q.add_argument("--offset", type=int, default=0)
         if name == "connectors":
             q.add_argument("--instance", required=True)
             q.add_argument("--shadow")
-        if name == "contacts":
+        if name in ("contacts", "coaxial"):
             q.add_argument("--instances", nargs="+", required=True)
             q.add_argument("--shadow")
+        if name in ("coaxial", "gear-meshes"):
+            q.add_argument("--distance-tolerance", type=float, default=0.5, help="LDU")
+            q.add_argument("--angle-tolerance", type=float, default=1.0, help="Degrees")
         if name == "plan":
-            q.add_argument("--recipe", choices=["106", "928", "42000"])
+            q.add_argument("--recipe", choices=["106", "928", "42000", "42083"])
         if name == "convert":
             q.add_argument(
                 "--plan", help="Use the exact source/section recorded in this plan"
@@ -49,10 +68,30 @@ def parser():
     q = s.add_parser("search")
     q.add_argument("kind", choices=["parts", "models", "submodels"])
     q.add_argument("query")
-    q.add_argument("--engine", choices=["keyword", "jev"], default="keyword")
+    q.add_argument("--engine", choices=["fts", "keyword", "jev"], default="fts")
+    q.add_argument(
+        "--raw-fts",
+        action="store_true",
+        help="Use FTS5 query syntax instead of literal OR tokens",
+    )
     q.add_argument("--limit", type=int, default=8)
     q.add_argument("--candidates", type=int, default=40)
     q.add_argument("--database")
+    q.add_argument("--output")
+    q = s.add_parser(
+        "jev-status", help="One small billable availability probe; no balance endpoint"
+    )
+    q.add_argument("--output")
+    q = s.add_parser("submodels")
+    q.add_argument("model")
+    q.add_argument("--match", help="Substring in section name or description")
+    q.add_argument(
+        "--sort",
+        choices=["parts", "pistons", "rods", "crank_parts", "gears", "axles"],
+        default="pistons",
+    )
+    q.add_argument("--limit", type=int, default=30)
+    q.add_argument("--format", choices=["json", "table"], default="json")
     q.add_argument("--output")
     q = s.add_parser("rig")
     q.add_argument("plan")
@@ -71,7 +110,63 @@ def main(argv=None):
         if command == "inspect":
             from .analysis import inspect
 
-            result = inspect(args.model, args.section, args.max_instances)
+            if (
+                args.compact
+                or args.format == "table"
+                or args.ref
+                or args.instances
+                or args.mechanical_only
+            ):
+                from .discovery import compact_inspect
+                from .source import Document
+
+                result = compact_inspect(
+                    Document(args.model).manifest(args.section, args.max_instances),
+                    refs=args.ref,
+                    instances=args.instances,
+                    mechanical_only=args.mechanical_only,
+                    limit=args.limit,
+                    offset=args.offset,
+                )
+            else:
+                result = inspect(args.model, args.section, args.max_instances)
+        elif command == "submodels":
+            from .discovery import submodels
+
+            result = submodels(args.model, args.match, args.sort, args.limit)
+        elif command in ("gear-meshes", "coaxial"):
+            from .geometry import coaxial, gear_meshes
+            from .source import Document
+
+            manifest = Document(args.model).manifest(args.section)
+            options = dict(
+                distance_tolerance=args.distance_tolerance,
+                angle_tolerance=args.angle_tolerance,
+            )
+            result = (
+                gear_meshes(manifest, **options)
+                if command == "gear-meshes"
+                else coaxial(
+                    manifest, args.instances, args.library, args.shadow, **options
+                )
+            )
+        elif command == "extract":
+            from .source import Document
+
+            if not args.section or not args.output:
+                raise ValueError("extract requires --section and --output FILE.mpd")
+            doc = Document(args.model)
+            manifest = doc.manifest(args.section)
+            target = Path(args.output).resolve()
+            if target in {Path(p) for p in manifest["dependencies"]}:
+                raise ValueError("Extraction must not overwrite source dependencies")
+            target.parent.mkdir(parents=True, exist_ok=True)
+            doc.export_section(args.section, target)
+            result = dict(
+                output=str(target),
+                section=manifest["section"],
+                parts=sum(n["kind"] == "part" for n in manifest["nodes"]),
+            )
         elif command == "connectors":
             from .analysis import connectors
             from .source import Document
@@ -120,7 +215,13 @@ def main(argv=None):
                 args.limit,
                 args.candidates,
                 args.database,
+                raw_fts=args.raw_fts,
             )
+        elif command == "jev-status":
+            from .search import jev_status
+
+            result = jev_status()
+            result["passed"] = result["available"]
         elif command in ("validate", "evaluate", "sweep"):
             p = plan.load(args.plan)
             validated = plan.validate(p, check_source=True)
@@ -177,7 +278,17 @@ def main(argv=None):
             result = dict(saved=str(Path(args.save).resolve()), verified=True)
         else:
             raise ValueError("Unknown command")
-        if getattr(args, "output", None) and command != "convert":
+        if getattr(args, "format", None) == "table":
+            from .discovery import table
+
+            rendered = table(result)
+            if args.output:
+                target = Path(args.output)
+                target.parent.mkdir(parents=True, exist_ok=True)
+                target.write_text(rendered + "\n")
+            else:
+                print(rendered)
+        elif getattr(args, "output", None) and command not in ("convert", "extract"):
             plan.save(args.output, result)
             print(
                 json.dumps(
