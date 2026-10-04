@@ -17,3 +17,16 @@ When reusing or adapting this material, please provide attribution as:
 If you cite this work in writing, a suggested citation can be found at:
 
 > anteloc. *ldraw-nova - AI-animated LEGO mechanisms in Blender*. GitHub repository, 2026.
+
+## Toolkit implementation sources
+
+- The physical-part boundary and read-through parts-index patterns were adapted
+  from [ldraw-nova](https://github.com/anteloc/ldraw-nova), Carlos Antelo, 2026,
+  CC BY-SA 4.0 for its documentation. The implementation here is a smaller,
+  independent mechanism toolkit and does not require that checkout.
+- `recipe_42000_data.py` and the 42000 recipe adapt the existing supplied
+  `scripts/blender/rig_42000.py` and `ldraw_mecha.py` reference calculations.
+- Original model authors and CCAL notices remain in `data/models-annotated` and
+  in extracted source copies. Generated plans preserve source identity and author.
+- pyldraw3 owns LDraw parsing and connector expansion. LDCad shadow metadata
+  retains its authorship and licences under `data/offLibShadow`.
