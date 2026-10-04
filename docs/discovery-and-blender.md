@@ -47,17 +47,24 @@ recovers the W16's 40 LDU 12:20 pair and two 60 LDU 24:24 pairs. Unknown,
 embedded, scaled and sheared gears are reported as unsupported. Extend profiles
 only after checking LDraw geometry and nominal pitch; tooth-count words alone
 are insufficient. Existing F1 rack equations retain their original calibration.
+The separate `4716` worm profile detects finite perpendicular worm/spur
+candidates. It reports a ratio magnitude and requires review of direction;
+see [discovery quality](discovery-quality.md) for supported wheels and limits.
 
 Both geometric commands accept `--distance-tolerance` in **LDU** (default 0.5)
 and `--angle-tolerance` in **degrees** (default 1). Rounded rotations are
 normalized. Gear results include measured/expected distance, plane/angle errors,
-and `b_per_a`, the signed angular ratio around the reported directed axes.
+and, for parallel meshes, `b_per_a`, the signed angular ratio around the reported directed axes.
 Tooth phase, engagement, backlash and collision still need review. `coaxial`
 compares rotational connector lines, including arbitrary source rotations. It
 returns the closest feature pair and negative results with residuals; feature
 indices refer to `connectors.features`. Axial separation is reported explicitly:
 coaxial infinite lines do not prove contact, fit, retention or torque transfer.
 Use `contacts` for the separate pyldraw3 mating evidence.
+Read its summary and placement warnings, especially axles without mating evidence.
+`--raw-transforms` compares behavior without the bounded analysis-only correction.
+Source/GLB matrices remain untouched. Before delivery run `audit PLAN`; every
+known omitted mechanism needs an explicit unresolved/deferred view and reason.
 
 FTS works without credentials or new dependencies. Ranking follows
 [SQLite FTS5 BM25](https://www.sqlite.org/fts5.html#the_bm25_function);

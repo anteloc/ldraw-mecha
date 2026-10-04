@@ -3,6 +3,24 @@
 Analyze LDraw models, describe their mechanisms in a JSON motion plan, and build
 controllable Blender rigs from metadata-preserving GLB files.
 
+On the `alt-process` branch, start with a mechanism study before rigging:
+
+```sh
+./ldraw-mecha prepare data/models-annotated/106-1.mpd --output output/study
+```
+
+This creates candidate connections, a Mermaid flowchart per provisional mechanism,
+and a GLB, in that order. Inspect the model in Blender, refine the same plan JSON,
+then regenerate diagrams and build the rig without converting again. See the
+[alternative workflow](docs/alternative-process.md) for the full process, draft
+inspection APIs and coverage limits. The original commands below still work.
+
+Discovery reports axle coverage and rounded-placement corrections, includes
+supported worm-drive candidates, and preserves unresolved views when adopting
+motion. Run `./ldraw-mecha audit output/study/plan.json` before rigging and delivery.
+See [discovery quality](docs/discovery-quality.md) for the 10265 regression and
+how to account for mechanisms that connector metadata cannot represent.
+
 ```sh
 ./setup.sh
 export LDRAW_DIR=/path/to/ldraw
@@ -32,6 +50,15 @@ Recipe `42083` studies the Bugatti Chiron W16 section `42083 - engine.ldr`:
 one `drive` control turns the input shaft, a 20:12 double-bevel pair drives the
 centre crank and 24:24 gears drive two lower cranks, moving 16 pistons and
 conrods. Generated artifacts live in `output/42083-w16`.
+
+Recipe `10265` rigs the Ford Mustang B-model: four wheels plus a complete
+steering chain, where the wheel drives a universal joint, a 16T/40T mesh, a
+pitman crank, two 100 LDU steering links and both kingpin knuckles, and the
+engine's valve covers hinge open. Both tie-rod closures are checked. The
+steering and valve ranges are deliberately small because the source packs those
+mechanisms tightly; `docs/validation.md` records the clearance evidence, the
+one checker artefact and the mechanisms left unresolved. Artifacts live in
+`output/10265-v2`.
 
 For a standalone assembly:
 

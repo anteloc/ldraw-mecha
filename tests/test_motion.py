@@ -130,3 +130,18 @@ def test_general_affine_inverse():
     m = [[1, 0.2, 0, 1], [0, 1, 0.1, -4], [0, 0, -1, 8], [0, 0, 0, 1]]
     p = [3, 7, 11]
     assert point(inverse(m), point(m, p)) == pytest.approx(p)
+
+
+def test_combined_sample_is_nonzero_mixed_and_within_ranges():
+    p = dict(
+        controls={
+            "a": dict(min=-1.0, max=2.0, default=0.0),
+            "b": dict(min=-1.0, max=2.0, default=0.0),
+            "c": dict(min=0.0, max=3.0, default=0.0),
+            "d": dict(min=-5.0, max=5.0, default=0.0),
+        }
+    )
+    s = plan.combined_sample(p)
+    assert s == pytest.approx(dict(a=0.8, b=-0.4, c=1.2, d=-2.0))
+    for name, c in p["controls"].items():
+        assert c["min"] <= s[name] <= c["max"]

@@ -46,19 +46,37 @@ def parser():
         if name in ("contacts", "coaxial"):
             q.add_argument("--instances", nargs="+", required=True)
             q.add_argument("--shadow")
+        if name in ("contacts", "connectors", "coaxial", "gear-meshes"):
+            q.add_argument(
+                "--raw-transforms",
+                action="store_true",
+                help="Diagnostic comparison: disable analysis-only correction of rounded frames",
+            )
         if name in ("coaxial", "gear-meshes"):
             q.add_argument("--distance-tolerance", type=float, default=0.5, help="LDU")
             q.add_argument("--angle-tolerance", type=float, default=1.0, help="Degrees")
         if name == "plan":
-            q.add_argument("--recipe", choices=["106", "928", "42000", "42083"])
+            from .recipes import RECIPES
+
+            q.add_argument("--recipe", choices=sorted(RECIPES))
+            q.add_argument(
+                "--study",
+                help="Preserve a prepared study's evidence while adopting this recipe",
+            )
         if name == "convert":
             q.add_argument(
                 "--plan", help="Use the exact source/section recorded in this plan"
             )
-    for name in ("validate", "evaluate", "sweep"):
+    for name in ("validate", "evaluate", "sweep", "audit"):
         q = s.add_parser(name)
         q.add_argument("plan")
         q.add_argument("--output")
+        if name == "audit":
+            q.add_argument(
+                "--require-reviewed",
+                action="store_true",
+                help="Exit 1 for unresolved/unaccounted mechanisms; deferred items remain explicitly reported",
+            )
         if name == "evaluate":
             q.add_argument(
                 "--set", action="append", default=[], metavar="CONTROL=VALUE"
@@ -78,6 +96,24 @@ def parser():
     q.add_argument("--candidates", type=int, default=40)
     q.add_argument("--database")
     q.add_argument("--output")
+    q = s.add_parser(
+        "prepare", help="Create candidate diagrams before optional GLB conversion"
+    )
+    q.add_argument("model")
+    q.add_argument("--section")
+    q.add_argument("--output", required=True, help="New study directory")
+    q.add_argument("--shadow")
+    q.add_argument("--contact-limit", type=int, default=300)
+    q.add_argument("--no-glb", action="store_true", help="Source-only preparation")
+    q.add_argument(
+        "--plan",
+        help="Optional existing motion plan with exactly matching source identities",
+    )
+    q = s.add_parser("diagrams", help="Regenerate Mermaid views from the plan JSON")
+    q.add_argument("plan")
+    q.add_argument("--output", help="Directory; defaults to diagrams beside the plan")
+    q.add_argument("--view", choices=["auto", "connections", "motion"], default="auto")
+    q.add_argument("--mechanism")
     q = s.add_parser(
         "jev-status", help="One small billable availability probe; no balance endpoint"
     )
@@ -107,7 +143,35 @@ def main(argv=None):
     args = parser().parse_args(argv)
     try:
         command = args.command
-        if command == "inspect":
+        if command == "prepare":
+            from .prepare import prepare
+
+            result = prepare(
+                args.model,
+                args.output,
+                section=args.section,
+                library=args.library,
+                shadow=args.shadow,
+                contact_limit=args.contact_limit,
+                convert_glb=not args.no_glb,
+                motion=plan.load(args.plan) if args.plan else None,
+            )
+        elif command == "diagrams":
+            from .mechanisms import write_diagrams
+
+            result = write_diagrams(
+                plan.load(args.plan),
+                args.output or Path(args.plan).parent / "diagrams",
+                view=args.view,
+                mechanism=args.mechanism,
+            )
+        elif command == "audit":
+            from .audit import audit
+
+            result = audit(plan.load(args.plan))
+            if args.require_reviewed:
+                result["passed"] = result["review_complete"]
+        elif command == "inspect":
             from .analysis import inspect
 
             if (
@@ -142,6 +206,7 @@ def main(argv=None):
             options = dict(
                 distance_tolerance=args.distance_tolerance,
                 angle_tolerance=args.angle_tolerance,
+                normalize=not args.raw_transforms,
             )
             result = (
                 gear_meshes(manifest, **options)
@@ -176,6 +241,7 @@ def main(argv=None):
                 args.instance,
                 args.library,
                 args.shadow,
+                normalize=not args.raw_transforms,
             )
         elif command == "contacts":
             from .analysis import contacts
@@ -186,11 +252,20 @@ def main(argv=None):
                 args.instances,
                 args.library,
                 args.shadow,
+                normalize=not args.raw_transforms,
             )
         elif command == "plan":
             from .recipes import create
 
             result = create(args.model, args.recipe, args.section)
+            if args.study:
+                if not args.recipe:
+                    raise ValueError(
+                        "--study requires --recipe; otherwise edit the prepared plan directly"
+                    )
+                from .prepare import adopt_motion
+
+                result = adopt_motion(plan.load(args.study), result)
         elif command == "convert":
             from .source import Document
             from .glb import convert
@@ -288,7 +363,12 @@ def main(argv=None):
                 target.write_text(rendered + "\n")
             else:
                 print(rendered)
-        elif getattr(args, "output", None) and command not in ("convert", "extract"):
+        elif getattr(args, "output", None) and command not in (
+            "convert",
+            "extract",
+            "prepare",
+            "diagrams",
+        ):
             plan.save(args.output, result)
             print(
                 json.dumps(
@@ -296,7 +376,30 @@ def main(argv=None):
                         output=str(Path(args.output).resolve()),
                         command=command,
                         passed=result.get("passed", result.get("valid")),
+                        summary=result.get("summary"),
+                        warnings=result.get("warnings", []),
                     )
+                )
+            )
+        elif command in ("prepare", "diagrams"):
+            coverage = result.get("discovery", result.get("coverage", {}))
+            contact_report = coverage.get("contacts", "not recorded")
+            print(
+                json.dumps(
+                    dict(
+                        plan=result.get("plan", getattr(args, "plan", None)),
+                        diagrams=result.get(
+                            "directory", result.get("diagrams", {}).get("directory")
+                        ),
+                        glb=result.get("glb"),
+                        contacts=contact_report.get("summary", contact_report)
+                        if isinstance(contact_report, dict)
+                        else contact_report,
+                        audit=result["audit"]["summary"],
+                        warnings=result["audit"]["warnings"],
+                        details="Full reports in preparation.json / diagrams/index.json",
+                    ),
+                    indent=2,
                 )
             )
         else:

@@ -1,5 +1,18 @@
 # Mechanical toolkit implementation plan
 
+The `alt-process` branch implements an earlier diagram/inspection loop; see
+[Prepare, diagram, inspect, rig](alternative-process.md). `prepare.py` gathers
+bounded source evidence, `mechanisms.py` validates views and generates Mermaid,
+and `blender_tools.inspect_prepared` supports draft inspection before rigging.
+These extend the same plan document; they introduce no second motion format.
+The original implementation rationale below remains applicable to rig execution.
+
+Discovery quality now includes bounded analysis-only frame correction
+(`placements.py`), explicit axle/contact coverage, finite worm/spur candidates,
+and an `audit` of mechanism dispositions. Recipe adoption keeps unresolved views.
+See [discovery quality](discovery-quality.md) for the 10265 reproduction and
+remaining surface-contact/profile gaps. This does not change rig evaluation.
+
 The deliverable is an agent CLI and Python library that turn LDraw source evidence
 into a checked motion plan, then materialize that same plan in Blender. Source
 analysis must work without Blender. Interactive controls must work after saving

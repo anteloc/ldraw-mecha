@@ -137,3 +137,128 @@ Docker image has not been built or tested.
 Primary implementation references: [pyldraw3](https://github.com/hbmartin/pyldraw3/),
 [LDCad connector metadata](https://www.melkert.net/LDCad/tech/meta), and
 [Blender driver documentation](https://docs.blender.org/manual/en/latest/animation/drivers/index.html).
+
+## Alternative process branch
+
+The diagram workflow adds source preparation, optional connection evidence and
+mechanism views to the existing motion contract. **58 Python tests pass**.
+Mermaid CLI 12.0.0 rendered all seven provisional 106 diagrams, all 47 provisional
+W16 diagrams, the adopted W16 motion diagram, and a hostile-label escaping
+fixture. The 47 W16 views reflect incomplete initial grouping, not 47 confidently
+identified mechanisms.
+
+Evidence is under `output/alt-process/`. `106/rig/workflow-check.json` verifies
+loading a draft without rigging, selecting diagram identities in Blender,
+authoring a measured roof joint, applying it to the same imported GLB, refreshing
+embedded diagrams, nonzero motion, animation preservation, sampled clearance
+and reopening. Fresh-process reopening and lifecycle reports pass as well.
+The initial positive connector axis closed the roof into the car; choosing the
+opposite axis for outward opening removed the sampled new crossings. This
+illustrates why connector alignment alone cannot choose a safe control direction.
+
+`w16/motion.json` adopts the existing W16 recipe while preserving discovered
+connections and source identities. Its 33-step sweep, background Blender build
+and fresh-process reopening pass. `hatch/preparation.json` records a full
+prepare/diagram/convert pass for the standalone 928 hatch using its existing
+motion plan. These cases validate the alternative workflow and existing
+kinematics, not general automatic mechanism inference or collision-free motion.
+
+## 10265 Ford Mustang B-model
+
+`output/10265-v2/` holds a full prepare/review/adopt/rig pass for
+`10265-1_B-Model.mpd` (1497 parts) using recipe `10265`. It replaces an earlier
+study whose discovery never ran: that run used the default `--contact-limit 300`
+against 1441 library parts, so `preparation.json` recorded
+`contacts: "not run"`, every connection stayed a candidate, and 232 of 245
+mechanism views were single parts. Raising the limit to 2000 lets contacts run
+over all 1441 parts and yields 29 contact edges plus the 16T/40T mesh.
+
+The steering is a pitman crank rather than a rack. The steering wheel turns a
+raked column, a universal joint passes the rotation to the longitudinal 16T
+shaft, the 16T/40T mesh (centres 70 LDU apart, exactly 20 + 50 pitch radii)
+turns the crank by -0.4 of the input, and the crank's two towballs push 100 LDU
+steering links against knuckles on vertical kingpins. Both knuckle angles are
+solved from that closure, so the links carry the motion and both tie-rod
+distances are checked numerically; the earlier study left the links static, had
+no `anchors` and no `checks`, and so passed its sweep while nothing moved.
+Closure holds to 5.5e-4 LDU, limited by the source's own rounded rotation
+matrix, and evaluated Blender transforms match the independent evaluator to
+2.7e-4 LDU. The linkage is Ackermann: the inner knuckle turns further than the
+outer, and near a 36 degree crank angle the outer one reverses at a dead point.
+
+**The rod construction in the Blender adapter was wrong for this linkage.** A
+single `LOCKED_TRACK` only rotates a rod about one fixed axis, which reproduces
+the contract exactly for a rod that stays in a plane, such as the 42000 rack tie
+rods, but not for a spatial link. Here the crank towball rises about 6 LDU as it
+swings while the knuckle ball stays level, so the rod must tilt out of plane;
+the adapter disagreed with the contract by up to 8.5 LDU. Rods now aim with
+`DAMPED_TRACK` and take their roll from a `LOCKED_TRACK` against a reference
+that follows the start anchor at a constant axis offset, which is exactly the
+contract's "local Y follows the rod, local Z is the declared axis projected
+perpendicular to it". Rod error dropped to 2.3e-5 LDU. The 42000 (two tie rods,
+eight conrods), 42083 W16 (sixteen conrods) and 106 rigs were rebuilt and still
+pass, so the change is a fix, not a regression.
+
+### Clearance
+
+All four wheel controls are **clean** through a full turn. The other two are
+not, and their ranges were set by these sweeps rather than by connector
+alignment:
+
+- `steering` (+-0.18 rad at the wheel, 4.1 degrees of crank) reports six pairs.
+  One, `0/307`-`0/308`, is inherent: a universal joint cross swings on two
+  perpendicular pins and no single revolute can express it, so the cross is
+  carried by the column and still meets the other joint end. One,
+  `0/90/16`-`0/90/19`, is a checker artefact: the knuckle and its own stub axle
+  are rigidly linked by parenting and were measured at 1.9e-6 relative motion
+  over the full sweep, so they cannot newly cross. The remaining four are
+  measured contact. The crank's towballs rest flush against the open-centre
+  chassis brick `0/0/21` and clear the suspension arms above them by about
+  3 LDU, so the crank has only a few degrees in either direction. That is a
+  property of the source model, not of the rig, and is why the declared travel
+  is small.
+- `valve_covers` (0 to 0.15 rad) reports two pairs, both against `0/284/2`, the
+  embedded flexible hose. Flexible parts are outside this contract's scope. The
+  opening sign was chosen by sweeping both directions: the opposite sense drives
+  both covers straight into the block and the hoses within one step.
+
+Sampled crossings do not prove continuous clearance, and a clean sweep does not
+prove a mechanism is physically free.
+
+### Not rigged
+
+The doors have a verified vertical hinge line: two `2429`/`2430` plate pairs per
+side share x = +-160, z = -160, which fixes the axis without guessing. They are
+still not rigged. The `Sill Panel Door` submodels interleave the static sill panel
+with the door leaf; the original study lacked contact evidence to split them.
+That discovery result was affected by rounded placements, as described below;
+it must not be attributed to missing System hinge metadata. The bonnet and trunk lid
+contain no hinge parts at all. The rear axle worm and 8T gear, the gearshift and
+the supercharger were not resolved to a measured output. These are findings, not
+implemented mechanisms.
+
+### Discovery correction after the second attempt
+
+The root and nested rounded rotations suppressed pyldraw3 contacts. Analysis now
+projects near-rigid occurrence frames onto orthogonal matrices while preserving
+source transforms, IDs and translations. Full-model comparison gives 29 raw
+contact records versus 921 corrected records; all 25 catalogued straight axles
+gain axle-in-hole evidence. That denominator excludes axle pins and joiners.
+The corrected records include 18 hinge contacts and 211 stud contacts. The
+earlier absence of those contacts was not evidence that these mechanisms lack
+connector metadata.
+
+A finite worm/spur profile finds `0/104/37` to `0/104/41`; its provisional view
+also contains the knob, both shafts and both liftarm cranks. The crank-to-rear-frame
+surface coupling remains unverified. Six `32198` bevel gears remain unsupported,
+and three library-internal connector diagnostics keep inspection incomplete.
+No new rig or clearance claim follows from this discovery repair.
+
+Evidence: `output/10265-discovery-audit/` contains raw/corrected contact reports,
+the new source-only study, a rendered adjuster candidate diagram, an audit of the
+old study, and recipe adoption/sweep/asymmetric-evaluation reports. Adoption keeps
+90 unresolved provisional views alongside six planned control views. The pure
+suite passes 82 tests, including new matrix, worm near-miss and omission regressions.
+The new worm diagram parses and renders with Mermaid CLI. Blender adapters and
+the existing saved scenes were not changed during this correction; source-only
+checks do not validate new Blender motion. See [discovery quality](discovery-quality.md).

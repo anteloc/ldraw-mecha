@@ -3,6 +3,36 @@
 Build a controllable mechanism, check its propagation, and report the coverage
 of the evidence. Do not mistake a suggestive description for a working joint.
 
+## Alternative process on this branch
+
+Start with `./ldraw-mecha prepare MODEL --output output/STUDY` (add `--section`
+when appropriate). It writes a draft plan and one Mermaid diagram per provisional
+mechanism view **before** converting to GLB. `--no-glb` keeps it source-only.
+Read `diagrams/README.md` and the explicit discovery gaps in `preparation.json`.
+Check `contacts.summary` (counts, kinds and axle coverage), skipped searches and
+placement warnings before authoring motion. For large models set
+`--contact-limit 2000` or study sections; successful command execution alone is
+not a discovery gate. Zero axle coverage in a shaft-driven assembly requires
+investigation. See [discovery quality](docs/discovery-quality.md).
+Inspect the imported model with `blender_tools.inspect_prepared`, select diagram
+members with `select_mechanism`, and correct the JSON. Mechanism boundaries are
+hypotheses, not rigid-body groups; shared parts retain their source identities.
+Add any mechanism found visually to the JSON immediately, including its input,
+output and the unresolved link. Keep it visible until it is planned, explicitly
+deferred, or reviewed as static. Run `audit PLAN` before rigging and delivery;
+`audit PLAN --require-reviewed` checks that every recorded view has a disposition.
+That check covers bookkeeping, not mechanical completeness or physical proof.
+
+Use the existing motion contract or `mechanisms.add_joint` to declare measured
+motion. Regenerate diagrams with `diagrams PLAN`. After review, validation and
+sweeps, apply the plan to the same imported root; reconversion is needed only if
+source/selection changes. `plan ... --recipe ... --study PLAN` adopts a studied
+recipe while retaining evidence. Follow the [alternative workflow](docs/alternative-process.md)
+for exact CLI/API examples and limitations. Mermaid is generated output; edit
+the plan rather than maintaining a separate diagram by hand.
+
+The commands below remain available for focused analysis and verification.
+
 1. Start with `./ldraw-mecha submodels MODEL --match engine --format table`
    to compare recursive part counts and parent sections. Rank complexity by
    pistons/gear coupling, then size; do not trust names alone. Run
@@ -26,16 +56,24 @@ of the evidence. Do not mistake a suggestive description for a working joint.
    Connector `position`/`frame` are part-local; `world_position`/`world_axis`
    are in the selected model. Contacts return transformed connector frames.
    Axis convention is local Y for LDCad metadata; body joint axes are explicit.
-   `gear-meshes MODEL` reports reviewed parallel-axis mesh candidates;
+   `gear-meshes MODEL` reports parallel-axis and supported worm/spur candidates;
    `coaxial MODEL --instances ID1 ID2` reports rotational connector-line evidence
    even for arbitrary source rotations. Residual tolerances are LDU and explicitly
    named degrees. Coaxial lines alone do not establish contact or coupling.
+   Rounded near-rigid placement frames are orthonormalized for analysis only;
+   source matrices remain untouched. `--raw-transforms` permits comparison on
+   connector/contact/coaxial/gear commands. Review reported substantial scale,
+   shear and metadata gaps. Worm ratios are unsigned until direction is measured.
+   No connector edge does not rule out a lever bearing on a beam, a cam, a stop
+   or friction. Record these as unresolved surface-contact hypotheses.
 4. Write a plan with `plan MODEL --output output/study/plan.json`, or use a
-   studied `--recipe 106|928|42000|42083`. A draft deliberately cannot rig a scene.
+   studied `--recipe 106|928|42000|42083|10265`. A draft deliberately cannot rig a scene.
    Specify rigid groups, axes, origins, limits and equations following the
    [contract](docs/motion-plan.md). Keep `source` untouched. Use exact leaf IDs,
    including each rim and tyre, rather than Blender display names. Record
-   evidence, missing parent interfaces and unresolved mechanisms in `notes`.
+   evidence and missing parent interfaces in `notes`. Track each unresolved
+   mechanism as a view with a disposition; a sentence buried in global notes
+   does not account for omitted work. Include unresolved/deferred items in delivery.
 5. Run `validate` and `sweep`. Check the linkage lengths and transmission ratios
    with meaningful nonzero and asymmetric inputs using `evaluate --set NAME=VALUE`.
    Set `status` to `ready` only after the mechanical decisions are complete.

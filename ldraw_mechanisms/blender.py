@@ -10,14 +10,16 @@ import json
 from contextlib import contextmanager
 
 import bpy
-from mathutils import Matrix
+from mathutils import Matrix, Vector
 
 from . import plan as contract
-from .math3d import frame
+from .math3d import frame, unit
 
 C = Matrix(((1, 0, 0, 0), (0, 0, -1, 0), (0, 1, 0, 0), (0, 0, 0, 1)))
 C_INV = C.inverted()
 REST = "mecha_rest"
+# Offset in LDU of a rod's roll reference along its declared axis.
+ROD_REFERENCE = 100.0
 
 
 def _tag(obj, rig_id, role):
@@ -46,10 +48,10 @@ def _objects(root):
     return [root, *root.children_recursive]
 
 
-def bind(plan, root=None):
+def bind(plan, root=None, *, require_ready=True):
     """Preflight before edits; no Blender object-name assumptions."""
     contract.validate(plan)
-    if plan["status"] != "ready":
+    if require_ready and plan["status"] != "ready":
         raise ValueError(
             "Draft plan: complete and validate the mechanical decisions first"
         )
@@ -248,10 +250,30 @@ def build(plan, root=None):
                 p = pivots[name]
                 con = p.constraints.new("COPY_LOCATION")
                 con.target = anchors[b["start"]]
-                con = p.constraints.new("LOCKED_TRACK")
+                # The contract aims local Y exactly at the end anchor and keeps
+                # local Z as the declared axis projected perpendicular to Y. A
+                # single locked track only rotates about a fixed axis, which
+                # matches that just for a rod that stays in one plane; a spatial
+                # link needs the aim and the roll separately. The reference
+                # follows the start anchor with a constant axis offset, so the
+                # roll target direction stays exact as the linkage moves.
+                reference = empty(
+                    "UP_" + plan["name"] + "_" + name,
+                    root,
+                    Matrix.Translation(
+                        C.to_3x3() @ Vector(unit(b["axis"])) * ROD_REFERENCE
+                    ),
+                )
+                offset = reference.constraints.new("COPY_LOCATION")
+                offset.target = anchors[b["start"]]
+                offset.use_offset = True
+                con = p.constraints.new("DAMPED_TRACK")
                 con.target = anchors[b["end"]]
                 con.track_axis = "TRACK_Y"
-                con.lock_axis = "LOCK_Z"
+                con = p.constraints.new("LOCKED_TRACK")
+                con.target = reference
+                con.track_axis = "TRACK_Z"
+                con.lock_axis = "LOCK_Y"
         bpy.context.view_layer.update()
         root_inverse = root.matrix_world.inverted()
         for name, b in plan["bodies"].items():

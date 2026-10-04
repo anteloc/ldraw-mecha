@@ -51,12 +51,16 @@ def apply_plan(
         if verify_existing
         else adapter.build(plan, root)
     )
+    if "mechanisms" in plan:
+        inspect_prepared(plan, root=rig["root"])
     samples = [{}]
     for name, c in plan["controls"].items():
         for v in (c["min"], (c["min"] + c["max"]) / 2, c["max"]):
             samples.append({name: v})
-    if "spin_rl" in plan["controls"]:
+    if "spin_rl" in plan["controls"] and "steering" in plan["controls"]:
         samples += [dict(spin_rl=0.7, spin_rr=-0.2, steering=0.4)]
+    if len(plan["controls"]) > 1:
+        samples.append(contract.combined_sample(plan))
     result = adapter.verify(rig, plan, samples)
     if report:
         contract.save(report, result)
@@ -221,3 +225,73 @@ def check_clearance(
     if report:
         contract.save(report, result)
     return result
+
+
+def inspect_prepared(plan, *, glb=None, root=None):
+    """Import/bind a draft for inspection without creating motion or saving.
+
+    Returned mapping uses exactly the occurrence IDs in the Mermaid diagrams.
+    Existing scenes are additive; duplicate imports bind to the new root only.
+    The root stores the study and its digest, including unresolved evidence.
+    """
+    from .mechanisms import diagram, members
+
+    plan = _plan(plan)
+    contract.validate(plan)
+    if "mechanisms" not in plan:
+        raise ValueError("Run prepare first to create mechanism views")
+    if root is not None and glb:
+        raise ValueError("Pass root or glb, not both")
+    if glb:
+        before = set(bpy.data.objects)
+        bpy.ops.import_scene.gltf(filepath=str(Path(glb).resolve()))
+        roots = [
+            o for o in set(bpy.data.objects) - before if o.get("mecha_id") == "root"
+        ]
+        if len(roots) != 1:
+            raise ValueError("Expected exactly one imported model root")
+        root = roots[0]
+    root, mapping = adapter.bind(plan, root, require_ready=False)
+    root["mecha_study"] = json.dumps(plan, separators=(",", ":"))
+    root["mecha_study_digest"] = contract.digest(plan)
+    membership = {name: members(plan, name) for name in plan["mechanisms"]}
+    for instance, obj in mapping.items():
+        obj["mecha_mechanisms"] = json.dumps(
+            [name for name, ids in membership.items() if instance in ids]
+        )
+    # Plain text blocks are review artifacts, never scripts/handlers.
+    for text in list(bpy.data.texts):
+        if text.get("mecha_study_root") == root.name:
+            bpy.data.texts.remove(text)
+    for name in plan["mechanisms"]:
+        text = bpy.data.texts.new(f"MECHA_{root.name}_{name}.mmd")
+        text["mecha_study_root"] = root.name
+        text["mecha_plan_digest"] = contract.digest(plan)
+        text.write(diagram(plan, name))
+    return dict(root=root, mapping=mapping)
+
+
+def select_mechanism(context, name):
+    """Select a diagram's physical instances and meshes in the current view layer."""
+    from .mechanisms import members
+
+    plan = json.loads(context["root"]["mecha_study"])
+    if name not in plan["mechanisms"]:
+        raise ValueError(f"Unknown mechanism {name}")
+    ids = sorted(members(plan, name))
+    for obj in bpy.context.selected_objects:
+        obj.select_set(False)
+    selected = []
+    for instance in ids:
+        obj = context["mapping"][instance]
+        for item in [obj, *obj.children_recursive]:
+            if (
+                item.name in bpy.context.view_layer.objects
+                and not item.hide_get()
+                and not item.hide_select
+            ):
+                item.select_set(True)
+                selected.append(item)
+    if selected:
+        bpy.context.view_layer.objects.active = selected[0]
+    return dict(mechanism=name, instances=ids, selected_objects=len(selected))

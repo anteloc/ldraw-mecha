@@ -464,3 +464,170 @@ RECIPES = {
 def create(path, recipe=None, section=None):
     manifest = Document(path).manifest(section)
     return RECIPES[recipe](manifest) if recipe else contract.draft(manifest)
+
+
+def mustang10265(manifest):
+    """10265 B-model: four wheels and a closed steering linkage.
+
+    The steering is a pitman crank, not a rack. Turning the wheel drives the
+    raked column through a universal joint to the 16T gear, the 16T/40T mesh
+    turns the crank about a longitudinal axis, and the crank's two towballs
+    push both 100 LDU steering links against knuckles that pivot on vertical
+    kingpins. Knuckle angles are solved from that closure, so the tie rods
+    actually carry the motion instead of standing still.
+    """
+    from . import recipe_10265_data as data
+
+    car = one(manifest["nodes"], "10265 - Ford Mustang 1967 Complete.ldr")
+    nodes = {n["id"]: n for n in manifest["nodes"]}
+
+    def group(pairs):
+        ids = []
+        for node_id, ref in pairs:
+            node = nodes.get(node_id)
+            if node is None or normalized(node["ref"]) != normalized(ref):
+                found = None if node is None else node["ref"]
+                raise ValueError(f"Expected {ref} at {node_id}, found {found}")
+            ids.append(node_id)
+        return ids
+
+    b = Builder(manifest, "mustang10265", car["world"])
+    b.control(
+        "steering",
+        -data.STEER_LIMIT,
+        data.STEER_LIMIT,
+        "Steering wheel angle; positive steers right. The 16T/40T mesh turns "
+        "the crank by 0.4 of this, and the linkage sets each knuckle angle.",
+    )
+    for wheel in ("fl", "fr", "rl", "rr"):
+        b.control(
+            "spin_" + wheel,
+            -2 * math.pi,
+            2 * math.pi,
+            f"Wheel {wheel.upper()} rolling angle; positive rolls the car forward",
+        )
+        b.signal("wheel_" + wheel, "s", s="spin_" + wheel)
+    b.signal("drive", "(a+c+d+e)*0.25", a="spin_fl", c="spin_fr", d="spin_rl", e="spin_rr")
+    b.signal("crank", f"{-data.GEAR_RATIO!r}*s", s="steering")
+
+    b.body("column", group(data.COLUMN), data.COLUMN_CENTRE, data.COLUMN_AXIS, "steering")
+    b.body("gear16", group(data.GEAR16), data.GEAR16_CENTRE, data.GEAR_AXIS, "steering")
+    b.body("crank", group(data.CRANK), data.CRANK_CENTRE, data.CRANK_AXIS, "crank")
+
+    arm, link = data.STEER_ARM, data.LINK_LENGTH
+    for side in ("l", "r"):
+        king, q0 = data.KINGPIN[side], data.CRANK_BALL[side]
+        b0 = data.KNUCKLE_BALL[side]
+        centre = data.CRANK_CENTRE
+        rx, ry = q0[0] - centre[0], q0[1] - centre[1]
+        if abs(length(sub(b0, q0)) - link) > 1e-6:
+            raise ValueError(f"Steering link {side} is not {link} LDU in the source pose")
+        if abs(abs(b0[2] - king[2]) - arm) > 1e-6:
+            raise ValueError(f"Knuckle ball {side} is not {arm} LDU from the kingpin")
+        # Crank ball offset from the kingpin, as the crank angle t turns it
+        # about the longitudinal axis. Split into signals to stay inside the
+        # 255 byte Blender driver expression limit.
+        b.signal(
+            "lateral_" + side,
+            f"{centre[0] - king[0]!r}+{rx!r}*cos(t)+{ry!r}*sin(t)",
+            t="crank",
+        )
+        b.signal(
+            "vertical_" + side,
+            f"{centre[1] - b0[1]!r}-{rx!r}*sin(t)+{ry!r}*cos(t)",
+            t="crank",
+        )
+        # |crank ball - knuckle ball| = link reduces to a*sin(psi)+arm*cos(psi)=R.
+        b.signal(
+            "ratio_" + side,
+            f"(a*a+v*v+{2 * arm * arm - link * link!r})/({2 * arm!r}*sqrt(a*a+{arm * arm!r}))",
+            a="lateral_" + side,
+            v="vertical_" + side,
+        )
+        # The left branch is the principal arcsine; the right is its mirror.
+        phase = f"atan2({arm!r},a)"
+        solved = "asin(clamp(r,-1,1))"
+        expression = (
+            f"{solved}-{phase}" if side == "l" else f"pi-{solved}-{phase}"
+        )
+        b.signal("knuckle_" + side, expression, r="ratio_" + side, a="lateral_" + side)
+        b.body(
+            "knuckle_" + side,
+            group(data.KNUCKLES[side]),
+            king,
+            data.KINGPIN_AXIS,
+            "knuckle_" + side,
+        )
+        b.anchor("crank_ball_" + side, "crank", q0)
+        b.anchor("knuckle_ball_" + side, "knuckle_" + side, b0)
+        b.body(
+            "tierod_" + side,
+            group(data.TIERODS[side]),
+            q0,
+            [0, -1, 0],
+            kind="rod",
+            x_hint=cross(sub(b0, q0), [0, -1, 0]),
+            start="crank_ball_" + side,
+            end="knuckle_ball_" + side,
+        )
+        b.distance("link_" + side, "crank_ball_" + side, "knuckle_ball_" + side, link)
+
+    b.control(
+        "valve_covers",
+        0.0,
+        data.VALVE_LIMIT,
+        "Lift both engine valve covers on their 3937/3938 hinges; 0 is the source pose",
+    )
+    for side in ("l", "r"):
+        b.body(
+            "valve_" + side,
+            group(data.VALVE_COVERS[side]),
+            data.VALVE_PIVOT[side],
+            data.VALVE_AXIS[side],
+            "valve_covers",
+        )
+
+    for wheel, parent in (("fl", "knuckle_l"), ("fr", "knuckle_r"), ("rl", None), ("rr", None)):
+        b.body(
+            "spin_" + wheel,
+            group(data.WHEELS[wheel]),
+            data.SPIN_CENTRE[wheel],
+            data.SPIN_AXIS,
+            "wheel_" + wheel,
+            parent=parent,
+        )
+    return b.finish(
+        [
+            "Steering is a pitman crank: 16T/40T mesh (ratio -0.4) turns the crank "
+            "about a longitudinal axis through (0,-54,-270) in the Complete frame.",
+            "Both knuckle angles are solved from the 100 LDU link closure, so the "
+            "steering links move and both tie-rod distances are checked numerically.",
+            "The linkage is Ackermann: at a 21 degree crank angle the inner knuckle "
+            "reaches about 25.7 degrees and the outer about 15.9 degrees.",
+            "Crank travel stops at 21 degrees. Near 36 degrees the outer knuckle "
+            "reverses at the linkage dead point, so wider travel is not usable.",
+            "Kingpins are vertical through the 15460 ball centres that the suspension "
+            "arms hold at y=-14 and y=-54; the steering arm is 20 LDU forward.",
+            "The universal joint is coupled 1:1. Its 29 degree offset makes the real "
+            "instantaneous ratio fluctuate, and the joint centre 0/307 is left static "
+            "because a spherical joint is outside this contract.",
+            "Each wheel has its own control; no differential is declared.",
+            "Valve cover pivots are the shared 3937/3938 pin point, not an estimate. "
+            "Zero is the source pose; the covers already sit tilted there.",
+            "Ideal rigid kinematics: no backlash, friction, compliance or forces.",
+            "Sampled clearance: all four wheel controls are clean over a full turn. "
+            "Steering reports six pairs and the valve covers two; both ranges are "
+            "already set by those sweeps. See docs/validation.md for the breakdown "
+            "of which pairs are inherent, which are measured contact and which one "
+            "is a checker artefact.",
+            "Not rigged, with reasons: the doors have a verified vertical hinge line "
+            "at x=+-160, z=-160, but the Sill Panel Door submodels interleave the "
+            "static sill with the door leaf and no stud-level connectivity exists to "
+            "split them. The bonnet and trunk lid contain no hinge parts at all. The "
+            "rear axle worm and 8T gear, the gearshift and the supercharger were not "
+            "resolved to a measured output.",
+        ]
+    )
+
+
+RECIPES["10265"] = mustang10265

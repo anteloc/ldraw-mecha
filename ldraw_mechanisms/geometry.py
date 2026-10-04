@@ -2,7 +2,7 @@
 
 Reviewed parallel-axis gear profiles: LDraw part origins are tooth midplanes,
 local Z is the shaft axis. Nominal pitch diameter is 2.5 LDU/tooth (module 1).
-Do not apply this rule to bevel-only, crown, worm, rack or unreviewed gears.
+Worms have separate finite profiles; never apply the parallel-axis rule to them.
 """
 
 from itertools import combinations
@@ -12,6 +12,7 @@ import re
 from .analysis import connectors
 from .math3d import cross, direction, dot, length, point, sub, unit
 from .source import normalized, parts_library
+from .placements import analysis_placement, placement_report
 
 # Confirmed using parts/{ref}.dat and its aliases/subparts. Small on purpose:
 # extend only after reviewing origin, tooth plane, axis and nominal pitch.
@@ -30,6 +31,20 @@ GEARS = {
     "3649.dat": 40,
 }
 ROTATIONAL = {"axle", "axle_hole", "pin", "pin_hole"}
+# 4716.dat / s/4716s02.dat: local Z shaft, thread from -20 to +20,
+# nominal pitch radius 10 LDU, single start. Keep end stations conservative:
+# partial end threads do not establish a useful mesh. See docs/discovery-quality.md.
+WORMS = {"4716.dat": dict(starts=1, pitch_radius_ldu=10.0, thread_half_length_ldu=16.0)}
+WORM_WHEELS = {
+    "3647.dat",
+    "10928.dat",
+    "4019.dat",
+    "94925.dat",
+    "24505.dat",
+    "3648.dat",
+    "3648b.dat",
+    "3649.dat",
+}
 
 
 def _tolerances(distance, angle):
@@ -55,31 +70,43 @@ def axis_residual(a_position, a_axis, b_position, b_axis):
     )
 
 
-def gear_meshes(manifest, *, distance_tolerance=0.5, angle_tolerance=1.0):
-    """Detect coplanar external meshes among reviewed, unscaled gear parts."""
+def gear_meshes(
+    manifest, *, distance_tolerance=0.5, angle_tolerance=1.0, normalize=True
+):
+    """Coplanar external gears and finite perpendicular worm candidates."""
     _tolerances(distance_tolerance, angle_tolerance)
-    gears, unsupported = [], []
+    gears, worms, unsupported, placements = [], [], [], []
     for n in manifest["nodes"]:
         if n["kind"] != "part":
             continue
         ref = normalized(n["ref"])
-        if ref not in GEARS or n.get("embedded"):
-            if re.search(r"gear|worm|rack", n.get("description", ""), re.I):
+        if ref not in GEARS and ref not in WORMS or n.get("embedded"):
+            if re.search(r"\b(?:gears?|worm|rack)\b", n.get("description", ""), re.I):
                 unsupported.append(
                     dict(
                         id=n["id"],
                         ref=n["ref"],
-                        reason="No reviewed parallel-axis profile",
+                        reason="No reviewed gear/worm profile",
                     )
                 )
             continue
-        axes = [direction(n["world"], v) for v in ([1, 0, 0], [0, 1, 0], [0, 0, 1])]
-        if any(abs(length(a) - 1) > 0.003 for a in axes) or any(
-            abs(dot(a, b)) > 0.003 for a, b in combinations(axes, 2)
-        ):
+        world, placement = analysis_placement(n, normalize=normalize)
+        placements.append(placement)
+        if placement["status"] == "unsupported":
             unsupported.append(
                 dict(
                     id=n["id"], ref=n["ref"], reason="Scaled or sheared gear transform"
+                )
+            )
+            continue
+        if ref in WORMS:
+            worms.append(
+                dict(
+                    id=n["id"],
+                    ref=ref,
+                    center=point(world, [0, 0, 0]),
+                    axis=unit(direction(world, [0, 0, 1])),
+                    **WORMS[ref],
                 )
             )
             continue
@@ -89,11 +116,11 @@ def gear_meshes(manifest, *, distance_tolerance=0.5, angle_tolerance=1.0):
                 ref=n["ref"],
                 teeth=GEARS[ref],
                 pitch_radius_ldu=GEARS[ref] * 1.25,
-                center=point(n["world"], [0, 0, 0]),
-                axis=unit(axes[2]),
+                center=point(world, [0, 0, 0]),
+                axis=unit(direction(world, [0, 0, 1])),
             )
         )
-    if len(gears) > 1000:
+    if len(gears) + len(worms) > 1000:
         raise ValueError("Select a section with at most 1000 supported gears")
     meshes = []
     for a, b in combinations(gears, 2):
@@ -109,6 +136,7 @@ def gear_meshes(manifest, *, distance_tolerance=0.5, angle_tolerance=1.0):
                 dict(
                     a=a["id"],
                     b=b["id"],
+                    kind="gear_mesh",
                     status="candidate",
                     center_distance_ldu=residual["radial_offset_ldu"],
                     expected_distance_ldu=expected,
@@ -120,14 +148,54 @@ def gear_meshes(manifest, *, distance_tolerance=0.5, angle_tolerance=1.0):
                     ),
                 )
             )
+    for worm in worms:
+        for wheel in gears:
+            if normalized(wheel["ref"]) not in WORM_WHEELS:
+                continue
+            aa, ba = worm["axis"], wheel["axis"]
+            cosine = dot(aa, ba)
+            angle_error = math.degrees(math.asin(min(1.0, abs(cosine))))
+            if angle_error > angle_tolerance:
+                continue
+            d = sub(wheel["center"], worm["center"])
+            # Closest points on the two directed lines, at a + s*aa and b + t*ba.
+            denominator = 1 - cosine * cosine
+            s = (dot(d, aa) - cosine * dot(d, ba)) / denominator
+            t = (cosine * dot(d, aa) - dot(d, ba)) / denominator
+            distance = abs(dot(d, unit(cross(aa, ba))))
+            expected = worm["pitch_radius_ldu"] + wheel["pitch_radius_ldu"]
+            if (
+                abs(distance - expected) <= distance_tolerance
+                and abs(t) <= distance_tolerance
+                and abs(s) <= worm["thread_half_length_ldu"]
+            ):
+                meshes.append(
+                    dict(
+                        a=worm["id"],
+                        b=wheel["id"],
+                        kind="worm_mesh",
+                        status="candidate",
+                        center_distance_ldu=distance,
+                        expected_distance_ldu=expected,
+                        distance_error_ldu=abs(distance - expected),
+                        perpendicular_error_degrees=angle_error,
+                        worm_station_ldu=s,
+                        wheel_plane_error_ldu=abs(t),
+                        thread_half_length_ldu=worm["thread_half_length_ldu"],
+                        wheel_per_worm_magnitude=worm["starts"] / wheel["teeth"],
+                        direction_requires_review=True,
+                    )
+                )
     return dict(
         section=manifest["section"],
         coordinate_space=manifest["coordinate_space"],
         gears=gears,
+        worms=worms,
         meshes=meshes,
         unsupported=unsupported,
+        placements=placement_report(placements),
         tolerances=dict(distance_ldu=distance_tolerance, angle_degrees=angle_tolerance),
-        coverage="Candidates for coplanar external meshes only; b_per_a uses reported axes. Tooth phase, engagement, backlash and collision untested. Unsupported gears are listed, not inferred.",
+        coverage="Candidates for coplanar external gears and reviewed finite perpendicular worm/spur pairs. b_per_a uses reported axes for parallel meshes only; worm ratios are magnitudes, direction requires review. Tooth phase, engagement, backlash, backdriving and collision untested. Unsupported gears are listed, not inferred.",
     )
 
 
@@ -139,6 +207,7 @@ def coaxial(
     *,
     distance_tolerance=0.5,
     angle_tolerance=1.0,
+    normalize=True,
 ):
     """Closest pair of rotational connector axes for each selected part pair.
 
@@ -149,7 +218,9 @@ def coaxial(
     if not 2 <= len(instances) <= 100 or len(instances) != len(set(instances)):
         raise ValueError("Select 2..100 unique physical instance IDs")
     parts = parts_library(library, shadow)
-    reports = {i: connectors(manifest, i, parts=parts) for i in instances}
+    reports = {
+        i: connectors(manifest, i, parts=parts, normalize=normalize) for i in instances
+    }
     pairs = []
     for a, b in combinations(instances, 2):
         comparisons = []
@@ -209,6 +280,7 @@ def coaxial(
         )
     return dict(
         instances=instances,
+        placements=placement_report([r["placement"] for r in reports.values()]),
         pairs=pairs,
         coordinate_space=manifest["coordinate_space"],
         tolerances=dict(distance_ldu=distance_tolerance, angle_degrees=angle_tolerance),

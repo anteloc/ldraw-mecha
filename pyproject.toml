@@ -7,7 +7,7 @@ name = "ldraw-mechanisms"
 version = "0.1.0"
 description = "Agent tools for LDraw mechanism analysis and controllable Blender rigs"
 requires-python = ">=3.12"
-dependencies = ["pyldraw3==1.7.0"]
+dependencies = ["pyldraw3==1.7.0", "numpy>=2.0"]
 
 [project.optional-dependencies]
 test = ["pytest>=8,<10"]

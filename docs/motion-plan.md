@@ -97,3 +97,48 @@ GLB binding preserves existing extras and adds `mecha_id`, `mecha_source` and
 before tagging. Blender preflight also checks source-rest transforms. Rebuild
 and removal operate on the explicit root and restore each part's original
 parent, parent inverse and basis. Unrelated rigs remain separate.
+
+## Optional mechanism views and connection evidence
+
+The alternative workflow adds `mechanisms`, `connections` and informational
+`discovery` fields to the same version-1 plan. Older plans remain valid. The
+validator checks graph references, while motion continues to come exclusively
+from controls, signals, bodies, anchors and checks.
+
+`connections` maps stable connection IDs to `a` and `b` physical occurrence IDs,
+`kind` (`contact|coaxial|gear_mesh|worm_mesh|surface_contact|fixed|revolute|prismatic|ball|unknown`),
+`status` (`candidate|reviewed|rejected`), nonempty `evidence`, and optional
+`measurements`. Reviewed/rejected entries require a nonempty `review` note.
+These are evidence records, not executable joints. Rejecting an edge retains
+its evidence but hides it from diagrams. Connection graphs may contain loops.
+`worm_mesh` measurements include an unsigned `wheel_per_worm_magnitude`; direction
+must be reviewed before authoring signals. `surface_contact` is an agent-recorded
+geometric/visual hypothesis (for example a crank bearing on a beam). Discovery
+does not generate it from missing connector data. Neither kind executes motion.
+
+`mechanisms` maps names to `label`, `parts`, `bodies`, `inputs`, `outputs` and
+`notes`. The latter five are lists of strings. `parts` references physical IDs;
+`bodies` references canonical bodies and expands to their parts. Inputs/outputs
+use `part:ID`, `body:NAME` or `control:NAME`; part/body targets must belong to the
+view. All planned bodies must appear in a view. Views may overlap; body ownership
+remains unique. Shared occurrences and connections across view boundaries refer
+to the same global objects, including when displayed as external nodes.
+
+Views optionally declare `disposition: unresolved|planned|deferred|static`
+(default `unresolved`). All other dispositions require a nonempty `review`
+string. `planned` requires body references; `audit` also checks for a controlled
+body. It means motion has been declared, not tested or physically proven.
+`deferred` records a known omitted mechanism and why; `static` explains a reviewed
+nonmoving/false-positive candidate. A view may include fixed supports alongside
+moving parts. `audit PLAN --require-reviewed` fails for unresolved views, discovered
+mechanical parts removed from all views, or planned views without a control.
+It does not fail merely because an explicitly deferred mechanism remains.
+The report always lists those deferrals. A plan's `ready` flag remains about its
+declared motion; it does not assert every source mechanism was found or rigged.
+
+Mermaid part views derive typed edges from `connections`. Motion views derive
+joint frames, rod endpoints and control propagation from executable fields,
+avoiding duplicate joint definitions. Changing a body's axis changes its next
+diagram and Blender rig. A reviewed evidence edge alone does not change motion.
+The index records the complete plan digest for freshness checks. See
+[the alternative workflow](alternative-process.md) for preparation and authoring.

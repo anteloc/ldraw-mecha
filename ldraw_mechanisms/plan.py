@@ -263,6 +263,9 @@ def validate(plan, check_source=False):
             or check["tolerance"] <= 0
         ):
             raise ValueError("Invalid distance check")
+    from .mechanisms import validate as validate_mechanisms
+
+    validate_mechanisms(plan)
     if check_source:
         from .source import verify_source
 
@@ -355,6 +358,15 @@ def evaluate(plan, values=None):
         anchors=anchors,
         checks=checks,
     )
+
+
+def combined_sample(plan, fraction=0.4):
+    """Nonzero, mixed-sign values for every control, to exercise coupled motion."""
+    sample = {}
+    for i, (name, c) in enumerate(plan["controls"].items()):
+        value = c["min"] if i % 2 and c["min"] < 0 else c["max"]
+        sample[name] = fraction * value
+    return sample
 
 
 def sweep(plan, steps=17):
