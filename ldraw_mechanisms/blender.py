@@ -76,30 +76,29 @@ def bind(plan, root=None, *, require_ready=True):
         raise ValueError("GLB metadata does not match plan source and section")
     matches = {}
     for o in _objects(root):
-        instance = o.get("mecha_id")
-        if instance is None:
-            continue
-        if instance in matches:
-            raise ValueError(f"Duplicate imported instance {instance}")
-        matches[instance] = o
+        merged = json.loads(o["mecha_merged"]) if "mecha_merged" in o else []
+        for instance in [o["mecha_id"]] if "mecha_id" in o else merged:
+            if instance in matches:
+                raise ValueError(f"Duplicate imported instance {instance}")
+            matches[instance] = o
     missing = [n["id"] for n in source["nodes"] if n["id"] not in matches]
     if missing:
         raise ValueError(f"Missing imported instances: {missing[:8]}")
     # IDs are not enough: catch transforms changed since conversion or unrelated copies.
     inverse = root.matrix_world.inverted()
     rig_id = root.get("mecha_active_rig")
+    nodes = {n["id"]: n for n in source["nodes"]}
     for n in source["nodes"]:
         o = matches[n["id"]]
         if o.get("mecha_rest_rig") == rig_id and REST in o:
             local = Matrix(json.loads(o[REST])["root_matrix"])
-        elif rig_id and n["kind"] == "assembly":
-            local = inverse @ o.matrix_world
         else:
             local = inverse @ o.matrix_world
         actual = C_INV @ local @ C
+        expected = rest_world(nodes, n["id"], matches)
         if (
             max(
-                abs(actual[i][j] - n["world"][i][j]) / (0.5 if j == 3 else 0.003)
+                abs(actual[i][j] - expected[i][j]) / (0.5 if j == 3 else 0.003)
                 for i in range(3)
                 for j in range(4)
             )
@@ -107,6 +106,18 @@ def bind(plan, root=None, *, require_ready=True):
         ):
             raise ValueError(f"Imported rest transform differs from source: {n['id']}")
     return root, matches
+
+
+def rest_world(nodes, instance, mapping):
+    """Source rest frame of the object carrying an occurrence (nodes by ID).
+
+    Merged primitive leaves (`mecha_merged`) share one mesh placed at identity
+    under their parent assembly, so that object rests in the parent's frame.
+    """
+    n = nodes[instance]
+    if "mecha_merged" in mapping[instance]:
+        return nodes[n["parent"]]["world"]
+    return n["world"]
 
 
 def remove(root):
@@ -276,9 +287,19 @@ def build(plan, root=None):
                 con.lock_axis = "LOCK_Y"
         bpy.context.view_layer.update()
         root_inverse = root.matrix_world.inverted()
+        owners = {i: name for name, b in plan["bodies"].items() for i in b["instances"]}
+        for instance, o in mapping.items():
+            if "mecha_merged" in o and instance in owners:
+                shared = json.loads(o["mecha_merged"])
+                if {owners.get(i) for i in shared} != {owners[instance]}:
+                    raise ValueError(
+                        f"Merged primitive geometry must move as one body: {shared[0]}"
+                    )
         for name, b in plan["bodies"].items():
-            for instance in b["instances"]:
+            for instance in dict.fromkeys(b["instances"]):
                 o = mapping[instance]
+                if o.get("mecha_rest_rig") == rig_id:
+                    continue  # A merged mesh shared by several of this body's leaves.
                 rest = dict(
                     parent=o.parent["mecha_id"],
                     basis=[list(r) for r in o.matrix_basis],
@@ -343,11 +364,11 @@ def verify(rig, plan, samples=None, tolerance=0.002):
             errors = []
             for name, b in plan["bodies"].items():
                 for instance in b["instances"]:
-                    n = source_nodes[instance]
+                    world = rest_world(source_nodes, instance, rig["mapping"])
                     expected_m = (
                         C
                         @ Matrix(expected["transforms"][name])
-                        @ Matrix(n["world"])
+                        @ Matrix(world)
                         @ C_INV
                     )
                     actual = (
@@ -362,10 +383,11 @@ def verify(rig, plan, samples=None, tolerance=0.002):
                         )
                     )
             static_errors = []
-            for instance, n in source_nodes.items():
+            for instance in source_nodes:
                 if instance in moving:
                     continue
-                expected_m = C @ Matrix(n["world"]) @ C_INV
+                world = rest_world(source_nodes, instance, rig["mapping"])
+                expected_m = C @ Matrix(world) @ C_INV
                 actual = (
                     root_inverse
                     @ rig["mapping"][instance].evaluated_get(deps).matrix_world
@@ -416,6 +438,7 @@ def verify(rig, plan, samples=None, tolerance=0.002):
         passed=all(r["passed"] for r in reports),
         samples=reports,
         units="LDU",
+        tolerance=tolerance,
         coverage="Evaluated transforms, driver validity and declared link closure; no mesh collision test",
     )
 
@@ -499,18 +522,10 @@ def set_moving_only(rig, enabled=True):
     Collection exclusions and a hidden model root still take precedence.
     """
     root = rig["root"]
-    key = "mecha_visibility"
     if not enabled:
-        if key in root:
-            meshes = {o.name: o for o in root.children_recursive if o.type == "MESH"}
-            for name, state in json.loads(root[key]).items():
-                if name in meshes:
-                    o = meshes[name]
-                    o.hide_set(state[0])
-                    o.hide_render, o.hide_viewport = state[1:]
-            del root[key]
+        _restore_visibility(root)
         return
-    if key in root:
+    if VISIBILITY in root:
         return
     plan = json.loads(root["mecha_plan"])
     moving = {i for b in plan["bodies"].values() for i in b["instances"]}
@@ -518,13 +533,62 @@ def set_moving_only(rig, enabled=True):
     visible = {
         o for i in moving for o in _objects(rig["mapping"][i]) if o.type == "MESH"
     }
-    root[key] = json.dumps(
-        {o.name: [o.hide_get(), o.hide_render, o.hide_viewport] for o in meshes}
-    )
+    _show_only(root, meshes, visible)
+
+
+VISIBILITY = "mecha_visibility"
+
+
+def _show_only(root, meshes, visible):
+    """Snapshot prior visibility once (kept on later calls), then show `visible`."""
+    if VISIBILITY not in root:
+        root[VISIBILITY] = json.dumps(
+            {o.name: [o.hide_get(), o.hide_render, o.hide_viewport] for o in meshes}
+        )
     for o in meshes:
         o.hide_set(o not in visible)
         o.hide_render = o not in visible
         o.hide_viewport = False
+
+
+def _restore_visibility(root):
+    if VISIBILITY in root:
+        meshes = {o.name: o for o in root.children_recursive if o.type == "MESH"}
+        for name, state in json.loads(root[VISIBILITY]).items():
+            if name in meshes:
+                o = meshes[name]
+                o.hide_set(state[0])
+                o.hide_render, o.hide_viewport = state[1:]
+        del root[VISIBILITY]
+    if "mecha_hidden" in root:
+        del root["mecha_hidden"]
+
+
+def set_hidden(rig, instances, enabled=True):
+    """Reversible view hiding the meshes of chosen source occurrences (e.g. bodywork).
+
+    Parts owned by rig bodies are never hidden: asking to hide one is an error.
+    Shares the persisted snapshot of `set_moving_only`; disabling either view
+    restores the visibility from before the first of them was enabled.
+    """
+    root = rig["root"]
+    if not enabled:
+        _restore_visibility(root)
+        return
+    plan = json.loads(root["mecha_plan"])
+    moving = {i for b in plan["bodies"].values() for i in b["instances"]}
+    clash = sorted(set(instances) & moving)
+    if clash:
+        raise ValueError(f"Refusing to hide rigged parts: {clash[:8]}")
+    meshes = {o for o in root.children_recursive if o.type == "MESH"}
+    hidden = {
+        o for i in instances for o in _objects(rig["mapping"][i]) if o.type == "MESH"
+    }
+    shared = {o for i in moving for o in _objects(rig["mapping"][i]) if o.type == "MESH"}
+    if hidden & shared:
+        raise ValueError("A hidden occurrence shares geometry with a rigged part")
+    _show_only(root, meshes, meshes - hidden)
+    root["mecha_hidden"] = len(set(instances))
 
 
 @contextmanager

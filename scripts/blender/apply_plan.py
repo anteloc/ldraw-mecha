@@ -17,6 +17,9 @@ def main():
     parser.add_argument("--verify-existing", action="store_true")
     parser.add_argument("--animate", action="store_true")
     parser.add_argument(
+        "--tolerance", type=float, default=0.002, help="Matrix error bound (LDU)"
+    )
+    parser.add_argument(
         "--new-scene",
         action="store_true",
         help="Explicitly start an empty scene before importing",
@@ -32,6 +35,7 @@ def main():
         verify_existing=args.verify_existing,
         animate=args.animate,
         new_scene=args.new_scene,
+        tolerance=args.tolerance,
     )
     print("MECHA_RESULT", result["report"])
 

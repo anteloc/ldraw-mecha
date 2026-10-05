@@ -10,6 +10,7 @@ from dataclasses import fields, is_dataclass
 from functools import lru_cache
 import hashlib
 import os
+import re
 from pathlib import Path
 
 from ldraw import Parts, parse_model_result
@@ -104,6 +105,19 @@ def descriptions(path=None):
     }
 
 
+def embedded_alias(title, desc):
+    """Library part named by an embedded DAT whose own title is just its number.
+
+    Converted models often embed pre-release parts titled e.g. `18575`; without
+    a label they escape role and gear discovery. Annotated titles are kept.
+    """
+    token = (title or "").strip()
+    key = normalized(token + ".dat")
+    if re.fullmatch(r"[0-9]+[a-z]?[0-9]*", token, re.I) and key in desc:
+        return key
+    return None
+
+
 class Document:
     def __init__(self, path):
         self.path = Path(path).resolve()
@@ -185,6 +199,12 @@ class Document:
                     if child
                     else desc.get(ref, p.reference),
                 )
+                if node["embedded"]:
+                    alias = embedded_alias(child.description, desc)
+                    if alias:
+                        # Label only: embedded geometry is never substituted.
+                        node["library_alias"] = alias
+                        node["description"] = desc[alias]
                 nodes.append(node)
                 if assembly:
                     visit(child, node_id, node["world"], effective, ancestors + [key])

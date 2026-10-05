@@ -27,8 +27,14 @@ def apply_plan(
     verify_existing=False,
     animate=False,
     new_scene=False,
+    tolerance=0.002,
 ):
-    """Import/build or verify a rig; return {'rig': context, 'report': checks}."""
+    """Import/build or verify a rig; return {'rig': context, 'report': checks}.
+
+    `tolerance` (LDU, default 0.002) bounds matrix errors. Very large models
+    can exceed the default through float32 rounding of deep placements; pass a
+    larger value only with that measured reason, it is reported with the result.
+    """
     plan = _plan(plan)
     contract.validate(plan)
     if root is not None and glb:
@@ -61,7 +67,7 @@ def apply_plan(
         samples += [dict(spin_rl=0.7, spin_rr=-0.2, steering=0.4)]
     if len(plan["controls"]) > 1:
         samples.append(contract.combined_sample(plan))
-    result = adapter.verify(rig, plan, samples)
+    result = adapter.verify(rig, plan, samples, tolerance=tolerance)
     if report:
         contract.save(report, result)
     if not result["passed"]:
@@ -104,6 +110,13 @@ def apply_plan(
     return dict(rig=rig, report=result)
 
 
+def _ident(obj):
+    """Source ID of an imported object; merged primitive meshes report their first leaf."""
+    if "mecha_id" in obj:
+        return obj["mecha_id"]
+    return json.loads(obj["mecha_merged"])[0]
+
+
 def check_clearance(
     plan, *, rig=None, root=None, controls=None, steps=9, report=None, rebuild=False
 ):
@@ -137,12 +150,15 @@ def check_clearance(
     reference = importlib.util.module_from_spec(spec)
     spec.loader.exec_module(reference)
     owner = {i: name for name, b in plan["bodies"].items() for i in b["instances"]}
-    moving = [rig["mapping"][i] for i in owner]
-    static = [
-        rig["mapping"][n["id"]]
-        for n in plan["source"]["nodes"]
-        if n["kind"] == "part" and n["id"] not in owner
-    ]
+    # Merged primitive leaves share one object; test each object once.
+    moving = list(dict.fromkeys(rig["mapping"][i] for i in owner))
+    static = list(
+        dict.fromkeys(
+            rig["mapping"][n["id"]]
+            for n in plan["source"]["nodes"]
+            if n["kind"] == "part" and n["id"] not in owner
+        )
+    )
     deps = bpy.context.evaluated_depsgraph_get()
     cache = {}
     inv = adapter.C_INV @ rig["root"].matrix_world.inverted()
@@ -162,7 +178,7 @@ def check_clearance(
         matrix = inv @ obj.matrix_world
         axes = [matrix.to_3x3().col[i].normalized() for i in range(3)]
         result = (points, axes)
-        if obj["mecha_id"] not in owner:
+        if _ident(obj) not in owner:
             static_bounds[key] = result
         return result
 
@@ -184,7 +200,7 @@ def check_clearance(
         result = set()
         for a, b in pairs:
             a, b = bpy.data.objects[a], bpy.data.objects[b]
-            ids = tuple(sorted((a["mecha_id"], b["mecha_id"])))
+            ids = tuple(sorted((_ident(a), _ident(b))))
             if owner.get(ids[0]) == owner.get(ids[1]):
                 continue
             if has_positive_extent(a, b):

@@ -145,7 +145,10 @@ and disabling restores the snapshot even after saving/reopening. It shows parts
 assigned to rig bodies; excluded collections or a hidden root still take
 precedence. `with rigging.moving_only(rig): ...` restores visibility on exit.
 Rebuild/removal also restores visibility. `preview_plan.py --moving-only` renders
-this view. Notes-only updates accept only a list of strings; changes to bodies,
+this view. `rigging.set_hidden(rig, ids)` is the complementary view for hiding
+chosen static occurrences such as bodywork: it refuses rigged parts, shares the
+same persisted snapshot (`set_hidden(rig, [], False)` or `set_moving_only(rig,
+False)` restores it) and `preview_plan.py --hide FILE` applies a JSON `hidden` list. Notes-only updates accept only a list of strings; changes to bodies,
 signals, limits or other mechanical fields still require a rebuild and checks.
 
 Run source regressions with `.venv/bin/pytest -q`. Blender regression coverage:

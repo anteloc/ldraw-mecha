@@ -14,6 +14,7 @@ def main():
     p.add_argument("--plan", required=True)
     p.add_argument("--glb", required=True)
     p.add_argument("--report", required=True)
+    p.add_argument("--tolerance", type=float, default=0.002, help="Matrix error bound (LDU)")
     args = p.parse_args(sys.argv[sys.argv.index("--") + 1 :])
     plan = contract.load(args.plan)
     bpy.ops.import_scene.gltf(filepath=str(Path(args.glb).resolve()))
@@ -21,14 +22,15 @@ def main():
     before = {k: (o.parent, o.matrix_basis.copy()) for k, o in mapping.items()}
     rig = adapter.build(plan, root)
     sample = {name: c["max"] * 0.7 for name, c in plan["controls"].items()}
-    first = adapter.verify(rig, plan, [sample])
+    tol = args.tolerance
+    first = adapter.verify(rig, plan, [sample], tolerance=tol)
     adapter.set_controls(rig, **sample)
     counts = (len(bpy.data.objects), len(bpy.data.collections))
     rig = adapter.build(plan, root)
     assert counts == (len(bpy.data.objects), len(bpy.data.collections)), (
         "Rebuild leaked objects or collections"
     )
-    second = adapter.verify(rig, plan, [sample])
+    second = adapter.verify(rig, plan, [sample], tolerance=tol)
     bpy.ops.import_scene.gltf(filepath=str(Path(args.glb).resolve()))
     roots = [
         o
@@ -58,6 +60,7 @@ def main():
         restore_error=max(errors),
         rebuild_no_leaks=True,
         two_copies_isolated=True,
+        tolerance=tol,
     )
     # Nonzero defaults and values outside UI ranges must agree with evaluation.
     import copy
@@ -69,7 +72,9 @@ def main():
     if spec["default"] == 0:
         spec["default"] = spec["max"] / 3
     changed = adapter.build(altered, root)
-    defaults = adapter.verify(changed, altered, [{}, {control: spec["max"] * 2 + 1}])
+    defaults = adapter.verify(
+        changed, altered, [{}, {control: spec["max"] * 2 + 1}], tolerance=tol
+    )
     report["nonzero_default_and_clamp"] = defaults["passed"]
     report["passed"] = report["passed"] and defaults["passed"]
     contract.save(args.report, report)

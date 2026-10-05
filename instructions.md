@@ -99,7 +99,8 @@ the original source in place; use `extract` only when a standalone MPD is needed
 Run clearance before finalizing limitations. `blender.update_plan_notes` updates
 embedded prose without rebuilding; save the revised JSON/blend explicitly.
 `blender.set_moving_only` exposes rigged parts and restores prior visibility on
-disable; `preview_plan.py --moving-only` renders that view.
+disable; `preview_plan.py --moving-only` renders that view. `blender.set_hidden`
+hides chosen static occurrences (e.g. bodywork) the same reversible way.
 
 Motion angles in JSON/CLI are radians, all geometry and slide lengths are LDU.
 Discovery's explicitly named `angle_degrees` / `--angle-tolerance` uses degrees.

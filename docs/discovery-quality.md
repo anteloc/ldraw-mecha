@@ -32,6 +32,16 @@ Compare connector frames, transforms and surrounding parts before drawing a
 mechanical conclusion. Missing connectors can hide real mechanisms; contacts
 alone cannot distinguish a rigid axle coupling from a freely rotating bearing.
 
+## Embedded copies of library parts
+
+Converted models often embed pre-release parts as DATs titled only by their
+number (`0 18575`). The manifest now labels such an occurrence with the library
+title and `library_alias`, so role and gear discovery see it; its embedded
+geometry is still never replaced and `gear-meshes` lists it as unsupported with
+reason `Embedded copy of …`. In 42110 this exposed ten 20T gears, a clutch gear
+and the rotary catch that previously appeared nowhere in the report. Measure
+such meshes explicitly (library connector frames on the occurrence's own matrix).
+
 ## Rounded source matrices
 
 pyldraw3 1.7.0 rejects connector metadata under invalid scale/shear. A rotation

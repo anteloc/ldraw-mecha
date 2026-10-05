@@ -94,7 +94,16 @@ The root owns scale. Joint calculations never mix metres with LDU.
 
 GLB binding preserves existing extras and adds `mecha_id`, `mecha_source` and
 `mecha_section`. It verifies reference, parent occurrence, colour and transform
-before tagging. Blender preflight also checks source-rest transforms. Rebuild
+before tagging. Exact duplicate placements (same parent, reference, colour and
+matrix) are interchangeable and bind in source order; the conversion report lists
+them. Library primitives placed directly as leaves (`p/`, e.g. LDCad rope
+segments) are merged by the exporter into their parent's single mesh; those
+occurrences share that node, tagged `mecha_merged`, rest in the parent's frame
+and can only move as one body. Blender preflight also checks source-rest transforms.
+`verify` compares matrices to 0.002 LDU by default; very large models can exceed
+that through float32 rounding of deep placements (42110: up to 0.004 LDU at about
+0.4 m from the origin), so `rig`, `apply_plan.py` and `check_lifecycle.py` accept
+an explicit, reported `--tolerance`. Rebuild
 and removal operate on the explicit root and restore each part's original
 parent, parent inverse and basis. Unrelated rigs remain separate.
 

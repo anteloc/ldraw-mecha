@@ -136,6 +136,12 @@ def parser():
     q.add_argument("--blender", help="Blender executable, or BLENDER_BIN")
     q.add_argument("--report")
     q.add_argument("--animate", action="store_true")
+    q.add_argument(
+        "--tolerance",
+        type=float,
+        default=0.002,
+        help="Matrix error bound in LDU; raise only for measured float32 rounding",
+    )
     return p
 
 
@@ -347,6 +353,7 @@ def main(argv=None):
                 cmd += ["--report", str(Path(args.report).resolve())]
             if args.animate:
                 cmd += ["--animate"]
+            cmd += ["--tolerance", repr(args.tolerance)]
             run = subprocess.run(cmd, stdout=sys.stderr, stderr=sys.stderr)
             if run.returncode:
                 return 1

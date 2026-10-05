@@ -286,3 +286,34 @@ def test_bracket_not_classified_as_rack(tmp_path):
     from ldraw_mechanisms.analysis import inspect
 
     assert not inspect(p)["candidates"]
+
+
+def test_embedded_part_numbers_stay_visible_to_gear_discovery(tmp_path):
+    # Converted models embed pre-release parts titled only by their number.
+    p = tmp_path / "embedded.mpd"
+    p.write_text("""0 FILE main.ldr
+0 Main
+1 16 0 0 0 1 0 0 0 1 0 0 0 1 main - 18575.dat
+1 16 40 0 0 1 0 0 0 1 0 0 0 1 custom.dat
+0 FILE main - 18575.dat
+0 18575
+1 16 0 0 0 1 0 0 0 1 0 0 0 1 stud.dat
+0 FILE custom.dat
+0 Custom physical piece
+1 16 0 0 0 1 0 0 0 1 0 0 0 1 stud.dat
+""")
+    m = Document(p).manifest()
+    gear, custom = m["nodes"]
+    assert gear["embedded"] and gear["library_alias"] == "18575.dat"
+    assert gear["description"] == "Technic Gear 20 Tooth Double Bevel Reinforced"
+    assert custom["description"] == "Custom physical piece"
+    assert "library_alias" not in custom
+    report = gear_meshes(m)
+    assert not report["gears"]  # The library profile is never substituted.
+    assert report["unsupported"] == [
+        dict(
+            id="0",
+            ref="main - 18575.dat",
+            reason="Embedded copy of 18575.dat; profile not applied",
+        )
+    ]

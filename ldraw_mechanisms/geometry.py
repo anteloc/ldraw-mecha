@@ -82,11 +82,14 @@ def gear_meshes(
         ref = normalized(n["ref"])
         if ref not in GEARS and ref not in WORMS or n.get("embedded"):
             if re.search(r"\b(?:gears?|worm|rack)\b", n.get("description", ""), re.I):
+                alias = n.get("library_alias") if n.get("embedded") else None
                 unsupported.append(
                     dict(
                         id=n["id"],
                         ref=n["ref"],
-                        reason="No reviewed gear/worm profile",
+                        reason=f"Embedded copy of {alias}; profile not applied"
+                        if alias
+                        else "No reviewed gear/worm profile",
                     )
                 )
             continue

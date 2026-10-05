@@ -1,6 +1,7 @@
 """Render an evidence image of an existing rig without altering its saved blend."""
 
 import argparse
+import json
 from pathlib import Path
 import sys
 
@@ -17,11 +18,21 @@ def main():
     parser.add_argument("--set", action="append", default=[])
     parser.add_argument("--focus", help="Source occurrence ID to frame")
     parser.add_argument("--moving-only", action="store_true")
+    parser.add_argument(
+        "--hide", help="JSON file whose 'hidden' list names occurrences to hide (e.g. bodywork)"
+    )
+    parser.add_argument(
+        "--view", default="1.15,-1.5,1.05", help="Camera direction in Blender world axes"
+    )
+    parser.add_argument("--size", default="960x720", help="Resolution WIDTHxHEIGHT")
+    parser.add_argument("--samples", type=int, default=24, help="Cycles samples")
     args = parser.parse_args(sys.argv[sys.argv.index("--") + 1 :])
     plan = contract.load(args.plan)
     rig = adapter.context_from_scene(plan)
     if args.moving_only:
         adapter.set_moving_only(rig)
+    if args.hide:
+        adapter.set_hidden(rig, json.loads(Path(args.hide).read_text())["hidden"])
     included = set(rig["root"].children_recursive)
     for obj in bpy.context.scene.objects:
         if obj.type == "MESH" and obj not in included:
@@ -56,7 +67,8 @@ def main():
             "EvidenceCamera", bpy.data.cameras.new("EvidenceCamera")
         )
         scene.collection.objects.link(camera)
-        camera.location = center + Vector((1.15, -1.5, 1.05)) * size
+        view = Vector([float(v) for v in args.view.split(",")])
+        camera.location = center + view * size
         camera.rotation_euler = (
             (center - camera.location).to_track_quat("-Z", "Y").to_euler()
         )
@@ -85,9 +97,10 @@ def main():
         scene.world.node_tree.nodes["Background"].inputs["Strength"].default_value = 0.6
         scene.render.engine = "CYCLES"
         scene.cycles.device = "CPU"
-        scene.cycles.samples = 24
-        scene.render.resolution_x = 960
-        scene.render.resolution_y = 720
+        scene.cycles.samples = args.samples
+        width, height = (int(v) for v in args.size.split("x"))
+        scene.render.resolution_x = width
+        scene.render.resolution_y = height
         scene.render.resolution_percentage = 100
         scene.render.image_settings.file_format = "PNG"
         scene.render.filepath = str(Path(args.output).resolve())

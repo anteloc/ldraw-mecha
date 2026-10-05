@@ -131,6 +131,31 @@ def main():
     meshes = [o for o in rig["root"].children_recursive if o.type == "MESH"]
     assert visibility() == old_visibility, "Saved visibility did not restore"
     assert adapter.verify(rig, revised, [{control: 0.731}])["passed"]
+    # Hide chosen static occurrences (e.g. bodywork); rigged parts are refused.
+    owned = {i for b in revised["bodies"].values() for i in b["instances"]}
+    statics = [
+        n["id"]
+        for n in revised["source"]["nodes"]
+        if n["kind"] == "part" and n["id"] not in owned
+    ][:5]
+    try:
+        adapter.set_hidden(rig, [next(iter(owned))])
+    except ValueError:
+        pass
+    else:
+        raise AssertionError("A rigged part was hidden")
+    adapter.set_hidden(rig, statics)
+    hidden = {
+        o for i in statics for o in rig["mapping"][i].children_recursive if o.type == "MESH"
+    }
+    assert hidden and all(o.hide_render for o in hidden), "Static part still visible"
+    bpy.ops.wm.save_as_mainfile(filepath=str(out / "hidden.blend"))
+    bpy.ops.wm.open_mainfile(filepath=str(out / "hidden.blend"))
+    rig = adapter.context_from_scene(revised)
+    meshes = [o for o in rig["root"].children_recursive if o.type == "MESH"]
+    assert rig["root"]["mecha_hidden"] == len(statics), "Hidden set not persisted"
+    adapter.set_hidden(rig, [], enabled=False)
+    assert visibility() == old_visibility, "Hidden view did not restore after reopen"
     second = workflows.apply_plan(plan, glb=args.glb)["rig"]
     assert second["root"] != rig["root"], "Import bound to existing copy"
     assert rig["controller"].animation_data.action is not None
@@ -143,6 +168,7 @@ def main():
         nla_and_drivers_restored=True,
         exception_state_restored=True,
         visibility_restored_after_reopen=True,
+        hidden_view_restored_after_reopen=True,
         notes_only_update=True,
         duplicate_import_isolated=True,
         no_new_surface_crossings=clearance["no_new_surface_crossings"],
