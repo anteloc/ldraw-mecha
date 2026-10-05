@@ -5,7 +5,7 @@ from pathlib import Path
 import pytest
 
 from ldraw_mechanisms import plan
-from ldraw_mechanisms.math3d import inverse, point, signed_gear_ratio
+from ldraw_mechanisms.math3d import inverse, matmul, point, signed_gear_ratio
 from ldraw_mechanisms.recipes import create
 
 ROOT = Path(__file__).resolve().parents[1]
@@ -145,3 +145,65 @@ def test_combined_sample_is_nonzero_mixed_and_within_ranges():
     assert s == pytest.approx(dict(a=0.8, b=-0.4, c=1.2, d=-2.0))
     for name, c in p["controls"].items():
         assert c["min"] <= s[name] <= c["max"]
+
+
+def _spring_plan():
+    """928 hatch split into a hinge and a coil-spring child scaled along +Y."""
+    p = create(
+        ROOT / "data/models-annotated/928-1.mpd",
+        "928",
+        "928 - Space Ship - Cargo Hatchway.ldr",
+    )
+    hinge, spring = p["bodies"]["hatch"]["instances"]
+    p["bodies"]["hatch"]["instances"] = [hinge]
+    p["controls"]["squeeze"] = dict(
+        default=0.0, min=-10.0, max=10.0, unit="ldu", description="Spring length change"
+    )
+    p["signals"]["spring_k"] = dict(
+        expression="(40+d)/40", variables=dict(d="control:squeeze")
+    )
+    p["bodies"]["spring"] = dict(
+        instances=[spring],
+        kind="stretch",
+        origin=[5.0, 2.0, 3.0],
+        axis=[0.0, 1.0, 0.0],
+        signal="spring_k",
+        parent="hatch",
+    )
+    return p
+
+
+def test_stretch_scales_along_axis_about_origin():
+    p = _spring_plan()
+    assert plan.validate(p)["bodies"] == 2
+    e = plan.evaluate(p, dict(squeeze=-10.0))
+    m = e["transforms"]["spring"]
+    hinge = e["transforms"]["hatch"]
+    local = matmul(inverse(hinge), m)
+    # Points on the axis line scale about the origin; perpendicular offsets stay.
+    assert point(local, [5.0, 2.0 + 40.0, 3.0]) == pytest.approx([5.0, 2.0 + 30.0, 3.0])
+    assert point(local, [9.0, 2.0, 3.0]) == pytest.approx([9.0, 2.0, 3.0])
+    rest = plan.evaluate(p)["transforms"]
+    flat = sum(matmul(inverse(rest["hatch"]), rest["spring"]), [])
+    assert flat == pytest.approx([1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1])
+
+
+def test_stretch_cannot_parent_anchor_or_collapse():
+    p = _spring_plan()
+    q = copy.deepcopy(p)
+    q["bodies"]["hatch"]["parent"] = "spring"
+    q["bodies"]["spring"].pop("parent")
+    with pytest.raises(ValueError, match="stretched spring cannot parent"):
+        plan.validate(q)
+    q = copy.deepcopy(p)
+    q["anchors"]["seat"] = dict(body="spring", point=[0, 0, 0])
+    with pytest.raises(ValueError, match="stretched spring"):
+        plan.validate(q)
+    q = copy.deepcopy(p)
+    q["bodies"]["spring"].pop("signal")
+    with pytest.raises(ValueError, match="Missing motion signal"):
+        plan.validate(q)
+    q = copy.deepcopy(p)
+    q["signals"]["spring_k"]["expression"] = "d/10"
+    with pytest.raises(ValueError, match="positive"):
+        plan.evaluate(q, dict(squeeze=-5.0))

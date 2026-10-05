@@ -64,7 +64,7 @@ includes the exact tie-rod circle-intersection solution with a fixed source-pose
 branch; generic branch switching or arbitrary loop solving is not implemented.
 
 A body owns nonempty physical-leaf `instances` exactly once. `kind` is
-`revolute`, `prismatic`, `fixed`, or `rod`; every body has `origin` and nonzero
+`revolute`, `prismatic`, `fixed`, `rod` or `stretch`; every body has `origin` and nonzero
 `axis`, with optional nonparallel `x_hint`. The adapter aligns local Z to that
 axis. Revolute/prismatic bodies reference a signal; positive values rotate by
 the right-hand rule or translate along the axis. A `parent` body composes
@@ -79,6 +79,17 @@ anchor other bodies. Add a check for each length:
 ```json
 {"kind":"distance", "name":"tie_rod", "a":"rack_ball", "b":"knuckle_ball", "length":160, "tolerance":0.02}
 ```
+
+`stretch` is reserved for flexible coil springs, the one physical part that
+does deform. Its signal is a positive scale factor along the declared axis,
+about `origin` (for example `(free_length + extension) / free_length` with the
+origin on one spring seat); perpendicular dimensions are unchanged. Blender
+drives the pivot's local Z scale. A stretch body cannot parent other bodies or
+carry anchors, so no rigid part inherits the deformation. Put the spring under
+the part that carries its fixed seat and check the moving seat separately (for
+a shock absorber, against the piston rod). It does not relax the rod rule.
+Shortcut parts such as a complete shock absorber are one mesh; split them into
+their official sub-parts first (`scripts/split_shortcuts.py`).
 
 Verification checks expression domains, finite results, dependency cycles,
 double ownership, source freshness and declared closure. `sweep` varies one

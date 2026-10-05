@@ -239,8 +239,10 @@ def build(plan, root=None):
             pivot["mecha_body"] = name
             pivot.rotation_mode = "XYZ"
             pivot.empty_display_type = "ARROWS"
-            if b["kind"] in ("revolute", "prismatic"):
-                path = "rotation_euler" if b["kind"] == "revolute" else "location"
+            if b["kind"] in ("revolute", "prismatic", "stretch"):
+                path = dict(
+                    revolute="rotation_euler", prismatic="location", stretch="scale"
+                )[b["kind"]]
                 _driver(
                     pivot,
                     path,

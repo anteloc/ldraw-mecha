@@ -98,6 +98,9 @@ def delta(frame_matrix, kind, value):
     m = rotation_z(value) if kind == "revolute" else identity()
     if kind == "prismatic":
         m[2][3] = value
+    elif kind == "stretch":
+        # Coil springs only: scale along the declared axis about the origin.
+        m[2][2] = value
     return matmul(matmul(frame_matrix, m), inverse(frame_matrix))
 
 

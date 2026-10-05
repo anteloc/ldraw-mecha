@@ -207,14 +207,14 @@ def validate(plan, check_source=False):
     signal_order(plan)
     owned = set()
     for name, b in plan["bodies"].items():
-        if b["kind"] not in ("revolute", "prismatic", "fixed", "rod"):
+        if b["kind"] not in ("revolute", "prismatic", "fixed", "rod", "stretch"):
             raise ValueError(f"Unsupported joint kind: {name}")
         for key in ("origin", "axis"):
             if len(b[key]) != 3 or not all(finite(v) for v in b[key]):
                 raise ValueError(f"Invalid {key}: {name}")
         frame(b["origin"], b["axis"], b.get("x_hint"))
         if (
-            b["kind"] in ("revolute", "prismatic")
+            b["kind"] in ("revolute", "prismatic", "stretch")
             and b.get("signal") not in plan["signals"]
         ):
             raise ValueError(f"Missing motion signal: {name}")
@@ -244,11 +244,15 @@ def validate(plan, check_source=False):
     for name, b in plan["bodies"].items():
         if b.get("parent") and plan["bodies"][b["parent"]]["kind"] == "rod":
             raise ValueError(f"A rod cannot parent another body: {name}")
+        if b.get("parent") and plan["bodies"][b["parent"]]["kind"] == "stretch":
+            raise ValueError(f"A stretched spring cannot parent another body: {name}")
     for name, a in plan["anchors"].items():
         if a.get("body") not in plan["bodies"]:
             raise ValueError(f"Unknown anchor body: {name}")
         if plan["bodies"][a["body"]]["kind"] == "rod":
             raise ValueError("Rod anchors cannot depend on rods")
+        if plan["bodies"][a["body"]]["kind"] == "stretch":
+            raise ValueError("Anchors cannot ride on a stretched spring")
         if len(a["point"]) != 3 or not all(finite(v) for v in a["point"]):
             raise ValueError(f"Invalid anchor: {name}")
     for check in plan["checks"]:
@@ -318,6 +322,8 @@ def evaluate(plan, values=None):
         b = plan["bodies"][name]
         if b["kind"] == "rod":
             continue
+        if b["kind"] == "stretch" and not signals[b["signal"]] > 0:
+            raise ValueError(f"Spring scale must stay positive: {name}")
         f = frame(b["origin"], b["axis"], b.get("x_hint"))
         transforms[name] = matmul(
             transforms[b["parent"]] if b.get("parent") else identity(),

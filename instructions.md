@@ -3,6 +3,13 @@
 Build a controllable mechanism, check its propagation, and report the coverage
 of the evidence. Do not mistake a suggestive description for a working joint.
 
+For worked mechanisms, consult the [curated Defender references](docs/reference/42110/README.md):
+differentials, gearboxes, Cardan shafts, steering, cam followers, a winch and
+shift continuity. These pages were recovered from a selected working animation;
+they include measured identities, equations, state tables, diagrams and limits.
+Use matching examples without having to author new reference diagrams. Remeasure
+the target model and check its motion; a plausible animation is not physical proof.
+
 ## Alternative process on this branch
 
 Start with `./ldraw-mecha prepare MODEL --output output/STUDY` (add `--section`
@@ -28,8 +35,10 @@ motion. Regenerate diagrams with `diagrams PLAN`. After review, validation and
 sweeps, apply the plan to the same imported root; reconversion is needed only if
 source/selection changes. `plan ... --recipe ... --study PLAN` adopts a studied
 recipe while retaining evidence. Follow the [alternative workflow](docs/alternative-process.md)
-for exact CLI/API examples and limitations. Mermaid is generated output; edit
-the plan rather than maintaining a separate diagram by hand.
+for exact CLI/API examples and limitations. In this discovery workflow, Mermaid
+is generated output; edit the plan rather than maintaining a separate diagram
+by hand. The curated references above are a separate documentation collection
+assembled after reviewing a working rig; they are not executable plans.
 
 The commands below remain available for focused analysis and verification.
 
