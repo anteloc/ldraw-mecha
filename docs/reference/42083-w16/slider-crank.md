@@ -7,7 +7,7 @@ position and rod orientation; it does not simulate forces or cylinder contact.
 ## Mechanical loop
 
 ```mermaid
-flowchart LR
+flowchart TB
   F["Fixed engine frame"] ---|"bearing: fixed crank axis"| C["Crank with offset pin"]
   C ---|"revolute crank-pin joint"| R["Connecting rod"]
   R ---|"piston ball joint"| P["Piston"]
@@ -15,9 +15,9 @@ flowchart LR
 ```
 
 The rod belongs to neither the crank's rigid group nor the piston's rigid group.
-Both endpoints determine its pose. The two heads in the
-[central assembly](central-eight.md) can share a crank pin while needing
-different piston and rod poses.
+Both endpoints determine its pose. At one station of the
+[central assembly](central-eight.md), two cylinders' rods can share a crank pin
+while needing different piston and rod poses.
 
 ## Measurements and equation
 

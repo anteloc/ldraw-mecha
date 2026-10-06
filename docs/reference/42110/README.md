@@ -90,3 +90,7 @@ for the limits and the retained artifacts.
 This collection is useful for reproducing and adapting the implemented mechanisms.
 Suspension travel, hidden body openings, flexible-element motion and ratchet
 clicking are not completed reference rigs in this example.
+
+The separate [standalone suspension reference](../42110-suspension-standalone/README.md)
+now documents wheel travel, shock compression and their fixed mounting interfaces.
+Its motion belongs to a separate saved rig.

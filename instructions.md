@@ -3,9 +3,11 @@
 Build a controllable mechanism, check its propagation, and report the coverage
 of the evidence. Do not mistake a suggestive description for a working joint.
 
-For worked mechanisms, consult the [curated Defender references](docs/reference/42110/README.md):
-differentials, gearboxes, Cardan shafts, steering, cam followers, a winch and
-shift continuity. These pages were recovered from a selected working animation;
+For worked mechanisms, consult the [curated reference catalog](docs/reference/README.md):
+the Defender's differentials, gearboxes, Cardan shafts, steering, cam followers,
+winch and shift continuity, the W16's geared crankshafts, pistons and rods, and
+standalone suspension with wishbones, articulating shafts and telescoping shocks.
+These pages were recovered from selected working rigs;
 they include measured identities, equations, state tables, diagrams and limits.
 Use matching examples without having to author new reference diagrams. Remeasure
 the target model and check its motion; a plausible animation is not physical proof.

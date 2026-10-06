@@ -3,10 +3,10 @@
 Analyze LDraw models, describe their mechanisms in a JSON motion plan, and build
 controllable Blender rigs from metadata-preserving GLB files.
 
-The [curated 42110 Defender references](docs/reference/42110/README.md) explain ten
-mechanisms and animation behaviours from a selected working rig. Each page pairs
-fresh diagrams with part identities, motion relationships and the evidence's
-limits, so agents can adapt a subsystem without studying the entire vehicle.
+The [curated mechanism references](docs/reference/README.md) explain working
+subsystems from the 42110 Defender, 42083 W16 engine and standalone suspension.
+Each page pairs fresh diagrams with part identities, motion relationships and
+the evidence's limits, so agents can adapt a mechanism without studying the entire model.
 
 On the `alt-process` branch, start with a mechanism study before rigging:
 
