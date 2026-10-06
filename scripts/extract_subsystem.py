@@ -66,12 +66,12 @@ def number(v):
     return "0" if s in ("-0", "0") else s
 
 
-def extract(model, keep, output, name=None, title=None):
+def extract(model, keep, output, name=None, title=None, section=None):
     model, output = Path(model).resolve(), Path(output).resolve()
     if output == model:
         raise ValueError("Refusing to overwrite the source model")
     doc = source.Document(model)
-    manifest = doc.manifest()
+    manifest = doc.manifest(section)
     nodes = {n["id"]: n for n in manifest["nodes"]}
     order = sorted(dict.fromkeys(keep), key=lambda s: [int(x) for x in s.split("/")])
     missing = [i for i in order if i not in nodes]
@@ -152,8 +152,9 @@ def main():
     ap.add_argument("--output", required=True)
     ap.add_argument("--name", help="Main FILE name (default: output stem + .ldr)")
     ap.add_argument("--title", help="Description line of the main FILE (default: source description)")
+    ap.add_argument("--section", help="Select this FILE as the root (IDs and frame of that section, as in prepare --section)")
     a = ap.parse_args()
-    idmap, report = extract(a.model, keep_ids(a.keep), a.output, a.name, a.title)
+    idmap, report = extract(a.model, keep_ids(a.keep), a.output, a.name, a.title, a.section)
     path = Path(a.output).with_name("idmap.json")
     path.write_text(json.dumps(dict(idmap=idmap, report=report), indent=1) + "\n")
     print(json.dumps(dict(output=a.output, idmap=str(path), kept=report["kept"],

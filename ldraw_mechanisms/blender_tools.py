@@ -246,11 +246,11 @@ def check_clearance(
 def inspect_prepared(plan, *, glb=None, root=None):
     """Import/bind a draft for inspection without creating motion or saving.
 
-    Returned mapping uses exactly the occurrence IDs in the Mermaid diagrams.
+    Returned mapping uses exactly the source occurrence IDs in the plan.
     Existing scenes are additive; duplicate imports bind to the new root only.
     The root stores the study and its digest, including unresolved evidence.
     """
-    from .mechanisms import diagram, members
+    from .mechanisms import members
 
     plan = _plan(plan)
     contract.validate(plan)
@@ -275,20 +275,16 @@ def inspect_prepared(plan, *, glb=None, root=None):
         obj["mecha_mechanisms"] = json.dumps(
             [name for name, ids in membership.items() if instance in ids]
         )
-    # Plain text blocks are review artifacts, never scripts/handlers.
+    # Remove this root's obsolete generated diagram cache from older studies.
+    # Keep other roots and user text intact; inspection now stores evidence only.
     for text in list(bpy.data.texts):
         if text.get("mecha_study_root") == root.name:
             bpy.data.texts.remove(text)
-    for name in plan["mechanisms"]:
-        text = bpy.data.texts.new(f"MECHA_{root.name}_{name}.mmd")
-        text["mecha_study_root"] = root.name
-        text["mecha_plan_digest"] = contract.digest(plan)
-        text.write(diagram(plan, name))
     return dict(root=root, mapping=mapping)
 
 
 def select_mechanism(context, name):
-    """Select a diagram's physical instances and meshes in the current view layer."""
+    """Select a mechanism view's physical instances and meshes in the view layer."""
     from .mechanisms import members
 
     plan = json.loads(context["root"]["mecha_study"])

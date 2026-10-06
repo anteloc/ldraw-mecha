@@ -1,7 +1,10 @@
-# Faster mechanism studies
+# Analysis and Blender APIs
 
 Start with inventory and measured candidates. Keep the full manifest for plans;
 use compact reports for exploration. Source analysis runs without Blender.
+Follow the [workflow](workflow.md) for the complete process and the
+[reference catalog](reference/README.md) for worked mechanisms. These commands
+support focused investigation; creating diagrams is optional.
 
 ```sh
 # Offline FTS5/BM25 is the default, using the existing read-only SQLite indexes.

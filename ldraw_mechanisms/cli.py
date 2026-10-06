@@ -97,7 +97,8 @@ def parser():
     q.add_argument("--database")
     q.add_argument("--output")
     q = s.add_parser(
-        "prepare", help="Create candidate diagrams before optional GLB conversion"
+        "prepare",
+        help="Collect source identities and evidence, then optionally convert to GLB",
     )
     q.add_argument("model")
     q.add_argument("--section")
@@ -109,7 +110,9 @@ def parser():
         "--plan",
         help="Optional existing motion plan with exactly matching source identities",
     )
-    q = s.add_parser("diagrams", help="Regenerate Mermaid views from the plan JSON")
+    q = s.add_parser(
+        "diagrams", help="Export optional diagnostic Mermaid views from the plan JSON"
+    )
     q.add_argument("plan")
     q.add_argument("--output", help="Directory; defaults to diagrams beside the plan")
     q.add_argument("--view", choices=["auto", "connections", "motion"], default="auto")
@@ -395,8 +398,9 @@ def main(argv=None):
                 json.dumps(
                     dict(
                         plan=result.get("plan", getattr(args, "plan", None)),
-                        diagrams=result.get(
-                            "directory", result.get("diagrams", {}).get("directory")
+                        **(
+                            {"diagrams": result["directory"]}
+                            if command == "diagrams" else {}
                         ),
                         glb=result.get("glb"),
                         contacts=contact_report.get("summary", contact_report)
@@ -404,7 +408,9 @@ def main(argv=None):
                         else contact_report,
                         audit=result["audit"]["summary"],
                         warnings=result["audit"]["warnings"],
-                        details="Full reports in preparation.json / diagrams/index.json",
+                        details=str(Path(result["plan"]).with_name("preparation.json"))
+                        if command == "prepare"
+                        else str(Path(result["directory"]) / "index.json"),
                     ),
                     indent=2,
                 )

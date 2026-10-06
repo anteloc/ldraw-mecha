@@ -1,8 +1,9 @@
-"""Prepare once: source -> connection hypotheses -> diagrams -> optional GLB.
+"""Prepare once: source identities, bounded evidence and optional GLB.
 
 No Blender dependency. Discovery has explicit budgets and never invents rigid
 bodies from scene parenting. Agent corrections live in the plan JSON; rerunning
-prepare refuses to replace it. Use diagrams to refresh views after edits.
+prepare refuses to replace it. Diagnostic diagram export is an explicit command;
+curated references are written separately after reviewing a working rig.
 """
 
 from copy import deepcopy
@@ -285,7 +286,7 @@ def prepare(
     out = Path(output).resolve()
     if out.exists() and any(out.iterdir()):
         raise ValueError(
-            "Study directory is not empty; edit its plan and run diagrams, or choose a new output directory"
+            "Study directory is not empty; edit and validate its plan, or choose a new output directory"
         )
     manifest = Document(path).manifest(section)
     study = contract.draft(manifest)
@@ -295,10 +296,8 @@ def prepare(
     contract.validate(study, check_source=True)
     # Persist inspectable work BEFORE conversion, even if the converter fails.
     contract.save(out / "plan.json", study)
-    diagrams = mechanisms.write_diagrams(study, out / "diagrams")
     report = dict(
         plan=str(out / "plan.json"),
-        diagrams=diagrams,
         status=study["status"],
         glb=None,
         discovery=study["discovery"],

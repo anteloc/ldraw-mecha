@@ -1,7 +1,8 @@
 """Portable mechanism views of a motion plan (standard library only).
 
 One JSON document owns source identities, candidate connections and executable
-motion. Mermaid is derived output. A mechanism is a view, not a rigid body:
+motion. Optional Mermaid exports are diagnostic views, not curated references.
+A mechanism is a view, not a rigid body:
 parts may appear in several views, but body ownership stays unique in plan.py.
 """
 
@@ -37,7 +38,7 @@ def members(plan, mechanism):
 
 def validate(plan):
     if "mechanisms" not in plan and "connections" not in plan:
-        return  # Version-1 plans made before this workflow remain valid.
+        return  # Evidence views are optional in the motion contract.
     parts = {n["id"] for n in plan["source"]["nodes"] if n["kind"] == "part"}
     mechanisms, connections = plan.get("mechanisms"), plan.get("connections")
     if not isinstance(mechanisms, dict) or not isinstance(connections, dict):
@@ -371,7 +372,9 @@ def write_diagrams(plan, directory, *, view="auto", mechanism=None):
     result["audit"] = audit(plan)
     index_path.write_text(json.dumps(result, indent=2) + "\n")
     lines = [
-        "# Mechanisms",
+        "# Diagnostic mechanism views",
+        "",
+        "Optional export of recorded evidence and motion. Signal equations and unrecorded couplings are not reconstructed here; these are not curated mechanism references.",
         "",
         f"Plan digest: `{result['plan_digest']}`",
         "",

@@ -1,139 +1,110 @@
 # Agent entry point
 
-Build a controllable mechanism, check its propagation, and report the coverage
-of the evidence. Do not mistake a suggestive description for a working joint.
+Build controllable mechanisms, check their propagation, and report exactly what
+was implemented and tested. The workflow is **reference → study → rig and animate
+→ verify → visual review**. Selected successful results can then become new
+references. See [the workflow](docs/workflow.md) for commands and Python examples.
 
-For worked mechanisms, consult the [curated reference catalog](docs/reference/README.md):
-the Defender's differentials, gearboxes, Cardan shafts, steering, cam followers,
-winch and shift continuity, the W16's geared crankshafts, pistons and rods, and
-standalone suspension with wishbones, articulating shafts and telescoping shocks.
-These pages were recovered from selected working rigs;
-they include measured identities, equations, state tables, diagrams and limits.
-Use matching examples without having to author new reference diagrams. Remeasure
-the target model and check its motion; a plausible animation is not physical proof.
+## Rigging and animation
 
-## Alternative process on this branch
+1. Read the [curated reference catalog](docs/reference/README.md) for matching
+   mechanisms. Reuse its reasoning, equations and checks, but remeasure the target
+   model. Reference part IDs, axis signs and motion ranges belong to that example.
+   Normal rigging tasks do not require creating diagrams.
+2. Establish scope: whole model or selected subsystem; study in place with
+   `--section`, or use `extract` when a standalone MPD is requested. Inventory
+   mechanisms using source evidence and visual inspection. Use
+   `submodels MODEL --match engine --format table` to compare assemblies and
+   `inspect MODEL --format table --mechanical-only` for positions and transformed
+   part-local axes. Keep the surrounding supports and interfaces in view.
+3. Run `./ldraw-mecha prepare MODEL --output output/STUDY`, adding `--section`
+   as needed. It saves source identities, candidate evidence, a draft plan and
+   a bound GLB. `--no-glb` keeps preparation source-only. Read `preparation.json`:
+   contact kinds, axle coverage, placement corrections, unsupported geometry and
+   skipped searches. The default contact budget is 300 parts; raise it up to 2000
+   or inspect bounded groups/sections for larger models. Zero axle coverage in a
+   drivetrain requires investigation. See [discovery quality](docs/discovery-quality.md).
+4. Inspect the GLB early with `blender_tools.inspect_prepared`; use
+   `select_mechanism` to select a named view's parts. Keep stable occurrence IDs
+   from the plan; Blender display names and scene parenting do not define joints.
+   Provisional views may need merging or splitting and are not rigid bodies.
+   Record visually discovered mechanisms immediately with their input, output
+   and unresolved link. Retain findings until planned, explicitly deferred or
+   reviewed as static. Preserve evidence when adopting an existing recipe with
+   `plan MODEL --recipe NAME --study PLAN --output PLAN`.
+5. Author motion in that plan using the [motion contract](docs/motion-plan.md):
+   rigid groups, axes, origins, limits, dependency equations, anchors and checks.
+   `mechanisms.add_joint` helps with a measured hinge or slider. Record coupling
+   meaning, sign conventions, conditions and approximations in the plan's notes
+   and evidence; keep reusable equations/checks in the plan where supported.
+   A script or render alone must not be the only record of a mechanical decision.
+   Keep `source` untouched and include every moving piece, such as rim and tyre.
+6. Run `validate`, `sweep`, and `evaluate --set NAME=VALUE` with meaningful nonzero
+   and asymmetric inputs. Check propagation, ratios, link lengths and relevant
+   selector states. Set `status` to `ready` only once the declared motion is
+   decided. Run `audit PLAN` before rigging and delivery; reconcile views and use
+   `audit PLAN --require-reviewed` to check dispositions. An explicit deferral can
+   pass that scope check; it still belongs in the delivery's omitted-work list.
+7. Apply the plan to the inspected root, or use the background `rig` CLI to build
+   and save without replacing an open scene. Reuse the bound GLB unless the
+   source/selection changes. Add demonstration animation and expose the moving
+   mechanisms as requested. Callable `apply_plan` and `check_clearance` avoid
+   fake command-line arguments in live sessions.
+8. Reopen the saved file, verify persistence, and inspect/render several poses,
+   including limits. Run appropriate clearance checks before writing final
+   limitations. Deliver the exact plan, blend, animation, reports and previews
+   used for review, with unresolved/deferred mechanisms and untested assumptions.
+   Equation/transform checks and visual plausibility do not prove physical
+   feasibility or collision-free motion. See [validation](docs/validation.md).
 
-Start with `./ldraw-mecha prepare MODEL --output output/STUDY` (add `--section`
-when appropriate). It writes a draft plan and one Mermaid diagram per provisional
-mechanism view **before** converting to GLB. `--no-glb` keeps it source-only.
-Read `diagrams/README.md` and the explicit discovery gaps in `preparation.json`.
-Check `contacts.summary` (counts, kinds and axle coverage), skipped searches and
-placement warnings before authoring motion. For large models set
-`--contact-limit 2000` or study sections; successful command execution alone is
-not a discovery gate. Zero axle coverage in a shaft-driven assembly requires
-investigation. See [discovery quality](docs/discovery-quality.md).
-Inspect the imported model with `blender_tools.inspect_prepared`, select diagram
-members with `select_mechanism`, and correct the JSON. Mechanism boundaries are
-hypotheses, not rigid-body groups; shared parts retain their source identities.
-Add any mechanism found visually to the JSON immediately, including its input,
-output and the unresolved link. Keep it visible until it is planned, explicitly
-deferred, or reviewed as static. Run `audit PLAN` before rigging and delivery;
-`audit PLAN --require-reviewed` checks that every recorded view has a disposition.
-That check covers bookkeeping, not mechanical completeness or physical proof.
+## Curating selected results
 
-Use the existing motion contract or `mechanisms.add_joint` to declare measured
-motion. Regenerate diagrams with `diagrams PLAN`. After review, validation and
-sweeps, apply the plan to the same imported root; reconversion is needed only if
-source/selection changes. `plan ... --recipe ... --study PLAN` adopts a studied
-recipe while retaining evidence. Follow the [alternative workflow](docs/alternative-process.md)
-for exact CLI/API examples and limitations. In this discovery workflow, Mermaid
-is generated output; edit the plan rather than maintaining a separate diagram
-by hand. The curated references above are a separate documentation collection
-assembled after reviewing a working rig; they are not executable plans.
+The user visually reviews animations and selects promising outputs. When asked
+to document one, reconstruct each subsystem from the source, plan, builder,
+checks and saved Blender result. Write one Markdown reference per subsystem with
+fresh diagrams, exact identities, equations, evidence and limitations; follow
+[the curation guide](docs/reference/curation.md). Update the catalog so subsequent
+agents can find the example. Selection establishes usefulness, not mechanical
+proof; qualify or exclude unsupported relationships.
 
-The commands below remain available for focused analysis and verification.
+Automatic `diagrams PLAN` exports remain optional diagnostics of recorded plan
+fields. They do not reconstruct signal maths or unrecorded couplings and are not
+reference documents. Neither preparation nor Blender inspection generates them.
+Old generated diagrams should not be used as authority for curation.
 
-1. Start with `./ldraw-mecha submodels MODEL --match engine --format table`
-   to compare recursive part counts and parent sections. Rank complexity by
-   pistons/gear coupling, then size; do not trust names alone. Run
-   `./ldraw-mecha inspect MODEL --format table --mechanical-only` for positions
-   and transformed part-local axes. Save the full manifest with
-   `./ldraw-mecha inspect MODEL --output output/study/inspection.json`. Read
-   the counts, candidate list, source diagnostics and exact occurrence IDs. Use
-   `--section 'exact FILE name'` to study a smaller assembly; the selection has
-   its own root coordinate frame and IDs. Keep the surrounding parent in view.
-2. Find precedents with `search submodels 'steering rack' --engine fts --limit 5`
-   (the offline default), or use explicit `--engine jev` for semantic reranking.
-   Jev checks availability with one small billable inference before a batch;
-   `jev-status` runs just that check. HTTP 402 stops before reranking; continue
-   with FTS. No balance endpoint is assumed. Jev requires its executable
-   and a nonempty `TYPESAFE_API_KEY`; never print credentials. Search scores rank
-   relevance, not mechanical fit. Source identities are in `model`, `section`
-   and `part`, rather than unstable database view row numbers.
-3. Inspect connector frames with `connectors MODEL --instance ID`. Ask about a
-   bounded group with `contacts MODEL --instances ID1 ID2 ...`. For the 106 roof,
-   use `--instances 0/39 0/40`; pyldraw3 confirms the coincident finger hinge.
-   Connector `position`/`frame` are part-local; `world_position`/`world_axis`
-   are in the selected model. Contacts return transformed connector frames.
-   Axis convention is local Y for LDCad metadata; body joint axes are explicit.
-   `gear-meshes MODEL` reports parallel-axis and supported worm/spur candidates;
-   `coaxial MODEL --instances ID1 ID2` reports rotational connector-line evidence
-   even for arbitrary source rotations. Residual tolerances are LDU and explicitly
-   named degrees. Coaxial lines alone do not establish contact or coupling.
-   Rounded near-rigid placement frames are orthonormalized for analysis only;
-   source matrices remain untouched. `--raw-transforms` permits comparison on
-   connector/contact/coaxial/gear commands. Review reported substantial scale,
-   shear and metadata gaps. Worm ratios are unsigned until direction is measured.
-   No connector edge does not rule out a lever bearing on a beam, a cam, a stop
-   or friction. Record these as unresolved surface-contact hypotheses.
-4. Write a plan with `plan MODEL --output output/study/plan.json`, or use a
-   studied `--recipe 106|928|42000|42083|10265`. A draft deliberately cannot rig a scene.
-   Specify rigid groups, axes, origins, limits and equations following the
-   [contract](docs/motion-plan.md). Keep `source` untouched. Use exact leaf IDs,
-   including each rim and tyre, rather than Blender display names. Record
-   evidence and missing parent interfaces in `notes`. Track each unresolved
-   mechanism as a view with a disposition; a sentence buried in global notes
-   does not account for omitted work. Include unresolved/deferred items in delivery.
-5. Run `validate` and `sweep`. Check the linkage lengths and transmission ratios
-   with meaningful nonzero and asymmetric inputs using `evaluate --set NAME=VALUE`.
-   Set `status` to `ready` only after the mechanical decisions are complete.
-6. `convert MODEL --plan PLAN --output model.glb` uses the existing exporter and
-   binds source IDs to GLB extras. Missing or ambiguous bindings fail. Do not
-   substitute an unbound GLB or infer identity from Blender's `.001` names.
-7. `rig PLAN --glb model.glb --save rigged.blend --report blender-check.json`
-   imports, builds, sweeps controls, checks evaluated transforms and saves only
-   after success. It uses a separate background Blender process. Existing open
-   scenes need not be replaced. Use `ldraw_mechanisms.blender.build(plan, root)`
-   inside Blender for an explicit imported root. `remove(root)` restores it.
-   The callable `blender_tools.apply_plan` and `check_clearance` APIs avoid fake
-   argv in live sessions. Sampling restores controller animation and pose.
-8. Reopen the file and verify persistence; render or inspect several poses,
-   particularly limits. Use `scripts/blender/apply_plan.py --verify-existing`
-   and `preview_plan.py` with Blender's usual `--` script argument separator.
-   Report any clearance checks that remain unperformed. Deliver the exact plan,
-   blend, reports and preview used for review.
+## Evidence and operating rules
 
-See [discovery and Blender workflows](docs/discovery-and-blender.md) for copyable
-commands, compact filters, `extract`, and live Python APIs. `--section` studies
-the original source in place; use `extract` only when a standalone MPD is needed.
-Run clearance before finalizing limitations. `blender.update_plan_notes` updates
-embedded prose without rebuilding; save the revised JSON/blend explicitly.
-`blender.set_moving_only` exposes rigged parts and restores prior visibility on
-disable; `preview_plan.py --moving-only` renders that view. `blender.set_hidden`
-hides chosen static occurrences (e.g. bodywork) the same reversible way.
+- Use offline `search submodels 'steering rack' --engine fts --limit 5` for
+  precedents. Explicit `--engine jev` enables semantic reranking; its small
+  billable availability check stops a batch on HTTP 402. `jev-status` runs that
+  check alone. Never print credentials. Search relevance does not prove fit.
+- Use `connectors MODEL --instance ID`, bounded `contacts MODEL --instances ...`,
+  `gear-meshes MODEL` and `coaxial MODEL --instances ...` for measured candidates.
+  Connector `position`/`frame` are part-local; `world_position`/`world_axis` are
+  in the selected model. LDCad uses local Y; body joint axes are explicit.
+  Rounded near-rigid frames are orthonormalized for analysis only; source
+  matrices remain intact. `--raw-transforms` permits comparison. Review scale,
+  shear, metadata gaps and unsupported gears. Coaxial lines alone do not prove
+  contact or coupling; worm direction needs measurement. Cams, surface-bearing
+  levers, friction and stops can exist without connector edges.
+- Motion angles are radians; geometry and slide lengths are LDU. Discovery's
+  explicitly named `angle_degrees` / `--angle-tolerance` uses degrees. Motion
+  values are source-pose offsets. Body parenting composes motion, so wheel spin
+  follows its steering knuckle or suspension carrier.
+- Use pyldraw3 for parsing/connectors and the supplied mpd2glb wrapper for
+  conversion. Identity binding must succeed; do not substitute an unbound GLB
+  or infer identity from `.001` names. Preserve source attribution and original
+  Blender reference scripts. Keep generated artifacts under `output/`.
+- Prefer background Blender for builds and previews. Live inspection is additive;
+  pass an explicit root when copies exist. `remove(root)` restores the source
+  pose. `set_moving_only` and `set_hidden` provide reversible visibility.
+  `update_plan_notes` updates embedded prose without rebuilding; save the updated
+  JSON/blend explicitly. Mechanical changes still require rebuild and checks.
+- Use `--output` for large reports. Exit codes are 0 for successful operation,
+  1 for failed checks, 2 for input/execution errors. Successful analysis is
+  informational; missing contacts never establish freedom to move.
 
-Motion angles in JSON/CLI are radians, all geometry and slide lengths are LDU.
-Discovery's explicitly named `angle_degrees` / `--angle-tolerance` uses degrees.
-Blender's angle UI displays the chosen angle unit, normally degrees. Motion
-values are offsets from the source pose. A body's `parent` composes its motion
-with the parent's, so front wheel spin naturally follows steering knuckles.
-
-The existing 42000 reference was studied through Blender MCP without changing
-its scene. Its motion definitions inform the portable recipe. Its speed/path
-integration and collision helper remain available in `scripts/blender`.
-
-Use `--output` for large reports; stdout returns a short artifact pointer.
-Commands return 0 on successful operation, 1 on failed checks and 2 on input or
-execution errors. A successful inspect/search is informational. Missing connector
-coverage or zero contacts never proves that parts are free or disconnected.
-The supplied categories are descriptive/dimensional hints; inspect the actual
-library and shadow frames before choosing an axis or pivot.
-
-Code map: `source.py` owns parsing/identities; `analysis.py` connector evidence;
-`discovery.py` compact reports/inventory; `geometry.py` mesh/coaxial candidates;
-`search.py` discovery; `plan.py` validation/evaluation; `recipes.py` studied
-examples; `glb.py` conversion/binding; `blender.py` scene construction/state;
-`blender_tools.py` callable import/verification/clearance workflows. The
-plan/equation layer imports neither bpy nor pyldraw3. Tests run with
-`.venv/bin/pytest -q`; Blender integration scripts live in `scripts/blender`.
+See the [analysis and Blender API guide](docs/discovery-and-blender.md) for focused
+commands and live APIs, and [architecture](docs/architecture.md) for the code map.
+Analysis stays independent of Blender. Run `.venv/bin/pytest -q` for pure tests;
+adapter changes also require background Blender, reopening and lifecycle checks.

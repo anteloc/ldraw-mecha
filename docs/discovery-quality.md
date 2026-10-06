@@ -12,8 +12,8 @@ command nor a dense connection graph establishes that every mechanism was found.
   --output output/new-10265-study/audit.json
 ```
 
-Preparation prints a compact summary; full evidence is in `preparation.json`,
-`plan.json` and `diagrams/index.json`. Read these before choosing rigid bodies:
+Preparation prints a compact summary; full evidence is in `preparation.json`
+and `plan.json`. Read these before choosing rigid bodies:
 
 - Contact counts by kind, tested parts and contacted parts.
 - Straight axle count, how many have axle-in-hole evidence, and the missing IDs.
@@ -141,7 +141,6 @@ Regrouping is allowed, but keep all known candidates accounted for.
 
 ```sh
 ./ldraw-mecha audit output/new-10265-study/plan.json --require-reviewed
-./ldraw-mecha diagrams output/new-10265-study/plan.json
 ```
 
 The strict audit exits 1 for unresolved views, unaccounted discovered mechanical

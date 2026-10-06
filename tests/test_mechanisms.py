@@ -1,4 +1,4 @@
-"""The diagram workflow shares identities and motion, not a parallel model."""
+"""Preparation and optional diagnostic views share source identities and motion."""
 
 from copy import deepcopy
 import json
@@ -164,7 +164,7 @@ def test_source_text_cannot_inject_mermaid(study):
     assert "#34;" in text and "#60;" in text
 
 
-def test_prepare_persists_diagrams_before_converter_failure(
+def test_prepare_persists_evidence_without_diagrams_before_converter_failure(
     source, tmp_path, monkeypatch
 ):
     from ldraw_mechanisms import glb
@@ -175,9 +175,12 @@ def test_prepare_persists_diagrams_before_converter_failure(
 
     def fail(manifest, target, library):
         assert (out / "plan.json").is_file()
-        assert (out / "diagrams/index.json").is_file()
-        assert list((out / "diagrams").glob("*.mmd"))
-        assert json.loads((out / "preparation.json").read_text())["glb"] is None
+        assert not (out / "diagrams").exists()
+        report = json.loads((out / "preparation.json").read_text())
+        saved = json.loads((out / "plan.json").read_text())
+        assert report["glb"] is None
+        assert report["discovery"] == saved["discovery"]
+        assert saved["mechanisms"]  # Candidate evidence survives conversion failure.
         raise ValueError("converter unavailable")
 
     monkeypatch.setattr(glb, "convert", fail)
@@ -196,6 +199,8 @@ def test_source_only_cli_and_no_library(source, tmp_path, monkeypatch, capsys):
     assert main(["prepare", str(source), "--output", str(out), "--no-glb"]) == 0
     report = json.loads(capsys.readouterr().out)
     assert report["glb"] is None
+    assert "diagrams" not in report
+    assert not (out / "diagrams").exists()
     assert not (out / "model.glb").exists()
     assert "not run" in report["contacts"]
     assert "contacts_not_run" in {w["code"] for w in report["warnings"]}
@@ -204,6 +209,9 @@ def test_source_only_cli_and_no_library(source, tmp_path, monkeypatch, capsys):
         in json.loads((out / "preparation.json").read_text())["discovery"]["contacts"]
     )
     assert main(["diagrams", str(out / "plan.json")]) == 0
+    exported = json.loads(capsys.readouterr().out)
+    assert exported["diagrams"] == str(out / "diagrams")
+    assert list((out / "diagrams").glob("*.mmd"))
 
 
 def test_contact_budget_is_explicit(source):

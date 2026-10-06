@@ -4,6 +4,9 @@ Start with a mechanism that matches the target assembly, then read that page's
 identity map, motion relationships and qualifications. These references were
 recovered from working rigs selected by the user. They are documentation for
 reuse; agents do not have to generate their own reference diagrams to use them.
+The [workflow](../workflow.md) uses these examples during study and rigging.
+When the user selects another successful result, follow the
+[curation guide](curation.md) to add subsystem pages and evidence.
 
 | Mechanism | Example |
 | --- | --- |

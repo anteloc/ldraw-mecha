@@ -4,7 +4,7 @@ blender --background --python scripts/blender/animate_10265_showcase.py -- \
   --blend output/10265-v2/rigged.blend --plan output/10265-v2/plan.json \
   --save output/10265-v2/animated.blend
 
-Unlike the earlier one-off clip, the steering chain IS animated here: the wheel
+This clip targets the studied 10265 CLI recipe. The steering wheel
 drives the universal joint, the 16T/40T mesh, the crank, both steering links and
 both knuckles, so the front wheels actually turn. The declared travel is small
 because the source packs the crank tightly; see the plan notes and clearance

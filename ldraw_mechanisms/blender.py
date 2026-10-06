@@ -280,6 +280,11 @@ def build(plan, root=None):
                 offset = reference.constraints.new("COPY_LOCATION")
                 offset.target = anchors[b["start"]]
                 offset.use_offset = True
+                # Add the offset in the model root's space: in world space the
+                # reference's own location would include the root translation,
+                # mis-rolling every rod once a root is moved off the origin.
+                offset.owner_space = offset.target_space = "CUSTOM"
+                offset.space_object = root
                 con = p.constraints.new("DAMPED_TRACK")
                 con.target = anchors[b["end"]]
                 con.track_axis = "TRACK_Y"

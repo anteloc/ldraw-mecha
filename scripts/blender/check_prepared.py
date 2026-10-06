@@ -25,7 +25,16 @@ def main():
     out = Path(args.output).resolve()
     study = contract.load(args.study)
     before = set(bpy.data.objects)
+    user_text = bpy.data.texts.new("USER_NOTES")
+    user_text.use_fake_user = True
+    user_text.write("Preserve these notes through inspection and reopening.")
+    other_text = bpy.data.texts.new("OTHER_MODEL.mmd")
+    other_text.use_fake_user = True
+    other_text["mecha_study_root"] = "another-model-root"
+    preserved_texts = {t.name: t.as_string() for t in (user_text, other_text)}
+    text_names = set(bpy.data.texts.keys())
     context = workflows.inspect_prepared(study, glb=args.glb)
+    assert set(bpy.data.texts.keys()) == text_names, "Inspection generated text blocks"
     assert before <= set(bpy.data.objects), "Inspection removed unrelated objects"
     assert "mecha_active_rig" not in context["root"], "Draft inspection created a rig"
     try:
@@ -72,18 +81,21 @@ def main():
     )
     contract.validate(p)
     contract.save(out / "plan.json", p)
-    mechanisms.write_diagrams(p, out / "diagrams")
+    # Simulate a cache produced by the retired automatic diagram workflow.
+    stale = bpy.data.texts.new("OLD_GENERATED.mmd")
+    stale["mecha_study_root"] = context["root"].name
+    stale["mecha_plan_digest"] = "stale"
+    stale_name = stale.name
     result = workflows.apply_plan(p, root=context["root"], animate=True)
     rig = result["rig"]
     assert context["root"] == rig["root"], "Building replaced the imported model"
     assert json.loads(rig["root"]["mecha_study"]) == p, (
-        "Embedded diagrams/study are stale"
+        "Embedded study is stale"
     )
-    assert all(
-        t["mecha_plan_digest"] == contract.digest(p)
-        for t in bpy.data.texts
-        if t.get("mecha_study_root") == rig["root"].name
-    )
+    assert stale_name not in bpy.data.texts, "Obsolete generated cache survived refresh"
+    assert not any(t.get("mecha_study_root") == rig["root"].name for t in bpy.data.texts)
+    for name, content in preserved_texts.items():
+        assert bpy.data.texts[name].as_string() == content
     assert adapter.verify(rig, p, [{"roof": 0.731}])["passed"]
     bpy.context.scene.frame_set(23)
     action = rig["controller"].animation_data.action
@@ -103,14 +115,20 @@ def main():
     rig = adapter.context_from_scene(p)
     assert adapter.verify(rig, p, [{"roof": 0.41}])["passed"]
     assert rig["root"]["mecha_study_digest"] == contract.digest(p)
+    assert not any(t.get("mecha_study_root") == rig["root"].name for t in bpy.data.texts)
+    for name, content in preserved_texts.items():
+        assert bpy.data.texts[name].as_string() == content
     report = dict(
         passed=True,
         source_ids_preserved=True,
         draft_inspection_without_rig=True,
-        diagram_selection=True,
+        mechanism_selection=True,
         existing_import_reused=True,
         nonzero_motion=True,
-        saved_diagrams_current=True,
+        embedded_study_current=True,
+        no_automatic_diagrams=True,
+        obsolete_diagram_cache_removed=True,
+        unrelated_text_preserved=True,
         reopened=True,
         no_new_surface_crossings=clearance["no_new_surface_crossings"],
     )
