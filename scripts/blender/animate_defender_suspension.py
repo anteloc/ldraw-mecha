@@ -24,6 +24,7 @@ sys.path.insert(0, str(Path(__file__).resolve().parents[2]))
 from ldraw_mechanisms import plan as contract  # noqa: E402
 
 FPS = 24
+CAMERA_OFFSET = (1.2, -1.15, 0.5)
 CORNERS = ("fl", "fr", "rl", "rr")
 LEFT, RIGHT, FRONT, REAR = ("fl", "rl"), ("fr", "rr"), ("fl", "fr"), ("rl", "rr")
 END = 612
@@ -139,6 +140,11 @@ def main():
     parser.add_argument("--save", required=True)
     parser.add_argument("--report", required=True)
     parser.add_argument("--tolerance", type=float, default=0.01)
+    parser.add_argument("--camera-offset", default=",".join(map(str, CAMERA_OFFSET)),
+                        help="Main camera direction x,y,z (Blender axes) in units of the model size")
+    parser.add_argument("--corner-camera", choices=CORNERS, help="Also add CornerCamera framing this corner")
+    parser.add_argument("--corner-offset", default="0.8,1.7,1.0",
+                        help="CornerCamera direction x,y,z in units of the corner size")
     args = parser.parse_args(sys.argv[sys.argv.index("--") + 1 :])
     plan = contract.load(args.plan)
     rig = adapter.context_from_scene(plan)
@@ -180,11 +186,27 @@ def main():
     centre, size = (lo + hi) / 2, max(hi - lo)
     cam = bpy.data.objects.new("SuspensionCamera", bpy.data.cameras.new("SuspensionCamera"))
     scene.collection.objects.link(cam)
-    cam.location = centre + Vector(CAMERA_OFFSET) * size
+    cam.location = centre + Vector([float(v) for v in args.camera_offset.split(",")]) * size
     cam.rotation_euler = (centre - cam.location).to_track_quat("-Z", "Y").to_euler()
     cam.data.lens = 45
     cam.data.clip_start = 0.001
     scene.camera = cam
+    if args.corner_camera:
+        # Close-up of one corner (wheel, wishbones, shocks) at its mid-travel pose; switch to it in Blender.
+        ids = {i for name, v in plan["mechanisms"].items() if name == f"suspension_{args.corner_camera}"
+               for b in v["bodies"] for i in plan["bodies"][b]["instances"]}
+        corner = [m for i in ids for m in [rig["mapping"][i], *rig["mapping"][i].children_recursive]
+                  if m.type == "MESH"]
+        cpts = [o.matrix_world @ Vector(c) for o in corner for c in o.bound_box]
+        clo = Vector([min(p[i] for p in cpts) for i in range(3)])
+        chi = Vector([max(p[i] for p in cpts) for i in range(3)])
+        ccentre, csize = (clo + chi) / 2, max(chi - clo)
+        close = bpy.data.objects.new("CornerCamera", bpy.data.cameras.new("CornerCamera"))
+        scene.collection.objects.link(close)
+        close.location = ccentre + Vector([float(v) for v in args.corner_offset.split(",")]) * csize
+        close.rotation_euler = (ccentre - close.location).to_track_quat("-Z", "Y").to_euler()
+        close.data.lens = 45
+        close.data.clip_start = 0.001
     for name, offset, energy in (("Key", (1, -1, 2), 80), ("Fill", (-1, 0.5, 1), 35), ("Rim", (0, 1.5, 0.6), 25)):
         light = bpy.data.objects.new(name, bpy.data.lights.new(name, "AREA"))
         scene.collection.objects.link(light)
@@ -222,8 +244,6 @@ def main():
     bpy.ops.wm.save_as_mainfile(filepath=str(Path(args.save).resolve()))
     print("MECHA_ANIMATION", report["passed"], report["frames"])
 
-
-CAMERA_OFFSET = (1.2, -1.15, 0.5)
 
 if __name__ == "__main__":
     main()
