@@ -1,4 +1,8 @@
-"""Integration check: two imported copies, rebuild, untouched static parts, remove."""
+"""Integration check: placed roots, two copies, rebuild and rest restoration.
+
+Moving a whole rig must not change its root-relative kinematics. This catches
+world-space rod roll references that only work with a model at the origin.
+"""
 
 import argparse
 from pathlib import Path
@@ -6,6 +10,7 @@ import sys
 
 sys.path.insert(0, str(Path(__file__).resolve().parents[2]))
 import bpy
+from mathutils import Euler, Matrix
 from ldraw_mechanisms import blender as adapter, plan as contract
 
 
@@ -31,6 +36,28 @@ def main():
         "Rebuild leaked objects or collections"
     )
     second = adapter.verify(rig, plan, [sample], tolerance=tol)
+    # Preserve the imported scale/basis; apply presentation placements in metres.
+    # A rod's COPY_LOCATION offset must be evaluated in this model root's space.
+    root_world = root.matrix_world.copy()
+    placements = {}
+    try:
+        for label, transform in (
+            ("translated", Matrix.Translation((0.7, -0.3, 0.2))),
+            ("translated_rotated", Matrix.Translation((-0.4, 0.6, 0.3))
+             @ Euler((0.31, -0.47, 0.62), "XYZ").to_matrix().to_4x4()),
+        ):
+            root.matrix_world = transform @ root_world
+            bpy.context.view_layer.update()
+            check = adapter.verify(rig, plan, [sample], tolerance=tol)
+            placements[label] = dict(
+                passed=check["passed"],
+                max_matrix_error=max(s["max_matrix_error"] for s in check["samples"]),
+                max_static_error=max(s["max_static_error"] for s in check["samples"]),
+                max_closure_error=max(s["max_closure_error"] for s in check["samples"]),
+            )
+    finally:
+        root.matrix_world = root_world
+        bpy.context.view_layer.update()
     bpy.ops.import_scene.gltf(filepath=str(Path(args.glb).resolve()))
     roots = [
         o
@@ -56,11 +83,13 @@ def main():
             )
         )
     report = dict(
-        passed=first["passed"] and second["passed"] and max(errors) < 1e-5,
+        passed=first["passed"] and second["passed"] and max(errors) < 1e-5
+        and all(p["passed"] for p in placements.values()),
         restore_error=max(errors),
         rebuild_no_leaks=True,
         two_copies_isolated=True,
         tolerance=tol,
+        root_placements=placements,
     )
     # Nonzero defaults and values outside UI ranges must agree with evaluation.
     import copy

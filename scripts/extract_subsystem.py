@@ -16,6 +16,8 @@ a motion plan authored on the source can be reused after remapping IDs.
 `--keep` is a JSON list of IDs or an object with a `parts` list of IDs or of
 `{"id": ...}` records. The ID map and a verification report are written next
 to the output (`idmap.json`). The source file is never written.
+Use `--section 'exact FILE name'` when the keep IDs were measured in that section;
+both the coordinates and the recorded source_section refer to that selection.
 """
 
 from __future__ import annotations
@@ -121,7 +123,8 @@ def extract(model, keep, output, name=None, title=None, section=None):
     output.parent.mkdir(parents=True, exist_ok=True)
     output.write_text("\n".join(out) + "\n")
     report = verify(nodes, output, idmap)
-    report.update(source=str(model), source_sha256=source.sha256(model), output=str(output),
+    report.update(source=str(model), source_section=manifest["section"],
+                  source_sha256=source.sha256(model), output=str(output),
                   output_sha256=source.sha256(output), embedded_files=[blocks[k][0] for k in copied])
     return idmap, report
 

@@ -58,6 +58,8 @@ def main():
                            "keyed controls and evaluated transforms checked at sampled frames (root-relative)")
     contract.save(a.report, report)
     print("MECHA_REOPEN", ok)
+    if not ok:
+        raise RuntimeError(f"Saved mechanism verification failed; see {a.report}")
 
 
 if __name__ == "__main__":

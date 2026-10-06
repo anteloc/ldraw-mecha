@@ -224,3 +224,5 @@ __marimo__/
 .vscode/
 *.blend[0-9]*
 prompts-local/
+
+.DS_Store
