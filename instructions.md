@@ -84,6 +84,12 @@ Old generated diagrams should not be used as authority for curation.
   precedents. Explicit `--engine jev` enables semantic reranking; its small
   billable availability check stops a batch on HTTP 402. `jev-status` runs that
   check alone. Never print credentials. Search relevance does not prove fit.
+- Use [part information](docs/part-information.md) to choose a lookup source.
+  `data/categories/parts` provides offline family tables and named components;
+  `get_dimensions` provides rough local extents. They help selection and
+  inventory, but do not establish joints or replace the model/submodel database.
+  Check aliases, actual library availability and connector geometry. For figures,
+  start with the [minifig reference](docs/reference/minifigs/README.md).
 - Use `connectors MODEL --instance ID`, bounded `contacts MODEL --instances ...`,
   `gear-meshes MODEL` and `coaxial MODEL --instances ...` for measured candidates.
   Connector `position`/`frame` are part-local; `world_position`/`world_axis` are

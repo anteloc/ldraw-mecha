@@ -5,6 +5,13 @@ measure the target assembly, then author and test its motion. Visual review
 selects successful outputs for later [reference curation](reference/curation.md).
 Creating diagrams is not a prerequisite for rigging.
 
+For part selection or inventory, consult [part information](part-information.md).
+The category tables offer browsable families and individual components; the
+database remains the broader description/model search. Neither categories nor
+dimension hints determine mechanical connections. The
+[minifig case](reference/minifigs/README.md) demonstrates using category constants
+for selection and connector geometry for placement and articulation.
+
 ## Choose the deliverable
 
 When asked to animate a particular mechanism, the default deliverable is **that

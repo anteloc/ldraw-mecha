@@ -14,6 +14,8 @@ crankshafts, rods and pistons; and standalone suspension with wishbones,
 half-shafts and telescoping shocks. The
 [Chiron mechanism studies](docs/reference/42083-mechanisms/README.md) add a wing
 parallelogram, paddle/pawl geometry and a qualified eight-speed selector cascade.
+The [minifig examples](docs/reference/minifigs/README.md) add articulated limbs,
+held items, reusable animation clips and separate whole-figure staging.
 Each subsystem has diagrams, identities,
 relationships and evidence limits. Agents adapt these references without having
 to create new diagrams during rigging.
@@ -68,6 +70,8 @@ See [scope selection](docs/workflow.md#choose-the-deliverable).
   compact coordinates, contacts, gear/coaxial evidence and callable scene tools.
 - [Discovery quality](docs/discovery-quality.md): coverage, rounded transforms
   and accounting for unresolved mechanisms.
+- [Part information](docs/part-information.md): when to use the category tables,
+  dimensions, description files, SQLite and connector metadata.
 - [Motion contract](docs/motion-plan.md), [architecture](docs/architecture.md)
   and [validation](docs/validation.md).
 

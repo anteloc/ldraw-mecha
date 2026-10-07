@@ -6,6 +6,10 @@ Follow the [workflow](workflow.md) for the complete process and the
 [reference catalog](reference/README.md) for worked mechanisms. These commands
 support focused investigation; creating diagrams is optional.
 
+For offline family browsing, named components and size hints, see
+[part information](part-information.md). `data/categories` complements these
+SQLite search commands; it is not currently a CLI search engine or joint detector.
+
 ```sh
 # Offline FTS5/BM25 is the default, using the existing read-only SQLite indexes.
 ./ldraw-mecha search submodels 'engine piston' --engine fts --limit 8
@@ -152,6 +156,8 @@ the plan's declared defaults, independent of the current animated pose. It tests
 sampled new surface crossings, excluding within-body and rest-contact pairs;
 it does not prove containment clearance or collision-free motion between samples.
 Run it before writing final claims, then use `update_plan_notes` to record results.
+The [minifig pose checks](reference/minifigs/pose-clearance.md) give a worked
+example where a coarse single-joint sweep passes but combined clip poses cross.
 
 Moving-only mode affects meshes in this model only. Its first call snapshots
 viewport/render visibility on the model root; repeated calls are idempotent,

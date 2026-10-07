@@ -29,10 +29,15 @@ When the user selects another successful result, follow the
 | Rocking paddles and driving/return pawls | [Chiron stepper geometry](42083-mechanisms/paddle-stepper.md) |
 | Cascaded selectors and a once-per-revolution carry | [Reconstructed eight-speed Chiron gearbox](42083-mechanisms/cascaded-gearbox.md) |
 | Independent animated extracts in one scene | [Section frames, interface assumptions and movable roots](42083-mechanisms/independent-rigs.md) |
+| Articulated minifig limbs and held items | [Connector placement, mirrored axes and body ownership](minifigs/joints-and-attachments.md) |
+| Reusable controller animation | [Shared channels, Action slots and NLA clips](minifigs/animation-clips.md) |
+| Whole-character movement and seated poses | [Separate root staging and joint motion](minifigs/whole-figure-staging.md) |
+| Accessory-dependent animation clearance | [Combined poses and clip compatibility](minifigs/pose-clearance.md) |
 
 Case indexes: [42110 Defender](42110/README.md), [42083 W16](42083-w16/README.md),
 [standalone suspension](42110-suspension-standalone/README.md),
-[42083 independent mechanisms](42083-mechanisms/README.md).
+[42083 independent mechanisms](42083-mechanisms/README.md),
+[minifigs](minifigs/README.md).
 
 Each page describes a particular implementation, including approximations and
 unimplemented interfaces. Visual acceptance selects a useful candidate; numerical

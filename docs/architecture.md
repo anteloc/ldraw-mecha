@@ -17,6 +17,7 @@ they are documentation, not another execution format.
 | Blender | `blender.py`, `blender_tools.py`, `scripts/blender/` | Additive inspection, rigs, drivers, constraints, animation sampling, visibility, save/reopen and lifecycle verification |
 | Entry points | `cli.py`, `ldraw-mecha` | Agent-friendly commands and artifact pointers |
 | Reference library | `docs/reference/` | Reviewed subsystem explanations, diagrams, identities, equations and evidence limits |
+| Part lookup data | `data/categories`, `data/ldraw-info.db`, description TSV | Family/name/size hints and catalog search; see [source selection](part-information.md), separate from connector geometry |
 
 Source analysis imports no Blender API. The motion/equation layer uses the
 standard library and imports neither bpy nor pyldraw3, so Blender can evaluate
@@ -43,6 +44,13 @@ case-specific implementations; their tests check the associated equations.
 five independent Chiron studies, including the qualified reconstruction described
 in [their references](reference/42083-mechanisms/README.md).
 They are useful provenance, not generic mechanism inference.
+
+`build_minifigs.py` selects separate parts from category tables and authors
+connector-based joint plans. `minifig_clips.py` is a pure Python library of shared
+channels, sparse keys and staging transforms; `blender/animate_minifigs.py`
+turns those clips into Actions and NLA tracks. The
+[minifig references](reference/minifigs/README.md) document reuse and clearance
+limits. Whole-figure staging remains outside the mechanical plan contract.
 
 The [reference catalog](reference/README.md) provides reusable explanations
 derived from selected outputs. Its diagrams are hand-curated; the optional
