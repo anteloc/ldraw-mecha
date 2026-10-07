@@ -5,6 +5,28 @@ measure the target assembly, then author and test its motion. Visual review
 selects successful outputs for later [reference curation](reference/curation.md).
 Creating diagrams is not a prerequisite for rigging.
 
+## Choose the deliverable
+
+When asked to animate a particular mechanism, the default deliverable is **that
+subsystem on its own**: the mechanism and the coupled elements the user wants
+to inspect, such as mounts or adjacent drive components. Everything else is
+absent from the extracted MPD, GLB and blend. This lets the user judge the
+mechanism in Blender without the surrounding vehicle.
+
+Clarify the boundary early: which coupled elements should remain, and which of
+them should move? Reuse any scope already established in the conversation.
+Explicit requests for a whole vehicle, an in-place mechanism or hidden bodywork
+take precedence. A whole-vehicle rig can be a separate deliverable; hiding its
+bodywork alone does not produce the requested standalone subsystem.
+
+Use `--section` for investigation, then `scripts/extract_subsystem.py` to write
+the chosen physical occurrences with their composed matrices, attribution and
+identity map. Include `--section` there when the keep IDs belong to that FILE.
+Remap the plan to the extracted source and convert that file. Keep any extra
+bodywork needed for clearance checks in a separate study rather than the final
+presentation. Examples: [standalone suspension](reference/42110-suspension-standalone/extraction-and-mounts.md)
+and [independent Chiron mechanisms](reference/42083-mechanisms/independent-rigs.md).
+
 ## Prepare once
 
 ```sh

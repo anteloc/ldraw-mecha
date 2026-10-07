@@ -39,6 +39,9 @@ Studied CLI recipes are executable for their exact source selections. Builders
 such as `scripts/build_defender_rig.py`, `build_mustang_rig.py`,
 `build_defender_suspension.py` and `build_suspension_standalone.py` hold larger
 case-specific implementations; their tests check the associated equations.
+`build_42083_mechanisms.py` and the Blender-safe `timeline_42083.py` provide the
+five independent Chiron studies, including the qualified reconstruction described
+in [their references](reference/42083-mechanisms/README.md).
 They are useful provenance, not generic mechanism inference.
 
 The [reference catalog](reference/README.md) provides reusable explanations

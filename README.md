@@ -11,7 +11,10 @@ for later agents. Start at [instructions.md](instructions.md) and the
 The [reference catalog](docs/reference/README.md) covers the 42110 Defender's
 gearboxes, differentials, shafts, steering, engine and winch; the 42083 W16's
 crankshafts, rods and pistons; and standalone suspension with wishbones,
-half-shafts and telescoping shocks. Each subsystem has diagrams, identities,
+half-shafts and telescoping shocks. The
+[Chiron mechanism studies](docs/reference/42083-mechanisms/README.md) add a wing
+parallelogram, paddle/pawl geometry and a qualified eight-speed selector cascade.
+Each subsystem has diagrams, identities,
 relationships and evidence limits. Agents adapt these references without having
 to create new diagrams during rigging.
 
@@ -52,8 +55,10 @@ lifecycle, clearance and visual checks before delivery.
 Studied CLI recipes are `106`, `928`, `42000`, `42083` and `10265`. They are
 executable examples for exact source selections, with explicit limits. They are
 separate from the curated documentation catalog; neither is automatic rigging
-for an arbitrary model. Use `--section 'exact FILE name'` to study a subassembly
-in place and `extract` when a standalone source file is needed.
+for an arbitrary model. Requests to animate one mechanism default to a standalone
+subsystem, including agreed coupled elements. Study with `--section`, then
+extract the chosen parts so the MPD, GLB and blend contain that subsystem only.
+See [scope selection](docs/workflow.md#choose-the-deliverable).
 
 ## Documentation
 

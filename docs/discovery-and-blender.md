@@ -84,7 +84,10 @@ It honors `TYPESAFE_API_KEY` and `TYPESAFE_BASE_URL`, like `jev-rerank`.
 ## Selecting versus extracting
 
 `--section` studies an assembly in its own coordinate frame while keeping the
-original source as the plan dependency. To deliver a standalone LDraw artifact:
+original source as the plan dependency. For a request to animate one mechanism,
+the default deliverable is a standalone subsystem with agreed coupled elements;
+see [scope selection](workflow.md#choose-the-deliverable). To extract a complete
+existing FILE section:
 
 ```sh
 ./ldraw-mecha extract data/models-annotated/42083-1.mpd \
@@ -94,8 +97,11 @@ original source as the plan dependency. To deliver a standalone LDraw artifact:
 Extraction includes referenced FILE sections and adjacent LDR dependencies,
 preserves attribution, and does not copy the official parts library. It refuses
 to overwrite a source dependency. Re-inspect the extracted file before making a
-new plan: its hash and identities belong to that file. Unless standalone source
-is requested, studying `--section` is enough; say which interpretation was used.
+new plan: its hash and identities belong to that file. A source-only study can
+use `--section` directly. For a custom selection spanning sections, use
+`scripts/extract_subsystem.py --section 'exact FILE name' --keep KEEP.json ...`;
+it preserves the selected frame and writes an old-to-new occurrence map. The
+final MPD, GLB and blend contain only the chosen subsystem and coupled elements.
 
 ## Callable Blender workflows
 
@@ -131,6 +137,11 @@ Use the background `rig` CLI when the open scene should stay untouched.
 
 `check_clearance` accepts a plan dict or path, optional `rig` or `root`,
 `controls` (all by default), `steps` (2..100), `report`, and explicit `rebuild`.
+By default it sweeps each control alone. `poses` replaces that sweep with
+combined states, `[{"label": ..., "controls": {name: value}}]` (unlisted
+controls at their defaults), for example sampled animation frames. `shrink`
+(LDU, default 0.4) moves surfaces inward before testing; a larger value, such as
+1.5, keeps only crossings deeper than about twice the shrink.
 The original CLI scripts delegate to these functions; importing them also exposes
 the corresponding function. No manipulation of `sys.argv` is needed.
 

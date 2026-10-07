@@ -25,9 +25,14 @@ When the user selects another successful result, follow the
 | Telescoping shocks and coil compression | [Shock absorbers](42110-suspension-standalone/shocks.md) |
 | Extracting mechanisms with fixed interfaces | [Suspension extraction](42110-suspension-standalone/extraction-and-mounts.md) |
 | Four-corner travel demonstrations | [Suspension animation](42110-suspension-standalone/animation.md) |
+| Orientation-preserving four-bar lift | [Chiron wing and rear links](42083-mechanisms/wing-lift.md) |
+| Rocking paddles and driving/return pawls | [Chiron stepper geometry](42083-mechanisms/paddle-stepper.md) |
+| Cascaded selectors and a once-per-revolution carry | [Reconstructed eight-speed Chiron gearbox](42083-mechanisms/cascaded-gearbox.md) |
+| Independent animated extracts in one scene | [Section frames, interface assumptions and movable roots](42083-mechanisms/independent-rigs.md) |
 
 Case indexes: [42110 Defender](42110/README.md), [42083 W16](42083-w16/README.md),
-[standalone suspension](42110-suspension-standalone/README.md).
+[standalone suspension](42110-suspension-standalone/README.md),
+[42083 independent mechanisms](42083-mechanisms/README.md).
 
 Each page describes a particular implementation, including approximations and
 unimplemented interfaces. Visual acceptance selects a useful candidate; numerical

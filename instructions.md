@@ -11,9 +11,15 @@ references. See [the workflow](docs/workflow.md) for commands and Python example
    mechanisms. Reuse its reasoning, equations and checks, but remeasure the target
    model. Reference part IDs, axis signs and motion ranges belong to that example.
    Normal rigging tasks do not require creating diagrams.
-2. Establish scope: whole model or selected subsystem; study in place with
-   `--section`, or use `extract` when a standalone MPD is requested. Inventory
-   mechanisms using source evidence and visual inspection. Use
+2. For a request to animate one mechanism, default to a **standalone subsystem**:
+   the mechanism plus the agreed coupled elements, such as its mounting frame.
+   Everything else must be absent from the delivered MPD, GLB and blend. Clarify
+   early which coupled elements to retain and whether they should move, using
+   any selection already agreed with the user. Follow explicit whole-model or
+   in-place requests. Study with `--section`, then use
+   `scripts/extract_subsystem.py` for selected occurrences and remap the plan's
+   IDs. See [subsystem scope](docs/workflow.md#choose-the-deliverable).
+   Inventory mechanisms using source evidence and visual inspection. Use
    `submodels MODEL --match engine --format table` to compare assemblies and
    `inspect MODEL --format table --mechanical-only` for positions and transformed
    part-local axes. Keep the surrounding supports and interfaces in view.

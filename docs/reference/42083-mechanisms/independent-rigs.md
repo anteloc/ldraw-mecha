@@ -4,6 +4,9 @@ The [combined scene](../../../output/42083-mechanisms/mechanisms.blend) places f
 independent rigs side by side. The reusable technique is keeping source identity,
 mechanical boundary assumptions and presentation placement separate. See
 [scope and evidence](scope-and-evidence.md) for the selected artifacts.
+This follows the [standalone-subsystem default](../../workflow.md#choose-the-deliverable)
+for individual mechanism requests: the agreed subsystem and coupled elements
+are present in the files, and the rest of the vehicle is absent.
 
 ## Extract from the same section you measured
 

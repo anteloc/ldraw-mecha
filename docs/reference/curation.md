@@ -36,6 +36,9 @@ Split pages by reusable function: differential, gearbox, shaft coupling,
 steering linkage, piston mechanism, suspension or winch. Keep an animation page
 when timing/state transitions are important, and an extraction page when fixed
 interfaces or identity remapping affect reuse.
+For a standalone result, record which coupled elements were retained and whether
+they move or act as fixed supports; this is part of the
+[requested subsystem boundary](../workflow.md#choose-the-deliverable).
 
 ## Write each page
 

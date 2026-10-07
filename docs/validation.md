@@ -60,6 +60,8 @@ and preserves unrelated text and other model annotations.
 
 `check_lifecycle.py` checks nonzero defaults, out-of-range controls, repeated
 builds, rest-parent restoration and isolation of two imported copies.
+It also verifies nonzero motion after translating and rotating the model root,
+which catches rod-roll references that accidentally depend on world placement.
 `check_workflows.py` exercises callable APIs, controller action/NLA/driver
 restoration, exception cleanup, visibility, notes updates and duplicate imports:
 
@@ -120,6 +122,7 @@ separately for each mechanical claim.
 | CLI `42083` | Three geared cranks and 16 pistons/rods in the selected engine. See the [W16 evidence](reference/42083-w16/scope-and-evidence.md) for exact geometry, checked closures and clearance coverage. |
 | CLI `10265` | The `output/10265-v2` recipe has four wheel controls, steering and hinged valve covers. It does not implement every mechanism in that model; see below. |
 | Defender and standalone suspension | Case-specific builders and animation. See the [Defender evidence](reference/42110/scope-and-evidence.md) and [suspension evidence](reference/42110-suspension-standalone/scope-and-evidence.md) for state/frame checks, geometric approximations and unsupported effects. |
+| Chiron independent mechanisms | Wing linkage, paddle geometry, reconstructed eight-speed cascade and familiar drivetrain/selector/hinge variants. See [case evidence](reference/42083-mechanisms/scope-and-evidence.md) for separate controls, imposed contacts and reconstructed parts. |
 
 The `10265` v2 steering range is ±0.18 radians at the wheel; valve covers use
 [0, 0.15] radians. Historical clearance checks reported steering contacts,

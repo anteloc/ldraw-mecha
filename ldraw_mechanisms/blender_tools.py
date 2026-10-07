@@ -118,20 +118,40 @@ def _ident(obj):
 
 
 def check_clearance(
-    plan, *, rig=None, root=None, controls=None, steps=9, report=None, rebuild=False
+    plan,
+    *,
+    rig=None,
+    root=None,
+    controls=None,
+    steps=9,
+    report=None,
+    rebuild=False,
+    poses=None,
+    shrink=0.4,
 ):
     """Sample surface crossings relative to declared defaults; restore live state.
 
     This excludes rigid-body and rest-contact pairs and does not test containment.
     Rebuild is explicit and replaces the rig; normal calls preserve animation.
+    By default each selected control is swept alone. `poses` instead samples
+    combined states: a list of {"label": str, "controls": {name: value}}, with
+    unlisted controls at their defaults (for example frames of an animation).
+    `shrink` (LDU) moves every surface inward before testing; raising it above
+    the 0.4 default reports only deeper crossings (about twice the shrink).
     """
     plan = _plan(plan)
     contract.validate(plan)
     if not 2 <= steps <= 100:
         raise ValueError("steps must be 2..100")
+    if not 0 <= shrink <= 5:
+        raise ValueError("shrink must be 0..5 LDU")
     controls = list(plan["controls"]) if controls is None else list(controls)
     if not controls or set(controls) - set(plan["controls"]):
         raise ValueError("Select known controls")
+    if poses is not None:
+        poses = list(poses)
+        if not poses or any(set(p["controls"]) - set(plan["controls"]) for p in poses):
+            raise ValueError("Poses must name known controls")
     if rig is not None and (root is not None or rebuild):
         raise ValueError("Pass rig, or root/rebuild, not both")
     rig = rig or (
@@ -196,7 +216,7 @@ def check_clearance(
         return True
 
     def crossings():
-        pairs = reference.overlapping_pairs(moving, static, deps, cache, shrink=0.4)
+        pairs = reference.overlapping_pairs(moving, static, deps, cache, shrink=shrink)
         result = set()
         for a, b in pairs:
             a, b = bpy.data.objects[a], bpy.data.objects[b]
@@ -215,7 +235,19 @@ def check_clearance(
         )
         baseline = crossings()
         samples = []
-        for name in controls:
+        for pose in poses or []:
+            values = {k: v["default"] for k, v in plan["controls"].items()}
+            values.update(pose["controls"])
+            adapter.set_controls(rig, **values)
+            hits = crossings() - baseline
+            samples.append(
+                dict(
+                    pose=pose["label"],
+                    controls=pose["controls"],
+                    new_surface_crossings=sorted(hits),
+                )
+            )
+        for name in controls if poses is None else []:
             c = plan["controls"][name]
             for i in range(steps):
                 values = {k: v["default"] for k, v in plan["controls"].items()}
@@ -233,7 +265,7 @@ def check_clearance(
         no_new_surface_crossings=all(not s["new_surface_crossings"] for s in samples),
         samples=samples,
         excluded_rest_pairs=sorted(baseline),
-        shrink_ldu=0.4,
+        shrink_ldu=shrink,
         touching_tolerance_ldu=0.05,
         excluded_touching_pairs=sorted(tangencies),
         coverage="Sampled surface crossings only; excludes rigid-body and rest-contact pairs; containment untested",

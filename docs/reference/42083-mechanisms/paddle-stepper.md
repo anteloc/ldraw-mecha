@@ -85,11 +85,11 @@ sequenceDiagram
   participant T as Timeline
   participant P as Paddle and pawls
   participant C as Catch control
-  participant R as Ratchet via knob shafts
+  participant R as Ratchet
   T->>P: Driving stroke toward +/-0.6 rad
   T->>C: Prescribe +/-pi/2 catch step over shift window
   C->>R: Equal opposite angle about ratchet axis
-  Note over P,R: Tip follows an ideal circle; detent completion is assumed
+  Note over P,R: Tip follows an ideal circle. Detent completion is assumed.
   T->>P: Return rocker to rest
   Note over C,R: Catch and ratchet retain the selected index
 ```
