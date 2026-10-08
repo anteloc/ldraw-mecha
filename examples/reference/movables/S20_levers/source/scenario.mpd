@@ -1,0 +1,20 @@
+0 FILE s20_levers.ldr
+0 Movable element scenario S20_levers Control levers
+0 Name: s20_levers.ldr
+0 Author: ldraw-mecha scripts/build_movables.py
+0 // Generated mock scenario: parts picked by constant name from data/categories/parts (a few context parts by LDraw reference); moving parts placed from LDCad shadow connector frames (data/offLibShadow) via pyldraw3 or from official annotated models where no connector pair exists. Frame: LDU, -Y up, the scenario front faces -Z, ground (base top) at y = 0.
+
+0 // base: plates.Plate4X6
+1 8 0 0 0 1 0 0 0 1 0 0 0 1 3032.dat
+0 // desk: bricks.Brick2X4
+1 71 0 -24 10 1 0 0 0 1 0 0 0 1 3001.dat
+0 // lever_base_l: hinges.HingeControlStickBase
+1 0 -30 -32 0 1 0 0 0 1 0 0 0 1 4592.dat
+0 // stick_l: hinges.HingeControlStick
+1 4 -30 -32 0 1 0 0 0 1 0 0 0 1 4593.dat
+0 // lever_base_r: hinges.HingeControlStickBase
+1 0 30 -32 0 1 0 0 0 1 0 0 0 1 4592.dat
+0 // stick_r: hinges.HingeControlStick
+1 1 30 -32 0 1 0 0 0 1 0 0 0 1 4593.dat
+0 // screen: tiles.Tile1X2GrilleWithGroove
+1 8 0 -32 20 1 0 0 0 1 0 0 0 1 2412b.dat

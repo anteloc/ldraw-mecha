@@ -1,0 +1,589 @@
+{
+  "passed": true,
+  "frames": 480,
+  "fps": 24,
+  "tolerance": 0.002,
+  "build": {
+    "doors": {
+      "passed": true,
+      "tolerance": 0.002,
+      "max_matrix_error": 6.103515625e-05,
+      "max_closure_error": 0
+    },
+    "drivetrain": {
+      "passed": true,
+      "tolerance": 0.002,
+      "max_matrix_error": 0.00046366453170776367,
+      "max_closure_error": 0
+    },
+    "gearbox": {
+      "passed": true,
+      "tolerance": 0.002,
+      "max_matrix_error": 0.0006133615970611572,
+      "max_closure_error": 0
+    },
+    "dnr": {
+      "passed": true,
+      "tolerance": 0.002,
+      "max_matrix_error": 0.00046366453170776367,
+      "max_closure_error": 0
+    },
+    "wing": {
+      "passed": true,
+      "tolerance": 0.002,
+      "max_matrix_error": 9.1552734375e-05,
+      "max_closure_error": 1.5837261756246335e-05
+    }
+  },
+  "layout": {
+    "doors": {
+      "x_min": 0.0,
+      "x_max": 0.3248,
+      "offset": [
+        0.1624,
+        0.0766,
+        0.0036
+      ]
+    },
+    "drivetrain": {
+      "x_min": 0.3848,
+      "x_max": 0.6437,
+      "offset": [
+        0.5142,
+        0.0574,
+        0.0248
+      ]
+    },
+    "gearbox": {
+      "x_min": 0.7037,
+      "x_max": 0.8713,
+      "offset": [
+        0.7637,
+        0.0159,
+        0.0206
+      ]
+    },
+    "dnr": {
+      "x_min": 0.9313,
+      "x_max": 1.0505,
+      "offset": [
+        0.9909,
+        0.0159,
+        0.02
+      ]
+    },
+    "wing": {
+      "x_min": 1.1105,
+      "x_max": 1.2913,
+      "offset": [
+        1.2009,
+        -0.174,
+        0.012
+      ]
+    }
+  },
+  "continuity": {
+    "doors": {
+      "passed": true,
+      "worst": [
+        [
+          0.01999670781893015,
+          "door_right_angle",
+          "revolute",
+          85
+        ],
+        [
+          0.01999670781893015,
+          "door_left_angle",
+          "revolute",
+          135
+        ]
+      ]
+    },
+    "drivetrain": {
+      "passed": true,
+      "worst": [
+        [
+          0.22400000000000375,
+          "main",
+          "revolute",
+          163
+        ],
+        [
+          0.22400000000000375,
+          "front_pinion",
+          "revolute",
+          163
+        ],
+        [
+          0.22400000000000375,
+          "dnr_reverse_gear",
+          "revolute",
+          163
+        ]
+      ]
+    },
+    "gearbox": {
+      "passed": true,
+      "worst": [
+        [
+          4.102965217767951,
+          "ring_r4",
+          "prismatic",
+          356
+        ],
+        [
+          4.102965217767951,
+          "ring_r1_abs",
+          "prismatic",
+          190
+        ],
+        [
+          4.102965217767951,
+          "push_r1",
+          "prismatic",
+          190
+        ]
+      ]
+    },
+    "dnr": {
+      "passed": true,
+      "worst": [
+        [
+          0.9326171875,
+          "ring",
+          "prismatic",
+          58
+        ],
+        [
+          0.6000000000000085,
+          "engine_in",
+          "revolute",
+          319
+        ],
+        [
+          0.3000000000000007,
+          "input_v",
+          "revolute",
+          112
+        ]
+      ]
+    },
+    "wing": {
+      "passed": true,
+      "worst": [
+        [
+          0.005459911825850039,
+          "wlr_ang",
+          "revolute",
+          115
+        ],
+        [
+          0.005459911825850039,
+          "wll_ang",
+          "revolute",
+          115
+        ],
+        [
+          0.005453944402704747,
+          "wing_v",
+          "revolute",
+          115
+        ]
+      ]
+    }
+  },
+  "samples": [
+    {
+      "frame": 1,
+      "mechanism": "doors",
+      "key_error": 0.0,
+      "passed": true
+    },
+    {
+      "frame": 1,
+      "mechanism": "drivetrain",
+      "key_error": 0.0,
+      "passed": true
+    },
+    {
+      "frame": 1,
+      "mechanism": "gearbox",
+      "key_error": 0.0,
+      "passed": true
+    },
+    {
+      "frame": 1,
+      "mechanism": "dnr",
+      "key_error": 0.0,
+      "passed": true
+    },
+    {
+      "frame": 1,
+      "mechanism": "wing",
+      "key_error": 0.0,
+      "passed": true
+    },
+    {
+      "frame": 48,
+      "mechanism": "doors",
+      "key_error": 2.1548426237805174e-11,
+      "passed": true
+    },
+    {
+      "frame": 48,
+      "mechanism": "drivetrain",
+      "key_error": 1.907348501362094e-08,
+      "passed": true
+    },
+    {
+      "frame": 48,
+      "mechanism": "gearbox",
+      "key_error": 3.433227533378158e-07,
+      "passed": true
+    },
+    {
+      "frame": 48,
+      "mechanism": "dnr",
+      "key_error": 0.0,
+      "passed": true
+    },
+    {
+      "frame": 48,
+      "mechanism": "wing",
+      "key_error": 0.0,
+      "passed": true
+    },
+    {
+      "frame": 75,
+      "mechanism": "doors",
+      "key_error": 1.9622928282281293e-09,
+      "passed": true
+    },
+    {
+      "frame": 75,
+      "mechanism": "drivetrain",
+      "key_error": 1.9073485901799359e-07,
+      "passed": true
+    },
+    {
+      "frame": 75,
+      "mechanism": "gearbox",
+      "key_error": 7.62939418308406e-07,
+      "passed": true
+    },
+    {
+      "frame": 75,
+      "mechanism": "dnr",
+      "key_error": 7.450580569168253e-10,
+      "passed": true
+    },
+    {
+      "frame": 75,
+      "mechanism": "wing",
+      "key_error": 5.891612371577981e-10,
+      "passed": true
+    },
+    {
+      "frame": 120,
+      "mechanism": "doors",
+      "key_error": 4.6996913249941485e-08,
+      "passed": true
+    },
+    {
+      "frame": 120,
+      "mechanism": "drivetrain",
+      "key_error": 1.0658141036401503e-14,
+      "passed": true
+    },
+    {
+      "frame": 120,
+      "mechanism": "gearbox",
+      "key_error": 1.5258790142524958e-06,
+      "passed": true
+    },
+    {
+      "frame": 120,
+      "mechanism": "dnr",
+      "key_error": 3.8146973047048505e-07,
+      "passed": true
+    },
+    {
+      "frame": 120,
+      "mechanism": "wing",
+      "key_error": 6.5986058839229145e-09,
+      "passed": true
+    },
+    {
+      "frame": 150,
+      "mechanism": "doors",
+      "key_error": 4.768371586472142e-08,
+      "passed": true
+    },
+    {
+      "frame": 150,
+      "mechanism": "drivetrain",
+      "key_error": 7.629394680463975e-07,
+      "passed": true
+    },
+    {
+      "frame": 150,
+      "mechanism": "gearbox",
+      "key_error": 7.629392939634272e-07,
+      "passed": true
+    },
+    {
+      "frame": 150,
+      "mechanism": "dnr",
+      "key_error": 3.814697500104103e-07,
+      "passed": true
+    },
+    {
+      "frame": 150,
+      "mechanism": "wing",
+      "key_error": 1.433019253260781e-08,
+      "passed": true
+    },
+    {
+      "frame": 200,
+      "mechanism": "doors",
+      "key_error": 4.768371586472142e-08,
+      "passed": true
+    },
+    {
+      "frame": 200,
+      "mechanism": "drivetrain",
+      "key_error": 7.629394751518248e-07,
+      "passed": true
+    },
+    {
+      "frame": 200,
+      "mechanism": "gearbox",
+      "key_error": 3.051758056926701e-06,
+      "passed": true
+    },
+    {
+      "frame": 200,
+      "mechanism": "dnr",
+      "key_error": 3.8146977132669235e-07,
+      "passed": true
+    },
+    {
+      "frame": 200,
+      "mechanism": "wing",
+      "key_error": 5.960464455334602e-09,
+      "passed": true
+    },
+    {
+      "frame": 240,
+      "mechanism": "doors",
+      "key_error": 4.768371586472142e-08,
+      "passed": true
+    },
+    {
+      "frame": 240,
+      "mechanism": "drivetrain",
+      "key_error": 7.629395000208206e-07,
+      "passed": true
+    },
+    {
+      "frame": 240,
+      "mechanism": "gearbox",
+      "key_error": 2.9006671731224287e-07,
+      "passed": true
+    },
+    {
+      "frame": 240,
+      "mechanism": "dnr",
+      "key_error": 3.8146977132669235e-07,
+      "passed": true
+    },
+    {
+      "frame": 240,
+      "mechanism": "wing",
+      "key_error": 5.960464455334602e-09,
+      "passed": true
+    },
+    {
+      "frame": 268,
+      "mechanism": "doors",
+      "key_error": 4.768371586472142e-08,
+      "passed": true
+    },
+    {
+      "frame": 268,
+      "mechanism": "drivetrain",
+      "key_error": 3.0517592364276425e-07,
+      "passed": true
+    },
+    {
+      "frame": 268,
+      "mechanism": "gearbox",
+      "key_error": 2.1362301083627244e-06,
+      "passed": true
+    },
+    {
+      "frame": 268,
+      "mechanism": "dnr",
+      "key_error": 1.6784668588343266e-06,
+      "passed": true
+    },
+    {
+      "frame": 268,
+      "mechanism": "wing",
+      "key_error": 5.960464455334602e-09,
+      "passed": true
+    },
+    {
+      "frame": 300,
+      "mechanism": "doors",
+      "key_error": 4.768371586472142e-08,
+      "passed": true
+    },
+    {
+      "frame": 300,
+      "mechanism": "drivetrain",
+      "key_error": 7.629392015928715e-07,
+      "passed": true
+    },
+    {
+      "frame": 300,
+      "mechanism": "gearbox",
+      "key_error": 3.0517582274569577e-06,
+      "passed": true
+    },
+    {
+      "frame": 300,
+      "mechanism": "dnr",
+      "key_error": 1.6784668588343266e-06,
+      "passed": true
+    },
+    {
+      "frame": 300,
+      "mechanism": "wing",
+      "key_error": 5.960464455334602e-09,
+      "passed": true
+    },
+    {
+      "frame": 340,
+      "mechanism": "doors",
+      "key_error": 4.6996913249941485e-08,
+      "passed": true
+    },
+    {
+      "frame": 340,
+      "mechanism": "drivetrain",
+      "key_error": 7.629398410813337e-07,
+      "passed": true
+    },
+    {
+      "frame": 340,
+      "mechanism": "gearbox",
+      "key_error": 7.120767406831874e-07,
+      "passed": true
+    },
+    {
+      "frame": 340,
+      "mechanism": "dnr",
+      "key_error": 1.6784668588343266e-06,
+      "passed": true
+    },
+    {
+      "frame": 340,
+      "mechanism": "wing",
+      "key_error": 5.257389412705038e-09,
+      "passed": true
+    },
+    {
+      "frame": 380,
+      "mechanism": "doors",
+      "key_error": 1.216621547950325e-08,
+      "passed": true
+    },
+    {
+      "frame": 380,
+      "mechanism": "drivetrain",
+      "key_error": 1.525878381869461e-06,
+      "passed": true
+    },
+    {
+      "frame": 380,
+      "mechanism": "gearbox",
+      "key_error": 3.05175811377012e-06,
+      "passed": true
+    },
+    {
+      "frame": 380,
+      "mechanism": "dnr",
+      "key_error": 1.6784668588343266e-06,
+      "passed": true
+    },
+    {
+      "frame": 380,
+      "mechanism": "wing",
+      "key_error": 1.6043098516327348e-09,
+      "passed": true
+    },
+    {
+      "frame": 420,
+      "mechanism": "doors",
+      "key_error": 0.0,
+      "passed": true
+    },
+    {
+      "frame": 420,
+      "mechanism": "drivetrain",
+      "key_error": 9.119510389898888e-10,
+      "passed": true
+    },
+    {
+      "frame": 420,
+      "mechanism": "gearbox",
+      "key_error": 6.103516426492206e-06,
+      "passed": true
+    },
+    {
+      "frame": 420,
+      "mechanism": "dnr",
+      "key_error": 1.6784667593583436e-06,
+      "passed": true
+    },
+    {
+      "frame": 420,
+      "mechanism": "wing",
+      "key_error": 0.0,
+      "passed": true
+    },
+    {
+      "frame": 480,
+      "mechanism": "doors",
+      "key_error": 0.0,
+      "passed": true
+    },
+    {
+      "frame": 480,
+      "mechanism": "drivetrain",
+      "key_error": 1.8310540355059857e-06,
+      "passed": true
+    },
+    {
+      "frame": 480,
+      "mechanism": "gearbox",
+      "key_error": 5.49316519027343e-06,
+      "passed": true
+    },
+    {
+      "frame": 480,
+      "mechanism": "dnr",
+      "key_error": 1.6784667593583436e-06,
+      "passed": true
+    },
+    {
+      "frame": 480,
+      "mechanism": "wing",
+      "key_error": 0.0,
+      "passed": true
+    }
+  ],
+  "coverage": "Plan controls keyed per frame; sampled frames re-evaluated against the portable evaluator (root-relative); per-frame continuity of every body signal; no collision test of the sequence"
+}

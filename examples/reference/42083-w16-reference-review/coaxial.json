@@ -1,0 +1,150 @@
+{
+  "instances": [
+    "38",
+    "67",
+    "68"
+  ],
+  "placements": {
+    "policy": "Nearest orthogonal analysis frame within rounding_limit; source translations and handedness preserved",
+    "rounding_limit": 0.002,
+    "counts": {
+      "normalized": 3
+    },
+    "affected": [
+      {
+        "id": "38",
+        "status": "normalized",
+        "reflected": false,
+        "max_scale_error": 0.00011849297970689676,
+        "max_coefficient_change": 0.00011445065679760447
+      },
+      {
+        "id": "67",
+        "status": "normalized",
+        "reflected": false,
+        "max_scale_error": 0.00011849297970689676,
+        "max_coefficient_change": 0.00011445065679760447
+      },
+      {
+        "id": "68",
+        "status": "normalized",
+        "reflected": false,
+        "max_scale_error": 0.00011849297970689676,
+        "max_coefficient_change": 0.00011445065679760447
+      }
+    ]
+  },
+  "pairs": [
+    {
+      "a": "38",
+      "b": "67",
+      "status": "candidate",
+      "evidence": {
+        "first_feature": 6,
+        "second_feature": 0,
+        "first_kind": "axle_hole",
+        "second_kind": "axle",
+        "first_position": [
+          0.0,
+          50.0,
+          190.0
+        ],
+        "first_axis": [
+          0.0,
+          0.0,
+          -1.0
+        ],
+        "second_position": [
+          0.0,
+          50.0,
+          210.0
+        ],
+        "second_axis": [
+          0.0,
+          0.0,
+          1.0
+        ],
+        "coaxial": true,
+        "angle_degrees": 0.0,
+        "radial_offset_ldu": 0.0,
+        "axial_separation_ldu": 20.0
+      }
+    },
+    {
+      "a": "38",
+      "b": "68",
+      "status": "candidate",
+      "evidence": {
+        "first_feature": 6,
+        "second_feature": 0,
+        "first_kind": "axle_hole",
+        "second_kind": "axle_hole",
+        "first_position": [
+          0.0,
+          50.0,
+          190.0
+        ],
+        "first_axis": [
+          0.0,
+          0.0,
+          -1.0
+        ],
+        "second_position": [
+          0.0,
+          50.0,
+          200.0
+        ],
+        "second_axis": [
+          0.0,
+          0.0,
+          -1.0
+        ],
+        "coaxial": true,
+        "angle_degrees": 0.0,
+        "radial_offset_ldu": 0.0,
+        "axial_separation_ldu": 10.0
+      }
+    },
+    {
+      "a": "67",
+      "b": "68",
+      "status": "candidate",
+      "evidence": {
+        "first_feature": 0,
+        "second_feature": 0,
+        "first_kind": "axle",
+        "second_kind": "axle_hole",
+        "first_position": [
+          0.0,
+          50.0,
+          210.0
+        ],
+        "first_axis": [
+          0.0,
+          0.0,
+          1.0
+        ],
+        "second_position": [
+          0.0,
+          50.0,
+          200.0
+        ],
+        "second_axis": [
+          0.0,
+          0.0,
+          -1.0
+        ],
+        "coaxial": true,
+        "angle_degrees": 0.0,
+        "radial_offset_ldu": 0.0,
+        "axial_separation_ldu": 10.0
+      }
+    }
+  ],
+  "coordinate_space": "selected section, LDU, -Y up",
+  "tolerances": {
+    "distance_ldu": 0.5,
+    "angle_degrees": 1.0
+  },
+  "coverage": "Closest connector-axis pair per part pair, at arbitrary rotation. Infinite lines only; axial overlap, shape compatibility, retention and torque transfer untested. Feature indices refer to connectors.features."
+}

@@ -1,0 +1,118 @@
+{
+  "figure": "MF08_athlete",
+  "sweep": {
+    "no_new_surface_crossings": true,
+    "crossings": [],
+    "excluded_rest_pairs": [
+      [
+        "3",
+        "4"
+      ],
+      [
+        "3",
+        "5"
+      ]
+    ]
+  },
+  "clip_poses": {
+    "samples": 720,
+    "every": 6,
+    "no_new_surface_crossings": false,
+    "crossings_by_clip": {
+      "MF02_spaceman.wave": [
+        "head-arm_r",
+        "head-hand_r",
+        "headgear0-hand_r"
+      ],
+      "MF08_athlete.high_jump": [
+        "head-hand_l",
+        "head-hand_r",
+        "headgear0-arm_l",
+        "headgear0-arm_r",
+        "headgear0-hand_l",
+        "headgear0-hand_r"
+      ],
+      "MF10_diver.swim_crawl": [
+        "head-arm_l",
+        "head-arm_r",
+        "head-hand_l",
+        "head-hand_r",
+        "headgear0-arm_l",
+        "headgear0-hand_l",
+        "headgear0-hand_r"
+      ]
+    },
+    "frames_with_crossings": {
+      "MF02_spaceman.wave": [
+        13
+      ],
+      "MF08_athlete.high_jump": [
+        31,
+        61,
+        79,
+        115
+      ],
+      "MF10_diver.swim_crawl": [
+        37,
+        55,
+        73,
+        79,
+        97
+      ]
+    },
+    "deep_shrink_ldu": 1.5,
+    "no_deep_crossings": false,
+    "deep_crossings_by_clip": {
+      "MF02_spaceman.wave": [
+        "head-hand_r",
+        "headgear0-hand_r"
+      ],
+      "MF08_athlete.high_jump": [
+        "head-hand_l",
+        "head-hand_r",
+        "headgear0-arm_l",
+        "headgear0-arm_r",
+        "headgear0-hand_l",
+        "headgear0-hand_r"
+      ],
+      "MF10_diver.swim_crawl": [
+        "head-hand_l",
+        "head-hand_r",
+        "headgear0-arm_l",
+        "headgear0-hand_l",
+        "headgear0-hand_r"
+      ]
+    },
+    "frames_with_deep_crossings": {
+      "MF02_spaceman.wave": [
+        13
+      ],
+      "MF08_athlete.high_jump": [
+        31,
+        61,
+        79,
+        115
+      ],
+      "MF10_diver.swim_crawl": [
+        37,
+        55,
+        73,
+        79,
+        97
+      ]
+    }
+  },
+  "roles": {
+    "0": "torso",
+    "1": "head",
+    "2": "headgear0",
+    "3": "hips",
+    "4": "leg_l",
+    "5": "leg_r",
+    "6": "arm_l",
+    "7": "hand_l",
+    "8": "arm_r",
+    "9": "hand_r"
+  },
+  "coverage": "Sampled surface crossings only; excludes rigid-body and rest-contact pairs; containment untested; joint channels only (whole-figure staging not applied)"
+}

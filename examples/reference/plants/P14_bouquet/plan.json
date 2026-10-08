@@ -1,0 +1,2419 @@
+{
+  "version": 1,
+  "name": "plant_14_bouquet",
+  "status": "ready",
+  "source": {
+    "version": 1,
+    "path": "/Users/captain/workspaces/workspace-ai/ldraw-mecha/output/plants/P14_bouquet/source/scenario.mpd",
+    "sha256": "5701458dd3cadf55851799835a776790840d3c6cf6e3a0bbc0adaa1b1571c2cd",
+    "section": "p14_bouquet.ldr",
+    "description": "Plant wind case P14_bouquet Vase bouquet",
+    "author": "ldraw-mecha scripts/build_plants.py",
+    "dependencies": {
+      "/Users/captain/workspaces/workspace-ai/ldraw-mecha/output/plants/P14_bouquet/source/scenario.mpd": "5701458dd3cadf55851799835a776790840d3c6cf6e3a0bbc0adaa1b1571c2cd"
+    },
+    "nodes": [
+      {
+        "id": "0",
+        "parent": "root",
+        "ref": "3958.dat",
+        "kind": "part",
+        "embedded": false,
+        "section": "p14_bouquet.ldr",
+        "index": 0,
+        "line": 8,
+        "colour": "15",
+        "effective_colour": "15",
+        "local": [
+          [
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            1.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            1.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "world": [
+          [
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            1.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            1.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "description": "Plate  6 x  6"
+      },
+      {
+        "id": "1",
+        "parent": "root",
+        "ref": "18674.dat",
+        "kind": "part",
+        "embedded": false,
+        "section": "p14_bouquet.ldr",
+        "index": 1,
+        "line": 10,
+        "colour": "0",
+        "effective_colour": "0",
+        "local": [
+          [
+            1.0,
+            0.0,
+            0.0,
+            -40.0
+          ],
+          [
+            0.0,
+            1.0,
+            0.0,
+            -8.0
+          ],
+          [
+            0.0,
+            0.0,
+            1.0,
+            -20.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "world": [
+          [
+            1.0,
+            0.0,
+            0.0,
+            -40.0
+          ],
+          [
+            0.0,
+            1.0,
+            0.0,
+            -8.0
+          ],
+          [
+            0.0,
+            0.0,
+            1.0,
+            -20.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "description": "Plate  2 x  2 Round with  1 Centre Stud"
+      },
+      {
+        "id": "2",
+        "parent": "root",
+        "ref": "20482.dat",
+        "kind": "part",
+        "embedded": false,
+        "section": "p14_bouquet.ldr",
+        "index": 2,
+        "line": 12,
+        "colour": "297",
+        "effective_colour": "297",
+        "local": [
+          [
+            1.0,
+            0.0,
+            0.0,
+            -40.0
+          ],
+          [
+            0.0,
+            1.0,
+            0.0,
+            -16.0
+          ],
+          [
+            0.0,
+            0.0,
+            1.0,
+            -20.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "world": [
+          [
+            1.0,
+            0.0,
+            0.0,
+            -40.0
+          ],
+          [
+            0.0,
+            1.0,
+            0.0,
+            -16.0
+          ],
+          [
+            0.0,
+            0.0,
+            1.0,
+            -20.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "description": "Tile  1 x  1 Round with Pin and Pin Hole"
+      },
+      {
+        "id": "3",
+        "parent": "root",
+        "ref": "3942c.dat",
+        "kind": "part",
+        "embedded": false,
+        "section": "p14_bouquet.ldr",
+        "index": 3,
+        "line": 14,
+        "colour": "0",
+        "effective_colour": "0",
+        "local": [
+          [
+            -1.0,
+            0.0,
+            0.0,
+            -40.0
+          ],
+          [
+            0.0,
+            -1.0,
+            0.0,
+            -20.0
+          ],
+          [
+            0.0,
+            0.0,
+            1.0,
+            -20.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "world": [
+          [
+            -1.0,
+            0.0,
+            0.0,
+            -40.0
+          ],
+          [
+            0.0,
+            -1.0,
+            0.0,
+            -20.0
+          ],
+          [
+            0.0,
+            0.0,
+            1.0,
+            -20.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "description": "Cone  2 x  2 x  2 with Hollow Stud Open"
+      },
+      {
+        "id": "4",
+        "parent": "root",
+        "ref": "15395.dat",
+        "kind": "part",
+        "embedded": false,
+        "section": "p14_bouquet.ldr",
+        "index": 4,
+        "line": 16,
+        "colour": "0",
+        "effective_colour": "0",
+        "local": [
+          [
+            -1.0,
+            0.0,
+            0.0,
+            -40.0
+          ],
+          [
+            0.0,
+            -1.0,
+            0.0,
+            -84.0
+          ],
+          [
+            0.0,
+            0.0,
+            1.0,
+            -20.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "world": [
+          [
+            -1.0,
+            0.0,
+            0.0,
+            -40.0
+          ],
+          [
+            0.0,
+            -1.0,
+            0.0,
+            -84.0
+          ],
+          [
+            0.0,
+            0.0,
+            1.0,
+            -20.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "description": "Dome  2 x  2 Inverted with Stud and Tube"
+      },
+      {
+        "id": "5",
+        "parent": "root",
+        "ref": "85861.dat",
+        "kind": "part",
+        "embedded": false,
+        "section": "p14_bouquet.ldr",
+        "index": 5,
+        "line": 18,
+        "colour": "297",
+        "effective_colour": "297",
+        "local": [
+          [
+            -1.0,
+            0.0,
+            0.0,
+            -40.0
+          ],
+          [
+            0.0,
+            -1.0,
+            0.0,
+            -92.0
+          ],
+          [
+            0.0,
+            0.0,
+            1.0,
+            -20.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "world": [
+          [
+            -1.0,
+            0.0,
+            0.0,
+            -40.0
+          ],
+          [
+            0.0,
+            -1.0,
+            0.0,
+            -92.0
+          ],
+          [
+            0.0,
+            0.0,
+            1.0,
+            -20.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "description": "Plate  1 x  1 Round with Open Stud"
+      },
+      {
+        "id": "6",
+        "parent": "root",
+        "ref": "24855.dat",
+        "kind": "part",
+        "embedded": false,
+        "section": "p14_bouquet.ldr",
+        "index": 6,
+        "line": 20,
+        "colour": "2",
+        "effective_colour": "2",
+        "local": [
+          [
+            -1.0,
+            0.0,
+            0.0,
+            -40.0
+          ],
+          [
+            0.0,
+            1.0,
+            0.0,
+            -110.0
+          ],
+          [
+            0.0,
+            0.0,
+            -1.0,
+            -20.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "world": [
+          [
+            -1.0,
+            0.0,
+            0.0,
+            -40.0
+          ],
+          [
+            0.0,
+            1.0,
+            0.0,
+            -110.0
+          ],
+          [
+            0.0,
+            0.0,
+            -1.0,
+            -20.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "description": "Plant Flower Stem with Bar and Hole"
+      },
+      {
+        "id": "7",
+        "parent": "root",
+        "ref": "32606.dat",
+        "kind": "part",
+        "embedded": false,
+        "section": "p14_bouquet.ldr",
+        "index": 7,
+        "line": 22,
+        "colour": "15",
+        "effective_colour": "15",
+        "local": [
+          [
+            -0.864,
+            -0.497,
+            0.078,
+            -18.765
+          ],
+          [
+            -0.497,
+            0.819,
+            -0.287,
+            -132.527
+          ],
+          [
+            0.078,
+            -0.287,
+            -0.955,
+            -7.74
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "world": [
+          [
+            -0.864,
+            -0.497,
+            0.078,
+            -18.765
+          ],
+          [
+            -0.497,
+            0.819,
+            -0.287,
+            -132.527
+          ],
+          [
+            0.078,
+            -0.287,
+            -0.955,
+            -7.74
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "description": "Plant Flower with  7 Alternate Petals with Bar and Pin Hole"
+      },
+      {
+        "id": "8",
+        "parent": "root",
+        "ref": "32606.dat",
+        "kind": "part",
+        "embedded": false,
+        "section": "p14_bouquet.ldr",
+        "index": 8,
+        "line": 24,
+        "colour": "29",
+        "effective_colour": "29",
+        "local": [
+          [
+            -0.801,
+            0.497,
+            -0.333,
+            -58.752
+          ],
+          [
+            0.56,
+            0.819,
+            -0.125,
+            -128.431
+          ],
+          [
+            0.211,
+            -0.287,
+            -0.934,
+            -9.174
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "world": [
+          [
+            -0.801,
+            0.497,
+            -0.333,
+            -58.752
+          ],
+          [
+            0.56,
+            0.819,
+            -0.125,
+            -128.431
+          ],
+          [
+            0.211,
+            -0.287,
+            -0.934,
+            -9.174
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "description": "Plant Flower with  7 Alternate Petals with Bar and Pin Hole"
+      },
+      {
+        "id": "9",
+        "parent": "root",
+        "ref": "32606.dat",
+        "kind": "part",
+        "embedded": false,
+        "section": "p14_bouquet.ldr",
+        "index": 9,
+        "line": 26,
+        "colour": "14",
+        "effective_colour": "14",
+        "local": [
+          [
+            0.16,
+            0.0,
+            -0.987,
+            -40.0
+          ],
+          [
+            -0.566,
+            0.819,
+            -0.092,
+            -123.107
+          ],
+          [
+            0.809,
+            0.574,
+            0.131,
+            -37.924
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "world": [
+          [
+            0.16,
+            0.0,
+            -0.987,
+            -40.0
+          ],
+          [
+            -0.566,
+            0.819,
+            -0.092,
+            -123.107
+          ],
+          [
+            0.809,
+            0.574,
+            0.131,
+            -37.924
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "description": "Plant Flower with  7 Alternate Petals with Bar and Pin Hole"
+      },
+      {
+        "id": "10",
+        "parent": "root",
+        "ref": "18674.dat",
+        "kind": "part",
+        "embedded": false,
+        "section": "p14_bouquet.ldr",
+        "index": 10,
+        "line": 28,
+        "colour": "72",
+        "effective_colour": "72",
+        "local": [
+          [
+            1.0,
+            0.0,
+            0.0,
+            40.0
+          ],
+          [
+            0.0,
+            1.0,
+            0.0,
+            -8.0
+          ],
+          [
+            0.0,
+            0.0,
+            1.0,
+            20.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "world": [
+          [
+            1.0,
+            0.0,
+            0.0,
+            40.0
+          ],
+          [
+            0.0,
+            1.0,
+            0.0,
+            -8.0
+          ],
+          [
+            0.0,
+            0.0,
+            1.0,
+            20.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "description": "Plate  2 x  2 Round with  1 Centre Stud"
+      },
+      {
+        "id": "11",
+        "parent": "root",
+        "ref": "20482.dat",
+        "kind": "part",
+        "embedded": false,
+        "section": "p14_bouquet.ldr",
+        "index": 11,
+        "line": 30,
+        "colour": "7",
+        "effective_colour": "7",
+        "local": [
+          [
+            1.0,
+            0.0,
+            0.0,
+            40.0
+          ],
+          [
+            0.0,
+            1.0,
+            0.0,
+            -16.0
+          ],
+          [
+            0.0,
+            0.0,
+            1.0,
+            20.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "world": [
+          [
+            1.0,
+            0.0,
+            0.0,
+            40.0
+          ],
+          [
+            0.0,
+            1.0,
+            0.0,
+            -16.0
+          ],
+          [
+            0.0,
+            0.0,
+            1.0,
+            20.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "description": "Tile  1 x  1 Round with Pin and Pin Hole"
+      },
+      {
+        "id": "12",
+        "parent": "root",
+        "ref": "3942c.dat",
+        "kind": "part",
+        "embedded": false,
+        "section": "p14_bouquet.ldr",
+        "index": 12,
+        "line": 32,
+        "colour": "72",
+        "effective_colour": "72",
+        "local": [
+          [
+            -1.0,
+            0.0,
+            0.0,
+            40.0
+          ],
+          [
+            0.0,
+            -1.0,
+            0.0,
+            -20.0
+          ],
+          [
+            0.0,
+            0.0,
+            1.0,
+            20.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "world": [
+          [
+            -1.0,
+            0.0,
+            0.0,
+            40.0
+          ],
+          [
+            0.0,
+            -1.0,
+            0.0,
+            -20.0
+          ],
+          [
+            0.0,
+            0.0,
+            1.0,
+            20.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "description": "Cone  2 x  2 x  2 with Hollow Stud Open"
+      },
+      {
+        "id": "13",
+        "parent": "root",
+        "ref": "15395.dat",
+        "kind": "part",
+        "embedded": false,
+        "section": "p14_bouquet.ldr",
+        "index": 13,
+        "line": 34,
+        "colour": "72",
+        "effective_colour": "72",
+        "local": [
+          [
+            -1.0,
+            0.0,
+            0.0,
+            40.0
+          ],
+          [
+            0.0,
+            -1.0,
+            0.0,
+            -84.0
+          ],
+          [
+            0.0,
+            0.0,
+            1.0,
+            20.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "world": [
+          [
+            -1.0,
+            0.0,
+            0.0,
+            40.0
+          ],
+          [
+            0.0,
+            -1.0,
+            0.0,
+            -84.0
+          ],
+          [
+            0.0,
+            0.0,
+            1.0,
+            20.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "description": "Dome  2 x  2 Inverted with Stud and Tube"
+      },
+      {
+        "id": "14",
+        "parent": "root",
+        "ref": "85861.dat",
+        "kind": "part",
+        "embedded": false,
+        "section": "p14_bouquet.ldr",
+        "index": 14,
+        "line": 36,
+        "colour": "7",
+        "effective_colour": "7",
+        "local": [
+          [
+            -1.0,
+            0.0,
+            0.0,
+            40.0
+          ],
+          [
+            0.0,
+            -1.0,
+            0.0,
+            -92.0
+          ],
+          [
+            0.0,
+            0.0,
+            1.0,
+            20.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "world": [
+          [
+            -1.0,
+            0.0,
+            0.0,
+            40.0
+          ],
+          [
+            0.0,
+            -1.0,
+            0.0,
+            -92.0
+          ],
+          [
+            0.0,
+            0.0,
+            1.0,
+            20.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "description": "Plate  1 x  1 Round with Open Stud"
+      },
+      {
+        "id": "15",
+        "parent": "root",
+        "ref": "19119.dat",
+        "kind": "part",
+        "embedded": false,
+        "section": "p14_bouquet.ldr",
+        "index": 15,
+        "line": 38,
+        "colour": "2",
+        "effective_colour": "2",
+        "local": [
+          [
+            0.8660254038,
+            0.0,
+            0.5,
+            40.0
+          ],
+          [
+            0.0,
+            1.0,
+            0.0,
+            -100.0
+          ],
+          [
+            -0.5,
+            0.0,
+            0.8660254038,
+            20.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "world": [
+          [
+            0.8660254038,
+            0.0,
+            0.5,
+            40.0
+          ],
+          [
+            0.0,
+            1.0,
+            0.0,
+            -100.0
+          ],
+          [
+            -0.5,
+            0.0,
+            0.8660254038,
+            20.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "description": "Plant Flower Stem with Bar and  6 Stems"
+      },
+      {
+        "id": "16",
+        "parent": "root",
+        "ref": "3742.dat",
+        "kind": "part",
+        "embedded": false,
+        "section": "p14_bouquet.ldr",
+        "index": 16,
+        "line": 40,
+        "colour": "4",
+        "effective_colour": "4",
+        "local": [
+          [
+            -0.8944141809,
+            0.4330128512,
+            -0.1119068529,
+            25.71058145
+          ],
+          [
+            0.4472396008,
+            0.8660253042,
+            -0.2235551652,
+            -127.3828988
+          ],
+          [
+            0.000111906853,
+            -0.2500000862,
+            -0.9682458078,
+            28.24999965
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "world": [
+          [
+            -0.8944141809,
+            0.4330128512,
+            -0.1119068529,
+            25.71058145
+          ],
+          [
+            0.4472396008,
+            0.8660253042,
+            -0.2235551652,
+            -127.3828988
+          ],
+          [
+            0.000111906853,
+            -0.2500000862,
+            -0.9682458078,
+            28.24999965
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "description": "Plant Flower"
+      },
+      {
+        "id": "17",
+        "parent": "root",
+        "ref": "3742.dat",
+        "kind": "part",
+        "embedded": false,
+        "section": "p14_bouquet.ldr",
+        "index": 17,
+        "line": 42,
+        "colour": "14",
+        "effective_colour": "14",
+        "local": [
+          [
+            -0.8944134459,
+            -0.4330141974,
+            0.111907518,
+            54.2891782
+          ],
+          [
+            -0.4472410705,
+            0.8660244394,
+            -0.2235555753,
+            -127.3829022
+          ],
+          [
+            -0.000111907518,
+            -0.2500007506,
+            -0.9682456363,
+            28.24959002
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "world": [
+          [
+            -0.8944134459,
+            -0.4330141974,
+            0.111907518,
+            54.2891782
+          ],
+          [
+            -0.4472410705,
+            0.8660244394,
+            -0.2235555753,
+            -127.3829022
+          ],
+          [
+            -0.000111907518,
+            -0.2500007506,
+            -0.9682456363,
+            28.24959002
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "description": "Plant Flower"
+      },
+      {
+        "id": "18",
+        "parent": "root",
+        "ref": "3742.dat",
+        "kind": "part",
+        "embedded": false,
+        "section": "p14_bouquet.ldr",
+        "index": 18,
+        "line": 44,
+        "colour": "26",
+        "effective_colour": "26",
+        "local": [
+          [
+            -0.3872350507,
+            0.813798204,
+            0.4333376267,
+            18.02803283
+          ],
+          [
+            0.9219809259,
+            0.3420187794,
+            0.1815883444,
+            -112.2349249
+          ],
+          [
+            -0.000433337627,
+            0.469846398,
+            -0.882748081,
+            7.314662709
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "world": [
+          [
+            -0.3872350507,
+            0.813798204,
+            0.4333376267,
+            18.02803283
+          ],
+          [
+            0.9219809259,
+            0.3420187794,
+            0.1815883444,
+            -112.2349249
+          ],
+          [
+            -0.000433337627,
+            0.469846398,
+            -0.882748081,
+            7.314662709
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "description": "Plant Flower"
+      },
+      {
+        "id": "19",
+        "parent": "root",
+        "ref": "3742.dat",
+        "kind": "part",
+        "embedded": false,
+        "section": "p14_bouquet.ldr",
+        "index": 19,
+        "line": 46,
+        "colour": "15",
+        "effective_colour": "15",
+        "local": [
+          [
+            -1.0,
+            -9.7689e-08,
+            -5.6466e-08,
+            40.00023457
+          ],
+          [
+            -1.12835e-07,
+            0.8660244394,
+            0.5000016704,
+            -127.3829022
+          ],
+          [
+            0.0,
+            0.5000016704,
+            -0.8660244394,
+            3.500413669
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "world": [
+          [
+            -1.0,
+            -9.7689e-08,
+            -5.6466e-08,
+            40.00023457
+          ],
+          [
+            -1.12835e-07,
+            0.8660244394,
+            0.5000016704,
+            -127.3829022
+          ],
+          [
+            0.0,
+            0.5000016704,
+            -0.8660244394,
+            3.500413669
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "description": "Plant Flower"
+      },
+      {
+        "id": "20",
+        "parent": "root",
+        "ref": "3742.dat",
+        "kind": "part",
+        "embedded": false,
+        "section": "p14_bouquet.ldr",
+        "index": 20,
+        "line": 48,
+        "colour": "25",
+        "effective_colour": "25",
+        "local": [
+          [
+            -1.0,
+            1.85405e-07,
+            -5.10891e-07,
+            39.99984076
+          ],
+          [
+            5.43493e-07,
+            0.3420187794,
+            -0.9396931172,
+            -112.2349249
+          ],
+          [
+            0.0,
+            -0.9396931172,
+            -0.3420187794,
+            45.37095039
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "world": [
+          [
+            -1.0,
+            1.85405e-07,
+            -5.10891e-07,
+            39.99984076
+          ],
+          [
+            5.43493e-07,
+            0.3420187794,
+            -0.9396931172,
+            -112.2349249
+          ],
+          [
+            0.0,
+            -0.9396931172,
+            -0.3420187794,
+            45.37095039
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "description": "Plant Flower"
+      },
+      {
+        "id": "21",
+        "parent": "root",
+        "ref": "3742.dat",
+        "kind": "part",
+        "embedded": false,
+        "section": "p14_bouquet.ldr",
+        "index": 21,
+        "line": 50,
+        "colour": "29",
+        "effective_colour": "29",
+        "local": [
+          [
+            -0.3872355999,
+            -0.8137979633,
+            -0.4333375878,
+            61.97212817
+          ],
+          [
+            -0.9219806952,
+            0.3420192487,
+            0.1815886317,
+            -112.234923
+          ],
+          [
+            0.000433337588,
+            0.4698464732,
+            -0.882748041,
+            7.314385889
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "world": [
+          [
+            -0.3872355999,
+            -0.8137979633,
+            -0.4333375878,
+            61.97212817
+          ],
+          [
+            -0.9219806952,
+            0.3420192487,
+            0.1815886317,
+            -112.234923
+          ],
+          [
+            0.000433337588,
+            0.4698464732,
+            -0.882748041,
+            7.314385889
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "description": "Plant Flower"
+      }
+    ],
+    "diagnostics": [
+      {
+        "code": "model.non_orthonormal_matrix",
+        "message": "transformation matrix is not orthonormal (scaled or sheared part)",
+        "severity": "warning",
+        "path": "/Users/captain/workspaces/workspace-ai/ldraw-mecha/output/plants/P14_bouquet/source/scenario.mpd",
+        "section": "p14_bouquet.ldr",
+        "line_number": 22,
+        "offending_value": "((-0.864, -0.497, 0.078),\n (-0.497, 0.819, -0.287),\n (0.078, -0.287, -0.955))",
+        "suggestions": [],
+        "cause": null
+      },
+      {
+        "code": "model.non_orthonormal_matrix",
+        "message": "transformation matrix is not orthonormal (scaled or sheared part)",
+        "severity": "warning",
+        "path": "/Users/captain/workspaces/workspace-ai/ldraw-mecha/output/plants/P14_bouquet/source/scenario.mpd",
+        "section": "p14_bouquet.ldr",
+        "line_number": 24,
+        "offending_value": "((-0.801, 0.497, -0.333),\n (0.56, 0.819, -0.125),\n (0.211, -0.287, -0.934))",
+        "suggestions": [],
+        "cause": null
+      },
+      {
+        "code": "model.non_orthonormal_matrix",
+        "message": "transformation matrix is not orthonormal (scaled or sheared part)",
+        "severity": "warning",
+        "path": "/Users/captain/workspaces/workspace-ai/ldraw-mecha/output/plants/P14_bouquet/source/scenario.mpd",
+        "section": "p14_bouquet.ldr",
+        "line_number": 26,
+        "offending_value": "((0.16, 0, -0.987),\n (-0.566, 0.819, -0.092),\n (0.809, 0.574, 0.131))",
+        "suggestions": [],
+        "cause": null
+      }
+    ],
+    "coordinate_space": "selected section, LDU, -Y up"
+  },
+  "controls": {
+    "stem_a": {
+      "default": 0,
+      "min": -0.14,
+      "max": 0.14,
+      "unit": "radian",
+      "description": "Stem A in its vase (flex_approx); + leans it downwind (+X)"
+    },
+    "head_a1": {
+      "default": 0,
+      "min": -0.7,
+      "max": 0.7,
+      "unit": "radian",
+      "description": "Flower A1 on its pin (real); right-hand about the pin"
+    },
+    "head_a2": {
+      "default": 0,
+      "min": -0.7,
+      "max": 0.7,
+      "unit": "radian",
+      "description": "Flower A2 on its pin (real); right-hand about the pin"
+    },
+    "head_a3": {
+      "default": 0,
+      "min": -0.7,
+      "max": 0.7,
+      "unit": "radian",
+      "description": "Flower A3 on its pin (real); right-hand about the pin"
+    },
+    "stem_b": {
+      "default": 0,
+      "min": -0.5,
+      "max": 0.5,
+      "unit": "radian",
+      "description": "Stem B in its vase (real); right-hand about up (-Y): + turns +X toward +Z"
+    },
+    "head_b1": {
+      "default": 0,
+      "min": -0.7,
+      "max": 0.7,
+      "unit": "radian",
+      "description": "Flower B1 on its pin (real); right-hand about the pin"
+    },
+    "head_b2": {
+      "default": 0,
+      "min": -0.7,
+      "max": 0.7,
+      "unit": "radian",
+      "description": "Flower B2 on its pin (real); right-hand about the pin"
+    },
+    "head_b3": {
+      "default": 0,
+      "min": -0.7,
+      "max": 0.7,
+      "unit": "radian",
+      "description": "Flower B3 on its pin (real); right-hand about the pin"
+    },
+    "head_b4": {
+      "default": 0,
+      "min": -0.7,
+      "max": 0.7,
+      "unit": "radian",
+      "description": "Flower B4 on its pin (real); right-hand about the pin"
+    },
+    "head_b5": {
+      "default": 0,
+      "min": -0.7,
+      "max": 0.7,
+      "unit": "radian",
+      "description": "Flower B5 on its pin (real); right-hand about the pin"
+    },
+    "head_b6": {
+      "default": 0,
+      "min": -0.7,
+      "max": 0.7,
+      "unit": "radian",
+      "description": "Flower B6 on its pin (real); right-hand about the pin"
+    }
+  },
+  "signals": {
+    "stem_a_angle": {
+      "expression": "a",
+      "variables": {
+        "a": "control:stem_a"
+      }
+    },
+    "head_a1_angle": {
+      "expression": "a",
+      "variables": {
+        "a": "control:head_a1"
+      }
+    },
+    "head_a2_angle": {
+      "expression": "a",
+      "variables": {
+        "a": "control:head_a2"
+      }
+    },
+    "head_a3_angle": {
+      "expression": "a",
+      "variables": {
+        "a": "control:head_a3"
+      }
+    },
+    "stem_b_angle": {
+      "expression": "a",
+      "variables": {
+        "a": "control:stem_b"
+      }
+    },
+    "head_b1_angle": {
+      "expression": "a",
+      "variables": {
+        "a": "control:head_b1"
+      }
+    },
+    "head_b2_angle": {
+      "expression": "a",
+      "variables": {
+        "a": "control:head_b2"
+      }
+    },
+    "head_b3_angle": {
+      "expression": "a",
+      "variables": {
+        "a": "control:head_b3"
+      }
+    },
+    "head_b4_angle": {
+      "expression": "a",
+      "variables": {
+        "a": "control:head_b4"
+      }
+    },
+    "head_b5_angle": {
+      "expression": "a",
+      "variables": {
+        "a": "control:head_b5"
+      }
+    },
+    "head_b6_angle": {
+      "expression": "a",
+      "variables": {
+        "a": "control:head_b6"
+      }
+    }
+  },
+  "bodies": {
+    "stem_a": {
+      "instances": [
+        "6"
+      ],
+      "kind": "revolute",
+      "origin": [
+        -40.0,
+        -90.0,
+        -20.0
+      ],
+      "axis": [
+        0.0,
+        0.0,
+        1.0
+      ],
+      "signal": "stem_a_angle"
+    },
+    "head_a1": {
+      "instances": [
+        "7"
+      ],
+      "kind": "revolute",
+      "origin": [
+        -32.4248,
+        -110.0004,
+        -15.6265
+      ],
+      "axis": [
+        0.496731,
+        -0.819152,
+        0.286789
+      ],
+      "signal": "head_a1_angle",
+      "parent": "stem_a"
+    },
+    "head_a2": {
+      "instances": [
+        "8"
+      ],
+      "kind": "revolute",
+      "origin": [
+        -47.5752,
+        -110.0004,
+        -15.6265
+      ],
+      "axis": [
+        -0.496731,
+        -0.819152,
+        0.286789
+      ],
+      "signal": "head_a2_angle",
+      "parent": "stem_a"
+    },
+    "head_a3": {
+      "instances": [
+        "9"
+      ],
+      "kind": "revolute",
+      "origin": [
+        -40.0,
+        -110.0004,
+        -28.747
+      ],
+      "axis": [
+        0.0,
+        -0.81915,
+        -0.57358
+      ],
+      "signal": "head_a3_angle",
+      "parent": "stem_a"
+    },
+    "stem_b": {
+      "instances": [
+        "15"
+      ],
+      "kind": "revolute",
+      "origin": [
+        40.0,
+        -100.0,
+        20.0
+      ],
+      "axis": [
+        0.0,
+        -1.0,
+        0.0
+      ],
+      "signal": "stem_b_angle"
+    },
+    "head_b1": {
+      "instances": [
+        "16"
+      ],
+      "kind": "revolute",
+      "origin": [
+        26.576607,
+        -125.650848,
+        27.749999
+      ],
+      "axis": [
+        -0.433013,
+        -0.866025,
+        0.25
+      ],
+      "signal": "head_b1_angle",
+      "parent": "stem_b"
+    },
+    "head_b2": {
+      "instances": [
+        "17"
+      ],
+      "kind": "revolute",
+      "origin": [
+        53.42315,
+        -125.650853,
+        27.749589
+      ],
+      "axis": [
+        0.433014,
+        -0.866024,
+        0.250001
+      ],
+      "signal": "head_b2_angle",
+      "parent": "stem_b"
+    },
+    "head_b3": {
+      "instances": [
+        "18"
+      ],
+      "kind": "revolute",
+      "origin": [
+        19.655629,
+        -111.550887,
+        8.254356
+      ],
+      "axis": [
+        -0.813798,
+        -0.342019,
+        -0.469846
+      ],
+      "signal": "head_b3_angle",
+      "parent": "stem_b"
+    },
+    "head_b4": {
+      "instances": [
+        "19"
+      ],
+      "kind": "revolute",
+      "origin": [
+        40.000234,
+        -125.650853,
+        4.500417
+      ],
+      "axis": [
+        0.0,
+        -0.866024,
+        -0.500002
+      ],
+      "signal": "head_b4_angle",
+      "parent": "stem_b"
+    },
+    "head_b5": {
+      "instances": [
+        "20"
+      ],
+      "kind": "revolute",
+      "origin": [
+        39.999841,
+        -111.550887,
+        43.491564
+      ],
+      "axis": [
+        0.0,
+        -0.342019,
+        0.939693
+      ],
+      "signal": "head_b5_angle",
+      "parent": "stem_b"
+    },
+    "head_b6": {
+      "instances": [
+        "21"
+      ],
+      "kind": "revolute",
+      "origin": [
+        60.344532,
+        -111.550884,
+        8.254079
+      ],
+      "axis": [
+        0.813798,
+        -0.342019,
+        -0.469846
+      ],
+      "signal": "head_b6_angle",
+      "parent": "stem_b"
+    }
+  },
+  "anchors": {},
+  "checks": [],
+  "notes": [
+    "Plant wind case P14_bouquet (Vase bouquet) written by scripts/build_plants.py: 10297 vase with 24855 and three 32606 flowers, and a second vase with 19119 and six 3742. Parts picked by constant name from data/categories/parts; frame LDU, -Y up, the case front faces -Z, ground (base top) at y = 0. The wind blows toward +X.",
+    "Joints: stem_a: flex_approx revolute about [0.0, 0.0, 1.0] through [-40.0, -90.0, -20.0] (flex_approx: the bar in the stud only allows a twist; the tilt stands in for the stem bending. 24855 bar in the vase's open stud (official 10297 vase)); head_a1: real revolute about [0.496731, -0.819152, 0.286789] through [-32.4248, -110.0004, -15.6265] (real: 32606 on a long 24855 pin (R2); spins about the pin); head_a2: real revolute about [-0.496731, -0.819152, 0.286789] through [-47.5752, -110.0004, -15.6265] (real: 32606 on a long 24855 pin (R2); spins about the pin); head_a3: real revolute about [0.0, -0.81915, -0.57358] through [-40.0, -110.0004, -28.747] (real: 32606 on a long 24855 pin (R2); spins about the pin); stem_b: real revolute about [0.0, -1.0, 0.0] through [40.0, -100.0, 20.0] (real: 19119 bar in the vase's open stud (same seat as the 24855 bar); turns about the bar); head_b1: real revolute about [-0.433013, -0.866025, 0.25] through [26.576607, -125.650848, 27.749999] (real: 3742 on a 19119 flower pin (R2); spins about the pin); head_b2: real revolute about [0.433014, -0.866024, 0.250001] through [53.42315, -125.650853, 27.749589] (real: 3742 on a 19119 flower pin (R2); spins about the pin); head_b3: real revolute about [-0.813798, -0.342019, -0.469846] through [19.655629, -111.550887, 8.254356] (real: 3742 on a 19119 flower pin (R2); spins about the pin); head_b4: real revolute about [0.0, -0.866024, -0.500002] through [40.000234, -125.650853, 4.500417] (real: 3742 on a 19119 flower pin (R2); spins about the pin); head_b5: real revolute about [0.0, -0.342019, 0.939693] through [39.999841, -111.550887, 43.491564] (real: 3742 on a 19119 flower pin (R2); spins about the pin); head_b6: real revolute about [0.813798, -0.342019, -0.469846] through [60.344532, -111.550884, 8.254079] (real: 3742 on a 19119 flower pin (R2); spins about the pin).",
+    "Real LEGO freedoms: head_a1, head_a2, head_a3, stem_b, head_b1, head_b2, head_b3, head_b4, head_b5, head_b6. flex_approx joints (rigid tilt standing in for bending plastic, range <= 0.17 rad): stem_a.",
+    "Sign convention by meaning (checked with the evaluator, kinematics.json): stem_a + = Stem A in its vase (flex_approx); + leans it downwind (+X); head_a1 + = Flower A1 on its pin (real); right-hand about the pin; head_a2 + = Flower A2 on its pin (real); right-hand about the pin; head_a3 + = Flower A3 on its pin (real); right-hand about the pin; stem_b + = Stem B in its vase (real); right-hand about up (-Y): + turns +X toward +Z; head_b1 + = Flower B1 on its pin (real); right-hand about the pin; head_b2 + = Flower B2 on its pin (real); right-hand about the pin; head_b3 + = Flower B3 on its pin (real); right-hand about the pin; head_b4 + = Flower B4 on its pin (real); right-hand about the pin; head_b5 + = Flower B5 on its pin (real); right-hand about the pin; head_b6 + = Flower B6 on its pin (real); right-hand about the pin.",
+    "Motion comes from wind clips (scripts/wind_clips.py): a damped-response approximation, not aerodynamics. Ranges are catalog choices narrowed by sampled clearance (scripts/blender/check_plants_clearance.py), not measured stops. Kinematic and transform checks do not prove collision-free or physically feasible motion."
+  ],
+  "mechanisms": {
+    "stem_a": {
+      "label": "Vase bouquet: stem a",
+      "parts": [
+        "5",
+        "6"
+      ],
+      "bodies": [
+        "stem_a"
+      ],
+      "inputs": [
+        "control:stem_a"
+      ],
+      "outputs": [
+        "body:stem_a"
+      ],
+      "disposition": "planned",
+      "notes": [
+        "flex_approx revolute joint: flex_approx: the bar in the stud only allows a twist; the tilt stands in for the stem bending. 24855 bar in the vase's open stud (official 10297 vase)"
+      ],
+      "review": "Joint declared in this plan (scripts/build_plants.py); driven by wind clips."
+    },
+    "head_a1": {
+      "label": "Vase bouquet: head a1",
+      "parts": [
+        "6",
+        "7"
+      ],
+      "bodies": [
+        "head_a1"
+      ],
+      "inputs": [
+        "control:head_a1"
+      ],
+      "outputs": [
+        "body:head_a1"
+      ],
+      "disposition": "planned",
+      "notes": [
+        "real revolute joint: real: 32606 on a long 24855 pin (R2); spins about the pin"
+      ],
+      "review": "Joint declared in this plan (scripts/build_plants.py); driven by wind clips."
+    },
+    "head_a2": {
+      "label": "Vase bouquet: head a2",
+      "parts": [
+        "6",
+        "8"
+      ],
+      "bodies": [
+        "head_a2"
+      ],
+      "inputs": [
+        "control:head_a2"
+      ],
+      "outputs": [
+        "body:head_a2"
+      ],
+      "disposition": "planned",
+      "notes": [
+        "real revolute joint: real: 32606 on a long 24855 pin (R2); spins about the pin"
+      ],
+      "review": "Joint declared in this plan (scripts/build_plants.py); driven by wind clips."
+    },
+    "head_a3": {
+      "label": "Vase bouquet: head a3",
+      "parts": [
+        "6",
+        "9"
+      ],
+      "bodies": [
+        "head_a3"
+      ],
+      "inputs": [
+        "control:head_a3"
+      ],
+      "outputs": [
+        "body:head_a3"
+      ],
+      "disposition": "planned",
+      "notes": [
+        "real revolute joint: real: 32606 on a long 24855 pin (R2); spins about the pin"
+      ],
+      "review": "Joint declared in this plan (scripts/build_plants.py); driven by wind clips."
+    },
+    "stem_b": {
+      "label": "Vase bouquet: stem b",
+      "parts": [
+        "14",
+        "15"
+      ],
+      "bodies": [
+        "stem_b"
+      ],
+      "inputs": [
+        "control:stem_b"
+      ],
+      "outputs": [
+        "body:stem_b"
+      ],
+      "disposition": "planned",
+      "notes": [
+        "real revolute joint: real: 19119 bar in the vase's open stud (same seat as the 24855 bar); turns about the bar"
+      ],
+      "review": "Joint declared in this plan (scripts/build_plants.py); driven by wind clips."
+    },
+    "head_b1": {
+      "label": "Vase bouquet: head b1",
+      "parts": [
+        "15",
+        "16"
+      ],
+      "bodies": [
+        "head_b1"
+      ],
+      "inputs": [
+        "control:head_b1"
+      ],
+      "outputs": [
+        "body:head_b1"
+      ],
+      "disposition": "planned",
+      "notes": [
+        "real revolute joint: real: 3742 on a 19119 flower pin (R2); spins about the pin"
+      ],
+      "review": "Joint declared in this plan (scripts/build_plants.py); driven by wind clips."
+    },
+    "head_b2": {
+      "label": "Vase bouquet: head b2",
+      "parts": [
+        "15",
+        "17"
+      ],
+      "bodies": [
+        "head_b2"
+      ],
+      "inputs": [
+        "control:head_b2"
+      ],
+      "outputs": [
+        "body:head_b2"
+      ],
+      "disposition": "planned",
+      "notes": [
+        "real revolute joint: real: 3742 on a 19119 flower pin (R2); spins about the pin"
+      ],
+      "review": "Joint declared in this plan (scripts/build_plants.py); driven by wind clips."
+    },
+    "head_b3": {
+      "label": "Vase bouquet: head b3",
+      "parts": [
+        "15",
+        "18"
+      ],
+      "bodies": [
+        "head_b3"
+      ],
+      "inputs": [
+        "control:head_b3"
+      ],
+      "outputs": [
+        "body:head_b3"
+      ],
+      "disposition": "planned",
+      "notes": [
+        "real revolute joint: real: 3742 on a 19119 flower pin (R2); spins about the pin"
+      ],
+      "review": "Joint declared in this plan (scripts/build_plants.py); driven by wind clips."
+    },
+    "head_b4": {
+      "label": "Vase bouquet: head b4",
+      "parts": [
+        "15",
+        "19"
+      ],
+      "bodies": [
+        "head_b4"
+      ],
+      "inputs": [
+        "control:head_b4"
+      ],
+      "outputs": [
+        "body:head_b4"
+      ],
+      "disposition": "planned",
+      "notes": [
+        "real revolute joint: real: 3742 on a 19119 flower pin (R2); spins about the pin"
+      ],
+      "review": "Joint declared in this plan (scripts/build_plants.py); driven by wind clips."
+    },
+    "head_b5": {
+      "label": "Vase bouquet: head b5",
+      "parts": [
+        "15",
+        "20"
+      ],
+      "bodies": [
+        "head_b5"
+      ],
+      "inputs": [
+        "control:head_b5"
+      ],
+      "outputs": [
+        "body:head_b5"
+      ],
+      "disposition": "planned",
+      "notes": [
+        "real revolute joint: real: 3742 on a 19119 flower pin (R2); spins about the pin"
+      ],
+      "review": "Joint declared in this plan (scripts/build_plants.py); driven by wind clips."
+    },
+    "head_b6": {
+      "label": "Vase bouquet: head b6",
+      "parts": [
+        "15",
+        "21"
+      ],
+      "bodies": [
+        "head_b6"
+      ],
+      "inputs": [
+        "control:head_b6"
+      ],
+      "outputs": [
+        "body:head_b6"
+      ],
+      "disposition": "planned",
+      "notes": [
+        "real revolute joint: real: 3742 on a 19119 flower pin (R2); spins about the pin"
+      ],
+      "review": "Joint declared in this plan (scripts/build_plants.py); driven by wind clips."
+    },
+    "context": {
+      "label": "Vase bouquet: base and mounts (static)",
+      "parts": [
+        "0",
+        "1",
+        "2",
+        "3",
+        "4",
+        "5",
+        "10",
+        "11",
+        "12",
+        "13",
+        "14"
+      ],
+      "bodies": [],
+      "inputs": [],
+      "outputs": [],
+      "disposition": "static",
+      "notes": [],
+      "review": "Base, trunk and mounts built for the catalog; they do not move in this case."
+    }
+  },
+  "connections": {
+    "joint_stem_a": {
+      "a": "5",
+      "b": "6",
+      "kind": "revolute",
+      "status": "reviewed",
+      "evidence": "flex_approx: the bar in the stud only allows a twist; the tilt stands in for the stem bending. 24855 bar in the vase's open stud (official 10297 vase). not detected by pyldraw3 contacts (no pairing connector kinds, or a placement it does not support); placement from the named source.",
+      "measurements": {
+        "origin": [
+          -40.0,
+          -90.0,
+          -20.0
+        ],
+        "axis": [
+          0.0,
+          0.0,
+          1.0
+        ]
+      },
+      "review": "Joint frame measured as stated (scripts/build_plants.py); flex_approx: not a real LEGO freedom."
+    },
+    "joint_head_a1": {
+      "a": "6",
+      "b": "7",
+      "kind": "revolute",
+      "status": "reviewed",
+      "evidence": "real: 32606 on a long 24855 pin (R2); spins about the pin. pyldraw3 contact confirmed (pin/pin_hole).",
+      "measurements": {
+        "origin": [
+          -32.4248,
+          -110.0004,
+          -15.6265
+        ],
+        "axis": [
+          0.496731,
+          -0.819152,
+          0.286789
+        ]
+      },
+      "review": "Joint frame measured as stated (scripts/build_plants.py); real LEGO freedom."
+    },
+    "joint_head_a2": {
+      "a": "6",
+      "b": "8",
+      "kind": "revolute",
+      "status": "reviewed",
+      "evidence": "real: 32606 on a long 24855 pin (R2); spins about the pin. pyldraw3 contact confirmed (pin/pin_hole).",
+      "measurements": {
+        "origin": [
+          -47.5752,
+          -110.0004,
+          -15.6265
+        ],
+        "axis": [
+          -0.496731,
+          -0.819152,
+          0.286789
+        ]
+      },
+      "review": "Joint frame measured as stated (scripts/build_plants.py); real LEGO freedom."
+    },
+    "joint_head_a3": {
+      "a": "6",
+      "b": "9",
+      "kind": "revolute",
+      "status": "reviewed",
+      "evidence": "real: 32606 on a long 24855 pin (R2); spins about the pin. pyldraw3 contact confirmed (pin/pin_hole).",
+      "measurements": {
+        "origin": [
+          -40.0,
+          -110.0004,
+          -28.747
+        ],
+        "axis": [
+          0.0,
+          -0.81915,
+          -0.57358
+        ]
+      },
+      "review": "Joint frame measured as stated (scripts/build_plants.py); real LEGO freedom."
+    },
+    "joint_stem_b": {
+      "a": "14",
+      "b": "15",
+      "kind": "revolute",
+      "status": "reviewed",
+      "evidence": "real: 19119 bar in the vase's open stud (same seat as the 24855 bar); turns about the bar. not detected by pyldraw3 contacts (no pairing connector kinds, or a placement it does not support); placement from the named source.",
+      "measurements": {
+        "origin": [
+          40.0,
+          -100.0,
+          20.0
+        ],
+        "axis": [
+          0.0,
+          -1.0,
+          0.0
+        ]
+      },
+      "review": "Joint frame measured as stated (scripts/build_plants.py); real LEGO freedom."
+    },
+    "joint_head_b1": {
+      "a": "15",
+      "b": "16",
+      "kind": "revolute",
+      "status": "reviewed",
+      "evidence": "real: 3742 on a 19119 flower pin (R2); spins about the pin. pyldraw3 contact confirmed (pin/pin_hole).",
+      "measurements": {
+        "origin": [
+          26.576607,
+          -125.650848,
+          27.749999
+        ],
+        "axis": [
+          -0.433013,
+          -0.866025,
+          0.25
+        ]
+      },
+      "review": "Joint frame measured as stated (scripts/build_plants.py); real LEGO freedom."
+    },
+    "joint_head_b2": {
+      "a": "15",
+      "b": "17",
+      "kind": "revolute",
+      "status": "reviewed",
+      "evidence": "real: 3742 on a 19119 flower pin (R2); spins about the pin. pyldraw3 contact confirmed (pin/pin_hole).",
+      "measurements": {
+        "origin": [
+          53.42315,
+          -125.650853,
+          27.749589
+        ],
+        "axis": [
+          0.433014,
+          -0.866024,
+          0.250001
+        ]
+      },
+      "review": "Joint frame measured as stated (scripts/build_plants.py); real LEGO freedom."
+    },
+    "joint_head_b3": {
+      "a": "15",
+      "b": "18",
+      "kind": "revolute",
+      "status": "reviewed",
+      "evidence": "real: 3742 on a 19119 flower pin (R2); spins about the pin. pyldraw3 contact confirmed (pin/pin_hole).",
+      "measurements": {
+        "origin": [
+          19.655629,
+          -111.550887,
+          8.254356
+        ],
+        "axis": [
+          -0.813798,
+          -0.342019,
+          -0.469846
+        ]
+      },
+      "review": "Joint frame measured as stated (scripts/build_plants.py); real LEGO freedom."
+    },
+    "joint_head_b4": {
+      "a": "15",
+      "b": "19",
+      "kind": "revolute",
+      "status": "reviewed",
+      "evidence": "real: 3742 on a 19119 flower pin (R2); spins about the pin. pyldraw3 contact confirmed (pin/pin_hole).",
+      "measurements": {
+        "origin": [
+          40.000234,
+          -125.650853,
+          4.500417
+        ],
+        "axis": [
+          0.0,
+          -0.866024,
+          -0.500002
+        ]
+      },
+      "review": "Joint frame measured as stated (scripts/build_plants.py); real LEGO freedom."
+    },
+    "joint_head_b5": {
+      "a": "15",
+      "b": "20",
+      "kind": "revolute",
+      "status": "reviewed",
+      "evidence": "real: 3742 on a 19119 flower pin (R2); spins about the pin. pyldraw3 contact confirmed (pin/pin_hole).",
+      "measurements": {
+        "origin": [
+          39.999841,
+          -111.550887,
+          43.491564
+        ],
+        "axis": [
+          0.0,
+          -0.342019,
+          0.939693
+        ]
+      },
+      "review": "Joint frame measured as stated (scripts/build_plants.py); real LEGO freedom."
+    },
+    "joint_head_b6": {
+      "a": "15",
+      "b": "21",
+      "kind": "revolute",
+      "status": "reviewed",
+      "evidence": "real: 3742 on a 19119 flower pin (R2); spins about the pin. pyldraw3 contact confirmed (pin/pin_hole).",
+      "measurements": {
+        "origin": [
+          60.344532,
+          -111.550884,
+          8.254079
+        ],
+        "axis": [
+          0.813798,
+          -0.342019,
+          -0.469846
+        ]
+      },
+      "review": "Joint frame measured as stated (scripts/build_plants.py); real LEGO freedom."
+    }
+  },
+  "discovery": {
+    "grouping": "Provisional connected mechanical candidates; agent may split/merge views",
+    "unclassified_parts": [
+      "0",
+      "1",
+      "10",
+      "11",
+      "12",
+      "13",
+      "14",
+      "15",
+      "16",
+      "17",
+      "18",
+      "19",
+      "2",
+      "20",
+      "21",
+      "3",
+      "4",
+      "5",
+      "6",
+      "7",
+      "8",
+      "9"
+    ],
+    "embedded_parts": [],
+    "contact_limit": 300,
+    "rigid_groups": "not inferred",
+    "inputs_outputs": "not inferred",
+    "mechanical_parts": [],
+    "warnings": [
+      {
+        "code": "placement_normalized",
+        "message": "Rounded near-rigid placements normalized for analysis only; inspect placement diagnostics."
+      },
+      {
+        "code": "coaxial_not_run",
+        "message": "not run: 0 shaft/gear candidates outside 2..100; select a section"
+      }
+    ],
+    "surface_contacts": "Not detected: cams, levers bearing on beams, friction and stops need geometric/visual review even when connector contacts are absent",
+    "unsupported_gears": [],
+    "gear_placements": {
+      "policy": "Nearest orthogonal analysis frame within rounding_limit; source translations and handedness preserved",
+      "rounding_limit": 0.002,
+      "counts": {},
+      "affected": []
+    },
+    "contacts": {
+      "complete": true,
+      "tested_parts": 22,
+      "diagnostics": [],
+      "summary": {
+        "tested_parts": 22,
+        "contacts": 11,
+        "contacted_parts": 15,
+        "by_kind": {
+          "stud/stud_receptacle": 2,
+          "pin/pin_hole": 9
+        },
+        "axles": {
+          "selection": "Catalog descriptions beginning Technic Axle followed by a numeric length; excludes axle pins, joiners and axle-hole supports",
+          "total": 0,
+          "with_axle_hole_contact": 0,
+          "without_axle_hole_contact": []
+        }
+      },
+      "placements": {
+        "policy": "Nearest orthogonal analysis frame within rounding_limit; source translations and handedness preserved",
+        "rounding_limit": 0.002,
+        "counts": {
+          "unchanged": 19,
+          "normalized": 3
+        },
+        "affected": [
+          {
+            "id": "7",
+            "status": "normalized",
+            "reflected": false,
+            "max_scale_error": 0.0004852126702645787,
+            "max_coefficient_change": 0.0003744664654694446
+          },
+          {
+            "id": "8",
+            "status": "normalized",
+            "reflected": false,
+            "max_scale_error": 0.0006349826465349429,
+            "max_coefficient_change": 0.00046606084379618995
+          },
+          {
+            "id": "9",
+            "status": "normalized",
+            "reflected": false,
+            "max_scale_error": 0.0005774062057328777,
+            "max_coefficient_change": 0.00041801937924990096
+          }
+        ]
+      }
+    },
+    "coaxial_selection": "Catalog axle, gear, worm and engine crankshaft parts; positive line evidence within 80 LDU axial separation",
+    "coaxial": "not run: 0 shaft/gear candidates outside 2..100; select a section",
+    "isolated_mechanical_parts": []
+  }
+}

@@ -1,0 +1,93 @@
+{
+  "scenario": "S04_garden_gate",
+  "title": "Garden gate",
+  "parts": [
+    {
+      "role": "base",
+      "id": "0",
+      "table": "plates.Plate4X12",
+      "ref": "3029",
+      "colour": 2,
+      "title": "Plate  4 x 12",
+      "library_only": false
+    },
+    {
+      "role": "gate_base",
+      "id": "1",
+      "table": "fences.Gate1X4X2Base",
+      "ref": "3187",
+      "colour": 15,
+      "title": "Gate  1 x  4 x  2 Base",
+      "library_only": false
+    },
+    {
+      "role": "gate",
+      "id": "2",
+      "table": "fences.Gate1X4X2",
+      "ref": "3186",
+      "colour": 70,
+      "title": "Gate  1 x  4 x  2",
+      "library_only": false
+    },
+    {
+      "role": "fence_l",
+      "id": "3",
+      "table": "fences.FenceLattice1X4X2",
+      "ref": "3185",
+      "colour": 15,
+      "title": "Fence Lattice  1 x  4 x  2",
+      "library_only": false
+    },
+    {
+      "role": "fence_r",
+      "id": "4",
+      "table": "fences.FenceLattice1X4X2",
+      "ref": "3185",
+      "colour": 15,
+      "title": "Fence Lattice  1 x  4 x  2",
+      "library_only": false
+    },
+    {
+      "role": "path",
+      "id": "5",
+      "table": "tiles.Tile2X2WithGroove",
+      "ref": "3068b",
+      "colour": 19,
+      "title": "Tile  2 x  2 with Groove",
+      "library_only": false
+    }
+  ],
+  "joints": {
+    "gate": {
+      "origin": [
+        -30.0,
+        -8.0,
+        0.0
+      ],
+      "axis": [
+        0.0,
+        -1.0,
+        0.0
+      ],
+      "parent": "gate_base",
+      "child": "gate",
+      "kind": "revolute",
+      "connector": "3187 pin snap_cyl@L9:I0 receives 3186 pin_hole snap_cyl@L8:I0"
+    }
+  },
+  "reference_checks": [
+    {
+      "model": "6379-1.mpd",
+      "section": "(flattened main model)",
+      "parent": "gate_base",
+      "part": "gate",
+      "official_refs": [
+        "3187",
+        "3186"
+      ],
+      "position_offset_ldu": 0.0,
+      "rotation_offset": 0.0,
+      "note": ""
+    }
+  ]
+}

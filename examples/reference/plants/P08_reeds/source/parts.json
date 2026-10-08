@@ -1,0 +1,173 @@
+{
+  "case": "P08_reeds",
+  "title": "Reeds",
+  "parts": [
+    {
+      "role": "base",
+      "id": "0",
+      "table": "plates.Plate6X6",
+      "ref": "3958",
+      "colour": 2,
+      "title": "Plate  6 x  6",
+      "library_only": false
+    },
+    {
+      "role": "mound1",
+      "id": "1",
+      "table": "bricks.Brick2X2RoundWithoutReinforcement",
+      "ref": "3941",
+      "colour": 72,
+      "title": "Brick  2 x  2 Round without Reinforcement",
+      "library_only": false
+    },
+    {
+      "role": "clump1",
+      "id": "2",
+      "table": "cones.Cone2X2X2WithHollowStudOpen",
+      "ref": "3942c",
+      "colour": 288,
+      "title": "Cone  2 x  2 x  2 with Hollow Stud Open",
+      "library_only": false
+    },
+    {
+      "role": "stalk1",
+      "id": "3",
+      "table": "plants.PlantSeaGrass",
+      "ref": "30093",
+      "colour": 330,
+      "title": "Plant Sea Grass",
+      "library_only": false
+    },
+    {
+      "role": "leaf1",
+      "id": "4",
+      "table": "plants.PlantLeaves6X5SwordleafWithU_Clip",
+      "ref": "30239",
+      "colour": 2,
+      "title": "Plant Leaves  6 x  5 Swordleaf with U-Clip",
+      "library_only": false
+    },
+    {
+      "role": "mound2",
+      "id": "5",
+      "table": "bricks.Brick2X2RoundWithoutReinforcement",
+      "ref": "3941",
+      "colour": 72,
+      "title": "Brick  2 x  2 Round without Reinforcement",
+      "library_only": false
+    },
+    {
+      "role": "clump2",
+      "id": "6",
+      "table": "cones.Cone2X2X2WithHollowStudOpen",
+      "ref": "3942c",
+      "colour": 288,
+      "title": "Cone  2 x  2 x  2 with Hollow Stud Open",
+      "library_only": false
+    },
+    {
+      "role": "stalk2",
+      "id": "7",
+      "table": "plants.PlantSeaGrass",
+      "ref": "30093",
+      "colour": 330,
+      "title": "Plant Sea Grass",
+      "library_only": false
+    },
+    {
+      "role": "leaf2",
+      "id": "8",
+      "table": "plants.PlantLeaves6X5SwordleafWithU_Clip",
+      "ref": "30239",
+      "colour": 2,
+      "title": "Plant Leaves  6 x  5 Swordleaf with U-Clip",
+      "library_only": false
+    }
+  ],
+  "joints": {
+    "stalk_1": {
+      "origin": [
+        -40.0,
+        -76.0,
+        -20.0
+      ],
+      "axis": [
+        0.0,
+        0.0,
+        1.0
+      ],
+      "parent": "clump1",
+      "child": "stalk1",
+      "kind": "revolute",
+      "joint": "flex_approx",
+      "connector": "flex_approx: the bar in the hollow stud only allows a twist; the tilt stands in for the reed bending. 30093 bar in the cone's hollow stud (official 7161 mount)"
+    },
+    "leaf_1": {
+      "origin": [
+        -30.0,
+        -167.0,
+        -20.0
+      ],
+      "axis": [
+        0.0,
+        -1.0,
+        0.0
+      ],
+      "parent": "stalk1",
+      "child": "leaf1",
+      "kind": "revolute",
+      "joint": "real",
+      "connector": "real: 30239 U-clip on the vertical top bar of the 30093 reed; the leaf swings about the bar like a flag (right-hand about up)"
+    },
+    "stalk_2": {
+      "origin": [
+        40.0,
+        -76.0,
+        20.0
+      ],
+      "axis": [
+        0.0,
+        0.0,
+        1.0
+      ],
+      "parent": "clump2",
+      "child": "stalk2",
+      "kind": "revolute",
+      "joint": "flex_approx",
+      "connector": "flex_approx: the bar in the hollow stud only allows a twist; the tilt stands in for the reed bending. 30093 bar in the cone's hollow stud (official 7161 mount)"
+    },
+    "leaf_2": {
+      "origin": [
+        30.0,
+        -167.0,
+        20.0
+      ],
+      "axis": [
+        0.0,
+        -1.0,
+        0.0
+      ],
+      "parent": "stalk2",
+      "child": "leaf2",
+      "kind": "revolute",
+      "joint": "real",
+      "connector": "real: 30239 U-clip on the vertical top bar of the 30093 reed; the leaf swings about the bar like a flag (right-hand about up)"
+    }
+  },
+  "reference_checks": [
+    {
+      "model": "7161-1.mpd",
+      "section": "(flattened main model)",
+      "parent": "clump1",
+      "part": "stalk1",
+      "official_refs": [
+        "3942b",
+        "30093"
+      ],
+      "position_offset_ldu": 0.0,
+      "rotation_offset": 2.0,
+      "note": "30093 on a 2x2x2 cone's hollow stud (7161 uses the 3942b cone; same height and stud)"
+    }
+  ],
+  "geometry_checks": []
+}

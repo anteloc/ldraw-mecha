@@ -1,0 +1,927 @@
+{
+  "version": 1,
+  "name": "model",
+  "status": "draft",
+  "source": {
+    "version": 1,
+    "path": "/Users/captain/workspaces/workspace-ai/ldraw-mecha/output/minifigs/MF10_diver/source/minifig.mpd",
+    "sha256": "230c262a620c4373da0d662e45adbdc51035ab2b100778159c93b0fde4310d31",
+    "section": "mf10_diver.ldr",
+    "description": "Minifig MF10_diver Diver",
+    "author": "ldraw-mecha scripts/build_minifigs.py",
+    "dependencies": {
+      "/Users/captain/workspaces/workspace-ai/ldraw-mecha/output/minifigs/MF10_diver/source/minifig.mpd": "230c262a620c4373da0d662e45adbdc51035ab2b100778159c93b0fde4310d31"
+    },
+    "nodes": [
+      {
+        "id": "0",
+        "parent": "root",
+        "ref": "973p5f.dat",
+        "kind": "part",
+        "embedded": false,
+        "section": "mf10_diver.ldr",
+        "index": 0,
+        "line": 8,
+        "colour": "0",
+        "effective_colour": "0",
+        "local": [
+          [
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            1.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            1.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "world": [
+          [
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            1.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            1.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "description": "Minifig Torso with Diving Suit, Orange Stripes, Belt, Pressure Gauge and Breathing Hose Pattern"
+      },
+      {
+        "id": "1",
+        "parent": "root",
+        "ref": "3626cp8b.dat",
+        "kind": "part",
+        "embedded": false,
+        "section": "mf10_diver.ldr",
+        "index": 1,
+        "line": 10,
+        "colour": "14",
+        "effective_colour": "14",
+        "local": [
+          [
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            1.0,
+            0.0,
+            -24.0
+          ],
+          [
+            0.0,
+            0.0,
+            1.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "world": [
+          [
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            1.0,
+            0.0,
+            -24.0
+          ],
+          [
+            0.0,
+            0.0,
+            1.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "description": "Minifig Head with Brown Eyebrows, Freckles, Open Smile Pattern (Hollow Stud)"
+      },
+      {
+        "id": "2",
+        "parent": "root",
+        "ref": "3815b.dat",
+        "kind": "part",
+        "embedded": false,
+        "section": "mf10_diver.ldr",
+        "index": 2,
+        "line": 12,
+        "colour": "0",
+        "effective_colour": "0",
+        "local": [
+          [
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            1.0,
+            0.0,
+            32.0
+          ],
+          [
+            0.0,
+            0.0,
+            1.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "world": [
+          [
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            1.0,
+            0.0,
+            32.0
+          ],
+          [
+            0.0,
+            0.0,
+            1.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "description": "Minifig Hips"
+      },
+      {
+        "id": "3",
+        "parent": "root",
+        "ref": "3817c.dat",
+        "kind": "part",
+        "embedded": false,
+        "section": "mf10_diver.ldr",
+        "index": 3,
+        "line": 14,
+        "colour": "0",
+        "effective_colour": "0",
+        "local": [
+          [
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            1.0,
+            0.0,
+            44.0
+          ],
+          [
+            0.0,
+            0.0,
+            1.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "world": [
+          [
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            1.0,
+            0.0,
+            44.0
+          ],
+          [
+            0.0,
+            0.0,
+            1.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "description": "Minifig Leg Left"
+      },
+      {
+        "id": "4",
+        "parent": "root",
+        "ref": "3816c.dat",
+        "kind": "part",
+        "embedded": false,
+        "section": "mf10_diver.ldr",
+        "index": 4,
+        "line": 16,
+        "colour": "0",
+        "effective_colour": "0",
+        "local": [
+          [
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            1.0,
+            0.0,
+            44.0
+          ],
+          [
+            0.0,
+            0.0,
+            1.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "world": [
+          [
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            1.0,
+            0.0,
+            44.0
+          ],
+          [
+            0.0,
+            0.0,
+            1.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "description": "Minifig Leg Right"
+      },
+      {
+        "id": "5",
+        "parent": "root",
+        "ref": "3819.dat",
+        "kind": "part",
+        "embedded": false,
+        "section": "mf10_diver.ldr",
+        "index": 5,
+        "line": 18,
+        "colour": "0",
+        "effective_colour": "0",
+        "local": [
+          [
+            0.9854312211,
+            0.1700744202,
+            0.0,
+            15.552
+          ],
+          [
+            -0.1700744202,
+            0.9854312211,
+            0.0,
+            9.0
+          ],
+          [
+            0.0,
+            0.0,
+            1.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "world": [
+          [
+            0.9854312211,
+            0.1700744202,
+            0.0,
+            15.552
+          ],
+          [
+            -0.1700744202,
+            0.9854312211,
+            0.0,
+            9.0
+          ],
+          [
+            0.0,
+            0.0,
+            1.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "description": "Minifig Arm Left"
+      },
+      {
+        "id": "6",
+        "parent": "root",
+        "ref": "3820.dat",
+        "kind": "part",
+        "embedded": false,
+        "section": "mf10_diver.ldr",
+        "index": 6,
+        "line": 20,
+        "colour": "0",
+        "effective_colour": "0",
+        "local": [
+          [
+            0.9854312211,
+            0.1202607758,
+            -0.1202607758,
+            23.69082445
+          ],
+          [
+            -0.1700744202,
+            0.6968050989,
+            -0.6968050989,
+            26.75841254
+          ],
+          [
+            0.0,
+            0.7071067812,
+            0.7071067812,
+            -9.8839
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "world": [
+          [
+            0.9854312211,
+            0.1202607758,
+            -0.1202607758,
+            23.69082445
+          ],
+          [
+            -0.1700744202,
+            0.6968050989,
+            -0.6968050989,
+            26.75841254
+          ],
+          [
+            0.0,
+            0.7071067812,
+            0.7071067812,
+            -9.8839
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "description": "Minifig Hand"
+      },
+      {
+        "id": "7",
+        "parent": "root",
+        "ref": "3818.dat",
+        "kind": "part",
+        "embedded": false,
+        "section": "mf10_diver.ldr",
+        "index": 7,
+        "line": 22,
+        "colour": "0",
+        "effective_colour": "0",
+        "local": [
+          [
+            0.9854312211,
+            -0.1700744202,
+            0.0,
+            -15.552
+          ],
+          [
+            0.1700744202,
+            0.9854312211,
+            0.0,
+            9.0
+          ],
+          [
+            0.0,
+            0.0,
+            1.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "world": [
+          [
+            0.9854312211,
+            -0.1700744202,
+            0.0,
+            -15.552
+          ],
+          [
+            0.1700744202,
+            0.9854312211,
+            0.0,
+            9.0
+          ],
+          [
+            0.0,
+            0.0,
+            1.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "description": "Minifig Arm Right"
+      },
+      {
+        "id": "8",
+        "parent": "root",
+        "ref": "3820.dat",
+        "kind": "part",
+        "embedded": false,
+        "section": "mf10_diver.ldr",
+        "index": 8,
+        "line": 24,
+        "colour": "0",
+        "effective_colour": "0",
+        "local": [
+          [
+            0.9854312211,
+            -0.1202607758,
+            0.1202607758,
+            -23.69082445
+          ],
+          [
+            0.1700744202,
+            0.6968050989,
+            -0.6968050989,
+            26.75841254
+          ],
+          [
+            0.0,
+            0.7071067812,
+            0.7071067812,
+            -9.8839
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "world": [
+          [
+            0.9854312211,
+            -0.1202607758,
+            0.1202607758,
+            -23.69082445
+          ],
+          [
+            0.1700744202,
+            0.6968050989,
+            -0.6968050989,
+            26.75841254
+          ],
+          [
+            0.0,
+            0.7071067812,
+            0.7071067812,
+            -9.8839
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "description": "Minifig Hand"
+      },
+      {
+        "id": "9",
+        "parent": "root",
+        "ref": "3838.dat",
+        "kind": "part",
+        "embedded": false,
+        "section": "mf10_diver.ldr",
+        "index": 9,
+        "line": 26,
+        "colour": "14",
+        "effective_colour": "14",
+        "local": [
+          [
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            1.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            1.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "world": [
+          [
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            1.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            1.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "description": "Minifig Airtanks"
+      },
+      {
+        "id": "10",
+        "parent": "root",
+        "ref": "59275a.dat",
+        "kind": "part",
+        "embedded": false,
+        "section": "mf10_diver.ldr",
+        "index": 10,
+        "line": 28,
+        "colour": "25",
+        "effective_colour": "25",
+        "local": [
+          [
+            1.0,
+            0.0,
+            0.0,
+            10.0
+          ],
+          [
+            0.0,
+            1.0,
+            0.0,
+            72.0
+          ],
+          [
+            0.0,
+            0.0,
+            1.0,
+            -1.2
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "world": [
+          [
+            1.0,
+            0.0,
+            0.0,
+            10.0
+          ],
+          [
+            0.0,
+            1.0,
+            0.0,
+            72.0
+          ],
+          [
+            0.0,
+            0.0,
+            1.0,
+            -1.2
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "description": "Minifig Flipper Thin"
+      },
+      {
+        "id": "11",
+        "parent": "root",
+        "ref": "59275a.dat",
+        "kind": "part",
+        "embedded": false,
+        "section": "mf10_diver.ldr",
+        "index": 11,
+        "line": 30,
+        "colour": "25",
+        "effective_colour": "25",
+        "local": [
+          [
+            1.0,
+            0.0,
+            0.0,
+            -10.0
+          ],
+          [
+            0.0,
+            1.0,
+            0.0,
+            72.0
+          ],
+          [
+            0.0,
+            0.0,
+            1.0,
+            -1.2
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "world": [
+          [
+            1.0,
+            0.0,
+            0.0,
+            -10.0
+          ],
+          [
+            0.0,
+            1.0,
+            0.0,
+            72.0
+          ],
+          [
+            0.0,
+            0.0,
+            1.0,
+            -1.2
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "description": "Minifig Flipper Thin"
+      }
+    ],
+    "diagnostics": [],
+    "coordinate_space": "selected section, LDU, -Y up"
+  },
+  "controls": {},
+  "signals": {},
+  "bodies": {},
+  "anchors": {},
+  "checks": [],
+  "notes": [
+    "Assign rigid groups and measured joints before setting status to ready."
+  ],
+  "mechanisms": {
+    "unresolved": {
+      "label": "No mechanism identified",
+      "parts": [
+        "0",
+        "1",
+        "10",
+        "11",
+        "2",
+        "3",
+        "4",
+        "5",
+        "6",
+        "7",
+        "8",
+        "9"
+      ],
+      "bodies": [],
+      "inputs": [],
+      "outputs": [],
+      "notes": [
+        "No supported mechanical evidence found. Absence of evidence does not imply a static model."
+      ]
+    }
+  },
+  "connections": {},
+  "discovery": {
+    "grouping": "Provisional connected mechanical candidates; agent may split/merge views",
+    "unclassified_parts": [
+      "0",
+      "1",
+      "10",
+      "11",
+      "2",
+      "3",
+      "4",
+      "5",
+      "6",
+      "7",
+      "8",
+      "9"
+    ],
+    "embedded_parts": [],
+    "contact_limit": 300,
+    "rigid_groups": "not inferred",
+    "inputs_outputs": "not inferred",
+    "mechanical_parts": [],
+    "warnings": [
+      {
+        "code": "incomplete_inspection",
+        "message": "pyldraw3 inspection is incomplete; inspect its diagnostics."
+      },
+      {
+        "code": "coaxial_not_run",
+        "message": "not run: 0 shaft/gear candidates outside 2..100; select a section"
+      }
+    ],
+    "surface_contacts": "Not detected: cams, levers bearing on beams, friction and stops need geometric/visual review even when connector contacts are absent",
+    "unsupported_gears": [],
+    "gear_placements": {
+      "policy": "Nearest orthogonal analysis frame within rounding_limit; source translations and handedness preserved",
+      "rounding_limit": 0.002,
+      "counts": {},
+      "affected": []
+    },
+    "contacts": {
+      "complete": false,
+      "tested_parts": 12,
+      "diagnostics": [
+        {
+          "code": "connection.invalid_transform",
+          "message": "connection feature 'snap_cyl@L11:I0' from /Users/captain/workspaces/workspace-ai/ldraw-mecha/data/offLibShadow/parts/3818.dat:11 rejected under invalid scale or reflection",
+          "severity": "warning",
+          "path": "/Users/captain/workspaces/workspace-ai/ldraw-mecha/data/offLibShadow/parts/3818.dat",
+          "section": null,
+          "line_number": 11,
+          "offending_value": "snap_cyl@L11:I0",
+          "suggestions": [],
+          "cause": null
+        },
+        {
+          "code": "connection.invalid_transform",
+          "message": "connection feature 'snap_cyl@L14:I0' from /Users/captain/workspaces/workspace-ai/ldraw-mecha/data/offLibShadow/parts/3818.dat:14 rejected under invalid scale or reflection",
+          "severity": "warning",
+          "path": "/Users/captain/workspaces/workspace-ai/ldraw-mecha/data/offLibShadow/parts/3818.dat",
+          "section": null,
+          "line_number": 14,
+          "offending_value": "snap_cyl@L14:I0",
+          "suggestions": [],
+          "cause": null
+        }
+      ],
+      "summary": {
+        "tested_parts": 12,
+        "contacts": 12,
+        "contacted_parts": 10,
+        "by_kind": {
+          "pin/pin_hole": 12
+        },
+        "axles": {
+          "selection": "Catalog descriptions beginning Technic Axle followed by a numeric length; excludes axle pins, joiners and axle-hole supports",
+          "total": 0,
+          "with_axle_hole_contact": 0,
+          "without_axle_hole_contact": []
+        }
+      },
+      "placements": {
+        "policy": "Nearest orthogonal analysis frame within rounding_limit; source translations and handedness preserved",
+        "rounding_limit": 0.002,
+        "counts": {
+          "unchanged": 12
+        },
+        "affected": []
+      }
+    },
+    "coaxial_selection": "Catalog axle, gear, worm and engine crankshaft parts; positive line evidence within 80 LDU axial separation",
+    "coaxial": "not run: 0 shaft/gear candidates outside 2..100; select a section",
+    "isolated_mechanical_parts": []
+  }
+}

@@ -1,0 +1,397 @@
+{
+  "passed": true,
+  "samples": [
+    {
+      "controls": {},
+      "max_matrix_error": 0.003631591796875,
+      "max_static_error": 0.0040283203125,
+      "max_closure_error": 4.355768797381643e-05,
+      "invalid_drivers": [],
+      "passed": true
+    },
+    {
+      "controls": {
+        "drive": -2000.0
+      },
+      "max_matrix_error": 0.003631591796875,
+      "max_static_error": 0.0040283203125,
+      "max_closure_error": 4.355768797381643e-05,
+      "invalid_drivers": [],
+      "passed": true
+    },
+    {
+      "controls": {
+        "drive": 0.0
+      },
+      "max_matrix_error": 0.003631591796875,
+      "max_static_error": 0.0040283203125,
+      "max_closure_error": 4.355768797381643e-05,
+      "invalid_drivers": [],
+      "passed": true
+    },
+    {
+      "controls": {
+        "drive": 2000.0
+      },
+      "max_matrix_error": 0.003631591796875,
+      "max_static_error": 0.0040283203125,
+      "max_closure_error": 4.355768797381643e-05,
+      "invalid_drivers": [],
+      "passed": true
+    },
+    {
+      "controls": {
+        "diff_front": -200.0
+      },
+      "max_matrix_error": 0.003631591796875,
+      "max_static_error": 0.0040283203125,
+      "max_closure_error": 4.355768797381643e-05,
+      "invalid_drivers": [],
+      "passed": true
+    },
+    {
+      "controls": {
+        "diff_front": 0.0
+      },
+      "max_matrix_error": 0.003631591796875,
+      "max_static_error": 0.0040283203125,
+      "max_closure_error": 4.355768797381643e-05,
+      "invalid_drivers": [],
+      "passed": true
+    },
+    {
+      "controls": {
+        "diff_front": 200.0
+      },
+      "max_matrix_error": 0.003631591796875,
+      "max_static_error": 0.0040283203125,
+      "max_closure_error": 4.355768797381643e-05,
+      "invalid_drivers": [],
+      "passed": true
+    },
+    {
+      "controls": {
+        "diff_rear": -200.0
+      },
+      "max_matrix_error": 0.003631591796875,
+      "max_static_error": 0.0040283203125,
+      "max_closure_error": 4.355768797381643e-05,
+      "invalid_drivers": [],
+      "passed": true
+    },
+    {
+      "controls": {
+        "diff_rear": 0.0
+      },
+      "max_matrix_error": 0.003631591796875,
+      "max_static_error": 0.0040283203125,
+      "max_closure_error": 4.355768797381643e-05,
+      "invalid_drivers": [],
+      "passed": true
+    },
+    {
+      "controls": {
+        "diff_rear": 200.0
+      },
+      "max_matrix_error": 0.003631591796875,
+      "max_static_error": 0.0040283203125,
+      "max_closure_error": 4.355768797381643e-05,
+      "invalid_drivers": [],
+      "passed": true
+    },
+    {
+      "controls": {
+        "diff_center": -200.0
+      },
+      "max_matrix_error": 0.003631591796875,
+      "max_static_error": 0.0040283203125,
+      "max_closure_error": 4.355768797381643e-05,
+      "invalid_drivers": [],
+      "passed": true
+    },
+    {
+      "controls": {
+        "diff_center": 0.0
+      },
+      "max_matrix_error": 0.003631591796875,
+      "max_static_error": 0.0040283203125,
+      "max_closure_error": 4.355768797381643e-05,
+      "invalid_drivers": [],
+      "passed": true
+    },
+    {
+      "controls": {
+        "diff_center": 200.0
+      },
+      "max_matrix_error": 0.003631591796875,
+      "max_static_error": 0.0040283203125,
+      "max_closure_error": 4.355768797381643e-05,
+      "invalid_drivers": [],
+      "passed": true
+    },
+    {
+      "controls": {
+        "gear_select": -0.5
+      },
+      "max_matrix_error": 0.003631591796875,
+      "max_static_error": 0.0040283203125,
+      "max_closure_error": 4.355768797381643e-05,
+      "invalid_drivers": [],
+      "passed": true
+    },
+    {
+      "controls": {
+        "gear_select": 2.891592653589793
+      },
+      "max_matrix_error": 0.003631591796875,
+      "max_static_error": 0.0040283203125,
+      "max_closure_error": 4.355768797381643e-05,
+      "invalid_drivers": [],
+      "passed": true
+    },
+    {
+      "controls": {
+        "gear_select": 6.283185307179586
+      },
+      "max_matrix_error": 0.003631591796875,
+      "max_static_error": 0.0040283203125,
+      "max_closure_error": 4.355768797381643e-05,
+      "invalid_drivers": [],
+      "passed": true
+    },
+    {
+      "controls": {
+        "range_select": -1.0
+      },
+      "max_matrix_error": 0.003631591796875,
+      "max_static_error": 0.0040283203125,
+      "max_closure_error": 4.355768797381643e-05,
+      "invalid_drivers": [],
+      "passed": true
+    },
+    {
+      "controls": {
+        "range_select": 0.0
+      },
+      "max_matrix_error": 0.003631591796875,
+      "max_static_error": 0.0040283203125,
+      "max_closure_error": 4.355768797381643e-05,
+      "invalid_drivers": [],
+      "passed": true
+    },
+    {
+      "controls": {
+        "range_select": 1.0
+      },
+      "max_matrix_error": 0.003631591796875,
+      "max_static_error": 0.0040283203125,
+      "max_closure_error": 4.355768797381643e-05,
+      "invalid_drivers": [],
+      "passed": true
+    },
+    {
+      "controls": {
+        "direction_select": -1.0
+      },
+      "max_matrix_error": 0.003631591796875,
+      "max_static_error": 0.0040283203125,
+      "max_closure_error": 4.355768797381643e-05,
+      "invalid_drivers": [],
+      "passed": true
+    },
+    {
+      "controls": {
+        "direction_select": 0.0
+      },
+      "max_matrix_error": 0.003631591796875,
+      "max_static_error": 0.0040283203125,
+      "max_closure_error": 4.355768797381643e-05,
+      "invalid_drivers": [],
+      "passed": true
+    },
+    {
+      "controls": {
+        "direction_select": 1.0
+      },
+      "max_matrix_error": 0.003631591796875,
+      "max_static_error": 0.0040283203125,
+      "max_closure_error": 4.355768797381643e-05,
+      "invalid_drivers": [],
+      "passed": true
+    },
+    {
+      "controls": {
+        "phase_engine": -4000.0
+      },
+      "max_matrix_error": 0.003631591796875,
+      "max_static_error": 0.0040283203125,
+      "max_closure_error": 4.355768797381643e-05,
+      "invalid_drivers": [],
+      "passed": true
+    },
+    {
+      "controls": {
+        "phase_engine": 0.0
+      },
+      "max_matrix_error": 0.003631591796875,
+      "max_static_error": 0.0040283203125,
+      "max_closure_error": 4.355768797381643e-05,
+      "invalid_drivers": [],
+      "passed": true
+    },
+    {
+      "controls": {
+        "phase_engine": 4000.0
+      },
+      "max_matrix_error": 0.003631591796875,
+      "max_static_error": 0.0040283203125,
+      "max_closure_error": 4.355768797381643e-05,
+      "invalid_drivers": [],
+      "passed": true
+    },
+    {
+      "controls": {
+        "phase_mid": -4000.0
+      },
+      "max_matrix_error": 0.003631591796875,
+      "max_static_error": 0.0040283203125,
+      "max_closure_error": 4.355768797381643e-05,
+      "invalid_drivers": [],
+      "passed": true
+    },
+    {
+      "controls": {
+        "phase_mid": 0.0
+      },
+      "max_matrix_error": 0.003631591796875,
+      "max_static_error": 0.0040283203125,
+      "max_closure_error": 4.355768797381643e-05,
+      "invalid_drivers": [],
+      "passed": true
+    },
+    {
+      "controls": {
+        "phase_mid": 4000.0
+      },
+      "max_matrix_error": 0.003631591796875,
+      "max_static_error": 0.0040283203125,
+      "max_closure_error": 4.355768797381643e-05,
+      "invalid_drivers": [],
+      "passed": true
+    },
+    {
+      "controls": {
+        "phase_c26": -4000.0
+      },
+      "max_matrix_error": 0.003631591796875,
+      "max_static_error": 0.0040283203125,
+      "max_closure_error": 4.355768797381643e-05,
+      "invalid_drivers": [],
+      "passed": true
+    },
+    {
+      "controls": {
+        "phase_c26": 0.0
+      },
+      "max_matrix_error": 0.003631591796875,
+      "max_static_error": 0.0040283203125,
+      "max_closure_error": 4.355768797381643e-05,
+      "invalid_drivers": [],
+      "passed": true
+    },
+    {
+      "controls": {
+        "phase_c26": 4000.0
+      },
+      "max_matrix_error": 0.003631591796875,
+      "max_static_error": 0.0040283203125,
+      "max_closure_error": 4.355768797381643e-05,
+      "invalid_drivers": [],
+      "passed": true
+    },
+    {
+      "controls": {
+        "winch": -400.0
+      },
+      "max_matrix_error": 0.003570556640625,
+      "max_static_error": 0.0040283203125,
+      "max_closure_error": 4.355768797381643e-05,
+      "invalid_drivers": [],
+      "passed": true
+    },
+    {
+      "controls": {
+        "winch": 0.0
+      },
+      "max_matrix_error": 0.003631591796875,
+      "max_static_error": 0.0040283203125,
+      "max_closure_error": 4.355768797381643e-05,
+      "invalid_drivers": [],
+      "passed": true
+    },
+    {
+      "controls": {
+        "winch": 400.0
+      },
+      "max_matrix_error": 0.003570556640625,
+      "max_static_error": 0.0040283203125,
+      "max_closure_error": 4.355768797381643e-05,
+      "invalid_drivers": [],
+      "passed": true
+    },
+    {
+      "controls": {
+        "steering": -2.583
+      },
+      "max_matrix_error": 0.003631591796875,
+      "max_static_error": 0.0040283203125,
+      "max_closure_error": 5.419119653993221e-05,
+      "invalid_drivers": [],
+      "passed": true
+    },
+    {
+      "controls": {
+        "steering": 0.0
+      },
+      "max_matrix_error": 0.003631591796875,
+      "max_static_error": 0.0040283203125,
+      "max_closure_error": 4.355768797381643e-05,
+      "invalid_drivers": [],
+      "passed": true
+    },
+    {
+      "controls": {
+        "steering": 2.583
+      },
+      "max_matrix_error": 0.003631591796875,
+      "max_static_error": 0.0040283203125,
+      "max_closure_error": 3.7063149534333206e-05,
+      "invalid_drivers": [],
+      "passed": true
+    },
+    {
+      "controls": {
+        "drive": 800.0,
+        "diff_front": -80.0,
+        "diff_rear": 80.0,
+        "diff_center": -80.0,
+        "gear_select": 2.5132741228718345,
+        "range_select": -0.4,
+        "direction_select": 0.4,
+        "phase_engine": -1600.0,
+        "phase_mid": 1600.0,
+        "phase_c26": -1600.0,
+        "winch": 160.0,
+        "steering": -1.0332000000000001
+      },
+      "max_matrix_error": 0.003570556640625,
+      "max_static_error": 0.0040283203125,
+      "max_closure_error": 4.96528836890775e-05,
+      "invalid_drivers": [],
+      "passed": true
+    }
+  ],
+  "units": "LDU",
+  "tolerance": 0.01,
+  "coverage": "Evaluated transforms, driver validity and declared link closure; no mesh collision test"
+}

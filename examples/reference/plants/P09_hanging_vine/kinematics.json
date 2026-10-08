@@ -1,0 +1,353 @@
+{
+  "semantics": {
+    "link1": {
+      "control": "bend_1",
+      "value": 0.2,
+      "test_point": [
+        20.0,
+        -201.0,
+        -30.0
+      ],
+      "displacement": [
+        8.6283,
+        -0.735177,
+        0.0
+      ],
+      "expected": "+x",
+      "flipped": true
+    },
+    "link2": {
+      "control": "bend_2",
+      "value": 0.2,
+      "test_point": [
+        20.0,
+        -150.0,
+        -30.0
+      ],
+      "displacement": [
+        8.6283,
+        -0.735177,
+        0.0
+      ],
+      "expected": "+x",
+      "flipped": true
+    },
+    "link3": {
+      "control": "bend_3",
+      "value": 0.2,
+      "test_point": [
+        20.0,
+        -99.0,
+        -30.0
+      ],
+      "displacement": [
+        8.6283,
+        -0.735177,
+        0.0
+      ],
+      "expected": "+x",
+      "flipped": true
+    },
+    "link4": {
+      "control": "bend_4",
+      "value": 0.2,
+      "test_point": [
+        20.0,
+        -61.0,
+        -30.0
+      ],
+      "displacement": [
+        6.428929,
+        -0.547779,
+        0.0
+      ],
+      "expected": "+x",
+      "flipped": true
+    }
+  },
+  "wind_geometry": {
+    "twist": {
+      "body": "link0",
+      "x": 20.0,
+      "tip": [
+        45.0,
+        -292.0,
+        -30.0
+      ],
+      "swing": [
+        -0.0,
+        1.0
+      ],
+      "lever": 25.0
+    },
+    "bend_1": {
+      "body": "link1",
+      "x": 20.0,
+      "tip": [
+        20.0,
+        -201.0,
+        -30.0
+      ],
+      "swing": [
+        1.0,
+        0.0
+      ],
+      "lever": 51.0
+    },
+    "bend_2": {
+      "body": "link2",
+      "x": 20.0,
+      "tip": [
+        20.0,
+        -150.0,
+        -30.0
+      ],
+      "swing": [
+        1.0,
+        0.0
+      ],
+      "lever": 51.0
+    },
+    "bend_3": {
+      "body": "link3",
+      "x": 20.0,
+      "tip": [
+        20.0,
+        -99.0,
+        -30.0
+      ],
+      "swing": [
+        1.0,
+        0.0
+      ],
+      "lever": 51.0
+    },
+    "bend_4": {
+      "body": "link4",
+      "x": 20.0,
+      "tip": [
+        20.0,
+        -61.0,
+        -30.0
+      ],
+      "swing": [
+        1.0,
+        0.0
+      ],
+      "lever": 38.0
+    }
+  },
+  "roster_problems": [],
+  "contacts": {
+    "tested_parts": 35,
+    "contacts": 16,
+    "contacted_parts": 18,
+    "by_kind": {
+      "axle/axle_hole": 13,
+      "stud/stud_receptacle": 2,
+      "bar/clip": 1
+    },
+    "axles": {
+      "selection": "Catalog descriptions beginning Technic Axle followed by a numeric length; excludes axle pins, joiners and axle-hole supports",
+      "total": 0,
+      "with_axle_hole_contact": 0,
+      "without_axle_hole_contact": []
+    }
+  },
+  "contact_pairs": {
+    "1-2": [
+      "axle/axle_hole"
+    ],
+    "2-3": [
+      "axle/axle_hole"
+    ],
+    "3-4": [
+      "axle/axle_hole"
+    ],
+    "4-5": [
+      "axle/axle_hole"
+    ],
+    "5-6": [
+      "axle/axle_hole"
+    ],
+    "6-7": [
+      "axle/axle_hole"
+    ],
+    "7-8": [
+      "axle/axle_hole"
+    ],
+    "8-9": [
+      "axle/axle_hole"
+    ],
+    "9-10": [
+      "axle/axle_hole"
+    ],
+    "10-11": [
+      "axle/axle_hole"
+    ],
+    "11-12": [
+      "axle/axle_hole"
+    ],
+    "12-13": [
+      "axle/axle_hole"
+    ],
+    "13-14": [
+      "axle/axle_hole"
+    ],
+    "15-16": [
+      "stud/stud_receptacle",
+      "stud/stud_receptacle"
+    ],
+    "17-18": [
+      "clip/bar"
+    ]
+  },
+  "joints": {
+    "twist": "real",
+    "bend_1": "flex_approx",
+    "bend_2": "flex_approx",
+    "bend_3": "flex_approx",
+    "bend_4": "flex_approx"
+  },
+  "asymmetric_sample": {
+    "controls": {
+      "twist": 0.504,
+      "bend_1": -0.0629,
+      "bend_2": 0.1377,
+      "bend_3": -0.1071,
+      "bend_4": 0.0629
+    },
+    "transforms": {
+      "link0": [
+        [
+          0.875658,
+          0.0,
+          -0.482932,
+          -12.001118
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.482932,
+          0.0,
+          0.875658,
+          -13.388905
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "link1": [
+        [
+          0.873926,
+          -0.055043,
+          -0.482932,
+          -25.837211
+        ],
+        [
+          0.062859,
+          0.998022,
+          0.0,
+          -1.755514
+        ],
+        [
+          0.481977,
+          -0.030356,
+          0.875658,
+          -21.019617
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "link2": [
+        [
+          0.873209,
+          0.065438,
+          -0.482932,
+          -1.606251
+        ],
+        [
+          -0.07473,
+          0.997204,
+          0.0,
+          0.831711
+        ],
+        [
+          0.481582,
+          0.03609,
+          0.875658,
+          -7.656056
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "link3": [
+        [
+          0.875201,
+          -0.028279,
+          -0.482932,
+          -15.703633
+        ],
+        [
+          0.032294,
+          0.999478,
+          0.0,
+          -0.96759
+        ],
+        [
+          0.48268,
+          -0.015596,
+          0.875658,
+          -15.430871
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "link4": [
+        [
+          0.875248,
+          0.026791,
+          -0.482932,
+          -10.252661
+        ],
+        [
+          -0.030595,
+          0.999532,
+          0.0,
+          0.295495
+        ],
+        [
+          0.482706,
+          0.014775,
+          0.875658,
+          -12.424618
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ]
+    }
+  }
+}

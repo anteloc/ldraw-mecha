@@ -1,0 +1,729 @@
+{
+  "id": "84/16",
+  "ref": "24505.dat",
+  "coordinate_space": "selected section, LDU, -Y up",
+  "features": [
+    {
+      "kind": "axle_hole",
+      "role": "female",
+      "position": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "frame": [
+        [
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          -1.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0
+        ]
+      ],
+      "profile": {
+        "sections": [
+          {
+            "shape": "axle",
+            "radius": 6.0,
+            "length": 20.0,
+            "flexible": false
+          }
+        ],
+        "centered": true,
+        "friction": false,
+        "caps": "none"
+      },
+      "name": "LDCad cylinder",
+      "feature_id": "3648b@R0/snap_cyl@L9:I0",
+      "group": null,
+      "freedoms": [
+        "rotate",
+        "slide"
+      ],
+      "source": "ldcad_shadow",
+      "confidence": 1.0,
+      "owner_code": "3648b",
+      "compatible_parts": [],
+      "occupied": false,
+      "occupied_by": null,
+      "provenance": [
+        "/Users/captain/workspaces/workspace-ai/ldraw-mecha/data/offLibShadow/parts/3648b.dat:9"
+      ],
+      "metadata_id": null,
+      "connection_provenance": {
+        "source": "ldcad_shadow",
+        "path": "/Users/captain/workspaces/workspace-ai/ldraw-mecha/data/offLibShadow/parts/3648b.dat",
+        "archive_member": null,
+        "line_number": 9,
+        "command": "0 !LDCAD SNAP_CYL [gender=F] [caps=none] [secs=A 6 20] [center=true] [slide=true] [ori=1 0 0 0 0 1 0 -1 0]",
+        "include_chain": []
+      },
+      "scale_inheritance": "none",
+      "mirror_inheritance": "cor",
+      "world_position": [
+        -35.99999999999999,
+        98.0,
+        200.0
+      ],
+      "world_axis": [
+        0.0,
+        0.0,
+        1.0
+      ]
+    },
+    {
+      "kind": "pin_hole",
+      "role": "female",
+      "position": [
+        -10.0,
+        -10.0,
+        0.0
+      ],
+      "frame": [
+        [
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          -1.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0
+        ]
+      ],
+      "profile": {
+        "sections": [
+          {
+            "shape": "round",
+            "radius": 6.0,
+            "length": 16.0,
+            "flexible": false
+          }
+        ],
+        "centered": true,
+        "friction": false,
+        "caps": "none"
+      },
+      "name": "LDCad cylinder",
+      "feature_id": "3648b@R0/snap_cyl@L11:I0",
+      "group": null,
+      "freedoms": [
+        "rotate",
+        "slide"
+      ],
+      "source": "ldcad_shadow",
+      "confidence": 1.0,
+      "owner_code": "3648b",
+      "compatible_parts": [],
+      "occupied": false,
+      "occupied_by": null,
+      "provenance": [
+        "/Users/captain/workspaces/workspace-ai/ldraw-mecha/data/offLibShadow/parts/3648b.dat:11"
+      ],
+      "metadata_id": null,
+      "connection_provenance": {
+        "source": "ldcad_shadow",
+        "path": "/Users/captain/workspaces/workspace-ai/ldraw-mecha/data/offLibShadow/parts/3648b.dat",
+        "archive_member": null,
+        "line_number": 11,
+        "command": "0 !LDCAD SNAP_CYL [gender=F] [caps=none] [secs=R 6 16] [center=true] [slide=true] [ori=1 0 0 0 0 1 0 -1 0] [grid=C 2 C 2 20 20]",
+        "include_chain": []
+      },
+      "scale_inheritance": "none",
+      "mirror_inheritance": "cor",
+      "world_position": [
+        -49.99999999999999,
+        100.0,
+        200.0
+      ],
+      "world_axis": [
+        0.0,
+        0.0,
+        1.0
+      ]
+    },
+    {
+      "kind": "pin_hole",
+      "role": "female",
+      "position": [
+        -10.0,
+        10.0,
+        0.0
+      ],
+      "frame": [
+        [
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          -1.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0
+        ]
+      ],
+      "profile": {
+        "sections": [
+          {
+            "shape": "round",
+            "radius": 6.0,
+            "length": 16.0,
+            "flexible": false
+          }
+        ],
+        "centered": true,
+        "friction": false,
+        "caps": "none"
+      },
+      "name": "LDCad cylinder",
+      "feature_id": "3648b@R0/snap_cyl@L11:I1",
+      "group": null,
+      "freedoms": [
+        "rotate",
+        "slide"
+      ],
+      "source": "ldcad_shadow",
+      "confidence": 1.0,
+      "owner_code": "3648b",
+      "compatible_parts": [],
+      "occupied": false,
+      "occupied_by": null,
+      "provenance": [
+        "/Users/captain/workspaces/workspace-ai/ldraw-mecha/data/offLibShadow/parts/3648b.dat:11"
+      ],
+      "metadata_id": null,
+      "connection_provenance": {
+        "source": "ldcad_shadow",
+        "path": "/Users/captain/workspaces/workspace-ai/ldraw-mecha/data/offLibShadow/parts/3648b.dat",
+        "archive_member": null,
+        "line_number": 11,
+        "command": "0 !LDCAD SNAP_CYL [gender=F] [caps=none] [secs=R 6 16] [center=true] [slide=true] [ori=1 0 0 0 0 1 0 -1 0] [grid=C 2 C 2 20 20]",
+        "include_chain": []
+      },
+      "scale_inheritance": "none",
+      "mirror_inheritance": "cor",
+      "world_position": [
+        -33.99999999999999,
+        112.0,
+        200.0
+      ],
+      "world_axis": [
+        0.0,
+        0.0,
+        1.0
+      ]
+    },
+    {
+      "kind": "pin_hole",
+      "role": "female",
+      "position": [
+        10.0,
+        -10.0,
+        0.0
+      ],
+      "frame": [
+        [
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          -1.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0
+        ]
+      ],
+      "profile": {
+        "sections": [
+          {
+            "shape": "round",
+            "radius": 6.0,
+            "length": 16.0,
+            "flexible": false
+          }
+        ],
+        "centered": true,
+        "friction": false,
+        "caps": "none"
+      },
+      "name": "LDCad cylinder",
+      "feature_id": "3648b@R0/snap_cyl@L11:I2",
+      "group": null,
+      "freedoms": [
+        "rotate",
+        "slide"
+      ],
+      "source": "ldcad_shadow",
+      "confidence": 1.0,
+      "owner_code": "3648b",
+      "compatible_parts": [],
+      "occupied": false,
+      "occupied_by": null,
+      "provenance": [
+        "/Users/captain/workspaces/workspace-ai/ldraw-mecha/data/offLibShadow/parts/3648b.dat:11"
+      ],
+      "metadata_id": null,
+      "connection_provenance": {
+        "source": "ldcad_shadow",
+        "path": "/Users/captain/workspaces/workspace-ai/ldraw-mecha/data/offLibShadow/parts/3648b.dat",
+        "archive_member": null,
+        "line_number": 11,
+        "command": "0 !LDCAD SNAP_CYL [gender=F] [caps=none] [secs=R 6 16] [center=true] [slide=true] [ori=1 0 0 0 0 1 0 -1 0] [grid=C 2 C 2 20 20]",
+        "include_chain": []
+      },
+      "scale_inheritance": "none",
+      "mirror_inheritance": "cor",
+      "world_position": [
+        -37.99999999999999,
+        84.0,
+        200.0
+      ],
+      "world_axis": [
+        0.0,
+        0.0,
+        1.0
+      ]
+    },
+    {
+      "kind": "pin_hole",
+      "role": "female",
+      "position": [
+        10.0,
+        10.0,
+        0.0
+      ],
+      "frame": [
+        [
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          -1.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0
+        ]
+      ],
+      "profile": {
+        "sections": [
+          {
+            "shape": "round",
+            "radius": 6.0,
+            "length": 16.0,
+            "flexible": false
+          }
+        ],
+        "centered": true,
+        "friction": false,
+        "caps": "none"
+      },
+      "name": "LDCad cylinder",
+      "feature_id": "3648b@R0/snap_cyl@L11:I3",
+      "group": null,
+      "freedoms": [
+        "rotate",
+        "slide"
+      ],
+      "source": "ldcad_shadow",
+      "confidence": 1.0,
+      "owner_code": "3648b",
+      "compatible_parts": [],
+      "occupied": false,
+      "occupied_by": null,
+      "provenance": [
+        "/Users/captain/workspaces/workspace-ai/ldraw-mecha/data/offLibShadow/parts/3648b.dat:11"
+      ],
+      "metadata_id": null,
+      "connection_provenance": {
+        "source": "ldcad_shadow",
+        "path": "/Users/captain/workspaces/workspace-ai/ldraw-mecha/data/offLibShadow/parts/3648b.dat",
+        "archive_member": null,
+        "line_number": 11,
+        "command": "0 !LDCAD SNAP_CYL [gender=F] [caps=none] [secs=R 6 16] [center=true] [slide=true] [ori=1 0 0 0 0 1 0 -1 0] [grid=C 2 C 2 20 20]",
+        "include_chain": []
+      },
+      "scale_inheritance": "none",
+      "mirror_inheritance": "cor",
+      "world_position": [
+        -21.999999999999993,
+        96.0,
+        200.0
+      ],
+      "world_axis": [
+        0.0,
+        0.0,
+        1.0
+      ]
+    }
+  ],
+  "metadata": {
+    "part_code": "24505",
+    "coverage": "complete",
+    "features": [
+      {
+        "kind": "axle_hole",
+        "role": "female",
+        "position": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "frame": [
+          [
+            1.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            -1.0
+          ],
+          [
+            0.0,
+            1.0,
+            0.0
+          ]
+        ],
+        "profile": {
+          "sections": [
+            {
+              "shape": "axle",
+              "radius": 6.0,
+              "length": 20.0,
+              "flexible": false
+            }
+          ],
+          "centered": true,
+          "friction": false,
+          "caps": "none"
+        },
+        "name": "LDCad cylinder",
+        "feature_id": "3648b@R0/snap_cyl@L9:I0",
+        "group": null,
+        "freedoms": [
+          "rotate",
+          "slide"
+        ],
+        "source": "ldcad_shadow",
+        "confidence": 1.0,
+        "owner_code": "3648b",
+        "compatible_parts": [],
+        "occupied": false,
+        "occupied_by": null,
+        "provenance": [
+          "/Users/captain/workspaces/workspace-ai/ldraw-mecha/data/offLibShadow/parts/3648b.dat:9"
+        ],
+        "metadata_id": null,
+        "connection_provenance": {
+          "source": "ldcad_shadow",
+          "path": "/Users/captain/workspaces/workspace-ai/ldraw-mecha/data/offLibShadow/parts/3648b.dat",
+          "archive_member": null,
+          "line_number": 9,
+          "command": "0 !LDCAD SNAP_CYL [gender=F] [caps=none] [secs=A 6 20] [center=true] [slide=true] [ori=1 0 0 0 0 1 0 -1 0]",
+          "include_chain": []
+        },
+        "scale_inheritance": "none",
+        "mirror_inheritance": "cor"
+      },
+      {
+        "kind": "pin_hole",
+        "role": "female",
+        "position": [
+          -10.0,
+          -10.0,
+          0.0
+        ],
+        "frame": [
+          [
+            1.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            -1.0
+          ],
+          [
+            0.0,
+            1.0,
+            0.0
+          ]
+        ],
+        "profile": {
+          "sections": [
+            {
+              "shape": "round",
+              "radius": 6.0,
+              "length": 16.0,
+              "flexible": false
+            }
+          ],
+          "centered": true,
+          "friction": false,
+          "caps": "none"
+        },
+        "name": "LDCad cylinder",
+        "feature_id": "3648b@R0/snap_cyl@L11:I0",
+        "group": null,
+        "freedoms": [
+          "rotate",
+          "slide"
+        ],
+        "source": "ldcad_shadow",
+        "confidence": 1.0,
+        "owner_code": "3648b",
+        "compatible_parts": [],
+        "occupied": false,
+        "occupied_by": null,
+        "provenance": [
+          "/Users/captain/workspaces/workspace-ai/ldraw-mecha/data/offLibShadow/parts/3648b.dat:11"
+        ],
+        "metadata_id": null,
+        "connection_provenance": {
+          "source": "ldcad_shadow",
+          "path": "/Users/captain/workspaces/workspace-ai/ldraw-mecha/data/offLibShadow/parts/3648b.dat",
+          "archive_member": null,
+          "line_number": 11,
+          "command": "0 !LDCAD SNAP_CYL [gender=F] [caps=none] [secs=R 6 16] [center=true] [slide=true] [ori=1 0 0 0 0 1 0 -1 0] [grid=C 2 C 2 20 20]",
+          "include_chain": []
+        },
+        "scale_inheritance": "none",
+        "mirror_inheritance": "cor"
+      },
+      {
+        "kind": "pin_hole",
+        "role": "female",
+        "position": [
+          -10.0,
+          10.0,
+          0.0
+        ],
+        "frame": [
+          [
+            1.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            -1.0
+          ],
+          [
+            0.0,
+            1.0,
+            0.0
+          ]
+        ],
+        "profile": {
+          "sections": [
+            {
+              "shape": "round",
+              "radius": 6.0,
+              "length": 16.0,
+              "flexible": false
+            }
+          ],
+          "centered": true,
+          "friction": false,
+          "caps": "none"
+        },
+        "name": "LDCad cylinder",
+        "feature_id": "3648b@R0/snap_cyl@L11:I1",
+        "group": null,
+        "freedoms": [
+          "rotate",
+          "slide"
+        ],
+        "source": "ldcad_shadow",
+        "confidence": 1.0,
+        "owner_code": "3648b",
+        "compatible_parts": [],
+        "occupied": false,
+        "occupied_by": null,
+        "provenance": [
+          "/Users/captain/workspaces/workspace-ai/ldraw-mecha/data/offLibShadow/parts/3648b.dat:11"
+        ],
+        "metadata_id": null,
+        "connection_provenance": {
+          "source": "ldcad_shadow",
+          "path": "/Users/captain/workspaces/workspace-ai/ldraw-mecha/data/offLibShadow/parts/3648b.dat",
+          "archive_member": null,
+          "line_number": 11,
+          "command": "0 !LDCAD SNAP_CYL [gender=F] [caps=none] [secs=R 6 16] [center=true] [slide=true] [ori=1 0 0 0 0 1 0 -1 0] [grid=C 2 C 2 20 20]",
+          "include_chain": []
+        },
+        "scale_inheritance": "none",
+        "mirror_inheritance": "cor"
+      },
+      {
+        "kind": "pin_hole",
+        "role": "female",
+        "position": [
+          10.0,
+          -10.0,
+          0.0
+        ],
+        "frame": [
+          [
+            1.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            -1.0
+          ],
+          [
+            0.0,
+            1.0,
+            0.0
+          ]
+        ],
+        "profile": {
+          "sections": [
+            {
+              "shape": "round",
+              "radius": 6.0,
+              "length": 16.0,
+              "flexible": false
+            }
+          ],
+          "centered": true,
+          "friction": false,
+          "caps": "none"
+        },
+        "name": "LDCad cylinder",
+        "feature_id": "3648b@R0/snap_cyl@L11:I2",
+        "group": null,
+        "freedoms": [
+          "rotate",
+          "slide"
+        ],
+        "source": "ldcad_shadow",
+        "confidence": 1.0,
+        "owner_code": "3648b",
+        "compatible_parts": [],
+        "occupied": false,
+        "occupied_by": null,
+        "provenance": [
+          "/Users/captain/workspaces/workspace-ai/ldraw-mecha/data/offLibShadow/parts/3648b.dat:11"
+        ],
+        "metadata_id": null,
+        "connection_provenance": {
+          "source": "ldcad_shadow",
+          "path": "/Users/captain/workspaces/workspace-ai/ldraw-mecha/data/offLibShadow/parts/3648b.dat",
+          "archive_member": null,
+          "line_number": 11,
+          "command": "0 !LDCAD SNAP_CYL [gender=F] [caps=none] [secs=R 6 16] [center=true] [slide=true] [ori=1 0 0 0 0 1 0 -1 0] [grid=C 2 C 2 20 20]",
+          "include_chain": []
+        },
+        "scale_inheritance": "none",
+        "mirror_inheritance": "cor"
+      },
+      {
+        "kind": "pin_hole",
+        "role": "female",
+        "position": [
+          10.0,
+          10.0,
+          0.0
+        ],
+        "frame": [
+          [
+            1.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            -1.0
+          ],
+          [
+            0.0,
+            1.0,
+            0.0
+          ]
+        ],
+        "profile": {
+          "sections": [
+            {
+              "shape": "round",
+              "radius": 6.0,
+              "length": 16.0,
+              "flexible": false
+            }
+          ],
+          "centered": true,
+          "friction": false,
+          "caps": "none"
+        },
+        "name": "LDCad cylinder",
+        "feature_id": "3648b@R0/snap_cyl@L11:I3",
+        "group": null,
+        "freedoms": [
+          "rotate",
+          "slide"
+        ],
+        "source": "ldcad_shadow",
+        "confidence": 1.0,
+        "owner_code": "3648b",
+        "compatible_parts": [],
+        "occupied": false,
+        "occupied_by": null,
+        "provenance": [
+          "/Users/captain/workspaces/workspace-ai/ldraw-mecha/data/offLibShadow/parts/3648b.dat:11"
+        ],
+        "metadata_id": null,
+        "connection_provenance": {
+          "source": "ldcad_shadow",
+          "path": "/Users/captain/workspaces/workspace-ai/ldraw-mecha/data/offLibShadow/parts/3648b.dat",
+          "archive_member": null,
+          "line_number": 11,
+          "command": "0 !LDCAD SNAP_CYL [gender=F] [caps=none] [secs=R 6 16] [center=true] [slide=true] [ori=1 0 0 0 0 1 0 -1 0] [grid=C 2 C 2 20 20]",
+          "include_chain": []
+        },
+        "scale_inheritance": "none",
+        "mirror_inheritance": "cor"
+      }
+    ],
+    "source_count": 1,
+    "recognized_record_count": 3,
+    "unsupported_record_count": 0,
+    "invalid_record_count": 0,
+    "diagnostics": []
+  },
+  "coverage": "Connector evidence only; mating, mobility, retention and collision require review"
+}

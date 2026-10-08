@@ -1,0 +1,210 @@
+{
+  "passed": true,
+  "samples": [
+    {
+      "control": "shutter_l",
+      "value": 0.0,
+      "passed": true,
+      "max_error": 0
+    },
+    {
+      "control": "shutter_l",
+      "value": 0.1875,
+      "passed": true,
+      "max_error": 0
+    },
+    {
+      "control": "shutter_l",
+      "value": 0.375,
+      "passed": true,
+      "max_error": 0
+    },
+    {
+      "control": "shutter_l",
+      "value": 0.5625,
+      "passed": true,
+      "max_error": 0
+    },
+    {
+      "control": "shutter_l",
+      "value": 0.75,
+      "passed": true,
+      "max_error": 0
+    },
+    {
+      "control": "shutter_l",
+      "value": 0.9375,
+      "passed": true,
+      "max_error": 0
+    },
+    {
+      "control": "shutter_l",
+      "value": 1.125,
+      "passed": true,
+      "max_error": 0
+    },
+    {
+      "control": "shutter_l",
+      "value": 1.3125,
+      "passed": true,
+      "max_error": 0
+    },
+    {
+      "control": "shutter_l",
+      "value": 1.5,
+      "passed": true,
+      "max_error": 0
+    },
+    {
+      "control": "shutter_l",
+      "value": 1.6875,
+      "passed": true,
+      "max_error": 0
+    },
+    {
+      "control": "shutter_l",
+      "value": 1.875,
+      "passed": true,
+      "max_error": 0
+    },
+    {
+      "control": "shutter_l",
+      "value": 2.0625,
+      "passed": true,
+      "max_error": 0
+    },
+    {
+      "control": "shutter_l",
+      "value": 2.25,
+      "passed": true,
+      "max_error": 0
+    },
+    {
+      "control": "shutter_l",
+      "value": 2.4375,
+      "passed": true,
+      "max_error": 0
+    },
+    {
+      "control": "shutter_l",
+      "value": 2.625,
+      "passed": true,
+      "max_error": 0
+    },
+    {
+      "control": "shutter_l",
+      "value": 2.8125,
+      "passed": true,
+      "max_error": 0
+    },
+    {
+      "control": "shutter_l",
+      "value": 3.0,
+      "passed": true,
+      "max_error": 0
+    },
+    {
+      "control": "shutter_r",
+      "value": 0.0,
+      "passed": true,
+      "max_error": 0
+    },
+    {
+      "control": "shutter_r",
+      "value": 0.1875,
+      "passed": true,
+      "max_error": 0
+    },
+    {
+      "control": "shutter_r",
+      "value": 0.375,
+      "passed": true,
+      "max_error": 0
+    },
+    {
+      "control": "shutter_r",
+      "value": 0.5625,
+      "passed": true,
+      "max_error": 0
+    },
+    {
+      "control": "shutter_r",
+      "value": 0.75,
+      "passed": true,
+      "max_error": 0
+    },
+    {
+      "control": "shutter_r",
+      "value": 0.9375,
+      "passed": true,
+      "max_error": 0
+    },
+    {
+      "control": "shutter_r",
+      "value": 1.125,
+      "passed": true,
+      "max_error": 0
+    },
+    {
+      "control": "shutter_r",
+      "value": 1.3125,
+      "passed": true,
+      "max_error": 0
+    },
+    {
+      "control": "shutter_r",
+      "value": 1.5,
+      "passed": true,
+      "max_error": 0
+    },
+    {
+      "control": "shutter_r",
+      "value": 1.6875,
+      "passed": true,
+      "max_error": 0
+    },
+    {
+      "control": "shutter_r",
+      "value": 1.875,
+      "passed": true,
+      "max_error": 0
+    },
+    {
+      "control": "shutter_r",
+      "value": 2.0625,
+      "passed": true,
+      "max_error": 0
+    },
+    {
+      "control": "shutter_r",
+      "value": 2.25,
+      "passed": true,
+      "max_error": 0
+    },
+    {
+      "control": "shutter_r",
+      "value": 2.4375,
+      "passed": true,
+      "max_error": 0
+    },
+    {
+      "control": "shutter_r",
+      "value": 2.625,
+      "passed": true,
+      "max_error": 0
+    },
+    {
+      "control": "shutter_r",
+      "value": 2.8125,
+      "passed": true,
+      "max_error": 0
+    },
+    {
+      "control": "shutter_r",
+      "value": 3.0,
+      "passed": true,
+      "max_error": 0
+    }
+  ],
+  "coverage": "Each control swept independently; analytic closure only, not mesh collisions or dynamics"
+}

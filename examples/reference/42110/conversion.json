@@ -1,0 +1,15 @@
+{
+  "path": "/Users/captain/workspaces/workspace-ai/ldraw-mecha/output/42110/model.glb",
+  "bound_instances": 3093,
+  "source_sha256": "b27fb06903785d25418371314af7aec01ffe4b5df3b0154a4a1ea7accb0267dc",
+  "section": "42110 - main.ldr",
+  "duplicate_placements": [
+    [
+      "0/1/133/39",
+      "0/1/133/43"
+    ]
+  ],
+  "merged_primitives": {
+    "0/103": 395
+  }
+}

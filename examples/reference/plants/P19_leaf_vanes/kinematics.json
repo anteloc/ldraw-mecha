@@ -1,0 +1,172 @@
+{
+  "semantics": {},
+  "wind_geometry": {
+    "vane_1": {
+      "body": "vane_1",
+      "x": -50.0,
+      "tip": [
+        -127.781746,
+        -163.5,
+        67.781746
+      ],
+      "swing": [
+        -0.707,
+        -0.707
+      ],
+      "lever": 110.0
+    },
+    "vane_2": {
+      "body": "vane_2",
+      "x": 10.0,
+      "tip": [
+        10.0,
+        -124.0,
+        -120.0
+      ],
+      "swing": [
+        1.0,
+        0.0
+      ],
+      "lever": 110.0
+    },
+    "vane_3": {
+      "body": "vane_3",
+      "x": 70.0,
+      "tip": [
+        70.0,
+        -64.0,
+        100.0
+      ],
+      "swing": [
+        -1.0,
+        0.0
+      ],
+      "lever": 110.0
+    }
+  },
+  "roster_problems": [],
+  "contacts": {
+    "tested_parts": 10,
+    "contacts": 5,
+    "contacted_parts": 6,
+    "by_kind": {
+      "stud/stud_receptacle": 3,
+      "pin/pin_hole": 2
+    },
+    "axles": {
+      "selection": "Catalog descriptions beginning Technic Axle followed by a numeric length; excludes axle pins, joiners and axle-hole supports",
+      "total": 0,
+      "with_axle_hole_contact": 0,
+      "without_axle_hole_contact": []
+    }
+  },
+  "contact_pairs": {
+    "0-1": [
+      "stud/stud_receptacle"
+    ],
+    "0-4": [
+      "stud/stud_receptacle"
+    ],
+    "0-7": [
+      "stud/stud_receptacle"
+    ],
+    "1-2": [
+      "pin_hole/pin"
+    ],
+    "2-3": [
+      "pin/pin_hole"
+    ]
+  },
+  "joints": {
+    "vane_1": "real",
+    "vane_2": "real",
+    "vane_3": "real"
+  },
+  "asymmetric_sample": {
+    "controls": {
+      "vane_1": 0.378,
+      "vane_2": -0.814,
+      "vane_3": 0.729
+    },
+    "transforms": {
+      "vane_1": [
+        [
+          0.929405,
+          0.0,
+          -0.369062,
+          -7.220393
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.369062,
+          0.0,
+          0.929405,
+          17.747166
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "vane_2": [
+        [
+          0.686596,
+          0.0,
+          0.727039,
+          10.404436
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          -0.727039,
+          0.0,
+          0.686596,
+          4.136351
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "vane_3": [
+        [
+          0.745841,
+          0.0,
+          -0.666124,
+          11.129896
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.666124,
+          0.0,
+          0.745841,
+          -49.17028
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ]
+    }
+  }
+}

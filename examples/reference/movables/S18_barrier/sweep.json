@@ -1,0 +1,108 @@
+{
+  "passed": true,
+  "samples": [
+    {
+      "control": "boom",
+      "value": 0.0,
+      "passed": true,
+      "max_error": 0
+    },
+    {
+      "control": "boom",
+      "value": 0.09375,
+      "passed": true,
+      "max_error": 0
+    },
+    {
+      "control": "boom",
+      "value": 0.1875,
+      "passed": true,
+      "max_error": 0
+    },
+    {
+      "control": "boom",
+      "value": 0.28125,
+      "passed": true,
+      "max_error": 0
+    },
+    {
+      "control": "boom",
+      "value": 0.375,
+      "passed": true,
+      "max_error": 0
+    },
+    {
+      "control": "boom",
+      "value": 0.46875,
+      "passed": true,
+      "max_error": 0
+    },
+    {
+      "control": "boom",
+      "value": 0.5625,
+      "passed": true,
+      "max_error": 0
+    },
+    {
+      "control": "boom",
+      "value": 0.65625,
+      "passed": true,
+      "max_error": 0
+    },
+    {
+      "control": "boom",
+      "value": 0.75,
+      "passed": true,
+      "max_error": 0
+    },
+    {
+      "control": "boom",
+      "value": 0.84375,
+      "passed": true,
+      "max_error": 0
+    },
+    {
+      "control": "boom",
+      "value": 0.9375,
+      "passed": true,
+      "max_error": 0
+    },
+    {
+      "control": "boom",
+      "value": 1.03125,
+      "passed": true,
+      "max_error": 0
+    },
+    {
+      "control": "boom",
+      "value": 1.125,
+      "passed": true,
+      "max_error": 0
+    },
+    {
+      "control": "boom",
+      "value": 1.21875,
+      "passed": true,
+      "max_error": 0
+    },
+    {
+      "control": "boom",
+      "value": 1.3125,
+      "passed": true,
+      "max_error": 0
+    },
+    {
+      "control": "boom",
+      "value": 1.40625,
+      "passed": true,
+      "max_error": 0
+    },
+    {
+      "control": "boom",
+      "value": 1.5,
+      "passed": true,
+      "max_error": 0
+    }
+  ],
+  "coverage": "Each control swept independently; analytic closure only, not mesh collisions or dynamics"
+}

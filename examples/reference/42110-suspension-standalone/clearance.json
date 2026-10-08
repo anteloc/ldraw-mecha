@@ -1,0 +1,428 @@
+{
+  "no_new_surface_crossings": true,
+  "samples": [
+    {
+      "control": "travel_fl",
+      "value": 0.0,
+      "new_surface_crossings": []
+    },
+    {
+      "control": "travel_fl",
+      "value": 3.8125,
+      "new_surface_crossings": []
+    },
+    {
+      "control": "travel_fl",
+      "value": 7.625,
+      "new_surface_crossings": []
+    },
+    {
+      "control": "travel_fl",
+      "value": 11.4375,
+      "new_surface_crossings": []
+    },
+    {
+      "control": "travel_fl",
+      "value": 15.25,
+      "new_surface_crossings": []
+    },
+    {
+      "control": "travel_fl",
+      "value": 19.0625,
+      "new_surface_crossings": []
+    },
+    {
+      "control": "travel_fl",
+      "value": 22.875,
+      "new_surface_crossings": []
+    },
+    {
+      "control": "travel_fl",
+      "value": 26.6875,
+      "new_surface_crossings": []
+    },
+    {
+      "control": "travel_fl",
+      "value": 30.5,
+      "new_surface_crossings": []
+    },
+    {
+      "control": "travel_fr",
+      "value": 0.0,
+      "new_surface_crossings": []
+    },
+    {
+      "control": "travel_fr",
+      "value": 3.8125,
+      "new_surface_crossings": []
+    },
+    {
+      "control": "travel_fr",
+      "value": 7.625,
+      "new_surface_crossings": []
+    },
+    {
+      "control": "travel_fr",
+      "value": 11.4375,
+      "new_surface_crossings": []
+    },
+    {
+      "control": "travel_fr",
+      "value": 15.25,
+      "new_surface_crossings": []
+    },
+    {
+      "control": "travel_fr",
+      "value": 19.0625,
+      "new_surface_crossings": []
+    },
+    {
+      "control": "travel_fr",
+      "value": 22.875,
+      "new_surface_crossings": []
+    },
+    {
+      "control": "travel_fr",
+      "value": 26.6875,
+      "new_surface_crossings": []
+    },
+    {
+      "control": "travel_fr",
+      "value": 30.5,
+      "new_surface_crossings": []
+    },
+    {
+      "control": "travel_rl",
+      "value": 0.0,
+      "new_surface_crossings": []
+    },
+    {
+      "control": "travel_rl",
+      "value": 5.0625,
+      "new_surface_crossings": []
+    },
+    {
+      "control": "travel_rl",
+      "value": 10.125,
+      "new_surface_crossings": []
+    },
+    {
+      "control": "travel_rl",
+      "value": 15.1875,
+      "new_surface_crossings": []
+    },
+    {
+      "control": "travel_rl",
+      "value": 20.25,
+      "new_surface_crossings": []
+    },
+    {
+      "control": "travel_rl",
+      "value": 25.3125,
+      "new_surface_crossings": []
+    },
+    {
+      "control": "travel_rl",
+      "value": 30.375,
+      "new_surface_crossings": []
+    },
+    {
+      "control": "travel_rl",
+      "value": 35.4375,
+      "new_surface_crossings": []
+    },
+    {
+      "control": "travel_rl",
+      "value": 40.5,
+      "new_surface_crossings": []
+    },
+    {
+      "control": "travel_rr",
+      "value": 0.0,
+      "new_surface_crossings": []
+    },
+    {
+      "control": "travel_rr",
+      "value": 5.0625,
+      "new_surface_crossings": []
+    },
+    {
+      "control": "travel_rr",
+      "value": 10.125,
+      "new_surface_crossings": []
+    },
+    {
+      "control": "travel_rr",
+      "value": 15.1875,
+      "new_surface_crossings": []
+    },
+    {
+      "control": "travel_rr",
+      "value": 20.25,
+      "new_surface_crossings": []
+    },
+    {
+      "control": "travel_rr",
+      "value": 25.3125,
+      "new_surface_crossings": []
+    },
+    {
+      "control": "travel_rr",
+      "value": 30.375,
+      "new_surface_crossings": []
+    },
+    {
+      "control": "travel_rr",
+      "value": 35.4375,
+      "new_surface_crossings": []
+    },
+    {
+      "control": "travel_rr",
+      "value": 40.5,
+      "new_surface_crossings": []
+    }
+  ],
+  "excluded_rest_pairs": [
+    [
+      "1",
+      "10"
+    ],
+    [
+      "10",
+      "34"
+    ],
+    [
+      "10",
+      "35"
+    ],
+    [
+      "10",
+      "47"
+    ],
+    [
+      "109",
+      "124"
+    ],
+    [
+      "11",
+      "2"
+    ],
+    [
+      "11",
+      "29"
+    ],
+    [
+      "11",
+      "30"
+    ],
+    [
+      "112",
+      "131"
+    ],
+    [
+      "113",
+      "133"
+    ],
+    [
+      "114",
+      "117"
+    ],
+    [
+      "117",
+      "174"
+    ],
+    [
+      "121",
+      "122"
+    ],
+    [
+      "128",
+      "129"
+    ],
+    [
+      "133",
+      "187"
+    ],
+    [
+      "174",
+      "175"
+    ],
+    [
+      "174",
+      "176"
+    ],
+    [
+      "177",
+      "178"
+    ],
+    [
+      "178",
+      "179"
+    ],
+    [
+      "178",
+      "180"
+    ],
+    [
+      "187",
+      "188"
+    ],
+    [
+      "187",
+      "189"
+    ],
+    [
+      "190",
+      "191"
+    ],
+    [
+      "190",
+      "192"
+    ],
+    [
+      "20",
+      "27"
+    ],
+    [
+      "22",
+      "26"
+    ],
+    [
+      "26",
+      "28"
+    ],
+    [
+      "26",
+      "43"
+    ],
+    [
+      "26",
+      "56"
+    ],
+    [
+      "27",
+      "33"
+    ],
+    [
+      "27",
+      "49"
+    ],
+    [
+      "32",
+      "38"
+    ],
+    [
+      "37",
+      "39"
+    ],
+    [
+      "49",
+      "50"
+    ],
+    [
+      "49",
+      "51"
+    ],
+    [
+      "52",
+      "53"
+    ],
+    [
+      "52",
+      "54"
+    ],
+    [
+      "56",
+      "57"
+    ],
+    [
+      "56",
+      "58"
+    ],
+    [
+      "59",
+      "60"
+    ],
+    [
+      "59",
+      "61"
+    ],
+    [
+      "91",
+      "93"
+    ],
+    [
+      "96",
+      "98"
+    ]
+  ],
+  "shrink_ldu": 0.4,
+  "touching_tolerance_ldu": 0.05,
+  "excluded_touching_pairs": [
+    [
+      "10",
+      "7"
+    ],
+    [
+      "10",
+      "8"
+    ],
+    [
+      "100",
+      "117"
+    ],
+    [
+      "11",
+      "6"
+    ],
+    [
+      "11",
+      "9"
+    ],
+    [
+      "117",
+      "178"
+    ],
+    [
+      "133",
+      "190"
+    ],
+    [
+      "133",
+      "95"
+    ],
+    [
+      "171",
+      "175"
+    ],
+    [
+      "26",
+      "59"
+    ],
+    [
+      "26",
+      "6"
+    ],
+    [
+      "26",
+      "9"
+    ],
+    [
+      "27",
+      "52"
+    ],
+    [
+      "27",
+      "7"
+    ],
+    [
+      "93",
+      "94"
+    ],
+    [
+      "98",
+      "99"
+    ]
+  ],
+  "coverage": "Sampled surface crossings only; excludes rigid-body and rest-contact pairs; containment untested"
+}

@@ -1,0 +1,39 @@
+{
+  "plan": "/Users/captain/workspaces/workspace-ai/ldraw-mecha/output/42110-suspension-standalone/study/plan.json",
+  "diagrams": "/Users/captain/workspaces/workspace-ai/ldraw-mecha/output/42110-suspension-standalone/study/diagrams",
+  "glb": {
+    "path": "/Users/captain/workspaces/workspace-ai/ldraw-mecha/output/42110-suspension-standalone/study/model.glb",
+    "bound_instances": 259,
+    "source_sha256": "30c62143630438e51b3a6bfa83b78fffc4f8fe06b6b6898b3904944d5f33fc16",
+    "section": "42110-suspension-standalone.ldr",
+    "duplicate_placements": [],
+    "merged_primitives": {}
+  },
+  "contacts": {
+    "tested_parts": 247,
+    "contacts": 419,
+    "contacted_parts": 182,
+    "by_kind": {
+      "axle/axle_hole": 132,
+      "generic/generic": 14,
+      "pin/pin_hole": 271,
+      "stud/stud_receptacle": 2
+    },
+    "axles": {
+      "selection": "Catalog descriptions beginning Technic Axle followed by a numeric length; excludes axle pins, joiners and axle-hole supports",
+      "total": 36,
+      "with_axle_hole_contact": 36,
+      "without_axle_hole_contact": []
+    }
+  },
+  "audit": {
+    "unresolved": 99
+  },
+  "warnings": [
+    {
+      "code": "placement_normalized",
+      "message": "Rounded near-rigid placements normalized for analysis only; inspect placement diagnostics."
+    }
+  ],
+  "details": "Full reports in preparation.json / diagrams/index.json"
+}

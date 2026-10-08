@@ -1,0 +1,43 @@
+{
+  "case": "P11_hinged_oak",
+  "sweep": {
+    "no_new_surface_crossings": true,
+    "crossings": [],
+    "excluded_rest_pairs": []
+  },
+  "clip_poses": {
+    "samples": 180,
+    "every": 4,
+    "no_new_surface_crossings": true,
+    "crossings_by_clip": {},
+    "frames_with_crossings": {},
+    "vertex_penetration_by_clip": {},
+    "deep_shrink_ldu": 1.5,
+    "no_deep_crossings": true,
+    "deep_crossings_by_clip": {},
+    "frames_with_deep_crossings": {}
+  },
+  "roles": {
+    "0": "base",
+    "1": "trunk0",
+    "2": "trunk1",
+    "3": "trunk2",
+    "4": "trunk3",
+    "5": "hub_front",
+    "6": "branch_front",
+    "7": "leaves_front",
+    "8": "hub_downwind",
+    "9": "branch_downwind",
+    "10": "leaves_downwind",
+    "11": "hub_back",
+    "12": "branch_back",
+    "13": "leaves_back",
+    "14": "hub_upwind",
+    "15": "branch_upwind",
+    "16": "leaves_upwind",
+    "17": "upper0",
+    "18": "upper1",
+    "19": "crown"
+  },
+  "coverage": "Sampled surface crossings only; excludes rigid-body and rest-contact pairs; containment untested"
+}

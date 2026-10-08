@@ -1,0 +1,145 @@
+{
+  "case": "P05_sunflower",
+  "sweep": {
+    "no_new_surface_crossings": false,
+    "crossings": [
+      [
+        "stem_lean",
+        -0.12,
+        "base-stem0"
+      ],
+      [
+        "stem_lean",
+        -0.105,
+        "base-stem0"
+      ],
+      [
+        "stem_lean",
+        -0.09,
+        "base-stem0"
+      ],
+      [
+        "stem_lean",
+        -0.075,
+        "base-stem0"
+      ],
+      [
+        "stem_lean",
+        -0.06,
+        "base-stem0"
+      ],
+      [
+        "stem_lean",
+        0.06,
+        "base-stem0"
+      ],
+      [
+        "stem_lean",
+        0.075,
+        "base-stem0"
+      ],
+      [
+        "stem_lean",
+        0.09,
+        "base-stem0"
+      ],
+      [
+        "stem_lean",
+        0.105,
+        "base-stem0"
+      ],
+      [
+        "stem_lean",
+        0.12,
+        "base-stem0"
+      ]
+    ],
+    "excluded_rest_pairs": [
+      "pivot-head"
+    ]
+  },
+  "clip_poses": {
+    "samples": 180,
+    "every": 4,
+    "no_new_surface_crossings": false,
+    "crossings_by_clip": {
+      "P05_sunflower.gusty": [
+        "base-stem0"
+      ],
+      "P05_sunflower.storm": [
+        "base-stem0"
+      ]
+    },
+    "frames_with_crossings": {
+      "P05_sunflower.gusty": [
+        81,
+        85,
+        89,
+        93,
+        97,
+        145,
+        149,
+        153,
+        189,
+        193
+      ],
+      "P05_sunflower.storm": [
+        69,
+        73,
+        77,
+        81,
+        85,
+        89,
+        101,
+        105,
+        109,
+        113,
+        125,
+        129,
+        133,
+        137,
+        141,
+        157,
+        161,
+        165,
+        169,
+        173,
+        185,
+        189,
+        193,
+        197,
+        201
+      ]
+    },
+    "vertex_penetration_by_clip": {
+      "P05_sunflower.gusty": {
+        "base-stem0": {
+          "max_vertex_depth_ldu": 0.721,
+          "kind": "shallow"
+        }
+      },
+      "P05_sunflower.storm": {
+        "base-stem0": {
+          "max_vertex_depth_ldu": 0.916,
+          "kind": "shallow"
+        }
+      }
+    },
+    "deep_shrink_ldu": 1.5,
+    "no_deep_crossings": true,
+    "deep_crossings_by_clip": {},
+    "frames_with_deep_crossings": {}
+  },
+  "roles": {
+    "0": "base",
+    "1": "stem0",
+    "2": "stem1",
+    "3": "stem2",
+    "4": "stem3",
+    "5": "stem4",
+    "6": "pivot",
+    "7": "head_plate",
+    "8": "head"
+  },
+  "coverage": "Sampled surface crossings only; excludes rigid-body and rest-contact pairs; containment untested"
+}

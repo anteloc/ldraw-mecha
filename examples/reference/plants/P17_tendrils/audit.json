@@ -1,0 +1,114 @@
+{
+  "summary": {
+    "static": 1,
+    "planned": 4
+  },
+  "review_complete": true,
+  "unresolved": [],
+  "deferred": [],
+  "unaccounted_mechanical_parts": [],
+  "mechanisms": [
+    {
+      "id": "context",
+      "label": "Hanging tendrils: base and mounts (static)",
+      "disposition": "static",
+      "review": "Base, trunk and mounts built for the catalog; they do not move in this case.",
+      "parts": 19,
+      "controlled_parts": [],
+      "parts_without_control": [
+        "0",
+        "1",
+        "10",
+        "11",
+        "12",
+        "13",
+        "15",
+        "16",
+        "18",
+        "19",
+        "2",
+        "21",
+        "3",
+        "4",
+        "5",
+        "6",
+        "7",
+        "8",
+        "9"
+      ],
+      "controls": []
+    },
+    {
+      "id": "swing_1",
+      "label": "Hanging tendrils: swing 1",
+      "disposition": "planned",
+      "review": "Joint declared in this plan (scripts/build_plants.py); driven by wind clips.",
+      "parts": 2,
+      "controlled_parts": [
+        "14"
+      ],
+      "parts_without_control": [
+        "13"
+      ],
+      "controls": [
+        "swing_1"
+      ]
+    },
+    {
+      "id": "swing_2",
+      "label": "Hanging tendrils: swing 2",
+      "disposition": "planned",
+      "review": "Joint declared in this plan (scripts/build_plants.py); driven by wind clips.",
+      "parts": 2,
+      "controlled_parts": [
+        "17"
+      ],
+      "parts_without_control": [
+        "16"
+      ],
+      "controls": [
+        "swing_2"
+      ]
+    },
+    {
+      "id": "swing_3",
+      "label": "Hanging tendrils: swing 3",
+      "disposition": "planned",
+      "review": "Joint declared in this plan (scripts/build_plants.py); driven by wind clips.",
+      "parts": 2,
+      "controlled_parts": [
+        "20"
+      ],
+      "parts_without_control": [
+        "19"
+      ],
+      "controls": [
+        "swing_3"
+      ]
+    },
+    {
+      "id": "twist_curl",
+      "label": "Hanging tendrils: twist curl",
+      "disposition": "planned",
+      "review": "Joint declared in this plan (scripts/build_plants.py); driven by wind clips.",
+      "parts": 2,
+      "controlled_parts": [
+        "22"
+      ],
+      "parts_without_control": [
+        "21"
+      ],
+      "controls": [
+        "twist_curl"
+      ]
+    }
+  ],
+  "warnings": [
+    {
+      "code": "coaxial_not_run",
+      "message": "not run: 0 shaft/gear candidates outside 2..100; select a section"
+    }
+  ],
+  "coverage": "Bookkeeping of declared scope only. Supports may correctly lack controls. Planned, static and deferred dispositions require review notes; none certify discovery completeness, physical motion or clearance.",
+  "passed": true
+}

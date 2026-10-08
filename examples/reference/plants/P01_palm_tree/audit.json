@@ -1,0 +1,254 @@
+{
+  "summary": {
+    "static": 1,
+    "planned": 11
+  },
+  "review_complete": true,
+  "unresolved": [],
+  "deferred": [],
+  "unaccounted_mechanical_parts": [],
+  "mechanisms": [
+    {
+      "id": "context",
+      "label": "Ball-chain palm: base and mounts (static)",
+      "disposition": "static",
+      "review": "Base, trunk and mounts built for the catalog; they do not move in this case.",
+      "parts": 2,
+      "controlled_parts": [],
+      "parts_without_control": [
+        "0",
+        "1"
+      ],
+      "controls": []
+    },
+    {
+      "id": "crown",
+      "label": "Ball-chain palm: crown",
+      "disposition": "planned",
+      "review": "Joint declared in this plan (scripts/build_plants.py); driven by wind clips.",
+      "parts": 4,
+      "controlled_parts": [
+        "13",
+        "14",
+        "7",
+        "8"
+      ],
+      "parts_without_control": [],
+      "controls": [
+        "bend_1",
+        "bend_2",
+        "bend_3",
+        "bend_4",
+        "bend_5",
+        "bend_6",
+        "crown_twist"
+      ]
+    },
+    {
+      "id": "leaf_back",
+      "label": "Ball-chain palm: leaf back",
+      "disposition": "planned",
+      "review": "Joint declared in this plan (scripts/build_plants.py); driven by wind clips.",
+      "parts": 2,
+      "controlled_parts": [
+        "11",
+        "8"
+      ],
+      "parts_without_control": [],
+      "controls": [
+        "bend_1",
+        "bend_2",
+        "bend_3",
+        "bend_4",
+        "bend_5",
+        "bend_6",
+        "crown_twist",
+        "leaf_back"
+      ]
+    },
+    {
+      "id": "leaf_downwind",
+      "label": "Ball-chain palm: leaf downwind",
+      "disposition": "planned",
+      "review": "Joint declared in this plan (scripts/build_plants.py); driven by wind clips.",
+      "parts": 2,
+      "controlled_parts": [
+        "12",
+        "8"
+      ],
+      "parts_without_control": [],
+      "controls": [
+        "bend_1",
+        "bend_2",
+        "bend_3",
+        "bend_4",
+        "bend_5",
+        "bend_6",
+        "crown_twist",
+        "leaf_downwind"
+      ]
+    },
+    {
+      "id": "leaf_front",
+      "label": "Ball-chain palm: leaf front",
+      "disposition": "planned",
+      "review": "Joint declared in this plan (scripts/build_plants.py); driven by wind clips.",
+      "parts": 2,
+      "controlled_parts": [
+        "8",
+        "9"
+      ],
+      "parts_without_control": [],
+      "controls": [
+        "bend_1",
+        "bend_2",
+        "bend_3",
+        "bend_4",
+        "bend_5",
+        "bend_6",
+        "crown_twist",
+        "leaf_front"
+      ]
+    },
+    {
+      "id": "leaf_upwind",
+      "label": "Ball-chain palm: leaf upwind",
+      "disposition": "planned",
+      "review": "Joint declared in this plan (scripts/build_plants.py); driven by wind clips.",
+      "parts": 2,
+      "controlled_parts": [
+        "10",
+        "8"
+      ],
+      "parts_without_control": [],
+      "controls": [
+        "bend_1",
+        "bend_2",
+        "bend_3",
+        "bend_4",
+        "bend_5",
+        "bend_6",
+        "crown_twist",
+        "leaf_upwind"
+      ]
+    },
+    {
+      "id": "seg1",
+      "label": "Ball-chain palm: seg1",
+      "disposition": "planned",
+      "review": "Joint declared in this plan (scripts/build_plants.py); driven by wind clips.",
+      "parts": 2,
+      "controlled_parts": [
+        "2"
+      ],
+      "parts_without_control": [
+        "1"
+      ],
+      "controls": [
+        "bend_1"
+      ]
+    },
+    {
+      "id": "seg2",
+      "label": "Ball-chain palm: seg2",
+      "disposition": "planned",
+      "review": "Joint declared in this plan (scripts/build_plants.py); driven by wind clips.",
+      "parts": 2,
+      "controlled_parts": [
+        "2",
+        "3"
+      ],
+      "parts_without_control": [],
+      "controls": [
+        "bend_1",
+        "bend_2"
+      ]
+    },
+    {
+      "id": "seg3",
+      "label": "Ball-chain palm: seg3",
+      "disposition": "planned",
+      "review": "Joint declared in this plan (scripts/build_plants.py); driven by wind clips.",
+      "parts": 2,
+      "controlled_parts": [
+        "3",
+        "4"
+      ],
+      "parts_without_control": [],
+      "controls": [
+        "bend_1",
+        "bend_2",
+        "bend_3"
+      ]
+    },
+    {
+      "id": "seg4",
+      "label": "Ball-chain palm: seg4",
+      "disposition": "planned",
+      "review": "Joint declared in this plan (scripts/build_plants.py); driven by wind clips.",
+      "parts": 2,
+      "controlled_parts": [
+        "4",
+        "5"
+      ],
+      "parts_without_control": [],
+      "controls": [
+        "bend_1",
+        "bend_2",
+        "bend_3",
+        "bend_4"
+      ]
+    },
+    {
+      "id": "seg5",
+      "label": "Ball-chain palm: seg5",
+      "disposition": "planned",
+      "review": "Joint declared in this plan (scripts/build_plants.py); driven by wind clips.",
+      "parts": 2,
+      "controlled_parts": [
+        "5",
+        "6"
+      ],
+      "parts_without_control": [],
+      "controls": [
+        "bend_1",
+        "bend_2",
+        "bend_3",
+        "bend_4",
+        "bend_5"
+      ]
+    },
+    {
+      "id": "seg6",
+      "label": "Ball-chain palm: seg6",
+      "disposition": "planned",
+      "review": "Joint declared in this plan (scripts/build_plants.py); driven by wind clips.",
+      "parts": 2,
+      "controlled_parts": [
+        "6",
+        "7"
+      ],
+      "parts_without_control": [],
+      "controls": [
+        "bend_1",
+        "bend_2",
+        "bend_3",
+        "bend_4",
+        "bend_5",
+        "bend_6"
+      ]
+    }
+  ],
+  "warnings": [
+    {
+      "code": "placement_normalized",
+      "message": "Rounded near-rigid placements normalized for analysis only; inspect placement diagnostics."
+    },
+    {
+      "code": "coaxial_not_run",
+      "message": "not run: 0 shaft/gear candidates outside 2..100; select a section"
+    }
+  ],
+  "coverage": "Bookkeeping of declared scope only. Supports may correctly lack controls. Planned, static and deferred dispositions require review notes; none certify discovery completeness, physical motion or clearance.",
+  "passed": true
+}

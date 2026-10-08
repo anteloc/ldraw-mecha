@@ -1,0 +1,285 @@
+{
+  "case": "P17_tendrils",
+  "title": "Hanging tendrils",
+  "parts": [
+    {
+      "role": "base",
+      "id": "0",
+      "table": "plates.Plate4X12",
+      "ref": "3029",
+      "colour": 28,
+      "title": "Plate  4 x 12",
+      "library_only": false
+    },
+    {
+      "role": "post_left0",
+      "id": "1",
+      "table": "bricks.Brick2X2RoundWithoutReinforcement",
+      "ref": "3941",
+      "colour": 72,
+      "title": "Brick  2 x  2 Round without Reinforcement",
+      "library_only": false
+    },
+    {
+      "role": "post_left1",
+      "id": "2",
+      "table": "bricks.Brick2X2RoundWithoutReinforcement",
+      "ref": "3941",
+      "colour": 72,
+      "title": "Brick  2 x  2 Round without Reinforcement",
+      "library_only": false
+    },
+    {
+      "role": "post_left2",
+      "id": "3",
+      "table": "bricks.Brick2X2RoundWithoutReinforcement",
+      "ref": "3941",
+      "colour": 72,
+      "title": "Brick  2 x  2 Round without Reinforcement",
+      "library_only": false
+    },
+    {
+      "role": "post_left3",
+      "id": "4",
+      "table": "bricks.Brick2X2RoundWithoutReinforcement",
+      "ref": "3941",
+      "colour": 72,
+      "title": "Brick  2 x  2 Round without Reinforcement",
+      "library_only": false
+    },
+    {
+      "role": "post_left4",
+      "id": "5",
+      "table": "bricks.Brick2X2RoundWithoutReinforcement",
+      "ref": "3941",
+      "colour": 72,
+      "title": "Brick  2 x  2 Round without Reinforcement",
+      "library_only": false
+    },
+    {
+      "role": "post_right0",
+      "id": "6",
+      "table": "bricks.Brick2X2RoundWithoutReinforcement",
+      "ref": "3941",
+      "colour": 72,
+      "title": "Brick  2 x  2 Round without Reinforcement",
+      "library_only": false
+    },
+    {
+      "role": "post_right1",
+      "id": "7",
+      "table": "bricks.Brick2X2RoundWithoutReinforcement",
+      "ref": "3941",
+      "colour": 72,
+      "title": "Brick  2 x  2 Round without Reinforcement",
+      "library_only": false
+    },
+    {
+      "role": "post_right2",
+      "id": "8",
+      "table": "bricks.Brick2X2RoundWithoutReinforcement",
+      "ref": "3941",
+      "colour": 72,
+      "title": "Brick  2 x  2 Round without Reinforcement",
+      "library_only": false
+    },
+    {
+      "role": "post_right3",
+      "id": "9",
+      "table": "bricks.Brick2X2RoundWithoutReinforcement",
+      "ref": "3941",
+      "colour": 72,
+      "title": "Brick  2 x  2 Round without Reinforcement",
+      "library_only": false
+    },
+    {
+      "role": "post_right4",
+      "id": "10",
+      "table": "bricks.Brick2X2RoundWithoutReinforcement",
+      "ref": "3941",
+      "colour": 72,
+      "title": "Brick  2 x  2 Round without Reinforcement",
+      "library_only": false
+    },
+    {
+      "role": "beam",
+      "id": "11",
+      "table": "plates.Plate2X10",
+      "ref": "3832",
+      "colour": 72,
+      "title": "Plate  2 x 10",
+      "library_only": false
+    },
+    {
+      "role": "spacer1",
+      "id": "12",
+      "table": "plates.Plate1X1",
+      "ref": "3024",
+      "colour": 72,
+      "title": "Plate  1 x  1",
+      "library_only": false
+    },
+    {
+      "role": "hook1",
+      "id": "13",
+      "table": "plates.Plate1X1WithClipHorizontal_ThickC_Clip_",
+      "ref": "61252",
+      "colour": 72,
+      "title": "Plate  1 x  1 with Clip Horizontal (Thick C-Clip)",
+      "library_only": false
+    },
+    {
+      "role": "tendril1",
+      "id": "14",
+      "table": "plants.PlantStemCurvedWith2ThornsAnd2Swirls",
+      "ref": "28870",
+      "colour": 2,
+      "title": "Plant Stem Curved with  2 Thorns and  2 Swirls",
+      "library_only": false
+    },
+    {
+      "role": "spacer2",
+      "id": "15",
+      "table": "plates.Plate1X1",
+      "ref": "3024",
+      "colour": 72,
+      "title": "Plate  1 x  1",
+      "library_only": false
+    },
+    {
+      "role": "hook2",
+      "id": "16",
+      "table": "plates.Plate1X1WithClipHorizontal_ThickC_Clip_",
+      "ref": "61252",
+      "colour": 72,
+      "title": "Plate  1 x  1 with Clip Horizontal (Thick C-Clip)",
+      "library_only": false
+    },
+    {
+      "role": "tendril2",
+      "id": "17",
+      "table": "plants.PlantStemCurvedWith2ThornsAnd2Swirls",
+      "ref": "28870",
+      "colour": 330,
+      "title": "Plant Stem Curved with  2 Thorns and  2 Swirls",
+      "library_only": false
+    },
+    {
+      "role": "spacer3",
+      "id": "18",
+      "table": "plates.Plate1X1",
+      "ref": "3024",
+      "colour": 72,
+      "title": "Plate  1 x  1",
+      "library_only": false
+    },
+    {
+      "role": "hook3",
+      "id": "19",
+      "table": "plates.Plate1X1WithClipHorizontal_ThickC_Clip_",
+      "ref": "61252",
+      "colour": 72,
+      "title": "Plate  1 x  1 with Clip Horizontal (Thick C-Clip)",
+      "library_only": false
+    },
+    {
+      "role": "tendril3",
+      "id": "20",
+      "table": "plants.PlantStemCurvedWith2ThornsAnd2Swirls",
+      "ref": "28870",
+      "colour": 10,
+      "title": "Plant Stem Curved with  2 Thorns and  2 Swirls",
+      "library_only": false
+    },
+    {
+      "role": "hook4",
+      "id": "21",
+      "table": "plates.Plate1X1WithClipVertical_ThickC_Clip_",
+      "ref": "60897",
+      "colour": 72,
+      "title": "Plate  1 x  1 with Clip Vertical (Thick C-Clip)",
+      "library_only": false
+    },
+    {
+      "role": "curl",
+      "id": "22",
+      "table": "plants.PlantVineCurledWithBar",
+      "ref": "1997",
+      "colour": 2,
+      "title": "Plant Vine Curled with Bar",
+      "library_only": false
+    }
+  ],
+  "joints": {
+    "swing_1": {
+      "origin": [
+        -50.0,
+        -110.0,
+        -10.0
+      ],
+      "axis": [
+        0.0,
+        0.0,
+        1.0
+      ],
+      "parent": "hook1",
+      "child": "tendril1",
+      "kind": "revolute",
+      "joint": "real",
+      "connector": "real: 28870 bar (local y 0..10) in the 61252 clip; the curved stem hangs below the bar and swings about it"
+    },
+    "swing_2": {
+      "origin": [
+        -10.0,
+        -110.0,
+        -10.0
+      ],
+      "axis": [
+        0.0,
+        0.0,
+        1.0
+      ],
+      "parent": "hook2",
+      "child": "tendril2",
+      "kind": "revolute",
+      "joint": "real",
+      "connector": "real: 28870 bar (local y 0..10) in the 61252 clip; the curved stem hangs below the bar and swings about it"
+    },
+    "swing_3": {
+      "origin": [
+        30.0,
+        -110.0,
+        -10.0
+      ],
+      "axis": [
+        0.0,
+        0.0,
+        1.0
+      ],
+      "parent": "hook3",
+      "child": "tendril3",
+      "kind": "revolute",
+      "joint": "real",
+      "connector": "real: 28870 bar (local y 0..10) in the 61252 clip; the curved stem hangs below the bar and swings about it"
+    },
+    "twist_curl": {
+      "origin": [
+        -10.0,
+        -116.0,
+        30.0
+      ],
+      "axis": [
+        0.0,
+        -1.0,
+        0.0
+      ],
+      "parent": "hook4",
+      "child": "curl",
+      "kind": "revolute",
+      "joint": "real",
+      "connector": "real: 1997 bar (local y -8..0) in the 60897 vertical clip; the curl hangs along its bar, so the clip only lets it turn about the bar"
+    }
+  },
+  "reference_checks": [],
+  "geometry_checks": []
+}

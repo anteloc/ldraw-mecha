@@ -1,0 +1,28 @@
+0 FILE s12_canopy.ldr
+0 Movable element scenario S12_canopy Spaceship canopy
+0 Name: s12_canopy.ldr
+0 Author: ldraw-mecha scripts/build_movables.py
+0 // Generated mock scenario: parts picked by constant name from data/categories/parts (a few context parts by LDraw reference); moving parts placed from LDCad shadow connector frames (data/offLibShadow) via pyldraw3 or from official annotated models where no connector pair exists. Frame: LDU, -Y up, the scenario front faces -Z, ground (base top) at y = 0.
+
+0 // wings: plates.Plate4X8
+1 7 0 8 0 0 0 1 0 1 0 -1 0 0 3035.dat
+0 // hull: plates.Plate4X10
+1 7 0 0 0 -1 0 0 0 1 0 0 0 -1 3030.dat
+0 // nose: tiles.Tile1X4WithGroove
+1 8 -90 -8 0 0 0 1 0 1 0 -1 0 0 2431.dat
+0 // back_wall0: bricks.Brick1X4
+1 7 90 -24 0 0 0 1 0 1 0 -1 0 0 3010.dat
+0 // back_wall1: bricks.Brick1X4
+1 7 90 -48 0 0 0 1 0 1 0 -1 0 0 3010.dat
+0 // back_plate: plates.Plate1X4
+1 7 90 -56 0 0 0 1 0 1 0 -1 0 0 3710.dat
+0 // deck: plates.Plate4X4
+1 7 60 -64 0 0 0 1 0 1 0 -1 0 0 3031.dat
+0 // holder: hinges.HingePlate1X4WithCarRoofHolder
+1 7 30 -72 0 0 0 1 0 1 0 -1 0 0 4315.dat
+0 // canopy: windscreens.Windscreen4X4X3WithHinge
+1 33 16 -68 0 0 0 1 0 1 0 -1 0 0 2620.dat
+0 // engine_l: bricks.Brick2X2RoundWithoutReinforcement
+1 8 70 -88 20 0 0 1 0 1 0 -1 0 0 3941.dat
+0 // engine_r: bricks.Brick2X2RoundWithoutReinforcement
+1 8 70 -88 -20 0 0 1 0 1 0 -1 0 0 3941.dat

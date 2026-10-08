@@ -1,0 +1,2042 @@
+{
+  "version": 1,
+  "name": "model",
+  "status": "draft",
+  "source": {
+    "version": 1,
+    "path": "/Users/captain/workspaces/workspace-ai/ldraw-mecha/output/movables/S10_car_doors/source/scenario.mpd",
+    "sha256": "a54bfacf1222d6204b5e68d6ccfd2dd2eb02428c32b6e98193a878bd9c7f7992",
+    "section": "s10_car_doors.ldr",
+    "description": "Movable element scenario S10_car_doors Town car doors",
+    "author": "ldraw-mecha scripts/build_movables.py",
+    "dependencies": {
+      "/Users/captain/workspaces/workspace-ai/ldraw-mecha/output/movables/S10_car_doors/source/scenario.mpd": "a54bfacf1222d6204b5e68d6ccfd2dd2eb02428c32b6e98193a878bd9c7f7992"
+    },
+    "nodes": [
+      {
+        "id": "0",
+        "parent": "root",
+        "ref": "3035.dat",
+        "kind": "part",
+        "embedded": false,
+        "section": "s10_car_doors.ldr",
+        "index": 0,
+        "line": 8,
+        "colour": "1",
+        "effective_colour": "1",
+        "local": [
+          [
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            1.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            1.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "world": [
+          [
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            1.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            1.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "description": "Plate  4 x  8"
+      },
+      {
+        "id": "1",
+        "parent": "root",
+        "ref": "4600.dat",
+        "kind": "part",
+        "embedded": false,
+        "section": "s10_car_doors.ldr",
+        "index": 1,
+        "line": 10,
+        "colour": "0",
+        "effective_colour": "0",
+        "local": [
+          [
+            0.0,
+            0.0,
+            1.0,
+            -50.0
+          ],
+          [
+            0.0,
+            1.0,
+            0.0,
+            8.0
+          ],
+          [
+            -1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "world": [
+          [
+            0.0,
+            0.0,
+            1.0,
+            -50.0
+          ],
+          [
+            0.0,
+            1.0,
+            0.0,
+            8.0
+          ],
+          [
+            -1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "description": "Plate  2 x  2 with 2 Wheel Pins"
+      },
+      {
+        "id": "2",
+        "parent": "root",
+        "ref": "4624.dat",
+        "kind": "part",
+        "embedded": false,
+        "section": "s10_car_doors.ldr",
+        "index": 2,
+        "line": 12,
+        "colour": "7",
+        "effective_colour": "7",
+        "local": [
+          [
+            1.0,
+            0.0,
+            0.0,
+            -50.0
+          ],
+          [
+            0.0,
+            1.0,
+            0.0,
+            13.0
+          ],
+          [
+            0.0,
+            0.0,
+            1.0,
+            -30.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "world": [
+          [
+            1.0,
+            0.0,
+            0.0,
+            -50.0
+          ],
+          [
+            0.0,
+            1.0,
+            0.0,
+            13.0
+          ],
+          [
+            0.0,
+            0.0,
+            1.0,
+            -30.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "description": "Wheel Rim  6.4 x  8"
+      },
+      {
+        "id": "3",
+        "parent": "root",
+        "ref": "4084.dat",
+        "kind": "part",
+        "embedded": false,
+        "section": "s10_car_doors.ldr",
+        "index": 3,
+        "line": 14,
+        "colour": "0",
+        "effective_colour": "0",
+        "local": [
+          [
+            1.0,
+            0.0,
+            0.0,
+            -50.0
+          ],
+          [
+            0.0,
+            1.0,
+            0.0,
+            13.0
+          ],
+          [
+            0.0,
+            0.0,
+            1.0,
+            -30.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "world": [
+          [
+            1.0,
+            0.0,
+            0.0,
+            -50.0
+          ],
+          [
+            0.0,
+            1.0,
+            0.0,
+            13.0
+          ],
+          [
+            0.0,
+            0.0,
+            1.0,
+            -30.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "description": "Tyre  8/ 75 x  8 Offset Tread"
+      },
+      {
+        "id": "4",
+        "parent": "root",
+        "ref": "4624.dat",
+        "kind": "part",
+        "embedded": false,
+        "section": "s10_car_doors.ldr",
+        "index": 4,
+        "line": 16,
+        "colour": "7",
+        "effective_colour": "7",
+        "local": [
+          [
+            -1.0,
+            0.0,
+            0.0,
+            -50.0
+          ],
+          [
+            0.0,
+            1.0,
+            0.0,
+            13.0
+          ],
+          [
+            0.0,
+            0.0,
+            -1.0,
+            30.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "world": [
+          [
+            -1.0,
+            0.0,
+            0.0,
+            -50.0
+          ],
+          [
+            0.0,
+            1.0,
+            0.0,
+            13.0
+          ],
+          [
+            0.0,
+            0.0,
+            -1.0,
+            30.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "description": "Wheel Rim  6.4 x  8"
+      },
+      {
+        "id": "5",
+        "parent": "root",
+        "ref": "4084.dat",
+        "kind": "part",
+        "embedded": false,
+        "section": "s10_car_doors.ldr",
+        "index": 5,
+        "line": 18,
+        "colour": "0",
+        "effective_colour": "0",
+        "local": [
+          [
+            -1.0,
+            0.0,
+            0.0,
+            -50.0
+          ],
+          [
+            0.0,
+            1.0,
+            0.0,
+            13.0
+          ],
+          [
+            0.0,
+            0.0,
+            -1.0,
+            30.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "world": [
+          [
+            -1.0,
+            0.0,
+            0.0,
+            -50.0
+          ],
+          [
+            0.0,
+            1.0,
+            0.0,
+            13.0
+          ],
+          [
+            0.0,
+            0.0,
+            -1.0,
+            30.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "description": "Tyre  8/ 75 x  8 Offset Tread"
+      },
+      {
+        "id": "6",
+        "parent": "root",
+        "ref": "4600.dat",
+        "kind": "part",
+        "embedded": false,
+        "section": "s10_car_doors.ldr",
+        "index": 6,
+        "line": 20,
+        "colour": "0",
+        "effective_colour": "0",
+        "local": [
+          [
+            0.0,
+            0.0,
+            1.0,
+            50.0
+          ],
+          [
+            0.0,
+            1.0,
+            0.0,
+            8.0
+          ],
+          [
+            -1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "world": [
+          [
+            0.0,
+            0.0,
+            1.0,
+            50.0
+          ],
+          [
+            0.0,
+            1.0,
+            0.0,
+            8.0
+          ],
+          [
+            -1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "description": "Plate  2 x  2 with 2 Wheel Pins"
+      },
+      {
+        "id": "7",
+        "parent": "root",
+        "ref": "4624.dat",
+        "kind": "part",
+        "embedded": false,
+        "section": "s10_car_doors.ldr",
+        "index": 7,
+        "line": 22,
+        "colour": "7",
+        "effective_colour": "7",
+        "local": [
+          [
+            1.0,
+            0.0,
+            0.0,
+            50.0
+          ],
+          [
+            0.0,
+            1.0,
+            0.0,
+            13.0
+          ],
+          [
+            0.0,
+            0.0,
+            1.0,
+            -30.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "world": [
+          [
+            1.0,
+            0.0,
+            0.0,
+            50.0
+          ],
+          [
+            0.0,
+            1.0,
+            0.0,
+            13.0
+          ],
+          [
+            0.0,
+            0.0,
+            1.0,
+            -30.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "description": "Wheel Rim  6.4 x  8"
+      },
+      {
+        "id": "8",
+        "parent": "root",
+        "ref": "4084.dat",
+        "kind": "part",
+        "embedded": false,
+        "section": "s10_car_doors.ldr",
+        "index": 8,
+        "line": 24,
+        "colour": "0",
+        "effective_colour": "0",
+        "local": [
+          [
+            1.0,
+            0.0,
+            0.0,
+            50.0
+          ],
+          [
+            0.0,
+            1.0,
+            0.0,
+            13.0
+          ],
+          [
+            0.0,
+            0.0,
+            1.0,
+            -30.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "world": [
+          [
+            1.0,
+            0.0,
+            0.0,
+            50.0
+          ],
+          [
+            0.0,
+            1.0,
+            0.0,
+            13.0
+          ],
+          [
+            0.0,
+            0.0,
+            1.0,
+            -30.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "description": "Tyre  8/ 75 x  8 Offset Tread"
+      },
+      {
+        "id": "9",
+        "parent": "root",
+        "ref": "4624.dat",
+        "kind": "part",
+        "embedded": false,
+        "section": "s10_car_doors.ldr",
+        "index": 9,
+        "line": 26,
+        "colour": "7",
+        "effective_colour": "7",
+        "local": [
+          [
+            -1.0,
+            0.0,
+            0.0,
+            50.0
+          ],
+          [
+            0.0,
+            1.0,
+            0.0,
+            13.0
+          ],
+          [
+            0.0,
+            0.0,
+            -1.0,
+            30.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "world": [
+          [
+            -1.0,
+            0.0,
+            0.0,
+            50.0
+          ],
+          [
+            0.0,
+            1.0,
+            0.0,
+            13.0
+          ],
+          [
+            0.0,
+            0.0,
+            -1.0,
+            30.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "description": "Wheel Rim  6.4 x  8"
+      },
+      {
+        "id": "10",
+        "parent": "root",
+        "ref": "4084.dat",
+        "kind": "part",
+        "embedded": false,
+        "section": "s10_car_doors.ldr",
+        "index": 10,
+        "line": 28,
+        "colour": "0",
+        "effective_colour": "0",
+        "local": [
+          [
+            -1.0,
+            0.0,
+            0.0,
+            50.0
+          ],
+          [
+            0.0,
+            1.0,
+            0.0,
+            13.0
+          ],
+          [
+            0.0,
+            0.0,
+            -1.0,
+            30.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "world": [
+          [
+            -1.0,
+            0.0,
+            0.0,
+            50.0
+          ],
+          [
+            0.0,
+            1.0,
+            0.0,
+            13.0
+          ],
+          [
+            0.0,
+            0.0,
+            -1.0,
+            30.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "description": "Tyre  8/ 75 x  8 Offset Tread"
+      },
+      {
+        "id": "11",
+        "parent": "root",
+        "ref": "3001.dat",
+        "kind": "part",
+        "embedded": false,
+        "section": "s10_car_doors.ldr",
+        "index": 11,
+        "line": 30,
+        "colour": "1",
+        "effective_colour": "1",
+        "local": [
+          [
+            0.0,
+            0.0,
+            1.0,
+            -60.0
+          ],
+          [
+            0.0,
+            1.0,
+            0.0,
+            -24.0
+          ],
+          [
+            -1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "world": [
+          [
+            0.0,
+            0.0,
+            1.0,
+            -60.0
+          ],
+          [
+            0.0,
+            1.0,
+            0.0,
+            -24.0
+          ],
+          [
+            -1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "description": "Brick  2 x  4"
+      },
+      {
+        "id": "12",
+        "parent": "root",
+        "ref": "3822.dat",
+        "kind": "part",
+        "embedded": false,
+        "section": "s10_car_doors.ldr",
+        "index": 12,
+        "line": 32,
+        "colour": "1",
+        "effective_colour": "1",
+        "local": [
+          [
+            0.0,
+            0.0,
+            1.0,
+            -30.0
+          ],
+          [
+            0.0,
+            1.0,
+            0.0,
+            -24.0
+          ],
+          [
+            -1.0,
+            0.0,
+            0.0,
+            -30.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "world": [
+          [
+            0.0,
+            0.0,
+            1.0,
+            -30.0
+          ],
+          [
+            0.0,
+            1.0,
+            0.0,
+            -24.0
+          ],
+          [
+            -1.0,
+            0.0,
+            0.0,
+            -30.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "description": "Door  1 x  3 x  1 Left"
+      },
+      {
+        "id": "13",
+        "parent": "root",
+        "ref": "3821.dat",
+        "kind": "part",
+        "embedded": false,
+        "section": "s10_car_doors.ldr",
+        "index": 13,
+        "line": 34,
+        "colour": "1",
+        "effective_colour": "1",
+        "local": [
+          [
+            0.0,
+            0.0,
+            1.0,
+            -30.0
+          ],
+          [
+            0.0,
+            1.0,
+            0.0,
+            -24.0
+          ],
+          [
+            -1.0,
+            0.0,
+            0.0,
+            30.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "world": [
+          [
+            0.0,
+            0.0,
+            1.0,
+            -30.0
+          ],
+          [
+            0.0,
+            1.0,
+            0.0,
+            -24.0
+          ],
+          [
+            -1.0,
+            0.0,
+            0.0,
+            30.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "description": "Door  1 x  3 x  1 Right"
+      },
+      {
+        "id": "14",
+        "parent": "root",
+        "ref": "3823.dat",
+        "kind": "part",
+        "embedded": false,
+        "section": "s10_car_doors.ldr",
+        "index": 14,
+        "line": 36,
+        "colour": "47",
+        "effective_colour": "47",
+        "local": [
+          [
+            0.0,
+            0.0,
+            1.0,
+            -30.0
+          ],
+          [
+            0.0,
+            1.0,
+            0.0,
+            -72.0
+          ],
+          [
+            -1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "world": [
+          [
+            0.0,
+            0.0,
+            1.0,
+            -30.0
+          ],
+          [
+            0.0,
+            1.0,
+            0.0,
+            -72.0
+          ],
+          [
+            -1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "description": "Windscreen  2 x  4 x  2"
+      },
+      {
+        "id": "15",
+        "parent": "root",
+        "ref": "3003.dat",
+        "kind": "part",
+        "embedded": false,
+        "section": "s10_car_doors.ldr",
+        "index": 15,
+        "line": 38,
+        "colour": "15",
+        "effective_colour": "15",
+        "local": [
+          [
+            1.0,
+            0.0,
+            0.0,
+            10.0
+          ],
+          [
+            0.0,
+            1.0,
+            0.0,
+            -24.0
+          ],
+          [
+            0.0,
+            0.0,
+            1.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "world": [
+          [
+            1.0,
+            0.0,
+            0.0,
+            10.0
+          ],
+          [
+            0.0,
+            1.0,
+            0.0,
+            -24.0
+          ],
+          [
+            0.0,
+            0.0,
+            1.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "description": "Brick  2 x  2"
+      },
+      {
+        "id": "16",
+        "parent": "root",
+        "ref": "3001.dat",
+        "kind": "part",
+        "embedded": false,
+        "section": "s10_car_doors.ldr",
+        "index": 16,
+        "line": 40,
+        "colour": "1",
+        "effective_colour": "1",
+        "local": [
+          [
+            0.0,
+            0.0,
+            1.0,
+            40.0
+          ],
+          [
+            0.0,
+            1.0,
+            0.0,
+            -24.0
+          ],
+          [
+            -1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "world": [
+          [
+            0.0,
+            0.0,
+            1.0,
+            40.0
+          ],
+          [
+            0.0,
+            1.0,
+            0.0,
+            -24.0
+          ],
+          [
+            -1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "description": "Brick  2 x  4"
+      },
+      {
+        "id": "17",
+        "parent": "root",
+        "ref": "3020.dat",
+        "kind": "part",
+        "embedded": false,
+        "section": "s10_car_doors.ldr",
+        "index": 17,
+        "line": 42,
+        "colour": "1",
+        "effective_colour": "1",
+        "local": [
+          [
+            0.0,
+            0.0,
+            1.0,
+            40.0
+          ],
+          [
+            0.0,
+            1.0,
+            0.0,
+            -32.0
+          ],
+          [
+            -1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "world": [
+          [
+            0.0,
+            0.0,
+            1.0,
+            40.0
+          ],
+          [
+            0.0,
+            1.0,
+            0.0,
+            -32.0
+          ],
+          [
+            -1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "description": "Plate  2 x  4"
+      },
+      {
+        "id": "18",
+        "parent": "root",
+        "ref": "3010.dat",
+        "kind": "part",
+        "embedded": false,
+        "section": "s10_car_doors.ldr",
+        "index": 18,
+        "line": 44,
+        "colour": "1",
+        "effective_colour": "1",
+        "local": [
+          [
+            0.0,
+            0.0,
+            1.0,
+            70.0
+          ],
+          [
+            0.0,
+            1.0,
+            0.0,
+            -24.0
+          ],
+          [
+            -1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "world": [
+          [
+            0.0,
+            0.0,
+            1.0,
+            70.0
+          ],
+          [
+            0.0,
+            1.0,
+            0.0,
+            -24.0
+          ],
+          [
+            -1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "description": "Brick  1 x  4"
+      }
+    ],
+    "diagnostics": [],
+    "coordinate_space": "selected section, LDU, -Y up"
+  },
+  "controls": {},
+  "signals": {},
+  "bodies": {},
+  "anchors": {},
+  "checks": [],
+  "notes": [
+    "Assign rigid groups and measured joints before setting status to ready."
+  ],
+  "mechanisms": {
+    "m_6b86b273ff34": {
+      "label": "Plate  2 x  2 with 2 Wheel Pins",
+      "parts": [
+        "1",
+        "2",
+        "3",
+        "4",
+        "5"
+      ],
+      "bodies": [],
+      "inputs": [],
+      "outputs": [],
+      "notes": [
+        "Provisional mechanism boundary. Review connections, identify input/output and assign moving groups."
+      ]
+    },
+    "m_4a44dc153642": {
+      "label": "Tyre  8/ 75 x  8 Offset Tread",
+      "parts": [
+        "10",
+        "6",
+        "7",
+        "8",
+        "9"
+      ],
+      "bodies": [],
+      "inputs": [],
+      "outputs": [],
+      "notes": [
+        "Provisional mechanism boundary. Review connections, identify input/output and assign moving groups."
+      ]
+    },
+    "m_6b51d431df5d": {
+      "label": "Door  1 x  3 x  1 Left",
+      "parts": [
+        "12"
+      ],
+      "bodies": [],
+      "inputs": [],
+      "outputs": [],
+      "notes": [
+        "Provisional mechanism boundary. Review connections, identify input/output and assign moving groups."
+      ]
+    },
+    "m_3fdba35f04dc": {
+      "label": "Door  1 x  3 x  1 Right",
+      "parts": [
+        "13"
+      ],
+      "bodies": [],
+      "inputs": [],
+      "outputs": [],
+      "notes": [
+        "Provisional mechanism boundary. Review connections, identify input/output and assign moving groups."
+      ]
+    }
+  },
+  "connections": {
+    "c_0249c87bf5a7298e": {
+      "a": "1",
+      "b": "2",
+      "kind": "contact",
+      "status": "candidate",
+      "evidence": "pyldraw3 connector contact; mating metadata does not determine rigidity or free motion",
+      "measurements": {
+        "first_kind": "pin",
+        "second_kind": "pin_hole",
+        "first_feature": "wpin2@R10/wpin2a@R5/wpin@R0/wpin",
+        "second_feature": "snap_cyl@L9:I0",
+        "position": [
+          -50.0,
+          13.0,
+          -28.0
+        ],
+        "axis": [
+          0.0,
+          0.0,
+          1.0
+        ],
+        "contact_status": "confirmed",
+        "residual": {
+          "distance": 0.0,
+          "axial_gap": 0.0,
+          "alignment": 1.0,
+          "roll_alignment": 1.0,
+          "entry_face_gap": null,
+          "penetration": null
+        }
+      }
+    },
+    "c_0e31d2ff76e1728d": {
+      "a": "6",
+      "b": "7",
+      "kind": "contact",
+      "status": "candidate",
+      "evidence": "pyldraw3 connector contact; mating metadata does not determine rigidity or free motion",
+      "measurements": {
+        "first_kind": "pin",
+        "second_kind": "pin_hole",
+        "first_feature": "wpin2@R10/wpin2a@R5/wpin@R0/snap_cyl@L8:I0",
+        "second_feature": "snap_cyl@L9:I0",
+        "position": [
+          50.0,
+          13.0,
+          -22.0
+        ],
+        "axis": [
+          0.0,
+          0.0,
+          -1.0
+        ],
+        "contact_status": "confirmed",
+        "residual": {
+          "distance": 0.0,
+          "axial_gap": 0.0,
+          "alignment": 1.0,
+          "roll_alignment": 1.0,
+          "entry_face_gap": null,
+          "penetration": null
+        }
+      }
+    },
+    "c_223647012876e887": {
+      "a": "1",
+      "b": "4",
+      "kind": "contact",
+      "status": "candidate",
+      "evidence": "pyldraw3 connector contact; mating metadata does not determine rigidity or free motion",
+      "measurements": {
+        "first_kind": "pin",
+        "second_kind": "pin_hole",
+        "first_feature": "wpin2@R11/wpin2a@R5/wpin@R0/wpin",
+        "second_feature": "snap_cyl@L9:I0",
+        "position": [
+          -50.0,
+          13.0,
+          28.0
+        ],
+        "axis": [
+          0.0,
+          0.0,
+          -1.0
+        ],
+        "contact_status": "confirmed",
+        "residual": {
+          "distance": 0.0,
+          "axial_gap": 0.0,
+          "alignment": 1.0,
+          "roll_alignment": 1.0,
+          "entry_face_gap": null,
+          "penetration": null
+        }
+      }
+    },
+    "c_344a5bd5bdfea830": {
+      "a": "6",
+      "b": "7",
+      "kind": "contact",
+      "status": "candidate",
+      "evidence": "pyldraw3 connector contact; mating metadata does not determine rigidity or free motion",
+      "measurements": {
+        "first_kind": "pin",
+        "second_kind": "pin_hole",
+        "first_feature": "wpin2@R10/wpin2a@R5/wpin@R0/wpin",
+        "second_feature": "snap_cyl@L9:I0",
+        "position": [
+          50.0,
+          13.0,
+          -28.0
+        ],
+        "axis": [
+          0.0,
+          0.0,
+          1.0
+        ],
+        "contact_status": "confirmed",
+        "residual": {
+          "distance": 0.0,
+          "axial_gap": 0.0,
+          "alignment": 1.0,
+          "roll_alignment": 1.0,
+          "entry_face_gap": null,
+          "penetration": null
+        }
+      }
+    },
+    "c_3ba57a61d19bb3bf": {
+      "a": "1",
+      "b": "4",
+      "kind": "contact",
+      "status": "candidate",
+      "evidence": "pyldraw3 connector contact; mating metadata does not determine rigidity or free motion",
+      "measurements": {
+        "first_kind": "pin",
+        "second_kind": "pin_hole",
+        "first_feature": "wpin2@R11/wpin2a@R5/wpin@R0/snap_cyl@L8:I0",
+        "second_feature": "snap_cyl@L9:I0",
+        "position": [
+          -50.0,
+          13.0,
+          22.0
+        ],
+        "axis": [
+          0.0,
+          0.0,
+          1.0
+        ],
+        "contact_status": "confirmed",
+        "residual": {
+          "distance": 0.0,
+          "axial_gap": 0.0,
+          "alignment": 1.0,
+          "roll_alignment": 1.0,
+          "entry_face_gap": null,
+          "penetration": null
+        }
+      }
+    },
+    "c_456ff7746042a2f6": {
+      "a": "1",
+      "b": "2",
+      "kind": "contact",
+      "status": "candidate",
+      "evidence": "pyldraw3 connector contact; mating metadata does not determine rigidity or free motion",
+      "measurements": {
+        "first_kind": "pin",
+        "second_kind": "pin_hole",
+        "first_feature": "wpin2@R10/wpin2a@R5/wpin@R0/snap_cyl@L8:I0",
+        "second_feature": "snap_cyl@L9:I0",
+        "position": [
+          -50.0,
+          13.0,
+          -22.0
+        ],
+        "axis": [
+          0.0,
+          0.0,
+          -1.0
+        ],
+        "contact_status": "confirmed",
+        "residual": {
+          "distance": 0.0,
+          "axial_gap": 0.0,
+          "alignment": 1.0,
+          "roll_alignment": 1.0,
+          "entry_face_gap": null,
+          "penetration": null
+        }
+      }
+    },
+    "c_4816978476a9b245": {
+      "a": "1",
+      "b": "4",
+      "kind": "contact",
+      "status": "candidate",
+      "evidence": "pyldraw3 connector contact; mating metadata does not determine rigidity or free motion",
+      "measurements": {
+        "first_kind": "pin",
+        "second_kind": "pin_hole",
+        "first_feature": "wpin2@R11/wpin2",
+        "second_feature": "snap_cyl@L9:I0",
+        "position": [
+          -50.0,
+          13.0,
+          27.0
+        ],
+        "axis": [
+          0.0,
+          0.0,
+          -1.0
+        ],
+        "contact_status": "confirmed",
+        "residual": {
+          "distance": 0.0,
+          "axial_gap": 0.0,
+          "alignment": 1.0,
+          "roll_alignment": 1.0,
+          "entry_face_gap": null,
+          "penetration": null
+        }
+      }
+    },
+    "c_4a5d25fff6ef01a8": {
+      "a": "4",
+      "b": "5",
+      "kind": "contact",
+      "status": "candidate",
+      "evidence": "pyldraw3 connector contact; mating metadata does not determine rigidity or free motion",
+      "measurements": {
+        "first_kind": "rim_seat",
+        "second_kind": "tyre_bead",
+        "first_feature": "rim_seat",
+        "second_feature": "tyre_bead",
+        "position": [
+          -50.0,
+          13.0,
+          30.0
+        ],
+        "axis": [
+          0.0,
+          0.0,
+          -1.0
+        ],
+        "contact_status": "confirmed",
+        "residual": {
+          "distance": 0.0,
+          "axial_gap": 0.0,
+          "alignment": 1.0,
+          "roll_alignment": 1.0,
+          "entry_face_gap": null,
+          "penetration": null
+        }
+      }
+    },
+    "c_4b51772a92562801": {
+      "a": "6",
+      "b": "9",
+      "kind": "contact",
+      "status": "candidate",
+      "evidence": "pyldraw3 connector contact; mating metadata does not determine rigidity or free motion",
+      "measurements": {
+        "first_kind": "pin",
+        "second_kind": "pin_hole",
+        "first_feature": "wpin2@R11/wpin2a@R5/wpin@R0/wpin",
+        "second_feature": "snap_cyl@L9:I0",
+        "position": [
+          50.0,
+          13.0,
+          28.0
+        ],
+        "axis": [
+          0.0,
+          0.0,
+          -1.0
+        ],
+        "contact_status": "confirmed",
+        "residual": {
+          "distance": 0.0,
+          "axial_gap": 0.0,
+          "alignment": 1.0,
+          "roll_alignment": 1.0,
+          "entry_face_gap": null,
+          "penetration": null
+        }
+      }
+    },
+    "c_4e94406a62be6d42": {
+      "a": "2",
+      "b": "3",
+      "kind": "contact",
+      "status": "candidate",
+      "evidence": "pyldraw3 connector contact; mating metadata does not determine rigidity or free motion",
+      "measurements": {
+        "first_kind": "rim_seat",
+        "second_kind": "tyre_bead",
+        "first_feature": "rim_seat",
+        "second_feature": "tyre_bead",
+        "position": [
+          -50.0,
+          13.0,
+          -30.0
+        ],
+        "axis": [
+          0.0,
+          0.0,
+          1.0
+        ],
+        "contact_status": "confirmed",
+        "residual": {
+          "distance": 0.0,
+          "axial_gap": 0.0,
+          "alignment": 1.0,
+          "roll_alignment": 1.0,
+          "entry_face_gap": null,
+          "penetration": null
+        }
+      }
+    },
+    "c_54af9def6c713b42": {
+      "a": "1",
+      "b": "2",
+      "kind": "contact",
+      "status": "candidate",
+      "evidence": "pyldraw3 connector contact; mating metadata does not determine rigidity or free motion",
+      "measurements": {
+        "first_kind": "pin",
+        "second_kind": "pin_hole",
+        "first_feature": "wpin2@R10/snap_incl@L8:I0/snap_cyl@L8:I0",
+        "second_feature": "snap_cyl@L9:I0",
+        "position": [
+          -50.0,
+          13.0,
+          -22.0
+        ],
+        "axis": [
+          0.0,
+          0.0,
+          -1.0
+        ],
+        "contact_status": "confirmed",
+        "residual": {
+          "distance": 0.0,
+          "axial_gap": 0.0,
+          "alignment": 1.0,
+          "roll_alignment": 1.0,
+          "entry_face_gap": null,
+          "penetration": null
+        }
+      }
+    },
+    "c_5d080b176f6a03b3": {
+      "a": "7",
+      "b": "8",
+      "kind": "contact",
+      "status": "candidate",
+      "evidence": "pyldraw3 connector contact; mating metadata does not determine rigidity or free motion",
+      "measurements": {
+        "first_kind": "rim_seat",
+        "second_kind": "tyre_bead",
+        "first_feature": "rim_seat",
+        "second_feature": "tyre_bead",
+        "position": [
+          50.0,
+          13.0,
+          -30.0
+        ],
+        "axis": [
+          0.0,
+          0.0,
+          1.0
+        ],
+        "contact_status": "confirmed",
+        "residual": {
+          "distance": 0.0,
+          "axial_gap": 0.0,
+          "alignment": 1.0,
+          "roll_alignment": 1.0,
+          "entry_face_gap": null,
+          "penetration": null
+        }
+      }
+    },
+    "c_6684edf1697f70e1": {
+      "a": "6",
+      "b": "9",
+      "kind": "contact",
+      "status": "candidate",
+      "evidence": "pyldraw3 connector contact; mating metadata does not determine rigidity or free motion",
+      "measurements": {
+        "first_kind": "pin",
+        "second_kind": "pin_hole",
+        "first_feature": "wpin2@R11/wpin2",
+        "second_feature": "snap_cyl@L9:I0",
+        "position": [
+          50.0,
+          13.0,
+          27.0
+        ],
+        "axis": [
+          0.0,
+          0.0,
+          -1.0
+        ],
+        "contact_status": "confirmed",
+        "residual": {
+          "distance": 0.0,
+          "axial_gap": 0.0,
+          "alignment": 1.0,
+          "roll_alignment": 1.0,
+          "entry_face_gap": null,
+          "penetration": null
+        }
+      }
+    },
+    "c_702ace7dac57b3ee": {
+      "a": "6",
+      "b": "9",
+      "kind": "contact",
+      "status": "candidate",
+      "evidence": "pyldraw3 connector contact; mating metadata does not determine rigidity or free motion",
+      "measurements": {
+        "first_kind": "pin",
+        "second_kind": "pin_hole",
+        "first_feature": "wpin2@R11/wpin2a@R5/wpin@R0/snap_cyl@L8:I0",
+        "second_feature": "snap_cyl@L9:I0",
+        "position": [
+          50.0,
+          13.0,
+          22.0
+        ],
+        "axis": [
+          0.0,
+          0.0,
+          1.0
+        ],
+        "contact_status": "confirmed",
+        "residual": {
+          "distance": 0.0,
+          "axial_gap": 0.0,
+          "alignment": 1.0,
+          "roll_alignment": 1.0,
+          "entry_face_gap": null,
+          "penetration": null
+        }
+      }
+    },
+    "c_7082e6263984ddbe": {
+      "a": "1",
+      "b": "2",
+      "kind": "contact",
+      "status": "candidate",
+      "evidence": "pyldraw3 connector contact; mating metadata does not determine rigidity or free motion",
+      "measurements": {
+        "first_kind": "pin",
+        "second_kind": "pin_hole",
+        "first_feature": "wpin2@R10/wpin2",
+        "second_feature": "snap_cyl@L9:I0",
+        "position": [
+          -50.0,
+          13.0,
+          -27.0
+        ],
+        "axis": [
+          0.0,
+          0.0,
+          1.0
+        ],
+        "contact_status": "confirmed",
+        "residual": {
+          "distance": 0.0,
+          "axial_gap": 0.0,
+          "alignment": 1.0,
+          "roll_alignment": 1.0,
+          "entry_face_gap": null,
+          "penetration": null
+        }
+      }
+    },
+    "c_99c35e58144e5977": {
+      "a": "6",
+      "b": "9",
+      "kind": "contact",
+      "status": "candidate",
+      "evidence": "pyldraw3 connector contact; mating metadata does not determine rigidity or free motion",
+      "measurements": {
+        "first_kind": "pin",
+        "second_kind": "pin_hole",
+        "first_feature": "wpin2@R11/snap_incl@L8:I0/snap_cyl@L8:I0",
+        "second_feature": "snap_cyl@L9:I0",
+        "position": [
+          50.0,
+          13.0,
+          22.0
+        ],
+        "axis": [
+          0.0,
+          0.0,
+          1.0
+        ],
+        "contact_status": "confirmed",
+        "residual": {
+          "distance": 0.0,
+          "axial_gap": 0.0,
+          "alignment": 1.0,
+          "roll_alignment": 1.0,
+          "entry_face_gap": null,
+          "penetration": null
+        }
+      }
+    },
+    "c_a93faaa0320ba82a": {
+      "a": "6",
+      "b": "7",
+      "kind": "contact",
+      "status": "candidate",
+      "evidence": "pyldraw3 connector contact; mating metadata does not determine rigidity or free motion",
+      "measurements": {
+        "first_kind": "pin",
+        "second_kind": "pin_hole",
+        "first_feature": "wpin2@R10/wpin2",
+        "second_feature": "snap_cyl@L9:I0",
+        "position": [
+          50.0,
+          13.0,
+          -27.0
+        ],
+        "axis": [
+          0.0,
+          0.0,
+          1.0
+        ],
+        "contact_status": "confirmed",
+        "residual": {
+          "distance": 0.0,
+          "axial_gap": 0.0,
+          "alignment": 1.0,
+          "roll_alignment": 1.0,
+          "entry_face_gap": null,
+          "penetration": null
+        }
+      }
+    },
+    "c_ac986c9686f6e78d": {
+      "a": "9",
+      "b": "10",
+      "kind": "contact",
+      "status": "candidate",
+      "evidence": "pyldraw3 connector contact; mating metadata does not determine rigidity or free motion",
+      "measurements": {
+        "first_kind": "rim_seat",
+        "second_kind": "tyre_bead",
+        "first_feature": "rim_seat",
+        "second_feature": "tyre_bead",
+        "position": [
+          50.0,
+          13.0,
+          30.0
+        ],
+        "axis": [
+          0.0,
+          0.0,
+          -1.0
+        ],
+        "contact_status": "confirmed",
+        "residual": {
+          "distance": 0.0,
+          "axial_gap": 0.0,
+          "alignment": 1.0,
+          "roll_alignment": 1.0,
+          "entry_face_gap": null,
+          "penetration": null
+        }
+      }
+    },
+    "c_d4b020bf8d2133e3": {
+      "a": "1",
+      "b": "4",
+      "kind": "contact",
+      "status": "candidate",
+      "evidence": "pyldraw3 connector contact; mating metadata does not determine rigidity or free motion",
+      "measurements": {
+        "first_kind": "pin",
+        "second_kind": "pin_hole",
+        "first_feature": "wpin2@R11/snap_incl@L8:I0/snap_cyl@L8:I0",
+        "second_feature": "snap_cyl@L9:I0",
+        "position": [
+          -50.0,
+          13.0,
+          22.0
+        ],
+        "axis": [
+          0.0,
+          0.0,
+          1.0
+        ],
+        "contact_status": "confirmed",
+        "residual": {
+          "distance": 0.0,
+          "axial_gap": 0.0,
+          "alignment": 1.0,
+          "roll_alignment": 1.0,
+          "entry_face_gap": null,
+          "penetration": null
+        }
+      }
+    },
+    "c_d7a6e90ec206f9b5": {
+      "a": "6",
+      "b": "7",
+      "kind": "contact",
+      "status": "candidate",
+      "evidence": "pyldraw3 connector contact; mating metadata does not determine rigidity or free motion",
+      "measurements": {
+        "first_kind": "pin",
+        "second_kind": "pin_hole",
+        "first_feature": "wpin2@R10/snap_incl@L8:I0/snap_cyl@L8:I0",
+        "second_feature": "snap_cyl@L9:I0",
+        "position": [
+          50.0,
+          13.0,
+          -22.0
+        ],
+        "axis": [
+          0.0,
+          0.0,
+          -1.0
+        ],
+        "contact_status": "confirmed",
+        "residual": {
+          "distance": 0.0,
+          "axial_gap": 0.0,
+          "alignment": 1.0,
+          "roll_alignment": 1.0,
+          "entry_face_gap": null,
+          "penetration": null
+        }
+      }
+    }
+  },
+  "discovery": {
+    "grouping": "Provisional connected mechanical candidates; agent may split/merge views",
+    "unclassified_parts": [
+      "0",
+      "11",
+      "14",
+      "15",
+      "16",
+      "17",
+      "18"
+    ],
+    "embedded_parts": [],
+    "contact_limit": 300,
+    "rigid_groups": "not inferred",
+    "inputs_outputs": "not inferred",
+    "mechanical_parts": [
+      "1",
+      "10",
+      "12",
+      "13",
+      "2",
+      "3",
+      "4",
+      "5",
+      "6",
+      "7",
+      "8",
+      "9"
+    ],
+    "warnings": [
+      {
+        "code": "coaxial_not_run",
+        "message": "not run: 0 shaft/gear candidates outside 2..100; select a section"
+      }
+    ],
+    "surface_contacts": "Not detected: cams, levers bearing on beams, friction and stops need geometric/visual review even when connector contacts are absent",
+    "unsupported_gears": [],
+    "gear_placements": {
+      "policy": "Nearest orthogonal analysis frame within rounding_limit; source translations and handedness preserved",
+      "rounding_limit": 0.002,
+      "counts": {},
+      "affected": []
+    },
+    "contacts": {
+      "complete": true,
+      "tested_parts": 19,
+      "diagnostics": [],
+      "summary": {
+        "tested_parts": 19,
+        "contacts": 40,
+        "contacted_parts": 14,
+        "by_kind": {
+          "stud/stud_receptacle": 20,
+          "pin/pin_hole": 16,
+          "rim_seat/tyre_bead": 4
+        },
+        "axles": {
+          "selection": "Catalog descriptions beginning Technic Axle followed by a numeric length; excludes axle pins, joiners and axle-hole supports",
+          "total": 0,
+          "with_axle_hole_contact": 0,
+          "without_axle_hole_contact": []
+        }
+      },
+      "placements": {
+        "policy": "Nearest orthogonal analysis frame within rounding_limit; source translations and handedness preserved",
+        "rounding_limit": 0.002,
+        "counts": {
+          "unchanged": 19
+        },
+        "affected": []
+      }
+    },
+    "coaxial_selection": "Catalog axle, gear, worm and engine crankshaft parts; positive line evidence within 80 LDU axial separation",
+    "coaxial": "not run: 0 shaft/gear candidates outside 2..100; select a section",
+    "isolated_mechanical_parts": [
+      "12",
+      "13"
+    ]
+  }
+}

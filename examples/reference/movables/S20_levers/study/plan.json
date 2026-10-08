@@ -1,0 +1,705 @@
+{
+  "version": 1,
+  "name": "model",
+  "status": "draft",
+  "source": {
+    "version": 1,
+    "path": "/Users/captain/workspaces/workspace-ai/ldraw-mecha/output/movables/S20_levers/source/scenario.mpd",
+    "sha256": "a36ea083aea5ecb313be73517687c229699ca99fcff4170351178e455bd4d913",
+    "section": "s20_levers.ldr",
+    "description": "Movable element scenario S20_levers Control levers",
+    "author": "ldraw-mecha scripts/build_movables.py",
+    "dependencies": {
+      "/Users/captain/workspaces/workspace-ai/ldraw-mecha/output/movables/S20_levers/source/scenario.mpd": "a36ea083aea5ecb313be73517687c229699ca99fcff4170351178e455bd4d913"
+    },
+    "nodes": [
+      {
+        "id": "0",
+        "parent": "root",
+        "ref": "3032.dat",
+        "kind": "part",
+        "embedded": false,
+        "section": "s20_levers.ldr",
+        "index": 0,
+        "line": 8,
+        "colour": "8",
+        "effective_colour": "8",
+        "local": [
+          [
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            1.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            1.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "world": [
+          [
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            1.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            1.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "description": "Plate  4 x  6"
+      },
+      {
+        "id": "1",
+        "parent": "root",
+        "ref": "3001.dat",
+        "kind": "part",
+        "embedded": false,
+        "section": "s20_levers.ldr",
+        "index": 1,
+        "line": 10,
+        "colour": "71",
+        "effective_colour": "71",
+        "local": [
+          [
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            1.0,
+            0.0,
+            -24.0
+          ],
+          [
+            0.0,
+            0.0,
+            1.0,
+            10.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "world": [
+          [
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            1.0,
+            0.0,
+            -24.0
+          ],
+          [
+            0.0,
+            0.0,
+            1.0,
+            10.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "description": "Brick  2 x  4"
+      },
+      {
+        "id": "2",
+        "parent": "root",
+        "ref": "4592.dat",
+        "kind": "part",
+        "embedded": false,
+        "section": "s20_levers.ldr",
+        "index": 2,
+        "line": 12,
+        "colour": "0",
+        "effective_colour": "0",
+        "local": [
+          [
+            1.0,
+            0.0,
+            0.0,
+            -30.0
+          ],
+          [
+            0.0,
+            1.0,
+            0.0,
+            -32.0
+          ],
+          [
+            0.0,
+            0.0,
+            1.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "world": [
+          [
+            1.0,
+            0.0,
+            0.0,
+            -30.0
+          ],
+          [
+            0.0,
+            1.0,
+            0.0,
+            -32.0
+          ],
+          [
+            0.0,
+            0.0,
+            1.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "description": "Hinge Control Stick Base"
+      },
+      {
+        "id": "3",
+        "parent": "root",
+        "ref": "4593.dat",
+        "kind": "part",
+        "embedded": false,
+        "section": "s20_levers.ldr",
+        "index": 3,
+        "line": 14,
+        "colour": "4",
+        "effective_colour": "4",
+        "local": [
+          [
+            1.0,
+            0.0,
+            0.0,
+            -30.0
+          ],
+          [
+            0.0,
+            1.0,
+            0.0,
+            -32.0
+          ],
+          [
+            0.0,
+            0.0,
+            1.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "world": [
+          [
+            1.0,
+            0.0,
+            0.0,
+            -30.0
+          ],
+          [
+            0.0,
+            1.0,
+            0.0,
+            -32.0
+          ],
+          [
+            0.0,
+            0.0,
+            1.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "description": "Hinge Control Stick"
+      },
+      {
+        "id": "4",
+        "parent": "root",
+        "ref": "4592.dat",
+        "kind": "part",
+        "embedded": false,
+        "section": "s20_levers.ldr",
+        "index": 4,
+        "line": 16,
+        "colour": "0",
+        "effective_colour": "0",
+        "local": [
+          [
+            1.0,
+            0.0,
+            0.0,
+            30.0
+          ],
+          [
+            0.0,
+            1.0,
+            0.0,
+            -32.0
+          ],
+          [
+            0.0,
+            0.0,
+            1.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "world": [
+          [
+            1.0,
+            0.0,
+            0.0,
+            30.0
+          ],
+          [
+            0.0,
+            1.0,
+            0.0,
+            -32.0
+          ],
+          [
+            0.0,
+            0.0,
+            1.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "description": "Hinge Control Stick Base"
+      },
+      {
+        "id": "5",
+        "parent": "root",
+        "ref": "4593.dat",
+        "kind": "part",
+        "embedded": false,
+        "section": "s20_levers.ldr",
+        "index": 5,
+        "line": 18,
+        "colour": "1",
+        "effective_colour": "1",
+        "local": [
+          [
+            1.0,
+            0.0,
+            0.0,
+            30.0
+          ],
+          [
+            0.0,
+            1.0,
+            0.0,
+            -32.0
+          ],
+          [
+            0.0,
+            0.0,
+            1.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "world": [
+          [
+            1.0,
+            0.0,
+            0.0,
+            30.0
+          ],
+          [
+            0.0,
+            1.0,
+            0.0,
+            -32.0
+          ],
+          [
+            0.0,
+            0.0,
+            1.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "description": "Hinge Control Stick"
+      },
+      {
+        "id": "6",
+        "parent": "root",
+        "ref": "2412b.dat",
+        "kind": "part",
+        "embedded": false,
+        "section": "s20_levers.ldr",
+        "index": 6,
+        "line": 20,
+        "colour": "8",
+        "effective_colour": "8",
+        "local": [
+          [
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            1.0,
+            0.0,
+            -32.0
+          ],
+          [
+            0.0,
+            0.0,
+            1.0,
+            20.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "world": [
+          [
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            1.0,
+            0.0,
+            -32.0
+          ],
+          [
+            0.0,
+            0.0,
+            1.0,
+            20.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "description": "Tile  1 x  2 Grille with Groove"
+      }
+    ],
+    "diagnostics": [],
+    "coordinate_space": "selected section, LDU, -Y up"
+  },
+  "controls": {},
+  "signals": {},
+  "bodies": {},
+  "anchors": {},
+  "checks": [],
+  "notes": [
+    "Assign rigid groups and measured joints before setting status to ready."
+  ],
+  "mechanisms": {
+    "m_d4735e3a265e": {
+      "label": "Hinge Control Stick Base",
+      "parts": [
+        "1",
+        "2",
+        "3"
+      ],
+      "bodies": [],
+      "inputs": [],
+      "outputs": [],
+      "notes": [
+        "Provisional mechanism boundary. Review connections, identify input/output and assign moving groups."
+      ]
+    },
+    "m_4b227777d4dd": {
+      "label": "Hinge Control Stick Base",
+      "parts": [
+        "1",
+        "4",
+        "5"
+      ],
+      "bodies": [],
+      "inputs": [],
+      "outputs": [],
+      "notes": [
+        "Provisional mechanism boundary. Review connections, identify input/output and assign moving groups."
+      ]
+    }
+  },
+  "connections": {
+    "c_06767ae9a4f97f80": {
+      "a": "1",
+      "b": "2",
+      "kind": "contact",
+      "status": "candidate",
+      "evidence": "pyldraw3 connector contact; mating metadata does not determine rigidity or free motion",
+      "measurements": {
+        "first_kind": "stud",
+        "second_kind": "stud_receptacle",
+        "first_feature": "s/3001s01@R0/stud@R12/studC",
+        "second_feature": "stud4a@R0/stud4a",
+        "position": [
+          -30.0,
+          -24.0,
+          0.0
+        ],
+        "axis": [
+          0.0,
+          -1.0,
+          0.0
+        ],
+        "contact_status": "confirmed",
+        "residual": {
+          "distance": 0.0,
+          "axial_gap": 0.0,
+          "alignment": 1.0,
+          "roll_alignment": 1.0,
+          "entry_face_gap": 0.0,
+          "penetration": 13.603
+        }
+      }
+    },
+    "c_30fc559cb3c6f5c6": {
+      "a": "1",
+      "b": "4",
+      "kind": "contact",
+      "status": "candidate",
+      "evidence": "pyldraw3 connector contact; mating metadata does not determine rigidity or free motion",
+      "measurements": {
+        "first_kind": "stud",
+        "second_kind": "stud_receptacle",
+        "first_feature": "s/3001s01@R0/stud@R9/studC",
+        "second_feature": "stud4a@R0/stud4a",
+        "position": [
+          30.0,
+          -24.0,
+          0.0
+        ],
+        "axis": [
+          0.0,
+          -1.0,
+          0.0
+        ],
+        "contact_status": "confirmed",
+        "residual": {
+          "distance": 0.0,
+          "axial_gap": 0.0,
+          "alignment": 1.0,
+          "roll_alignment": 1.0,
+          "entry_face_gap": 0.0,
+          "penetration": 13.603
+        }
+      }
+    },
+    "c_64da36fa7b0f21a9": {
+      "a": "2",
+      "b": "3",
+      "kind": "revolute",
+      "status": "candidate",
+      "evidence": "pyldraw3 connector contact; mating metadata does not determine rigidity or free motion",
+      "measurements": {
+        "first_kind": "hinge",
+        "second_kind": "hinge",
+        "first_feature": "snap_fgr@L9:I0",
+        "second_feature": "snap_fgr@L8:I0",
+        "position": [
+          -30.0,
+          -32.0,
+          0.0
+        ],
+        "axis": [
+          1.0,
+          0.0,
+          0.0
+        ],
+        "contact_status": "confirmed",
+        "residual": {
+          "distance": 0.0,
+          "axial_gap": 0.0,
+          "alignment": 1.0,
+          "roll_alignment": 1.0,
+          "entry_face_gap": null,
+          "penetration": null
+        }
+      }
+    },
+    "c_91d3571df9920bce": {
+      "a": "4",
+      "b": "5",
+      "kind": "revolute",
+      "status": "candidate",
+      "evidence": "pyldraw3 connector contact; mating metadata does not determine rigidity or free motion",
+      "measurements": {
+        "first_kind": "hinge",
+        "second_kind": "hinge",
+        "first_feature": "snap_fgr@L9:I0",
+        "second_feature": "snap_fgr@L8:I0",
+        "position": [
+          30.0,
+          -32.0,
+          0.0
+        ],
+        "axis": [
+          1.0,
+          0.0,
+          0.0
+        ],
+        "contact_status": "confirmed",
+        "residual": {
+          "distance": 0.0,
+          "axial_gap": 0.0,
+          "alignment": 1.0,
+          "roll_alignment": 1.0,
+          "entry_face_gap": null,
+          "penetration": null
+        }
+      }
+    }
+  },
+  "discovery": {
+    "grouping": "Provisional connected mechanical candidates; agent may split/merge views",
+    "unclassified_parts": [
+      "0",
+      "6"
+    ],
+    "embedded_parts": [],
+    "contact_limit": 300,
+    "rigid_groups": "not inferred",
+    "inputs_outputs": "not inferred",
+    "mechanical_parts": [
+      "2",
+      "3",
+      "4",
+      "5"
+    ],
+    "warnings": [
+      {
+        "code": "coaxial_not_run",
+        "message": "not run: 0 shaft/gear candidates outside 2..100; select a section"
+      }
+    ],
+    "surface_contacts": "Not detected: cams, levers bearing on beams, friction and stops need geometric/visual review even when connector contacts are absent",
+    "unsupported_gears": [],
+    "gear_placements": {
+      "policy": "Nearest orthogonal analysis frame within rounding_limit; source translations and handedness preserved",
+      "rounding_limit": 0.002,
+      "counts": {},
+      "affected": []
+    },
+    "contacts": {
+      "complete": true,
+      "tested_parts": 7,
+      "diagnostics": [],
+      "summary": {
+        "tested_parts": 7,
+        "contacts": 4,
+        "contacted_parts": 5,
+        "by_kind": {
+          "stud/stud_receptacle": 2,
+          "hinge/hinge": 2
+        },
+        "axles": {
+          "selection": "Catalog descriptions beginning Technic Axle followed by a numeric length; excludes axle pins, joiners and axle-hole supports",
+          "total": 0,
+          "with_axle_hole_contact": 0,
+          "without_axle_hole_contact": []
+        }
+      },
+      "placements": {
+        "policy": "Nearest orthogonal analysis frame within rounding_limit; source translations and handedness preserved",
+        "rounding_limit": 0.002,
+        "counts": {
+          "unchanged": 7
+        },
+        "affected": []
+      }
+    },
+    "coaxial_selection": "Catalog axle, gear, worm and engine crankshaft parts; positive line evidence within 80 LDU axial separation",
+    "coaxial": "not run: 0 shaft/gear candidates outside 2..100; select a section",
+    "isolated_mechanical_parts": []
+  }
+}

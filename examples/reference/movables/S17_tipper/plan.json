@@ -1,0 +1,1473 @@
+{
+  "version": 1,
+  "name": "movable_17_tipper",
+  "status": "ready",
+  "source": {
+    "version": 1,
+    "path": "/Users/captain/workspaces/workspace-ai/ldraw-mecha/output/movables/S17_tipper/source/scenario.mpd",
+    "sha256": "ea8ae929e71ebed9400d524083de9a4ce6d7a330ae86a57b05610d6c7162e2e1",
+    "section": "s17_tipper.ldr",
+    "description": "Movable element scenario S17_tipper Dump truck tipper",
+    "author": "ldraw-mecha scripts/build_movables.py",
+    "dependencies": {
+      "/Users/captain/workspaces/workspace-ai/ldraw-mecha/output/movables/S17_tipper/source/scenario.mpd": "ea8ae929e71ebed9400d524083de9a4ce6d7a330ae86a57b05610d6c7162e2e1"
+    },
+    "nodes": [
+      {
+        "id": "0",
+        "parent": "root",
+        "ref": "3030.dat",
+        "kind": "part",
+        "embedded": false,
+        "section": "s17_tipper.ldr",
+        "index": 0,
+        "line": 8,
+        "colour": "8",
+        "effective_colour": "8",
+        "local": [
+          [
+            0.0,
+            0.0,
+            1.0,
+            0.0
+          ],
+          [
+            0.0,
+            1.0,
+            0.0,
+            0.0
+          ],
+          [
+            -1.0,
+            0.0,
+            0.0,
+            60.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "world": [
+          [
+            0.0,
+            0.0,
+            1.0,
+            0.0
+          ],
+          [
+            0.0,
+            1.0,
+            0.0,
+            0.0
+          ],
+          [
+            -1.0,
+            0.0,
+            0.0,
+            60.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "description": "Plate  4 x 10"
+      },
+      {
+        "id": "1",
+        "parent": "root",
+        "ref": "4600.dat",
+        "kind": "part",
+        "embedded": false,
+        "section": "s17_tipper.ldr",
+        "index": 1,
+        "line": 10,
+        "colour": "0",
+        "effective_colour": "0",
+        "local": [
+          [
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            1.0,
+            0.0,
+            8.0
+          ],
+          [
+            0.0,
+            0.0,
+            1.0,
+            20.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "world": [
+          [
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            1.0,
+            0.0,
+            8.0
+          ],
+          [
+            0.0,
+            0.0,
+            1.0,
+            20.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "description": "Plate  2 x  2 with 2 Wheel Pins"
+      },
+      {
+        "id": "2",
+        "parent": "root",
+        "ref": "4624.dat",
+        "kind": "part",
+        "embedded": false,
+        "section": "s17_tipper.ldr",
+        "index": 2,
+        "line": 12,
+        "colour": "7",
+        "effective_colour": "7",
+        "local": [
+          [
+            0.0,
+            0.0,
+            1.0,
+            -30.0
+          ],
+          [
+            0.0,
+            1.0,
+            0.0,
+            13.0
+          ],
+          [
+            -1.0,
+            0.0,
+            0.0,
+            20.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "world": [
+          [
+            0.0,
+            0.0,
+            1.0,
+            -30.0
+          ],
+          [
+            0.0,
+            1.0,
+            0.0,
+            13.0
+          ],
+          [
+            -1.0,
+            0.0,
+            0.0,
+            20.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "description": "Wheel Rim  6.4 x  8"
+      },
+      {
+        "id": "3",
+        "parent": "root",
+        "ref": "4084.dat",
+        "kind": "part",
+        "embedded": false,
+        "section": "s17_tipper.ldr",
+        "index": 3,
+        "line": 14,
+        "colour": "0",
+        "effective_colour": "0",
+        "local": [
+          [
+            0.0,
+            0.0,
+            1.0,
+            -30.0
+          ],
+          [
+            0.0,
+            1.0,
+            0.0,
+            13.0
+          ],
+          [
+            -1.0,
+            0.0,
+            0.0,
+            20.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "world": [
+          [
+            0.0,
+            0.0,
+            1.0,
+            -30.0
+          ],
+          [
+            0.0,
+            1.0,
+            0.0,
+            13.0
+          ],
+          [
+            -1.0,
+            0.0,
+            0.0,
+            20.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "description": "Tyre  8/ 75 x  8 Offset Tread"
+      },
+      {
+        "id": "4",
+        "parent": "root",
+        "ref": "4624.dat",
+        "kind": "part",
+        "embedded": false,
+        "section": "s17_tipper.ldr",
+        "index": 4,
+        "line": 16,
+        "colour": "7",
+        "effective_colour": "7",
+        "local": [
+          [
+            0.0,
+            0.0,
+            -1.0,
+            30.0
+          ],
+          [
+            0.0,
+            1.0,
+            0.0,
+            13.0
+          ],
+          [
+            1.0,
+            0.0,
+            0.0,
+            20.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "world": [
+          [
+            0.0,
+            0.0,
+            -1.0,
+            30.0
+          ],
+          [
+            0.0,
+            1.0,
+            0.0,
+            13.0
+          ],
+          [
+            1.0,
+            0.0,
+            0.0,
+            20.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "description": "Wheel Rim  6.4 x  8"
+      },
+      {
+        "id": "5",
+        "parent": "root",
+        "ref": "4084.dat",
+        "kind": "part",
+        "embedded": false,
+        "section": "s17_tipper.ldr",
+        "index": 5,
+        "line": 18,
+        "colour": "0",
+        "effective_colour": "0",
+        "local": [
+          [
+            0.0,
+            0.0,
+            -1.0,
+            30.0
+          ],
+          [
+            0.0,
+            1.0,
+            0.0,
+            13.0
+          ],
+          [
+            1.0,
+            0.0,
+            0.0,
+            20.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "world": [
+          [
+            0.0,
+            0.0,
+            -1.0,
+            30.0
+          ],
+          [
+            0.0,
+            1.0,
+            0.0,
+            13.0
+          ],
+          [
+            1.0,
+            0.0,
+            0.0,
+            20.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "description": "Tyre  8/ 75 x  8 Offset Tread"
+      },
+      {
+        "id": "6",
+        "parent": "root",
+        "ref": "4600.dat",
+        "kind": "part",
+        "embedded": false,
+        "section": "s17_tipper.ldr",
+        "index": 6,
+        "line": 20,
+        "colour": "0",
+        "effective_colour": "0",
+        "local": [
+          [
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            1.0,
+            0.0,
+            8.0
+          ],
+          [
+            0.0,
+            0.0,
+            1.0,
+            120.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "world": [
+          [
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            1.0,
+            0.0,
+            8.0
+          ],
+          [
+            0.0,
+            0.0,
+            1.0,
+            120.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "description": "Plate  2 x  2 with 2 Wheel Pins"
+      },
+      {
+        "id": "7",
+        "parent": "root",
+        "ref": "4624.dat",
+        "kind": "part",
+        "embedded": false,
+        "section": "s17_tipper.ldr",
+        "index": 7,
+        "line": 22,
+        "colour": "7",
+        "effective_colour": "7",
+        "local": [
+          [
+            0.0,
+            0.0,
+            1.0,
+            -30.0
+          ],
+          [
+            0.0,
+            1.0,
+            0.0,
+            13.0
+          ],
+          [
+            -1.0,
+            0.0,
+            0.0,
+            120.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "world": [
+          [
+            0.0,
+            0.0,
+            1.0,
+            -30.0
+          ],
+          [
+            0.0,
+            1.0,
+            0.0,
+            13.0
+          ],
+          [
+            -1.0,
+            0.0,
+            0.0,
+            120.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "description": "Wheel Rim  6.4 x  8"
+      },
+      {
+        "id": "8",
+        "parent": "root",
+        "ref": "4084.dat",
+        "kind": "part",
+        "embedded": false,
+        "section": "s17_tipper.ldr",
+        "index": 8,
+        "line": 24,
+        "colour": "0",
+        "effective_colour": "0",
+        "local": [
+          [
+            0.0,
+            0.0,
+            1.0,
+            -30.0
+          ],
+          [
+            0.0,
+            1.0,
+            0.0,
+            13.0
+          ],
+          [
+            -1.0,
+            0.0,
+            0.0,
+            120.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "world": [
+          [
+            0.0,
+            0.0,
+            1.0,
+            -30.0
+          ],
+          [
+            0.0,
+            1.0,
+            0.0,
+            13.0
+          ],
+          [
+            -1.0,
+            0.0,
+            0.0,
+            120.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "description": "Tyre  8/ 75 x  8 Offset Tread"
+      },
+      {
+        "id": "9",
+        "parent": "root",
+        "ref": "4624.dat",
+        "kind": "part",
+        "embedded": false,
+        "section": "s17_tipper.ldr",
+        "index": 9,
+        "line": 26,
+        "colour": "7",
+        "effective_colour": "7",
+        "local": [
+          [
+            0.0,
+            0.0,
+            -1.0,
+            30.0
+          ],
+          [
+            0.0,
+            1.0,
+            0.0,
+            13.0
+          ],
+          [
+            1.0,
+            0.0,
+            0.0,
+            120.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "world": [
+          [
+            0.0,
+            0.0,
+            -1.0,
+            30.0
+          ],
+          [
+            0.0,
+            1.0,
+            0.0,
+            13.0
+          ],
+          [
+            1.0,
+            0.0,
+            0.0,
+            120.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "description": "Wheel Rim  6.4 x  8"
+      },
+      {
+        "id": "10",
+        "parent": "root",
+        "ref": "4084.dat",
+        "kind": "part",
+        "embedded": false,
+        "section": "s17_tipper.ldr",
+        "index": 10,
+        "line": 28,
+        "colour": "0",
+        "effective_colour": "0",
+        "local": [
+          [
+            0.0,
+            0.0,
+            -1.0,
+            30.0
+          ],
+          [
+            0.0,
+            1.0,
+            0.0,
+            13.0
+          ],
+          [
+            1.0,
+            0.0,
+            0.0,
+            120.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "world": [
+          [
+            0.0,
+            0.0,
+            -1.0,
+            30.0
+          ],
+          [
+            0.0,
+            1.0,
+            0.0,
+            13.0
+          ],
+          [
+            1.0,
+            0.0,
+            0.0,
+            120.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "description": "Tyre  8/ 75 x  8 Offset Tread"
+      },
+      {
+        "id": "11",
+        "parent": "root",
+        "ref": "3001.dat",
+        "kind": "part",
+        "embedded": false,
+        "section": "s17_tipper.ldr",
+        "index": 11,
+        "line": 30,
+        "colour": "14",
+        "effective_colour": "14",
+        "local": [
+          [
+            0.0,
+            0.0,
+            1.0,
+            0.0
+          ],
+          [
+            0.0,
+            1.0,
+            0.0,
+            -24.0
+          ],
+          [
+            -1.0,
+            0.0,
+            0.0,
+            -20.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "world": [
+          [
+            0.0,
+            0.0,
+            1.0,
+            0.0
+          ],
+          [
+            0.0,
+            1.0,
+            0.0,
+            -24.0
+          ],
+          [
+            -1.0,
+            0.0,
+            0.0,
+            -20.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "description": "Brick  2 x  4"
+      },
+      {
+        "id": "12",
+        "parent": "root",
+        "ref": "3020.dat",
+        "kind": "part",
+        "embedded": false,
+        "section": "s17_tipper.ldr",
+        "index": 12,
+        "line": 32,
+        "colour": "14",
+        "effective_colour": "14",
+        "local": [
+          [
+            0.0,
+            0.0,
+            1.0,
+            0.0
+          ],
+          [
+            0.0,
+            1.0,
+            0.0,
+            -32.0
+          ],
+          [
+            -1.0,
+            0.0,
+            0.0,
+            -20.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "world": [
+          [
+            0.0,
+            0.0,
+            1.0,
+            0.0
+          ],
+          [
+            0.0,
+            1.0,
+            0.0,
+            -32.0
+          ],
+          [
+            -1.0,
+            0.0,
+            0.0,
+            -20.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "description": "Plate  2 x  4"
+      },
+      {
+        "id": "13",
+        "parent": "root",
+        "ref": "3020.dat",
+        "kind": "part",
+        "embedded": false,
+        "section": "s17_tipper.ldr",
+        "index": 13,
+        "line": 34,
+        "colour": "8",
+        "effective_colour": "8",
+        "local": [
+          [
+            0.0,
+            0.0,
+            1.0,
+            0.0
+          ],
+          [
+            0.0,
+            1.0,
+            0.0,
+            -8.0
+          ],
+          [
+            -1.0,
+            0.0,
+            0.0,
+            140.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "world": [
+          [
+            0.0,
+            0.0,
+            1.0,
+            0.0
+          ],
+          [
+            0.0,
+            1.0,
+            0.0,
+            -8.0
+          ],
+          [
+            -1.0,
+            0.0,
+            0.0,
+            140.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "description": "Plate  2 x  4"
+      },
+      {
+        "id": "14",
+        "parent": "root",
+        "ref": "4531.dat",
+        "kind": "part",
+        "embedded": false,
+        "section": "s17_tipper.ldr",
+        "index": 14,
+        "line": 36,
+        "colour": "8",
+        "effective_colour": "8",
+        "local": [
+          [
+            0.0,
+            0.0,
+            -1.0,
+            -10.0
+          ],
+          [
+            0.0,
+            1.0,
+            0.0,
+            -24.0
+          ],
+          [
+            1.0,
+            0.0,
+            0.0,
+            140.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "world": [
+          [
+            0.0,
+            0.0,
+            -1.0,
+            -10.0
+          ],
+          [
+            0.0,
+            1.0,
+            0.0,
+            -24.0
+          ],
+          [
+            1.0,
+            0.0,
+            0.0,
+            140.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "description": "Hinge Tile  1 x  2 with 2 Fingers"
+      },
+      {
+        "id": "15",
+        "parent": "root",
+        "ref": "4275b.dat",
+        "kind": "part",
+        "embedded": false,
+        "section": "s17_tipper.ldr",
+        "index": 15,
+        "line": 38,
+        "colour": "8",
+        "effective_colour": "8",
+        "local": [
+          [
+            0.0,
+            0.0,
+            -1.0,
+            -10.0
+          ],
+          [
+            0.0,
+            1.0,
+            0.0,
+            -24.0
+          ],
+          [
+            1.0,
+            0.0,
+            0.0,
+            140.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "world": [
+          [
+            0.0,
+            0.0,
+            -1.0,
+            -10.0
+          ],
+          [
+            0.0,
+            1.0,
+            0.0,
+            -24.0
+          ],
+          [
+            1.0,
+            0.0,
+            0.0,
+            140.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "description": "Hinge Plate  1 x  2 with 3 Fingers and Hollow Studs"
+      },
+      {
+        "id": "16",
+        "parent": "root",
+        "ref": "4531.dat",
+        "kind": "part",
+        "embedded": false,
+        "section": "s17_tipper.ldr",
+        "index": 16,
+        "line": 40,
+        "colour": "8",
+        "effective_colour": "8",
+        "local": [
+          [
+            0.0,
+            0.0,
+            -1.0,
+            10.0
+          ],
+          [
+            0.0,
+            1.0,
+            0.0,
+            -24.0
+          ],
+          [
+            1.0,
+            0.0,
+            0.0,
+            140.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "world": [
+          [
+            0.0,
+            0.0,
+            -1.0,
+            10.0
+          ],
+          [
+            0.0,
+            1.0,
+            0.0,
+            -24.0
+          ],
+          [
+            1.0,
+            0.0,
+            0.0,
+            140.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "description": "Hinge Tile  1 x  2 with 2 Fingers"
+      },
+      {
+        "id": "17",
+        "parent": "root",
+        "ref": "4275b.dat",
+        "kind": "part",
+        "embedded": false,
+        "section": "s17_tipper.ldr",
+        "index": 17,
+        "line": 42,
+        "colour": "8",
+        "effective_colour": "8",
+        "local": [
+          [
+            0.0,
+            0.0,
+            -1.0,
+            10.0
+          ],
+          [
+            0.0,
+            1.0,
+            0.0,
+            -24.0
+          ],
+          [
+            1.0,
+            0.0,
+            0.0,
+            140.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "world": [
+          [
+            0.0,
+            0.0,
+            -1.0,
+            10.0
+          ],
+          [
+            0.0,
+            1.0,
+            0.0,
+            -24.0
+          ],
+          [
+            1.0,
+            0.0,
+            0.0,
+            140.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "description": "Hinge Plate  1 x  2 with 3 Fingers and Hollow Studs"
+      },
+      {
+        "id": "18",
+        "parent": "root",
+        "ref": "4080.dat",
+        "kind": "part",
+        "embedded": false,
+        "section": "s17_tipper.ldr",
+        "index": 18,
+        "line": 44,
+        "colour": "14",
+        "effective_colour": "14",
+        "local": [
+          [
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            1.0,
+            0.0,
+            -32.0
+          ],
+          [
+            0.0,
+            0.0,
+            1.0,
+            120.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "world": [
+          [
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            1.0,
+            0.0,
+            -32.0
+          ],
+          [
+            0.0,
+            0.0,
+            1.0,
+            120.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "description": "Tipper Bucket  4 x  6 with Open Studs Front Lip"
+      }
+    ],
+    "diagnostics": [],
+    "coordinate_space": "selected section, LDU, -Y up"
+  },
+  "controls": {
+    "tip": {
+      "default": 0,
+      "min": 0.0,
+      "max": 1.0,
+      "unit": "radian",
+      "description": "Bucket about the rear hinge; + raises the front"
+    }
+  },
+  "signals": {
+    "tip_angle": {
+      "expression": "a",
+      "variables": {
+        "a": "control:tip"
+      }
+    }
+  },
+  "bodies": {
+    "bucket": {
+      "instances": [
+        "15",
+        "17",
+        "18"
+      ],
+      "kind": "revolute",
+      "origin": [
+        -10.0,
+        -20.0,
+        170.0
+      ],
+      "axis": [
+        -1.0,
+        0.0,
+        0.0
+      ],
+      "signal": "tip_angle"
+    }
+  },
+  "anchors": {},
+  "checks": [],
+  "notes": [
+    "Mock scenario S17_tipper (Dump truck tipper) written by scripts/build_movables.py: Tipper bucket 4080 on hinge plates 4275b / hinge tiles 4531. Parts picked by constant name from data/categories/parts; frame LDU, -Y up, the scenario front faces -Z, ground (base top) at y = 0.",
+    "Joints: tip: revolute about [-1.0, 0.0, 0.0] through [-10.0, -20.0, 170.0] (4531 hinge snap_fgr (finger axis); the 4275b shadow hinge frame lies along the plate, not the finger axis; placement as set 6532).",
+    "Sign convention by meaning (checked with the evaluator, kinematics.json): tip + = Bucket about the rear hinge; + raises the front.",
+    "Ranges are catalog choices, narrowed by sampled clearance against the mock context (scripts/blender/check_movables_clearance.py); they are not measured mechanical stops.",
+    "Kinematic and transform checks do not prove collision-free or physically feasible motion."
+  ],
+  "mechanisms": {
+    "bucket": {
+      "label": "Dump truck tipper: bucket",
+      "parts": [
+        "0",
+        "15",
+        "17",
+        "18"
+      ],
+      "bodies": [
+        "bucket"
+      ],
+      "inputs": [
+        "control:tip"
+      ],
+      "outputs": [
+        "body:bucket"
+      ],
+      "disposition": "planned",
+      "notes": [
+        "revolute joint: 4531 hinge snap_fgr (finger axis); the 4275b shadow hinge frame lies along the plate, not the finger axis; placement as set 6532"
+      ],
+      "review": "Measured joint declared in this plan (scripts/build_movables.py)."
+    },
+    "context": {
+      "label": "Dump truck tipper: mounting and mock context (static)",
+      "parts": [
+        "0",
+        "1",
+        "2",
+        "3",
+        "4",
+        "5",
+        "6",
+        "7",
+        "8",
+        "9",
+        "10",
+        "11",
+        "12",
+        "13",
+        "14",
+        "16"
+      ],
+      "bodies": [],
+      "inputs": [],
+      "outputs": [],
+      "disposition": "static",
+      "notes": [],
+      "review": "Mock context built for the catalog (walls, floor, chassis, mounts); it does not move in this scenario."
+    }
+  },
+  "connections": {
+    "joint_tip": {
+      "a": "0",
+      "b": "15",
+      "kind": "revolute",
+      "status": "reviewed",
+      "evidence": "4531 hinge snap_fgr (finger axis); the 4275b shadow hinge frame lies along the plate, not the finger axis; placement as set 6532. not detected by pyldraw3 contacts (no pairing connector kinds); placement from the named source.",
+      "measurements": {
+        "origin": [
+          -10.0,
+          -20.0,
+          170.0
+        ],
+        "axis": [
+          -1.0,
+          0.0,
+          0.0
+        ]
+      },
+      "review": "Joint frame measured as stated (scripts/build_movables.py); see source/parts.json reference_checks for official placements."
+    }
+  },
+  "discovery": {
+    "grouping": "Provisional connected mechanical candidates; agent may split/merge views",
+    "unclassified_parts": [
+      "0",
+      "11",
+      "12",
+      "13",
+      "18"
+    ],
+    "embedded_parts": [],
+    "contact_limit": 300,
+    "rigid_groups": "not inferred",
+    "inputs_outputs": "not inferred",
+    "mechanical_parts": [
+      "1",
+      "10",
+      "14",
+      "15",
+      "16",
+      "17",
+      "2",
+      "3",
+      "4",
+      "5",
+      "6",
+      "7",
+      "8",
+      "9"
+    ],
+    "warnings": [
+      {
+        "code": "incomplete_inspection",
+        "message": "pyldraw3 inspection is incomplete; inspect its diagnostics."
+      },
+      {
+        "code": "coaxial_not_run",
+        "message": "not run: 0 shaft/gear candidates outside 2..100; select a section"
+      }
+    ],
+    "surface_contacts": "Not detected: cams, levers bearing on beams, friction and stops need geometric/visual review even when connector contacts are absent",
+    "unsupported_gears": [],
+    "gear_placements": {
+      "policy": "Nearest orthogonal analysis frame within rounding_limit; source translations and handedness preserved",
+      "rounding_limit": 0.002,
+      "counts": {},
+      "affected": []
+    },
+    "contacts": {
+      "complete": false,
+      "tested_parts": 19,
+      "diagnostics": [
+        {
+          "code": "connection.invalid_transform",
+          "message": "connection feature 'snap_fgr@L8:I0' from /Users/captain/workspaces/workspace-ai/ldraw-mecha/data/offLibShadow/p/h2.dat:8 rejected under invalid scale or reflection",
+          "severity": "warning",
+          "path": "/Users/captain/workspaces/workspace-ai/ldraw-mecha/data/offLibShadow/p/h2.dat",
+          "section": null,
+          "line_number": 8,
+          "offending_value": "snap_fgr@L8:I0",
+          "suggestions": [],
+          "cause": null
+        }
+      ],
+      "summary": {
+        "tested_parts": 19,
+        "contacts": 26,
+        "contacted_parts": 12,
+        "by_kind": {
+          "stud/stud_receptacle": 6,
+          "pin/pin_hole": 16,
+          "rim_seat/tyre_bead": 4
+        },
+        "axles": {
+          "selection": "Catalog descriptions beginning Technic Axle followed by a numeric length; excludes axle pins, joiners and axle-hole supports",
+          "total": 0,
+          "with_axle_hole_contact": 0,
+          "without_axle_hole_contact": []
+        }
+      },
+      "placements": {
+        "policy": "Nearest orthogonal analysis frame within rounding_limit; source translations and handedness preserved",
+        "rounding_limit": 0.002,
+        "counts": {
+          "unchanged": 19
+        },
+        "affected": []
+      }
+    },
+    "coaxial_selection": "Catalog axle, gear, worm and engine crankshaft parts; positive line evidence within 80 LDU axial separation",
+    "coaxial": "not run: 0 shaft/gear candidates outside 2..100; select a section",
+    "isolated_mechanical_parts": [
+      "14",
+      "15",
+      "16",
+      "17"
+    ]
+  }
+}

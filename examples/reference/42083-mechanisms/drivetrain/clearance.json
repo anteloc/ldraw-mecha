@@ -1,0 +1,255 @@
+{
+  "no_new_surface_crossings": true,
+  "samples": [
+    {
+      "control": "drive",
+      "value": -600.0,
+      "new_surface_crossings": []
+    },
+    {
+      "control": "drive",
+      "value": -450.0,
+      "new_surface_crossings": []
+    },
+    {
+      "control": "drive",
+      "value": -300.0,
+      "new_surface_crossings": []
+    },
+    {
+      "control": "drive",
+      "value": -150.0,
+      "new_surface_crossings": []
+    },
+    {
+      "control": "drive",
+      "value": 0.0,
+      "new_surface_crossings": []
+    },
+    {
+      "control": "drive",
+      "value": 150.0,
+      "new_surface_crossings": []
+    },
+    {
+      "control": "drive",
+      "value": 300.0,
+      "new_surface_crossings": []
+    },
+    {
+      "control": "drive",
+      "value": 450.0,
+      "new_surface_crossings": []
+    },
+    {
+      "control": "drive",
+      "value": 600.0,
+      "new_surface_crossings": []
+    },
+    {
+      "control": "diff_front",
+      "value": -60.0,
+      "new_surface_crossings": []
+    },
+    {
+      "control": "diff_front",
+      "value": -45.0,
+      "new_surface_crossings": []
+    },
+    {
+      "control": "diff_front",
+      "value": -30.0,
+      "new_surface_crossings": []
+    },
+    {
+      "control": "diff_front",
+      "value": -15.0,
+      "new_surface_crossings": []
+    },
+    {
+      "control": "diff_front",
+      "value": 0.0,
+      "new_surface_crossings": []
+    },
+    {
+      "control": "diff_front",
+      "value": 15.0,
+      "new_surface_crossings": []
+    },
+    {
+      "control": "diff_front",
+      "value": 30.0,
+      "new_surface_crossings": []
+    },
+    {
+      "control": "diff_front",
+      "value": 45.0,
+      "new_surface_crossings": []
+    },
+    {
+      "control": "diff_front",
+      "value": 60.0,
+      "new_surface_crossings": []
+    },
+    {
+      "control": "diff_rear",
+      "value": -60.0,
+      "new_surface_crossings": []
+    },
+    {
+      "control": "diff_rear",
+      "value": -45.0,
+      "new_surface_crossings": []
+    },
+    {
+      "control": "diff_rear",
+      "value": -30.0,
+      "new_surface_crossings": []
+    },
+    {
+      "control": "diff_rear",
+      "value": -15.0,
+      "new_surface_crossings": []
+    },
+    {
+      "control": "diff_rear",
+      "value": 0.0,
+      "new_surface_crossings": []
+    },
+    {
+      "control": "diff_rear",
+      "value": 15.0,
+      "new_surface_crossings": []
+    },
+    {
+      "control": "diff_rear",
+      "value": 30.0,
+      "new_surface_crossings": []
+    },
+    {
+      "control": "diff_rear",
+      "value": 45.0,
+      "new_surface_crossings": []
+    },
+    {
+      "control": "diff_rear",
+      "value": 60.0,
+      "new_surface_crossings": []
+    }
+  ],
+  "excluded_rest_pairs": [
+    [
+      "114",
+      "139"
+    ],
+    [
+      "115",
+      "89"
+    ],
+    [
+      "172",
+      "262"
+    ],
+    [
+      "244",
+      "246"
+    ],
+    [
+      "244",
+      "249"
+    ],
+    [
+      "245",
+      "247"
+    ],
+    [
+      "246",
+      "247"
+    ],
+    [
+      "271",
+      "274"
+    ],
+    [
+      "278",
+      "281"
+    ],
+    [
+      "57",
+      "58"
+    ],
+    [
+      "78",
+      "79"
+    ],
+    [
+      "89",
+      "91"
+    ],
+    [
+      "90",
+      "92"
+    ],
+    [
+      "91",
+      "92"
+    ]
+  ],
+  "shrink_ldu": 0.4,
+  "touching_tolerance_ldu": 0.05,
+  "excluded_touching_pairs": [
+    [
+      "100",
+      "115"
+    ],
+    [
+      "115",
+      "99"
+    ],
+    [
+      "116",
+      "8"
+    ],
+    [
+      "144",
+      "146"
+    ],
+    [
+      "146",
+      "152"
+    ],
+    [
+      "180",
+      "184"
+    ],
+    [
+      "223",
+      "256"
+    ],
+    [
+      "223",
+      "267"
+    ],
+    [
+      "228",
+      "257"
+    ],
+    [
+      "228",
+      "263"
+    ],
+    [
+      "234",
+      "262"
+    ],
+    [
+      "254",
+      "256"
+    ],
+    [
+      "255",
+      "257"
+    ]
+  ],
+  "coverage": "Sampled surface crossings only; excludes rigid-body and rest-contact pairs; containment untested"
+}

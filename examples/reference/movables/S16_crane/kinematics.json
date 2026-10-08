@@ -1,0 +1,208 @@
+{
+  "semantics": {
+    "superstructure": {
+      "control": "slew",
+      "value": 0.2,
+      "test_point": [
+        0.0,
+        -96.0,
+        -10.0
+      ],
+      "displacement": [
+        1.986693,
+        0.0,
+        0.199334
+      ],
+      "expected": "+x",
+      "flipped": true
+    },
+    "boom": {
+      "control": "luff",
+      "value": 0.2,
+      "test_point": [
+        10.0,
+        -104.0,
+        -200.0
+      ],
+      "displacement": [
+        0.0,
+        -37.388371,
+        7.363398
+      ],
+      "expected": "-y",
+      "flipped": true
+    },
+    "hook_plumb_{'luff': 0.6}": {
+      "expression": "a",
+      "hook_vs_superstructure_rotation_error": 0.0
+    },
+    "hook_plumb_{'luff': 1.0, 'slew': 0.7}": {
+      "expression": "a",
+      "hook_vs_superstructure_rotation_error": 1.1102230246251565e-16
+    },
+    "hook_plumb_{'luff': 0.3, 'slew': -1.2}": {
+      "expression": "a",
+      "hook_vs_superstructure_rotation_error": 1.1102230246251565e-16
+    }
+  },
+  "contacts": {
+    "tested_parts": 16,
+    "contacts": 40,
+    "contacted_parts": 11,
+    "by_kind": {
+      "stud/stud_receptacle": 38,
+      "pin/pin_hole": 1,
+      "hinge/hinge": 1
+    },
+    "axles": {
+      "selection": "Catalog descriptions beginning Technic Axle followed by a numeric length; excludes axle pins, joiners and axle-hole supports",
+      "total": 0,
+      "with_axle_hole_contact": 0,
+      "without_axle_hole_contact": []
+    }
+  },
+  "contact_pairs": {
+    "0-1": [
+      "stud/stud_receptacle",
+      "stud/stud_receptacle",
+      "stud/stud_receptacle",
+      "stud/stud_receptacle",
+      "stud/stud_receptacle",
+      "stud/stud_receptacle",
+      "stud/stud_receptacle",
+      "stud/stud_receptacle"
+    ],
+    "0-2": [
+      "stud/stud_receptacle",
+      "stud/stud_receptacle",
+      "stud/stud_receptacle",
+      "stud/stud_receptacle",
+      "stud/stud_receptacle",
+      "stud/stud_receptacle",
+      "stud/stud_receptacle",
+      "stud/stud_receptacle"
+    ],
+    "1-3": [
+      "stud/stud_receptacle",
+      "stud/stud_receptacle",
+      "stud/stud_receptacle",
+      "stud/stud_receptacle",
+      "stud/stud_receptacle",
+      "stud/stud_receptacle",
+      "stud/stud_receptacle",
+      "stud/stud_receptacle"
+    ],
+    "2-4": [
+      "stud/stud_receptacle",
+      "stud/stud_receptacle",
+      "stud/stud_receptacle",
+      "stud/stud_receptacle",
+      "stud/stud_receptacle",
+      "stud/stud_receptacle",
+      "stud/stud_receptacle",
+      "stud/stud_receptacle"
+    ],
+    "5-6": [
+      "pin_hole/pin"
+    ],
+    "6-7": [
+      "stud/stud_receptacle",
+      "stud/stud_receptacle"
+    ],
+    "7-8": [
+      "stud/stud_receptacle",
+      "stud/stud_receptacle",
+      "stud/stud_receptacle",
+      "stud/stud_receptacle"
+    ],
+    "10-11": [
+      "hinge/hinge"
+    ]
+  },
+  "asymmetric_sample": {
+    "controls": {
+      "slew": 1.979203,
+      "luff": 0.407
+    },
+    "transforms": {
+      "superstructure": [
+        [
+          -0.397148,
+          0.0,
+          -0.917755,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.917755,
+          0.0,
+          -0.397148,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "boom": [
+        [
+          -0.397148,
+          0.363299,
+          -0.842786,
+          31.993396
+        ],
+        [
+          0.0,
+          0.918313,
+          0.395856,
+          -3.066561
+        ],
+        [
+          0.917755,
+          0.157213,
+          -0.364706,
+          13.844764
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "hook": [
+        [
+          -0.397148,
+          0.0,
+          -0.917755,
+          -17.150515
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          -74.559174
+        ],
+        [
+          0.917755,
+          0.0,
+          -0.397148,
+          -7.421683
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ]
+    }
+  }
+}

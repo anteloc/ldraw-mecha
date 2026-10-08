@@ -1,0 +1,111 @@
+{
+  "summary": {
+    "planned": 4,
+    "static": 1
+  },
+  "review_complete": true,
+  "unresolved": [],
+  "deferred": [],
+  "unaccounted_mechanical_parts": [],
+  "mechanisms": [
+    {
+      "id": "branch_back",
+      "label": "Oak with hinged branches: branch back",
+      "disposition": "planned",
+      "review": "Joint declared in this plan (scripts/build_plants.py); driven by wind clips.",
+      "parts": 3,
+      "controlled_parts": [
+        "12",
+        "13"
+      ],
+      "parts_without_control": [
+        "11"
+      ],
+      "controls": [
+        "branch_back"
+      ]
+    },
+    {
+      "id": "branch_downwind",
+      "label": "Oak with hinged branches: branch downwind",
+      "disposition": "planned",
+      "review": "Joint declared in this plan (scripts/build_plants.py); driven by wind clips.",
+      "parts": 3,
+      "controlled_parts": [
+        "10",
+        "9"
+      ],
+      "parts_without_control": [
+        "8"
+      ],
+      "controls": [
+        "branch_downwind"
+      ]
+    },
+    {
+      "id": "branch_front",
+      "label": "Oak with hinged branches: branch front",
+      "disposition": "planned",
+      "review": "Joint declared in this plan (scripts/build_plants.py); driven by wind clips.",
+      "parts": 3,
+      "controlled_parts": [
+        "6",
+        "7"
+      ],
+      "parts_without_control": [
+        "5"
+      ],
+      "controls": [
+        "branch_front"
+      ]
+    },
+    {
+      "id": "branch_upwind",
+      "label": "Oak with hinged branches: branch upwind",
+      "disposition": "planned",
+      "review": "Joint declared in this plan (scripts/build_plants.py); driven by wind clips.",
+      "parts": 3,
+      "controlled_parts": [
+        "15",
+        "16"
+      ],
+      "parts_without_control": [
+        "14"
+      ],
+      "controls": [
+        "branch_upwind"
+      ]
+    },
+    {
+      "id": "context",
+      "label": "Oak with hinged branches: base and mounts (static)",
+      "disposition": "static",
+      "review": "Base, trunk and mounts built for the catalog; they do not move in this case.",
+      "parts": 12,
+      "controlled_parts": [],
+      "parts_without_control": [
+        "0",
+        "1",
+        "11",
+        "14",
+        "17",
+        "18",
+        "19",
+        "2",
+        "3",
+        "4",
+        "5",
+        "8"
+      ],
+      "controls": []
+    }
+  ],
+  "warnings": [
+    {
+      "code": "coaxial_not_run",
+      "message": "not run: 0 shaft/gear candidates outside 2..100; select a section"
+    }
+  ],
+  "coverage": "Bookkeeping of declared scope only. Supports may correctly lack controls. Planned, static and deferred dispositions require review notes; none certify discovery completeness, physical motion or clearance.",
+  "passed": true
+}

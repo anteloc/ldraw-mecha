@@ -1,0 +1,230 @@
+{
+  "case": "P12_aspen",
+  "title": "Shivering aspen",
+  "parts": [
+    {
+      "role": "base",
+      "id": "0",
+      "table": "plates.Plate4X4",
+      "ref": "3031",
+      "colour": 2,
+      "title": "Plate  4 x  4",
+      "library_only": false
+    },
+    {
+      "role": "trunk_a0",
+      "id": "1",
+      "table": "bricks.Brick1X1RoundWithHollowStud",
+      "ref": "3062b",
+      "colour": 70,
+      "title": "Brick  1 x  1 Round with Hollow Stud",
+      "library_only": false
+    },
+    {
+      "role": "trunk_a1",
+      "id": "2",
+      "table": "bricks.Brick1X1RoundWithHollowStud",
+      "ref": "3062b",
+      "colour": 70,
+      "title": "Brick  1 x  1 Round with Hollow Stud",
+      "library_only": false
+    },
+    {
+      "role": "trunk_a2",
+      "id": "3",
+      "table": "bricks.Brick1X1RoundWithHollowStud",
+      "ref": "3062b",
+      "colour": 70,
+      "title": "Brick  1 x  1 Round with Hollow Stud",
+      "library_only": false
+    },
+    {
+      "role": "knot_a",
+      "id": "4",
+      "table": "bricks.Brick1X1WithStudsOnFourSides",
+      "ref": "4733",
+      "colour": 70,
+      "title": "Brick  1 x  1 with Studs on Four Sides",
+      "library_only": false
+    },
+    {
+      "role": "trunk_b0",
+      "id": "5",
+      "table": "bricks.Brick1X1RoundWithHollowStud",
+      "ref": "3062b",
+      "colour": 70,
+      "title": "Brick  1 x  1 Round with Hollow Stud",
+      "library_only": false
+    },
+    {
+      "role": "trunk_b1",
+      "id": "6",
+      "table": "bricks.Brick1X1RoundWithHollowStud",
+      "ref": "3062b",
+      "colour": 70,
+      "title": "Brick  1 x  1 Round with Hollow Stud",
+      "library_only": false
+    },
+    {
+      "role": "trunk_b2",
+      "id": "7",
+      "table": "bricks.Brick1X1RoundWithHollowStud",
+      "ref": "3062b",
+      "colour": 70,
+      "title": "Brick  1 x  1 Round with Hollow Stud",
+      "library_only": false
+    },
+    {
+      "role": "knot_b",
+      "id": "8",
+      "table": "bricks.Brick1X1WithStudsOnFourSides",
+      "ref": "4733",
+      "colour": 70,
+      "title": "Brick  1 x  1 with Studs on Four Sides",
+      "library_only": false
+    },
+    {
+      "role": "trunk_c0",
+      "id": "9",
+      "table": "bricks.Brick1X1RoundWithHollowStud",
+      "ref": "3062b",
+      "colour": 70,
+      "title": "Brick  1 x  1 Round with Hollow Stud",
+      "library_only": false
+    },
+    {
+      "role": "leaf_top",
+      "id": "10",
+      "table": "plants.PlantLeaves4X3",
+      "ref": "2423",
+      "colour": 14,
+      "title": "Plant Leaves  4 x  3",
+      "library_only": false
+    },
+    {
+      "role": "leaf_front",
+      "id": "11",
+      "table": "plants.PlantLeaves4X3",
+      "ref": "2423",
+      "colour": 27,
+      "title": "Plant Leaves  4 x  3",
+      "library_only": false
+    },
+    {
+      "role": "leaf_back",
+      "id": "12",
+      "table": "plants.PlantLeaves4X3",
+      "ref": "2423",
+      "colour": 14,
+      "title": "Plant Leaves  4 x  3",
+      "library_only": false
+    },
+    {
+      "role": "leaf_upwind",
+      "id": "13",
+      "table": "plants.PlantLeaves4X3",
+      "ref": "2423",
+      "colour": 27,
+      "title": "Plant Leaves  4 x  3",
+      "library_only": false
+    },
+    {
+      "role": "leaf_downwind",
+      "id": "14",
+      "table": "plants.PlantLeaves4X3",
+      "ref": "2423",
+      "colour": 14,
+      "title": "Plant Leaves  4 x  3",
+      "library_only": false
+    }
+  ],
+  "joints": {
+    "leaf_top": {
+      "origin": [
+        0.0,
+        -216.0,
+        0.0
+      ],
+      "axis": [
+        0.0,
+        -1.0,
+        0.0
+      ],
+      "parent": "trunk_c0",
+      "child": "leaf_top",
+      "kind": "revolute",
+      "joint": "real",
+      "connector": "real: 2423 on the top hollow stud; turns on the stud (right-hand about up)"
+    },
+    "leaf_front": {
+      "origin": [
+        0.0,
+        -86.0,
+        -10.0
+      ],
+      "axis": [
+        0.0,
+        0.0,
+        -1.0
+      ],
+      "parent": "knot_a",
+      "child": "leaf_front",
+      "kind": "revolute",
+      "joint": "real",
+      "connector": "real: 2423 on a side stud of 4733; swings about the stud like a pendulum"
+    },
+    "leaf_back": {
+      "origin": [
+        0.0,
+        -86.0,
+        10.0
+      ],
+      "axis": [
+        0.0,
+        0.0,
+        1.0
+      ],
+      "parent": "knot_a",
+      "child": "leaf_back",
+      "kind": "revolute",
+      "joint": "real",
+      "connector": "real: 2423 on a side stud of 4733; swings about the stud like a pendulum"
+    },
+    "leaf_upwind": {
+      "origin": [
+        -10.0,
+        -182.0,
+        0.0
+      ],
+      "axis": [
+        -1.0,
+        0.0,
+        0.0
+      ],
+      "parent": "knot_b",
+      "child": "leaf_upwind",
+      "kind": "revolute",
+      "joint": "real",
+      "connector": "real: 2423 on a side stud of 4733; swings about the stud like a pendulum"
+    },
+    "leaf_downwind": {
+      "origin": [
+        10.0,
+        -182.0,
+        0.0
+      ],
+      "axis": [
+        1.0,
+        0.0,
+        0.0
+      ],
+      "parent": "knot_b",
+      "child": "leaf_downwind",
+      "kind": "revolute",
+      "joint": "real",
+      "connector": "real: 2423 on a side stud of 4733; swings about the stud like a pendulum"
+    }
+  },
+  "reference_checks": [],
+  "geometry_checks": []
+}

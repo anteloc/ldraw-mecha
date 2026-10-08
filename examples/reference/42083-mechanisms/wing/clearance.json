@@ -1,0 +1,141 @@
+{
+  "no_new_surface_crossings": true,
+  "samples": [
+    {
+      "control": "wing",
+      "value": 0.0,
+      "new_surface_crossings": []
+    },
+    {
+      "control": "wing",
+      "value": 0.05,
+      "new_surface_crossings": []
+    },
+    {
+      "control": "wing",
+      "value": 0.1,
+      "new_surface_crossings": []
+    },
+    {
+      "control": "wing",
+      "value": 0.15000000000000002,
+      "new_surface_crossings": []
+    },
+    {
+      "control": "wing",
+      "value": 0.2,
+      "new_surface_crossings": []
+    },
+    {
+      "control": "wing",
+      "value": 0.25,
+      "new_surface_crossings": []
+    },
+    {
+      "control": "wing",
+      "value": 0.30000000000000004,
+      "new_surface_crossings": []
+    },
+    {
+      "control": "wing",
+      "value": 0.35000000000000003,
+      "new_surface_crossings": []
+    },
+    {
+      "control": "wing",
+      "value": 0.4,
+      "new_surface_crossings": []
+    }
+  ],
+  "excluded_rest_pairs": [
+    [
+      "105",
+      "63"
+    ],
+    [
+      "110",
+      "71"
+    ],
+    [
+      "43",
+      "52"
+    ],
+    [
+      "48",
+      "52"
+    ],
+    [
+      "49",
+      "55"
+    ],
+    [
+      "50",
+      "55"
+    ],
+    [
+      "58",
+      "59"
+    ],
+    [
+      "66",
+      "67"
+    ]
+  ],
+  "shrink_ldu": 0.4,
+  "touching_tolerance_ldu": 0.05,
+  "excluded_touching_pairs": [
+    [
+      "20",
+      "73"
+    ],
+    [
+      "21",
+      "72"
+    ],
+    [
+      "41",
+      "68"
+    ],
+    [
+      "43",
+      "66"
+    ],
+    [
+      "43",
+      "67"
+    ],
+    [
+      "44",
+      "46"
+    ],
+    [
+      "47",
+      "49"
+    ],
+    [
+      "47",
+      "50"
+    ],
+    [
+      "48",
+      "66"
+    ],
+    [
+      "49",
+      "58"
+    ],
+    [
+      "50",
+      "58"
+    ],
+    [
+      "50",
+      "59"
+    ],
+    [
+      "51",
+      "60"
+    ]
+  ],
+  "coverage": "Sampled surface crossings only; excludes rigid-body and rest-contact pairs; containment untested"
+}

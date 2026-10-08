@@ -1,0 +1,79 @@
+{
+  "scenario": "S07_treasure_chest",
+  "title": "Treasure chest",
+  "parts": [
+    {
+      "role": "base",
+      "id": "0",
+      "table": "plates.Plate6X8",
+      "ref": "3036",
+      "colour": 19,
+      "title": "Plate  6 x  8",
+      "library_only": false
+    },
+    {
+      "role": "chest",
+      "id": "1",
+      "table": "containers.ContainerTreasureChestWithSlots",
+      "ref": "4738a",
+      "colour": 70,
+      "title": "Container Treasure Chest with Slots",
+      "library_only": false
+    },
+    {
+      "role": "lid",
+      "id": "2",
+      "table": "containers.ContainerTreasureChestWithSlotsLid",
+      "ref": "4739a",
+      "colour": 70,
+      "title": "Container Treasure Chest with Slots Lid",
+      "library_only": false
+    },
+    {
+      "role": "coin0",
+      "id": "3",
+      "table": "tiles.Tile1X1RoundWithGroove",
+      "ref": "98138",
+      "colour": 297,
+      "title": "Tile  1 x  1 Round with Groove",
+      "library_only": false
+    },
+    {
+      "role": "coin1",
+      "id": "4",
+      "table": "tiles.Tile1X1RoundWithGroove",
+      "ref": "98138",
+      "colour": 297,
+      "title": "Tile  1 x  1 Round with Groove",
+      "library_only": false
+    },
+    {
+      "role": "coin2",
+      "id": "5",
+      "table": "tiles.Tile1X1RoundWithGroove",
+      "ref": "98138",
+      "colour": 297,
+      "title": "Tile  1 x  1 Round with Groove",
+      "library_only": false
+    }
+  ],
+  "joints": {
+    "lid": {
+      "origin": [
+        0.0,
+        -28.0,
+        16.0
+      ],
+      "axis": [
+        1.0,
+        0.0,
+        0.0
+      ],
+      "parent": "chest",
+      "child": "lid",
+      "kind": "revolute",
+      "connector": "4738a hinge snap_fgr@L9:I0 receives 4739a hinge snap_fgr@L9:I0"
+    }
+  },
+  "reference_checks": []
+}

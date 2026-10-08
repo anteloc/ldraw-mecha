@@ -1,0 +1,409 @@
+{
+  "case": "P14_bouquet",
+  "title": "Vase bouquet",
+  "parts": [
+    {
+      "role": "base",
+      "id": "0",
+      "table": "plates.Plate6X6",
+      "ref": "3958",
+      "colour": 15,
+      "title": "Plate  6 x  6",
+      "library_only": false
+    },
+    {
+      "role": "vase_a_18674",
+      "id": "1",
+      "table": "plates.Plate2X2RoundWith1CentreStud",
+      "ref": "18674",
+      "colour": 0,
+      "title": "Plate  2 x  2 Round with  1 Centre Stud",
+      "library_only": false
+    },
+    {
+      "role": "vase_a_20482",
+      "id": "2",
+      "table": "tiles.Tile1X1RoundWithPinAndPinHole",
+      "ref": "20482",
+      "colour": 297,
+      "title": "Tile  1 x  1 Round with Pin and Pin Hole",
+      "library_only": false
+    },
+    {
+      "role": "vase_a_3942c",
+      "id": "3",
+      "table": "cones.Cone2X2X2WithHollowStudOpen",
+      "ref": "3942c",
+      "colour": 0,
+      "title": "Cone  2 x  2 x  2 with Hollow Stud Open",
+      "library_only": false
+    },
+    {
+      "role": "vase_a_15395",
+      "id": "4",
+      "table": "spheres.Dome2X2InvertedWithStudAndTube",
+      "ref": "15395",
+      "colour": 0,
+      "title": "Dome  2 x  2 Inverted with Stud and Tube",
+      "library_only": false
+    },
+    {
+      "role": "vase_a_85861",
+      "id": "5",
+      "table": "plates.Plate1X1RoundWithOpenStud",
+      "ref": "85861",
+      "colour": 297,
+      "title": "Plate  1 x  1 Round with Open Stud",
+      "library_only": false
+    },
+    {
+      "role": "stem_a",
+      "id": "6",
+      "table": "plants.PlantFlowerStemWithBarAndHole",
+      "ref": "24855",
+      "colour": 2,
+      "title": "Plant Flower Stem with Bar and Hole",
+      "library_only": false
+    },
+    {
+      "role": "head_a1",
+      "id": "7",
+      "table": "plants.PlantFlowerWith7AlternatePetalsWithBarAndPinHole",
+      "ref": "32606",
+      "colour": 15,
+      "title": "Plant Flower with  7 Alternate Petals with Bar and Pin Hole",
+      "library_only": false
+    },
+    {
+      "role": "head_a2",
+      "id": "8",
+      "table": "plants.PlantFlowerWith7AlternatePetalsWithBarAndPinHole",
+      "ref": "32606",
+      "colour": 29,
+      "title": "Plant Flower with  7 Alternate Petals with Bar and Pin Hole",
+      "library_only": false
+    },
+    {
+      "role": "head_a3",
+      "id": "9",
+      "table": "plants.PlantFlowerWith7AlternatePetalsWithBarAndPinHole",
+      "ref": "32606",
+      "colour": 14,
+      "title": "Plant Flower with  7 Alternate Petals with Bar and Pin Hole",
+      "library_only": false
+    },
+    {
+      "role": "vase_b_18674",
+      "id": "10",
+      "table": "plates.Plate2X2RoundWith1CentreStud",
+      "ref": "18674",
+      "colour": 72,
+      "title": "Plate  2 x  2 Round with  1 Centre Stud",
+      "library_only": false
+    },
+    {
+      "role": "vase_b_20482",
+      "id": "11",
+      "table": "tiles.Tile1X1RoundWithPinAndPinHole",
+      "ref": "20482",
+      "colour": 7,
+      "title": "Tile  1 x  1 Round with Pin and Pin Hole",
+      "library_only": false
+    },
+    {
+      "role": "vase_b_3942c",
+      "id": "12",
+      "table": "cones.Cone2X2X2WithHollowStudOpen",
+      "ref": "3942c",
+      "colour": 72,
+      "title": "Cone  2 x  2 x  2 with Hollow Stud Open",
+      "library_only": false
+    },
+    {
+      "role": "vase_b_15395",
+      "id": "13",
+      "table": "spheres.Dome2X2InvertedWithStudAndTube",
+      "ref": "15395",
+      "colour": 72,
+      "title": "Dome  2 x  2 Inverted with Stud and Tube",
+      "library_only": false
+    },
+    {
+      "role": "vase_b_85861",
+      "id": "14",
+      "table": "plates.Plate1X1RoundWithOpenStud",
+      "ref": "85861",
+      "colour": 7,
+      "title": "Plate  1 x  1 Round with Open Stud",
+      "library_only": false
+    },
+    {
+      "role": "stem_b",
+      "id": "15",
+      "table": "plants.PlantFlowerStemWithBarAnd6Stems",
+      "ref": "19119",
+      "colour": 2,
+      "title": "Plant Flower Stem with Bar and  6 Stems",
+      "library_only": false
+    },
+    {
+      "role": "head_b1",
+      "id": "16",
+      "table": "plants.PlantFlower",
+      "ref": "3742",
+      "colour": 4,
+      "title": "Plant Flower",
+      "library_only": false
+    },
+    {
+      "role": "head_b2",
+      "id": "17",
+      "table": "plants.PlantFlower",
+      "ref": "3742",
+      "colour": 14,
+      "title": "Plant Flower",
+      "library_only": false
+    },
+    {
+      "role": "head_b3",
+      "id": "18",
+      "table": "plants.PlantFlower",
+      "ref": "3742",
+      "colour": 26,
+      "title": "Plant Flower",
+      "library_only": false
+    },
+    {
+      "role": "head_b4",
+      "id": "19",
+      "table": "plants.PlantFlower",
+      "ref": "3742",
+      "colour": 15,
+      "title": "Plant Flower",
+      "library_only": false
+    },
+    {
+      "role": "head_b5",
+      "id": "20",
+      "table": "plants.PlantFlower",
+      "ref": "3742",
+      "colour": 25,
+      "title": "Plant Flower",
+      "library_only": false
+    },
+    {
+      "role": "head_b6",
+      "id": "21",
+      "table": "plants.PlantFlower",
+      "ref": "3742",
+      "colour": 29,
+      "title": "Plant Flower",
+      "library_only": false
+    }
+  ],
+  "joints": {
+    "stem_a": {
+      "origin": [
+        -40.0,
+        -90.0,
+        -20.0
+      ],
+      "axis": [
+        0.0,
+        0.0,
+        1.0
+      ],
+      "parent": "vase_a_85861",
+      "child": "stem_a",
+      "kind": "revolute",
+      "joint": "flex_approx",
+      "connector": "flex_approx: the bar in the stud only allows a twist; the tilt stands in for the stem bending. 24855 bar in the vase's open stud (official 10297 vase)"
+    },
+    "head_a1": {
+      "origin": [
+        -32.4248,
+        -110.0004,
+        -15.6265
+      ],
+      "axis": [
+        0.496731,
+        -0.819152,
+        0.286789
+      ],
+      "parent": "stem_a",
+      "child": "head_a1",
+      "kind": "revolute",
+      "joint": "real",
+      "connector": "real: 32606 on a long 24855 pin (R2); spins about the pin"
+    },
+    "head_a2": {
+      "origin": [
+        -47.5752,
+        -110.0004,
+        -15.6265
+      ],
+      "axis": [
+        -0.496731,
+        -0.819152,
+        0.286789
+      ],
+      "parent": "stem_a",
+      "child": "head_a2",
+      "kind": "revolute",
+      "joint": "real",
+      "connector": "real: 32606 on a long 24855 pin (R2); spins about the pin"
+    },
+    "head_a3": {
+      "origin": [
+        -40.0,
+        -110.0004,
+        -28.747
+      ],
+      "axis": [
+        0.0,
+        -0.81915,
+        -0.57358
+      ],
+      "parent": "stem_a",
+      "child": "head_a3",
+      "kind": "revolute",
+      "joint": "real",
+      "connector": "real: 32606 on a long 24855 pin (R2); spins about the pin"
+    },
+    "stem_b": {
+      "origin": [
+        40.0,
+        -100.0,
+        20.0
+      ],
+      "axis": [
+        0.0,
+        -1.0,
+        0.0
+      ],
+      "parent": "vase_b_85861",
+      "child": "stem_b",
+      "kind": "revolute",
+      "joint": "real",
+      "connector": "real: 19119 bar in the vase's open stud (same seat as the 24855 bar); turns about the bar"
+    },
+    "head_b1": {
+      "origin": [
+        26.576607,
+        -125.650848,
+        27.749999
+      ],
+      "axis": [
+        -0.433013,
+        -0.866025,
+        0.25
+      ],
+      "parent": "stem_b",
+      "child": "head_b1",
+      "kind": "revolute",
+      "joint": "real",
+      "connector": "real: 3742 on a 19119 flower pin (R2); spins about the pin"
+    },
+    "head_b2": {
+      "origin": [
+        53.42315,
+        -125.650853,
+        27.749589
+      ],
+      "axis": [
+        0.433014,
+        -0.866024,
+        0.250001
+      ],
+      "parent": "stem_b",
+      "child": "head_b2",
+      "kind": "revolute",
+      "joint": "real",
+      "connector": "real: 3742 on a 19119 flower pin (R2); spins about the pin"
+    },
+    "head_b3": {
+      "origin": [
+        19.655629,
+        -111.550887,
+        8.254356
+      ],
+      "axis": [
+        -0.813798,
+        -0.342019,
+        -0.469846
+      ],
+      "parent": "stem_b",
+      "child": "head_b3",
+      "kind": "revolute",
+      "joint": "real",
+      "connector": "real: 3742 on a 19119 flower pin (R2); spins about the pin"
+    },
+    "head_b4": {
+      "origin": [
+        40.000234,
+        -125.650853,
+        4.500417
+      ],
+      "axis": [
+        0.0,
+        -0.866024,
+        -0.500002
+      ],
+      "parent": "stem_b",
+      "child": "head_b4",
+      "kind": "revolute",
+      "joint": "real",
+      "connector": "real: 3742 on a 19119 flower pin (R2); spins about the pin"
+    },
+    "head_b5": {
+      "origin": [
+        39.999841,
+        -111.550887,
+        43.491564
+      ],
+      "axis": [
+        0.0,
+        -0.342019,
+        0.939693
+      ],
+      "parent": "stem_b",
+      "child": "head_b5",
+      "kind": "revolute",
+      "joint": "real",
+      "connector": "real: 3742 on a 19119 flower pin (R2); spins about the pin"
+    },
+    "head_b6": {
+      "origin": [
+        60.344532,
+        -111.550884,
+        8.254079
+      ],
+      "axis": [
+        0.813798,
+        -0.342019,
+        -0.469846
+      ],
+      "parent": "stem_b",
+      "child": "head_b6",
+      "kind": "revolute",
+      "joint": "real",
+      "connector": "real: 3742 on a 19119 flower pin (R2); spins about the pin"
+    }
+  },
+  "reference_checks": [
+    {
+      "model": "41075-1.mpd",
+      "section": "(flattened main model)",
+      "parent": "stem_b",
+      "part": "head_b1",
+      "official_refs": [
+        "19119",
+        "3742"
+      ],
+      "position_offset_ldu": 0.001,
+      "rotation_offset": 1.8945,
+      "note": "3742 on a 19119 pin (official 41075 bouquets)"
+    }
+  ],
+  "geometry_checks": []
+}

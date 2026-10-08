@@ -1,0 +1,124 @@
+{
+  "scenario": "S15_radar",
+  "title": "Rotating radar",
+  "parts": [
+    {
+      "role": "base",
+      "id": "0",
+      "table": "plates.Plate4X4",
+      "ref": "3031",
+      "colour": 8,
+      "title": "Plate  4 x  4",
+      "library_only": false
+    },
+    {
+      "role": "pedestal0",
+      "id": "1",
+      "table": "bricks.Brick2X2",
+      "ref": "3003",
+      "colour": 71,
+      "title": "Brick  2 x  2",
+      "library_only": false
+    },
+    {
+      "role": "pedestal1",
+      "id": "2",
+      "table": "bricks.Brick2X2",
+      "ref": "3003",
+      "colour": 71,
+      "title": "Brick  2 x  2",
+      "library_only": false
+    },
+    {
+      "role": "turntable_base",
+      "id": "3",
+      "table": "turntables.Turntable2X2PlateBase",
+      "ref": "3680",
+      "colour": 8,
+      "title": "Turntable  2 x  2 Plate Base",
+      "library_only": false
+    },
+    {
+      "role": "turntable_top",
+      "id": "4",
+      "table": "turntables.Turntable2X2PlateTop",
+      "ref": "3679",
+      "colour": 71,
+      "title": "Turntable  2 x  2 Plate Top",
+      "library_only": false
+    },
+    {
+      "role": "mount",
+      "id": "5",
+      "table": "plates.Plate2X2WithGrooveWith1CentreStud",
+      "ref": "87580",
+      "colour": 71,
+      "title": "Plate  2 x  2 with Groove with 1 Centre Stud",
+      "library_only": false
+    },
+    {
+      "role": "mast0",
+      "id": "6",
+      "table": "bricks.Brick1X1",
+      "ref": "3005",
+      "colour": 15,
+      "title": "Brick  1 x  1",
+      "library_only": false
+    },
+    {
+      "role": "mast1",
+      "id": "7",
+      "table": "bricks.Brick1X1",
+      "ref": "3005",
+      "colour": 15,
+      "title": "Brick  1 x  1",
+      "library_only": false
+    },
+    {
+      "role": "head",
+      "id": "8",
+      "table": "bricks.Brick1X1WithStudOn1Side",
+      "ref": "87087",
+      "colour": 15,
+      "title": "Brick  1 x  1 with Stud on 1 Side",
+      "library_only": false
+    },
+    {
+      "role": "dish",
+      "id": "9",
+      "table": "dishes.Dish4X4Inverted",
+      "ref": "3960",
+      "colour": 15,
+      "title": "Dish  4 x  4 Inverted",
+      "library_only": false
+    },
+    {
+      "role": "beacon",
+      "id": "10",
+      "table": "plates.Plate1X1Round",
+      "ref": "6141",
+      "colour": 4,
+      "title": "Plate  1 x  1 Round",
+      "library_only": false
+    }
+  ],
+  "joints": {
+    "spin": {
+      "origin": [
+        0.0,
+        -50.0,
+        0.0
+      ],
+      "axis": [
+        0.0,
+        -1.0,
+        0.0
+      ],
+      "parent": "turntable_base",
+      "child": "turntable_top",
+      "kind": "revolute",
+      "connector": "3680 pin_hole snap_cyl@L9:I0 receives 3679 pin snap_cyl@L8:I0"
+    }
+  },
+  "reference_checks": []
+}

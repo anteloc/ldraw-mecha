@@ -72,9 +72,12 @@ def transfer_test(spec, entries, tolerance):
 def main():
     ap = argparse.ArgumentParser()
     ap.add_argument("--report", required=True)
+    ap.add_argument("--bundle", type=Path, default=wc.OUT,
+                    help="Read plans/clips from this bundle, e.g. examples/reference/plants")
     ap.add_argument("--tolerance", type=float, default=0.002)
     ap.add_argument("--transfer", default="P02_swordleaf_palm.storm:P13_fern")
     a = ap.parse_args(sys.argv[sys.argv.index("--") + 1:])
+    wc.OUT = a.bundle.resolve()
     library = wc.library()
     scene = bpy.data.scenes["Wind"]
     scene.frame_set(1)

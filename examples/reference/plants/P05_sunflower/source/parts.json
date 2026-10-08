@@ -1,0 +1,125 @@
+{
+  "case": "P05_sunflower",
+  "title": "Sunflower",
+  "parts": [
+    {
+      "role": "base",
+      "id": "0",
+      "table": "plates.Plate6X6",
+      "ref": "3958",
+      "colour": 2,
+      "title": "Plate  6 x  6",
+      "library_only": false
+    },
+    {
+      "role": "stem0",
+      "id": "1",
+      "table": "bricks.Brick1X1RoundWithHollowStud",
+      "ref": "3062b",
+      "colour": 2,
+      "title": "Brick  1 x  1 Round with Hollow Stud",
+      "library_only": false
+    },
+    {
+      "role": "stem1",
+      "id": "2",
+      "table": "bricks.Brick1X1RoundWithHollowStud",
+      "ref": "3062b",
+      "colour": 2,
+      "title": "Brick  1 x  1 Round with Hollow Stud",
+      "library_only": false
+    },
+    {
+      "role": "stem2",
+      "id": "3",
+      "table": "bricks.Brick1X1RoundWithHollowStud",
+      "ref": "3062b",
+      "colour": 2,
+      "title": "Brick  1 x  1 Round with Hollow Stud",
+      "library_only": false
+    },
+    {
+      "role": "stem3",
+      "id": "4",
+      "table": "bricks.Brick1X1RoundWithHollowStud",
+      "ref": "3062b",
+      "colour": 2,
+      "title": "Brick  1 x  1 Round with Hollow Stud",
+      "library_only": false
+    },
+    {
+      "role": "stem4",
+      "id": "5",
+      "table": "bricks.Brick1X1RoundWithHollowStud",
+      "ref": "3062b",
+      "colour": 2,
+      "title": "Brick  1 x  1 Round with Hollow Stud",
+      "library_only": false
+    },
+    {
+      "role": "pivot",
+      "id": "6",
+      "table": "plates.Plate1X1WithClipHorizontal_ThickC_Clip_",
+      "ref": "61252",
+      "colour": 2,
+      "title": "Plate  1 x  1 with Clip Horizontal (Thick C-Clip)",
+      "library_only": false
+    },
+    {
+      "role": "head_plate",
+      "id": "7",
+      "table": "plates.Plate1X2WithHandle",
+      "ref": "2540",
+      "colour": 2,
+      "title": "Plate  1 x  2 with Handle",
+      "library_only": false
+    },
+    {
+      "role": "head",
+      "id": "8",
+      "table": "plants.PlantFlower4X4With4RoundedPetals",
+      "ref": "35473",
+      "colour": 14,
+      "title": "Plant Flower  4 x  4 with  4 Rounded Petals",
+      "library_only": false
+    }
+  ],
+  "joints": {
+    "nod": {
+      "origin": [
+        -20.0,
+        -126.0,
+        0.0
+      ],
+      "axis": [
+        0.0,
+        0.0,
+        1.0
+      ],
+      "parent": "pivot",
+      "child": "head_plate",
+      "kind": "revolute",
+      "joint": "real",
+      "connector": "real: 2540 handle bar in the 61252 clip (stem top); the head turns about the bar"
+    },
+    "stem_lean": {
+      "origin": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "axis": [
+        0.0,
+        0.0,
+        1.0
+      ],
+      "parent": "base",
+      "child": "stem0",
+      "kind": "revolute",
+      "joint": "flex_approx",
+      "connector": "flex_approx: a brick stack cannot tilt; the tilt stands in for a long flower stalk bending. 1x1 round brick stem on the base stud"
+    }
+  },
+  "reference_checks": [],
+  "geometry_checks": []
+}

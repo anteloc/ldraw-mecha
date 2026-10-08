@@ -1,0 +1,253 @@
+{
+  "case": "P02_swordleaf_palm",
+  "title": "Swordleaf palm",
+  "parts": [
+    {
+      "role": "base",
+      "id": "0",
+      "table": "plates.Plate6X6",
+      "ref": "3958",
+      "colour": 2,
+      "title": "Plate  6 x  6",
+      "library_only": false
+    },
+    {
+      "role": "trunk0",
+      "id": "1",
+      "table": "bricks.Brick2X2RoundWithoutReinforcement",
+      "ref": "3941",
+      "colour": 70,
+      "title": "Brick  2 x  2 Round without Reinforcement",
+      "library_only": false
+    },
+    {
+      "role": "trunk1",
+      "id": "2",
+      "table": "bricks.Brick2X2RoundWithoutReinforcement",
+      "ref": "3941",
+      "colour": 70,
+      "title": "Brick  2 x  2 Round without Reinforcement",
+      "library_only": false
+    },
+    {
+      "role": "trunk2",
+      "id": "3",
+      "table": "bricks.Brick2X2RoundWithoutReinforcement",
+      "ref": "3941",
+      "colour": 70,
+      "title": "Brick  2 x  2 Round without Reinforcement",
+      "library_only": false
+    },
+    {
+      "role": "trunk3",
+      "id": "4",
+      "table": "bricks.Brick2X2RoundWithoutReinforcement",
+      "ref": "3941",
+      "colour": 70,
+      "title": "Brick  2 x  2 Round without Reinforcement",
+      "library_only": false
+    },
+    {
+      "role": "trunk4",
+      "id": "5",
+      "table": "bricks.Brick2X2RoundWithoutReinforcement",
+      "ref": "3941",
+      "colour": 70,
+      "title": "Brick  2 x  2 Round without Reinforcement",
+      "library_only": false
+    },
+    {
+      "role": "trunk5",
+      "id": "6",
+      "table": "bricks.Brick2X2RoundWithoutReinforcement",
+      "ref": "3941",
+      "colour": 70,
+      "title": "Brick  2 x  2 Round without Reinforcement",
+      "library_only": false
+    },
+    {
+      "role": "hub_x_pos",
+      "id": "7",
+      "table": "plates.Plate1X2WithHandleOnEnd",
+      "ref": "60478",
+      "colour": 70,
+      "title": "Plate  1 x  2 with Handle on End",
+      "library_only": false
+    },
+    {
+      "role": "hub_x_neg",
+      "id": "8",
+      "table": "plates.Plate1X2WithHandleOnEnd",
+      "ref": "60478",
+      "colour": 70,
+      "title": "Plate  1 x  2 with Handle on End",
+      "library_only": false
+    },
+    {
+      "role": "hub_fill_a",
+      "id": "9",
+      "table": "plates.Plate1X1",
+      "ref": "3024",
+      "colour": 70,
+      "title": "Plate  1 x  1",
+      "library_only": false
+    },
+    {
+      "role": "hub_fill_b",
+      "id": "10",
+      "table": "plates.Plate1X1",
+      "ref": "3024",
+      "colour": 70,
+      "title": "Plate  1 x  1",
+      "library_only": false
+    },
+    {
+      "role": "hub_z_pos",
+      "id": "11",
+      "table": "plates.Plate1X2WithHandleOnEnd",
+      "ref": "60478",
+      "colour": 70,
+      "title": "Plate  1 x  2 with Handle on End",
+      "library_only": false
+    },
+    {
+      "role": "hub_z_neg",
+      "id": "12",
+      "table": "plates.Plate1X2WithHandleOnEnd",
+      "ref": "60478",
+      "colour": 70,
+      "title": "Plate  1 x  2 with Handle on End",
+      "library_only": false
+    },
+    {
+      "role": "frond_downwind",
+      "id": "13",
+      "table": "plants.PlantLeaves6X5SwordleafWithC_Clip",
+      "ref": "10884",
+      "colour": 27,
+      "title": "Plant Leaves  6 x  5 Swordleaf with C-Clip",
+      "library_only": false
+    },
+    {
+      "role": "frond_upwind",
+      "id": "14",
+      "table": "plants.PlantLeaves6X5SwordleafWithC_Clip",
+      "ref": "10884",
+      "colour": 27,
+      "title": "Plant Leaves  6 x  5 Swordleaf with C-Clip",
+      "library_only": false
+    },
+    {
+      "role": "frond_back",
+      "id": "15",
+      "table": "plants.PlantLeaves6X5SwordleafWithC_Clip",
+      "ref": "10884",
+      "colour": 27,
+      "title": "Plant Leaves  6 x  5 Swordleaf with C-Clip",
+      "library_only": false
+    },
+    {
+      "role": "frond_front",
+      "id": "16",
+      "table": "plants.PlantLeaves6X5SwordleafWithC_Clip",
+      "ref": "10884",
+      "colour": 27,
+      "title": "Plant Leaves  6 x  5 Swordleaf with C-Clip",
+      "library_only": false
+    }
+  ],
+  "joints": {
+    "frond_downwind": {
+      "origin": [
+        50.0,
+        -150.0,
+        -10.0
+      ],
+      "axis": [
+        0.0,
+        0.0,
+        -1.0
+      ],
+      "parent": "hub_x_pos",
+      "child": "frond_downwind",
+      "kind": "revolute",
+      "joint": "real",
+      "connector": "real: 10884 C-clip (clip5 primitive at local (0,4,30), grip axis local Y) on the 60478 handle bar; turns about the bar"
+    },
+    "frond_upwind": {
+      "origin": [
+        -50.0,
+        -150.0,
+        -10.0
+      ],
+      "axis": [
+        0.0,
+        0.0,
+        1.0
+      ],
+      "parent": "hub_x_neg",
+      "child": "frond_upwind",
+      "kind": "revolute",
+      "joint": "real",
+      "connector": "real: 10884 C-clip (clip5 primitive at local (0,4,30), grip axis local Y) on the 60478 handle bar; turns about the bar"
+    },
+    "frond_back": {
+      "origin": [
+        10.0,
+        -158.0,
+        50.0
+      ],
+      "axis": [
+        1.0,
+        0.0,
+        0.0
+      ],
+      "parent": "hub_z_pos",
+      "child": "frond_back",
+      "kind": "revolute",
+      "joint": "real",
+      "connector": "real: 10884 C-clip (clip5 primitive at local (0,4,30), grip axis local Y) on the 60478 handle bar; turns about the bar"
+    },
+    "frond_front": {
+      "origin": [
+        10.0,
+        -158.0,
+        -50.0
+      ],
+      "axis": [
+        -1.0,
+        0.0,
+        0.0
+      ],
+      "parent": "hub_z_neg",
+      "child": "frond_front",
+      "kind": "revolute",
+      "joint": "real",
+      "connector": "real: 10884 C-clip (clip5 primitive at local (0,4,30), grip axis local Y) on the 60478 handle bar; turns about the bar"
+    }
+  },
+  "reference_checks": [
+    {
+      "model": "10297-1.mpd",
+      "section": "10297 - palmtree.ldr",
+      "parent": "23443 handle",
+      "part": "10884 clip",
+      "official_refs": [
+        "23443",
+        "10884"
+      ],
+      "position_offset_ldu": 0.014,
+      "rotation_offset": 0.0,
+      "note": "Worst distance of the 10884 grip centre (clip5 origin) from the handle bar line over the five fronds of the official palm; grip axis parallel to the bar."
+    }
+  ],
+  "geometry_checks": [
+    {
+      "name": "clip5_grip_vs_10297_handles",
+      "value": 0.0141,
+      "limit": 0.6,
+      "passed": true,
+      "note": "10884 grip centre to the 23443 handle bar line in 10297"
+    }
+  ]
+}

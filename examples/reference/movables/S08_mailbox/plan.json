@@ -1,0 +1,644 @@
+{
+  "version": 1,
+  "name": "movable_08_mailbox",
+  "status": "ready",
+  "source": {
+    "version": 1,
+    "path": "/Users/captain/workspaces/workspace-ai/ldraw-mecha/output/movables/S08_mailbox/source/scenario.mpd",
+    "sha256": "5dd210e43770c872fb04b06ce0b47b26c3f270dcccc15f7741f2a94c547b7be6",
+    "section": "s08_mailbox.ldr",
+    "description": "Movable element scenario S08_mailbox Mailbox",
+    "author": "ldraw-mecha scripts/build_movables.py",
+    "dependencies": {
+      "/Users/captain/workspaces/workspace-ai/ldraw-mecha/output/movables/S08_mailbox/source/scenario.mpd": "5dd210e43770c872fb04b06ce0b47b26c3f270dcccc15f7741f2a94c547b7be6"
+    },
+    "nodes": [
+      {
+        "id": "0",
+        "parent": "root",
+        "ref": "3031.dat",
+        "kind": "part",
+        "embedded": false,
+        "section": "s08_mailbox.ldr",
+        "index": 0,
+        "line": 8,
+        "colour": "2",
+        "effective_colour": "2",
+        "local": [
+          [
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            1.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            1.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "world": [
+          [
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            1.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            1.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "description": "Plate  4 x  4"
+      },
+      {
+        "id": "1",
+        "parent": "root",
+        "ref": "3941.dat",
+        "kind": "part",
+        "embedded": false,
+        "section": "s08_mailbox.ldr",
+        "index": 1,
+        "line": 10,
+        "colour": "8",
+        "effective_colour": "8",
+        "local": [
+          [
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            1.0,
+            0.0,
+            -24.0
+          ],
+          [
+            0.0,
+            0.0,
+            1.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "world": [
+          [
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            1.0,
+            0.0,
+            -24.0
+          ],
+          [
+            0.0,
+            0.0,
+            1.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "description": "Brick  2 x  2 Round without Reinforcement"
+      },
+      {
+        "id": "2",
+        "parent": "root",
+        "ref": "3941.dat",
+        "kind": "part",
+        "embedded": false,
+        "section": "s08_mailbox.ldr",
+        "index": 2,
+        "line": 12,
+        "colour": "8",
+        "effective_colour": "8",
+        "local": [
+          [
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            1.0,
+            0.0,
+            -48.0
+          ],
+          [
+            0.0,
+            0.0,
+            1.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "world": [
+          [
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            1.0,
+            0.0,
+            -48.0
+          ],
+          [
+            0.0,
+            0.0,
+            1.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "description": "Brick  2 x  2 Round without Reinforcement"
+      },
+      {
+        "id": "3",
+        "parent": "root",
+        "ref": "3941.dat",
+        "kind": "part",
+        "embedded": false,
+        "section": "s08_mailbox.ldr",
+        "index": 3,
+        "line": 14,
+        "colour": "8",
+        "effective_colour": "8",
+        "local": [
+          [
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            1.0,
+            0.0,
+            -72.0
+          ],
+          [
+            0.0,
+            0.0,
+            1.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "world": [
+          [
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            1.0,
+            0.0,
+            -72.0
+          ],
+          [
+            0.0,
+            0.0,
+            1.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "description": "Brick  2 x  2 Round without Reinforcement"
+      },
+      {
+        "id": "4",
+        "parent": "root",
+        "ref": "3022.dat",
+        "kind": "part",
+        "embedded": false,
+        "section": "s08_mailbox.ldr",
+        "index": 4,
+        "line": 16,
+        "colour": "8",
+        "effective_colour": "8",
+        "local": [
+          [
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            1.0,
+            0.0,
+            -80.0
+          ],
+          [
+            0.0,
+            0.0,
+            1.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "world": [
+          [
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            1.0,
+            0.0,
+            -80.0
+          ],
+          [
+            0.0,
+            0.0,
+            1.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "description": "Plate  2 x  2"
+      },
+      {
+        "id": "5",
+        "parent": "root",
+        "ref": "4345a.dat",
+        "kind": "part",
+        "embedded": false,
+        "section": "s08_mailbox.ldr",
+        "index": 5,
+        "line": 18,
+        "colour": "4",
+        "effective_colour": "4",
+        "local": [
+          [
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            1.0,
+            0.0,
+            -128.0
+          ],
+          [
+            0.0,
+            0.0,
+            1.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "world": [
+          [
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            1.0,
+            0.0,
+            -128.0
+          ],
+          [
+            0.0,
+            0.0,
+            1.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "description": "Container Box  2 x  2 x  2 with Solid Studs"
+      },
+      {
+        "id": "6",
+        "parent": "root",
+        "ref": "4346.dat",
+        "kind": "part",
+        "embedded": false,
+        "section": "s08_mailbox.ldr",
+        "index": 6,
+        "line": 20,
+        "colour": "4",
+        "effective_colour": "4",
+        "local": [
+          [
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            1.0,
+            0.0,
+            -128.0
+          ],
+          [
+            0.0,
+            0.0,
+            1.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "world": [
+          [
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            1.0,
+            0.0,
+            -128.0
+          ],
+          [
+            0.0,
+            0.0,
+            1.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "description": "Container Box  2 x  2 x  2 Door with Slot"
+      }
+    ],
+    "diagnostics": [],
+    "coordinate_space": "selected section, LDU, -Y up"
+  },
+  "controls": {
+    "door": {
+      "default": 0,
+      "min": 0.0,
+      "max": 1.6,
+      "unit": "radian",
+      "description": "Front door about its bottom hinge; + drops it open forward and down"
+    }
+  },
+  "signals": {
+    "door_angle": {
+      "expression": "a",
+      "variables": {
+        "a": "control:door"
+      }
+    }
+  },
+  "bodies": {
+    "door": {
+      "instances": [
+        "6"
+      ],
+      "kind": "revolute",
+      "origin": [
+        0.0,
+        -84.0,
+        -26.0
+      ],
+      "axis": [
+        1.0,
+        0.0,
+        0.0
+      ],
+      "signal": "door_angle"
+    }
+  },
+  "anchors": {},
+  "checks": [],
+  "notes": [
+    "Mock scenario S08_mailbox (Mailbox) written by scripts/build_movables.py: Container box 2x2x2 4345a with slot door 4346 on a post. Parts picked by constant name from data/categories/parts; frame LDU, -Y up, the scenario front faces -Z, ground (base top) at y = 0.",
+    "Joints: door: revolute about [1.0, 0.0, 0.0] through [0.0, -84.0, -26.0] (4345a hinge s/4345s01@R0/snap_fgr@L8:I0 receives 4346 hinge s/4346s01@R0/snap_fgr@L8:I0).",
+    "Sign convention by meaning (checked with the evaluator, kinematics.json): door + = Front door about its bottom hinge; + drops it open forward and down.",
+    "Ranges are catalog choices, narrowed by sampled clearance against the mock context (scripts/blender/check_movables_clearance.py); they are not measured mechanical stops.",
+    "Kinematic and transform checks do not prove collision-free or physically feasible motion."
+  ],
+  "mechanisms": {
+    "door": {
+      "label": "Mailbox: door",
+      "parts": [
+        "5",
+        "6"
+      ],
+      "bodies": [
+        "door"
+      ],
+      "inputs": [
+        "control:door"
+      ],
+      "outputs": [
+        "body:door"
+      ],
+      "disposition": "planned",
+      "notes": [
+        "revolute joint: 4345a hinge s/4345s01@R0/snap_fgr@L8:I0 receives 4346 hinge s/4346s01@R0/snap_fgr@L8:I0"
+      ],
+      "review": "Measured joint declared in this plan (scripts/build_movables.py)."
+    },
+    "context": {
+      "label": "Mailbox: mounting and mock context (static)",
+      "parts": [
+        "0",
+        "1",
+        "2",
+        "3",
+        "4",
+        "5"
+      ],
+      "bodies": [],
+      "inputs": [],
+      "outputs": [],
+      "disposition": "static",
+      "notes": [],
+      "review": "Mock context built for the catalog (walls, floor, chassis, mounts); it does not move in this scenario."
+    }
+  },
+  "connections": {
+    "joint_door": {
+      "a": "5",
+      "b": "6",
+      "kind": "revolute",
+      "status": "reviewed",
+      "evidence": "4345a hinge s/4345s01@R0/snap_fgr@L8:I0 receives 4346 hinge s/4346s01@R0/snap_fgr@L8:I0. pyldraw3 contact confirmed (hinge/hinge).",
+      "measurements": {
+        "origin": [
+          0.0,
+          -84.0,
+          -26.0
+        ],
+        "axis": [
+          1.0,
+          0.0,
+          0.0
+        ]
+      },
+      "review": "Joint frame measured as stated (scripts/build_movables.py); see source/parts.json reference_checks for official placements."
+    }
+  },
+  "discovery": {
+    "grouping": "Provisional connected mechanical candidates; agent may split/merge views",
+    "unclassified_parts": [
+      "0",
+      "1",
+      "2",
+      "3",
+      "4"
+    ],
+    "embedded_parts": [],
+    "contact_limit": 300,
+    "rigid_groups": "not inferred",
+    "inputs_outputs": "not inferred",
+    "mechanical_parts": [
+      "6"
+    ],
+    "warnings": [
+      {
+        "code": "coaxial_not_run",
+        "message": "not run: 0 shaft/gear candidates outside 2..100; select a section"
+      }
+    ],
+    "surface_contacts": "Not detected: cams, levers bearing on beams, friction and stops need geometric/visual review even when connector contacts are absent",
+    "unsupported_gears": [],
+    "gear_placements": {
+      "policy": "Nearest orthogonal analysis frame within rounding_limit; source translations and handedness preserved",
+      "rounding_limit": 0.002,
+      "counts": {},
+      "affected": []
+    },
+    "contacts": {
+      "complete": true,
+      "tested_parts": 7,
+      "diagnostics": [],
+      "summary": {
+        "tested_parts": 7,
+        "contacts": 3,
+        "contacted_parts": 5,
+        "by_kind": {
+          "axle/axle_hole": 2,
+          "hinge/hinge": 1
+        },
+        "axles": {
+          "selection": "Catalog descriptions beginning Technic Axle followed by a numeric length; excludes axle pins, joiners and axle-hole supports",
+          "total": 0,
+          "with_axle_hole_contact": 0,
+          "without_axle_hole_contact": []
+        }
+      },
+      "placements": {
+        "policy": "Nearest orthogonal analysis frame within rounding_limit; source translations and handedness preserved",
+        "rounding_limit": 0.002,
+        "counts": {
+          "unchanged": 7
+        },
+        "affected": []
+      }
+    },
+    "coaxial_selection": "Catalog axle, gear, worm and engine crankshaft parts; positive line evidence within 80 LDU axial separation",
+    "coaxial": "not run: 0 shaft/gear candidates outside 2..100; select a section",
+    "isolated_mechanical_parts": []
+  }
+}

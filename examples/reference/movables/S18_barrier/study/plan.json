@@ -1,0 +1,925 @@
+{
+  "version": 1,
+  "name": "model",
+  "status": "draft",
+  "source": {
+    "version": 1,
+    "path": "/Users/captain/workspaces/workspace-ai/ldraw-mecha/output/movables/S18_barrier/source/scenario.mpd",
+    "sha256": "a84e4333e5b3fd58ba8634ac17c463acd834cd184b555c89395676c2e5714abe",
+    "section": "s18_barrier.ldr",
+    "description": "Movable element scenario S18_barrier Parking barrier",
+    "author": "ldraw-mecha scripts/build_movables.py",
+    "dependencies": {
+      "/Users/captain/workspaces/workspace-ai/ldraw-mecha/output/movables/S18_barrier/source/scenario.mpd": "a84e4333e5b3fd58ba8634ac17c463acd834cd184b555c89395676c2e5714abe"
+    },
+    "nodes": [
+      {
+        "id": "0",
+        "parent": "root",
+        "ref": "3029.dat",
+        "kind": "part",
+        "embedded": false,
+        "section": "s18_barrier.ldr",
+        "index": 0,
+        "line": 8,
+        "colour": "8",
+        "effective_colour": "8",
+        "local": [
+          [
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            1.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            1.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "world": [
+          [
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            1.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            1.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "description": "Plate  4 x 12"
+      },
+      {
+        "id": "1",
+        "parent": "root",
+        "ref": "3003.dat",
+        "kind": "part",
+        "embedded": false,
+        "section": "s18_barrier.ldr",
+        "index": 1,
+        "line": 10,
+        "colour": "15",
+        "effective_colour": "15",
+        "local": [
+          [
+            1.0,
+            0.0,
+            0.0,
+            -100.0
+          ],
+          [
+            0.0,
+            1.0,
+            0.0,
+            -24.0
+          ],
+          [
+            0.0,
+            0.0,
+            1.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "world": [
+          [
+            1.0,
+            0.0,
+            0.0,
+            -100.0
+          ],
+          [
+            0.0,
+            1.0,
+            0.0,
+            -24.0
+          ],
+          [
+            0.0,
+            0.0,
+            1.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "description": "Brick  2 x  2"
+      },
+      {
+        "id": "2",
+        "parent": "root",
+        "ref": "3003.dat",
+        "kind": "part",
+        "embedded": false,
+        "section": "s18_barrier.ldr",
+        "index": 2,
+        "line": 12,
+        "colour": "15",
+        "effective_colour": "15",
+        "local": [
+          [
+            1.0,
+            0.0,
+            0.0,
+            -100.0
+          ],
+          [
+            0.0,
+            1.0,
+            0.0,
+            -48.0
+          ],
+          [
+            0.0,
+            0.0,
+            1.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "world": [
+          [
+            1.0,
+            0.0,
+            0.0,
+            -100.0
+          ],
+          [
+            0.0,
+            1.0,
+            0.0,
+            -48.0
+          ],
+          [
+            0.0,
+            0.0,
+            1.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "description": "Brick  2 x  2"
+      },
+      {
+        "id": "3",
+        "parent": "root",
+        "ref": "3937.dat",
+        "kind": "part",
+        "embedded": false,
+        "section": "s18_barrier.ldr",
+        "index": 3,
+        "line": 14,
+        "colour": "8",
+        "effective_colour": "8",
+        "local": [
+          [
+            0.0,
+            0.0,
+            1.0,
+            -100.0
+          ],
+          [
+            0.0,
+            1.0,
+            0.0,
+            -72.0
+          ],
+          [
+            -1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "world": [
+          [
+            0.0,
+            0.0,
+            1.0,
+            -100.0
+          ],
+          [
+            0.0,
+            1.0,
+            0.0,
+            -72.0
+          ],
+          [
+            -1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "description": "Hinge  1 x  2 Base"
+      },
+      {
+        "id": "4",
+        "parent": "root",
+        "ref": "3938.dat",
+        "kind": "part",
+        "embedded": false,
+        "section": "s18_barrier.ldr",
+        "index": 4,
+        "line": 16,
+        "colour": "8",
+        "effective_colour": "8",
+        "local": [
+          [
+            0.0,
+            0.0,
+            1.0,
+            -100.0
+          ],
+          [
+            0.0,
+            1.0,
+            0.0,
+            -72.0
+          ],
+          [
+            -1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "world": [
+          [
+            0.0,
+            0.0,
+            1.0,
+            -100.0
+          ],
+          [
+            0.0,
+            1.0,
+            0.0,
+            -72.0
+          ],
+          [
+            -1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "description": "Hinge  1 x  2 Top"
+      },
+      {
+        "id": "5",
+        "parent": "root",
+        "ref": "3832.dat",
+        "kind": "part",
+        "embedded": false,
+        "section": "s18_barrier.ldr",
+        "index": 5,
+        "line": 18,
+        "colour": "15",
+        "effective_colour": "15",
+        "local": [
+          [
+            1.0,
+            0.0,
+            0.0,
+            -10.0
+          ],
+          [
+            0.0,
+            1.0,
+            0.0,
+            -80.0
+          ],
+          [
+            0.0,
+            0.0,
+            1.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "world": [
+          [
+            1.0,
+            0.0,
+            0.0,
+            -10.0
+          ],
+          [
+            0.0,
+            1.0,
+            0.0,
+            -80.0
+          ],
+          [
+            0.0,
+            0.0,
+            1.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "description": "Plate  2 x 10"
+      },
+      {
+        "id": "6",
+        "parent": "root",
+        "ref": "3068b.dat",
+        "kind": "part",
+        "embedded": false,
+        "section": "s18_barrier.ldr",
+        "index": 6,
+        "line": 20,
+        "colour": "4",
+        "effective_colour": "4",
+        "local": [
+          [
+            1.0,
+            0.0,
+            0.0,
+            -50.0
+          ],
+          [
+            0.0,
+            1.0,
+            0.0,
+            -88.0
+          ],
+          [
+            0.0,
+            0.0,
+            1.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "world": [
+          [
+            1.0,
+            0.0,
+            0.0,
+            -50.0
+          ],
+          [
+            0.0,
+            1.0,
+            0.0,
+            -88.0
+          ],
+          [
+            0.0,
+            0.0,
+            1.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "description": "Tile  2 x  2 with Groove"
+      },
+      {
+        "id": "7",
+        "parent": "root",
+        "ref": "3068b.dat",
+        "kind": "part",
+        "embedded": false,
+        "section": "s18_barrier.ldr",
+        "index": 7,
+        "line": 22,
+        "colour": "4",
+        "effective_colour": "4",
+        "local": [
+          [
+            1.0,
+            0.0,
+            0.0,
+            10.0
+          ],
+          [
+            0.0,
+            1.0,
+            0.0,
+            -88.0
+          ],
+          [
+            0.0,
+            0.0,
+            1.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "world": [
+          [
+            1.0,
+            0.0,
+            0.0,
+            10.0
+          ],
+          [
+            0.0,
+            1.0,
+            0.0,
+            -88.0
+          ],
+          [
+            0.0,
+            0.0,
+            1.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "description": "Tile  2 x  2 with Groove"
+      },
+      {
+        "id": "8",
+        "parent": "root",
+        "ref": "3068b.dat",
+        "kind": "part",
+        "embedded": false,
+        "section": "s18_barrier.ldr",
+        "index": 8,
+        "line": 24,
+        "colour": "4",
+        "effective_colour": "4",
+        "local": [
+          [
+            1.0,
+            0.0,
+            0.0,
+            70.0
+          ],
+          [
+            0.0,
+            1.0,
+            0.0,
+            -88.0
+          ],
+          [
+            0.0,
+            0.0,
+            1.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "world": [
+          [
+            1.0,
+            0.0,
+            0.0,
+            70.0
+          ],
+          [
+            0.0,
+            1.0,
+            0.0,
+            -88.0
+          ],
+          [
+            0.0,
+            0.0,
+            1.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "description": "Tile  2 x  2 with Groove"
+      },
+      {
+        "id": "9",
+        "parent": "root",
+        "ref": "3005.dat",
+        "kind": "part",
+        "embedded": false,
+        "section": "s18_barrier.ldr",
+        "index": 9,
+        "line": 26,
+        "colour": "15",
+        "effective_colour": "15",
+        "local": [
+          [
+            1.0,
+            0.0,
+            0.0,
+            70.0
+          ],
+          [
+            0.0,
+            1.0,
+            0.0,
+            -24.0
+          ],
+          [
+            0.0,
+            0.0,
+            1.0,
+            -10.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "world": [
+          [
+            1.0,
+            0.0,
+            0.0,
+            70.0
+          ],
+          [
+            0.0,
+            1.0,
+            0.0,
+            -24.0
+          ],
+          [
+            0.0,
+            0.0,
+            1.0,
+            -10.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "description": "Brick  1 x  1"
+      },
+      {
+        "id": "10",
+        "parent": "root",
+        "ref": "3005.dat",
+        "kind": "part",
+        "embedded": false,
+        "section": "s18_barrier.ldr",
+        "index": 10,
+        "line": 28,
+        "colour": "15",
+        "effective_colour": "15",
+        "local": [
+          [
+            1.0,
+            0.0,
+            0.0,
+            70.0
+          ],
+          [
+            0.0,
+            1.0,
+            0.0,
+            -48.0
+          ],
+          [
+            0.0,
+            0.0,
+            1.0,
+            -10.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "world": [
+          [
+            1.0,
+            0.0,
+            0.0,
+            70.0
+          ],
+          [
+            0.0,
+            1.0,
+            0.0,
+            -48.0
+          ],
+          [
+            0.0,
+            0.0,
+            1.0,
+            -10.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "description": "Brick  1 x  1"
+      },
+      {
+        "id": "11",
+        "parent": "root",
+        "ref": "3005.dat",
+        "kind": "part",
+        "embedded": false,
+        "section": "s18_barrier.ldr",
+        "index": 11,
+        "line": 30,
+        "colour": "15",
+        "effective_colour": "15",
+        "local": [
+          [
+            1.0,
+            0.0,
+            0.0,
+            70.0
+          ],
+          [
+            0.0,
+            1.0,
+            0.0,
+            -72.0
+          ],
+          [
+            0.0,
+            0.0,
+            1.0,
+            -10.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "world": [
+          [
+            1.0,
+            0.0,
+            0.0,
+            70.0
+          ],
+          [
+            0.0,
+            1.0,
+            0.0,
+            -72.0
+          ],
+          [
+            0.0,
+            0.0,
+            1.0,
+            -10.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "description": "Brick  1 x  1"
+      }
+    ],
+    "diagnostics": [],
+    "coordinate_space": "selected section, LDU, -Y up"
+  },
+  "controls": {},
+  "signals": {},
+  "bodies": {},
+  "anchors": {},
+  "checks": [],
+  "notes": [
+    "Assign rigid groups and measured joints before setting status to ready."
+  ],
+  "mechanisms": {
+    "m_4e07408562be": {
+      "label": "Hinge  1 x  2 Base",
+      "parts": [
+        "3",
+        "4"
+      ],
+      "bodies": [],
+      "inputs": [],
+      "outputs": [],
+      "notes": [
+        "Provisional mechanism boundary. Review connections, identify input/output and assign moving groups."
+      ]
+    }
+  },
+  "connections": {
+    "c_bf9aa84a825e5ce5": {
+      "a": "3",
+      "b": "4",
+      "kind": "revolute",
+      "status": "candidate",
+      "evidence": "pyldraw3 connector contact; mating metadata does not determine rigidity or free motion",
+      "measurements": {
+        "first_kind": "hinge",
+        "second_kind": "hinge",
+        "first_feature": "snap_fgr@L9:I0",
+        "second_feature": "snap_fgr@L8:I0",
+        "position": [
+          -100.0,
+          -62.0,
+          0.0
+        ],
+        "axis": [
+          0.0,
+          0.0,
+          -1.0
+        ],
+        "contact_status": "confirmed",
+        "residual": {
+          "distance": 0.0,
+          "axial_gap": 0.0,
+          "alignment": 1.0,
+          "roll_alignment": 1.0,
+          "entry_face_gap": null,
+          "penetration": null
+        }
+      }
+    }
+  },
+  "discovery": {
+    "grouping": "Provisional connected mechanical candidates; agent may split/merge views",
+    "unclassified_parts": [
+      "0",
+      "1",
+      "10",
+      "11",
+      "2",
+      "5",
+      "6",
+      "7",
+      "8",
+      "9"
+    ],
+    "embedded_parts": [],
+    "contact_limit": 300,
+    "rigid_groups": "not inferred",
+    "inputs_outputs": "not inferred",
+    "mechanical_parts": [
+      "3",
+      "4"
+    ],
+    "warnings": [
+      {
+        "code": "coaxial_not_run",
+        "message": "not run: 0 shaft/gear candidates outside 2..100; select a section"
+      }
+    ],
+    "surface_contacts": "Not detected: cams, levers bearing on beams, friction and stops need geometric/visual review even when connector contacts are absent",
+    "unsupported_gears": [],
+    "gear_placements": {
+      "policy": "Nearest orthogonal analysis frame within rounding_limit; source translations and handedness preserved",
+      "rounding_limit": 0.002,
+      "counts": {},
+      "affected": []
+    },
+    "contacts": {
+      "complete": true,
+      "tested_parts": 12,
+      "diagnostics": [],
+      "summary": {
+        "tested_parts": 12,
+        "contacts": 9,
+        "contacted_parts": 5,
+        "by_kind": {
+          "stud/stud_receptacle": 8,
+          "hinge/hinge": 1
+        },
+        "axles": {
+          "selection": "Catalog descriptions beginning Technic Axle followed by a numeric length; excludes axle pins, joiners and axle-hole supports",
+          "total": 0,
+          "with_axle_hole_contact": 0,
+          "without_axle_hole_contact": []
+        }
+      },
+      "placements": {
+        "policy": "Nearest orthogonal analysis frame within rounding_limit; source translations and handedness preserved",
+        "rounding_limit": 0.002,
+        "counts": {
+          "unchanged": 12
+        },
+        "affected": []
+      }
+    },
+    "coaxial_selection": "Catalog axle, gear, worm and engine crankshaft parts; positive line evidence within 80 LDU axial separation",
+    "coaxial": "not run: 0 shaft/gear candidates outside 2..100; select a section",
+    "isolated_mechanical_parts": []
+  }
+}

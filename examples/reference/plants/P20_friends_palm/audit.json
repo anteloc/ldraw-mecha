@@ -1,0 +1,69 @@
+{
+  "summary": {
+    "static": 1,
+    "planned": 2
+  },
+  "review_complete": true,
+  "unresolved": [],
+  "deferred": [],
+  "unaccounted_mechanical_parts": [],
+  "mechanisms": [
+    {
+      "id": "context",
+      "label": "Palm crowns on an axle: base and mounts (static)",
+      "disposition": "static",
+      "review": "Base, trunk and mounts built for the catalog; they do not move in this case.",
+      "parts": 2,
+      "controlled_parts": [],
+      "parts_without_control": [
+        "0",
+        "1"
+      ],
+      "controls": []
+    },
+    {
+      "id": "crown_1",
+      "label": "Palm crowns on an axle: crown 1",
+      "disposition": "planned",
+      "review": "Joint declared in this plan (scripts/build_plants.py); driven by wind clips.",
+      "parts": 2,
+      "controlled_parts": [
+        "2"
+      ],
+      "parts_without_control": [
+        "1"
+      ],
+      "controls": [
+        "crown_1"
+      ]
+    },
+    {
+      "id": "crown_2",
+      "label": "Palm crowns on an axle: crown 2",
+      "disposition": "planned",
+      "review": "Joint declared in this plan (scripts/build_plants.py); driven by wind clips.",
+      "parts": 2,
+      "controlled_parts": [
+        "2",
+        "3"
+      ],
+      "parts_without_control": [],
+      "controls": [
+        "crown_1",
+        "crown_2"
+      ]
+    }
+  ],
+  "warnings": [
+    {
+      "code": "incomplete_inspection",
+      "message": "pyldraw3 inspection is incomplete; inspect its diagnostics."
+    },
+    {
+      "code": "coaxial_not_run",
+      "message": "not run: 0 shaft/gear candidates outside 2..100; select a section"
+    }
+  ],
+  "coverage": "Bookkeeping of declared scope only. Supports may correctly lack controls. Planned, static and deferred dispositions require review notes; none certify discovery completeness, physical motion or clearance.",
+  "passed": true
+}

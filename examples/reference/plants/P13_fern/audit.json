@@ -1,0 +1,103 @@
+{
+  "summary": {
+    "static": 1,
+    "planned": 4
+  },
+  "review_complete": true,
+  "unresolved": [],
+  "deferred": [],
+  "unaccounted_mechanical_parts": [],
+  "mechanisms": [
+    {
+      "id": "context",
+      "label": "Fern bush: base and mounts (static)",
+      "disposition": "static",
+      "review": "Base, trunk and mounts built for the catalog; they do not move in this case.",
+      "parts": 8,
+      "controlled_parts": [],
+      "parts_without_control": [
+        "0",
+        "1",
+        "2",
+        "3",
+        "4",
+        "5",
+        "6",
+        "7"
+      ],
+      "controls": []
+    },
+    {
+      "id": "frond_back",
+      "label": "Fern bush: frond back",
+      "disposition": "planned",
+      "review": "Joint declared in this plan (scripts/build_plants.py); driven by wind clips.",
+      "parts": 2,
+      "controlled_parts": [
+        "10"
+      ],
+      "parts_without_control": [
+        "6"
+      ],
+      "controls": [
+        "frond_back"
+      ]
+    },
+    {
+      "id": "frond_downwind",
+      "label": "Fern bush: frond downwind",
+      "disposition": "planned",
+      "review": "Joint declared in this plan (scripts/build_plants.py); driven by wind clips.",
+      "parts": 2,
+      "controlled_parts": [
+        "8"
+      ],
+      "parts_without_control": [
+        "2"
+      ],
+      "controls": [
+        "frond_downwind"
+      ]
+    },
+    {
+      "id": "frond_front",
+      "label": "Fern bush: frond front",
+      "disposition": "planned",
+      "review": "Joint declared in this plan (scripts/build_plants.py); driven by wind clips.",
+      "parts": 2,
+      "controlled_parts": [
+        "11"
+      ],
+      "parts_without_control": [
+        "7"
+      ],
+      "controls": [
+        "frond_front"
+      ]
+    },
+    {
+      "id": "frond_upwind",
+      "label": "Fern bush: frond upwind",
+      "disposition": "planned",
+      "review": "Joint declared in this plan (scripts/build_plants.py); driven by wind clips.",
+      "parts": 2,
+      "controlled_parts": [
+        "9"
+      ],
+      "parts_without_control": [
+        "3"
+      ],
+      "controls": [
+        "frond_upwind"
+      ]
+    }
+  ],
+  "warnings": [
+    {
+      "code": "coaxial_not_run",
+      "message": "not run: 0 shaft/gear candidates outside 2..100; select a section"
+    }
+  ],
+  "coverage": "Bookkeeping of declared scope only. Supports may correctly lack controls. Planned, static and deferred dispositions require review notes; none certify discovery completeness, physical motion or clearance.",
+  "passed": true
+}

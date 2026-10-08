@@ -1,0 +1,119 @@
+{
+  "figures": {
+    "MF01_police": {
+      "sweep_clear": false,
+      "clip_poses_clear": true,
+      "clip_poses_without_deep_crossings": true,
+      "clips_with_crossings": {},
+      "clips_with_deep_crossings": {}
+    },
+    "MF02_spaceman": {
+      "sweep_clear": false,
+      "clip_poses_clear": false,
+      "clip_poses_without_deep_crossings": false,
+      "clips_with_crossings": {
+        "MF02_spaceman.wave": [
+          "head-arm_r",
+          "head-hand_r",
+          "headgear0-arm_r",
+          "headgear0-hand_r"
+        ]
+      },
+      "clips_with_deep_crossings": {
+        "MF02_spaceman.wave": [
+          "head-hand_r",
+          "headgear0-arm_r",
+          "headgear0-hand_r"
+        ]
+      }
+    },
+    "MF03_knight": {
+      "sweep_clear": false,
+      "clip_poses_clear": true,
+      "clip_poses_without_deep_crossings": true,
+      "clips_with_crossings": {},
+      "clips_with_deep_crossings": {}
+    },
+    "MF04_builder": {
+      "sweep_clear": false,
+      "clip_poses_clear": true,
+      "clip_poses_without_deep_crossings": true,
+      "clips_with_crossings": {},
+      "clips_with_deep_crossings": {}
+    },
+    "MF05_chef": {
+      "sweep_clear": false,
+      "clip_poses_clear": true,
+      "clip_poses_without_deep_crossings": true,
+      "clips_with_crossings": {},
+      "clips_with_deep_crossings": {}
+    },
+    "MF06_pirate": {
+      "sweep_clear": false,
+      "clip_poses_clear": true,
+      "clip_poses_without_deep_crossings": true,
+      "clips_with_crossings": {},
+      "clips_with_deep_crossings": {}
+    },
+    "MF07_firefighter": {
+      "sweep_clear": false,
+      "clip_poses_clear": true,
+      "clip_poses_without_deep_crossings": true,
+      "clips_with_crossings": {},
+      "clips_with_deep_crossings": {}
+    },
+    "MF08_athlete": {
+      "sweep_clear": true,
+      "clip_poses_clear": false,
+      "clip_poses_without_deep_crossings": false,
+      "clips_with_crossings": {
+        "MF08_athlete.high_jump": [
+          "head-hand_l",
+          "head-hand_r",
+          "headgear0-arm_l",
+          "headgear0-arm_r",
+          "headgear0-hand_l",
+          "headgear0-hand_r"
+        ]
+      },
+      "clips_with_deep_crossings": {
+        "MF08_athlete.high_jump": [
+          "head-hand_l",
+          "head-hand_r",
+          "headgear0-arm_l",
+          "headgear0-arm_r",
+          "headgear0-hand_l",
+          "headgear0-hand_r"
+        ]
+      }
+    },
+    "MF09_wizard": {
+      "sweep_clear": false,
+      "clip_poses_clear": true,
+      "clip_poses_without_deep_crossings": true,
+      "clips_with_crossings": {},
+      "clips_with_deep_crossings": {}
+    },
+    "MF10_diver": {
+      "sweep_clear": true,
+      "clip_poses_clear": false,
+      "clip_poses_without_deep_crossings": false,
+      "clips_with_crossings": {
+        "MF10_diver.swim_crawl": [
+          "head-arm_l",
+          "head-arm_r",
+          "head-hand_l",
+          "head-hand_r"
+        ]
+      },
+      "clips_with_deep_crossings": {
+        "MF10_diver.swim_crawl": [
+          "head-hand_l",
+          "head-hand_r"
+        ]
+      }
+    }
+  },
+  "every": 6,
+  "all_clips": false
+}

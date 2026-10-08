@@ -1,0 +1,117 @@
+{
+ "states": [
+  {
+   "direction": 1.0,
+   "range": -1.0,
+   "gear": 1,
+   "engine_per_wheel": -2.3333333333333317,
+   "worst_mesh_error": 3.0531133177191805e-16
+  },
+  {
+   "direction": 1.0,
+   "range": -1.0,
+   "gear": 2,
+   "engine_per_wheel": -1.4000000000000012,
+   "worst_mesh_error": 1.3357370765021415e-16
+  },
+  {
+   "direction": 1.0,
+   "range": -1.0,
+   "gear": 3,
+   "engine_per_wheel": -0.7777777777777772,
+   "worst_mesh_error": 1.0061396160665481e-16
+  },
+  {
+   "direction": 1.0,
+   "range": -1.0,
+   "gear": 4,
+   "engine_per_wheel": -0.466666666666668,
+   "worst_mesh_error": 1.0061396160665481e-16
+  },
+  {
+   "direction": 1.0,
+   "range": 1.0,
+   "gear": 1,
+   "engine_per_wheel": -1.4933333333333354,
+   "worst_mesh_error": 1.0061396160665481e-16
+  },
+  {
+   "direction": 1.0,
+   "range": 1.0,
+   "gear": 2,
+   "engine_per_wheel": -0.8960000000000024,
+   "worst_mesh_error": 1.942890293094024e-16
+  },
+  {
+   "direction": 1.0,
+   "range": 1.0,
+   "gear": 3,
+   "engine_per_wheel": -0.49777777777777754,
+   "worst_mesh_error": 1.0061396160665481e-16
+  },
+  {
+   "direction": 1.0,
+   "range": 1.0,
+   "gear": 4,
+   "engine_per_wheel": -0.2986666666666665,
+   "worst_mesh_error": 1.0061396160665481e-16
+  },
+  {
+   "direction": -1.0,
+   "range": -1.0,
+   "gear": 1,
+   "engine_per_wheel": 0.2986666666666665,
+   "worst_mesh_error": 1.0061396160665481e-16
+  },
+  {
+   "direction": -1.0,
+   "range": -1.0,
+   "gear": 2,
+   "engine_per_wheel": 0.2986666666666665,
+   "worst_mesh_error": 1.0061396160665481e-16
+  },
+  {
+   "direction": -1.0,
+   "range": -1.0,
+   "gear": 3,
+   "engine_per_wheel": 0.2986666666666665,
+   "worst_mesh_error": 1.0061396160665481e-16
+  },
+  {
+   "direction": -1.0,
+   "range": -1.0,
+   "gear": 4,
+   "engine_per_wheel": 0.2986666666666665,
+   "worst_mesh_error": 1.0061396160665481e-16
+  },
+  {
+   "direction": -1.0,
+   "range": 1.0,
+   "gear": 1,
+   "engine_per_wheel": 0.2986666666666665,
+   "worst_mesh_error": 1.0061396160665481e-16
+  },
+  {
+   "direction": -1.0,
+   "range": 1.0,
+   "gear": 2,
+   "engine_per_wheel": 0.2986666666666665,
+   "worst_mesh_error": 1.0061396160665481e-16
+  },
+  {
+   "direction": -1.0,
+   "range": 1.0,
+   "gear": 3,
+   "engine_per_wheel": 0.2986666666666665,
+   "worst_mesh_error": 1.0061396160665481e-16
+  },
+  {
+   "direction": -1.0,
+   "range": 1.0,
+   "gear": 4,
+   "engine_per_wheel": 0.2986666666666665,
+   "worst_mesh_error": 1.0061396160665481e-16
+  }
+ ],
+ "meshes": 37
+}

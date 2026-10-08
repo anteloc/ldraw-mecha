@@ -1,0 +1,372 @@
+{
+  "case": "P04_flower_bed",
+  "title": "Flower bed",
+  "parts": [
+    {
+      "role": "base",
+      "id": "0",
+      "table": "plates.Plate6X8",
+      "ref": "3036",
+      "colour": 2,
+      "title": "Plate  6 x  8",
+      "library_only": false
+    },
+    {
+      "role": "pot1",
+      "id": "1",
+      "table": "bricks.Brick2X2RoundWithoutReinforcement",
+      "ref": "3941",
+      "colour": 70,
+      "title": "Brick  2 x  2 Round without Reinforcement",
+      "library_only": false
+    },
+    {
+      "role": "stem1",
+      "id": "2",
+      "table": "plants.PlantFlowerStem",
+      "ref": "3741a",
+      "colour": 2,
+      "title": "Plant Flower Stem",
+      "library_only": false
+    },
+    {
+      "role": "head1a",
+      "id": "3",
+      "table": "plants.PlantFlower",
+      "ref": "3742",
+      "colour": 14,
+      "title": "Plant Flower",
+      "library_only": false
+    },
+    {
+      "role": "head1b",
+      "id": "4",
+      "table": "plants.PlantFlower",
+      "ref": "3742",
+      "colour": 4,
+      "title": "Plant Flower",
+      "library_only": false
+    },
+    {
+      "role": "head1c",
+      "id": "5",
+      "table": "plants.PlantFlower",
+      "ref": "3742",
+      "colour": 14,
+      "title": "Plant Flower",
+      "library_only": false
+    },
+    {
+      "role": "pot2",
+      "id": "6",
+      "table": "bricks.Brick2X2RoundWithoutReinforcement",
+      "ref": "3941",
+      "colour": 70,
+      "title": "Brick  2 x  2 Round without Reinforcement",
+      "library_only": false
+    },
+    {
+      "role": "stem2",
+      "id": "7",
+      "table": "plants.PlantFlowerStem",
+      "ref": "3741a",
+      "colour": 2,
+      "title": "Plant Flower Stem",
+      "library_only": false
+    },
+    {
+      "role": "head2a",
+      "id": "8",
+      "table": "plants.PlantFlower",
+      "ref": "3742",
+      "colour": 15,
+      "title": "Plant Flower",
+      "library_only": false
+    },
+    {
+      "role": "head2b",
+      "id": "9",
+      "table": "plants.PlantFlower",
+      "ref": "3742",
+      "colour": 26,
+      "title": "Plant Flower",
+      "library_only": false
+    },
+    {
+      "role": "head2c",
+      "id": "10",
+      "table": "plants.PlantFlower",
+      "ref": "3742",
+      "colour": 15,
+      "title": "Plant Flower",
+      "library_only": false
+    },
+    {
+      "role": "pot3",
+      "id": "11",
+      "table": "bricks.Brick2X2RoundWithoutReinforcement",
+      "ref": "3941",
+      "colour": 70,
+      "title": "Brick  2 x  2 Round without Reinforcement",
+      "library_only": false
+    },
+    {
+      "role": "stem3",
+      "id": "12",
+      "table": "plants.PlantFlowerStem",
+      "ref": "3741a",
+      "colour": 2,
+      "title": "Plant Flower Stem",
+      "library_only": false
+    },
+    {
+      "role": "head3a",
+      "id": "13",
+      "table": "plants.PlantFlower",
+      "ref": "3742",
+      "colour": 4,
+      "title": "Plant Flower",
+      "library_only": false
+    },
+    {
+      "role": "head3b",
+      "id": "14",
+      "table": "plants.PlantFlower",
+      "ref": "3742",
+      "colour": 14,
+      "title": "Plant Flower",
+      "library_only": false
+    },
+    {
+      "role": "head3c",
+      "id": "15",
+      "table": "plants.PlantFlower",
+      "ref": "3742",
+      "colour": 29,
+      "title": "Plant Flower",
+      "library_only": false
+    }
+  ],
+  "joints": {
+    "stem_1": {
+      "origin": [
+        -60.0,
+        -24.0,
+        0.0
+      ],
+      "axis": [
+        0.0,
+        0.0,
+        1.0
+      ],
+      "parent": "pot1",
+      "child": "stem1",
+      "kind": "revolute",
+      "joint": "flex_approx",
+      "connector": "flex_approx: the stem is a single rigid part on its stud; the tilt stands in for its thin stems bending. 3741a stem on the 2x2 round brick (official 10037 mount)"
+    },
+    "head_1a": {
+      "origin": [
+        -50.707862,
+        -47.696,
+        11.073938
+      ],
+      "axis": [
+        0.166357,
+        -0.96593,
+        0.198256
+      ],
+      "parent": "stem1",
+      "child": "head1a",
+      "kind": "revolute",
+      "joint": "real",
+      "connector": "real: 3742 on the 3741a flower pin (R2 pin in the flower's hole); spins about the pin"
+    },
+    "head_1b": {
+      "origin": [
+        -75.510799,
+        -52.526,
+        2.735023
+      ],
+      "axis": [
+        -0.254864,
+        -0.965932,
+        0.044941
+      ],
+      "parent": "stem1",
+      "child": "head1b",
+      "kind": "revolute",
+      "joint": "real",
+      "connector": "real: 3742 on the 3741a flower pin (R2 pin in the flower's hole); spins about the pin"
+    },
+    "head_1c": {
+      "origin": [
+        -54.170254,
+        -57.356,
+        -16.016419
+      ],
+      "axis": [
+        0.088514,
+        -0.965929,
+        -0.2432
+      ],
+      "parent": "stem1",
+      "child": "head1c",
+      "kind": "revolute",
+      "joint": "real",
+      "connector": "real: 3742 on the 3741a flower pin (R2 pin in the flower's hole); spins about the pin"
+    },
+    "stem_2": {
+      "origin": [
+        0.0,
+        -24.0,
+        -20.0
+      ],
+      "axis": [
+        0.0,
+        0.0,
+        1.0
+      ],
+      "parent": "pot2",
+      "child": "stem2",
+      "kind": "revolute",
+      "joint": "flex_approx",
+      "connector": "flex_approx: the stem is a single rigid part on its stud; the tilt stands in for its thin stems bending. 3741a stem on the 2x2 round brick (official 10037 mount)"
+    },
+    "head_2a": {
+      "origin": [
+        14.236381,
+        -47.696,
+        -17.489742
+      ],
+      "axis": [
+        0.254873,
+        -0.96593,
+        0.044941
+      ],
+      "parent": "stem2",
+      "child": "head2a",
+      "kind": "revolute",
+      "joint": "real",
+      "connector": "real: 3742 on the 3741a flower pin (R2 pin in the flower's hole); spins about the pin"
+    },
+    "head_2b": {
+      "origin": [
+        -10.123922,
+        -52.526,
+        -7.934702
+      ],
+      "axis": [
+        -0.166349,
+        -0.965932,
+        0.19825
+      ],
+      "parent": "stem2",
+      "child": "head2b",
+      "kind": "revolute",
+      "joint": "real",
+      "connector": "real: 3742 on the 3741a flower pin (R2 pin in the flower's hole); spins about the pin"
+    },
+    "head_2c": {
+      "origin": [
+        -5.829311,
+        -57.356,
+        -36.016577
+      ],
+      "axis": [
+        -0.08852,
+        -0.965929,
+        -0.243197
+      ],
+      "parent": "stem2",
+      "child": "head2c",
+      "kind": "revolute",
+      "joint": "real",
+      "connector": "real: 3742 on the 3741a flower pin (R2 pin in the flower's hole); spins about the pin"
+    },
+    "stem_3": {
+      "origin": [
+        60.0,
+        -24.0,
+        20.0
+      ],
+      "axis": [
+        0.0,
+        0.0,
+        1.0
+      ],
+      "parent": "pot3",
+      "child": "stem3",
+      "kind": "revolute",
+      "joint": "flex_approx",
+      "connector": "flex_approx: the stem is a single rigid part on its stud; the tilt stands in for its thin stems bending. 3741a stem on the 2x2 round brick (official 10037 mount)"
+    },
+    "head_3a": {
+      "origin": [
+        72.519263,
+        -47.696,
+        12.772
+      ],
+      "axis": [
+        0.224132,
+        -0.96593,
+        -0.129402
+      ],
+      "parent": "stem3",
+      "child": "head3a",
+      "kind": "revolute",
+      "joint": "real",
+      "connector": "real: 3742 on the 3741a flower pin (R2 pin in the flower's hole); spins about the pin"
+    },
+    "head_3b": {
+      "origin": [
+        60.00005,
+        -52.526,
+        35.750087
+      ],
+      "axis": [
+        2e-06,
+        -0.965932,
+        0.258796
+      ],
+      "parent": "stem3",
+      "child": "head3b",
+      "kind": "revolute",
+      "joint": "real",
+      "connector": "real: 3742 on the 3741a flower pin (R2 pin in the flower's hole); spins about the pin"
+    },
+    "head_3c": {
+      "origin": [
+        45.239232,
+        -57.356,
+        11.477599
+      ],
+      "axis": [
+        -0.224134,
+        -0.965929,
+        -0.129401
+      ],
+      "parent": "stem3",
+      "child": "head3c",
+      "kind": "revolute",
+      "joint": "real",
+      "connector": "real: 3742 on the 3741a flower pin (R2 pin in the flower's hole); spins about the pin"
+    }
+  },
+  "reference_checks": [
+    {
+      "model": "3185-1.mpd",
+      "section": "(flattened main model)",
+      "parent": "stem1",
+      "part": "head1a",
+      "official_refs": [
+        "3741a",
+        "3742"
+      ],
+      "position_offset_ldu": 0.001,
+      "rotation_offset": 1.7549,
+      "note": "3742 on a 3741a pin; official flower beds of 3185"
+    }
+  ],
+  "geometry_checks": []
+}

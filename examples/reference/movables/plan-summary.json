@@ -1,0 +1,203 @@
+[
+ {
+  "scenario": "S01_house_door",
+  "plan": "movable_01_house_door",
+  "status": "ready",
+  "bodies": 1,
+  "flipped": [
+   "door"
+  ],
+  "joints_without_contact": []
+ },
+ {
+  "scenario": "S02_casement_window",
+  "plan": "movable_02_casement_window",
+  "status": "ready",
+  "bodies": 2,
+  "flipped": [
+   "pane_l"
+  ],
+  "joints_without_contact": []
+ },
+ {
+  "scenario": "S03_shuttered_window",
+  "plan": "movable_03_shuttered_window",
+  "status": "ready",
+  "bodies": 2,
+  "flipped": [
+   "shutter_l"
+  ],
+  "joints_without_contact": []
+ },
+ {
+  "scenario": "S04_garden_gate",
+  "plan": "movable_04_garden_gate",
+  "status": "ready",
+  "bodies": 1,
+  "flipped": [
+   "gate"
+  ],
+  "joints_without_contact": []
+ },
+ {
+  "scenario": "S05_kitchen_cupboard",
+  "plan": "movable_05_kitchen_cupboard",
+  "status": "ready",
+  "bodies": 3,
+  "flipped": [
+   "door"
+  ],
+  "joints_without_contact": []
+ },
+ {
+  "scenario": "S06_double_cabinet",
+  "plan": "movable_06_double_cabinet",
+  "status": "ready",
+  "bodies": 2,
+  "flipped": [
+   "door_l",
+   "door_r"
+  ],
+  "joints_without_contact": [
+   "joint_door_l",
+   "joint_door_r"
+  ]
+ },
+ {
+  "scenario": "S07_treasure_chest",
+  "plan": "movable_07_treasure_chest",
+  "status": "ready",
+  "bodies": 1,
+  "flipped": [
+   "lid"
+  ],
+  "joints_without_contact": []
+ },
+ {
+  "scenario": "S08_mailbox",
+  "plan": "movable_08_mailbox",
+  "status": "ready",
+  "bodies": 1,
+  "flipped": [],
+  "joints_without_contact": []
+ },
+ {
+  "scenario": "S09_trap_door",
+  "plan": "movable_09_trap_door",
+  "status": "ready",
+  "bodies": 1,
+  "flipped": [],
+  "joints_without_contact": [
+   "joint_trapdoor"
+  ]
+ },
+ {
+  "scenario": "S10_car_doors",
+  "plan": "movable_10_car_doors",
+  "status": "ready",
+  "bodies": 2,
+  "flipped": [
+   "door_l"
+  ],
+  "joints_without_contact": [
+   "joint_door_l",
+   "joint_door_r"
+  ]
+ },
+ {
+  "scenario": "S11_car_roof",
+  "plan": "movable_11_car_roof",
+  "status": "ready",
+  "bodies": 1,
+  "flipped": [
+   "roof"
+  ],
+  "joints_without_contact": []
+ },
+ {
+  "scenario": "S12_canopy",
+  "plan": "movable_12_canopy",
+  "status": "ready",
+  "bodies": 1,
+  "flipped": [
+   "canopy"
+  ],
+  "joints_without_contact": []
+ },
+ {
+  "scenario": "S13_forklift",
+  "plan": "movable_13_forklift",
+  "status": "ready",
+  "bodies": 2,
+  "flipped": [],
+  "joints_without_contact": [
+   "joint_forks",
+   "joint_spring"
+  ]
+ },
+ {
+  "scenario": "S14_sliding_door",
+  "plan": "movable_14_sliding_door",
+  "status": "ready",
+  "bodies": 1,
+  "flipped": [],
+  "joints_without_contact": [
+   "joint_door"
+  ]
+ },
+ {
+  "scenario": "S15_radar",
+  "plan": "movable_15_radar",
+  "status": "ready",
+  "bodies": 1,
+  "flipped": [],
+  "joints_without_contact": []
+ },
+ {
+  "scenario": "S16_crane",
+  "plan": "movable_16_crane",
+  "status": "ready",
+  "bodies": 3,
+  "flipped": [
+   "superstructure",
+   "boom"
+  ],
+  "joints_without_contact": [
+   "joint_hook"
+  ]
+ },
+ {
+  "scenario": "S17_tipper",
+  "plan": "movable_17_tipper",
+  "status": "ready",
+  "bodies": 1,
+  "flipped": [],
+  "joints_without_contact": [
+   "joint_tip"
+  ]
+ },
+ {
+  "scenario": "S18_barrier",
+  "plan": "movable_18_barrier",
+  "status": "ready",
+  "bodies": 1,
+  "flipped": [],
+  "joints_without_contact": []
+ },
+ {
+  "scenario": "S19_drawbridge",
+  "plan": "movable_19_drawbridge",
+  "status": "ready",
+  "bodies": 1,
+  "flipped": [],
+  "joints_without_contact": []
+ },
+ {
+  "scenario": "S20_levers",
+  "plan": "movable_20_levers",
+  "status": "ready",
+  "bodies": 2,
+  "flipped": [],
+  "joints_without_contact": []
+ }
+]

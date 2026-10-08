@@ -1,0 +1,36 @@
+0 FILE p01_palm_tree.ldr
+0 Plant wind case P01_palm_tree Ball-chain palm
+0 Name: p01_palm_tree.ldr
+0 Author: ldraw-mecha scripts/build_plants.py
+0 // Generated mock case: parts picked by constant name from data/categories/parts (vine subfiles by LDraw reference); moving parts placed from LDCad shadow connector frames (data/offLibShadow) via pyldraw3 or copied from official constructions (2518c01, 10315, 10297). Frame: LDU, -Y up, the case front faces -Z, ground (base top) at y = 0. Wind blows toward +X.
+
+0 // base: plates.Plate6X6
+1 28 10 0 10 1 0 0 0 1 0 0 0 1 3958.dat
+0 // palm_base: plants.PlantTreePalmBase
+1 70 0 -8 0 1 0 0 0 1 0 0 0 1 2563a.dat
+0 // seg1: plants.PlantTreePalmTrunkWithLongIndentedConnector
+1 70 0 -42.898 0.777 1 0 0 0 0.966 0.259 0 -0.259 0.966 2536a.dat
+0 // seg2: plants.PlantTreePalmTrunkWithLongIndentedConnector
+1 70 0 -76.789 9.425 1 0 0 0 0.993 0.12 0 -0.12 0.993 2536a.dat
+0 // seg3: plants.PlantTreePalmTrunkWithLongIndentedConnector
+1 70 0 -111.565 13.328 1 0 0 0 1 0.021 0 -0.021 1 2536a.dat
+0 // seg4: plants.PlantTreePalmTrunkWithLongIndentedConnector
+1 70 0 -146.544 13.64 1 0 0 0 0.993 -0.12 0 0.12 0.993 2536a.dat
+0 // seg5: plants.PlantTreePalmTrunkWithLongIndentedConnector
+1 70 0 -181.218 9.023 1 0 0 0 0.966 -0.259 0 0.259 0.966 2536a.dat
+0 // seg6: plants.PlantTreePalmTrunkWithLongIndentedConnector
+1 70 0 -214.848 -0.534 1 0 0 0 0.906 -0.423 0 0.423 0.906 2536a.dat
+0 // crown: plants.PlantTreePalmTop
+1 70 0 -251.088 -17.454 1 0 0 0 0.906 -0.423 0 0.423 0.906 2566b.dat
+0 // leaf_front: plants.PlantTreePalmLeafLarge
+1 2 -10 -265.588 -24.216 0 0 1 0.423 0.906 0 -0.906 0.423 0 2518.dat
+0 // leaf_upwind: plants.PlantTreePalmLeafLarge
+1 2 0 -262.564 -11.772 -1 0 0 0 0.906 0.423 0 0.423 -0.906 2518.dat
+0 // leaf_back: plants.PlantTreePalmLeafLarge
+1 2 10 -265.588 -24.216 0 0 -1 -0.423 0.906 0 0.906 0.423 0 2518.dat
+0 // leaf_downwind: plants.PlantTreePalmLeafLarge
+1 2 0 -254.112 -29.898 1 0 0 0 0.906 -0.423 0 0.423 0.906 2518.dat
+0 // crown_plate: plates.Plate2X2RoundWithAxlehole
+1 2 0 -272.839 -27.597 1 0 0 0 0.906 -0.423 0 0.423 0.906 4032a.dat
+0 // crown_cap: bricks.Brick1X1RoundWithHollowStud
+1 2 0 -294.59 -37.74 1 0 0 0 0.906 -0.423 0 0.423 0.906 3062b.dat

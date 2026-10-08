@@ -1,0 +1,210 @@
+{
+  "passed": true,
+  "samples": [
+    {
+      "control": "door_l",
+      "value": 0.0,
+      "passed": true,
+      "max_error": 0
+    },
+    {
+      "control": "door_l",
+      "value": 0.11875,
+      "passed": true,
+      "max_error": 0
+    },
+    {
+      "control": "door_l",
+      "value": 0.2375,
+      "passed": true,
+      "max_error": 0
+    },
+    {
+      "control": "door_l",
+      "value": 0.35624999999999996,
+      "passed": true,
+      "max_error": 0
+    },
+    {
+      "control": "door_l",
+      "value": 0.475,
+      "passed": true,
+      "max_error": 0
+    },
+    {
+      "control": "door_l",
+      "value": 0.59375,
+      "passed": true,
+      "max_error": 0
+    },
+    {
+      "control": "door_l",
+      "value": 0.7124999999999999,
+      "passed": true,
+      "max_error": 0
+    },
+    {
+      "control": "door_l",
+      "value": 0.8312499999999999,
+      "passed": true,
+      "max_error": 0
+    },
+    {
+      "control": "door_l",
+      "value": 0.95,
+      "passed": true,
+      "max_error": 0
+    },
+    {
+      "control": "door_l",
+      "value": 1.0687499999999999,
+      "passed": true,
+      "max_error": 0
+    },
+    {
+      "control": "door_l",
+      "value": 1.1875,
+      "passed": true,
+      "max_error": 0
+    },
+    {
+      "control": "door_l",
+      "value": 1.30625,
+      "passed": true,
+      "max_error": 0
+    },
+    {
+      "control": "door_l",
+      "value": 1.4249999999999998,
+      "passed": true,
+      "max_error": 0
+    },
+    {
+      "control": "door_l",
+      "value": 1.54375,
+      "passed": true,
+      "max_error": 0
+    },
+    {
+      "control": "door_l",
+      "value": 1.6624999999999999,
+      "passed": true,
+      "max_error": 0
+    },
+    {
+      "control": "door_l",
+      "value": 1.78125,
+      "passed": true,
+      "max_error": 0
+    },
+    {
+      "control": "door_l",
+      "value": 1.9,
+      "passed": true,
+      "max_error": 0
+    },
+    {
+      "control": "door_r",
+      "value": 0.0,
+      "passed": true,
+      "max_error": 0
+    },
+    {
+      "control": "door_r",
+      "value": 0.11875,
+      "passed": true,
+      "max_error": 0
+    },
+    {
+      "control": "door_r",
+      "value": 0.2375,
+      "passed": true,
+      "max_error": 0
+    },
+    {
+      "control": "door_r",
+      "value": 0.35624999999999996,
+      "passed": true,
+      "max_error": 0
+    },
+    {
+      "control": "door_r",
+      "value": 0.475,
+      "passed": true,
+      "max_error": 0
+    },
+    {
+      "control": "door_r",
+      "value": 0.59375,
+      "passed": true,
+      "max_error": 0
+    },
+    {
+      "control": "door_r",
+      "value": 0.7124999999999999,
+      "passed": true,
+      "max_error": 0
+    },
+    {
+      "control": "door_r",
+      "value": 0.8312499999999999,
+      "passed": true,
+      "max_error": 0
+    },
+    {
+      "control": "door_r",
+      "value": 0.95,
+      "passed": true,
+      "max_error": 0
+    },
+    {
+      "control": "door_r",
+      "value": 1.0687499999999999,
+      "passed": true,
+      "max_error": 0
+    },
+    {
+      "control": "door_r",
+      "value": 1.1875,
+      "passed": true,
+      "max_error": 0
+    },
+    {
+      "control": "door_r",
+      "value": 1.30625,
+      "passed": true,
+      "max_error": 0
+    },
+    {
+      "control": "door_r",
+      "value": 1.4249999999999998,
+      "passed": true,
+      "max_error": 0
+    },
+    {
+      "control": "door_r",
+      "value": 1.54375,
+      "passed": true,
+      "max_error": 0
+    },
+    {
+      "control": "door_r",
+      "value": 1.6624999999999999,
+      "passed": true,
+      "max_error": 0
+    },
+    {
+      "control": "door_r",
+      "value": 1.78125,
+      "passed": true,
+      "max_error": 0
+    },
+    {
+      "control": "door_r",
+      "value": 1.9,
+      "passed": true,
+      "max_error": 0
+    }
+  ],
+  "coverage": "Each control swept independently; analytic closure only, not mesh collisions or dynamics"
+}

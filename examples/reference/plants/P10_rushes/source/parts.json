@@ -1,0 +1,447 @@
+{
+  "case": "P10_rushes",
+  "title": "Rushes row",
+  "parts": [
+    {
+      "role": "base",
+      "id": "0",
+      "table": "plates.Plate8X16",
+      "ref": "92438",
+      "colour": 2,
+      "title": "Plate  8 x 16",
+      "library_only": false
+    },
+    {
+      "role": "riser1",
+      "id": "1",
+      "table": "plates.Plate1X2",
+      "ref": "3023b",
+      "colour": 288,
+      "title": "Plate  1 x  2",
+      "library_only": false
+    },
+    {
+      "role": "socket1",
+      "id": "2",
+      "table": "hinges.Plate1X2WithSocketJoint_8WithFriction",
+      "ref": "14418",
+      "colour": 72,
+      "title": "Plate  1 x  2 with Socket Joint-8 with Friction",
+      "library_only": false
+    },
+    {
+      "role": "rush1_85861_0",
+      "id": "3",
+      "table": "plates.Plate1X1RoundWithOpenStud",
+      "ref": "85861",
+      "colour": 19,
+      "title": "Plate  1 x  1 Round with Open Stud",
+      "library_only": false
+    },
+    {
+      "role": "rush1_59900_1",
+      "id": "4",
+      "table": "cones.Cone1X1WithStop",
+      "ref": "59900",
+      "colour": 28,
+      "title": "Cone  1 x  1 with Stop",
+      "library_only": false
+    },
+    {
+      "role": "rush1_37762_2",
+      "id": "5",
+      "table": "cylinders.Cylinder1X1_333With0_5LBarAndBarHole",
+      "ref": "37762",
+      "colour": 330,
+      "title": "Cylinder  1 x  1.333 with  0.5L Bar and Bar Hole",
+      "library_only": false
+    },
+    {
+      "role": "rush1_22484_3",
+      "id": "6",
+      "table": "bars.Bar2LWithBallJoint_8",
+      "ref": "22484",
+      "colour": 72,
+      "title": "Bar  2L with Ball Joint-8",
+      "library_only": false
+    },
+    {
+      "role": "rush1_30374_4",
+      "id": "7",
+      "table": "bars.Bar4LLightsaberBlade",
+      "ref": "30374",
+      "colour": 330,
+      "title": "Bar  4L Lightsaber Blade",
+      "library_only": false
+    },
+    {
+      "role": "rush1_32607_5",
+      "id": "8",
+      "table": "plants.Plate1X1RoundWith3Leaves",
+      "ref": "32607",
+      "colour": 330,
+      "title": "Plate  1 x  1 Round with  3 Leaves",
+      "library_only": false
+    },
+    {
+      "role": "rush1_32607_6",
+      "id": "9",
+      "table": "plants.Plate1X1RoundWith3Leaves",
+      "ref": "32607",
+      "colour": 330,
+      "title": "Plate  1 x  1 Round with  3 Leaves",
+      "library_only": false
+    },
+    {
+      "role": "rush1_32607_7",
+      "id": "10",
+      "table": "plants.Plate1X1RoundWith3Leaves",
+      "ref": "32607",
+      "colour": 330,
+      "title": "Plate  1 x  1 Round with  3 Leaves",
+      "library_only": false
+    },
+    {
+      "role": "riser2",
+      "id": "11",
+      "table": "plates.Plate1X2",
+      "ref": "3023b",
+      "colour": 288,
+      "title": "Plate  1 x  2",
+      "library_only": false
+    },
+    {
+      "role": "socket2",
+      "id": "12",
+      "table": "hinges.Plate1X2WithSocketJoint_8WithFriction",
+      "ref": "14418",
+      "colour": 72,
+      "title": "Plate  1 x  2 with Socket Joint-8 with Friction",
+      "library_only": false
+    },
+    {
+      "role": "rush2_85861_0",
+      "id": "13",
+      "table": "plates.Plate1X1RoundWithOpenStud",
+      "ref": "85861",
+      "colour": 19,
+      "title": "Plate  1 x  1 Round with Open Stud",
+      "library_only": false
+    },
+    {
+      "role": "rush2_59900_1",
+      "id": "14",
+      "table": "cones.Cone1X1WithStop",
+      "ref": "59900",
+      "colour": 28,
+      "title": "Cone  1 x  1 with Stop",
+      "library_only": false
+    },
+    {
+      "role": "rush2_37762_2",
+      "id": "15",
+      "table": "cylinders.Cylinder1X1_333With0_5LBarAndBarHole",
+      "ref": "37762",
+      "colour": 330,
+      "title": "Cylinder  1 x  1.333 with  0.5L Bar and Bar Hole",
+      "library_only": false
+    },
+    {
+      "role": "rush2_22484_3",
+      "id": "16",
+      "table": "bars.Bar2LWithBallJoint_8",
+      "ref": "22484",
+      "colour": 72,
+      "title": "Bar  2L with Ball Joint-8",
+      "library_only": false
+    },
+    {
+      "role": "rush2_30374_4",
+      "id": "17",
+      "table": "bars.Bar4LLightsaberBlade",
+      "ref": "30374",
+      "colour": 330,
+      "title": "Bar  4L Lightsaber Blade",
+      "library_only": false
+    },
+    {
+      "role": "rush2_32607_5",
+      "id": "18",
+      "table": "plants.Plate1X1RoundWith3Leaves",
+      "ref": "32607",
+      "colour": 330,
+      "title": "Plate  1 x  1 Round with  3 Leaves",
+      "library_only": false
+    },
+    {
+      "role": "rush2_32607_6",
+      "id": "19",
+      "table": "plants.Plate1X1RoundWith3Leaves",
+      "ref": "32607",
+      "colour": 330,
+      "title": "Plate  1 x  1 Round with  3 Leaves",
+      "library_only": false
+    },
+    {
+      "role": "rush2_32607_7",
+      "id": "20",
+      "table": "plants.Plate1X1RoundWith3Leaves",
+      "ref": "32607",
+      "colour": 330,
+      "title": "Plate  1 x  1 Round with  3 Leaves",
+      "library_only": false
+    },
+    {
+      "role": "riser3",
+      "id": "21",
+      "table": "plates.Plate1X2",
+      "ref": "3023b",
+      "colour": 288,
+      "title": "Plate  1 x  2",
+      "library_only": false
+    },
+    {
+      "role": "socket3",
+      "id": "22",
+      "table": "hinges.Plate1X2WithSocketJoint_8WithFriction",
+      "ref": "14418",
+      "colour": 72,
+      "title": "Plate  1 x  2 with Socket Joint-8 with Friction",
+      "library_only": false
+    },
+    {
+      "role": "rush3_85861_0",
+      "id": "23",
+      "table": "plates.Plate1X1RoundWithOpenStud",
+      "ref": "85861",
+      "colour": 19,
+      "title": "Plate  1 x  1 Round with Open Stud",
+      "library_only": false
+    },
+    {
+      "role": "rush3_59900_1",
+      "id": "24",
+      "table": "cones.Cone1X1WithStop",
+      "ref": "59900",
+      "colour": 28,
+      "title": "Cone  1 x  1 with Stop",
+      "library_only": false
+    },
+    {
+      "role": "rush3_37762_2",
+      "id": "25",
+      "table": "cylinders.Cylinder1X1_333With0_5LBarAndBarHole",
+      "ref": "37762",
+      "colour": 330,
+      "title": "Cylinder  1 x  1.333 with  0.5L Bar and Bar Hole",
+      "library_only": false
+    },
+    {
+      "role": "rush3_22484_3",
+      "id": "26",
+      "table": "bars.Bar2LWithBallJoint_8",
+      "ref": "22484",
+      "colour": 72,
+      "title": "Bar  2L with Ball Joint-8",
+      "library_only": false
+    },
+    {
+      "role": "rush3_30374_4",
+      "id": "27",
+      "table": "bars.Bar4LLightsaberBlade",
+      "ref": "30374",
+      "colour": 330,
+      "title": "Bar  4L Lightsaber Blade",
+      "library_only": false
+    },
+    {
+      "role": "rush3_32607_5",
+      "id": "28",
+      "table": "plants.Plate1X1RoundWith3Leaves",
+      "ref": "32607",
+      "colour": 330,
+      "title": "Plate  1 x  1 Round with  3 Leaves",
+      "library_only": false
+    },
+    {
+      "role": "rush3_32607_6",
+      "id": "29",
+      "table": "plants.Plate1X1RoundWith3Leaves",
+      "ref": "32607",
+      "colour": 330,
+      "title": "Plate  1 x  1 Round with  3 Leaves",
+      "library_only": false
+    },
+    {
+      "role": "rush3_32607_7",
+      "id": "30",
+      "table": "plants.Plate1X1RoundWith3Leaves",
+      "ref": "32607",
+      "colour": 330,
+      "title": "Plate  1 x  1 Round with  3 Leaves",
+      "library_only": false
+    },
+    {
+      "role": "riser4",
+      "id": "31",
+      "table": "plates.Plate1X2",
+      "ref": "3023b",
+      "colour": 288,
+      "title": "Plate  1 x  2",
+      "library_only": false
+    },
+    {
+      "role": "socket4",
+      "id": "32",
+      "table": "hinges.Plate1X2WithSocketJoint_8WithFriction",
+      "ref": "14418",
+      "colour": 72,
+      "title": "Plate  1 x  2 with Socket Joint-8 with Friction",
+      "library_only": false
+    },
+    {
+      "role": "rush4_85861_0",
+      "id": "33",
+      "table": "plates.Plate1X1RoundWithOpenStud",
+      "ref": "85861",
+      "colour": 19,
+      "title": "Plate  1 x  1 Round with Open Stud",
+      "library_only": false
+    },
+    {
+      "role": "rush4_59900_1",
+      "id": "34",
+      "table": "cones.Cone1X1WithStop",
+      "ref": "59900",
+      "colour": 28,
+      "title": "Cone  1 x  1 with Stop",
+      "library_only": false
+    },
+    {
+      "role": "rush4_37762_2",
+      "id": "35",
+      "table": "cylinders.Cylinder1X1_333With0_5LBarAndBarHole",
+      "ref": "37762",
+      "colour": 330,
+      "title": "Cylinder  1 x  1.333 with  0.5L Bar and Bar Hole",
+      "library_only": false
+    },
+    {
+      "role": "rush4_22484_3",
+      "id": "36",
+      "table": "bars.Bar2LWithBallJoint_8",
+      "ref": "22484",
+      "colour": 72,
+      "title": "Bar  2L with Ball Joint-8",
+      "library_only": false
+    },
+    {
+      "role": "rush4_30374_4",
+      "id": "37",
+      "table": "bars.Bar4LLightsaberBlade",
+      "ref": "30374",
+      "colour": 330,
+      "title": "Bar  4L Lightsaber Blade",
+      "library_only": false
+    },
+    {
+      "role": "rush4_32607_5",
+      "id": "38",
+      "table": "plants.Plate1X1RoundWith3Leaves",
+      "ref": "32607",
+      "colour": 330,
+      "title": "Plate  1 x  1 Round with  3 Leaves",
+      "library_only": false
+    },
+    {
+      "role": "rush4_32607_6",
+      "id": "39",
+      "table": "plants.Plate1X1RoundWith3Leaves",
+      "ref": "32607",
+      "colour": 330,
+      "title": "Plate  1 x  1 Round with  3 Leaves",
+      "library_only": false
+    },
+    {
+      "role": "rush4_32607_7",
+      "id": "40",
+      "table": "plants.Plate1X1RoundWith3Leaves",
+      "ref": "32607",
+      "colour": 330,
+      "title": "Plate  1 x  1 Round with  3 Leaves",
+      "library_only": false
+    }
+  ],
+  "joints": {
+    "rush_1": {
+      "origin": [
+        -120.0,
+        -12.0,
+        0.0
+      ],
+      "axis": [
+        0.0,
+        0.0,
+        1.0
+      ],
+      "parent": "socket1",
+      "child": "rush1_22484_3",
+      "kind": "revolute",
+      "joint": "real",
+      "connector": "real: 22484 ball in the 14418 friction socket (stalk as 10315 bamboo-stalk-3, its 30176 leaf bricks swapped for 32607 leaf plates); one tilt freedom used, about Z"
+    },
+    "rush_2": {
+      "origin": [
+        -40.0,
+        -12.0,
+        0.0
+      ],
+      "axis": [
+        0.0,
+        0.0,
+        1.0
+      ],
+      "parent": "socket2",
+      "child": "rush2_22484_3",
+      "kind": "revolute",
+      "joint": "real",
+      "connector": "real: 22484 ball in the 14418 friction socket (stalk as 10315 bamboo-stalk-3, its 30176 leaf bricks swapped for 32607 leaf plates); one tilt freedom used, about Z"
+    },
+    "rush_3": {
+      "origin": [
+        40.0,
+        -12.0,
+        0.0
+      ],
+      "axis": [
+        0.0,
+        0.0,
+        1.0
+      ],
+      "parent": "socket3",
+      "child": "rush3_22484_3",
+      "kind": "revolute",
+      "joint": "real",
+      "connector": "real: 22484 ball in the 14418 friction socket (stalk as 10315 bamboo-stalk-3, its 30176 leaf bricks swapped for 32607 leaf plates); one tilt freedom used, about Z"
+    },
+    "rush_4": {
+      "origin": [
+        120.0,
+        -12.0,
+        0.0
+      ],
+      "axis": [
+        0.0,
+        0.0,
+        1.0
+      ],
+      "parent": "socket4",
+      "child": "rush4_22484_3",
+      "kind": "revolute",
+      "joint": "real",
+      "connector": "real: 22484 ball in the 14418 friction socket (stalk as 10315 bamboo-stalk-3, its 30176 leaf bricks swapped for 32607 leaf plates); one tilt freedom used, about Z"
+    }
+  },
+  "reference_checks": [],
+  "geometry_checks": []
+}

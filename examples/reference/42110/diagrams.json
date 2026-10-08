@@ -1,0 +1,26 @@
+{
+  "plan": "output/42110/plan.json",
+  "diagrams": "/Users/captain/workspaces/workspace-ai/ldraw-mecha/output/42110/diagrams",
+  "glb": null,
+  "contacts": "not run: 2924 library parts outside 2..2000; select a section or adjust --contact-limit",
+  "audit": {
+    "deferred": 6,
+    "static": 1,
+    "planned": 8
+  },
+  "warnings": [
+    {
+      "code": "unsupported_gears",
+      "message": "42 gear/rack/worm parts have no supported geometry profile; inspect them explicitly."
+    },
+    {
+      "code": "contacts_not_run",
+      "message": "not run: 2924 library parts outside 2..2000; select a section or adjust --contact-limit"
+    },
+    {
+      "code": "coaxial_not_run",
+      "message": "not run: 644 shaft/gear candidates outside 2..100; select a section"
+    }
+  ],
+  "details": "Full reports in preparation.json / diagrams/index.json"
+}

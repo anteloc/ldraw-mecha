@@ -1,0 +1,414 @@
+{
+  "passed": true,
+  "samples": [
+    {
+      "control": "travel_fl",
+      "value": 0.0,
+      "passed": true,
+      "max_error": 4.909183815016149e-07
+    },
+    {
+      "control": "travel_fl",
+      "value": 1.90625,
+      "passed": true,
+      "max_error": 0.00018982713775983484
+    },
+    {
+      "control": "travel_fl",
+      "value": 3.8125,
+      "passed": true,
+      "max_error": 0.0003784731249680817
+    },
+    {
+      "control": "travel_fl",
+      "value": 5.71875,
+      "passed": true,
+      "max_error": 0.0005662365616956322
+    },
+    {
+      "control": "travel_fl",
+      "value": 7.625,
+      "passed": true,
+      "max_error": 0.0007531257189725693
+    },
+    {
+      "control": "travel_fl",
+      "value": 9.53125,
+      "passed": true,
+      "max_error": 0.0009391477776006241
+    },
+    {
+      "control": "travel_fl",
+      "value": 11.4375,
+      "passed": true,
+      "max_error": 0.0011243088701178294
+    },
+    {
+      "control": "travel_fl",
+      "value": 13.34375,
+      "passed": true,
+      "max_error": 0.0013086141158993314
+    },
+    {
+      "control": "travel_fl",
+      "value": 15.25,
+      "passed": true,
+      "max_error": 0.0014920676502470087
+    },
+    {
+      "control": "travel_fl",
+      "value": 17.15625,
+      "passed": true,
+      "max_error": 0.001674672647538955
+    },
+    {
+      "control": "travel_fl",
+      "value": 19.0625,
+      "passed": true,
+      "max_error": 0.0018564313386946196
+    },
+    {
+      "control": "travel_fl",
+      "value": 20.96875,
+      "passed": true,
+      "max_error": 0.00203734502369457
+    },
+    {
+      "control": "travel_fl",
+      "value": 22.875,
+      "passed": true,
+      "max_error": 0.002217414078472757
+    },
+    {
+      "control": "travel_fl",
+      "value": 24.78125,
+      "passed": true,
+      "max_error": 0.002396637957161829
+    },
+    {
+      "control": "travel_fl",
+      "value": 26.6875,
+      "passed": true,
+      "max_error": 0.0025750151890235884
+    },
+    {
+      "control": "travel_fl",
+      "value": 28.59375,
+      "passed": true,
+      "max_error": 0.002752543370561966
+    },
+    {
+      "control": "travel_fl",
+      "value": 30.5,
+      "passed": true,
+      "max_error": 0.0029292191519658672
+    },
+    {
+      "control": "travel_fr",
+      "value": 0.0,
+      "passed": true,
+      "max_error": 4.909183815016149e-07
+    },
+    {
+      "control": "travel_fr",
+      "value": 1.90625,
+      "passed": true,
+      "max_error": 0.00018982713775983484
+    },
+    {
+      "control": "travel_fr",
+      "value": 3.8125,
+      "passed": true,
+      "max_error": 0.0003784731249680817
+    },
+    {
+      "control": "travel_fr",
+      "value": 5.71875,
+      "passed": true,
+      "max_error": 0.0005662365616956322
+    },
+    {
+      "control": "travel_fr",
+      "value": 7.625,
+      "passed": true,
+      "max_error": 0.0007531257189725693
+    },
+    {
+      "control": "travel_fr",
+      "value": 9.53125,
+      "passed": true,
+      "max_error": 0.0009391477776006241
+    },
+    {
+      "control": "travel_fr",
+      "value": 11.4375,
+      "passed": true,
+      "max_error": 0.0011243088701178294
+    },
+    {
+      "control": "travel_fr",
+      "value": 13.34375,
+      "passed": true,
+      "max_error": 0.0013086141158993314
+    },
+    {
+      "control": "travel_fr",
+      "value": 15.25,
+      "passed": true,
+      "max_error": 0.0014920676502470087
+    },
+    {
+      "control": "travel_fr",
+      "value": 17.15625,
+      "passed": true,
+      "max_error": 0.001674672647538955
+    },
+    {
+      "control": "travel_fr",
+      "value": 19.0625,
+      "passed": true,
+      "max_error": 0.0018564313386946196
+    },
+    {
+      "control": "travel_fr",
+      "value": 20.96875,
+      "passed": true,
+      "max_error": 0.00203734502369457
+    },
+    {
+      "control": "travel_fr",
+      "value": 22.875,
+      "passed": true,
+      "max_error": 0.002217414078472757
+    },
+    {
+      "control": "travel_fr",
+      "value": 24.78125,
+      "passed": true,
+      "max_error": 0.002396637957161829
+    },
+    {
+      "control": "travel_fr",
+      "value": 26.6875,
+      "passed": true,
+      "max_error": 0.0025750151890235884
+    },
+    {
+      "control": "travel_fr",
+      "value": 28.59375,
+      "passed": true,
+      "max_error": 0.002752543370561966
+    },
+    {
+      "control": "travel_fr",
+      "value": 30.5,
+      "passed": true,
+      "max_error": 0.0029292191519658672
+    },
+    {
+      "control": "travel_rl",
+      "value": 0.0,
+      "passed": true,
+      "max_error": 4.909183815016149e-07
+    },
+    {
+      "control": "travel_rl",
+      "value": 2.53125,
+      "passed": true,
+      "max_error": 0.00025177607945181535
+    },
+    {
+      "control": "travel_rl",
+      "value": 5.0625,
+      "passed": true,
+      "max_error": 0.0005016957675252343
+    },
+    {
+      "control": "travel_rl",
+      "value": 7.59375,
+      "passed": true,
+      "max_error": 0.0007500689712713893
+    },
+    {
+      "control": "travel_rl",
+      "value": 10.125,
+      "passed": true,
+      "max_error": 0.000996912965817387
+    },
+    {
+      "control": "travel_rl",
+      "value": 12.65625,
+      "passed": true,
+      "max_error": 0.001242241762142271
+    },
+    {
+      "control": "travel_rl",
+      "value": 15.1875,
+      "passed": true,
+      "max_error": 0.0014860662494129429
+    },
+    {
+      "control": "travel_rl",
+      "value": 17.71875,
+      "passed": true,
+      "max_error": 0.001728394303057712
+    },
+    {
+      "control": "travel_rl",
+      "value": 20.25,
+      "passed": true,
+      "max_error": 0.0019692308618886045
+    },
+    {
+      "control": "travel_rl",
+      "value": 22.78125,
+      "passed": true,
+      "max_error": 0.0022085779760772084
+    },
+    {
+      "control": "travel_rl",
+      "value": 25.3125,
+      "passed": true,
+      "max_error": 0.0024464348274477743
+    },
+    {
+      "control": "travel_rl",
+      "value": 27.84375,
+      "passed": true,
+      "max_error": 0.002682797721021757
+    },
+    {
+      "control": "travel_rl",
+      "value": 30.375,
+      "passed": true,
+      "max_error": 0.00291766004986016
+    },
+    {
+      "control": "travel_rl",
+      "value": 32.90625,
+      "passed": true,
+      "max_error": 0.003151012230304673
+    },
+    {
+      "control": "travel_rl",
+      "value": 35.4375,
+      "passed": true,
+      "max_error": 0.003382841607859177
+    },
+    {
+      "control": "travel_rl",
+      "value": 37.96875,
+      "passed": true,
+      "max_error": 0.003613132329860491
+    },
+    {
+      "control": "travel_rl",
+      "value": 40.5,
+      "passed": true,
+      "max_error": 0.003841865183602522
+    },
+    {
+      "control": "travel_rr",
+      "value": 0.0,
+      "passed": true,
+      "max_error": 4.909183815016149e-07
+    },
+    {
+      "control": "travel_rr",
+      "value": 2.53125,
+      "passed": true,
+      "max_error": 0.00025177607945181535
+    },
+    {
+      "control": "travel_rr",
+      "value": 5.0625,
+      "passed": true,
+      "max_error": 0.0005016957675252343
+    },
+    {
+      "control": "travel_rr",
+      "value": 7.59375,
+      "passed": true,
+      "max_error": 0.0007500689712713893
+    },
+    {
+      "control": "travel_rr",
+      "value": 10.125,
+      "passed": true,
+      "max_error": 0.000996912965817387
+    },
+    {
+      "control": "travel_rr",
+      "value": 12.65625,
+      "passed": true,
+      "max_error": 0.001242241762142271
+    },
+    {
+      "control": "travel_rr",
+      "value": 15.1875,
+      "passed": true,
+      "max_error": 0.0014860662494129429
+    },
+    {
+      "control": "travel_rr",
+      "value": 17.71875,
+      "passed": true,
+      "max_error": 0.001728394303057712
+    },
+    {
+      "control": "travel_rr",
+      "value": 20.25,
+      "passed": true,
+      "max_error": 0.0019692308618886045
+    },
+    {
+      "control": "travel_rr",
+      "value": 22.78125,
+      "passed": true,
+      "max_error": 0.0022085779760772084
+    },
+    {
+      "control": "travel_rr",
+      "value": 25.3125,
+      "passed": true,
+      "max_error": 0.0024464348274477743
+    },
+    {
+      "control": "travel_rr",
+      "value": 27.84375,
+      "passed": true,
+      "max_error": 0.002682797721021757
+    },
+    {
+      "control": "travel_rr",
+      "value": 30.375,
+      "passed": true,
+      "max_error": 0.00291766004986016
+    },
+    {
+      "control": "travel_rr",
+      "value": 32.90625,
+      "passed": true,
+      "max_error": 0.003151012230304673
+    },
+    {
+      "control": "travel_rr",
+      "value": 35.4375,
+      "passed": true,
+      "max_error": 0.003382841607859177
+    },
+    {
+      "control": "travel_rr",
+      "value": 37.96875,
+      "passed": true,
+      "max_error": 0.003613132329860491
+    },
+    {
+      "control": "travel_rr",
+      "value": 40.5,
+      "passed": true,
+      "max_error": 0.003841865183602522
+    }
+  ],
+  "coverage": "Each control swept independently; analytic closure only, not mesh collisions or dynamics"
+}

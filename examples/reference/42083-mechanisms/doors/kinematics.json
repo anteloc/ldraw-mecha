@@ -1,0 +1,35 @@
+{
+  "states": [],
+  "meshes": 0,
+  "review": {
+    "door_left": [
+      "Hinge pin 400 at [300.0, -70.0, -300.0], axis +Y; opening sign +1; side mirror 536/537/538 hangs on the door's long pin and swings with it"
+    ],
+    "door_right": [
+      "Hinge pin 438 at [-300.0, -70.0, -300.0], axis +Y; opening sign -1; side mirror 548/549/547 hangs on the door's long pin and swings with it"
+    ]
+  },
+  "continuity": {
+    "limit_radians_per_frame": 0.8,
+    "limit_ldu_per_frame": 6.0,
+    "worst": [
+      [
+        0.01999670781893015,
+        "door_right_angle",
+        "revolute",
+        85
+      ],
+      [
+        0.01999670781893015,
+        "door_left_angle",
+        "revolute",
+        135
+      ]
+    ],
+    "violations": {},
+    "passed": true
+  },
+  "paddle": null,
+  "dnr": null,
+  "gear_ratios": null
+}

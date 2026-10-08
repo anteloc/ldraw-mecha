@@ -1,0 +1,222 @@
+{
+  "summary": {
+    "static": 1,
+    "planned": 11
+  },
+  "review_complete": true,
+  "unresolved": [],
+  "deferred": [],
+  "unaccounted_mechanical_parts": [],
+  "mechanisms": [
+    {
+      "id": "context",
+      "label": "Vase bouquet: base and mounts (static)",
+      "disposition": "static",
+      "review": "Base, trunk and mounts built for the catalog; they do not move in this case.",
+      "parts": 11,
+      "controlled_parts": [],
+      "parts_without_control": [
+        "0",
+        "1",
+        "10",
+        "11",
+        "12",
+        "13",
+        "14",
+        "2",
+        "3",
+        "4",
+        "5"
+      ],
+      "controls": []
+    },
+    {
+      "id": "head_a1",
+      "label": "Vase bouquet: head a1",
+      "disposition": "planned",
+      "review": "Joint declared in this plan (scripts/build_plants.py); driven by wind clips.",
+      "parts": 2,
+      "controlled_parts": [
+        "6",
+        "7"
+      ],
+      "parts_without_control": [],
+      "controls": [
+        "head_a1",
+        "stem_a"
+      ]
+    },
+    {
+      "id": "head_a2",
+      "label": "Vase bouquet: head a2",
+      "disposition": "planned",
+      "review": "Joint declared in this plan (scripts/build_plants.py); driven by wind clips.",
+      "parts": 2,
+      "controlled_parts": [
+        "6",
+        "8"
+      ],
+      "parts_without_control": [],
+      "controls": [
+        "head_a2",
+        "stem_a"
+      ]
+    },
+    {
+      "id": "head_a3",
+      "label": "Vase bouquet: head a3",
+      "disposition": "planned",
+      "review": "Joint declared in this plan (scripts/build_plants.py); driven by wind clips.",
+      "parts": 2,
+      "controlled_parts": [
+        "6",
+        "9"
+      ],
+      "parts_without_control": [],
+      "controls": [
+        "head_a3",
+        "stem_a"
+      ]
+    },
+    {
+      "id": "head_b1",
+      "label": "Vase bouquet: head b1",
+      "disposition": "planned",
+      "review": "Joint declared in this plan (scripts/build_plants.py); driven by wind clips.",
+      "parts": 2,
+      "controlled_parts": [
+        "15",
+        "16"
+      ],
+      "parts_without_control": [],
+      "controls": [
+        "head_b1",
+        "stem_b"
+      ]
+    },
+    {
+      "id": "head_b2",
+      "label": "Vase bouquet: head b2",
+      "disposition": "planned",
+      "review": "Joint declared in this plan (scripts/build_plants.py); driven by wind clips.",
+      "parts": 2,
+      "controlled_parts": [
+        "15",
+        "17"
+      ],
+      "parts_without_control": [],
+      "controls": [
+        "head_b2",
+        "stem_b"
+      ]
+    },
+    {
+      "id": "head_b3",
+      "label": "Vase bouquet: head b3",
+      "disposition": "planned",
+      "review": "Joint declared in this plan (scripts/build_plants.py); driven by wind clips.",
+      "parts": 2,
+      "controlled_parts": [
+        "15",
+        "18"
+      ],
+      "parts_without_control": [],
+      "controls": [
+        "head_b3",
+        "stem_b"
+      ]
+    },
+    {
+      "id": "head_b4",
+      "label": "Vase bouquet: head b4",
+      "disposition": "planned",
+      "review": "Joint declared in this plan (scripts/build_plants.py); driven by wind clips.",
+      "parts": 2,
+      "controlled_parts": [
+        "15",
+        "19"
+      ],
+      "parts_without_control": [],
+      "controls": [
+        "head_b4",
+        "stem_b"
+      ]
+    },
+    {
+      "id": "head_b5",
+      "label": "Vase bouquet: head b5",
+      "disposition": "planned",
+      "review": "Joint declared in this plan (scripts/build_plants.py); driven by wind clips.",
+      "parts": 2,
+      "controlled_parts": [
+        "15",
+        "20"
+      ],
+      "parts_without_control": [],
+      "controls": [
+        "head_b5",
+        "stem_b"
+      ]
+    },
+    {
+      "id": "head_b6",
+      "label": "Vase bouquet: head b6",
+      "disposition": "planned",
+      "review": "Joint declared in this plan (scripts/build_plants.py); driven by wind clips.",
+      "parts": 2,
+      "controlled_parts": [
+        "15",
+        "21"
+      ],
+      "parts_without_control": [],
+      "controls": [
+        "head_b6",
+        "stem_b"
+      ]
+    },
+    {
+      "id": "stem_a",
+      "label": "Vase bouquet: stem a",
+      "disposition": "planned",
+      "review": "Joint declared in this plan (scripts/build_plants.py); driven by wind clips.",
+      "parts": 2,
+      "controlled_parts": [
+        "6"
+      ],
+      "parts_without_control": [
+        "5"
+      ],
+      "controls": [
+        "stem_a"
+      ]
+    },
+    {
+      "id": "stem_b",
+      "label": "Vase bouquet: stem b",
+      "disposition": "planned",
+      "review": "Joint declared in this plan (scripts/build_plants.py); driven by wind clips.",
+      "parts": 2,
+      "controlled_parts": [
+        "15"
+      ],
+      "parts_without_control": [
+        "14"
+      ],
+      "controls": [
+        "stem_b"
+      ]
+    }
+  ],
+  "warnings": [
+    {
+      "code": "placement_normalized",
+      "message": "Rounded near-rigid placements normalized for analysis only; inspect placement diagnostics."
+    },
+    {
+      "code": "coaxial_not_run",
+      "message": "not run: 0 shaft/gear candidates outside 2..100; select a section"
+    }
+  ],
+  "coverage": "Bookkeeping of declared scope only. Supports may correctly lack controls. Planned, static and deferred dispositions require review notes; none certify discovery completeness, physical motion or clearance.",
+  "passed": true
+}

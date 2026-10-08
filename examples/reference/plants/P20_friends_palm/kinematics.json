@@ -1,0 +1,132 @@
+{
+  "semantics": {},
+  "wind_geometry": {
+    "crown_1": {
+      "body": "crown_1",
+      "x": -7.7,
+      "tip": [
+        -129.541662,
+        -281.432147,
+        0.0
+      ],
+      "swing": [
+        0.0,
+        -1.0
+      ],
+      "lever": 120.0
+    },
+    "crown_2": {
+      "body": "crown_2",
+      "x": -7.7,
+      "tip": [
+        -94.815613,
+        -275.233262,
+        -84.852814
+      ],
+      "swing": [
+        0.683,
+        -0.707
+      ],
+      "lever": 120.0
+    }
+  },
+  "roster_problems": [],
+  "contacts": {
+    "tested_parts": 4,
+    "contacts": 16,
+    "contacted_parts": 2,
+    "by_kind": {
+      "stud/stud_receptacle": 16
+    },
+    "axles": {
+      "selection": "Catalog descriptions beginning Technic Axle followed by a numeric length; excludes axle pins, joiners and axle-hole supports",
+      "total": 0,
+      "with_axle_hole_contact": 0,
+      "without_axle_hole_contact": []
+    }
+  },
+  "contact_pairs": {
+    "0-1": [
+      "stud/stud_receptacle",
+      "stud/stud_receptacle",
+      "stud/stud_receptacle",
+      "stud/stud_receptacle",
+      "stud/stud_receptacle",
+      "stud/stud_receptacle",
+      "stud/stud_receptacle",
+      "stud/stud_receptacle",
+      "stud/stud_receptacle",
+      "stud/stud_receptacle",
+      "stud/stud_receptacle",
+      "stud/stud_receptacle",
+      "stud/stud_receptacle",
+      "stud/stud_receptacle",
+      "stud/stud_receptacle",
+      "stud/stud_receptacle"
+    ]
+  },
+  "joints": {
+    "crown_1": "real",
+    "crown_2": "real"
+  },
+  "asymmetric_sample": {
+    "controls": {
+      "crown_1": 0.2835,
+      "crown_2": -0.1665
+    },
+    "transforms": {
+      "crown_1": [
+        [
+          0.962756,
+          -0.009979,
+          -0.270187,
+          -3.006212
+        ],
+        [
+          -0.009979,
+          0.997326,
+          -0.072395,
+          -0.805502
+        ],
+        [
+          0.270187,
+          0.072395,
+          0.960082,
+          21.808705
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "crown_2": [
+        [
+          0.987097,
+          -0.003457,
+          0.160085,
+          -1.041476
+        ],
+        [
+          -0.003457,
+          0.999074,
+          0.042894,
+          -0.279059
+        ],
+        [
+          -0.160085,
+          -0.042894,
+          0.986171,
+          -12.921585
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ]
+    }
+  }
+}

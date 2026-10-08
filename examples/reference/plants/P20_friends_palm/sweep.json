@@ -1,0 +1,210 @@
+{
+  "passed": true,
+  "samples": [
+    {
+      "control": "crown_1",
+      "value": -0.45,
+      "passed": true,
+      "max_error": 0
+    },
+    {
+      "control": "crown_1",
+      "value": -0.39375,
+      "passed": true,
+      "max_error": 0
+    },
+    {
+      "control": "crown_1",
+      "value": -0.3375,
+      "passed": true,
+      "max_error": 0
+    },
+    {
+      "control": "crown_1",
+      "value": -0.28125,
+      "passed": true,
+      "max_error": 0
+    },
+    {
+      "control": "crown_1",
+      "value": -0.225,
+      "passed": true,
+      "max_error": 0
+    },
+    {
+      "control": "crown_1",
+      "value": -0.16875,
+      "passed": true,
+      "max_error": 0
+    },
+    {
+      "control": "crown_1",
+      "value": -0.11249999999999999,
+      "passed": true,
+      "max_error": 0
+    },
+    {
+      "control": "crown_1",
+      "value": -0.05625000000000002,
+      "passed": true,
+      "max_error": 0
+    },
+    {
+      "control": "crown_1",
+      "value": 0.0,
+      "passed": true,
+      "max_error": 0
+    },
+    {
+      "control": "crown_1",
+      "value": 0.05624999999999997,
+      "passed": true,
+      "max_error": 0
+    },
+    {
+      "control": "crown_1",
+      "value": 0.11249999999999999,
+      "passed": true,
+      "max_error": 0
+    },
+    {
+      "control": "crown_1",
+      "value": 0.16875,
+      "passed": true,
+      "max_error": 0
+    },
+    {
+      "control": "crown_1",
+      "value": 0.22500000000000003,
+      "passed": true,
+      "max_error": 0
+    },
+    {
+      "control": "crown_1",
+      "value": 0.28125000000000006,
+      "passed": true,
+      "max_error": 0
+    },
+    {
+      "control": "crown_1",
+      "value": 0.33749999999999997,
+      "passed": true,
+      "max_error": 0
+    },
+    {
+      "control": "crown_1",
+      "value": 0.39375,
+      "passed": true,
+      "max_error": 0
+    },
+    {
+      "control": "crown_1",
+      "value": 0.45,
+      "passed": true,
+      "max_error": 0
+    },
+    {
+      "control": "crown_2",
+      "value": -0.45,
+      "passed": true,
+      "max_error": 0
+    },
+    {
+      "control": "crown_2",
+      "value": -0.39375,
+      "passed": true,
+      "max_error": 0
+    },
+    {
+      "control": "crown_2",
+      "value": -0.3375,
+      "passed": true,
+      "max_error": 0
+    },
+    {
+      "control": "crown_2",
+      "value": -0.28125,
+      "passed": true,
+      "max_error": 0
+    },
+    {
+      "control": "crown_2",
+      "value": -0.225,
+      "passed": true,
+      "max_error": 0
+    },
+    {
+      "control": "crown_2",
+      "value": -0.16875,
+      "passed": true,
+      "max_error": 0
+    },
+    {
+      "control": "crown_2",
+      "value": -0.11249999999999999,
+      "passed": true,
+      "max_error": 0
+    },
+    {
+      "control": "crown_2",
+      "value": -0.05625000000000002,
+      "passed": true,
+      "max_error": 0
+    },
+    {
+      "control": "crown_2",
+      "value": 0.0,
+      "passed": true,
+      "max_error": 0
+    },
+    {
+      "control": "crown_2",
+      "value": 0.05624999999999997,
+      "passed": true,
+      "max_error": 0
+    },
+    {
+      "control": "crown_2",
+      "value": 0.11249999999999999,
+      "passed": true,
+      "max_error": 0
+    },
+    {
+      "control": "crown_2",
+      "value": 0.16875,
+      "passed": true,
+      "max_error": 0
+    },
+    {
+      "control": "crown_2",
+      "value": 0.22500000000000003,
+      "passed": true,
+      "max_error": 0
+    },
+    {
+      "control": "crown_2",
+      "value": 0.28125000000000006,
+      "passed": true,
+      "max_error": 0
+    },
+    {
+      "control": "crown_2",
+      "value": 0.33749999999999997,
+      "passed": true,
+      "max_error": 0
+    },
+    {
+      "control": "crown_2",
+      "value": 0.39375,
+      "passed": true,
+      "max_error": 0
+    },
+    {
+      "control": "crown_2",
+      "value": 0.45,
+      "passed": true,
+      "max_error": 0
+    }
+  ],
+  "coverage": "Each control swept independently; analytic closure only, not mesh collisions or dynamics"
+}

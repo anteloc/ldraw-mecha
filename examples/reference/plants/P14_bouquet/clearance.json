@@ -1,0 +1,367 @@
+{
+  "case": "P14_bouquet",
+  "sweep": {
+    "no_new_surface_crossings": false,
+    "crossings": [
+      [
+        "stem_a",
+        -0.14,
+        "vase_a_85861-stem_a"
+      ],
+      [
+        "stem_a",
+        -0.123,
+        "vase_a_85861-stem_a"
+      ],
+      [
+        "stem_a",
+        -0.105,
+        "vase_a_85861-stem_a"
+      ],
+      [
+        "stem_a",
+        -0.088,
+        "vase_a_85861-stem_a"
+      ],
+      [
+        "stem_a",
+        -0.07,
+        "vase_a_85861-stem_a"
+      ],
+      [
+        "stem_a",
+        -0.053,
+        "vase_a_85861-stem_a"
+      ],
+      [
+        "stem_a",
+        -0.035,
+        "vase_a_85861-stem_a"
+      ],
+      [
+        "stem_a",
+        0.035,
+        "vase_a_85861-stem_a"
+      ],
+      [
+        "stem_a",
+        0.052,
+        "vase_a_85861-stem_a"
+      ],
+      [
+        "stem_a",
+        0.07,
+        "vase_a_85861-stem_a"
+      ],
+      [
+        "stem_a",
+        0.088,
+        "vase_a_85861-stem_a"
+      ],
+      [
+        "stem_a",
+        0.105,
+        "vase_a_85861-stem_a"
+      ],
+      [
+        "stem_a",
+        0.122,
+        "vase_a_85861-stem_a"
+      ],
+      [
+        "stem_a",
+        0.14,
+        "vase_a_85861-stem_a"
+      ]
+    ],
+    "excluded_rest_pairs": []
+  },
+  "clip_poses": {
+    "samples": 180,
+    "every": 4,
+    "no_new_surface_crossings": false,
+    "crossings_by_clip": {
+      "P14_bouquet.breeze": [
+        "vase_a_85861-stem_a"
+      ],
+      "P14_bouquet.gusty": [
+        "vase_a_85861-stem_a"
+      ],
+      "P14_bouquet.storm": [
+        "vase_a_85861-stem_a"
+      ]
+    },
+    "frames_with_crossings": {
+      "P14_bouquet.breeze": [
+        13,
+        17,
+        21,
+        25,
+        29,
+        33,
+        37,
+        41,
+        45,
+        49,
+        65,
+        69,
+        73,
+        85,
+        89,
+        101,
+        105,
+        109,
+        113,
+        117,
+        121,
+        125,
+        129,
+        133,
+        137,
+        141,
+        145,
+        161,
+        165,
+        169,
+        181,
+        185,
+        197,
+        201,
+        205,
+        209,
+        213,
+        217,
+        221,
+        225
+      ],
+      "P14_bouquet.gusty": [
+        29,
+        33,
+        37,
+        41,
+        45,
+        49,
+        53,
+        57,
+        61,
+        65,
+        77,
+        81,
+        85,
+        89,
+        93,
+        97,
+        101,
+        105,
+        109,
+        113,
+        117,
+        121,
+        129,
+        133,
+        137,
+        141,
+        145,
+        149,
+        153,
+        157,
+        161
+      ],
+      "P14_bouquet.storm": [
+        29,
+        33,
+        37,
+        41,
+        45,
+        49,
+        53,
+        57,
+        61,
+        65,
+        69,
+        73,
+        77,
+        81,
+        85,
+        89,
+        93,
+        97,
+        101,
+        105,
+        109,
+        113,
+        117,
+        121,
+        125,
+        129,
+        133,
+        137,
+        141,
+        145,
+        149,
+        153,
+        157,
+        161,
+        165,
+        169,
+        177,
+        185
+      ]
+    },
+    "vertex_penetration_by_clip": {
+      "P14_bouquet.breeze": {
+        "vase_a_85861-stem_a": {
+          "max_vertex_depth_ldu": 0.752,
+          "kind": "shallow"
+        }
+      },
+      "P14_bouquet.gusty": {
+        "vase_a_85861-stem_a": {
+          "max_vertex_depth_ldu": 1.336,
+          "kind": "shallow"
+        }
+      },
+      "P14_bouquet.storm": {
+        "vase_a_85861-stem_a": {
+          "max_vertex_depth_ldu": 1.401,
+          "kind": "shallow"
+        }
+      }
+    },
+    "deep_shrink_ldu": 1.5,
+    "no_deep_crossings": false,
+    "deep_crossings_by_clip": {
+      "P14_bouquet.breeze": [
+        "vase_a_85861-stem_a"
+      ],
+      "P14_bouquet.gusty": [
+        "vase_a_85861-stem_a"
+      ],
+      "P14_bouquet.storm": [
+        "vase_a_85861-stem_a"
+      ]
+    },
+    "frames_with_deep_crossings": {
+      "P14_bouquet.breeze": [
+        25,
+        29,
+        33,
+        37,
+        41,
+        45,
+        49,
+        65,
+        69,
+        101,
+        105,
+        109,
+        113,
+        121,
+        125,
+        129,
+        133,
+        137,
+        141,
+        145,
+        161,
+        165,
+        197,
+        201,
+        205,
+        209,
+        217,
+        221
+      ],
+      "P14_bouquet.gusty": [
+        41,
+        45,
+        49,
+        53,
+        57,
+        61,
+        65,
+        77,
+        81,
+        85,
+        89,
+        93,
+        97,
+        101,
+        105,
+        109,
+        113,
+        117,
+        121,
+        133,
+        137,
+        149,
+        153,
+        157,
+        161
+      ],
+      "P14_bouquet.storm": [
+        29,
+        33,
+        37,
+        41,
+        45,
+        49,
+        53,
+        57,
+        61,
+        65,
+        69,
+        73,
+        77,
+        81,
+        85,
+        89,
+        93,
+        97,
+        101,
+        105,
+        113,
+        117,
+        121,
+        125,
+        129,
+        133,
+        137,
+        141,
+        145,
+        149,
+        153,
+        157,
+        161,
+        165,
+        169,
+        177
+      ]
+    }
+  },
+  "roles": {
+    "0": "base",
+    "1": "vase_a_18674",
+    "2": "vase_a_20482",
+    "3": "vase_a_3942c",
+    "4": "vase_a_15395",
+    "5": "vase_a_85861",
+    "6": "stem_a",
+    "7": "head_a1",
+    "8": "head_a2",
+    "9": "head_a3",
+    "10": "vase_b_18674",
+    "11": "vase_b_20482",
+    "12": "vase_b_3942c",
+    "13": "vase_b_15395",
+    "14": "vase_b_85861",
+    "15": "stem_b",
+    "16": "head_b1",
+    "17": "head_b2",
+    "18": "head_b3",
+    "19": "head_b4",
+    "20": "head_b5",
+    "21": "head_b6"
+  },
+  "coverage": "Sampled surface crossings only; excludes rigid-body and rest-contact pairs; containment untested"
+}

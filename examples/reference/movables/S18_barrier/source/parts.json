@@ -1,0 +1,133 @@
+{
+  "scenario": "S18_barrier",
+  "title": "Parking barrier",
+  "parts": [
+    {
+      "role": "road",
+      "id": "0",
+      "table": "plates.Plate4X12",
+      "ref": "3029",
+      "colour": 8,
+      "title": "Plate  4 x 12",
+      "library_only": false
+    },
+    {
+      "role": "post0",
+      "id": "1",
+      "table": "bricks.Brick2X2",
+      "ref": "3003",
+      "colour": 15,
+      "title": "Brick  2 x  2",
+      "library_only": false
+    },
+    {
+      "role": "post1",
+      "id": "2",
+      "table": "bricks.Brick2X2",
+      "ref": "3003",
+      "colour": 15,
+      "title": "Brick  2 x  2",
+      "library_only": false
+    },
+    {
+      "role": "hinge_base",
+      "id": "3",
+      "table": "hinges.Hinge1X2Base",
+      "ref": "3937",
+      "colour": 8,
+      "title": "Hinge  1 x  2 Base",
+      "library_only": false
+    },
+    {
+      "role": "hinge_top",
+      "id": "4",
+      "table": "hinges.Hinge1X2Top",
+      "ref": "3938",
+      "colour": 8,
+      "title": "Hinge  1 x  2 Top",
+      "library_only": false
+    },
+    {
+      "role": "boom",
+      "id": "5",
+      "table": "plates.Plate2X10",
+      "ref": "3832",
+      "colour": 15,
+      "title": "Plate  2 x 10",
+      "library_only": false
+    },
+    {
+      "role": "stripe0",
+      "id": "6",
+      "table": "tiles.Tile2X2WithGroove",
+      "ref": "3068b",
+      "colour": 4,
+      "title": "Tile  2 x  2 with Groove",
+      "library_only": false
+    },
+    {
+      "role": "stripe1",
+      "id": "7",
+      "table": "tiles.Tile2X2WithGroove",
+      "ref": "3068b",
+      "colour": 4,
+      "title": "Tile  2 x  2 with Groove",
+      "library_only": false
+    },
+    {
+      "role": "stripe2",
+      "id": "8",
+      "table": "tiles.Tile2X2WithGroove",
+      "ref": "3068b",
+      "colour": 4,
+      "title": "Tile  2 x  2 with Groove",
+      "library_only": false
+    },
+    {
+      "role": "rest0",
+      "id": "9",
+      "table": "bricks.Brick1X1",
+      "ref": "3005",
+      "colour": 15,
+      "title": "Brick  1 x  1",
+      "library_only": false
+    },
+    {
+      "role": "rest1",
+      "id": "10",
+      "table": "bricks.Brick1X1",
+      "ref": "3005",
+      "colour": 15,
+      "title": "Brick  1 x  1",
+      "library_only": false
+    },
+    {
+      "role": "rest2",
+      "id": "11",
+      "table": "bricks.Brick1X1",
+      "ref": "3005",
+      "colour": 15,
+      "title": "Brick  1 x  1",
+      "library_only": false
+    }
+  ],
+  "joints": {
+    "boom": {
+      "origin": [
+        -100.0,
+        -62.0,
+        0.0
+      ],
+      "axis": [
+        0.0,
+        0.0,
+        -1.0
+      ],
+      "parent": "hinge_base",
+      "child": "hinge_top",
+      "kind": "revolute",
+      "connector": "3937 hinge snap_fgr@L9:I0 receives 3938 hinge snap_fgr@L8:I0"
+    }
+  },
+  "reference_checks": []
+}

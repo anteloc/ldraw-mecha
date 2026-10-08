@@ -1,0 +1,516 @@
+{
+  "passed": true,
+  "samples": [
+    {
+      "control": "leaf_top",
+      "value": -0.4,
+      "passed": true,
+      "max_error": 0
+    },
+    {
+      "control": "leaf_top",
+      "value": -0.35000000000000003,
+      "passed": true,
+      "max_error": 0
+    },
+    {
+      "control": "leaf_top",
+      "value": -0.30000000000000004,
+      "passed": true,
+      "max_error": 0
+    },
+    {
+      "control": "leaf_top",
+      "value": -0.25,
+      "passed": true,
+      "max_error": 0
+    },
+    {
+      "control": "leaf_top",
+      "value": -0.2,
+      "passed": true,
+      "max_error": 0
+    },
+    {
+      "control": "leaf_top",
+      "value": -0.15000000000000002,
+      "passed": true,
+      "max_error": 0
+    },
+    {
+      "control": "leaf_top",
+      "value": -0.09999999999999998,
+      "passed": true,
+      "max_error": 0
+    },
+    {
+      "control": "leaf_top",
+      "value": -0.04999999999999999,
+      "passed": true,
+      "max_error": 0
+    },
+    {
+      "control": "leaf_top",
+      "value": 0.0,
+      "passed": true,
+      "max_error": 0
+    },
+    {
+      "control": "leaf_top",
+      "value": 0.04999999999999999,
+      "passed": true,
+      "max_error": 0
+    },
+    {
+      "control": "leaf_top",
+      "value": 0.09999999999999998,
+      "passed": true,
+      "max_error": 0
+    },
+    {
+      "control": "leaf_top",
+      "value": 0.15000000000000002,
+      "passed": true,
+      "max_error": 0
+    },
+    {
+      "control": "leaf_top",
+      "value": 0.20000000000000007,
+      "passed": true,
+      "max_error": 0
+    },
+    {
+      "control": "leaf_top",
+      "value": 0.25,
+      "passed": true,
+      "max_error": 0
+    },
+    {
+      "control": "leaf_top",
+      "value": 0.30000000000000004,
+      "passed": true,
+      "max_error": 0
+    },
+    {
+      "control": "leaf_top",
+      "value": 0.35,
+      "passed": true,
+      "max_error": 0
+    },
+    {
+      "control": "leaf_top",
+      "value": 0.4,
+      "passed": true,
+      "max_error": 0
+    },
+    {
+      "control": "leaf_front",
+      "value": -0.4,
+      "passed": true,
+      "max_error": 0
+    },
+    {
+      "control": "leaf_front",
+      "value": -0.35000000000000003,
+      "passed": true,
+      "max_error": 0
+    },
+    {
+      "control": "leaf_front",
+      "value": -0.30000000000000004,
+      "passed": true,
+      "max_error": 0
+    },
+    {
+      "control": "leaf_front",
+      "value": -0.25,
+      "passed": true,
+      "max_error": 0
+    },
+    {
+      "control": "leaf_front",
+      "value": -0.2,
+      "passed": true,
+      "max_error": 0
+    },
+    {
+      "control": "leaf_front",
+      "value": -0.15000000000000002,
+      "passed": true,
+      "max_error": 0
+    },
+    {
+      "control": "leaf_front",
+      "value": -0.09999999999999998,
+      "passed": true,
+      "max_error": 0
+    },
+    {
+      "control": "leaf_front",
+      "value": -0.04999999999999999,
+      "passed": true,
+      "max_error": 0
+    },
+    {
+      "control": "leaf_front",
+      "value": 0.0,
+      "passed": true,
+      "max_error": 0
+    },
+    {
+      "control": "leaf_front",
+      "value": 0.04999999999999999,
+      "passed": true,
+      "max_error": 0
+    },
+    {
+      "control": "leaf_front",
+      "value": 0.09999999999999998,
+      "passed": true,
+      "max_error": 0
+    },
+    {
+      "control": "leaf_front",
+      "value": 0.15000000000000002,
+      "passed": true,
+      "max_error": 0
+    },
+    {
+      "control": "leaf_front",
+      "value": 0.20000000000000007,
+      "passed": true,
+      "max_error": 0
+    },
+    {
+      "control": "leaf_front",
+      "value": 0.25,
+      "passed": true,
+      "max_error": 0
+    },
+    {
+      "control": "leaf_front",
+      "value": 0.30000000000000004,
+      "passed": true,
+      "max_error": 0
+    },
+    {
+      "control": "leaf_front",
+      "value": 0.35,
+      "passed": true,
+      "max_error": 0
+    },
+    {
+      "control": "leaf_front",
+      "value": 0.4,
+      "passed": true,
+      "max_error": 0
+    },
+    {
+      "control": "leaf_back",
+      "value": -0.4,
+      "passed": true,
+      "max_error": 0
+    },
+    {
+      "control": "leaf_back",
+      "value": -0.35000000000000003,
+      "passed": true,
+      "max_error": 0
+    },
+    {
+      "control": "leaf_back",
+      "value": -0.30000000000000004,
+      "passed": true,
+      "max_error": 0
+    },
+    {
+      "control": "leaf_back",
+      "value": -0.25,
+      "passed": true,
+      "max_error": 0
+    },
+    {
+      "control": "leaf_back",
+      "value": -0.2,
+      "passed": true,
+      "max_error": 0
+    },
+    {
+      "control": "leaf_back",
+      "value": -0.15000000000000002,
+      "passed": true,
+      "max_error": 0
+    },
+    {
+      "control": "leaf_back",
+      "value": -0.09999999999999998,
+      "passed": true,
+      "max_error": 0
+    },
+    {
+      "control": "leaf_back",
+      "value": -0.04999999999999999,
+      "passed": true,
+      "max_error": 0
+    },
+    {
+      "control": "leaf_back",
+      "value": 0.0,
+      "passed": true,
+      "max_error": 0
+    },
+    {
+      "control": "leaf_back",
+      "value": 0.04999999999999999,
+      "passed": true,
+      "max_error": 0
+    },
+    {
+      "control": "leaf_back",
+      "value": 0.09999999999999998,
+      "passed": true,
+      "max_error": 0
+    },
+    {
+      "control": "leaf_back",
+      "value": 0.15000000000000002,
+      "passed": true,
+      "max_error": 0
+    },
+    {
+      "control": "leaf_back",
+      "value": 0.20000000000000007,
+      "passed": true,
+      "max_error": 0
+    },
+    {
+      "control": "leaf_back",
+      "value": 0.25,
+      "passed": true,
+      "max_error": 0
+    },
+    {
+      "control": "leaf_back",
+      "value": 0.30000000000000004,
+      "passed": true,
+      "max_error": 0
+    },
+    {
+      "control": "leaf_back",
+      "value": 0.35,
+      "passed": true,
+      "max_error": 0
+    },
+    {
+      "control": "leaf_back",
+      "value": 0.4,
+      "passed": true,
+      "max_error": 0
+    },
+    {
+      "control": "leaf_upwind",
+      "value": -0.4,
+      "passed": true,
+      "max_error": 0
+    },
+    {
+      "control": "leaf_upwind",
+      "value": -0.35000000000000003,
+      "passed": true,
+      "max_error": 0
+    },
+    {
+      "control": "leaf_upwind",
+      "value": -0.30000000000000004,
+      "passed": true,
+      "max_error": 0
+    },
+    {
+      "control": "leaf_upwind",
+      "value": -0.25,
+      "passed": true,
+      "max_error": 0
+    },
+    {
+      "control": "leaf_upwind",
+      "value": -0.2,
+      "passed": true,
+      "max_error": 0
+    },
+    {
+      "control": "leaf_upwind",
+      "value": -0.15000000000000002,
+      "passed": true,
+      "max_error": 0
+    },
+    {
+      "control": "leaf_upwind",
+      "value": -0.09999999999999998,
+      "passed": true,
+      "max_error": 0
+    },
+    {
+      "control": "leaf_upwind",
+      "value": -0.04999999999999999,
+      "passed": true,
+      "max_error": 0
+    },
+    {
+      "control": "leaf_upwind",
+      "value": 0.0,
+      "passed": true,
+      "max_error": 0
+    },
+    {
+      "control": "leaf_upwind",
+      "value": 0.04999999999999999,
+      "passed": true,
+      "max_error": 0
+    },
+    {
+      "control": "leaf_upwind",
+      "value": 0.09999999999999998,
+      "passed": true,
+      "max_error": 0
+    },
+    {
+      "control": "leaf_upwind",
+      "value": 0.15000000000000002,
+      "passed": true,
+      "max_error": 0
+    },
+    {
+      "control": "leaf_upwind",
+      "value": 0.20000000000000007,
+      "passed": true,
+      "max_error": 0
+    },
+    {
+      "control": "leaf_upwind",
+      "value": 0.25,
+      "passed": true,
+      "max_error": 0
+    },
+    {
+      "control": "leaf_upwind",
+      "value": 0.30000000000000004,
+      "passed": true,
+      "max_error": 0
+    },
+    {
+      "control": "leaf_upwind",
+      "value": 0.35,
+      "passed": true,
+      "max_error": 0
+    },
+    {
+      "control": "leaf_upwind",
+      "value": 0.4,
+      "passed": true,
+      "max_error": 0
+    },
+    {
+      "control": "leaf_downwind",
+      "value": -0.4,
+      "passed": true,
+      "max_error": 0
+    },
+    {
+      "control": "leaf_downwind",
+      "value": -0.35000000000000003,
+      "passed": true,
+      "max_error": 0
+    },
+    {
+      "control": "leaf_downwind",
+      "value": -0.30000000000000004,
+      "passed": true,
+      "max_error": 0
+    },
+    {
+      "control": "leaf_downwind",
+      "value": -0.25,
+      "passed": true,
+      "max_error": 0
+    },
+    {
+      "control": "leaf_downwind",
+      "value": -0.2,
+      "passed": true,
+      "max_error": 0
+    },
+    {
+      "control": "leaf_downwind",
+      "value": -0.15000000000000002,
+      "passed": true,
+      "max_error": 0
+    },
+    {
+      "control": "leaf_downwind",
+      "value": -0.09999999999999998,
+      "passed": true,
+      "max_error": 0
+    },
+    {
+      "control": "leaf_downwind",
+      "value": -0.04999999999999999,
+      "passed": true,
+      "max_error": 0
+    },
+    {
+      "control": "leaf_downwind",
+      "value": 0.0,
+      "passed": true,
+      "max_error": 0
+    },
+    {
+      "control": "leaf_downwind",
+      "value": 0.04999999999999999,
+      "passed": true,
+      "max_error": 0
+    },
+    {
+      "control": "leaf_downwind",
+      "value": 0.09999999999999998,
+      "passed": true,
+      "max_error": 0
+    },
+    {
+      "control": "leaf_downwind",
+      "value": 0.15000000000000002,
+      "passed": true,
+      "max_error": 0
+    },
+    {
+      "control": "leaf_downwind",
+      "value": 0.20000000000000007,
+      "passed": true,
+      "max_error": 0
+    },
+    {
+      "control": "leaf_downwind",
+      "value": 0.25,
+      "passed": true,
+      "max_error": 0
+    },
+    {
+      "control": "leaf_downwind",
+      "value": 0.30000000000000004,
+      "passed": true,
+      "max_error": 0
+    },
+    {
+      "control": "leaf_downwind",
+      "value": 0.35,
+      "passed": true,
+      "max_error": 0
+    },
+    {
+      "control": "leaf_downwind",
+      "value": 0.4,
+      "passed": true,
+      "max_error": 0
+    }
+  ],
+  "coverage": "Each control swept independently; analytic closure only, not mesh collisions or dynamics"
+}

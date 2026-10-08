@@ -1,0 +1,20 @@
+0 FILE s08_mailbox.ldr
+0 Movable element scenario S08_mailbox Mailbox
+0 Name: s08_mailbox.ldr
+0 Author: ldraw-mecha scripts/build_movables.py
+0 // Generated mock scenario: parts picked by constant name from data/categories/parts (a few context parts by LDraw reference); moving parts placed from LDCad shadow connector frames (data/offLibShadow) via pyldraw3 or from official annotated models where no connector pair exists. Frame: LDU, -Y up, the scenario front faces -Z, ground (base top) at y = 0.
+
+0 // base: plates.Plate4X4
+1 2 0 0 0 1 0 0 0 1 0 0 0 1 3031.dat
+0 // post0: bricks.Brick2X2RoundWithoutReinforcement
+1 8 0 -24 0 1 0 0 0 1 0 0 0 1 3941.dat
+0 // post1: bricks.Brick2X2RoundWithoutReinforcement
+1 8 0 -48 0 1 0 0 0 1 0 0 0 1 3941.dat
+0 // post2: bricks.Brick2X2RoundWithoutReinforcement
+1 8 0 -72 0 1 0 0 0 1 0 0 0 1 3941.dat
+0 // cap: plates.Plate2X2
+1 8 0 -80 0 1 0 0 0 1 0 0 0 1 3022.dat
+0 // box: containers.ContainerBox2X2X2WithSolidStuds
+1 4 0 -128 0 1 0 0 0 1 0 0 0 1 4345a.dat
+0 // door: containers.ContainerBox2X2X2DoorWithSlot
+1 4 0 -128 0 1 0 0 0 1 0 0 0 1 4346.dat

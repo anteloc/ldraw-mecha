@@ -1,0 +1,18 @@
+0 FILE s04_garden_gate.ldr
+0 Movable element scenario S04_garden_gate Garden gate
+0 Name: s04_garden_gate.ldr
+0 Author: ldraw-mecha scripts/build_movables.py
+0 // Generated mock scenario: parts picked by constant name from data/categories/parts (a few context parts by LDraw reference); moving parts placed from LDCad shadow connector frames (data/offLibShadow) via pyldraw3 or from official annotated models where no connector pair exists. Frame: LDU, -Y up, the scenario front faces -Z, ground (base top) at y = 0.
+
+0 // base: plates.Plate4X12
+1 2 0 0 0 1 0 0 0 1 0 0 0 1 3029.dat
+0 // gate_base: fences.Gate1X4X2Base
+1 15 -30 -48 0 0 0 1 0 1 0 -1 0 0 3187.dat
+0 // gate: fences.Gate1X4X2
+1 70 -30 -48 0 0 0 1 0 1 0 -1 0 0 3186.dat
+0 // fence_l: fences.FenceLattice1X4X2
+1 15 -80 -48 0 1 0 0 0 1 0 0 0 1 3185.dat
+0 // fence_r: fences.FenceLattice1X4X2
+1 15 80 -48 0 1 0 0 0 1 0 0 0 1 3185.dat
+0 // path: tiles.Tile2X2WithGroove
+1 19 0 -8 -20 1 0 0 0 1 0 0 0 1 3068b.dat

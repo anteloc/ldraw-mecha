@@ -1,0 +1,20 @@
+{
+  "pages": 7,
+  "checked_local_links": 133,
+  "mermaid_rendered": [
+    "output/minifigs-reference-review/diagrams/animation-clips-1.mmd",
+    "output/minifigs-reference-review/diagrams/joints-and-attachments-1.mmd",
+    "output/minifigs-reference-review/diagrams/whole-figure-staging-1.mmd",
+    "output/minifigs-reference-review/diagrams/whole-figure-staging-2.mmd"
+  ],
+  "hashes": {
+    "docs/reference/minifigs/README.md": "8a375e2f8fe03684a1293a66d897b36700a30c80e45b25fe4d7a2e083073f724",
+    "docs/reference/minifigs/animation-clips.md": "7928a5caa750204039c72c5d2baec02d9692d27298d373653b1beade5d5907d2",
+    "docs/reference/minifigs/joints-and-attachments.md": "4bc113464aec38e8c84c77046f890190d116ea00897bd844c46625d6660a5cb5",
+    "docs/reference/minifigs/pose-clearance.md": "50d0a1940f20f7da93a5e87b2bacd7a33af26a20c94b6af2e5ad2f850b52fc65",
+    "docs/reference/minifigs/scope-and-evidence.md": "a8eb72c59f9cf499338d2c6c10a39e24f891c765abf74b69c69fd25c6c4235b7",
+    "docs/reference/minifigs/whole-figure-staging.md": "02a41fa0a45595df3059d335262126544548c79f4ca7963efb586d25aa661904",
+    "docs/part-information.md": "d6e68aff9f2399c8ad43b50892a04d7b8eaf5ef823ba08b65c17579336266acf"
+  },
+  "chef_occurrence_references_checked": 12
+}

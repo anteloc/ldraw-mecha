@@ -1,0 +1,239 @@
+{
+  "scenario": "S02_casement_window",
+  "title": "Casement window",
+  "parts": [
+    {
+      "role": "base",
+      "id": "0",
+      "table": "plates.Plate4X8",
+      "ref": "3035",
+      "colour": 2,
+      "title": "Plate  4 x  8",
+      "library_only": false
+    },
+    {
+      "role": "window",
+      "id": "1",
+      "table": "windows.Window1X4X3WithoutShutterTabs",
+      "ref": "60594",
+      "colour": 15,
+      "title": "Window  1 x  4 x  3 without Shutter Tabs",
+      "library_only": false
+    },
+    {
+      "role": "pane_l",
+      "id": "2",
+      "table": "windows.Window1X2X3PaneWithThickCornerTabs",
+      "ref": "60608",
+      "colour": 15,
+      "title": "Window  1 x  2 x  3 Pane with Thick Corner Tabs",
+      "library_only": false
+    },
+    {
+      "role": "pane_r",
+      "id": "3",
+      "table": "windows.Window1X2X3PaneWithThickCornerTabs",
+      "ref": "60608",
+      "colour": 15,
+      "title": "Window  1 x  2 x  3 Pane with Thick Corner Tabs",
+      "library_only": false
+    },
+    {
+      "role": "sill0",
+      "id": "4",
+      "table": "bricks.Brick1X4",
+      "ref": "3010",
+      "colour": 378,
+      "title": "Brick  1 x  4",
+      "library_only": false
+    },
+    {
+      "role": "sill1a",
+      "id": "5",
+      "table": "bricks.Brick1X2",
+      "ref": "3004",
+      "colour": 378,
+      "title": "Brick  1 x  2",
+      "library_only": false
+    },
+    {
+      "role": "sill1b",
+      "id": "6",
+      "table": "bricks.Brick1X2",
+      "ref": "3004",
+      "colour": 378,
+      "title": "Brick  1 x  2",
+      "library_only": false
+    },
+    {
+      "role": "wall_l0",
+      "id": "7",
+      "table": "bricks.Brick1X2",
+      "ref": "3004",
+      "colour": 378,
+      "title": "Brick  1 x  2",
+      "library_only": false
+    },
+    {
+      "role": "wall_l1",
+      "id": "8",
+      "table": "bricks.Brick1X2",
+      "ref": "3004",
+      "colour": 378,
+      "title": "Brick  1 x  2",
+      "library_only": false
+    },
+    {
+      "role": "wall_l2",
+      "id": "9",
+      "table": "bricks.Brick1X2",
+      "ref": "3004",
+      "colour": 378,
+      "title": "Brick  1 x  2",
+      "library_only": false
+    },
+    {
+      "role": "wall_l3",
+      "id": "10",
+      "table": "bricks.Brick1X2",
+      "ref": "3004",
+      "colour": 378,
+      "title": "Brick  1 x  2",
+      "library_only": false
+    },
+    {
+      "role": "wall_l4",
+      "id": "11",
+      "table": "bricks.Brick1X2",
+      "ref": "3004",
+      "colour": 378,
+      "title": "Brick  1 x  2",
+      "library_only": false
+    },
+    {
+      "role": "wall_r0",
+      "id": "12",
+      "table": "bricks.Brick1X2",
+      "ref": "3004",
+      "colour": 378,
+      "title": "Brick  1 x  2",
+      "library_only": false
+    },
+    {
+      "role": "wall_r1",
+      "id": "13",
+      "table": "bricks.Brick1X2",
+      "ref": "3004",
+      "colour": 378,
+      "title": "Brick  1 x  2",
+      "library_only": false
+    },
+    {
+      "role": "wall_r2",
+      "id": "14",
+      "table": "bricks.Brick1X2",
+      "ref": "3004",
+      "colour": 378,
+      "title": "Brick  1 x  2",
+      "library_only": false
+    },
+    {
+      "role": "wall_r3",
+      "id": "15",
+      "table": "bricks.Brick1X2",
+      "ref": "3004",
+      "colour": 378,
+      "title": "Brick  1 x  2",
+      "library_only": false
+    },
+    {
+      "role": "wall_r4",
+      "id": "16",
+      "table": "bricks.Brick1X2",
+      "ref": "3004",
+      "colour": 378,
+      "title": "Brick  1 x  2",
+      "library_only": false
+    },
+    {
+      "role": "lintel",
+      "id": "17",
+      "table": "bricks.Brick1X8",
+      "ref": "3008",
+      "colour": 378,
+      "title": "Brick  1 x  8",
+      "library_only": false
+    },
+    {
+      "role": "cap",
+      "id": "18",
+      "table": "plates.Plate1X8",
+      "ref": "3460",
+      "colour": 28,
+      "title": "Plate  1 x  8",
+      "library_only": false
+    }
+  ],
+  "joints": {
+    "pane_l": {
+      "origin": [
+        -32.0,
+        -86.0,
+        -5.0
+      ],
+      "axis": [
+        0.0,
+        -1.0,
+        0.0
+      ],
+      "parent": "window",
+      "child": "pane_l",
+      "kind": "revolute",
+      "connector": "60594 hinge snap_fgr@L14:I0 receives 60608 hinge snap_fgr@L8:I0"
+    },
+    "pane_r": {
+      "origin": [
+        32.0,
+        -86.0,
+        -5.0
+      ],
+      "axis": [
+        0.0,
+        -1.0,
+        0.0
+      ],
+      "parent": "window",
+      "child": "pane_r",
+      "kind": "revolute",
+      "connector": "60594 hinge snap_fgr@L15:I0 receives 60608 hinge snap_fgr@L8:I0"
+    }
+  },
+  "reference_checks": [
+    {
+      "model": "10224-1.mpd",
+      "section": "(flattened main model)",
+      "parent": "window",
+      "part": "pane_l",
+      "official_refs": [
+        "60594",
+        "60608"
+      ],
+      "position_offset_ldu": 1.0,
+      "rotation_offset": 0.0,
+      "note": ""
+    },
+    {
+      "model": "10224-1.mpd",
+      "section": "(flattened main model)",
+      "parent": "window",
+      "part": "pane_r",
+      "official_refs": [
+        "60594",
+        "60608"
+      ],
+      "position_offset_ldu": 1.0,
+      "rotation_offset": 0.0,
+      "note": ""
+    }
+  ]
+}

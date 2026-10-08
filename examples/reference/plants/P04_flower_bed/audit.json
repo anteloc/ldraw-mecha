@@ -1,0 +1,231 @@
+{
+  "summary": {
+    "static": 1,
+    "planned": 12
+  },
+  "review_complete": true,
+  "unresolved": [],
+  "deferred": [],
+  "unaccounted_mechanical_parts": [],
+  "mechanisms": [
+    {
+      "id": "context",
+      "label": "Flower bed: base and mounts (static)",
+      "disposition": "static",
+      "review": "Base, trunk and mounts built for the catalog; they do not move in this case.",
+      "parts": 4,
+      "controlled_parts": [],
+      "parts_without_control": [
+        "0",
+        "1",
+        "11",
+        "6"
+      ],
+      "controls": []
+    },
+    {
+      "id": "head_1a",
+      "label": "Flower bed: head 1a",
+      "disposition": "planned",
+      "review": "Joint declared in this plan (scripts/build_plants.py); driven by wind clips.",
+      "parts": 2,
+      "controlled_parts": [
+        "2",
+        "3"
+      ],
+      "parts_without_control": [],
+      "controls": [
+        "head_1a",
+        "stem_1"
+      ]
+    },
+    {
+      "id": "head_1b",
+      "label": "Flower bed: head 1b",
+      "disposition": "planned",
+      "review": "Joint declared in this plan (scripts/build_plants.py); driven by wind clips.",
+      "parts": 2,
+      "controlled_parts": [
+        "2",
+        "4"
+      ],
+      "parts_without_control": [],
+      "controls": [
+        "head_1b",
+        "stem_1"
+      ]
+    },
+    {
+      "id": "head_1c",
+      "label": "Flower bed: head 1c",
+      "disposition": "planned",
+      "review": "Joint declared in this plan (scripts/build_plants.py); driven by wind clips.",
+      "parts": 2,
+      "controlled_parts": [
+        "2",
+        "5"
+      ],
+      "parts_without_control": [],
+      "controls": [
+        "head_1c",
+        "stem_1"
+      ]
+    },
+    {
+      "id": "head_2a",
+      "label": "Flower bed: head 2a",
+      "disposition": "planned",
+      "review": "Joint declared in this plan (scripts/build_plants.py); driven by wind clips.",
+      "parts": 2,
+      "controlled_parts": [
+        "7",
+        "8"
+      ],
+      "parts_without_control": [],
+      "controls": [
+        "head_2a",
+        "stem_2"
+      ]
+    },
+    {
+      "id": "head_2b",
+      "label": "Flower bed: head 2b",
+      "disposition": "planned",
+      "review": "Joint declared in this plan (scripts/build_plants.py); driven by wind clips.",
+      "parts": 2,
+      "controlled_parts": [
+        "7",
+        "9"
+      ],
+      "parts_without_control": [],
+      "controls": [
+        "head_2b",
+        "stem_2"
+      ]
+    },
+    {
+      "id": "head_2c",
+      "label": "Flower bed: head 2c",
+      "disposition": "planned",
+      "review": "Joint declared in this plan (scripts/build_plants.py); driven by wind clips.",
+      "parts": 2,
+      "controlled_parts": [
+        "10",
+        "7"
+      ],
+      "parts_without_control": [],
+      "controls": [
+        "head_2c",
+        "stem_2"
+      ]
+    },
+    {
+      "id": "head_3a",
+      "label": "Flower bed: head 3a",
+      "disposition": "planned",
+      "review": "Joint declared in this plan (scripts/build_plants.py); driven by wind clips.",
+      "parts": 2,
+      "controlled_parts": [
+        "12",
+        "13"
+      ],
+      "parts_without_control": [],
+      "controls": [
+        "head_3a",
+        "stem_3"
+      ]
+    },
+    {
+      "id": "head_3b",
+      "label": "Flower bed: head 3b",
+      "disposition": "planned",
+      "review": "Joint declared in this plan (scripts/build_plants.py); driven by wind clips.",
+      "parts": 2,
+      "controlled_parts": [
+        "12",
+        "14"
+      ],
+      "parts_without_control": [],
+      "controls": [
+        "head_3b",
+        "stem_3"
+      ]
+    },
+    {
+      "id": "head_3c",
+      "label": "Flower bed: head 3c",
+      "disposition": "planned",
+      "review": "Joint declared in this plan (scripts/build_plants.py); driven by wind clips.",
+      "parts": 2,
+      "controlled_parts": [
+        "12",
+        "15"
+      ],
+      "parts_without_control": [],
+      "controls": [
+        "head_3c",
+        "stem_3"
+      ]
+    },
+    {
+      "id": "stem_1",
+      "label": "Flower bed: stem 1",
+      "disposition": "planned",
+      "review": "Joint declared in this plan (scripts/build_plants.py); driven by wind clips.",
+      "parts": 2,
+      "controlled_parts": [
+        "2"
+      ],
+      "parts_without_control": [
+        "1"
+      ],
+      "controls": [
+        "stem_1"
+      ]
+    },
+    {
+      "id": "stem_2",
+      "label": "Flower bed: stem 2",
+      "disposition": "planned",
+      "review": "Joint declared in this plan (scripts/build_plants.py); driven by wind clips.",
+      "parts": 2,
+      "controlled_parts": [
+        "7"
+      ],
+      "parts_without_control": [
+        "6"
+      ],
+      "controls": [
+        "stem_2"
+      ]
+    },
+    {
+      "id": "stem_3",
+      "label": "Flower bed: stem 3",
+      "disposition": "planned",
+      "review": "Joint declared in this plan (scripts/build_plants.py); driven by wind clips.",
+      "parts": 2,
+      "controlled_parts": [
+        "12"
+      ],
+      "parts_without_control": [
+        "11"
+      ],
+      "controls": [
+        "stem_3"
+      ]
+    }
+  ],
+  "warnings": [
+    {
+      "code": "incomplete_inspection",
+      "message": "pyldraw3 inspection is incomplete; inspect its diagnostics."
+    },
+    {
+      "code": "coaxial_not_run",
+      "message": "not run: 0 shaft/gear candidates outside 2..100; select a section"
+    }
+  ],
+  "coverage": "Bookkeeping of declared scope only. Supports may correctly lack controls. Planned, static and deferred dispositions require review notes; none certify discovery completeness, physical motion or clearance.",
+  "passed": true
+}

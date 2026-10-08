@@ -1,0 +1,165 @@
+{
+  "semantics": {
+    "door": {
+      "control": "door",
+      "value": 0.2,
+      "test_point": [
+        21.0,
+        -26.0,
+        -19.0
+      ],
+      "displacement": [
+        -1.294343,
+        0.0,
+        -8.900253
+      ],
+      "expected": "-z",
+      "flipped": true
+    },
+    "drawer_top": {
+      "control": "drawer_top",
+      "value": 4.0,
+      "test_point": [
+        0.0,
+        -92.0,
+        0.0
+      ],
+      "displacement": [
+        0.0,
+        0.0,
+        -4.0
+      ],
+      "expected": "-z",
+      "flipped": false
+    },
+    "drawer_low": {
+      "control": "drawer_low",
+      "value": 4.0,
+      "test_point": [
+        0.0,
+        -74.0,
+        0.0
+      ],
+      "displacement": [
+        0.0,
+        0.0,
+        -4.0
+      ],
+      "expected": "-z",
+      "flipped": false
+    }
+  },
+  "contacts": {
+    "tested_parts": 6,
+    "contacts": 3,
+    "contacted_parts": 5,
+    "by_kind": {
+      "hinge/hinge": 1,
+      "generic/generic": 2
+    },
+    "axles": {
+      "selection": "Catalog descriptions beginning Technic Axle followed by a numeric length; excludes axle pins, joiners and axle-hole supports",
+      "total": 0,
+      "with_axle_hole_contact": 0,
+      "without_axle_hole_contact": []
+    }
+  },
+  "contact_pairs": {
+    "1-2": [
+      "hinge/hinge"
+    ],
+    "3-4": [
+      "generic/generic"
+    ],
+    "3-5": [
+      "generic/generic"
+    ]
+  },
+  "asymmetric_sample": {
+    "controls": {
+      "door": 1.197,
+      "drawer_top": 11.1,
+      "drawer_low": 24.3
+    },
+    "transforms": {
+      "door": [
+        [
+          0.365152,
+          0.0,
+          0.930948,
+          0.589767
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          -0.930948,
+          0.0,
+          0.365152,
+          -33.13516
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "drawer_top": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          -11.1
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "drawer_low": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          -24.3
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ]
+    }
+  }
+}

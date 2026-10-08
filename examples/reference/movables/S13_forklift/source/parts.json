@@ -1,0 +1,185 @@
+{
+  "scenario": "S13_forklift",
+  "title": "Forklift mast",
+  "parts": [
+    {
+      "role": "chassis",
+      "id": "0",
+      "table": "plates.Plate4X6",
+      "ref": "3032",
+      "colour": 14,
+      "title": "Plate  4 x  6",
+      "library_only": false
+    },
+    {
+      "role": "axle0",
+      "id": "1",
+      "table": null,
+      "ref": "4600",
+      "colour": 0,
+      "title": "Plate  2 x  2 with 2 Wheel Pins",
+      "library_only": true
+    },
+    {
+      "role": "rim0l",
+      "id": "2",
+      "table": "wheels.WheelRim6_4X8",
+      "ref": "4624",
+      "colour": 7,
+      "title": "Wheel Rim  6.4 x  8",
+      "library_only": false
+    },
+    {
+      "role": "tyre0l",
+      "id": "3",
+      "table": "tyres.Tyre8_75X8OffsetTread",
+      "ref": "4084",
+      "colour": 0,
+      "title": "Tyre  8/ 75 x  8 Offset Tread",
+      "library_only": false
+    },
+    {
+      "role": "rim0r",
+      "id": "4",
+      "table": "wheels.WheelRim6_4X8",
+      "ref": "4624",
+      "colour": 7,
+      "title": "Wheel Rim  6.4 x  8",
+      "library_only": false
+    },
+    {
+      "role": "tyre0r",
+      "id": "5",
+      "table": "tyres.Tyre8_75X8OffsetTread",
+      "ref": "4084",
+      "colour": 0,
+      "title": "Tyre  8/ 75 x  8 Offset Tread",
+      "library_only": false
+    },
+    {
+      "role": "axle1",
+      "id": "6",
+      "table": null,
+      "ref": "4600",
+      "colour": 0,
+      "title": "Plate  2 x  2 with 2 Wheel Pins",
+      "library_only": true
+    },
+    {
+      "role": "rim1l",
+      "id": "7",
+      "table": "wheels.WheelRim6_4X8",
+      "ref": "4624",
+      "colour": 7,
+      "title": "Wheel Rim  6.4 x  8",
+      "library_only": false
+    },
+    {
+      "role": "tyre1l",
+      "id": "8",
+      "table": "tyres.Tyre8_75X8OffsetTread",
+      "ref": "4084",
+      "colour": 0,
+      "title": "Tyre  8/ 75 x  8 Offset Tread",
+      "library_only": false
+    },
+    {
+      "role": "rim1r",
+      "id": "9",
+      "table": "wheels.WheelRim6_4X8",
+      "ref": "4624",
+      "colour": 7,
+      "title": "Wheel Rim  6.4 x  8",
+      "library_only": false
+    },
+    {
+      "role": "tyre1r",
+      "id": "10",
+      "table": "tyres.Tyre8_75X8OffsetTread",
+      "ref": "4084",
+      "colour": 0,
+      "title": "Tyre  8/ 75 x  8 Offset Tread",
+      "library_only": false
+    },
+    {
+      "role": "body",
+      "id": "11",
+      "table": "bricks.Brick2X4",
+      "ref": "3001",
+      "colour": 14,
+      "title": "Brick  2 x  4",
+      "library_only": false
+    },
+    {
+      "role": "seat",
+      "id": "12",
+      "table": "bricks.Brick2X2",
+      "ref": "3003",
+      "colour": 0,
+      "title": "Brick  2 x  2",
+      "library_only": false
+    },
+    {
+      "role": "rails",
+      "id": "13",
+      "table": "vehicles.ForkliftRails2X4X5_667",
+      "ref": "3430",
+      "colour": 0,
+      "title": "Forklift Rails  2 x  4 x  5.667",
+      "library_only": false
+    },
+    {
+      "role": "forks",
+      "id": "14",
+      "table": "vehicles.ForkliftForks2X4",
+      "ref": "3431",
+      "colour": 7,
+      "title": "Forklift Forks  2 x  4",
+      "library_only": false
+    },
+    {
+      "role": "spring",
+      "id": "15",
+      "table": "vehicles.Forklift2X7Spring_Extended_",
+      "ref": "u9529-f2",
+      "colour": 0,
+      "title": "Forklift  2 x  7 Spring (Extended)",
+      "library_only": false
+    }
+  ],
+  "joints": {
+    "forks": {
+      "origin": [
+        0.0,
+        -44.0,
+        -56.0
+      ],
+      "axis": [
+        0.0,
+        -1.0,
+        0.0
+      ],
+      "parent": "rails",
+      "child": "forks",
+      "kind": "prismatic",
+      "connector": "3430c00-f1/-f2 shortcut positions: forks at y = -104 (raised) and -4 (lowered) in the rails frame"
+    },
+    "spring": {
+      "origin": [
+        0.0,
+        -128.8,
+        -51.05
+      ],
+      "axis": [
+        0.0,
+        1.0,
+        0.0
+      ],
+      "parent": "rails",
+      "child": "spring",
+      "kind": "stretch",
+      "connector": "u9529-f2 extended spring: seats at local y = 0 (rails) and 136 (forks); u9529-f1 compressed seats 0 and 36"
+    }
+  },
+  "reference_checks": []
+}

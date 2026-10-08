@@ -1,0 +1,223 @@
+{
+  "scenario": "S17_tipper",
+  "title": "Dump truck tipper",
+  "parts": [
+    {
+      "role": "chassis",
+      "id": "0",
+      "table": "plates.Plate4X10",
+      "ref": "3030",
+      "colour": 8,
+      "title": "Plate  4 x 10",
+      "library_only": false
+    },
+    {
+      "role": "axle0",
+      "id": "1",
+      "table": null,
+      "ref": "4600",
+      "colour": 0,
+      "title": "Plate  2 x  2 with 2 Wheel Pins",
+      "library_only": true
+    },
+    {
+      "role": "rim0l",
+      "id": "2",
+      "table": "wheels.WheelRim6_4X8",
+      "ref": "4624",
+      "colour": 7,
+      "title": "Wheel Rim  6.4 x  8",
+      "library_only": false
+    },
+    {
+      "role": "tyre0l",
+      "id": "3",
+      "table": "tyres.Tyre8_75X8OffsetTread",
+      "ref": "4084",
+      "colour": 0,
+      "title": "Tyre  8/ 75 x  8 Offset Tread",
+      "library_only": false
+    },
+    {
+      "role": "rim0r",
+      "id": "4",
+      "table": "wheels.WheelRim6_4X8",
+      "ref": "4624",
+      "colour": 7,
+      "title": "Wheel Rim  6.4 x  8",
+      "library_only": false
+    },
+    {
+      "role": "tyre0r",
+      "id": "5",
+      "table": "tyres.Tyre8_75X8OffsetTread",
+      "ref": "4084",
+      "colour": 0,
+      "title": "Tyre  8/ 75 x  8 Offset Tread",
+      "library_only": false
+    },
+    {
+      "role": "axle1",
+      "id": "6",
+      "table": null,
+      "ref": "4600",
+      "colour": 0,
+      "title": "Plate  2 x  2 with 2 Wheel Pins",
+      "library_only": true
+    },
+    {
+      "role": "rim1l",
+      "id": "7",
+      "table": "wheels.WheelRim6_4X8",
+      "ref": "4624",
+      "colour": 7,
+      "title": "Wheel Rim  6.4 x  8",
+      "library_only": false
+    },
+    {
+      "role": "tyre1l",
+      "id": "8",
+      "table": "tyres.Tyre8_75X8OffsetTread",
+      "ref": "4084",
+      "colour": 0,
+      "title": "Tyre  8/ 75 x  8 Offset Tread",
+      "library_only": false
+    },
+    {
+      "role": "rim1r",
+      "id": "9",
+      "table": "wheels.WheelRim6_4X8",
+      "ref": "4624",
+      "colour": 7,
+      "title": "Wheel Rim  6.4 x  8",
+      "library_only": false
+    },
+    {
+      "role": "tyre1r",
+      "id": "10",
+      "table": "tyres.Tyre8_75X8OffsetTread",
+      "ref": "4084",
+      "colour": 0,
+      "title": "Tyre  8/ 75 x  8 Offset Tread",
+      "library_only": false
+    },
+    {
+      "role": "cab",
+      "id": "11",
+      "table": "bricks.Brick2X4",
+      "ref": "3001",
+      "colour": 14,
+      "title": "Brick  2 x  4",
+      "library_only": false
+    },
+    {
+      "role": "cab_roof",
+      "id": "12",
+      "table": "plates.Plate2X4",
+      "ref": "3020",
+      "colour": 14,
+      "title": "Plate  2 x  4",
+      "library_only": false
+    },
+    {
+      "role": "bed",
+      "id": "13",
+      "table": "plates.Plate2X4",
+      "ref": "3020",
+      "colour": 8,
+      "title": "Plate  2 x  4",
+      "library_only": false
+    },
+    {
+      "role": "hinge_tile_l",
+      "id": "14",
+      "table": "hinges.HingeTile1X2With2Fingers",
+      "ref": "4531",
+      "colour": 8,
+      "title": "Hinge Tile  1 x  2 with 2 Fingers",
+      "library_only": false
+    },
+    {
+      "role": "hinge_plate_l",
+      "id": "15",
+      "table": "hinges.HingePlate1X2With3FingersAndHollowStuds",
+      "ref": "4275b",
+      "colour": 8,
+      "title": "Hinge Plate  1 x  2 with 3 Fingers and Hollow Studs",
+      "library_only": false
+    },
+    {
+      "role": "hinge_tile_r",
+      "id": "16",
+      "table": "hinges.HingeTile1X2With2Fingers",
+      "ref": "4531",
+      "colour": 8,
+      "title": "Hinge Tile  1 x  2 with 2 Fingers",
+      "library_only": false
+    },
+    {
+      "role": "hinge_plate_r",
+      "id": "17",
+      "table": "hinges.HingePlate1X2With3FingersAndHollowStuds",
+      "ref": "4275b",
+      "colour": 8,
+      "title": "Hinge Plate  1 x  2 with 3 Fingers and Hollow Studs",
+      "library_only": false
+    },
+    {
+      "role": "bucket",
+      "id": "18",
+      "table": "others.TipperBucket4X6WithOpenStudsFrontLip",
+      "ref": "4080",
+      "colour": 14,
+      "title": "Tipper Bucket  4 x  6 with Open Studs Front Lip",
+      "library_only": false
+    }
+  ],
+  "joints": {
+    "tip": {
+      "origin": [
+        -10.0,
+        -20.0,
+        170.0
+      ],
+      "axis": [
+        -1.0,
+        0.0,
+        0.0
+      ],
+      "parent": "chassis",
+      "child": "hinge_plate_l",
+      "kind": "revolute",
+      "connector": "4531 hinge snap_fgr (finger axis); the 4275b shadow hinge frame lies along the plate, not the finger axis; placement as set 6532"
+    }
+  },
+  "reference_checks": [
+    {
+      "model": "6532-1.mpd",
+      "section": "(flattened main model)",
+      "parent": "hinge_tile_l",
+      "part": "hinge_plate_l",
+      "official_refs": [
+        "4531",
+        "4275b"
+      ],
+      "position_offset_ldu": 0.0,
+      "rotation_offset": 0.0,
+      "note": ""
+    },
+    {
+      "model": "6532-1.mpd",
+      "section": "(flattened main model)",
+      "parent": "hinge_plate_l",
+      "part": "bucket",
+      "official_refs": [
+        "4275b",
+        "4080"
+      ],
+      "position_offset_ldu": 0.0,
+      "rotation_offset": 0.0,
+      "note": ""
+    }
+  ]
+}

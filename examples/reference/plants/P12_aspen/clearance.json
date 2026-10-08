@@ -1,0 +1,38 @@
+{
+  "case": "P12_aspen",
+  "sweep": {
+    "no_new_surface_crossings": true,
+    "crossings": [],
+    "excluded_rest_pairs": []
+  },
+  "clip_poses": {
+    "samples": 180,
+    "every": 4,
+    "no_new_surface_crossings": true,
+    "crossings_by_clip": {},
+    "frames_with_crossings": {},
+    "vertex_penetration_by_clip": {},
+    "deep_shrink_ldu": 1.5,
+    "no_deep_crossings": true,
+    "deep_crossings_by_clip": {},
+    "frames_with_deep_crossings": {}
+  },
+  "roles": {
+    "0": "base",
+    "1": "trunk_a0",
+    "2": "trunk_a1",
+    "3": "trunk_a2",
+    "4": "knot_a",
+    "5": "trunk_b0",
+    "6": "trunk_b1",
+    "7": "trunk_b2",
+    "8": "knot_b",
+    "9": "trunk_c0",
+    "10": "leaf_top",
+    "11": "leaf_front",
+    "12": "leaf_back",
+    "13": "leaf_upwind",
+    "14": "leaf_downwind"
+  },
+  "coverage": "Sampled surface crossings only; excludes rigid-body and rest-contact pairs; containment untested"
+}

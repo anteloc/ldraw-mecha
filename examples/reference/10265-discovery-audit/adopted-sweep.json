@@ -1,0 +1,618 @@
+{
+  "passed": true,
+  "samples": [
+    {
+      "control": "steering",
+      "value": -0.18,
+      "passed": true,
+      "max_error": 2.189931602458728e-05
+    },
+    {
+      "control": "steering",
+      "value": -0.1575,
+      "passed": true,
+      "max_error": 1.6771131143400453e-05
+    },
+    {
+      "control": "steering",
+      "value": -0.135,
+      "passed": true,
+      "max_error": 1.2324504439220618e-05
+    },
+    {
+      "control": "steering",
+      "value": -0.11249999999999999,
+      "passed": true,
+      "max_error": 8.560369963106496e-06
+    },
+    {
+      "control": "steering",
+      "value": -0.09,
+      "passed": true,
+      "max_error": 5.479523792928376e-06
+    },
+    {
+      "control": "steering",
+      "value": -0.0675,
+      "passed": true,
+      "max_error": 3.0826219443724767e-06
+    },
+    {
+      "control": "steering",
+      "value": -0.044999999999999984,
+      "passed": true,
+      "max_error": 1.3701784951081208e-06
+    },
+    {
+      "control": "steering",
+      "value": -0.022499999999999992,
+      "passed": true,
+      "max_error": 3.4256336789439956e-07
+    },
+    {
+      "control": "steering",
+      "value": 0.0,
+      "passed": true,
+      "max_error": 1.4210854715202004e-14
+    },
+    {
+      "control": "steering",
+      "value": 0.022499999999999992,
+      "passed": true,
+      "max_error": 3.4256336789439956e-07
+    },
+    {
+      "control": "steering",
+      "value": 0.044999999999999984,
+      "passed": true,
+      "max_error": 1.3701785093189756e-06
+    },
+    {
+      "control": "steering",
+      "value": 0.0675,
+      "passed": true,
+      "max_error": 3.0826219443724767e-06
+    },
+    {
+      "control": "steering",
+      "value": 0.09000000000000002,
+      "passed": true,
+      "max_error": 5.479523764506666e-06
+    },
+    {
+      "control": "steering",
+      "value": 0.11249999999999999,
+      "passed": true,
+      "max_error": 8.56036997731735e-06
+    },
+    {
+      "control": "steering",
+      "value": 0.135,
+      "passed": true,
+      "max_error": 1.2324504453431473e-05
+    },
+    {
+      "control": "steering",
+      "value": 0.15749999999999997,
+      "passed": true,
+      "max_error": 1.6771131143400453e-05
+    },
+    {
+      "control": "steering",
+      "value": 0.18,
+      "passed": true,
+      "max_error": 2.189931602458728e-05
+    },
+    {
+      "control": "spin_fl",
+      "value": -6.283185307179586,
+      "passed": true,
+      "max_error": 1.4210854715202004e-14
+    },
+    {
+      "control": "spin_fl",
+      "value": -5.497787143782138,
+      "passed": true,
+      "max_error": 1.4210854715202004e-14
+    },
+    {
+      "control": "spin_fl",
+      "value": -4.71238898038469,
+      "passed": true,
+      "max_error": 1.4210854715202004e-14
+    },
+    {
+      "control": "spin_fl",
+      "value": -3.9269908169872414,
+      "passed": true,
+      "max_error": 1.4210854715202004e-14
+    },
+    {
+      "control": "spin_fl",
+      "value": -3.141592653589793,
+      "passed": true,
+      "max_error": 1.4210854715202004e-14
+    },
+    {
+      "control": "spin_fl",
+      "value": -2.356194490192345,
+      "passed": true,
+      "max_error": 1.4210854715202004e-14
+    },
+    {
+      "control": "spin_fl",
+      "value": -1.5707963267948966,
+      "passed": true,
+      "max_error": 1.4210854715202004e-14
+    },
+    {
+      "control": "spin_fl",
+      "value": -0.7853981633974483,
+      "passed": true,
+      "max_error": 1.4210854715202004e-14
+    },
+    {
+      "control": "spin_fl",
+      "value": 0.0,
+      "passed": true,
+      "max_error": 1.4210854715202004e-14
+    },
+    {
+      "control": "spin_fl",
+      "value": 0.7853981633974483,
+      "passed": true,
+      "max_error": 1.4210854715202004e-14
+    },
+    {
+      "control": "spin_fl",
+      "value": 1.5707963267948966,
+      "passed": true,
+      "max_error": 1.4210854715202004e-14
+    },
+    {
+      "control": "spin_fl",
+      "value": 2.356194490192344,
+      "passed": true,
+      "max_error": 1.4210854715202004e-14
+    },
+    {
+      "control": "spin_fl",
+      "value": 3.141592653589793,
+      "passed": true,
+      "max_error": 1.4210854715202004e-14
+    },
+    {
+      "control": "spin_fl",
+      "value": 3.9269908169872423,
+      "passed": true,
+      "max_error": 1.4210854715202004e-14
+    },
+    {
+      "control": "spin_fl",
+      "value": 4.71238898038469,
+      "passed": true,
+      "max_error": 1.4210854715202004e-14
+    },
+    {
+      "control": "spin_fl",
+      "value": 5.497787143782137,
+      "passed": true,
+      "max_error": 1.4210854715202004e-14
+    },
+    {
+      "control": "spin_fl",
+      "value": 6.283185307179586,
+      "passed": true,
+      "max_error": 1.4210854715202004e-14
+    },
+    {
+      "control": "spin_fr",
+      "value": -6.283185307179586,
+      "passed": true,
+      "max_error": 1.4210854715202004e-14
+    },
+    {
+      "control": "spin_fr",
+      "value": -5.497787143782138,
+      "passed": true,
+      "max_error": 1.4210854715202004e-14
+    },
+    {
+      "control": "spin_fr",
+      "value": -4.71238898038469,
+      "passed": true,
+      "max_error": 1.4210854715202004e-14
+    },
+    {
+      "control": "spin_fr",
+      "value": -3.9269908169872414,
+      "passed": true,
+      "max_error": 1.4210854715202004e-14
+    },
+    {
+      "control": "spin_fr",
+      "value": -3.141592653589793,
+      "passed": true,
+      "max_error": 1.4210854715202004e-14
+    },
+    {
+      "control": "spin_fr",
+      "value": -2.356194490192345,
+      "passed": true,
+      "max_error": 1.4210854715202004e-14
+    },
+    {
+      "control": "spin_fr",
+      "value": -1.5707963267948966,
+      "passed": true,
+      "max_error": 1.4210854715202004e-14
+    },
+    {
+      "control": "spin_fr",
+      "value": -0.7853981633974483,
+      "passed": true,
+      "max_error": 1.4210854715202004e-14
+    },
+    {
+      "control": "spin_fr",
+      "value": 0.0,
+      "passed": true,
+      "max_error": 1.4210854715202004e-14
+    },
+    {
+      "control": "spin_fr",
+      "value": 0.7853981633974483,
+      "passed": true,
+      "max_error": 1.4210854715202004e-14
+    },
+    {
+      "control": "spin_fr",
+      "value": 1.5707963267948966,
+      "passed": true,
+      "max_error": 1.4210854715202004e-14
+    },
+    {
+      "control": "spin_fr",
+      "value": 2.356194490192344,
+      "passed": true,
+      "max_error": 1.4210854715202004e-14
+    },
+    {
+      "control": "spin_fr",
+      "value": 3.141592653589793,
+      "passed": true,
+      "max_error": 1.4210854715202004e-14
+    },
+    {
+      "control": "spin_fr",
+      "value": 3.9269908169872423,
+      "passed": true,
+      "max_error": 1.4210854715202004e-14
+    },
+    {
+      "control": "spin_fr",
+      "value": 4.71238898038469,
+      "passed": true,
+      "max_error": 1.4210854715202004e-14
+    },
+    {
+      "control": "spin_fr",
+      "value": 5.497787143782137,
+      "passed": true,
+      "max_error": 1.4210854715202004e-14
+    },
+    {
+      "control": "spin_fr",
+      "value": 6.283185307179586,
+      "passed": true,
+      "max_error": 1.4210854715202004e-14
+    },
+    {
+      "control": "spin_rl",
+      "value": -6.283185307179586,
+      "passed": true,
+      "max_error": 1.4210854715202004e-14
+    },
+    {
+      "control": "spin_rl",
+      "value": -5.497787143782138,
+      "passed": true,
+      "max_error": 1.4210854715202004e-14
+    },
+    {
+      "control": "spin_rl",
+      "value": -4.71238898038469,
+      "passed": true,
+      "max_error": 1.4210854715202004e-14
+    },
+    {
+      "control": "spin_rl",
+      "value": -3.9269908169872414,
+      "passed": true,
+      "max_error": 1.4210854715202004e-14
+    },
+    {
+      "control": "spin_rl",
+      "value": -3.141592653589793,
+      "passed": true,
+      "max_error": 1.4210854715202004e-14
+    },
+    {
+      "control": "spin_rl",
+      "value": -2.356194490192345,
+      "passed": true,
+      "max_error": 1.4210854715202004e-14
+    },
+    {
+      "control": "spin_rl",
+      "value": -1.5707963267948966,
+      "passed": true,
+      "max_error": 1.4210854715202004e-14
+    },
+    {
+      "control": "spin_rl",
+      "value": -0.7853981633974483,
+      "passed": true,
+      "max_error": 1.4210854715202004e-14
+    },
+    {
+      "control": "spin_rl",
+      "value": 0.0,
+      "passed": true,
+      "max_error": 1.4210854715202004e-14
+    },
+    {
+      "control": "spin_rl",
+      "value": 0.7853981633974483,
+      "passed": true,
+      "max_error": 1.4210854715202004e-14
+    },
+    {
+      "control": "spin_rl",
+      "value": 1.5707963267948966,
+      "passed": true,
+      "max_error": 1.4210854715202004e-14
+    },
+    {
+      "control": "spin_rl",
+      "value": 2.356194490192344,
+      "passed": true,
+      "max_error": 1.4210854715202004e-14
+    },
+    {
+      "control": "spin_rl",
+      "value": 3.141592653589793,
+      "passed": true,
+      "max_error": 1.4210854715202004e-14
+    },
+    {
+      "control": "spin_rl",
+      "value": 3.9269908169872423,
+      "passed": true,
+      "max_error": 1.4210854715202004e-14
+    },
+    {
+      "control": "spin_rl",
+      "value": 4.71238898038469,
+      "passed": true,
+      "max_error": 1.4210854715202004e-14
+    },
+    {
+      "control": "spin_rl",
+      "value": 5.497787143782137,
+      "passed": true,
+      "max_error": 1.4210854715202004e-14
+    },
+    {
+      "control": "spin_rl",
+      "value": 6.283185307179586,
+      "passed": true,
+      "max_error": 1.4210854715202004e-14
+    },
+    {
+      "control": "spin_rr",
+      "value": -6.283185307179586,
+      "passed": true,
+      "max_error": 1.4210854715202004e-14
+    },
+    {
+      "control": "spin_rr",
+      "value": -5.497787143782138,
+      "passed": true,
+      "max_error": 1.4210854715202004e-14
+    },
+    {
+      "control": "spin_rr",
+      "value": -4.71238898038469,
+      "passed": true,
+      "max_error": 1.4210854715202004e-14
+    },
+    {
+      "control": "spin_rr",
+      "value": -3.9269908169872414,
+      "passed": true,
+      "max_error": 1.4210854715202004e-14
+    },
+    {
+      "control": "spin_rr",
+      "value": -3.141592653589793,
+      "passed": true,
+      "max_error": 1.4210854715202004e-14
+    },
+    {
+      "control": "spin_rr",
+      "value": -2.356194490192345,
+      "passed": true,
+      "max_error": 1.4210854715202004e-14
+    },
+    {
+      "control": "spin_rr",
+      "value": -1.5707963267948966,
+      "passed": true,
+      "max_error": 1.4210854715202004e-14
+    },
+    {
+      "control": "spin_rr",
+      "value": -0.7853981633974483,
+      "passed": true,
+      "max_error": 1.4210854715202004e-14
+    },
+    {
+      "control": "spin_rr",
+      "value": 0.0,
+      "passed": true,
+      "max_error": 1.4210854715202004e-14
+    },
+    {
+      "control": "spin_rr",
+      "value": 0.7853981633974483,
+      "passed": true,
+      "max_error": 1.4210854715202004e-14
+    },
+    {
+      "control": "spin_rr",
+      "value": 1.5707963267948966,
+      "passed": true,
+      "max_error": 1.4210854715202004e-14
+    },
+    {
+      "control": "spin_rr",
+      "value": 2.356194490192344,
+      "passed": true,
+      "max_error": 1.4210854715202004e-14
+    },
+    {
+      "control": "spin_rr",
+      "value": 3.141592653589793,
+      "passed": true,
+      "max_error": 1.4210854715202004e-14
+    },
+    {
+      "control": "spin_rr",
+      "value": 3.9269908169872423,
+      "passed": true,
+      "max_error": 1.4210854715202004e-14
+    },
+    {
+      "control": "spin_rr",
+      "value": 4.71238898038469,
+      "passed": true,
+      "max_error": 1.4210854715202004e-14
+    },
+    {
+      "control": "spin_rr",
+      "value": 5.497787143782137,
+      "passed": true,
+      "max_error": 1.4210854715202004e-14
+    },
+    {
+      "control": "spin_rr",
+      "value": 6.283185307179586,
+      "passed": true,
+      "max_error": 1.4210854715202004e-14
+    },
+    {
+      "control": "valve_covers",
+      "value": 0.0,
+      "passed": true,
+      "max_error": 1.4210854715202004e-14
+    },
+    {
+      "control": "valve_covers",
+      "value": 0.009375,
+      "passed": true,
+      "max_error": 1.4210854715202004e-14
+    },
+    {
+      "control": "valve_covers",
+      "value": 0.01875,
+      "passed": true,
+      "max_error": 1.4210854715202004e-14
+    },
+    {
+      "control": "valve_covers",
+      "value": 0.028124999999999997,
+      "passed": true,
+      "max_error": 1.4210854715202004e-14
+    },
+    {
+      "control": "valve_covers",
+      "value": 0.0375,
+      "passed": true,
+      "max_error": 1.4210854715202004e-14
+    },
+    {
+      "control": "valve_covers",
+      "value": 0.046875,
+      "passed": true,
+      "max_error": 1.4210854715202004e-14
+    },
+    {
+      "control": "valve_covers",
+      "value": 0.056249999999999994,
+      "passed": true,
+      "max_error": 1.4210854715202004e-14
+    },
+    {
+      "control": "valve_covers",
+      "value": 0.065625,
+      "passed": true,
+      "max_error": 1.4210854715202004e-14
+    },
+    {
+      "control": "valve_covers",
+      "value": 0.075,
+      "passed": true,
+      "max_error": 1.4210854715202004e-14
+    },
+    {
+      "control": "valve_covers",
+      "value": 0.08437499999999999,
+      "passed": true,
+      "max_error": 1.4210854715202004e-14
+    },
+    {
+      "control": "valve_covers",
+      "value": 0.09375,
+      "passed": true,
+      "max_error": 1.4210854715202004e-14
+    },
+    {
+      "control": "valve_covers",
+      "value": 0.103125,
+      "passed": true,
+      "max_error": 1.4210854715202004e-14
+    },
+    {
+      "control": "valve_covers",
+      "value": 0.11249999999999999,
+      "passed": true,
+      "max_error": 1.4210854715202004e-14
+    },
+    {
+      "control": "valve_covers",
+      "value": 0.121875,
+      "passed": true,
+      "max_error": 1.4210854715202004e-14
+    },
+    {
+      "control": "valve_covers",
+      "value": 0.13125,
+      "passed": true,
+      "max_error": 1.4210854715202004e-14
+    },
+    {
+      "control": "valve_covers",
+      "value": 0.140625,
+      "passed": true,
+      "max_error": 1.4210854715202004e-14
+    },
+    {
+      "control": "valve_covers",
+      "value": 0.15,
+      "passed": true,
+      "max_error": 1.4210854715202004e-14
+    }
+  ],
+  "coverage": "Each control swept independently; analytic closure only, not mesh collisions or dynamics"
+}

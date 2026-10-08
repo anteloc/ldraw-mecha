@@ -1,0 +1,102 @@
+{
+  "scenario": "S09_trap_door",
+  "title": "Floor trap door",
+  "parts": [
+    {
+      "role": "base",
+      "id": "0",
+      "table": "plates.Plate6X8",
+      "ref": "3036",
+      "colour": 8,
+      "title": "Plate  6 x  8",
+      "library_only": false
+    },
+    {
+      "role": "pillar0",
+      "id": "1",
+      "table": "bricks.Brick1X1X5WithSolidStud",
+      "ref": "2453b",
+      "colour": 71,
+      "title": "Brick  1 x  1 x  5 with Solid Stud",
+      "library_only": false
+    },
+    {
+      "role": "pillar1",
+      "id": "2",
+      "table": "bricks.Brick1X1X5WithSolidStud",
+      "ref": "2453b",
+      "colour": 71,
+      "title": "Brick  1 x  1 x  5 with Solid Stud",
+      "library_only": false
+    },
+    {
+      "role": "pillar2",
+      "id": "3",
+      "table": "bricks.Brick1X1X5WithSolidStud",
+      "ref": "2453b",
+      "colour": 71,
+      "title": "Brick  1 x  1 x  5 with Solid Stud",
+      "library_only": false
+    },
+    {
+      "role": "pillar3",
+      "id": "4",
+      "table": "bricks.Brick1X1X5WithSolidStud",
+      "ref": "2453b",
+      "colour": 71,
+      "title": "Brick  1 x  1 x  5 with Solid Stud",
+      "library_only": false
+    },
+    {
+      "role": "frame",
+      "id": "5",
+      "table": "plates.Plate6X8TrapDoorFrame",
+      "ref": "30041",
+      "colour": 8,
+      "title": "Plate  6 x  8 Trap Door Frame",
+      "library_only": false
+    },
+    {
+      "role": "trapdoor",
+      "id": "6",
+      "table": "plates.Plate4X5TrapDoor",
+      "ref": "30042",
+      "colour": 70,
+      "title": "Plate  4 x  5 Trap Door",
+      "library_only": false
+    }
+  ],
+  "joints": {
+    "trapdoor": {
+      "origin": [
+        -50.0,
+        -128.0,
+        26.0
+      ],
+      "axis": [
+        0.0,
+        0.0,
+        1.0
+      ],
+      "parent": "frame",
+      "child": "trapdoor",
+      "kind": "revolute",
+      "connector": "30042 pin snap_cyl pair (z = +/-26) in the 30041 clips; placement from sets 6769/7657"
+    }
+  },
+  "reference_checks": [
+    {
+      "model": "6769-1.mpd",
+      "section": "(flattened main model)",
+      "parent": "frame",
+      "part": "trapdoor",
+      "official_refs": [
+        "30041",
+        "30042"
+      ],
+      "position_offset_ldu": 0.0,
+      "rotation_offset": 0.0,
+      "note": ""
+    }
+  ]
+}

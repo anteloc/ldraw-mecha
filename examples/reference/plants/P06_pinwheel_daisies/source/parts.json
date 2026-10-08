@@ -1,0 +1,187 @@
+{
+  "case": "P06_pinwheel_daisies",
+  "title": "Pinwheel daisies",
+  "parts": [
+    {
+      "role": "base",
+      "id": "0",
+      "table": "plates.Plate4X4",
+      "ref": "3031",
+      "colour": 2,
+      "title": "Plate  4 x  4",
+      "library_only": false
+    },
+    {
+      "role": "post0",
+      "id": "1",
+      "table": "bricks.Brick1X1",
+      "ref": "3005",
+      "colour": 2,
+      "title": "Brick  1 x  1",
+      "library_only": false
+    },
+    {
+      "role": "post1",
+      "id": "2",
+      "table": "bricks.Brick1X1",
+      "ref": "3005",
+      "colour": 2,
+      "title": "Brick  1 x  1",
+      "library_only": false
+    },
+    {
+      "role": "arm1",
+      "id": "3",
+      "table": "plates.Plate1X2WithClipHorizontalOnEnd_ThickC_Clip_",
+      "ref": "63868",
+      "colour": 2,
+      "title": "Plate  1 x  2 with Clip Horizontal on End (Thick C-Clip)",
+      "library_only": false
+    },
+    {
+      "role": "daisy1",
+      "id": "4",
+      "table": "plants.PlantFlowerWith7AlternatePetalsWithBarAndPinHole",
+      "ref": "32606",
+      "colour": 14,
+      "title": "Plant Flower with  7 Alternate Petals with Bar and Pin Hole",
+      "library_only": false
+    },
+    {
+      "role": "post2",
+      "id": "5",
+      "table": "bricks.Brick1X1",
+      "ref": "3005",
+      "colour": 2,
+      "title": "Brick  1 x  1",
+      "library_only": false
+    },
+    {
+      "role": "post3",
+      "id": "6",
+      "table": "bricks.Brick1X1",
+      "ref": "3005",
+      "colour": 2,
+      "title": "Brick  1 x  1",
+      "library_only": false
+    },
+    {
+      "role": "arm2",
+      "id": "7",
+      "table": "plates.Plate1X2WithClipHorizontalOnEnd_ThickC_Clip_",
+      "ref": "63868",
+      "colour": 2,
+      "title": "Plate  1 x  2 with Clip Horizontal on End (Thick C-Clip)",
+      "library_only": false
+    },
+    {
+      "role": "daisy2",
+      "id": "8",
+      "table": "plants.PlantFlowerWith6RoundedPetalsWithBarAndPinHole",
+      "ref": "95831",
+      "colour": 15,
+      "title": "Plant Flower with  6 Rounded Petals with Bar and Pin Hole",
+      "library_only": false
+    },
+    {
+      "role": "post4",
+      "id": "9",
+      "table": "bricks.Brick1X1",
+      "ref": "3005",
+      "colour": 2,
+      "title": "Brick  1 x  1",
+      "library_only": false
+    },
+    {
+      "role": "post5",
+      "id": "10",
+      "table": "bricks.Brick1X1",
+      "ref": "3005",
+      "colour": 2,
+      "title": "Brick  1 x  1",
+      "library_only": false
+    },
+    {
+      "role": "arm3",
+      "id": "11",
+      "table": "plates.Plate1X2WithClipHorizontalOnEnd_ThickC_Clip_",
+      "ref": "63868",
+      "colour": 2,
+      "title": "Plate  1 x  2 with Clip Horizontal on End (Thick C-Clip)",
+      "library_only": false
+    },
+    {
+      "role": "daisy3",
+      "id": "12",
+      "table": "plants.PlantFlowerWith7AlternatePetalsWithCentreRingWithBarAndPinHole",
+      "ref": "4367",
+      "colour": 26,
+      "title": "Plant Flower with  7 Alternate Petals with Centre Ring with Bar and Pin Hole",
+      "library_only": false
+    },
+    {
+      "role": "cap",
+      "id": "13",
+      "table": "plates.Plate1X1Round",
+      "ref": "6141",
+      "colour": 14,
+      "title": "Plate  1 x  1 Round",
+      "library_only": false
+    }
+  ],
+  "joints": {
+    "spin_1": {
+      "origin": [
+        0.0,
+        -54.0,
+        -40.0
+      ],
+      "axis": [
+        1.0,
+        0.0,
+        0.0
+      ],
+      "parent": "arm1",
+      "child": "daisy1",
+      "kind": "revolute",
+      "joint": "real",
+      "connector": "real: 32606 bar in the 63868 clip; turns about the bar (right-hand about +X)"
+    },
+    "spin_2": {
+      "origin": [
+        0.0,
+        -110.0,
+        40.0
+      ],
+      "axis": [
+        1.0,
+        0.0,
+        0.0
+      ],
+      "parent": "arm2",
+      "child": "daisy2",
+      "kind": "revolute",
+      "joint": "real",
+      "connector": "real: 95831 bar in the 63868 clip; turns about the bar (right-hand about +X)"
+    },
+    "spin_3": {
+      "origin": [
+        0.0,
+        -166.0,
+        -40.0
+      ],
+      "axis": [
+        1.0,
+        0.0,
+        0.0
+      ],
+      "parent": "arm3",
+      "child": "daisy3",
+      "kind": "revolute",
+      "joint": "real",
+      "connector": "real: 4367 bar in the 63868 clip; turns about the bar (right-hand about +X)"
+    }
+  },
+  "reference_checks": [],
+  "geometry_checks": []
+}

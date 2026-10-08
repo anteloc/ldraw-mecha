@@ -1,0 +1,239 @@
+{
+  "scenario": "S10_car_doors",
+  "title": "Town car doors",
+  "parts": [
+    {
+      "role": "chassis",
+      "id": "0",
+      "table": "plates.Plate4X8",
+      "ref": "3035",
+      "colour": 1,
+      "title": "Plate  4 x  8",
+      "library_only": false
+    },
+    {
+      "role": "axle0",
+      "id": "1",
+      "table": null,
+      "ref": "4600",
+      "colour": 0,
+      "title": "Plate  2 x  2 with 2 Wheel Pins",
+      "library_only": true
+    },
+    {
+      "role": "rim0l",
+      "id": "2",
+      "table": "wheels.WheelRim6_4X8",
+      "ref": "4624",
+      "colour": 7,
+      "title": "Wheel Rim  6.4 x  8",
+      "library_only": false
+    },
+    {
+      "role": "tyre0l",
+      "id": "3",
+      "table": "tyres.Tyre8_75X8OffsetTread",
+      "ref": "4084",
+      "colour": 0,
+      "title": "Tyre  8/ 75 x  8 Offset Tread",
+      "library_only": false
+    },
+    {
+      "role": "rim0r",
+      "id": "4",
+      "table": "wheels.WheelRim6_4X8",
+      "ref": "4624",
+      "colour": 7,
+      "title": "Wheel Rim  6.4 x  8",
+      "library_only": false
+    },
+    {
+      "role": "tyre0r",
+      "id": "5",
+      "table": "tyres.Tyre8_75X8OffsetTread",
+      "ref": "4084",
+      "colour": 0,
+      "title": "Tyre  8/ 75 x  8 Offset Tread",
+      "library_only": false
+    },
+    {
+      "role": "axle1",
+      "id": "6",
+      "table": null,
+      "ref": "4600",
+      "colour": 0,
+      "title": "Plate  2 x  2 with 2 Wheel Pins",
+      "library_only": true
+    },
+    {
+      "role": "rim1l",
+      "id": "7",
+      "table": "wheels.WheelRim6_4X8",
+      "ref": "4624",
+      "colour": 7,
+      "title": "Wheel Rim  6.4 x  8",
+      "library_only": false
+    },
+    {
+      "role": "tyre1l",
+      "id": "8",
+      "table": "tyres.Tyre8_75X8OffsetTread",
+      "ref": "4084",
+      "colour": 0,
+      "title": "Tyre  8/ 75 x  8 Offset Tread",
+      "library_only": false
+    },
+    {
+      "role": "rim1r",
+      "id": "9",
+      "table": "wheels.WheelRim6_4X8",
+      "ref": "4624",
+      "colour": 7,
+      "title": "Wheel Rim  6.4 x  8",
+      "library_only": false
+    },
+    {
+      "role": "tyre1r",
+      "id": "10",
+      "table": "tyres.Tyre8_75X8OffsetTread",
+      "ref": "4084",
+      "colour": 0,
+      "title": "Tyre  8/ 75 x  8 Offset Tread",
+      "library_only": false
+    },
+    {
+      "role": "nose",
+      "id": "11",
+      "table": "bricks.Brick2X4",
+      "ref": "3001",
+      "colour": 1,
+      "title": "Brick  2 x  4",
+      "library_only": false
+    },
+    {
+      "role": "door_l",
+      "id": "12",
+      "table": "doors.Door1X3X1Left",
+      "ref": "3822",
+      "colour": 1,
+      "title": "Door  1 x  3 x  1 Left",
+      "library_only": false
+    },
+    {
+      "role": "door_r",
+      "id": "13",
+      "table": "doors.Door1X3X1Right",
+      "ref": "3821",
+      "colour": 1,
+      "title": "Door  1 x  3 x  1 Right",
+      "library_only": false
+    },
+    {
+      "role": "windscreen",
+      "id": "14",
+      "table": "windscreens.Windscreen2X4X2",
+      "ref": "3823",
+      "colour": 47,
+      "title": "Windscreen  2 x  4 x  2",
+      "library_only": false
+    },
+    {
+      "role": "seat",
+      "id": "15",
+      "table": "bricks.Brick2X2",
+      "ref": "3003",
+      "colour": 15,
+      "title": "Brick  2 x  2",
+      "library_only": false
+    },
+    {
+      "role": "rear",
+      "id": "16",
+      "table": "bricks.Brick2X4",
+      "ref": "3001",
+      "colour": 1,
+      "title": "Brick  2 x  4",
+      "library_only": false
+    },
+    {
+      "role": "boot",
+      "id": "17",
+      "table": "plates.Plate2X4",
+      "ref": "3020",
+      "colour": 1,
+      "title": "Plate  2 x  4",
+      "library_only": false
+    },
+    {
+      "role": "tail",
+      "id": "18",
+      "table": "bricks.Brick1X4",
+      "ref": "3010",
+      "colour": 1,
+      "title": "Brick  1 x  4",
+      "library_only": false
+    }
+  ],
+  "joints": {
+    "door_l": {
+      "origin": [
+        -30.0,
+        0.0,
+        -30.0
+      ],
+      "axis": [
+        0.0,
+        -1.0,
+        0.0
+      ],
+      "parent": "chassis",
+      "child": "door_l",
+      "kind": "revolute",
+      "connector": "3821/3822 bottom pin_hole (s/3822s01 hinge tube) on a chassis stud; placement as set 106"
+    },
+    "door_r": {
+      "origin": [
+        -30.0,
+        0.0,
+        30.0
+      ],
+      "axis": [
+        0.0,
+        -1.0,
+        0.0
+      ],
+      "parent": "chassis",
+      "child": "door_r",
+      "kind": "revolute",
+      "connector": "3821/3822 bottom pin_hole (s/3822s01 hinge tube) on a chassis stud; placement as set 106"
+    }
+  },
+  "reference_checks": [
+    {
+      "model": "106-1.mpd",
+      "section": "(flattened main model)",
+      "parent": "windscreen",
+      "part": "door_l",
+      "official_refs": [
+        "3823",
+        "3822"
+      ],
+      "position_offset_ldu": 0.0,
+      "rotation_offset": 0.0,
+      "note": "106 places the doors under its windscreen"
+    },
+    {
+      "model": "106-1.mpd",
+      "section": "(flattened main model)",
+      "parent": "windscreen",
+      "part": "door_r",
+      "official_refs": [
+        "3823",
+        "3821"
+      ],
+      "position_offset_ldu": 0.0,
+      "rotation_offset": 0.0,
+      "note": "106 places the doors under its windscreen"
+    }
+  ]
+}

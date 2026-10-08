@@ -1,0 +1,6265 @@
+{
+  "conventions": {
+    "scenario_frame": "LDraw LDU per scenario: -Y up, the scenario front faces -Z (towards the catalog camera), ground (top of the base) at y = 0. Each control's default 0 is the built pose.",
+    "rules": "Every clip starts at rest (all controls 0) and ends at rest; periodic channels may end on whole turns (an identical pose). Values stay inside the control ranges.",
+    "windows": {
+      "A": [
+        1,
+        144
+      ],
+      "B": [
+        161,
+        304
+      ],
+      "C": [
+        321,
+        464
+      ]
+    },
+    "fps": 24,
+    "frames": 480,
+    "styles": {
+      "ease_cycle": "Open, hold, close with sine ease-in/out; starts and ends at rest with zero speed (loops cleanly)",
+      "slam_bounce": "Fast close into a stop with Blender's BOUNCE ease-out: accelerates, hits, rebounds twice, settles",
+      "hesitant": "Small stepped openings with pauses (a creaking or cautious opening)",
+      "mirrored_pair": "Two elements move together with identical values (mirrored by their axes)",
+      "staggered_pair": "Two elements move one after the other, overlapping in time",
+      "damped_swing": "Released element swings through its rest position with decaying sine half-cycles",
+      "flutter": "Small irregular oscillations about a partly open position (wind)",
+      "peek": "Partial opening (a crack), hold, close; repeated or single",
+      "gravity_drop": "Falls open under gravity: QUAD ease-in or BOUNCE ease-out onto a stop",
+      "winch_linear": "Constant-speed (LINEAR) movement, like a winch or motor",
+      "overshoot_settle": "Moves past the target and settles back with Blender's BACK ease-out (gas strut, spring)",
+      "stepped": "Equal steps with holds (chain hoist, ratchet, hydraulic stages)",
+      "continuous_spin": "Constant angular speed over whole turns (loops cleanly)",
+      "spin_up_down": "Accelerates (QUAD in), cruises (LINEAR), decelerates (QUAD out) to a whole number of turns",
+      "sweep": "Back-and-forth sine oscillation about the rest position (scanning)",
+      "slide_bounce": "Slides into an end stop with a BOUNCE ease-out",
+      "sequence": "Several channels in a scripted order (open, use, close)",
+      "shake": "Fast small oscillation around a held pose (shaking out a load)",
+      "toggle": "Snap between positions with very short QUAD moves and holds"
+    },
+    "interpolations": {
+      "CONSTANT": {
+        "interpolation": "CONSTANT",
+        "easing": "AUTO"
+      },
+      "LINEAR": {
+        "interpolation": "LINEAR",
+        "easing": "AUTO"
+      },
+      "SINE_IN": {
+        "interpolation": "SINE",
+        "easing": "EASE_IN"
+      },
+      "SINE_OUT": {
+        "interpolation": "SINE",
+        "easing": "EASE_OUT"
+      },
+      "SINE_IN_OUT": {
+        "interpolation": "SINE",
+        "easing": "EASE_IN_OUT"
+      },
+      "QUAD_IN": {
+        "interpolation": "QUAD",
+        "easing": "EASE_IN"
+      },
+      "QUAD_OUT": {
+        "interpolation": "QUAD",
+        "easing": "EASE_OUT"
+      },
+      "QUAD_IN_OUT": {
+        "interpolation": "QUAD",
+        "easing": "EASE_IN_OUT"
+      },
+      "CUBIC_IN_OUT": {
+        "interpolation": "CUBIC",
+        "easing": "EASE_IN_OUT"
+      },
+      "BACK_OUT": {
+        "interpolation": "BACK",
+        "easing": "EASE_OUT"
+      },
+      "BOUNCE_OUT": {
+        "interpolation": "BOUNCE",
+        "easing": "EASE_OUT"
+      }
+    },
+    "back_factor": 1.70158
+  },
+  "scenarios": [
+    {
+      "scenario": "S01_house_door",
+      "title": "House front door",
+      "element": "Door 1x4x6 (60616b) in door frame 60596",
+      "plan": "movable_01_house_door",
+      "controller": "CTRL_movable_01_house_door",
+      "collection": "S01_house_door House front door",
+      "scene": "S01 House front door",
+      "controls": {
+        "door": {
+          "unit": "radian",
+          "min": 0.0,
+          "max": 1.75,
+          "description": "Door leaf about its frame hinge; + swings the door open toward the front (-Z)",
+          "periodic": false
+        }
+      },
+      "parts": [
+        {
+          "role": "base",
+          "id": "0",
+          "table": "plates.Plate6X12",
+          "ref": "3028",
+          "colour": 2,
+          "title": "Plate  6 x 12",
+          "library_only": false
+        },
+        {
+          "role": "frame",
+          "id": "1",
+          "table": "doors.Door1X4X6Frame",
+          "ref": "60596",
+          "colour": 15,
+          "title": "Door  1 x  4 x  6 Frame",
+          "library_only": false
+        },
+        {
+          "role": "door",
+          "id": "2",
+          "table": "doors.Door1X4X6SmoothWithChamferedHandlePlinth",
+          "ref": "60616b",
+          "colour": 70,
+          "title": "Door  1 x  4 x  6 Smooth with Chamfered Handle Plinth",
+          "library_only": false
+        },
+        {
+          "role": "wall_l0",
+          "id": "3",
+          "table": "bricks.Brick1X4",
+          "ref": "3010",
+          "colour": 19,
+          "title": "Brick  1 x  4",
+          "library_only": false
+        },
+        {
+          "role": "wall_l1a",
+          "id": "4",
+          "table": "bricks.Brick1X2",
+          "ref": "3004",
+          "colour": 19,
+          "title": "Brick  1 x  2",
+          "library_only": false
+        },
+        {
+          "role": "wall_l1b",
+          "id": "5",
+          "table": "bricks.Brick1X2",
+          "ref": "3004",
+          "colour": 19,
+          "title": "Brick  1 x  2",
+          "library_only": false
+        },
+        {
+          "role": "wall_l2",
+          "id": "6",
+          "table": "bricks.Brick1X4",
+          "ref": "3010",
+          "colour": 19,
+          "title": "Brick  1 x  4",
+          "library_only": false
+        },
+        {
+          "role": "wall_l3a",
+          "id": "7",
+          "table": "bricks.Brick1X2",
+          "ref": "3004",
+          "colour": 19,
+          "title": "Brick  1 x  2",
+          "library_only": false
+        },
+        {
+          "role": "wall_l3b",
+          "id": "8",
+          "table": "bricks.Brick1X2",
+          "ref": "3004",
+          "colour": 19,
+          "title": "Brick  1 x  2",
+          "library_only": false
+        },
+        {
+          "role": "wall_l4",
+          "id": "9",
+          "table": "bricks.Brick1X4",
+          "ref": "3010",
+          "colour": 19,
+          "title": "Brick  1 x  4",
+          "library_only": false
+        },
+        {
+          "role": "wall_l5a",
+          "id": "10",
+          "table": "bricks.Brick1X2",
+          "ref": "3004",
+          "colour": 19,
+          "title": "Brick  1 x  2",
+          "library_only": false
+        },
+        {
+          "role": "wall_l5b",
+          "id": "11",
+          "table": "bricks.Brick1X2",
+          "ref": "3004",
+          "colour": 19,
+          "title": "Brick  1 x  2",
+          "library_only": false
+        },
+        {
+          "role": "wall_r0",
+          "id": "12",
+          "table": "bricks.Brick1X4",
+          "ref": "3010",
+          "colour": 19,
+          "title": "Brick  1 x  4",
+          "library_only": false
+        },
+        {
+          "role": "wall_r1a",
+          "id": "13",
+          "table": "bricks.Brick1X2",
+          "ref": "3004",
+          "colour": 19,
+          "title": "Brick  1 x  2",
+          "library_only": false
+        },
+        {
+          "role": "wall_r1b",
+          "id": "14",
+          "table": "bricks.Brick1X2",
+          "ref": "3004",
+          "colour": 19,
+          "title": "Brick  1 x  2",
+          "library_only": false
+        },
+        {
+          "role": "wall_r2",
+          "id": "15",
+          "table": "bricks.Brick1X4",
+          "ref": "3010",
+          "colour": 19,
+          "title": "Brick  1 x  4",
+          "library_only": false
+        },
+        {
+          "role": "wall_r3a",
+          "id": "16",
+          "table": "bricks.Brick1X2",
+          "ref": "3004",
+          "colour": 19,
+          "title": "Brick  1 x  2",
+          "library_only": false
+        },
+        {
+          "role": "wall_r3b",
+          "id": "17",
+          "table": "bricks.Brick1X2",
+          "ref": "3004",
+          "colour": 19,
+          "title": "Brick  1 x  2",
+          "library_only": false
+        },
+        {
+          "role": "wall_r4",
+          "id": "18",
+          "table": "bricks.Brick1X4",
+          "ref": "3010",
+          "colour": 19,
+          "title": "Brick  1 x  4",
+          "library_only": false
+        },
+        {
+          "role": "wall_r5a",
+          "id": "19",
+          "table": "bricks.Brick1X2",
+          "ref": "3004",
+          "colour": 19,
+          "title": "Brick  1 x  2",
+          "library_only": false
+        },
+        {
+          "role": "wall_r5b",
+          "id": "20",
+          "table": "bricks.Brick1X2",
+          "ref": "3004",
+          "colour": 19,
+          "title": "Brick  1 x  2",
+          "library_only": false
+        },
+        {
+          "role": "lintel",
+          "id": "21",
+          "table": "bricks.Brick1X12",
+          "ref": "6112",
+          "colour": 19,
+          "title": "Brick  1 x 12",
+          "library_only": false
+        },
+        {
+          "role": "lintel_top",
+          "id": "22",
+          "table": "plates.Plate1X12",
+          "ref": "60479",
+          "colour": 28,
+          "title": "Plate  1 x 12",
+          "library_only": false
+        }
+      ],
+      "reference_checks": [
+        {
+          "model": "10185-1.mpd",
+          "section": "(flattened main model)",
+          "parent": "frame",
+          "part": "door",
+          "official_refs": [
+            "60596",
+            "60616a"
+          ],
+          "position_offset_ldu": 0.0,
+          "rotation_offset": 0.0,
+          "note": "10185 places 60616a; 60616b has the same hinge geometry"
+        }
+      ],
+      "bodies": {
+        "door": {
+          "kind": "revolute",
+          "origin": [
+            -32.0,
+            -74.0,
+            5.0
+          ],
+          "axis": [
+            -0.0,
+            1.0,
+            -0.0
+          ],
+          "parent": null,
+          "signal": "door_angle",
+          "instances": [
+            "2"
+          ]
+        }
+      },
+      "signals": {
+        "door_angle": {
+          "expression": "a",
+          "variables": {
+            "a": "control:door"
+          }
+        }
+      },
+      "clips": [
+        "S01_house_door.open_close",
+        "S01_house_door.slam",
+        "S01_house_door.creak"
+      ],
+      "clearance": "clear"
+    },
+    {
+      "scenario": "S02_casement_window",
+      "title": "Casement window",
+      "element": "Two panes 60608 in window 1x4x3 60594",
+      "plan": "movable_02_casement_window",
+      "controller": "CTRL_movable_02_casement_window",
+      "collection": "S02_casement_window Casement window",
+      "scene": "S02 Casement window",
+      "controls": {
+        "pane_l": {
+          "unit": "radian",
+          "min": 0.0,
+          "max": 1.4,
+          "description": "Left pane (viewer's left) about its side hinge; + opens it toward the viewer (-Z)",
+          "periodic": false
+        },
+        "pane_r": {
+          "unit": "radian",
+          "min": 0.0,
+          "max": 1.4,
+          "description": "Right pane (viewer's right) about its side hinge; + opens it toward the viewer (-Z)",
+          "periodic": false
+        }
+      },
+      "parts": [
+        {
+          "role": "base",
+          "id": "0",
+          "table": "plates.Plate4X8",
+          "ref": "3035",
+          "colour": 2,
+          "title": "Plate  4 x  8",
+          "library_only": false
+        },
+        {
+          "role": "window",
+          "id": "1",
+          "table": "windows.Window1X4X3WithoutShutterTabs",
+          "ref": "60594",
+          "colour": 15,
+          "title": "Window  1 x  4 x  3 without Shutter Tabs",
+          "library_only": false
+        },
+        {
+          "role": "pane_l",
+          "id": "2",
+          "table": "windows.Window1X2X3PaneWithThickCornerTabs",
+          "ref": "60608",
+          "colour": 15,
+          "title": "Window  1 x  2 x  3 Pane with Thick Corner Tabs",
+          "library_only": false
+        },
+        {
+          "role": "pane_r",
+          "id": "3",
+          "table": "windows.Window1X2X3PaneWithThickCornerTabs",
+          "ref": "60608",
+          "colour": 15,
+          "title": "Window  1 x  2 x  3 Pane with Thick Corner Tabs",
+          "library_only": false
+        },
+        {
+          "role": "sill0",
+          "id": "4",
+          "table": "bricks.Brick1X4",
+          "ref": "3010",
+          "colour": 378,
+          "title": "Brick  1 x  4",
+          "library_only": false
+        },
+        {
+          "role": "sill1a",
+          "id": "5",
+          "table": "bricks.Brick1X2",
+          "ref": "3004",
+          "colour": 378,
+          "title": "Brick  1 x  2",
+          "library_only": false
+        },
+        {
+          "role": "sill1b",
+          "id": "6",
+          "table": "bricks.Brick1X2",
+          "ref": "3004",
+          "colour": 378,
+          "title": "Brick  1 x  2",
+          "library_only": false
+        },
+        {
+          "role": "wall_l0",
+          "id": "7",
+          "table": "bricks.Brick1X2",
+          "ref": "3004",
+          "colour": 378,
+          "title": "Brick  1 x  2",
+          "library_only": false
+        },
+        {
+          "role": "wall_l1",
+          "id": "8",
+          "table": "bricks.Brick1X2",
+          "ref": "3004",
+          "colour": 378,
+          "title": "Brick  1 x  2",
+          "library_only": false
+        },
+        {
+          "role": "wall_l2",
+          "id": "9",
+          "table": "bricks.Brick1X2",
+          "ref": "3004",
+          "colour": 378,
+          "title": "Brick  1 x  2",
+          "library_only": false
+        },
+        {
+          "role": "wall_l3",
+          "id": "10",
+          "table": "bricks.Brick1X2",
+          "ref": "3004",
+          "colour": 378,
+          "title": "Brick  1 x  2",
+          "library_only": false
+        },
+        {
+          "role": "wall_l4",
+          "id": "11",
+          "table": "bricks.Brick1X2",
+          "ref": "3004",
+          "colour": 378,
+          "title": "Brick  1 x  2",
+          "library_only": false
+        },
+        {
+          "role": "wall_r0",
+          "id": "12",
+          "table": "bricks.Brick1X2",
+          "ref": "3004",
+          "colour": 378,
+          "title": "Brick  1 x  2",
+          "library_only": false
+        },
+        {
+          "role": "wall_r1",
+          "id": "13",
+          "table": "bricks.Brick1X2",
+          "ref": "3004",
+          "colour": 378,
+          "title": "Brick  1 x  2",
+          "library_only": false
+        },
+        {
+          "role": "wall_r2",
+          "id": "14",
+          "table": "bricks.Brick1X2",
+          "ref": "3004",
+          "colour": 378,
+          "title": "Brick  1 x  2",
+          "library_only": false
+        },
+        {
+          "role": "wall_r3",
+          "id": "15",
+          "table": "bricks.Brick1X2",
+          "ref": "3004",
+          "colour": 378,
+          "title": "Brick  1 x  2",
+          "library_only": false
+        },
+        {
+          "role": "wall_r4",
+          "id": "16",
+          "table": "bricks.Brick1X2",
+          "ref": "3004",
+          "colour": 378,
+          "title": "Brick  1 x  2",
+          "library_only": false
+        },
+        {
+          "role": "lintel",
+          "id": "17",
+          "table": "bricks.Brick1X8",
+          "ref": "3008",
+          "colour": 378,
+          "title": "Brick  1 x  8",
+          "library_only": false
+        },
+        {
+          "role": "cap",
+          "id": "18",
+          "table": "plates.Plate1X8",
+          "ref": "3460",
+          "colour": 28,
+          "title": "Plate  1 x  8",
+          "library_only": false
+        }
+      ],
+      "reference_checks": [
+        {
+          "model": "10224-1.mpd",
+          "section": "(flattened main model)",
+          "parent": "window",
+          "part": "pane_l",
+          "official_refs": [
+            "60594",
+            "60608"
+          ],
+          "position_offset_ldu": 1.0,
+          "rotation_offset": 0.0,
+          "note": ""
+        },
+        {
+          "model": "10224-1.mpd",
+          "section": "(flattened main model)",
+          "parent": "window",
+          "part": "pane_r",
+          "official_refs": [
+            "60594",
+            "60608"
+          ],
+          "position_offset_ldu": 1.0,
+          "rotation_offset": 0.0,
+          "note": ""
+        }
+      ],
+      "bodies": {
+        "pane_l": {
+          "kind": "revolute",
+          "origin": [
+            -32.0,
+            -86.0,
+            -5.0
+          ],
+          "axis": [
+            -0.0,
+            1.0,
+            -0.0
+          ],
+          "parent": null,
+          "signal": "pane_l_angle",
+          "instances": [
+            "2"
+          ]
+        },
+        "pane_r": {
+          "kind": "revolute",
+          "origin": [
+            32.0,
+            -86.0,
+            -5.0
+          ],
+          "axis": [
+            0.0,
+            -1.0,
+            0.0
+          ],
+          "parent": null,
+          "signal": "pane_r_angle",
+          "instances": [
+            "3"
+          ]
+        }
+      },
+      "signals": {
+        "pane_l_angle": {
+          "expression": "a",
+          "variables": {
+            "a": "control:pane_l"
+          }
+        },
+        "pane_r_angle": {
+          "expression": "a",
+          "variables": {
+            "a": "control:pane_r"
+          }
+        }
+      },
+      "clips": [
+        "S02_casement_window.open_both",
+        "S02_casement_window.one_by_one",
+        "S02_casement_window.wind_flutter"
+      ],
+      "clearance": "contact"
+    },
+    {
+      "scenario": "S03_shuttered_window",
+      "title": "Shuttered window",
+      "element": "Two shutters 3856 on classic window 1x4x3 3853",
+      "plan": "movable_03_shuttered_window",
+      "controller": "CTRL_movable_03_shuttered_window",
+      "collection": "S03_shuttered_window Shuttered window",
+      "scene": "S03 Shuttered window",
+      "controls": {
+        "shutter_l": {
+          "unit": "radian",
+          "min": 0.0,
+          "max": 3.0,
+          "description": "Left shutter; 0 = closed over the glass, + folds it open outward toward the wall",
+          "periodic": false
+        },
+        "shutter_r": {
+          "unit": "radian",
+          "min": 0.0,
+          "max": 3.0,
+          "description": "Right shutter; 0 = closed over the glass, + folds it open outward toward the wall",
+          "periodic": false
+        }
+      },
+      "parts": [
+        {
+          "role": "base",
+          "id": "0",
+          "table": "plates.Plate4X10",
+          "ref": "3030",
+          "colour": 2,
+          "title": "Plate  4 x 10",
+          "library_only": false
+        },
+        {
+          "role": "window",
+          "id": "1",
+          "table": "windows.Window1X4X3",
+          "ref": "3853",
+          "colour": 15,
+          "title": "Window  1 x  4 x  3",
+          "library_only": false
+        },
+        {
+          "role": "shutter_l",
+          "id": "2",
+          "table": "windows.Window1X2X3Shutter",
+          "ref": "3856",
+          "colour": 4,
+          "title": "Window  1 x  2 x  3 Shutter",
+          "library_only": false
+        },
+        {
+          "role": "shutter_r",
+          "id": "3",
+          "table": "windows.Window1X2X3Shutter",
+          "ref": "3856",
+          "colour": 4,
+          "title": "Window  1 x  2 x  3 Shutter",
+          "library_only": false
+        },
+        {
+          "role": "sill0",
+          "id": "4",
+          "table": "bricks.Brick1X4",
+          "ref": "3010",
+          "colour": 14,
+          "title": "Brick  1 x  4",
+          "library_only": false
+        },
+        {
+          "role": "sill1a",
+          "id": "5",
+          "table": "bricks.Brick1X2",
+          "ref": "3004",
+          "colour": 14,
+          "title": "Brick  1 x  2",
+          "library_only": false
+        },
+        {
+          "role": "sill1b",
+          "id": "6",
+          "table": "bricks.Brick1X2",
+          "ref": "3004",
+          "colour": 14,
+          "title": "Brick  1 x  2",
+          "library_only": false
+        },
+        {
+          "role": "wall_l0",
+          "id": "7",
+          "table": "bricks.Brick1X3",
+          "ref": "3622",
+          "colour": 14,
+          "title": "Brick  1 x  3",
+          "library_only": false
+        },
+        {
+          "role": "wall_l1",
+          "id": "8",
+          "table": "bricks.Brick1X3",
+          "ref": "3622",
+          "colour": 14,
+          "title": "Brick  1 x  3",
+          "library_only": false
+        },
+        {
+          "role": "wall_l2",
+          "id": "9",
+          "table": "bricks.Brick1X3",
+          "ref": "3622",
+          "colour": 14,
+          "title": "Brick  1 x  3",
+          "library_only": false
+        },
+        {
+          "role": "wall_l3",
+          "id": "10",
+          "table": "bricks.Brick1X3",
+          "ref": "3622",
+          "colour": 14,
+          "title": "Brick  1 x  3",
+          "library_only": false
+        },
+        {
+          "role": "wall_l4",
+          "id": "11",
+          "table": "bricks.Brick1X3",
+          "ref": "3622",
+          "colour": 14,
+          "title": "Brick  1 x  3",
+          "library_only": false
+        },
+        {
+          "role": "wall_r0",
+          "id": "12",
+          "table": "bricks.Brick1X3",
+          "ref": "3622",
+          "colour": 14,
+          "title": "Brick  1 x  3",
+          "library_only": false
+        },
+        {
+          "role": "wall_r1",
+          "id": "13",
+          "table": "bricks.Brick1X3",
+          "ref": "3622",
+          "colour": 14,
+          "title": "Brick  1 x  3",
+          "library_only": false
+        },
+        {
+          "role": "wall_r2",
+          "id": "14",
+          "table": "bricks.Brick1X3",
+          "ref": "3622",
+          "colour": 14,
+          "title": "Brick  1 x  3",
+          "library_only": false
+        },
+        {
+          "role": "wall_r3",
+          "id": "15",
+          "table": "bricks.Brick1X3",
+          "ref": "3622",
+          "colour": 14,
+          "title": "Brick  1 x  3",
+          "library_only": false
+        },
+        {
+          "role": "wall_r4",
+          "id": "16",
+          "table": "bricks.Brick1X3",
+          "ref": "3622",
+          "colour": 14,
+          "title": "Brick  1 x  3",
+          "library_only": false
+        },
+        {
+          "role": "lintel",
+          "id": "17",
+          "table": "bricks.Brick1X10",
+          "ref": "6111",
+          "colour": 14,
+          "title": "Brick  1 x 10",
+          "library_only": false
+        }
+      ],
+      "reference_checks": [
+        {
+          "model": "6350-1.mpd",
+          "section": "(flattened main model)",
+          "parent": "window",
+          "part": "shutter_l",
+          "official_refs": [
+            "3853",
+            "3856"
+          ],
+          "position_offset_ldu": 3.037,
+          "rotation_offset": 0.0,
+          "note": "6350 shows the shutters closed"
+        },
+        {
+          "model": "6350-1.mpd",
+          "section": "(flattened main model)",
+          "parent": "window",
+          "part": "shutter_r",
+          "official_refs": [
+            "3853",
+            "3856"
+          ],
+          "position_offset_ldu": 3.194,
+          "rotation_offset": 0.0,
+          "note": "6350 shows the shutters closed"
+        }
+      ],
+      "bodies": {
+        "shutter_l": {
+          "kind": "revolute",
+          "origin": [
+            -40.0,
+            -86.0,
+            -12.0
+          ],
+          "axis": [
+            -0.0,
+            1.0,
+            -0.0
+          ],
+          "parent": null,
+          "signal": "shutter_l_angle",
+          "instances": [
+            "2"
+          ]
+        },
+        "shutter_r": {
+          "kind": "revolute",
+          "origin": [
+            40.0,
+            -86.0,
+            -12.0
+          ],
+          "axis": [
+            0.0,
+            -1.0,
+            0.0
+          ],
+          "parent": null,
+          "signal": "shutter_r_angle",
+          "instances": [
+            "3"
+          ]
+        }
+      },
+      "signals": {
+        "shutter_l_angle": {
+          "expression": "a",
+          "variables": {
+            "a": "control:shutter_l"
+          }
+        },
+        "shutter_r_angle": {
+          "expression": "a",
+          "variables": {
+            "a": "control:shutter_r"
+          }
+        }
+      },
+      "clips": [
+        "S03_shuttered_window.fold_open",
+        "S03_shuttered_window.one_at_a_time",
+        "S03_shuttered_window.storm"
+      ],
+      "clearance": "clear"
+    },
+    {
+      "scenario": "S04_garden_gate",
+      "title": "Garden gate",
+      "element": "Gate 1x4x2 3186 on gate base 3187 between fences",
+      "plan": "movable_04_garden_gate",
+      "controller": "CTRL_movable_04_garden_gate",
+      "collection": "S04_garden_gate Garden gate",
+      "scene": "S04 Garden gate",
+      "controls": {
+        "gate": {
+          "unit": "radian",
+          "min": -1.6,
+          "max": 1.6,
+          "description": "Gate about its post; + swings it outward (-Z), - inward (+Z)",
+          "periodic": false
+        }
+      },
+      "parts": [
+        {
+          "role": "base",
+          "id": "0",
+          "table": "plates.Plate4X12",
+          "ref": "3029",
+          "colour": 2,
+          "title": "Plate  4 x 12",
+          "library_only": false
+        },
+        {
+          "role": "gate_base",
+          "id": "1",
+          "table": "fences.Gate1X4X2Base",
+          "ref": "3187",
+          "colour": 15,
+          "title": "Gate  1 x  4 x  2 Base",
+          "library_only": false
+        },
+        {
+          "role": "gate",
+          "id": "2",
+          "table": "fences.Gate1X4X2",
+          "ref": "3186",
+          "colour": 70,
+          "title": "Gate  1 x  4 x  2",
+          "library_only": false
+        },
+        {
+          "role": "fence_l",
+          "id": "3",
+          "table": "fences.FenceLattice1X4X2",
+          "ref": "3185",
+          "colour": 15,
+          "title": "Fence Lattice  1 x  4 x  2",
+          "library_only": false
+        },
+        {
+          "role": "fence_r",
+          "id": "4",
+          "table": "fences.FenceLattice1X4X2",
+          "ref": "3185",
+          "colour": 15,
+          "title": "Fence Lattice  1 x  4 x  2",
+          "library_only": false
+        },
+        {
+          "role": "path",
+          "id": "5",
+          "table": "tiles.Tile2X2WithGroove",
+          "ref": "3068b",
+          "colour": 19,
+          "title": "Tile  2 x  2 with Groove",
+          "library_only": false
+        }
+      ],
+      "reference_checks": [
+        {
+          "model": "6379-1.mpd",
+          "section": "(flattened main model)",
+          "parent": "gate_base",
+          "part": "gate",
+          "official_refs": [
+            "3187",
+            "3186"
+          ],
+          "position_offset_ldu": 0.0,
+          "rotation_offset": 0.0,
+          "note": ""
+        }
+      ],
+      "bodies": {
+        "gate": {
+          "kind": "revolute",
+          "origin": [
+            -30.0,
+            -8.0,
+            0.0
+          ],
+          "axis": [
+            -0.0,
+            1.0,
+            -0.0
+          ],
+          "parent": null,
+          "signal": "gate_angle",
+          "instances": [
+            "2"
+          ]
+        }
+      },
+      "signals": {
+        "gate_angle": {
+          "expression": "a",
+          "variables": {
+            "a": "control:gate"
+          }
+        }
+      },
+      "clips": [
+        "S04_garden_gate.push_through",
+        "S04_garden_gate.open_latch",
+        "S04_garden_gate.in_and_out"
+      ],
+      "clearance": "contact"
+    },
+    {
+      "scenario": "S05_kitchen_cupboard",
+      "title": "Kitchen cupboard",
+      "element": "Cupboard 2x3x2 4532 with door 4533 and two drawers 4536",
+      "plan": "movable_05_kitchen_cupboard",
+      "controller": "CTRL_movable_05_kitchen_cupboard",
+      "collection": "S05_kitchen_cupboard Kitchen cupboard",
+      "scene": "S05 Kitchen cupboard",
+      "controls": {
+        "door": {
+          "unit": "radian",
+          "min": 0.0,
+          "max": 1.9,
+          "description": "Lower cupboard door; + opens outward (-Z)",
+          "periodic": false
+        },
+        "drawer_top": {
+          "unit": "ldu",
+          "min": 0.0,
+          "max": 30.0,
+          "description": "Upper drawer; + pulls it out (-Z)",
+          "periodic": false
+        },
+        "drawer_low": {
+          "unit": "ldu",
+          "min": 0.0,
+          "max": 30.0,
+          "description": "Lower drawer of the upper cupboard; + pulls it out",
+          "periodic": false
+        }
+      },
+      "parts": [
+        {
+          "role": "base",
+          "id": "0",
+          "table": "plates.Plate4X6",
+          "ref": "3032",
+          "colour": 71,
+          "title": "Plate  4 x  6",
+          "library_only": false
+        },
+        {
+          "role": "cupboard_low",
+          "id": "1",
+          "table": "containers.ContainerCupboard2X3X2WithSolidStuds",
+          "ref": "4532",
+          "colour": 15,
+          "title": "Container Cupboard  2 x  3 x  2 with Solid Studs",
+          "library_only": false
+        },
+        {
+          "role": "door",
+          "id": "2",
+          "table": "containers.ContainerCupboard2X3X2Door",
+          "ref": "4533",
+          "colour": 4,
+          "title": "Container Cupboard  2 x  3 x  2 Door",
+          "library_only": false
+        },
+        {
+          "role": "cupboard_high",
+          "id": "3",
+          "table": "containers.ContainerCupboard2X3X2WithSolidStuds",
+          "ref": "4532",
+          "colour": 15,
+          "title": "Container Cupboard  2 x  3 x  2 with Solid Studs",
+          "library_only": false
+        },
+        {
+          "role": "drawer_top",
+          "id": "4",
+          "table": "containers.ContainerCupboard2X3X2Drawer",
+          "ref": "4536",
+          "colour": 14,
+          "title": "Container Cupboard  2 x  3 x  2 Drawer",
+          "library_only": false
+        },
+        {
+          "role": "drawer_low",
+          "id": "5",
+          "table": "containers.ContainerCupboard2X3X2Drawer",
+          "ref": "4536",
+          "colour": 14,
+          "title": "Container Cupboard  2 x  3 x  2 Drawer",
+          "library_only": false
+        }
+      ],
+      "reference_checks": [
+        {
+          "model": "10197-1.mpd",
+          "section": "(flattened main model)",
+          "parent": "cupboard_low",
+          "part": "door",
+          "official_refs": [
+            "4532",
+            "4533"
+          ],
+          "position_offset_ldu": 0.0,
+          "rotation_offset": 0.0,
+          "note": ""
+        },
+        {
+          "model": "6416-1.mpd",
+          "section": "(flattened main model)",
+          "parent": "cupboard_high",
+          "part": "drawer_top",
+          "official_refs": [
+            "4532",
+            "4536"
+          ],
+          "position_offset_ldu": 0.0,
+          "rotation_offset": 0.0,
+          "note": ""
+        },
+        {
+          "model": "6416-1.mpd",
+          "section": "(flattened main model)",
+          "parent": "cupboard_high",
+          "part": "drawer_low",
+          "official_refs": [
+            "4532",
+            "4536"
+          ],
+          "position_offset_ldu": 0.0,
+          "rotation_offset": 0.0,
+          "note": ""
+        }
+      ],
+      "bodies": {
+        "door": {
+          "kind": "revolute",
+          "origin": [
+            -24.0,
+            -26.0,
+            -17.0
+          ],
+          "axis": [
+            -0.0,
+            1.0,
+            -0.0
+          ],
+          "parent": null,
+          "signal": "door_angle",
+          "instances": [
+            "2"
+          ]
+        },
+        "drawer_top": {
+          "kind": "prismatic",
+          "origin": [
+            0.0,
+            -81.0,
+            -2.0
+          ],
+          "axis": [
+            0.0,
+            0.0,
+            -1.0
+          ],
+          "parent": null,
+          "signal": "drawer_top_offset",
+          "instances": [
+            "4"
+          ]
+        },
+        "drawer_low": {
+          "kind": "prismatic",
+          "origin": [
+            0.0,
+            -63.0,
+            -2.0
+          ],
+          "axis": [
+            0.0,
+            0.0,
+            -1.0
+          ],
+          "parent": null,
+          "signal": "drawer_low_offset",
+          "instances": [
+            "5"
+          ]
+        }
+      },
+      "signals": {
+        "door_angle": {
+          "expression": "a",
+          "variables": {
+            "a": "control:door"
+          }
+        },
+        "drawer_top_offset": {
+          "expression": "a",
+          "variables": {
+            "a": "control:drawer_top"
+          }
+        },
+        "drawer_low_offset": {
+          "expression": "a",
+          "variables": {
+            "a": "control:drawer_low"
+          }
+        }
+      },
+      "clips": [
+        "S05_kitchen_cupboard.door_cycle",
+        "S05_kitchen_cupboard.drawer_pull",
+        "S05_kitchen_cupboard.kitchen_sequence"
+      ],
+      "clearance": "clear"
+    },
+    {
+      "scenario": "S06_double_cabinet",
+      "title": "Double-door cabinet",
+      "element": "Cupboard 2x6x7 2042 with two doors 2043",
+      "plan": "movable_06_double_cabinet",
+      "controller": "CTRL_movable_06_double_cabinet",
+      "collection": "S06_double_cabinet Double-door cabinet",
+      "scene": "S06 Double-door cabinet",
+      "controls": {
+        "door_l": {
+          "unit": "radian",
+          "min": 0.0,
+          "max": 1.9,
+          "description": "Left door; + opens outward (-Z)",
+          "periodic": false
+        },
+        "door_r": {
+          "unit": "radian",
+          "min": 0.0,
+          "max": 1.9,
+          "description": "Right door; + opens outward (-Z)",
+          "periodic": false
+        }
+      },
+      "parts": [
+        {
+          "role": "base",
+          "id": "0",
+          "table": "plates.Plate4X8",
+          "ref": "3035",
+          "colour": 71,
+          "title": "Plate  4 x  8",
+          "library_only": false
+        },
+        {
+          "role": "cabinet",
+          "id": "1",
+          "table": "containers.ContainerCupboard2X6X7",
+          "ref": "2042",
+          "colour": 14,
+          "title": "Container Cupboard  2 x  6 x  7",
+          "library_only": false
+        },
+        {
+          "role": "door_l",
+          "id": "2",
+          "table": "containers.ContainerCupboard2X6X7Door",
+          "ref": "2043",
+          "colour": 4,
+          "title": "Container Cupboard  2 x  6 x  7 Door",
+          "library_only": false
+        },
+        {
+          "role": "door_r",
+          "id": "3",
+          "table": "containers.ContainerCupboard2X6X7Door",
+          "ref": "2043",
+          "colour": 4,
+          "title": "Container Cupboard  2 x  6 x  7 Door",
+          "library_only": false
+        }
+      ],
+      "reference_checks": [
+        {
+          "model": "3636-1.mpd",
+          "section": "(flattened main model)",
+          "parent": "cabinet",
+          "part": "door_l",
+          "official_refs": [
+            "3636 - 2042",
+            "3636 - 2043"
+          ],
+          "position_offset_ldu": 0.0,
+          "rotation_offset": 0.0,
+          "note": "3636 embeds its own copies of 2042/2043"
+        },
+        {
+          "model": "3636-1.mpd",
+          "section": "(flattened main model)",
+          "parent": "cabinet",
+          "part": "door_r",
+          "official_refs": [
+            "3636 - 2042",
+            "3636 - 2043"
+          ],
+          "position_offset_ldu": 0.0,
+          "rotation_offset": 0.0,
+          "note": "3636 embeds its own copies of 2042/2043"
+        }
+      ],
+      "bodies": {
+        "door_l": {
+          "kind": "revolute",
+          "origin": [
+            -52.0,
+            -33.0,
+            -16.0
+          ],
+          "axis": [
+            -0.0,
+            1.0,
+            -0.0
+          ],
+          "parent": null,
+          "signal": "door_l_angle",
+          "instances": [
+            "2"
+          ]
+        },
+        "door_r": {
+          "kind": "revolute",
+          "origin": [
+            52.0,
+            -33.0,
+            -16.0
+          ],
+          "axis": [
+            -0.0,
+            -1.0,
+            -0.0
+          ],
+          "parent": null,
+          "signal": "door_r_angle",
+          "instances": [
+            "3"
+          ]
+        }
+      },
+      "signals": {
+        "door_l_angle": {
+          "expression": "a",
+          "variables": {
+            "a": "control:door_l"
+          }
+        },
+        "door_r_angle": {
+          "expression": "a",
+          "variables": {
+            "a": "control:door_r"
+          }
+        }
+      },
+      "clips": [
+        "S06_double_cabinet.open_both",
+        "S06_double_cabinet.left_then_right",
+        "S06_double_cabinet.peek"
+      ],
+      "clearance": "clear"
+    },
+    {
+      "scenario": "S07_treasure_chest",
+      "title": "Treasure chest",
+      "element": "Treasure chest 4738a with lid 4739a",
+      "plan": "movable_07_treasure_chest",
+      "controller": "CTRL_movable_07_treasure_chest",
+      "collection": "S07_treasure_chest Treasure chest",
+      "scene": "S07 Treasure chest",
+      "controls": {
+        "lid": {
+          "unit": "radian",
+          "min": 0.0,
+          "max": 1.9,
+          "description": "Lid about the rear hinge; + lifts the front edge",
+          "periodic": false
+        }
+      },
+      "parts": [
+        {
+          "role": "base",
+          "id": "0",
+          "table": "plates.Plate6X8",
+          "ref": "3036",
+          "colour": 19,
+          "title": "Plate  6 x  8",
+          "library_only": false
+        },
+        {
+          "role": "chest",
+          "id": "1",
+          "table": "containers.ContainerTreasureChestWithSlots",
+          "ref": "4738a",
+          "colour": 70,
+          "title": "Container Treasure Chest with Slots",
+          "library_only": false
+        },
+        {
+          "role": "lid",
+          "id": "2",
+          "table": "containers.ContainerTreasureChestWithSlotsLid",
+          "ref": "4739a",
+          "colour": 70,
+          "title": "Container Treasure Chest with Slots Lid",
+          "library_only": false
+        },
+        {
+          "role": "coin0",
+          "id": "3",
+          "table": "tiles.Tile1X1RoundWithGroove",
+          "ref": "98138",
+          "colour": 297,
+          "title": "Tile  1 x  1 Round with Groove",
+          "library_only": false
+        },
+        {
+          "role": "coin1",
+          "id": "4",
+          "table": "tiles.Tile1X1RoundWithGroove",
+          "ref": "98138",
+          "colour": 297,
+          "title": "Tile  1 x  1 Round with Groove",
+          "library_only": false
+        },
+        {
+          "role": "coin2",
+          "id": "5",
+          "table": "tiles.Tile1X1RoundWithGroove",
+          "ref": "98138",
+          "colour": 297,
+          "title": "Tile  1 x  1 Round with Groove",
+          "library_only": false
+        }
+      ],
+      "reference_checks": [],
+      "bodies": {
+        "lid": {
+          "kind": "revolute",
+          "origin": [
+            0.0,
+            -28.0,
+            16.0
+          ],
+          "axis": [
+            -1.0,
+            -0.0,
+            -0.0
+          ],
+          "parent": null,
+          "signal": "lid_angle",
+          "instances": [
+            "2"
+          ]
+        }
+      },
+      "signals": {
+        "lid_angle": {
+          "expression": "a",
+          "variables": {
+            "a": "control:lid"
+          }
+        }
+      },
+      "clips": [
+        "S07_treasure_chest.slow_reveal",
+        "S07_treasure_chest.snap_shut",
+        "S07_treasure_chest.peek_twice"
+      ],
+      "clearance": "clear"
+    },
+    {
+      "scenario": "S08_mailbox",
+      "title": "Mailbox",
+      "element": "Container box 2x2x2 4345a with slot door 4346 on a post",
+      "plan": "movable_08_mailbox",
+      "controller": "CTRL_movable_08_mailbox",
+      "collection": "S08_mailbox Mailbox",
+      "scene": "S08 Mailbox",
+      "controls": {
+        "door": {
+          "unit": "radian",
+          "min": 0.0,
+          "max": 1.6,
+          "description": "Front door about its bottom hinge; + drops it open forward and down",
+          "periodic": false
+        }
+      },
+      "parts": [
+        {
+          "role": "base",
+          "id": "0",
+          "table": "plates.Plate4X4",
+          "ref": "3031",
+          "colour": 2,
+          "title": "Plate  4 x  4",
+          "library_only": false
+        },
+        {
+          "role": "post0",
+          "id": "1",
+          "table": "bricks.Brick2X2RoundWithoutReinforcement",
+          "ref": "3941",
+          "colour": 8,
+          "title": "Brick  2 x  2 Round without Reinforcement",
+          "library_only": false
+        },
+        {
+          "role": "post1",
+          "id": "2",
+          "table": "bricks.Brick2X2RoundWithoutReinforcement",
+          "ref": "3941",
+          "colour": 8,
+          "title": "Brick  2 x  2 Round without Reinforcement",
+          "library_only": false
+        },
+        {
+          "role": "post2",
+          "id": "3",
+          "table": "bricks.Brick2X2RoundWithoutReinforcement",
+          "ref": "3941",
+          "colour": 8,
+          "title": "Brick  2 x  2 Round without Reinforcement",
+          "library_only": false
+        },
+        {
+          "role": "cap",
+          "id": "4",
+          "table": "plates.Plate2X2",
+          "ref": "3022",
+          "colour": 8,
+          "title": "Plate  2 x  2",
+          "library_only": false
+        },
+        {
+          "role": "box",
+          "id": "5",
+          "table": "containers.ContainerBox2X2X2WithSolidStuds",
+          "ref": "4345a",
+          "colour": 4,
+          "title": "Container Box  2 x  2 x  2 with Solid Studs",
+          "library_only": false
+        },
+        {
+          "role": "door",
+          "id": "6",
+          "table": "containers.ContainerBox2X2X2DoorWithSlot",
+          "ref": "4346",
+          "colour": 4,
+          "title": "Container Box  2 x  2 x  2 Door with Slot",
+          "library_only": false
+        }
+      ],
+      "reference_checks": [
+        {
+          "model": "1490-1.mpd",
+          "section": "(flattened main model)",
+          "parent": "box",
+          "part": "door",
+          "official_refs": [
+            "4345a",
+            "4346"
+          ],
+          "position_offset_ldu": 0.0,
+          "rotation_offset": 0.0,
+          "note": ""
+        }
+      ],
+      "bodies": {
+        "door": {
+          "kind": "revolute",
+          "origin": [
+            0.0,
+            -84.0,
+            -26.0
+          ],
+          "axis": [
+            1.0,
+            0.0,
+            0.0
+          ],
+          "parent": null,
+          "signal": "door_angle",
+          "instances": [
+            "6"
+          ]
+        }
+      },
+      "signals": {
+        "door_angle": {
+          "expression": "a",
+          "variables": {
+            "a": "control:door"
+          }
+        }
+      },
+      "clips": [
+        "S08_mailbox.gravity_drop",
+        "S08_mailbox.eased_loop",
+        "S08_mailbox.flap_rattle"
+      ],
+      "clearance": "clear"
+    },
+    {
+      "scenario": "S09_trap_door",
+      "title": "Floor trap door",
+      "element": "Trap door 30042 in trap door frame 30041 on pillars",
+      "plan": "movable_09_trap_door",
+      "controller": "CTRL_movable_09_trap_door",
+      "collection": "S09_trap_door Floor trap door",
+      "scene": "S09 Floor trap door",
+      "controls": {
+        "trap": {
+          "unit": "radian",
+          "min": 0.0,
+          "max": 1.95,
+          "description": "Trap door about its edge pins; + drops the free end down into the pit",
+          "periodic": false
+        }
+      },
+      "parts": [
+        {
+          "role": "base",
+          "id": "0",
+          "table": "plates.Plate6X8",
+          "ref": "3036",
+          "colour": 8,
+          "title": "Plate  6 x  8",
+          "library_only": false
+        },
+        {
+          "role": "pillar0",
+          "id": "1",
+          "table": "bricks.Brick1X1X5WithSolidStud",
+          "ref": "2453b",
+          "colour": 71,
+          "title": "Brick  1 x  1 x  5 with Solid Stud",
+          "library_only": false
+        },
+        {
+          "role": "pillar1",
+          "id": "2",
+          "table": "bricks.Brick1X1X5WithSolidStud",
+          "ref": "2453b",
+          "colour": 71,
+          "title": "Brick  1 x  1 x  5 with Solid Stud",
+          "library_only": false
+        },
+        {
+          "role": "pillar2",
+          "id": "3",
+          "table": "bricks.Brick1X1X5WithSolidStud",
+          "ref": "2453b",
+          "colour": 71,
+          "title": "Brick  1 x  1 x  5 with Solid Stud",
+          "library_only": false
+        },
+        {
+          "role": "pillar3",
+          "id": "4",
+          "table": "bricks.Brick1X1X5WithSolidStud",
+          "ref": "2453b",
+          "colour": 71,
+          "title": "Brick  1 x  1 x  5 with Solid Stud",
+          "library_only": false
+        },
+        {
+          "role": "frame",
+          "id": "5",
+          "table": "plates.Plate6X8TrapDoorFrame",
+          "ref": "30041",
+          "colour": 8,
+          "title": "Plate  6 x  8 Trap Door Frame",
+          "library_only": false
+        },
+        {
+          "role": "trapdoor",
+          "id": "6",
+          "table": "plates.Plate4X5TrapDoor",
+          "ref": "30042",
+          "colour": 70,
+          "title": "Plate  4 x  5 Trap Door",
+          "library_only": false
+        }
+      ],
+      "reference_checks": [
+        {
+          "model": "6769-1.mpd",
+          "section": "(flattened main model)",
+          "parent": "frame",
+          "part": "trapdoor",
+          "official_refs": [
+            "30041",
+            "30042"
+          ],
+          "position_offset_ldu": 0.0,
+          "rotation_offset": 0.0,
+          "note": ""
+        }
+      ],
+      "bodies": {
+        "trapdoor": {
+          "kind": "revolute",
+          "origin": [
+            -50.0,
+            -128.0,
+            26.0
+          ],
+          "axis": [
+            0.0,
+            0.0,
+            1.0
+          ],
+          "parent": null,
+          "signal": "trap_angle",
+          "instances": [
+            "6"
+          ]
+        }
+      },
+      "signals": {
+        "trap_angle": {
+          "expression": "a",
+          "variables": {
+            "a": "control:trap"
+          }
+        }
+      },
+      "clips": [
+        "S09_trap_door.drop_and_winch",
+        "S09_trap_door.quick_trap",
+        "S09_trap_door.test_wiggle"
+      ],
+      "clearance": "clear"
+    },
+    {
+      "scenario": "S10_car_doors",
+      "title": "Town car doors",
+      "element": "Car doors 1x3x1 3822 (left) / 3821 (right) on a mock town car",
+      "plan": "movable_10_car_doors",
+      "controller": "CTRL_movable_10_car_doors",
+      "collection": "S10_car_doors Town car doors",
+      "scene": "S10 Town car doors",
+      "controls": {
+        "door_l": {
+          "unit": "radian",
+          "min": 0.0,
+          "max": 1.3,
+          "description": "Left door (-Z side); + swings the rear edge out",
+          "periodic": false
+        },
+        "door_r": {
+          "unit": "radian",
+          "min": 0.0,
+          "max": 1.3,
+          "description": "Right door (+Z side); + swings the rear edge out",
+          "periodic": false
+        }
+      },
+      "parts": [
+        {
+          "role": "chassis",
+          "id": "0",
+          "table": "plates.Plate4X8",
+          "ref": "3035",
+          "colour": 1,
+          "title": "Plate  4 x  8",
+          "library_only": false
+        },
+        {
+          "role": "axle0",
+          "id": "1",
+          "table": null,
+          "ref": "4600",
+          "colour": 0,
+          "title": "Plate  2 x  2 with 2 Wheel Pins",
+          "library_only": true
+        },
+        {
+          "role": "rim0l",
+          "id": "2",
+          "table": "wheels.WheelRim6_4X8",
+          "ref": "4624",
+          "colour": 7,
+          "title": "Wheel Rim  6.4 x  8",
+          "library_only": false
+        },
+        {
+          "role": "tyre0l",
+          "id": "3",
+          "table": "tyres.Tyre8_75X8OffsetTread",
+          "ref": "4084",
+          "colour": 0,
+          "title": "Tyre  8/ 75 x  8 Offset Tread",
+          "library_only": false
+        },
+        {
+          "role": "rim0r",
+          "id": "4",
+          "table": "wheels.WheelRim6_4X8",
+          "ref": "4624",
+          "colour": 7,
+          "title": "Wheel Rim  6.4 x  8",
+          "library_only": false
+        },
+        {
+          "role": "tyre0r",
+          "id": "5",
+          "table": "tyres.Tyre8_75X8OffsetTread",
+          "ref": "4084",
+          "colour": 0,
+          "title": "Tyre  8/ 75 x  8 Offset Tread",
+          "library_only": false
+        },
+        {
+          "role": "axle1",
+          "id": "6",
+          "table": null,
+          "ref": "4600",
+          "colour": 0,
+          "title": "Plate  2 x  2 with 2 Wheel Pins",
+          "library_only": true
+        },
+        {
+          "role": "rim1l",
+          "id": "7",
+          "table": "wheels.WheelRim6_4X8",
+          "ref": "4624",
+          "colour": 7,
+          "title": "Wheel Rim  6.4 x  8",
+          "library_only": false
+        },
+        {
+          "role": "tyre1l",
+          "id": "8",
+          "table": "tyres.Tyre8_75X8OffsetTread",
+          "ref": "4084",
+          "colour": 0,
+          "title": "Tyre  8/ 75 x  8 Offset Tread",
+          "library_only": false
+        },
+        {
+          "role": "rim1r",
+          "id": "9",
+          "table": "wheels.WheelRim6_4X8",
+          "ref": "4624",
+          "colour": 7,
+          "title": "Wheel Rim  6.4 x  8",
+          "library_only": false
+        },
+        {
+          "role": "tyre1r",
+          "id": "10",
+          "table": "tyres.Tyre8_75X8OffsetTread",
+          "ref": "4084",
+          "colour": 0,
+          "title": "Tyre  8/ 75 x  8 Offset Tread",
+          "library_only": false
+        },
+        {
+          "role": "nose",
+          "id": "11",
+          "table": "bricks.Brick2X4",
+          "ref": "3001",
+          "colour": 1,
+          "title": "Brick  2 x  4",
+          "library_only": false
+        },
+        {
+          "role": "door_l",
+          "id": "12",
+          "table": "doors.Door1X3X1Left",
+          "ref": "3822",
+          "colour": 1,
+          "title": "Door  1 x  3 x  1 Left",
+          "library_only": false
+        },
+        {
+          "role": "door_r",
+          "id": "13",
+          "table": "doors.Door1X3X1Right",
+          "ref": "3821",
+          "colour": 1,
+          "title": "Door  1 x  3 x  1 Right",
+          "library_only": false
+        },
+        {
+          "role": "windscreen",
+          "id": "14",
+          "table": "windscreens.Windscreen2X4X2",
+          "ref": "3823",
+          "colour": 47,
+          "title": "Windscreen  2 x  4 x  2",
+          "library_only": false
+        },
+        {
+          "role": "seat",
+          "id": "15",
+          "table": "bricks.Brick2X2",
+          "ref": "3003",
+          "colour": 15,
+          "title": "Brick  2 x  2",
+          "library_only": false
+        },
+        {
+          "role": "rear",
+          "id": "16",
+          "table": "bricks.Brick2X4",
+          "ref": "3001",
+          "colour": 1,
+          "title": "Brick  2 x  4",
+          "library_only": false
+        },
+        {
+          "role": "boot",
+          "id": "17",
+          "table": "plates.Plate2X4",
+          "ref": "3020",
+          "colour": 1,
+          "title": "Plate  2 x  4",
+          "library_only": false
+        },
+        {
+          "role": "tail",
+          "id": "18",
+          "table": "bricks.Brick1X4",
+          "ref": "3010",
+          "colour": 1,
+          "title": "Brick  1 x  4",
+          "library_only": false
+        }
+      ],
+      "reference_checks": [
+        {
+          "model": "106-1.mpd",
+          "section": "(flattened main model)",
+          "parent": "windscreen",
+          "part": "door_l",
+          "official_refs": [
+            "3823",
+            "3822"
+          ],
+          "position_offset_ldu": 0.0,
+          "rotation_offset": 0.0,
+          "note": "106 places the doors under its windscreen"
+        },
+        {
+          "model": "106-1.mpd",
+          "section": "(flattened main model)",
+          "parent": "windscreen",
+          "part": "door_r",
+          "official_refs": [
+            "3823",
+            "3821"
+          ],
+          "position_offset_ldu": 0.0,
+          "rotation_offset": 0.0,
+          "note": "106 places the doors under its windscreen"
+        }
+      ],
+      "bodies": {
+        "door_l": {
+          "kind": "revolute",
+          "origin": [
+            -30.0,
+            0.0,
+            -30.0
+          ],
+          "axis": [
+            -0.0,
+            1.0,
+            -0.0
+          ],
+          "parent": null,
+          "signal": "door_l_angle",
+          "instances": [
+            "12"
+          ]
+        },
+        "door_r": {
+          "kind": "revolute",
+          "origin": [
+            -30.0,
+            0.0,
+            30.0
+          ],
+          "axis": [
+            0.0,
+            -1.0,
+            0.0
+          ],
+          "parent": null,
+          "signal": "door_r_angle",
+          "instances": [
+            "13"
+          ]
+        }
+      },
+      "signals": {
+        "door_l_angle": {
+          "expression": "a",
+          "variables": {
+            "a": "control:door_l"
+          }
+        },
+        "door_r_angle": {
+          "expression": "a",
+          "variables": {
+            "a": "control:door_r"
+          }
+        }
+      },
+      "clips": [
+        "S10_car_doors.driver_door",
+        "S10_car_doors.both_doors",
+        "S10_car_doors.slam"
+      ],
+      "clearance": "clear"
+    },
+    {
+      "scenario": "S11_car_roof",
+      "title": "Car roof hatch",
+      "element": "Hinge car roof 4x4 4213 on roof holder 4214",
+      "plan": "movable_11_car_roof",
+      "controller": "CTRL_movable_11_car_roof",
+      "collection": "S11_car_roof Car roof hatch",
+      "scene": "S11 Car roof hatch",
+      "controls": {
+        "roof": {
+          "unit": "radian",
+          "min": 0.0,
+          "max": 1.3,
+          "description": "Roof about the rear holder hinge; + lifts the front edge",
+          "periodic": false
+        }
+      },
+      "parts": [
+        {
+          "role": "chassis",
+          "id": "0",
+          "table": "plates.Plate4X8",
+          "ref": "3035",
+          "colour": 4,
+          "title": "Plate  4 x  8",
+          "library_only": false
+        },
+        {
+          "role": "axle0",
+          "id": "1",
+          "table": null,
+          "ref": "4600",
+          "colour": 0,
+          "title": "Plate  2 x  2 with 2 Wheel Pins",
+          "library_only": true
+        },
+        {
+          "role": "rim0l",
+          "id": "2",
+          "table": "wheels.WheelRim6_4X8",
+          "ref": "4624",
+          "colour": 7,
+          "title": "Wheel Rim  6.4 x  8",
+          "library_only": false
+        },
+        {
+          "role": "tyre0l",
+          "id": "3",
+          "table": "tyres.Tyre8_75X8OffsetTread",
+          "ref": "4084",
+          "colour": 0,
+          "title": "Tyre  8/ 75 x  8 Offset Tread",
+          "library_only": false
+        },
+        {
+          "role": "rim0r",
+          "id": "4",
+          "table": "wheels.WheelRim6_4X8",
+          "ref": "4624",
+          "colour": 7,
+          "title": "Wheel Rim  6.4 x  8",
+          "library_only": false
+        },
+        {
+          "role": "tyre0r",
+          "id": "5",
+          "table": "tyres.Tyre8_75X8OffsetTread",
+          "ref": "4084",
+          "colour": 0,
+          "title": "Tyre  8/ 75 x  8 Offset Tread",
+          "library_only": false
+        },
+        {
+          "role": "axle1",
+          "id": "6",
+          "table": null,
+          "ref": "4600",
+          "colour": 0,
+          "title": "Plate  2 x  2 with 2 Wheel Pins",
+          "library_only": true
+        },
+        {
+          "role": "rim1l",
+          "id": "7",
+          "table": "wheels.WheelRim6_4X8",
+          "ref": "4624",
+          "colour": 7,
+          "title": "Wheel Rim  6.4 x  8",
+          "library_only": false
+        },
+        {
+          "role": "tyre1l",
+          "id": "8",
+          "table": "tyres.Tyre8_75X8OffsetTread",
+          "ref": "4084",
+          "colour": 0,
+          "title": "Tyre  8/ 75 x  8 Offset Tread",
+          "library_only": false
+        },
+        {
+          "role": "rim1r",
+          "id": "9",
+          "table": "wheels.WheelRim6_4X8",
+          "ref": "4624",
+          "colour": 7,
+          "title": "Wheel Rim  6.4 x  8",
+          "library_only": false
+        },
+        {
+          "role": "tyre1r",
+          "id": "10",
+          "table": "tyres.Tyre8_75X8OffsetTread",
+          "ref": "4084",
+          "colour": 0,
+          "title": "Tyre  8/ 75 x  8 Offset Tread",
+          "library_only": false
+        },
+        {
+          "role": "nose",
+          "id": "11",
+          "table": "bricks.Brick2X4",
+          "ref": "3001",
+          "colour": 4,
+          "title": "Brick  2 x  4",
+          "library_only": false
+        },
+        {
+          "role": "side_l",
+          "id": "12",
+          "table": "bricks.Brick1X4",
+          "ref": "3010",
+          "colour": 4,
+          "title": "Brick  1 x  4",
+          "library_only": false
+        },
+        {
+          "role": "side_r",
+          "id": "13",
+          "table": "bricks.Brick1X4",
+          "ref": "3010",
+          "colour": 4,
+          "title": "Brick  1 x  4",
+          "library_only": false
+        },
+        {
+          "role": "rear",
+          "id": "14",
+          "table": "bricks.Brick2X4",
+          "ref": "3001",
+          "colour": 4,
+          "title": "Brick  2 x  4",
+          "library_only": false
+        },
+        {
+          "role": "windscreen",
+          "id": "15",
+          "table": "windscreens.Windscreen2X4X2",
+          "ref": "3823",
+          "colour": 47,
+          "title": "Windscreen  2 x  4 x  2",
+          "library_only": false
+        },
+        {
+          "role": "holder",
+          "id": "16",
+          "table": "hinges.HingeCarRoofHolder1X4X2",
+          "ref": "4214",
+          "colour": 4,
+          "title": "Hinge Car Roof Holder  1 x  4 x  2",
+          "library_only": false
+        },
+        {
+          "role": "roof",
+          "id": "17",
+          "table": "hinges.HingeCarRoof4X4",
+          "ref": "4213",
+          "colour": 4,
+          "title": "Hinge Car Roof  4 x  4",
+          "library_only": false
+        }
+      ],
+      "reference_checks": [
+        {
+          "model": "106-1.mpd",
+          "section": "(flattened main model)",
+          "parent": "holder",
+          "part": "roof",
+          "official_refs": [
+            "4214",
+            "4213"
+          ],
+          "position_offset_ldu": 0.0,
+          "rotation_offset": 0.0,
+          "note": ""
+        },
+        {
+          "model": "106-1.mpd",
+          "section": "(flattened main model)",
+          "parent": "windscreen",
+          "part": "holder",
+          "official_refs": [
+            "3823",
+            "4214"
+          ],
+          "position_offset_ldu": 0.0,
+          "rotation_offset": 0.0,
+          "note": ""
+        }
+      ],
+      "bodies": {
+        "roof": {
+          "kind": "revolute",
+          "origin": [
+            36.0,
+            -76.0,
+            0.0
+          ],
+          "axis": [
+            -0.0,
+            -0.0,
+            1.0
+          ],
+          "parent": null,
+          "signal": "roof_angle",
+          "instances": [
+            "17"
+          ]
+        }
+      },
+      "signals": {
+        "roof_angle": {
+          "expression": "a",
+          "variables": {
+            "a": "control:roof"
+          }
+        }
+      },
+      "clips": [
+        "S11_car_roof.lift_close",
+        "S11_car_roof.gas_strut",
+        "S11_car_roof.slam"
+      ],
+      "clearance": "clear"
+    },
+    {
+      "scenario": "S12_canopy",
+      "title": "Spaceship canopy",
+      "element": "Windscreen 4x4x3 with hinge 2620 on hinge plate 4315",
+      "plan": "movable_12_canopy",
+      "controller": "CTRL_movable_12_canopy",
+      "collection": "S12_canopy Spaceship canopy",
+      "scene": "S12 Spaceship canopy",
+      "controls": {
+        "canopy": {
+          "unit": "radian",
+          "min": 0.0,
+          "max": 1.6,
+          "description": "Canopy about the rear hinge; + lifts the front",
+          "periodic": false
+        }
+      },
+      "parts": [
+        {
+          "role": "wings",
+          "id": "0",
+          "table": "plates.Plate4X8",
+          "ref": "3035",
+          "colour": 7,
+          "title": "Plate  4 x  8",
+          "library_only": false
+        },
+        {
+          "role": "hull",
+          "id": "1",
+          "table": "plates.Plate4X10",
+          "ref": "3030",
+          "colour": 7,
+          "title": "Plate  4 x 10",
+          "library_only": false
+        },
+        {
+          "role": "nose",
+          "id": "2",
+          "table": "tiles.Tile1X4WithGroove",
+          "ref": "2431",
+          "colour": 8,
+          "title": "Tile  1 x  4 with Groove",
+          "library_only": false
+        },
+        {
+          "role": "back_wall0",
+          "id": "3",
+          "table": "bricks.Brick1X4",
+          "ref": "3010",
+          "colour": 7,
+          "title": "Brick  1 x  4",
+          "library_only": false
+        },
+        {
+          "role": "back_wall1",
+          "id": "4",
+          "table": "bricks.Brick1X4",
+          "ref": "3010",
+          "colour": 7,
+          "title": "Brick  1 x  4",
+          "library_only": false
+        },
+        {
+          "role": "back_plate",
+          "id": "5",
+          "table": "plates.Plate1X4",
+          "ref": "3710",
+          "colour": 7,
+          "title": "Plate  1 x  4",
+          "library_only": false
+        },
+        {
+          "role": "deck",
+          "id": "6",
+          "table": "plates.Plate4X4",
+          "ref": "3031",
+          "colour": 7,
+          "title": "Plate  4 x  4",
+          "library_only": false
+        },
+        {
+          "role": "holder",
+          "id": "7",
+          "table": "hinges.HingePlate1X4WithCarRoofHolder",
+          "ref": "4315",
+          "colour": 7,
+          "title": "Hinge Plate  1 x  4 with Car Roof Holder",
+          "library_only": false
+        },
+        {
+          "role": "canopy",
+          "id": "8",
+          "table": "windscreens.Windscreen4X4X3WithHinge",
+          "ref": "2620",
+          "colour": 33,
+          "title": "Windscreen  4 x  4 x  3 with Hinge",
+          "library_only": false
+        },
+        {
+          "role": "engine_l",
+          "id": "9",
+          "table": "bricks.Brick2X2RoundWithoutReinforcement",
+          "ref": "3941",
+          "colour": 8,
+          "title": "Brick  2 x  2 Round without Reinforcement",
+          "library_only": false
+        },
+        {
+          "role": "engine_r",
+          "id": "10",
+          "table": "bricks.Brick2X2RoundWithoutReinforcement",
+          "ref": "3941",
+          "colour": 8,
+          "title": "Brick  2 x  2 Round without Reinforcement",
+          "library_only": false
+        }
+      ],
+      "reference_checks": [
+        {
+          "model": "6351-1.mpd",
+          "section": "(flattened main model)",
+          "parent": "holder",
+          "part": "canopy",
+          "official_refs": [
+            "4315",
+            "2620"
+          ],
+          "position_offset_ldu": 1.0,
+          "rotation_offset": 0.0,
+          "note": ""
+        }
+      ],
+      "bodies": {
+        "canopy": {
+          "kind": "revolute",
+          "origin": [
+            16.0,
+            -68.0,
+            0.0
+          ],
+          "axis": [
+            -0.0,
+            -0.0,
+            1.0
+          ],
+          "parent": null,
+          "signal": "canopy_angle",
+          "instances": [
+            "8"
+          ]
+        }
+      },
+      "signals": {
+        "canopy_angle": {
+          "expression": "a",
+          "variables": {
+            "a": "control:canopy"
+          }
+        }
+      },
+      "clips": [
+        "S12_canopy.flip_open",
+        "S12_canopy.slow_seal",
+        "S12_canopy.pop_open"
+      ],
+      "clearance": "contact"
+    },
+    {
+      "scenario": "S13_forklift",
+      "title": "Forklift mast",
+      "element": "Forklift 2x7: rails 3430, forks 3431, spring u9529",
+      "plan": "movable_13_forklift",
+      "controller": "CTRL_movable_13_forklift",
+      "collection": "S13_forklift Forklift mast",
+      "scene": "S13 Forklift mast",
+      "controls": {
+        "lift": {
+          "unit": "ldu",
+          "min": 0.0,
+          "max": 100.0,
+          "description": "Forks along the rails; + raises them (0 = lowered, 100 = raised, as shortcuts 3430c00-f2 / -f1)",
+          "periodic": false
+        }
+      },
+      "parts": [
+        {
+          "role": "chassis",
+          "id": "0",
+          "table": "plates.Plate4X6",
+          "ref": "3032",
+          "colour": 14,
+          "title": "Plate  4 x  6",
+          "library_only": false
+        },
+        {
+          "role": "axle0",
+          "id": "1",
+          "table": null,
+          "ref": "4600",
+          "colour": 0,
+          "title": "Plate  2 x  2 with 2 Wheel Pins",
+          "library_only": true
+        },
+        {
+          "role": "rim0l",
+          "id": "2",
+          "table": "wheels.WheelRim6_4X8",
+          "ref": "4624",
+          "colour": 7,
+          "title": "Wheel Rim  6.4 x  8",
+          "library_only": false
+        },
+        {
+          "role": "tyre0l",
+          "id": "3",
+          "table": "tyres.Tyre8_75X8OffsetTread",
+          "ref": "4084",
+          "colour": 0,
+          "title": "Tyre  8/ 75 x  8 Offset Tread",
+          "library_only": false
+        },
+        {
+          "role": "rim0r",
+          "id": "4",
+          "table": "wheels.WheelRim6_4X8",
+          "ref": "4624",
+          "colour": 7,
+          "title": "Wheel Rim  6.4 x  8",
+          "library_only": false
+        },
+        {
+          "role": "tyre0r",
+          "id": "5",
+          "table": "tyres.Tyre8_75X8OffsetTread",
+          "ref": "4084",
+          "colour": 0,
+          "title": "Tyre  8/ 75 x  8 Offset Tread",
+          "library_only": false
+        },
+        {
+          "role": "axle1",
+          "id": "6",
+          "table": null,
+          "ref": "4600",
+          "colour": 0,
+          "title": "Plate  2 x  2 with 2 Wheel Pins",
+          "library_only": true
+        },
+        {
+          "role": "rim1l",
+          "id": "7",
+          "table": "wheels.WheelRim6_4X8",
+          "ref": "4624",
+          "colour": 7,
+          "title": "Wheel Rim  6.4 x  8",
+          "library_only": false
+        },
+        {
+          "role": "tyre1l",
+          "id": "8",
+          "table": "tyres.Tyre8_75X8OffsetTread",
+          "ref": "4084",
+          "colour": 0,
+          "title": "Tyre  8/ 75 x  8 Offset Tread",
+          "library_only": false
+        },
+        {
+          "role": "rim1r",
+          "id": "9",
+          "table": "wheels.WheelRim6_4X8",
+          "ref": "4624",
+          "colour": 7,
+          "title": "Wheel Rim  6.4 x  8",
+          "library_only": false
+        },
+        {
+          "role": "tyre1r",
+          "id": "10",
+          "table": "tyres.Tyre8_75X8OffsetTread",
+          "ref": "4084",
+          "colour": 0,
+          "title": "Tyre  8/ 75 x  8 Offset Tread",
+          "library_only": false
+        },
+        {
+          "role": "body",
+          "id": "11",
+          "table": "bricks.Brick2X4",
+          "ref": "3001",
+          "colour": 14,
+          "title": "Brick  2 x  4",
+          "library_only": false
+        },
+        {
+          "role": "seat",
+          "id": "12",
+          "table": "bricks.Brick2X2",
+          "ref": "3003",
+          "colour": 0,
+          "title": "Brick  2 x  2",
+          "library_only": false
+        },
+        {
+          "role": "rails",
+          "id": "13",
+          "table": "vehicles.ForkliftRails2X4X5_667",
+          "ref": "3430",
+          "colour": 0,
+          "title": "Forklift Rails  2 x  4 x  5.667",
+          "library_only": false
+        },
+        {
+          "role": "forks",
+          "id": "14",
+          "table": "vehicles.ForkliftForks2X4",
+          "ref": "3431",
+          "colour": 7,
+          "title": "Forklift Forks  2 x  4",
+          "library_only": false
+        },
+        {
+          "role": "spring",
+          "id": "15",
+          "table": "vehicles.Forklift2X7Spring_Extended_",
+          "ref": "u9529-f2",
+          "colour": 0,
+          "title": "Forklift  2 x  7 Spring (Extended)",
+          "library_only": false
+        }
+      ],
+      "reference_checks": [],
+      "bodies": {
+        "forks": {
+          "kind": "prismatic",
+          "origin": [
+            0.0,
+            -44.0,
+            -56.0
+          ],
+          "axis": [
+            0.0,
+            -1.0,
+            0.0
+          ],
+          "parent": null,
+          "signal": "lift_offset",
+          "instances": [
+            "14"
+          ]
+        },
+        "spring": {
+          "kind": "stretch",
+          "origin": [
+            0.0,
+            -128.8,
+            -51.05
+          ],
+          "axis": [
+            0.0,
+            1.0,
+            0.0
+          ],
+          "parent": null,
+          "signal": "spring_scale",
+          "instances": [
+            "15"
+          ]
+        }
+      },
+      "signals": {
+        "lift_offset": {
+          "expression": "a",
+          "variables": {
+            "a": "control:lift"
+          }
+        },
+        "spring_scale": {
+          "expression": "(136 - a) / 136",
+          "variables": {
+            "a": "control:lift"
+          }
+        }
+      },
+      "clips": [
+        "S13_forklift.raise_lower",
+        "S13_forklift.chain_hoist",
+        "S13_forklift.drop"
+      ],
+      "clearance": "shallow"
+    },
+    {
+      "scenario": "S14_sliding_door",
+      "title": "Sliding shed door",
+      "element": "Sliding door 6.5x5 4511 in door-rail plates 4510",
+      "plan": "movable_14_sliding_door",
+      "controller": "CTRL_movable_14_sliding_door",
+      "collection": "S14_sliding_door Sliding shed door",
+      "scene": "S14 Sliding shed door",
+      "controls": {
+        "slide": {
+          "unit": "ldu",
+          "min": 0.0,
+          "max": 150.0,
+          "description": "Door along the rails; + slides it open to the right (+X)",
+          "periodic": false
+        }
+      },
+      "parts": [
+        {
+          "role": "base",
+          "id": "0",
+          "table": "plates.Plate6X16",
+          "ref": "3027",
+          "colour": 8,
+          "title": "Plate  6 x 16",
+          "library_only": false
+        },
+        {
+          "role": "rail_low_a",
+          "id": "1",
+          "table": "plates.Plate1X8WithDoorRail",
+          "ref": "4510",
+          "colour": 4,
+          "title": "Plate  1 x  8 with Door Rail",
+          "library_only": false
+        },
+        {
+          "role": "rail_low_b",
+          "id": "2",
+          "table": "plates.Plate1X8WithDoorRail",
+          "ref": "4510",
+          "colour": 4,
+          "title": "Plate  1 x  8 with Door Rail",
+          "library_only": false
+        },
+        {
+          "role": "door",
+          "id": "3",
+          "table": "doors.Door6_5X5SlidingWithCorrugatedSurface",
+          "ref": "4511",
+          "colour": 71,
+          "title": "Door  6.5 x  5 Sliding with Corrugated Surface",
+          "library_only": false
+        },
+        {
+          "role": "wall0",
+          "id": "4",
+          "table": "bricks.Brick1X8",
+          "ref": "3008",
+          "colour": 4,
+          "title": "Brick  1 x  8",
+          "library_only": false
+        },
+        {
+          "role": "post0",
+          "id": "5",
+          "table": "bricks.Brick1X1",
+          "ref": "3005",
+          "colour": 4,
+          "title": "Brick  1 x  1",
+          "library_only": false
+        },
+        {
+          "role": "wall1",
+          "id": "6",
+          "table": "bricks.Brick1X8",
+          "ref": "3008",
+          "colour": 4,
+          "title": "Brick  1 x  8",
+          "library_only": false
+        },
+        {
+          "role": "post1",
+          "id": "7",
+          "table": "bricks.Brick1X1",
+          "ref": "3005",
+          "colour": 4,
+          "title": "Brick  1 x  1",
+          "library_only": false
+        },
+        {
+          "role": "wall2",
+          "id": "8",
+          "table": "bricks.Brick1X8",
+          "ref": "3008",
+          "colour": 4,
+          "title": "Brick  1 x  8",
+          "library_only": false
+        },
+        {
+          "role": "post2",
+          "id": "9",
+          "table": "bricks.Brick1X1",
+          "ref": "3005",
+          "colour": 4,
+          "title": "Brick  1 x  1",
+          "library_only": false
+        },
+        {
+          "role": "wall3",
+          "id": "10",
+          "table": "bricks.Brick1X8",
+          "ref": "3008",
+          "colour": 4,
+          "title": "Brick  1 x  8",
+          "library_only": false
+        },
+        {
+          "role": "post3",
+          "id": "11",
+          "table": "bricks.Brick1X1",
+          "ref": "3005",
+          "colour": 4,
+          "title": "Brick  1 x  1",
+          "library_only": false
+        },
+        {
+          "role": "wall4",
+          "id": "12",
+          "table": "bricks.Brick1X8",
+          "ref": "3008",
+          "colour": 4,
+          "title": "Brick  1 x  8",
+          "library_only": false
+        },
+        {
+          "role": "post4",
+          "id": "13",
+          "table": "bricks.Brick1X1",
+          "ref": "3005",
+          "colour": 4,
+          "title": "Brick  1 x  1",
+          "library_only": false
+        },
+        {
+          "role": "wall_cap",
+          "id": "14",
+          "table": "plates.Plate1X8",
+          "ref": "3460",
+          "colour": 4,
+          "title": "Plate  1 x  8",
+          "library_only": false
+        },
+        {
+          "role": "post_cap",
+          "id": "15",
+          "table": "plates.Plate1X1",
+          "ref": "3024",
+          "colour": 4,
+          "title": "Plate  1 x  1",
+          "library_only": false
+        },
+        {
+          "role": "rail_top_a",
+          "id": "16",
+          "table": "plates.Plate1X8WithDoorRail",
+          "ref": "4510",
+          "colour": 4,
+          "title": "Plate  1 x  8 with Door Rail",
+          "library_only": false
+        },
+        {
+          "role": "rail_top_b",
+          "id": "17",
+          "table": "plates.Plate1X8WithDoorRail",
+          "ref": "4510",
+          "colour": 4,
+          "title": "Plate  1 x  8 with Door Rail",
+          "library_only": false
+        },
+        {
+          "role": "roof",
+          "id": "18",
+          "table": "plates.Plate2X16",
+          "ref": "4282",
+          "colour": 8,
+          "title": "Plate  2 x 16",
+          "library_only": false
+        }
+      ],
+      "reference_checks": [
+        {
+          "model": "7735-1.mpd",
+          "section": "(flattened main model)",
+          "parent": "rail_low_a",
+          "part": "door",
+          "official_refs": [
+            "4510",
+            "4511"
+          ],
+          "position_offset_ldu": 0.0,
+          "rotation_offset": 0.0,
+          "note": ""
+        }
+      ],
+      "bodies": {
+        "door": {
+          "kind": "prismatic",
+          "origin": [
+            -18.0,
+            -67.0,
+            -13.0
+          ],
+          "axis": [
+            1.0,
+            0.0,
+            0.0
+          ],
+          "parent": null,
+          "signal": "slide_offset",
+          "instances": [
+            "3"
+          ]
+        }
+      },
+      "signals": {
+        "slide_offset": {
+          "expression": "a",
+          "variables": {
+            "a": "control:slide"
+          }
+        }
+      },
+      "clips": [
+        "S14_sliding_door.slide_cycle",
+        "S14_sliding_door.shove",
+        "S14_sliding_door.crack_open"
+      ],
+      "clearance": "clear"
+    },
+    {
+      "scenario": "S15_radar",
+      "title": "Rotating radar",
+      "element": "Dish 4x4 3960 on turntable 2x2 3680/3679",
+      "plan": "movable_15_radar",
+      "controller": "CTRL_movable_15_radar",
+      "collection": "S15_radar Rotating radar",
+      "scene": "S15 Rotating radar",
+      "controls": {
+        "spin": {
+          "unit": "radian",
+          "min": -25.132741228718345,
+          "max": 25.132741228718345,
+          "description": "Turntable top; + turns counter-clockwise seen from above",
+          "periodic": true
+        }
+      },
+      "parts": [
+        {
+          "role": "base",
+          "id": "0",
+          "table": "plates.Plate4X4",
+          "ref": "3031",
+          "colour": 8,
+          "title": "Plate  4 x  4",
+          "library_only": false
+        },
+        {
+          "role": "pedestal0",
+          "id": "1",
+          "table": "bricks.Brick2X2",
+          "ref": "3003",
+          "colour": 71,
+          "title": "Brick  2 x  2",
+          "library_only": false
+        },
+        {
+          "role": "pedestal1",
+          "id": "2",
+          "table": "bricks.Brick2X2",
+          "ref": "3003",
+          "colour": 71,
+          "title": "Brick  2 x  2",
+          "library_only": false
+        },
+        {
+          "role": "turntable_base",
+          "id": "3",
+          "table": "turntables.Turntable2X2PlateBase",
+          "ref": "3680",
+          "colour": 8,
+          "title": "Turntable  2 x  2 Plate Base",
+          "library_only": false
+        },
+        {
+          "role": "turntable_top",
+          "id": "4",
+          "table": "turntables.Turntable2X2PlateTop",
+          "ref": "3679",
+          "colour": 71,
+          "title": "Turntable  2 x  2 Plate Top",
+          "library_only": false
+        },
+        {
+          "role": "mount",
+          "id": "5",
+          "table": "plates.Plate2X2WithGrooveWith1CentreStud",
+          "ref": "87580",
+          "colour": 71,
+          "title": "Plate  2 x  2 with Groove with 1 Centre Stud",
+          "library_only": false
+        },
+        {
+          "role": "mast0",
+          "id": "6",
+          "table": "bricks.Brick1X1",
+          "ref": "3005",
+          "colour": 15,
+          "title": "Brick  1 x  1",
+          "library_only": false
+        },
+        {
+          "role": "mast1",
+          "id": "7",
+          "table": "bricks.Brick1X1",
+          "ref": "3005",
+          "colour": 15,
+          "title": "Brick  1 x  1",
+          "library_only": false
+        },
+        {
+          "role": "head",
+          "id": "8",
+          "table": "bricks.Brick1X1WithStudOn1Side",
+          "ref": "87087",
+          "colour": 15,
+          "title": "Brick  1 x  1 with Stud on 1 Side",
+          "library_only": false
+        },
+        {
+          "role": "dish",
+          "id": "9",
+          "table": "dishes.Dish4X4Inverted",
+          "ref": "3960",
+          "colour": 15,
+          "title": "Dish  4 x  4 Inverted",
+          "library_only": false
+        },
+        {
+          "role": "beacon",
+          "id": "10",
+          "table": "plates.Plate1X1Round",
+          "ref": "6141",
+          "colour": 4,
+          "title": "Plate  1 x  1 Round",
+          "library_only": false
+        }
+      ],
+      "reference_checks": [],
+      "bodies": {
+        "radar": {
+          "kind": "revolute",
+          "origin": [
+            0.0,
+            -50.0,
+            0.0
+          ],
+          "axis": [
+            0.0,
+            -1.0,
+            0.0
+          ],
+          "parent": null,
+          "signal": "spin_angle",
+          "instances": [
+            "4",
+            "5",
+            "6",
+            "7",
+            "8",
+            "9",
+            "10"
+          ]
+        }
+      },
+      "signals": {
+        "spin_angle": {
+          "expression": "a",
+          "variables": {
+            "a": "control:spin"
+          }
+        }
+      },
+      "clips": [
+        "S15_radar.constant_spin",
+        "S15_radar.spin_up_down",
+        "S15_radar.sweep_scan"
+      ],
+      "clearance": "clear"
+    },
+    {
+      "scenario": "S16_crane",
+      "title": "Mini crane",
+      "element": "Turntable 4x4 3403/3404 slew, hinge 3937/6134 luffing boom, plumb hook 3136",
+      "plan": "movable_16_crane",
+      "controller": "CTRL_movable_16_crane",
+      "collection": "S16_crane Mini crane",
+      "scene": "S16 Mini crane",
+      "controls": {
+        "slew": {
+          "unit": "radian",
+          "min": -3.141592653589793,
+          "max": 3.141592653589793,
+          "description": "Superstructure on the turntable; + turns counter-clockwise seen from above",
+          "periodic": false
+        },
+        "luff": {
+          "unit": "radian",
+          "min": 0.0,
+          "max": 1.1,
+          "description": "Boom about its hinge; + raises the tip",
+          "periodic": false
+        }
+      },
+      "parts": [
+        {
+          "role": "base",
+          "id": "0",
+          "table": "plates.Plate6X6",
+          "ref": "3958",
+          "colour": 8,
+          "title": "Plate  6 x  6",
+          "library_only": false
+        },
+        {
+          "role": "pedestal00",
+          "id": "1",
+          "table": "bricks.Brick2X4",
+          "ref": "3001",
+          "colour": 14,
+          "title": "Brick  2 x  4",
+          "library_only": false
+        },
+        {
+          "role": "pedestal01",
+          "id": "2",
+          "table": "bricks.Brick2X4",
+          "ref": "3001",
+          "colour": 14,
+          "title": "Brick  2 x  4",
+          "library_only": false
+        },
+        {
+          "role": "pedestal10",
+          "id": "3",
+          "table": "bricks.Brick2X4",
+          "ref": "3001",
+          "colour": 14,
+          "title": "Brick  2 x  4",
+          "library_only": false
+        },
+        {
+          "role": "pedestal11",
+          "id": "4",
+          "table": "bricks.Brick2X4",
+          "ref": "3001",
+          "colour": 14,
+          "title": "Brick  2 x  4",
+          "library_only": false
+        },
+        {
+          "role": "turntable_base",
+          "id": "5",
+          "table": "turntables.Turntable4X4Base",
+          "ref": "3403",
+          "colour": 8,
+          "title": "Turntable  4 x  4 Base",
+          "library_only": false
+        },
+        {
+          "role": "turntable_top",
+          "id": "6",
+          "table": "turntables.Turntable4X4Top",
+          "ref": "3404",
+          "colour": 8,
+          "title": "Turntable  4 x  4 Top",
+          "library_only": false
+        },
+        {
+          "role": "cab",
+          "id": "7",
+          "table": "bricks.Brick1X4",
+          "ref": "3010",
+          "colour": 14,
+          "title": "Brick  1 x  4",
+          "library_only": false
+        },
+        {
+          "role": "cab_window",
+          "id": "8",
+          "table": "bricks.Brick1X4",
+          "ref": "3010",
+          "colour": 0,
+          "title": "Brick  1 x  4",
+          "library_only": false
+        },
+        {
+          "role": "cab_roof",
+          "id": "9",
+          "table": "plates.Plate1X4",
+          "ref": "3710",
+          "colour": 14,
+          "title": "Plate  1 x  4",
+          "library_only": false
+        },
+        {
+          "role": "hinge_base",
+          "id": "10",
+          "table": "hinges.Hinge1X2Base",
+          "ref": "3937",
+          "colour": 8,
+          "title": "Hinge  1 x  2 Base",
+          "library_only": false
+        },
+        {
+          "role": "hinge_top",
+          "id": "11",
+          "table": "hinges.Hinge2X2Top",
+          "ref": "6134",
+          "colour": 8,
+          "title": "Hinge  2 x  2 Top",
+          "library_only": false
+        },
+        {
+          "role": "boom_riser",
+          "id": "12",
+          "table": "plates.Plate1X2",
+          "ref": "3023b",
+          "colour": 8,
+          "title": "Plate  1 x  2",
+          "library_only": false
+        },
+        {
+          "role": "boom",
+          "id": "13",
+          "table": "plates.Plate2X10",
+          "ref": "3832",
+          "colour": 14,
+          "title": "Plate  2 x 10",
+          "library_only": false
+        },
+        {
+          "role": "boom_tip",
+          "id": "14",
+          "table": "technic.TechnicBrick1X2WithHole",
+          "ref": "3700",
+          "colour": 8,
+          "title": "Technic Brick  1 x  2 with Hole",
+          "library_only": false
+        },
+        {
+          "role": "hook",
+          "id": "15",
+          "table": "cranes.CraneHookWith4Studs",
+          "ref": "3136",
+          "colour": 8,
+          "title": "Crane Hook with  4 Studs",
+          "library_only": false
+        }
+      ],
+      "reference_checks": [],
+      "bodies": {
+        "superstructure": {
+          "kind": "revolute",
+          "origin": [
+            0.0,
+            -69.0,
+            0.0
+          ],
+          "axis": [
+            -0.0,
+            -1.0,
+            -0.0
+          ],
+          "parent": null,
+          "signal": "slew_angle",
+          "instances": [
+            "6",
+            "7",
+            "8",
+            "9",
+            "10"
+          ]
+        },
+        "boom": {
+          "kind": "revolute",
+          "origin": [
+            0.0,
+            -86.0,
+            -10.0
+          ],
+          "axis": [
+            -1.0,
+            -0.0,
+            -0.0
+          ],
+          "parent": "superstructure",
+          "signal": "luff_angle",
+          "instances": [
+            "11",
+            "12",
+            "13",
+            "14"
+          ]
+        },
+        "hook": {
+          "kind": "revolute",
+          "origin": [
+            10.0,
+            -94.0,
+            -200.0
+          ],
+          "axis": [
+            1.0,
+            0.0,
+            0.0
+          ],
+          "parent": "boom",
+          "signal": "hook_angle",
+          "instances": [
+            "15"
+          ]
+        }
+      },
+      "signals": {
+        "slew_angle": {
+          "expression": "a",
+          "variables": {
+            "a": "control:slew"
+          }
+        },
+        "luff_angle": {
+          "expression": "a",
+          "variables": {
+            "a": "control:luff"
+          }
+        },
+        "hook_angle": {
+          "expression": "a",
+          "variables": {
+            "a": "control:luff"
+          }
+        }
+      },
+      "clips": [
+        "S16_crane.slew_sweep",
+        "S16_crane.luff_cycle",
+        "S16_crane.pick_and_place"
+      ],
+      "clearance": "clear"
+    },
+    {
+      "scenario": "S17_tipper",
+      "title": "Dump truck tipper",
+      "element": "Tipper bucket 4080 on hinge plates 4275b / hinge tiles 4531",
+      "plan": "movable_17_tipper",
+      "controller": "CTRL_movable_17_tipper",
+      "collection": "S17_tipper Dump truck tipper",
+      "scene": "S17 Dump truck tipper",
+      "controls": {
+        "tip": {
+          "unit": "radian",
+          "min": 0.0,
+          "max": 1.0,
+          "description": "Bucket about the rear hinge; + raises the front",
+          "periodic": false
+        }
+      },
+      "parts": [
+        {
+          "role": "chassis",
+          "id": "0",
+          "table": "plates.Plate4X10",
+          "ref": "3030",
+          "colour": 8,
+          "title": "Plate  4 x 10",
+          "library_only": false
+        },
+        {
+          "role": "axle0",
+          "id": "1",
+          "table": null,
+          "ref": "4600",
+          "colour": 0,
+          "title": "Plate  2 x  2 with 2 Wheel Pins",
+          "library_only": true
+        },
+        {
+          "role": "rim0l",
+          "id": "2",
+          "table": "wheels.WheelRim6_4X8",
+          "ref": "4624",
+          "colour": 7,
+          "title": "Wheel Rim  6.4 x  8",
+          "library_only": false
+        },
+        {
+          "role": "tyre0l",
+          "id": "3",
+          "table": "tyres.Tyre8_75X8OffsetTread",
+          "ref": "4084",
+          "colour": 0,
+          "title": "Tyre  8/ 75 x  8 Offset Tread",
+          "library_only": false
+        },
+        {
+          "role": "rim0r",
+          "id": "4",
+          "table": "wheels.WheelRim6_4X8",
+          "ref": "4624",
+          "colour": 7,
+          "title": "Wheel Rim  6.4 x  8",
+          "library_only": false
+        },
+        {
+          "role": "tyre0r",
+          "id": "5",
+          "table": "tyres.Tyre8_75X8OffsetTread",
+          "ref": "4084",
+          "colour": 0,
+          "title": "Tyre  8/ 75 x  8 Offset Tread",
+          "library_only": false
+        },
+        {
+          "role": "axle1",
+          "id": "6",
+          "table": null,
+          "ref": "4600",
+          "colour": 0,
+          "title": "Plate  2 x  2 with 2 Wheel Pins",
+          "library_only": true
+        },
+        {
+          "role": "rim1l",
+          "id": "7",
+          "table": "wheels.WheelRim6_4X8",
+          "ref": "4624",
+          "colour": 7,
+          "title": "Wheel Rim  6.4 x  8",
+          "library_only": false
+        },
+        {
+          "role": "tyre1l",
+          "id": "8",
+          "table": "tyres.Tyre8_75X8OffsetTread",
+          "ref": "4084",
+          "colour": 0,
+          "title": "Tyre  8/ 75 x  8 Offset Tread",
+          "library_only": false
+        },
+        {
+          "role": "rim1r",
+          "id": "9",
+          "table": "wheels.WheelRim6_4X8",
+          "ref": "4624",
+          "colour": 7,
+          "title": "Wheel Rim  6.4 x  8",
+          "library_only": false
+        },
+        {
+          "role": "tyre1r",
+          "id": "10",
+          "table": "tyres.Tyre8_75X8OffsetTread",
+          "ref": "4084",
+          "colour": 0,
+          "title": "Tyre  8/ 75 x  8 Offset Tread",
+          "library_only": false
+        },
+        {
+          "role": "cab",
+          "id": "11",
+          "table": "bricks.Brick2X4",
+          "ref": "3001",
+          "colour": 14,
+          "title": "Brick  2 x  4",
+          "library_only": false
+        },
+        {
+          "role": "cab_roof",
+          "id": "12",
+          "table": "plates.Plate2X4",
+          "ref": "3020",
+          "colour": 14,
+          "title": "Plate  2 x  4",
+          "library_only": false
+        },
+        {
+          "role": "bed",
+          "id": "13",
+          "table": "plates.Plate2X4",
+          "ref": "3020",
+          "colour": 8,
+          "title": "Plate  2 x  4",
+          "library_only": false
+        },
+        {
+          "role": "hinge_tile_l",
+          "id": "14",
+          "table": "hinges.HingeTile1X2With2Fingers",
+          "ref": "4531",
+          "colour": 8,
+          "title": "Hinge Tile  1 x  2 with 2 Fingers",
+          "library_only": false
+        },
+        {
+          "role": "hinge_plate_l",
+          "id": "15",
+          "table": "hinges.HingePlate1X2With3FingersAndHollowStuds",
+          "ref": "4275b",
+          "colour": 8,
+          "title": "Hinge Plate  1 x  2 with 3 Fingers and Hollow Studs",
+          "library_only": false
+        },
+        {
+          "role": "hinge_tile_r",
+          "id": "16",
+          "table": "hinges.HingeTile1X2With2Fingers",
+          "ref": "4531",
+          "colour": 8,
+          "title": "Hinge Tile  1 x  2 with 2 Fingers",
+          "library_only": false
+        },
+        {
+          "role": "hinge_plate_r",
+          "id": "17",
+          "table": "hinges.HingePlate1X2With3FingersAndHollowStuds",
+          "ref": "4275b",
+          "colour": 8,
+          "title": "Hinge Plate  1 x  2 with 3 Fingers and Hollow Studs",
+          "library_only": false
+        },
+        {
+          "role": "bucket",
+          "id": "18",
+          "table": "others.TipperBucket4X6WithOpenStudsFrontLip",
+          "ref": "4080",
+          "colour": 14,
+          "title": "Tipper Bucket  4 x  6 with Open Studs Front Lip",
+          "library_only": false
+        }
+      ],
+      "reference_checks": [
+        {
+          "model": "6532-1.mpd",
+          "section": "(flattened main model)",
+          "parent": "hinge_tile_l",
+          "part": "hinge_plate_l",
+          "official_refs": [
+            "4531",
+            "4275b"
+          ],
+          "position_offset_ldu": 0.0,
+          "rotation_offset": 0.0,
+          "note": ""
+        },
+        {
+          "model": "6532-1.mpd",
+          "section": "(flattened main model)",
+          "parent": "hinge_plate_l",
+          "part": "bucket",
+          "official_refs": [
+            "4275b",
+            "4080"
+          ],
+          "position_offset_ldu": 0.0,
+          "rotation_offset": 0.0,
+          "note": ""
+        }
+      ],
+      "bodies": {
+        "bucket": {
+          "kind": "revolute",
+          "origin": [
+            -10.0,
+            -20.0,
+            170.0
+          ],
+          "axis": [
+            -1.0,
+            0.0,
+            0.0
+          ],
+          "parent": null,
+          "signal": "tip_angle",
+          "instances": [
+            "15",
+            "17",
+            "18"
+          ]
+        }
+      },
+      "signals": {
+        "tip_angle": {
+          "expression": "a",
+          "variables": {
+            "a": "control:tip"
+          }
+        }
+      },
+      "clips": [
+        "S17_tipper.tip_return",
+        "S17_tipper.hydraulic_steps",
+        "S17_tipper.shake_to_empty"
+      ],
+      "clearance": "clear"
+    },
+    {
+      "scenario": "S18_barrier",
+      "title": "Parking barrier",
+      "element": "Boom on hinge 1x2 3937/3938",
+      "plan": "movable_18_barrier",
+      "controller": "CTRL_movable_18_barrier",
+      "collection": "S18_barrier Parking barrier",
+      "scene": "S18 Parking barrier",
+      "controls": {
+        "boom": {
+          "unit": "radian",
+          "min": 0.0,
+          "max": 1.5,
+          "description": "Boom about its post hinge; + raises the tip",
+          "periodic": false
+        }
+      },
+      "parts": [
+        {
+          "role": "road",
+          "id": "0",
+          "table": "plates.Plate4X12",
+          "ref": "3029",
+          "colour": 8,
+          "title": "Plate  4 x 12",
+          "library_only": false
+        },
+        {
+          "role": "post0",
+          "id": "1",
+          "table": "bricks.Brick2X2",
+          "ref": "3003",
+          "colour": 15,
+          "title": "Brick  2 x  2",
+          "library_only": false
+        },
+        {
+          "role": "post1",
+          "id": "2",
+          "table": "bricks.Brick2X2",
+          "ref": "3003",
+          "colour": 15,
+          "title": "Brick  2 x  2",
+          "library_only": false
+        },
+        {
+          "role": "hinge_base",
+          "id": "3",
+          "table": "hinges.Hinge1X2Base",
+          "ref": "3937",
+          "colour": 8,
+          "title": "Hinge  1 x  2 Base",
+          "library_only": false
+        },
+        {
+          "role": "hinge_top",
+          "id": "4",
+          "table": "hinges.Hinge1X2Top",
+          "ref": "3938",
+          "colour": 8,
+          "title": "Hinge  1 x  2 Top",
+          "library_only": false
+        },
+        {
+          "role": "boom",
+          "id": "5",
+          "table": "plates.Plate2X10",
+          "ref": "3832",
+          "colour": 15,
+          "title": "Plate  2 x 10",
+          "library_only": false
+        },
+        {
+          "role": "stripe0",
+          "id": "6",
+          "table": "tiles.Tile2X2WithGroove",
+          "ref": "3068b",
+          "colour": 4,
+          "title": "Tile  2 x  2 with Groove",
+          "library_only": false
+        },
+        {
+          "role": "stripe1",
+          "id": "7",
+          "table": "tiles.Tile2X2WithGroove",
+          "ref": "3068b",
+          "colour": 4,
+          "title": "Tile  2 x  2 with Groove",
+          "library_only": false
+        },
+        {
+          "role": "stripe2",
+          "id": "8",
+          "table": "tiles.Tile2X2WithGroove",
+          "ref": "3068b",
+          "colour": 4,
+          "title": "Tile  2 x  2 with Groove",
+          "library_only": false
+        },
+        {
+          "role": "rest0",
+          "id": "9",
+          "table": "bricks.Brick1X1",
+          "ref": "3005",
+          "colour": 15,
+          "title": "Brick  1 x  1",
+          "library_only": false
+        },
+        {
+          "role": "rest1",
+          "id": "10",
+          "table": "bricks.Brick1X1",
+          "ref": "3005",
+          "colour": 15,
+          "title": "Brick  1 x  1",
+          "library_only": false
+        },
+        {
+          "role": "rest2",
+          "id": "11",
+          "table": "bricks.Brick1X1",
+          "ref": "3005",
+          "colour": 15,
+          "title": "Brick  1 x  1",
+          "library_only": false
+        }
+      ],
+      "reference_checks": [],
+      "bodies": {
+        "boom": {
+          "kind": "revolute",
+          "origin": [
+            -100.0,
+            -62.0,
+            0.0
+          ],
+          "axis": [
+            0.0,
+            0.0,
+            -1.0
+          ],
+          "parent": null,
+          "signal": "boom_angle",
+          "instances": [
+            "4",
+            "5",
+            "6",
+            "7",
+            "8"
+          ]
+        }
+      },
+      "signals": {
+        "boom_angle": {
+          "expression": "a",
+          "variables": {
+            "a": "control:boom"
+          }
+        }
+      },
+      "clips": [
+        "S18_barrier.raise_lower",
+        "S18_barrier.bounce_down",
+        "S18_barrier.quick_up_slow_down"
+      ],
+      "clearance": "clear"
+    },
+    {
+      "scenario": "S19_drawbridge",
+      "title": "Drawbridge",
+      "element": "Bridge deck on two hinge 1x2 pairs 3937/3938",
+      "plan": "movable_19_drawbridge",
+      "controller": "CTRL_movable_19_drawbridge",
+      "collection": "S19_drawbridge Drawbridge",
+      "scene": "S19 Drawbridge",
+      "controls": {
+        "bridge": {
+          "unit": "radian",
+          "min": 0.0,
+          "max": 1.55,
+          "description": "Bridge deck about the threshold hinges; + raises it (0 = lowered across the moat)",
+          "periodic": false
+        }
+      },
+      "parts": [
+        {
+          "role": "ground",
+          "id": "0",
+          "table": "baseplates.Baseplate16X16",
+          "ref": "3867",
+          "colour": 2,
+          "title": "Baseplate 16 x 16",
+          "library_only": false
+        },
+        {
+          "role": "moat",
+          "id": "1",
+          "table": "plates.Plate6X6",
+          "ref": "3958",
+          "colour": 73,
+          "title": "Plate  6 x  6",
+          "library_only": false
+        },
+        {
+          "role": "hinge_wall_l",
+          "id": "2",
+          "table": "hinges.Hinge1X2Base",
+          "ref": "3937",
+          "colour": 8,
+          "title": "Hinge  1 x  2 Base",
+          "library_only": false
+        },
+        {
+          "role": "hinge_deck_l",
+          "id": "3",
+          "table": "hinges.Hinge1X2Top",
+          "ref": "3938",
+          "colour": 8,
+          "title": "Hinge  1 x  2 Top",
+          "library_only": false
+        },
+        {
+          "role": "hinge_wall_r",
+          "id": "4",
+          "table": "hinges.Hinge1X2Base",
+          "ref": "3937",
+          "colour": 8,
+          "title": "Hinge  1 x  2 Base",
+          "library_only": false
+        },
+        {
+          "role": "hinge_deck_r",
+          "id": "5",
+          "table": "hinges.Hinge1X2Top",
+          "ref": "3938",
+          "colour": 8,
+          "title": "Hinge  1 x  2 Top",
+          "library_only": false
+        },
+        {
+          "role": "deck",
+          "id": "6",
+          "table": "plates.Plate6X8",
+          "ref": "3036",
+          "colour": 70,
+          "title": "Plate  6 x  8",
+          "library_only": false
+        },
+        {
+          "role": "bank",
+          "id": "7",
+          "table": "bricks.Brick1X6",
+          "ref": "3009",
+          "colour": 8,
+          "title": "Brick  1 x  6",
+          "library_only": false
+        },
+        {
+          "role": "tower_l0",
+          "id": "8",
+          "table": "bricks.Brick2X2",
+          "ref": "3003",
+          "colour": 71,
+          "title": "Brick  2 x  2",
+          "library_only": false
+        },
+        {
+          "role": "tower_r0",
+          "id": "9",
+          "table": "bricks.Brick2X2",
+          "ref": "3003",
+          "colour": 71,
+          "title": "Brick  2 x  2",
+          "library_only": false
+        },
+        {
+          "role": "tower_l1",
+          "id": "10",
+          "table": "bricks.Brick2X2",
+          "ref": "3003",
+          "colour": 71,
+          "title": "Brick  2 x  2",
+          "library_only": false
+        },
+        {
+          "role": "tower_r1",
+          "id": "11",
+          "table": "bricks.Brick2X2",
+          "ref": "3003",
+          "colour": 71,
+          "title": "Brick  2 x  2",
+          "library_only": false
+        },
+        {
+          "role": "tower_l2",
+          "id": "12",
+          "table": "bricks.Brick2X2",
+          "ref": "3003",
+          "colour": 71,
+          "title": "Brick  2 x  2",
+          "library_only": false
+        },
+        {
+          "role": "tower_r2",
+          "id": "13",
+          "table": "bricks.Brick2X2",
+          "ref": "3003",
+          "colour": 71,
+          "title": "Brick  2 x  2",
+          "library_only": false
+        },
+        {
+          "role": "tower_l3",
+          "id": "14",
+          "table": "bricks.Brick2X2",
+          "ref": "3003",
+          "colour": 71,
+          "title": "Brick  2 x  2",
+          "library_only": false
+        },
+        {
+          "role": "tower_r3",
+          "id": "15",
+          "table": "bricks.Brick2X2",
+          "ref": "3003",
+          "colour": 71,
+          "title": "Brick  2 x  2",
+          "library_only": false
+        },
+        {
+          "role": "tower_l4",
+          "id": "16",
+          "table": "bricks.Brick2X2",
+          "ref": "3003",
+          "colour": 71,
+          "title": "Brick  2 x  2",
+          "library_only": false
+        },
+        {
+          "role": "tower_r4",
+          "id": "17",
+          "table": "bricks.Brick2X2",
+          "ref": "3003",
+          "colour": 71,
+          "title": "Brick  2 x  2",
+          "library_only": false
+        },
+        {
+          "role": "tower_l5",
+          "id": "18",
+          "table": "bricks.Brick2X2",
+          "ref": "3003",
+          "colour": 71,
+          "title": "Brick  2 x  2",
+          "library_only": false
+        },
+        {
+          "role": "tower_r5",
+          "id": "19",
+          "table": "bricks.Brick2X2",
+          "ref": "3003",
+          "colour": 71,
+          "title": "Brick  2 x  2",
+          "library_only": false
+        },
+        {
+          "role": "tower_l6",
+          "id": "20",
+          "table": "bricks.Brick2X2",
+          "ref": "3003",
+          "colour": 71,
+          "title": "Brick  2 x  2",
+          "library_only": false
+        },
+        {
+          "role": "tower_r6",
+          "id": "21",
+          "table": "bricks.Brick2X2",
+          "ref": "3003",
+          "colour": 71,
+          "title": "Brick  2 x  2",
+          "library_only": false
+        },
+        {
+          "role": "lintel",
+          "id": "22",
+          "table": "bricks.Brick1X8",
+          "ref": "3008",
+          "colour": 71,
+          "title": "Brick  1 x  8",
+          "library_only": false
+        },
+        {
+          "role": "lintel_cap",
+          "id": "23",
+          "table": "plates.Plate2X10",
+          "ref": "3832",
+          "colour": 8,
+          "title": "Plate  2 x 10",
+          "library_only": false
+        }
+      ],
+      "reference_checks": [],
+      "bodies": {
+        "deck": {
+          "kind": "revolute",
+          "origin": [
+            -50.0,
+            -14.0,
+            0.0
+          ],
+          "axis": [
+            -1.0,
+            0.0,
+            0.0
+          ],
+          "parent": null,
+          "signal": "bridge_angle",
+          "instances": [
+            "3",
+            "5",
+            "6"
+          ]
+        }
+      },
+      "signals": {
+        "bridge_angle": {
+          "expression": "a",
+          "variables": {
+            "a": "control:bridge"
+          }
+        }
+      },
+      "clips": [
+        "S19_drawbridge.winch_and_drop",
+        "S19_drawbridge.eased_cycle",
+        "S19_drawbridge.half_raise"
+      ],
+      "clearance": "clear"
+    },
+    {
+      "scenario": "S20_levers",
+      "title": "Control levers",
+      "element": "Two control sticks 4593 in bases 4592",
+      "plan": "movable_20_levers",
+      "controller": "CTRL_movable_20_levers",
+      "collection": "S20_levers Control levers",
+      "scene": "S20 Control levers",
+      "controls": {
+        "lever_l": {
+          "unit": "radian",
+          "min": -0.7,
+          "max": 0.7,
+          "description": "Left stick; + tilts it forward (-Z)",
+          "periodic": false
+        },
+        "lever_r": {
+          "unit": "radian",
+          "min": -0.7,
+          "max": 0.7,
+          "description": "Right stick; + tilts it forward (-Z)",
+          "periodic": false
+        }
+      },
+      "parts": [
+        {
+          "role": "base",
+          "id": "0",
+          "table": "plates.Plate4X6",
+          "ref": "3032",
+          "colour": 8,
+          "title": "Plate  4 x  6",
+          "library_only": false
+        },
+        {
+          "role": "desk",
+          "id": "1",
+          "table": "bricks.Brick2X4",
+          "ref": "3001",
+          "colour": 71,
+          "title": "Brick  2 x  4",
+          "library_only": false
+        },
+        {
+          "role": "lever_base_l",
+          "id": "2",
+          "table": "hinges.HingeControlStickBase",
+          "ref": "4592",
+          "colour": 0,
+          "title": "Hinge Control Stick Base",
+          "library_only": false
+        },
+        {
+          "role": "stick_l",
+          "id": "3",
+          "table": "hinges.HingeControlStick",
+          "ref": "4593",
+          "colour": 4,
+          "title": "Hinge Control Stick",
+          "library_only": false
+        },
+        {
+          "role": "lever_base_r",
+          "id": "4",
+          "table": "hinges.HingeControlStickBase",
+          "ref": "4592",
+          "colour": 0,
+          "title": "Hinge Control Stick Base",
+          "library_only": false
+        },
+        {
+          "role": "stick_r",
+          "id": "5",
+          "table": "hinges.HingeControlStick",
+          "ref": "4593",
+          "colour": 1,
+          "title": "Hinge Control Stick",
+          "library_only": false
+        },
+        {
+          "role": "screen",
+          "id": "6",
+          "table": "tiles.Tile1X2GrilleWithGroove",
+          "ref": "2412b",
+          "colour": 8,
+          "title": "Tile  1 x  2 Grille with Groove",
+          "library_only": false
+        }
+      ],
+      "reference_checks": [],
+      "bodies": {
+        "stick_l": {
+          "kind": "revolute",
+          "origin": [
+            -30.0,
+            -32.0,
+            0.0
+          ],
+          "axis": [
+            1.0,
+            0.0,
+            0.0
+          ],
+          "parent": null,
+          "signal": "lever_l_angle",
+          "instances": [
+            "3"
+          ]
+        },
+        "stick_r": {
+          "kind": "revolute",
+          "origin": [
+            30.0,
+            -32.0,
+            0.0
+          ],
+          "axis": [
+            1.0,
+            0.0,
+            0.0
+          ],
+          "parent": null,
+          "signal": "lever_r_angle",
+          "instances": [
+            "5"
+          ]
+        }
+      },
+      "signals": {
+        "lever_l_angle": {
+          "expression": "a",
+          "variables": {
+            "a": "control:lever_l"
+          }
+        },
+        "lever_r_angle": {
+          "expression": "a",
+          "variables": {
+            "a": "control:lever_r"
+          }
+        }
+      },
+      "clips": [
+        "S20_levers.toggle_snap",
+        "S20_levers.throttle",
+        "S20_levers.jiggle"
+      ],
+      "clearance": "clear"
+    }
+  ],
+  "clips": [
+    {
+      "id": "S01_house_door.open_close",
+      "scenario": "S01_house_door",
+      "clip": "open_close",
+      "title": "Open and close",
+      "description": "The door swings open to about 92 deg, waits, and closes.",
+      "styles": [
+        "ease_cycle"
+      ],
+      "window": "A",
+      "timeline_start": 1,
+      "frames": 144,
+      "loop_range": [
+        1,
+        144
+      ],
+      "blender": {
+        "action": "S01_house_door.open_close",
+        "action_slot": "OBmovable_controller",
+        "nla_track": "A open_close",
+        "controller": "CTRL_movable_01_house_door",
+        "collection": "S01_house_door House front door",
+        "scene": "S01 House front door",
+        "strip_start": 1
+      }
+    },
+    {
+      "id": "S01_house_door.slam",
+      "scenario": "S01_house_door",
+      "clip": "slam",
+      "title": "Slam shut",
+      "description": "Opens calmly, then is let go: it slams shut and bounces twice off the frame.",
+      "styles": [
+        "slam_bounce"
+      ],
+      "window": "B",
+      "timeline_start": 161,
+      "frames": 144,
+      "loop_range": null,
+      "blender": {
+        "action": "S01_house_door.slam",
+        "action_slot": "OBmovable_controller",
+        "nla_track": "B slam",
+        "controller": "CTRL_movable_01_house_door",
+        "collection": "S01_house_door House front door",
+        "scene": "S01 House front door",
+        "strip_start": 161
+      }
+    },
+    {
+      "id": "S01_house_door.creak",
+      "scenario": "S01_house_door",
+      "clip": "creak",
+      "title": "Creaking open",
+      "description": "Opens in small hesitant pushes with pauses, then swings shut.",
+      "styles": [
+        "hesitant",
+        "gravity_drop"
+      ],
+      "window": "C",
+      "timeline_start": 321,
+      "frames": 144,
+      "loop_range": null,
+      "blender": {
+        "action": "S01_house_door.creak",
+        "action_slot": "OBmovable_controller",
+        "nla_track": "C creak",
+        "controller": "CTRL_movable_01_house_door",
+        "collection": "S01_house_door House front door",
+        "scene": "S01 House front door",
+        "strip_start": 321
+      }
+    },
+    {
+      "id": "S02_casement_window.open_both",
+      "scenario": "S02_casement_window",
+      "clip": "open_both",
+      "title": "Open both panes",
+      "description": "Both panes open together toward the viewer, wait, and close.",
+      "styles": [
+        "mirrored_pair",
+        "ease_cycle"
+      ],
+      "window": "A",
+      "timeline_start": 1,
+      "frames": 144,
+      "loop_range": [
+        1,
+        144
+      ],
+      "blender": {
+        "action": "S02_casement_window.open_both",
+        "action_slot": "OBmovable_controller",
+        "nla_track": "A open_both",
+        "controller": "CTRL_movable_02_casement_window",
+        "collection": "S02_casement_window Casement window",
+        "scene": "S02 Casement window",
+        "strip_start": 1
+      }
+    },
+    {
+      "id": "S02_casement_window.one_by_one",
+      "scenario": "S02_casement_window",
+      "clip": "one_by_one",
+      "title": "One pane after the other",
+      "description": "Left pane opens, then the right; they close in reverse order.",
+      "styles": [
+        "staggered_pair"
+      ],
+      "window": "B",
+      "timeline_start": 161,
+      "frames": 144,
+      "loop_range": null,
+      "blender": {
+        "action": "S02_casement_window.one_by_one",
+        "action_slot": "OBmovable_controller",
+        "nla_track": "B one_by_one",
+        "controller": "CTRL_movable_02_casement_window",
+        "collection": "S02_casement_window Casement window",
+        "scene": "S02 Casement window",
+        "strip_start": 161
+      }
+    },
+    {
+      "id": "S02_casement_window.wind_flutter",
+      "scenario": "S02_casement_window",
+      "clip": "wind_flutter",
+      "title": "Wind flutter",
+      "description": "Both panes stand ajar and flutter in gusts, then are pulled shut.",
+      "styles": [
+        "flutter"
+      ],
+      "window": "C",
+      "timeline_start": 321,
+      "frames": 144,
+      "loop_range": null,
+      "blender": {
+        "action": "S02_casement_window.wind_flutter",
+        "action_slot": "OBmovable_controller",
+        "nla_track": "C wind_flutter",
+        "controller": "CTRL_movable_02_casement_window",
+        "collection": "S02_casement_window Casement window",
+        "scene": "S02 Casement window",
+        "strip_start": 321
+      }
+    },
+    {
+      "id": "S03_shuttered_window.fold_open",
+      "scenario": "S03_shuttered_window",
+      "clip": "fold_open",
+      "title": "Fold open",
+      "description": "Both shutters fold all the way back against the wall and close again.",
+      "styles": [
+        "mirrored_pair",
+        "ease_cycle"
+      ],
+      "window": "A",
+      "timeline_start": 1,
+      "frames": 144,
+      "loop_range": [
+        1,
+        144
+      ],
+      "blender": {
+        "action": "S03_shuttered_window.fold_open",
+        "action_slot": "OBmovable_controller",
+        "nla_track": "A fold_open",
+        "controller": "CTRL_movable_03_shuttered_window",
+        "collection": "S03_shuttered_window Shuttered window",
+        "scene": "S03 Shuttered window",
+        "strip_start": 1
+      }
+    },
+    {
+      "id": "S03_shuttered_window.one_at_a_time",
+      "scenario": "S03_shuttered_window",
+      "clip": "one_at_a_time",
+      "title": "One at a time",
+      "description": "Left shutter opens, then the right; left closes first.",
+      "styles": [
+        "staggered_pair"
+      ],
+      "window": "B",
+      "timeline_start": 161,
+      "frames": 144,
+      "loop_range": null,
+      "blender": {
+        "action": "S03_shuttered_window.one_at_a_time",
+        "action_slot": "OBmovable_controller",
+        "nla_track": "B one_at_a_time",
+        "controller": "CTRL_movable_03_shuttered_window",
+        "collection": "S03_shuttered_window Shuttered window",
+        "scene": "S03 Shuttered window",
+        "strip_start": 161
+      }
+    },
+    {
+      "id": "S03_shuttered_window.storm",
+      "scenario": "S03_shuttered_window",
+      "clip": "storm",
+      "title": "Storm banging",
+      "description": "Unlatched shutters are blown open and bang shut again and again.",
+      "styles": [
+        "flutter",
+        "slam_bounce"
+      ],
+      "window": "C",
+      "timeline_start": 321,
+      "frames": 144,
+      "loop_range": null,
+      "blender": {
+        "action": "S03_shuttered_window.storm",
+        "action_slot": "OBmovable_controller",
+        "nla_track": "C storm",
+        "controller": "CTRL_movable_03_shuttered_window",
+        "collection": "S03_shuttered_window Shuttered window",
+        "scene": "S03 Shuttered window",
+        "strip_start": 321
+      }
+    },
+    {
+      "id": "S04_garden_gate.push_through",
+      "scenario": "S04_garden_gate",
+      "clip": "push_through",
+      "title": "Push through and swing back",
+      "description": "Pushed open outward, released: the gate swings back through closed and oscillates to rest.",
+      "styles": [
+        "damped_swing"
+      ],
+      "window": "A",
+      "timeline_start": 1,
+      "frames": 144,
+      "loop_range": null,
+      "blender": {
+        "action": "S04_garden_gate.push_through",
+        "action_slot": "OBmovable_controller",
+        "nla_track": "A push_through",
+        "controller": "CTRL_movable_04_garden_gate",
+        "collection": "S04_garden_gate Garden gate",
+        "scene": "S04 Garden gate",
+        "strip_start": 1
+      }
+    },
+    {
+      "id": "S04_garden_gate.open_latch",
+      "scenario": "S04_garden_gate",
+      "clip": "open_latch",
+      "title": "Open and latch",
+      "description": "Opens outward, waits, swings shut and rattles on the latch.",
+      "styles": [
+        "slam_bounce",
+        "ease_cycle"
+      ],
+      "window": "B",
+      "timeline_start": 161,
+      "frames": 144,
+      "loop_range": null,
+      "blender": {
+        "action": "S04_garden_gate.open_latch",
+        "action_slot": "OBmovable_controller",
+        "nla_track": "B open_latch",
+        "controller": "CTRL_movable_04_garden_gate",
+        "collection": "S04_garden_gate Garden gate",
+        "scene": "S04 Garden gate",
+        "strip_start": 161
+      }
+    },
+    {
+      "id": "S04_garden_gate.in_and_out",
+      "scenario": "S04_garden_gate",
+      "clip": "in_and_out",
+      "title": "Inward then outward",
+      "description": "Opens outward and closes, then opens inward and closes.",
+      "styles": [
+        "sequence",
+        "ease_cycle"
+      ],
+      "window": "C",
+      "timeline_start": 321,
+      "frames": 144,
+      "loop_range": null,
+      "blender": {
+        "action": "S04_garden_gate.in_and_out",
+        "action_slot": "OBmovable_controller",
+        "nla_track": "C in_and_out",
+        "controller": "CTRL_movable_04_garden_gate",
+        "collection": "S04_garden_gate Garden gate",
+        "scene": "S04 Garden gate",
+        "strip_start": 321
+      }
+    },
+    {
+      "id": "S05_kitchen_cupboard.door_cycle",
+      "scenario": "S05_kitchen_cupboard",
+      "clip": "door_cycle",
+      "title": "Door open and close",
+      "description": "The lower cupboard door opens wide, waits, and closes.",
+      "styles": [
+        "ease_cycle"
+      ],
+      "window": "A",
+      "timeline_start": 1,
+      "frames": 144,
+      "loop_range": [
+        1,
+        144
+      ],
+      "blender": {
+        "action": "S05_kitchen_cupboard.door_cycle",
+        "action_slot": "OBmovable_controller",
+        "nla_track": "A door_cycle",
+        "controller": "CTRL_movable_05_kitchen_cupboard",
+        "collection": "S05_kitchen_cupboard Kitchen cupboard",
+        "scene": "S05 Kitchen cupboard",
+        "strip_start": 1
+      }
+    },
+    {
+      "id": "S05_kitchen_cupboard.drawer_pull",
+      "scenario": "S05_kitchen_cupboard",
+      "clip": "drawer_pull",
+      "title": "Drawers pulled and pushed",
+      "description": "Top drawer pulled out and pushed back so it bumps on its stop; then the lower drawer.",
+      "styles": [
+        "slide_bounce",
+        "staggered_pair"
+      ],
+      "window": "B",
+      "timeline_start": 161,
+      "frames": 144,
+      "loop_range": null,
+      "blender": {
+        "action": "S05_kitchen_cupboard.drawer_pull",
+        "action_slot": "OBmovable_controller",
+        "nla_track": "B drawer_pull",
+        "controller": "CTRL_movable_05_kitchen_cupboard",
+        "collection": "S05_kitchen_cupboard Kitchen cupboard",
+        "scene": "S05 Kitchen cupboard",
+        "strip_start": 161
+      }
+    },
+    {
+      "id": "S05_kitchen_cupboard.kitchen_sequence",
+      "scenario": "S05_kitchen_cupboard",
+      "clip": "kitchen_sequence",
+      "title": "Fetch something",
+      "description": "Door opens, top drawer slides out and back, door closes.",
+      "styles": [
+        "sequence"
+      ],
+      "window": "C",
+      "timeline_start": 321,
+      "frames": 144,
+      "loop_range": null,
+      "blender": {
+        "action": "S05_kitchen_cupboard.kitchen_sequence",
+        "action_slot": "OBmovable_controller",
+        "nla_track": "C kitchen_sequence",
+        "controller": "CTRL_movable_05_kitchen_cupboard",
+        "collection": "S05_kitchen_cupboard Kitchen cupboard",
+        "scene": "S05 Kitchen cupboard",
+        "strip_start": 321
+      }
+    },
+    {
+      "id": "S06_double_cabinet.open_both",
+      "scenario": "S06_double_cabinet",
+      "clip": "open_both",
+      "title": "Open both doors",
+      "description": "Both doors open together, wait, and close.",
+      "styles": [
+        "mirrored_pair",
+        "ease_cycle"
+      ],
+      "window": "A",
+      "timeline_start": 1,
+      "frames": 144,
+      "loop_range": [
+        1,
+        144
+      ],
+      "blender": {
+        "action": "S06_double_cabinet.open_both",
+        "action_slot": "OBmovable_controller",
+        "nla_track": "A open_both",
+        "controller": "CTRL_movable_06_double_cabinet",
+        "collection": "S06_double_cabinet Double-door cabinet",
+        "scene": "S06 Double-door cabinet",
+        "strip_start": 1
+      }
+    },
+    {
+      "id": "S06_double_cabinet.left_then_right",
+      "scenario": "S06_double_cabinet",
+      "clip": "left_then_right",
+      "title": "Left then right",
+      "description": "Left door opens, then the right; right closes first.",
+      "styles": [
+        "staggered_pair"
+      ],
+      "window": "B",
+      "timeline_start": 161,
+      "frames": 144,
+      "loop_range": null,
+      "blender": {
+        "action": "S06_double_cabinet.left_then_right",
+        "action_slot": "OBmovable_controller",
+        "nla_track": "B left_then_right",
+        "controller": "CTRL_movable_06_double_cabinet",
+        "collection": "S06_double_cabinet Double-door cabinet",
+        "scene": "S06 Double-door cabinet",
+        "strip_start": 161
+      }
+    },
+    {
+      "id": "S06_double_cabinet.peek",
+      "scenario": "S06_double_cabinet",
+      "clip": "peek",
+      "title": "Peek inside",
+      "description": "The right door opens a crack twice; then the left door opens halfway and closes.",
+      "styles": [
+        "peek",
+        "hesitant"
+      ],
+      "window": "C",
+      "timeline_start": 321,
+      "frames": 144,
+      "loop_range": null,
+      "blender": {
+        "action": "S06_double_cabinet.peek",
+        "action_slot": "OBmovable_controller",
+        "nla_track": "C peek",
+        "controller": "CTRL_movable_06_double_cabinet",
+        "collection": "S06_double_cabinet Double-door cabinet",
+        "scene": "S06 Double-door cabinet",
+        "strip_start": 321
+      }
+    },
+    {
+      "id": "S07_treasure_chest.slow_reveal",
+      "scenario": "S07_treasure_chest",
+      "clip": "slow_reveal",
+      "title": "Slow reveal",
+      "description": "The lid rises slowly and smoothly to fully open, waits, and closes.",
+      "styles": [
+        "ease_cycle"
+      ],
+      "window": "A",
+      "timeline_start": 1,
+      "frames": 144,
+      "loop_range": [
+        1,
+        144
+      ],
+      "blender": {
+        "action": "S07_treasure_chest.slow_reveal",
+        "action_slot": "OBmovable_controller",
+        "nla_track": "A slow_reveal",
+        "controller": "CTRL_movable_07_treasure_chest",
+        "collection": "S07_treasure_chest Treasure chest",
+        "scene": "S07 Treasure chest",
+        "strip_start": 1
+      }
+    },
+    {
+      "id": "S07_treasure_chest.snap_shut",
+      "scenario": "S07_treasure_chest",
+      "clip": "snap_shut",
+      "title": "Snap shut",
+      "description": "Flipped open, then dropped: the lid bangs shut and bounces.",
+      "styles": [
+        "slam_bounce"
+      ],
+      "window": "B",
+      "timeline_start": 161,
+      "frames": 144,
+      "loop_range": null,
+      "blender": {
+        "action": "S07_treasure_chest.snap_shut",
+        "action_slot": "OBmovable_controller",
+        "nla_track": "B snap_shut",
+        "controller": "CTRL_movable_07_treasure_chest",
+        "collection": "S07_treasure_chest Treasure chest",
+        "scene": "S07 Treasure chest",
+        "strip_start": 161
+      }
+    },
+    {
+      "id": "S07_treasure_chest.peek_twice",
+      "scenario": "S07_treasure_chest",
+      "clip": "peek_twice",
+      "title": "Peek twice",
+      "description": "The lid is lifted a crack twice, the second time a little more.",
+      "styles": [
+        "peek"
+      ],
+      "window": "C",
+      "timeline_start": 321,
+      "frames": 144,
+      "loop_range": null,
+      "blender": {
+        "action": "S07_treasure_chest.peek_twice",
+        "action_slot": "OBmovable_controller",
+        "nla_track": "C peek_twice",
+        "controller": "CTRL_movable_07_treasure_chest",
+        "collection": "S07_treasure_chest Treasure chest",
+        "scene": "S07 Treasure chest",
+        "strip_start": 321
+      }
+    },
+    {
+      "id": "S08_mailbox.gravity_drop",
+      "scenario": "S08_mailbox",
+      "clip": "gravity_drop",
+      "title": "Drop open, lift shut",
+      "description": "Released, the door drops open onto its stop and bounces; later it is lifted shut.",
+      "styles": [
+        "gravity_drop"
+      ],
+      "window": "A",
+      "timeline_start": 1,
+      "frames": 144,
+      "loop_range": null,
+      "blender": {
+        "action": "S08_mailbox.gravity_drop",
+        "action_slot": "OBmovable_controller",
+        "nla_track": "A gravity_drop",
+        "controller": "CTRL_movable_08_mailbox",
+        "collection": "S08_mailbox Mailbox",
+        "scene": "S08 Mailbox",
+        "strip_start": 1
+      }
+    },
+    {
+      "id": "S08_mailbox.eased_loop",
+      "scenario": "S08_mailbox",
+      "clip": "eased_loop",
+      "title": "Open and close",
+      "description": "The door folds down, waits, and folds up again.",
+      "styles": [
+        "ease_cycle"
+      ],
+      "window": "B",
+      "timeline_start": 161,
+      "frames": 144,
+      "loop_range": [
+        1,
+        144
+      ],
+      "blender": {
+        "action": "S08_mailbox.eased_loop",
+        "action_slot": "OBmovable_controller",
+        "nla_track": "B eased_loop",
+        "controller": "CTRL_movable_08_mailbox",
+        "collection": "S08_mailbox Mailbox",
+        "scene": "S08 Mailbox",
+        "strip_start": 161
+      }
+    },
+    {
+      "id": "S08_mailbox.flap_rattle",
+      "scenario": "S08_mailbox",
+      "clip": "flap_rattle",
+      "title": "Flap rattle",
+      "description": "The door flaps a few times as letters are pushed in, then opens to take them out.",
+      "styles": [
+        "flutter",
+        "peek"
+      ],
+      "window": "C",
+      "timeline_start": 321,
+      "frames": 144,
+      "loop_range": null,
+      "blender": {
+        "action": "S08_mailbox.flap_rattle",
+        "action_slot": "OBmovable_controller",
+        "nla_track": "C flap_rattle",
+        "controller": "CTRL_movable_08_mailbox",
+        "collection": "S08_mailbox Mailbox",
+        "scene": "S08 Mailbox",
+        "strip_start": 321
+      }
+    },
+    {
+      "id": "S09_trap_door.drop_and_winch",
+      "scenario": "S09_trap_door",
+      "clip": "drop_and_winch",
+      "title": "Drop and winch up",
+      "description": "The trap falls open, swings like a pendulum about hanging straight down, then is winched closed at constant speed.",
+      "styles": [
+        "gravity_drop",
+        "damped_swing",
+        "winch_linear"
+      ],
+      "window": "A",
+      "timeline_start": 1,
+      "frames": 144,
+      "loop_range": null,
+      "blender": {
+        "action": "S09_trap_door.drop_and_winch",
+        "action_slot": "OBmovable_controller",
+        "nla_track": "A drop_and_winch",
+        "controller": "CTRL_movable_09_trap_door",
+        "collection": "S09_trap_door Floor trap door",
+        "scene": "S09 Floor trap door",
+        "strip_start": 1
+      }
+    },
+    {
+      "id": "S09_trap_door.quick_trap",
+      "scenario": "S09_trap_door",
+      "clip": "quick_trap",
+      "title": "Snap open",
+      "description": "Snaps open to hanging, waits, and closes with an ease.",
+      "styles": [
+        "toggle",
+        "ease_cycle"
+      ],
+      "window": "B",
+      "timeline_start": 161,
+      "frames": 144,
+      "loop_range": null,
+      "blender": {
+        "action": "S09_trap_door.quick_trap",
+        "action_slot": "OBmovable_controller",
+        "nla_track": "B quick_trap",
+        "controller": "CTRL_movable_09_trap_door",
+        "collection": "S09_trap_door Floor trap door",
+        "scene": "S09 Floor trap door",
+        "strip_start": 161
+      }
+    },
+    {
+      "id": "S09_trap_door.test_wiggle",
+      "scenario": "S09_trap_door",
+      "clip": "test_wiggle",
+      "title": "Test wiggle",
+      "description": "The trap is tested with small quick openings, then dropped open briefly.",
+      "styles": [
+        "shake",
+        "peek"
+      ],
+      "window": "C",
+      "timeline_start": 321,
+      "frames": 144,
+      "loop_range": null,
+      "blender": {
+        "action": "S09_trap_door.test_wiggle",
+        "action_slot": "OBmovable_controller",
+        "nla_track": "C test_wiggle",
+        "controller": "CTRL_movable_09_trap_door",
+        "collection": "S09_trap_door Floor trap door",
+        "scene": "S09 Floor trap door",
+        "strip_start": 321
+      }
+    },
+    {
+      "id": "S10_car_doors.driver_door",
+      "scenario": "S10_car_doors",
+      "clip": "driver_door",
+      "title": "Driver's door",
+      "description": "The left door opens, waits, and closes.",
+      "styles": [
+        "ease_cycle"
+      ],
+      "window": "A",
+      "timeline_start": 1,
+      "frames": 144,
+      "loop_range": [
+        1,
+        144
+      ],
+      "blender": {
+        "action": "S10_car_doors.driver_door",
+        "action_slot": "OBmovable_controller",
+        "nla_track": "A driver_door",
+        "controller": "CTRL_movable_10_car_doors",
+        "collection": "S10_car_doors Town car doors",
+        "scene": "S10 Town car doors",
+        "strip_start": 1
+      }
+    },
+    {
+      "id": "S10_car_doors.both_doors",
+      "scenario": "S10_car_doors",
+      "clip": "both_doors",
+      "title": "Both doors",
+      "description": "Both doors open together and close.",
+      "styles": [
+        "mirrored_pair"
+      ],
+      "window": "B",
+      "timeline_start": 161,
+      "frames": 144,
+      "loop_range": [
+        1,
+        144
+      ],
+      "blender": {
+        "action": "S10_car_doors.both_doors",
+        "action_slot": "OBmovable_controller",
+        "nla_track": "B both_doors",
+        "controller": "CTRL_movable_10_car_doors",
+        "collection": "S10_car_doors Town car doors",
+        "scene": "S10 Town car doors",
+        "strip_start": 161
+      }
+    },
+    {
+      "id": "S10_car_doors.slam",
+      "scenario": "S10_car_doors",
+      "clip": "slam",
+      "title": "Slam both",
+      "description": "Doors open one after the other, then both slam shut with a bounce.",
+      "styles": [
+        "staggered_pair",
+        "slam_bounce"
+      ],
+      "window": "C",
+      "timeline_start": 321,
+      "frames": 144,
+      "loop_range": null,
+      "blender": {
+        "action": "S10_car_doors.slam",
+        "action_slot": "OBmovable_controller",
+        "nla_track": "C slam",
+        "controller": "CTRL_movable_10_car_doors",
+        "collection": "S10_car_doors Town car doors",
+        "scene": "S10 Town car doors",
+        "strip_start": 321
+      }
+    },
+    {
+      "id": "S11_car_roof.lift_close",
+      "scenario": "S11_car_roof",
+      "clip": "lift_close",
+      "title": "Lift and close",
+      "description": "The roof hatch lifts at the front, waits, and closes.",
+      "styles": [
+        "ease_cycle"
+      ],
+      "window": "A",
+      "timeline_start": 1,
+      "frames": 144,
+      "loop_range": [
+        1,
+        144
+      ],
+      "blender": {
+        "action": "S11_car_roof.lift_close",
+        "action_slot": "OBmovable_controller",
+        "nla_track": "A lift_close",
+        "controller": "CTRL_movable_11_car_roof",
+        "collection": "S11_car_roof Car roof hatch",
+        "scene": "S11 Car roof hatch",
+        "strip_start": 1
+      }
+    },
+    {
+      "id": "S11_car_roof.gas_strut",
+      "scenario": "S11_car_roof",
+      "clip": "gas_strut",
+      "title": "Gas strut",
+      "description": "Pops up past its open position and settles back, like a gas strut; closes slowly.",
+      "styles": [
+        "overshoot_settle"
+      ],
+      "window": "B",
+      "timeline_start": 161,
+      "frames": 144,
+      "loop_range": null,
+      "blender": {
+        "action": "S11_car_roof.gas_strut",
+        "action_slot": "OBmovable_controller",
+        "nla_track": "B gas_strut",
+        "controller": "CTRL_movable_11_car_roof",
+        "collection": "S11_car_roof Car roof hatch",
+        "scene": "S11 Car roof hatch",
+        "strip_start": 161
+      }
+    },
+    {
+      "id": "S11_car_roof.slam",
+      "scenario": "S11_car_roof",
+      "clip": "slam",
+      "title": "Slam",
+      "description": "Lifted, then dropped shut with a bounce.",
+      "styles": [
+        "slam_bounce"
+      ],
+      "window": "C",
+      "timeline_start": 321,
+      "frames": 144,
+      "loop_range": null,
+      "blender": {
+        "action": "S11_car_roof.slam",
+        "action_slot": "OBmovable_controller",
+        "nla_track": "C slam",
+        "controller": "CTRL_movable_11_car_roof",
+        "collection": "S11_car_roof Car roof hatch",
+        "scene": "S11 Car roof hatch",
+        "strip_start": 321
+      }
+    },
+    {
+      "id": "S12_canopy.flip_open",
+      "scenario": "S12_canopy",
+      "clip": "flip_open",
+      "title": "Flip open",
+      "description": "The canopy flips up past its open angle and settles, then closes.",
+      "styles": [
+        "overshoot_settle"
+      ],
+      "window": "A",
+      "timeline_start": 1,
+      "frames": 144,
+      "loop_range": null,
+      "blender": {
+        "action": "S12_canopy.flip_open",
+        "action_slot": "OBmovable_controller",
+        "nla_track": "A flip_open",
+        "controller": "CTRL_movable_12_canopy",
+        "collection": "S12_canopy Spaceship canopy",
+        "scene": "S12 Spaceship canopy",
+        "strip_start": 1
+      }
+    },
+    {
+      "id": "S12_canopy.slow_seal",
+      "scenario": "S12_canopy",
+      "clip": "slow_seal",
+      "title": "Slow seal",
+      "description": "Opens and closes slowly with cubic easing (a motorised seal).",
+      "styles": [
+        "ease_cycle"
+      ],
+      "window": "B",
+      "timeline_start": 161,
+      "frames": 144,
+      "loop_range": [
+        1,
+        144
+      ],
+      "blender": {
+        "action": "S12_canopy.slow_seal",
+        "action_slot": "OBmovable_controller",
+        "nla_track": "B slow_seal",
+        "controller": "CTRL_movable_12_canopy",
+        "collection": "S12_canopy Spaceship canopy",
+        "scene": "S12 Spaceship canopy",
+        "strip_start": 161
+      }
+    },
+    {
+      "id": "S12_canopy.pop_open",
+      "scenario": "S12_canopy",
+      "clip": "pop_open",
+      "title": "Emergency pop",
+      "description": "Pops open fast, waits, and lowers at a constant speed.",
+      "styles": [
+        "toggle",
+        "winch_linear"
+      ],
+      "window": "C",
+      "timeline_start": 321,
+      "frames": 144,
+      "loop_range": null,
+      "blender": {
+        "action": "S12_canopy.pop_open",
+        "action_slot": "OBmovable_controller",
+        "nla_track": "C pop_open",
+        "controller": "CTRL_movable_12_canopy",
+        "collection": "S12_canopy Spaceship canopy",
+        "scene": "S12 Spaceship canopy",
+        "strip_start": 321
+      }
+    },
+    {
+      "id": "S13_forklift.raise_lower",
+      "scenario": "S13_forklift",
+      "clip": "raise_lower",
+      "title": "Raise and lower",
+      "description": "Forks rise to the top, wait, and come down (the spring compresses and extends with them).",
+      "styles": [
+        "ease_cycle"
+      ],
+      "window": "A",
+      "timeline_start": 1,
+      "frames": 144,
+      "loop_range": [
+        1,
+        144
+      ],
+      "blender": {
+        "action": "S13_forklift.raise_lower",
+        "action_slot": "OBmovable_controller",
+        "nla_track": "A raise_lower",
+        "controller": "CTRL_movable_13_forklift",
+        "collection": "S13_forklift Forklift mast",
+        "scene": "S13 Forklift mast",
+        "strip_start": 1
+      }
+    },
+    {
+      "id": "S13_forklift.chain_hoist",
+      "scenario": "S13_forklift",
+      "clip": "chain_hoist",
+      "title": "Stepped hoist",
+      "description": "Forks rise in five equal steps with pauses, then come down smoothly.",
+      "styles": [
+        "stepped"
+      ],
+      "window": "B",
+      "timeline_start": 161,
+      "frames": 144,
+      "loop_range": null,
+      "blender": {
+        "action": "S13_forklift.chain_hoist",
+        "action_slot": "OBmovable_controller",
+        "nla_track": "B chain_hoist",
+        "controller": "CTRL_movable_13_forklift",
+        "collection": "S13_forklift Forklift mast",
+        "scene": "S13 Forklift mast",
+        "strip_start": 161
+      }
+    },
+    {
+      "id": "S13_forklift.drop",
+      "scenario": "S13_forklift",
+      "clip": "drop",
+      "title": "Drop",
+      "description": "Forks are raised high, then released: they drop and bounce on the bottom stop.",
+      "styles": [
+        "gravity_drop",
+        "slide_bounce"
+      ],
+      "window": "C",
+      "timeline_start": 321,
+      "frames": 144,
+      "loop_range": null,
+      "blender": {
+        "action": "S13_forklift.drop",
+        "action_slot": "OBmovable_controller",
+        "nla_track": "C drop",
+        "controller": "CTRL_movable_13_forklift",
+        "collection": "S13_forklift Forklift mast",
+        "scene": "S13 Forklift mast",
+        "strip_start": 321
+      }
+    },
+    {
+      "id": "S14_sliding_door.slide_cycle",
+      "scenario": "S14_sliding_door",
+      "clip": "slide_cycle",
+      "title": "Slide open and closed",
+      "description": "The door slides fully open along its rails, waits, and closes.",
+      "styles": [
+        "ease_cycle"
+      ],
+      "window": "A",
+      "timeline_start": 1,
+      "frames": 144,
+      "loop_range": [
+        1,
+        144
+      ],
+      "blender": {
+        "action": "S14_sliding_door.slide_cycle",
+        "action_slot": "OBmovable_controller",
+        "nla_track": "A slide_cycle",
+        "controller": "CTRL_movable_14_sliding_door",
+        "collection": "S14_sliding_door Sliding shed door",
+        "scene": "S14 Sliding shed door",
+        "strip_start": 1
+      }
+    },
+    {
+      "id": "S14_sliding_door.shove",
+      "scenario": "S14_sliding_door",
+      "clip": "shove",
+      "title": "Shove",
+      "description": "Shoved open, it runs into the end stop and bounces; shoved shut the same way.",
+      "styles": [
+        "slide_bounce"
+      ],
+      "window": "B",
+      "timeline_start": 161,
+      "frames": 144,
+      "loop_range": null,
+      "blender": {
+        "action": "S14_sliding_door.shove",
+        "action_slot": "OBmovable_controller",
+        "nla_track": "B shove",
+        "controller": "CTRL_movable_14_sliding_door",
+        "collection": "S14_sliding_door Sliding shed door",
+        "scene": "S14 Sliding shed door",
+        "strip_start": 161
+      }
+    },
+    {
+      "id": "S14_sliding_door.crack_open",
+      "scenario": "S14_sliding_door",
+      "clip": "crack_open",
+      "title": "Crack open",
+      "description": "Slides open a little, waits, opens a bit more, then closes.",
+      "styles": [
+        "peek",
+        "hesitant"
+      ],
+      "window": "C",
+      "timeline_start": 321,
+      "frames": 144,
+      "loop_range": null,
+      "blender": {
+        "action": "S14_sliding_door.crack_open",
+        "action_slot": "OBmovable_controller",
+        "nla_track": "C crack_open",
+        "controller": "CTRL_movable_14_sliding_door",
+        "collection": "S14_sliding_door Sliding shed door",
+        "scene": "S14 Sliding shed door",
+        "strip_start": 321
+      }
+    },
+    {
+      "id": "S15_radar.constant_spin",
+      "scenario": "S15_radar",
+      "clip": "constant_spin",
+      "title": "Constant spin",
+      "description": "Two full turns at constant speed (loops seamlessly).",
+      "styles": [
+        "continuous_spin",
+        "winch_linear"
+      ],
+      "window": "A",
+      "timeline_start": 1,
+      "frames": 144,
+      "loop_range": [
+        1,
+        144
+      ],
+      "blender": {
+        "action": "S15_radar.constant_spin",
+        "action_slot": "OBmovable_controller",
+        "nla_track": "A constant_spin",
+        "controller": "CTRL_movable_15_radar",
+        "collection": "S15_radar Rotating radar",
+        "scene": "S15 Rotating radar",
+        "strip_start": 1
+      }
+    },
+    {
+      "id": "S15_radar.spin_up_down",
+      "scenario": "S15_radar",
+      "clip": "spin_up_down",
+      "title": "Spin up and down",
+      "description": "Speeds up, cruises and slows down to stop after three turns.",
+      "styles": [
+        "spin_up_down"
+      ],
+      "window": "B",
+      "timeline_start": 161,
+      "frames": 144,
+      "loop_range": null,
+      "blender": {
+        "action": "S15_radar.spin_up_down",
+        "action_slot": "OBmovable_controller",
+        "nla_track": "B spin_up_down",
+        "controller": "CTRL_movable_15_radar",
+        "collection": "S15_radar Rotating radar",
+        "scene": "S15 Rotating radar",
+        "strip_start": 161
+      }
+    },
+    {
+      "id": "S15_radar.sweep_scan",
+      "scenario": "S15_radar",
+      "clip": "sweep_scan",
+      "title": "Sweep scan",
+      "description": "Scans back and forth over 120 deg, three times.",
+      "styles": [
+        "sweep"
+      ],
+      "window": "C",
+      "timeline_start": 321,
+      "frames": 144,
+      "loop_range": null,
+      "blender": {
+        "action": "S15_radar.sweep_scan",
+        "action_slot": "OBmovable_controller",
+        "nla_track": "C sweep_scan",
+        "controller": "CTRL_movable_15_radar",
+        "collection": "S15_radar Rotating radar",
+        "scene": "S15 Rotating radar",
+        "strip_start": 321
+      }
+    },
+    {
+      "id": "S16_crane.slew_sweep",
+      "scenario": "S16_crane",
+      "clip": "slew_sweep",
+      "title": "Slew sweep",
+      "description": "With the boom slightly raised, the crane turns a quarter left, a quarter right and back.",
+      "styles": [
+        "sweep"
+      ],
+      "window": "A",
+      "timeline_start": 1,
+      "frames": 144,
+      "loop_range": null,
+      "blender": {
+        "action": "S16_crane.slew_sweep",
+        "action_slot": "OBmovable_controller",
+        "nla_track": "A slew_sweep",
+        "controller": "CTRL_movable_16_crane",
+        "collection": "S16_crane Mini crane",
+        "scene": "S16 Mini crane",
+        "strip_start": 1
+      }
+    },
+    {
+      "id": "S16_crane.luff_cycle",
+      "scenario": "S16_crane",
+      "clip": "luff_cycle",
+      "title": "Luff up and down",
+      "description": "The boom rises and lowers; the hook stays plumb.",
+      "styles": [
+        "ease_cycle"
+      ],
+      "window": "B",
+      "timeline_start": 161,
+      "frames": 144,
+      "loop_range": [
+        1,
+        144
+      ],
+      "blender": {
+        "action": "S16_crane.luff_cycle",
+        "action_slot": "OBmovable_controller",
+        "nla_track": "B luff_cycle",
+        "controller": "CTRL_movable_16_crane",
+        "collection": "S16_crane Mini crane",
+        "scene": "S16 Mini crane",
+        "strip_start": 161
+      }
+    },
+    {
+      "id": "S16_crane.pick_and_place",
+      "scenario": "S16_crane",
+      "clip": "pick_and_place",
+      "title": "Pick and place",
+      "description": "Boom up, slew a quarter turn, down to place the load, up, slew back and park.",
+      "styles": [
+        "sequence"
+      ],
+      "window": "C",
+      "timeline_start": 321,
+      "frames": 144,
+      "loop_range": null,
+      "blender": {
+        "action": "S16_crane.pick_and_place",
+        "action_slot": "OBmovable_controller",
+        "nla_track": "C pick_and_place",
+        "controller": "CTRL_movable_16_crane",
+        "collection": "S16_crane Mini crane",
+        "scene": "S16 Mini crane",
+        "strip_start": 321
+      }
+    },
+    {
+      "id": "S17_tipper.tip_return",
+      "scenario": "S17_tipper",
+      "clip": "tip_return",
+      "title": "Tip and return",
+      "description": "The bucket tips up, waits for the load to slide out, and comes down.",
+      "styles": [
+        "ease_cycle"
+      ],
+      "window": "A",
+      "timeline_start": 1,
+      "frames": 144,
+      "loop_range": [
+        1,
+        144
+      ],
+      "blender": {
+        "action": "S17_tipper.tip_return",
+        "action_slot": "OBmovable_controller",
+        "nla_track": "A tip_return",
+        "controller": "CTRL_movable_17_tipper",
+        "collection": "S17_tipper Dump truck tipper",
+        "scene": "S17 Dump truck tipper",
+        "strip_start": 1
+      }
+    },
+    {
+      "id": "S17_tipper.hydraulic_steps",
+      "scenario": "S17_tipper",
+      "clip": "hydraulic_steps",
+      "title": "Hydraulic steps",
+      "description": "Tips in four stages with pauses, then lowers smoothly.",
+      "styles": [
+        "stepped"
+      ],
+      "window": "B",
+      "timeline_start": 161,
+      "frames": 144,
+      "loop_range": null,
+      "blender": {
+        "action": "S17_tipper.hydraulic_steps",
+        "action_slot": "OBmovable_controller",
+        "nla_track": "B hydraulic_steps",
+        "controller": "CTRL_movable_17_tipper",
+        "collection": "S17_tipper Dump truck tipper",
+        "scene": "S17 Dump truck tipper",
+        "strip_start": 161
+      }
+    },
+    {
+      "id": "S17_tipper.shake_to_empty",
+      "scenario": "S17_tipper",
+      "clip": "shake_to_empty",
+      "title": "Shake to empty",
+      "description": "Tips up, shakes quickly to free the load, and lowers.",
+      "styles": [
+        "shake"
+      ],
+      "window": "C",
+      "timeline_start": 321,
+      "frames": 144,
+      "loop_range": null,
+      "blender": {
+        "action": "S17_tipper.shake_to_empty",
+        "action_slot": "OBmovable_controller",
+        "nla_track": "C shake_to_empty",
+        "controller": "CTRL_movable_17_tipper",
+        "collection": "S17_tipper Dump truck tipper",
+        "scene": "S17 Dump truck tipper",
+        "strip_start": 321
+      }
+    },
+    {
+      "id": "S18_barrier.raise_lower",
+      "scenario": "S18_barrier",
+      "clip": "raise_lower",
+      "title": "Raise and lower",
+      "description": "The boom rises to vertical, waits, and lowers.",
+      "styles": [
+        "ease_cycle"
+      ],
+      "window": "A",
+      "timeline_start": 1,
+      "frames": 144,
+      "loop_range": [
+        1,
+        144
+      ],
+      "blender": {
+        "action": "S18_barrier.raise_lower",
+        "action_slot": "OBmovable_controller",
+        "nla_track": "A raise_lower",
+        "controller": "CTRL_movable_18_barrier",
+        "collection": "S18_barrier Parking barrier",
+        "scene": "S18 Parking barrier",
+        "strip_start": 1
+      }
+    },
+    {
+      "id": "S18_barrier.bounce_down",
+      "scenario": "S18_barrier",
+      "clip": "bounce_down",
+      "title": "Drop onto the rest",
+      "description": "Snaps up, waits, then drops onto its rest and bounces.",
+      "styles": [
+        "toggle",
+        "slam_bounce"
+      ],
+      "window": "B",
+      "timeline_start": 161,
+      "frames": 144,
+      "loop_range": null,
+      "blender": {
+        "action": "S18_barrier.bounce_down",
+        "action_slot": "OBmovable_controller",
+        "nla_track": "B bounce_down",
+        "controller": "CTRL_movable_18_barrier",
+        "collection": "S18_barrier Parking barrier",
+        "scene": "S18 Parking barrier",
+        "strip_start": 161
+      }
+    },
+    {
+      "id": "S18_barrier.quick_up_slow_down",
+      "scenario": "S18_barrier",
+      "clip": "quick_up_slow_down",
+      "title": "Quick up, slow down",
+      "description": "Rises fast and comes down slowly at constant speed.",
+      "styles": [
+        "winch_linear"
+      ],
+      "window": "C",
+      "timeline_start": 321,
+      "frames": 144,
+      "loop_range": null,
+      "blender": {
+        "action": "S18_barrier.quick_up_slow_down",
+        "action_slot": "OBmovable_controller",
+        "nla_track": "C quick_up_slow_down",
+        "controller": "CTRL_movable_18_barrier",
+        "collection": "S18_barrier Parking barrier",
+        "scene": "S18 Parking barrier",
+        "strip_start": 321
+      }
+    },
+    {
+      "id": "S19_drawbridge.winch_and_drop",
+      "scenario": "S19_drawbridge",
+      "clip": "winch_and_drop",
+      "title": "Winch up, drop down",
+      "description": "The bridge is winched up at constant speed, held, then let go: it falls onto the far bank and bounces.",
+      "styles": [
+        "winch_linear",
+        "gravity_drop",
+        "slam_bounce"
+      ],
+      "window": "A",
+      "timeline_start": 1,
+      "frames": 144,
+      "loop_range": null,
+      "blender": {
+        "action": "S19_drawbridge.winch_and_drop",
+        "action_slot": "OBmovable_controller",
+        "nla_track": "A winch_and_drop",
+        "controller": "CTRL_movable_19_drawbridge",
+        "collection": "S19_drawbridge Drawbridge",
+        "scene": "S19 Drawbridge",
+        "strip_start": 1
+      }
+    },
+    {
+      "id": "S19_drawbridge.eased_cycle",
+      "scenario": "S19_drawbridge",
+      "clip": "eased_cycle",
+      "title": "Raise and lower",
+      "description": "The bridge rises and lowers smoothly.",
+      "styles": [
+        "ease_cycle"
+      ],
+      "window": "B",
+      "timeline_start": 161,
+      "frames": 144,
+      "loop_range": [
+        1,
+        144
+      ],
+      "blender": {
+        "action": "S19_drawbridge.eased_cycle",
+        "action_slot": "OBmovable_controller",
+        "nla_track": "B eased_cycle",
+        "controller": "CTRL_movable_19_drawbridge",
+        "collection": "S19_drawbridge Drawbridge",
+        "scene": "S19 Drawbridge",
+        "strip_start": 161
+      }
+    },
+    {
+      "id": "S19_drawbridge.half_raise",
+      "scenario": "S19_drawbridge",
+      "clip": "half_raise",
+      "title": "Half raise",
+      "description": "Raised halfway twice, as if checking the chains.",
+      "styles": [
+        "peek",
+        "stepped"
+      ],
+      "window": "C",
+      "timeline_start": 321,
+      "frames": 144,
+      "loop_range": null,
+      "blender": {
+        "action": "S19_drawbridge.half_raise",
+        "action_slot": "OBmovable_controller",
+        "nla_track": "C half_raise",
+        "controller": "CTRL_movable_19_drawbridge",
+        "collection": "S19_drawbridge Drawbridge",
+        "scene": "S19 Drawbridge",
+        "strip_start": 321
+      }
+    },
+    {
+      "id": "S20_levers.toggle_snap",
+      "scenario": "S20_levers",
+      "clip": "toggle_snap",
+      "title": "Toggle",
+      "description": "Each stick is snapped forward or back, held, and snapped home with a small bounce.",
+      "styles": [
+        "toggle",
+        "slam_bounce"
+      ],
+      "window": "A",
+      "timeline_start": 1,
+      "frames": 144,
+      "loop_range": null,
+      "blender": {
+        "action": "S20_levers.toggle_snap",
+        "action_slot": "OBmovable_controller",
+        "nla_track": "A toggle_snap",
+        "controller": "CTRL_movable_20_levers",
+        "collection": "S20_levers Control levers",
+        "scene": "S20 Control levers",
+        "strip_start": 1
+      }
+    },
+    {
+      "id": "S20_levers.throttle",
+      "scenario": "S20_levers",
+      "clip": "throttle",
+      "title": "Throttle",
+      "description": "Both sticks are pushed slowly forward at constant speed, held, and eased back.",
+      "styles": [
+        "winch_linear",
+        "mirrored_pair"
+      ],
+      "window": "B",
+      "timeline_start": 161,
+      "frames": 144,
+      "loop_range": null,
+      "blender": {
+        "action": "S20_levers.throttle",
+        "action_slot": "OBmovable_controller",
+        "nla_track": "B throttle",
+        "controller": "CTRL_movable_20_levers",
+        "collection": "S20_levers Control levers",
+        "scene": "S20 Control levers",
+        "strip_start": 161
+      }
+    },
+    {
+      "id": "S20_levers.jiggle",
+      "scenario": "S20_levers",
+      "clip": "jiggle",
+      "title": "Jiggle",
+      "description": "Both sticks are jiggled quickly, out of step.",
+      "styles": [
+        "shake"
+      ],
+      "window": "C",
+      "timeline_start": 321,
+      "frames": 144,
+      "loop_range": null,
+      "blender": {
+        "action": "S20_levers.jiggle",
+        "action_slot": "OBmovable_controller",
+        "nla_track": "C jiggle",
+        "controller": "CTRL_movable_20_levers",
+        "collection": "S20_levers Control levers",
+        "scene": "S20 Control levers",
+        "strip_start": 321
+      }
+    }
+  ],
+  "clearance": {
+    "S01_house_door": {
+      "sweep_clear": true,
+      "sweep_crossings": [],
+      "clip_poses_clear": true,
+      "clip_poses_without_deep_crossings": true,
+      "clips_with_crossings": {},
+      "vertex_penetration": {},
+      "worst_vertex_depth_ldu": 0.0,
+      "worst_kind": "clear",
+      "clips_with_deep_shrink_crossings": {},
+      "excluded_rest_pairs": [
+        "frame-door"
+      ]
+    },
+    "S02_casement_window": {
+      "sweep_clear": false,
+      "sweep_crossings": [
+        [
+          "pane_l",
+          0.087,
+          "pane_l-pane_r"
+        ],
+        [
+          "pane_r",
+          0.087,
+          "pane_l-pane_r"
+        ]
+      ],
+      "clip_poses_clear": false,
+      "clip_poses_without_deep_crossings": false,
+      "clips_with_crossings": {
+        "S02_casement_window.one_by_one": [
+          "pane_l-pane_r"
+        ],
+        "S02_casement_window.open_both": [
+          "pane_l-pane_r"
+        ],
+        "S02_casement_window.wind_flutter": [
+          "pane_l-pane_r"
+        ]
+      },
+      "vertex_penetration": {
+        "S02_casement_window.one_by_one": {
+          "pane_l-pane_r": {
+            "max_vertex_depth_ldu": 0.001,
+            "kind": "contact"
+          }
+        },
+        "S02_casement_window.open_both": {
+          "pane_l-pane_r": {
+            "max_vertex_depth_ldu": 0.001,
+            "kind": "contact"
+          }
+        },
+        "S02_casement_window.wind_flutter": {
+          "pane_l-pane_r": {
+            "max_vertex_depth_ldu": 0.001,
+            "kind": "contact"
+          }
+        }
+      },
+      "worst_vertex_depth_ldu": 0.001,
+      "worst_kind": "contact",
+      "clips_with_deep_shrink_crossings": {
+        "S02_casement_window.one_by_one": [
+          "pane_l-pane_r"
+        ],
+        "S02_casement_window.open_both": [
+          "pane_l-pane_r"
+        ],
+        "S02_casement_window.wind_flutter": [
+          "pane_l-pane_r"
+        ]
+      },
+      "excluded_rest_pairs": []
+    },
+    "S03_shuttered_window": {
+      "sweep_clear": true,
+      "sweep_crossings": [],
+      "clip_poses_clear": true,
+      "clip_poses_without_deep_crossings": true,
+      "clips_with_crossings": {},
+      "vertex_penetration": {},
+      "worst_vertex_depth_ldu": 0.0,
+      "worst_kind": "clear",
+      "clips_with_deep_shrink_crossings": {},
+      "excluded_rest_pairs": [
+        "window-shutter_l",
+        "window-shutter_r"
+      ]
+    },
+    "S04_garden_gate": {
+      "sweep_clear": true,
+      "sweep_crossings": [],
+      "clip_poses_clear": false,
+      "clip_poses_without_deep_crossings": false,
+      "clips_with_crossings": {
+        "S04_garden_gate.in_and_out": [
+          "gate-fence_r"
+        ],
+        "S04_garden_gate.open_latch": [
+          "gate-fence_r"
+        ],
+        "S04_garden_gate.push_through": [
+          "gate-fence_r"
+        ]
+      },
+      "vertex_penetration": {
+        "S04_garden_gate.in_and_out": {
+          "gate-fence_r": {
+            "max_vertex_depth_ldu": 0.05,
+            "kind": "contact"
+          }
+        },
+        "S04_garden_gate.open_latch": {
+          "gate-fence_r": {
+            "max_vertex_depth_ldu": 0.054,
+            "kind": "contact"
+          }
+        },
+        "S04_garden_gate.push_through": {
+          "gate-fence_r": {
+            "max_vertex_depth_ldu": 0.064,
+            "kind": "contact"
+          }
+        }
+      },
+      "worst_vertex_depth_ldu": 0.064,
+      "worst_kind": "contact",
+      "clips_with_deep_shrink_crossings": {
+        "S04_garden_gate.in_and_out": [
+          "gate-fence_r"
+        ],
+        "S04_garden_gate.open_latch": [
+          "gate-fence_r"
+        ],
+        "S04_garden_gate.push_through": [
+          "gate-fence_r"
+        ]
+      },
+      "excluded_rest_pairs": [
+        "gate_base-gate"
+      ]
+    },
+    "S05_kitchen_cupboard": {
+      "sweep_clear": true,
+      "sweep_crossings": [],
+      "clip_poses_clear": true,
+      "clip_poses_without_deep_crossings": true,
+      "clips_with_crossings": {},
+      "vertex_penetration": {},
+      "worst_vertex_depth_ldu": 0.0,
+      "worst_kind": "clear",
+      "clips_with_deep_shrink_crossings": {},
+      "excluded_rest_pairs": [
+        "cupboard_low-door",
+        "cupboard_high-drawer_top",
+        "cupboard_high-drawer_low"
+      ]
+    },
+    "S06_double_cabinet": {
+      "sweep_clear": true,
+      "sweep_crossings": [],
+      "clip_poses_clear": true,
+      "clip_poses_without_deep_crossings": true,
+      "clips_with_crossings": {},
+      "vertex_penetration": {},
+      "worst_vertex_depth_ldu": 0.0,
+      "worst_kind": "clear",
+      "clips_with_deep_shrink_crossings": {},
+      "excluded_rest_pairs": [
+        "cabinet-door_l",
+        "cabinet-door_r"
+      ]
+    },
+    "S07_treasure_chest": {
+      "sweep_clear": true,
+      "sweep_crossings": [],
+      "clip_poses_clear": true,
+      "clip_poses_without_deep_crossings": true,
+      "clips_with_crossings": {},
+      "vertex_penetration": {},
+      "worst_vertex_depth_ldu": 0.0,
+      "worst_kind": "clear",
+      "clips_with_deep_shrink_crossings": {},
+      "excluded_rest_pairs": [
+        "chest-lid"
+      ]
+    },
+    "S08_mailbox": {
+      "sweep_clear": true,
+      "sweep_crossings": [],
+      "clip_poses_clear": true,
+      "clip_poses_without_deep_crossings": true,
+      "clips_with_crossings": {},
+      "vertex_penetration": {},
+      "worst_vertex_depth_ldu": 0.0,
+      "worst_kind": "clear",
+      "clips_with_deep_shrink_crossings": {},
+      "excluded_rest_pairs": [
+        "box-door"
+      ]
+    },
+    "S09_trap_door": {
+      "sweep_clear": true,
+      "sweep_crossings": [],
+      "clip_poses_clear": true,
+      "clip_poses_without_deep_crossings": true,
+      "clips_with_crossings": {},
+      "vertex_penetration": {},
+      "worst_vertex_depth_ldu": 0.0,
+      "worst_kind": "clear",
+      "clips_with_deep_shrink_crossings": {},
+      "excluded_rest_pairs": [
+        "frame-trapdoor"
+      ]
+    },
+    "S10_car_doors": {
+      "sweep_clear": true,
+      "sweep_crossings": [],
+      "clip_poses_clear": true,
+      "clip_poses_without_deep_crossings": true,
+      "clips_with_crossings": {},
+      "vertex_penetration": {},
+      "worst_vertex_depth_ldu": 0.0,
+      "worst_kind": "clear",
+      "clips_with_deep_shrink_crossings": {},
+      "excluded_rest_pairs": [
+        "door_l-windscreen",
+        "door_l-tyre0l",
+        "door_r-windscreen",
+        "door_r-tyre0r"
+      ]
+    },
+    "S11_car_roof": {
+      "sweep_clear": true,
+      "sweep_crossings": [],
+      "clip_poses_clear": true,
+      "clip_poses_without_deep_crossings": true,
+      "clips_with_crossings": {},
+      "vertex_penetration": {},
+      "worst_vertex_depth_ldu": 0.0,
+      "worst_kind": "clear",
+      "clips_with_deep_shrink_crossings": {},
+      "excluded_rest_pairs": [
+        "windscreen-roof",
+        "holder-roof"
+      ]
+    },
+    "S12_canopy": {
+      "sweep_clear": false,
+      "sweep_crossings": [
+        [
+          "canopy",
+          0.1,
+          "hull-canopy"
+        ]
+      ],
+      "clip_poses_clear": false,
+      "clip_poses_without_deep_crossings": false,
+      "clips_with_crossings": {
+        "S12_canopy.flip_open": [
+          "hull-canopy"
+        ],
+        "S12_canopy.pop_open": [
+          "hull-canopy"
+        ],
+        "S12_canopy.slow_seal": [
+          "hull-canopy"
+        ]
+      },
+      "vertex_penetration": {
+        "S12_canopy.flip_open": {
+          "hull-canopy": {
+            "max_vertex_depth_ldu": 0.115,
+            "kind": "contact"
+          }
+        },
+        "S12_canopy.pop_open": {
+          "hull-canopy": {
+            "max_vertex_depth_ldu": 0.076,
+            "kind": "contact"
+          }
+        },
+        "S12_canopy.slow_seal": {
+          "hull-canopy": {
+            "max_vertex_depth_ldu": 0.115,
+            "kind": "contact"
+          }
+        }
+      },
+      "worst_vertex_depth_ldu": 0.115,
+      "worst_kind": "contact",
+      "clips_with_deep_shrink_crossings": {
+        "S12_canopy.flip_open": [
+          "hull-canopy"
+        ],
+        "S12_canopy.pop_open": [
+          "hull-canopy"
+        ],
+        "S12_canopy.slow_seal": [
+          "hull-canopy"
+        ]
+      },
+      "excluded_rest_pairs": [
+        "holder-canopy"
+      ]
+    },
+    "S13_forklift": {
+      "sweep_clear": false,
+      "sweep_crossings": [
+        [
+          "lift",
+          18.75,
+          "forks-spring"
+        ],
+        [
+          "lift",
+          18.75,
+          "rails-spring"
+        ],
+        [
+          "lift",
+          25.0,
+          "forks-spring"
+        ],
+        [
+          "lift",
+          25.0,
+          "rails-spring"
+        ],
+        [
+          "lift",
+          31.25,
+          "forks-spring"
+        ],
+        [
+          "lift",
+          31.25,
+          "rails-spring"
+        ],
+        [
+          "lift",
+          37.5,
+          "forks-spring"
+        ],
+        [
+          "lift",
+          37.5,
+          "rails-spring"
+        ],
+        [
+          "lift",
+          43.75,
+          "forks-spring"
+        ],
+        [
+          "lift",
+          43.75,
+          "rails-spring"
+        ],
+        [
+          "lift",
+          50.0,
+          "forks-spring"
+        ],
+        [
+          "lift",
+          50.0,
+          "rails-spring"
+        ],
+        [
+          "lift",
+          56.25,
+          "forks-spring"
+        ],
+        [
+          "lift",
+          56.25,
+          "rails-spring"
+        ],
+        [
+          "lift",
+          62.5,
+          "forks-spring"
+        ],
+        [
+          "lift",
+          62.5,
+          "rails-spring"
+        ],
+        [
+          "lift",
+          68.75,
+          "forks-spring"
+        ],
+        [
+          "lift",
+          68.75,
+          "rails-spring"
+        ],
+        [
+          "lift",
+          75.0,
+          "forks-spring"
+        ],
+        [
+          "lift",
+          75.0,
+          "rails-spring"
+        ],
+        [
+          "lift",
+          81.25,
+          "forks-spring"
+        ],
+        [
+          "lift",
+          87.5,
+          "forks-spring"
+        ],
+        [
+          "lift",
+          93.75,
+          "forks-spring"
+        ],
+        [
+          "lift",
+          100.0,
+          "forks-spring"
+        ]
+      ],
+      "clip_poses_clear": false,
+      "clip_poses_without_deep_crossings": true,
+      "clips_with_crossings": {
+        "S13_forklift.chain_hoist": [
+          "forks-spring",
+          "rails-spring"
+        ],
+        "S13_forklift.drop": [
+          "forks-spring",
+          "rails-spring"
+        ],
+        "S13_forklift.raise_lower": [
+          "forks-spring",
+          "rails-spring"
+        ]
+      },
+      "vertex_penetration": {
+        "S13_forklift.chain_hoist": {
+          "forks-spring": {
+            "max_vertex_depth_ldu": 1.237,
+            "kind": "shallow"
+          },
+          "rails-spring": {
+            "max_vertex_depth_ldu": 1.609,
+            "kind": "shallow"
+          }
+        },
+        "S13_forklift.drop": {
+          "forks-spring": {
+            "max_vertex_depth_ldu": 1.234,
+            "kind": "shallow"
+          },
+          "rails-spring": {
+            "max_vertex_depth_ldu": 1.636,
+            "kind": "shallow"
+          }
+        },
+        "S13_forklift.raise_lower": {
+          "forks-spring": {
+            "max_vertex_depth_ldu": 1.225,
+            "kind": "shallow"
+          },
+          "rails-spring": {
+            "max_vertex_depth_ldu": 1.586,
+            "kind": "shallow"
+          }
+        }
+      },
+      "worst_vertex_depth_ldu": 1.636,
+      "worst_kind": "shallow",
+      "clips_with_deep_shrink_crossings": {},
+      "excluded_rest_pairs": [
+        "rails-forks"
+      ]
+    },
+    "S14_sliding_door": {
+      "sweep_clear": true,
+      "sweep_crossings": [],
+      "clip_poses_clear": true,
+      "clip_poses_without_deep_crossings": true,
+      "clips_with_crossings": {},
+      "vertex_penetration": {},
+      "worst_vertex_depth_ldu": 0.0,
+      "worst_kind": "clear",
+      "clips_with_deep_shrink_crossings": {},
+      "excluded_rest_pairs": []
+    },
+    "S15_radar": {
+      "sweep_clear": true,
+      "sweep_crossings": [],
+      "clip_poses_clear": true,
+      "clip_poses_without_deep_crossings": true,
+      "clips_with_crossings": {},
+      "vertex_penetration": {},
+      "worst_vertex_depth_ldu": 0.0,
+      "worst_kind": "clear",
+      "clips_with_deep_shrink_crossings": {},
+      "excluded_rest_pairs": [
+        "pedestal1-turntable_top",
+        "turntable_base-turntable_top"
+      ]
+    },
+    "S16_crane": {
+      "sweep_clear": true,
+      "sweep_crossings": [],
+      "clip_poses_clear": true,
+      "clip_poses_without_deep_crossings": true,
+      "clips_with_crossings": {},
+      "vertex_penetration": {},
+      "worst_vertex_depth_ldu": 0.0,
+      "worst_kind": "clear",
+      "clips_with_deep_shrink_crossings": {},
+      "excluded_rest_pairs": [
+        "hinge_base-hinge_top",
+        "boom_tip-hook",
+        "turntable_base-turntable_top"
+      ]
+    },
+    "S17_tipper": {
+      "sweep_clear": true,
+      "sweep_crossings": [],
+      "clip_poses_clear": true,
+      "clip_poses_without_deep_crossings": true,
+      "clips_with_crossings": {},
+      "vertex_penetration": {},
+      "worst_vertex_depth_ldu": 0.0,
+      "worst_kind": "clear",
+      "clips_with_deep_shrink_crossings": {},
+      "excluded_rest_pairs": [
+        "hinge_tile_l-hinge_plate_l",
+        "hinge_tile_r-hinge_plate_r"
+      ]
+    },
+    "S18_barrier": {
+      "sweep_clear": true,
+      "sweep_crossings": [],
+      "clip_poses_clear": true,
+      "clip_poses_without_deep_crossings": true,
+      "clips_with_crossings": {},
+      "vertex_penetration": {},
+      "worst_vertex_depth_ldu": 0.0,
+      "worst_kind": "clear",
+      "clips_with_deep_shrink_crossings": {},
+      "excluded_rest_pairs": [
+        "rest2-boom",
+        "hinge_base-hinge_top"
+      ]
+    },
+    "S19_drawbridge": {
+      "sweep_clear": true,
+      "sweep_crossings": [],
+      "clip_poses_clear": true,
+      "clip_poses_without_deep_crossings": true,
+      "clips_with_crossings": {},
+      "vertex_penetration": {},
+      "worst_vertex_depth_ldu": 0.0,
+      "worst_kind": "clear",
+      "clips_with_deep_shrink_crossings": {},
+      "excluded_rest_pairs": [
+        "tower_l1-hinge_deck_l",
+        "tower_r1-hinge_deck_r",
+        "hinge_wall_l-hinge_deck_l",
+        "hinge_deck_l-tower_l0",
+        "hinge_wall_r-hinge_deck_r",
+        "hinge_deck_r-tower_r0",
+        "deck-bank"
+      ]
+    },
+    "S20_levers": {
+      "sweep_clear": true,
+      "sweep_crossings": [],
+      "clip_poses_clear": true,
+      "clip_poses_without_deep_crossings": true,
+      "clips_with_crossings": {},
+      "vertex_penetration": {},
+      "worst_vertex_depth_ldu": 0.0,
+      "worst_kind": "clear",
+      "clips_with_deep_shrink_crossings": {},
+      "excluded_rest_pairs": [
+        "lever_base_l-stick_l",
+        "lever_base_r-stick_r"
+      ]
+    }
+  }
+}

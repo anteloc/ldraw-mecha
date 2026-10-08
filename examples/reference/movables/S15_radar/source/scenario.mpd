@@ -1,0 +1,28 @@
+0 FILE s15_radar.ldr
+0 Movable element scenario S15_radar Rotating radar
+0 Name: s15_radar.ldr
+0 Author: ldraw-mecha scripts/build_movables.py
+0 // Generated mock scenario: parts picked by constant name from data/categories/parts (a few context parts by LDraw reference); moving parts placed from LDCad shadow connector frames (data/offLibShadow) via pyldraw3 or from official annotated models where no connector pair exists. Frame: LDU, -Y up, the scenario front faces -Z, ground (base top) at y = 0.
+
+0 // base: plates.Plate4X4
+1 8 0 0 0 1 0 0 0 1 0 0 0 1 3031.dat
+0 // pedestal0: bricks.Brick2X2
+1 71 0 -24 0 1 0 0 0 1 0 0 0 1 3003.dat
+0 // pedestal1: bricks.Brick2X2
+1 71 0 -48 0 1 0 0 0 1 0 0 0 1 3003.dat
+0 // turntable_base: turntables.Turntable2X2PlateBase
+1 8 0 -56 0 1 0 0 0 1 0 0 0 1 3680.dat
+0 // turntable_top: turntables.Turntable2X2PlateTop
+1 71 0 -54 0 1 0 0 0 1 0 0 0 1 3679.dat
+0 // mount: plates.Plate2X2WithGrooveWith1CentreStud
+1 71 0 -64 0 1 0 0 0 1 0 0 0 1 87580.dat
+0 // mast0: bricks.Brick1X1
+1 15 0 -88 0 1 0 0 0 1 0 0 0 1 3005.dat
+0 // mast1: bricks.Brick1X1
+1 15 0 -112 0 1 0 0 0 1 0 0 0 1 3005.dat
+0 // head: bricks.Brick1X1WithStudOn1Side
+1 15 0 -136 0 1 0 0 0 1 0 0 0 1 87087.dat
+0 // dish: dishes.Dish4X4Inverted
+1 15 0 -126 -26 1 0 0 0 0 -1 0 1 0 3960.dat
+0 // beacon: plates.Plate1X1Round
+1 4 0 -144 0 1 0 0 0 1 0 0 0 1 6141.dat

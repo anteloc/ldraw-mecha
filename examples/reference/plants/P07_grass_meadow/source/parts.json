@@ -1,0 +1,279 @@
+{
+  "case": "P07_grass_meadow",
+  "title": "Grass meadow",
+  "parts": [
+    {
+      "role": "base",
+      "id": "0",
+      "table": "plates.Plate6X8",
+      "ref": "3036",
+      "colour": 2,
+      "title": "Plate  6 x  8",
+      "library_only": false
+    },
+    {
+      "role": "blade1",
+      "id": "1",
+      "table": "plants.PlantGrassStem",
+      "ref": "15279",
+      "colour": 2,
+      "title": "Plant Grass Stem",
+      "library_only": false
+    },
+    {
+      "role": "blade2",
+      "id": "2",
+      "table": "plants.PlantGrassStem",
+      "ref": "15279",
+      "colour": 10,
+      "title": "Plant Grass Stem",
+      "library_only": false
+    },
+    {
+      "role": "blade3",
+      "id": "3",
+      "table": "plants.PlantGrassStem",
+      "ref": "15279",
+      "colour": 330,
+      "title": "Plant Grass Stem",
+      "library_only": false
+    },
+    {
+      "role": "blade4",
+      "id": "4",
+      "table": "plants.PlantGrassStem",
+      "ref": "15279",
+      "colour": 27,
+      "title": "Plant Grass Stem",
+      "library_only": false
+    },
+    {
+      "role": "blade5",
+      "id": "5",
+      "table": "plants.PlantGrassStem",
+      "ref": "15279",
+      "colour": 2,
+      "title": "Plant Grass Stem",
+      "library_only": false
+    },
+    {
+      "role": "blade6",
+      "id": "6",
+      "table": "plants.PlantGrassStem",
+      "ref": "15279",
+      "colour": 10,
+      "title": "Plant Grass Stem",
+      "library_only": false
+    },
+    {
+      "role": "blade7",
+      "id": "7",
+      "table": "plants.PlantGrassStem",
+      "ref": "15279",
+      "colour": 330,
+      "title": "Plant Grass Stem",
+      "library_only": false
+    },
+    {
+      "role": "blade8",
+      "id": "8",
+      "table": "plants.PlantGrassStem",
+      "ref": "15279",
+      "colour": 27,
+      "title": "Plant Grass Stem",
+      "library_only": false
+    },
+    {
+      "role": "blade9",
+      "id": "9",
+      "table": "plants.PlantGrassStem",
+      "ref": "15279",
+      "colour": 2,
+      "title": "Plant Grass Stem",
+      "library_only": false
+    },
+    {
+      "role": "blade10",
+      "id": "10",
+      "table": "plants.PlantGrassStem",
+      "ref": "15279",
+      "colour": 10,
+      "title": "Plant Grass Stem",
+      "library_only": false
+    }
+  ],
+  "joints": {
+    "blade_1": {
+      "origin": [
+        -70.0,
+        0.0,
+        -30.0
+      ],
+      "axis": [
+        0.0,
+        0.0,
+        1.0
+      ],
+      "parent": "base",
+      "child": "blade1",
+      "kind": "revolute",
+      "joint": "flex_approx",
+      "connector": "flex_approx: the grass stem is one rigid part; the tilt stands in for the blade bending. 15279 on a base stud"
+    },
+    "blade_2": {
+      "origin": [
+        -50.0,
+        0.0,
+        10.0
+      ],
+      "axis": [
+        0.0,
+        0.0,
+        1.0
+      ],
+      "parent": "base",
+      "child": "blade2",
+      "kind": "revolute",
+      "joint": "flex_approx",
+      "connector": "flex_approx: the grass stem is one rigid part; the tilt stands in for the blade bending. 15279 on a base stud"
+    },
+    "blade_3": {
+      "origin": [
+        -30.0,
+        0.0,
+        -10.0
+      ],
+      "axis": [
+        0.0,
+        0.0,
+        1.0
+      ],
+      "parent": "base",
+      "child": "blade3",
+      "kind": "revolute",
+      "joint": "flex_approx",
+      "connector": "flex_approx: the grass stem is one rigid part; the tilt stands in for the blade bending. 15279 on a base stud"
+    },
+    "blade_4": {
+      "origin": [
+        -30.0,
+        0.0,
+        30.0
+      ],
+      "axis": [
+        0.0,
+        0.0,
+        1.0
+      ],
+      "parent": "base",
+      "child": "blade4",
+      "kind": "revolute",
+      "joint": "flex_approx",
+      "connector": "flex_approx: the grass stem is one rigid part; the tilt stands in for the blade bending. 15279 on a base stud"
+    },
+    "blade_5": {
+      "origin": [
+        -10.0,
+        0.0,
+        -30.0
+      ],
+      "axis": [
+        0.0,
+        0.0,
+        1.0
+      ],
+      "parent": "base",
+      "child": "blade5",
+      "kind": "revolute",
+      "joint": "flex_approx",
+      "connector": "flex_approx: the grass stem is one rigid part; the tilt stands in for the blade bending. 15279 on a base stud"
+    },
+    "blade_6": {
+      "origin": [
+        10.0,
+        0.0,
+        10.0
+      ],
+      "axis": [
+        0.0,
+        0.0,
+        1.0
+      ],
+      "parent": "base",
+      "child": "blade6",
+      "kind": "revolute",
+      "joint": "flex_approx",
+      "connector": "flex_approx: the grass stem is one rigid part; the tilt stands in for the blade bending. 15279 on a base stud"
+    },
+    "blade_7": {
+      "origin": [
+        30.0,
+        0.0,
+        -10.0
+      ],
+      "axis": [
+        0.0,
+        0.0,
+        1.0
+      ],
+      "parent": "base",
+      "child": "blade7",
+      "kind": "revolute",
+      "joint": "flex_approx",
+      "connector": "flex_approx: the grass stem is one rigid part; the tilt stands in for the blade bending. 15279 on a base stud"
+    },
+    "blade_8": {
+      "origin": [
+        30.0,
+        0.0,
+        30.0
+      ],
+      "axis": [
+        0.0,
+        0.0,
+        1.0
+      ],
+      "parent": "base",
+      "child": "blade8",
+      "kind": "revolute",
+      "joint": "flex_approx",
+      "connector": "flex_approx: the grass stem is one rigid part; the tilt stands in for the blade bending. 15279 on a base stud"
+    },
+    "blade_9": {
+      "origin": [
+        50.0,
+        0.0,
+        -30.0
+      ],
+      "axis": [
+        0.0,
+        0.0,
+        1.0
+      ],
+      "parent": "base",
+      "child": "blade9",
+      "kind": "revolute",
+      "joint": "flex_approx",
+      "connector": "flex_approx: the grass stem is one rigid part; the tilt stands in for the blade bending. 15279 on a base stud"
+    },
+    "blade_10": {
+      "origin": [
+        70.0,
+        0.0,
+        10.0
+      ],
+      "axis": [
+        0.0,
+        0.0,
+        1.0
+      ],
+      "parent": "base",
+      "child": "blade10",
+      "kind": "revolute",
+      "joint": "flex_approx",
+      "connector": "flex_approx: the grass stem is one rigid part; the tilt stands in for the blade bending. 15279 on a base stud"
+    }
+  },
+  "reference_checks": [],
+  "geometry_checks": []
+}

@@ -1,0 +1,499 @@
+{
+  "version": 1,
+  "name": "model",
+  "status": "draft",
+  "source": {
+    "version": 1,
+    "path": "/Users/captain/workspaces/workspace-ai/ldraw-mecha/output/movables/S07_treasure_chest/source/scenario.mpd",
+    "sha256": "8ddcefdeede5f934c76b3f24fa02946e8779c782d34fbc2092005b94877cc1f9",
+    "section": "s07_treasure_chest.ldr",
+    "description": "Movable element scenario S07_treasure_chest Treasure chest",
+    "author": "ldraw-mecha scripts/build_movables.py",
+    "dependencies": {
+      "/Users/captain/workspaces/workspace-ai/ldraw-mecha/output/movables/S07_treasure_chest/source/scenario.mpd": "8ddcefdeede5f934c76b3f24fa02946e8779c782d34fbc2092005b94877cc1f9"
+    },
+    "nodes": [
+      {
+        "id": "0",
+        "parent": "root",
+        "ref": "3036.dat",
+        "kind": "part",
+        "embedded": false,
+        "section": "s07_treasure_chest.ldr",
+        "index": 0,
+        "line": 8,
+        "colour": "19",
+        "effective_colour": "19",
+        "local": [
+          [
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            1.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            1.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "world": [
+          [
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            1.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            1.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "description": "Plate  6 x  8"
+      },
+      {
+        "id": "1",
+        "parent": "root",
+        "ref": "4738a.dat",
+        "kind": "part",
+        "embedded": false,
+        "section": "s07_treasure_chest.ldr",
+        "index": 1,
+        "line": 10,
+        "colour": "70",
+        "effective_colour": "70",
+        "local": [
+          [
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            1.0,
+            0.0,
+            -32.0
+          ],
+          [
+            0.0,
+            0.0,
+            1.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "world": [
+          [
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            1.0,
+            0.0,
+            -32.0
+          ],
+          [
+            0.0,
+            0.0,
+            1.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "description": "Container Treasure Chest with Slots"
+      },
+      {
+        "id": "2",
+        "parent": "root",
+        "ref": "4739a.dat",
+        "kind": "part",
+        "embedded": false,
+        "section": "s07_treasure_chest.ldr",
+        "index": 2,
+        "line": 12,
+        "colour": "70",
+        "effective_colour": "70",
+        "local": [
+          [
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            1.0,
+            0.0,
+            -48.0
+          ],
+          [
+            0.0,
+            0.0,
+            1.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "world": [
+          [
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            1.0,
+            0.0,
+            -48.0
+          ],
+          [
+            0.0,
+            0.0,
+            1.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "description": "Container Treasure Chest with Slots Lid"
+      },
+      {
+        "id": "3",
+        "parent": "root",
+        "ref": "98138.dat",
+        "kind": "part",
+        "embedded": false,
+        "section": "s07_treasure_chest.ldr",
+        "index": 3,
+        "line": 14,
+        "colour": "297",
+        "effective_colour": "297",
+        "local": [
+          [
+            1.0,
+            0.0,
+            0.0,
+            -70.0
+          ],
+          [
+            0.0,
+            1.0,
+            0.0,
+            -8.0
+          ],
+          [
+            0.0,
+            0.0,
+            1.0,
+            -50.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "world": [
+          [
+            1.0,
+            0.0,
+            0.0,
+            -70.0
+          ],
+          [
+            0.0,
+            1.0,
+            0.0,
+            -8.0
+          ],
+          [
+            0.0,
+            0.0,
+            1.0,
+            -50.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "description": "Tile  1 x  1 Round with Groove"
+      },
+      {
+        "id": "4",
+        "parent": "root",
+        "ref": "98138.dat",
+        "kind": "part",
+        "embedded": false,
+        "section": "s07_treasure_chest.ldr",
+        "index": 4,
+        "line": 16,
+        "colour": "297",
+        "effective_colour": "297",
+        "local": [
+          [
+            1.0,
+            0.0,
+            0.0,
+            70.0
+          ],
+          [
+            0.0,
+            1.0,
+            0.0,
+            -8.0
+          ],
+          [
+            0.0,
+            0.0,
+            1.0,
+            -30.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "world": [
+          [
+            1.0,
+            0.0,
+            0.0,
+            70.0
+          ],
+          [
+            0.0,
+            1.0,
+            0.0,
+            -8.0
+          ],
+          [
+            0.0,
+            0.0,
+            1.0,
+            -30.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "description": "Tile  1 x  1 Round with Groove"
+      },
+      {
+        "id": "5",
+        "parent": "root",
+        "ref": "98138.dat",
+        "kind": "part",
+        "embedded": false,
+        "section": "s07_treasure_chest.ldr",
+        "index": 5,
+        "line": 18,
+        "colour": "297",
+        "effective_colour": "297",
+        "local": [
+          [
+            1.0,
+            0.0,
+            0.0,
+            -50.0
+          ],
+          [
+            0.0,
+            1.0,
+            0.0,
+            -8.0
+          ],
+          [
+            0.0,
+            0.0,
+            1.0,
+            50.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "world": [
+          [
+            1.0,
+            0.0,
+            0.0,
+            -50.0
+          ],
+          [
+            0.0,
+            1.0,
+            0.0,
+            -8.0
+          ],
+          [
+            0.0,
+            0.0,
+            1.0,
+            50.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "description": "Tile  1 x  1 Round with Groove"
+      }
+    ],
+    "diagnostics": [],
+    "coordinate_space": "selected section, LDU, -Y up"
+  },
+  "controls": {},
+  "signals": {},
+  "bodies": {},
+  "anchors": {},
+  "checks": [],
+  "notes": [
+    "Assign rigid groups and measured joints before setting status to ready."
+  ],
+  "mechanisms": {
+    "unresolved": {
+      "label": "No mechanism identified",
+      "parts": [
+        "0",
+        "1",
+        "2",
+        "3",
+        "4",
+        "5"
+      ],
+      "bodies": [],
+      "inputs": [],
+      "outputs": [],
+      "notes": [
+        "No supported mechanical evidence found. Absence of evidence does not imply a static model."
+      ]
+    }
+  },
+  "connections": {},
+  "discovery": {
+    "grouping": "Provisional connected mechanical candidates; agent may split/merge views",
+    "unclassified_parts": [
+      "0",
+      "1",
+      "2",
+      "3",
+      "4",
+      "5"
+    ],
+    "embedded_parts": [],
+    "contact_limit": 300,
+    "rigid_groups": "not inferred",
+    "inputs_outputs": "not inferred",
+    "mechanical_parts": [],
+    "warnings": [
+      {
+        "code": "coaxial_not_run",
+        "message": "not run: 0 shaft/gear candidates outside 2..100; select a section"
+      }
+    ],
+    "surface_contacts": "Not detected: cams, levers bearing on beams, friction and stops need geometric/visual review even when connector contacts are absent",
+    "unsupported_gears": [],
+    "gear_placements": {
+      "policy": "Nearest orthogonal analysis frame within rounding_limit; source translations and handedness preserved",
+      "rounding_limit": 0.002,
+      "counts": {},
+      "affected": []
+    },
+    "contacts": {
+      "complete": true,
+      "tested_parts": 6,
+      "diagnostics": [],
+      "summary": {
+        "tested_parts": 6,
+        "contacts": 4,
+        "contacted_parts": 6,
+        "by_kind": {
+          "stud/stud_receptacle": 3,
+          "hinge/hinge": 1
+        },
+        "axles": {
+          "selection": "Catalog descriptions beginning Technic Axle followed by a numeric length; excludes axle pins, joiners and axle-hole supports",
+          "total": 0,
+          "with_axle_hole_contact": 0,
+          "without_axle_hole_contact": []
+        }
+      },
+      "placements": {
+        "policy": "Nearest orthogonal analysis frame within rounding_limit; source translations and handedness preserved",
+        "rounding_limit": 0.002,
+        "counts": {
+          "unchanged": 6
+        },
+        "affected": []
+      }
+    },
+    "coaxial_selection": "Catalog axle, gear, worm and engine crankshaft parts; positive line evidence within 80 LDU axial separation",
+    "coaxial": "not run: 0 shaft/gear candidates outside 2..100; select a section",
+    "isolated_mechanical_parts": []
+  }
+}

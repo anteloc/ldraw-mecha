@@ -1,0 +1,312 @@
+{
+  "passed": true,
+  "samples": [
+    {
+      "control": "vane_1",
+      "value": -2.8,
+      "passed": true,
+      "max_error": 0
+    },
+    {
+      "control": "vane_1",
+      "value": -2.5875,
+      "passed": true,
+      "max_error": 0
+    },
+    {
+      "control": "vane_1",
+      "value": -2.375,
+      "passed": true,
+      "max_error": 0
+    },
+    {
+      "control": "vane_1",
+      "value": -2.1624999999999996,
+      "passed": true,
+      "max_error": 0
+    },
+    {
+      "control": "vane_1",
+      "value": -1.9499999999999997,
+      "passed": true,
+      "max_error": 0
+    },
+    {
+      "control": "vane_1",
+      "value": -1.7374999999999998,
+      "passed": true,
+      "max_error": 0
+    },
+    {
+      "control": "vane_1",
+      "value": -1.525,
+      "passed": true,
+      "max_error": 0
+    },
+    {
+      "control": "vane_1",
+      "value": -1.3124999999999998,
+      "passed": true,
+      "max_error": 0
+    },
+    {
+      "control": "vane_1",
+      "value": -1.0999999999999999,
+      "passed": true,
+      "max_error": 0
+    },
+    {
+      "control": "vane_1",
+      "value": -0.8875,
+      "passed": true,
+      "max_error": 0
+    },
+    {
+      "control": "vane_1",
+      "value": -0.6749999999999998,
+      "passed": true,
+      "max_error": 0
+    },
+    {
+      "control": "vane_1",
+      "value": -0.4624999999999999,
+      "passed": true,
+      "max_error": 0
+    },
+    {
+      "control": "vane_1",
+      "value": -0.25,
+      "passed": true,
+      "max_error": 0
+    },
+    {
+      "control": "vane_1",
+      "value": -0.03750000000000009,
+      "passed": true,
+      "max_error": 0
+    },
+    {
+      "control": "vane_1",
+      "value": 0.17500000000000027,
+      "passed": true,
+      "max_error": 0
+    },
+    {
+      "control": "vane_1",
+      "value": 0.3875000000000002,
+      "passed": true,
+      "max_error": 0
+    },
+    {
+      "control": "vane_1",
+      "value": 0.6000000000000001,
+      "passed": true,
+      "max_error": 0
+    },
+    {
+      "control": "vane_2",
+      "value": -0.9,
+      "passed": true,
+      "max_error": 0
+    },
+    {
+      "control": "vane_2",
+      "value": -0.70625,
+      "passed": true,
+      "max_error": 0
+    },
+    {
+      "control": "vane_2",
+      "value": -0.5125,
+      "passed": true,
+      "max_error": 0
+    },
+    {
+      "control": "vane_2",
+      "value": -0.31875,
+      "passed": true,
+      "max_error": 0
+    },
+    {
+      "control": "vane_2",
+      "value": -0.125,
+      "passed": true,
+      "max_error": 0
+    },
+    {
+      "control": "vane_2",
+      "value": 0.06874999999999998,
+      "passed": true,
+      "max_error": 0
+    },
+    {
+      "control": "vane_2",
+      "value": 0.26250000000000007,
+      "passed": true,
+      "max_error": 0
+    },
+    {
+      "control": "vane_2",
+      "value": 0.45624999999999993,
+      "passed": true,
+      "max_error": 0
+    },
+    {
+      "control": "vane_2",
+      "value": 0.65,
+      "passed": true,
+      "max_error": 0
+    },
+    {
+      "control": "vane_2",
+      "value": 0.8437500000000001,
+      "passed": true,
+      "max_error": 0
+    },
+    {
+      "control": "vane_2",
+      "value": 1.0375,
+      "passed": true,
+      "max_error": 0
+    },
+    {
+      "control": "vane_2",
+      "value": 1.2312500000000002,
+      "passed": true,
+      "max_error": 0
+    },
+    {
+      "control": "vane_2",
+      "value": 1.4250000000000003,
+      "passed": true,
+      "max_error": 0
+    },
+    {
+      "control": "vane_2",
+      "value": 1.6187500000000004,
+      "passed": true,
+      "max_error": 0
+    },
+    {
+      "control": "vane_2",
+      "value": 1.8125,
+      "passed": true,
+      "max_error": 0
+    },
+    {
+      "control": "vane_2",
+      "value": 2.00625,
+      "passed": true,
+      "max_error": 0
+    },
+    {
+      "control": "vane_2",
+      "value": 2.2,
+      "passed": true,
+      "max_error": 0
+    },
+    {
+      "control": "vane_3",
+      "value": -2.2,
+      "passed": true,
+      "max_error": 0
+    },
+    {
+      "control": "vane_3",
+      "value": -2.00625,
+      "passed": true,
+      "max_error": 0
+    },
+    {
+      "control": "vane_3",
+      "value": -1.8125000000000002,
+      "passed": true,
+      "max_error": 0
+    },
+    {
+      "control": "vane_3",
+      "value": -1.6187500000000001,
+      "passed": true,
+      "max_error": 0
+    },
+    {
+      "control": "vane_3",
+      "value": -1.4250000000000003,
+      "passed": true,
+      "max_error": 0
+    },
+    {
+      "control": "vane_3",
+      "value": -1.2312500000000002,
+      "passed": true,
+      "max_error": 0
+    },
+    {
+      "control": "vane_3",
+      "value": -1.0375,
+      "passed": true,
+      "max_error": 0
+    },
+    {
+      "control": "vane_3",
+      "value": -0.8437500000000002,
+      "passed": true,
+      "max_error": 0
+    },
+    {
+      "control": "vane_3",
+      "value": -0.6500000000000001,
+      "passed": true,
+      "max_error": 0
+    },
+    {
+      "control": "vane_3",
+      "value": -0.45625000000000004,
+      "passed": true,
+      "max_error": 0
+    },
+    {
+      "control": "vane_3",
+      "value": -0.2625000000000002,
+      "passed": true,
+      "max_error": 0
+    },
+    {
+      "control": "vane_3",
+      "value": -0.06875000000000009,
+      "passed": true,
+      "max_error": 0
+    },
+    {
+      "control": "vane_3",
+      "value": 0.125,
+      "passed": true,
+      "max_error": 0
+    },
+    {
+      "control": "vane_3",
+      "value": 0.3187500000000001,
+      "passed": true,
+      "max_error": 0
+    },
+    {
+      "control": "vane_3",
+      "value": 0.5124999999999997,
+      "passed": true,
+      "max_error": 0
+    },
+    {
+      "control": "vane_3",
+      "value": 0.7062499999999998,
+      "passed": true,
+      "max_error": 0
+    },
+    {
+      "control": "vane_3",
+      "value": 0.8999999999999999,
+      "passed": true,
+      "max_error": 0
+    }
+  ],
+  "coverage": "Each control swept independently; analytic closure only, not mesh collisions or dynamics"
+}

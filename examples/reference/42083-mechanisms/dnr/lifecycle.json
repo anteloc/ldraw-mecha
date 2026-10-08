@@ -1,0 +1,8 @@
+{
+  "passed": true,
+  "restore_error": 4.76837158203125e-07,
+  "rebuild_no_leaks": true,
+  "two_copies_isolated": true,
+  "tolerance": 0.002,
+  "nonzero_default_and_clamp": true
+}

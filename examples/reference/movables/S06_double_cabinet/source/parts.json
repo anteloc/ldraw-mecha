@@ -1,0 +1,104 @@
+{
+  "scenario": "S06_double_cabinet",
+  "title": "Double-door cabinet",
+  "parts": [
+    {
+      "role": "base",
+      "id": "0",
+      "table": "plates.Plate4X8",
+      "ref": "3035",
+      "colour": 71,
+      "title": "Plate  4 x  8",
+      "library_only": false
+    },
+    {
+      "role": "cabinet",
+      "id": "1",
+      "table": "containers.ContainerCupboard2X6X7",
+      "ref": "2042",
+      "colour": 14,
+      "title": "Container Cupboard  2 x  6 x  7",
+      "library_only": false
+    },
+    {
+      "role": "door_l",
+      "id": "2",
+      "table": "containers.ContainerCupboard2X6X7Door",
+      "ref": "2043",
+      "colour": 4,
+      "title": "Container Cupboard  2 x  6 x  7 Door",
+      "library_only": false
+    },
+    {
+      "role": "door_r",
+      "id": "3",
+      "table": "containers.ContainerCupboard2X6X7Door",
+      "ref": "2043",
+      "colour": 4,
+      "title": "Container Cupboard  2 x  6 x  7 Door",
+      "library_only": false
+    }
+  ],
+  "joints": {
+    "door_l": {
+      "origin": [
+        -52.0,
+        -33.0,
+        -16.0
+      ],
+      "axis": [
+        0.0,
+        -1.0,
+        0.0
+      ],
+      "parent": "cabinet",
+      "child": "door_l",
+      "kind": "revolute",
+      "connector": "2043 hinge snap_fgr (2042 has no shadow hinge); door placement from set 3636"
+    },
+    "door_r": {
+      "origin": [
+        52.0,
+        -33.0,
+        -16.0
+      ],
+      "axis": [
+        0.0,
+        1.0,
+        0.0
+      ],
+      "parent": "cabinet",
+      "child": "door_r",
+      "kind": "revolute",
+      "connector": "2043 hinge snap_fgr (2042 has no shadow hinge); door placement from set 3636"
+    }
+  },
+  "reference_checks": [
+    {
+      "model": "3636-1.mpd",
+      "section": "(flattened main model)",
+      "parent": "cabinet",
+      "part": "door_l",
+      "official_refs": [
+        "3636 - 2042",
+        "3636 - 2043"
+      ],
+      "position_offset_ldu": 0.0,
+      "rotation_offset": 0.0,
+      "note": "3636 embeds its own copies of 2042/2043"
+    },
+    {
+      "model": "3636-1.mpd",
+      "section": "(flattened main model)",
+      "parent": "cabinet",
+      "part": "door_r",
+      "official_refs": [
+        "3636 - 2042",
+        "3636 - 2043"
+      ],
+      "position_offset_ldu": 0.0,
+      "rotation_offset": 0.0,
+      "note": "3636 embeds its own copies of 2042/2043"
+    }
+  ]
+}

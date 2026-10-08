@@ -1,0 +1,308 @@
+{
+  "semantics": {
+    "branch_front": {
+      "control": "branch_front",
+      "value": 0.2,
+      "test_point": [
+        -20.0,
+        -112.0,
+        -110.0
+      ],
+      "displacement": [
+        0.0,
+        -15.694212,
+        3.581367
+      ],
+      "expected": "-y",
+      "flipped": false
+    },
+    "branch_downwind": {
+      "control": "branch_downwind",
+      "value": 0.2,
+      "test_point": [
+        110.0,
+        -112.0,
+        -20.0
+      ],
+      "displacement": [
+        -3.581367,
+        -15.694212,
+        0.0
+      ],
+      "expected": "-y",
+      "flipped": false
+    },
+    "branch_back": {
+      "control": "branch_back",
+      "value": 0.2,
+      "test_point": [
+        20.0,
+        -112.0,
+        110.0
+      ],
+      "displacement": [
+        0.0,
+        -15.694212,
+        -3.581367
+      ],
+      "expected": "-y",
+      "flipped": false
+    },
+    "branch_upwind": {
+      "control": "branch_upwind",
+      "value": 0.2,
+      "test_point": [
+        -110.0,
+        -112.0,
+        20.0
+      ],
+      "displacement": [
+        3.581367,
+        -15.694212,
+        0.0
+      ],
+      "expected": "-y",
+      "flipped": false
+    }
+  },
+  "wind_geometry": {
+    "branch_front": {
+      "body": "branch_front",
+      "x": -10.0,
+      "tip": [
+        -20.0,
+        -112.0,
+        -110.0
+      ],
+      "swing": [
+        0.0,
+        0.124
+      ],
+      "lever": 80.6
+    },
+    "branch_downwind": {
+      "body": "branch_downwind",
+      "x": 30.0,
+      "tip": [
+        110.0,
+        -112.0,
+        -20.0
+      ],
+      "swing": [
+        -0.124,
+        -0.0
+      ],
+      "lever": 80.6
+    },
+    "branch_back": {
+      "body": "branch_back",
+      "x": 10.0,
+      "tip": [
+        20.0,
+        -112.0,
+        110.0
+      ],
+      "swing": [
+        0.0,
+        -0.124
+      ],
+      "lever": 80.6
+    },
+    "branch_upwind": {
+      "body": "branch_upwind",
+      "x": -30.0,
+      "tip": [
+        -110.0,
+        -112.0,
+        20.0
+      ],
+      "swing": [
+        0.124,
+        0.0
+      ],
+      "lever": 80.6
+    }
+  },
+  "roster_problems": [],
+  "contacts": {
+    "tested_parts": 20,
+    "contacts": 17,
+    "contacted_parts": 19,
+    "by_kind": {
+      "axle/axle_hole": 4,
+      "bar/clip": 8,
+      "stud/stud_receptacle": 5
+    },
+    "axles": {
+      "selection": "Catalog descriptions beginning Technic Axle followed by a numeric length; excludes axle pins, joiners and axle-hole supports",
+      "total": 0,
+      "with_axle_hole_contact": 0,
+      "without_axle_hole_contact": []
+    }
+  },
+  "contact_pairs": {
+    "1-2": [
+      "axle/axle_hole"
+    ],
+    "2-3": [
+      "axle/axle_hole"
+    ],
+    "3-4": [
+      "axle/axle_hole"
+    ],
+    "5-6": [
+      "clip/bar",
+      "clip/bar"
+    ],
+    "6-7": [
+      "stud/stud_receptacle"
+    ],
+    "8-9": [
+      "clip/bar",
+      "clip/bar"
+    ],
+    "9-10": [
+      "stud/stud_receptacle"
+    ],
+    "11-12": [
+      "clip/bar",
+      "clip/bar"
+    ],
+    "12-13": [
+      "stud/stud_receptacle"
+    ],
+    "14-15": [
+      "clip/bar",
+      "clip/bar"
+    ],
+    "15-16": [
+      "stud/stud_receptacle"
+    ],
+    "17-18": [
+      "axle/axle_hole"
+    ],
+    "18-19": [
+      "stud/stud_receptacle"
+    ]
+  },
+  "joints": {
+    "branch_front": "real",
+    "branch_downwind": "real",
+    "branch_back": "real",
+    "branch_upwind": "real"
+  },
+  "asymmetric_sample": {
+    "controls": {
+      "branch_front": 0.189,
+      "branch_downwind": -0.111,
+      "branch_back": 0.243,
+      "branch_upwind": -0.189
+    },
+    "transforms": {
+      "branch_front": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.982193,
+          0.187877,
+          3.819949
+        ],
+        [
+          0.0,
+          -0.187877,
+          0.982193,
+          -19.697655
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "branch_downwind": [
+        [
+          0.993846,
+          -0.110772,
+          0.0,
+          -11.114139
+        ],
+        [
+          0.110772,
+          0.993846,
+          0.0,
+          -3.950892
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "branch_back": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.97062,
+          -0.240616,
+          4.221758
+        ],
+        [
+          0.0,
+          0.240616,
+          0.97062,
+          25.424173
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "branch_upwind": [
+        [
+          0.982193,
+          0.187877,
+          0.0,
+          18.629211
+        ],
+        [
+          -0.187877,
+          0.982193,
+          0.0,
+          -7.452658
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ]
+    }
+  }
+}

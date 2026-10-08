@@ -1,0 +1,1230 @@
+{
+  "passed": true,
+  "samples": [
+    {
+      "control": "cane_1",
+      "value": -0.14,
+      "passed": true,
+      "max_error": 0
+    },
+    {
+      "control": "cane_1",
+      "value": -0.12250000000000001,
+      "passed": true,
+      "max_error": 0
+    },
+    {
+      "control": "cane_1",
+      "value": -0.10500000000000001,
+      "passed": true,
+      "max_error": 0
+    },
+    {
+      "control": "cane_1",
+      "value": -0.08750000000000001,
+      "passed": true,
+      "max_error": 0
+    },
+    {
+      "control": "cane_1",
+      "value": -0.07,
+      "passed": true,
+      "max_error": 0
+    },
+    {
+      "control": "cane_1",
+      "value": -0.052500000000000005,
+      "passed": true,
+      "max_error": 0
+    },
+    {
+      "control": "cane_1",
+      "value": -0.035,
+      "passed": true,
+      "max_error": 0
+    },
+    {
+      "control": "cane_1",
+      "value": -0.0175,
+      "passed": true,
+      "max_error": 0
+    },
+    {
+      "control": "cane_1",
+      "value": 0.0,
+      "passed": true,
+      "max_error": 0
+    },
+    {
+      "control": "cane_1",
+      "value": 0.017500000000000016,
+      "passed": true,
+      "max_error": 0
+    },
+    {
+      "control": "cane_1",
+      "value": 0.035,
+      "passed": true,
+      "max_error": 0
+    },
+    {
+      "control": "cane_1",
+      "value": 0.05249999999999999,
+      "passed": true,
+      "max_error": 0
+    },
+    {
+      "control": "cane_1",
+      "value": 0.07,
+      "passed": true,
+      "max_error": 0
+    },
+    {
+      "control": "cane_1",
+      "value": 0.08750000000000002,
+      "passed": true,
+      "max_error": 0
+    },
+    {
+      "control": "cane_1",
+      "value": 0.10500000000000001,
+      "passed": true,
+      "max_error": 0
+    },
+    {
+      "control": "cane_1",
+      "value": 0.1225,
+      "passed": true,
+      "max_error": 0
+    },
+    {
+      "control": "cane_1",
+      "value": 0.14,
+      "passed": true,
+      "max_error": 0
+    },
+    {
+      "control": "cane_2",
+      "value": -0.14,
+      "passed": true,
+      "max_error": 0
+    },
+    {
+      "control": "cane_2",
+      "value": -0.12250000000000001,
+      "passed": true,
+      "max_error": 0
+    },
+    {
+      "control": "cane_2",
+      "value": -0.10500000000000001,
+      "passed": true,
+      "max_error": 0
+    },
+    {
+      "control": "cane_2",
+      "value": -0.08750000000000001,
+      "passed": true,
+      "max_error": 0
+    },
+    {
+      "control": "cane_2",
+      "value": -0.07,
+      "passed": true,
+      "max_error": 0
+    },
+    {
+      "control": "cane_2",
+      "value": -0.052500000000000005,
+      "passed": true,
+      "max_error": 0
+    },
+    {
+      "control": "cane_2",
+      "value": -0.035,
+      "passed": true,
+      "max_error": 0
+    },
+    {
+      "control": "cane_2",
+      "value": -0.0175,
+      "passed": true,
+      "max_error": 0
+    },
+    {
+      "control": "cane_2",
+      "value": 0.0,
+      "passed": true,
+      "max_error": 0
+    },
+    {
+      "control": "cane_2",
+      "value": 0.017500000000000016,
+      "passed": true,
+      "max_error": 0
+    },
+    {
+      "control": "cane_2",
+      "value": 0.035,
+      "passed": true,
+      "max_error": 0
+    },
+    {
+      "control": "cane_2",
+      "value": 0.05249999999999999,
+      "passed": true,
+      "max_error": 0
+    },
+    {
+      "control": "cane_2",
+      "value": 0.07,
+      "passed": true,
+      "max_error": 0
+    },
+    {
+      "control": "cane_2",
+      "value": 0.08750000000000002,
+      "passed": true,
+      "max_error": 0
+    },
+    {
+      "control": "cane_2",
+      "value": 0.10500000000000001,
+      "passed": true,
+      "max_error": 0
+    },
+    {
+      "control": "cane_2",
+      "value": 0.1225,
+      "passed": true,
+      "max_error": 0
+    },
+    {
+      "control": "cane_2",
+      "value": 0.14,
+      "passed": true,
+      "max_error": 0
+    },
+    {
+      "control": "cane_3",
+      "value": -0.14,
+      "passed": true,
+      "max_error": 0
+    },
+    {
+      "control": "cane_3",
+      "value": -0.12250000000000001,
+      "passed": true,
+      "max_error": 0
+    },
+    {
+      "control": "cane_3",
+      "value": -0.10500000000000001,
+      "passed": true,
+      "max_error": 0
+    },
+    {
+      "control": "cane_3",
+      "value": -0.08750000000000001,
+      "passed": true,
+      "max_error": 0
+    },
+    {
+      "control": "cane_3",
+      "value": -0.07,
+      "passed": true,
+      "max_error": 0
+    },
+    {
+      "control": "cane_3",
+      "value": -0.052500000000000005,
+      "passed": true,
+      "max_error": 0
+    },
+    {
+      "control": "cane_3",
+      "value": -0.035,
+      "passed": true,
+      "max_error": 0
+    },
+    {
+      "control": "cane_3",
+      "value": -0.0175,
+      "passed": true,
+      "max_error": 0
+    },
+    {
+      "control": "cane_3",
+      "value": 0.0,
+      "passed": true,
+      "max_error": 0
+    },
+    {
+      "control": "cane_3",
+      "value": 0.017500000000000016,
+      "passed": true,
+      "max_error": 0
+    },
+    {
+      "control": "cane_3",
+      "value": 0.035,
+      "passed": true,
+      "max_error": 0
+    },
+    {
+      "control": "cane_3",
+      "value": 0.05249999999999999,
+      "passed": true,
+      "max_error": 0
+    },
+    {
+      "control": "cane_3",
+      "value": 0.07,
+      "passed": true,
+      "max_error": 0
+    },
+    {
+      "control": "cane_3",
+      "value": 0.08750000000000002,
+      "passed": true,
+      "max_error": 0
+    },
+    {
+      "control": "cane_3",
+      "value": 0.10500000000000001,
+      "passed": true,
+      "max_error": 0
+    },
+    {
+      "control": "cane_3",
+      "value": 0.1225,
+      "passed": true,
+      "max_error": 0
+    },
+    {
+      "control": "cane_3",
+      "value": 0.14,
+      "passed": true,
+      "max_error": 0
+    },
+    {
+      "control": "cane_4",
+      "value": -0.14,
+      "passed": true,
+      "max_error": 0
+    },
+    {
+      "control": "cane_4",
+      "value": -0.12250000000000001,
+      "passed": true,
+      "max_error": 0
+    },
+    {
+      "control": "cane_4",
+      "value": -0.10500000000000001,
+      "passed": true,
+      "max_error": 0
+    },
+    {
+      "control": "cane_4",
+      "value": -0.08750000000000001,
+      "passed": true,
+      "max_error": 0
+    },
+    {
+      "control": "cane_4",
+      "value": -0.07,
+      "passed": true,
+      "max_error": 0
+    },
+    {
+      "control": "cane_4",
+      "value": -0.052500000000000005,
+      "passed": true,
+      "max_error": 0
+    },
+    {
+      "control": "cane_4",
+      "value": -0.035,
+      "passed": true,
+      "max_error": 0
+    },
+    {
+      "control": "cane_4",
+      "value": -0.0175,
+      "passed": true,
+      "max_error": 0
+    },
+    {
+      "control": "cane_4",
+      "value": 0.0,
+      "passed": true,
+      "max_error": 0
+    },
+    {
+      "control": "cane_4",
+      "value": 0.017500000000000016,
+      "passed": true,
+      "max_error": 0
+    },
+    {
+      "control": "cane_4",
+      "value": 0.035,
+      "passed": true,
+      "max_error": 0
+    },
+    {
+      "control": "cane_4",
+      "value": 0.05249999999999999,
+      "passed": true,
+      "max_error": 0
+    },
+    {
+      "control": "cane_4",
+      "value": 0.07,
+      "passed": true,
+      "max_error": 0
+    },
+    {
+      "control": "cane_4",
+      "value": 0.08750000000000002,
+      "passed": true,
+      "max_error": 0
+    },
+    {
+      "control": "cane_4",
+      "value": 0.10500000000000001,
+      "passed": true,
+      "max_error": 0
+    },
+    {
+      "control": "cane_4",
+      "value": 0.1225,
+      "passed": true,
+      "max_error": 0
+    },
+    {
+      "control": "cane_4",
+      "value": 0.14,
+      "passed": true,
+      "max_error": 0
+    },
+    {
+      "control": "rustle_1a",
+      "value": -0.5,
+      "passed": true,
+      "max_error": 0
+    },
+    {
+      "control": "rustle_1a",
+      "value": -0.4375,
+      "passed": true,
+      "max_error": 0
+    },
+    {
+      "control": "rustle_1a",
+      "value": -0.375,
+      "passed": true,
+      "max_error": 0
+    },
+    {
+      "control": "rustle_1a",
+      "value": -0.3125,
+      "passed": true,
+      "max_error": 0
+    },
+    {
+      "control": "rustle_1a",
+      "value": -0.25,
+      "passed": true,
+      "max_error": 0
+    },
+    {
+      "control": "rustle_1a",
+      "value": -0.1875,
+      "passed": true,
+      "max_error": 0
+    },
+    {
+      "control": "rustle_1a",
+      "value": -0.125,
+      "passed": true,
+      "max_error": 0
+    },
+    {
+      "control": "rustle_1a",
+      "value": -0.0625,
+      "passed": true,
+      "max_error": 0
+    },
+    {
+      "control": "rustle_1a",
+      "value": 0.0,
+      "passed": true,
+      "max_error": 0
+    },
+    {
+      "control": "rustle_1a",
+      "value": 0.0625,
+      "passed": true,
+      "max_error": 0
+    },
+    {
+      "control": "rustle_1a",
+      "value": 0.125,
+      "passed": true,
+      "max_error": 0
+    },
+    {
+      "control": "rustle_1a",
+      "value": 0.1875,
+      "passed": true,
+      "max_error": 0
+    },
+    {
+      "control": "rustle_1a",
+      "value": 0.25,
+      "passed": true,
+      "max_error": 0
+    },
+    {
+      "control": "rustle_1a",
+      "value": 0.3125,
+      "passed": true,
+      "max_error": 0
+    },
+    {
+      "control": "rustle_1a",
+      "value": 0.375,
+      "passed": true,
+      "max_error": 0
+    },
+    {
+      "control": "rustle_1a",
+      "value": 0.4375,
+      "passed": true,
+      "max_error": 0
+    },
+    {
+      "control": "rustle_1a",
+      "value": 0.5,
+      "passed": true,
+      "max_error": 0
+    },
+    {
+      "control": "rustle_1b",
+      "value": -0.5,
+      "passed": true,
+      "max_error": 0
+    },
+    {
+      "control": "rustle_1b",
+      "value": -0.4375,
+      "passed": true,
+      "max_error": 0
+    },
+    {
+      "control": "rustle_1b",
+      "value": -0.375,
+      "passed": true,
+      "max_error": 0
+    },
+    {
+      "control": "rustle_1b",
+      "value": -0.3125,
+      "passed": true,
+      "max_error": 0
+    },
+    {
+      "control": "rustle_1b",
+      "value": -0.25,
+      "passed": true,
+      "max_error": 0
+    },
+    {
+      "control": "rustle_1b",
+      "value": -0.1875,
+      "passed": true,
+      "max_error": 0
+    },
+    {
+      "control": "rustle_1b",
+      "value": -0.125,
+      "passed": true,
+      "max_error": 0
+    },
+    {
+      "control": "rustle_1b",
+      "value": -0.0625,
+      "passed": true,
+      "max_error": 0
+    },
+    {
+      "control": "rustle_1b",
+      "value": 0.0,
+      "passed": true,
+      "max_error": 0
+    },
+    {
+      "control": "rustle_1b",
+      "value": 0.0625,
+      "passed": true,
+      "max_error": 0
+    },
+    {
+      "control": "rustle_1b",
+      "value": 0.125,
+      "passed": true,
+      "max_error": 0
+    },
+    {
+      "control": "rustle_1b",
+      "value": 0.1875,
+      "passed": true,
+      "max_error": 0
+    },
+    {
+      "control": "rustle_1b",
+      "value": 0.25,
+      "passed": true,
+      "max_error": 0
+    },
+    {
+      "control": "rustle_1b",
+      "value": 0.3125,
+      "passed": true,
+      "max_error": 0
+    },
+    {
+      "control": "rustle_1b",
+      "value": 0.375,
+      "passed": true,
+      "max_error": 0
+    },
+    {
+      "control": "rustle_1b",
+      "value": 0.4375,
+      "passed": true,
+      "max_error": 0
+    },
+    {
+      "control": "rustle_1b",
+      "value": 0.5,
+      "passed": true,
+      "max_error": 0
+    },
+    {
+      "control": "rustle_2a",
+      "value": -0.5,
+      "passed": true,
+      "max_error": 0
+    },
+    {
+      "control": "rustle_2a",
+      "value": -0.4375,
+      "passed": true,
+      "max_error": 0
+    },
+    {
+      "control": "rustle_2a",
+      "value": -0.375,
+      "passed": true,
+      "max_error": 0
+    },
+    {
+      "control": "rustle_2a",
+      "value": -0.3125,
+      "passed": true,
+      "max_error": 0
+    },
+    {
+      "control": "rustle_2a",
+      "value": -0.25,
+      "passed": true,
+      "max_error": 0
+    },
+    {
+      "control": "rustle_2a",
+      "value": -0.1875,
+      "passed": true,
+      "max_error": 0
+    },
+    {
+      "control": "rustle_2a",
+      "value": -0.125,
+      "passed": true,
+      "max_error": 0
+    },
+    {
+      "control": "rustle_2a",
+      "value": -0.0625,
+      "passed": true,
+      "max_error": 0
+    },
+    {
+      "control": "rustle_2a",
+      "value": 0.0,
+      "passed": true,
+      "max_error": 0
+    },
+    {
+      "control": "rustle_2a",
+      "value": 0.0625,
+      "passed": true,
+      "max_error": 0
+    },
+    {
+      "control": "rustle_2a",
+      "value": 0.125,
+      "passed": true,
+      "max_error": 0
+    },
+    {
+      "control": "rustle_2a",
+      "value": 0.1875,
+      "passed": true,
+      "max_error": 0
+    },
+    {
+      "control": "rustle_2a",
+      "value": 0.25,
+      "passed": true,
+      "max_error": 0
+    },
+    {
+      "control": "rustle_2a",
+      "value": 0.3125,
+      "passed": true,
+      "max_error": 0
+    },
+    {
+      "control": "rustle_2a",
+      "value": 0.375,
+      "passed": true,
+      "max_error": 0
+    },
+    {
+      "control": "rustle_2a",
+      "value": 0.4375,
+      "passed": true,
+      "max_error": 0
+    },
+    {
+      "control": "rustle_2a",
+      "value": 0.5,
+      "passed": true,
+      "max_error": 0
+    },
+    {
+      "control": "rustle_2b",
+      "value": -0.5,
+      "passed": true,
+      "max_error": 0
+    },
+    {
+      "control": "rustle_2b",
+      "value": -0.4375,
+      "passed": true,
+      "max_error": 0
+    },
+    {
+      "control": "rustle_2b",
+      "value": -0.375,
+      "passed": true,
+      "max_error": 0
+    },
+    {
+      "control": "rustle_2b",
+      "value": -0.3125,
+      "passed": true,
+      "max_error": 0
+    },
+    {
+      "control": "rustle_2b",
+      "value": -0.25,
+      "passed": true,
+      "max_error": 0
+    },
+    {
+      "control": "rustle_2b",
+      "value": -0.1875,
+      "passed": true,
+      "max_error": 0
+    },
+    {
+      "control": "rustle_2b",
+      "value": -0.125,
+      "passed": true,
+      "max_error": 0
+    },
+    {
+      "control": "rustle_2b",
+      "value": -0.0625,
+      "passed": true,
+      "max_error": 0
+    },
+    {
+      "control": "rustle_2b",
+      "value": 0.0,
+      "passed": true,
+      "max_error": 0
+    },
+    {
+      "control": "rustle_2b",
+      "value": 0.0625,
+      "passed": true,
+      "max_error": 0
+    },
+    {
+      "control": "rustle_2b",
+      "value": 0.125,
+      "passed": true,
+      "max_error": 0
+    },
+    {
+      "control": "rustle_2b",
+      "value": 0.1875,
+      "passed": true,
+      "max_error": 0
+    },
+    {
+      "control": "rustle_2b",
+      "value": 0.25,
+      "passed": true,
+      "max_error": 0
+    },
+    {
+      "control": "rustle_2b",
+      "value": 0.3125,
+      "passed": true,
+      "max_error": 0
+    },
+    {
+      "control": "rustle_2b",
+      "value": 0.375,
+      "passed": true,
+      "max_error": 0
+    },
+    {
+      "control": "rustle_2b",
+      "value": 0.4375,
+      "passed": true,
+      "max_error": 0
+    },
+    {
+      "control": "rustle_2b",
+      "value": 0.5,
+      "passed": true,
+      "max_error": 0
+    },
+    {
+      "control": "rustle_3a",
+      "value": -0.5,
+      "passed": true,
+      "max_error": 0
+    },
+    {
+      "control": "rustle_3a",
+      "value": -0.4375,
+      "passed": true,
+      "max_error": 0
+    },
+    {
+      "control": "rustle_3a",
+      "value": -0.375,
+      "passed": true,
+      "max_error": 0
+    },
+    {
+      "control": "rustle_3a",
+      "value": -0.3125,
+      "passed": true,
+      "max_error": 0
+    },
+    {
+      "control": "rustle_3a",
+      "value": -0.25,
+      "passed": true,
+      "max_error": 0
+    },
+    {
+      "control": "rustle_3a",
+      "value": -0.1875,
+      "passed": true,
+      "max_error": 0
+    },
+    {
+      "control": "rustle_3a",
+      "value": -0.125,
+      "passed": true,
+      "max_error": 0
+    },
+    {
+      "control": "rustle_3a",
+      "value": -0.0625,
+      "passed": true,
+      "max_error": 0
+    },
+    {
+      "control": "rustle_3a",
+      "value": 0.0,
+      "passed": true,
+      "max_error": 0
+    },
+    {
+      "control": "rustle_3a",
+      "value": 0.0625,
+      "passed": true,
+      "max_error": 0
+    },
+    {
+      "control": "rustle_3a",
+      "value": 0.125,
+      "passed": true,
+      "max_error": 0
+    },
+    {
+      "control": "rustle_3a",
+      "value": 0.1875,
+      "passed": true,
+      "max_error": 0
+    },
+    {
+      "control": "rustle_3a",
+      "value": 0.25,
+      "passed": true,
+      "max_error": 0
+    },
+    {
+      "control": "rustle_3a",
+      "value": 0.3125,
+      "passed": true,
+      "max_error": 0
+    },
+    {
+      "control": "rustle_3a",
+      "value": 0.375,
+      "passed": true,
+      "max_error": 0
+    },
+    {
+      "control": "rustle_3a",
+      "value": 0.4375,
+      "passed": true,
+      "max_error": 0
+    },
+    {
+      "control": "rustle_3a",
+      "value": 0.5,
+      "passed": true,
+      "max_error": 0
+    },
+    {
+      "control": "rustle_3b",
+      "value": -0.5,
+      "passed": true,
+      "max_error": 0
+    },
+    {
+      "control": "rustle_3b",
+      "value": -0.4375,
+      "passed": true,
+      "max_error": 0
+    },
+    {
+      "control": "rustle_3b",
+      "value": -0.375,
+      "passed": true,
+      "max_error": 0
+    },
+    {
+      "control": "rustle_3b",
+      "value": -0.3125,
+      "passed": true,
+      "max_error": 0
+    },
+    {
+      "control": "rustle_3b",
+      "value": -0.25,
+      "passed": true,
+      "max_error": 0
+    },
+    {
+      "control": "rustle_3b",
+      "value": -0.1875,
+      "passed": true,
+      "max_error": 0
+    },
+    {
+      "control": "rustle_3b",
+      "value": -0.125,
+      "passed": true,
+      "max_error": 0
+    },
+    {
+      "control": "rustle_3b",
+      "value": -0.0625,
+      "passed": true,
+      "max_error": 0
+    },
+    {
+      "control": "rustle_3b",
+      "value": 0.0,
+      "passed": true,
+      "max_error": 0
+    },
+    {
+      "control": "rustle_3b",
+      "value": 0.0625,
+      "passed": true,
+      "max_error": 0
+    },
+    {
+      "control": "rustle_3b",
+      "value": 0.125,
+      "passed": true,
+      "max_error": 0
+    },
+    {
+      "control": "rustle_3b",
+      "value": 0.1875,
+      "passed": true,
+      "max_error": 0
+    },
+    {
+      "control": "rustle_3b",
+      "value": 0.25,
+      "passed": true,
+      "max_error": 0
+    },
+    {
+      "control": "rustle_3b",
+      "value": 0.3125,
+      "passed": true,
+      "max_error": 0
+    },
+    {
+      "control": "rustle_3b",
+      "value": 0.375,
+      "passed": true,
+      "max_error": 0
+    },
+    {
+      "control": "rustle_3b",
+      "value": 0.4375,
+      "passed": true,
+      "max_error": 0
+    },
+    {
+      "control": "rustle_3b",
+      "value": 0.5,
+      "passed": true,
+      "max_error": 0
+    },
+    {
+      "control": "rustle_4a",
+      "value": -0.5,
+      "passed": true,
+      "max_error": 0
+    },
+    {
+      "control": "rustle_4a",
+      "value": -0.4375,
+      "passed": true,
+      "max_error": 0
+    },
+    {
+      "control": "rustle_4a",
+      "value": -0.375,
+      "passed": true,
+      "max_error": 0
+    },
+    {
+      "control": "rustle_4a",
+      "value": -0.3125,
+      "passed": true,
+      "max_error": 0
+    },
+    {
+      "control": "rustle_4a",
+      "value": -0.25,
+      "passed": true,
+      "max_error": 0
+    },
+    {
+      "control": "rustle_4a",
+      "value": -0.1875,
+      "passed": true,
+      "max_error": 0
+    },
+    {
+      "control": "rustle_4a",
+      "value": -0.125,
+      "passed": true,
+      "max_error": 0
+    },
+    {
+      "control": "rustle_4a",
+      "value": -0.0625,
+      "passed": true,
+      "max_error": 0
+    },
+    {
+      "control": "rustle_4a",
+      "value": 0.0,
+      "passed": true,
+      "max_error": 0
+    },
+    {
+      "control": "rustle_4a",
+      "value": 0.0625,
+      "passed": true,
+      "max_error": 0
+    },
+    {
+      "control": "rustle_4a",
+      "value": 0.125,
+      "passed": true,
+      "max_error": 0
+    },
+    {
+      "control": "rustle_4a",
+      "value": 0.1875,
+      "passed": true,
+      "max_error": 0
+    },
+    {
+      "control": "rustle_4a",
+      "value": 0.25,
+      "passed": true,
+      "max_error": 0
+    },
+    {
+      "control": "rustle_4a",
+      "value": 0.3125,
+      "passed": true,
+      "max_error": 0
+    },
+    {
+      "control": "rustle_4a",
+      "value": 0.375,
+      "passed": true,
+      "max_error": 0
+    },
+    {
+      "control": "rustle_4a",
+      "value": 0.4375,
+      "passed": true,
+      "max_error": 0
+    },
+    {
+      "control": "rustle_4a",
+      "value": 0.5,
+      "passed": true,
+      "max_error": 0
+    },
+    {
+      "control": "rustle_4b",
+      "value": -0.5,
+      "passed": true,
+      "max_error": 0
+    },
+    {
+      "control": "rustle_4b",
+      "value": -0.4375,
+      "passed": true,
+      "max_error": 0
+    },
+    {
+      "control": "rustle_4b",
+      "value": -0.375,
+      "passed": true,
+      "max_error": 0
+    },
+    {
+      "control": "rustle_4b",
+      "value": -0.3125,
+      "passed": true,
+      "max_error": 0
+    },
+    {
+      "control": "rustle_4b",
+      "value": -0.25,
+      "passed": true,
+      "max_error": 0
+    },
+    {
+      "control": "rustle_4b",
+      "value": -0.1875,
+      "passed": true,
+      "max_error": 0
+    },
+    {
+      "control": "rustle_4b",
+      "value": -0.125,
+      "passed": true,
+      "max_error": 0
+    },
+    {
+      "control": "rustle_4b",
+      "value": -0.0625,
+      "passed": true,
+      "max_error": 0
+    },
+    {
+      "control": "rustle_4b",
+      "value": 0.0,
+      "passed": true,
+      "max_error": 0
+    },
+    {
+      "control": "rustle_4b",
+      "value": 0.0625,
+      "passed": true,
+      "max_error": 0
+    },
+    {
+      "control": "rustle_4b",
+      "value": 0.125,
+      "passed": true,
+      "max_error": 0
+    },
+    {
+      "control": "rustle_4b",
+      "value": 0.1875,
+      "passed": true,
+      "max_error": 0
+    },
+    {
+      "control": "rustle_4b",
+      "value": 0.25,
+      "passed": true,
+      "max_error": 0
+    },
+    {
+      "control": "rustle_4b",
+      "value": 0.3125,
+      "passed": true,
+      "max_error": 0
+    },
+    {
+      "control": "rustle_4b",
+      "value": 0.375,
+      "passed": true,
+      "max_error": 0
+    },
+    {
+      "control": "rustle_4b",
+      "value": 0.4375,
+      "passed": true,
+      "max_error": 0
+    },
+    {
+      "control": "rustle_4b",
+      "value": 0.5,
+      "passed": true,
+      "max_error": 0
+    }
+  ],
+  "coverage": "Each control swept independently; analytic closure only, not mesh collisions or dynamics"
+}

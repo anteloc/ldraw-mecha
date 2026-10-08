@@ -1,0 +1,292 @@
+{
+  "semantics": {
+    "rush_1": {
+      "control": "rush_1",
+      "value": 0.2,
+      "test_point": [
+        -120.0,
+        -156.0,
+        0.0
+      ],
+      "displacement": [
+        28.608384,
+        2.870413,
+        0.0
+      ],
+      "expected": "+x",
+      "flipped": false
+    },
+    "rush_2": {
+      "control": "rush_2",
+      "value": 0.2,
+      "test_point": [
+        -40.0,
+        -156.0,
+        0.0
+      ],
+      "displacement": [
+        28.608384,
+        2.870413,
+        0.0
+      ],
+      "expected": "+x",
+      "flipped": false
+    },
+    "rush_3": {
+      "control": "rush_3",
+      "value": 0.2,
+      "test_point": [
+        40.0,
+        -156.0,
+        0.0
+      ],
+      "displacement": [
+        28.608384,
+        2.870413,
+        0.0
+      ],
+      "expected": "+x",
+      "flipped": false
+    },
+    "rush_4": {
+      "control": "rush_4",
+      "value": 0.2,
+      "test_point": [
+        120.0,
+        -156.0,
+        0.0
+      ],
+      "displacement": [
+        28.608384,
+        2.870413,
+        0.0
+      ],
+      "expected": "+x",
+      "flipped": false
+    }
+  },
+  "wind_geometry": {
+    "rush_1": {
+      "body": "rush_1",
+      "x": -120.0,
+      "tip": [
+        -120.0,
+        -156.0,
+        0.0
+      ],
+      "swing": [
+        1.0,
+        -0.0
+      ],
+      "lever": 144.0
+    },
+    "rush_2": {
+      "body": "rush_2",
+      "x": -40.0,
+      "tip": [
+        -40.0,
+        -156.0,
+        0.0
+      ],
+      "swing": [
+        1.0,
+        -0.0
+      ],
+      "lever": 144.0
+    },
+    "rush_3": {
+      "body": "rush_3",
+      "x": 40.0,
+      "tip": [
+        40.0,
+        -156.0,
+        0.0
+      ],
+      "swing": [
+        1.0,
+        -0.0
+      ],
+      "lever": 144.0
+    },
+    "rush_4": {
+      "body": "rush_4",
+      "x": 120.0,
+      "tip": [
+        120.0,
+        -156.0,
+        0.0
+      ],
+      "swing": [
+        1.0,
+        -0.0
+      ],
+      "lever": 144.0
+    }
+  },
+  "roster_problems": [],
+  "contacts": {
+    "tested_parts": 41,
+    "contacts": 12,
+    "contacted_parts": 16,
+    "by_kind": {
+      "generic/generic": 8,
+      "stud/stud_receptacle": 4
+    },
+    "axles": {
+      "selection": "Catalog descriptions beginning Technic Axle followed by a numeric length; excludes axle pins, joiners and axle-hole supports",
+      "total": 0,
+      "with_axle_hole_contact": 0,
+      "without_axle_hole_contact": []
+    }
+  },
+  "contact_pairs": {
+    "2-6": [
+      "generic/generic",
+      "generic/generic"
+    ],
+    "8-10": [
+      "stud_receptacle/stud"
+    ],
+    "12-16": [
+      "generic/generic",
+      "generic/generic"
+    ],
+    "18-20": [
+      "stud_receptacle/stud"
+    ],
+    "22-26": [
+      "generic/generic",
+      "generic/generic"
+    ],
+    "28-30": [
+      "stud_receptacle/stud"
+    ],
+    "32-36": [
+      "generic/generic",
+      "generic/generic"
+    ],
+    "38-40": [
+      "stud_receptacle/stud"
+    ]
+  },
+  "joints": {
+    "rush_1": "real",
+    "rush_2": "real",
+    "rush_3": "real",
+    "rush_4": "real"
+  },
+  "asymmetric_sample": {
+    "controls": {
+      "rush_1": 0.1512,
+      "rush_2": -0.0888,
+      "rush_3": 0.1944,
+      "rush_4": -0.1512
+    },
+    "transforms": {
+      "rush_1": [
+        [
+          0.988591,
+          -0.150625,
+          0.0,
+          -3.17657
+        ],
+        [
+          0.150625,
+          0.988591,
+          0.0,
+          17.938038
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "rush_2": [
+        [
+          0.99606,
+          0.088683,
+          0.0,
+          0.906595
+        ],
+        [
+          -0.088683,
+          0.99606,
+          0.0,
+          -3.594615
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "rush_3": [
+        [
+          0.981164,
+          -0.193178,
+          0.0,
+          -1.564685
+        ],
+        [
+          0.193178,
+          0.981164,
+          0.0,
+          -7.95315
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "rush_4": [
+        [
+          0.992809,
+          0.119712,
+          0.0,
+          2.29951
+        ],
+        [
+          -0.119712,
+          0.992809,
+          0.0,
+          14.279169
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ]
+    }
+  }
+}

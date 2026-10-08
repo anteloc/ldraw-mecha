@@ -1,0 +1,400 @@
+{
+  "case": "P01_palm_tree",
+  "title": "Ball-chain palm",
+  "parts": [
+    {
+      "role": "base",
+      "id": "0",
+      "table": "plates.Plate6X6",
+      "ref": "3958",
+      "colour": 28,
+      "title": "Plate  6 x  6",
+      "library_only": false
+    },
+    {
+      "role": "palm_base",
+      "id": "1",
+      "table": "plants.PlantTreePalmBase",
+      "ref": "2563a",
+      "colour": 70,
+      "title": "Plant Tree Palm Base",
+      "library_only": false
+    },
+    {
+      "role": "seg1",
+      "id": "2",
+      "table": "plants.PlantTreePalmTrunkWithLongIndentedConnector",
+      "ref": "2536a",
+      "colour": 70,
+      "title": "Plant Tree Palm Trunk with Long Indented Connector",
+      "library_only": false
+    },
+    {
+      "role": "seg2",
+      "id": "3",
+      "table": "plants.PlantTreePalmTrunkWithLongIndentedConnector",
+      "ref": "2536a",
+      "colour": 70,
+      "title": "Plant Tree Palm Trunk with Long Indented Connector",
+      "library_only": false
+    },
+    {
+      "role": "seg3",
+      "id": "4",
+      "table": "plants.PlantTreePalmTrunkWithLongIndentedConnector",
+      "ref": "2536a",
+      "colour": 70,
+      "title": "Plant Tree Palm Trunk with Long Indented Connector",
+      "library_only": false
+    },
+    {
+      "role": "seg4",
+      "id": "5",
+      "table": "plants.PlantTreePalmTrunkWithLongIndentedConnector",
+      "ref": "2536a",
+      "colour": 70,
+      "title": "Plant Tree Palm Trunk with Long Indented Connector",
+      "library_only": false
+    },
+    {
+      "role": "seg5",
+      "id": "6",
+      "table": "plants.PlantTreePalmTrunkWithLongIndentedConnector",
+      "ref": "2536a",
+      "colour": 70,
+      "title": "Plant Tree Palm Trunk with Long Indented Connector",
+      "library_only": false
+    },
+    {
+      "role": "seg6",
+      "id": "7",
+      "table": "plants.PlantTreePalmTrunkWithLongIndentedConnector",
+      "ref": "2536a",
+      "colour": 70,
+      "title": "Plant Tree Palm Trunk with Long Indented Connector",
+      "library_only": false
+    },
+    {
+      "role": "crown",
+      "id": "8",
+      "table": "plants.PlantTreePalmTop",
+      "ref": "2566b",
+      "colour": 70,
+      "title": "Plant Tree Palm Top",
+      "library_only": false
+    },
+    {
+      "role": "leaf_front",
+      "id": "9",
+      "table": "plants.PlantTreePalmLeafLarge",
+      "ref": "2518",
+      "colour": 2,
+      "title": "Plant Tree Palm Leaf Large",
+      "library_only": false
+    },
+    {
+      "role": "leaf_upwind",
+      "id": "10",
+      "table": "plants.PlantTreePalmLeafLarge",
+      "ref": "2518",
+      "colour": 2,
+      "title": "Plant Tree Palm Leaf Large",
+      "library_only": false
+    },
+    {
+      "role": "leaf_back",
+      "id": "11",
+      "table": "plants.PlantTreePalmLeafLarge",
+      "ref": "2518",
+      "colour": 2,
+      "title": "Plant Tree Palm Leaf Large",
+      "library_only": false
+    },
+    {
+      "role": "leaf_downwind",
+      "id": "12",
+      "table": "plants.PlantTreePalmLeafLarge",
+      "ref": "2518",
+      "colour": 2,
+      "title": "Plant Tree Palm Leaf Large",
+      "library_only": false
+    },
+    {
+      "role": "crown_plate",
+      "id": "13",
+      "table": "plates.Plate2X2RoundWithAxlehole",
+      "ref": "4032a",
+      "colour": 2,
+      "title": "Plate  2 x  2 Round with Axlehole",
+      "library_only": false
+    },
+    {
+      "role": "crown_cap",
+      "id": "14",
+      "table": "bricks.Brick1X1RoundWithHollowStud",
+      "ref": "3062b",
+      "colour": 2,
+      "title": "Brick  1 x  1 Round with Hollow Stud",
+      "library_only": false
+    }
+  ],
+  "joints": {
+    "bend_1": {
+      "origin": [
+        0.0,
+        -40.0,
+        0.0
+      ],
+      "axis": [
+        0.0,
+        0.0,
+        1.0
+      ],
+      "parent": "palm_base",
+      "child": "seg1",
+      "kind": "revolute",
+      "joint": "real",
+      "connector": "real: 2536a ball (y=+3) in the socket (y=-32) of 2563a; one of the ball's two tilt freedoms used, about Z so that the trunk bends with the wind"
+    },
+    "bend_2": {
+      "origin": [
+        0.0,
+        -73.81,
+        9.065
+      ],
+      "axis": [
+        0.0,
+        0.0,
+        1.0
+      ],
+      "parent": "seg1",
+      "child": "seg2",
+      "kind": "revolute",
+      "joint": "real",
+      "connector": "real: 2536a ball (y=+3) in the socket (y=-32) of 2536a; one of the ball's two tilt freedoms used, about Z so that the trunk bends with the wind"
+    },
+    "bend_3": {
+      "origin": [
+        0.0,
+        -108.565,
+        13.265
+      ],
+      "axis": [
+        0.0,
+        0.0,
+        1.0
+      ],
+      "parent": "seg2",
+      "child": "seg3",
+      "kind": "revolute",
+      "joint": "real",
+      "connector": "real: 2536a ball (y=+3) in the socket (y=-32) of 2536a; one of the ball's two tilt freedoms used, about Z so that the trunk bends with the wind"
+    },
+    "bend_4": {
+      "origin": [
+        0.0,
+        -143.565,
+        14.0
+      ],
+      "axis": [
+        0.0,
+        0.0,
+        1.0
+      ],
+      "parent": "seg3",
+      "child": "seg4",
+      "kind": "revolute",
+      "joint": "real",
+      "connector": "real: 2536a ball (y=+3) in the socket (y=-32) of 2536a; one of the ball's two tilt freedoms used, about Z so that the trunk bends with the wind"
+    },
+    "bend_5": {
+      "origin": [
+        0.0,
+        -178.32,
+        9.8
+      ],
+      "axis": [
+        0.0,
+        0.0,
+        1.0
+      ],
+      "parent": "seg4",
+      "child": "seg5",
+      "kind": "revolute",
+      "joint": "real",
+      "connector": "real: 2536a ball (y=+3) in the socket (y=-32) of 2536a; one of the ball's two tilt freedoms used, about Z so that the trunk bends with the wind"
+    },
+    "bend_6": {
+      "origin": [
+        0.0,
+        -212.13,
+        0.735
+      ],
+      "axis": [
+        0.0,
+        0.0,
+        1.0
+      ],
+      "parent": "seg5",
+      "child": "seg6",
+      "kind": "revolute",
+      "joint": "real",
+      "connector": "real: 2536a ball (y=+3) in the socket (y=-32) of 2536a; one of the ball's two tilt freedoms used, about Z so that the trunk bends with the wind"
+    },
+    "crown_twist": {
+      "origin": [
+        0.0,
+        -232.968,
+        -8.994
+      ],
+      "axis": [
+        0.0,
+        -0.906106,
+        -0.42305
+      ],
+      "parent": "seg6",
+      "child": "crown",
+      "kind": "revolute",
+      "joint": "real",
+      "connector": "real: 2566b spike (pin, local y 20..44) turning in the top 2536a; twist about the trunk axis"
+    },
+    "leaf_front": {
+      "origin": [
+        -10.0,
+        -258.34,
+        -20.832
+      ],
+      "axis": [
+        1.0,
+        0.0,
+        0.0
+      ],
+      "parent": "crown",
+      "child": "leaf_front",
+      "kind": "revolute",
+      "joint": "flex_approx",
+      "connector": "flex_approx: the leaf is held rigidly on two 2566b prongs; the tilt stands in for the long leaf bending. 2518 leaf root between its two prong holes; tilt about the leaf's own cross axis"
+    },
+    "leaf_upwind": {
+      "origin": [
+        0.0,
+        -255.316,
+        -8.388
+      ],
+      "axis": [
+        0.0,
+        0.42305,
+        -0.906106
+      ],
+      "parent": "crown",
+      "child": "leaf_upwind",
+      "kind": "revolute",
+      "joint": "flex_approx",
+      "connector": "flex_approx: the leaf is held rigidly on two 2566b prongs; the tilt stands in for the long leaf bending. 2518 leaf root between its two prong holes; tilt about the leaf's own cross axis"
+    },
+    "leaf_back": {
+      "origin": [
+        10.0,
+        -258.34,
+        -20.832
+      ],
+      "axis": [
+        -1.0,
+        0.0,
+        0.0
+      ],
+      "parent": "crown",
+      "child": "leaf_back",
+      "kind": "revolute",
+      "joint": "flex_approx",
+      "connector": "flex_approx: the leaf is held rigidly on two 2566b prongs; the tilt stands in for the long leaf bending. 2518 leaf root between its two prong holes; tilt about the leaf's own cross axis"
+    },
+    "leaf_downwind": {
+      "origin": [
+        0.0,
+        -246.864,
+        -26.514
+      ],
+      "axis": [
+        0.0,
+        -0.42305,
+        0.906106
+      ],
+      "parent": "crown",
+      "child": "leaf_downwind",
+      "kind": "revolute",
+      "joint": "flex_approx",
+      "connector": "flex_approx: the leaf is held rigidly on two 2566b prongs; the tilt stands in for the long leaf bending. 2518 leaf root between its two prong holes; tilt about the leaf's own cross axis"
+    }
+  },
+  "reference_checks": [
+    {
+      "model": "2518c01.dat (LDraw shortcut)",
+      "section": "(part file)",
+      "parent": "palm_base",
+      "part": "all",
+      "official_refs": [
+        "2563a",
+        "2536a",
+        "2566b",
+        "2518",
+        "4032a",
+        "3062b"
+      ],
+      "position_offset_ldu": 0.0,
+      "rotation_offset": 0.0,
+      "note": "Placements copied from the official shortcut (identity transform)."
+    }
+  ],
+  "geometry_checks": [
+    {
+      "name": "ball_socket_gap_1",
+      "value": 0.0,
+      "limit": 0.5,
+      "passed": true,
+      "note": "segment ball (local y=+3) vs the socket below (local y=-32) in the official shortcut"
+    },
+    {
+      "name": "ball_socket_gap_2",
+      "value": 0.0,
+      "limit": 0.5,
+      "passed": true,
+      "note": "segment ball (local y=+3) vs the socket below (local y=-32) in the official shortcut"
+    },
+    {
+      "name": "ball_socket_gap_3",
+      "value": 0.0,
+      "limit": 0.5,
+      "passed": true,
+      "note": "segment ball (local y=+3) vs the socket below (local y=-32) in the official shortcut"
+    },
+    {
+      "name": "ball_socket_gap_4",
+      "value": 0.0,
+      "limit": 0.5,
+      "passed": true,
+      "note": "segment ball (local y=+3) vs the socket below (local y=-32) in the official shortcut"
+    },
+    {
+      "name": "ball_socket_gap_5",
+      "value": 0.0,
+      "limit": 0.5,
+      "passed": true,
+      "note": "segment ball (local y=+3) vs the socket below (local y=-32) in the official shortcut"
+    },
+    {
+      "name": "ball_socket_gap_6",
+      "value": 0.0,
+      "limit": 0.5,
+      "passed": true,
+      "note": "segment ball (local y=+3) vs the socket below (local y=-32) in the official shortcut"
+    },
+    {
+      "name": "crown_axis_vs_segment",
+      "value": 0.0,
+      "limit": 0.001,
+      "passed": true,
+      "note": "2566b spike axis parallel to the top segment axis"
+    }
+  ]
+}

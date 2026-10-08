@@ -1,0 +1,1184 @@
+{
+  "version": 1,
+  "name": "model",
+  "status": "draft",
+  "source": {
+    "version": 1,
+    "path": "/Users/captain/workspaces/workspace-ai/ldraw-mecha/output/plants/P04_flower_bed/source/scenario.mpd",
+    "sha256": "9d343bb0b53e2716141f7fe1a7b6fa593a53af220fa0582523e876e6372ca387",
+    "section": "p04_flower_bed.ldr",
+    "description": "Plant wind case P04_flower_bed Flower bed",
+    "author": "ldraw-mecha scripts/build_plants.py",
+    "dependencies": {
+      "/Users/captain/workspaces/workspace-ai/ldraw-mecha/output/plants/P04_flower_bed/source/scenario.mpd": "9d343bb0b53e2716141f7fe1a7b6fa593a53af220fa0582523e876e6372ca387"
+    },
+    "nodes": [
+      {
+        "id": "0",
+        "parent": "root",
+        "ref": "3036.dat",
+        "kind": "part",
+        "embedded": false,
+        "section": "p04_flower_bed.ldr",
+        "index": 0,
+        "line": 8,
+        "colour": "2",
+        "effective_colour": "2",
+        "local": [
+          [
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            1.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            1.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "world": [
+          [
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            1.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            1.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "description": "Plate  6 x  8"
+      },
+      {
+        "id": "1",
+        "parent": "root",
+        "ref": "3941.dat",
+        "kind": "part",
+        "embedded": false,
+        "section": "p04_flower_bed.ldr",
+        "index": 1,
+        "line": 10,
+        "colour": "70",
+        "effective_colour": "70",
+        "local": [
+          [
+            1.0,
+            0.0,
+            0.0,
+            -60.0
+          ],
+          [
+            0.0,
+            1.0,
+            0.0,
+            -24.0
+          ],
+          [
+            0.0,
+            0.0,
+            1.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "world": [
+          [
+            1.0,
+            0.0,
+            0.0,
+            -60.0
+          ],
+          [
+            0.0,
+            1.0,
+            0.0,
+            -24.0
+          ],
+          [
+            0.0,
+            0.0,
+            1.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "description": "Brick  2 x  2 Round without Reinforcement"
+      },
+      {
+        "id": "2",
+        "parent": "root",
+        "ref": "3741a.dat",
+        "kind": "part",
+        "embedded": false,
+        "section": "p04_flower_bed.ldr",
+        "index": 2,
+        "line": 12,
+        "colour": "2",
+        "effective_colour": "2",
+        "local": [
+          [
+            0.7660444431,
+            0.0,
+            0.6427876097,
+            -60.0
+          ],
+          [
+            0.0,
+            1.0,
+            0.0,
+            -32.0
+          ],
+          [
+            -0.6427876097,
+            0.0,
+            0.7660444431,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "world": [
+          [
+            0.7660444431,
+            0.0,
+            0.6427876097,
+            -60.0
+          ],
+          [
+            0.0,
+            1.0,
+            0.0,
+            -32.0
+          ],
+          [
+            -0.6427876097,
+            0.0,
+            0.7660444431,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "description": "Plant Flower Stem"
+      },
+      {
+        "id": "3",
+        "parent": "root",
+        "ref": "3742.dat",
+        "kind": "part",
+        "embedded": false,
+        "section": "p04_flower_bed.ldr",
+        "index": 3,
+        "line": 14,
+        "colour": "14",
+        "effective_colour": "14",
+        "local": [
+          [
+            -0.9854901986,
+            -0.1663566157,
+            0.03368300629,
+            -50.37514908
+          ],
+          [
+            -0.1697323403,
+            0.9659296028,
+            -0.1953738344,
+            -49.62785921
+          ],
+          [
+            -3.3683006e-05,
+            -0.1982560944,
+            -0.9801502537,
+            11.47045066
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "world": [
+          [
+            -0.9854901986,
+            -0.1663566157,
+            0.03368300629,
+            -50.37514908
+          ],
+          [
+            -0.1697323403,
+            0.9659296028,
+            -0.1953738344,
+            -49.62785921
+          ],
+          [
+            -3.3683006e-05,
+            -0.1982560944,
+            -0.9801502537,
+            11.47045066
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "description": "Plant Flower"
+      },
+      {
+        "id": "4",
+        "parent": "root",
+        "ref": "3742.dat",
+        "kind": "part",
+        "embedded": false,
+        "section": "p04_flower_bed.ldr",
+        "index": 4,
+        "line": 16,
+        "colour": "4",
+        "effective_colour": "4",
+        "local": [
+          [
+            -0.9669088696,
+            0.2548637416,
+            -0.01147654741,
+            -76.02052611
+          ],
+          [
+            0.2551220057,
+            0.9659320739,
+            -0.0434510167,
+            -54.45786415
+          ],
+          [
+            1.1476547e-05,
+            -0.04494109323,
+            -0.9989896386,
+            2.824905193
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "world": [
+          [
+            -0.9669088696,
+            0.2548637416,
+            -0.01147654741,
+            -76.02052611
+          ],
+          [
+            0.2551220057,
+            0.9659320739,
+            -0.0434510167,
+            -54.45786415
+          ],
+          [
+            1.1476547e-05,
+            -0.04494109323,
+            -0.9989896386,
+            2.824905193
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "description": "Plant Flower"
+      },
+      {
+        "id": "5",
+        "parent": "root",
+        "ref": "3742.dat",
+        "kind": "part",
+        "embedded": false,
+        "section": "p04_flower_bed.ldr",
+        "index": 5,
+        "line": 18,
+        "colour": "14",
+        "effective_colour": "14",
+        "local": [
+          [
+            -0.9958271542,
+            -0.08851407498,
+            -0.02221570396,
+            -53.99322583
+          ],
+          [
+            -0.09125940214,
+            0.9659292103,
+            0.2421827453,
+            -59.28785842
+          ],
+          [
+            2.2215704e-05,
+            0.2431995459,
+            -0.9699762782,
+            -16.50281774
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "world": [
+          [
+            -0.9958271542,
+            -0.08851407498,
+            -0.02221570396,
+            -53.99322583
+          ],
+          [
+            -0.09125940214,
+            0.9659292103,
+            0.2421827453,
+            -59.28785842
+          ],
+          [
+            2.2215704e-05,
+            0.2431995459,
+            -0.9699762782,
+            -16.50281774
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "description": "Plant Flower"
+      },
+      {
+        "id": "6",
+        "parent": "root",
+        "ref": "3941.dat",
+        "kind": "part",
+        "embedded": false,
+        "section": "p04_flower_bed.ldr",
+        "index": 6,
+        "line": 20,
+        "colour": "70",
+        "effective_colour": "70",
+        "local": [
+          [
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            1.0,
+            0.0,
+            -24.0
+          ],
+          [
+            0.0,
+            0.0,
+            1.0,
+            -20.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "world": [
+          [
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            1.0,
+            0.0,
+            -24.0
+          ],
+          [
+            0.0,
+            0.0,
+            1.0,
+            -20.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "description": "Brick  2 x  2 Round without Reinforcement"
+      },
+      {
+        "id": "7",
+        "parent": "root",
+        "ref": "3741a.dat",
+        "kind": "part",
+        "embedded": false,
+        "section": "p04_flower_bed.ldr",
+        "index": 7,
+        "line": 22,
+        "colour": "2",
+        "effective_colour": "2",
+        "local": [
+          [
+            0.1736481777,
+            0.0,
+            0.984807753,
+            0.0
+          ],
+          [
+            0.0,
+            1.0,
+            0.0,
+            -32.0
+          ],
+          [
+            -0.984807753,
+            0.0,
+            0.1736481777,
+            -20.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "world": [
+          [
+            0.1736481777,
+            0.0,
+            0.984807753,
+            0.0
+          ],
+          [
+            0.0,
+            1.0,
+            0.0,
+            -32.0
+          ],
+          [
+            -0.984807753,
+            0.0,
+            0.1736481777,
+            -20.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "description": "Plant Flower Stem"
+      },
+      {
+        "id": "8",
+        "parent": "root",
+        "ref": "3742.dat",
+        "kind": "part",
+        "embedded": false,
+        "section": "p04_flower_bed.ldr",
+        "index": 8,
+        "line": 24,
+        "colour": "15",
+        "effective_colour": "15",
+        "local": [
+          [
+            -0.9669063922,
+            -0.254873122,
+            0.01147694799,
+            14.74612712
+          ],
+          [
+            -0.2551313946,
+            0.9659296028,
+            -0.04345082281,
+            -49.62785921
+          ],
+          [
+            -1.1476948e-05,
+            -0.04494100807,
+            -0.9989896424,
+            -17.39985993
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "world": [
+          [
+            -0.9669063922,
+            -0.254873122,
+            0.01147694799,
+            14.74612712
+          ],
+          [
+            -0.2551313946,
+            0.9659296028,
+            -0.04345082281,
+            -49.62785921
+          ],
+          [
+            -1.1476948e-05,
+            -0.04494100807,
+            -0.9989896424,
+            -17.39985993
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "description": "Plant Flower"
+      },
+      {
+        "id": "9",
+        "parent": "root",
+        "ref": "3742.dat",
+        "kind": "part",
+        "embedded": false,
+        "section": "p04_flower_bed.ldr",
+        "index": 9,
+        "line": 26,
+        "colour": "26",
+        "effective_colour": "26",
+        "local": [
+          [
+            -0.985491507,
+            0.1663493751,
+            -0.03368048553,
+            -10.45662095
+          ],
+          [
+            0.1697247435,
+            0.9659320739,
+            -0.1953682166,
+            -54.45786415
+          ],
+          [
+            3.3680486e-05,
+            -0.19825013,
+            -0.9801514601,
+            -7.538201388
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "world": [
+          [
+            -0.985491507,
+            0.1663493751,
+            -0.03368048553,
+            -10.45662095
+          ],
+          [
+            0.1697247435,
+            0.9659320739,
+            -0.1953682166,
+            -54.45786415
+          ],
+          [
+            3.3680486e-05,
+            -0.19825013,
+            -0.9801514601,
+            -7.538201388
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "description": "Plant Flower"
+      },
+      {
+        "id": "10",
+        "parent": "root",
+        "ref": "3742.dat",
+        "kind": "part",
+        "embedded": false,
+        "section": "p04_flower_bed.ldr",
+        "index": 10,
+        "line": 28,
+        "colour": "15",
+        "effective_colour": "15",
+        "local": [
+          [
+            -0.9958266047,
+            0.08851993953,
+            0.02221696859,
+            -6.0063508
+          ],
+          [
+            0.09126539812,
+            0.9659292103,
+            0.2421804858,
+            -59.28785842
+          ],
+          [
+            -2.2216969e-05,
+            0.2431974114,
+            -0.9699768134,
+            -36.50297184
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "world": [
+          [
+            -0.9958266047,
+            0.08851993953,
+            0.02221696859,
+            -6.0063508
+          ],
+          [
+            0.09126539812,
+            0.9659292103,
+            0.2421804858,
+            -59.28785842
+          ],
+          [
+            -2.2216969e-05,
+            0.2431974114,
+            -0.9699768134,
+            -36.50297184
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "description": "Plant Flower"
+      },
+      {
+        "id": "11",
+        "parent": "root",
+        "ref": "3941.dat",
+        "kind": "part",
+        "embedded": false,
+        "section": "p04_flower_bed.ldr",
+        "index": 11,
+        "line": 30,
+        "colour": "70",
+        "effective_colour": "70",
+        "local": [
+          [
+            1.0,
+            0.0,
+            0.0,
+            60.0
+          ],
+          [
+            0.0,
+            1.0,
+            0.0,
+            -24.0
+          ],
+          [
+            0.0,
+            0.0,
+            1.0,
+            20.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "world": [
+          [
+            1.0,
+            0.0,
+            0.0,
+            60.0
+          ],
+          [
+            0.0,
+            1.0,
+            0.0,
+            -24.0
+          ],
+          [
+            0.0,
+            0.0,
+            1.0,
+            20.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "description": "Brick  2 x  2 Round without Reinforcement"
+      },
+      {
+        "id": "12",
+        "parent": "root",
+        "ref": "3741a.dat",
+        "kind": "part",
+        "embedded": false,
+        "section": "p04_flower_bed.ldr",
+        "index": 12,
+        "line": 32,
+        "colour": "2",
+        "effective_colour": "2",
+        "local": [
+          [
+            -0.5,
+            0.0,
+            0.8660254038,
+            60.0
+          ],
+          [
+            0.0,
+            1.0,
+            0.0,
+            -32.0
+          ],
+          [
+            -0.8660254038,
+            0.0,
+            -0.5,
+            20.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "world": [
+          [
+            -0.5,
+            0.0,
+            0.8660254038,
+            60.0
+          ],
+          [
+            0.0,
+            1.0,
+            0.0,
+            -32.0
+          ],
+          [
+            -0.8660254038,
+            0.0,
+            -0.5,
+            20.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "description": "Plant Flower Stem"
+      },
+      {
+        "id": "13",
+        "parent": "root",
+        "ref": "3742.dat",
+        "kind": "part",
+        "embedded": false,
+        "section": "p04_flower_bed.ldr",
+        "index": 13,
+        "line": 34,
+        "colour": "4",
+        "effective_colour": "4",
+        "local": [
+          [
+            -0.9741189887,
+            -0.224131662,
+            -0.02927787589,
+            72.96752656
+          ],
+          [
+            -0.2260358269,
+            0.9659296028,
+            0.1260468463,
+            -49.62785921
+          ],
+          [
+            2.9277876e-05,
+            0.1294024754,
+            -0.9915921533,
+            12.51319505
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "world": [
+          [
+            -0.9741189887,
+            -0.224131662,
+            -0.02927787589,
+            72.96752656
+          ],
+          [
+            -0.2260358269,
+            0.9659296028,
+            0.1260468463,
+            -49.62785921
+          ],
+          [
+            2.9277876e-05,
+            0.1294024754,
+            -0.9915921533,
+            12.51319505
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "description": "Plant Flower"
+      },
+      {
+        "id": "14",
+        "parent": "root",
+        "ref": "3742.dat",
+        "kind": "part",
+        "embedded": false,
+        "section": "p04_flower_bed.ldr",
+        "index": 14,
+        "line": 36,
+        "colour": "14",
+        "effective_colour": "14",
+        "local": [
+          [
+            -1.0,
+            -1.712762e-06,
+            4.59365e-07,
+            60.00005337
+          ],
+          [
+            -1.773294e-06,
+            0.9659320739,
+            -0.2587957276,
+            -54.45786415
+          ],
+          [
+            0.0,
+            -0.2587957276,
+            -0.9659320739,
+            36.26767796
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "world": [
+          [
+            -1.0,
+            -1.712762e-06,
+            4.59365e-07,
+            60.00005337
+          ],
+          [
+            -1.773294e-06,
+            0.9659320739,
+            -0.2587957276,
+            -54.45786415
+          ],
+          [
+            0.0,
+            -0.2587957276,
+            -0.9659320739,
+            36.26767796
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "description": "Plant Flower"
+      },
+      {
+        "id": "15",
+        "parent": "root",
+        "ref": "3742.dat",
+        "kind": "part",
+        "embedded": false,
+        "section": "p04_flower_bed.ldr",
+        "index": 15,
+        "line": 38,
+        "colour": "29",
+        "effective_colour": "29",
+        "local": [
+          [
+            -0.9741183404,
+            0.2241344905,
+            0.02927779201,
+            44.79096253
+          ],
+          [
+            0.2260386208,
+            0.9659292103,
+            0.1260448433,
+            -59.28785842
+          ],
+          [
+            -2.9277792e-05,
+            0.1294005053,
+            -0.9915924104,
+            11.218798
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "world": [
+          [
+            -0.9741183404,
+            0.2241344905,
+            0.02927779201,
+            44.79096253
+          ],
+          [
+            0.2260386208,
+            0.9659292103,
+            0.1260448433,
+            -59.28785842
+          ],
+          [
+            -2.9277792e-05,
+            0.1294005053,
+            -0.9915924104,
+            11.218798
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "description": "Plant Flower"
+      }
+    ],
+    "diagnostics": [],
+    "coordinate_space": "selected section, LDU, -Y up"
+  },
+  "controls": {},
+  "signals": {},
+  "bodies": {},
+  "anchors": {},
+  "checks": [],
+  "notes": [
+    "Assign rigid groups and measured joints before setting status to ready."
+  ],
+  "mechanisms": {
+    "unresolved": {
+      "label": "No mechanism identified",
+      "parts": [
+        "0",
+        "1",
+        "10",
+        "11",
+        "12",
+        "13",
+        "14",
+        "15",
+        "2",
+        "3",
+        "4",
+        "5",
+        "6",
+        "7",
+        "8",
+        "9"
+      ],
+      "bodies": [],
+      "inputs": [],
+      "outputs": [],
+      "notes": [
+        "No supported mechanical evidence found. Absence of evidence does not imply a static model."
+      ]
+    }
+  },
+  "connections": {},
+  "discovery": {
+    "grouping": "Provisional connected mechanical candidates; agent may split/merge views",
+    "unclassified_parts": [
+      "0",
+      "1",
+      "10",
+      "11",
+      "12",
+      "13",
+      "14",
+      "15",
+      "2",
+      "3",
+      "4",
+      "5",
+      "6",
+      "7",
+      "8",
+      "9"
+    ],
+    "embedded_parts": [],
+    "contact_limit": 300,
+    "rigid_groups": "not inferred",
+    "inputs_outputs": "not inferred",
+    "mechanical_parts": [],
+    "warnings": [
+      {
+        "code": "incomplete_inspection",
+        "message": "pyldraw3 inspection is incomplete; inspect its diagnostics."
+      },
+      {
+        "code": "coaxial_not_run",
+        "message": "not run: 0 shaft/gear candidates outside 2..100; select a section"
+      }
+    ],
+    "surface_contacts": "Not detected: cams, levers bearing on beams, friction and stops need geometric/visual review even when connector contacts are absent",
+    "unsupported_gears": [],
+    "gear_placements": {
+      "policy": "Nearest orthogonal analysis frame within rounding_limit; source translations and handedness preserved",
+      "rounding_limit": 0.002,
+      "counts": {},
+      "affected": []
+    },
+    "contacts": {
+      "complete": false,
+      "tested_parts": 16,
+      "diagnostics": [
+        {
+          "code": "connection.invalid_transform",
+          "message": "connection feature 'studC' from /Users/captain/workspaces/workspace-ai/ldraw-mecha/data/offLibShadow/p/stud.dat:8 rejected under invalid scale or reflection",
+          "severity": "warning",
+          "path": "/Users/captain/workspaces/workspace-ai/ldraw-mecha/data/offLibShadow/p/stud.dat",
+          "section": null,
+          "line_number": 8,
+          "offending_value": "studC",
+          "suggestions": [],
+          "cause": null
+        }
+      ],
+      "summary": {
+        "tested_parts": 16,
+        "contacts": 9,
+        "contacted_parts": 12,
+        "by_kind": {
+          "pin/pin_hole": 9
+        },
+        "axles": {
+          "selection": "Catalog descriptions beginning Technic Axle followed by a numeric length; excludes axle pins, joiners and axle-hole supports",
+          "total": 0,
+          "with_axle_hole_contact": 0,
+          "without_axle_hole_contact": []
+        }
+      },
+      "placements": {
+        "policy": "Nearest orthogonal analysis frame within rounding_limit; source translations and handedness preserved",
+        "rounding_limit": 0.002,
+        "counts": {
+          "unchanged": 16
+        },
+        "affected": []
+      }
+    },
+    "coaxial_selection": "Catalog axle, gear, worm and engine crankshaft parts; positive line evidence within 80 LDU axial separation",
+    "coaxial": "not run: 0 shaft/gear candidates outside 2..100; select a section",
+    "isolated_mechanical_parts": []
+  }
+}

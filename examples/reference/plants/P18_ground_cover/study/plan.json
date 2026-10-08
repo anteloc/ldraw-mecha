@@ -1,0 +1,565 @@
+{
+  "version": 1,
+  "name": "model",
+  "status": "draft",
+  "source": {
+    "version": 1,
+    "path": "/Users/captain/workspaces/workspace-ai/ldraw-mecha/output/plants/P18_ground_cover/source/scenario.mpd",
+    "sha256": "a4cddd399662fdc8fcff4c565258d01486e190b82682589d9433bebe883f6847",
+    "section": "p18_ground_cover.ldr",
+    "description": "Plant wind case P18_ground_cover Ground cover",
+    "author": "ldraw-mecha scripts/build_plants.py",
+    "dependencies": {
+      "/Users/captain/workspaces/workspace-ai/ldraw-mecha/output/plants/P18_ground_cover/source/scenario.mpd": "a4cddd399662fdc8fcff4c565258d01486e190b82682589d9433bebe883f6847"
+    },
+    "nodes": [
+      {
+        "id": "0",
+        "parent": "root",
+        "ref": "41539.dat",
+        "kind": "part",
+        "embedded": false,
+        "section": "p18_ground_cover.ldr",
+        "index": 0,
+        "line": 8,
+        "colour": "28",
+        "effective_colour": "28",
+        "local": [
+          [
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            1.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            1.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "world": [
+          [
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            1.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            1.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "description": "Plate  8 x  8"
+      },
+      {
+        "id": "1",
+        "parent": "root",
+        "ref": "6255.dat",
+        "kind": "part",
+        "embedded": false,
+        "section": "p18_ground_cover.ldr",
+        "index": 1,
+        "line": 10,
+        "colour": "2",
+        "effective_colour": "2",
+        "local": [
+          [
+            0.6427876097,
+            0.0,
+            0.7660444431,
+            -50.0
+          ],
+          [
+            0.0,
+            1.0,
+            0.0,
+            -16.0
+          ],
+          [
+            -0.7660444431,
+            0.0,
+            0.6427876097,
+            -30.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "world": [
+          [
+            0.6427876097,
+            0.0,
+            0.7660444431,
+            -50.0
+          ],
+          [
+            0.0,
+            1.0,
+            0.0,
+            -16.0
+          ],
+          [
+            -0.7660444431,
+            0.0,
+            0.6427876097,
+            -30.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "description": "Plant  1 x  1 x  0.667 Round with 3 Large Leaves"
+      },
+      {
+        "id": "2",
+        "parent": "root",
+        "ref": "7264.dat",
+        "kind": "part",
+        "embedded": false,
+        "section": "p18_ground_cover.ldr",
+        "index": 2,
+        "line": 12,
+        "colour": "10",
+        "effective_colour": "10",
+        "local": [
+          [
+            -0.1736481777,
+            0.0,
+            0.984807753,
+            50.0
+          ],
+          [
+            0.0,
+            1.0,
+            0.0,
+            -8.0
+          ],
+          [
+            -0.984807753,
+            0.0,
+            -0.1736481777,
+            -50.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "world": [
+          [
+            -0.1736481777,
+            0.0,
+            0.984807753,
+            50.0
+          ],
+          [
+            0.0,
+            1.0,
+            0.0,
+            -8.0
+          ],
+          [
+            -0.984807753,
+            0.0,
+            -0.1736481777,
+            -50.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "description": "Plant  3 x  3 with  3  Long Leaves"
+      },
+      {
+        "id": "3",
+        "parent": "root",
+        "ref": "32607.dat",
+        "kind": "part",
+        "embedded": false,
+        "section": "p18_ground_cover.ldr",
+        "index": 3,
+        "line": 14,
+        "colour": "27",
+        "effective_colour": "27",
+        "local": [
+          [
+            -0.8660254038,
+            0.0,
+            0.5,
+            -10.0
+          ],
+          [
+            0.0,
+            1.0,
+            0.0,
+            -8.0
+          ],
+          [
+            -0.5,
+            0.0,
+            -0.8660254038,
+            10.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "world": [
+          [
+            -0.8660254038,
+            0.0,
+            0.5,
+            -10.0
+          ],
+          [
+            0.0,
+            1.0,
+            0.0,
+            -8.0
+          ],
+          [
+            -0.5,
+            0.0,
+            -0.8660254038,
+            10.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "description": "Plate  1 x  1 Round with  3 Leaves"
+      },
+      {
+        "id": "4",
+        "parent": "root",
+        "ref": "4728.dat",
+        "kind": "part",
+        "embedded": false,
+        "section": "p18_ground_cover.ldr",
+        "index": 4,
+        "line": 16,
+        "colour": "14",
+        "effective_colour": "14",
+        "local": [
+          [
+            -0.9396926208,
+            0.0,
+            -0.3420201433,
+            -50.0
+          ],
+          [
+            0.0,
+            1.0,
+            0.0,
+            -24.0
+          ],
+          [
+            0.3420201433,
+            0.0,
+            -0.9396926208,
+            50.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "world": [
+          [
+            -0.9396926208,
+            0.0,
+            -0.3420201433,
+            -50.0
+          ],
+          [
+            0.0,
+            1.0,
+            0.0,
+            -24.0
+          ],
+          [
+            0.3420201433,
+            0.0,
+            -0.9396926208,
+            50.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "description": "Plant Flower  2 x  2 with Hollow Stud"
+      },
+      {
+        "id": "5",
+        "parent": "root",
+        "ref": "98262.dat",
+        "kind": "part",
+        "embedded": false,
+        "section": "p18_ground_cover.ldr",
+        "index": 5,
+        "line": 18,
+        "colour": "29",
+        "effective_colour": "29",
+        "local": [
+          [
+            -0.3420201433,
+            0.0,
+            -0.9396926208,
+            50.0
+          ],
+          [
+            0.0,
+            1.0,
+            0.0,
+            -24.0
+          ],
+          [
+            0.9396926208,
+            0.0,
+            -0.3420201433,
+            30.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "world": [
+          [
+            -0.3420201433,
+            0.0,
+            -0.9396926208,
+            50.0
+          ],
+          [
+            0.0,
+            1.0,
+            0.0,
+            -24.0
+          ],
+          [
+            0.9396926208,
+            0.0,
+            -0.3420201433,
+            30.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "description": "Plant Flower  2 x  2 with Solid Stud"
+      },
+      {
+        "id": "6",
+        "parent": "root",
+        "ref": "2682a.dat",
+        "kind": "part",
+        "embedded": false,
+        "section": "p18_ground_cover.ldr",
+        "index": 6,
+        "line": 20,
+        "colour": "2",
+        "effective_colour": "2",
+        "local": [
+          [
+            0.5,
+            0.0,
+            -0.8660254038,
+            10.0
+          ],
+          [
+            0.0,
+            1.0,
+            0.0,
+            -8.0
+          ],
+          [
+            0.8660254038,
+            0.0,
+            0.5,
+            -50.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "world": [
+          [
+            0.5,
+            0.0,
+            -0.8660254038,
+            10.0
+          ],
+          [
+            0.0,
+            1.0,
+            0.0,
+            -8.0
+          ],
+          [
+            0.8660254038,
+            0.0,
+            0.5,
+            -50.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "description": "Plant Serrated Leaf"
+      }
+    ],
+    "diagnostics": [],
+    "coordinate_space": "selected section, LDU, -Y up"
+  },
+  "controls": {},
+  "signals": {},
+  "bodies": {},
+  "anchors": {},
+  "checks": [],
+  "notes": [
+    "Assign rigid groups and measured joints before setting status to ready."
+  ],
+  "mechanisms": {
+    "unresolved": {
+      "label": "No mechanism identified",
+      "parts": [
+        "0",
+        "1",
+        "2",
+        "3",
+        "4",
+        "5",
+        "6"
+      ],
+      "bodies": [],
+      "inputs": [],
+      "outputs": [],
+      "notes": [
+        "No supported mechanical evidence found. Absence of evidence does not imply a static model."
+      ]
+    }
+  },
+  "connections": {},
+  "discovery": {
+    "grouping": "Provisional connected mechanical candidates; agent may split/merge views",
+    "unclassified_parts": [
+      "0",
+      "1",
+      "2",
+      "3",
+      "4",
+      "5",
+      "6"
+    ],
+    "embedded_parts": [],
+    "contact_limit": 300,
+    "rigid_groups": "not inferred",
+    "inputs_outputs": "not inferred",
+    "mechanical_parts": [],
+    "warnings": [
+      {
+        "code": "coaxial_not_run",
+        "message": "not run: 0 shaft/gear candidates outside 2..100; select a section"
+      }
+    ],
+    "surface_contacts": "Not detected: cams, levers bearing on beams, friction and stops need geometric/visual review even when connector contacts are absent",
+    "unsupported_gears": [],
+    "gear_placements": {
+      "policy": "Nearest orthogonal analysis frame within rounding_limit; source translations and handedness preserved",
+      "rounding_limit": 0.002,
+      "counts": {},
+      "affected": []
+    },
+    "contacts": {
+      "complete": true,
+      "tested_parts": 7,
+      "diagnostics": [],
+      "summary": {
+        "tested_parts": 7,
+        "contacts": 5,
+        "contacted_parts": 6,
+        "by_kind": {
+          "stud/stud_receptacle": 5
+        },
+        "axles": {
+          "selection": "Catalog descriptions beginning Technic Axle followed by a numeric length; excludes axle pins, joiners and axle-hole supports",
+          "total": 0,
+          "with_axle_hole_contact": 0,
+          "without_axle_hole_contact": []
+        }
+      },
+      "placements": {
+        "policy": "Nearest orthogonal analysis frame within rounding_limit; source translations and handedness preserved",
+        "rounding_limit": 0.002,
+        "counts": {
+          "unchanged": 7
+        },
+        "affected": []
+      }
+    },
+    "coaxial_selection": "Catalog axle, gear, worm and engine crankshaft parts; positive line evidence within 80 LDU axial separation",
+    "coaxial": "not run: 0 shaft/gear candidates outside 2..100; select a section",
+    "isolated_mechanical_parts": []
+  }
+}

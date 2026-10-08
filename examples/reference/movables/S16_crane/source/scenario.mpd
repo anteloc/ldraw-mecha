@@ -1,0 +1,38 @@
+0 FILE s16_crane.ldr
+0 Movable element scenario S16_crane Mini crane
+0 Name: s16_crane.ldr
+0 Author: ldraw-mecha scripts/build_movables.py
+0 // Generated mock scenario: parts picked by constant name from data/categories/parts (a few context parts by LDraw reference); moving parts placed from LDCad shadow connector frames (data/offLibShadow) via pyldraw3 or from official annotated models where no connector pair exists. Frame: LDU, -Y up, the scenario front faces -Z, ground (base top) at y = 0.
+
+0 // base: plates.Plate6X6
+1 8 0 0 0 1 0 0 0 1 0 0 0 1 3958.dat
+0 // pedestal00: bricks.Brick2X4
+1 14 0 -24 -20 1 0 0 0 1 0 0 0 1 3001.dat
+0 // pedestal01: bricks.Brick2X4
+1 14 0 -24 20 1 0 0 0 1 0 0 0 1 3001.dat
+0 // pedestal10: bricks.Brick2X4
+1 14 0 -48 -20 1 0 0 0 1 0 0 0 1 3001.dat
+0 // pedestal11: bricks.Brick2X4
+1 14 0 -48 20 1 0 0 0 1 0 0 0 1 3001.dat
+0 // turntable_base: turntables.Turntable4X4Base
+1 8 0 -72 0 1 0 0 0 1 0 0 0 1 3403.dat
+0 // turntable_top: turntables.Turntable4X4Top
+1 8 0 -72 0 1 0 0 0 1 0 0 0 1 3404.dat
+0 // cab: bricks.Brick1X4
+1 14 0 -96 30 1 0 0 0 1 0 0 0 1 3010.dat
+0 // cab_window: bricks.Brick1X4
+1 0 0 -120 30 1 0 0 0 1 0 0 0 1 3010.dat
+0 // cab_roof: plates.Plate1X4
+1 14 0 -128 30 1 0 0 0 1 0 0 0 1 3710.dat
+0 // hinge_base: hinges.Hinge1X2Base
+1 8 0 -96 -10 1 0 0 0 1 0 0 0 1 3937.dat
+0 // hinge_top: hinges.Hinge2X2Top
+1 8 0 -96 -10 -1 0 0 0 1 0 0 0 -1 6134.dat
+0 // boom_riser: plates.Plate1X2
+1 8 0 -104 -30 1 0 0 0 1 0 0 0 1 3023b.dat
+0 // boom: plates.Plate2X10
+1 14 0 -112 -120 0 0 1 0 1 0 -1 0 0 3832.dat
+0 // boom_tip: technic.TechnicBrick1X2WithHole
+1 8 10 -104 -200 0 0 1 0 1 0 -1 0 0 3700.dat
+0 // hook: cranes.CraneHookWith4Studs
+1 8 10 -94 -200 1 0 0 0 1 0 0 0 1 3136.dat

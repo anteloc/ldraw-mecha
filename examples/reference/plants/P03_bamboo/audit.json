@@ -1,0 +1,266 @@
+{
+  "summary": {
+    "planned": 12,
+    "static": 1
+  },
+  "review_complete": true,
+  "unresolved": [],
+  "deferred": [],
+  "unaccounted_mechanical_parts": [],
+  "mechanisms": [
+    {
+      "id": "cane_1",
+      "label": "Bamboo clump: cane 1",
+      "disposition": "planned",
+      "review": "Joint declared in this plan (scripts/build_plants.py); driven by wind clips.",
+      "parts": 12,
+      "controlled_parts": [
+        "10",
+        "11",
+        "12",
+        "13",
+        "14",
+        "15",
+        "16",
+        "17",
+        "19",
+        "21",
+        "9"
+      ],
+      "parts_without_control": [
+        "2"
+      ],
+      "controls": [
+        "cane_1"
+      ]
+    },
+    {
+      "id": "cane_2",
+      "label": "Bamboo clump: cane 2",
+      "disposition": "planned",
+      "review": "Joint declared in this plan (scripts/build_plants.py); driven by wind clips.",
+      "parts": 11,
+      "controlled_parts": [
+        "22",
+        "23",
+        "24",
+        "25",
+        "26",
+        "27",
+        "28",
+        "29",
+        "31",
+        "33"
+      ],
+      "parts_without_control": [
+        "4"
+      ],
+      "controls": [
+        "cane_2"
+      ]
+    },
+    {
+      "id": "cane_3",
+      "label": "Bamboo clump: cane 3",
+      "disposition": "planned",
+      "review": "Joint declared in this plan (scripts/build_plants.py); driven by wind clips.",
+      "parts": 8,
+      "controlled_parts": [
+        "34",
+        "35",
+        "36",
+        "37",
+        "38",
+        "39",
+        "40"
+      ],
+      "parts_without_control": [
+        "6"
+      ],
+      "controls": [
+        "cane_3"
+      ]
+    },
+    {
+      "id": "cane_4",
+      "label": "Bamboo clump: cane 4",
+      "disposition": "planned",
+      "review": "Joint declared in this plan (scripts/build_plants.py); driven by wind clips.",
+      "parts": 7,
+      "controlled_parts": [
+        "43",
+        "44",
+        "45",
+        "46",
+        "47",
+        "48"
+      ],
+      "parts_without_control": [
+        "8"
+      ],
+      "controls": [
+        "cane_4"
+      ]
+    },
+    {
+      "id": "context",
+      "label": "Bamboo clump: base and mounts (static)",
+      "disposition": "static",
+      "review": "Base, trunk and mounts built for the catalog; they do not move in this case.",
+      "parts": 9,
+      "controlled_parts": [],
+      "parts_without_control": [
+        "0",
+        "1",
+        "2",
+        "3",
+        "4",
+        "5",
+        "6",
+        "7",
+        "8"
+      ],
+      "controls": []
+    },
+    {
+      "id": "rustle_1a",
+      "label": "Bamboo clump: rustle 1a",
+      "disposition": "planned",
+      "review": "Joint declared in this plan (scripts/build_plants.py); driven by wind clips.",
+      "parts": 2,
+      "controlled_parts": [
+        "15",
+        "18"
+      ],
+      "parts_without_control": [],
+      "controls": [
+        "cane_1",
+        "rustle_1a"
+      ]
+    },
+    {
+      "id": "rustle_1b",
+      "label": "Bamboo clump: rustle 1b",
+      "disposition": "planned",
+      "review": "Joint declared in this plan (scripts/build_plants.py); driven by wind clips.",
+      "parts": 2,
+      "controlled_parts": [
+        "15",
+        "20"
+      ],
+      "parts_without_control": [],
+      "controls": [
+        "cane_1",
+        "rustle_1b"
+      ]
+    },
+    {
+      "id": "rustle_2a",
+      "label": "Bamboo clump: rustle 2a",
+      "disposition": "planned",
+      "review": "Joint declared in this plan (scripts/build_plants.py); driven by wind clips.",
+      "parts": 2,
+      "controlled_parts": [
+        "27",
+        "30"
+      ],
+      "parts_without_control": [],
+      "controls": [
+        "cane_2",
+        "rustle_2a"
+      ]
+    },
+    {
+      "id": "rustle_2b",
+      "label": "Bamboo clump: rustle 2b",
+      "disposition": "planned",
+      "review": "Joint declared in this plan (scripts/build_plants.py); driven by wind clips.",
+      "parts": 2,
+      "controlled_parts": [
+        "27",
+        "32"
+      ],
+      "parts_without_control": [],
+      "controls": [
+        "cane_2",
+        "rustle_2b"
+      ]
+    },
+    {
+      "id": "rustle_3a",
+      "label": "Bamboo clump: rustle 3a",
+      "disposition": "planned",
+      "review": "Joint declared in this plan (scripts/build_plants.py); driven by wind clips.",
+      "parts": 2,
+      "controlled_parts": [
+        "39",
+        "41"
+      ],
+      "parts_without_control": [],
+      "controls": [
+        "cane_3",
+        "rustle_3a"
+      ]
+    },
+    {
+      "id": "rustle_3b",
+      "label": "Bamboo clump: rustle 3b",
+      "disposition": "planned",
+      "review": "Joint declared in this plan (scripts/build_plants.py); driven by wind clips.",
+      "parts": 2,
+      "controlled_parts": [
+        "39",
+        "42"
+      ],
+      "parts_without_control": [],
+      "controls": [
+        "cane_3",
+        "rustle_3b"
+      ]
+    },
+    {
+      "id": "rustle_4a",
+      "label": "Bamboo clump: rustle 4a",
+      "disposition": "planned",
+      "review": "Joint declared in this plan (scripts/build_plants.py); driven by wind clips.",
+      "parts": 2,
+      "controlled_parts": [
+        "47",
+        "49"
+      ],
+      "parts_without_control": [],
+      "controls": [
+        "cane_4",
+        "rustle_4a"
+      ]
+    },
+    {
+      "id": "rustle_4b",
+      "label": "Bamboo clump: rustle 4b",
+      "disposition": "planned",
+      "review": "Joint declared in this plan (scripts/build_plants.py); driven by wind clips.",
+      "parts": 2,
+      "controlled_parts": [
+        "47",
+        "50"
+      ],
+      "parts_without_control": [],
+      "controls": [
+        "cane_4",
+        "rustle_4b"
+      ]
+    }
+  ],
+  "warnings": [
+    {
+      "code": "placement_normalized",
+      "message": "Rounded near-rigid placements normalized for analysis only; inspect placement diagnostics."
+    },
+    {
+      "code": "coaxial_not_run",
+      "message": "not run: 0 shaft/gear candidates outside 2..100; select a section"
+    }
+  ],
+  "coverage": "Bookkeeping of declared scope only. Supports may correctly lack controls. Planned, static and deferred dispositions require review notes; none certify discovery completeness, physical motion or clearance.",
+  "passed": true
+}

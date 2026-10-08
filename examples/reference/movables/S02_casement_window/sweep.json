@@ -1,0 +1,210 @@
+{
+  "passed": true,
+  "samples": [
+    {
+      "control": "pane_l",
+      "value": 0.0,
+      "passed": true,
+      "max_error": 0
+    },
+    {
+      "control": "pane_l",
+      "value": 0.0875,
+      "passed": true,
+      "max_error": 0
+    },
+    {
+      "control": "pane_l",
+      "value": 0.175,
+      "passed": true,
+      "max_error": 0
+    },
+    {
+      "control": "pane_l",
+      "value": 0.26249999999999996,
+      "passed": true,
+      "max_error": 0
+    },
+    {
+      "control": "pane_l",
+      "value": 0.35,
+      "passed": true,
+      "max_error": 0
+    },
+    {
+      "control": "pane_l",
+      "value": 0.4375,
+      "passed": true,
+      "max_error": 0
+    },
+    {
+      "control": "pane_l",
+      "value": 0.5249999999999999,
+      "passed": true,
+      "max_error": 0
+    },
+    {
+      "control": "pane_l",
+      "value": 0.6124999999999999,
+      "passed": true,
+      "max_error": 0
+    },
+    {
+      "control": "pane_l",
+      "value": 0.7,
+      "passed": true,
+      "max_error": 0
+    },
+    {
+      "control": "pane_l",
+      "value": 0.7875,
+      "passed": true,
+      "max_error": 0
+    },
+    {
+      "control": "pane_l",
+      "value": 0.875,
+      "passed": true,
+      "max_error": 0
+    },
+    {
+      "control": "pane_l",
+      "value": 0.9624999999999999,
+      "passed": true,
+      "max_error": 0
+    },
+    {
+      "control": "pane_l",
+      "value": 1.0499999999999998,
+      "passed": true,
+      "max_error": 0
+    },
+    {
+      "control": "pane_l",
+      "value": 1.1375,
+      "passed": true,
+      "max_error": 0
+    },
+    {
+      "control": "pane_l",
+      "value": 1.2249999999999999,
+      "passed": true,
+      "max_error": 0
+    },
+    {
+      "control": "pane_l",
+      "value": 1.3125,
+      "passed": true,
+      "max_error": 0
+    },
+    {
+      "control": "pane_l",
+      "value": 1.4,
+      "passed": true,
+      "max_error": 0
+    },
+    {
+      "control": "pane_r",
+      "value": 0.0,
+      "passed": true,
+      "max_error": 0
+    },
+    {
+      "control": "pane_r",
+      "value": 0.0875,
+      "passed": true,
+      "max_error": 0
+    },
+    {
+      "control": "pane_r",
+      "value": 0.175,
+      "passed": true,
+      "max_error": 0
+    },
+    {
+      "control": "pane_r",
+      "value": 0.26249999999999996,
+      "passed": true,
+      "max_error": 0
+    },
+    {
+      "control": "pane_r",
+      "value": 0.35,
+      "passed": true,
+      "max_error": 0
+    },
+    {
+      "control": "pane_r",
+      "value": 0.4375,
+      "passed": true,
+      "max_error": 0
+    },
+    {
+      "control": "pane_r",
+      "value": 0.5249999999999999,
+      "passed": true,
+      "max_error": 0
+    },
+    {
+      "control": "pane_r",
+      "value": 0.6124999999999999,
+      "passed": true,
+      "max_error": 0
+    },
+    {
+      "control": "pane_r",
+      "value": 0.7,
+      "passed": true,
+      "max_error": 0
+    },
+    {
+      "control": "pane_r",
+      "value": 0.7875,
+      "passed": true,
+      "max_error": 0
+    },
+    {
+      "control": "pane_r",
+      "value": 0.875,
+      "passed": true,
+      "max_error": 0
+    },
+    {
+      "control": "pane_r",
+      "value": 0.9624999999999999,
+      "passed": true,
+      "max_error": 0
+    },
+    {
+      "control": "pane_r",
+      "value": 1.0499999999999998,
+      "passed": true,
+      "max_error": 0
+    },
+    {
+      "control": "pane_r",
+      "value": 1.1375,
+      "passed": true,
+      "max_error": 0
+    },
+    {
+      "control": "pane_r",
+      "value": 1.2249999999999999,
+      "passed": true,
+      "max_error": 0
+    },
+    {
+      "control": "pane_r",
+      "value": 1.3125,
+      "passed": true,
+      "max_error": 0
+    },
+    {
+      "control": "pane_r",
+      "value": 1.4,
+      "passed": true,
+      "max_error": 0
+    }
+  ],
+  "coverage": "Each control swept independently; analytic closure only, not mesh collisions or dynamics"
+}

@@ -1,0 +1,1208 @@
+{
+  "date": "2026-10-07",
+  "figures": {
+    "MF01_police": {
+      "parts": 11,
+      "bodies": 7,
+      "builder_motion_matches": true,
+      "source_hash_matches": true,
+      "semantics": {
+        "neck": {
+          "test_point": [
+            0.0,
+            -12.0,
+            -13.0
+          ],
+          "displacement_at_0_3": [
+            3.841763,
+            0.0,
+            0.580626
+          ],
+          "flipped": false
+        },
+        "shoulder_l": {
+          "test_point": [
+            23.690824,
+            26.758413,
+            -9.8839
+          ],
+          "displacement_at_0_3": [
+            -0.640212,
+            -3.709472,
+            -5.139124
+          ],
+          "flipped": false
+        },
+        "wrist_l": {
+          "test_point": [
+            23.055578,
+            23.077721,
+            -34.695465
+          ],
+          "displacement_at_0_3": [
+            5.986752,
+            -0.386326,
+            0.637497
+          ],
+          "flipped": false
+        },
+        "shoulder_r": {
+          "test_point": [
+            -23.690824,
+            26.758413,
+            -9.8839
+          ],
+          "displacement_at_0_3": [
+            0.640212,
+            -3.709472,
+            -5.139124
+          ],
+          "flipped": true
+        },
+        "wrist_r": {
+          "test_point": [
+            -23.055578,
+            23.077721,
+            -34.695465
+          ],
+          "displacement_at_0_3": [
+            -5.986752,
+            -0.386326,
+            0.637497
+          ],
+          "flipped": true
+        },
+        "hip_l": {
+          "test_point": [
+            0.0,
+            72.0,
+            0.0
+          ],
+          "displacement_at_0_3": [
+            0.0,
+            -1.250578,
+            -8.274566
+          ],
+          "flipped": true
+        },
+        "hip_r": {
+          "test_point": [
+            0.0,
+            72.0,
+            0.0
+          ],
+          "displacement_at_0_3": [
+            0.0,
+            -1.250578,
+            -8.274566
+          ],
+          "flipped": false
+        }
+      },
+      "asymmetric_values": {
+        "neck": 0.8,
+        "shoulder_l": 1.2,
+        "shoulder_r": -0.7,
+        "wrist_l": -0.4,
+        "wrist_r": 0.9,
+        "hip_l": 0.5,
+        "hip_r": -0.3
+      },
+      "lifecycle_report_passed": true,
+      "own_clip_crossings": {},
+      "hashes": {
+        "source/minifig.mpd": "594b88ff27c79771803118d125dcd6c49fb7685f38ca66757067876a3cbff49c",
+        "source/parts.json": "865c82d5763a1d8ca1e1806e142f2e9159d0df6974e7a0e2492663ac46453966",
+        "plan.json": "b2e7a3092b3cdab596e7966fb1a937b84343356dc2beea9e1c77f3308a31b354",
+        "lifecycle.json": "4f6b051e988225abf8fde7b82abd7b291bcccbab419e93a4bb5c7e803809da88",
+        "clearance.json": "90b147964ab439759c3b6bd7925c07388af6070cdd47fa456817b0d520201be3"
+      }
+    },
+    "MF02_spaceman": {
+      "parts": 11,
+      "bodies": 7,
+      "builder_motion_matches": true,
+      "source_hash_matches": true,
+      "semantics": {
+        "neck": {
+          "test_point": [
+            0.0,
+            -12.0,
+            -13.0
+          ],
+          "displacement_at_0_3": [
+            3.841763,
+            0.0,
+            0.580626
+          ],
+          "flipped": false
+        },
+        "shoulder_l": {
+          "test_point": [
+            23.690824,
+            26.758413,
+            -9.8839
+          ],
+          "displacement_at_0_3": [
+            -0.640212,
+            -3.709472,
+            -5.139124
+          ],
+          "flipped": false
+        },
+        "wrist_l": {
+          "test_point": [
+            23.055578,
+            23.077721,
+            -34.695465
+          ],
+          "displacement_at_0_3": [
+            5.986752,
+            -0.386326,
+            0.637497
+          ],
+          "flipped": false
+        },
+        "shoulder_r": {
+          "test_point": [
+            -23.690824,
+            26.758413,
+            -9.8839
+          ],
+          "displacement_at_0_3": [
+            0.640212,
+            -3.709472,
+            -5.139124
+          ],
+          "flipped": true
+        },
+        "wrist_r": {
+          "test_point": [
+            -23.055578,
+            23.077721,
+            -34.695465
+          ],
+          "displacement_at_0_3": [
+            -5.986752,
+            -0.386326,
+            0.637497
+          ],
+          "flipped": true
+        },
+        "hip_l": {
+          "test_point": [
+            0.0,
+            72.0,
+            0.0
+          ],
+          "displacement_at_0_3": [
+            0.0,
+            -1.250578,
+            -8.274566
+          ],
+          "flipped": true
+        },
+        "hip_r": {
+          "test_point": [
+            0.0,
+            72.0,
+            0.0
+          ],
+          "displacement_at_0_3": [
+            0.0,
+            -1.250578,
+            -8.274566
+          ],
+          "flipped": false
+        }
+      },
+      "asymmetric_values": {
+        "neck": 0.8,
+        "shoulder_l": 1.2,
+        "shoulder_r": -0.7,
+        "wrist_l": -0.4,
+        "wrist_r": 0.9,
+        "hip_l": 0.5,
+        "hip_r": -0.3
+      },
+      "lifecycle_report_passed": true,
+      "own_clip_crossings": {
+        "MF02_spaceman.wave": [
+          "head-arm_r",
+          "head-hand_r",
+          "headgear0-arm_r",
+          "headgear0-hand_r"
+        ]
+      },
+      "hashes": {
+        "source/minifig.mpd": "59521eddf23584dbc49e224a081d00b4c4a4f4e1720d0aa59160aa5b2e529391",
+        "source/parts.json": "7c2d7d31fe50bd65b8f3773f042d5628ffcf6454f35f0eb422c5ba37e3cabb08",
+        "plan.json": "dc08e3e3e4c10f2669b3b183a97f795e26d6025c5ac997486b8df40998294939",
+        "lifecycle.json": "88ecc1174f15e61d65589db1b3be0138441a5532848e15863c16f5ef39c3cba7",
+        "clearance.json": "596bc948cd22bcbbb3d62ebaaa2cbd6c572ef8949f7d5518e89cfd89022257ac"
+      }
+    },
+    "MF03_knight": {
+      "parts": 12,
+      "bodies": 7,
+      "builder_motion_matches": true,
+      "source_hash_matches": true,
+      "semantics": {
+        "neck": {
+          "test_point": [
+            0.0,
+            -12.0,
+            -13.0
+          ],
+          "displacement_at_0_3": [
+            3.841763,
+            0.0,
+            0.580626
+          ],
+          "flipped": false
+        },
+        "shoulder_l": {
+          "test_point": [
+            23.690824,
+            26.758413,
+            -9.8839
+          ],
+          "displacement_at_0_3": [
+            -0.640212,
+            -3.709472,
+            -5.139124
+          ],
+          "flipped": false
+        },
+        "wrist_l": {
+          "test_point": [
+            23.055578,
+            23.077721,
+            -34.695465
+          ],
+          "displacement_at_0_3": [
+            5.986752,
+            -0.386326,
+            0.637497
+          ],
+          "flipped": false
+        },
+        "shoulder_r": {
+          "test_point": [
+            -23.690824,
+            26.758413,
+            -9.8839
+          ],
+          "displacement_at_0_3": [
+            0.640212,
+            -3.709472,
+            -5.139124
+          ],
+          "flipped": true
+        },
+        "wrist_r": {
+          "test_point": [
+            -23.055578,
+            23.077721,
+            -34.695465
+          ],
+          "displacement_at_0_3": [
+            -5.986752,
+            -0.386326,
+            0.637497
+          ],
+          "flipped": true
+        },
+        "hip_l": {
+          "test_point": [
+            0.0,
+            72.0,
+            0.0
+          ],
+          "displacement_at_0_3": [
+            0.0,
+            -1.250578,
+            -8.274566
+          ],
+          "flipped": true
+        },
+        "hip_r": {
+          "test_point": [
+            0.0,
+            72.0,
+            0.0
+          ],
+          "displacement_at_0_3": [
+            0.0,
+            -1.250578,
+            -8.274566
+          ],
+          "flipped": false
+        }
+      },
+      "asymmetric_values": {
+        "neck": 0.8,
+        "shoulder_l": 1.2,
+        "shoulder_r": -0.7,
+        "wrist_l": -0.4,
+        "wrist_r": 0.9,
+        "hip_l": 0.5,
+        "hip_r": -0.3
+      },
+      "lifecycle_report_passed": true,
+      "own_clip_crossings": {},
+      "hashes": {
+        "source/minifig.mpd": "865426aefb82466d01ca0bba7f33f39b6ae43a65e9a8e3a670f4914b8d174fe4",
+        "source/parts.json": "adeda57ee3db08fc5a93cb2612dd7b6743a7606187f8c062e4d5c8a1f1c4eb9d",
+        "plan.json": "c7815de042b43cd4ece62b8d38d1ac1bff2a8c8b113beaa746e1ee9ede556f20",
+        "lifecycle.json": "313bc95ecf8afb99396194d186d6847c3570b020463fe5969a9bebbfe65c7d21",
+        "clearance.json": "22f98e49196bb1079b3212db37abd50f2fad3197da24828f99d0352ed4487770"
+      }
+    },
+    "MF04_builder": {
+      "parts": 11,
+      "bodies": 7,
+      "builder_motion_matches": true,
+      "source_hash_matches": true,
+      "semantics": {
+        "neck": {
+          "test_point": [
+            0.0,
+            -12.0,
+            -13.0
+          ],
+          "displacement_at_0_3": [
+            3.841763,
+            0.0,
+            0.580626
+          ],
+          "flipped": false
+        },
+        "shoulder_l": {
+          "test_point": [
+            23.690824,
+            26.758413,
+            -9.8839
+          ],
+          "displacement_at_0_3": [
+            -0.640212,
+            -3.709472,
+            -5.139124
+          ],
+          "flipped": false
+        },
+        "wrist_l": {
+          "test_point": [
+            23.055578,
+            23.077721,
+            -34.695465
+          ],
+          "displacement_at_0_3": [
+            5.986752,
+            -0.386326,
+            0.637497
+          ],
+          "flipped": false
+        },
+        "shoulder_r": {
+          "test_point": [
+            -23.690824,
+            26.758413,
+            -9.8839
+          ],
+          "displacement_at_0_3": [
+            0.640212,
+            -3.709472,
+            -5.139124
+          ],
+          "flipped": true
+        },
+        "wrist_r": {
+          "test_point": [
+            -23.055578,
+            23.077721,
+            -34.695465
+          ],
+          "displacement_at_0_3": [
+            -5.986752,
+            -0.386326,
+            0.637497
+          ],
+          "flipped": true
+        },
+        "hip_l": {
+          "test_point": [
+            0.0,
+            72.0,
+            0.0
+          ],
+          "displacement_at_0_3": [
+            0.0,
+            -1.250578,
+            -8.274566
+          ],
+          "flipped": true
+        },
+        "hip_r": {
+          "test_point": [
+            0.0,
+            72.0,
+            0.0
+          ],
+          "displacement_at_0_3": [
+            0.0,
+            -1.250578,
+            -8.274566
+          ],
+          "flipped": false
+        }
+      },
+      "asymmetric_values": {
+        "neck": 0.8,
+        "shoulder_l": 1.2,
+        "shoulder_r": -0.7,
+        "wrist_l": -0.4,
+        "wrist_r": 0.9,
+        "hip_l": 0.5,
+        "hip_r": -0.3
+      },
+      "lifecycle_report_passed": true,
+      "own_clip_crossings": {},
+      "hashes": {
+        "source/minifig.mpd": "ec97e0403ba34b383bca60da6d2d97ab45c8149779d2bad8a863b8324091499c",
+        "source/parts.json": "67e21acb6f4364af813fb83f314570e4d71ab55bb11fe3a7942e1ea3cd27533e",
+        "plan.json": "14672564732fb34cf9201120312fe4911a55f77cc899d7aa19e14e75578fa8d6",
+        "lifecycle.json": "313bc95ecf8afb99396194d186d6847c3570b020463fe5969a9bebbfe65c7d21",
+        "clearance.json": "9c0de1dba59c344f76e1e8d25eae1c7054bd8b6bcf94e1733f15f99ed7cf7ba3"
+      }
+    },
+    "MF05_chef": {
+      "parts": 12,
+      "bodies": 7,
+      "builder_motion_matches": true,
+      "source_hash_matches": true,
+      "semantics": {
+        "neck": {
+          "test_point": [
+            0.0,
+            -12.0,
+            -13.0
+          ],
+          "displacement_at_0_3": [
+            3.841763,
+            0.0,
+            0.580626
+          ],
+          "flipped": false
+        },
+        "shoulder_l": {
+          "test_point": [
+            23.690824,
+            26.758413,
+            -9.8839
+          ],
+          "displacement_at_0_3": [
+            -0.640212,
+            -3.709472,
+            -5.139124
+          ],
+          "flipped": false
+        },
+        "wrist_l": {
+          "test_point": [
+            23.055578,
+            23.077721,
+            -34.695465
+          ],
+          "displacement_at_0_3": [
+            5.986752,
+            -0.386326,
+            0.637497
+          ],
+          "flipped": false
+        },
+        "shoulder_r": {
+          "test_point": [
+            -23.690824,
+            26.758413,
+            -9.8839
+          ],
+          "displacement_at_0_3": [
+            0.640212,
+            -3.709472,
+            -5.139124
+          ],
+          "flipped": true
+        },
+        "wrist_r": {
+          "test_point": [
+            -23.055578,
+            23.077721,
+            -34.695465
+          ],
+          "displacement_at_0_3": [
+            -5.986752,
+            -0.386326,
+            0.637497
+          ],
+          "flipped": true
+        },
+        "hip_l": {
+          "test_point": [
+            0.0,
+            72.0,
+            0.0
+          ],
+          "displacement_at_0_3": [
+            0.0,
+            -1.250578,
+            -8.274566
+          ],
+          "flipped": true
+        },
+        "hip_r": {
+          "test_point": [
+            0.0,
+            72.0,
+            0.0
+          ],
+          "displacement_at_0_3": [
+            0.0,
+            -1.250578,
+            -8.274566
+          ],
+          "flipped": false
+        }
+      },
+      "asymmetric_values": {
+        "neck": 0.8,
+        "shoulder_l": 1.2,
+        "shoulder_r": -0.7,
+        "wrist_l": -0.4,
+        "wrist_r": 0.9,
+        "hip_l": 0.5,
+        "hip_r": -0.3
+      },
+      "lifecycle_report_passed": true,
+      "own_clip_crossings": {},
+      "hashes": {
+        "source/minifig.mpd": "2157bfac9303a73566447aa7d995d98c9de602ccacfc6dabbd53ce2230266edb",
+        "source/parts.json": "f94e3ec9979152b31c7e579b86529d1889e41bf144759811ba9d432670b6687a",
+        "plan.json": "a28b4a994f2387d72222620dbcdfaf04aadee28b8aeea817bd1d10058fde29c6",
+        "lifecycle.json": "bb0859cd7a2cc6ea70356f25e0c882265637eccdcf103be5e94f8ddec09305ee",
+        "clearance.json": "036d49e6b4b6cdaebd79b4537bda00bbccafad7582b354de1a08de1f0b8a57b5"
+      }
+    },
+    "MF06_pirate": {
+      "parts": 11,
+      "bodies": 7,
+      "builder_motion_matches": true,
+      "source_hash_matches": true,
+      "semantics": {
+        "neck": {
+          "test_point": [
+            0.0,
+            -12.0,
+            -13.0
+          ],
+          "displacement_at_0_3": [
+            3.841763,
+            0.0,
+            0.580626
+          ],
+          "flipped": false
+        },
+        "shoulder_l": {
+          "test_point": [
+            23.690824,
+            26.758413,
+            -9.8839
+          ],
+          "displacement_at_0_3": [
+            -0.640212,
+            -3.709472,
+            -5.139124
+          ],
+          "flipped": false
+        },
+        "wrist_l": {
+          "test_point": [
+            23.055578,
+            23.077721,
+            -34.695465
+          ],
+          "displacement_at_0_3": [
+            5.986752,
+            -0.386326,
+            0.637497
+          ],
+          "flipped": false
+        },
+        "shoulder_r": {
+          "test_point": [
+            -23.690824,
+            26.758413,
+            -9.8839
+          ],
+          "displacement_at_0_3": [
+            0.640212,
+            -3.709472,
+            -5.139124
+          ],
+          "flipped": true
+        },
+        "wrist_r": {
+          "test_point": [
+            -23.055578,
+            23.077721,
+            -34.695465
+          ],
+          "displacement_at_0_3": [
+            -5.986752,
+            -0.386326,
+            0.637497
+          ],
+          "flipped": true
+        },
+        "hip_l": {
+          "test_point": [
+            0.0,
+            72.0,
+            0.0
+          ],
+          "displacement_at_0_3": [
+            0.0,
+            -1.250578,
+            -8.274566
+          ],
+          "flipped": true
+        },
+        "hip_r": {
+          "test_point": [
+            0.0,
+            72.0,
+            0.0
+          ],
+          "displacement_at_0_3": [
+            0.0,
+            -1.250578,
+            -8.274566
+          ],
+          "flipped": false
+        }
+      },
+      "asymmetric_values": {
+        "neck": 0.8,
+        "shoulder_l": 1.2,
+        "shoulder_r": -0.7,
+        "wrist_l": -0.4,
+        "wrist_r": 0.9,
+        "hip_l": 0.5,
+        "hip_r": -0.3
+      },
+      "lifecycle_report_passed": true,
+      "own_clip_crossings": {},
+      "hashes": {
+        "source/minifig.mpd": "165ae251ba7e2730401d206539e002bf811ffb34c6e4d9338981f017465d50ab",
+        "source/parts.json": "ed891400d06aac2da03bfd61cf85eac6be8e271e0838f90954af43b49a9c303e",
+        "plan.json": "c5df008422a079a4e06d979e534a7925fe6534411173bd3a9af8398dca517680",
+        "lifecycle.json": "313bc95ecf8afb99396194d186d6847c3570b020463fe5969a9bebbfe65c7d21",
+        "clearance.json": "86d4ff38ca957426b4d4c6b65b65b7cb7255349d24136287030a71cf6a5c6fb8"
+      }
+    },
+    "MF07_firefighter": {
+      "parts": 11,
+      "bodies": 7,
+      "builder_motion_matches": true,
+      "source_hash_matches": true,
+      "semantics": {
+        "neck": {
+          "test_point": [
+            0.0,
+            -12.0,
+            -13.0
+          ],
+          "displacement_at_0_3": [
+            3.841763,
+            0.0,
+            0.580626
+          ],
+          "flipped": false
+        },
+        "shoulder_l": {
+          "test_point": [
+            23.690824,
+            26.758413,
+            -9.8839
+          ],
+          "displacement_at_0_3": [
+            -0.640212,
+            -3.709472,
+            -5.139124
+          ],
+          "flipped": false
+        },
+        "wrist_l": {
+          "test_point": [
+            23.055578,
+            23.077721,
+            -34.695465
+          ],
+          "displacement_at_0_3": [
+            5.986752,
+            -0.386326,
+            0.637497
+          ],
+          "flipped": false
+        },
+        "shoulder_r": {
+          "test_point": [
+            -23.690824,
+            26.758413,
+            -9.8839
+          ],
+          "displacement_at_0_3": [
+            0.640212,
+            -3.709472,
+            -5.139124
+          ],
+          "flipped": true
+        },
+        "wrist_r": {
+          "test_point": [
+            -23.055578,
+            23.077721,
+            -34.695465
+          ],
+          "displacement_at_0_3": [
+            -5.986752,
+            -0.386326,
+            0.637497
+          ],
+          "flipped": true
+        },
+        "hip_l": {
+          "test_point": [
+            0.0,
+            72.0,
+            0.0
+          ],
+          "displacement_at_0_3": [
+            0.0,
+            -1.250578,
+            -8.274566
+          ],
+          "flipped": true
+        },
+        "hip_r": {
+          "test_point": [
+            0.0,
+            72.0,
+            0.0
+          ],
+          "displacement_at_0_3": [
+            0.0,
+            -1.250578,
+            -8.274566
+          ],
+          "flipped": false
+        }
+      },
+      "asymmetric_values": {
+        "neck": 0.8,
+        "shoulder_l": 1.2,
+        "shoulder_r": -0.7,
+        "wrist_l": -0.4,
+        "wrist_r": 0.9,
+        "hip_l": 0.5,
+        "hip_r": -0.3
+      },
+      "lifecycle_report_passed": true,
+      "own_clip_crossings": {},
+      "hashes": {
+        "source/minifig.mpd": "b55b48bc376aaded4eec2fd789ca696b50964c903d936d3b8e5a31c4ec52b15d",
+        "source/parts.json": "ce57287280f92f2e410ddca18c9deb0eb3e5360f3d3157b8f3ca8b136ace7c22",
+        "plan.json": "588e5eb19cfa67ba9794b2e0fa576424b02ab734079ab7572aa8ca50ce83129e",
+        "lifecycle.json": "bb0859cd7a2cc6ea70356f25e0c882265637eccdcf103be5e94f8ddec09305ee",
+        "clearance.json": "fb1fdc4f6c828c891bc2a736965aafc29883b4645ddc9ab8c498ea153d44d46b"
+      }
+    },
+    "MF08_athlete": {
+      "parts": 10,
+      "bodies": 7,
+      "builder_motion_matches": true,
+      "source_hash_matches": true,
+      "semantics": {
+        "neck": {
+          "test_point": [
+            0.0,
+            -12.0,
+            -13.0
+          ],
+          "displacement_at_0_3": [
+            3.841763,
+            0.0,
+            0.580626
+          ],
+          "flipped": false
+        },
+        "shoulder_l": {
+          "test_point": [
+            23.690824,
+            26.758413,
+            -9.8839
+          ],
+          "displacement_at_0_3": [
+            -0.640212,
+            -3.709472,
+            -5.139124
+          ],
+          "flipped": false
+        },
+        "wrist_l": {
+          "test_point": [
+            23.055578,
+            23.077721,
+            -34.695465
+          ],
+          "displacement_at_0_3": [
+            5.986752,
+            -0.386326,
+            0.637497
+          ],
+          "flipped": false
+        },
+        "shoulder_r": {
+          "test_point": [
+            -23.690824,
+            26.758413,
+            -9.8839
+          ],
+          "displacement_at_0_3": [
+            0.640212,
+            -3.709472,
+            -5.139124
+          ],
+          "flipped": true
+        },
+        "wrist_r": {
+          "test_point": [
+            -23.055578,
+            23.077721,
+            -34.695465
+          ],
+          "displacement_at_0_3": [
+            -5.986752,
+            -0.386326,
+            0.637497
+          ],
+          "flipped": true
+        },
+        "hip_l": {
+          "test_point": [
+            0.0,
+            72.0,
+            0.0
+          ],
+          "displacement_at_0_3": [
+            0.0,
+            -1.250578,
+            -8.274566
+          ],
+          "flipped": true
+        },
+        "hip_r": {
+          "test_point": [
+            0.0,
+            72.0,
+            0.0
+          ],
+          "displacement_at_0_3": [
+            0.0,
+            -1.250578,
+            -8.274566
+          ],
+          "flipped": false
+        }
+      },
+      "asymmetric_values": {
+        "neck": 0.8,
+        "shoulder_l": 1.2,
+        "shoulder_r": -0.7,
+        "wrist_l": -0.4,
+        "wrist_r": 0.9,
+        "hip_l": 0.5,
+        "hip_r": -0.3
+      },
+      "lifecycle_report_passed": true,
+      "own_clip_crossings": {
+        "MF08_athlete.high_jump": [
+          "head-hand_l",
+          "head-hand_r",
+          "headgear0-arm_l",
+          "headgear0-arm_r",
+          "headgear0-hand_l",
+          "headgear0-hand_r"
+        ]
+      },
+      "hashes": {
+        "source/minifig.mpd": "0e9e8699336fc769e680367cc4b76f4386cca7119e8c90f63b5dc32a2be47d0c",
+        "source/parts.json": "89cc75fc347de199dbbf01ab97263d6bf86a79ff0e55a14cb06e96f2347311c9",
+        "plan.json": "581bae9174cdd9d52790b9e8c82a7abdf9209d017a21f8e4c68e5375681a1c9b",
+        "lifecycle.json": "88ecc1174f15e61d65589db1b3be0138441a5532848e15863c16f5ef39c3cba7",
+        "clearance.json": "346134620c4c6a285fde3eac9263a14e3fe467b5d0d102b15b7f981055424c8f"
+      }
+    },
+    "MF09_wizard": {
+      "parts": 11,
+      "bodies": 7,
+      "builder_motion_matches": true,
+      "source_hash_matches": true,
+      "semantics": {
+        "neck": {
+          "test_point": [
+            0.0,
+            -12.0,
+            -13.0
+          ],
+          "displacement_at_0_3": [
+            3.841763,
+            0.0,
+            0.580626
+          ],
+          "flipped": false
+        },
+        "shoulder_l": {
+          "test_point": [
+            23.690824,
+            26.758413,
+            -9.8839
+          ],
+          "displacement_at_0_3": [
+            -0.640212,
+            -3.709472,
+            -5.139124
+          ],
+          "flipped": false
+        },
+        "wrist_l": {
+          "test_point": [
+            23.055578,
+            23.077721,
+            -34.695465
+          ],
+          "displacement_at_0_3": [
+            5.986752,
+            -0.386326,
+            0.637497
+          ],
+          "flipped": false
+        },
+        "shoulder_r": {
+          "test_point": [
+            -23.690824,
+            26.758413,
+            -9.8839
+          ],
+          "displacement_at_0_3": [
+            0.640212,
+            -3.709472,
+            -5.139124
+          ],
+          "flipped": true
+        },
+        "wrist_r": {
+          "test_point": [
+            -23.055578,
+            23.077721,
+            -34.695465
+          ],
+          "displacement_at_0_3": [
+            -5.986752,
+            -0.386326,
+            0.637497
+          ],
+          "flipped": true
+        },
+        "hip_l": {
+          "test_point": [
+            0.0,
+            72.0,
+            0.0
+          ],
+          "displacement_at_0_3": [
+            0.0,
+            -1.250578,
+            -8.274566
+          ],
+          "flipped": true
+        },
+        "hip_r": {
+          "test_point": [
+            0.0,
+            72.0,
+            0.0
+          ],
+          "displacement_at_0_3": [
+            0.0,
+            -1.250578,
+            -8.274566
+          ],
+          "flipped": false
+        }
+      },
+      "asymmetric_values": {
+        "neck": 0.8,
+        "shoulder_l": 1.2,
+        "shoulder_r": -0.7,
+        "wrist_l": -0.4,
+        "wrist_r": 0.9,
+        "hip_l": 0.5,
+        "hip_r": -0.3
+      },
+      "lifecycle_report_passed": true,
+      "own_clip_crossings": {},
+      "hashes": {
+        "source/minifig.mpd": "6cb8fcee59c7fe2dbf5d86250e7891b792f5fdca0d773b2a52ad22b0a371692f",
+        "source/parts.json": "042288031d832605c1e240b24f22514a6eb286d8d428630a7dff76c57f917aac",
+        "plan.json": "f10bdd848fd319302e5f5ab9d03c5688d61a52b406f09da04badf896ba5fda8f",
+        "lifecycle.json": "bb0859cd7a2cc6ea70356f25e0c882265637eccdcf103be5e94f8ddec09305ee",
+        "clearance.json": "2caa18e44e9230046f859e75e1660ce5640379b2fc0f281e464a99d580206add"
+      }
+    },
+    "MF10_diver": {
+      "parts": 12,
+      "bodies": 7,
+      "builder_motion_matches": true,
+      "source_hash_matches": true,
+      "semantics": {
+        "neck": {
+          "test_point": [
+            0.0,
+            -12.0,
+            -13.0
+          ],
+          "displacement_at_0_3": [
+            3.841763,
+            0.0,
+            0.580626
+          ],
+          "flipped": false
+        },
+        "shoulder_l": {
+          "test_point": [
+            23.690824,
+            26.758413,
+            -9.8839
+          ],
+          "displacement_at_0_3": [
+            -0.640212,
+            -3.709472,
+            -5.139124
+          ],
+          "flipped": false
+        },
+        "wrist_l": {
+          "test_point": [
+            23.055578,
+            23.077721,
+            -34.695465
+          ],
+          "displacement_at_0_3": [
+            5.986752,
+            -0.386326,
+            0.637497
+          ],
+          "flipped": false
+        },
+        "shoulder_r": {
+          "test_point": [
+            -23.690824,
+            26.758413,
+            -9.8839
+          ],
+          "displacement_at_0_3": [
+            0.640212,
+            -3.709472,
+            -5.139124
+          ],
+          "flipped": true
+        },
+        "wrist_r": {
+          "test_point": [
+            -23.055578,
+            23.077721,
+            -34.695465
+          ],
+          "displacement_at_0_3": [
+            -5.986752,
+            -0.386326,
+            0.637497
+          ],
+          "flipped": true
+        },
+        "hip_l": {
+          "test_point": [
+            0.0,
+            72.0,
+            0.0
+          ],
+          "displacement_at_0_3": [
+            0.0,
+            -1.250578,
+            -8.274566
+          ],
+          "flipped": true
+        },
+        "hip_r": {
+          "test_point": [
+            0.0,
+            72.0,
+            0.0
+          ],
+          "displacement_at_0_3": [
+            0.0,
+            -1.250578,
+            -8.274566
+          ],
+          "flipped": false
+        }
+      },
+      "asymmetric_values": {
+        "neck": 0.8,
+        "shoulder_l": 1.2,
+        "shoulder_r": -0.7,
+        "wrist_l": -0.4,
+        "wrist_r": 0.9,
+        "hip_l": 0.5,
+        "hip_r": -0.3
+      },
+      "lifecycle_report_passed": true,
+      "own_clip_crossings": {
+        "MF10_diver.swim_crawl": [
+          "head-arm_l",
+          "head-arm_r",
+          "head-hand_l",
+          "head-hand_r"
+        ]
+      },
+      "hashes": {
+        "source/minifig.mpd": "230c262a620c4373da0d662e45adbdc51035ab2b100778159c93b0fde4310d31",
+        "source/parts.json": "94ea7a0789aab34b7472efcf4e5aaba1230014d3ee56ab43968c5262d817803b",
+        "plan.json": "f7b72e4aa438fffc376005fd05e1e5e78319589e9ec09b042683799bcd4fde89",
+        "lifecycle.json": "544b2a18e2011f925c51f605f0702829d856db2f7d06fbdae600195a29c0bcb8",
+        "clearance.json": "aa2f060bbdcffe21dc52ecde2fa62eea62f9a7422e5d10beae37acec76515fdb"
+      }
+    }
+  },
+  "clips": 30,
+  "clip_rules_passed": true,
+  "exported_baked_clips_match": true,
+  "hashes": {
+    "output/minifigs/minifigs.blend": "b35d2ed6696966caac7eb616f93d80457becd6c313cd13e336ae2f9935c0f5c9",
+    "scripts/build_minifigs.py": "de4414aa6a39af62f0df1b08d63b177cfa4ce250ebd2fd78a515ba1203b72eab",
+    "scripts/minifig_clips.py": "2dd4359e8c4277249f55028c9013c2b5a9ea6f24119fcb1ab5da47aab1178607",
+    "scripts/blender/animate_minifigs.py": "e904bfa840e16cc185e87d00b5e0caafd4d08fc6ed34fa0a88c37f06f68c49b3"
+  },
+  "coverage": "Source hashes, builder motion, portable evaluation, semantic signs and clip data. Existing clearance/lifecycle results read, not rerun. No physical proof."
+}

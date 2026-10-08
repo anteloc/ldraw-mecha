@@ -1,0 +1,38 @@
+0 FILE s13_forklift.ldr
+0 Movable element scenario S13_forklift Forklift mast
+0 Name: s13_forklift.ldr
+0 Author: ldraw-mecha scripts/build_movables.py
+0 // Generated mock scenario: parts picked by constant name from data/categories/parts (a few context parts by LDraw reference); moving parts placed from LDCad shadow connector frames (data/offLibShadow) via pyldraw3 or from official annotated models where no connector pair exists. Frame: LDU, -Y up, the scenario front faces -Z, ground (base top) at y = 0.
+
+0 // chassis: plates.Plate4X6
+1 14 0 0 40 0 0 1 0 1 0 -1 0 0 3032.dat
+0 // axle0: library 4600
+1 0 0 8 10 1 0 0 0 1 0 0 0 1 4600.dat
+0 // rim0l: wheels.WheelRim6_4X8
+1 7 -30 13 10 0 0 1 0 1 0 -1 0 0 4624.dat
+0 // tyre0l: tyres.Tyre8_75X8OffsetTread
+1 0 -30 13 10 0 0 1 0 1 0 -1 0 0 4084.dat
+0 // rim0r: wheels.WheelRim6_4X8
+1 7 30 13 10 0 0 -1 0 1 0 1 0 0 4624.dat
+0 // tyre0r: tyres.Tyre8_75X8OffsetTread
+1 0 30 13 10 0 0 -1 0 1 0 1 0 0 4084.dat
+0 // axle1: library 4600
+1 0 0 8 70 1 0 0 0 1 0 0 0 1 4600.dat
+0 // rim1l: wheels.WheelRim6_4X8
+1 7 -30 13 70 0 0 1 0 1 0 -1 0 0 4624.dat
+0 // tyre1l: tyres.Tyre8_75X8OffsetTread
+1 0 -30 13 70 0 0 1 0 1 0 -1 0 0 4084.dat
+0 // rim1r: wheels.WheelRim6_4X8
+1 7 30 13 70 0 0 -1 0 1 0 1 0 0 4624.dat
+0 // tyre1r: tyres.Tyre8_75X8OffsetTread
+1 0 30 13 70 0 0 -1 0 1 0 1 0 0 4084.dat
+0 // body: bricks.Brick2X4
+1 14 0 -24 50 0 0 1 0 1 0 -1 0 0 3001.dat
+0 // seat: bricks.Brick2X2
+1 0 0 -48 60 1 0 0 0 1 0 0 0 1 3003.dat
+0 // rails: vehicles.ForkliftRails2X4X5_667
+1 0 0 -40 0 1 0 0 0 1 0 0 0 1 3430.dat
+0 // forks: vehicles.ForkliftForks2X4
+1 7 0 -44 -56 1 0 0 0 1 0 0 0 1 3431.dat
+0 // spring: vehicles.Forklift2X7Spring_Extended_
+1 0 0 -128.8 -51.05 1 0 0 0 1 0 0 0 1 u9529-f2.dat

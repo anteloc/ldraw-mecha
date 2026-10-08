@@ -1,0 +1,5800 @@
+{
+  "kind": "movables",
+  "cases": {
+    "S01_house_door": {
+      "parts": 23,
+      "bodies": 1,
+      "builder_motion_matches": true,
+      "source_matches": true,
+      "asymmetric_values": {
+        "door": 1.1025
+      },
+      "semantics": {
+        "door": {
+          "control": "door",
+          "value": 0.2,
+          "test_point": [
+            28.0,
+            -74.0,
+            5.0
+          ],
+          "displacement": [
+            -1.196005,
+            0.0,
+            -11.92016
+          ],
+          "expected": "-z",
+          "flipped": true
+        }
+      },
+      "controls": {
+        "door": {
+          "default": 0,
+          "min": 0.0,
+          "max": 1.75,
+          "unit": "radian",
+          "description": "Door leaf about its frame hinge; + swings the door open toward the front (-Z)"
+        }
+      },
+      "body_frames": {
+        "door": {
+          "instances": [
+            "2"
+          ],
+          "kind": "revolute",
+          "origin": [
+            -32.0,
+            -74.0,
+            5.0
+          ],
+          "axis": [
+            -0.0,
+            1.0,
+            -0.0
+          ],
+          "signal": "door_angle"
+        }
+      },
+      "signals": {
+        "door_angle": {
+          "expression": "a",
+          "variables": {
+            "a": "control:door"
+          }
+        }
+      },
+      "roles": [
+        {
+          "role": "base",
+          "id": "0",
+          "table": "plates.Plate6X12",
+          "ref": "3028",
+          "colour": 2,
+          "title": "Plate  6 x 12",
+          "library_only": false
+        },
+        {
+          "role": "frame",
+          "id": "1",
+          "table": "doors.Door1X4X6Frame",
+          "ref": "60596",
+          "colour": 15,
+          "title": "Door  1 x  4 x  6 Frame",
+          "library_only": false
+        },
+        {
+          "role": "door",
+          "id": "2",
+          "table": "doors.Door1X4X6SmoothWithChamferedHandlePlinth",
+          "ref": "60616b",
+          "colour": 70,
+          "title": "Door  1 x  4 x  6 Smooth with Chamfered Handle Plinth",
+          "library_only": false
+        },
+        {
+          "role": "wall_l0",
+          "id": "3",
+          "table": "bricks.Brick1X4",
+          "ref": "3010",
+          "colour": 19,
+          "title": "Brick  1 x  4",
+          "library_only": false
+        },
+        {
+          "role": "wall_l1a",
+          "id": "4",
+          "table": "bricks.Brick1X2",
+          "ref": "3004",
+          "colour": 19,
+          "title": "Brick  1 x  2",
+          "library_only": false
+        },
+        {
+          "role": "wall_l1b",
+          "id": "5",
+          "table": "bricks.Brick1X2",
+          "ref": "3004",
+          "colour": 19,
+          "title": "Brick  1 x  2",
+          "library_only": false
+        },
+        {
+          "role": "wall_l2",
+          "id": "6",
+          "table": "bricks.Brick1X4",
+          "ref": "3010",
+          "colour": 19,
+          "title": "Brick  1 x  4",
+          "library_only": false
+        },
+        {
+          "role": "wall_l3a",
+          "id": "7",
+          "table": "bricks.Brick1X2",
+          "ref": "3004",
+          "colour": 19,
+          "title": "Brick  1 x  2",
+          "library_only": false
+        },
+        {
+          "role": "wall_l3b",
+          "id": "8",
+          "table": "bricks.Brick1X2",
+          "ref": "3004",
+          "colour": 19,
+          "title": "Brick  1 x  2",
+          "library_only": false
+        },
+        {
+          "role": "wall_l4",
+          "id": "9",
+          "table": "bricks.Brick1X4",
+          "ref": "3010",
+          "colour": 19,
+          "title": "Brick  1 x  4",
+          "library_only": false
+        },
+        {
+          "role": "wall_l5a",
+          "id": "10",
+          "table": "bricks.Brick1X2",
+          "ref": "3004",
+          "colour": 19,
+          "title": "Brick  1 x  2",
+          "library_only": false
+        },
+        {
+          "role": "wall_l5b",
+          "id": "11",
+          "table": "bricks.Brick1X2",
+          "ref": "3004",
+          "colour": 19,
+          "title": "Brick  1 x  2",
+          "library_only": false
+        },
+        {
+          "role": "wall_r0",
+          "id": "12",
+          "table": "bricks.Brick1X4",
+          "ref": "3010",
+          "colour": 19,
+          "title": "Brick  1 x  4",
+          "library_only": false
+        },
+        {
+          "role": "wall_r1a",
+          "id": "13",
+          "table": "bricks.Brick1X2",
+          "ref": "3004",
+          "colour": 19,
+          "title": "Brick  1 x  2",
+          "library_only": false
+        },
+        {
+          "role": "wall_r1b",
+          "id": "14",
+          "table": "bricks.Brick1X2",
+          "ref": "3004",
+          "colour": 19,
+          "title": "Brick  1 x  2",
+          "library_only": false
+        },
+        {
+          "role": "wall_r2",
+          "id": "15",
+          "table": "bricks.Brick1X4",
+          "ref": "3010",
+          "colour": 19,
+          "title": "Brick  1 x  4",
+          "library_only": false
+        },
+        {
+          "role": "wall_r3a",
+          "id": "16",
+          "table": "bricks.Brick1X2",
+          "ref": "3004",
+          "colour": 19,
+          "title": "Brick  1 x  2",
+          "library_only": false
+        },
+        {
+          "role": "wall_r3b",
+          "id": "17",
+          "table": "bricks.Brick1X2",
+          "ref": "3004",
+          "colour": 19,
+          "title": "Brick  1 x  2",
+          "library_only": false
+        },
+        {
+          "role": "wall_r4",
+          "id": "18",
+          "table": "bricks.Brick1X4",
+          "ref": "3010",
+          "colour": 19,
+          "title": "Brick  1 x  4",
+          "library_only": false
+        },
+        {
+          "role": "wall_r5a",
+          "id": "19",
+          "table": "bricks.Brick1X2",
+          "ref": "3004",
+          "colour": 19,
+          "title": "Brick  1 x  2",
+          "library_only": false
+        },
+        {
+          "role": "wall_r5b",
+          "id": "20",
+          "table": "bricks.Brick1X2",
+          "ref": "3004",
+          "colour": 19,
+          "title": "Brick  1 x  2",
+          "library_only": false
+        },
+        {
+          "role": "lintel",
+          "id": "21",
+          "table": "bricks.Brick1X12",
+          "ref": "6112",
+          "colour": 19,
+          "title": "Brick  1 x 12",
+          "library_only": false
+        },
+        {
+          "role": "lintel_top",
+          "id": "22",
+          "table": "plates.Plate1X12",
+          "ref": "60479",
+          "colour": 28,
+          "title": "Plate  1 x 12",
+          "library_only": false
+        }
+      ],
+      "clearance": {
+        "scenario": "S01_house_door",
+        "sweep": {
+          "no_new_surface_crossings": true,
+          "crossings": [],
+          "excluded_rest_pairs": [
+            "frame-door"
+          ]
+        },
+        "clip_poses": {
+          "samples": 108,
+          "every": 4,
+          "no_new_surface_crossings": true,
+          "crossings_by_clip": {},
+          "frames_with_crossings": {},
+          "vertex_penetration_by_clip": {},
+          "deep_shrink_ldu": 1.5,
+          "no_deep_crossings": true,
+          "deep_crossings_by_clip": {},
+          "frames_with_deep_crossings": {}
+        },
+        "roles": {
+          "0": "base",
+          "1": "frame",
+          "2": "door",
+          "3": "wall_l0",
+          "4": "wall_l1a",
+          "5": "wall_l1b",
+          "6": "wall_l2",
+          "7": "wall_l3a",
+          "8": "wall_l3b",
+          "9": "wall_l4",
+          "10": "wall_l5a",
+          "11": "wall_l5b",
+          "12": "wall_r0",
+          "13": "wall_r1a",
+          "14": "wall_r1b",
+          "15": "wall_r2",
+          "16": "wall_r3a",
+          "17": "wall_r3b",
+          "18": "wall_r4",
+          "19": "wall_r5a",
+          "20": "wall_r5b",
+          "21": "lintel",
+          "22": "lintel_top"
+        },
+        "coverage": "Sampled surface crossings only; excludes rigid-body and rest-contact pairs; containment untested"
+      },
+      "hashes": {
+        "plan.json": "3848dab926391cda43b9737e711f6ae59f6336c08e4496cc8f171972f9ebb21a",
+        "source/scenario.mpd": "ca1fa3e5b5dbb28c4979c7b47afc2058f599260bceae1c4138124905797b2184",
+        "source/parts.json": "eedef3f76d0db03ea3c0b87b96344d4ffc85d0d0e6faea6672972dcd77fafe70"
+      }
+    },
+    "S02_casement_window": {
+      "parts": 19,
+      "bodies": 2,
+      "builder_motion_matches": true,
+      "source_matches": true,
+      "asymmetric_values": {
+        "pane_l": 0.882,
+        "pane_r": 0.518
+      },
+      "semantics": {
+        "pane_l": {
+          "control": "pane_l",
+          "value": 0.2,
+          "test_point": [
+            -2.0,
+            -86.0,
+            -5.0
+          ],
+          "displacement": [
+            -0.598003,
+            0.0,
+            -5.96008
+          ],
+          "expected": "-z",
+          "flipped": true
+        },
+        "pane_r": {
+          "control": "pane_r",
+          "value": 0.2,
+          "test_point": [
+            2.0,
+            -86.0,
+            -5.0
+          ],
+          "displacement": [
+            0.598003,
+            0.0,
+            -5.96008
+          ],
+          "expected": "-z",
+          "flipped": false
+        }
+      },
+      "controls": {
+        "pane_l": {
+          "default": 0,
+          "min": 0.0,
+          "max": 1.4,
+          "unit": "radian",
+          "description": "Left pane (viewer's left) about its side hinge; + opens it toward the viewer (-Z)"
+        },
+        "pane_r": {
+          "default": 0,
+          "min": 0.0,
+          "max": 1.4,
+          "unit": "radian",
+          "description": "Right pane (viewer's right) about its side hinge; + opens it toward the viewer (-Z)"
+        }
+      },
+      "body_frames": {
+        "pane_l": {
+          "instances": [
+            "2"
+          ],
+          "kind": "revolute",
+          "origin": [
+            -32.0,
+            -86.0,
+            -5.0
+          ],
+          "axis": [
+            -0.0,
+            1.0,
+            -0.0
+          ],
+          "signal": "pane_l_angle"
+        },
+        "pane_r": {
+          "instances": [
+            "3"
+          ],
+          "kind": "revolute",
+          "origin": [
+            32.0,
+            -86.0,
+            -5.0
+          ],
+          "axis": [
+            0.0,
+            -1.0,
+            0.0
+          ],
+          "signal": "pane_r_angle"
+        }
+      },
+      "signals": {
+        "pane_l_angle": {
+          "expression": "a",
+          "variables": {
+            "a": "control:pane_l"
+          }
+        },
+        "pane_r_angle": {
+          "expression": "a",
+          "variables": {
+            "a": "control:pane_r"
+          }
+        }
+      },
+      "roles": [
+        {
+          "role": "base",
+          "id": "0",
+          "table": "plates.Plate4X8",
+          "ref": "3035",
+          "colour": 2,
+          "title": "Plate  4 x  8",
+          "library_only": false
+        },
+        {
+          "role": "window",
+          "id": "1",
+          "table": "windows.Window1X4X3WithoutShutterTabs",
+          "ref": "60594",
+          "colour": 15,
+          "title": "Window  1 x  4 x  3 without Shutter Tabs",
+          "library_only": false
+        },
+        {
+          "role": "pane_l",
+          "id": "2",
+          "table": "windows.Window1X2X3PaneWithThickCornerTabs",
+          "ref": "60608",
+          "colour": 15,
+          "title": "Window  1 x  2 x  3 Pane with Thick Corner Tabs",
+          "library_only": false
+        },
+        {
+          "role": "pane_r",
+          "id": "3",
+          "table": "windows.Window1X2X3PaneWithThickCornerTabs",
+          "ref": "60608",
+          "colour": 15,
+          "title": "Window  1 x  2 x  3 Pane with Thick Corner Tabs",
+          "library_only": false
+        },
+        {
+          "role": "sill0",
+          "id": "4",
+          "table": "bricks.Brick1X4",
+          "ref": "3010",
+          "colour": 378,
+          "title": "Brick  1 x  4",
+          "library_only": false
+        },
+        {
+          "role": "sill1a",
+          "id": "5",
+          "table": "bricks.Brick1X2",
+          "ref": "3004",
+          "colour": 378,
+          "title": "Brick  1 x  2",
+          "library_only": false
+        },
+        {
+          "role": "sill1b",
+          "id": "6",
+          "table": "bricks.Brick1X2",
+          "ref": "3004",
+          "colour": 378,
+          "title": "Brick  1 x  2",
+          "library_only": false
+        },
+        {
+          "role": "wall_l0",
+          "id": "7",
+          "table": "bricks.Brick1X2",
+          "ref": "3004",
+          "colour": 378,
+          "title": "Brick  1 x  2",
+          "library_only": false
+        },
+        {
+          "role": "wall_l1",
+          "id": "8",
+          "table": "bricks.Brick1X2",
+          "ref": "3004",
+          "colour": 378,
+          "title": "Brick  1 x  2",
+          "library_only": false
+        },
+        {
+          "role": "wall_l2",
+          "id": "9",
+          "table": "bricks.Brick1X2",
+          "ref": "3004",
+          "colour": 378,
+          "title": "Brick  1 x  2",
+          "library_only": false
+        },
+        {
+          "role": "wall_l3",
+          "id": "10",
+          "table": "bricks.Brick1X2",
+          "ref": "3004",
+          "colour": 378,
+          "title": "Brick  1 x  2",
+          "library_only": false
+        },
+        {
+          "role": "wall_l4",
+          "id": "11",
+          "table": "bricks.Brick1X2",
+          "ref": "3004",
+          "colour": 378,
+          "title": "Brick  1 x  2",
+          "library_only": false
+        },
+        {
+          "role": "wall_r0",
+          "id": "12",
+          "table": "bricks.Brick1X2",
+          "ref": "3004",
+          "colour": 378,
+          "title": "Brick  1 x  2",
+          "library_only": false
+        },
+        {
+          "role": "wall_r1",
+          "id": "13",
+          "table": "bricks.Brick1X2",
+          "ref": "3004",
+          "colour": 378,
+          "title": "Brick  1 x  2",
+          "library_only": false
+        },
+        {
+          "role": "wall_r2",
+          "id": "14",
+          "table": "bricks.Brick1X2",
+          "ref": "3004",
+          "colour": 378,
+          "title": "Brick  1 x  2",
+          "library_only": false
+        },
+        {
+          "role": "wall_r3",
+          "id": "15",
+          "table": "bricks.Brick1X2",
+          "ref": "3004",
+          "colour": 378,
+          "title": "Brick  1 x  2",
+          "library_only": false
+        },
+        {
+          "role": "wall_r4",
+          "id": "16",
+          "table": "bricks.Brick1X2",
+          "ref": "3004",
+          "colour": 378,
+          "title": "Brick  1 x  2",
+          "library_only": false
+        },
+        {
+          "role": "lintel",
+          "id": "17",
+          "table": "bricks.Brick1X8",
+          "ref": "3008",
+          "colour": 378,
+          "title": "Brick  1 x  8",
+          "library_only": false
+        },
+        {
+          "role": "cap",
+          "id": "18",
+          "table": "plates.Plate1X8",
+          "ref": "3460",
+          "colour": 28,
+          "title": "Plate  1 x  8",
+          "library_only": false
+        }
+      ],
+      "clearance": {
+        "scenario": "S02_casement_window",
+        "sweep": {
+          "no_new_surface_crossings": false,
+          "crossings": [
+            [
+              "pane_l",
+              0.087,
+              "pane_l-pane_r"
+            ],
+            [
+              "pane_r",
+              0.087,
+              "pane_l-pane_r"
+            ]
+          ],
+          "excluded_rest_pairs": []
+        },
+        "clip_poses": {
+          "samples": 108,
+          "every": 4,
+          "no_new_surface_crossings": false,
+          "crossings_by_clip": {
+            "S02_casement_window.one_by_one": [
+              "pane_l-pane_r"
+            ],
+            "S02_casement_window.open_both": [
+              "pane_l-pane_r"
+            ],
+            "S02_casement_window.wind_flutter": [
+              "pane_l-pane_r"
+            ]
+          },
+          "frames_with_crossings": {
+            "S02_casement_window.one_by_one": [
+              13,
+              129
+            ],
+            "S02_casement_window.open_both": [
+              13,
+              17,
+              129
+            ],
+            "S02_casement_window.wind_flutter": [
+              9,
+              133
+            ]
+          },
+          "vertex_penetration_by_clip": {
+            "S02_casement_window.one_by_one": {
+              "pane_l-pane_r": {
+                "max_vertex_depth_ldu": 0.001,
+                "kind": "contact"
+              }
+            },
+            "S02_casement_window.open_both": {
+              "pane_l-pane_r": {
+                "max_vertex_depth_ldu": 0.001,
+                "kind": "contact"
+              }
+            },
+            "S02_casement_window.wind_flutter": {
+              "pane_l-pane_r": {
+                "max_vertex_depth_ldu": 0.001,
+                "kind": "contact"
+              }
+            }
+          },
+          "deep_shrink_ldu": 1.5,
+          "no_deep_crossings": false,
+          "deep_crossings_by_clip": {
+            "S02_casement_window.one_by_one": [
+              "pane_l-pane_r"
+            ],
+            "S02_casement_window.open_both": [
+              "pane_l-pane_r"
+            ],
+            "S02_casement_window.wind_flutter": [
+              "pane_l-pane_r"
+            ]
+          },
+          "frames_with_deep_crossings": {
+            "S02_casement_window.one_by_one": [
+              13,
+              129
+            ],
+            "S02_casement_window.open_both": [
+              13,
+              129
+            ],
+            "S02_casement_window.wind_flutter": [
+              9,
+              133
+            ]
+          }
+        },
+        "roles": {
+          "0": "base",
+          "1": "window",
+          "2": "pane_l",
+          "3": "pane_r",
+          "4": "sill0",
+          "5": "sill1a",
+          "6": "sill1b",
+          "7": "wall_l0",
+          "8": "wall_l1",
+          "9": "wall_l2",
+          "10": "wall_l3",
+          "11": "wall_l4",
+          "12": "wall_r0",
+          "13": "wall_r1",
+          "14": "wall_r2",
+          "15": "wall_r3",
+          "16": "wall_r4",
+          "17": "lintel",
+          "18": "cap"
+        },
+        "coverage": "Sampled surface crossings only; excludes rigid-body and rest-contact pairs; containment untested"
+      },
+      "hashes": {
+        "plan.json": "5e8244847a86b89764b9c25020ba61862a33fec84c0eacc440182d9dbdd50b81",
+        "source/scenario.mpd": "d833e078ed463c6453fdd21032e4ae80f7073fa3da5e41751e38ec31eb340364",
+        "source/parts.json": "252259f035cd21b42202417c67ef7f61a92e60d446b6b261684c89433acbbfbb"
+      }
+    },
+    "S03_shuttered_window": {
+      "parts": 18,
+      "bodies": 2,
+      "builder_motion_matches": true,
+      "source_matches": true,
+      "asymmetric_values": {
+        "shutter_l": 1.89,
+        "shutter_r": 1.11
+      },
+      "semantics": {
+        "shutter_l": {
+          "control": "shutter_l",
+          "value": 0.2,
+          "test_point": [
+            -4.0,
+            -86.0,
+            -12.0
+          ],
+          "displacement": [
+            -0.717603,
+            0.0,
+            -7.152096
+          ],
+          "expected": "-z",
+          "flipped": true
+        },
+        "shutter_r": {
+          "control": "shutter_r",
+          "value": 0.2,
+          "test_point": [
+            4.0,
+            -86.0,
+            -12.0
+          ],
+          "displacement": [
+            0.717603,
+            0.0,
+            -7.152096
+          ],
+          "expected": "-z",
+          "flipped": false
+        }
+      },
+      "controls": {
+        "shutter_l": {
+          "default": 0,
+          "min": 0.0,
+          "max": 3.0,
+          "unit": "radian",
+          "description": "Left shutter; 0 = closed over the glass, + folds it open outward toward the wall"
+        },
+        "shutter_r": {
+          "default": 0,
+          "min": 0.0,
+          "max": 3.0,
+          "unit": "radian",
+          "description": "Right shutter; 0 = closed over the glass, + folds it open outward toward the wall"
+        }
+      },
+      "body_frames": {
+        "shutter_l": {
+          "instances": [
+            "2"
+          ],
+          "kind": "revolute",
+          "origin": [
+            -40.0,
+            -86.0,
+            -12.0
+          ],
+          "axis": [
+            -0.0,
+            1.0,
+            -0.0
+          ],
+          "signal": "shutter_l_angle"
+        },
+        "shutter_r": {
+          "instances": [
+            "3"
+          ],
+          "kind": "revolute",
+          "origin": [
+            40.0,
+            -86.0,
+            -12.0
+          ],
+          "axis": [
+            0.0,
+            -1.0,
+            0.0
+          ],
+          "signal": "shutter_r_angle"
+        }
+      },
+      "signals": {
+        "shutter_l_angle": {
+          "expression": "a",
+          "variables": {
+            "a": "control:shutter_l"
+          }
+        },
+        "shutter_r_angle": {
+          "expression": "a",
+          "variables": {
+            "a": "control:shutter_r"
+          }
+        }
+      },
+      "roles": [
+        {
+          "role": "base",
+          "id": "0",
+          "table": "plates.Plate4X10",
+          "ref": "3030",
+          "colour": 2,
+          "title": "Plate  4 x 10",
+          "library_only": false
+        },
+        {
+          "role": "window",
+          "id": "1",
+          "table": "windows.Window1X4X3",
+          "ref": "3853",
+          "colour": 15,
+          "title": "Window  1 x  4 x  3",
+          "library_only": false
+        },
+        {
+          "role": "shutter_l",
+          "id": "2",
+          "table": "windows.Window1X2X3Shutter",
+          "ref": "3856",
+          "colour": 4,
+          "title": "Window  1 x  2 x  3 Shutter",
+          "library_only": false
+        },
+        {
+          "role": "shutter_r",
+          "id": "3",
+          "table": "windows.Window1X2X3Shutter",
+          "ref": "3856",
+          "colour": 4,
+          "title": "Window  1 x  2 x  3 Shutter",
+          "library_only": false
+        },
+        {
+          "role": "sill0",
+          "id": "4",
+          "table": "bricks.Brick1X4",
+          "ref": "3010",
+          "colour": 14,
+          "title": "Brick  1 x  4",
+          "library_only": false
+        },
+        {
+          "role": "sill1a",
+          "id": "5",
+          "table": "bricks.Brick1X2",
+          "ref": "3004",
+          "colour": 14,
+          "title": "Brick  1 x  2",
+          "library_only": false
+        },
+        {
+          "role": "sill1b",
+          "id": "6",
+          "table": "bricks.Brick1X2",
+          "ref": "3004",
+          "colour": 14,
+          "title": "Brick  1 x  2",
+          "library_only": false
+        },
+        {
+          "role": "wall_l0",
+          "id": "7",
+          "table": "bricks.Brick1X3",
+          "ref": "3622",
+          "colour": 14,
+          "title": "Brick  1 x  3",
+          "library_only": false
+        },
+        {
+          "role": "wall_l1",
+          "id": "8",
+          "table": "bricks.Brick1X3",
+          "ref": "3622",
+          "colour": 14,
+          "title": "Brick  1 x  3",
+          "library_only": false
+        },
+        {
+          "role": "wall_l2",
+          "id": "9",
+          "table": "bricks.Brick1X3",
+          "ref": "3622",
+          "colour": 14,
+          "title": "Brick  1 x  3",
+          "library_only": false
+        },
+        {
+          "role": "wall_l3",
+          "id": "10",
+          "table": "bricks.Brick1X3",
+          "ref": "3622",
+          "colour": 14,
+          "title": "Brick  1 x  3",
+          "library_only": false
+        },
+        {
+          "role": "wall_l4",
+          "id": "11",
+          "table": "bricks.Brick1X3",
+          "ref": "3622",
+          "colour": 14,
+          "title": "Brick  1 x  3",
+          "library_only": false
+        },
+        {
+          "role": "wall_r0",
+          "id": "12",
+          "table": "bricks.Brick1X3",
+          "ref": "3622",
+          "colour": 14,
+          "title": "Brick  1 x  3",
+          "library_only": false
+        },
+        {
+          "role": "wall_r1",
+          "id": "13",
+          "table": "bricks.Brick1X3",
+          "ref": "3622",
+          "colour": 14,
+          "title": "Brick  1 x  3",
+          "library_only": false
+        },
+        {
+          "role": "wall_r2",
+          "id": "14",
+          "table": "bricks.Brick1X3",
+          "ref": "3622",
+          "colour": 14,
+          "title": "Brick  1 x  3",
+          "library_only": false
+        },
+        {
+          "role": "wall_r3",
+          "id": "15",
+          "table": "bricks.Brick1X3",
+          "ref": "3622",
+          "colour": 14,
+          "title": "Brick  1 x  3",
+          "library_only": false
+        },
+        {
+          "role": "wall_r4",
+          "id": "16",
+          "table": "bricks.Brick1X3",
+          "ref": "3622",
+          "colour": 14,
+          "title": "Brick  1 x  3",
+          "library_only": false
+        },
+        {
+          "role": "lintel",
+          "id": "17",
+          "table": "bricks.Brick1X10",
+          "ref": "6111",
+          "colour": 14,
+          "title": "Brick  1 x 10",
+          "library_only": false
+        }
+      ],
+      "clearance": {
+        "scenario": "S03_shuttered_window",
+        "sweep": {
+          "no_new_surface_crossings": true,
+          "crossings": [],
+          "excluded_rest_pairs": [
+            "window-shutter_l",
+            "window-shutter_r"
+          ]
+        },
+        "clip_poses": {
+          "samples": 108,
+          "every": 4,
+          "no_new_surface_crossings": true,
+          "crossings_by_clip": {},
+          "frames_with_crossings": {},
+          "vertex_penetration_by_clip": {},
+          "deep_shrink_ldu": 1.5,
+          "no_deep_crossings": true,
+          "deep_crossings_by_clip": {},
+          "frames_with_deep_crossings": {}
+        },
+        "roles": {
+          "0": "base",
+          "1": "window",
+          "2": "shutter_l",
+          "3": "shutter_r",
+          "4": "sill0",
+          "5": "sill1a",
+          "6": "sill1b",
+          "7": "wall_l0",
+          "8": "wall_l1",
+          "9": "wall_l2",
+          "10": "wall_l3",
+          "11": "wall_l4",
+          "12": "wall_r0",
+          "13": "wall_r1",
+          "14": "wall_r2",
+          "15": "wall_r3",
+          "16": "wall_r4",
+          "17": "lintel"
+        },
+        "coverage": "Sampled surface crossings only; excludes rigid-body and rest-contact pairs; containment untested"
+      },
+      "hashes": {
+        "plan.json": "3d195c98c52725cc4408a8e1c242dea27481618a0a9a8e634af4f2e595166e39",
+        "source/scenario.mpd": "a5b1a974cfa2546f3ec66d59ab1cdd1476bb8032dea757cb590ec332d536cfcb",
+        "source/parts.json": "f1ea8775d0925bf4bebcc93098a62079ccad55b4454436e3aecd2177dc2c281a"
+      }
+    },
+    "S04_garden_gate": {
+      "parts": 6,
+      "bodies": 1,
+      "builder_motion_matches": true,
+      "source_matches": true,
+      "asymmetric_values": {
+        "gate": 1.008
+      },
+      "semantics": {
+        "gate": {
+          "control": "gate",
+          "value": 0.2,
+          "test_point": [
+            30.0,
+            -28.0,
+            0.0
+          ],
+          "displacement": [
+            -1.196005,
+            0.0,
+            -11.92016
+          ],
+          "expected": "-z",
+          "flipped": true
+        }
+      },
+      "controls": {
+        "gate": {
+          "default": 0,
+          "min": -1.6,
+          "max": 1.6,
+          "unit": "radian",
+          "description": "Gate about its post; + swings it outward (-Z), - inward (+Z)"
+        }
+      },
+      "body_frames": {
+        "gate": {
+          "instances": [
+            "2"
+          ],
+          "kind": "revolute",
+          "origin": [
+            -30.0,
+            -8.0,
+            0.0
+          ],
+          "axis": [
+            -0.0,
+            1.0,
+            -0.0
+          ],
+          "signal": "gate_angle"
+        }
+      },
+      "signals": {
+        "gate_angle": {
+          "expression": "a",
+          "variables": {
+            "a": "control:gate"
+          }
+        }
+      },
+      "roles": [
+        {
+          "role": "base",
+          "id": "0",
+          "table": "plates.Plate4X12",
+          "ref": "3029",
+          "colour": 2,
+          "title": "Plate  4 x 12",
+          "library_only": false
+        },
+        {
+          "role": "gate_base",
+          "id": "1",
+          "table": "fences.Gate1X4X2Base",
+          "ref": "3187",
+          "colour": 15,
+          "title": "Gate  1 x  4 x  2 Base",
+          "library_only": false
+        },
+        {
+          "role": "gate",
+          "id": "2",
+          "table": "fences.Gate1X4X2",
+          "ref": "3186",
+          "colour": 70,
+          "title": "Gate  1 x  4 x  2",
+          "library_only": false
+        },
+        {
+          "role": "fence_l",
+          "id": "3",
+          "table": "fences.FenceLattice1X4X2",
+          "ref": "3185",
+          "colour": 15,
+          "title": "Fence Lattice  1 x  4 x  2",
+          "library_only": false
+        },
+        {
+          "role": "fence_r",
+          "id": "4",
+          "table": "fences.FenceLattice1X4X2",
+          "ref": "3185",
+          "colour": 15,
+          "title": "Fence Lattice  1 x  4 x  2",
+          "library_only": false
+        },
+        {
+          "role": "path",
+          "id": "5",
+          "table": "tiles.Tile2X2WithGroove",
+          "ref": "3068b",
+          "colour": 19,
+          "title": "Tile  2 x  2 with Groove",
+          "library_only": false
+        }
+      ],
+      "clearance": {
+        "scenario": "S04_garden_gate",
+        "sweep": {
+          "no_new_surface_crossings": true,
+          "crossings": [],
+          "excluded_rest_pairs": [
+            "gate_base-gate"
+          ]
+        },
+        "clip_poses": {
+          "samples": 108,
+          "every": 4,
+          "no_new_surface_crossings": false,
+          "crossings_by_clip": {
+            "S04_garden_gate.in_and_out": [
+              "gate-fence_r"
+            ],
+            "S04_garden_gate.open_latch": [
+              "gate-fence_r"
+            ],
+            "S04_garden_gate.push_through": [
+              "gate-fence_r"
+            ]
+          },
+          "frames_with_crossings": {
+            "S04_garden_gate.in_and_out": [
+              69,
+              137
+            ],
+            "S04_garden_gate.open_latch": [
+              13,
+              101,
+              113,
+              117
+            ],
+            "S04_garden_gate.push_through": [
+              9,
+              89
+            ]
+          },
+          "vertex_penetration_by_clip": {
+            "S04_garden_gate.in_and_out": {
+              "gate-fence_r": {
+                "max_vertex_depth_ldu": 0.05,
+                "kind": "contact"
+              }
+            },
+            "S04_garden_gate.open_latch": {
+              "gate-fence_r": {
+                "max_vertex_depth_ldu": 0.054,
+                "kind": "contact"
+              }
+            },
+            "S04_garden_gate.push_through": {
+              "gate-fence_r": {
+                "max_vertex_depth_ldu": 0.064,
+                "kind": "contact"
+              }
+            }
+          },
+          "deep_shrink_ldu": 1.5,
+          "no_deep_crossings": false,
+          "deep_crossings_by_clip": {
+            "S04_garden_gate.in_and_out": [
+              "gate-fence_r"
+            ],
+            "S04_garden_gate.open_latch": [
+              "gate-fence_r"
+            ],
+            "S04_garden_gate.push_through": [
+              "gate-fence_r"
+            ]
+          },
+          "frames_with_deep_crossings": {
+            "S04_garden_gate.in_and_out": [
+              69,
+              137
+            ],
+            "S04_garden_gate.open_latch": [
+              13,
+              101,
+              113,
+              117
+            ],
+            "S04_garden_gate.push_through": [
+              9,
+              89
+            ]
+          }
+        },
+        "roles": {
+          "0": "base",
+          "1": "gate_base",
+          "2": "gate",
+          "3": "fence_l",
+          "4": "fence_r",
+          "5": "path"
+        },
+        "coverage": "Sampled surface crossings only; excludes rigid-body and rest-contact pairs; containment untested"
+      },
+      "hashes": {
+        "plan.json": "6d1bf319ff3709ad3bf4e07bfe1125c973a5226c03ef88334e514188fd79b13d",
+        "source/scenario.mpd": "bebe7a87e3c36824c445426a48c862a84ef6966ec611d6bb1c862f1976e410a9",
+        "source/parts.json": "c6ec5f0225ca6a64cbb7e7fde00843617def405db68389759768ae325e6d55a6"
+      }
+    },
+    "S05_kitchen_cupboard": {
+      "parts": 6,
+      "bodies": 3,
+      "builder_motion_matches": true,
+      "source_matches": true,
+      "asymmetric_values": {
+        "door": 1.197,
+        "drawer_top": 11.1,
+        "drawer_low": 24.3
+      },
+      "semantics": {
+        "door": {
+          "control": "door",
+          "value": 0.2,
+          "test_point": [
+            21.0,
+            -26.0,
+            -19.0
+          ],
+          "displacement": [
+            -1.294343,
+            0.0,
+            -8.900253
+          ],
+          "expected": "-z",
+          "flipped": true
+        },
+        "drawer_top": {
+          "control": "drawer_top",
+          "value": 4.0,
+          "test_point": [
+            0.0,
+            -92.0,
+            0.0
+          ],
+          "displacement": [
+            0.0,
+            0.0,
+            -4.0
+          ],
+          "expected": "-z",
+          "flipped": false
+        },
+        "drawer_low": {
+          "control": "drawer_low",
+          "value": 4.0,
+          "test_point": [
+            0.0,
+            -74.0,
+            0.0
+          ],
+          "displacement": [
+            0.0,
+            0.0,
+            -4.0
+          ],
+          "expected": "-z",
+          "flipped": false
+        }
+      },
+      "controls": {
+        "door": {
+          "default": 0,
+          "min": 0.0,
+          "max": 1.9,
+          "unit": "radian",
+          "description": "Lower cupboard door; + opens outward (-Z)"
+        },
+        "drawer_top": {
+          "default": 0,
+          "min": 0.0,
+          "max": 30.0,
+          "unit": "ldu",
+          "description": "Upper drawer; + pulls it out (-Z)"
+        },
+        "drawer_low": {
+          "default": 0,
+          "min": 0.0,
+          "max": 30.0,
+          "unit": "ldu",
+          "description": "Lower drawer of the upper cupboard; + pulls it out"
+        }
+      },
+      "body_frames": {
+        "door": {
+          "instances": [
+            "2"
+          ],
+          "kind": "revolute",
+          "origin": [
+            -24.0,
+            -26.0,
+            -17.0
+          ],
+          "axis": [
+            -0.0,
+            1.0,
+            -0.0
+          ],
+          "signal": "door_angle"
+        },
+        "drawer_top": {
+          "instances": [
+            "4"
+          ],
+          "kind": "prismatic",
+          "origin": [
+            0.0,
+            -81.0,
+            -2.0
+          ],
+          "axis": [
+            0.0,
+            0.0,
+            -1.0
+          ],
+          "signal": "drawer_top_offset"
+        },
+        "drawer_low": {
+          "instances": [
+            "5"
+          ],
+          "kind": "prismatic",
+          "origin": [
+            0.0,
+            -63.0,
+            -2.0
+          ],
+          "axis": [
+            0.0,
+            0.0,
+            -1.0
+          ],
+          "signal": "drawer_low_offset"
+        }
+      },
+      "signals": {
+        "door_angle": {
+          "expression": "a",
+          "variables": {
+            "a": "control:door"
+          }
+        },
+        "drawer_top_offset": {
+          "expression": "a",
+          "variables": {
+            "a": "control:drawer_top"
+          }
+        },
+        "drawer_low_offset": {
+          "expression": "a",
+          "variables": {
+            "a": "control:drawer_low"
+          }
+        }
+      },
+      "roles": [
+        {
+          "role": "base",
+          "id": "0",
+          "table": "plates.Plate4X6",
+          "ref": "3032",
+          "colour": 71,
+          "title": "Plate  4 x  6",
+          "library_only": false
+        },
+        {
+          "role": "cupboard_low",
+          "id": "1",
+          "table": "containers.ContainerCupboard2X3X2WithSolidStuds",
+          "ref": "4532",
+          "colour": 15,
+          "title": "Container Cupboard  2 x  3 x  2 with Solid Studs",
+          "library_only": false
+        },
+        {
+          "role": "door",
+          "id": "2",
+          "table": "containers.ContainerCupboard2X3X2Door",
+          "ref": "4533",
+          "colour": 4,
+          "title": "Container Cupboard  2 x  3 x  2 Door",
+          "library_only": false
+        },
+        {
+          "role": "cupboard_high",
+          "id": "3",
+          "table": "containers.ContainerCupboard2X3X2WithSolidStuds",
+          "ref": "4532",
+          "colour": 15,
+          "title": "Container Cupboard  2 x  3 x  2 with Solid Studs",
+          "library_only": false
+        },
+        {
+          "role": "drawer_top",
+          "id": "4",
+          "table": "containers.ContainerCupboard2X3X2Drawer",
+          "ref": "4536",
+          "colour": 14,
+          "title": "Container Cupboard  2 x  3 x  2 Drawer",
+          "library_only": false
+        },
+        {
+          "role": "drawer_low",
+          "id": "5",
+          "table": "containers.ContainerCupboard2X3X2Drawer",
+          "ref": "4536",
+          "colour": 14,
+          "title": "Container Cupboard  2 x  3 x  2 Drawer",
+          "library_only": false
+        }
+      ],
+      "clearance": {
+        "scenario": "S05_kitchen_cupboard",
+        "sweep": {
+          "no_new_surface_crossings": true,
+          "crossings": [],
+          "excluded_rest_pairs": [
+            "cupboard_low-door",
+            "cupboard_high-drawer_top",
+            "cupboard_high-drawer_low"
+          ]
+        },
+        "clip_poses": {
+          "samples": 108,
+          "every": 4,
+          "no_new_surface_crossings": true,
+          "crossings_by_clip": {},
+          "frames_with_crossings": {},
+          "vertex_penetration_by_clip": {},
+          "deep_shrink_ldu": 1.5,
+          "no_deep_crossings": true,
+          "deep_crossings_by_clip": {},
+          "frames_with_deep_crossings": {}
+        },
+        "roles": {
+          "0": "base",
+          "1": "cupboard_low",
+          "2": "door",
+          "3": "cupboard_high",
+          "4": "drawer_top",
+          "5": "drawer_low"
+        },
+        "coverage": "Sampled surface crossings only; excludes rigid-body and rest-contact pairs; containment untested"
+      },
+      "hashes": {
+        "plan.json": "b50080e1ad346189e39aad85032811f03557892dd7858c304e035c533500962e",
+        "source/scenario.mpd": "39c679a8888617d0ff3f1c7ff5363dafa1d97ca21693e650593f1272de7adb3e",
+        "source/parts.json": "ed560f80ef7136e740d209cd66d15845e78daf4990702722d68aebc8e20a3893"
+      }
+    },
+    "S06_double_cabinet": {
+      "parts": 4,
+      "bodies": 2,
+      "builder_motion_matches": true,
+      "source_matches": true,
+      "asymmetric_values": {
+        "door_l": 1.197,
+        "door_r": 0.703
+      },
+      "semantics": {
+        "door_l": {
+          "control": "door_l",
+          "value": 0.2,
+          "test_point": [
+            -7.0,
+            -33.0,
+            -16.0
+          ],
+          "displacement": [
+            -0.897004,
+            0.0,
+            -8.94012
+          ],
+          "expected": "-z",
+          "flipped": true
+        },
+        "door_r": {
+          "control": "door_r",
+          "value": 0.2,
+          "test_point": [
+            7.0,
+            -33.0,
+            -16.0
+          ],
+          "displacement": [
+            0.897004,
+            0.0,
+            -8.94012
+          ],
+          "expected": "-z",
+          "flipped": true
+        }
+      },
+      "controls": {
+        "door_l": {
+          "default": 0,
+          "min": 0.0,
+          "max": 1.9,
+          "unit": "radian",
+          "description": "Left door; + opens outward (-Z)"
+        },
+        "door_r": {
+          "default": 0,
+          "min": 0.0,
+          "max": 1.9,
+          "unit": "radian",
+          "description": "Right door; + opens outward (-Z)"
+        }
+      },
+      "body_frames": {
+        "door_l": {
+          "instances": [
+            "2"
+          ],
+          "kind": "revolute",
+          "origin": [
+            -52.0,
+            -33.0,
+            -16.0
+          ],
+          "axis": [
+            -0.0,
+            1.0,
+            -0.0
+          ],
+          "signal": "door_l_angle"
+        },
+        "door_r": {
+          "instances": [
+            "3"
+          ],
+          "kind": "revolute",
+          "origin": [
+            52.0,
+            -33.0,
+            -16.0
+          ],
+          "axis": [
+            -0.0,
+            -1.0,
+            -0.0
+          ],
+          "signal": "door_r_angle"
+        }
+      },
+      "signals": {
+        "door_l_angle": {
+          "expression": "a",
+          "variables": {
+            "a": "control:door_l"
+          }
+        },
+        "door_r_angle": {
+          "expression": "a",
+          "variables": {
+            "a": "control:door_r"
+          }
+        }
+      },
+      "roles": [
+        {
+          "role": "base",
+          "id": "0",
+          "table": "plates.Plate4X8",
+          "ref": "3035",
+          "colour": 71,
+          "title": "Plate  4 x  8",
+          "library_only": false
+        },
+        {
+          "role": "cabinet",
+          "id": "1",
+          "table": "containers.ContainerCupboard2X6X7",
+          "ref": "2042",
+          "colour": 14,
+          "title": "Container Cupboard  2 x  6 x  7",
+          "library_only": false
+        },
+        {
+          "role": "door_l",
+          "id": "2",
+          "table": "containers.ContainerCupboard2X6X7Door",
+          "ref": "2043",
+          "colour": 4,
+          "title": "Container Cupboard  2 x  6 x  7 Door",
+          "library_only": false
+        },
+        {
+          "role": "door_r",
+          "id": "3",
+          "table": "containers.ContainerCupboard2X6X7Door",
+          "ref": "2043",
+          "colour": 4,
+          "title": "Container Cupboard  2 x  6 x  7 Door",
+          "library_only": false
+        }
+      ],
+      "clearance": {
+        "scenario": "S06_double_cabinet",
+        "sweep": {
+          "no_new_surface_crossings": true,
+          "crossings": [],
+          "excluded_rest_pairs": [
+            "cabinet-door_l",
+            "cabinet-door_r"
+          ]
+        },
+        "clip_poses": {
+          "samples": 108,
+          "every": 4,
+          "no_new_surface_crossings": true,
+          "crossings_by_clip": {},
+          "frames_with_crossings": {},
+          "vertex_penetration_by_clip": {},
+          "deep_shrink_ldu": 1.5,
+          "no_deep_crossings": true,
+          "deep_crossings_by_clip": {},
+          "frames_with_deep_crossings": {}
+        },
+        "roles": {
+          "0": "base",
+          "1": "cabinet",
+          "2": "door_l",
+          "3": "door_r"
+        },
+        "coverage": "Sampled surface crossings only; excludes rigid-body and rest-contact pairs; containment untested"
+      },
+      "hashes": {
+        "plan.json": "33620bc6d9d050ab7e7e6a4273e88a865e410e84973a576fb1185e3cea6feb3a",
+        "source/scenario.mpd": "3ca36aae2d0a0c4a4a003cbcb01447641e8c5680362e03d629767fb080af6d3c",
+        "source/parts.json": "4d2942a20dd8013eb2c0d5bfc8babc0a1e83e956b4d8948fefc31ca6ee153b91"
+      }
+    },
+    "S07_treasure_chest": {
+      "parts": 6,
+      "bodies": 1,
+      "builder_motion_matches": true,
+      "source_matches": true,
+      "asymmetric_values": {
+        "lid": 1.197
+      },
+      "semantics": {
+        "lid": {
+          "control": "lid",
+          "value": 0.2,
+          "test_point": [
+            0.0,
+            -48.0,
+            -18.0
+          ],
+          "displacement": [
+            0.0,
+            -6.356089,
+            4.651123
+          ],
+          "expected": "-y",
+          "flipped": true
+        }
+      },
+      "controls": {
+        "lid": {
+          "default": 0,
+          "min": 0.0,
+          "max": 1.9,
+          "unit": "radian",
+          "description": "Lid about the rear hinge; + lifts the front edge"
+        }
+      },
+      "body_frames": {
+        "lid": {
+          "instances": [
+            "2"
+          ],
+          "kind": "revolute",
+          "origin": [
+            0.0,
+            -28.0,
+            16.0
+          ],
+          "axis": [
+            -1.0,
+            -0.0,
+            -0.0
+          ],
+          "signal": "lid_angle"
+        }
+      },
+      "signals": {
+        "lid_angle": {
+          "expression": "a",
+          "variables": {
+            "a": "control:lid"
+          }
+        }
+      },
+      "roles": [
+        {
+          "role": "base",
+          "id": "0",
+          "table": "plates.Plate6X8",
+          "ref": "3036",
+          "colour": 19,
+          "title": "Plate  6 x  8",
+          "library_only": false
+        },
+        {
+          "role": "chest",
+          "id": "1",
+          "table": "containers.ContainerTreasureChestWithSlots",
+          "ref": "4738a",
+          "colour": 70,
+          "title": "Container Treasure Chest with Slots",
+          "library_only": false
+        },
+        {
+          "role": "lid",
+          "id": "2",
+          "table": "containers.ContainerTreasureChestWithSlotsLid",
+          "ref": "4739a",
+          "colour": 70,
+          "title": "Container Treasure Chest with Slots Lid",
+          "library_only": false
+        },
+        {
+          "role": "coin0",
+          "id": "3",
+          "table": "tiles.Tile1X1RoundWithGroove",
+          "ref": "98138",
+          "colour": 297,
+          "title": "Tile  1 x  1 Round with Groove",
+          "library_only": false
+        },
+        {
+          "role": "coin1",
+          "id": "4",
+          "table": "tiles.Tile1X1RoundWithGroove",
+          "ref": "98138",
+          "colour": 297,
+          "title": "Tile  1 x  1 Round with Groove",
+          "library_only": false
+        },
+        {
+          "role": "coin2",
+          "id": "5",
+          "table": "tiles.Tile1X1RoundWithGroove",
+          "ref": "98138",
+          "colour": 297,
+          "title": "Tile  1 x  1 Round with Groove",
+          "library_only": false
+        }
+      ],
+      "clearance": {
+        "scenario": "S07_treasure_chest",
+        "sweep": {
+          "no_new_surface_crossings": true,
+          "crossings": [],
+          "excluded_rest_pairs": [
+            "chest-lid"
+          ]
+        },
+        "clip_poses": {
+          "samples": 108,
+          "every": 4,
+          "no_new_surface_crossings": true,
+          "crossings_by_clip": {},
+          "frames_with_crossings": {},
+          "vertex_penetration_by_clip": {},
+          "deep_shrink_ldu": 1.5,
+          "no_deep_crossings": true,
+          "deep_crossings_by_clip": {},
+          "frames_with_deep_crossings": {}
+        },
+        "roles": {
+          "0": "base",
+          "1": "chest",
+          "2": "lid",
+          "3": "coin0",
+          "4": "coin1",
+          "5": "coin2"
+        },
+        "coverage": "Sampled surface crossings only; excludes rigid-body and rest-contact pairs; containment untested"
+      },
+      "hashes": {
+        "plan.json": "243f1be7f80de2c7f89a65155f1509f83460d8921685d020ffb676f434b77e0c",
+        "source/scenario.mpd": "8ddcefdeede5f934c76b3f24fa02946e8779c782d34fbc2092005b94877cc1f9",
+        "source/parts.json": "ff230fb89a64d980e907b1a7c06ebc0caa6550b5819d7c864d2ee3e41857bbd2"
+      }
+    },
+    "S08_mailbox": {
+      "parts": 7,
+      "bodies": 1,
+      "builder_motion_matches": true,
+      "source_matches": true,
+      "asymmetric_values": {
+        "door": 1.008
+      },
+      "semantics": {
+        "door": {
+          "control": "door",
+          "value": 0.2,
+          "test_point": [
+            0.0,
+            -124.0,
+            -26.0
+          ],
+          "displacement": [
+            0.0,
+            0.797337,
+            -7.946773
+          ],
+          "expected": "-z",
+          "flipped": false
+        }
+      },
+      "controls": {
+        "door": {
+          "default": 0,
+          "min": 0.0,
+          "max": 1.6,
+          "unit": "radian",
+          "description": "Front door about its bottom hinge; + drops it open forward and down"
+        }
+      },
+      "body_frames": {
+        "door": {
+          "instances": [
+            "6"
+          ],
+          "kind": "revolute",
+          "origin": [
+            0.0,
+            -84.0,
+            -26.0
+          ],
+          "axis": [
+            1.0,
+            0.0,
+            0.0
+          ],
+          "signal": "door_angle"
+        }
+      },
+      "signals": {
+        "door_angle": {
+          "expression": "a",
+          "variables": {
+            "a": "control:door"
+          }
+        }
+      },
+      "roles": [
+        {
+          "role": "base",
+          "id": "0",
+          "table": "plates.Plate4X4",
+          "ref": "3031",
+          "colour": 2,
+          "title": "Plate  4 x  4",
+          "library_only": false
+        },
+        {
+          "role": "post0",
+          "id": "1",
+          "table": "bricks.Brick2X2RoundWithoutReinforcement",
+          "ref": "3941",
+          "colour": 8,
+          "title": "Brick  2 x  2 Round without Reinforcement",
+          "library_only": false
+        },
+        {
+          "role": "post1",
+          "id": "2",
+          "table": "bricks.Brick2X2RoundWithoutReinforcement",
+          "ref": "3941",
+          "colour": 8,
+          "title": "Brick  2 x  2 Round without Reinforcement",
+          "library_only": false
+        },
+        {
+          "role": "post2",
+          "id": "3",
+          "table": "bricks.Brick2X2RoundWithoutReinforcement",
+          "ref": "3941",
+          "colour": 8,
+          "title": "Brick  2 x  2 Round without Reinforcement",
+          "library_only": false
+        },
+        {
+          "role": "cap",
+          "id": "4",
+          "table": "plates.Plate2X2",
+          "ref": "3022",
+          "colour": 8,
+          "title": "Plate  2 x  2",
+          "library_only": false
+        },
+        {
+          "role": "box",
+          "id": "5",
+          "table": "containers.ContainerBox2X2X2WithSolidStuds",
+          "ref": "4345a",
+          "colour": 4,
+          "title": "Container Box  2 x  2 x  2 with Solid Studs",
+          "library_only": false
+        },
+        {
+          "role": "door",
+          "id": "6",
+          "table": "containers.ContainerBox2X2X2DoorWithSlot",
+          "ref": "4346",
+          "colour": 4,
+          "title": "Container Box  2 x  2 x  2 Door with Slot",
+          "library_only": false
+        }
+      ],
+      "clearance": {
+        "scenario": "S08_mailbox",
+        "sweep": {
+          "no_new_surface_crossings": true,
+          "crossings": [],
+          "excluded_rest_pairs": [
+            "box-door"
+          ]
+        },
+        "clip_poses": {
+          "samples": 108,
+          "every": 4,
+          "no_new_surface_crossings": true,
+          "crossings_by_clip": {},
+          "frames_with_crossings": {},
+          "vertex_penetration_by_clip": {},
+          "deep_shrink_ldu": 1.5,
+          "no_deep_crossings": true,
+          "deep_crossings_by_clip": {},
+          "frames_with_deep_crossings": {}
+        },
+        "roles": {
+          "0": "base",
+          "1": "post0",
+          "2": "post1",
+          "3": "post2",
+          "4": "cap",
+          "5": "box",
+          "6": "door"
+        },
+        "coverage": "Sampled surface crossings only; excludes rigid-body and rest-contact pairs; containment untested"
+      },
+      "hashes": {
+        "plan.json": "374436b782b93f0bdeb8bdc3e62dc39c2a3470719cba51c4d1cc189550976044",
+        "source/scenario.mpd": "5dd210e43770c872fb04b06ce0b47b26c3f270dcccc15f7741f2a94c547b7be6",
+        "source/parts.json": "abc4c186b9190fa6f3ac9cae634c782d4c100643d988198ea816e4de6bb591a2"
+      }
+    },
+    "S09_trap_door": {
+      "parts": 7,
+      "bodies": 1,
+      "builder_motion_matches": true,
+      "source_matches": true,
+      "asymmetric_values": {
+        "trap": 1.2285
+      },
+      "semantics": {
+        "trapdoor": {
+          "control": "trap",
+          "value": 0.2,
+          "test_point": [
+            50.0,
+            -128.0,
+            0.0
+          ],
+          "displacement": [
+            -1.993342,
+            19.866933,
+            0.0
+          ],
+          "expected": "+y",
+          "flipped": false
+        }
+      },
+      "controls": {
+        "trap": {
+          "default": 0,
+          "min": 0.0,
+          "max": 1.95,
+          "unit": "radian",
+          "description": "Trap door about its edge pins; + drops the free end down into the pit"
+        }
+      },
+      "body_frames": {
+        "trapdoor": {
+          "instances": [
+            "6"
+          ],
+          "kind": "revolute",
+          "origin": [
+            -50.0,
+            -128.0,
+            26.0
+          ],
+          "axis": [
+            0.0,
+            0.0,
+            1.0
+          ],
+          "signal": "trap_angle"
+        }
+      },
+      "signals": {
+        "trap_angle": {
+          "expression": "a",
+          "variables": {
+            "a": "control:trap"
+          }
+        }
+      },
+      "roles": [
+        {
+          "role": "base",
+          "id": "0",
+          "table": "plates.Plate6X8",
+          "ref": "3036",
+          "colour": 8,
+          "title": "Plate  6 x  8",
+          "library_only": false
+        },
+        {
+          "role": "pillar0",
+          "id": "1",
+          "table": "bricks.Brick1X1X5WithSolidStud",
+          "ref": "2453b",
+          "colour": 71,
+          "title": "Brick  1 x  1 x  5 with Solid Stud",
+          "library_only": false
+        },
+        {
+          "role": "pillar1",
+          "id": "2",
+          "table": "bricks.Brick1X1X5WithSolidStud",
+          "ref": "2453b",
+          "colour": 71,
+          "title": "Brick  1 x  1 x  5 with Solid Stud",
+          "library_only": false
+        },
+        {
+          "role": "pillar2",
+          "id": "3",
+          "table": "bricks.Brick1X1X5WithSolidStud",
+          "ref": "2453b",
+          "colour": 71,
+          "title": "Brick  1 x  1 x  5 with Solid Stud",
+          "library_only": false
+        },
+        {
+          "role": "pillar3",
+          "id": "4",
+          "table": "bricks.Brick1X1X5WithSolidStud",
+          "ref": "2453b",
+          "colour": 71,
+          "title": "Brick  1 x  1 x  5 with Solid Stud",
+          "library_only": false
+        },
+        {
+          "role": "frame",
+          "id": "5",
+          "table": "plates.Plate6X8TrapDoorFrame",
+          "ref": "30041",
+          "colour": 8,
+          "title": "Plate  6 x  8 Trap Door Frame",
+          "library_only": false
+        },
+        {
+          "role": "trapdoor",
+          "id": "6",
+          "table": "plates.Plate4X5TrapDoor",
+          "ref": "30042",
+          "colour": 70,
+          "title": "Plate  4 x  5 Trap Door",
+          "library_only": false
+        }
+      ],
+      "clearance": {
+        "scenario": "S09_trap_door",
+        "sweep": {
+          "no_new_surface_crossings": true,
+          "crossings": [],
+          "excluded_rest_pairs": [
+            "frame-trapdoor"
+          ]
+        },
+        "clip_poses": {
+          "samples": 108,
+          "every": 4,
+          "no_new_surface_crossings": true,
+          "crossings_by_clip": {},
+          "frames_with_crossings": {},
+          "vertex_penetration_by_clip": {},
+          "deep_shrink_ldu": 1.5,
+          "no_deep_crossings": true,
+          "deep_crossings_by_clip": {},
+          "frames_with_deep_crossings": {}
+        },
+        "roles": {
+          "0": "base",
+          "1": "pillar0",
+          "2": "pillar1",
+          "3": "pillar2",
+          "4": "pillar3",
+          "5": "frame",
+          "6": "trapdoor"
+        },
+        "coverage": "Sampled surface crossings only; excludes rigid-body and rest-contact pairs; containment untested"
+      },
+      "hashes": {
+        "plan.json": "e544477790e731a321bb96c034353eb1dc3c92bcdab8f98f665b0295bae3e6d6",
+        "source/scenario.mpd": "65a7c4e8e41a1b3ad984895063222b436fe5a69832811bfb9ce57e3278e75c99",
+        "source/parts.json": "b36ac7911163910aa9b4b0355cd8335db018d44af0d1d734c607d156ded89217"
+      }
+    },
+    "S10_car_doors": {
+      "parts": 19,
+      "bodies": 2,
+      "builder_motion_matches": true,
+      "source_matches": true,
+      "asymmetric_values": {
+        "door_l": 0.819,
+        "door_r": 0.481
+      },
+      "semantics": {
+        "door_l": {
+          "control": "door_l",
+          "value": 0.2,
+          "test_point": [
+            15.0,
+            -14.0,
+            -30.0
+          ],
+          "displacement": [
+            -0.897004,
+            0.0,
+            -8.94012
+          ],
+          "expected": "-z",
+          "flipped": true
+        },
+        "door_r": {
+          "control": "door_r",
+          "value": 0.2,
+          "test_point": [
+            15.0,
+            -14.0,
+            30.0
+          ],
+          "displacement": [
+            -0.897004,
+            0.0,
+            8.94012
+          ],
+          "expected": "+z",
+          "flipped": false
+        }
+      },
+      "controls": {
+        "door_l": {
+          "default": 0,
+          "min": 0.0,
+          "max": 1.3,
+          "unit": "radian",
+          "description": "Left door (-Z side); + swings the rear edge out"
+        },
+        "door_r": {
+          "default": 0,
+          "min": 0.0,
+          "max": 1.3,
+          "unit": "radian",
+          "description": "Right door (+Z side); + swings the rear edge out"
+        }
+      },
+      "body_frames": {
+        "door_l": {
+          "instances": [
+            "12"
+          ],
+          "kind": "revolute",
+          "origin": [
+            -30.0,
+            0.0,
+            -30.0
+          ],
+          "axis": [
+            -0.0,
+            1.0,
+            -0.0
+          ],
+          "signal": "door_l_angle"
+        },
+        "door_r": {
+          "instances": [
+            "13"
+          ],
+          "kind": "revolute",
+          "origin": [
+            -30.0,
+            0.0,
+            30.0
+          ],
+          "axis": [
+            0.0,
+            -1.0,
+            0.0
+          ],
+          "signal": "door_r_angle"
+        }
+      },
+      "signals": {
+        "door_l_angle": {
+          "expression": "a",
+          "variables": {
+            "a": "control:door_l"
+          }
+        },
+        "door_r_angle": {
+          "expression": "a",
+          "variables": {
+            "a": "control:door_r"
+          }
+        }
+      },
+      "roles": [
+        {
+          "role": "chassis",
+          "id": "0",
+          "table": "plates.Plate4X8",
+          "ref": "3035",
+          "colour": 1,
+          "title": "Plate  4 x  8",
+          "library_only": false
+        },
+        {
+          "role": "axle0",
+          "id": "1",
+          "table": null,
+          "ref": "4600",
+          "colour": 0,
+          "title": "Plate  2 x  2 with 2 Wheel Pins",
+          "library_only": true
+        },
+        {
+          "role": "rim0l",
+          "id": "2",
+          "table": "wheels.WheelRim6_4X8",
+          "ref": "4624",
+          "colour": 7,
+          "title": "Wheel Rim  6.4 x  8",
+          "library_only": false
+        },
+        {
+          "role": "tyre0l",
+          "id": "3",
+          "table": "tyres.Tyre8_75X8OffsetTread",
+          "ref": "4084",
+          "colour": 0,
+          "title": "Tyre  8/ 75 x  8 Offset Tread",
+          "library_only": false
+        },
+        {
+          "role": "rim0r",
+          "id": "4",
+          "table": "wheels.WheelRim6_4X8",
+          "ref": "4624",
+          "colour": 7,
+          "title": "Wheel Rim  6.4 x  8",
+          "library_only": false
+        },
+        {
+          "role": "tyre0r",
+          "id": "5",
+          "table": "tyres.Tyre8_75X8OffsetTread",
+          "ref": "4084",
+          "colour": 0,
+          "title": "Tyre  8/ 75 x  8 Offset Tread",
+          "library_only": false
+        },
+        {
+          "role": "axle1",
+          "id": "6",
+          "table": null,
+          "ref": "4600",
+          "colour": 0,
+          "title": "Plate  2 x  2 with 2 Wheel Pins",
+          "library_only": true
+        },
+        {
+          "role": "rim1l",
+          "id": "7",
+          "table": "wheels.WheelRim6_4X8",
+          "ref": "4624",
+          "colour": 7,
+          "title": "Wheel Rim  6.4 x  8",
+          "library_only": false
+        },
+        {
+          "role": "tyre1l",
+          "id": "8",
+          "table": "tyres.Tyre8_75X8OffsetTread",
+          "ref": "4084",
+          "colour": 0,
+          "title": "Tyre  8/ 75 x  8 Offset Tread",
+          "library_only": false
+        },
+        {
+          "role": "rim1r",
+          "id": "9",
+          "table": "wheels.WheelRim6_4X8",
+          "ref": "4624",
+          "colour": 7,
+          "title": "Wheel Rim  6.4 x  8",
+          "library_only": false
+        },
+        {
+          "role": "tyre1r",
+          "id": "10",
+          "table": "tyres.Tyre8_75X8OffsetTread",
+          "ref": "4084",
+          "colour": 0,
+          "title": "Tyre  8/ 75 x  8 Offset Tread",
+          "library_only": false
+        },
+        {
+          "role": "nose",
+          "id": "11",
+          "table": "bricks.Brick2X4",
+          "ref": "3001",
+          "colour": 1,
+          "title": "Brick  2 x  4",
+          "library_only": false
+        },
+        {
+          "role": "door_l",
+          "id": "12",
+          "table": "doors.Door1X3X1Left",
+          "ref": "3822",
+          "colour": 1,
+          "title": "Door  1 x  3 x  1 Left",
+          "library_only": false
+        },
+        {
+          "role": "door_r",
+          "id": "13",
+          "table": "doors.Door1X3X1Right",
+          "ref": "3821",
+          "colour": 1,
+          "title": "Door  1 x  3 x  1 Right",
+          "library_only": false
+        },
+        {
+          "role": "windscreen",
+          "id": "14",
+          "table": "windscreens.Windscreen2X4X2",
+          "ref": "3823",
+          "colour": 47,
+          "title": "Windscreen  2 x  4 x  2",
+          "library_only": false
+        },
+        {
+          "role": "seat",
+          "id": "15",
+          "table": "bricks.Brick2X2",
+          "ref": "3003",
+          "colour": 15,
+          "title": "Brick  2 x  2",
+          "library_only": false
+        },
+        {
+          "role": "rear",
+          "id": "16",
+          "table": "bricks.Brick2X4",
+          "ref": "3001",
+          "colour": 1,
+          "title": "Brick  2 x  4",
+          "library_only": false
+        },
+        {
+          "role": "boot",
+          "id": "17",
+          "table": "plates.Plate2X4",
+          "ref": "3020",
+          "colour": 1,
+          "title": "Plate  2 x  4",
+          "library_only": false
+        },
+        {
+          "role": "tail",
+          "id": "18",
+          "table": "bricks.Brick1X4",
+          "ref": "3010",
+          "colour": 1,
+          "title": "Brick  1 x  4",
+          "library_only": false
+        }
+      ],
+      "clearance": {
+        "scenario": "S10_car_doors",
+        "sweep": {
+          "no_new_surface_crossings": true,
+          "crossings": [],
+          "excluded_rest_pairs": [
+            "door_l-windscreen",
+            "door_l-tyre0l",
+            "door_r-windscreen",
+            "door_r-tyre0r"
+          ]
+        },
+        "clip_poses": {
+          "samples": 108,
+          "every": 4,
+          "no_new_surface_crossings": true,
+          "crossings_by_clip": {},
+          "frames_with_crossings": {},
+          "vertex_penetration_by_clip": {},
+          "deep_shrink_ldu": 1.5,
+          "no_deep_crossings": true,
+          "deep_crossings_by_clip": {},
+          "frames_with_deep_crossings": {}
+        },
+        "roles": {
+          "0": "chassis",
+          "1": "axle0",
+          "2": "rim0l",
+          "3": "tyre0l",
+          "4": "rim0r",
+          "5": "tyre0r",
+          "6": "axle1",
+          "7": "rim1l",
+          "8": "tyre1l",
+          "9": "rim1r",
+          "10": "tyre1r",
+          "11": "nose",
+          "12": "door_l",
+          "13": "door_r",
+          "14": "windscreen",
+          "15": "seat",
+          "16": "rear",
+          "17": "boot",
+          "18": "tail"
+        },
+        "coverage": "Sampled surface crossings only; excludes rigid-body and rest-contact pairs; containment untested"
+      },
+      "hashes": {
+        "plan.json": "199e24ce46e300c29a46a25cecf5873086ff0135fee3aa76f4d1f590ff17b7b4",
+        "source/scenario.mpd": "a54bfacf1222d6204b5e68d6ccfd2dd2eb02428c32b6e98193a878bd9c7f7992",
+        "source/parts.json": "b1885ec75bcff6d6ce6d0fb33c9f3e4f0e842e672038cd7aeb296118dd1f506e"
+      }
+    },
+    "S11_car_roof": {
+      "parts": 18,
+      "bodies": 1,
+      "builder_motion_matches": true,
+      "source_matches": true,
+      "asymmetric_values": {
+        "roof": 0.819
+      },
+      "semantics": {
+        "roof": {
+          "control": "roof",
+          "value": 0.2,
+          "test_point": [
+            -36.0,
+            -80.0,
+            0.0
+          ],
+          "displacement": [
+            2.229884,
+            -14.224458,
+            0.0
+          ],
+          "expected": "-y",
+          "flipped": true
+        }
+      },
+      "controls": {
+        "roof": {
+          "default": 0,
+          "min": 0.0,
+          "max": 1.3,
+          "unit": "radian",
+          "description": "Roof about the rear holder hinge; + lifts the front edge"
+        }
+      },
+      "body_frames": {
+        "roof": {
+          "instances": [
+            "17"
+          ],
+          "kind": "revolute",
+          "origin": [
+            36.0,
+            -76.0,
+            0.0
+          ],
+          "axis": [
+            -0.0,
+            -0.0,
+            1.0
+          ],
+          "signal": "roof_angle"
+        }
+      },
+      "signals": {
+        "roof_angle": {
+          "expression": "a",
+          "variables": {
+            "a": "control:roof"
+          }
+        }
+      },
+      "roles": [
+        {
+          "role": "chassis",
+          "id": "0",
+          "table": "plates.Plate4X8",
+          "ref": "3035",
+          "colour": 4,
+          "title": "Plate  4 x  8",
+          "library_only": false
+        },
+        {
+          "role": "axle0",
+          "id": "1",
+          "table": null,
+          "ref": "4600",
+          "colour": 0,
+          "title": "Plate  2 x  2 with 2 Wheel Pins",
+          "library_only": true
+        },
+        {
+          "role": "rim0l",
+          "id": "2",
+          "table": "wheels.WheelRim6_4X8",
+          "ref": "4624",
+          "colour": 7,
+          "title": "Wheel Rim  6.4 x  8",
+          "library_only": false
+        },
+        {
+          "role": "tyre0l",
+          "id": "3",
+          "table": "tyres.Tyre8_75X8OffsetTread",
+          "ref": "4084",
+          "colour": 0,
+          "title": "Tyre  8/ 75 x  8 Offset Tread",
+          "library_only": false
+        },
+        {
+          "role": "rim0r",
+          "id": "4",
+          "table": "wheels.WheelRim6_4X8",
+          "ref": "4624",
+          "colour": 7,
+          "title": "Wheel Rim  6.4 x  8",
+          "library_only": false
+        },
+        {
+          "role": "tyre0r",
+          "id": "5",
+          "table": "tyres.Tyre8_75X8OffsetTread",
+          "ref": "4084",
+          "colour": 0,
+          "title": "Tyre  8/ 75 x  8 Offset Tread",
+          "library_only": false
+        },
+        {
+          "role": "axle1",
+          "id": "6",
+          "table": null,
+          "ref": "4600",
+          "colour": 0,
+          "title": "Plate  2 x  2 with 2 Wheel Pins",
+          "library_only": true
+        },
+        {
+          "role": "rim1l",
+          "id": "7",
+          "table": "wheels.WheelRim6_4X8",
+          "ref": "4624",
+          "colour": 7,
+          "title": "Wheel Rim  6.4 x  8",
+          "library_only": false
+        },
+        {
+          "role": "tyre1l",
+          "id": "8",
+          "table": "tyres.Tyre8_75X8OffsetTread",
+          "ref": "4084",
+          "colour": 0,
+          "title": "Tyre  8/ 75 x  8 Offset Tread",
+          "library_only": false
+        },
+        {
+          "role": "rim1r",
+          "id": "9",
+          "table": "wheels.WheelRim6_4X8",
+          "ref": "4624",
+          "colour": 7,
+          "title": "Wheel Rim  6.4 x  8",
+          "library_only": false
+        },
+        {
+          "role": "tyre1r",
+          "id": "10",
+          "table": "tyres.Tyre8_75X8OffsetTread",
+          "ref": "4084",
+          "colour": 0,
+          "title": "Tyre  8/ 75 x  8 Offset Tread",
+          "library_only": false
+        },
+        {
+          "role": "nose",
+          "id": "11",
+          "table": "bricks.Brick2X4",
+          "ref": "3001",
+          "colour": 4,
+          "title": "Brick  2 x  4",
+          "library_only": false
+        },
+        {
+          "role": "side_l",
+          "id": "12",
+          "table": "bricks.Brick1X4",
+          "ref": "3010",
+          "colour": 4,
+          "title": "Brick  1 x  4",
+          "library_only": false
+        },
+        {
+          "role": "side_r",
+          "id": "13",
+          "table": "bricks.Brick1X4",
+          "ref": "3010",
+          "colour": 4,
+          "title": "Brick  1 x  4",
+          "library_only": false
+        },
+        {
+          "role": "rear",
+          "id": "14",
+          "table": "bricks.Brick2X4",
+          "ref": "3001",
+          "colour": 4,
+          "title": "Brick  2 x  4",
+          "library_only": false
+        },
+        {
+          "role": "windscreen",
+          "id": "15",
+          "table": "windscreens.Windscreen2X4X2",
+          "ref": "3823",
+          "colour": 47,
+          "title": "Windscreen  2 x  4 x  2",
+          "library_only": false
+        },
+        {
+          "role": "holder",
+          "id": "16",
+          "table": "hinges.HingeCarRoofHolder1X4X2",
+          "ref": "4214",
+          "colour": 4,
+          "title": "Hinge Car Roof Holder  1 x  4 x  2",
+          "library_only": false
+        },
+        {
+          "role": "roof",
+          "id": "17",
+          "table": "hinges.HingeCarRoof4X4",
+          "ref": "4213",
+          "colour": 4,
+          "title": "Hinge Car Roof  4 x  4",
+          "library_only": false
+        }
+      ],
+      "clearance": {
+        "scenario": "S11_car_roof",
+        "sweep": {
+          "no_new_surface_crossings": true,
+          "crossings": [],
+          "excluded_rest_pairs": [
+            "windscreen-roof",
+            "holder-roof"
+          ]
+        },
+        "clip_poses": {
+          "samples": 108,
+          "every": 4,
+          "no_new_surface_crossings": true,
+          "crossings_by_clip": {},
+          "frames_with_crossings": {},
+          "vertex_penetration_by_clip": {},
+          "deep_shrink_ldu": 1.5,
+          "no_deep_crossings": true,
+          "deep_crossings_by_clip": {},
+          "frames_with_deep_crossings": {}
+        },
+        "roles": {
+          "0": "chassis",
+          "1": "axle0",
+          "2": "rim0l",
+          "3": "tyre0l",
+          "4": "rim0r",
+          "5": "tyre0r",
+          "6": "axle1",
+          "7": "rim1l",
+          "8": "tyre1l",
+          "9": "rim1r",
+          "10": "tyre1r",
+          "11": "nose",
+          "12": "side_l",
+          "13": "side_r",
+          "14": "rear",
+          "15": "windscreen",
+          "16": "holder",
+          "17": "roof"
+        },
+        "coverage": "Sampled surface crossings only; excludes rigid-body and rest-contact pairs; containment untested"
+      },
+      "hashes": {
+        "plan.json": "6b9537d5da465d3f4fd9572357901dc6593a9e9c80984e67f54a8c9c02d00c54",
+        "source/scenario.mpd": "2db3da963471eac11993ed91fe98096eb5a1c3c32dc86b5e3adff17e4be29c8e",
+        "source/parts.json": "6ce70d8299b94a9e51ba50610b3b1661ea25e67cc20abdbcb85ea3abe4b5eac6"
+      }
+    },
+    "S12_canopy": {
+      "parts": 11,
+      "bodies": 1,
+      "builder_motion_matches": true,
+      "source_matches": true,
+      "asymmetric_values": {
+        "canopy": 1.008
+      },
+      "semantics": {
+        "canopy": {
+          "control": "canopy",
+          "value": 0.2,
+          "test_point": [
+            -54.0,
+            -8.0,
+            0.0
+          ],
+          "displacement": [
+            -10.52482,
+            -15.102858,
+            0.0
+          ],
+          "expected": "-y",
+          "flipped": true
+        }
+      },
+      "controls": {
+        "canopy": {
+          "default": 0,
+          "min": 0.0,
+          "max": 1.6,
+          "unit": "radian",
+          "description": "Canopy about the rear hinge; + lifts the front"
+        }
+      },
+      "body_frames": {
+        "canopy": {
+          "instances": [
+            "8"
+          ],
+          "kind": "revolute",
+          "origin": [
+            16.0,
+            -68.0,
+            0.0
+          ],
+          "axis": [
+            -0.0,
+            -0.0,
+            1.0
+          ],
+          "signal": "canopy_angle"
+        }
+      },
+      "signals": {
+        "canopy_angle": {
+          "expression": "a",
+          "variables": {
+            "a": "control:canopy"
+          }
+        }
+      },
+      "roles": [
+        {
+          "role": "wings",
+          "id": "0",
+          "table": "plates.Plate4X8",
+          "ref": "3035",
+          "colour": 7,
+          "title": "Plate  4 x  8",
+          "library_only": false
+        },
+        {
+          "role": "hull",
+          "id": "1",
+          "table": "plates.Plate4X10",
+          "ref": "3030",
+          "colour": 7,
+          "title": "Plate  4 x 10",
+          "library_only": false
+        },
+        {
+          "role": "nose",
+          "id": "2",
+          "table": "tiles.Tile1X4WithGroove",
+          "ref": "2431",
+          "colour": 8,
+          "title": "Tile  1 x  4 with Groove",
+          "library_only": false
+        },
+        {
+          "role": "back_wall0",
+          "id": "3",
+          "table": "bricks.Brick1X4",
+          "ref": "3010",
+          "colour": 7,
+          "title": "Brick  1 x  4",
+          "library_only": false
+        },
+        {
+          "role": "back_wall1",
+          "id": "4",
+          "table": "bricks.Brick1X4",
+          "ref": "3010",
+          "colour": 7,
+          "title": "Brick  1 x  4",
+          "library_only": false
+        },
+        {
+          "role": "back_plate",
+          "id": "5",
+          "table": "plates.Plate1X4",
+          "ref": "3710",
+          "colour": 7,
+          "title": "Plate  1 x  4",
+          "library_only": false
+        },
+        {
+          "role": "deck",
+          "id": "6",
+          "table": "plates.Plate4X4",
+          "ref": "3031",
+          "colour": 7,
+          "title": "Plate  4 x  4",
+          "library_only": false
+        },
+        {
+          "role": "holder",
+          "id": "7",
+          "table": "hinges.HingePlate1X4WithCarRoofHolder",
+          "ref": "4315",
+          "colour": 7,
+          "title": "Hinge Plate  1 x  4 with Car Roof Holder",
+          "library_only": false
+        },
+        {
+          "role": "canopy",
+          "id": "8",
+          "table": "windscreens.Windscreen4X4X3WithHinge",
+          "ref": "2620",
+          "colour": 33,
+          "title": "Windscreen  4 x  4 x  3 with Hinge",
+          "library_only": false
+        },
+        {
+          "role": "engine_l",
+          "id": "9",
+          "table": "bricks.Brick2X2RoundWithoutReinforcement",
+          "ref": "3941",
+          "colour": 8,
+          "title": "Brick  2 x  2 Round without Reinforcement",
+          "library_only": false
+        },
+        {
+          "role": "engine_r",
+          "id": "10",
+          "table": "bricks.Brick2X2RoundWithoutReinforcement",
+          "ref": "3941",
+          "colour": 8,
+          "title": "Brick  2 x  2 Round without Reinforcement",
+          "library_only": false
+        }
+      ],
+      "clearance": {
+        "scenario": "S12_canopy",
+        "sweep": {
+          "no_new_surface_crossings": false,
+          "crossings": [
+            [
+              "canopy",
+              0.1,
+              "hull-canopy"
+            ]
+          ],
+          "excluded_rest_pairs": [
+            "holder-canopy"
+          ]
+        },
+        "clip_poses": {
+          "samples": 108,
+          "every": 4,
+          "no_new_surface_crossings": false,
+          "crossings_by_clip": {
+            "S12_canopy.flip_open": [
+              "hull-canopy"
+            ],
+            "S12_canopy.pop_open": [
+              "hull-canopy"
+            ],
+            "S12_canopy.slow_seal": [
+              "hull-canopy"
+            ]
+          },
+          "frames_with_crossings": {
+            "S12_canopy.flip_open": [
+              129,
+              133
+            ],
+            "S12_canopy.pop_open": [
+              129
+            ],
+            "S12_canopy.slow_seal": [
+              9,
+              13,
+              17,
+              125,
+              129,
+              133
+            ]
+          },
+          "vertex_penetration_by_clip": {
+            "S12_canopy.flip_open": {
+              "hull-canopy": {
+                "max_vertex_depth_ldu": 0.115,
+                "kind": "contact"
+              }
+            },
+            "S12_canopy.pop_open": {
+              "hull-canopy": {
+                "max_vertex_depth_ldu": 0.076,
+                "kind": "contact"
+              }
+            },
+            "S12_canopy.slow_seal": {
+              "hull-canopy": {
+                "max_vertex_depth_ldu": 0.115,
+                "kind": "contact"
+              }
+            }
+          },
+          "deep_shrink_ldu": 1.5,
+          "no_deep_crossings": false,
+          "deep_crossings_by_clip": {
+            "S12_canopy.flip_open": [
+              "hull-canopy"
+            ],
+            "S12_canopy.pop_open": [
+              "hull-canopy"
+            ],
+            "S12_canopy.slow_seal": [
+              "hull-canopy"
+            ]
+          },
+          "frames_with_deep_crossings": {
+            "S12_canopy.flip_open": [
+              129,
+              133
+            ],
+            "S12_canopy.pop_open": [
+              129
+            ],
+            "S12_canopy.slow_seal": [
+              9,
+              13,
+              17,
+              129,
+              133
+            ]
+          }
+        },
+        "roles": {
+          "0": "wings",
+          "1": "hull",
+          "2": "nose",
+          "3": "back_wall0",
+          "4": "back_wall1",
+          "5": "back_plate",
+          "6": "deck",
+          "7": "holder",
+          "8": "canopy",
+          "9": "engine_l",
+          "10": "engine_r"
+        },
+        "coverage": "Sampled surface crossings only; excludes rigid-body and rest-contact pairs; containment untested"
+      },
+      "hashes": {
+        "plan.json": "f7db68ef1a51be3745c54291207e165f7b4ca2595f976af887ebc8b4147c0a31",
+        "source/scenario.mpd": "f5de4987cdda3ed30fa98cb8cb6ec2738766a44974cf51ca2a9cadc8b3c0b727",
+        "source/parts.json": "9c7144c13029eda5b77ba2b2fe49d265cb489521eed460d3be0d507ae8d06679"
+      }
+    },
+    "S13_forklift": {
+      "parts": 16,
+      "bodies": 2,
+      "builder_motion_matches": true,
+      "source_matches": true,
+      "asymmetric_values": {
+        "lift": 63.0
+      },
+      "semantics": {
+        "forks": {
+          "control": "lift",
+          "value": 4.0,
+          "test_point": [
+            0.0,
+            -44.0,
+            -56.0
+          ],
+          "displacement": [
+            0.0,
+            -4.0,
+            0.0
+          ],
+          "expected": "-y",
+          "flipped": false
+        },
+        "spring_seat_lift_25": {
+          "seat": [
+            0.0,
+            -17.8,
+            -51.05
+          ],
+          "follows_forks_error": 7.105427357601002e-15
+        },
+        "spring_seat_lift_60": {
+          "seat": [
+            0.0,
+            -52.8,
+            -51.05
+          ],
+          "follows_forks_error": 0.0
+        },
+        "spring_seat_lift_100": {
+          "seat": [
+            0.0,
+            -92.8,
+            -51.05
+          ],
+          "follows_forks_error": 0.0
+        }
+      },
+      "controls": {
+        "lift": {
+          "default": 0,
+          "min": 0.0,
+          "max": 100.0,
+          "unit": "ldu",
+          "description": "Forks along the rails; + raises them (0 = lowered, 100 = raised, as shortcuts 3430c00-f2 / -f1)"
+        }
+      },
+      "body_frames": {
+        "forks": {
+          "instances": [
+            "14"
+          ],
+          "kind": "prismatic",
+          "origin": [
+            0.0,
+            -44.0,
+            -56.0
+          ],
+          "axis": [
+            0.0,
+            -1.0,
+            0.0
+          ],
+          "signal": "lift_offset"
+        },
+        "spring": {
+          "instances": [
+            "15"
+          ],
+          "kind": "stretch",
+          "origin": [
+            0.0,
+            -128.8,
+            -51.05
+          ],
+          "axis": [
+            0.0,
+            1.0,
+            0.0
+          ],
+          "signal": "spring_scale"
+        }
+      },
+      "signals": {
+        "lift_offset": {
+          "expression": "a",
+          "variables": {
+            "a": "control:lift"
+          }
+        },
+        "spring_scale": {
+          "expression": "(136 - a) / 136",
+          "variables": {
+            "a": "control:lift"
+          }
+        }
+      },
+      "roles": [
+        {
+          "role": "chassis",
+          "id": "0",
+          "table": "plates.Plate4X6",
+          "ref": "3032",
+          "colour": 14,
+          "title": "Plate  4 x  6",
+          "library_only": false
+        },
+        {
+          "role": "axle0",
+          "id": "1",
+          "table": null,
+          "ref": "4600",
+          "colour": 0,
+          "title": "Plate  2 x  2 with 2 Wheel Pins",
+          "library_only": true
+        },
+        {
+          "role": "rim0l",
+          "id": "2",
+          "table": "wheels.WheelRim6_4X8",
+          "ref": "4624",
+          "colour": 7,
+          "title": "Wheel Rim  6.4 x  8",
+          "library_only": false
+        },
+        {
+          "role": "tyre0l",
+          "id": "3",
+          "table": "tyres.Tyre8_75X8OffsetTread",
+          "ref": "4084",
+          "colour": 0,
+          "title": "Tyre  8/ 75 x  8 Offset Tread",
+          "library_only": false
+        },
+        {
+          "role": "rim0r",
+          "id": "4",
+          "table": "wheels.WheelRim6_4X8",
+          "ref": "4624",
+          "colour": 7,
+          "title": "Wheel Rim  6.4 x  8",
+          "library_only": false
+        },
+        {
+          "role": "tyre0r",
+          "id": "5",
+          "table": "tyres.Tyre8_75X8OffsetTread",
+          "ref": "4084",
+          "colour": 0,
+          "title": "Tyre  8/ 75 x  8 Offset Tread",
+          "library_only": false
+        },
+        {
+          "role": "axle1",
+          "id": "6",
+          "table": null,
+          "ref": "4600",
+          "colour": 0,
+          "title": "Plate  2 x  2 with 2 Wheel Pins",
+          "library_only": true
+        },
+        {
+          "role": "rim1l",
+          "id": "7",
+          "table": "wheels.WheelRim6_4X8",
+          "ref": "4624",
+          "colour": 7,
+          "title": "Wheel Rim  6.4 x  8",
+          "library_only": false
+        },
+        {
+          "role": "tyre1l",
+          "id": "8",
+          "table": "tyres.Tyre8_75X8OffsetTread",
+          "ref": "4084",
+          "colour": 0,
+          "title": "Tyre  8/ 75 x  8 Offset Tread",
+          "library_only": false
+        },
+        {
+          "role": "rim1r",
+          "id": "9",
+          "table": "wheels.WheelRim6_4X8",
+          "ref": "4624",
+          "colour": 7,
+          "title": "Wheel Rim  6.4 x  8",
+          "library_only": false
+        },
+        {
+          "role": "tyre1r",
+          "id": "10",
+          "table": "tyres.Tyre8_75X8OffsetTread",
+          "ref": "4084",
+          "colour": 0,
+          "title": "Tyre  8/ 75 x  8 Offset Tread",
+          "library_only": false
+        },
+        {
+          "role": "body",
+          "id": "11",
+          "table": "bricks.Brick2X4",
+          "ref": "3001",
+          "colour": 14,
+          "title": "Brick  2 x  4",
+          "library_only": false
+        },
+        {
+          "role": "seat",
+          "id": "12",
+          "table": "bricks.Brick2X2",
+          "ref": "3003",
+          "colour": 0,
+          "title": "Brick  2 x  2",
+          "library_only": false
+        },
+        {
+          "role": "rails",
+          "id": "13",
+          "table": "vehicles.ForkliftRails2X4X5_667",
+          "ref": "3430",
+          "colour": 0,
+          "title": "Forklift Rails  2 x  4 x  5.667",
+          "library_only": false
+        },
+        {
+          "role": "forks",
+          "id": "14",
+          "table": "vehicles.ForkliftForks2X4",
+          "ref": "3431",
+          "colour": 7,
+          "title": "Forklift Forks  2 x  4",
+          "library_only": false
+        },
+        {
+          "role": "spring",
+          "id": "15",
+          "table": "vehicles.Forklift2X7Spring_Extended_",
+          "ref": "u9529-f2",
+          "colour": 0,
+          "title": "Forklift  2 x  7 Spring (Extended)",
+          "library_only": false
+        }
+      ],
+      "clearance": {
+        "scenario": "S13_forklift",
+        "sweep": {
+          "no_new_surface_crossings": false,
+          "crossings": [
+            [
+              "lift",
+              18.75,
+              "forks-spring"
+            ],
+            [
+              "lift",
+              18.75,
+              "rails-spring"
+            ],
+            [
+              "lift",
+              25.0,
+              "forks-spring"
+            ],
+            [
+              "lift",
+              25.0,
+              "rails-spring"
+            ],
+            [
+              "lift",
+              31.25,
+              "forks-spring"
+            ],
+            [
+              "lift",
+              31.25,
+              "rails-spring"
+            ],
+            [
+              "lift",
+              37.5,
+              "forks-spring"
+            ],
+            [
+              "lift",
+              37.5,
+              "rails-spring"
+            ],
+            [
+              "lift",
+              43.75,
+              "forks-spring"
+            ],
+            [
+              "lift",
+              43.75,
+              "rails-spring"
+            ],
+            [
+              "lift",
+              50.0,
+              "forks-spring"
+            ],
+            [
+              "lift",
+              50.0,
+              "rails-spring"
+            ],
+            [
+              "lift",
+              56.25,
+              "forks-spring"
+            ],
+            [
+              "lift",
+              56.25,
+              "rails-spring"
+            ],
+            [
+              "lift",
+              62.5,
+              "forks-spring"
+            ],
+            [
+              "lift",
+              62.5,
+              "rails-spring"
+            ],
+            [
+              "lift",
+              68.75,
+              "forks-spring"
+            ],
+            [
+              "lift",
+              68.75,
+              "rails-spring"
+            ],
+            [
+              "lift",
+              75.0,
+              "forks-spring"
+            ],
+            [
+              "lift",
+              75.0,
+              "rails-spring"
+            ],
+            [
+              "lift",
+              81.25,
+              "forks-spring"
+            ],
+            [
+              "lift",
+              87.5,
+              "forks-spring"
+            ],
+            [
+              "lift",
+              93.75,
+              "forks-spring"
+            ],
+            [
+              "lift",
+              100.0,
+              "forks-spring"
+            ]
+          ],
+          "excluded_rest_pairs": [
+            "rails-forks"
+          ]
+        },
+        "clip_poses": {
+          "samples": 108,
+          "every": 4,
+          "no_new_surface_crossings": false,
+          "crossings_by_clip": {
+            "S13_forklift.chain_hoist": [
+              "forks-spring",
+              "rails-spring"
+            ],
+            "S13_forklift.drop": [
+              "forks-spring",
+              "rails-spring"
+            ],
+            "S13_forklift.raise_lower": [
+              "forks-spring",
+              "rails-spring"
+            ]
+          },
+          "frames_with_crossings": {
+            "S13_forklift.chain_hoist": [
+              13,
+              17,
+              21,
+              25,
+              29,
+              33,
+              37,
+              41,
+              45,
+              49,
+              53,
+              57,
+              61,
+              65,
+              69,
+              73,
+              77,
+              81,
+              85,
+              89,
+              93,
+              97,
+              101,
+              105,
+              109,
+              113,
+              117,
+              121,
+              125,
+              129,
+              133
+            ],
+            "S13_forklift.drop": [
+              21,
+              25,
+              29,
+              33,
+              37,
+              41,
+              45,
+              49,
+              53,
+              57,
+              61,
+              65,
+              69,
+              73,
+              77,
+              81,
+              85,
+              93
+            ],
+            "S13_forklift.raise_lower": [
+              25,
+              29,
+              33,
+              37,
+              41,
+              45,
+              49,
+              53,
+              57,
+              61,
+              65,
+              69,
+              73,
+              77,
+              81,
+              85,
+              89,
+              93,
+              97,
+              101,
+              105,
+              109,
+              113,
+              117,
+              121,
+              125
+            ]
+          },
+          "vertex_penetration_by_clip": {
+            "S13_forklift.chain_hoist": {
+              "forks-spring": {
+                "max_vertex_depth_ldu": 1.237,
+                "kind": "shallow"
+              },
+              "rails-spring": {
+                "max_vertex_depth_ldu": 1.609,
+                "kind": "shallow"
+              }
+            },
+            "S13_forklift.drop": {
+              "forks-spring": {
+                "max_vertex_depth_ldu": 1.234,
+                "kind": "shallow"
+              },
+              "rails-spring": {
+                "max_vertex_depth_ldu": 1.636,
+                "kind": "shallow"
+              }
+            },
+            "S13_forklift.raise_lower": {
+              "forks-spring": {
+                "max_vertex_depth_ldu": 1.225,
+                "kind": "shallow"
+              },
+              "rails-spring": {
+                "max_vertex_depth_ldu": 1.586,
+                "kind": "shallow"
+              }
+            }
+          },
+          "deep_shrink_ldu": 1.5,
+          "no_deep_crossings": true,
+          "deep_crossings_by_clip": {},
+          "frames_with_deep_crossings": {}
+        },
+        "roles": {
+          "0": "chassis",
+          "1": "axle0",
+          "2": "rim0l",
+          "3": "tyre0l",
+          "4": "rim0r",
+          "5": "tyre0r",
+          "6": "axle1",
+          "7": "rim1l",
+          "8": "tyre1l",
+          "9": "rim1r",
+          "10": "tyre1r",
+          "11": "body",
+          "12": "seat",
+          "13": "rails",
+          "14": "forks",
+          "15": "spring"
+        },
+        "coverage": "Sampled surface crossings only; excludes rigid-body and rest-contact pairs; containment untested"
+      },
+      "hashes": {
+        "plan.json": "028575dc8647b98df0b20e53fa4e089d9f7d0b72464e8e5a07c4129f0782b920",
+        "source/scenario.mpd": "1ae415c0b21b900dada790f5f649f0e6141cf9f0ce0d442c51cb9509bd0c2740",
+        "source/parts.json": "9021d438746136eef9e8a1cd84be6c007f84e2115d42c940e24a1040980c6b9d"
+      }
+    },
+    "S14_sliding_door": {
+      "parts": 19,
+      "bodies": 1,
+      "builder_motion_matches": true,
+      "source_matches": true,
+      "asymmetric_values": {
+        "slide": 94.5
+      },
+      "semantics": {
+        "door": {
+          "control": "slide",
+          "value": 4.0,
+          "test_point": [
+            -18.0,
+            -67.0,
+            -13.0
+          ],
+          "displacement": [
+            4.0,
+            0.0,
+            0.0
+          ],
+          "expected": "+x",
+          "flipped": false
+        }
+      },
+      "controls": {
+        "slide": {
+          "default": 0,
+          "min": 0.0,
+          "max": 150.0,
+          "unit": "ldu",
+          "description": "Door along the rails; + slides it open to the right (+X)"
+        }
+      },
+      "body_frames": {
+        "door": {
+          "instances": [
+            "3"
+          ],
+          "kind": "prismatic",
+          "origin": [
+            -18.0,
+            -67.0,
+            -13.0
+          ],
+          "axis": [
+            1.0,
+            0.0,
+            0.0
+          ],
+          "signal": "slide_offset"
+        }
+      },
+      "signals": {
+        "slide_offset": {
+          "expression": "a",
+          "variables": {
+            "a": "control:slide"
+          }
+        }
+      },
+      "roles": [
+        {
+          "role": "base",
+          "id": "0",
+          "table": "plates.Plate6X16",
+          "ref": "3027",
+          "colour": 8,
+          "title": "Plate  6 x 16",
+          "library_only": false
+        },
+        {
+          "role": "rail_low_a",
+          "id": "1",
+          "table": "plates.Plate1X8WithDoorRail",
+          "ref": "4510",
+          "colour": 4,
+          "title": "Plate  1 x  8 with Door Rail",
+          "library_only": false
+        },
+        {
+          "role": "rail_low_b",
+          "id": "2",
+          "table": "plates.Plate1X8WithDoorRail",
+          "ref": "4510",
+          "colour": 4,
+          "title": "Plate  1 x  8 with Door Rail",
+          "library_only": false
+        },
+        {
+          "role": "door",
+          "id": "3",
+          "table": "doors.Door6_5X5SlidingWithCorrugatedSurface",
+          "ref": "4511",
+          "colour": 71,
+          "title": "Door  6.5 x  5 Sliding with Corrugated Surface",
+          "library_only": false
+        },
+        {
+          "role": "wall0",
+          "id": "4",
+          "table": "bricks.Brick1X8",
+          "ref": "3008",
+          "colour": 4,
+          "title": "Brick  1 x  8",
+          "library_only": false
+        },
+        {
+          "role": "post0",
+          "id": "5",
+          "table": "bricks.Brick1X1",
+          "ref": "3005",
+          "colour": 4,
+          "title": "Brick  1 x  1",
+          "library_only": false
+        },
+        {
+          "role": "wall1",
+          "id": "6",
+          "table": "bricks.Brick1X8",
+          "ref": "3008",
+          "colour": 4,
+          "title": "Brick  1 x  8",
+          "library_only": false
+        },
+        {
+          "role": "post1",
+          "id": "7",
+          "table": "bricks.Brick1X1",
+          "ref": "3005",
+          "colour": 4,
+          "title": "Brick  1 x  1",
+          "library_only": false
+        },
+        {
+          "role": "wall2",
+          "id": "8",
+          "table": "bricks.Brick1X8",
+          "ref": "3008",
+          "colour": 4,
+          "title": "Brick  1 x  8",
+          "library_only": false
+        },
+        {
+          "role": "post2",
+          "id": "9",
+          "table": "bricks.Brick1X1",
+          "ref": "3005",
+          "colour": 4,
+          "title": "Brick  1 x  1",
+          "library_only": false
+        },
+        {
+          "role": "wall3",
+          "id": "10",
+          "table": "bricks.Brick1X8",
+          "ref": "3008",
+          "colour": 4,
+          "title": "Brick  1 x  8",
+          "library_only": false
+        },
+        {
+          "role": "post3",
+          "id": "11",
+          "table": "bricks.Brick1X1",
+          "ref": "3005",
+          "colour": 4,
+          "title": "Brick  1 x  1",
+          "library_only": false
+        },
+        {
+          "role": "wall4",
+          "id": "12",
+          "table": "bricks.Brick1X8",
+          "ref": "3008",
+          "colour": 4,
+          "title": "Brick  1 x  8",
+          "library_only": false
+        },
+        {
+          "role": "post4",
+          "id": "13",
+          "table": "bricks.Brick1X1",
+          "ref": "3005",
+          "colour": 4,
+          "title": "Brick  1 x  1",
+          "library_only": false
+        },
+        {
+          "role": "wall_cap",
+          "id": "14",
+          "table": "plates.Plate1X8",
+          "ref": "3460",
+          "colour": 4,
+          "title": "Plate  1 x  8",
+          "library_only": false
+        },
+        {
+          "role": "post_cap",
+          "id": "15",
+          "table": "plates.Plate1X1",
+          "ref": "3024",
+          "colour": 4,
+          "title": "Plate  1 x  1",
+          "library_only": false
+        },
+        {
+          "role": "rail_top_a",
+          "id": "16",
+          "table": "plates.Plate1X8WithDoorRail",
+          "ref": "4510",
+          "colour": 4,
+          "title": "Plate  1 x  8 with Door Rail",
+          "library_only": false
+        },
+        {
+          "role": "rail_top_b",
+          "id": "17",
+          "table": "plates.Plate1X8WithDoorRail",
+          "ref": "4510",
+          "colour": 4,
+          "title": "Plate  1 x  8 with Door Rail",
+          "library_only": false
+        },
+        {
+          "role": "roof",
+          "id": "18",
+          "table": "plates.Plate2X16",
+          "ref": "4282",
+          "colour": 8,
+          "title": "Plate  2 x 16",
+          "library_only": false
+        }
+      ],
+      "clearance": {
+        "scenario": "S14_sliding_door",
+        "sweep": {
+          "no_new_surface_crossings": true,
+          "crossings": [],
+          "excluded_rest_pairs": []
+        },
+        "clip_poses": {
+          "samples": 108,
+          "every": 4,
+          "no_new_surface_crossings": true,
+          "crossings_by_clip": {},
+          "frames_with_crossings": {},
+          "vertex_penetration_by_clip": {},
+          "deep_shrink_ldu": 1.5,
+          "no_deep_crossings": true,
+          "deep_crossings_by_clip": {},
+          "frames_with_deep_crossings": {}
+        },
+        "roles": {
+          "0": "base",
+          "1": "rail_low_a",
+          "2": "rail_low_b",
+          "3": "door",
+          "4": "wall0",
+          "5": "post0",
+          "6": "wall1",
+          "7": "post1",
+          "8": "wall2",
+          "9": "post2",
+          "10": "wall3",
+          "11": "post3",
+          "12": "wall4",
+          "13": "post4",
+          "14": "wall_cap",
+          "15": "post_cap",
+          "16": "rail_top_a",
+          "17": "rail_top_b",
+          "18": "roof"
+        },
+        "coverage": "Sampled surface crossings only; excludes rigid-body and rest-contact pairs; containment untested"
+      },
+      "hashes": {
+        "plan.json": "cc4b2d4e16de4db6d61b6dc5ace6cded7c10c333de692f22d19ffe42e2fef833",
+        "source/scenario.mpd": "13c83c70dc3e9c25630becdcf1c7ebbc8eca33b1344f7a545bbff47b34b50811",
+        "source/parts.json": "646aec47edaba922cb7cccb7c52c13d095b8c734ba2d9a6f7c02beac3934661e"
+      }
+    },
+    "S15_radar": {
+      "parts": 11,
+      "bodies": 1,
+      "builder_motion_matches": true,
+      "source_matches": true,
+      "asymmetric_values": {
+        "spin": 15.833627
+      },
+      "semantics": {
+        "radar": {
+          "control": "spin",
+          "value": 0.2,
+          "test_point": [
+            0.0,
+            -126.0,
+            -26.0
+          ],
+          "displacement": [
+            5.165403,
+            0.0,
+            0.518269
+          ],
+          "expected": "+x",
+          "flipped": false
+        }
+      },
+      "controls": {
+        "spin": {
+          "default": 0,
+          "min": -25.132741228718345,
+          "max": 25.132741228718345,
+          "unit": "radian",
+          "description": "Turntable top; + turns counter-clockwise seen from above"
+        }
+      },
+      "body_frames": {
+        "radar": {
+          "instances": [
+            "4",
+            "5",
+            "6",
+            "7",
+            "8",
+            "9",
+            "10"
+          ],
+          "kind": "revolute",
+          "origin": [
+            0.0,
+            -50.0,
+            0.0
+          ],
+          "axis": [
+            0.0,
+            -1.0,
+            0.0
+          ],
+          "signal": "spin_angle"
+        }
+      },
+      "signals": {
+        "spin_angle": {
+          "expression": "a",
+          "variables": {
+            "a": "control:spin"
+          }
+        }
+      },
+      "roles": [
+        {
+          "role": "base",
+          "id": "0",
+          "table": "plates.Plate4X4",
+          "ref": "3031",
+          "colour": 8,
+          "title": "Plate  4 x  4",
+          "library_only": false
+        },
+        {
+          "role": "pedestal0",
+          "id": "1",
+          "table": "bricks.Brick2X2",
+          "ref": "3003",
+          "colour": 71,
+          "title": "Brick  2 x  2",
+          "library_only": false
+        },
+        {
+          "role": "pedestal1",
+          "id": "2",
+          "table": "bricks.Brick2X2",
+          "ref": "3003",
+          "colour": 71,
+          "title": "Brick  2 x  2",
+          "library_only": false
+        },
+        {
+          "role": "turntable_base",
+          "id": "3",
+          "table": "turntables.Turntable2X2PlateBase",
+          "ref": "3680",
+          "colour": 8,
+          "title": "Turntable  2 x  2 Plate Base",
+          "library_only": false
+        },
+        {
+          "role": "turntable_top",
+          "id": "4",
+          "table": "turntables.Turntable2X2PlateTop",
+          "ref": "3679",
+          "colour": 71,
+          "title": "Turntable  2 x  2 Plate Top",
+          "library_only": false
+        },
+        {
+          "role": "mount",
+          "id": "5",
+          "table": "plates.Plate2X2WithGrooveWith1CentreStud",
+          "ref": "87580",
+          "colour": 71,
+          "title": "Plate  2 x  2 with Groove with 1 Centre Stud",
+          "library_only": false
+        },
+        {
+          "role": "mast0",
+          "id": "6",
+          "table": "bricks.Brick1X1",
+          "ref": "3005",
+          "colour": 15,
+          "title": "Brick  1 x  1",
+          "library_only": false
+        },
+        {
+          "role": "mast1",
+          "id": "7",
+          "table": "bricks.Brick1X1",
+          "ref": "3005",
+          "colour": 15,
+          "title": "Brick  1 x  1",
+          "library_only": false
+        },
+        {
+          "role": "head",
+          "id": "8",
+          "table": "bricks.Brick1X1WithStudOn1Side",
+          "ref": "87087",
+          "colour": 15,
+          "title": "Brick  1 x  1 with Stud on 1 Side",
+          "library_only": false
+        },
+        {
+          "role": "dish",
+          "id": "9",
+          "table": "dishes.Dish4X4Inverted",
+          "ref": "3960",
+          "colour": 15,
+          "title": "Dish  4 x  4 Inverted",
+          "library_only": false
+        },
+        {
+          "role": "beacon",
+          "id": "10",
+          "table": "plates.Plate1X1Round",
+          "ref": "6141",
+          "colour": 4,
+          "title": "Plate  1 x  1 Round",
+          "library_only": false
+        }
+      ],
+      "clearance": {
+        "scenario": "S15_radar",
+        "sweep": {
+          "no_new_surface_crossings": true,
+          "crossings": [],
+          "excluded_rest_pairs": [
+            "pedestal1-turntable_top",
+            "turntable_base-turntable_top"
+          ]
+        },
+        "clip_poses": {
+          "samples": 108,
+          "every": 4,
+          "no_new_surface_crossings": true,
+          "crossings_by_clip": {},
+          "frames_with_crossings": {},
+          "vertex_penetration_by_clip": {},
+          "deep_shrink_ldu": 1.5,
+          "no_deep_crossings": true,
+          "deep_crossings_by_clip": {},
+          "frames_with_deep_crossings": {}
+        },
+        "roles": {
+          "0": "base",
+          "1": "pedestal0",
+          "2": "pedestal1",
+          "3": "turntable_base",
+          "4": "turntable_top",
+          "5": "mount",
+          "6": "mast0",
+          "7": "mast1",
+          "8": "head",
+          "9": "dish",
+          "10": "beacon"
+        },
+        "coverage": "Sampled surface crossings only; excludes rigid-body and rest-contact pairs; containment untested"
+      },
+      "hashes": {
+        "plan.json": "09d5d487301d2ccbf46f5868738c8116d11615936f5dad6eddb8339af999f997",
+        "source/scenario.mpd": "c6b0a8655386a97f9302b3ad3aeb3ae066627e3f28ccc6b7a2ecf1477566e6ae",
+        "source/parts.json": "e583e0ad2ed4557441ca2090d15fb58d97c2aa041fea9c2f5e9f54a2f8cf49b4"
+      }
+    },
+    "S16_crane": {
+      "parts": 16,
+      "bodies": 3,
+      "builder_motion_matches": true,
+      "source_matches": true,
+      "asymmetric_values": {
+        "slew": 1.979203,
+        "luff": 0.407
+      },
+      "semantics": {
+        "superstructure": {
+          "control": "slew",
+          "value": 0.2,
+          "test_point": [
+            0.0,
+            -96.0,
+            -10.0
+          ],
+          "displacement": [
+            1.986693,
+            0.0,
+            0.199334
+          ],
+          "expected": "+x",
+          "flipped": true
+        },
+        "boom": {
+          "control": "luff",
+          "value": 0.2,
+          "test_point": [
+            10.0,
+            -104.0,
+            -200.0
+          ],
+          "displacement": [
+            0.0,
+            -37.388371,
+            7.363398
+          ],
+          "expected": "-y",
+          "flipped": true
+        },
+        "hook_plumb_{'luff': 0.6}": {
+          "expression": "a",
+          "hook_vs_superstructure_rotation_error": 0.0
+        },
+        "hook_plumb_{'luff': 1.0, 'slew': 0.7}": {
+          "expression": "a",
+          "hook_vs_superstructure_rotation_error": 1.1102230246251565e-16
+        },
+        "hook_plumb_{'luff': 0.3, 'slew': -1.2}": {
+          "expression": "a",
+          "hook_vs_superstructure_rotation_error": 1.1102230246251565e-16
+        }
+      },
+      "controls": {
+        "slew": {
+          "default": 0,
+          "min": -3.141592653589793,
+          "max": 3.141592653589793,
+          "unit": "radian",
+          "description": "Superstructure on the turntable; + turns counter-clockwise seen from above"
+        },
+        "luff": {
+          "default": 0,
+          "min": 0.0,
+          "max": 1.1,
+          "unit": "radian",
+          "description": "Boom about its hinge; + raises the tip"
+        }
+      },
+      "body_frames": {
+        "superstructure": {
+          "instances": [
+            "6",
+            "7",
+            "8",
+            "9",
+            "10"
+          ],
+          "kind": "revolute",
+          "origin": [
+            0.0,
+            -69.0,
+            0.0
+          ],
+          "axis": [
+            -0.0,
+            -1.0,
+            -0.0
+          ],
+          "signal": "slew_angle"
+        },
+        "boom": {
+          "instances": [
+            "11",
+            "12",
+            "13",
+            "14"
+          ],
+          "kind": "revolute",
+          "origin": [
+            0.0,
+            -86.0,
+            -10.0
+          ],
+          "axis": [
+            -1.0,
+            -0.0,
+            -0.0
+          ],
+          "signal": "luff_angle",
+          "parent": "superstructure"
+        },
+        "hook": {
+          "instances": [
+            "15"
+          ],
+          "kind": "revolute",
+          "origin": [
+            10.0,
+            -94.0,
+            -200.0
+          ],
+          "axis": [
+            1.0,
+            0.0,
+            0.0
+          ],
+          "signal": "hook_angle",
+          "parent": "boom"
+        }
+      },
+      "signals": {
+        "slew_angle": {
+          "expression": "a",
+          "variables": {
+            "a": "control:slew"
+          }
+        },
+        "luff_angle": {
+          "expression": "a",
+          "variables": {
+            "a": "control:luff"
+          }
+        },
+        "hook_angle": {
+          "expression": "a",
+          "variables": {
+            "a": "control:luff"
+          }
+        }
+      },
+      "roles": [
+        {
+          "role": "base",
+          "id": "0",
+          "table": "plates.Plate6X6",
+          "ref": "3958",
+          "colour": 8,
+          "title": "Plate  6 x  6",
+          "library_only": false
+        },
+        {
+          "role": "pedestal00",
+          "id": "1",
+          "table": "bricks.Brick2X4",
+          "ref": "3001",
+          "colour": 14,
+          "title": "Brick  2 x  4",
+          "library_only": false
+        },
+        {
+          "role": "pedestal01",
+          "id": "2",
+          "table": "bricks.Brick2X4",
+          "ref": "3001",
+          "colour": 14,
+          "title": "Brick  2 x  4",
+          "library_only": false
+        },
+        {
+          "role": "pedestal10",
+          "id": "3",
+          "table": "bricks.Brick2X4",
+          "ref": "3001",
+          "colour": 14,
+          "title": "Brick  2 x  4",
+          "library_only": false
+        },
+        {
+          "role": "pedestal11",
+          "id": "4",
+          "table": "bricks.Brick2X4",
+          "ref": "3001",
+          "colour": 14,
+          "title": "Brick  2 x  4",
+          "library_only": false
+        },
+        {
+          "role": "turntable_base",
+          "id": "5",
+          "table": "turntables.Turntable4X4Base",
+          "ref": "3403",
+          "colour": 8,
+          "title": "Turntable  4 x  4 Base",
+          "library_only": false
+        },
+        {
+          "role": "turntable_top",
+          "id": "6",
+          "table": "turntables.Turntable4X4Top",
+          "ref": "3404",
+          "colour": 8,
+          "title": "Turntable  4 x  4 Top",
+          "library_only": false
+        },
+        {
+          "role": "cab",
+          "id": "7",
+          "table": "bricks.Brick1X4",
+          "ref": "3010",
+          "colour": 14,
+          "title": "Brick  1 x  4",
+          "library_only": false
+        },
+        {
+          "role": "cab_window",
+          "id": "8",
+          "table": "bricks.Brick1X4",
+          "ref": "3010",
+          "colour": 0,
+          "title": "Brick  1 x  4",
+          "library_only": false
+        },
+        {
+          "role": "cab_roof",
+          "id": "9",
+          "table": "plates.Plate1X4",
+          "ref": "3710",
+          "colour": 14,
+          "title": "Plate  1 x  4",
+          "library_only": false
+        },
+        {
+          "role": "hinge_base",
+          "id": "10",
+          "table": "hinges.Hinge1X2Base",
+          "ref": "3937",
+          "colour": 8,
+          "title": "Hinge  1 x  2 Base",
+          "library_only": false
+        },
+        {
+          "role": "hinge_top",
+          "id": "11",
+          "table": "hinges.Hinge2X2Top",
+          "ref": "6134",
+          "colour": 8,
+          "title": "Hinge  2 x  2 Top",
+          "library_only": false
+        },
+        {
+          "role": "boom_riser",
+          "id": "12",
+          "table": "plates.Plate1X2",
+          "ref": "3023b",
+          "colour": 8,
+          "title": "Plate  1 x  2",
+          "library_only": false
+        },
+        {
+          "role": "boom",
+          "id": "13",
+          "table": "plates.Plate2X10",
+          "ref": "3832",
+          "colour": 14,
+          "title": "Plate  2 x 10",
+          "library_only": false
+        },
+        {
+          "role": "boom_tip",
+          "id": "14",
+          "table": "technic.TechnicBrick1X2WithHole",
+          "ref": "3700",
+          "colour": 8,
+          "title": "Technic Brick  1 x  2 with Hole",
+          "library_only": false
+        },
+        {
+          "role": "hook",
+          "id": "15",
+          "table": "cranes.CraneHookWith4Studs",
+          "ref": "3136",
+          "colour": 8,
+          "title": "Crane Hook with  4 Studs",
+          "library_only": false
+        }
+      ],
+      "clearance": {
+        "scenario": "S16_crane",
+        "sweep": {
+          "no_new_surface_crossings": true,
+          "crossings": [],
+          "excluded_rest_pairs": [
+            "hinge_base-hinge_top",
+            "boom_tip-hook",
+            "turntable_base-turntable_top"
+          ]
+        },
+        "clip_poses": {
+          "samples": 108,
+          "every": 4,
+          "no_new_surface_crossings": true,
+          "crossings_by_clip": {},
+          "frames_with_crossings": {},
+          "vertex_penetration_by_clip": {},
+          "deep_shrink_ldu": 1.5,
+          "no_deep_crossings": true,
+          "deep_crossings_by_clip": {},
+          "frames_with_deep_crossings": {}
+        },
+        "roles": {
+          "0": "base",
+          "1": "pedestal00",
+          "2": "pedestal01",
+          "3": "pedestal10",
+          "4": "pedestal11",
+          "5": "turntable_base",
+          "6": "turntable_top",
+          "7": "cab",
+          "8": "cab_window",
+          "9": "cab_roof",
+          "10": "hinge_base",
+          "11": "hinge_top",
+          "12": "boom_riser",
+          "13": "boom",
+          "14": "boom_tip",
+          "15": "hook"
+        },
+        "coverage": "Sampled surface crossings only; excludes rigid-body and rest-contact pairs; containment untested"
+      },
+      "hashes": {
+        "plan.json": "9ed357bb5dfa911e38418c8742a6f36343286d75208de4c169312edc7d231816",
+        "source/scenario.mpd": "6d03a6ec5cd190e8ee68074c0defd3e01e1707cee22082e4020d69724577ad11",
+        "source/parts.json": "f74f4e6d967a9996fc90d1733b0c9fbe5e75c659a75974a30369e9ac82946475"
+      }
+    },
+    "S17_tipper": {
+      "parts": 19,
+      "bodies": 1,
+      "builder_motion_matches": true,
+      "source_matches": true,
+      "asymmetric_values": {
+        "tip": 0.63
+      },
+      "semantics": {
+        "bucket": {
+          "control": "tip",
+          "value": 0.2,
+          "test_point": [
+            0.0,
+            -32.0,
+            30.0
+          ],
+          "displacement": [
+            0.0,
+            -27.574505,
+            5.174711
+          ],
+          "expected": "-y",
+          "flipped": false
+        }
+      },
+      "controls": {
+        "tip": {
+          "default": 0,
+          "min": 0.0,
+          "max": 1.0,
+          "unit": "radian",
+          "description": "Bucket about the rear hinge; + raises the front"
+        }
+      },
+      "body_frames": {
+        "bucket": {
+          "instances": [
+            "15",
+            "17",
+            "18"
+          ],
+          "kind": "revolute",
+          "origin": [
+            -10.0,
+            -20.0,
+            170.0
+          ],
+          "axis": [
+            -1.0,
+            0.0,
+            0.0
+          ],
+          "signal": "tip_angle"
+        }
+      },
+      "signals": {
+        "tip_angle": {
+          "expression": "a",
+          "variables": {
+            "a": "control:tip"
+          }
+        }
+      },
+      "roles": [
+        {
+          "role": "chassis",
+          "id": "0",
+          "table": "plates.Plate4X10",
+          "ref": "3030",
+          "colour": 8,
+          "title": "Plate  4 x 10",
+          "library_only": false
+        },
+        {
+          "role": "axle0",
+          "id": "1",
+          "table": null,
+          "ref": "4600",
+          "colour": 0,
+          "title": "Plate  2 x  2 with 2 Wheel Pins",
+          "library_only": true
+        },
+        {
+          "role": "rim0l",
+          "id": "2",
+          "table": "wheels.WheelRim6_4X8",
+          "ref": "4624",
+          "colour": 7,
+          "title": "Wheel Rim  6.4 x  8",
+          "library_only": false
+        },
+        {
+          "role": "tyre0l",
+          "id": "3",
+          "table": "tyres.Tyre8_75X8OffsetTread",
+          "ref": "4084",
+          "colour": 0,
+          "title": "Tyre  8/ 75 x  8 Offset Tread",
+          "library_only": false
+        },
+        {
+          "role": "rim0r",
+          "id": "4",
+          "table": "wheels.WheelRim6_4X8",
+          "ref": "4624",
+          "colour": 7,
+          "title": "Wheel Rim  6.4 x  8",
+          "library_only": false
+        },
+        {
+          "role": "tyre0r",
+          "id": "5",
+          "table": "tyres.Tyre8_75X8OffsetTread",
+          "ref": "4084",
+          "colour": 0,
+          "title": "Tyre  8/ 75 x  8 Offset Tread",
+          "library_only": false
+        },
+        {
+          "role": "axle1",
+          "id": "6",
+          "table": null,
+          "ref": "4600",
+          "colour": 0,
+          "title": "Plate  2 x  2 with 2 Wheel Pins",
+          "library_only": true
+        },
+        {
+          "role": "rim1l",
+          "id": "7",
+          "table": "wheels.WheelRim6_4X8",
+          "ref": "4624",
+          "colour": 7,
+          "title": "Wheel Rim  6.4 x  8",
+          "library_only": false
+        },
+        {
+          "role": "tyre1l",
+          "id": "8",
+          "table": "tyres.Tyre8_75X8OffsetTread",
+          "ref": "4084",
+          "colour": 0,
+          "title": "Tyre  8/ 75 x  8 Offset Tread",
+          "library_only": false
+        },
+        {
+          "role": "rim1r",
+          "id": "9",
+          "table": "wheels.WheelRim6_4X8",
+          "ref": "4624",
+          "colour": 7,
+          "title": "Wheel Rim  6.4 x  8",
+          "library_only": false
+        },
+        {
+          "role": "tyre1r",
+          "id": "10",
+          "table": "tyres.Tyre8_75X8OffsetTread",
+          "ref": "4084",
+          "colour": 0,
+          "title": "Tyre  8/ 75 x  8 Offset Tread",
+          "library_only": false
+        },
+        {
+          "role": "cab",
+          "id": "11",
+          "table": "bricks.Brick2X4",
+          "ref": "3001",
+          "colour": 14,
+          "title": "Brick  2 x  4",
+          "library_only": false
+        },
+        {
+          "role": "cab_roof",
+          "id": "12",
+          "table": "plates.Plate2X4",
+          "ref": "3020",
+          "colour": 14,
+          "title": "Plate  2 x  4",
+          "library_only": false
+        },
+        {
+          "role": "bed",
+          "id": "13",
+          "table": "plates.Plate2X4",
+          "ref": "3020",
+          "colour": 8,
+          "title": "Plate  2 x  4",
+          "library_only": false
+        },
+        {
+          "role": "hinge_tile_l",
+          "id": "14",
+          "table": "hinges.HingeTile1X2With2Fingers",
+          "ref": "4531",
+          "colour": 8,
+          "title": "Hinge Tile  1 x  2 with 2 Fingers",
+          "library_only": false
+        },
+        {
+          "role": "hinge_plate_l",
+          "id": "15",
+          "table": "hinges.HingePlate1X2With3FingersAndHollowStuds",
+          "ref": "4275b",
+          "colour": 8,
+          "title": "Hinge Plate  1 x  2 with 3 Fingers and Hollow Studs",
+          "library_only": false
+        },
+        {
+          "role": "hinge_tile_r",
+          "id": "16",
+          "table": "hinges.HingeTile1X2With2Fingers",
+          "ref": "4531",
+          "colour": 8,
+          "title": "Hinge Tile  1 x  2 with 2 Fingers",
+          "library_only": false
+        },
+        {
+          "role": "hinge_plate_r",
+          "id": "17",
+          "table": "hinges.HingePlate1X2With3FingersAndHollowStuds",
+          "ref": "4275b",
+          "colour": 8,
+          "title": "Hinge Plate  1 x  2 with 3 Fingers and Hollow Studs",
+          "library_only": false
+        },
+        {
+          "role": "bucket",
+          "id": "18",
+          "table": "others.TipperBucket4X6WithOpenStudsFrontLip",
+          "ref": "4080",
+          "colour": 14,
+          "title": "Tipper Bucket  4 x  6 with Open Studs Front Lip",
+          "library_only": false
+        }
+      ],
+      "clearance": {
+        "scenario": "S17_tipper",
+        "sweep": {
+          "no_new_surface_crossings": true,
+          "crossings": [],
+          "excluded_rest_pairs": [
+            "hinge_tile_l-hinge_plate_l",
+            "hinge_tile_r-hinge_plate_r"
+          ]
+        },
+        "clip_poses": {
+          "samples": 108,
+          "every": 4,
+          "no_new_surface_crossings": true,
+          "crossings_by_clip": {},
+          "frames_with_crossings": {},
+          "vertex_penetration_by_clip": {},
+          "deep_shrink_ldu": 1.5,
+          "no_deep_crossings": true,
+          "deep_crossings_by_clip": {},
+          "frames_with_deep_crossings": {}
+        },
+        "roles": {
+          "0": "chassis",
+          "1": "axle0",
+          "2": "rim0l",
+          "3": "tyre0l",
+          "4": "rim0r",
+          "5": "tyre0r",
+          "6": "axle1",
+          "7": "rim1l",
+          "8": "tyre1l",
+          "9": "rim1r",
+          "10": "tyre1r",
+          "11": "cab",
+          "12": "cab_roof",
+          "13": "bed",
+          "14": "hinge_tile_l",
+          "15": "hinge_plate_l",
+          "16": "hinge_tile_r",
+          "17": "hinge_plate_r",
+          "18": "bucket"
+        },
+        "coverage": "Sampled surface crossings only; excludes rigid-body and rest-contact pairs; containment untested"
+      },
+      "hashes": {
+        "plan.json": "5210eb1e213fc675806f2bdce2772d6ec60c57b986bb419cfb768eeb88c8e560",
+        "source/scenario.mpd": "ea8ae929e71ebed9400d524083de9a4ce6d7a330ae86a57b05610d6c7162e2e1",
+        "source/parts.json": "2d9462664b1499a86b958897c4821939021ed7e988c8cb58f77059e16b566ecd"
+      }
+    },
+    "S18_barrier": {
+      "parts": 12,
+      "bodies": 1,
+      "builder_motion_matches": true,
+      "source_matches": true,
+      "asymmetric_values": {
+        "boom": 0.945
+      },
+      "semantics": {
+        "boom": {
+          "control": "boom",
+          "value": 0.2,
+          "test_point": [
+            80.0,
+            -80.0,
+            0.0
+          ],
+          "displacement": [
+            -7.164064,
+            -35.401678,
+            0.0
+          ],
+          "expected": "-y",
+          "flipped": false
+        }
+      },
+      "controls": {
+        "boom": {
+          "default": 0,
+          "min": 0.0,
+          "max": 1.5,
+          "unit": "radian",
+          "description": "Boom about its post hinge; + raises the tip"
+        }
+      },
+      "body_frames": {
+        "boom": {
+          "instances": [
+            "4",
+            "5",
+            "6",
+            "7",
+            "8"
+          ],
+          "kind": "revolute",
+          "origin": [
+            -100.0,
+            -62.0,
+            0.0
+          ],
+          "axis": [
+            0.0,
+            0.0,
+            -1.0
+          ],
+          "signal": "boom_angle"
+        }
+      },
+      "signals": {
+        "boom_angle": {
+          "expression": "a",
+          "variables": {
+            "a": "control:boom"
+          }
+        }
+      },
+      "roles": [
+        {
+          "role": "road",
+          "id": "0",
+          "table": "plates.Plate4X12",
+          "ref": "3029",
+          "colour": 8,
+          "title": "Plate  4 x 12",
+          "library_only": false
+        },
+        {
+          "role": "post0",
+          "id": "1",
+          "table": "bricks.Brick2X2",
+          "ref": "3003",
+          "colour": 15,
+          "title": "Brick  2 x  2",
+          "library_only": false
+        },
+        {
+          "role": "post1",
+          "id": "2",
+          "table": "bricks.Brick2X2",
+          "ref": "3003",
+          "colour": 15,
+          "title": "Brick  2 x  2",
+          "library_only": false
+        },
+        {
+          "role": "hinge_base",
+          "id": "3",
+          "table": "hinges.Hinge1X2Base",
+          "ref": "3937",
+          "colour": 8,
+          "title": "Hinge  1 x  2 Base",
+          "library_only": false
+        },
+        {
+          "role": "hinge_top",
+          "id": "4",
+          "table": "hinges.Hinge1X2Top",
+          "ref": "3938",
+          "colour": 8,
+          "title": "Hinge  1 x  2 Top",
+          "library_only": false
+        },
+        {
+          "role": "boom",
+          "id": "5",
+          "table": "plates.Plate2X10",
+          "ref": "3832",
+          "colour": 15,
+          "title": "Plate  2 x 10",
+          "library_only": false
+        },
+        {
+          "role": "stripe0",
+          "id": "6",
+          "table": "tiles.Tile2X2WithGroove",
+          "ref": "3068b",
+          "colour": 4,
+          "title": "Tile  2 x  2 with Groove",
+          "library_only": false
+        },
+        {
+          "role": "stripe1",
+          "id": "7",
+          "table": "tiles.Tile2X2WithGroove",
+          "ref": "3068b",
+          "colour": 4,
+          "title": "Tile  2 x  2 with Groove",
+          "library_only": false
+        },
+        {
+          "role": "stripe2",
+          "id": "8",
+          "table": "tiles.Tile2X2WithGroove",
+          "ref": "3068b",
+          "colour": 4,
+          "title": "Tile  2 x  2 with Groove",
+          "library_only": false
+        },
+        {
+          "role": "rest0",
+          "id": "9",
+          "table": "bricks.Brick1X1",
+          "ref": "3005",
+          "colour": 15,
+          "title": "Brick  1 x  1",
+          "library_only": false
+        },
+        {
+          "role": "rest1",
+          "id": "10",
+          "table": "bricks.Brick1X1",
+          "ref": "3005",
+          "colour": 15,
+          "title": "Brick  1 x  1",
+          "library_only": false
+        },
+        {
+          "role": "rest2",
+          "id": "11",
+          "table": "bricks.Brick1X1",
+          "ref": "3005",
+          "colour": 15,
+          "title": "Brick  1 x  1",
+          "library_only": false
+        }
+      ],
+      "clearance": {
+        "scenario": "S18_barrier",
+        "sweep": {
+          "no_new_surface_crossings": true,
+          "crossings": [],
+          "excluded_rest_pairs": [
+            "rest2-boom",
+            "hinge_base-hinge_top"
+          ]
+        },
+        "clip_poses": {
+          "samples": 108,
+          "every": 4,
+          "no_new_surface_crossings": true,
+          "crossings_by_clip": {},
+          "frames_with_crossings": {},
+          "vertex_penetration_by_clip": {},
+          "deep_shrink_ldu": 1.5,
+          "no_deep_crossings": true,
+          "deep_crossings_by_clip": {},
+          "frames_with_deep_crossings": {}
+        },
+        "roles": {
+          "0": "road",
+          "1": "post0",
+          "2": "post1",
+          "3": "hinge_base",
+          "4": "hinge_top",
+          "5": "boom",
+          "6": "stripe0",
+          "7": "stripe1",
+          "8": "stripe2",
+          "9": "rest0",
+          "10": "rest1",
+          "11": "rest2"
+        },
+        "coverage": "Sampled surface crossings only; excludes rigid-body and rest-contact pairs; containment untested"
+      },
+      "hashes": {
+        "plan.json": "0e0e576a6f55212fbb4712eeb6bf658460a85dd7a0ce2fef5cdb00e9f24338ea",
+        "source/scenario.mpd": "a84e4333e5b3fd58ba8634ac17c463acd834cd184b555c89395676c2e5714abe",
+        "source/parts.json": "fb1493c45da21db857dce3f48b259f2a4b60f980449c5b42218c6ff1f27afca5"
+      }
+    },
+    "S19_drawbridge": {
+      "parts": 24,
+      "bodies": 1,
+      "builder_motion_matches": true,
+      "source_matches": true,
+      "asymmetric_values": {
+        "bridge": 0.9765
+      },
+      "semantics": {
+        "deck": {
+          "control": "bridge",
+          "value": 0.2,
+          "test_point": [
+            0.0,
+            -32.0,
+            -140.0
+          ],
+          "displacement": [
+            0.0,
+            -27.454905,
+            6.366727
+          ],
+          "expected": "-y",
+          "flipped": false
+        }
+      },
+      "controls": {
+        "bridge": {
+          "default": 0,
+          "min": 0.0,
+          "max": 1.55,
+          "unit": "radian",
+          "description": "Bridge deck about the threshold hinges; + raises it (0 = lowered across the moat)"
+        }
+      },
+      "body_frames": {
+        "deck": {
+          "instances": [
+            "3",
+            "5",
+            "6"
+          ],
+          "kind": "revolute",
+          "origin": [
+            -50.0,
+            -14.0,
+            0.0
+          ],
+          "axis": [
+            -1.0,
+            0.0,
+            0.0
+          ],
+          "signal": "bridge_angle"
+        }
+      },
+      "signals": {
+        "bridge_angle": {
+          "expression": "a",
+          "variables": {
+            "a": "control:bridge"
+          }
+        }
+      },
+      "roles": [
+        {
+          "role": "ground",
+          "id": "0",
+          "table": "baseplates.Baseplate16X16",
+          "ref": "3867",
+          "colour": 2,
+          "title": "Baseplate 16 x 16",
+          "library_only": false
+        },
+        {
+          "role": "moat",
+          "id": "1",
+          "table": "plates.Plate6X6",
+          "ref": "3958",
+          "colour": 73,
+          "title": "Plate  6 x  6",
+          "library_only": false
+        },
+        {
+          "role": "hinge_wall_l",
+          "id": "2",
+          "table": "hinges.Hinge1X2Base",
+          "ref": "3937",
+          "colour": 8,
+          "title": "Hinge  1 x  2 Base",
+          "library_only": false
+        },
+        {
+          "role": "hinge_deck_l",
+          "id": "3",
+          "table": "hinges.Hinge1X2Top",
+          "ref": "3938",
+          "colour": 8,
+          "title": "Hinge  1 x  2 Top",
+          "library_only": false
+        },
+        {
+          "role": "hinge_wall_r",
+          "id": "4",
+          "table": "hinges.Hinge1X2Base",
+          "ref": "3937",
+          "colour": 8,
+          "title": "Hinge  1 x  2 Base",
+          "library_only": false
+        },
+        {
+          "role": "hinge_deck_r",
+          "id": "5",
+          "table": "hinges.Hinge1X2Top",
+          "ref": "3938",
+          "colour": 8,
+          "title": "Hinge  1 x  2 Top",
+          "library_only": false
+        },
+        {
+          "role": "deck",
+          "id": "6",
+          "table": "plates.Plate6X8",
+          "ref": "3036",
+          "colour": 70,
+          "title": "Plate  6 x  8",
+          "library_only": false
+        },
+        {
+          "role": "bank",
+          "id": "7",
+          "table": "bricks.Brick1X6",
+          "ref": "3009",
+          "colour": 8,
+          "title": "Brick  1 x  6",
+          "library_only": false
+        },
+        {
+          "role": "tower_l0",
+          "id": "8",
+          "table": "bricks.Brick2X2",
+          "ref": "3003",
+          "colour": 71,
+          "title": "Brick  2 x  2",
+          "library_only": false
+        },
+        {
+          "role": "tower_r0",
+          "id": "9",
+          "table": "bricks.Brick2X2",
+          "ref": "3003",
+          "colour": 71,
+          "title": "Brick  2 x  2",
+          "library_only": false
+        },
+        {
+          "role": "tower_l1",
+          "id": "10",
+          "table": "bricks.Brick2X2",
+          "ref": "3003",
+          "colour": 71,
+          "title": "Brick  2 x  2",
+          "library_only": false
+        },
+        {
+          "role": "tower_r1",
+          "id": "11",
+          "table": "bricks.Brick2X2",
+          "ref": "3003",
+          "colour": 71,
+          "title": "Brick  2 x  2",
+          "library_only": false
+        },
+        {
+          "role": "tower_l2",
+          "id": "12",
+          "table": "bricks.Brick2X2",
+          "ref": "3003",
+          "colour": 71,
+          "title": "Brick  2 x  2",
+          "library_only": false
+        },
+        {
+          "role": "tower_r2",
+          "id": "13",
+          "table": "bricks.Brick2X2",
+          "ref": "3003",
+          "colour": 71,
+          "title": "Brick  2 x  2",
+          "library_only": false
+        },
+        {
+          "role": "tower_l3",
+          "id": "14",
+          "table": "bricks.Brick2X2",
+          "ref": "3003",
+          "colour": 71,
+          "title": "Brick  2 x  2",
+          "library_only": false
+        },
+        {
+          "role": "tower_r3",
+          "id": "15",
+          "table": "bricks.Brick2X2",
+          "ref": "3003",
+          "colour": 71,
+          "title": "Brick  2 x  2",
+          "library_only": false
+        },
+        {
+          "role": "tower_l4",
+          "id": "16",
+          "table": "bricks.Brick2X2",
+          "ref": "3003",
+          "colour": 71,
+          "title": "Brick  2 x  2",
+          "library_only": false
+        },
+        {
+          "role": "tower_r4",
+          "id": "17",
+          "table": "bricks.Brick2X2",
+          "ref": "3003",
+          "colour": 71,
+          "title": "Brick  2 x  2",
+          "library_only": false
+        },
+        {
+          "role": "tower_l5",
+          "id": "18",
+          "table": "bricks.Brick2X2",
+          "ref": "3003",
+          "colour": 71,
+          "title": "Brick  2 x  2",
+          "library_only": false
+        },
+        {
+          "role": "tower_r5",
+          "id": "19",
+          "table": "bricks.Brick2X2",
+          "ref": "3003",
+          "colour": 71,
+          "title": "Brick  2 x  2",
+          "library_only": false
+        },
+        {
+          "role": "tower_l6",
+          "id": "20",
+          "table": "bricks.Brick2X2",
+          "ref": "3003",
+          "colour": 71,
+          "title": "Brick  2 x  2",
+          "library_only": false
+        },
+        {
+          "role": "tower_r6",
+          "id": "21",
+          "table": "bricks.Brick2X2",
+          "ref": "3003",
+          "colour": 71,
+          "title": "Brick  2 x  2",
+          "library_only": false
+        },
+        {
+          "role": "lintel",
+          "id": "22",
+          "table": "bricks.Brick1X8",
+          "ref": "3008",
+          "colour": 71,
+          "title": "Brick  1 x  8",
+          "library_only": false
+        },
+        {
+          "role": "lintel_cap",
+          "id": "23",
+          "table": "plates.Plate2X10",
+          "ref": "3832",
+          "colour": 8,
+          "title": "Plate  2 x 10",
+          "library_only": false
+        }
+      ],
+      "clearance": {
+        "scenario": "S19_drawbridge",
+        "sweep": {
+          "no_new_surface_crossings": true,
+          "crossings": [],
+          "excluded_rest_pairs": [
+            "tower_l1-hinge_deck_l",
+            "tower_r1-hinge_deck_r",
+            "hinge_wall_l-hinge_deck_l",
+            "hinge_deck_l-tower_l0",
+            "hinge_wall_r-hinge_deck_r",
+            "hinge_deck_r-tower_r0",
+            "deck-bank"
+          ]
+        },
+        "clip_poses": {
+          "samples": 108,
+          "every": 4,
+          "no_new_surface_crossings": true,
+          "crossings_by_clip": {},
+          "frames_with_crossings": {},
+          "vertex_penetration_by_clip": {},
+          "deep_shrink_ldu": 1.5,
+          "no_deep_crossings": true,
+          "deep_crossings_by_clip": {},
+          "frames_with_deep_crossings": {}
+        },
+        "roles": {
+          "0": "ground",
+          "1": "moat",
+          "2": "hinge_wall_l",
+          "3": "hinge_deck_l",
+          "4": "hinge_wall_r",
+          "5": "hinge_deck_r",
+          "6": "deck",
+          "7": "bank",
+          "8": "tower_l0",
+          "9": "tower_r0",
+          "10": "tower_l1",
+          "11": "tower_r1",
+          "12": "tower_l2",
+          "13": "tower_r2",
+          "14": "tower_l3",
+          "15": "tower_r3",
+          "16": "tower_l4",
+          "17": "tower_r4",
+          "18": "tower_l5",
+          "19": "tower_r5",
+          "20": "tower_l6",
+          "21": "tower_r6",
+          "22": "lintel",
+          "23": "lintel_cap"
+        },
+        "coverage": "Sampled surface crossings only; excludes rigid-body and rest-contact pairs; containment untested"
+      },
+      "hashes": {
+        "plan.json": "108d1c430fc5f0fb0a6c38062852468f61f96451fe31b9c2c055ae3642400123",
+        "source/scenario.mpd": "a308f30ed39585e41c70a4a4af92e51ed7376f79da1ed68d51bbaea04859dee4",
+        "source/parts.json": "cdf98d55a1caced0515b4f12ca3738ed590aaf4df27bdda11d1578aa05baa2da"
+      }
+    },
+    "S20_levers": {
+      "parts": 7,
+      "bodies": 2,
+      "builder_motion_matches": true,
+      "source_matches": true,
+      "asymmetric_values": {
+        "lever_l": 0.441,
+        "lever_r": -0.259
+      },
+      "semantics": {
+        "stick_l": {
+          "control": "lever_l",
+          "value": 0.2,
+          "test_point": [
+            -30.0,
+            -70.0,
+            0.0
+          ],
+          "displacement": [
+            0.0,
+            0.75747,
+            -7.549435
+          ],
+          "expected": "-z",
+          "flipped": false
+        },
+        "stick_r": {
+          "control": "lever_r",
+          "value": 0.2,
+          "test_point": [
+            30.0,
+            -70.0,
+            0.0
+          ],
+          "displacement": [
+            0.0,
+            0.75747,
+            -7.549435
+          ],
+          "expected": "-z",
+          "flipped": false
+        }
+      },
+      "controls": {
+        "lever_l": {
+          "default": 0,
+          "min": -0.7,
+          "max": 0.7,
+          "unit": "radian",
+          "description": "Left stick; + tilts it forward (-Z)"
+        },
+        "lever_r": {
+          "default": 0,
+          "min": -0.7,
+          "max": 0.7,
+          "unit": "radian",
+          "description": "Right stick; + tilts it forward (-Z)"
+        }
+      },
+      "body_frames": {
+        "stick_l": {
+          "instances": [
+            "3"
+          ],
+          "kind": "revolute",
+          "origin": [
+            -30.0,
+            -32.0,
+            0.0
+          ],
+          "axis": [
+            1.0,
+            0.0,
+            0.0
+          ],
+          "signal": "lever_l_angle"
+        },
+        "stick_r": {
+          "instances": [
+            "5"
+          ],
+          "kind": "revolute",
+          "origin": [
+            30.0,
+            -32.0,
+            0.0
+          ],
+          "axis": [
+            1.0,
+            0.0,
+            0.0
+          ],
+          "signal": "lever_r_angle"
+        }
+      },
+      "signals": {
+        "lever_l_angle": {
+          "expression": "a",
+          "variables": {
+            "a": "control:lever_l"
+          }
+        },
+        "lever_r_angle": {
+          "expression": "a",
+          "variables": {
+            "a": "control:lever_r"
+          }
+        }
+      },
+      "roles": [
+        {
+          "role": "base",
+          "id": "0",
+          "table": "plates.Plate4X6",
+          "ref": "3032",
+          "colour": 8,
+          "title": "Plate  4 x  6",
+          "library_only": false
+        },
+        {
+          "role": "desk",
+          "id": "1",
+          "table": "bricks.Brick2X4",
+          "ref": "3001",
+          "colour": 71,
+          "title": "Brick  2 x  4",
+          "library_only": false
+        },
+        {
+          "role": "lever_base_l",
+          "id": "2",
+          "table": "hinges.HingeControlStickBase",
+          "ref": "4592",
+          "colour": 0,
+          "title": "Hinge Control Stick Base",
+          "library_only": false
+        },
+        {
+          "role": "stick_l",
+          "id": "3",
+          "table": "hinges.HingeControlStick",
+          "ref": "4593",
+          "colour": 4,
+          "title": "Hinge Control Stick",
+          "library_only": false
+        },
+        {
+          "role": "lever_base_r",
+          "id": "4",
+          "table": "hinges.HingeControlStickBase",
+          "ref": "4592",
+          "colour": 0,
+          "title": "Hinge Control Stick Base",
+          "library_only": false
+        },
+        {
+          "role": "stick_r",
+          "id": "5",
+          "table": "hinges.HingeControlStick",
+          "ref": "4593",
+          "colour": 1,
+          "title": "Hinge Control Stick",
+          "library_only": false
+        },
+        {
+          "role": "screen",
+          "id": "6",
+          "table": "tiles.Tile1X2GrilleWithGroove",
+          "ref": "2412b",
+          "colour": 8,
+          "title": "Tile  1 x  2 Grille with Groove",
+          "library_only": false
+        }
+      ],
+      "clearance": {
+        "scenario": "S20_levers",
+        "sweep": {
+          "no_new_surface_crossings": true,
+          "crossings": [],
+          "excluded_rest_pairs": [
+            "lever_base_l-stick_l",
+            "lever_base_r-stick_r"
+          ]
+        },
+        "clip_poses": {
+          "samples": 108,
+          "every": 4,
+          "no_new_surface_crossings": true,
+          "crossings_by_clip": {},
+          "frames_with_crossings": {},
+          "vertex_penetration_by_clip": {},
+          "deep_shrink_ldu": 1.5,
+          "no_deep_crossings": true,
+          "deep_crossings_by_clip": {},
+          "frames_with_deep_crossings": {}
+        },
+        "roles": {
+          "0": "base",
+          "1": "desk",
+          "2": "lever_base_l",
+          "3": "stick_l",
+          "4": "lever_base_r",
+          "5": "stick_r",
+          "6": "screen"
+        },
+        "coverage": "Sampled surface crossings only; excludes rigid-body and rest-contact pairs; containment untested"
+      },
+      "hashes": {
+        "plan.json": "12d290a800f0bfcd59f18e2c95443643d8e41b84f768b9883ebef7498b270352",
+        "source/scenario.mpd": "a36ea083aea5ecb313be73517687c229699ca99fcff4170351178e455bd4d913",
+        "source/parts.json": "bea86be97645311b7071647816e7ec3c446cec69afaa2c71a550bd4801fc3bc6"
+      }
+    }
+  },
+  "clips": {
+    "S01_house_door.open_close": {
+      "rules_passed": true,
+      "baked_values_match": true
+    },
+    "S01_house_door.slam": {
+      "rules_passed": true,
+      "baked_values_match": true
+    },
+    "S01_house_door.creak": {
+      "rules_passed": true,
+      "baked_values_match": true
+    },
+    "S02_casement_window.open_both": {
+      "rules_passed": true,
+      "baked_values_match": true
+    },
+    "S02_casement_window.one_by_one": {
+      "rules_passed": true,
+      "baked_values_match": true
+    },
+    "S02_casement_window.wind_flutter": {
+      "rules_passed": true,
+      "baked_values_match": true
+    },
+    "S03_shuttered_window.fold_open": {
+      "rules_passed": true,
+      "baked_values_match": true
+    },
+    "S03_shuttered_window.one_at_a_time": {
+      "rules_passed": true,
+      "baked_values_match": true
+    },
+    "S03_shuttered_window.storm": {
+      "rules_passed": true,
+      "baked_values_match": true
+    },
+    "S04_garden_gate.push_through": {
+      "rules_passed": true,
+      "baked_values_match": true
+    },
+    "S04_garden_gate.open_latch": {
+      "rules_passed": true,
+      "baked_values_match": true
+    },
+    "S04_garden_gate.in_and_out": {
+      "rules_passed": true,
+      "baked_values_match": true
+    },
+    "S05_kitchen_cupboard.door_cycle": {
+      "rules_passed": true,
+      "baked_values_match": true
+    },
+    "S05_kitchen_cupboard.drawer_pull": {
+      "rules_passed": true,
+      "baked_values_match": true
+    },
+    "S05_kitchen_cupboard.kitchen_sequence": {
+      "rules_passed": true,
+      "baked_values_match": true
+    },
+    "S06_double_cabinet.open_both": {
+      "rules_passed": true,
+      "baked_values_match": true
+    },
+    "S06_double_cabinet.left_then_right": {
+      "rules_passed": true,
+      "baked_values_match": true
+    },
+    "S06_double_cabinet.peek": {
+      "rules_passed": true,
+      "baked_values_match": true
+    },
+    "S07_treasure_chest.slow_reveal": {
+      "rules_passed": true,
+      "baked_values_match": true
+    },
+    "S07_treasure_chest.snap_shut": {
+      "rules_passed": true,
+      "baked_values_match": true
+    },
+    "S07_treasure_chest.peek_twice": {
+      "rules_passed": true,
+      "baked_values_match": true
+    },
+    "S08_mailbox.gravity_drop": {
+      "rules_passed": true,
+      "baked_values_match": true
+    },
+    "S08_mailbox.eased_loop": {
+      "rules_passed": true,
+      "baked_values_match": true
+    },
+    "S08_mailbox.flap_rattle": {
+      "rules_passed": true,
+      "baked_values_match": true
+    },
+    "S09_trap_door.drop_and_winch": {
+      "rules_passed": true,
+      "baked_values_match": true
+    },
+    "S09_trap_door.quick_trap": {
+      "rules_passed": true,
+      "baked_values_match": true
+    },
+    "S09_trap_door.test_wiggle": {
+      "rules_passed": true,
+      "baked_values_match": true
+    },
+    "S10_car_doors.driver_door": {
+      "rules_passed": true,
+      "baked_values_match": true
+    },
+    "S10_car_doors.both_doors": {
+      "rules_passed": true,
+      "baked_values_match": true
+    },
+    "S10_car_doors.slam": {
+      "rules_passed": true,
+      "baked_values_match": true
+    },
+    "S11_car_roof.lift_close": {
+      "rules_passed": true,
+      "baked_values_match": true
+    },
+    "S11_car_roof.gas_strut": {
+      "rules_passed": true,
+      "baked_values_match": true
+    },
+    "S11_car_roof.slam": {
+      "rules_passed": true,
+      "baked_values_match": true
+    },
+    "S12_canopy.flip_open": {
+      "rules_passed": true,
+      "baked_values_match": true
+    },
+    "S12_canopy.slow_seal": {
+      "rules_passed": true,
+      "baked_values_match": true
+    },
+    "S12_canopy.pop_open": {
+      "rules_passed": true,
+      "baked_values_match": true
+    },
+    "S13_forklift.raise_lower": {
+      "rules_passed": true,
+      "baked_values_match": true
+    },
+    "S13_forklift.chain_hoist": {
+      "rules_passed": true,
+      "baked_values_match": true
+    },
+    "S13_forklift.drop": {
+      "rules_passed": true,
+      "baked_values_match": true
+    },
+    "S14_sliding_door.slide_cycle": {
+      "rules_passed": true,
+      "baked_values_match": true
+    },
+    "S14_sliding_door.shove": {
+      "rules_passed": true,
+      "baked_values_match": true
+    },
+    "S14_sliding_door.crack_open": {
+      "rules_passed": true,
+      "baked_values_match": true
+    },
+    "S15_radar.constant_spin": {
+      "rules_passed": true,
+      "baked_values_match": true
+    },
+    "S15_radar.spin_up_down": {
+      "rules_passed": true,
+      "baked_values_match": true
+    },
+    "S15_radar.sweep_scan": {
+      "rules_passed": true,
+      "baked_values_match": true
+    },
+    "S16_crane.slew_sweep": {
+      "rules_passed": true,
+      "baked_values_match": true
+    },
+    "S16_crane.luff_cycle": {
+      "rules_passed": true,
+      "baked_values_match": true
+    },
+    "S16_crane.pick_and_place": {
+      "rules_passed": true,
+      "baked_values_match": true
+    },
+    "S17_tipper.tip_return": {
+      "rules_passed": true,
+      "baked_values_match": true
+    },
+    "S17_tipper.hydraulic_steps": {
+      "rules_passed": true,
+      "baked_values_match": true
+    },
+    "S17_tipper.shake_to_empty": {
+      "rules_passed": true,
+      "baked_values_match": true
+    },
+    "S18_barrier.raise_lower": {
+      "rules_passed": true,
+      "baked_values_match": true
+    },
+    "S18_barrier.bounce_down": {
+      "rules_passed": true,
+      "baked_values_match": true
+    },
+    "S18_barrier.quick_up_slow_down": {
+      "rules_passed": true,
+      "baked_values_match": true
+    },
+    "S19_drawbridge.winch_and_drop": {
+      "rules_passed": true,
+      "baked_values_match": true
+    },
+    "S19_drawbridge.eased_cycle": {
+      "rules_passed": true,
+      "baked_values_match": true
+    },
+    "S19_drawbridge.half_raise": {
+      "rules_passed": true,
+      "baked_values_match": true
+    },
+    "S20_levers.toggle_snap": {
+      "rules_passed": true,
+      "baked_values_match": true
+    },
+    "S20_levers.throttle": {
+      "rules_passed": true,
+      "baked_values_match": true
+    },
+    "S20_levers.jiggle": {
+      "rules_passed": true,
+      "baked_values_match": true
+    }
+  },
+  "coverage": "Builder reproduction, source identity, asymmetric kinematics and clip data. Existing clearance read, not rerun. No physical proof.",
+  "bundle_hashes": {
+    "movables.blend": "0ec263432ae2f6cf4fcf12488cd6f3a36a90c62611d92e6173fad64d14b7f18d",
+    "catalog.json": "e2ac63000bc14b1532c2d1b6ce7de1500aa2fc74fd669e801cce76636a65a12f",
+    "clearance-summary.json": "9d3fb5fdc3a84c3754415d7d8f004b1624b37cb1cb994da11e24680a9cf7ff64"
+  },
+  "passed": true
+}

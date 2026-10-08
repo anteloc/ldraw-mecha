@@ -1,0 +1,1406 @@
+{
+  "version": 1,
+  "name": "model",
+  "status": "draft",
+  "source": {
+    "version": 1,
+    "path": "/Users/captain/workspaces/workspace-ai/ldraw-mecha/output/movables/S14_sliding_door/source/scenario.mpd",
+    "sha256": "13c83c70dc3e9c25630becdcf1c7ebbc8eca33b1344f7a545bbff47b34b50811",
+    "section": "s14_sliding_door.ldr",
+    "description": "Movable element scenario S14_sliding_door Sliding shed door",
+    "author": "ldraw-mecha scripts/build_movables.py",
+    "dependencies": {
+      "/Users/captain/workspaces/workspace-ai/ldraw-mecha/output/movables/S14_sliding_door/source/scenario.mpd": "13c83c70dc3e9c25630becdcf1c7ebbc8eca33b1344f7a545bbff47b34b50811"
+    },
+    "nodes": [
+      {
+        "id": "0",
+        "parent": "root",
+        "ref": "3027.dat",
+        "kind": "part",
+        "embedded": false,
+        "section": "s14_sliding_door.ldr",
+        "index": 0,
+        "line": 8,
+        "colour": "8",
+        "effective_colour": "8",
+        "local": [
+          [
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            1.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            1.0,
+            10.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "world": [
+          [
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            1.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            1.0,
+            10.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "description": "Plate  6 x 16"
+      },
+      {
+        "id": "1",
+        "parent": "root",
+        "ref": "4510.dat",
+        "kind": "part",
+        "embedded": false,
+        "section": "s14_sliding_door.ldr",
+        "index": 1,
+        "line": 10,
+        "colour": "4",
+        "effective_colour": "4",
+        "local": [
+          [
+            1.0,
+            0.0,
+            0.0,
+            -80.0
+          ],
+          [
+            0.0,
+            1.0,
+            0.0,
+            -8.0
+          ],
+          [
+            0.0,
+            0.0,
+            1.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "world": [
+          [
+            1.0,
+            0.0,
+            0.0,
+            -80.0
+          ],
+          [
+            0.0,
+            1.0,
+            0.0,
+            -8.0
+          ],
+          [
+            0.0,
+            0.0,
+            1.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "description": "Plate  1 x  8 with Door Rail"
+      },
+      {
+        "id": "2",
+        "parent": "root",
+        "ref": "4510.dat",
+        "kind": "part",
+        "embedded": false,
+        "section": "s14_sliding_door.ldr",
+        "index": 2,
+        "line": 12,
+        "colour": "4",
+        "effective_colour": "4",
+        "local": [
+          [
+            1.0,
+            0.0,
+            0.0,
+            80.0
+          ],
+          [
+            0.0,
+            1.0,
+            0.0,
+            -8.0
+          ],
+          [
+            0.0,
+            0.0,
+            1.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "world": [
+          [
+            1.0,
+            0.0,
+            0.0,
+            80.0
+          ],
+          [
+            0.0,
+            1.0,
+            0.0,
+            -8.0
+          ],
+          [
+            0.0,
+            0.0,
+            1.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "description": "Plate  1 x  8 with Door Rail"
+      },
+      {
+        "id": "3",
+        "parent": "root",
+        "ref": "4511.dat",
+        "kind": "part",
+        "embedded": false,
+        "section": "s14_sliding_door.ldr",
+        "index": 3,
+        "line": 14,
+        "colour": "71",
+        "effective_colour": "71",
+        "local": [
+          [
+            1.0,
+            0.0,
+            0.0,
+            -18.0
+          ],
+          [
+            0.0,
+            1.0,
+            0.0,
+            -67.0
+          ],
+          [
+            0.0,
+            0.0,
+            1.0,
+            -13.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "world": [
+          [
+            1.0,
+            0.0,
+            0.0,
+            -18.0
+          ],
+          [
+            0.0,
+            1.0,
+            0.0,
+            -67.0
+          ],
+          [
+            0.0,
+            0.0,
+            1.0,
+            -13.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "description": "Door  6.5 x  5 Sliding with Corrugated Surface"
+      },
+      {
+        "id": "4",
+        "parent": "root",
+        "ref": "3008.dat",
+        "kind": "part",
+        "embedded": false,
+        "section": "s14_sliding_door.ldr",
+        "index": 4,
+        "line": 16,
+        "colour": "4",
+        "effective_colour": "4",
+        "local": [
+          [
+            1.0,
+            0.0,
+            0.0,
+            80.0
+          ],
+          [
+            0.0,
+            1.0,
+            0.0,
+            -32.0
+          ],
+          [
+            0.0,
+            0.0,
+            1.0,
+            20.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "world": [
+          [
+            1.0,
+            0.0,
+            0.0,
+            80.0
+          ],
+          [
+            0.0,
+            1.0,
+            0.0,
+            -32.0
+          ],
+          [
+            0.0,
+            0.0,
+            1.0,
+            20.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "description": "Brick  1 x  8"
+      },
+      {
+        "id": "5",
+        "parent": "root",
+        "ref": "3005.dat",
+        "kind": "part",
+        "embedded": false,
+        "section": "s14_sliding_door.ldr",
+        "index": 5,
+        "line": 18,
+        "colour": "4",
+        "effective_colour": "4",
+        "local": [
+          [
+            1.0,
+            0.0,
+            0.0,
+            -150.0
+          ],
+          [
+            0.0,
+            1.0,
+            0.0,
+            -32.0
+          ],
+          [
+            0.0,
+            0.0,
+            1.0,
+            20.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "world": [
+          [
+            1.0,
+            0.0,
+            0.0,
+            -150.0
+          ],
+          [
+            0.0,
+            1.0,
+            0.0,
+            -32.0
+          ],
+          [
+            0.0,
+            0.0,
+            1.0,
+            20.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "description": "Brick  1 x  1"
+      },
+      {
+        "id": "6",
+        "parent": "root",
+        "ref": "3008.dat",
+        "kind": "part",
+        "embedded": false,
+        "section": "s14_sliding_door.ldr",
+        "index": 6,
+        "line": 20,
+        "colour": "4",
+        "effective_colour": "4",
+        "local": [
+          [
+            1.0,
+            0.0,
+            0.0,
+            80.0
+          ],
+          [
+            0.0,
+            1.0,
+            0.0,
+            -56.0
+          ],
+          [
+            0.0,
+            0.0,
+            1.0,
+            20.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "world": [
+          [
+            1.0,
+            0.0,
+            0.0,
+            80.0
+          ],
+          [
+            0.0,
+            1.0,
+            0.0,
+            -56.0
+          ],
+          [
+            0.0,
+            0.0,
+            1.0,
+            20.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "description": "Brick  1 x  8"
+      },
+      {
+        "id": "7",
+        "parent": "root",
+        "ref": "3005.dat",
+        "kind": "part",
+        "embedded": false,
+        "section": "s14_sliding_door.ldr",
+        "index": 7,
+        "line": 22,
+        "colour": "4",
+        "effective_colour": "4",
+        "local": [
+          [
+            1.0,
+            0.0,
+            0.0,
+            -150.0
+          ],
+          [
+            0.0,
+            1.0,
+            0.0,
+            -56.0
+          ],
+          [
+            0.0,
+            0.0,
+            1.0,
+            20.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "world": [
+          [
+            1.0,
+            0.0,
+            0.0,
+            -150.0
+          ],
+          [
+            0.0,
+            1.0,
+            0.0,
+            -56.0
+          ],
+          [
+            0.0,
+            0.0,
+            1.0,
+            20.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "description": "Brick  1 x  1"
+      },
+      {
+        "id": "8",
+        "parent": "root",
+        "ref": "3008.dat",
+        "kind": "part",
+        "embedded": false,
+        "section": "s14_sliding_door.ldr",
+        "index": 8,
+        "line": 24,
+        "colour": "4",
+        "effective_colour": "4",
+        "local": [
+          [
+            1.0,
+            0.0,
+            0.0,
+            80.0
+          ],
+          [
+            0.0,
+            1.0,
+            0.0,
+            -80.0
+          ],
+          [
+            0.0,
+            0.0,
+            1.0,
+            20.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "world": [
+          [
+            1.0,
+            0.0,
+            0.0,
+            80.0
+          ],
+          [
+            0.0,
+            1.0,
+            0.0,
+            -80.0
+          ],
+          [
+            0.0,
+            0.0,
+            1.0,
+            20.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "description": "Brick  1 x  8"
+      },
+      {
+        "id": "9",
+        "parent": "root",
+        "ref": "3005.dat",
+        "kind": "part",
+        "embedded": false,
+        "section": "s14_sliding_door.ldr",
+        "index": 9,
+        "line": 26,
+        "colour": "4",
+        "effective_colour": "4",
+        "local": [
+          [
+            1.0,
+            0.0,
+            0.0,
+            -150.0
+          ],
+          [
+            0.0,
+            1.0,
+            0.0,
+            -80.0
+          ],
+          [
+            0.0,
+            0.0,
+            1.0,
+            20.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "world": [
+          [
+            1.0,
+            0.0,
+            0.0,
+            -150.0
+          ],
+          [
+            0.0,
+            1.0,
+            0.0,
+            -80.0
+          ],
+          [
+            0.0,
+            0.0,
+            1.0,
+            20.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "description": "Brick  1 x  1"
+      },
+      {
+        "id": "10",
+        "parent": "root",
+        "ref": "3008.dat",
+        "kind": "part",
+        "embedded": false,
+        "section": "s14_sliding_door.ldr",
+        "index": 10,
+        "line": 28,
+        "colour": "4",
+        "effective_colour": "4",
+        "local": [
+          [
+            1.0,
+            0.0,
+            0.0,
+            80.0
+          ],
+          [
+            0.0,
+            1.0,
+            0.0,
+            -104.0
+          ],
+          [
+            0.0,
+            0.0,
+            1.0,
+            20.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "world": [
+          [
+            1.0,
+            0.0,
+            0.0,
+            80.0
+          ],
+          [
+            0.0,
+            1.0,
+            0.0,
+            -104.0
+          ],
+          [
+            0.0,
+            0.0,
+            1.0,
+            20.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "description": "Brick  1 x  8"
+      },
+      {
+        "id": "11",
+        "parent": "root",
+        "ref": "3005.dat",
+        "kind": "part",
+        "embedded": false,
+        "section": "s14_sliding_door.ldr",
+        "index": 11,
+        "line": 30,
+        "colour": "4",
+        "effective_colour": "4",
+        "local": [
+          [
+            1.0,
+            0.0,
+            0.0,
+            -150.0
+          ],
+          [
+            0.0,
+            1.0,
+            0.0,
+            -104.0
+          ],
+          [
+            0.0,
+            0.0,
+            1.0,
+            20.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "world": [
+          [
+            1.0,
+            0.0,
+            0.0,
+            -150.0
+          ],
+          [
+            0.0,
+            1.0,
+            0.0,
+            -104.0
+          ],
+          [
+            0.0,
+            0.0,
+            1.0,
+            20.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "description": "Brick  1 x  1"
+      },
+      {
+        "id": "12",
+        "parent": "root",
+        "ref": "3008.dat",
+        "kind": "part",
+        "embedded": false,
+        "section": "s14_sliding_door.ldr",
+        "index": 12,
+        "line": 32,
+        "colour": "4",
+        "effective_colour": "4",
+        "local": [
+          [
+            1.0,
+            0.0,
+            0.0,
+            80.0
+          ],
+          [
+            0.0,
+            1.0,
+            0.0,
+            -128.0
+          ],
+          [
+            0.0,
+            0.0,
+            1.0,
+            20.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "world": [
+          [
+            1.0,
+            0.0,
+            0.0,
+            80.0
+          ],
+          [
+            0.0,
+            1.0,
+            0.0,
+            -128.0
+          ],
+          [
+            0.0,
+            0.0,
+            1.0,
+            20.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "description": "Brick  1 x  8"
+      },
+      {
+        "id": "13",
+        "parent": "root",
+        "ref": "3005.dat",
+        "kind": "part",
+        "embedded": false,
+        "section": "s14_sliding_door.ldr",
+        "index": 13,
+        "line": 34,
+        "colour": "4",
+        "effective_colour": "4",
+        "local": [
+          [
+            1.0,
+            0.0,
+            0.0,
+            -150.0
+          ],
+          [
+            0.0,
+            1.0,
+            0.0,
+            -128.0
+          ],
+          [
+            0.0,
+            0.0,
+            1.0,
+            20.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "world": [
+          [
+            1.0,
+            0.0,
+            0.0,
+            -150.0
+          ],
+          [
+            0.0,
+            1.0,
+            0.0,
+            -128.0
+          ],
+          [
+            0.0,
+            0.0,
+            1.0,
+            20.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "description": "Brick  1 x  1"
+      },
+      {
+        "id": "14",
+        "parent": "root",
+        "ref": "3460.dat",
+        "kind": "part",
+        "embedded": false,
+        "section": "s14_sliding_door.ldr",
+        "index": 14,
+        "line": 36,
+        "colour": "4",
+        "effective_colour": "4",
+        "local": [
+          [
+            1.0,
+            0.0,
+            0.0,
+            80.0
+          ],
+          [
+            0.0,
+            1.0,
+            0.0,
+            -136.0
+          ],
+          [
+            0.0,
+            0.0,
+            1.0,
+            20.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "world": [
+          [
+            1.0,
+            0.0,
+            0.0,
+            80.0
+          ],
+          [
+            0.0,
+            1.0,
+            0.0,
+            -136.0
+          ],
+          [
+            0.0,
+            0.0,
+            1.0,
+            20.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "description": "Plate  1 x  8"
+      },
+      {
+        "id": "15",
+        "parent": "root",
+        "ref": "3024.dat",
+        "kind": "part",
+        "embedded": false,
+        "section": "s14_sliding_door.ldr",
+        "index": 15,
+        "line": 38,
+        "colour": "4",
+        "effective_colour": "4",
+        "local": [
+          [
+            1.0,
+            0.0,
+            0.0,
+            -150.0
+          ],
+          [
+            0.0,
+            1.0,
+            0.0,
+            -136.0
+          ],
+          [
+            0.0,
+            0.0,
+            1.0,
+            20.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "world": [
+          [
+            1.0,
+            0.0,
+            0.0,
+            -150.0
+          ],
+          [
+            0.0,
+            1.0,
+            0.0,
+            -136.0
+          ],
+          [
+            0.0,
+            0.0,
+            1.0,
+            20.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "description": "Plate  1 x  1"
+      },
+      {
+        "id": "16",
+        "parent": "root",
+        "ref": "4510.dat",
+        "kind": "part",
+        "embedded": false,
+        "section": "s14_sliding_door.ldr",
+        "index": 16,
+        "line": 40,
+        "colour": "4",
+        "effective_colour": "4",
+        "local": [
+          [
+            1.0,
+            0.0,
+            0.0,
+            -80.0
+          ],
+          [
+            0.0,
+            1.0,
+            0.0,
+            -136.0
+          ],
+          [
+            0.0,
+            0.0,
+            1.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "world": [
+          [
+            1.0,
+            0.0,
+            0.0,
+            -80.0
+          ],
+          [
+            0.0,
+            1.0,
+            0.0,
+            -136.0
+          ],
+          [
+            0.0,
+            0.0,
+            1.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "description": "Plate  1 x  8 with Door Rail"
+      },
+      {
+        "id": "17",
+        "parent": "root",
+        "ref": "4510.dat",
+        "kind": "part",
+        "embedded": false,
+        "section": "s14_sliding_door.ldr",
+        "index": 17,
+        "line": 42,
+        "colour": "4",
+        "effective_colour": "4",
+        "local": [
+          [
+            1.0,
+            0.0,
+            0.0,
+            80.0
+          ],
+          [
+            0.0,
+            1.0,
+            0.0,
+            -136.0
+          ],
+          [
+            0.0,
+            0.0,
+            1.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "world": [
+          [
+            1.0,
+            0.0,
+            0.0,
+            80.0
+          ],
+          [
+            0.0,
+            1.0,
+            0.0,
+            -136.0
+          ],
+          [
+            0.0,
+            0.0,
+            1.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "description": "Plate  1 x  8 with Door Rail"
+      },
+      {
+        "id": "18",
+        "parent": "root",
+        "ref": "4282.dat",
+        "kind": "part",
+        "embedded": false,
+        "section": "s14_sliding_door.ldr",
+        "index": 18,
+        "line": 44,
+        "colour": "8",
+        "effective_colour": "8",
+        "local": [
+          [
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            1.0,
+            0.0,
+            -144.0
+          ],
+          [
+            0.0,
+            0.0,
+            1.0,
+            10.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "world": [
+          [
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            1.0,
+            0.0,
+            -144.0
+          ],
+          [
+            0.0,
+            0.0,
+            1.0,
+            10.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "description": "Plate  2 x 16"
+      }
+    ],
+    "diagnostics": [],
+    "coordinate_space": "selected section, LDU, -Y up"
+  },
+  "controls": {},
+  "signals": {},
+  "bodies": {},
+  "anchors": {},
+  "checks": [],
+  "notes": [
+    "Assign rigid groups and measured joints before setting status to ready."
+  ],
+  "mechanisms": {
+    "m_6b86b273ff34": {
+      "label": "Plate  1 x  8 with Door Rail",
+      "parts": [
+        "1"
+      ],
+      "bodies": [],
+      "inputs": [],
+      "outputs": [],
+      "notes": [
+        "Provisional mechanism boundary. Review connections, identify input/output and assign moving groups."
+      ]
+    },
+    "m_b17ef6d19c7a": {
+      "label": "Plate  1 x  8 with Door Rail",
+      "parts": [
+        "16"
+      ],
+      "bodies": [],
+      "inputs": [],
+      "outputs": [],
+      "notes": [
+        "Provisional mechanism boundary. Review connections, identify input/output and assign moving groups."
+      ]
+    },
+    "m_4523540f1504": {
+      "label": "Plate  1 x  8 with Door Rail",
+      "parts": [
+        "17"
+      ],
+      "bodies": [],
+      "inputs": [],
+      "outputs": [],
+      "notes": [
+        "Provisional mechanism boundary. Review connections, identify input/output and assign moving groups."
+      ]
+    },
+    "m_d4735e3a265e": {
+      "label": "Plate  1 x  8 with Door Rail",
+      "parts": [
+        "2"
+      ],
+      "bodies": [],
+      "inputs": [],
+      "outputs": [],
+      "notes": [
+        "Provisional mechanism boundary. Review connections, identify input/output and assign moving groups."
+      ]
+    },
+    "m_4e07408562be": {
+      "label": "Door  6.5 x  5 Sliding with Corrugated Surface",
+      "parts": [
+        "3"
+      ],
+      "bodies": [],
+      "inputs": [],
+      "outputs": [],
+      "notes": [
+        "Provisional mechanism boundary. Review connections, identify input/output and assign moving groups."
+      ]
+    }
+  },
+  "connections": {},
+  "discovery": {
+    "grouping": "Provisional connected mechanical candidates; agent may split/merge views",
+    "unclassified_parts": [
+      "0",
+      "10",
+      "11",
+      "12",
+      "13",
+      "14",
+      "15",
+      "18",
+      "4",
+      "5",
+      "6",
+      "7",
+      "8",
+      "9"
+    ],
+    "embedded_parts": [],
+    "contact_limit": 300,
+    "rigid_groups": "not inferred",
+    "inputs_outputs": "not inferred",
+    "mechanical_parts": [
+      "1",
+      "16",
+      "17",
+      "2",
+      "3"
+    ],
+    "warnings": [
+      {
+        "code": "coaxial_not_run",
+        "message": "not run: 0 shaft/gear candidates outside 2..100; select a section"
+      }
+    ],
+    "surface_contacts": "Not detected: cams, levers bearing on beams, friction and stops need geometric/visual review even when connector contacts are absent",
+    "unsupported_gears": [],
+    "gear_placements": {
+      "policy": "Nearest orthogonal analysis frame within rounding_limit; source translations and handedness preserved",
+      "rounding_limit": 0.002,
+      "counts": {},
+      "affected": []
+    },
+    "contacts": {
+      "complete": true,
+      "tested_parts": 19,
+      "diagnostics": [],
+      "summary": {
+        "tested_parts": 19,
+        "contacts": 32,
+        "contacted_parts": 5,
+        "by_kind": {
+          "stud/stud_receptacle": 32
+        },
+        "axles": {
+          "selection": "Catalog descriptions beginning Technic Axle followed by a numeric length; excludes axle pins, joiners and axle-hole supports",
+          "total": 0,
+          "with_axle_hole_contact": 0,
+          "without_axle_hole_contact": []
+        }
+      },
+      "placements": {
+        "policy": "Nearest orthogonal analysis frame within rounding_limit; source translations and handedness preserved",
+        "rounding_limit": 0.002,
+        "counts": {
+          "unchanged": 19
+        },
+        "affected": []
+      }
+    },
+    "coaxial_selection": "Catalog axle, gear, worm and engine crankshaft parts; positive line evidence within 80 LDU axial separation",
+    "coaxial": "not run: 0 shaft/gear candidates outside 2..100; select a section",
+    "isolated_mechanical_parts": [
+      "1",
+      "16",
+      "17",
+      "2",
+      "3"
+    ]
+  }
+}

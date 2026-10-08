@@ -1,0 +1,414 @@
+{
+  "passed": true,
+  "samples": [
+    {
+      "control": "rush_1",
+      "value": -0.12,
+      "passed": true,
+      "max_error": 0
+    },
+    {
+      "control": "rush_1",
+      "value": -0.0975,
+      "passed": true,
+      "max_error": 0
+    },
+    {
+      "control": "rush_1",
+      "value": -0.075,
+      "passed": true,
+      "max_error": 0
+    },
+    {
+      "control": "rush_1",
+      "value": -0.05249999999999999,
+      "passed": true,
+      "max_error": 0
+    },
+    {
+      "control": "rush_1",
+      "value": -0.03,
+      "passed": true,
+      "max_error": 0
+    },
+    {
+      "control": "rush_1",
+      "value": -0.007500000000000007,
+      "passed": true,
+      "max_error": 0
+    },
+    {
+      "control": "rush_1",
+      "value": 0.015000000000000013,
+      "passed": true,
+      "max_error": 0
+    },
+    {
+      "control": "rush_1",
+      "value": 0.037500000000000006,
+      "passed": true,
+      "max_error": 0
+    },
+    {
+      "control": "rush_1",
+      "value": 0.06,
+      "passed": true,
+      "max_error": 0
+    },
+    {
+      "control": "rush_1",
+      "value": 0.08249999999999999,
+      "passed": true,
+      "max_error": 0
+    },
+    {
+      "control": "rush_1",
+      "value": 0.10499999999999998,
+      "passed": true,
+      "max_error": 0
+    },
+    {
+      "control": "rush_1",
+      "value": 0.1275,
+      "passed": true,
+      "max_error": 0
+    },
+    {
+      "control": "rush_1",
+      "value": 0.15000000000000002,
+      "passed": true,
+      "max_error": 0
+    },
+    {
+      "control": "rush_1",
+      "value": 0.1725,
+      "passed": true,
+      "max_error": 0
+    },
+    {
+      "control": "rush_1",
+      "value": 0.195,
+      "passed": true,
+      "max_error": 0
+    },
+    {
+      "control": "rush_1",
+      "value": 0.21749999999999997,
+      "passed": true,
+      "max_error": 0
+    },
+    {
+      "control": "rush_1",
+      "value": 0.24,
+      "passed": true,
+      "max_error": 0
+    },
+    {
+      "control": "rush_2",
+      "value": -0.12,
+      "passed": true,
+      "max_error": 0
+    },
+    {
+      "control": "rush_2",
+      "value": -0.0975,
+      "passed": true,
+      "max_error": 0
+    },
+    {
+      "control": "rush_2",
+      "value": -0.075,
+      "passed": true,
+      "max_error": 0
+    },
+    {
+      "control": "rush_2",
+      "value": -0.05249999999999999,
+      "passed": true,
+      "max_error": 0
+    },
+    {
+      "control": "rush_2",
+      "value": -0.03,
+      "passed": true,
+      "max_error": 0
+    },
+    {
+      "control": "rush_2",
+      "value": -0.007500000000000007,
+      "passed": true,
+      "max_error": 0
+    },
+    {
+      "control": "rush_2",
+      "value": 0.015000000000000013,
+      "passed": true,
+      "max_error": 0
+    },
+    {
+      "control": "rush_2",
+      "value": 0.037500000000000006,
+      "passed": true,
+      "max_error": 0
+    },
+    {
+      "control": "rush_2",
+      "value": 0.06,
+      "passed": true,
+      "max_error": 0
+    },
+    {
+      "control": "rush_2",
+      "value": 0.08249999999999999,
+      "passed": true,
+      "max_error": 0
+    },
+    {
+      "control": "rush_2",
+      "value": 0.10499999999999998,
+      "passed": true,
+      "max_error": 0
+    },
+    {
+      "control": "rush_2",
+      "value": 0.1275,
+      "passed": true,
+      "max_error": 0
+    },
+    {
+      "control": "rush_2",
+      "value": 0.15000000000000002,
+      "passed": true,
+      "max_error": 0
+    },
+    {
+      "control": "rush_2",
+      "value": 0.1725,
+      "passed": true,
+      "max_error": 0
+    },
+    {
+      "control": "rush_2",
+      "value": 0.195,
+      "passed": true,
+      "max_error": 0
+    },
+    {
+      "control": "rush_2",
+      "value": 0.21749999999999997,
+      "passed": true,
+      "max_error": 0
+    },
+    {
+      "control": "rush_2",
+      "value": 0.24,
+      "passed": true,
+      "max_error": 0
+    },
+    {
+      "control": "rush_3",
+      "value": -0.12,
+      "passed": true,
+      "max_error": 0
+    },
+    {
+      "control": "rush_3",
+      "value": -0.0975,
+      "passed": true,
+      "max_error": 0
+    },
+    {
+      "control": "rush_3",
+      "value": -0.075,
+      "passed": true,
+      "max_error": 0
+    },
+    {
+      "control": "rush_3",
+      "value": -0.05249999999999999,
+      "passed": true,
+      "max_error": 0
+    },
+    {
+      "control": "rush_3",
+      "value": -0.03,
+      "passed": true,
+      "max_error": 0
+    },
+    {
+      "control": "rush_3",
+      "value": -0.007500000000000007,
+      "passed": true,
+      "max_error": 0
+    },
+    {
+      "control": "rush_3",
+      "value": 0.015000000000000013,
+      "passed": true,
+      "max_error": 0
+    },
+    {
+      "control": "rush_3",
+      "value": 0.037500000000000006,
+      "passed": true,
+      "max_error": 0
+    },
+    {
+      "control": "rush_3",
+      "value": 0.06,
+      "passed": true,
+      "max_error": 0
+    },
+    {
+      "control": "rush_3",
+      "value": 0.08249999999999999,
+      "passed": true,
+      "max_error": 0
+    },
+    {
+      "control": "rush_3",
+      "value": 0.10499999999999998,
+      "passed": true,
+      "max_error": 0
+    },
+    {
+      "control": "rush_3",
+      "value": 0.1275,
+      "passed": true,
+      "max_error": 0
+    },
+    {
+      "control": "rush_3",
+      "value": 0.15000000000000002,
+      "passed": true,
+      "max_error": 0
+    },
+    {
+      "control": "rush_3",
+      "value": 0.1725,
+      "passed": true,
+      "max_error": 0
+    },
+    {
+      "control": "rush_3",
+      "value": 0.195,
+      "passed": true,
+      "max_error": 0
+    },
+    {
+      "control": "rush_3",
+      "value": 0.21749999999999997,
+      "passed": true,
+      "max_error": 0
+    },
+    {
+      "control": "rush_3",
+      "value": 0.24,
+      "passed": true,
+      "max_error": 0
+    },
+    {
+      "control": "rush_4",
+      "value": -0.12,
+      "passed": true,
+      "max_error": 0
+    },
+    {
+      "control": "rush_4",
+      "value": -0.0975,
+      "passed": true,
+      "max_error": 0
+    },
+    {
+      "control": "rush_4",
+      "value": -0.075,
+      "passed": true,
+      "max_error": 0
+    },
+    {
+      "control": "rush_4",
+      "value": -0.05249999999999999,
+      "passed": true,
+      "max_error": 0
+    },
+    {
+      "control": "rush_4",
+      "value": -0.03,
+      "passed": true,
+      "max_error": 0
+    },
+    {
+      "control": "rush_4",
+      "value": -0.007500000000000007,
+      "passed": true,
+      "max_error": 0
+    },
+    {
+      "control": "rush_4",
+      "value": 0.015000000000000013,
+      "passed": true,
+      "max_error": 0
+    },
+    {
+      "control": "rush_4",
+      "value": 0.037500000000000006,
+      "passed": true,
+      "max_error": 0
+    },
+    {
+      "control": "rush_4",
+      "value": 0.06,
+      "passed": true,
+      "max_error": 0
+    },
+    {
+      "control": "rush_4",
+      "value": 0.08249999999999999,
+      "passed": true,
+      "max_error": 0
+    },
+    {
+      "control": "rush_4",
+      "value": 0.10499999999999998,
+      "passed": true,
+      "max_error": 0
+    },
+    {
+      "control": "rush_4",
+      "value": 0.1275,
+      "passed": true,
+      "max_error": 0
+    },
+    {
+      "control": "rush_4",
+      "value": 0.15000000000000002,
+      "passed": true,
+      "max_error": 0
+    },
+    {
+      "control": "rush_4",
+      "value": 0.1725,
+      "passed": true,
+      "max_error": 0
+    },
+    {
+      "control": "rush_4",
+      "value": 0.195,
+      "passed": true,
+      "max_error": 0
+    },
+    {
+      "control": "rush_4",
+      "value": 0.21749999999999997,
+      "passed": true,
+      "max_error": 0
+    },
+    {
+      "control": "rush_4",
+      "value": 0.24,
+      "passed": true,
+      "max_error": 0
+    }
+  ],
+  "coverage": "Each control swept independently; analytic closure only, not mesh collisions or dynamics"
+}

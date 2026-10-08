@@ -1,0 +1,993 @@
+{
+  "version": 1,
+  "name": "plant_18_ground_cover",
+  "status": "ready",
+  "source": {
+    "version": 1,
+    "path": "/Users/captain/workspaces/workspace-ai/ldraw-mecha/output/plants/P18_ground_cover/source/scenario.mpd",
+    "sha256": "a4cddd399662fdc8fcff4c565258d01486e190b82682589d9433bebe883f6847",
+    "section": "p18_ground_cover.ldr",
+    "description": "Plant wind case P18_ground_cover Ground cover",
+    "author": "ldraw-mecha scripts/build_plants.py",
+    "dependencies": {
+      "/Users/captain/workspaces/workspace-ai/ldraw-mecha/output/plants/P18_ground_cover/source/scenario.mpd": "a4cddd399662fdc8fcff4c565258d01486e190b82682589d9433bebe883f6847"
+    },
+    "nodes": [
+      {
+        "id": "0",
+        "parent": "root",
+        "ref": "41539.dat",
+        "kind": "part",
+        "embedded": false,
+        "section": "p18_ground_cover.ldr",
+        "index": 0,
+        "line": 8,
+        "colour": "28",
+        "effective_colour": "28",
+        "local": [
+          [
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            1.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            1.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "world": [
+          [
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            1.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            1.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "description": "Plate  8 x  8"
+      },
+      {
+        "id": "1",
+        "parent": "root",
+        "ref": "6255.dat",
+        "kind": "part",
+        "embedded": false,
+        "section": "p18_ground_cover.ldr",
+        "index": 1,
+        "line": 10,
+        "colour": "2",
+        "effective_colour": "2",
+        "local": [
+          [
+            0.6427876097,
+            0.0,
+            0.7660444431,
+            -50.0
+          ],
+          [
+            0.0,
+            1.0,
+            0.0,
+            -16.0
+          ],
+          [
+            -0.7660444431,
+            0.0,
+            0.6427876097,
+            -30.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "world": [
+          [
+            0.6427876097,
+            0.0,
+            0.7660444431,
+            -50.0
+          ],
+          [
+            0.0,
+            1.0,
+            0.0,
+            -16.0
+          ],
+          [
+            -0.7660444431,
+            0.0,
+            0.6427876097,
+            -30.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "description": "Plant  1 x  1 x  0.667 Round with 3 Large Leaves"
+      },
+      {
+        "id": "2",
+        "parent": "root",
+        "ref": "7264.dat",
+        "kind": "part",
+        "embedded": false,
+        "section": "p18_ground_cover.ldr",
+        "index": 2,
+        "line": 12,
+        "colour": "10",
+        "effective_colour": "10",
+        "local": [
+          [
+            -0.1736481777,
+            0.0,
+            0.984807753,
+            50.0
+          ],
+          [
+            0.0,
+            1.0,
+            0.0,
+            -8.0
+          ],
+          [
+            -0.984807753,
+            0.0,
+            -0.1736481777,
+            -50.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "world": [
+          [
+            -0.1736481777,
+            0.0,
+            0.984807753,
+            50.0
+          ],
+          [
+            0.0,
+            1.0,
+            0.0,
+            -8.0
+          ],
+          [
+            -0.984807753,
+            0.0,
+            -0.1736481777,
+            -50.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "description": "Plant  3 x  3 with  3  Long Leaves"
+      },
+      {
+        "id": "3",
+        "parent": "root",
+        "ref": "32607.dat",
+        "kind": "part",
+        "embedded": false,
+        "section": "p18_ground_cover.ldr",
+        "index": 3,
+        "line": 14,
+        "colour": "27",
+        "effective_colour": "27",
+        "local": [
+          [
+            -0.8660254038,
+            0.0,
+            0.5,
+            -10.0
+          ],
+          [
+            0.0,
+            1.0,
+            0.0,
+            -8.0
+          ],
+          [
+            -0.5,
+            0.0,
+            -0.8660254038,
+            10.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "world": [
+          [
+            -0.8660254038,
+            0.0,
+            0.5,
+            -10.0
+          ],
+          [
+            0.0,
+            1.0,
+            0.0,
+            -8.0
+          ],
+          [
+            -0.5,
+            0.0,
+            -0.8660254038,
+            10.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "description": "Plate  1 x  1 Round with  3 Leaves"
+      },
+      {
+        "id": "4",
+        "parent": "root",
+        "ref": "4728.dat",
+        "kind": "part",
+        "embedded": false,
+        "section": "p18_ground_cover.ldr",
+        "index": 4,
+        "line": 16,
+        "colour": "14",
+        "effective_colour": "14",
+        "local": [
+          [
+            -0.9396926208,
+            0.0,
+            -0.3420201433,
+            -50.0
+          ],
+          [
+            0.0,
+            1.0,
+            0.0,
+            -24.0
+          ],
+          [
+            0.3420201433,
+            0.0,
+            -0.9396926208,
+            50.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "world": [
+          [
+            -0.9396926208,
+            0.0,
+            -0.3420201433,
+            -50.0
+          ],
+          [
+            0.0,
+            1.0,
+            0.0,
+            -24.0
+          ],
+          [
+            0.3420201433,
+            0.0,
+            -0.9396926208,
+            50.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "description": "Plant Flower  2 x  2 with Hollow Stud"
+      },
+      {
+        "id": "5",
+        "parent": "root",
+        "ref": "98262.dat",
+        "kind": "part",
+        "embedded": false,
+        "section": "p18_ground_cover.ldr",
+        "index": 5,
+        "line": 18,
+        "colour": "29",
+        "effective_colour": "29",
+        "local": [
+          [
+            -0.3420201433,
+            0.0,
+            -0.9396926208,
+            50.0
+          ],
+          [
+            0.0,
+            1.0,
+            0.0,
+            -24.0
+          ],
+          [
+            0.9396926208,
+            0.0,
+            -0.3420201433,
+            30.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "world": [
+          [
+            -0.3420201433,
+            0.0,
+            -0.9396926208,
+            50.0
+          ],
+          [
+            0.0,
+            1.0,
+            0.0,
+            -24.0
+          ],
+          [
+            0.9396926208,
+            0.0,
+            -0.3420201433,
+            30.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "description": "Plant Flower  2 x  2 with Solid Stud"
+      },
+      {
+        "id": "6",
+        "parent": "root",
+        "ref": "2682a.dat",
+        "kind": "part",
+        "embedded": false,
+        "section": "p18_ground_cover.ldr",
+        "index": 6,
+        "line": 20,
+        "colour": "2",
+        "effective_colour": "2",
+        "local": [
+          [
+            0.5,
+            0.0,
+            -0.8660254038,
+            10.0
+          ],
+          [
+            0.0,
+            1.0,
+            0.0,
+            -8.0
+          ],
+          [
+            0.8660254038,
+            0.0,
+            0.5,
+            -50.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "world": [
+          [
+            0.5,
+            0.0,
+            -0.8660254038,
+            10.0
+          ],
+          [
+            0.0,
+            1.0,
+            0.0,
+            -8.0
+          ],
+          [
+            0.8660254038,
+            0.0,
+            0.5,
+            -50.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "description": "Plant Serrated Leaf"
+      }
+    ],
+    "diagnostics": [],
+    "coordinate_space": "selected section, LDU, -Y up"
+  },
+  "controls": {
+    "turn_1": {
+      "default": 0,
+      "min": -0.5,
+      "max": 0.5,
+      "unit": "radian",
+      "description": "Plant 1 on its stud (real); right-hand about up (-Y): + turns +X toward +Z"
+    },
+    "turn_2": {
+      "default": 0,
+      "min": -0.5,
+      "max": 0.5,
+      "unit": "radian",
+      "description": "Plant 2 on its stud (real); right-hand about up (-Y): + turns +X toward +Z"
+    },
+    "turn_3": {
+      "default": 0,
+      "min": -0.5,
+      "max": 0.5,
+      "unit": "radian",
+      "description": "Plant 3 on its stud (real); right-hand about up (-Y): + turns +X toward +Z"
+    },
+    "turn_4": {
+      "default": 0,
+      "min": -0.5,
+      "max": 0.5,
+      "unit": "radian",
+      "description": "Plant 4 on its stud (real); right-hand about up (-Y): + turns +X toward +Z"
+    },
+    "turn_5": {
+      "default": 0,
+      "min": -0.5,
+      "max": 0.5,
+      "unit": "radian",
+      "description": "Plant 5 on its stud (real); right-hand about up (-Y): + turns +X toward +Z"
+    },
+    "turn_6": {
+      "default": 0,
+      "min": -0.5,
+      "max": 0.5,
+      "unit": "radian",
+      "description": "Plant 6 on its stud (real); right-hand about up (-Y): + turns +X toward +Z"
+    }
+  },
+  "signals": {
+    "turn_1_angle": {
+      "expression": "a",
+      "variables": {
+        "a": "control:turn_1"
+      }
+    },
+    "turn_2_angle": {
+      "expression": "a",
+      "variables": {
+        "a": "control:turn_2"
+      }
+    },
+    "turn_3_angle": {
+      "expression": "a",
+      "variables": {
+        "a": "control:turn_3"
+      }
+    },
+    "turn_4_angle": {
+      "expression": "a",
+      "variables": {
+        "a": "control:turn_4"
+      }
+    },
+    "turn_5_angle": {
+      "expression": "a",
+      "variables": {
+        "a": "control:turn_5"
+      }
+    },
+    "turn_6_angle": {
+      "expression": "a",
+      "variables": {
+        "a": "control:turn_6"
+      }
+    }
+  },
+  "bodies": {
+    "turn_1": {
+      "instances": [
+        "1"
+      ],
+      "kind": "revolute",
+      "origin": [
+        -50.0,
+        0.0,
+        -30.0
+      ],
+      "axis": [
+        0.0,
+        -1.0,
+        0.0
+      ],
+      "signal": "turn_1_angle"
+    },
+    "turn_2": {
+      "instances": [
+        "2"
+      ],
+      "kind": "revolute",
+      "origin": [
+        50.0,
+        0.0,
+        -50.0
+      ],
+      "axis": [
+        0.0,
+        -1.0,
+        0.0
+      ],
+      "signal": "turn_2_angle"
+    },
+    "turn_3": {
+      "instances": [
+        "3"
+      ],
+      "kind": "revolute",
+      "origin": [
+        -10.0,
+        0.0,
+        10.0
+      ],
+      "axis": [
+        0.0,
+        -1.0,
+        0.0
+      ],
+      "signal": "turn_3_angle"
+    },
+    "turn_4": {
+      "instances": [
+        "4"
+      ],
+      "kind": "revolute",
+      "origin": [
+        -50.0,
+        0.0,
+        50.0
+      ],
+      "axis": [
+        0.0,
+        -1.0,
+        0.0
+      ],
+      "signal": "turn_4_angle"
+    },
+    "turn_5": {
+      "instances": [
+        "5"
+      ],
+      "kind": "revolute",
+      "origin": [
+        50.0,
+        0.0,
+        30.0
+      ],
+      "axis": [
+        0.0,
+        -1.0,
+        0.0
+      ],
+      "signal": "turn_5_angle"
+    },
+    "turn_6": {
+      "instances": [
+        "6"
+      ],
+      "kind": "revolute",
+      "origin": [
+        10.0,
+        0.0,
+        -50.0
+      ],
+      "axis": [
+        0.0,
+        -1.0,
+        0.0
+      ],
+      "signal": "turn_6_angle"
+    }
+  },
+  "anchors": {},
+  "checks": [],
+  "notes": [
+    "Plant wind case P18_ground_cover (Ground cover) written by scripts/build_plants.py: Six low plants (6255, 7264, 32607, 4728, 98262, 2682a) on studs. Parts picked by constant name from data/categories/parts; frame LDU, -Y up, the case front faces -Z, ground (base top) at y = 0. The wind blows toward +X.",
+    "Joints: turn_1: real revolute about [0.0, -1.0, 0.0] through [-50.0, 0.0, -30.0] (real: 6255 on a base stud; turns on the stud (right-hand about up)); turn_2: real revolute about [0.0, -1.0, 0.0] through [50.0, 0.0, -50.0] (real: 7264 on a base stud; turns on the stud (right-hand about up)); turn_3: real revolute about [0.0, -1.0, 0.0] through [-10.0, 0.0, 10.0] (real: 32607 on a base stud; turns on the stud (right-hand about up)); turn_4: real revolute about [0.0, -1.0, 0.0] through [-50.0, 0.0, 50.0] (real: 4728 on a base stud; turns on the stud (right-hand about up)); turn_5: real revolute about [0.0, -1.0, 0.0] through [50.0, 0.0, 30.0] (real: 98262 on a base stud; turns on the stud (right-hand about up)); turn_6: real revolute about [0.0, -1.0, 0.0] through [10.0, 0.0, -50.0] (real: 2682a on a base stud; turns on the stud (right-hand about up)).",
+    "Real LEGO freedoms: turn_1, turn_2, turn_3, turn_4, turn_5, turn_6. flex_approx joints (rigid tilt standing in for bending plastic, range <= 0.17 rad): none.",
+    "Sign convention by meaning (checked with the evaluator, kinematics.json): turn_1 + = Plant 1 on its stud (real); right-hand about up (-Y): + turns +X toward +Z; turn_2 + = Plant 2 on its stud (real); right-hand about up (-Y): + turns +X toward +Z; turn_3 + = Plant 3 on its stud (real); right-hand about up (-Y): + turns +X toward +Z; turn_4 + = Plant 4 on its stud (real); right-hand about up (-Y): + turns +X toward +Z; turn_5 + = Plant 5 on its stud (real); right-hand about up (-Y): + turns +X toward +Z; turn_6 + = Plant 6 on its stud (real); right-hand about up (-Y): + turns +X toward +Z.",
+    "Motion comes from wind clips (scripts/wind_clips.py): a damped-response approximation, not aerodynamics. Ranges are catalog choices narrowed by sampled clearance (scripts/blender/check_plants_clearance.py), not measured stops. Kinematic and transform checks do not prove collision-free or physically feasible motion."
+  ],
+  "mechanisms": {
+    "turn_1": {
+      "label": "Ground cover: turn 1",
+      "parts": [
+        "0",
+        "1"
+      ],
+      "bodies": [
+        "turn_1"
+      ],
+      "inputs": [
+        "control:turn_1"
+      ],
+      "outputs": [
+        "body:turn_1"
+      ],
+      "disposition": "planned",
+      "notes": [
+        "real revolute joint: real: 6255 on a base stud; turns on the stud (right-hand about up)"
+      ],
+      "review": "Joint declared in this plan (scripts/build_plants.py); driven by wind clips."
+    },
+    "turn_2": {
+      "label": "Ground cover: turn 2",
+      "parts": [
+        "0",
+        "2"
+      ],
+      "bodies": [
+        "turn_2"
+      ],
+      "inputs": [
+        "control:turn_2"
+      ],
+      "outputs": [
+        "body:turn_2"
+      ],
+      "disposition": "planned",
+      "notes": [
+        "real revolute joint: real: 7264 on a base stud; turns on the stud (right-hand about up)"
+      ],
+      "review": "Joint declared in this plan (scripts/build_plants.py); driven by wind clips."
+    },
+    "turn_3": {
+      "label": "Ground cover: turn 3",
+      "parts": [
+        "0",
+        "3"
+      ],
+      "bodies": [
+        "turn_3"
+      ],
+      "inputs": [
+        "control:turn_3"
+      ],
+      "outputs": [
+        "body:turn_3"
+      ],
+      "disposition": "planned",
+      "notes": [
+        "real revolute joint: real: 32607 on a base stud; turns on the stud (right-hand about up)"
+      ],
+      "review": "Joint declared in this plan (scripts/build_plants.py); driven by wind clips."
+    },
+    "turn_4": {
+      "label": "Ground cover: turn 4",
+      "parts": [
+        "0",
+        "4"
+      ],
+      "bodies": [
+        "turn_4"
+      ],
+      "inputs": [
+        "control:turn_4"
+      ],
+      "outputs": [
+        "body:turn_4"
+      ],
+      "disposition": "planned",
+      "notes": [
+        "real revolute joint: real: 4728 on a base stud; turns on the stud (right-hand about up)"
+      ],
+      "review": "Joint declared in this plan (scripts/build_plants.py); driven by wind clips."
+    },
+    "turn_5": {
+      "label": "Ground cover: turn 5",
+      "parts": [
+        "0",
+        "5"
+      ],
+      "bodies": [
+        "turn_5"
+      ],
+      "inputs": [
+        "control:turn_5"
+      ],
+      "outputs": [
+        "body:turn_5"
+      ],
+      "disposition": "planned",
+      "notes": [
+        "real revolute joint: real: 98262 on a base stud; turns on the stud (right-hand about up)"
+      ],
+      "review": "Joint declared in this plan (scripts/build_plants.py); driven by wind clips."
+    },
+    "turn_6": {
+      "label": "Ground cover: turn 6",
+      "parts": [
+        "0",
+        "6"
+      ],
+      "bodies": [
+        "turn_6"
+      ],
+      "inputs": [
+        "control:turn_6"
+      ],
+      "outputs": [
+        "body:turn_6"
+      ],
+      "disposition": "planned",
+      "notes": [
+        "real revolute joint: real: 2682a on a base stud; turns on the stud (right-hand about up)"
+      ],
+      "review": "Joint declared in this plan (scripts/build_plants.py); driven by wind clips."
+    },
+    "context": {
+      "label": "Ground cover: base and mounts (static)",
+      "parts": [
+        "0"
+      ],
+      "bodies": [],
+      "inputs": [],
+      "outputs": [],
+      "disposition": "static",
+      "notes": [],
+      "review": "Base, trunk and mounts built for the catalog; they do not move in this case."
+    }
+  },
+  "connections": {
+    "joint_turn_1": {
+      "a": "0",
+      "b": "1",
+      "kind": "revolute",
+      "status": "reviewed",
+      "evidence": "real: 6255 on a base stud; turns on the stud (right-hand about up). pyldraw3 contact confirmed (stud/stud_receptacle).",
+      "measurements": {
+        "origin": [
+          -50.0,
+          0.0,
+          -30.0
+        ],
+        "axis": [
+          0.0,
+          -1.0,
+          0.0
+        ]
+      },
+      "review": "Joint frame measured as stated (scripts/build_plants.py); real LEGO freedom."
+    },
+    "joint_turn_2": {
+      "a": "0",
+      "b": "2",
+      "kind": "revolute",
+      "status": "reviewed",
+      "evidence": "real: 7264 on a base stud; turns on the stud (right-hand about up). not detected by pyldraw3 contacts (no pairing connector kinds, or a placement it does not support); placement from the named source.",
+      "measurements": {
+        "origin": [
+          50.0,
+          0.0,
+          -50.0
+        ],
+        "axis": [
+          0.0,
+          -1.0,
+          0.0
+        ]
+      },
+      "review": "Joint frame measured as stated (scripts/build_plants.py); real LEGO freedom."
+    },
+    "joint_turn_3": {
+      "a": "0",
+      "b": "3",
+      "kind": "revolute",
+      "status": "reviewed",
+      "evidence": "real: 32607 on a base stud; turns on the stud (right-hand about up). pyldraw3 contact confirmed (stud/stud_receptacle).",
+      "measurements": {
+        "origin": [
+          -10.0,
+          0.0,
+          10.0
+        ],
+        "axis": [
+          0.0,
+          -1.0,
+          0.0
+        ]
+      },
+      "review": "Joint frame measured as stated (scripts/build_plants.py); real LEGO freedom."
+    },
+    "joint_turn_4": {
+      "a": "0",
+      "b": "4",
+      "kind": "revolute",
+      "status": "reviewed",
+      "evidence": "real: 4728 on a base stud; turns on the stud (right-hand about up). pyldraw3 contact confirmed (stud/stud_receptacle).",
+      "measurements": {
+        "origin": [
+          -50.0,
+          0.0,
+          50.0
+        ],
+        "axis": [
+          0.0,
+          -1.0,
+          0.0
+        ]
+      },
+      "review": "Joint frame measured as stated (scripts/build_plants.py); real LEGO freedom."
+    },
+    "joint_turn_5": {
+      "a": "0",
+      "b": "5",
+      "kind": "revolute",
+      "status": "reviewed",
+      "evidence": "real: 98262 on a base stud; turns on the stud (right-hand about up). pyldraw3 contact confirmed (stud/stud_receptacle).",
+      "measurements": {
+        "origin": [
+          50.0,
+          0.0,
+          30.0
+        ],
+        "axis": [
+          0.0,
+          -1.0,
+          0.0
+        ]
+      },
+      "review": "Joint frame measured as stated (scripts/build_plants.py); real LEGO freedom."
+    },
+    "joint_turn_6": {
+      "a": "0",
+      "b": "6",
+      "kind": "revolute",
+      "status": "reviewed",
+      "evidence": "real: 2682a on a base stud; turns on the stud (right-hand about up). pyldraw3 contact confirmed (stud/stud_receptacle).",
+      "measurements": {
+        "origin": [
+          10.0,
+          0.0,
+          -50.0
+        ],
+        "axis": [
+          0.0,
+          -1.0,
+          0.0
+        ]
+      },
+      "review": "Joint frame measured as stated (scripts/build_plants.py); real LEGO freedom."
+    }
+  },
+  "discovery": {
+    "grouping": "Provisional connected mechanical candidates; agent may split/merge views",
+    "unclassified_parts": [
+      "0",
+      "1",
+      "2",
+      "3",
+      "4",
+      "5",
+      "6"
+    ],
+    "embedded_parts": [],
+    "contact_limit": 300,
+    "rigid_groups": "not inferred",
+    "inputs_outputs": "not inferred",
+    "mechanical_parts": [],
+    "warnings": [
+      {
+        "code": "coaxial_not_run",
+        "message": "not run: 0 shaft/gear candidates outside 2..100; select a section"
+      }
+    ],
+    "surface_contacts": "Not detected: cams, levers bearing on beams, friction and stops need geometric/visual review even when connector contacts are absent",
+    "unsupported_gears": [],
+    "gear_placements": {
+      "policy": "Nearest orthogonal analysis frame within rounding_limit; source translations and handedness preserved",
+      "rounding_limit": 0.002,
+      "counts": {},
+      "affected": []
+    },
+    "contacts": {
+      "complete": true,
+      "tested_parts": 7,
+      "diagnostics": [],
+      "summary": {
+        "tested_parts": 7,
+        "contacts": 5,
+        "contacted_parts": 6,
+        "by_kind": {
+          "stud/stud_receptacle": 5
+        },
+        "axles": {
+          "selection": "Catalog descriptions beginning Technic Axle followed by a numeric length; excludes axle pins, joiners and axle-hole supports",
+          "total": 0,
+          "with_axle_hole_contact": 0,
+          "without_axle_hole_contact": []
+        }
+      },
+      "placements": {
+        "policy": "Nearest orthogonal analysis frame within rounding_limit; source translations and handedness preserved",
+        "rounding_limit": 0.002,
+        "counts": {
+          "unchanged": 7
+        },
+        "affected": []
+      }
+    },
+    "coaxial_selection": "Catalog axle, gear, worm and engine crankshaft parts; positive line evidence within 80 LDU axial separation",
+    "coaxial": "not run: 0 shaft/gear candidates outside 2..100; select a section",
+    "isolated_mechanical_parts": []
+  }
+}

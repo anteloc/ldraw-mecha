@@ -1,0 +1,33 @@
+{
+  "case": "P19_leaf_vanes",
+  "sweep": {
+    "no_new_surface_crossings": true,
+    "crossings": [],
+    "excluded_rest_pairs": []
+  },
+  "clip_poses": {
+    "samples": 180,
+    "every": 4,
+    "no_new_surface_crossings": true,
+    "crossings_by_clip": {},
+    "frames_with_crossings": {},
+    "vertex_penetration_by_clip": {},
+    "deep_shrink_ldu": 1.5,
+    "no_deep_crossings": true,
+    "deep_crossings_by_clip": {},
+    "frames_with_deep_crossings": {}
+  },
+  "roles": {
+    "0": "base",
+    "1": "seat1",
+    "2": "pole1",
+    "3": "vane1",
+    "4": "seat2",
+    "5": "pole2",
+    "6": "vane2",
+    "7": "seat3",
+    "8": "pole3",
+    "9": "vane3"
+  },
+  "coverage": "Sampled surface crossings only; excludes rigid-body and rest-contact pairs; containment untested"
+}

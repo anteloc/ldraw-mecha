@@ -1,0 +1,1523 @@
+{
+  "version": 1,
+  "name": "movable_10_car_doors",
+  "status": "ready",
+  "source": {
+    "version": 1,
+    "path": "/Users/captain/workspaces/workspace-ai/ldraw-mecha/output/movables/S10_car_doors/source/scenario.mpd",
+    "sha256": "a54bfacf1222d6204b5e68d6ccfd2dd2eb02428c32b6e98193a878bd9c7f7992",
+    "section": "s10_car_doors.ldr",
+    "description": "Movable element scenario S10_car_doors Town car doors",
+    "author": "ldraw-mecha scripts/build_movables.py",
+    "dependencies": {
+      "/Users/captain/workspaces/workspace-ai/ldraw-mecha/output/movables/S10_car_doors/source/scenario.mpd": "a54bfacf1222d6204b5e68d6ccfd2dd2eb02428c32b6e98193a878bd9c7f7992"
+    },
+    "nodes": [
+      {
+        "id": "0",
+        "parent": "root",
+        "ref": "3035.dat",
+        "kind": "part",
+        "embedded": false,
+        "section": "s10_car_doors.ldr",
+        "index": 0,
+        "line": 8,
+        "colour": "1",
+        "effective_colour": "1",
+        "local": [
+          [
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            1.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            1.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "world": [
+          [
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            1.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            1.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "description": "Plate  4 x  8"
+      },
+      {
+        "id": "1",
+        "parent": "root",
+        "ref": "4600.dat",
+        "kind": "part",
+        "embedded": false,
+        "section": "s10_car_doors.ldr",
+        "index": 1,
+        "line": 10,
+        "colour": "0",
+        "effective_colour": "0",
+        "local": [
+          [
+            0.0,
+            0.0,
+            1.0,
+            -50.0
+          ],
+          [
+            0.0,
+            1.0,
+            0.0,
+            8.0
+          ],
+          [
+            -1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "world": [
+          [
+            0.0,
+            0.0,
+            1.0,
+            -50.0
+          ],
+          [
+            0.0,
+            1.0,
+            0.0,
+            8.0
+          ],
+          [
+            -1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "description": "Plate  2 x  2 with 2 Wheel Pins"
+      },
+      {
+        "id": "2",
+        "parent": "root",
+        "ref": "4624.dat",
+        "kind": "part",
+        "embedded": false,
+        "section": "s10_car_doors.ldr",
+        "index": 2,
+        "line": 12,
+        "colour": "7",
+        "effective_colour": "7",
+        "local": [
+          [
+            1.0,
+            0.0,
+            0.0,
+            -50.0
+          ],
+          [
+            0.0,
+            1.0,
+            0.0,
+            13.0
+          ],
+          [
+            0.0,
+            0.0,
+            1.0,
+            -30.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "world": [
+          [
+            1.0,
+            0.0,
+            0.0,
+            -50.0
+          ],
+          [
+            0.0,
+            1.0,
+            0.0,
+            13.0
+          ],
+          [
+            0.0,
+            0.0,
+            1.0,
+            -30.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "description": "Wheel Rim  6.4 x  8"
+      },
+      {
+        "id": "3",
+        "parent": "root",
+        "ref": "4084.dat",
+        "kind": "part",
+        "embedded": false,
+        "section": "s10_car_doors.ldr",
+        "index": 3,
+        "line": 14,
+        "colour": "0",
+        "effective_colour": "0",
+        "local": [
+          [
+            1.0,
+            0.0,
+            0.0,
+            -50.0
+          ],
+          [
+            0.0,
+            1.0,
+            0.0,
+            13.0
+          ],
+          [
+            0.0,
+            0.0,
+            1.0,
+            -30.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "world": [
+          [
+            1.0,
+            0.0,
+            0.0,
+            -50.0
+          ],
+          [
+            0.0,
+            1.0,
+            0.0,
+            13.0
+          ],
+          [
+            0.0,
+            0.0,
+            1.0,
+            -30.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "description": "Tyre  8/ 75 x  8 Offset Tread"
+      },
+      {
+        "id": "4",
+        "parent": "root",
+        "ref": "4624.dat",
+        "kind": "part",
+        "embedded": false,
+        "section": "s10_car_doors.ldr",
+        "index": 4,
+        "line": 16,
+        "colour": "7",
+        "effective_colour": "7",
+        "local": [
+          [
+            -1.0,
+            0.0,
+            0.0,
+            -50.0
+          ],
+          [
+            0.0,
+            1.0,
+            0.0,
+            13.0
+          ],
+          [
+            0.0,
+            0.0,
+            -1.0,
+            30.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "world": [
+          [
+            -1.0,
+            0.0,
+            0.0,
+            -50.0
+          ],
+          [
+            0.0,
+            1.0,
+            0.0,
+            13.0
+          ],
+          [
+            0.0,
+            0.0,
+            -1.0,
+            30.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "description": "Wheel Rim  6.4 x  8"
+      },
+      {
+        "id": "5",
+        "parent": "root",
+        "ref": "4084.dat",
+        "kind": "part",
+        "embedded": false,
+        "section": "s10_car_doors.ldr",
+        "index": 5,
+        "line": 18,
+        "colour": "0",
+        "effective_colour": "0",
+        "local": [
+          [
+            -1.0,
+            0.0,
+            0.0,
+            -50.0
+          ],
+          [
+            0.0,
+            1.0,
+            0.0,
+            13.0
+          ],
+          [
+            0.0,
+            0.0,
+            -1.0,
+            30.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "world": [
+          [
+            -1.0,
+            0.0,
+            0.0,
+            -50.0
+          ],
+          [
+            0.0,
+            1.0,
+            0.0,
+            13.0
+          ],
+          [
+            0.0,
+            0.0,
+            -1.0,
+            30.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "description": "Tyre  8/ 75 x  8 Offset Tread"
+      },
+      {
+        "id": "6",
+        "parent": "root",
+        "ref": "4600.dat",
+        "kind": "part",
+        "embedded": false,
+        "section": "s10_car_doors.ldr",
+        "index": 6,
+        "line": 20,
+        "colour": "0",
+        "effective_colour": "0",
+        "local": [
+          [
+            0.0,
+            0.0,
+            1.0,
+            50.0
+          ],
+          [
+            0.0,
+            1.0,
+            0.0,
+            8.0
+          ],
+          [
+            -1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "world": [
+          [
+            0.0,
+            0.0,
+            1.0,
+            50.0
+          ],
+          [
+            0.0,
+            1.0,
+            0.0,
+            8.0
+          ],
+          [
+            -1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "description": "Plate  2 x  2 with 2 Wheel Pins"
+      },
+      {
+        "id": "7",
+        "parent": "root",
+        "ref": "4624.dat",
+        "kind": "part",
+        "embedded": false,
+        "section": "s10_car_doors.ldr",
+        "index": 7,
+        "line": 22,
+        "colour": "7",
+        "effective_colour": "7",
+        "local": [
+          [
+            1.0,
+            0.0,
+            0.0,
+            50.0
+          ],
+          [
+            0.0,
+            1.0,
+            0.0,
+            13.0
+          ],
+          [
+            0.0,
+            0.0,
+            1.0,
+            -30.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "world": [
+          [
+            1.0,
+            0.0,
+            0.0,
+            50.0
+          ],
+          [
+            0.0,
+            1.0,
+            0.0,
+            13.0
+          ],
+          [
+            0.0,
+            0.0,
+            1.0,
+            -30.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "description": "Wheel Rim  6.4 x  8"
+      },
+      {
+        "id": "8",
+        "parent": "root",
+        "ref": "4084.dat",
+        "kind": "part",
+        "embedded": false,
+        "section": "s10_car_doors.ldr",
+        "index": 8,
+        "line": 24,
+        "colour": "0",
+        "effective_colour": "0",
+        "local": [
+          [
+            1.0,
+            0.0,
+            0.0,
+            50.0
+          ],
+          [
+            0.0,
+            1.0,
+            0.0,
+            13.0
+          ],
+          [
+            0.0,
+            0.0,
+            1.0,
+            -30.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "world": [
+          [
+            1.0,
+            0.0,
+            0.0,
+            50.0
+          ],
+          [
+            0.0,
+            1.0,
+            0.0,
+            13.0
+          ],
+          [
+            0.0,
+            0.0,
+            1.0,
+            -30.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "description": "Tyre  8/ 75 x  8 Offset Tread"
+      },
+      {
+        "id": "9",
+        "parent": "root",
+        "ref": "4624.dat",
+        "kind": "part",
+        "embedded": false,
+        "section": "s10_car_doors.ldr",
+        "index": 9,
+        "line": 26,
+        "colour": "7",
+        "effective_colour": "7",
+        "local": [
+          [
+            -1.0,
+            0.0,
+            0.0,
+            50.0
+          ],
+          [
+            0.0,
+            1.0,
+            0.0,
+            13.0
+          ],
+          [
+            0.0,
+            0.0,
+            -1.0,
+            30.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "world": [
+          [
+            -1.0,
+            0.0,
+            0.0,
+            50.0
+          ],
+          [
+            0.0,
+            1.0,
+            0.0,
+            13.0
+          ],
+          [
+            0.0,
+            0.0,
+            -1.0,
+            30.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "description": "Wheel Rim  6.4 x  8"
+      },
+      {
+        "id": "10",
+        "parent": "root",
+        "ref": "4084.dat",
+        "kind": "part",
+        "embedded": false,
+        "section": "s10_car_doors.ldr",
+        "index": 10,
+        "line": 28,
+        "colour": "0",
+        "effective_colour": "0",
+        "local": [
+          [
+            -1.0,
+            0.0,
+            0.0,
+            50.0
+          ],
+          [
+            0.0,
+            1.0,
+            0.0,
+            13.0
+          ],
+          [
+            0.0,
+            0.0,
+            -1.0,
+            30.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "world": [
+          [
+            -1.0,
+            0.0,
+            0.0,
+            50.0
+          ],
+          [
+            0.0,
+            1.0,
+            0.0,
+            13.0
+          ],
+          [
+            0.0,
+            0.0,
+            -1.0,
+            30.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "description": "Tyre  8/ 75 x  8 Offset Tread"
+      },
+      {
+        "id": "11",
+        "parent": "root",
+        "ref": "3001.dat",
+        "kind": "part",
+        "embedded": false,
+        "section": "s10_car_doors.ldr",
+        "index": 11,
+        "line": 30,
+        "colour": "1",
+        "effective_colour": "1",
+        "local": [
+          [
+            0.0,
+            0.0,
+            1.0,
+            -60.0
+          ],
+          [
+            0.0,
+            1.0,
+            0.0,
+            -24.0
+          ],
+          [
+            -1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "world": [
+          [
+            0.0,
+            0.0,
+            1.0,
+            -60.0
+          ],
+          [
+            0.0,
+            1.0,
+            0.0,
+            -24.0
+          ],
+          [
+            -1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "description": "Brick  2 x  4"
+      },
+      {
+        "id": "12",
+        "parent": "root",
+        "ref": "3822.dat",
+        "kind": "part",
+        "embedded": false,
+        "section": "s10_car_doors.ldr",
+        "index": 12,
+        "line": 32,
+        "colour": "1",
+        "effective_colour": "1",
+        "local": [
+          [
+            0.0,
+            0.0,
+            1.0,
+            -30.0
+          ],
+          [
+            0.0,
+            1.0,
+            0.0,
+            -24.0
+          ],
+          [
+            -1.0,
+            0.0,
+            0.0,
+            -30.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "world": [
+          [
+            0.0,
+            0.0,
+            1.0,
+            -30.0
+          ],
+          [
+            0.0,
+            1.0,
+            0.0,
+            -24.0
+          ],
+          [
+            -1.0,
+            0.0,
+            0.0,
+            -30.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "description": "Door  1 x  3 x  1 Left"
+      },
+      {
+        "id": "13",
+        "parent": "root",
+        "ref": "3821.dat",
+        "kind": "part",
+        "embedded": false,
+        "section": "s10_car_doors.ldr",
+        "index": 13,
+        "line": 34,
+        "colour": "1",
+        "effective_colour": "1",
+        "local": [
+          [
+            0.0,
+            0.0,
+            1.0,
+            -30.0
+          ],
+          [
+            0.0,
+            1.0,
+            0.0,
+            -24.0
+          ],
+          [
+            -1.0,
+            0.0,
+            0.0,
+            30.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "world": [
+          [
+            0.0,
+            0.0,
+            1.0,
+            -30.0
+          ],
+          [
+            0.0,
+            1.0,
+            0.0,
+            -24.0
+          ],
+          [
+            -1.0,
+            0.0,
+            0.0,
+            30.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "description": "Door  1 x  3 x  1 Right"
+      },
+      {
+        "id": "14",
+        "parent": "root",
+        "ref": "3823.dat",
+        "kind": "part",
+        "embedded": false,
+        "section": "s10_car_doors.ldr",
+        "index": 14,
+        "line": 36,
+        "colour": "47",
+        "effective_colour": "47",
+        "local": [
+          [
+            0.0,
+            0.0,
+            1.0,
+            -30.0
+          ],
+          [
+            0.0,
+            1.0,
+            0.0,
+            -72.0
+          ],
+          [
+            -1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "world": [
+          [
+            0.0,
+            0.0,
+            1.0,
+            -30.0
+          ],
+          [
+            0.0,
+            1.0,
+            0.0,
+            -72.0
+          ],
+          [
+            -1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "description": "Windscreen  2 x  4 x  2"
+      },
+      {
+        "id": "15",
+        "parent": "root",
+        "ref": "3003.dat",
+        "kind": "part",
+        "embedded": false,
+        "section": "s10_car_doors.ldr",
+        "index": 15,
+        "line": 38,
+        "colour": "15",
+        "effective_colour": "15",
+        "local": [
+          [
+            1.0,
+            0.0,
+            0.0,
+            10.0
+          ],
+          [
+            0.0,
+            1.0,
+            0.0,
+            -24.0
+          ],
+          [
+            0.0,
+            0.0,
+            1.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "world": [
+          [
+            1.0,
+            0.0,
+            0.0,
+            10.0
+          ],
+          [
+            0.0,
+            1.0,
+            0.0,
+            -24.0
+          ],
+          [
+            0.0,
+            0.0,
+            1.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "description": "Brick  2 x  2"
+      },
+      {
+        "id": "16",
+        "parent": "root",
+        "ref": "3001.dat",
+        "kind": "part",
+        "embedded": false,
+        "section": "s10_car_doors.ldr",
+        "index": 16,
+        "line": 40,
+        "colour": "1",
+        "effective_colour": "1",
+        "local": [
+          [
+            0.0,
+            0.0,
+            1.0,
+            40.0
+          ],
+          [
+            0.0,
+            1.0,
+            0.0,
+            -24.0
+          ],
+          [
+            -1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "world": [
+          [
+            0.0,
+            0.0,
+            1.0,
+            40.0
+          ],
+          [
+            0.0,
+            1.0,
+            0.0,
+            -24.0
+          ],
+          [
+            -1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "description": "Brick  2 x  4"
+      },
+      {
+        "id": "17",
+        "parent": "root",
+        "ref": "3020.dat",
+        "kind": "part",
+        "embedded": false,
+        "section": "s10_car_doors.ldr",
+        "index": 17,
+        "line": 42,
+        "colour": "1",
+        "effective_colour": "1",
+        "local": [
+          [
+            0.0,
+            0.0,
+            1.0,
+            40.0
+          ],
+          [
+            0.0,
+            1.0,
+            0.0,
+            -32.0
+          ],
+          [
+            -1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "world": [
+          [
+            0.0,
+            0.0,
+            1.0,
+            40.0
+          ],
+          [
+            0.0,
+            1.0,
+            0.0,
+            -32.0
+          ],
+          [
+            -1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "description": "Plate  2 x  4"
+      },
+      {
+        "id": "18",
+        "parent": "root",
+        "ref": "3010.dat",
+        "kind": "part",
+        "embedded": false,
+        "section": "s10_car_doors.ldr",
+        "index": 18,
+        "line": 44,
+        "colour": "1",
+        "effective_colour": "1",
+        "local": [
+          [
+            0.0,
+            0.0,
+            1.0,
+            70.0
+          ],
+          [
+            0.0,
+            1.0,
+            0.0,
+            -24.0
+          ],
+          [
+            -1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "world": [
+          [
+            0.0,
+            0.0,
+            1.0,
+            70.0
+          ],
+          [
+            0.0,
+            1.0,
+            0.0,
+            -24.0
+          ],
+          [
+            -1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "description": "Brick  1 x  4"
+      }
+    ],
+    "diagnostics": [],
+    "coordinate_space": "selected section, LDU, -Y up"
+  },
+  "controls": {
+    "door_l": {
+      "default": 0,
+      "min": 0.0,
+      "max": 1.3,
+      "unit": "radian",
+      "description": "Left door (-Z side); + swings the rear edge out"
+    },
+    "door_r": {
+      "default": 0,
+      "min": 0.0,
+      "max": 1.3,
+      "unit": "radian",
+      "description": "Right door (+Z side); + swings the rear edge out"
+    }
+  },
+  "signals": {
+    "door_l_angle": {
+      "expression": "a",
+      "variables": {
+        "a": "control:door_l"
+      }
+    },
+    "door_r_angle": {
+      "expression": "a",
+      "variables": {
+        "a": "control:door_r"
+      }
+    }
+  },
+  "bodies": {
+    "door_l": {
+      "instances": [
+        "12"
+      ],
+      "kind": "revolute",
+      "origin": [
+        -30.0,
+        0.0,
+        -30.0
+      ],
+      "axis": [
+        -0.0,
+        1.0,
+        -0.0
+      ],
+      "signal": "door_l_angle"
+    },
+    "door_r": {
+      "instances": [
+        "13"
+      ],
+      "kind": "revolute",
+      "origin": [
+        -30.0,
+        0.0,
+        30.0
+      ],
+      "axis": [
+        0.0,
+        -1.0,
+        0.0
+      ],
+      "signal": "door_r_angle"
+    }
+  },
+  "anchors": {},
+  "checks": [],
+  "notes": [
+    "Mock scenario S10_car_doors (Town car doors) written by scripts/build_movables.py: Car doors 1x3x1 3822 (left) / 3821 (right) on a mock town car. Parts picked by constant name from data/categories/parts; frame LDU, -Y up, the scenario front faces -Z, ground (base top) at y = 0.",
+    "Joints: door_l: revolute about [0.0, -1.0, 0.0] through [-30.0, 0.0, -30.0] (3821/3822 bottom pin_hole (s/3822s01 hinge tube) on a chassis stud; placement as set 106); door_r: revolute about [0.0, -1.0, 0.0] through [-30.0, 0.0, 30.0] (3821/3822 bottom pin_hole (s/3822s01 hinge tube) on a chassis stud; placement as set 106).",
+    "Sign convention by meaning (checked with the evaluator, kinematics.json): door_l + = Left door (-Z side); + swings the rear edge out; door_r + = Right door (+Z side); + swings the rear edge out.",
+    "Ranges are catalog choices, narrowed by sampled clearance against the mock context (scripts/blender/check_movables_clearance.py); they are not measured mechanical stops.",
+    "Kinematic and transform checks do not prove collision-free or physically feasible motion."
+  ],
+  "mechanisms": {
+    "door_l": {
+      "label": "Town car doors: door l",
+      "parts": [
+        "0",
+        "12"
+      ],
+      "bodies": [
+        "door_l"
+      ],
+      "inputs": [
+        "control:door_l"
+      ],
+      "outputs": [
+        "body:door_l"
+      ],
+      "disposition": "planned",
+      "notes": [
+        "revolute joint: 3821/3822 bottom pin_hole (s/3822s01 hinge tube) on a chassis stud; placement as set 106"
+      ],
+      "review": "Measured joint declared in this plan (scripts/build_movables.py)."
+    },
+    "door_r": {
+      "label": "Town car doors: door r",
+      "parts": [
+        "0",
+        "13"
+      ],
+      "bodies": [
+        "door_r"
+      ],
+      "inputs": [
+        "control:door_r"
+      ],
+      "outputs": [
+        "body:door_r"
+      ],
+      "disposition": "planned",
+      "notes": [
+        "revolute joint: 3821/3822 bottom pin_hole (s/3822s01 hinge tube) on a chassis stud; placement as set 106"
+      ],
+      "review": "Measured joint declared in this plan (scripts/build_movables.py)."
+    },
+    "context": {
+      "label": "Town car doors: mounting and mock context (static)",
+      "parts": [
+        "0",
+        "1",
+        "2",
+        "3",
+        "4",
+        "5",
+        "6",
+        "7",
+        "8",
+        "9",
+        "10",
+        "11",
+        "14",
+        "15",
+        "16",
+        "17",
+        "18"
+      ],
+      "bodies": [],
+      "inputs": [],
+      "outputs": [],
+      "disposition": "static",
+      "notes": [],
+      "review": "Mock context built for the catalog (walls, floor, chassis, mounts); it does not move in this scenario."
+    }
+  },
+  "connections": {
+    "joint_door_l": {
+      "a": "0",
+      "b": "12",
+      "kind": "revolute",
+      "status": "reviewed",
+      "evidence": "3821/3822 bottom pin_hole (s/3822s01 hinge tube) on a chassis stud; placement as set 106. not detected by pyldraw3 contacts (no pairing connector kinds); placement from the named source.",
+      "measurements": {
+        "origin": [
+          -30.0,
+          0.0,
+          -30.0
+        ],
+        "axis": [
+          0.0,
+          -1.0,
+          0.0
+        ]
+      },
+      "review": "Joint frame measured as stated (scripts/build_movables.py); see source/parts.json reference_checks for official placements."
+    },
+    "joint_door_r": {
+      "a": "0",
+      "b": "13",
+      "kind": "revolute",
+      "status": "reviewed",
+      "evidence": "3821/3822 bottom pin_hole (s/3822s01 hinge tube) on a chassis stud; placement as set 106. not detected by pyldraw3 contacts (no pairing connector kinds); placement from the named source.",
+      "measurements": {
+        "origin": [
+          -30.0,
+          0.0,
+          30.0
+        ],
+        "axis": [
+          0.0,
+          -1.0,
+          0.0
+        ]
+      },
+      "review": "Joint frame measured as stated (scripts/build_movables.py); see source/parts.json reference_checks for official placements."
+    }
+  },
+  "discovery": {
+    "grouping": "Provisional connected mechanical candidates; agent may split/merge views",
+    "unclassified_parts": [
+      "0",
+      "11",
+      "14",
+      "15",
+      "16",
+      "17",
+      "18"
+    ],
+    "embedded_parts": [],
+    "contact_limit": 300,
+    "rigid_groups": "not inferred",
+    "inputs_outputs": "not inferred",
+    "mechanical_parts": [
+      "1",
+      "10",
+      "12",
+      "13",
+      "2",
+      "3",
+      "4",
+      "5",
+      "6",
+      "7",
+      "8",
+      "9"
+    ],
+    "warnings": [
+      {
+        "code": "coaxial_not_run",
+        "message": "not run: 0 shaft/gear candidates outside 2..100; select a section"
+      }
+    ],
+    "surface_contacts": "Not detected: cams, levers bearing on beams, friction and stops need geometric/visual review even when connector contacts are absent",
+    "unsupported_gears": [],
+    "gear_placements": {
+      "policy": "Nearest orthogonal analysis frame within rounding_limit; source translations and handedness preserved",
+      "rounding_limit": 0.002,
+      "counts": {},
+      "affected": []
+    },
+    "contacts": {
+      "complete": true,
+      "tested_parts": 19,
+      "diagnostics": [],
+      "summary": {
+        "tested_parts": 19,
+        "contacts": 40,
+        "contacted_parts": 14,
+        "by_kind": {
+          "stud/stud_receptacle": 20,
+          "pin/pin_hole": 16,
+          "rim_seat/tyre_bead": 4
+        },
+        "axles": {
+          "selection": "Catalog descriptions beginning Technic Axle followed by a numeric length; excludes axle pins, joiners and axle-hole supports",
+          "total": 0,
+          "with_axle_hole_contact": 0,
+          "without_axle_hole_contact": []
+        }
+      },
+      "placements": {
+        "policy": "Nearest orthogonal analysis frame within rounding_limit; source translations and handedness preserved",
+        "rounding_limit": 0.002,
+        "counts": {
+          "unchanged": 19
+        },
+        "affected": []
+      }
+    },
+    "coaxial_selection": "Catalog axle, gear, worm and engine crankshaft parts; positive line evidence within 80 LDU axial separation",
+    "coaxial": "not run: 0 shaft/gear candidates outside 2..100; select a section",
+    "isolated_mechanical_parts": [
+      "12",
+      "13"
+    ]
+  }
+}

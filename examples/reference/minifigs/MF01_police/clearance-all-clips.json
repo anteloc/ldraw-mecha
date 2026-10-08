@@ -1,0 +1,679 @@
+{
+  "figure": "MF01_police",
+  "sweep": {
+    "no_new_surface_crossings": false,
+    "crossings": [
+      [
+        "shoulder_l",
+        -10.996,
+        [
+          "2",
+          "8"
+        ]
+      ],
+      [
+        "shoulder_l",
+        -9.425,
+        [
+          "1",
+          "8"
+        ]
+      ],
+      [
+        "shoulder_l",
+        -9.425,
+        [
+          "2",
+          "8"
+        ]
+      ],
+      [
+        "shoulder_l",
+        -4.712,
+        [
+          "2",
+          "8"
+        ]
+      ],
+      [
+        "shoulder_l",
+        -3.142,
+        [
+          "1",
+          "8"
+        ]
+      ],
+      [
+        "shoulder_l",
+        -3.142,
+        [
+          "2",
+          "8"
+        ]
+      ],
+      [
+        "shoulder_l",
+        1.571,
+        [
+          "2",
+          "8"
+        ]
+      ],
+      [
+        "shoulder_l",
+        3.142,
+        [
+          "1",
+          "8"
+        ]
+      ],
+      [
+        "shoulder_l",
+        3.142,
+        [
+          "2",
+          "8"
+        ]
+      ],
+      [
+        "shoulder_l",
+        7.854,
+        [
+          "2",
+          "8"
+        ]
+      ],
+      [
+        "shoulder_l",
+        9.425,
+        [
+          "1",
+          "8"
+        ]
+      ],
+      [
+        "shoulder_l",
+        9.425,
+        [
+          "2",
+          "8"
+        ]
+      ],
+      [
+        "wrist_l",
+        -1.963,
+        [
+          "5",
+          "8"
+        ]
+      ]
+    ],
+    "excluded_rest_pairs": [
+      [
+        "3",
+        "4"
+      ],
+      [
+        "3",
+        "5"
+      ],
+      [
+        "3",
+        "8"
+      ],
+      [
+        "4",
+        "8"
+      ]
+    ]
+  },
+  "clip_poses": {
+    "samples": 720,
+    "every": 6,
+    "no_new_surface_crossings": false,
+    "crossings_by_clip": {
+      "MF02_spaceman.moon_hop": [
+        "head-item_l",
+        "headgear0-item_l"
+      ],
+      "MF02_spaceman.wave": [
+        "hand_r-headgear0",
+        "head-arm_r",
+        "head-hand_r",
+        "head-item_l",
+        "headgear0-item_l"
+      ],
+      "MF02_spaceman.zero_g_tumble": [
+        "head-item_l",
+        "headgear0-item_l"
+      ],
+      "MF04_builder.carry_load": [
+        "headgear0-item_l"
+      ],
+      "MF04_builder.head_shake_no": [
+        "head-item_l",
+        "headgear0-item_l"
+      ],
+      "MF05_chef.celebrate": [
+        "head-item_l",
+        "headgear0-item_l"
+      ],
+      "MF06_pirate.hornpipe_jig": [
+        "headgear0-item_l"
+      ],
+      "MF06_pirate.lookout": [
+        "head-item_l",
+        "headgear0-item_l"
+      ],
+      "MF07_firefighter.ladder_climb": [
+        "head-item_l",
+        "headgear0-item_l"
+      ],
+      "MF08_athlete.high_jump": [
+        "hand_r-headgear0",
+        "head-hand_l",
+        "head-hand_r",
+        "head-item_l",
+        "headgear0-hand_l",
+        "headgear0-item_l"
+      ],
+      "MF08_athlete.warmup_leg_swings": [
+        "head-item_l",
+        "headgear0-item_l"
+      ],
+      "MF09_wizard.cast_spell": [
+        "headgear0-item_l"
+      ],
+      "MF09_wizard.spell_spin": [
+        "headgear0-item_l"
+      ],
+      "MF10_diver.fall_and_get_up": [
+        "head-item_l",
+        "headgear0-hand_l",
+        "headgear0-item_l"
+      ],
+      "MF10_diver.sit_down_stand_up": [
+        "hand_r-headgear0"
+      ],
+      "MF10_diver.swim_crawl": [
+        "hand_r-headgear0",
+        "head-arm_l",
+        "head-arm_r",
+        "head-hand_l",
+        "head-hand_r",
+        "head-item_l",
+        "headgear0-hand_l",
+        "headgear0-item_l"
+      ]
+    },
+    "frames_with_crossings": {
+      "MF02_spaceman.moon_hop": [
+        19,
+        25,
+        49,
+        55,
+        79,
+        85,
+        109,
+        115
+      ],
+      "MF02_spaceman.wave": [
+        13,
+        97,
+        109,
+        115,
+        121,
+        127,
+        133
+      ],
+      "MF02_spaceman.zero_g_tumble": [
+        49,
+        55,
+        61,
+        67,
+        73
+      ],
+      "MF04_builder.carry_load": [
+        13,
+        19,
+        25,
+        31,
+        37,
+        43,
+        49,
+        55,
+        61,
+        67,
+        73,
+        79,
+        85,
+        91,
+        97,
+        103,
+        109,
+        115,
+        121,
+        127,
+        133
+      ],
+      "MF04_builder.head_shake_no": [
+        109,
+        115,
+        121,
+        127,
+        133
+      ],
+      "MF05_chef.celebrate": [
+        13,
+        19,
+        25,
+        31,
+        37,
+        43,
+        49,
+        55,
+        61,
+        67,
+        73,
+        79,
+        85,
+        91,
+        97,
+        103,
+        109,
+        115,
+        121,
+        127,
+        133
+      ],
+      "MF06_pirate.hornpipe_jig": [
+        31,
+        55,
+        79,
+        103,
+        127
+      ],
+      "MF06_pirate.lookout": [
+        19,
+        25,
+        31,
+        37,
+        43,
+        49,
+        55,
+        61,
+        67,
+        73,
+        79,
+        85,
+        91,
+        97,
+        103,
+        109,
+        115,
+        121,
+        127
+      ],
+      "MF07_firefighter.ladder_climb": [
+        7,
+        13,
+        19,
+        25,
+        37,
+        43,
+        49,
+        55,
+        61,
+        67,
+        73,
+        79,
+        85,
+        91,
+        97,
+        109,
+        115,
+        121,
+        127,
+        133
+      ],
+      "MF08_athlete.high_jump": [
+        31,
+        37,
+        43,
+        49,
+        55,
+        61,
+        67,
+        79,
+        85,
+        91,
+        97,
+        103,
+        109,
+        115
+      ],
+      "MF08_athlete.warmup_leg_swings": [
+        13,
+        19,
+        25,
+        31,
+        37,
+        43,
+        49,
+        55,
+        61,
+        67,
+        73,
+        79,
+        85,
+        91,
+        97,
+        103,
+        109,
+        115
+      ],
+      "MF09_wizard.cast_spell": [
+        31,
+        37,
+        67,
+        73
+      ],
+      "MF09_wizard.spell_spin": [
+        19,
+        25,
+        31,
+        37,
+        43,
+        49,
+        55,
+        61,
+        67
+      ],
+      "MF10_diver.fall_and_get_up": [
+        7,
+        13,
+        19,
+        25,
+        31
+      ],
+      "MF10_diver.sit_down_stand_up": [
+        61,
+        67,
+        73
+      ],
+      "MF10_diver.swim_crawl": [
+        31,
+        37,
+        55,
+        73,
+        79,
+        97
+      ]
+    },
+    "deep_shrink_ldu": 1.5,
+    "no_deep_crossings": false,
+    "deep_crossings_by_clip": {
+      "MF02_spaceman.moon_hop": [
+        "head-item_l",
+        "headgear0-item_l"
+      ],
+      "MF02_spaceman.wave": [
+        "hand_r-headgear0",
+        "head-hand_r",
+        "head-item_l",
+        "headgear0-item_l"
+      ],
+      "MF02_spaceman.zero_g_tumble": [
+        "head-item_l",
+        "headgear0-item_l"
+      ],
+      "MF04_builder.carry_load": [
+        "headgear0-item_l"
+      ],
+      "MF04_builder.head_shake_no": [
+        "head-item_l",
+        "headgear0-item_l"
+      ],
+      "MF05_chef.celebrate": [
+        "head-item_l",
+        "headgear0-item_l"
+      ],
+      "MF06_pirate.hornpipe_jig": [
+        "headgear0-item_l"
+      ],
+      "MF06_pirate.lookout": [
+        "head-item_l",
+        "headgear0-item_l"
+      ],
+      "MF07_firefighter.ladder_climb": [
+        "head-item_l",
+        "headgear0-item_l"
+      ],
+      "MF08_athlete.high_jump": [
+        "hand_r-headgear0",
+        "head-hand_l",
+        "head-hand_r",
+        "head-item_l",
+        "headgear0-hand_l",
+        "headgear0-item_l"
+      ],
+      "MF08_athlete.warmup_leg_swings": [
+        "head-item_l",
+        "headgear0-item_l"
+      ],
+      "MF09_wizard.cast_spell": [
+        "headgear0-item_l"
+      ],
+      "MF09_wizard.spell_spin": [
+        "headgear0-item_l"
+      ],
+      "MF10_diver.fall_and_get_up": [
+        "head-item_l",
+        "headgear0-hand_l",
+        "headgear0-item_l"
+      ],
+      "MF10_diver.sit_down_stand_up": [
+        "hand_r-headgear0"
+      ],
+      "MF10_diver.swim_crawl": [
+        "hand_r-headgear0",
+        "head-hand_l",
+        "head-hand_r",
+        "head-item_l",
+        "headgear0-hand_l",
+        "headgear0-item_l"
+      ]
+    },
+    "frames_with_deep_crossings": {
+      "MF02_spaceman.moon_hop": [
+        19,
+        25,
+        49,
+        55,
+        79,
+        85,
+        109,
+        115
+      ],
+      "MF02_spaceman.wave": [
+        13,
+        97,
+        109,
+        115,
+        121,
+        127,
+        133
+      ],
+      "MF02_spaceman.zero_g_tumble": [
+        49,
+        55,
+        61,
+        67,
+        73
+      ],
+      "MF04_builder.carry_load": [
+        13,
+        19,
+        25,
+        31,
+        37,
+        43,
+        49,
+        55,
+        61,
+        67,
+        73,
+        79,
+        85,
+        91,
+        97,
+        103,
+        109,
+        115,
+        121,
+        127,
+        133
+      ],
+      "MF04_builder.head_shake_no": [
+        109,
+        115,
+        121,
+        127,
+        133
+      ],
+      "MF05_chef.celebrate": [
+        13,
+        19,
+        25,
+        31,
+        37,
+        43,
+        49,
+        55,
+        61,
+        67,
+        73,
+        79,
+        85,
+        91,
+        97,
+        103,
+        109,
+        115,
+        121,
+        127,
+        133
+      ],
+      "MF06_pirate.hornpipe_jig": [
+        31,
+        55,
+        79,
+        103,
+        127
+      ],
+      "MF06_pirate.lookout": [
+        19,
+        25,
+        31,
+        37,
+        43,
+        49,
+        55,
+        61,
+        67,
+        73,
+        79,
+        85,
+        91,
+        97,
+        103,
+        109,
+        115,
+        121,
+        127
+      ],
+      "MF07_firefighter.ladder_climb": [
+        7,
+        13,
+        19,
+        25,
+        37,
+        43,
+        49,
+        55,
+        73,
+        79,
+        85,
+        91,
+        97,
+        109,
+        115,
+        121,
+        127,
+        133
+      ],
+      "MF08_athlete.high_jump": [
+        31,
+        37,
+        43,
+        49,
+        55,
+        61,
+        67,
+        79,
+        85,
+        91,
+        97,
+        103,
+        109,
+        115
+      ],
+      "MF08_athlete.warmup_leg_swings": [
+        109,
+        115
+      ],
+      "MF09_wizard.cast_spell": [
+        31,
+        67,
+        73
+      ],
+      "MF09_wizard.spell_spin": [
+        37
+      ],
+      "MF10_diver.fall_and_get_up": [
+        7,
+        13,
+        19,
+        25,
+        31
+      ],
+      "MF10_diver.sit_down_stand_up": [
+        61,
+        67,
+        73
+      ],
+      "MF10_diver.swim_crawl": [
+        31,
+        37,
+        55,
+        73,
+        79,
+        97
+      ]
+    }
+  },
+  "roles": {
+    "0": "torso",
+    "1": "head",
+    "2": "headgear0",
+    "3": "hips",
+    "4": "leg_l",
+    "5": "leg_r",
+    "6": "arm_l",
+    "7": "hand_l",
+    "8": "item_l",
+    "9": "arm_r",
+    "10": "hand_r"
+  },
+  "coverage": "Sampled surface crossings only; excludes rigid-body and rest-contact pairs; containment untested; joint channels only (whole-figure staging not applied)"
+}

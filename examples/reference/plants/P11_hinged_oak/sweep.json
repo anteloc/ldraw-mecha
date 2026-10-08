@@ -1,0 +1,414 @@
+{
+  "passed": true,
+  "samples": [
+    {
+      "control": "branch_front",
+      "value": -0.3,
+      "passed": true,
+      "max_error": 0
+    },
+    {
+      "control": "branch_front",
+      "value": -0.2625,
+      "passed": true,
+      "max_error": 0
+    },
+    {
+      "control": "branch_front",
+      "value": -0.22499999999999998,
+      "passed": true,
+      "max_error": 0
+    },
+    {
+      "control": "branch_front",
+      "value": -0.1875,
+      "passed": true,
+      "max_error": 0
+    },
+    {
+      "control": "branch_front",
+      "value": -0.15,
+      "passed": true,
+      "max_error": 0
+    },
+    {
+      "control": "branch_front",
+      "value": -0.11249999999999999,
+      "passed": true,
+      "max_error": 0
+    },
+    {
+      "control": "branch_front",
+      "value": -0.07500000000000001,
+      "passed": true,
+      "max_error": 0
+    },
+    {
+      "control": "branch_front",
+      "value": -0.03749999999999998,
+      "passed": true,
+      "max_error": 0
+    },
+    {
+      "control": "branch_front",
+      "value": 0.0,
+      "passed": true,
+      "max_error": 0
+    },
+    {
+      "control": "branch_front",
+      "value": 0.03749999999999998,
+      "passed": true,
+      "max_error": 0
+    },
+    {
+      "control": "branch_front",
+      "value": 0.07500000000000001,
+      "passed": true,
+      "max_error": 0
+    },
+    {
+      "control": "branch_front",
+      "value": 0.11249999999999999,
+      "passed": true,
+      "max_error": 0
+    },
+    {
+      "control": "branch_front",
+      "value": 0.14999999999999997,
+      "passed": true,
+      "max_error": 0
+    },
+    {
+      "control": "branch_front",
+      "value": 0.1875,
+      "passed": true,
+      "max_error": 0
+    },
+    {
+      "control": "branch_front",
+      "value": 0.22500000000000003,
+      "passed": true,
+      "max_error": 0
+    },
+    {
+      "control": "branch_front",
+      "value": 0.2625,
+      "passed": true,
+      "max_error": 0
+    },
+    {
+      "control": "branch_front",
+      "value": 0.3,
+      "passed": true,
+      "max_error": 0
+    },
+    {
+      "control": "branch_downwind",
+      "value": -0.3,
+      "passed": true,
+      "max_error": 0
+    },
+    {
+      "control": "branch_downwind",
+      "value": -0.2625,
+      "passed": true,
+      "max_error": 0
+    },
+    {
+      "control": "branch_downwind",
+      "value": -0.22499999999999998,
+      "passed": true,
+      "max_error": 0
+    },
+    {
+      "control": "branch_downwind",
+      "value": -0.1875,
+      "passed": true,
+      "max_error": 0
+    },
+    {
+      "control": "branch_downwind",
+      "value": -0.15,
+      "passed": true,
+      "max_error": 0
+    },
+    {
+      "control": "branch_downwind",
+      "value": -0.11249999999999999,
+      "passed": true,
+      "max_error": 0
+    },
+    {
+      "control": "branch_downwind",
+      "value": -0.07500000000000001,
+      "passed": true,
+      "max_error": 0
+    },
+    {
+      "control": "branch_downwind",
+      "value": -0.03749999999999998,
+      "passed": true,
+      "max_error": 0
+    },
+    {
+      "control": "branch_downwind",
+      "value": 0.0,
+      "passed": true,
+      "max_error": 0
+    },
+    {
+      "control": "branch_downwind",
+      "value": 0.03749999999999998,
+      "passed": true,
+      "max_error": 0
+    },
+    {
+      "control": "branch_downwind",
+      "value": 0.07500000000000001,
+      "passed": true,
+      "max_error": 0
+    },
+    {
+      "control": "branch_downwind",
+      "value": 0.11249999999999999,
+      "passed": true,
+      "max_error": 0
+    },
+    {
+      "control": "branch_downwind",
+      "value": 0.14999999999999997,
+      "passed": true,
+      "max_error": 0
+    },
+    {
+      "control": "branch_downwind",
+      "value": 0.1875,
+      "passed": true,
+      "max_error": 0
+    },
+    {
+      "control": "branch_downwind",
+      "value": 0.22500000000000003,
+      "passed": true,
+      "max_error": 0
+    },
+    {
+      "control": "branch_downwind",
+      "value": 0.2625,
+      "passed": true,
+      "max_error": 0
+    },
+    {
+      "control": "branch_downwind",
+      "value": 0.3,
+      "passed": true,
+      "max_error": 0
+    },
+    {
+      "control": "branch_back",
+      "value": -0.3,
+      "passed": true,
+      "max_error": 0
+    },
+    {
+      "control": "branch_back",
+      "value": -0.2625,
+      "passed": true,
+      "max_error": 0
+    },
+    {
+      "control": "branch_back",
+      "value": -0.22499999999999998,
+      "passed": true,
+      "max_error": 0
+    },
+    {
+      "control": "branch_back",
+      "value": -0.1875,
+      "passed": true,
+      "max_error": 0
+    },
+    {
+      "control": "branch_back",
+      "value": -0.15,
+      "passed": true,
+      "max_error": 0
+    },
+    {
+      "control": "branch_back",
+      "value": -0.11249999999999999,
+      "passed": true,
+      "max_error": 0
+    },
+    {
+      "control": "branch_back",
+      "value": -0.07500000000000001,
+      "passed": true,
+      "max_error": 0
+    },
+    {
+      "control": "branch_back",
+      "value": -0.03749999999999998,
+      "passed": true,
+      "max_error": 0
+    },
+    {
+      "control": "branch_back",
+      "value": 0.0,
+      "passed": true,
+      "max_error": 0
+    },
+    {
+      "control": "branch_back",
+      "value": 0.03749999999999998,
+      "passed": true,
+      "max_error": 0
+    },
+    {
+      "control": "branch_back",
+      "value": 0.07500000000000001,
+      "passed": true,
+      "max_error": 0
+    },
+    {
+      "control": "branch_back",
+      "value": 0.11249999999999999,
+      "passed": true,
+      "max_error": 0
+    },
+    {
+      "control": "branch_back",
+      "value": 0.14999999999999997,
+      "passed": true,
+      "max_error": 0
+    },
+    {
+      "control": "branch_back",
+      "value": 0.1875,
+      "passed": true,
+      "max_error": 0
+    },
+    {
+      "control": "branch_back",
+      "value": 0.22500000000000003,
+      "passed": true,
+      "max_error": 0
+    },
+    {
+      "control": "branch_back",
+      "value": 0.2625,
+      "passed": true,
+      "max_error": 0
+    },
+    {
+      "control": "branch_back",
+      "value": 0.3,
+      "passed": true,
+      "max_error": 0
+    },
+    {
+      "control": "branch_upwind",
+      "value": -0.3,
+      "passed": true,
+      "max_error": 0
+    },
+    {
+      "control": "branch_upwind",
+      "value": -0.2625,
+      "passed": true,
+      "max_error": 0
+    },
+    {
+      "control": "branch_upwind",
+      "value": -0.22499999999999998,
+      "passed": true,
+      "max_error": 0
+    },
+    {
+      "control": "branch_upwind",
+      "value": -0.1875,
+      "passed": true,
+      "max_error": 0
+    },
+    {
+      "control": "branch_upwind",
+      "value": -0.15,
+      "passed": true,
+      "max_error": 0
+    },
+    {
+      "control": "branch_upwind",
+      "value": -0.11249999999999999,
+      "passed": true,
+      "max_error": 0
+    },
+    {
+      "control": "branch_upwind",
+      "value": -0.07500000000000001,
+      "passed": true,
+      "max_error": 0
+    },
+    {
+      "control": "branch_upwind",
+      "value": -0.03749999999999998,
+      "passed": true,
+      "max_error": 0
+    },
+    {
+      "control": "branch_upwind",
+      "value": 0.0,
+      "passed": true,
+      "max_error": 0
+    },
+    {
+      "control": "branch_upwind",
+      "value": 0.03749999999999998,
+      "passed": true,
+      "max_error": 0
+    },
+    {
+      "control": "branch_upwind",
+      "value": 0.07500000000000001,
+      "passed": true,
+      "max_error": 0
+    },
+    {
+      "control": "branch_upwind",
+      "value": 0.11249999999999999,
+      "passed": true,
+      "max_error": 0
+    },
+    {
+      "control": "branch_upwind",
+      "value": 0.14999999999999997,
+      "passed": true,
+      "max_error": 0
+    },
+    {
+      "control": "branch_upwind",
+      "value": 0.1875,
+      "passed": true,
+      "max_error": 0
+    },
+    {
+      "control": "branch_upwind",
+      "value": 0.22500000000000003,
+      "passed": true,
+      "max_error": 0
+    },
+    {
+      "control": "branch_upwind",
+      "value": 0.2625,
+      "passed": true,
+      "max_error": 0
+    },
+    {
+      "control": "branch_upwind",
+      "value": 0.3,
+      "passed": true,
+      "max_error": 0
+    }
+  ],
+  "coverage": "Each control swept independently; analytic closure only, not mesh collisions or dynamics"
+}

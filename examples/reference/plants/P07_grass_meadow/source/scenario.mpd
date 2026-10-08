@@ -1,0 +1,28 @@
+0 FILE p07_grass_meadow.ldr
+0 Plant wind case P07_grass_meadow Grass meadow
+0 Name: p07_grass_meadow.ldr
+0 Author: ldraw-mecha scripts/build_plants.py
+0 // Generated mock case: parts picked by constant name from data/categories/parts (vine subfiles by LDraw reference); moving parts placed from LDCad shadow connector frames (data/offLibShadow) via pyldraw3 or copied from official constructions (2518c01, 10315, 10297). Frame: LDU, -Y up, the case front faces -Z, ground (base top) at y = 0. Wind blows toward +X.
+
+0 // base: plates.Plate6X8
+1 2 0 0 0 1 0 0 0 1 0 0 0 1 3036.dat
+0 // blade1: plants.PlantGrassStem
+1 2 -70 0 -30 0.79863551 0 0.6018150232 0 1 0 -0.6018150232 0 0.79863551 15279.dat
+0 // blade2: plants.PlantGrassStem
+1 10 -50 0 10 0.2756373558 0 0.9612616959 0 1 0 -0.9612616959 0 0.2756373558 15279.dat
+0 // blade3: plants.PlantGrassStem
+1 330 -30 0 -10 -0.3583679495 0 0.9335804265 0 1 0 -0.9335804265 0 -0.3583679495 15279.dat
+0 // blade4: plants.PlantGrassStem
+1 27 -30 0 30 -0.8480480962 0 0.5299192642 0 1 0 -0.5299192642 0 -0.8480480962 15279.dat
+0 // blade5: plants.PlantGrassStem
+1 2 -10 0 -30 -0.9961946981 0 -0.08715574275 0 1 0 0.08715574275 0 -0.9961946981 15279.dat
+0 // blade6: plants.PlantGrassStem
+1 10 10 0 10 -0.7431448255 0 -0.6691306064 0 1 0 0.6691306064 0 -0.7431448255 15279.dat
+0 // blade7: plants.PlantGrassStem
+1 330 30 0 -10 -0.1908089954 0 -0.9816271834 0 1 0 0.9816271834 0 -0.1908089954 15279.dat
+0 // blade8: plants.PlantGrassStem
+1 27 30 0 30 0.4383711468 0 -0.8987940463 0 1 0 0.8987940463 0 0.4383711468 15279.dat
+0 // blade9: plants.PlantGrassStem
+1 2 50 0 -30 0.8910065242 0 -0.4539904997 0 1 0 0.4539904997 0 0.8910065242 15279.dat
+0 // blade10: plants.PlantGrassStem
+1 10 70 0 10 0.984807753 0 0.1736481777 0 1 0 -0.1736481777 0 0.984807753 15279.dat

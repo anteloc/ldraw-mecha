@@ -1,0 +1,201 @@
+{
+  "semantics": {},
+  "wind_geometry": {
+    "tier_1": {
+      "body": "tier_1",
+      "x": 0.0,
+      "tip": [
+        20.78461,
+        -36.0,
+        -12.0
+      ],
+      "swing": [
+        0.5,
+        0.866
+      ],
+      "lever": 24.0
+    },
+    "tier_2": {
+      "body": "tier_2",
+      "x": 0.0,
+      "tip": [
+        -15.426903,
+        -68.0,
+        -18.385067
+      ],
+      "swing": [
+        0.766,
+        -0.643
+      ],
+      "lever": 24.0
+    },
+    "tier_3": {
+      "body": "tier_3",
+      "x": 0.0,
+      "tip": [
+        -15.426903,
+        -100.0,
+        18.385067
+      ],
+      "swing": [
+        -0.766,
+        -0.643
+      ],
+      "lever": 24.0
+    },
+    "tier_4": {
+      "body": "tier_4",
+      "x": 0.0,
+      "tip": [
+        20.78461,
+        -132.0,
+        12.0
+      ],
+      "swing": [
+        -0.5,
+        0.866
+      ],
+      "lever": 24.0
+    }
+  },
+  "roster_problems": [],
+  "contacts": {
+    "tested_parts": 7,
+    "contacts": 1,
+    "contacted_parts": 2,
+    "by_kind": {
+      "stud/stud_receptacle": 1
+    },
+    "axles": {
+      "selection": "Catalog descriptions beginning Technic Axle followed by a numeric length; excludes axle pins, joiners and axle-hole supports",
+      "total": 0,
+      "with_axle_hole_contact": 0,
+      "without_axle_hole_contact": []
+    }
+  },
+  "contact_pairs": {
+    "0-1": [
+      "stud/stud_receptacle"
+    ]
+  },
+  "joints": {
+    "tier_1": "real",
+    "tier_2": "real",
+    "tier_3": "real",
+    "tier_4": "real"
+  },
+  "asymmetric_sample": {
+    "controls": {
+      "tier_1": 0.441,
+      "tier_2": -0.259,
+      "tier_3": 0.567,
+      "tier_4": -0.441
+    },
+    "transforms": {
+      "tier_1": [
+        [
+          0.904325,
+          0.0,
+          -0.426844,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.426844,
+          0.0,
+          0.904325,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "tier_2": [
+        [
+          0.966647,
+          0.0,
+          0.256114,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          -0.256114,
+          0.0,
+          0.966647,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "tier_3": [
+        [
+          0.843516,
+          0.0,
+          -0.537104,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.537104,
+          0.0,
+          0.843516,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "tier_4": [
+        [
+          0.904325,
+          0.0,
+          0.426844,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          -0.426844,
+          0.0,
+          0.904325,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ]
+    }
+  }
+}

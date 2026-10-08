@@ -1,0 +1,26 @@
+0 FILE p19_leaf_vanes.ldr
+0 Plant wind case P19_leaf_vanes Leaf weathervanes
+0 Name: p19_leaf_vanes.ldr
+0 Author: ldraw-mecha scripts/build_plants.py
+0 // Generated mock case: parts picked by constant name from data/categories/parts (vine subfiles by LDraw reference); moving parts placed from LDCad shadow connector frames (data/offLibShadow) via pyldraw3 or copied from official constructions (2518c01, 10315, 10297). Frame: LDU, -Y up, the case front faces -Z, ground (base top) at y = 0. Wind blows toward +X.
+
+0 // base: plates.Plate8X8
+1 2 0 0 0 1 0 0 0 1 0 0 0 1 41539.dat
+0 // seat1: plates.Plate1X1RoundWithOpenStud
+1 72 -50 -8 -10 1 0 0 0 1 0 0 0 1 85861.dat
+0 // pole1: bars.Bar8LWithStopRingsAndPin_RoundedEnd
+1 70 -50 -22 -10 1 0 0 0 1 0 0 0 1 2714a.dat
+0 // vane1: plants.PlantTreePalmLeafLarge
+1 10 -57.07106781 -163.5 -2.928932188 -0.7071067812 0 -0.7071067812 0 1 0 0.7071067812 0 -0.7071067812 2518.dat
+0 // seat2: plates.Plate1X1RoundWithOpenStud
+1 72 10 -8 -10 1 0 0 0 1 0 0 0 1 85861.dat
+0 // pole2: bars.Bar6LWithThickStop
+1 70 10 -20 -10 1 0 0 0 1 0 0 0 1 63965a.dat
+0 // vane2: plants.PlantPalmLeafSmall
+1 2 10 -124 -20 0 0 1 0 1 0 -1 0 0 6148.dat
+0 // seat3: plates.Plate1X1RoundWithOpenStud
+1 72 70 -8 -10 1 0 0 0 1 0 0 0 1 85861.dat
+0 // pole3: bars.Bar3L
+1 70 70 -64 -10 1 0 0 0 1 0 0 0 1 87994.dat
+0 // vane3: plants.PlantPalmLeafSmall
+1 27 70 -64 0 0 0 -1 0 1 0 1 0 0 6148.dat

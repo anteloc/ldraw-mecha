@@ -1,0 +1,714 @@
+{
+  "version": 1,
+  "name": "movable_20_levers",
+  "status": "ready",
+  "source": {
+    "version": 1,
+    "path": "/Users/captain/workspaces/workspace-ai/ldraw-mecha/output/movables/S20_levers/source/scenario.mpd",
+    "sha256": "a36ea083aea5ecb313be73517687c229699ca99fcff4170351178e455bd4d913",
+    "section": "s20_levers.ldr",
+    "description": "Movable element scenario S20_levers Control levers",
+    "author": "ldraw-mecha scripts/build_movables.py",
+    "dependencies": {
+      "/Users/captain/workspaces/workspace-ai/ldraw-mecha/output/movables/S20_levers/source/scenario.mpd": "a36ea083aea5ecb313be73517687c229699ca99fcff4170351178e455bd4d913"
+    },
+    "nodes": [
+      {
+        "id": "0",
+        "parent": "root",
+        "ref": "3032.dat",
+        "kind": "part",
+        "embedded": false,
+        "section": "s20_levers.ldr",
+        "index": 0,
+        "line": 8,
+        "colour": "8",
+        "effective_colour": "8",
+        "local": [
+          [
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            1.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            1.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "world": [
+          [
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            1.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            1.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "description": "Plate  4 x  6"
+      },
+      {
+        "id": "1",
+        "parent": "root",
+        "ref": "3001.dat",
+        "kind": "part",
+        "embedded": false,
+        "section": "s20_levers.ldr",
+        "index": 1,
+        "line": 10,
+        "colour": "71",
+        "effective_colour": "71",
+        "local": [
+          [
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            1.0,
+            0.0,
+            -24.0
+          ],
+          [
+            0.0,
+            0.0,
+            1.0,
+            10.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "world": [
+          [
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            1.0,
+            0.0,
+            -24.0
+          ],
+          [
+            0.0,
+            0.0,
+            1.0,
+            10.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "description": "Brick  2 x  4"
+      },
+      {
+        "id": "2",
+        "parent": "root",
+        "ref": "4592.dat",
+        "kind": "part",
+        "embedded": false,
+        "section": "s20_levers.ldr",
+        "index": 2,
+        "line": 12,
+        "colour": "0",
+        "effective_colour": "0",
+        "local": [
+          [
+            1.0,
+            0.0,
+            0.0,
+            -30.0
+          ],
+          [
+            0.0,
+            1.0,
+            0.0,
+            -32.0
+          ],
+          [
+            0.0,
+            0.0,
+            1.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "world": [
+          [
+            1.0,
+            0.0,
+            0.0,
+            -30.0
+          ],
+          [
+            0.0,
+            1.0,
+            0.0,
+            -32.0
+          ],
+          [
+            0.0,
+            0.0,
+            1.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "description": "Hinge Control Stick Base"
+      },
+      {
+        "id": "3",
+        "parent": "root",
+        "ref": "4593.dat",
+        "kind": "part",
+        "embedded": false,
+        "section": "s20_levers.ldr",
+        "index": 3,
+        "line": 14,
+        "colour": "4",
+        "effective_colour": "4",
+        "local": [
+          [
+            1.0,
+            0.0,
+            0.0,
+            -30.0
+          ],
+          [
+            0.0,
+            1.0,
+            0.0,
+            -32.0
+          ],
+          [
+            0.0,
+            0.0,
+            1.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "world": [
+          [
+            1.0,
+            0.0,
+            0.0,
+            -30.0
+          ],
+          [
+            0.0,
+            1.0,
+            0.0,
+            -32.0
+          ],
+          [
+            0.0,
+            0.0,
+            1.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "description": "Hinge Control Stick"
+      },
+      {
+        "id": "4",
+        "parent": "root",
+        "ref": "4592.dat",
+        "kind": "part",
+        "embedded": false,
+        "section": "s20_levers.ldr",
+        "index": 4,
+        "line": 16,
+        "colour": "0",
+        "effective_colour": "0",
+        "local": [
+          [
+            1.0,
+            0.0,
+            0.0,
+            30.0
+          ],
+          [
+            0.0,
+            1.0,
+            0.0,
+            -32.0
+          ],
+          [
+            0.0,
+            0.0,
+            1.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "world": [
+          [
+            1.0,
+            0.0,
+            0.0,
+            30.0
+          ],
+          [
+            0.0,
+            1.0,
+            0.0,
+            -32.0
+          ],
+          [
+            0.0,
+            0.0,
+            1.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "description": "Hinge Control Stick Base"
+      },
+      {
+        "id": "5",
+        "parent": "root",
+        "ref": "4593.dat",
+        "kind": "part",
+        "embedded": false,
+        "section": "s20_levers.ldr",
+        "index": 5,
+        "line": 18,
+        "colour": "1",
+        "effective_colour": "1",
+        "local": [
+          [
+            1.0,
+            0.0,
+            0.0,
+            30.0
+          ],
+          [
+            0.0,
+            1.0,
+            0.0,
+            -32.0
+          ],
+          [
+            0.0,
+            0.0,
+            1.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "world": [
+          [
+            1.0,
+            0.0,
+            0.0,
+            30.0
+          ],
+          [
+            0.0,
+            1.0,
+            0.0,
+            -32.0
+          ],
+          [
+            0.0,
+            0.0,
+            1.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "description": "Hinge Control Stick"
+      },
+      {
+        "id": "6",
+        "parent": "root",
+        "ref": "2412b.dat",
+        "kind": "part",
+        "embedded": false,
+        "section": "s20_levers.ldr",
+        "index": 6,
+        "line": 20,
+        "colour": "8",
+        "effective_colour": "8",
+        "local": [
+          [
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            1.0,
+            0.0,
+            -32.0
+          ],
+          [
+            0.0,
+            0.0,
+            1.0,
+            20.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "world": [
+          [
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            1.0,
+            0.0,
+            -32.0
+          ],
+          [
+            0.0,
+            0.0,
+            1.0,
+            20.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "description": "Tile  1 x  2 Grille with Groove"
+      }
+    ],
+    "diagnostics": [],
+    "coordinate_space": "selected section, LDU, -Y up"
+  },
+  "controls": {
+    "lever_l": {
+      "default": 0,
+      "min": -0.7,
+      "max": 0.7,
+      "unit": "radian",
+      "description": "Left stick; + tilts it forward (-Z)"
+    },
+    "lever_r": {
+      "default": 0,
+      "min": -0.7,
+      "max": 0.7,
+      "unit": "radian",
+      "description": "Right stick; + tilts it forward (-Z)"
+    }
+  },
+  "signals": {
+    "lever_l_angle": {
+      "expression": "a",
+      "variables": {
+        "a": "control:lever_l"
+      }
+    },
+    "lever_r_angle": {
+      "expression": "a",
+      "variables": {
+        "a": "control:lever_r"
+      }
+    }
+  },
+  "bodies": {
+    "stick_l": {
+      "instances": [
+        "3"
+      ],
+      "kind": "revolute",
+      "origin": [
+        -30.0,
+        -32.0,
+        0.0
+      ],
+      "axis": [
+        1.0,
+        0.0,
+        0.0
+      ],
+      "signal": "lever_l_angle"
+    },
+    "stick_r": {
+      "instances": [
+        "5"
+      ],
+      "kind": "revolute",
+      "origin": [
+        30.0,
+        -32.0,
+        0.0
+      ],
+      "axis": [
+        1.0,
+        0.0,
+        0.0
+      ],
+      "signal": "lever_r_angle"
+    }
+  },
+  "anchors": {},
+  "checks": [],
+  "notes": [
+    "Mock scenario S20_levers (Control levers) written by scripts/build_movables.py: Two control sticks 4593 in bases 4592. Parts picked by constant name from data/categories/parts; frame LDU, -Y up, the scenario front faces -Z, ground (base top) at y = 0.",
+    "Joints: lever_l: revolute about [1.0, 0.0, 0.0] through [-30.0, -32.0, 0.0] (4592 hinge snap_fgr@L9:I0 receives 4593 hinge snap_fgr@L8:I0); lever_r: revolute about [1.0, 0.0, 0.0] through [30.0, -32.0, 0.0] (4592 hinge snap_fgr@L9:I0 receives 4593 hinge snap_fgr@L8:I0).",
+    "Sign convention by meaning (checked with the evaluator, kinematics.json): lever_l + = Left stick; + tilts it forward (-Z); lever_r + = Right stick; + tilts it forward (-Z).",
+    "Ranges are catalog choices, narrowed by sampled clearance against the mock context (scripts/blender/check_movables_clearance.py); they are not measured mechanical stops.",
+    "Kinematic and transform checks do not prove collision-free or physically feasible motion."
+  ],
+  "mechanisms": {
+    "stick_l": {
+      "label": "Control levers: stick l",
+      "parts": [
+        "2",
+        "3"
+      ],
+      "bodies": [
+        "stick_l"
+      ],
+      "inputs": [
+        "control:lever_l"
+      ],
+      "outputs": [
+        "body:stick_l"
+      ],
+      "disposition": "planned",
+      "notes": [
+        "revolute joint: 4592 hinge snap_fgr@L9:I0 receives 4593 hinge snap_fgr@L8:I0"
+      ],
+      "review": "Measured joint declared in this plan (scripts/build_movables.py)."
+    },
+    "stick_r": {
+      "label": "Control levers: stick r",
+      "parts": [
+        "4",
+        "5"
+      ],
+      "bodies": [
+        "stick_r"
+      ],
+      "inputs": [
+        "control:lever_r"
+      ],
+      "outputs": [
+        "body:stick_r"
+      ],
+      "disposition": "planned",
+      "notes": [
+        "revolute joint: 4592 hinge snap_fgr@L9:I0 receives 4593 hinge snap_fgr@L8:I0"
+      ],
+      "review": "Measured joint declared in this plan (scripts/build_movables.py)."
+    },
+    "context": {
+      "label": "Control levers: mounting and mock context (static)",
+      "parts": [
+        "0",
+        "1",
+        "2",
+        "4",
+        "6"
+      ],
+      "bodies": [],
+      "inputs": [],
+      "outputs": [],
+      "disposition": "static",
+      "notes": [],
+      "review": "Mock context built for the catalog (walls, floor, chassis, mounts); it does not move in this scenario."
+    }
+  },
+  "connections": {
+    "joint_lever_l": {
+      "a": "2",
+      "b": "3",
+      "kind": "revolute",
+      "status": "reviewed",
+      "evidence": "4592 hinge snap_fgr@L9:I0 receives 4593 hinge snap_fgr@L8:I0. pyldraw3 contact confirmed (hinge/hinge).",
+      "measurements": {
+        "origin": [
+          -30.0,
+          -32.0,
+          0.0
+        ],
+        "axis": [
+          1.0,
+          0.0,
+          0.0
+        ]
+      },
+      "review": "Joint frame measured as stated (scripts/build_movables.py); see source/parts.json reference_checks for official placements."
+    },
+    "joint_lever_r": {
+      "a": "4",
+      "b": "5",
+      "kind": "revolute",
+      "status": "reviewed",
+      "evidence": "4592 hinge snap_fgr@L9:I0 receives 4593 hinge snap_fgr@L8:I0. pyldraw3 contact confirmed (hinge/hinge).",
+      "measurements": {
+        "origin": [
+          30.0,
+          -32.0,
+          0.0
+        ],
+        "axis": [
+          1.0,
+          0.0,
+          0.0
+        ]
+      },
+      "review": "Joint frame measured as stated (scripts/build_movables.py); see source/parts.json reference_checks for official placements."
+    }
+  },
+  "discovery": {
+    "grouping": "Provisional connected mechanical candidates; agent may split/merge views",
+    "unclassified_parts": [
+      "0",
+      "6"
+    ],
+    "embedded_parts": [],
+    "contact_limit": 300,
+    "rigid_groups": "not inferred",
+    "inputs_outputs": "not inferred",
+    "mechanical_parts": [
+      "2",
+      "3",
+      "4",
+      "5"
+    ],
+    "warnings": [
+      {
+        "code": "coaxial_not_run",
+        "message": "not run: 0 shaft/gear candidates outside 2..100; select a section"
+      }
+    ],
+    "surface_contacts": "Not detected: cams, levers bearing on beams, friction and stops need geometric/visual review even when connector contacts are absent",
+    "unsupported_gears": [],
+    "gear_placements": {
+      "policy": "Nearest orthogonal analysis frame within rounding_limit; source translations and handedness preserved",
+      "rounding_limit": 0.002,
+      "counts": {},
+      "affected": []
+    },
+    "contacts": {
+      "complete": true,
+      "tested_parts": 7,
+      "diagnostics": [],
+      "summary": {
+        "tested_parts": 7,
+        "contacts": 4,
+        "contacted_parts": 5,
+        "by_kind": {
+          "stud/stud_receptacle": 2,
+          "hinge/hinge": 2
+        },
+        "axles": {
+          "selection": "Catalog descriptions beginning Technic Axle followed by a numeric length; excludes axle pins, joiners and axle-hole supports",
+          "total": 0,
+          "with_axle_hole_contact": 0,
+          "without_axle_hole_contact": []
+        }
+      },
+      "placements": {
+        "policy": "Nearest orthogonal analysis frame within rounding_limit; source translations and handedness preserved",
+        "rounding_limit": 0.002,
+        "counts": {
+          "unchanged": 7
+        },
+        "affected": []
+      }
+    },
+    "coaxial_selection": "Catalog axle, gear, worm and engine crankshaft parts; positive line evidence within 80 LDU axial separation",
+    "coaxial": "not run: 0 shaft/gear candidates outside 2..100; select a section",
+    "isolated_mechanical_parts": []
+  }
+}

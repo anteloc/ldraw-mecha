@@ -1,0 +1,8 @@
+{
+  "valid": true,
+  "status": "ready",
+  "moving_parts": 42,
+  "bodies": 12,
+  "signals": 12,
+  "checks": 0
+}

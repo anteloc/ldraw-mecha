@@ -1,0 +1,175 @@
+{
+  "case": "P18_ground_cover",
+  "title": "Ground cover",
+  "parts": [
+    {
+      "role": "base",
+      "id": "0",
+      "table": "plates.Plate8X8",
+      "ref": "41539",
+      "colour": 28,
+      "title": "Plate  8 x  8",
+      "library_only": false
+    },
+    {
+      "role": "plant1",
+      "id": "1",
+      "table": "plants.Plant1X1X0_667RoundWith3LargeLeaves",
+      "ref": "6255",
+      "colour": 2,
+      "title": "Plant  1 x  1 x  0.667 Round with 3 Large Leaves",
+      "library_only": false
+    },
+    {
+      "role": "plant2",
+      "id": "2",
+      "table": "plants.Plant3X3With3LongLeaves",
+      "ref": "7264",
+      "colour": 10,
+      "title": "Plant  3 x  3 with  3  Long Leaves",
+      "library_only": false
+    },
+    {
+      "role": "plant3",
+      "id": "3",
+      "table": "plants.Plate1X1RoundWith3Leaves",
+      "ref": "32607",
+      "colour": 27,
+      "title": "Plate  1 x  1 Round with  3 Leaves",
+      "library_only": false
+    },
+    {
+      "role": "plant4",
+      "id": "4",
+      "table": "plants.PlantFlower2X2WithHollowStud",
+      "ref": "4728",
+      "colour": 14,
+      "title": "Plant Flower  2 x  2 with Hollow Stud",
+      "library_only": false
+    },
+    {
+      "role": "plant5",
+      "id": "5",
+      "table": "plants.PlantFlower2X2WithSolidStud",
+      "ref": "98262",
+      "colour": 29,
+      "title": "Plant Flower  2 x  2 with Solid Stud",
+      "library_only": false
+    },
+    {
+      "role": "plant6",
+      "id": "6",
+      "table": "plants.PlantSerratedLeaf",
+      "ref": "2682a",
+      "colour": 2,
+      "title": "Plant Serrated Leaf",
+      "library_only": false
+    }
+  ],
+  "joints": {
+    "turn_1": {
+      "origin": [
+        -50.0,
+        0.0,
+        -30.0
+      ],
+      "axis": [
+        0.0,
+        -1.0,
+        0.0
+      ],
+      "parent": "base",
+      "child": "plant1",
+      "kind": "revolute",
+      "joint": "real",
+      "connector": "real: 6255 on a base stud; turns on the stud (right-hand about up)"
+    },
+    "turn_2": {
+      "origin": [
+        50.0,
+        0.0,
+        -50.0
+      ],
+      "axis": [
+        0.0,
+        -1.0,
+        0.0
+      ],
+      "parent": "base",
+      "child": "plant2",
+      "kind": "revolute",
+      "joint": "real",
+      "connector": "real: 7264 on a base stud; turns on the stud (right-hand about up)"
+    },
+    "turn_3": {
+      "origin": [
+        -10.0,
+        0.0,
+        10.0
+      ],
+      "axis": [
+        0.0,
+        -1.0,
+        0.0
+      ],
+      "parent": "base",
+      "child": "plant3",
+      "kind": "revolute",
+      "joint": "real",
+      "connector": "real: 32607 on a base stud; turns on the stud (right-hand about up)"
+    },
+    "turn_4": {
+      "origin": [
+        -50.0,
+        0.0,
+        50.0
+      ],
+      "axis": [
+        0.0,
+        -1.0,
+        0.0
+      ],
+      "parent": "base",
+      "child": "plant4",
+      "kind": "revolute",
+      "joint": "real",
+      "connector": "real: 4728 on a base stud; turns on the stud (right-hand about up)"
+    },
+    "turn_5": {
+      "origin": [
+        50.0,
+        0.0,
+        30.0
+      ],
+      "axis": [
+        0.0,
+        -1.0,
+        0.0
+      ],
+      "parent": "base",
+      "child": "plant5",
+      "kind": "revolute",
+      "joint": "real",
+      "connector": "real: 98262 on a base stud; turns on the stud (right-hand about up)"
+    },
+    "turn_6": {
+      "origin": [
+        10.0,
+        0.0,
+        -50.0
+      ],
+      "axis": [
+        0.0,
+        -1.0,
+        0.0
+      ],
+      "parent": "base",
+      "child": "plant6",
+      "kind": "revolute",
+      "joint": "real",
+      "connector": "real: 2682a on a base stud; turns on the stud (right-hand about up)"
+    }
+  },
+  "reference_checks": [],
+  "geometry_checks": []
+}

@@ -1,0 +1,55 @@
+{
+  "scenario": "S19_drawbridge",
+  "sweep": {
+    "no_new_surface_crossings": true,
+    "crossings": [],
+    "excluded_rest_pairs": [
+      "tower_l1-hinge_deck_l",
+      "tower_r1-hinge_deck_r",
+      "hinge_wall_l-hinge_deck_l",
+      "hinge_deck_l-tower_l0",
+      "hinge_wall_r-hinge_deck_r",
+      "hinge_deck_r-tower_r0",
+      "deck-bank"
+    ]
+  },
+  "clip_poses": {
+    "samples": 108,
+    "every": 4,
+    "no_new_surface_crossings": true,
+    "crossings_by_clip": {},
+    "frames_with_crossings": {},
+    "vertex_penetration_by_clip": {},
+    "deep_shrink_ldu": 1.5,
+    "no_deep_crossings": true,
+    "deep_crossings_by_clip": {},
+    "frames_with_deep_crossings": {}
+  },
+  "roles": {
+    "0": "ground",
+    "1": "moat",
+    "2": "hinge_wall_l",
+    "3": "hinge_deck_l",
+    "4": "hinge_wall_r",
+    "5": "hinge_deck_r",
+    "6": "deck",
+    "7": "bank",
+    "8": "tower_l0",
+    "9": "tower_r0",
+    "10": "tower_l1",
+    "11": "tower_r1",
+    "12": "tower_l2",
+    "13": "tower_r2",
+    "14": "tower_l3",
+    "15": "tower_r3",
+    "16": "tower_l4",
+    "17": "tower_r4",
+    "18": "tower_l5",
+    "19": "tower_r5",
+    "20": "tower_l6",
+    "21": "tower_r6",
+    "22": "lintel",
+    "23": "lintel_cap"
+  },
+  "coverage": "Sampled surface crossings only; excludes rigid-body and rest-contact pairs; containment untested"
+}

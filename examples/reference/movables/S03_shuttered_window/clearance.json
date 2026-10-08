@@ -1,0 +1,44 @@
+{
+  "scenario": "S03_shuttered_window",
+  "sweep": {
+    "no_new_surface_crossings": true,
+    "crossings": [],
+    "excluded_rest_pairs": [
+      "window-shutter_l",
+      "window-shutter_r"
+    ]
+  },
+  "clip_poses": {
+    "samples": 108,
+    "every": 4,
+    "no_new_surface_crossings": true,
+    "crossings_by_clip": {},
+    "frames_with_crossings": {},
+    "vertex_penetration_by_clip": {},
+    "deep_shrink_ldu": 1.5,
+    "no_deep_crossings": true,
+    "deep_crossings_by_clip": {},
+    "frames_with_deep_crossings": {}
+  },
+  "roles": {
+    "0": "base",
+    "1": "window",
+    "2": "shutter_l",
+    "3": "shutter_r",
+    "4": "sill0",
+    "5": "sill1a",
+    "6": "sill1b",
+    "7": "wall_l0",
+    "8": "wall_l1",
+    "9": "wall_l2",
+    "10": "wall_l3",
+    "11": "wall_l4",
+    "12": "wall_r0",
+    "13": "wall_r1",
+    "14": "wall_r2",
+    "15": "wall_r3",
+    "16": "wall_r4",
+    "17": "lintel"
+  },
+  "coverage": "Sampled surface crossings only; excludes rigid-body and rest-contact pairs; containment untested"
+}

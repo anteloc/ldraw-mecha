@@ -1,0 +1,30 @@
+{
+  "travel_fl": {
+    "first_crossing": {
+      "0/0/86|0/0/15": 31.0,
+      "0/0/85|0/0/15": 40.0
+    },
+    "never_crossed": [],
+    "range": [
+      28.0,
+      40.5,
+      0.25
+    ],
+    "shrink_ldu": 0.4,
+    "coverage": "Sampled BVH overlap of the named pairs only, other controls at their defaults"
+  },
+  "travel_fr": {
+    "first_crossing": {
+      "0/0/92|0/0/16": 31.0,
+      "0/0/91|0/0/16": 40.0
+    },
+    "never_crossed": [],
+    "range": [
+      28.0,
+      40.5,
+      0.25
+    ],
+    "shrink_ldu": 0.4,
+    "coverage": "Sampled BVH overlap of the named pairs only, other controls at their defaults"
+  }
+}

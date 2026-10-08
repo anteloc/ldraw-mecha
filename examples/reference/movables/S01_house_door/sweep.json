@@ -1,0 +1,108 @@
+{
+  "passed": true,
+  "samples": [
+    {
+      "control": "door",
+      "value": 0.0,
+      "passed": true,
+      "max_error": 0
+    },
+    {
+      "control": "door",
+      "value": 0.109375,
+      "passed": true,
+      "max_error": 0
+    },
+    {
+      "control": "door",
+      "value": 0.21875,
+      "passed": true,
+      "max_error": 0
+    },
+    {
+      "control": "door",
+      "value": 0.328125,
+      "passed": true,
+      "max_error": 0
+    },
+    {
+      "control": "door",
+      "value": 0.4375,
+      "passed": true,
+      "max_error": 0
+    },
+    {
+      "control": "door",
+      "value": 0.546875,
+      "passed": true,
+      "max_error": 0
+    },
+    {
+      "control": "door",
+      "value": 0.65625,
+      "passed": true,
+      "max_error": 0
+    },
+    {
+      "control": "door",
+      "value": 0.765625,
+      "passed": true,
+      "max_error": 0
+    },
+    {
+      "control": "door",
+      "value": 0.875,
+      "passed": true,
+      "max_error": 0
+    },
+    {
+      "control": "door",
+      "value": 0.984375,
+      "passed": true,
+      "max_error": 0
+    },
+    {
+      "control": "door",
+      "value": 1.09375,
+      "passed": true,
+      "max_error": 0
+    },
+    {
+      "control": "door",
+      "value": 1.203125,
+      "passed": true,
+      "max_error": 0
+    },
+    {
+      "control": "door",
+      "value": 1.3125,
+      "passed": true,
+      "max_error": 0
+    },
+    {
+      "control": "door",
+      "value": 1.421875,
+      "passed": true,
+      "max_error": 0
+    },
+    {
+      "control": "door",
+      "value": 1.53125,
+      "passed": true,
+      "max_error": 0
+    },
+    {
+      "control": "door",
+      "value": 1.640625,
+      "passed": true,
+      "max_error": 0
+    },
+    {
+      "control": "door",
+      "value": 1.75,
+      "passed": true,
+      "max_error": 0
+    }
+  ],
+  "coverage": "Each control swept independently; analytic closure only, not mesh collisions or dynamics"
+}

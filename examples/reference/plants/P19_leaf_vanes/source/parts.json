@@ -1,0 +1,151 @@
+{
+  "case": "P19_leaf_vanes",
+  "title": "Leaf weathervanes",
+  "parts": [
+    {
+      "role": "base",
+      "id": "0",
+      "table": "plates.Plate8X8",
+      "ref": "41539",
+      "colour": 2,
+      "title": "Plate  8 x  8",
+      "library_only": false
+    },
+    {
+      "role": "seat1",
+      "id": "1",
+      "table": "plates.Plate1X1RoundWithOpenStud",
+      "ref": "85861",
+      "colour": 72,
+      "title": "Plate  1 x  1 Round with Open Stud",
+      "library_only": false
+    },
+    {
+      "role": "pole1",
+      "id": "2",
+      "table": "bars.Bar8LWithStopRingsAndPin_RoundedEnd",
+      "ref": "2714a",
+      "colour": 70,
+      "title": "Bar  8L with Stop Rings and Pin - Rounded End",
+      "library_only": false
+    },
+    {
+      "role": "vane1",
+      "id": "3",
+      "table": "plants.PlantTreePalmLeafLarge",
+      "ref": "2518",
+      "colour": 10,
+      "title": "Plant Tree Palm Leaf Large",
+      "library_only": false
+    },
+    {
+      "role": "seat2",
+      "id": "4",
+      "table": "plates.Plate1X1RoundWithOpenStud",
+      "ref": "85861",
+      "colour": 72,
+      "title": "Plate  1 x  1 Round with Open Stud",
+      "library_only": false
+    },
+    {
+      "role": "pole2",
+      "id": "5",
+      "table": "bars.Bar6LWithThickStop",
+      "ref": "63965a",
+      "colour": 70,
+      "title": "Bar  6L with Thick Stop",
+      "library_only": false
+    },
+    {
+      "role": "vane2",
+      "id": "6",
+      "table": "plants.PlantPalmLeafSmall",
+      "ref": "6148",
+      "colour": 2,
+      "title": "Plant Palm Leaf Small",
+      "library_only": false
+    },
+    {
+      "role": "seat3",
+      "id": "7",
+      "table": "plates.Plate1X1RoundWithOpenStud",
+      "ref": "85861",
+      "colour": 72,
+      "title": "Plate  1 x  1 Round with Open Stud",
+      "library_only": false
+    },
+    {
+      "role": "pole3",
+      "id": "8",
+      "table": "bars.Bar3L",
+      "ref": "87994",
+      "colour": 70,
+      "title": "Bar  3L",
+      "library_only": false
+    },
+    {
+      "role": "vane3",
+      "id": "9",
+      "table": "plants.PlantPalmLeafSmall",
+      "ref": "6148",
+      "colour": 27,
+      "title": "Plant Palm Leaf Small",
+      "library_only": false
+    }
+  ],
+  "joints": {
+    "vane_1": {
+      "origin": [
+        -50.0,
+        -163.5,
+        -10.0
+      ],
+      "axis": [
+        0.0,
+        -1.0,
+        0.0
+      ],
+      "parent": "pole1",
+      "child": "vane1",
+      "kind": "revolute",
+      "joint": "real",
+      "connector": "real: PlantTreePalmLeafLarge on the top of a 2714a bar through one of its two holes; turns about the bar (right-hand about up)"
+    },
+    "vane_2": {
+      "origin": [
+        10.0,
+        -124.0,
+        -10.0
+      ],
+      "axis": [
+        0.0,
+        -1.0,
+        0.0
+      ],
+      "parent": "pole2",
+      "child": "vane2",
+      "kind": "revolute",
+      "joint": "real",
+      "connector": "real: PlantPalmLeafSmall on the top of a 63965a bar through one of its two holes; turns about the bar (right-hand about up)"
+    },
+    "vane_3": {
+      "origin": [
+        70.0,
+        -64.0,
+        -10.0
+      ],
+      "axis": [
+        0.0,
+        -1.0,
+        0.0
+      ],
+      "parent": "pole3",
+      "child": "vane3",
+      "kind": "revolute",
+      "joint": "real",
+      "connector": "real: PlantPalmLeafSmall on the top of a 87994 bar through one of its two holes; turns about the bar (right-hand about up)"
+    }
+  },
+  "reference_checks": [],
+  "geometry_checks": []
+}

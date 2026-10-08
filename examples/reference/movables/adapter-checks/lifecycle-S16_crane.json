@@ -1,0 +1,22 @@
+{
+  "passed": true,
+  "restore_error": 1.7881393432617188e-07,
+  "rebuild_no_leaks": true,
+  "two_copies_isolated": true,
+  "tolerance": 0.002,
+  "root_placements": {
+    "translated": {
+      "passed": true,
+      "max_matrix_error": 0.000148773193359375,
+      "max_static_error": 6.103515625e-05,
+      "max_closure_error": 0
+    },
+    "translated_rotated": {
+      "passed": true,
+      "max_matrix_error": 0.0001220703125,
+      "max_static_error": 0.000125885009765625,
+      "max_closure_error": 0
+    }
+  },
+  "nonzero_default_and_clamp": true
+}

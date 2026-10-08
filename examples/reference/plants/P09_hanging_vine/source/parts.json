@@ -1,0 +1,410 @@
+{
+  "case": "P09_hanging_vine",
+  "title": "Hanging leafy vine",
+  "parts": [
+    {
+      "role": "base",
+      "id": "0",
+      "table": "plates.Plate6X12",
+      "ref": "3028",
+      "colour": 2,
+      "title": "Plate  6 x 12",
+      "library_only": false
+    },
+    {
+      "role": "trunk0",
+      "id": "1",
+      "table": "bricks.Brick2X2RoundWithoutReinforcement",
+      "ref": "3941",
+      "colour": 70,
+      "title": "Brick  2 x  2 Round without Reinforcement",
+      "library_only": false
+    },
+    {
+      "role": "trunk1",
+      "id": "2",
+      "table": "bricks.Brick2X2RoundWithoutReinforcement",
+      "ref": "3941",
+      "colour": 70,
+      "title": "Brick  2 x  2 Round without Reinforcement",
+      "library_only": false
+    },
+    {
+      "role": "trunk2",
+      "id": "3",
+      "table": "bricks.Brick2X2RoundWithoutReinforcement",
+      "ref": "3941",
+      "colour": 70,
+      "title": "Brick  2 x  2 Round without Reinforcement",
+      "library_only": false
+    },
+    {
+      "role": "trunk3",
+      "id": "4",
+      "table": "bricks.Brick2X2RoundWithoutReinforcement",
+      "ref": "3941",
+      "colour": 70,
+      "title": "Brick  2 x  2 Round without Reinforcement",
+      "library_only": false
+    },
+    {
+      "role": "trunk4",
+      "id": "5",
+      "table": "bricks.Brick2X2RoundWithoutReinforcement",
+      "ref": "3941",
+      "colour": 70,
+      "title": "Brick  2 x  2 Round without Reinforcement",
+      "library_only": false
+    },
+    {
+      "role": "trunk5",
+      "id": "6",
+      "table": "bricks.Brick2X2RoundWithoutReinforcement",
+      "ref": "3941",
+      "colour": 70,
+      "title": "Brick  2 x  2 Round without Reinforcement",
+      "library_only": false
+    },
+    {
+      "role": "trunk6",
+      "id": "7",
+      "table": "bricks.Brick2X2RoundWithoutReinforcement",
+      "ref": "3941",
+      "colour": 70,
+      "title": "Brick  2 x  2 Round without Reinforcement",
+      "library_only": false
+    },
+    {
+      "role": "trunk7",
+      "id": "8",
+      "table": "bricks.Brick2X2RoundWithoutReinforcement",
+      "ref": "3941",
+      "colour": 70,
+      "title": "Brick  2 x  2 Round without Reinforcement",
+      "library_only": false
+    },
+    {
+      "role": "trunk8",
+      "id": "9",
+      "table": "bricks.Brick2X2RoundWithoutReinforcement",
+      "ref": "3941",
+      "colour": 70,
+      "title": "Brick  2 x  2 Round without Reinforcement",
+      "library_only": false
+    },
+    {
+      "role": "trunk9",
+      "id": "10",
+      "table": "bricks.Brick2X2RoundWithoutReinforcement",
+      "ref": "3941",
+      "colour": 70,
+      "title": "Brick  2 x  2 Round without Reinforcement",
+      "library_only": false
+    },
+    {
+      "role": "trunk10",
+      "id": "11",
+      "table": "bricks.Brick2X2RoundWithoutReinforcement",
+      "ref": "3941",
+      "colour": 70,
+      "title": "Brick  2 x  2 Round without Reinforcement",
+      "library_only": false
+    },
+    {
+      "role": "trunk11",
+      "id": "12",
+      "table": "bricks.Brick2X2RoundWithoutReinforcement",
+      "ref": "3941",
+      "colour": 70,
+      "title": "Brick  2 x  2 Round without Reinforcement",
+      "library_only": false
+    },
+    {
+      "role": "trunk12",
+      "id": "13",
+      "table": "bricks.Brick2X2RoundWithoutReinforcement",
+      "ref": "3941",
+      "colour": 70,
+      "title": "Brick  2 x  2 Round without Reinforcement",
+      "library_only": false
+    },
+    {
+      "role": "trunk13",
+      "id": "14",
+      "table": "bricks.Brick2X2RoundWithoutReinforcement",
+      "ref": "3941",
+      "colour": 70,
+      "title": "Brick  2 x  2 Round without Reinforcement",
+      "library_only": false
+    },
+    {
+      "role": "arm",
+      "id": "15",
+      "table": "plates.Plate2X8",
+      "ref": "3034",
+      "colour": 70,
+      "title": "Plate  2 x  8",
+      "library_only": false
+    },
+    {
+      "role": "crown",
+      "id": "16",
+      "table": "plants.PlantLeaves6X5",
+      "ref": "2417",
+      "colour": 2,
+      "title": "Plant Leaves  6 x  5",
+      "library_only": false
+    },
+    {
+      "role": "hanger",
+      "id": "17",
+      "table": "plates.Plate1X1WithClipVertical_ThickC_Clip_",
+      "ref": "60897",
+      "colour": 70,
+      "title": "Plate  1 x  1 with Clip Vertical (Thick C-Clip)",
+      "library_only": false
+    },
+    {
+      "role": "vine_k03_0",
+      "id": "18",
+      "table": null,
+      "ref": "16981k03",
+      "colour": 288,
+      "title": "~Plant Vine with 10 Leaves 16L Liana End Segment",
+      "library_only": true
+    },
+    {
+      "role": "vine_stem0",
+      "id": "19",
+      "table": null,
+      "ref": "16981k04",
+      "colour": 288,
+      "title": "~Plant Vine with 10 Leaves 16L Liana Segment",
+      "library_only": true
+    },
+    {
+      "role": "vine_stem1",
+      "id": "20",
+      "table": null,
+      "ref": "16981k04",
+      "colour": 288,
+      "title": "~Plant Vine with 10 Leaves 16L Liana Segment",
+      "library_only": true
+    },
+    {
+      "role": "vine_stem2",
+      "id": "21",
+      "table": null,
+      "ref": "16981k04",
+      "colour": 288,
+      "title": "~Plant Vine with 10 Leaves 16L Liana Segment",
+      "library_only": true
+    },
+    {
+      "role": "vine_stem3",
+      "id": "22",
+      "table": null,
+      "ref": "16981k04",
+      "colour": 288,
+      "title": "~Plant Vine with 10 Leaves 16L Liana Segment",
+      "library_only": true
+    },
+    {
+      "role": "vine_stem4",
+      "id": "23",
+      "table": null,
+      "ref": "16981k04",
+      "colour": 288,
+      "title": "~Plant Vine with 10 Leaves 16L Liana Segment",
+      "library_only": true
+    },
+    {
+      "role": "vine_k03_320",
+      "id": "24",
+      "table": null,
+      "ref": "16981k03",
+      "colour": 288,
+      "title": "~Plant Vine with 10 Leaves 16L Liana End Segment",
+      "library_only": true
+    },
+    {
+      "role": "vine_k01_50",
+      "id": "25",
+      "table": null,
+      "ref": "16981k01",
+      "colour": 2,
+      "title": "~Plant Vine with 10 Leaves 16L Leaf Right",
+      "library_only": true
+    },
+    {
+      "role": "vine_k02_64",
+      "id": "26",
+      "table": null,
+      "ref": "16981k02",
+      "colour": 2,
+      "title": "~Plant Vine with 10 Leaves 16L Leaf Left",
+      "library_only": true
+    },
+    {
+      "role": "vine_k01_101",
+      "id": "27",
+      "table": null,
+      "ref": "16981k01",
+      "colour": 2,
+      "title": "~Plant Vine with 10 Leaves 16L Leaf Right",
+      "library_only": true
+    },
+    {
+      "role": "vine_k02_115",
+      "id": "28",
+      "table": null,
+      "ref": "16981k02",
+      "colour": 2,
+      "title": "~Plant Vine with 10 Leaves 16L Leaf Left",
+      "library_only": true
+    },
+    {
+      "role": "vine_k01_152",
+      "id": "29",
+      "table": null,
+      "ref": "16981k01",
+      "colour": 2,
+      "title": "~Plant Vine with 10 Leaves 16L Leaf Right",
+      "library_only": true
+    },
+    {
+      "role": "vine_k02_166",
+      "id": "30",
+      "table": null,
+      "ref": "16981k02",
+      "colour": 2,
+      "title": "~Plant Vine with 10 Leaves 16L Leaf Left",
+      "library_only": true
+    },
+    {
+      "role": "vine_k01_203",
+      "id": "31",
+      "table": null,
+      "ref": "16981k01",
+      "colour": 2,
+      "title": "~Plant Vine with 10 Leaves 16L Leaf Right",
+      "library_only": true
+    },
+    {
+      "role": "vine_k02_217",
+      "id": "32",
+      "table": null,
+      "ref": "16981k02",
+      "colour": 2,
+      "title": "~Plant Vine with 10 Leaves 16L Leaf Left",
+      "library_only": true
+    },
+    {
+      "role": "vine_k01_254",
+      "id": "33",
+      "table": null,
+      "ref": "16981k01",
+      "colour": 2,
+      "title": "~Plant Vine with 10 Leaves 16L Leaf Right",
+      "library_only": true
+    },
+    {
+      "role": "vine_k02_268",
+      "id": "34",
+      "table": null,
+      "ref": "16981k02",
+      "colour": 2,
+      "title": "~Plant Vine with 10 Leaves 16L Leaf Left",
+      "library_only": true
+    }
+  ],
+  "joints": {
+    "twist": {
+      "origin": [
+        20.0,
+        -332.0,
+        -30.0
+      ],
+      "axis": [
+        0.0,
+        -1.0,
+        0.0
+      ],
+      "parent": "hanger",
+      "child": "vine_k03_0",
+      "kind": "revolute",
+      "joint": "real",
+      "connector": "real: 16981 top end bar (16981k03) in the 60897 vertical clip; turns about the bar"
+    },
+    "bend_1": {
+      "origin": [
+        20.0,
+        -252.0,
+        -30.0
+      ],
+      "axis": [
+        0.0,
+        0.0,
+        1.0
+      ],
+      "parent": "vine_k03_0",
+      "child": "vine_stem1",
+      "kind": "revolute",
+      "joint": "flex_approx",
+      "connector": "flex_approx: 16981 is a flexible part (LDraw 'Flexible_Section' segments); the rebuilt rigid links bend at their joints. vine stem split at local x = -90"
+    },
+    "bend_2": {
+      "origin": [
+        20.0,
+        -201.0,
+        -30.0
+      ],
+      "axis": [
+        0.0,
+        0.0,
+        1.0
+      ],
+      "parent": "vine_stem1",
+      "child": "vine_stem2",
+      "kind": "revolute",
+      "joint": "flex_approx",
+      "connector": "flex_approx: 16981 is a flexible part (LDraw 'Flexible_Section' segments); the rebuilt rigid links bend at their joints. vine stem split at local x = -141"
+    },
+    "bend_3": {
+      "origin": [
+        20.0,
+        -150.0,
+        -30.0
+      ],
+      "axis": [
+        0.0,
+        0.0,
+        1.0
+      ],
+      "parent": "vine_stem2",
+      "child": "vine_stem3",
+      "kind": "revolute",
+      "joint": "flex_approx",
+      "connector": "flex_approx: 16981 is a flexible part (LDraw 'Flexible_Section' segments); the rebuilt rigid links bend at their joints. vine stem split at local x = -192"
+    },
+    "bend_4": {
+      "origin": [
+        20.0,
+        -99.0,
+        -30.0
+      ],
+      "axis": [
+        0.0,
+        0.0,
+        1.0
+      ],
+      "parent": "vine_stem3",
+      "child": "vine_stem4",
+      "kind": "revolute",
+      "joint": "flex_approx",
+      "connector": "flex_approx: 16981 is a flexible part (LDraw 'Flexible_Section' segments); the rebuilt rigid links bend at their joints. vine stem split at local x = -243"
+    }
+  },
+  "reference_checks": [],
+  "geometry_checks": []
+}

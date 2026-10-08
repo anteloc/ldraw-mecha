@@ -1,0 +1,601 @@
+{
+  "scenarios": {
+    "S01_house_door": {
+      "sweep_clear": true,
+      "sweep_crossings": [],
+      "clip_poses_clear": true,
+      "clip_poses_without_deep_crossings": true,
+      "clips_with_crossings": {},
+      "vertex_penetration": {},
+      "worst_vertex_depth_ldu": 0.0,
+      "worst_kind": "clear",
+      "clips_with_deep_shrink_crossings": {},
+      "excluded_rest_pairs": [
+        "frame-door"
+      ]
+    },
+    "S02_casement_window": {
+      "sweep_clear": false,
+      "sweep_crossings": [
+        [
+          "pane_l",
+          0.087,
+          "pane_l-pane_r"
+        ],
+        [
+          "pane_r",
+          0.087,
+          "pane_l-pane_r"
+        ]
+      ],
+      "clip_poses_clear": false,
+      "clip_poses_without_deep_crossings": false,
+      "clips_with_crossings": {
+        "S02_casement_window.one_by_one": [
+          "pane_l-pane_r"
+        ],
+        "S02_casement_window.open_both": [
+          "pane_l-pane_r"
+        ],
+        "S02_casement_window.wind_flutter": [
+          "pane_l-pane_r"
+        ]
+      },
+      "vertex_penetration": {
+        "S02_casement_window.one_by_one": {
+          "pane_l-pane_r": {
+            "max_vertex_depth_ldu": 0.001,
+            "kind": "contact"
+          }
+        },
+        "S02_casement_window.open_both": {
+          "pane_l-pane_r": {
+            "max_vertex_depth_ldu": 0.001,
+            "kind": "contact"
+          }
+        },
+        "S02_casement_window.wind_flutter": {
+          "pane_l-pane_r": {
+            "max_vertex_depth_ldu": 0.001,
+            "kind": "contact"
+          }
+        }
+      },
+      "worst_vertex_depth_ldu": 0.001,
+      "worst_kind": "contact",
+      "clips_with_deep_shrink_crossings": {
+        "S02_casement_window.one_by_one": [
+          "pane_l-pane_r"
+        ],
+        "S02_casement_window.open_both": [
+          "pane_l-pane_r"
+        ],
+        "S02_casement_window.wind_flutter": [
+          "pane_l-pane_r"
+        ]
+      },
+      "excluded_rest_pairs": []
+    },
+    "S03_shuttered_window": {
+      "sweep_clear": true,
+      "sweep_crossings": [],
+      "clip_poses_clear": true,
+      "clip_poses_without_deep_crossings": true,
+      "clips_with_crossings": {},
+      "vertex_penetration": {},
+      "worst_vertex_depth_ldu": 0.0,
+      "worst_kind": "clear",
+      "clips_with_deep_shrink_crossings": {},
+      "excluded_rest_pairs": [
+        "window-shutter_l",
+        "window-shutter_r"
+      ]
+    },
+    "S04_garden_gate": {
+      "sweep_clear": true,
+      "sweep_crossings": [],
+      "clip_poses_clear": false,
+      "clip_poses_without_deep_crossings": false,
+      "clips_with_crossings": {
+        "S04_garden_gate.in_and_out": [
+          "gate-fence_r"
+        ],
+        "S04_garden_gate.open_latch": [
+          "gate-fence_r"
+        ],
+        "S04_garden_gate.push_through": [
+          "gate-fence_r"
+        ]
+      },
+      "vertex_penetration": {
+        "S04_garden_gate.in_and_out": {
+          "gate-fence_r": {
+            "max_vertex_depth_ldu": 0.05,
+            "kind": "contact"
+          }
+        },
+        "S04_garden_gate.open_latch": {
+          "gate-fence_r": {
+            "max_vertex_depth_ldu": 0.054,
+            "kind": "contact"
+          }
+        },
+        "S04_garden_gate.push_through": {
+          "gate-fence_r": {
+            "max_vertex_depth_ldu": 0.064,
+            "kind": "contact"
+          }
+        }
+      },
+      "worst_vertex_depth_ldu": 0.064,
+      "worst_kind": "contact",
+      "clips_with_deep_shrink_crossings": {
+        "S04_garden_gate.in_and_out": [
+          "gate-fence_r"
+        ],
+        "S04_garden_gate.open_latch": [
+          "gate-fence_r"
+        ],
+        "S04_garden_gate.push_through": [
+          "gate-fence_r"
+        ]
+      },
+      "excluded_rest_pairs": [
+        "gate_base-gate"
+      ]
+    },
+    "S05_kitchen_cupboard": {
+      "sweep_clear": true,
+      "sweep_crossings": [],
+      "clip_poses_clear": true,
+      "clip_poses_without_deep_crossings": true,
+      "clips_with_crossings": {},
+      "vertex_penetration": {},
+      "worst_vertex_depth_ldu": 0.0,
+      "worst_kind": "clear",
+      "clips_with_deep_shrink_crossings": {},
+      "excluded_rest_pairs": [
+        "cupboard_low-door",
+        "cupboard_high-drawer_top",
+        "cupboard_high-drawer_low"
+      ]
+    },
+    "S06_double_cabinet": {
+      "sweep_clear": true,
+      "sweep_crossings": [],
+      "clip_poses_clear": true,
+      "clip_poses_without_deep_crossings": true,
+      "clips_with_crossings": {},
+      "vertex_penetration": {},
+      "worst_vertex_depth_ldu": 0.0,
+      "worst_kind": "clear",
+      "clips_with_deep_shrink_crossings": {},
+      "excluded_rest_pairs": [
+        "cabinet-door_l",
+        "cabinet-door_r"
+      ]
+    },
+    "S07_treasure_chest": {
+      "sweep_clear": true,
+      "sweep_crossings": [],
+      "clip_poses_clear": true,
+      "clip_poses_without_deep_crossings": true,
+      "clips_with_crossings": {},
+      "vertex_penetration": {},
+      "worst_vertex_depth_ldu": 0.0,
+      "worst_kind": "clear",
+      "clips_with_deep_shrink_crossings": {},
+      "excluded_rest_pairs": [
+        "chest-lid"
+      ]
+    },
+    "S08_mailbox": {
+      "sweep_clear": true,
+      "sweep_crossings": [],
+      "clip_poses_clear": true,
+      "clip_poses_without_deep_crossings": true,
+      "clips_with_crossings": {},
+      "vertex_penetration": {},
+      "worst_vertex_depth_ldu": 0.0,
+      "worst_kind": "clear",
+      "clips_with_deep_shrink_crossings": {},
+      "excluded_rest_pairs": [
+        "box-door"
+      ]
+    },
+    "S09_trap_door": {
+      "sweep_clear": true,
+      "sweep_crossings": [],
+      "clip_poses_clear": true,
+      "clip_poses_without_deep_crossings": true,
+      "clips_with_crossings": {},
+      "vertex_penetration": {},
+      "worst_vertex_depth_ldu": 0.0,
+      "worst_kind": "clear",
+      "clips_with_deep_shrink_crossings": {},
+      "excluded_rest_pairs": [
+        "frame-trapdoor"
+      ]
+    },
+    "S10_car_doors": {
+      "sweep_clear": true,
+      "sweep_crossings": [],
+      "clip_poses_clear": true,
+      "clip_poses_without_deep_crossings": true,
+      "clips_with_crossings": {},
+      "vertex_penetration": {},
+      "worst_vertex_depth_ldu": 0.0,
+      "worst_kind": "clear",
+      "clips_with_deep_shrink_crossings": {},
+      "excluded_rest_pairs": [
+        "door_l-windscreen",
+        "door_l-tyre0l",
+        "door_r-windscreen",
+        "door_r-tyre0r"
+      ]
+    },
+    "S11_car_roof": {
+      "sweep_clear": true,
+      "sweep_crossings": [],
+      "clip_poses_clear": true,
+      "clip_poses_without_deep_crossings": true,
+      "clips_with_crossings": {},
+      "vertex_penetration": {},
+      "worst_vertex_depth_ldu": 0.0,
+      "worst_kind": "clear",
+      "clips_with_deep_shrink_crossings": {},
+      "excluded_rest_pairs": [
+        "windscreen-roof",
+        "holder-roof"
+      ]
+    },
+    "S12_canopy": {
+      "sweep_clear": false,
+      "sweep_crossings": [
+        [
+          "canopy",
+          0.1,
+          "hull-canopy"
+        ]
+      ],
+      "clip_poses_clear": false,
+      "clip_poses_without_deep_crossings": false,
+      "clips_with_crossings": {
+        "S12_canopy.flip_open": [
+          "hull-canopy"
+        ],
+        "S12_canopy.pop_open": [
+          "hull-canopy"
+        ],
+        "S12_canopy.slow_seal": [
+          "hull-canopy"
+        ]
+      },
+      "vertex_penetration": {
+        "S12_canopy.flip_open": {
+          "hull-canopy": {
+            "max_vertex_depth_ldu": 0.115,
+            "kind": "contact"
+          }
+        },
+        "S12_canopy.pop_open": {
+          "hull-canopy": {
+            "max_vertex_depth_ldu": 0.076,
+            "kind": "contact"
+          }
+        },
+        "S12_canopy.slow_seal": {
+          "hull-canopy": {
+            "max_vertex_depth_ldu": 0.115,
+            "kind": "contact"
+          }
+        }
+      },
+      "worst_vertex_depth_ldu": 0.115,
+      "worst_kind": "contact",
+      "clips_with_deep_shrink_crossings": {
+        "S12_canopy.flip_open": [
+          "hull-canopy"
+        ],
+        "S12_canopy.pop_open": [
+          "hull-canopy"
+        ],
+        "S12_canopy.slow_seal": [
+          "hull-canopy"
+        ]
+      },
+      "excluded_rest_pairs": [
+        "holder-canopy"
+      ]
+    },
+    "S13_forklift": {
+      "sweep_clear": false,
+      "sweep_crossings": [
+        [
+          "lift",
+          18.75,
+          "forks-spring"
+        ],
+        [
+          "lift",
+          18.75,
+          "rails-spring"
+        ],
+        [
+          "lift",
+          25.0,
+          "forks-spring"
+        ],
+        [
+          "lift",
+          25.0,
+          "rails-spring"
+        ],
+        [
+          "lift",
+          31.25,
+          "forks-spring"
+        ],
+        [
+          "lift",
+          31.25,
+          "rails-spring"
+        ],
+        [
+          "lift",
+          37.5,
+          "forks-spring"
+        ],
+        [
+          "lift",
+          37.5,
+          "rails-spring"
+        ],
+        [
+          "lift",
+          43.75,
+          "forks-spring"
+        ],
+        [
+          "lift",
+          43.75,
+          "rails-spring"
+        ],
+        [
+          "lift",
+          50.0,
+          "forks-spring"
+        ],
+        [
+          "lift",
+          50.0,
+          "rails-spring"
+        ],
+        [
+          "lift",
+          56.25,
+          "forks-spring"
+        ],
+        [
+          "lift",
+          56.25,
+          "rails-spring"
+        ],
+        [
+          "lift",
+          62.5,
+          "forks-spring"
+        ],
+        [
+          "lift",
+          62.5,
+          "rails-spring"
+        ],
+        [
+          "lift",
+          68.75,
+          "forks-spring"
+        ],
+        [
+          "lift",
+          68.75,
+          "rails-spring"
+        ],
+        [
+          "lift",
+          75.0,
+          "forks-spring"
+        ],
+        [
+          "lift",
+          75.0,
+          "rails-spring"
+        ],
+        [
+          "lift",
+          81.25,
+          "forks-spring"
+        ],
+        [
+          "lift",
+          87.5,
+          "forks-spring"
+        ],
+        [
+          "lift",
+          93.75,
+          "forks-spring"
+        ],
+        [
+          "lift",
+          100.0,
+          "forks-spring"
+        ]
+      ],
+      "clip_poses_clear": false,
+      "clip_poses_without_deep_crossings": true,
+      "clips_with_crossings": {
+        "S13_forklift.chain_hoist": [
+          "forks-spring",
+          "rails-spring"
+        ],
+        "S13_forklift.drop": [
+          "forks-spring",
+          "rails-spring"
+        ],
+        "S13_forklift.raise_lower": [
+          "forks-spring",
+          "rails-spring"
+        ]
+      },
+      "vertex_penetration": {
+        "S13_forklift.chain_hoist": {
+          "forks-spring": {
+            "max_vertex_depth_ldu": 1.237,
+            "kind": "shallow"
+          },
+          "rails-spring": {
+            "max_vertex_depth_ldu": 1.609,
+            "kind": "shallow"
+          }
+        },
+        "S13_forklift.drop": {
+          "forks-spring": {
+            "max_vertex_depth_ldu": 1.234,
+            "kind": "shallow"
+          },
+          "rails-spring": {
+            "max_vertex_depth_ldu": 1.636,
+            "kind": "shallow"
+          }
+        },
+        "S13_forklift.raise_lower": {
+          "forks-spring": {
+            "max_vertex_depth_ldu": 1.225,
+            "kind": "shallow"
+          },
+          "rails-spring": {
+            "max_vertex_depth_ldu": 1.586,
+            "kind": "shallow"
+          }
+        }
+      },
+      "worst_vertex_depth_ldu": 1.636,
+      "worst_kind": "shallow",
+      "clips_with_deep_shrink_crossings": {},
+      "excluded_rest_pairs": [
+        "rails-forks"
+      ]
+    },
+    "S14_sliding_door": {
+      "sweep_clear": true,
+      "sweep_crossings": [],
+      "clip_poses_clear": true,
+      "clip_poses_without_deep_crossings": true,
+      "clips_with_crossings": {},
+      "vertex_penetration": {},
+      "worst_vertex_depth_ldu": 0.0,
+      "worst_kind": "clear",
+      "clips_with_deep_shrink_crossings": {},
+      "excluded_rest_pairs": []
+    },
+    "S15_radar": {
+      "sweep_clear": true,
+      "sweep_crossings": [],
+      "clip_poses_clear": true,
+      "clip_poses_without_deep_crossings": true,
+      "clips_with_crossings": {},
+      "vertex_penetration": {},
+      "worst_vertex_depth_ldu": 0.0,
+      "worst_kind": "clear",
+      "clips_with_deep_shrink_crossings": {},
+      "excluded_rest_pairs": [
+        "pedestal1-turntable_top",
+        "turntable_base-turntable_top"
+      ]
+    },
+    "S16_crane": {
+      "sweep_clear": true,
+      "sweep_crossings": [],
+      "clip_poses_clear": true,
+      "clip_poses_without_deep_crossings": true,
+      "clips_with_crossings": {},
+      "vertex_penetration": {},
+      "worst_vertex_depth_ldu": 0.0,
+      "worst_kind": "clear",
+      "clips_with_deep_shrink_crossings": {},
+      "excluded_rest_pairs": [
+        "hinge_base-hinge_top",
+        "boom_tip-hook",
+        "turntable_base-turntable_top"
+      ]
+    },
+    "S17_tipper": {
+      "sweep_clear": true,
+      "sweep_crossings": [],
+      "clip_poses_clear": true,
+      "clip_poses_without_deep_crossings": true,
+      "clips_with_crossings": {},
+      "vertex_penetration": {},
+      "worst_vertex_depth_ldu": 0.0,
+      "worst_kind": "clear",
+      "clips_with_deep_shrink_crossings": {},
+      "excluded_rest_pairs": [
+        "hinge_tile_l-hinge_plate_l",
+        "hinge_tile_r-hinge_plate_r"
+      ]
+    },
+    "S18_barrier": {
+      "sweep_clear": true,
+      "sweep_crossings": [],
+      "clip_poses_clear": true,
+      "clip_poses_without_deep_crossings": true,
+      "clips_with_crossings": {},
+      "vertex_penetration": {},
+      "worst_vertex_depth_ldu": 0.0,
+      "worst_kind": "clear",
+      "clips_with_deep_shrink_crossings": {},
+      "excluded_rest_pairs": [
+        "rest2-boom",
+        "hinge_base-hinge_top"
+      ]
+    },
+    "S19_drawbridge": {
+      "sweep_clear": true,
+      "sweep_crossings": [],
+      "clip_poses_clear": true,
+      "clip_poses_without_deep_crossings": true,
+      "clips_with_crossings": {},
+      "vertex_penetration": {},
+      "worst_vertex_depth_ldu": 0.0,
+      "worst_kind": "clear",
+      "clips_with_deep_shrink_crossings": {},
+      "excluded_rest_pairs": [
+        "tower_l1-hinge_deck_l",
+        "tower_r1-hinge_deck_r",
+        "hinge_wall_l-hinge_deck_l",
+        "hinge_deck_l-tower_l0",
+        "hinge_wall_r-hinge_deck_r",
+        "hinge_deck_r-tower_r0",
+        "deck-bank"
+      ]
+    },
+    "S20_levers": {
+      "sweep_clear": true,
+      "sweep_crossings": [],
+      "clip_poses_clear": true,
+      "clip_poses_without_deep_crossings": true,
+      "clips_with_crossings": {},
+      "vertex_penetration": {},
+      "worst_vertex_depth_ldu": 0.0,
+      "worst_kind": "clear",
+      "clips_with_deep_shrink_crossings": {},
+      "excluded_rest_pairs": [
+        "lever_base_l-stick_l",
+        "lever_base_r-stick_r"
+      ]
+    }
+  },
+  "every": 4,
+  "deep_shrink_ldu": 1.5
+}

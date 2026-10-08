@@ -1,0 +1,30 @@
+0 FILE s18_barrier.ldr
+0 Movable element scenario S18_barrier Parking barrier
+0 Name: s18_barrier.ldr
+0 Author: ldraw-mecha scripts/build_movables.py
+0 // Generated mock scenario: parts picked by constant name from data/categories/parts (a few context parts by LDraw reference); moving parts placed from LDCad shadow connector frames (data/offLibShadow) via pyldraw3 or from official annotated models where no connector pair exists. Frame: LDU, -Y up, the scenario front faces -Z, ground (base top) at y = 0.
+
+0 // road: plates.Plate4X12
+1 8 0 0 0 1 0 0 0 1 0 0 0 1 3029.dat
+0 // post0: bricks.Brick2X2
+1 15 -100 -24 0 1 0 0 0 1 0 0 0 1 3003.dat
+0 // post1: bricks.Brick2X2
+1 15 -100 -48 0 1 0 0 0 1 0 0 0 1 3003.dat
+0 // hinge_base: hinges.Hinge1X2Base
+1 8 -100 -72 0 0 0 1 0 1 0 -1 0 0 3937.dat
+0 // hinge_top: hinges.Hinge1X2Top
+1 8 -100 -72 0 0 0 1 0 1 0 -1 0 0 3938.dat
+0 // boom: plates.Plate2X10
+1 15 -10 -80 0 1 0 0 0 1 0 0 0 1 3832.dat
+0 // stripe0: tiles.Tile2X2WithGroove
+1 4 -50 -88 0 1 0 0 0 1 0 0 0 1 3068b.dat
+0 // stripe1: tiles.Tile2X2WithGroove
+1 4 10 -88 0 1 0 0 0 1 0 0 0 1 3068b.dat
+0 // stripe2: tiles.Tile2X2WithGroove
+1 4 70 -88 0 1 0 0 0 1 0 0 0 1 3068b.dat
+0 // rest0: bricks.Brick1X1
+1 15 70 -24 -10 1 0 0 0 1 0 0 0 1 3005.dat
+0 // rest1: bricks.Brick1X1
+1 15 70 -48 -10 1 0 0 0 1 0 0 0 1 3005.dat
+0 // rest2: bricks.Brick1X1
+1 15 70 -72 -10 1 0 0 0 1 0 0 0 1 3005.dat

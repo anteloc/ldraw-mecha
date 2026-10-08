@@ -1,0 +1,86 @@
+{
+  "summary": {
+    "static": 1,
+    "planned": 3
+  },
+  "review_complete": true,
+  "unresolved": [],
+  "deferred": [],
+  "unaccounted_mechanical_parts": [],
+  "mechanisms": [
+    {
+      "id": "context",
+      "label": "Leaf weathervanes: base and mounts (static)",
+      "disposition": "static",
+      "review": "Base, trunk and mounts built for the catalog; they do not move in this case.",
+      "parts": 7,
+      "controlled_parts": [],
+      "parts_without_control": [
+        "0",
+        "1",
+        "2",
+        "4",
+        "5",
+        "7",
+        "8"
+      ],
+      "controls": []
+    },
+    {
+      "id": "vane_1",
+      "label": "Leaf weathervanes: vane 1",
+      "disposition": "planned",
+      "review": "Joint declared in this plan (scripts/build_plants.py); driven by wind clips.",
+      "parts": 2,
+      "controlled_parts": [
+        "3"
+      ],
+      "parts_without_control": [
+        "2"
+      ],
+      "controls": [
+        "vane_1"
+      ]
+    },
+    {
+      "id": "vane_2",
+      "label": "Leaf weathervanes: vane 2",
+      "disposition": "planned",
+      "review": "Joint declared in this plan (scripts/build_plants.py); driven by wind clips.",
+      "parts": 2,
+      "controlled_parts": [
+        "6"
+      ],
+      "parts_without_control": [
+        "5"
+      ],
+      "controls": [
+        "vane_2"
+      ]
+    },
+    {
+      "id": "vane_3",
+      "label": "Leaf weathervanes: vane 3",
+      "disposition": "planned",
+      "review": "Joint declared in this plan (scripts/build_plants.py); driven by wind clips.",
+      "parts": 2,
+      "controlled_parts": [
+        "9"
+      ],
+      "parts_without_control": [
+        "8"
+      ],
+      "controls": [
+        "vane_3"
+      ]
+    }
+  ],
+  "warnings": [
+    {
+      "code": "coaxial_not_run",
+      "message": "not run: 0 shaft/gear candidates outside 2..100; select a section"
+    }
+  ],
+  "coverage": "Bookkeeping of declared scope only. Supports may correctly lack controls. Planned, static and deferred dispositions require review notes; none certify discovery completeness, physical motion or clearance.",
+  "passed": true
+}

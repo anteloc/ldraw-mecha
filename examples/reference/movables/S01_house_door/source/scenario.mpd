@@ -1,0 +1,52 @@
+0 FILE s01_house_door.ldr
+0 Movable element scenario S01_house_door House front door
+0 Name: s01_house_door.ldr
+0 Author: ldraw-mecha scripts/build_movables.py
+0 // Generated mock scenario: parts picked by constant name from data/categories/parts (a few context parts by LDraw reference); moving parts placed from LDCad shadow connector frames (data/offLibShadow) via pyldraw3 or from official annotated models where no connector pair exists. Frame: LDU, -Y up, the scenario front faces -Z, ground (base top) at y = 0.
+
+0 // base: plates.Plate6X12
+1 2 0 0 0 1 0 0 0 1 0 0 0 1 3028.dat
+0 // frame: doors.Door1X4X6Frame
+1 15 0 -144 0 1 0 0 0 1 0 0 0 1 60596.dat
+0 // door: doors.Door1X4X6SmoothWithChamferedHandlePlinth
+1 70 -32 -144 5 1 0 0 0 1 0 0 0 1 60616b.dat
+0 // wall_l0: bricks.Brick1X4
+1 19 -80 -24 0 1 0 0 0 1 0 0 0 1 3010.dat
+0 // wall_l1a: bricks.Brick1X2
+1 19 -100 -48 0 1 0 0 0 1 0 0 0 1 3004.dat
+0 // wall_l1b: bricks.Brick1X2
+1 19 -60 -48 0 1 0 0 0 1 0 0 0 1 3004.dat
+0 // wall_l2: bricks.Brick1X4
+1 19 -80 -72 0 1 0 0 0 1 0 0 0 1 3010.dat
+0 // wall_l3a: bricks.Brick1X2
+1 19 -100 -96 0 1 0 0 0 1 0 0 0 1 3004.dat
+0 // wall_l3b: bricks.Brick1X2
+1 19 -60 -96 0 1 0 0 0 1 0 0 0 1 3004.dat
+0 // wall_l4: bricks.Brick1X4
+1 19 -80 -120 0 1 0 0 0 1 0 0 0 1 3010.dat
+0 // wall_l5a: bricks.Brick1X2
+1 19 -100 -144 0 1 0 0 0 1 0 0 0 1 3004.dat
+0 // wall_l5b: bricks.Brick1X2
+1 19 -60 -144 0 1 0 0 0 1 0 0 0 1 3004.dat
+0 // wall_r0: bricks.Brick1X4
+1 19 80 -24 0 1 0 0 0 1 0 0 0 1 3010.dat
+0 // wall_r1a: bricks.Brick1X2
+1 19 60 -48 0 1 0 0 0 1 0 0 0 1 3004.dat
+0 // wall_r1b: bricks.Brick1X2
+1 19 100 -48 0 1 0 0 0 1 0 0 0 1 3004.dat
+0 // wall_r2: bricks.Brick1X4
+1 19 80 -72 0 1 0 0 0 1 0 0 0 1 3010.dat
+0 // wall_r3a: bricks.Brick1X2
+1 19 60 -96 0 1 0 0 0 1 0 0 0 1 3004.dat
+0 // wall_r3b: bricks.Brick1X2
+1 19 100 -96 0 1 0 0 0 1 0 0 0 1 3004.dat
+0 // wall_r4: bricks.Brick1X4
+1 19 80 -120 0 1 0 0 0 1 0 0 0 1 3010.dat
+0 // wall_r5a: bricks.Brick1X2
+1 19 60 -144 0 1 0 0 0 1 0 0 0 1 3004.dat
+0 // wall_r5b: bricks.Brick1X2
+1 19 100 -144 0 1 0 0 0 1 0 0 0 1 3004.dat
+0 // lintel: bricks.Brick1X12
+1 19 0 -168 0 1 0 0 0 1 0 0 0 1 6112.dat
+0 // lintel_top: plates.Plate1X12
+1 28 0 -176 0 1 0 0 0 1 0 0 0 1 60479.dat

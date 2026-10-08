@@ -1,0 +1,100 @@
+{
+  "summary": {
+    "static": 1,
+    "planned": 4
+  },
+  "review_complete": true,
+  "unresolved": [],
+  "deferred": [],
+  "unaccounted_mechanical_parts": [],
+  "mechanisms": [
+    {
+      "id": "context",
+      "label": "Reeds: base and mounts (static)",
+      "disposition": "static",
+      "review": "Base, trunk and mounts built for the catalog; they do not move in this case.",
+      "parts": 5,
+      "controlled_parts": [],
+      "parts_without_control": [
+        "0",
+        "1",
+        "2",
+        "5",
+        "6"
+      ],
+      "controls": []
+    },
+    {
+      "id": "leaf_1",
+      "label": "Reeds: leaf 1",
+      "disposition": "planned",
+      "review": "Joint declared in this plan (scripts/build_plants.py); driven by wind clips.",
+      "parts": 2,
+      "controlled_parts": [
+        "3",
+        "4"
+      ],
+      "parts_without_control": [],
+      "controls": [
+        "leaf_1",
+        "stalk_1"
+      ]
+    },
+    {
+      "id": "leaf_2",
+      "label": "Reeds: leaf 2",
+      "disposition": "planned",
+      "review": "Joint declared in this plan (scripts/build_plants.py); driven by wind clips.",
+      "parts": 2,
+      "controlled_parts": [
+        "7",
+        "8"
+      ],
+      "parts_without_control": [],
+      "controls": [
+        "leaf_2",
+        "stalk_2"
+      ]
+    },
+    {
+      "id": "stalk_1",
+      "label": "Reeds: stalk 1",
+      "disposition": "planned",
+      "review": "Joint declared in this plan (scripts/build_plants.py); driven by wind clips.",
+      "parts": 2,
+      "controlled_parts": [
+        "3"
+      ],
+      "parts_without_control": [
+        "2"
+      ],
+      "controls": [
+        "stalk_1"
+      ]
+    },
+    {
+      "id": "stalk_2",
+      "label": "Reeds: stalk 2",
+      "disposition": "planned",
+      "review": "Joint declared in this plan (scripts/build_plants.py); driven by wind clips.",
+      "parts": 2,
+      "controlled_parts": [
+        "7"
+      ],
+      "parts_without_control": [
+        "6"
+      ],
+      "controls": [
+        "stalk_2"
+      ]
+    }
+  ],
+  "warnings": [
+    {
+      "code": "coaxial_not_run",
+      "message": "not run: 0 shaft/gear candidates outside 2..100; select a section"
+    }
+  ],
+  "coverage": "Bookkeeping of declared scope only. Supports may correctly lack controls. Planned, static and deferred dispositions require review notes; none certify discovery completeness, physical motion or clearance.",
+  "passed": true
+}

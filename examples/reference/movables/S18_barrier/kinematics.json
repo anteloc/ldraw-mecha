@@ -1,0 +1,85 @@
+{
+  "semantics": {
+    "boom": {
+      "control": "boom",
+      "value": 0.2,
+      "test_point": [
+        80.0,
+        -80.0,
+        0.0
+      ],
+      "displacement": [
+        -7.164064,
+        -35.401678,
+        0.0
+      ],
+      "expected": "-y",
+      "flipped": false
+    }
+  },
+  "contacts": {
+    "tested_parts": 12,
+    "contacts": 9,
+    "contacted_parts": 5,
+    "by_kind": {
+      "stud/stud_receptacle": 8,
+      "hinge/hinge": 1
+    },
+    "axles": {
+      "selection": "Catalog descriptions beginning Technic Axle followed by a numeric length; excludes axle pins, joiners and axle-hole supports",
+      "total": 0,
+      "with_axle_hole_contact": 0,
+      "without_axle_hole_contact": []
+    }
+  },
+  "contact_pairs": {
+    "0-1": [
+      "stud/stud_receptacle",
+      "stud/stud_receptacle",
+      "stud/stud_receptacle",
+      "stud/stud_receptacle"
+    ],
+    "1-2": [
+      "stud/stud_receptacle",
+      "stud/stud_receptacle",
+      "stud/stud_receptacle",
+      "stud/stud_receptacle"
+    ],
+    "3-4": [
+      "hinge/hinge"
+    ]
+  },
+  "asymmetric_sample": {
+    "controls": {
+      "boom": 0.945
+    },
+    "transforms": {
+      "boom": [
+        [
+          0.585743,
+          0.810497,
+          0.0,
+          8.825098
+        ],
+        [
+          -0.810497,
+          0.585743,
+          0.0,
+          -106.733635
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ]
+    }
+  }
+}

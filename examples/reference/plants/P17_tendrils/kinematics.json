@@ -1,0 +1,271 @@
+{
+  "semantics": {
+    "swing_1": {
+      "control": "swing_1",
+      "value": 0.2,
+      "test_point": [
+        -50.0,
+        -35.0,
+        -35.0
+      ],
+      "displacement": [
+        14.9002,
+        -1.495007,
+        0.0
+      ],
+      "expected": "+x",
+      "flipped": true
+    },
+    "swing_2": {
+      "control": "swing_2",
+      "value": 0.2,
+      "test_point": [
+        -10.0,
+        -35.0,
+        -35.0
+      ],
+      "displacement": [
+        14.9002,
+        -1.495007,
+        0.0
+      ],
+      "expected": "+x",
+      "flipped": true
+    },
+    "swing_3": {
+      "control": "swing_3",
+      "value": 0.2,
+      "test_point": [
+        30.0,
+        -35.0,
+        -35.0
+      ],
+      "displacement": [
+        14.9002,
+        -1.495007,
+        0.0
+      ],
+      "expected": "+x",
+      "flipped": true
+    }
+  },
+  "wind_geometry": {
+    "swing_1": {
+      "body": "swing_1",
+      "x": -50.0,
+      "tip": [
+        -50.0,
+        -35.0,
+        -35.0
+      ],
+      "swing": [
+        1.0,
+        0.0
+      ],
+      "lever": 75.0
+    },
+    "swing_2": {
+      "body": "swing_2",
+      "x": -10.0,
+      "tip": [
+        -10.0,
+        -35.0,
+        -35.0
+      ],
+      "swing": [
+        1.0,
+        0.0
+      ],
+      "lever": 75.0
+    },
+    "swing_3": {
+      "body": "swing_3",
+      "x": 30.0,
+      "tip": [
+        30.0,
+        -35.0,
+        -35.0
+      ],
+      "swing": [
+        1.0,
+        0.0
+      ],
+      "lever": 75.0
+    },
+    "twist_curl": {
+      "body": "twist_curl",
+      "x": -10.0,
+      "tip": [
+        -10.0,
+        -60.0,
+        5.0
+      ],
+      "swing": [
+        1.0,
+        0.0
+      ],
+      "lever": 25.0
+    }
+  },
+  "roster_problems": [],
+  "contacts": {
+    "tested_parts": 23,
+    "contacts": 8,
+    "contacted_parts": 10,
+    "by_kind": {
+      "axle/axle_hole": 8
+    },
+    "axles": {
+      "selection": "Catalog descriptions beginning Technic Axle followed by a numeric length; excludes axle pins, joiners and axle-hole supports",
+      "total": 0,
+      "with_axle_hole_contact": 0,
+      "without_axle_hole_contact": []
+    }
+  },
+  "contact_pairs": {
+    "1-2": [
+      "axle/axle_hole"
+    ],
+    "2-3": [
+      "axle/axle_hole"
+    ],
+    "3-4": [
+      "axle/axle_hole"
+    ],
+    "4-5": [
+      "axle/axle_hole"
+    ],
+    "6-7": [
+      "axle/axle_hole"
+    ],
+    "7-8": [
+      "axle/axle_hole"
+    ],
+    "8-9": [
+      "axle/axle_hole"
+    ],
+    "9-10": [
+      "axle/axle_hole"
+    ]
+  },
+  "joints": {
+    "swing_1": "real",
+    "swing_2": "real",
+    "swing_3": "real",
+    "twist_curl": "real"
+  },
+  "asymmetric_sample": {
+    "controls": {
+      "swing_1": 0.2835,
+      "swing_2": -0.1665,
+      "swing_3": 0.3645,
+      "twist_curl": -0.504
+    },
+    "transforms": {
+      "swing_1": [
+        [
+          0.960082,
+          0.279718,
+          0.0,
+          28.773056
+        ],
+        [
+          -0.279718,
+          0.960082,
+          0.0,
+          -18.376828
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "swing_2": [
+        [
+          0.986171,
+          -0.165732,
+          0.0,
+          -18.368786
+        ],
+        [
+          0.165732,
+          0.986171,
+          0.0,
+          0.136113
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "swing_3": [
+        [
+          0.934302,
+          0.356482,
+          0.0,
+          41.183977
+        ],
+        [
+          -0.356482,
+          0.934302,
+          0.0,
+          3.467699
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "twist_curl": [
+        [
+          0.875658,
+          0.0,
+          0.482932,
+          -15.731382
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          -0.482932,
+          0.0,
+          0.875658,
+          -1.099056
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ]
+    }
+  }
+}

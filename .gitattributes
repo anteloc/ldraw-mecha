@@ -1,3 +1,5 @@
 *.db filter=lfs diff=lfs merge=lfs -text
 *.glb filter=lfs diff=lfs merge=lfs -text
 *.blend filter=lfs diff=lfs merge=lfs -text
+examples/reference/**/*.png filter=lfs diff=lfs merge=lfs -text
+examples/reference/**/*.mp4 filter=lfs diff=lfs merge=lfs -text

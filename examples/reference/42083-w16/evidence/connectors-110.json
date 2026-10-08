@@ -1,0 +1,185 @@
+{
+  "id": "110",
+  "ref": "18654.dat",
+  "coordinate_space": "selected section, LDU, -Y up",
+  "features": [
+    {
+      "kind": "pin_hole",
+      "role": "female",
+      "position": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "frame": [
+        [
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          -1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          -1.0
+        ]
+      ],
+      "profile": {
+        "sections": [
+          {
+            "shape": "round",
+            "radius": 8.0,
+            "length": 2.0,
+            "flexible": false
+          },
+          {
+            "shape": "round",
+            "radius": 6.0,
+            "length": 16.0,
+            "flexible": false
+          },
+          {
+            "shape": "round",
+            "radius": 8.0,
+            "length": 2.0,
+            "flexible": false
+          }
+        ],
+        "centered": true,
+        "friction": false,
+        "caps": "none"
+      },
+      "name": "connhole",
+      "feature_id": "connhole@R0/connhole",
+      "group": null,
+      "freedoms": [
+        "rotate",
+        "slide"
+      ],
+      "source": "ldcad_shadow",
+      "confidence": 1.0,
+      "owner_code": "18654",
+      "compatible_parts": [],
+      "occupied": false,
+      "occupied_by": null,
+      "provenance": [
+        "/Users/captain/workspaces/workspace-ai/ldraw-mecha/data/offLibShadow/p/connhole.dat:8"
+      ],
+      "metadata_id": "connhole",
+      "connection_provenance": {
+        "source": "ldcad_shadow",
+        "path": "/Users/captain/workspaces/workspace-ai/ldraw-mecha/data/offLibShadow/p/connhole.dat",
+        "archive_member": null,
+        "line_number": 8,
+        "command": "0 !LDCAD SNAP_CYL [id=connhole] [gender=F] [caps=none] [secs=R 8 2   R 6 16   R 8 2] [center=true] [slide=true]",
+        "include_chain": []
+      },
+      "scale_inheritance": "none",
+      "mirror_inheritance": "cor",
+      "world_position": [
+        0.0,
+        90.0,
+        -120.0
+      ],
+      "world_axis": [
+        0.0,
+        0.0,
+        -1.0
+      ]
+    }
+  ],
+  "metadata": {
+    "part_code": "18654",
+    "coverage": "complete",
+    "features": [
+      {
+        "kind": "pin_hole",
+        "role": "female",
+        "position": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "frame": [
+          [
+            1.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            -1.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            -1.0
+          ]
+        ],
+        "profile": {
+          "sections": [
+            {
+              "shape": "round",
+              "radius": 8.0,
+              "length": 2.0,
+              "flexible": false
+            },
+            {
+              "shape": "round",
+              "radius": 6.0,
+              "length": 16.0,
+              "flexible": false
+            },
+            {
+              "shape": "round",
+              "radius": 8.0,
+              "length": 2.0,
+              "flexible": false
+            }
+          ],
+          "centered": true,
+          "friction": false,
+          "caps": "none"
+        },
+        "name": "connhole",
+        "feature_id": "connhole@R0/connhole",
+        "group": null,
+        "freedoms": [
+          "rotate",
+          "slide"
+        ],
+        "source": "ldcad_shadow",
+        "confidence": 1.0,
+        "owner_code": "18654",
+        "compatible_parts": [],
+        "occupied": false,
+        "occupied_by": null,
+        "provenance": [
+          "/Users/captain/workspaces/workspace-ai/ldraw-mecha/data/offLibShadow/p/connhole.dat:8"
+        ],
+        "metadata_id": "connhole",
+        "connection_provenance": {
+          "source": "ldcad_shadow",
+          "path": "/Users/captain/workspaces/workspace-ai/ldraw-mecha/data/offLibShadow/p/connhole.dat",
+          "archive_member": null,
+          "line_number": 8,
+          "command": "0 !LDCAD SNAP_CYL [id=connhole] [gender=F] [caps=none] [secs=R 8 2   R 6 16   R 8 2] [center=true] [slide=true]",
+          "include_chain": []
+        },
+        "scale_inheritance": "none",
+        "mirror_inheritance": "cor"
+      }
+    ],
+    "source_count": 1,
+    "recognized_record_count": 1,
+    "unsupported_record_count": 0,
+    "invalid_record_count": 0,
+    "diagnostics": []
+  },
+  "coverage": "Connector evidence only; mating, mobility, retention and collision require review"
+}

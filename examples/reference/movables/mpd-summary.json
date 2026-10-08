@@ -1,0 +1,291 @@
+[
+ {
+  "scenario": "S01_house_door",
+  "parts": 23,
+  "joints": [
+   "door"
+  ],
+  "references": [
+   [
+    "door",
+    0.0,
+    0.0
+   ]
+  ]
+ },
+ {
+  "scenario": "S02_casement_window",
+  "parts": 19,
+  "joints": [
+   "pane_l",
+   "pane_r"
+  ],
+  "references": [
+   [
+    "pane_l",
+    1.0,
+    0.0
+   ],
+   [
+    "pane_r",
+    1.0,
+    0.0
+   ]
+  ]
+ },
+ {
+  "scenario": "S03_shuttered_window",
+  "parts": 18,
+  "joints": [
+   "shutter_l",
+   "shutter_r"
+  ],
+  "references": [
+   [
+    "shutter_l",
+    3.037,
+    0.0
+   ],
+   [
+    "shutter_r",
+    3.194,
+    0.0
+   ]
+  ]
+ },
+ {
+  "scenario": "S04_garden_gate",
+  "parts": 6,
+  "joints": [
+   "gate"
+  ],
+  "references": [
+   [
+    "gate",
+    0.0,
+    0.0
+   ]
+  ]
+ },
+ {
+  "scenario": "S05_kitchen_cupboard",
+  "parts": 6,
+  "joints": [
+   "door",
+   "drawer_top",
+   "drawer_low"
+  ],
+  "references": [
+   [
+    "door",
+    0.0,
+    0.0
+   ],
+   [
+    "drawer_top",
+    0.0,
+    0.0
+   ],
+   [
+    "drawer_low",
+    0.0,
+    0.0
+   ]
+  ]
+ },
+ {
+  "scenario": "S06_double_cabinet",
+  "parts": 4,
+  "joints": [
+   "door_l",
+   "door_r"
+  ],
+  "references": [
+   [
+    "door_l",
+    0.0,
+    0.0
+   ],
+   [
+    "door_r",
+    0.0,
+    0.0
+   ]
+  ]
+ },
+ {
+  "scenario": "S07_treasure_chest",
+  "parts": 6,
+  "joints": [
+   "lid"
+  ],
+  "references": []
+ },
+ {
+  "scenario": "S08_mailbox",
+  "parts": 7,
+  "joints": [
+   "door"
+  ],
+  "references": [
+   [
+    "door",
+    0.0,
+    0.0
+   ]
+  ]
+ },
+ {
+  "scenario": "S09_trap_door",
+  "parts": 7,
+  "joints": [
+   "trapdoor"
+  ],
+  "references": [
+   [
+    "trapdoor",
+    0.0,
+    0.0
+   ]
+  ]
+ },
+ {
+  "scenario": "S10_car_doors",
+  "parts": 19,
+  "joints": [
+   "door_l",
+   "door_r"
+  ],
+  "references": [
+   [
+    "door_l",
+    0.0,
+    0.0
+   ],
+   [
+    "door_r",
+    0.0,
+    0.0
+   ]
+  ]
+ },
+ {
+  "scenario": "S11_car_roof",
+  "parts": 18,
+  "joints": [
+   "roof"
+  ],
+  "references": [
+   [
+    "roof",
+    0.0,
+    0.0
+   ],
+   [
+    "holder",
+    0.0,
+    0.0
+   ]
+  ]
+ },
+ {
+  "scenario": "S12_canopy",
+  "parts": 11,
+  "joints": [
+   "canopy"
+  ],
+  "references": [
+   [
+    "canopy",
+    1.0,
+    0.0
+   ]
+  ]
+ },
+ {
+  "scenario": "S13_forklift",
+  "parts": 16,
+  "joints": [
+   "forks",
+   "spring"
+  ],
+  "references": []
+ },
+ {
+  "scenario": "S14_sliding_door",
+  "parts": 19,
+  "joints": [
+   "door"
+  ],
+  "references": [
+   [
+    "door",
+    0.0,
+    0.0
+   ]
+  ]
+ },
+ {
+  "scenario": "S15_radar",
+  "parts": 11,
+  "joints": [
+   "spin"
+  ],
+  "references": []
+ },
+ {
+  "scenario": "S16_crane",
+  "parts": 16,
+  "joints": [
+   "slew",
+   "luff",
+   "hook"
+  ],
+  "references": []
+ },
+ {
+  "scenario": "S17_tipper",
+  "parts": 19,
+  "joints": [
+   "tip"
+  ],
+  "references": [
+   [
+    "hinge_plate_l",
+    0.0,
+    0.0
+   ],
+   [
+    "bucket",
+    0.0,
+    0.0
+   ]
+  ]
+ },
+ {
+  "scenario": "S18_barrier",
+  "parts": 12,
+  "joints": [
+   "boom"
+  ],
+  "references": []
+ },
+ {
+  "scenario": "S19_drawbridge",
+  "parts": 24,
+  "joints": [
+   "bridge_l",
+   "bridge_r"
+  ],
+  "references": []
+ },
+ {
+  "scenario": "S20_levers",
+  "parts": 7,
+  "joints": [
+   "lever_l",
+   "lever_r"
+  ],
+  "references": []
+ }
+]

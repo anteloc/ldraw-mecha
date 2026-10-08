@@ -1,0 +1,76 @@
+0 FILE p09_hanging_vine.ldr
+0 Plant wind case P09_hanging_vine Hanging leafy vine
+0 Name: p09_hanging_vine.ldr
+0 Author: ldraw-mecha scripts/build_plants.py
+0 // Generated mock case: parts picked by constant name from data/categories/parts (vine subfiles by LDraw reference); moving parts placed from LDCad shadow connector frames (data/offLibShadow) via pyldraw3 or copied from official constructions (2518c01, 10315, 10297). Frame: LDU, -Y up, the case front faces -Z, ground (base top) at y = 0. Wind blows toward +X.
+
+0 // base: plates.Plate6X12
+1 2 -40 0 0 1 0 0 0 1 0 0 0 1 3028.dat
+0 // trunk0: bricks.Brick2X2RoundWithoutReinforcement
+1 70 -100 -24 0 1 0 0 0 1 0 0 0 1 3941.dat
+0 // trunk1: bricks.Brick2X2RoundWithoutReinforcement
+1 70 -100 -48 0 1 0 0 0 1 0 0 0 1 3941.dat
+0 // trunk2: bricks.Brick2X2RoundWithoutReinforcement
+1 70 -100 -72 0 1 0 0 0 1 0 0 0 1 3941.dat
+0 // trunk3: bricks.Brick2X2RoundWithoutReinforcement
+1 70 -100 -96 0 1 0 0 0 1 0 0 0 1 3941.dat
+0 // trunk4: bricks.Brick2X2RoundWithoutReinforcement
+1 70 -100 -120 0 1 0 0 0 1 0 0 0 1 3941.dat
+0 // trunk5: bricks.Brick2X2RoundWithoutReinforcement
+1 70 -100 -144 0 1 0 0 0 1 0 0 0 1 3941.dat
+0 // trunk6: bricks.Brick2X2RoundWithoutReinforcement
+1 70 -100 -168 0 1 0 0 0 1 0 0 0 1 3941.dat
+0 // trunk7: bricks.Brick2X2RoundWithoutReinforcement
+1 70 -100 -192 0 1 0 0 0 1 0 0 0 1 3941.dat
+0 // trunk8: bricks.Brick2X2RoundWithoutReinforcement
+1 70 -100 -216 0 1 0 0 0 1 0 0 0 1 3941.dat
+0 // trunk9: bricks.Brick2X2RoundWithoutReinforcement
+1 70 -100 -240 0 1 0 0 0 1 0 0 0 1 3941.dat
+0 // trunk10: bricks.Brick2X2RoundWithoutReinforcement
+1 70 -100 -264 0 1 0 0 0 1 0 0 0 1 3941.dat
+0 // trunk11: bricks.Brick2X2RoundWithoutReinforcement
+1 70 -100 -288 0 1 0 0 0 1 0 0 0 1 3941.dat
+0 // trunk12: bricks.Brick2X2RoundWithoutReinforcement
+1 70 -100 -312 0 1 0 0 0 1 0 0 0 1 3941.dat
+0 // trunk13: bricks.Brick2X2RoundWithoutReinforcement
+1 70 -100 -336 0 1 0 0 0 1 0 0 0 1 3941.dat
+0 // arm: plates.Plate2X8
+1 70 -50 -344 0 1 0 0 0 1 0 0 0 1 3034.dat
+0 // crown: plants.PlantLeaves6X5
+1 2 -100 -352 -10 1 0 0 0 1 0 0 0 1 2417.dat
+0 // hanger: plates.Plate1X1WithClipVertical_ThickC_Clip_
+1 70 20 -336 -10 1 0 0 0 1 0 0 0 1 60897.dat
+0 // vine_k03_0: library 16981k03
+1 288 20 -342 -30 0 0 1 -1 0 0 0 -1 0 16981k03.dat
+0 // vine_stem0: library 16981k04
+1 288 20 -303 -30 0 0 1 51 0 0 0 1 0 16981k04.dat
+0 // vine_stem1: library 16981k04
+1 288 20 -252 -30 0 0 1 51 0 0 0 1 0 16981k04.dat
+0 // vine_stem2: library 16981k04
+1 288 20 -201 -30 0 0 1 51 0 0 0 1 0 16981k04.dat
+0 // vine_stem3: library 16981k04
+1 288 20 -150 -30 0 0 1 51 0 0 0 1 0 16981k04.dat
+0 // vine_stem4: library 16981k04
+1 288 20 -99 -30 0 0 1 38 0 0 0 1 0 16981k04.dat
+0 // vine_k03_320: library 16981k03
+1 288 20 -22 -30 0 0 1 1 0 0 0 1 0 16981k03.dat
+0 // vine_k01_50: library 16981k01
+1 2 20 -292 -30 0 0 1 -1 0 0 0 -1 0 16981k01.dat
+0 // vine_k02_64: library 16981k02
+1 2 20 -278 -30 0 0 1 -1 0 0 0 -1 0 16981k02.dat
+0 // vine_k01_101: library 16981k01
+1 2 20 -241 -30 0 0 1 -1 0 0 0 -1 0 16981k01.dat
+0 // vine_k02_115: library 16981k02
+1 2 20 -227 -30 0 0 1 -1 0 0 0 -1 0 16981k02.dat
+0 // vine_k01_152: library 16981k01
+1 2 20 -190 -30 0 0 1 -1 0 0 0 -1 0 16981k01.dat
+0 // vine_k02_166: library 16981k02
+1 2 20 -176 -30 0 0 1 -1 0 0 0 -1 0 16981k02.dat
+0 // vine_k01_203: library 16981k01
+1 2 20 -139 -30 0 0 1 -1 0 0 0 -1 0 16981k01.dat
+0 // vine_k02_217: library 16981k02
+1 2 20 -125 -30 0 0 1 -1 0 0 0 -1 0 16981k02.dat
+0 // vine_k01_254: library 16981k01
+1 2 20 -88 -30 0 0 1 -1 0 0 0 -1 0 16981k01.dat
+0 // vine_k02_268: library 16981k02
+1 2 20 -74 -30 0 0 1 -1 0 0 0 -1 0 16981k02.dat

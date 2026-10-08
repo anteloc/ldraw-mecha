@@ -1,0 +1,192 @@
+{
+  "summary": {
+    "planned": 10,
+    "static": 1
+  },
+  "review_complete": true,
+  "unresolved": [],
+  "deferred": [],
+  "unaccounted_mechanical_parts": [],
+  "mechanisms": [
+    {
+      "id": "blade_1",
+      "label": "Grass meadow: blade 1",
+      "disposition": "planned",
+      "review": "Joint declared in this plan (scripts/build_plants.py); driven by wind clips.",
+      "parts": 2,
+      "controlled_parts": [
+        "1"
+      ],
+      "parts_without_control": [
+        "0"
+      ],
+      "controls": [
+        "blade_1"
+      ]
+    },
+    {
+      "id": "blade_10",
+      "label": "Grass meadow: blade 10",
+      "disposition": "planned",
+      "review": "Joint declared in this plan (scripts/build_plants.py); driven by wind clips.",
+      "parts": 2,
+      "controlled_parts": [
+        "10"
+      ],
+      "parts_without_control": [
+        "0"
+      ],
+      "controls": [
+        "blade_10"
+      ]
+    },
+    {
+      "id": "blade_2",
+      "label": "Grass meadow: blade 2",
+      "disposition": "planned",
+      "review": "Joint declared in this plan (scripts/build_plants.py); driven by wind clips.",
+      "parts": 2,
+      "controlled_parts": [
+        "2"
+      ],
+      "parts_without_control": [
+        "0"
+      ],
+      "controls": [
+        "blade_2"
+      ]
+    },
+    {
+      "id": "blade_3",
+      "label": "Grass meadow: blade 3",
+      "disposition": "planned",
+      "review": "Joint declared in this plan (scripts/build_plants.py); driven by wind clips.",
+      "parts": 2,
+      "controlled_parts": [
+        "3"
+      ],
+      "parts_without_control": [
+        "0"
+      ],
+      "controls": [
+        "blade_3"
+      ]
+    },
+    {
+      "id": "blade_4",
+      "label": "Grass meadow: blade 4",
+      "disposition": "planned",
+      "review": "Joint declared in this plan (scripts/build_plants.py); driven by wind clips.",
+      "parts": 2,
+      "controlled_parts": [
+        "4"
+      ],
+      "parts_without_control": [
+        "0"
+      ],
+      "controls": [
+        "blade_4"
+      ]
+    },
+    {
+      "id": "blade_5",
+      "label": "Grass meadow: blade 5",
+      "disposition": "planned",
+      "review": "Joint declared in this plan (scripts/build_plants.py); driven by wind clips.",
+      "parts": 2,
+      "controlled_parts": [
+        "5"
+      ],
+      "parts_without_control": [
+        "0"
+      ],
+      "controls": [
+        "blade_5"
+      ]
+    },
+    {
+      "id": "blade_6",
+      "label": "Grass meadow: blade 6",
+      "disposition": "planned",
+      "review": "Joint declared in this plan (scripts/build_plants.py); driven by wind clips.",
+      "parts": 2,
+      "controlled_parts": [
+        "6"
+      ],
+      "parts_without_control": [
+        "0"
+      ],
+      "controls": [
+        "blade_6"
+      ]
+    },
+    {
+      "id": "blade_7",
+      "label": "Grass meadow: blade 7",
+      "disposition": "planned",
+      "review": "Joint declared in this plan (scripts/build_plants.py); driven by wind clips.",
+      "parts": 2,
+      "controlled_parts": [
+        "7"
+      ],
+      "parts_without_control": [
+        "0"
+      ],
+      "controls": [
+        "blade_7"
+      ]
+    },
+    {
+      "id": "blade_8",
+      "label": "Grass meadow: blade 8",
+      "disposition": "planned",
+      "review": "Joint declared in this plan (scripts/build_plants.py); driven by wind clips.",
+      "parts": 2,
+      "controlled_parts": [
+        "8"
+      ],
+      "parts_without_control": [
+        "0"
+      ],
+      "controls": [
+        "blade_8"
+      ]
+    },
+    {
+      "id": "blade_9",
+      "label": "Grass meadow: blade 9",
+      "disposition": "planned",
+      "review": "Joint declared in this plan (scripts/build_plants.py); driven by wind clips.",
+      "parts": 2,
+      "controlled_parts": [
+        "9"
+      ],
+      "parts_without_control": [
+        "0"
+      ],
+      "controls": [
+        "blade_9"
+      ]
+    },
+    {
+      "id": "context",
+      "label": "Grass meadow: base and mounts (static)",
+      "disposition": "static",
+      "review": "Base, trunk and mounts built for the catalog; they do not move in this case.",
+      "parts": 1,
+      "controlled_parts": [],
+      "parts_without_control": [
+        "0"
+      ],
+      "controls": []
+    }
+  ],
+  "warnings": [
+    {
+      "code": "coaxial_not_run",
+      "message": "not run: 0 shaft/gear candidates outside 2..100; select a section"
+    }
+  ],
+  "coverage": "Bookkeeping of declared scope only. Supports may correctly lack controls. Planned, static and deferred dispositions require review notes; none certify discovery completeness, physical motion or clearance.",
+  "passed": true
+}

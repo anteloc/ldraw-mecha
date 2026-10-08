@@ -1,0 +1,36 @@
+0 FILE p12_aspen.ldr
+0 Plant wind case P12_aspen Shivering aspen
+0 Name: p12_aspen.ldr
+0 Author: ldraw-mecha scripts/build_plants.py
+0 // Generated mock case: parts picked by constant name from data/categories/parts (vine subfiles by LDraw reference); moving parts placed from LDCad shadow connector frames (data/offLibShadow) via pyldraw3 or copied from official constructions (2518c01, 10315, 10297). Frame: LDU, -Y up, the case front faces -Z, ground (base top) at y = 0. Wind blows toward +X.
+
+0 // base: plates.Plate4X4
+1 2 10 0 10 1 0 0 0 1 0 0 0 1 3031.dat
+0 // trunk_a0: bricks.Brick1X1RoundWithHollowStud
+1 70 0 -24 0 1 0 0 0 1 0 0 0 1 3062b.dat
+0 // trunk_a1: bricks.Brick1X1RoundWithHollowStud
+1 70 0 -48 0 1 0 0 0 1 0 0 0 1 3062b.dat
+0 // trunk_a2: bricks.Brick1X1RoundWithHollowStud
+1 70 0 -72 0 1 0 0 0 1 0 0 0 1 3062b.dat
+0 // knot_a: bricks.Brick1X1WithStudsOnFourSides
+1 70 0 -96 0 1 0 0 0 1 0 0 0 1 4733.dat
+0 // trunk_b0: bricks.Brick1X1RoundWithHollowStud
+1 70 0 -120 0 1 0 0 0 1 0 0 0 1 3062b.dat
+0 // trunk_b1: bricks.Brick1X1RoundWithHollowStud
+1 70 0 -144 0 1 0 0 0 1 0 0 0 1 3062b.dat
+0 // trunk_b2: bricks.Brick1X1RoundWithHollowStud
+1 70 0 -168 0 1 0 0 0 1 0 0 0 1 3062b.dat
+0 // knot_b: bricks.Brick1X1WithStudsOnFourSides
+1 70 0 -192 0 1 0 0 0 1 0 0 0 1 4733.dat
+0 // trunk_c0: bricks.Brick1X1RoundWithHollowStud
+1 70 0 -216 0 1 0 0 0 1 0 0 0 1 3062b.dat
+0 // leaf_top: plants.PlantLeaves4X3
+1 14 0 -224 0 0.9396926208 0 0.3420201433 0 1 0 -0.3420201433 0 0.9396926208 2423.dat
+0 // leaf_front: plants.PlantLeaves4X3
+1 27 0 -86 -18 1 0 0 0 0 -1 0 1 0 2423.dat
+0 // leaf_back: plants.PlantLeaves4X3
+1 14 0 -86 18 -1 0 0 0 0 -1 0 -1 0 2423.dat
+0 // leaf_upwind: plants.PlantLeaves4X3
+1 27 -18 -182 0 0 1 0 0 0 -1 -1 0 0 2423.dat
+0 // leaf_downwind: plants.PlantLeaves4X3
+1 14 18 -182 0 0 -1 0 0 0 -1 1 0 0 2423.dat

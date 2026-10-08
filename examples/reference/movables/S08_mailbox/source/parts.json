@@ -1,0 +1,102 @@
+{
+  "scenario": "S08_mailbox",
+  "title": "Mailbox",
+  "parts": [
+    {
+      "role": "base",
+      "id": "0",
+      "table": "plates.Plate4X4",
+      "ref": "3031",
+      "colour": 2,
+      "title": "Plate  4 x  4",
+      "library_only": false
+    },
+    {
+      "role": "post0",
+      "id": "1",
+      "table": "bricks.Brick2X2RoundWithoutReinforcement",
+      "ref": "3941",
+      "colour": 8,
+      "title": "Brick  2 x  2 Round without Reinforcement",
+      "library_only": false
+    },
+    {
+      "role": "post1",
+      "id": "2",
+      "table": "bricks.Brick2X2RoundWithoutReinforcement",
+      "ref": "3941",
+      "colour": 8,
+      "title": "Brick  2 x  2 Round without Reinforcement",
+      "library_only": false
+    },
+    {
+      "role": "post2",
+      "id": "3",
+      "table": "bricks.Brick2X2RoundWithoutReinforcement",
+      "ref": "3941",
+      "colour": 8,
+      "title": "Brick  2 x  2 Round without Reinforcement",
+      "library_only": false
+    },
+    {
+      "role": "cap",
+      "id": "4",
+      "table": "plates.Plate2X2",
+      "ref": "3022",
+      "colour": 8,
+      "title": "Plate  2 x  2",
+      "library_only": false
+    },
+    {
+      "role": "box",
+      "id": "5",
+      "table": "containers.ContainerBox2X2X2WithSolidStuds",
+      "ref": "4345a",
+      "colour": 4,
+      "title": "Container Box  2 x  2 x  2 with Solid Studs",
+      "library_only": false
+    },
+    {
+      "role": "door",
+      "id": "6",
+      "table": "containers.ContainerBox2X2X2DoorWithSlot",
+      "ref": "4346",
+      "colour": 4,
+      "title": "Container Box  2 x  2 x  2 Door with Slot",
+      "library_only": false
+    }
+  ],
+  "joints": {
+    "door": {
+      "origin": [
+        0.0,
+        -84.0,
+        -26.0
+      ],
+      "axis": [
+        1.0,
+        0.0,
+        0.0
+      ],
+      "parent": "box",
+      "child": "door",
+      "kind": "revolute",
+      "connector": "4345a hinge s/4345s01@R0/snap_fgr@L8:I0 receives 4346 hinge s/4346s01@R0/snap_fgr@L8:I0"
+    }
+  },
+  "reference_checks": [
+    {
+      "model": "1490-1.mpd",
+      "section": "(flattened main model)",
+      "parent": "box",
+      "part": "door",
+      "official_refs": [
+        "4345a",
+        "4346"
+      ],
+      "position_offset_ldu": 0.0,
+      "rotation_offset": 0.0,
+      "note": ""
+    }
+  ]
+}

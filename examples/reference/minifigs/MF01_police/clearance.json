@@ -1,0 +1,155 @@
+{
+  "figure": "MF01_police",
+  "sweep": {
+    "no_new_surface_crossings": false,
+    "crossings": [
+      [
+        "shoulder_l",
+        -10.996,
+        [
+          "2",
+          "8"
+        ]
+      ],
+      [
+        "shoulder_l",
+        -9.425,
+        [
+          "1",
+          "8"
+        ]
+      ],
+      [
+        "shoulder_l",
+        -9.425,
+        [
+          "2",
+          "8"
+        ]
+      ],
+      [
+        "shoulder_l",
+        -4.712,
+        [
+          "2",
+          "8"
+        ]
+      ],
+      [
+        "shoulder_l",
+        -3.142,
+        [
+          "1",
+          "8"
+        ]
+      ],
+      [
+        "shoulder_l",
+        -3.142,
+        [
+          "2",
+          "8"
+        ]
+      ],
+      [
+        "shoulder_l",
+        1.571,
+        [
+          "2",
+          "8"
+        ]
+      ],
+      [
+        "shoulder_l",
+        3.142,
+        [
+          "1",
+          "8"
+        ]
+      ],
+      [
+        "shoulder_l",
+        3.142,
+        [
+          "2",
+          "8"
+        ]
+      ],
+      [
+        "shoulder_l",
+        7.854,
+        [
+          "2",
+          "8"
+        ]
+      ],
+      [
+        "shoulder_l",
+        9.425,
+        [
+          "1",
+          "8"
+        ]
+      ],
+      [
+        "shoulder_l",
+        9.425,
+        [
+          "2",
+          "8"
+        ]
+      ],
+      [
+        "wrist_l",
+        -1.963,
+        [
+          "5",
+          "8"
+        ]
+      ]
+    ],
+    "excluded_rest_pairs": [
+      [
+        "3",
+        "4"
+      ],
+      [
+        "3",
+        "5"
+      ],
+      [
+        "3",
+        "8"
+      ],
+      [
+        "4",
+        "8"
+      ]
+    ]
+  },
+  "clip_poses": {
+    "samples": 72,
+    "every": 6,
+    "no_new_surface_crossings": true,
+    "crossings_by_clip": {},
+    "frames_with_crossings": {},
+    "deep_shrink_ldu": 1.5,
+    "no_deep_crossings": true,
+    "deep_crossings_by_clip": {},
+    "frames_with_deep_crossings": {}
+  },
+  "roles": {
+    "0": "torso",
+    "1": "head",
+    "2": "headgear0",
+    "3": "hips",
+    "4": "leg_l",
+    "5": "leg_r",
+    "6": "arm_l",
+    "7": "hand_l",
+    "8": "item_l",
+    "9": "arm_r",
+    "10": "hand_r"
+  },
+  "coverage": "Sampled surface crossings only; excludes rigid-body and rest-contact pairs; containment untested; joint channels only (whole-figure staging not applied)"
+}

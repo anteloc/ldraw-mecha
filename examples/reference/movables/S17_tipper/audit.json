@@ -1,0 +1,69 @@
+{
+  "summary": {
+    "planned": 1,
+    "static": 1
+  },
+  "review_complete": true,
+  "unresolved": [],
+  "deferred": [],
+  "unaccounted_mechanical_parts": [],
+  "mechanisms": [
+    {
+      "id": "bucket",
+      "label": "Dump truck tipper: bucket",
+      "disposition": "planned",
+      "review": "Measured joint declared in this plan (scripts/build_movables.py).",
+      "parts": 4,
+      "controlled_parts": [
+        "15",
+        "17",
+        "18"
+      ],
+      "parts_without_control": [
+        "0"
+      ],
+      "controls": [
+        "tip"
+      ]
+    },
+    {
+      "id": "context",
+      "label": "Dump truck tipper: mounting and mock context (static)",
+      "disposition": "static",
+      "review": "Mock context built for the catalog (walls, floor, chassis, mounts); it does not move in this scenario.",
+      "parts": 16,
+      "controlled_parts": [],
+      "parts_without_control": [
+        "0",
+        "1",
+        "10",
+        "11",
+        "12",
+        "13",
+        "14",
+        "16",
+        "2",
+        "3",
+        "4",
+        "5",
+        "6",
+        "7",
+        "8",
+        "9"
+      ],
+      "controls": []
+    }
+  ],
+  "warnings": [
+    {
+      "code": "incomplete_inspection",
+      "message": "pyldraw3 inspection is incomplete; inspect its diagnostics."
+    },
+    {
+      "code": "coaxial_not_run",
+      "message": "not run: 0 shaft/gear candidates outside 2..100; select a section"
+    }
+  ],
+  "coverage": "Bookkeeping of declared scope only. Supports may correctly lack controls. Planned, static and deferred dispositions require review notes; none certify discovery completeness, physical motion or clearance.",
+  "passed": true
+}

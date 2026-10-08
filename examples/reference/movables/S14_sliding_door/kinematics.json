@@ -1,0 +1,109 @@
+{
+  "semantics": {
+    "door": {
+      "control": "slide",
+      "value": 4.0,
+      "test_point": [
+        -18.0,
+        -67.0,
+        -13.0
+      ],
+      "displacement": [
+        4.0,
+        0.0,
+        0.0
+      ],
+      "expected": "+x",
+      "flipped": false
+    }
+  },
+  "contacts": {
+    "tested_parts": 19,
+    "contacts": 32,
+    "contacted_parts": 5,
+    "by_kind": {
+      "stud/stud_receptacle": 32
+    },
+    "axles": {
+      "selection": "Catalog descriptions beginning Technic Axle followed by a numeric length; excludes axle pins, joiners and axle-hole supports",
+      "total": 0,
+      "with_axle_hole_contact": 0,
+      "without_axle_hole_contact": []
+    }
+  },
+  "contact_pairs": {
+    "4-6": [
+      "stud/stud_receptacle",
+      "stud/stud_receptacle",
+      "stud/stud_receptacle",
+      "stud/stud_receptacle",
+      "stud/stud_receptacle",
+      "stud/stud_receptacle",
+      "stud/stud_receptacle",
+      "stud/stud_receptacle"
+    ],
+    "6-8": [
+      "stud/stud_receptacle",
+      "stud/stud_receptacle",
+      "stud/stud_receptacle",
+      "stud/stud_receptacle",
+      "stud/stud_receptacle",
+      "stud/stud_receptacle",
+      "stud/stud_receptacle",
+      "stud/stud_receptacle"
+    ],
+    "8-10": [
+      "stud/stud_receptacle",
+      "stud/stud_receptacle",
+      "stud/stud_receptacle",
+      "stud/stud_receptacle",
+      "stud/stud_receptacle",
+      "stud/stud_receptacle",
+      "stud/stud_receptacle",
+      "stud/stud_receptacle"
+    ],
+    "10-12": [
+      "stud/stud_receptacle",
+      "stud/stud_receptacle",
+      "stud/stud_receptacle",
+      "stud/stud_receptacle",
+      "stud/stud_receptacle",
+      "stud/stud_receptacle",
+      "stud/stud_receptacle",
+      "stud/stud_receptacle"
+    ]
+  },
+  "asymmetric_sample": {
+    "controls": {
+      "slide": 94.5
+    },
+    "transforms": {
+      "door": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          94.5
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ]
+    }
+  }
+}

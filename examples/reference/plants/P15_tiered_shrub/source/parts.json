@@ -1,0 +1,141 @@
+{
+  "case": "P15_tiered_shrub",
+  "title": "Tiered shrub",
+  "parts": [
+    {
+      "role": "base",
+      "id": "0",
+      "table": "plates.Plate4X4",
+      "ref": "3031",
+      "colour": 2,
+      "title": "Plate  4 x  4",
+      "library_only": false
+    },
+    {
+      "role": "seat",
+      "id": "1",
+      "table": "plates.Plate1X1RoundWithOpenStud",
+      "ref": "85861",
+      "colour": 288,
+      "title": "Plate  1 x  1 Round with Open Stud",
+      "library_only": false
+    },
+    {
+      "role": "bar",
+      "id": "2",
+      "table": "bars.Bar6LWithThickStop",
+      "ref": "63965a",
+      "colour": 70,
+      "title": "Bar  6L with Thick Stop",
+      "library_only": false
+    },
+    {
+      "role": "tier1",
+      "id": "3",
+      "table": "plants.PlantWithBarAndOff_ShootWithHollowStud",
+      "ref": "1566",
+      "colour": 2,
+      "title": "Plant with Bar and Off-Shoot with Hollow Stud",
+      "library_only": false
+    },
+    {
+      "role": "tier2",
+      "id": "4",
+      "table": "plants.PlantWithBarAndOff_ShootWithHollowStud",
+      "ref": "1566",
+      "colour": 10,
+      "title": "Plant with Bar and Off-Shoot with Hollow Stud",
+      "library_only": false
+    },
+    {
+      "role": "tier3",
+      "id": "5",
+      "table": "plants.PlantWithBarAndOff_ShootWithHollowStud",
+      "ref": "1566",
+      "colour": 27,
+      "title": "Plant with Bar and Off-Shoot with Hollow Stud",
+      "library_only": false
+    },
+    {
+      "role": "tier4",
+      "id": "6",
+      "table": "plants.PlantWithBarAndOff_ShootWithHollowStud",
+      "ref": "1566",
+      "colour": 2,
+      "title": "Plant with Bar and Off-Shoot with Hollow Stud",
+      "library_only": false
+    }
+  ],
+  "joints": {
+    "tier_1": {
+      "origin": [
+        0.0,
+        -12.0,
+        0.0
+      ],
+      "axis": [
+        0.0,
+        -1.0,
+        0.0
+      ],
+      "parent": "bar",
+      "child": "tier1",
+      "kind": "revolute",
+      "joint": "real",
+      "connector": "real: 1566 threaded on the 6L bar (sliding bar hole); turns about the bar (right-hand about up)"
+    },
+    "tier_2": {
+      "origin": [
+        0.0,
+        -44.0,
+        0.0
+      ],
+      "axis": [
+        0.0,
+        -1.0,
+        0.0
+      ],
+      "parent": "bar",
+      "child": "tier2",
+      "kind": "revolute",
+      "joint": "real",
+      "connector": "real: 1566 threaded on the 6L bar (sliding bar hole); turns about the bar (right-hand about up)"
+    },
+    "tier_3": {
+      "origin": [
+        0.0,
+        -76.0,
+        0.0
+      ],
+      "axis": [
+        0.0,
+        -1.0,
+        0.0
+      ],
+      "parent": "bar",
+      "child": "tier3",
+      "kind": "revolute",
+      "joint": "real",
+      "connector": "real: 1566 threaded on the 6L bar (sliding bar hole); turns about the bar (right-hand about up)"
+    },
+    "tier_4": {
+      "origin": [
+        0.0,
+        -108.0,
+        0.0
+      ],
+      "axis": [
+        0.0,
+        -1.0,
+        0.0
+      ],
+      "parent": "bar",
+      "child": "tier4",
+      "kind": "revolute",
+      "joint": "real",
+      "connector": "real: 1566 threaded on the 6L bar (sliding bar hole); turns about the bar (right-hand about up)"
+    }
+  },
+  "reference_checks": [],
+  "geometry_checks": []
+}

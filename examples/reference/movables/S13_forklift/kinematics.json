@@ -1,0 +1,163 @@
+{
+  "semantics": {
+    "forks": {
+      "control": "lift",
+      "value": 4.0,
+      "test_point": [
+        0.0,
+        -44.0,
+        -56.0
+      ],
+      "displacement": [
+        0.0,
+        -4.0,
+        0.0
+      ],
+      "expected": "-y",
+      "flipped": false
+    },
+    "spring_seat_lift_25": {
+      "seat": [
+        0.0,
+        -17.8,
+        -51.05
+      ],
+      "follows_forks_error": 7.105427357601002e-15
+    },
+    "spring_seat_lift_60": {
+      "seat": [
+        0.0,
+        -52.8,
+        -51.05
+      ],
+      "follows_forks_error": 0.0
+    },
+    "spring_seat_lift_100": {
+      "seat": [
+        0.0,
+        -92.8,
+        -51.05
+      ],
+      "follows_forks_error": 0.0
+    }
+  },
+  "contacts": {
+    "tested_parts": 16,
+    "contacts": 24,
+    "contacted_parts": 12,
+    "by_kind": {
+      "stud/stud_receptacle": 4,
+      "pin/pin_hole": 16,
+      "rim_seat/tyre_bead": 4
+    },
+    "axles": {
+      "selection": "Catalog descriptions beginning Technic Axle followed by a numeric length; excludes axle pins, joiners and axle-hole supports",
+      "total": 0,
+      "with_axle_hole_contact": 0,
+      "without_axle_hole_contact": []
+    }
+  },
+  "contact_pairs": {
+    "0-13": [
+      "stud/stud_receptacle",
+      "stud/stud_receptacle",
+      "stud/stud_receptacle",
+      "stud/stud_receptacle"
+    ],
+    "1-2": [
+      "pin/pin_hole",
+      "pin/pin_hole",
+      "pin/pin_hole",
+      "pin/pin_hole"
+    ],
+    "1-4": [
+      "pin/pin_hole",
+      "pin/pin_hole",
+      "pin/pin_hole",
+      "pin/pin_hole"
+    ],
+    "2-3": [
+      "rim_seat/tyre_bead"
+    ],
+    "4-5": [
+      "rim_seat/tyre_bead"
+    ],
+    "6-7": [
+      "pin/pin_hole",
+      "pin/pin_hole",
+      "pin/pin_hole",
+      "pin/pin_hole"
+    ],
+    "6-9": [
+      "pin/pin_hole",
+      "pin/pin_hole",
+      "pin/pin_hole",
+      "pin/pin_hole"
+    ],
+    "7-8": [
+      "rim_seat/tyre_bead"
+    ],
+    "9-10": [
+      "rim_seat/tyre_bead"
+    ]
+  },
+  "asymmetric_sample": {
+    "controls": {
+      "lift": 63.0
+    },
+    "transforms": {
+      "forks": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          -63.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "spring": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.536765,
+          0.0,
+          -59.664706
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ]
+    }
+  }
+}

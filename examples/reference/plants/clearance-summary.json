@@ -1,0 +1,2675 @@
+{
+  "cases": {
+    "P01_palm_tree": {
+      "sweep_clear": false,
+      "sweep_crossings": [
+        [
+          "bend_2",
+          -0.2,
+          "seg1-seg2"
+        ],
+        [
+          "bend_2",
+          -0.175,
+          "seg1-seg2"
+        ],
+        [
+          "bend_2",
+          -0.15,
+          "seg1-seg2"
+        ],
+        [
+          "bend_2",
+          -0.125,
+          "seg1-seg2"
+        ],
+        [
+          "bend_2",
+          -0.1,
+          "seg1-seg2"
+        ],
+        [
+          "bend_2",
+          0.1,
+          "seg1-seg2"
+        ],
+        [
+          "bend_2",
+          0.125,
+          "seg1-seg2"
+        ],
+        [
+          "bend_2",
+          0.15,
+          "seg1-seg2"
+        ],
+        [
+          "bend_2",
+          0.175,
+          "seg1-seg2"
+        ],
+        [
+          "bend_2",
+          0.2,
+          "seg1-seg2"
+        ],
+        [
+          "bend_3",
+          -0.2,
+          "seg2-seg3"
+        ],
+        [
+          "bend_3",
+          -0.175,
+          "seg2-seg3"
+        ],
+        [
+          "bend_3",
+          -0.15,
+          "seg2-seg3"
+        ],
+        [
+          "bend_3",
+          0.15,
+          "seg2-seg3"
+        ],
+        [
+          "bend_3",
+          0.175,
+          "seg2-seg3"
+        ],
+        [
+          "bend_3",
+          0.2,
+          "seg2-seg3"
+        ],
+        [
+          "bend_4",
+          -0.2,
+          "seg3-seg4"
+        ],
+        [
+          "bend_4",
+          -0.175,
+          "seg3-seg4"
+        ],
+        [
+          "bend_4",
+          -0.15,
+          "seg3-seg4"
+        ],
+        [
+          "bend_4",
+          -0.125,
+          "seg3-seg4"
+        ],
+        [
+          "bend_4",
+          -0.1,
+          "seg3-seg4"
+        ],
+        [
+          "bend_4",
+          0.1,
+          "seg3-seg4"
+        ],
+        [
+          "bend_4",
+          0.125,
+          "seg3-seg4"
+        ],
+        [
+          "bend_4",
+          0.15,
+          "seg3-seg4"
+        ],
+        [
+          "bend_4",
+          0.175,
+          "seg3-seg4"
+        ],
+        [
+          "bend_4",
+          0.2,
+          "seg3-seg4"
+        ],
+        [
+          "bend_5",
+          -0.2,
+          "seg4-seg5"
+        ],
+        [
+          "bend_5",
+          -0.175,
+          "seg4-seg5"
+        ],
+        [
+          "bend_5",
+          -0.15,
+          "seg4-seg5"
+        ],
+        [
+          "bend_5",
+          -0.125,
+          "seg4-seg5"
+        ],
+        [
+          "bend_5",
+          -0.1,
+          "seg4-seg5"
+        ],
+        [
+          "bend_5",
+          0.1,
+          "seg4-seg5"
+        ],
+        [
+          "bend_5",
+          0.125,
+          "seg4-seg5"
+        ],
+        [
+          "bend_5",
+          0.15,
+          "seg4-seg5"
+        ],
+        [
+          "bend_5",
+          0.175,
+          "seg4-seg5"
+        ],
+        [
+          "bend_5",
+          0.2,
+          "seg4-seg5"
+        ],
+        [
+          "leaf_back",
+          -0.17,
+          "leaf_back-crown"
+        ],
+        [
+          "leaf_back",
+          -0.17,
+          "leaf_upwind-leaf_back"
+        ],
+        [
+          "leaf_back",
+          -0.149,
+          "leaf_back-crown"
+        ],
+        [
+          "leaf_back",
+          -0.149,
+          "leaf_upwind-leaf_back"
+        ],
+        [
+          "leaf_back",
+          -0.128,
+          "leaf_back-crown"
+        ],
+        [
+          "leaf_back",
+          -0.128,
+          "leaf_upwind-leaf_back"
+        ],
+        [
+          "leaf_back",
+          -0.106,
+          "leaf_back-crown"
+        ],
+        [
+          "leaf_back",
+          -0.106,
+          "leaf_upwind-leaf_back"
+        ],
+        [
+          "leaf_back",
+          -0.085,
+          "leaf_back-crown"
+        ],
+        [
+          "leaf_back",
+          -0.085,
+          "leaf_upwind-leaf_back"
+        ],
+        [
+          "leaf_back",
+          -0.064,
+          "leaf_back-crown"
+        ],
+        [
+          "leaf_back",
+          -0.064,
+          "leaf_upwind-leaf_back"
+        ],
+        [
+          "leaf_back",
+          -0.043,
+          "leaf_back-crown"
+        ],
+        [
+          "leaf_back",
+          -0.043,
+          "leaf_upwind-leaf_back"
+        ],
+        [
+          "leaf_back",
+          0.043,
+          "leaf_back-crown"
+        ],
+        [
+          "leaf_back",
+          0.043,
+          "leaf_back-leaf_downwind"
+        ],
+        [
+          "leaf_back",
+          0.064,
+          "leaf_back-crown"
+        ],
+        [
+          "leaf_back",
+          0.064,
+          "leaf_back-leaf_downwind"
+        ],
+        [
+          "leaf_back",
+          0.085,
+          "leaf_back-crown"
+        ],
+        [
+          "leaf_back",
+          0.085,
+          "leaf_back-leaf_downwind"
+        ],
+        [
+          "leaf_back",
+          0.106,
+          "leaf_back-crown"
+        ],
+        [
+          "leaf_back",
+          0.106,
+          "leaf_back-leaf_downwind"
+        ],
+        [
+          "leaf_back",
+          0.128,
+          "leaf_back-crown"
+        ],
+        [
+          "leaf_back",
+          0.128,
+          "leaf_back-leaf_downwind"
+        ],
+        [
+          "leaf_back",
+          0.149,
+          "leaf_back-crown"
+        ],
+        [
+          "leaf_back",
+          0.149,
+          "leaf_back-leaf_downwind"
+        ],
+        [
+          "leaf_back",
+          0.17,
+          "leaf_back-crown"
+        ],
+        [
+          "leaf_back",
+          0.17,
+          "leaf_back-leaf_downwind"
+        ],
+        [
+          "leaf_downwind",
+          -0.17,
+          "leaf_back-leaf_downwind"
+        ],
+        [
+          "leaf_downwind",
+          -0.17,
+          "leaf_downwind-crown"
+        ],
+        [
+          "leaf_downwind",
+          -0.17,
+          "leaf_downwind-leaf_front"
+        ],
+        [
+          "leaf_downwind",
+          -0.149,
+          "leaf_back-leaf_downwind"
+        ],
+        [
+          "leaf_downwind",
+          -0.149,
+          "leaf_downwind-crown"
+        ],
+        [
+          "leaf_downwind",
+          -0.149,
+          "leaf_downwind-leaf_front"
+        ],
+        [
+          "leaf_downwind",
+          -0.128,
+          "leaf_back-leaf_downwind"
+        ],
+        [
+          "leaf_downwind",
+          -0.128,
+          "leaf_downwind-crown"
+        ],
+        [
+          "leaf_downwind",
+          -0.128,
+          "leaf_downwind-leaf_front"
+        ],
+        [
+          "leaf_downwind",
+          -0.106,
+          "leaf_back-leaf_downwind"
+        ],
+        [
+          "leaf_downwind",
+          -0.106,
+          "leaf_downwind-crown"
+        ],
+        [
+          "leaf_downwind",
+          -0.106,
+          "leaf_downwind-leaf_front"
+        ],
+        [
+          "leaf_downwind",
+          -0.085,
+          "leaf_back-leaf_downwind"
+        ],
+        [
+          "leaf_downwind",
+          -0.085,
+          "leaf_downwind-crown"
+        ],
+        [
+          "leaf_downwind",
+          -0.085,
+          "leaf_downwind-leaf_front"
+        ],
+        [
+          "leaf_downwind",
+          -0.064,
+          "leaf_back-leaf_downwind"
+        ],
+        [
+          "leaf_downwind",
+          -0.064,
+          "leaf_downwind-crown"
+        ],
+        [
+          "leaf_downwind",
+          -0.064,
+          "leaf_downwind-leaf_front"
+        ],
+        [
+          "leaf_downwind",
+          -0.043,
+          "leaf_back-leaf_downwind"
+        ],
+        [
+          "leaf_downwind",
+          -0.043,
+          "leaf_downwind-crown"
+        ],
+        [
+          "leaf_downwind",
+          -0.043,
+          "leaf_downwind-leaf_front"
+        ],
+        [
+          "leaf_downwind",
+          -0.021,
+          "leaf_downwind-crown"
+        ],
+        [
+          "leaf_downwind",
+          0.021,
+          "leaf_downwind-crown"
+        ],
+        [
+          "leaf_downwind",
+          0.043,
+          "leaf_back-leaf_downwind"
+        ],
+        [
+          "leaf_downwind",
+          0.043,
+          "leaf_downwind-crown"
+        ],
+        [
+          "leaf_downwind",
+          0.043,
+          "leaf_downwind-leaf_front"
+        ],
+        [
+          "leaf_downwind",
+          0.064,
+          "leaf_back-leaf_downwind"
+        ],
+        [
+          "leaf_downwind",
+          0.064,
+          "leaf_downwind-crown"
+        ],
+        [
+          "leaf_downwind",
+          0.064,
+          "leaf_downwind-leaf_front"
+        ],
+        [
+          "leaf_downwind",
+          0.085,
+          "leaf_back-leaf_downwind"
+        ],
+        [
+          "leaf_downwind",
+          0.085,
+          "leaf_downwind-crown"
+        ],
+        [
+          "leaf_downwind",
+          0.085,
+          "leaf_downwind-leaf_front"
+        ],
+        [
+          "leaf_downwind",
+          0.106,
+          "leaf_back-leaf_downwind"
+        ],
+        [
+          "leaf_downwind",
+          0.106,
+          "leaf_downwind-crown"
+        ],
+        [
+          "leaf_downwind",
+          0.106,
+          "leaf_downwind-leaf_front"
+        ],
+        [
+          "leaf_downwind",
+          0.128,
+          "leaf_back-leaf_downwind"
+        ],
+        [
+          "leaf_downwind",
+          0.128,
+          "leaf_downwind-crown"
+        ],
+        [
+          "leaf_downwind",
+          0.128,
+          "leaf_downwind-leaf_front"
+        ],
+        [
+          "leaf_downwind",
+          0.149,
+          "leaf_back-leaf_downwind"
+        ],
+        [
+          "leaf_downwind",
+          0.149,
+          "leaf_downwind-crown"
+        ],
+        [
+          "leaf_downwind",
+          0.149,
+          "leaf_downwind-leaf_front"
+        ],
+        [
+          "leaf_downwind",
+          0.17,
+          "leaf_back-leaf_downwind"
+        ],
+        [
+          "leaf_downwind",
+          0.17,
+          "leaf_downwind-crown"
+        ],
+        [
+          "leaf_downwind",
+          0.17,
+          "leaf_downwind-leaf_front"
+        ],
+        [
+          "leaf_front",
+          -0.17,
+          "crown-leaf_front"
+        ],
+        [
+          "leaf_front",
+          -0.17,
+          "leaf_downwind-leaf_front"
+        ],
+        [
+          "leaf_front",
+          -0.149,
+          "crown-leaf_front"
+        ],
+        [
+          "leaf_front",
+          -0.149,
+          "leaf_downwind-leaf_front"
+        ],
+        [
+          "leaf_front",
+          -0.128,
+          "crown-leaf_front"
+        ],
+        [
+          "leaf_front",
+          -0.128,
+          "leaf_downwind-leaf_front"
+        ],
+        [
+          "leaf_front",
+          -0.106,
+          "crown-leaf_front"
+        ],
+        [
+          "leaf_front",
+          -0.106,
+          "leaf_downwind-leaf_front"
+        ],
+        [
+          "leaf_front",
+          -0.085,
+          "crown-leaf_front"
+        ],
+        [
+          "leaf_front",
+          -0.085,
+          "leaf_downwind-leaf_front"
+        ],
+        [
+          "leaf_front",
+          -0.064,
+          "crown-leaf_front"
+        ],
+        [
+          "leaf_front",
+          -0.064,
+          "leaf_downwind-leaf_front"
+        ],
+        [
+          "leaf_front",
+          -0.043,
+          "crown-leaf_front"
+        ],
+        [
+          "leaf_front",
+          -0.043,
+          "leaf_downwind-leaf_front"
+        ],
+        [
+          "leaf_front",
+          0.043,
+          "crown-leaf_front"
+        ],
+        [
+          "leaf_front",
+          0.043,
+          "leaf_upwind-leaf_front"
+        ],
+        [
+          "leaf_front",
+          0.064,
+          "crown-leaf_front"
+        ],
+        [
+          "leaf_front",
+          0.064,
+          "leaf_upwind-leaf_front"
+        ],
+        [
+          "leaf_front",
+          0.085,
+          "crown-leaf_front"
+        ],
+        [
+          "leaf_front",
+          0.085,
+          "leaf_upwind-leaf_front"
+        ],
+        [
+          "leaf_front",
+          0.106,
+          "crown-leaf_front"
+        ],
+        [
+          "leaf_front",
+          0.106,
+          "leaf_upwind-leaf_front"
+        ],
+        [
+          "leaf_front",
+          0.128,
+          "crown-leaf_front"
+        ],
+        [
+          "leaf_front",
+          0.128,
+          "leaf_upwind-leaf_front"
+        ],
+        [
+          "leaf_front",
+          0.149,
+          "crown-leaf_front"
+        ],
+        [
+          "leaf_front",
+          0.149,
+          "leaf_upwind-leaf_front"
+        ],
+        [
+          "leaf_front",
+          0.17,
+          "crown-leaf_front"
+        ],
+        [
+          "leaf_front",
+          0.17,
+          "leaf_upwind-leaf_front"
+        ],
+        [
+          "leaf_upwind",
+          -0.17,
+          "leaf_upwind-leaf_back"
+        ],
+        [
+          "leaf_upwind",
+          -0.17,
+          "leaf_upwind-leaf_front"
+        ],
+        [
+          "leaf_upwind",
+          -0.149,
+          "leaf_upwind-leaf_back"
+        ],
+        [
+          "leaf_upwind",
+          -0.149,
+          "leaf_upwind-leaf_front"
+        ],
+        [
+          "leaf_upwind",
+          -0.128,
+          "leaf_upwind-leaf_back"
+        ],
+        [
+          "leaf_upwind",
+          -0.128,
+          "leaf_upwind-leaf_front"
+        ],
+        [
+          "leaf_upwind",
+          -0.106,
+          "leaf_upwind-leaf_back"
+        ],
+        [
+          "leaf_upwind",
+          -0.106,
+          "leaf_upwind-leaf_front"
+        ],
+        [
+          "leaf_upwind",
+          -0.085,
+          "leaf_upwind-leaf_back"
+        ],
+        [
+          "leaf_upwind",
+          -0.085,
+          "leaf_upwind-leaf_front"
+        ],
+        [
+          "leaf_upwind",
+          -0.064,
+          "leaf_upwind-leaf_back"
+        ],
+        [
+          "leaf_upwind",
+          -0.064,
+          "leaf_upwind-leaf_front"
+        ],
+        [
+          "leaf_upwind",
+          -0.043,
+          "leaf_upwind-leaf_back"
+        ],
+        [
+          "leaf_upwind",
+          -0.043,
+          "leaf_upwind-leaf_front"
+        ],
+        [
+          "leaf_upwind",
+          0.043,
+          "leaf_upwind-leaf_back"
+        ],
+        [
+          "leaf_upwind",
+          0.043,
+          "leaf_upwind-leaf_front"
+        ],
+        [
+          "leaf_upwind",
+          0.064,
+          "leaf_upwind-leaf_back"
+        ],
+        [
+          "leaf_upwind",
+          0.064,
+          "leaf_upwind-leaf_front"
+        ],
+        [
+          "leaf_upwind",
+          0.085,
+          "leaf_upwind-leaf_back"
+        ],
+        [
+          "leaf_upwind",
+          0.085,
+          "leaf_upwind-leaf_front"
+        ],
+        [
+          "leaf_upwind",
+          0.106,
+          "leaf_upwind-leaf_back"
+        ],
+        [
+          "leaf_upwind",
+          0.106,
+          "leaf_upwind-leaf_front"
+        ],
+        [
+          "leaf_upwind",
+          0.128,
+          "leaf_upwind-leaf_back"
+        ],
+        [
+          "leaf_upwind",
+          0.128,
+          "leaf_upwind-leaf_front"
+        ],
+        [
+          "leaf_upwind",
+          0.149,
+          "leaf_upwind-leaf_back"
+        ],
+        [
+          "leaf_upwind",
+          0.149,
+          "leaf_upwind-leaf_front"
+        ],
+        [
+          "leaf_upwind",
+          0.17,
+          "leaf_upwind-leaf_back"
+        ],
+        [
+          "leaf_upwind",
+          0.17,
+          "leaf_upwind-leaf_front"
+        ]
+      ],
+      "clip_poses_clear": false,
+      "clip_poses_without_deep_crossings": false,
+      "clips_with_crossings": {
+        "P01_palm_tree.breeze": [
+          "crown-leaf_front",
+          "leaf_back-crown",
+          "leaf_back-leaf_downwind",
+          "leaf_downwind-crown",
+          "leaf_upwind-leaf_back"
+        ],
+        "P01_palm_tree.gusty": [
+          "crown-leaf_front",
+          "leaf_back-crown",
+          "leaf_back-leaf_downwind",
+          "leaf_downwind-crown",
+          "leaf_downwind-leaf_front",
+          "leaf_upwind-leaf_back",
+          "leaf_upwind-leaf_front",
+          "seg1-seg2",
+          "seg3-seg4",
+          "seg4-seg5"
+        ],
+        "P01_palm_tree.storm": [
+          "crown-leaf_front",
+          "leaf_back-crown",
+          "leaf_back-leaf_downwind",
+          "leaf_downwind-crown",
+          "leaf_downwind-leaf_front",
+          "leaf_upwind-leaf_back",
+          "leaf_upwind-leaf_front",
+          "seg1-seg2",
+          "seg2-seg3",
+          "seg3-seg4",
+          "seg4-seg5"
+        ]
+      },
+      "vertex_penetration": {
+        "P01_palm_tree.breeze": {
+          "crown-leaf_front": {
+            "max_vertex_depth_ldu": 0.008,
+            "kind": "contact"
+          },
+          "leaf_back-crown": {
+            "max_vertex_depth_ldu": 0.013,
+            "kind": "contact"
+          },
+          "leaf_back-leaf_downwind": {
+            "max_vertex_depth_ldu": 0.521,
+            "kind": "shallow"
+          },
+          "leaf_downwind-crown": {
+            "max_vertex_depth_ldu": 0.248,
+            "kind": "contact"
+          },
+          "leaf_upwind-leaf_back": {
+            "max_vertex_depth_ldu": 0.553,
+            "kind": "shallow"
+          }
+        },
+        "P01_palm_tree.gusty": {
+          "crown-leaf_front": {
+            "max_vertex_depth_ldu": 0.545,
+            "kind": "shallow"
+          },
+          "leaf_back-crown": {
+            "max_vertex_depth_ldu": 0.479,
+            "kind": "contact"
+          },
+          "leaf_back-leaf_downwind": {
+            "max_vertex_depth_ldu": 1.032,
+            "kind": "shallow"
+          },
+          "leaf_downwind-crown": {
+            "max_vertex_depth_ldu": 0.873,
+            "kind": "shallow"
+          },
+          "leaf_downwind-leaf_front": {
+            "max_vertex_depth_ldu": 0.827,
+            "kind": "shallow"
+          },
+          "leaf_upwind-leaf_back": {
+            "max_vertex_depth_ldu": 1.025,
+            "kind": "shallow"
+          },
+          "leaf_upwind-leaf_front": {
+            "max_vertex_depth_ldu": 0.978,
+            "kind": "shallow"
+          },
+          "seg1-seg2": {
+            "max_vertex_depth_ldu": 0.475,
+            "kind": "contact"
+          },
+          "seg3-seg4": {
+            "max_vertex_depth_ldu": 0.493,
+            "kind": "contact"
+          },
+          "seg4-seg5": {
+            "max_vertex_depth_ldu": 0.513,
+            "kind": "shallow"
+          }
+        },
+        "P01_palm_tree.storm": {
+          "crown-leaf_front": {
+            "max_vertex_depth_ldu": 0.672,
+            "kind": "shallow"
+          },
+          "leaf_back-crown": {
+            "max_vertex_depth_ldu": 0.558,
+            "kind": "shallow"
+          },
+          "leaf_back-leaf_downwind": {
+            "max_vertex_depth_ldu": 1.044,
+            "kind": "shallow"
+          },
+          "leaf_downwind-crown": {
+            "max_vertex_depth_ldu": 1.064,
+            "kind": "shallow"
+          },
+          "leaf_downwind-leaf_front": {
+            "max_vertex_depth_ldu": 1.003,
+            "kind": "shallow"
+          },
+          "leaf_upwind-leaf_back": {
+            "max_vertex_depth_ldu": 1.023,
+            "kind": "shallow"
+          },
+          "leaf_upwind-leaf_front": {
+            "max_vertex_depth_ldu": 1.004,
+            "kind": "shallow"
+          },
+          "seg1-seg2": {
+            "max_vertex_depth_ldu": 0.635,
+            "kind": "shallow"
+          },
+          "seg2-seg3": {
+            "max_vertex_depth_ldu": 0.506,
+            "kind": "shallow"
+          },
+          "seg3-seg4": {
+            "max_vertex_depth_ldu": 0.677,
+            "kind": "shallow"
+          },
+          "seg4-seg5": {
+            "max_vertex_depth_ldu": 0.734,
+            "kind": "shallow"
+          }
+        }
+      },
+      "worst_vertex_depth_ldu": 1.064,
+      "worst_kind": "shallow",
+      "clips_with_deep_shrink_crossings": {
+        "P01_palm_tree.breeze": [
+          "crown-leaf_front",
+          "leaf_back-crown",
+          "leaf_downwind-crown"
+        ],
+        "P01_palm_tree.gusty": [
+          "crown-leaf_front",
+          "leaf_back-crown",
+          "leaf_back-leaf_downwind",
+          "leaf_downwind-crown",
+          "leaf_downwind-leaf_front",
+          "leaf_upwind-leaf_back",
+          "leaf_upwind-leaf_front"
+        ],
+        "P01_palm_tree.storm": [
+          "crown-leaf_front",
+          "leaf_back-crown",
+          "leaf_back-leaf_downwind",
+          "leaf_downwind-crown",
+          "leaf_downwind-leaf_front",
+          "leaf_upwind-leaf_back",
+          "leaf_upwind-leaf_front"
+        ]
+      },
+      "excluded_rest_pairs": [
+        "palm_base-seg1",
+        "leaf_upwind-crown",
+        "leaf_back-crown_plate",
+        "crown_plate-leaf_front",
+        "seg5-seg6"
+      ]
+    },
+    "P02_swordleaf_palm": {
+      "sweep_clear": true,
+      "sweep_crossings": [],
+      "clip_poses_clear": true,
+      "clip_poses_without_deep_crossings": true,
+      "clips_with_crossings": {},
+      "vertex_penetration": {},
+      "worst_vertex_depth_ldu": 0.0,
+      "worst_kind": "clear",
+      "clips_with_deep_shrink_crossings": {},
+      "excluded_rest_pairs": []
+    },
+    "P03_bamboo": {
+      "sweep_clear": true,
+      "sweep_crossings": [],
+      "clip_poses_clear": true,
+      "clip_poses_without_deep_crossings": true,
+      "clips_with_crossings": {},
+      "vertex_penetration": {},
+      "worst_vertex_depth_ldu": 0.0,
+      "worst_kind": "clear",
+      "clips_with_deep_shrink_crossings": {},
+      "excluded_rest_pairs": [
+        "cane1_22484_5-socket1",
+        "cane2_22484_4-socket2",
+        "cane3_22484_4-socket3",
+        "cane4_22484_3-socket4"
+      ]
+    },
+    "P04_flower_bed": {
+      "sweep_clear": true,
+      "sweep_crossings": [],
+      "clip_poses_clear": true,
+      "clip_poses_without_deep_crossings": true,
+      "clips_with_crossings": {},
+      "vertex_penetration": {},
+      "worst_vertex_depth_ldu": 0.0,
+      "worst_kind": "clear",
+      "clips_with_deep_shrink_crossings": {},
+      "excluded_rest_pairs": [
+        "pot1-stem1",
+        "pot3-stem3",
+        "pot2-stem2"
+      ]
+    },
+    "P05_sunflower": {
+      "sweep_clear": false,
+      "sweep_crossings": [
+        [
+          "stem_lean",
+          -0.12,
+          "base-stem0"
+        ],
+        [
+          "stem_lean",
+          -0.105,
+          "base-stem0"
+        ],
+        [
+          "stem_lean",
+          -0.09,
+          "base-stem0"
+        ],
+        [
+          "stem_lean",
+          -0.075,
+          "base-stem0"
+        ],
+        [
+          "stem_lean",
+          -0.06,
+          "base-stem0"
+        ],
+        [
+          "stem_lean",
+          0.06,
+          "base-stem0"
+        ],
+        [
+          "stem_lean",
+          0.075,
+          "base-stem0"
+        ],
+        [
+          "stem_lean",
+          0.09,
+          "base-stem0"
+        ],
+        [
+          "stem_lean",
+          0.105,
+          "base-stem0"
+        ],
+        [
+          "stem_lean",
+          0.12,
+          "base-stem0"
+        ]
+      ],
+      "clip_poses_clear": false,
+      "clip_poses_without_deep_crossings": true,
+      "clips_with_crossings": {
+        "P05_sunflower.gusty": [
+          "base-stem0"
+        ],
+        "P05_sunflower.storm": [
+          "base-stem0"
+        ]
+      },
+      "vertex_penetration": {
+        "P05_sunflower.gusty": {
+          "base-stem0": {
+            "max_vertex_depth_ldu": 0.721,
+            "kind": "shallow"
+          }
+        },
+        "P05_sunflower.storm": {
+          "base-stem0": {
+            "max_vertex_depth_ldu": 0.916,
+            "kind": "shallow"
+          }
+        }
+      },
+      "worst_vertex_depth_ldu": 0.916,
+      "worst_kind": "shallow",
+      "clips_with_deep_shrink_crossings": {},
+      "excluded_rest_pairs": [
+        "pivot-head"
+      ]
+    },
+    "P06_pinwheel_daisies": {
+      "sweep_clear": true,
+      "sweep_crossings": [],
+      "clip_poses_clear": true,
+      "clip_poses_without_deep_crossings": true,
+      "clips_with_crossings": {},
+      "vertex_penetration": {},
+      "worst_vertex_depth_ldu": 0.0,
+      "worst_kind": "clear",
+      "clips_with_deep_shrink_crossings": {},
+      "excluded_rest_pairs": [
+        "arm3-daisy3",
+        "arm1-daisy1",
+        "arm2-daisy2"
+      ]
+    },
+    "P07_grass_meadow": {
+      "sweep_clear": false,
+      "sweep_crossings": [
+        [
+          "blade_1",
+          -0.17,
+          "base-blade1"
+        ],
+        [
+          "blade_1",
+          -0.149,
+          "base-blade1"
+        ],
+        [
+          "blade_1",
+          -0.128,
+          "base-blade1"
+        ],
+        [
+          "blade_1",
+          -0.106,
+          "base-blade1"
+        ],
+        [
+          "blade_1",
+          -0.085,
+          "base-blade1"
+        ],
+        [
+          "blade_1",
+          -0.064,
+          "base-blade1"
+        ],
+        [
+          "blade_1",
+          0.064,
+          "base-blade1"
+        ],
+        [
+          "blade_1",
+          0.085,
+          "base-blade1"
+        ],
+        [
+          "blade_1",
+          0.106,
+          "base-blade1"
+        ],
+        [
+          "blade_1",
+          0.128,
+          "base-blade1"
+        ],
+        [
+          "blade_1",
+          0.149,
+          "base-blade1"
+        ],
+        [
+          "blade_1",
+          0.17,
+          "base-blade1"
+        ],
+        [
+          "blade_10",
+          -0.17,
+          "base-blade10"
+        ],
+        [
+          "blade_10",
+          -0.149,
+          "base-blade10"
+        ],
+        [
+          "blade_10",
+          -0.128,
+          "base-blade10"
+        ],
+        [
+          "blade_10",
+          -0.106,
+          "base-blade10"
+        ],
+        [
+          "blade_10",
+          -0.085,
+          "base-blade10"
+        ],
+        [
+          "blade_10",
+          -0.064,
+          "base-blade10"
+        ],
+        [
+          "blade_10",
+          0.064,
+          "base-blade10"
+        ],
+        [
+          "blade_10",
+          0.085,
+          "base-blade10"
+        ],
+        [
+          "blade_10",
+          0.106,
+          "base-blade10"
+        ],
+        [
+          "blade_10",
+          0.128,
+          "base-blade10"
+        ],
+        [
+          "blade_10",
+          0.149,
+          "base-blade10"
+        ],
+        [
+          "blade_10",
+          0.17,
+          "base-blade10"
+        ],
+        [
+          "blade_2",
+          -0.17,
+          "base-blade2"
+        ],
+        [
+          "blade_2",
+          -0.149,
+          "base-blade2"
+        ],
+        [
+          "blade_2",
+          -0.128,
+          "base-blade2"
+        ],
+        [
+          "blade_2",
+          -0.106,
+          "base-blade2"
+        ],
+        [
+          "blade_2",
+          -0.085,
+          "base-blade2"
+        ],
+        [
+          "blade_2",
+          -0.064,
+          "base-blade2"
+        ],
+        [
+          "blade_2",
+          0.064,
+          "base-blade2"
+        ],
+        [
+          "blade_2",
+          0.085,
+          "base-blade2"
+        ],
+        [
+          "blade_2",
+          0.106,
+          "base-blade2"
+        ],
+        [
+          "blade_2",
+          0.128,
+          "base-blade2"
+        ],
+        [
+          "blade_2",
+          0.149,
+          "base-blade2"
+        ],
+        [
+          "blade_2",
+          0.17,
+          "base-blade2"
+        ],
+        [
+          "blade_3",
+          -0.17,
+          "base-blade3"
+        ],
+        [
+          "blade_3",
+          -0.149,
+          "base-blade3"
+        ],
+        [
+          "blade_3",
+          -0.128,
+          "base-blade3"
+        ],
+        [
+          "blade_3",
+          -0.106,
+          "base-blade3"
+        ],
+        [
+          "blade_3",
+          -0.085,
+          "base-blade3"
+        ],
+        [
+          "blade_3",
+          -0.064,
+          "base-blade3"
+        ],
+        [
+          "blade_3",
+          0.064,
+          "base-blade3"
+        ],
+        [
+          "blade_3",
+          0.085,
+          "base-blade3"
+        ],
+        [
+          "blade_3",
+          0.106,
+          "base-blade3"
+        ],
+        [
+          "blade_3",
+          0.128,
+          "base-blade3"
+        ],
+        [
+          "blade_3",
+          0.149,
+          "base-blade3"
+        ],
+        [
+          "blade_3",
+          0.17,
+          "base-blade3"
+        ],
+        [
+          "blade_4",
+          -0.17,
+          "base-blade4"
+        ],
+        [
+          "blade_4",
+          -0.149,
+          "base-blade4"
+        ],
+        [
+          "blade_4",
+          -0.128,
+          "base-blade4"
+        ],
+        [
+          "blade_4",
+          -0.106,
+          "base-blade4"
+        ],
+        [
+          "blade_4",
+          -0.085,
+          "base-blade4"
+        ],
+        [
+          "blade_4",
+          -0.064,
+          "base-blade4"
+        ],
+        [
+          "blade_4",
+          0.064,
+          "base-blade4"
+        ],
+        [
+          "blade_4",
+          0.085,
+          "base-blade4"
+        ],
+        [
+          "blade_4",
+          0.106,
+          "base-blade4"
+        ],
+        [
+          "blade_4",
+          0.128,
+          "base-blade4"
+        ],
+        [
+          "blade_4",
+          0.149,
+          "base-blade4"
+        ],
+        [
+          "blade_4",
+          0.17,
+          "base-blade4"
+        ],
+        [
+          "blade_5",
+          -0.17,
+          "base-blade5"
+        ],
+        [
+          "blade_5",
+          -0.149,
+          "base-blade5"
+        ],
+        [
+          "blade_5",
+          -0.128,
+          "base-blade5"
+        ],
+        [
+          "blade_5",
+          -0.106,
+          "base-blade5"
+        ],
+        [
+          "blade_5",
+          -0.085,
+          "base-blade5"
+        ],
+        [
+          "blade_5",
+          -0.064,
+          "base-blade5"
+        ],
+        [
+          "blade_5",
+          0.064,
+          "base-blade5"
+        ],
+        [
+          "blade_5",
+          0.085,
+          "base-blade5"
+        ],
+        [
+          "blade_5",
+          0.106,
+          "base-blade5"
+        ],
+        [
+          "blade_5",
+          0.128,
+          "base-blade5"
+        ],
+        [
+          "blade_5",
+          0.149,
+          "base-blade5"
+        ],
+        [
+          "blade_5",
+          0.17,
+          "base-blade5"
+        ],
+        [
+          "blade_6",
+          -0.17,
+          "base-blade6"
+        ],
+        [
+          "blade_6",
+          -0.149,
+          "base-blade6"
+        ],
+        [
+          "blade_6",
+          -0.128,
+          "base-blade6"
+        ],
+        [
+          "blade_6",
+          -0.106,
+          "base-blade6"
+        ],
+        [
+          "blade_6",
+          -0.085,
+          "base-blade6"
+        ],
+        [
+          "blade_6",
+          -0.064,
+          "base-blade6"
+        ],
+        [
+          "blade_6",
+          0.064,
+          "base-blade6"
+        ],
+        [
+          "blade_6",
+          0.085,
+          "base-blade6"
+        ],
+        [
+          "blade_6",
+          0.106,
+          "base-blade6"
+        ],
+        [
+          "blade_6",
+          0.128,
+          "base-blade6"
+        ],
+        [
+          "blade_6",
+          0.149,
+          "base-blade6"
+        ],
+        [
+          "blade_6",
+          0.17,
+          "base-blade6"
+        ],
+        [
+          "blade_7",
+          -0.17,
+          "base-blade7"
+        ],
+        [
+          "blade_7",
+          -0.149,
+          "base-blade7"
+        ],
+        [
+          "blade_7",
+          -0.128,
+          "base-blade7"
+        ],
+        [
+          "blade_7",
+          -0.106,
+          "base-blade7"
+        ],
+        [
+          "blade_7",
+          -0.085,
+          "base-blade7"
+        ],
+        [
+          "blade_7",
+          -0.064,
+          "base-blade7"
+        ],
+        [
+          "blade_7",
+          0.064,
+          "base-blade7"
+        ],
+        [
+          "blade_7",
+          0.085,
+          "base-blade7"
+        ],
+        [
+          "blade_7",
+          0.106,
+          "base-blade7"
+        ],
+        [
+          "blade_7",
+          0.128,
+          "base-blade7"
+        ],
+        [
+          "blade_7",
+          0.149,
+          "base-blade7"
+        ],
+        [
+          "blade_7",
+          0.17,
+          "base-blade7"
+        ],
+        [
+          "blade_8",
+          -0.17,
+          "base-blade8"
+        ],
+        [
+          "blade_8",
+          -0.149,
+          "base-blade8"
+        ],
+        [
+          "blade_8",
+          -0.128,
+          "base-blade8"
+        ],
+        [
+          "blade_8",
+          -0.106,
+          "base-blade8"
+        ],
+        [
+          "blade_8",
+          -0.085,
+          "base-blade8"
+        ],
+        [
+          "blade_8",
+          -0.064,
+          "base-blade8"
+        ],
+        [
+          "blade_8",
+          0.064,
+          "base-blade8"
+        ],
+        [
+          "blade_8",
+          0.085,
+          "base-blade8"
+        ],
+        [
+          "blade_8",
+          0.106,
+          "base-blade8"
+        ],
+        [
+          "blade_8",
+          0.128,
+          "base-blade8"
+        ],
+        [
+          "blade_8",
+          0.149,
+          "base-blade8"
+        ],
+        [
+          "blade_8",
+          0.17,
+          "base-blade8"
+        ],
+        [
+          "blade_9",
+          -0.17,
+          "base-blade9"
+        ],
+        [
+          "blade_9",
+          -0.149,
+          "base-blade9"
+        ],
+        [
+          "blade_9",
+          -0.128,
+          "base-blade9"
+        ],
+        [
+          "blade_9",
+          -0.106,
+          "base-blade9"
+        ],
+        [
+          "blade_9",
+          -0.085,
+          "base-blade9"
+        ],
+        [
+          "blade_9",
+          -0.064,
+          "base-blade9"
+        ],
+        [
+          "blade_9",
+          0.064,
+          "base-blade9"
+        ],
+        [
+          "blade_9",
+          0.085,
+          "base-blade9"
+        ],
+        [
+          "blade_9",
+          0.106,
+          "base-blade9"
+        ],
+        [
+          "blade_9",
+          0.128,
+          "base-blade9"
+        ],
+        [
+          "blade_9",
+          0.149,
+          "base-blade9"
+        ],
+        [
+          "blade_9",
+          0.17,
+          "base-blade9"
+        ]
+      ],
+      "clip_poses_clear": false,
+      "clip_poses_without_deep_crossings": false,
+      "clips_with_crossings": {
+        "P07_grass_meadow.breeze": [
+          "base-blade1",
+          "base-blade10",
+          "base-blade2",
+          "base-blade3",
+          "base-blade4",
+          "base-blade5",
+          "base-blade6",
+          "base-blade7",
+          "base-blade8",
+          "base-blade9"
+        ],
+        "P07_grass_meadow.gusty": [
+          "base-blade1",
+          "base-blade10",
+          "base-blade2",
+          "base-blade3",
+          "base-blade4",
+          "base-blade5",
+          "base-blade6",
+          "base-blade7",
+          "base-blade8",
+          "base-blade9"
+        ],
+        "P07_grass_meadow.storm": [
+          "base-blade1",
+          "base-blade10",
+          "base-blade2",
+          "base-blade3",
+          "base-blade4",
+          "base-blade5",
+          "base-blade6",
+          "base-blade7",
+          "base-blade8",
+          "base-blade9"
+        ]
+      },
+      "vertex_penetration": {
+        "P07_grass_meadow.breeze": {
+          "base-blade1": {
+            "max_vertex_depth_ldu": 0.513,
+            "kind": "shallow"
+          },
+          "base-blade10": {
+            "max_vertex_depth_ldu": 0.514,
+            "kind": "shallow"
+          },
+          "base-blade2": {
+            "max_vertex_depth_ldu": 0.517,
+            "kind": "shallow"
+          },
+          "base-blade3": {
+            "max_vertex_depth_ldu": 0.521,
+            "kind": "shallow"
+          },
+          "base-blade4": {
+            "max_vertex_depth_ldu": 0.517,
+            "kind": "shallow"
+          },
+          "base-blade5": {
+            "max_vertex_depth_ldu": 0.532,
+            "kind": "shallow"
+          },
+          "base-blade6": {
+            "max_vertex_depth_ldu": 0.533,
+            "kind": "shallow"
+          },
+          "base-blade7": {
+            "max_vertex_depth_ldu": 0.522,
+            "kind": "shallow"
+          },
+          "base-blade8": {
+            "max_vertex_depth_ldu": 0.528,
+            "kind": "shallow"
+          },
+          "base-blade9": {
+            "max_vertex_depth_ldu": 0.525,
+            "kind": "shallow"
+          }
+        },
+        "P07_grass_meadow.gusty": {
+          "base-blade1": {
+            "max_vertex_depth_ldu": 1.091,
+            "kind": "shallow"
+          },
+          "base-blade10": {
+            "max_vertex_depth_ldu": 1.104,
+            "kind": "shallow"
+          },
+          "base-blade2": {
+            "max_vertex_depth_ldu": 1.098,
+            "kind": "shallow"
+          },
+          "base-blade3": {
+            "max_vertex_depth_ldu": 1.11,
+            "kind": "shallow"
+          },
+          "base-blade4": {
+            "max_vertex_depth_ldu": 1.086,
+            "kind": "shallow"
+          },
+          "base-blade5": {
+            "max_vertex_depth_ldu": 1.126,
+            "kind": "shallow"
+          },
+          "base-blade6": {
+            "max_vertex_depth_ldu": 1.132,
+            "kind": "shallow"
+          },
+          "base-blade7": {
+            "max_vertex_depth_ldu": 1.115,
+            "kind": "shallow"
+          },
+          "base-blade8": {
+            "max_vertex_depth_ldu": 1.133,
+            "kind": "shallow"
+          },
+          "base-blade9": {
+            "max_vertex_depth_ldu": 1.132,
+            "kind": "shallow"
+          }
+        },
+        "P07_grass_meadow.storm": {
+          "base-blade1": {
+            "max_vertex_depth_ldu": 1.301,
+            "kind": "shallow"
+          },
+          "base-blade10": {
+            "max_vertex_depth_ldu": 1.3,
+            "kind": "shallow"
+          },
+          "base-blade2": {
+            "max_vertex_depth_ldu": 1.308,
+            "kind": "shallow"
+          },
+          "base-blade3": {
+            "max_vertex_depth_ldu": 1.317,
+            "kind": "shallow"
+          },
+          "base-blade4": {
+            "max_vertex_depth_ldu": 1.298,
+            "kind": "shallow"
+          },
+          "base-blade5": {
+            "max_vertex_depth_ldu": 1.318,
+            "kind": "shallow"
+          },
+          "base-blade6": {
+            "max_vertex_depth_ldu": 1.321,
+            "kind": "shallow"
+          },
+          "base-blade7": {
+            "max_vertex_depth_ldu": 1.298,
+            "kind": "shallow"
+          },
+          "base-blade8": {
+            "max_vertex_depth_ldu": 1.32,
+            "kind": "shallow"
+          },
+          "base-blade9": {
+            "max_vertex_depth_ldu": 1.318,
+            "kind": "shallow"
+          }
+        }
+      },
+      "worst_vertex_depth_ldu": 1.321,
+      "worst_kind": "shallow",
+      "clips_with_deep_shrink_crossings": {
+        "P07_grass_meadow.storm": [
+          "base-blade1",
+          "base-blade10",
+          "base-blade2",
+          "base-blade3",
+          "base-blade4",
+          "base-blade5",
+          "base-blade6",
+          "base-blade7",
+          "base-blade8",
+          "base-blade9"
+        ]
+      },
+      "excluded_rest_pairs": []
+    },
+    "P08_reeds": {
+      "sweep_clear": true,
+      "sweep_crossings": [],
+      "clip_poses_clear": true,
+      "clip_poses_without_deep_crossings": true,
+      "clips_with_crossings": {},
+      "vertex_penetration": {},
+      "worst_vertex_depth_ldu": 0.0,
+      "worst_kind": "clear",
+      "clips_with_deep_shrink_crossings": {},
+      "excluded_rest_pairs": [
+        "clump1-stalk1",
+        "clump2-stalk2"
+      ]
+    },
+    "P09_hanging_vine": {
+      "sweep_clear": false,
+      "sweep_crossings": [
+        [
+          "bend_1",
+          -0.17,
+          "vine_stem0-vine_stem1"
+        ],
+        [
+          "bend_1",
+          -0.149,
+          "vine_stem0-vine_stem1"
+        ],
+        [
+          "bend_1",
+          -0.128,
+          "vine_stem0-vine_stem1"
+        ],
+        [
+          "bend_1",
+          -0.106,
+          "vine_stem0-vine_stem1"
+        ],
+        [
+          "bend_1",
+          -0.085,
+          "vine_stem0-vine_stem1"
+        ],
+        [
+          "bend_1",
+          -0.064,
+          "vine_stem0-vine_stem1"
+        ],
+        [
+          "bend_1",
+          -0.043,
+          "vine_stem0-vine_stem1"
+        ],
+        [
+          "bend_1",
+          -0.021,
+          "vine_stem0-vine_stem1"
+        ],
+        [
+          "bend_1",
+          0.021,
+          "vine_stem0-vine_stem1"
+        ],
+        [
+          "bend_1",
+          0.043,
+          "vine_stem0-vine_stem1"
+        ],
+        [
+          "bend_1",
+          0.064,
+          "vine_stem0-vine_stem1"
+        ],
+        [
+          "bend_1",
+          0.085,
+          "vine_stem0-vine_stem1"
+        ],
+        [
+          "bend_1",
+          0.106,
+          "vine_stem0-vine_stem1"
+        ],
+        [
+          "bend_1",
+          0.128,
+          "vine_stem0-vine_stem1"
+        ],
+        [
+          "bend_1",
+          0.149,
+          "vine_stem0-vine_stem1"
+        ],
+        [
+          "bend_1",
+          0.17,
+          "vine_stem0-vine_stem1"
+        ],
+        [
+          "bend_2",
+          -0.17,
+          "vine_stem1-vine_stem2"
+        ],
+        [
+          "bend_2",
+          -0.149,
+          "vine_stem1-vine_stem2"
+        ],
+        [
+          "bend_2",
+          -0.128,
+          "vine_stem1-vine_stem2"
+        ],
+        [
+          "bend_2",
+          -0.106,
+          "vine_stem1-vine_stem2"
+        ],
+        [
+          "bend_2",
+          -0.085,
+          "vine_stem1-vine_stem2"
+        ],
+        [
+          "bend_2",
+          -0.064,
+          "vine_stem1-vine_stem2"
+        ],
+        [
+          "bend_2",
+          -0.043,
+          "vine_stem1-vine_stem2"
+        ],
+        [
+          "bend_2",
+          -0.021,
+          "vine_stem1-vine_stem2"
+        ],
+        [
+          "bend_2",
+          0.021,
+          "vine_stem1-vine_stem2"
+        ],
+        [
+          "bend_2",
+          0.043,
+          "vine_stem1-vine_stem2"
+        ],
+        [
+          "bend_2",
+          0.064,
+          "vine_stem1-vine_stem2"
+        ],
+        [
+          "bend_2",
+          0.085,
+          "vine_stem1-vine_stem2"
+        ],
+        [
+          "bend_2",
+          0.106,
+          "vine_stem1-vine_stem2"
+        ],
+        [
+          "bend_2",
+          0.128,
+          "vine_stem1-vine_stem2"
+        ],
+        [
+          "bend_2",
+          0.149,
+          "vine_stem1-vine_stem2"
+        ],
+        [
+          "bend_2",
+          0.17,
+          "vine_stem1-vine_stem2"
+        ],
+        [
+          "bend_3",
+          -0.17,
+          "vine_stem2-vine_stem3"
+        ],
+        [
+          "bend_3",
+          -0.149,
+          "vine_stem2-vine_stem3"
+        ],
+        [
+          "bend_3",
+          -0.128,
+          "vine_stem2-vine_stem3"
+        ],
+        [
+          "bend_3",
+          -0.106,
+          "vine_stem2-vine_stem3"
+        ],
+        [
+          "bend_3",
+          -0.085,
+          "vine_stem2-vine_stem3"
+        ],
+        [
+          "bend_3",
+          -0.064,
+          "vine_stem2-vine_stem3"
+        ],
+        [
+          "bend_3",
+          -0.043,
+          "vine_stem2-vine_stem3"
+        ],
+        [
+          "bend_3",
+          -0.021,
+          "vine_stem2-vine_stem3"
+        ],
+        [
+          "bend_3",
+          0.021,
+          "vine_stem2-vine_stem3"
+        ],
+        [
+          "bend_3",
+          0.043,
+          "vine_stem2-vine_stem3"
+        ],
+        [
+          "bend_3",
+          0.064,
+          "vine_stem2-vine_stem3"
+        ],
+        [
+          "bend_3",
+          0.085,
+          "vine_stem2-vine_stem3"
+        ],
+        [
+          "bend_3",
+          0.106,
+          "vine_stem2-vine_stem3"
+        ],
+        [
+          "bend_3",
+          0.128,
+          "vine_stem2-vine_stem3"
+        ],
+        [
+          "bend_3",
+          0.149,
+          "vine_stem2-vine_stem3"
+        ],
+        [
+          "bend_3",
+          0.17,
+          "vine_stem2-vine_stem3"
+        ],
+        [
+          "bend_4",
+          -0.17,
+          "vine_stem3-vine_stem4"
+        ],
+        [
+          "bend_4",
+          -0.149,
+          "vine_stem3-vine_stem4"
+        ],
+        [
+          "bend_4",
+          -0.128,
+          "vine_stem3-vine_stem4"
+        ],
+        [
+          "bend_4",
+          -0.106,
+          "vine_stem3-vine_stem4"
+        ],
+        [
+          "bend_4",
+          -0.085,
+          "vine_stem3-vine_stem4"
+        ],
+        [
+          "bend_4",
+          -0.064,
+          "vine_stem3-vine_stem4"
+        ],
+        [
+          "bend_4",
+          -0.043,
+          "vine_stem3-vine_stem4"
+        ],
+        [
+          "bend_4",
+          -0.021,
+          "vine_stem3-vine_stem4"
+        ],
+        [
+          "bend_4",
+          0.021,
+          "vine_stem3-vine_stem4"
+        ],
+        [
+          "bend_4",
+          0.043,
+          "vine_stem3-vine_stem4"
+        ],
+        [
+          "bend_4",
+          0.064,
+          "vine_stem3-vine_stem4"
+        ],
+        [
+          "bend_4",
+          0.085,
+          "vine_stem3-vine_stem4"
+        ],
+        [
+          "bend_4",
+          0.106,
+          "vine_stem3-vine_stem4"
+        ],
+        [
+          "bend_4",
+          0.128,
+          "vine_stem3-vine_stem4"
+        ],
+        [
+          "bend_4",
+          0.149,
+          "vine_stem3-vine_stem4"
+        ],
+        [
+          "bend_4",
+          0.17,
+          "vine_stem3-vine_stem4"
+        ]
+      ],
+      "clip_poses_clear": false,
+      "clip_poses_without_deep_crossings": false,
+      "clips_with_crossings": {
+        "P09_hanging_vine.breeze": [
+          "vine_stem0-vine_stem1",
+          "vine_stem1-vine_stem2",
+          "vine_stem2-vine_stem3",
+          "vine_stem3-vine_stem4"
+        ],
+        "P09_hanging_vine.gusty": [
+          "vine_stem0-vine_stem1",
+          "vine_stem1-vine_stem2",
+          "vine_stem2-vine_stem3",
+          "vine_stem3-vine_stem4"
+        ],
+        "P09_hanging_vine.storm": [
+          "vine_stem0-vine_stem1",
+          "vine_stem1-vine_stem2",
+          "vine_stem2-vine_stem3",
+          "vine_stem3-vine_stem4"
+        ]
+      },
+      "vertex_penetration": {
+        "P09_hanging_vine.breeze": {
+          "vine_stem0-vine_stem1": {
+            "max_vertex_depth_ldu": 0.003,
+            "kind": "contact"
+          },
+          "vine_stem1-vine_stem2": {
+            "max_vertex_depth_ldu": 0.071,
+            "kind": "contact"
+          },
+          "vine_stem2-vine_stem3": {
+            "max_vertex_depth_ldu": 0.083,
+            "kind": "contact"
+          },
+          "vine_stem3-vine_stem4": {
+            "max_vertex_depth_ldu": 0.095,
+            "kind": "contact"
+          }
+        },
+        "P09_hanging_vine.gusty": {
+          "vine_stem0-vine_stem1": {
+            "max_vertex_depth_ldu": 0.027,
+            "kind": "contact"
+          },
+          "vine_stem1-vine_stem2": {
+            "max_vertex_depth_ldu": 0.344,
+            "kind": "contact"
+          },
+          "vine_stem2-vine_stem3": {
+            "max_vertex_depth_ldu": 0.484,
+            "kind": "contact"
+          },
+          "vine_stem3-vine_stem4": {
+            "max_vertex_depth_ldu": 0.517,
+            "kind": "shallow"
+          }
+        },
+        "P09_hanging_vine.storm": {
+          "vine_stem0-vine_stem1": {
+            "max_vertex_depth_ldu": 0.05,
+            "kind": "contact"
+          },
+          "vine_stem1-vine_stem2": {
+            "max_vertex_depth_ldu": 0.599,
+            "kind": "shallow"
+          },
+          "vine_stem2-vine_stem3": {
+            "max_vertex_depth_ldu": 0.662,
+            "kind": "shallow"
+          },
+          "vine_stem3-vine_stem4": {
+            "max_vertex_depth_ldu": 0.668,
+            "kind": "shallow"
+          }
+        }
+      },
+      "worst_vertex_depth_ldu": 0.668,
+      "worst_kind": "shallow",
+      "clips_with_deep_shrink_crossings": {
+        "P09_hanging_vine.breeze": [
+          "vine_stem0-vine_stem1",
+          "vine_stem1-vine_stem2",
+          "vine_stem2-vine_stem3",
+          "vine_stem3-vine_stem4"
+        ],
+        "P09_hanging_vine.gusty": [
+          "vine_stem0-vine_stem1",
+          "vine_stem1-vine_stem2",
+          "vine_stem2-vine_stem3",
+          "vine_stem3-vine_stem4"
+        ],
+        "P09_hanging_vine.storm": [
+          "vine_stem0-vine_stem1",
+          "vine_stem1-vine_stem2",
+          "vine_stem2-vine_stem3",
+          "vine_stem3-vine_stem4"
+        ]
+      },
+      "excluded_rest_pairs": []
+    },
+    "P10_rushes": {
+      "sweep_clear": true,
+      "sweep_crossings": [],
+      "clip_poses_clear": true,
+      "clip_poses_without_deep_crossings": true,
+      "clips_with_crossings": {},
+      "vertex_penetration": {},
+      "worst_vertex_depth_ldu": 0.0,
+      "worst_kind": "clear",
+      "clips_with_deep_shrink_crossings": {},
+      "excluded_rest_pairs": []
+    },
+    "P11_hinged_oak": {
+      "sweep_clear": true,
+      "sweep_crossings": [],
+      "clip_poses_clear": true,
+      "clip_poses_without_deep_crossings": true,
+      "clips_with_crossings": {},
+      "vertex_penetration": {},
+      "worst_vertex_depth_ldu": 0.0,
+      "worst_kind": "clear",
+      "clips_with_deep_shrink_crossings": {},
+      "excluded_rest_pairs": []
+    },
+    "P12_aspen": {
+      "sweep_clear": true,
+      "sweep_crossings": [],
+      "clip_poses_clear": true,
+      "clip_poses_without_deep_crossings": true,
+      "clips_with_crossings": {},
+      "vertex_penetration": {},
+      "worst_vertex_depth_ldu": 0.0,
+      "worst_kind": "clear",
+      "clips_with_deep_shrink_crossings": {},
+      "excluded_rest_pairs": []
+    },
+    "P13_fern": {
+      "sweep_clear": true,
+      "sweep_crossings": [],
+      "clip_poses_clear": true,
+      "clip_poses_without_deep_crossings": true,
+      "clips_with_crossings": {},
+      "vertex_penetration": {},
+      "worst_vertex_depth_ldu": 0.0,
+      "worst_kind": "clear",
+      "clips_with_deep_shrink_crossings": {},
+      "excluded_rest_pairs": [
+        "frond_back-hub_z_pos",
+        "frond_front-hub_z_neg",
+        "hub_x_pos-frond_downwind",
+        "hub_x_neg-frond_upwind"
+      ]
+    },
+    "P14_bouquet": {
+      "sweep_clear": false,
+      "sweep_crossings": [
+        [
+          "stem_a",
+          -0.14,
+          "vase_a_85861-stem_a"
+        ],
+        [
+          "stem_a",
+          -0.123,
+          "vase_a_85861-stem_a"
+        ],
+        [
+          "stem_a",
+          -0.105,
+          "vase_a_85861-stem_a"
+        ],
+        [
+          "stem_a",
+          -0.088,
+          "vase_a_85861-stem_a"
+        ],
+        [
+          "stem_a",
+          -0.07,
+          "vase_a_85861-stem_a"
+        ],
+        [
+          "stem_a",
+          -0.053,
+          "vase_a_85861-stem_a"
+        ],
+        [
+          "stem_a",
+          -0.035,
+          "vase_a_85861-stem_a"
+        ],
+        [
+          "stem_a",
+          0.035,
+          "vase_a_85861-stem_a"
+        ],
+        [
+          "stem_a",
+          0.052,
+          "vase_a_85861-stem_a"
+        ],
+        [
+          "stem_a",
+          0.07,
+          "vase_a_85861-stem_a"
+        ],
+        [
+          "stem_a",
+          0.088,
+          "vase_a_85861-stem_a"
+        ],
+        [
+          "stem_a",
+          0.105,
+          "vase_a_85861-stem_a"
+        ],
+        [
+          "stem_a",
+          0.122,
+          "vase_a_85861-stem_a"
+        ],
+        [
+          "stem_a",
+          0.14,
+          "vase_a_85861-stem_a"
+        ]
+      ],
+      "clip_poses_clear": false,
+      "clip_poses_without_deep_crossings": false,
+      "clips_with_crossings": {
+        "P14_bouquet.breeze": [
+          "vase_a_85861-stem_a"
+        ],
+        "P14_bouquet.gusty": [
+          "vase_a_85861-stem_a"
+        ],
+        "P14_bouquet.storm": [
+          "vase_a_85861-stem_a"
+        ]
+      },
+      "vertex_penetration": {
+        "P14_bouquet.breeze": {
+          "vase_a_85861-stem_a": {
+            "max_vertex_depth_ldu": 0.752,
+            "kind": "shallow"
+          }
+        },
+        "P14_bouquet.gusty": {
+          "vase_a_85861-stem_a": {
+            "max_vertex_depth_ldu": 1.336,
+            "kind": "shallow"
+          }
+        },
+        "P14_bouquet.storm": {
+          "vase_a_85861-stem_a": {
+            "max_vertex_depth_ldu": 1.401,
+            "kind": "shallow"
+          }
+        }
+      },
+      "worst_vertex_depth_ldu": 1.401,
+      "worst_kind": "shallow",
+      "clips_with_deep_shrink_crossings": {
+        "P14_bouquet.breeze": [
+          "vase_a_85861-stem_a"
+        ],
+        "P14_bouquet.gusty": [
+          "vase_a_85861-stem_a"
+        ],
+        "P14_bouquet.storm": [
+          "vase_a_85861-stem_a"
+        ]
+      },
+      "excluded_rest_pairs": []
+    },
+    "P15_tiered_shrub": {
+      "sweep_clear": true,
+      "sweep_crossings": [],
+      "clip_poses_clear": true,
+      "clip_poses_without_deep_crossings": true,
+      "clips_with_crossings": {},
+      "vertex_penetration": {},
+      "worst_vertex_depth_ldu": 0.0,
+      "worst_kind": "clear",
+      "clips_with_deep_shrink_crossings": {},
+      "excluded_rest_pairs": [
+        "bar-tier1",
+        "bar-tier2",
+        "bar-tier3",
+        "bar-tier4"
+      ]
+    },
+    "P16_liana": {
+      "sweep_clear": true,
+      "sweep_crossings": [],
+      "clip_poses_clear": true,
+      "clip_poses_without_deep_crossings": true,
+      "clips_with_crossings": {},
+      "vertex_penetration": {},
+      "worst_vertex_depth_ldu": 0.0,
+      "worst_kind": "clear",
+      "clips_with_deep_shrink_crossings": {},
+      "excluded_rest_pairs": []
+    },
+    "P17_tendrils": {
+      "sweep_clear": true,
+      "sweep_crossings": [],
+      "clip_poses_clear": false,
+      "clip_poses_without_deep_crossings": true,
+      "clips_with_crossings": {
+        "P17_tendrils.breeze": [
+          "hook4-curl"
+        ],
+        "P17_tendrils.gusty": [
+          "hook4-curl"
+        ]
+      },
+      "vertex_penetration": {
+        "P17_tendrils.breeze": {
+          "hook4-curl": {
+            "max_vertex_depth_ldu": 0.066,
+            "kind": "contact"
+          }
+        },
+        "P17_tendrils.gusty": {
+          "hook4-curl": {
+            "max_vertex_depth_ldu": 0.278,
+            "kind": "contact"
+          }
+        }
+      },
+      "worst_vertex_depth_ldu": 0.278,
+      "worst_kind": "contact",
+      "clips_with_deep_shrink_crossings": {},
+      "excluded_rest_pairs": []
+    },
+    "P18_ground_cover": {
+      "sweep_clear": true,
+      "sweep_crossings": [],
+      "clip_poses_clear": true,
+      "clip_poses_without_deep_crossings": false,
+      "clips_with_crossings": {},
+      "vertex_penetration": {},
+      "worst_vertex_depth_ldu": 0.0,
+      "worst_kind": "clear",
+      "clips_with_deep_shrink_crossings": {
+        "P18_ground_cover.gusty": [
+          "plant1-plant6"
+        ],
+        "P18_ground_cover.storm": [
+          "plant1-plant6"
+        ]
+      },
+      "excluded_rest_pairs": [
+        "base-plant2",
+        "plant1-plant6",
+        "plant2-plant6"
+      ]
+    },
+    "P19_leaf_vanes": {
+      "sweep_clear": true,
+      "sweep_crossings": [],
+      "clip_poses_clear": true,
+      "clip_poses_without_deep_crossings": true,
+      "clips_with_crossings": {},
+      "vertex_penetration": {},
+      "worst_vertex_depth_ldu": 0.0,
+      "worst_kind": "clear",
+      "clips_with_deep_shrink_crossings": {},
+      "excluded_rest_pairs": []
+    },
+    "P20_friends_palm": {
+      "sweep_clear": true,
+      "sweep_crossings": [],
+      "clip_poses_clear": true,
+      "clip_poses_without_deep_crossings": true,
+      "clips_with_crossings": {},
+      "vertex_penetration": {},
+      "worst_vertex_depth_ldu": 0.0,
+      "worst_kind": "clear",
+      "clips_with_deep_shrink_crossings": {},
+      "excluded_rest_pairs": [
+        "crown1-crown2"
+      ]
+    }
+  },
+  "every": 4,
+  "deep_shrink_ldu": 1.5
+}

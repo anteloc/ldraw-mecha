@@ -1,0 +1,159 @@
+{
+  "semantics": {},
+  "wind_geometry": {
+    "spin_1": {
+      "body": "spin_1",
+      "x": 0.0,
+      "tip": [
+        -8.0,
+        -64.0,
+        -40.0
+      ],
+      "swing": [
+        0.0,
+        -1.0
+      ],
+      "lever": 10.0
+    },
+    "spin_2": {
+      "body": "spin_2",
+      "x": 0.0,
+      "tip": [
+        -9.0,
+        -120.0,
+        40.0
+      ],
+      "swing": [
+        0.0,
+        -1.0
+      ],
+      "lever": 10.0
+    },
+    "spin_3": {
+      "body": "spin_3",
+      "x": 0.0,
+      "tip": [
+        -8.0,
+        -176.0,
+        -40.0
+      ],
+      "swing": [
+        0.0,
+        -1.0
+      ],
+      "lever": 10.0
+    }
+  },
+  "roster_problems": [],
+  "contacts": {
+    "tested_parts": 14,
+    "contacts": 1,
+    "contacted_parts": 2,
+    "by_kind": {
+      "bar/clip": 1
+    },
+    "axles": {
+      "selection": "Catalog descriptions beginning Technic Axle followed by a numeric length; excludes axle pins, joiners and axle-hole supports",
+      "total": 0,
+      "with_axle_hole_contact": 0,
+      "without_axle_hole_contact": []
+    }
+  },
+  "contact_pairs": {
+    "11-12": [
+      "clip/bar"
+    ]
+  },
+  "joints": {
+    "spin_1": "real",
+    "spin_2": "real",
+    "spin_3": "real"
+  },
+  "asymmetric_sample": {
+    "controls": {
+      "spin_1": 50.4,
+      "spin_2": -29.6,
+      "spin_3": 64.8
+    },
+    "transforms": {
+      "spin_1": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.990966,
+          -0.134112,
+          -5.852317
+        ],
+        [
+          0.0,
+          0.134112,
+          0.990966,
+          6.880706
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "spin_2": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          -0.242683,
+          -0.970106,
+          -97.890861
+        ],
+        [
+          0.0,
+          0.970106,
+          -0.242683,
+          156.418936
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "spin_3": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          -0.386977,
+          -0.922089,
+          -267.121715
+        ],
+        [
+          0.0,
+          0.922089,
+          -0.386977,
+          97.587786
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ]
+    }
+  }
+}

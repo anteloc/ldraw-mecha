@@ -1,0 +1,66 @@
+{
+  "semantics": {
+    "trapdoor": {
+      "control": "trap",
+      "value": 0.2,
+      "test_point": [
+        50.0,
+        -128.0,
+        0.0
+      ],
+      "displacement": [
+        -1.993342,
+        19.866933,
+        0.0
+      ],
+      "expected": "+y",
+      "flipped": false
+    }
+  },
+  "contacts": {
+    "tested_parts": 7,
+    "contacts": 0,
+    "contacted_parts": 0,
+    "by_kind": {},
+    "axles": {
+      "selection": "Catalog descriptions beginning Technic Axle followed by a numeric length; excludes axle pins, joiners and axle-hole supports",
+      "total": 0,
+      "with_axle_hole_contact": 0,
+      "without_axle_hole_contact": []
+    }
+  },
+  "contact_pairs": {},
+  "asymmetric_sample": {
+    "controls": {
+      "trap": 1.2285
+    },
+    "transforms": {
+      "trapdoor": [
+        [
+          0.335651,
+          -0.941986,
+          0.0,
+          -153.791703
+        ],
+        [
+          0.941986,
+          0.335651,
+          0.0,
+          -37.937342
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ]
+    }
+  }
+}

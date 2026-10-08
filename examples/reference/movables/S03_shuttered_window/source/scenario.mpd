@@ -1,0 +1,42 @@
+0 FILE s03_shuttered_window.ldr
+0 Movable element scenario S03_shuttered_window Shuttered window
+0 Name: s03_shuttered_window.ldr
+0 Author: ldraw-mecha scripts/build_movables.py
+0 // Generated mock scenario: parts picked by constant name from data/categories/parts (a few context parts by LDraw reference); moving parts placed from LDCad shadow connector frames (data/offLibShadow) via pyldraw3 or from official annotated models where no connector pair exists. Frame: LDU, -Y up, the scenario front faces -Z, ground (base top) at y = 0.
+
+0 // base: plates.Plate4X10
+1 2 0 0 0 1 0 0 0 1 0 0 0 1 3030.dat
+0 // window: windows.Window1X4X3
+1 15 0 -120 0 1 0 0 0 1 0 0 0 1 3853.dat
+0 // shutter_l: windows.Window1X2X3Shutter
+1 4 -40 -120 -12 0 0 -1 0 1 0 1 0 0 3856.dat
+0 // shutter_r: windows.Window1X2X3Shutter
+1 4 40 -120 -12 0 0 1 0 1 0 -1 0 0 3856.dat
+0 // sill0: bricks.Brick1X4
+1 14 0 -24 0 1 0 0 0 1 0 0 0 1 3010.dat
+0 // sill1a: bricks.Brick1X2
+1 14 -20 -48 0 1 0 0 0 1 0 0 0 1 3004.dat
+0 // sill1b: bricks.Brick1X2
+1 14 20 -48 0 1 0 0 0 1 0 0 0 1 3004.dat
+0 // wall_l0: bricks.Brick1X3
+1 14 -70 -24 0 1 0 0 0 1 0 0 0 1 3622.dat
+0 // wall_l1: bricks.Brick1X3
+1 14 -70 -48 0 1 0 0 0 1 0 0 0 1 3622.dat
+0 // wall_l2: bricks.Brick1X3
+1 14 -70 -72 0 1 0 0 0 1 0 0 0 1 3622.dat
+0 // wall_l3: bricks.Brick1X3
+1 14 -70 -96 0 1 0 0 0 1 0 0 0 1 3622.dat
+0 // wall_l4: bricks.Brick1X3
+1 14 -70 -120 0 1 0 0 0 1 0 0 0 1 3622.dat
+0 // wall_r0: bricks.Brick1X3
+1 14 70 -24 0 1 0 0 0 1 0 0 0 1 3622.dat
+0 // wall_r1: bricks.Brick1X3
+1 14 70 -48 0 1 0 0 0 1 0 0 0 1 3622.dat
+0 // wall_r2: bricks.Brick1X3
+1 14 70 -72 0 1 0 0 0 1 0 0 0 1 3622.dat
+0 // wall_r3: bricks.Brick1X3
+1 14 70 -96 0 1 0 0 0 1 0 0 0 1 3622.dat
+0 // wall_r4: bricks.Brick1X3
+1 14 70 -120 0 1 0 0 0 1 0 0 0 1 3622.dat
+0 // lintel: bricks.Brick1X10
+1 14 0 -144 0 1 0 0 0 1 0 0 0 1 6111.dat

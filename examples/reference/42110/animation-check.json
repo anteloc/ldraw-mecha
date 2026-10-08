@@ -1,0 +1,532 @@
+{
+  "passed": true,
+  "frames": 696,
+  "fps": 24,
+  "hidden_bodywork": 1512,
+  "state_changes": [
+    13,
+    100,
+    102,
+    105,
+    172,
+    174,
+    177,
+    244,
+    246,
+    249,
+    338,
+    347,
+    443,
+    446,
+    449,
+    451,
+    454,
+    456,
+    458,
+    461,
+    464,
+    476,
+    485,
+    577
+  ],
+  "continuity": {
+    "limit_radians_per_frame": 0.8,
+    "limit_ldu_per_frame": 6.0,
+    "worst_revolute": [
+      [
+        0.3745834819574725,
+        "prop_front",
+        "revolute",
+        414
+      ],
+      [
+        0.35563802765617136,
+        "steer_in",
+        "revolute",
+        427
+      ],
+      [
+        0.33600000000002694,
+        "prop_rear",
+        "revolute",
+        425
+      ],
+      [
+        0.33600000000001273,
+        "seq_c73",
+        "revolute",
+        320
+      ],
+      [
+        0.33600000000001273,
+        "gear_0_1_133_37",
+        "revolute",
+        320
+      ],
+      [
+        0.33600000000001273,
+        "gear_0_1_133_22",
+        "revolute",
+        320
+      ],
+      [
+        0.33600000000001273,
+        "gear_0_1_133_18",
+        "revolute",
+        320
+      ],
+      [
+        0.3216728828195088,
+        "uj_s1_out",
+        "revolute",
+        366
+      ]
+    ],
+    "worst_prismatic": [
+      [
+        5.122886300308127,
+        "ring40",
+        "prismatic",
+        454
+      ],
+      [
+        5.122886300308121,
+        "ring20_rel",
+        "prismatic",
+        453
+      ],
+      [
+        3.528551169749507,
+        "piston1",
+        "prismatic",
+        81
+      ],
+      [
+        3.4846966246771682,
+        "piston6",
+        "prismatic",
+        87
+      ],
+      [
+        3.4846966246771682,
+        "piston3",
+        "prismatic",
+        87
+      ],
+      [
+        3.4343694483149534,
+        "piston5",
+        "prismatic",
+        88
+      ],
+      [
+        3.3121977862808443,
+        "piston4",
+        "prismatic",
+        94
+      ],
+      [
+        3.3121977862808443,
+        "piston2",
+        "prismatic",
+        94
+      ]
+    ],
+    "violations": {},
+    "passed": true
+  },
+  "samples": [
+    {
+      "frame": 1,
+      "key_error": 0.0,
+      "passed": true,
+      "detail": {
+        "controls": {
+          "drive": 0.0,
+          "diff_front": 0.0,
+          "diff_rear": 0.0,
+          "diff_center": 0.0,
+          "gear_select": 0.0,
+          "range_select": 0.0,
+          "direction_select": 0.0,
+          "phase_engine": 0.0,
+          "phase_mid": 0.0,
+          "phase_c26": 0.0,
+          "winch": 0.0,
+          "steering": 0.0
+        },
+        "max_matrix_error": 0.003631591796875,
+        "max_static_error": 0.0040283203125,
+        "max_closure_error": 4.355768797381643e-05,
+        "invalid_drivers": [],
+        "passed": true
+      }
+    },
+    {
+      "frame": 24,
+      "key_error": 0.0,
+      "passed": true,
+      "detail": {
+        "controls": {
+          "drive": 0.0,
+          "diff_front": 0.0,
+          "diff_rear": 0.0,
+          "diff_center": 0.0,
+          "gear_select": 0.0,
+          "range_select": -1.0,
+          "direction_select": 1.0,
+          "phase_engine": 0.0,
+          "phase_mid": 0.0,
+          "phase_c26": 0.0,
+          "winch": 0.0,
+          "steering": 0.0
+        },
+        "max_matrix_error": 0.003631591796875,
+        "max_static_error": 0.0040283203125,
+        "max_closure_error": 4.355768797381643e-05,
+        "invalid_drivers": [],
+        "passed": true
+      }
+    },
+    {
+      "frame": 60,
+      "key_error": 1.457201448396006e-08,
+      "passed": true,
+      "detail": {
+        "controls": {
+          "drive": 0.8075507283210754,
+          "diff_front": 0.0,
+          "diff_rear": 0.0,
+          "diff_center": 0.0,
+          "gear_select": 0.0,
+          "range_select": -1.0,
+          "direction_select": 1.0,
+          "phase_engine": 0.0,
+          "phase_mid": 0.0,
+          "phase_c26": 0.0,
+          "winch": 0.0,
+          "steering": 0.0
+        },
+        "max_matrix_error": 0.003631591796875,
+        "max_static_error": 0.0040283203125,
+        "max_closure_error": 4.355768797381643e-05,
+        "invalid_drivers": [],
+        "passed": true
+      }
+    },
+    {
+      "frame": 102,
+      "key_error": 3.1789143761784544e-07,
+      "passed": true,
+      "detail": {
+        "controls": {
+          "drive": 4.550000190734863,
+          "diff_front": 0.0,
+          "diff_rear": 0.0,
+          "diff_center": 0.0,
+          "gear_select": 0.7853981852531433,
+          "range_select": -1.0,
+          "direction_select": 1.0,
+          "phase_engine": -9.916666984558105,
+          "phase_mid": 0.0,
+          "phase_c26": 0.0,
+          "winch": 0.0,
+          "steering": 0.0
+        },
+        "max_matrix_error": 0.003631591796875,
+        "max_static_error": 0.0040283203125,
+        "max_closure_error": 4.355768797381643e-05,
+        "invalid_drivers": [],
+        "passed": true
+      }
+    },
+    {
+      "frame": 140,
+      "key_error": 3.138921069734124e-07,
+      "passed": true,
+      "detail": {
+        "controls": {
+          "drive": 8.699075698852539,
+          "diff_front": 0.0,
+          "diff_rear": 0.0,
+          "diff_center": 0.0,
+          "gear_select": 1.5707963705062866,
+          "range_select": -1.0,
+          "direction_select": 1.0,
+          "phase_engine": -3.2666666507720947,
+          "phase_mid": 0.0,
+          "phase_c26": 0.0,
+          "winch": 0.0,
+          "steering": 0.0
+        },
+        "max_matrix_error": 0.003631591796875,
+        "max_static_error": 0.0040283203125,
+        "max_closure_error": 4.355768797381643e-05,
+        "invalid_drivers": [],
+        "passed": true
+      }
+    },
+    {
+      "frame": 174,
+      "key_error": 8.138020888281972e-07,
+      "passed": true,
+      "detail": {
+        "controls": {
+          "drive": 13.369999885559082,
+          "diff_front": 0.0,
+          "diff_rear": 0.0,
+          "diff_center": 0.0,
+          "gear_select": 2.356194496154785,
+          "range_select": -1.0,
+          "direction_select": 1.0,
+          "phase_engine": -21.39666748046875,
+          "phase_mid": 0.0,
+          "phase_c26": 0.0,
+          "winch": 0.0,
+          "steering": 0.0
+        },
+        "max_matrix_error": 0.003631591796875,
+        "max_static_error": 0.0040283203125,
+        "max_closure_error": 4.355768797381643e-05,
+        "invalid_drivers": [],
+        "passed": true
+      }
+    },
+    {
+      "frame": 246,
+      "key_error": 8.985731412280984e-07,
+      "passed": true,
+      "detail": {
+        "controls": {
+          "drive": 25.475000381469727,
+          "diff_front": 0.0,
+          "diff_rear": 0.0,
+          "diff_center": 0.0,
+          "gear_select": 3.9269907474517822,
+          "range_select": -1.0,
+          "direction_select": 1.0,
+          "phase_engine": -30.150554656982422,
+          "phase_mid": 0.0,
+          "phase_c26": 0.0,
+          "winch": 0.0,
+          "steering": 0.0
+        },
+        "max_matrix_error": 0.003631591796875,
+        "max_static_error": 0.0040283203125,
+        "max_closure_error": 4.355768797381643e-05,
+        "invalid_drivers": [],
+        "passed": true
+      }
+    },
+    {
+      "frame": 300,
+      "key_error": 4.306369305595581e-07,
+      "passed": true,
+      "detail": {
+        "controls": {
+          "drive": 36.52864456176758,
+          "diff_front": 0.0,
+          "diff_rear": 0.0,
+          "diff_center": 0.0,
+          "gear_select": 4.71238899230957,
+          "range_select": -1.0,
+          "direction_select": 1.0,
+          "phase_engine": -18.084888458251953,
+          "phase_mid": 0.0,
+          "phase_c26": 0.0,
+          "winch": 0.0,
+          "steering": 0.0
+        },
+        "max_matrix_error": 0.003631591796875,
+        "max_static_error": 0.0040283203125,
+        "max_closure_error": 4.355768797381643e-05,
+        "invalid_drivers": [],
+        "passed": true
+      }
+    },
+    {
+      "frame": 342,
+      "key_error": 1.4207627856421823e-06,
+      "passed": true,
+      "detail": {
+        "controls": {
+          "drive": 46.540000915527344,
+          "diff_front": 0.0,
+          "diff_rear": 0.0,
+          "diff_center": 0.0,
+          "gear_select": 4.71238899230957,
+          "range_select": 0.0,
+          "direction_select": 1.0,
+          "phase_engine": -39.24355697631836,
+          "phase_mid": 21.158666610717773,
+          "phase_c26": 0.0,
+          "winch": 0.0,
+          "steering": 0.0
+        },
+        "max_matrix_error": 0.003631591796875,
+        "max_static_error": 0.0040283203125,
+        "max_closure_error": 4.355768797381643e-05,
+        "invalid_drivers": [],
+        "passed": true
+      }
+    },
+    {
+      "frame": 380,
+      "key_error": 1.4606109743908746e-06,
+      "passed": true,
+      "detail": {
+        "controls": {
+          "drive": 55.78160095214844,
+          "diff_front": 0.4544050991535187,
+          "diff_rear": 0.4765073359012604,
+          "diff_center": 0.12160241603851318,
+          "gear_select": 4.71238899230957,
+          "range_select": 1.0,
+          "direction_select": 1.0,
+          "phase_engine": -25.056888580322266,
+          "phase_mid": 6.9720001220703125,
+          "phase_c26": 0.0,
+          "winch": 0.0,
+          "steering": 2.3402576446533203
+        },
+        "max_matrix_error": 0.003631591796875,
+        "max_static_error": 0.0040283203125,
+        "max_closure_error": 4.567485655115888e-05,
+        "invalid_drivers": [],
+        "passed": true
+      }
+    },
+    {
+      "frame": 400,
+      "key_error": 6.112525454682327e-07,
+      "passed": true,
+      "detail": {
+        "controls": {
+          "drive": 60.6542854309082,
+          "diff_front": 0.7257434725761414,
+          "diff_rear": 0.7576099038124084,
+          "diff_center": 0.1942848265171051,
+          "gear_select": 4.71238899230957,
+          "range_select": 1.0,
+          "direction_select": 1.0,
+          "phase_engine": -25.056888580322266,
+          "phase_mid": 6.9720001220703125,
+          "phase_c26": 0.0,
+          "winch": 0.0,
+          "steering": -0.812762975692749
+        },
+        "max_matrix_error": 0.003631591796875,
+        "max_static_error": 0.0040283203125,
+        "max_closure_error": 4.520546842456952e-05,
+        "invalid_drivers": [],
+        "passed": true
+      }
+    },
+    {
+      "frame": 480,
+      "key_error": 1.4503136540611195e-06,
+      "passed": true,
+      "detail": {
+        "controls": {
+          "drive": 72.78101348876953,
+          "diff_front": -0.10917939245700836,
+          "diff_rear": -0.12795358896255493,
+          "diff_center": 0.441013365983963,
+          "gear_select": 0.0,
+          "range_select": 1.0,
+          "direction_select": 0.0,
+          "phase_engine": -46.453468322753906,
+          "phase_mid": 28.70926284790039,
+          "phase_c26": -27.17157745361328,
+          "winch": 0.0,
+          "steering": 0.0
+        },
+        "max_matrix_error": 0.003631591796875,
+        "max_static_error": 0.0040283203125,
+        "max_closure_error": 4.355768797381643e-05,
+        "invalid_drivers": [],
+        "passed": true
+      }
+    },
+    {
+      "frame": 520,
+      "key_error": 2.4319152203133854e-06,
+      "passed": true,
+      "detail": {
+        "controls": {
+          "drive": 71.31061553955078,
+          "diff_front": 0.007746199611574411,
+          "diff_rear": -0.00977560319006443,
+          "diff_center": 0.4206158220767975,
+          "gear_select": 0.0,
+          "range_select": 1.0,
+          "direction_select": -1.0,
+          "phase_engine": -68.19073486328125,
+          "phase_mid": 33.05671691894531,
+          "phase_c26": -32.605892181396484,
+          "winch": 0.0,
+          "steering": -1.3398287296295166
+        },
+        "max_matrix_error": 0.003631591796875,
+        "max_static_error": 0.0040283203125,
+        "max_closure_error": 3.617146120404868e-05,
+        "invalid_drivers": [],
+        "passed": true
+      }
+    },
+    {
+      "frame": 600,
+      "key_error": 4.4750665750825647e-07,
+      "passed": true,
+      "detail": {
+        "controls": {
+          "drive": 67.70174407958984,
+          "diff_front": 0.31553709506988525,
+          "diff_rear": 0.30309295654296875,
+          "diff_center": 0.3617440164089203,
+          "gear_select": 0.0,
+          "range_select": 0.0,
+          "direction_select": 0.0,
+          "phase_engine": -47.97047805786133,
+          "phase_mid": 29.012664794921875,
+          "phase_c26": -27.550830841064453,
+          "winch": 0.6960963606834412,
+          "steering": 0.0
+        },
+        "max_matrix_error": 0.003570556640625,
+        "max_static_error": 0.0040283203125,
+        "max_closure_error": 4.355768797381643e-05,
+        "invalid_drivers": [],
+        "passed": true
+      }
+    },
+    {
+      "frame": 696,
+      "key_error": 4.4750665750825647e-07,
+      "passed": true,
+      "detail": {
+        "controls": {
+          "drive": 67.70174407958984,
+          "diff_front": 0.31553709506988525,
+          "diff_rear": 0.30309295654296875,
+          "diff_center": 0.3617440164089203,
+          "gear_select": 0.0,
+          "range_select": 0.0,
+          "direction_select": 0.0,
+          "phase_engine": -47.97047805786133,
+          "phase_mid": 29.012664794921875,
+          "phase_c26": -27.550830841064453,
+          "winch": 12.566370964050293,
+          "steering": 0.0
+        },
+        "max_matrix_error": 0.003631591796875,
+        "max_static_error": 0.0040283203125,
+        "max_closure_error": 4.355768797381643e-05,
+        "invalid_drivers": [],
+        "passed": true
+      }
+    }
+  ],
+  "tolerance": 0.01,
+  "coverage": "Keys are plan controls only (one per frame); sampled frames re-evaluated against the portable evaluator; continuity checked on every body signal; no collision test of the whole sequence"
+}

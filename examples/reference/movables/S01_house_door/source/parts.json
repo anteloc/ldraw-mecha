@@ -1,0 +1,246 @@
+{
+  "scenario": "S01_house_door",
+  "title": "House front door",
+  "parts": [
+    {
+      "role": "base",
+      "id": "0",
+      "table": "plates.Plate6X12",
+      "ref": "3028",
+      "colour": 2,
+      "title": "Plate  6 x 12",
+      "library_only": false
+    },
+    {
+      "role": "frame",
+      "id": "1",
+      "table": "doors.Door1X4X6Frame",
+      "ref": "60596",
+      "colour": 15,
+      "title": "Door  1 x  4 x  6 Frame",
+      "library_only": false
+    },
+    {
+      "role": "door",
+      "id": "2",
+      "table": "doors.Door1X4X6SmoothWithChamferedHandlePlinth",
+      "ref": "60616b",
+      "colour": 70,
+      "title": "Door  1 x  4 x  6 Smooth with Chamfered Handle Plinth",
+      "library_only": false
+    },
+    {
+      "role": "wall_l0",
+      "id": "3",
+      "table": "bricks.Brick1X4",
+      "ref": "3010",
+      "colour": 19,
+      "title": "Brick  1 x  4",
+      "library_only": false
+    },
+    {
+      "role": "wall_l1a",
+      "id": "4",
+      "table": "bricks.Brick1X2",
+      "ref": "3004",
+      "colour": 19,
+      "title": "Brick  1 x  2",
+      "library_only": false
+    },
+    {
+      "role": "wall_l1b",
+      "id": "5",
+      "table": "bricks.Brick1X2",
+      "ref": "3004",
+      "colour": 19,
+      "title": "Brick  1 x  2",
+      "library_only": false
+    },
+    {
+      "role": "wall_l2",
+      "id": "6",
+      "table": "bricks.Brick1X4",
+      "ref": "3010",
+      "colour": 19,
+      "title": "Brick  1 x  4",
+      "library_only": false
+    },
+    {
+      "role": "wall_l3a",
+      "id": "7",
+      "table": "bricks.Brick1X2",
+      "ref": "3004",
+      "colour": 19,
+      "title": "Brick  1 x  2",
+      "library_only": false
+    },
+    {
+      "role": "wall_l3b",
+      "id": "8",
+      "table": "bricks.Brick1X2",
+      "ref": "3004",
+      "colour": 19,
+      "title": "Brick  1 x  2",
+      "library_only": false
+    },
+    {
+      "role": "wall_l4",
+      "id": "9",
+      "table": "bricks.Brick1X4",
+      "ref": "3010",
+      "colour": 19,
+      "title": "Brick  1 x  4",
+      "library_only": false
+    },
+    {
+      "role": "wall_l5a",
+      "id": "10",
+      "table": "bricks.Brick1X2",
+      "ref": "3004",
+      "colour": 19,
+      "title": "Brick  1 x  2",
+      "library_only": false
+    },
+    {
+      "role": "wall_l5b",
+      "id": "11",
+      "table": "bricks.Brick1X2",
+      "ref": "3004",
+      "colour": 19,
+      "title": "Brick  1 x  2",
+      "library_only": false
+    },
+    {
+      "role": "wall_r0",
+      "id": "12",
+      "table": "bricks.Brick1X4",
+      "ref": "3010",
+      "colour": 19,
+      "title": "Brick  1 x  4",
+      "library_only": false
+    },
+    {
+      "role": "wall_r1a",
+      "id": "13",
+      "table": "bricks.Brick1X2",
+      "ref": "3004",
+      "colour": 19,
+      "title": "Brick  1 x  2",
+      "library_only": false
+    },
+    {
+      "role": "wall_r1b",
+      "id": "14",
+      "table": "bricks.Brick1X2",
+      "ref": "3004",
+      "colour": 19,
+      "title": "Brick  1 x  2",
+      "library_only": false
+    },
+    {
+      "role": "wall_r2",
+      "id": "15",
+      "table": "bricks.Brick1X4",
+      "ref": "3010",
+      "colour": 19,
+      "title": "Brick  1 x  4",
+      "library_only": false
+    },
+    {
+      "role": "wall_r3a",
+      "id": "16",
+      "table": "bricks.Brick1X2",
+      "ref": "3004",
+      "colour": 19,
+      "title": "Brick  1 x  2",
+      "library_only": false
+    },
+    {
+      "role": "wall_r3b",
+      "id": "17",
+      "table": "bricks.Brick1X2",
+      "ref": "3004",
+      "colour": 19,
+      "title": "Brick  1 x  2",
+      "library_only": false
+    },
+    {
+      "role": "wall_r4",
+      "id": "18",
+      "table": "bricks.Brick1X4",
+      "ref": "3010",
+      "colour": 19,
+      "title": "Brick  1 x  4",
+      "library_only": false
+    },
+    {
+      "role": "wall_r5a",
+      "id": "19",
+      "table": "bricks.Brick1X2",
+      "ref": "3004",
+      "colour": 19,
+      "title": "Brick  1 x  2",
+      "library_only": false
+    },
+    {
+      "role": "wall_r5b",
+      "id": "20",
+      "table": "bricks.Brick1X2",
+      "ref": "3004",
+      "colour": 19,
+      "title": "Brick  1 x  2",
+      "library_only": false
+    },
+    {
+      "role": "lintel",
+      "id": "21",
+      "table": "bricks.Brick1X12",
+      "ref": "6112",
+      "colour": 19,
+      "title": "Brick  1 x 12",
+      "library_only": false
+    },
+    {
+      "role": "lintel_top",
+      "id": "22",
+      "table": "plates.Plate1X12",
+      "ref": "60479",
+      "colour": 28,
+      "title": "Plate  1 x 12",
+      "library_only": false
+    }
+  ],
+  "joints": {
+    "door": {
+      "origin": [
+        -32.0,
+        -74.0,
+        5.0
+      ],
+      "axis": [
+        0.0,
+        -1.0,
+        0.0
+      ],
+      "parent": "frame",
+      "child": "door",
+      "kind": "revolute",
+      "connector": "60596 hinge snap_fgr@L10:I0 receives 60616b hinge snap_fgr@L8:I0"
+    }
+  },
+  "reference_checks": [
+    {
+      "model": "10185-1.mpd",
+      "section": "(flattened main model)",
+      "parent": "frame",
+      "part": "door",
+      "official_refs": [
+        "60596",
+        "60616a"
+      ],
+      "position_offset_ldu": 0.0,
+      "rotation_offset": 0.0,
+      "note": "10185 places 60616a; 60616b has the same hinge geometry"
+    }
+  ]
+}

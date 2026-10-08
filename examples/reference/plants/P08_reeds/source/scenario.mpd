@@ -1,0 +1,24 @@
+0 FILE p08_reeds.ldr
+0 Plant wind case P08_reeds Reeds
+0 Name: p08_reeds.ldr
+0 Author: ldraw-mecha scripts/build_plants.py
+0 // Generated mock case: parts picked by constant name from data/categories/parts (vine subfiles by LDraw reference); moving parts placed from LDCad shadow connector frames (data/offLibShadow) via pyldraw3 or copied from official constructions (2518c01, 10315, 10297). Frame: LDU, -Y up, the case front faces -Z, ground (base top) at y = 0. Wind blows toward +X.
+
+0 // base: plates.Plate6X6
+1 2 0 0 0 1 0 0 0 1 0 0 0 1 3958.dat
+0 // mound1: bricks.Brick2X2RoundWithoutReinforcement
+1 72 -40 -24 -20 1 0 0 0 1 0 0 0 1 3941.dat
+0 // clump1: cones.Cone2X2X2WithHollowStudOpen
+1 288 -40 -72 -20 1 0 0 0 1 0 0 0 1 3942c.dat
+0 // stalk1: plants.PlantSeaGrass
+1 330 -40 -76 -20 1 0 0 0 1 0 0 0 1 30093.dat
+0 // leaf1: plants.PlantLeaves6X5SwordleafWithU_Clip
+1 2 -30 -177 -50 1 0 0 0 1 0 0 0 1 30239.dat
+0 // mound2: bricks.Brick2X2RoundWithoutReinforcement
+1 72 40 -24 20 1 0 0 0 1 0 0 0 1 3941.dat
+0 // clump2: cones.Cone2X2X2WithHollowStudOpen
+1 288 40 -72 20 1 0 0 0 1 0 0 0 1 3942c.dat
+0 // stalk2: plants.PlantSeaGrass
+1 330 40 -76 20 -1 0 0 0 1 0 0 0 -1 30093.dat
+0 // leaf2: plants.PlantLeaves6X5SwordleafWithU_Clip
+1 2 30 -177 50 -1 0 0 0 1 0 0 0 -1 30239.dat

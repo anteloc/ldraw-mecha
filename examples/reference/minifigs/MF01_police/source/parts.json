@@ -1,0 +1,245 @@
+{
+  "figure": "MF01_police",
+  "title": "Police officer",
+  "parts": [
+    {
+      "role": "torso",
+      "id": "0",
+      "table": "torsos.TorsoWithButtonsAndPoliceBadgePlainPattern",
+      "ref": "973p1f",
+      "colour": 0,
+      "title": "Minifig Torso with Buttons and Police Badge Plain Pattern"
+    },
+    {
+      "role": "head",
+      "id": "1",
+      "table": "heads.HeadWithBlack_SilverSunglasses_ChinDimpleAndGrimMouthPattern",
+      "ref": "3626cp84",
+      "colour": 14,
+      "title": "Minifig Head with Black/Silver Sunglasses, Chin Dimple and Grim Mouth Pattern"
+    },
+    {
+      "role": "headgear0",
+      "id": "2",
+      "table": "hats.PoliceHat",
+      "ref": "3624",
+      "colour": 0,
+      "title": "Minifig Police Hat"
+    },
+    {
+      "role": "hips",
+      "id": "3",
+      "table": "accessories.Hips",
+      "ref": "3815b",
+      "colour": 0,
+      "title": "Minifig Hips"
+    },
+    {
+      "role": "leg_l",
+      "id": "4",
+      "table": "legs.LegLeft",
+      "ref": "3817c",
+      "colour": 1,
+      "title": "Minifig Leg Left"
+    },
+    {
+      "role": "leg_r",
+      "id": "5",
+      "table": "legs.LegRight",
+      "ref": "3816c",
+      "colour": 1,
+      "title": "Minifig Leg Right"
+    },
+    {
+      "role": "arm_l",
+      "id": "6",
+      "table": "arms.ArmLeft",
+      "ref": "3819",
+      "colour": 0,
+      "title": "Minifig Arm Left"
+    },
+    {
+      "role": "hand_l",
+      "id": "7",
+      "table": "hands.Hand",
+      "ref": "3820",
+      "colour": 14,
+      "title": "Minifig Hand"
+    },
+    {
+      "role": "item_l",
+      "id": "8",
+      "table": "accessories.RadioWithLongHandle",
+      "ref": "3962b",
+      "colour": 0,
+      "title": "Minifig Radio with Long Handle"
+    },
+    {
+      "role": "arm_r",
+      "id": "9",
+      "table": "arms.ArmRight",
+      "ref": "3818",
+      "colour": 0,
+      "title": "Minifig Arm Right"
+    },
+    {
+      "role": "hand_r",
+      "id": "10",
+      "table": "hands.Hand",
+      "ref": "3820",
+      "colour": 14,
+      "title": "Minifig Hand"
+    }
+  ],
+  "joints": {
+    "hip_l": {
+      "origin": [
+        2.0,
+        44.0,
+        0.0
+      ],
+      "axis": [
+        1.0,
+        0.0,
+        0.0
+      ],
+      "parent": "hips",
+      "connector": [
+        "s/3815bs01@R0/snap_cyl@L9:I0",
+        "s/3817cs01@R0/s/3817cs02@R0/snap_cyl@L11:I0"
+      ]
+    },
+    "hip_r": {
+      "origin": [
+        -2.0,
+        44.0,
+        0.0
+      ],
+      "axis": [
+        -1.0,
+        0.0,
+        0.0
+      ],
+      "parent": "hips",
+      "connector": [
+        "s/3815bs01@R0/snap_cyl@L8:I0",
+        "3817c@R0/s/3817cs01@R0/s/3817cs02@R0/snap_cyl@L11:I0"
+      ]
+    },
+    "shoulder_l": {
+      "origin": [
+        15.552,
+        9.0,
+        0.0
+      ],
+      "axis": [
+        -0.985431,
+        0.170074,
+        0.0
+      ],
+      "parent": "torso",
+      "connector": [
+        "s/973s01@R0/snap_cyl@L10:I0",
+        "3818@R0/s/3818s01@R0/knob1@R0/snap_cyl@L8:I0"
+      ]
+    },
+    "wrist_l": {
+      "origin": [
+        23.690824,
+        26.758413,
+        -9.8839
+      ],
+      "axis": [
+        -0.120261,
+        -0.696805,
+        0.707107
+      ],
+      "parent": "arm_l",
+      "connector": [
+        "snap_cyl@L12:I0",
+        "snap_cyl@L9:I0"
+      ]
+    },
+    "shoulder_r": {
+      "origin": [
+        -15.552,
+        9.0,
+        0.0
+      ],
+      "axis": [
+        0.985431,
+        0.170074,
+        0.0
+      ],
+      "parent": "torso",
+      "connector": [
+        "s/973s01@R0/snap_cyl@L9:I0",
+        "s/3818s01@R0/knob1@R0/snap_cyl@L8:I0"
+      ]
+    },
+    "wrist_r": {
+      "origin": [
+        -23.690824,
+        26.758413,
+        -9.8839
+      ],
+      "axis": [
+        0.120261,
+        -0.696805,
+        0.707107
+      ],
+      "parent": "arm_r",
+      "connector": [
+        "snap_cyl@L14:I0",
+        "snap_cyl@L9:I0"
+      ]
+    },
+    "neck": {
+      "origin": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "axis": [
+        0.0,
+        -1.0,
+        0.0
+      ],
+      "parent": "torso",
+      "connector": [
+        "s/973s01@R0/snap_cyl@L13:I0",
+        "head pin_hole"
+      ]
+    }
+  },
+  "reference_6682": {
+    "arm_l": {
+      "position_offset": 1.001,
+      "rotation_offset": 0.0
+    },
+    "arm_r": {
+      "position_offset": 1.001,
+      "rotation_offset": 0.0
+    },
+    "hips": {
+      "position_offset": 0.0,
+      "rotation_offset": 0.0
+    },
+    "leg_l": {
+      "position_offset": 0.0,
+      "rotation_offset": 0.0
+    },
+    "leg_r": {
+      "position_offset": 0.0,
+      "rotation_offset": 0.0
+    },
+    "hand_l": {
+      "position_offset": 0.894,
+      "rotation_offset": 0.0
+    },
+    "hand_r": {
+      "position_offset": 0.894,
+      "rotation_offset": 0.0
+    }
+  }
+}

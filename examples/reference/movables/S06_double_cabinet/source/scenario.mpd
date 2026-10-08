@@ -1,0 +1,14 @@
+0 FILE s06_double_cabinet.ldr
+0 Movable element scenario S06_double_cabinet Double-door cabinet
+0 Name: s06_double_cabinet.ldr
+0 Author: ldraw-mecha scripts/build_movables.py
+0 // Generated mock scenario: parts picked by constant name from data/categories/parts (a few context parts by LDraw reference); moving parts placed from LDCad shadow connector frames (data/offLibShadow) via pyldraw3 or from official annotated models where no connector pair exists. Frame: LDU, -Y up, the scenario front faces -Z, ground (base top) at y = 0.
+
+0 // base: plates.Plate4X8
+1 71 0 0 0 1 0 0 0 1 0 0 0 1 3035.dat
+0 // cabinet: containers.ContainerCupboard2X6X7
+1 14 0 -168 0 1 0 0 0 1 0 0 0 1 2042.dat
+0 // door_l: containers.ContainerCupboard2X6X7Door
+1 4 -52 -33 -16 1 0 0 0 1 0 0 0 1 2043.dat
+0 // door_r: containers.ContainerCupboard2X6X7Door
+1 4 52 -33 -16 -1 0 0 0 -1 0 0 0 1 2043.dat

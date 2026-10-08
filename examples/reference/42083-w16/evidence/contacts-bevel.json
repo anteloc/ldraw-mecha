@@ -1,0 +1,12 @@
+{
+  "instances": [
+    "82",
+    "83",
+    "25",
+    "26"
+  ],
+  "complete": true,
+  "contacts": [],
+  "diagnostics": [],
+  "coverage": "pyldraw3 contacts for selected library parts only; no rigid grouping, collision proof or general mobility inference"
+}

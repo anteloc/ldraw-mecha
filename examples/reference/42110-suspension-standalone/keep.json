@@ -1,0 +1,1568 @@
+{
+ "parts": [
+  {
+   "id": "0/0/19",
+   "role": "moving",
+   "reason": "lower_fr",
+   "description": "Technic Suspension Arm  2 x  6"
+  },
+  {
+   "id": "0/0/20",
+   "role": "moving",
+   "reason": "lower_fl",
+   "description": "Technic Suspension Arm  2 x  6"
+  },
+  {
+   "id": "0/0/27/16",
+   "role": "moving",
+   "reason": "halfshaft_fr",
+   "description": "Technic Universal Joint 3L End"
+  },
+  {
+   "id": "0/0/27/19",
+   "role": "moving",
+   "reason": "halfshaft_fl",
+   "description": "Technic Universal Joint 3L End"
+  },
+  {
+   "id": "0/0/27/21",
+   "role": "moving",
+   "reason": "halfshaft_fr",
+   "description": "Technic Axle  3"
+  },
+  {
+   "id": "0/0/27/22",
+   "role": "moving",
+   "reason": "halfshaft_fl",
+   "description": "Technic Axle  3"
+  },
+  {
+   "id": "0/0/27/23",
+   "role": "moving",
+   "reason": "halfshaft_fr",
+   "description": "Technic Bush with Two Flanges"
+  },
+  {
+   "id": "0/0/27/24",
+   "role": "moving",
+   "reason": "halfshaft_fl",
+   "description": "Technic Bush with Two Flanges"
+  },
+  {
+   "id": "0/0/53",
+   "role": "moving",
+   "reason": "upper_fl",
+   "description": "Technic Suspension Arm  2 x  6"
+  },
+  {
+   "id": "0/0/54",
+   "role": "moving",
+   "reason": "upper_fr",
+   "description": "Technic Suspension Arm  2 x  6"
+  },
+  {
+   "id": "0/0/55",
+   "role": "moving",
+   "reason": "knuckle_fl",
+   "description": "Technic Pin Towball with Friction"
+  },
+  {
+   "id": "0/0/56",
+   "role": "moving",
+   "reason": "knuckle_fl",
+   "description": "Technic Pin Towball with Friction"
+  },
+  {
+   "id": "0/0/57",
+   "role": "moving",
+   "reason": "knuckle_fl",
+   "description": "Technic Steering Wheel Bearing with 2 Pegholes & 2 Axleholes Arms"
+  },
+  {
+   "id": "0/0/58",
+   "role": "moving",
+   "reason": "knuckle_fl",
+   "description": "Technic Axle Towball"
+  },
+  {
+   "id": "0/0/59",
+   "role": "moving",
+   "reason": "halfshaft_fl",
+   "description": "Technic Wheel Spindle Axle Driver"
+  },
+  {
+   "id": "0/0/60",
+   "role": "moving",
+   "reason": "knuckle_fr",
+   "description": "Technic Pin Towball with Friction"
+  },
+  {
+   "id": "0/0/61",
+   "role": "moving",
+   "reason": "knuckle_fr",
+   "description": "Technic Pin Towball with Friction"
+  },
+  {
+   "id": "0/0/62",
+   "role": "moving",
+   "reason": "knuckle_fr",
+   "description": "Technic Steering Wheel Bearing with 2 Pegholes & 2 Axleholes Arms"
+  },
+  {
+   "id": "0/0/63",
+   "role": "moving",
+   "reason": "knuckle_fr",
+   "description": "Technic Axle Towball"
+  },
+  {
+   "id": "0/0/64",
+   "role": "moving",
+   "reason": "halfshaft_fr",
+   "description": "Technic Wheel Spindle Axle Driver"
+  },
+  {
+   "id": "0/0/65",
+   "role": "moving",
+   "reason": "knuckle_fl",
+   "description": "Technic Steering Wheel Hub for Portal Axle"
+  },
+  {
+   "id": "0/0/66",
+   "role": "moving",
+   "reason": "knuckle_fr",
+   "description": "Technic Steering Wheel Hub for Portal Axle"
+  },
+  {
+   "id": "0/0/67",
+   "role": "moving",
+   "reason": "coupler_fl",
+   "description": "Technic Axle  3"
+  },
+  {
+   "id": "0/0/68",
+   "role": "moving",
+   "reason": "coupler_fl",
+   "description": "Technic Axle  2 Notched"
+  },
+  {
+   "id": "0/0/69",
+   "role": "moving",
+   "reason": "coupler_fl",
+   "description": "Technic Beam  5 x  0.5 Liftarm with Axle Holes at Both Ends"
+  },
+  {
+   "id": "0/0/70",
+   "role": "moving",
+   "reason": "coupler_fl",
+   "description": "Technic Beam  5 x  0.5 Liftarm with Axle Holes at Both Ends"
+  },
+  {
+   "id": "0/0/71",
+   "role": "moving",
+   "reason": "coupler_fr",
+   "description": "Technic Axle  3"
+  },
+  {
+   "id": "0/0/72",
+   "role": "moving",
+   "reason": "coupler_fr",
+   "description": "Technic Axle  2 Notched"
+  },
+  {
+   "id": "0/0/73",
+   "role": "moving",
+   "reason": "coupler_fr",
+   "description": "Technic Beam  5 x  0.5 Liftarm with Axle Holes at Both Ends"
+  },
+  {
+   "id": "0/0/74",
+   "role": "moving",
+   "reason": "coupler_fr",
+   "description": "Technic Beam  5 x  0.5 Liftarm with Axle Holes at Both Ends"
+  },
+  {
+   "id": "0/0/75",
+   "role": "moving",
+   "reason": "upper_fr",
+   "description": "Technic Axle  3 with Stop"
+  },
+  {
+   "id": "0/0/76/0",
+   "role": "moving",
+   "reason": "rod_fr0",
+   "description": "~Technic Shock Absorber  6.5L Piston Rod"
+  },
+  {
+   "id": "0/0/76/1",
+   "role": "moving",
+   "reason": "cyl_fr0",
+   "description": "~Technic Shock Absorber  6.5L Cylinder"
+  },
+  {
+   "id": "0/0/76/2",
+   "role": "moving",
+   "reason": "spring_fr0",
+   "description": "~Spring for Technic Shock Absorber  6.5L Extra Stiff"
+  },
+  {
+   "id": "0/0/77/0",
+   "role": "moving",
+   "reason": "rod_fr1",
+   "description": "~Technic Shock Absorber  6.5L Piston Rod"
+  },
+  {
+   "id": "0/0/77/1",
+   "role": "moving",
+   "reason": "cyl_fr1",
+   "description": "~Technic Shock Absorber  6.5L Cylinder"
+  },
+  {
+   "id": "0/0/77/2",
+   "role": "moving",
+   "reason": "spring_fr1",
+   "description": "~Spring for Technic Shock Absorber  6.5L Soft"
+  },
+  {
+   "id": "0/0/78",
+   "role": "moving",
+   "reason": "upper_fl",
+   "description": "Technic Axle  3 with Stop"
+  },
+  {
+   "id": "0/0/79/0",
+   "role": "moving",
+   "reason": "rod_fl0",
+   "description": "~Technic Shock Absorber  6.5L Piston Rod"
+  },
+  {
+   "id": "0/0/79/1",
+   "role": "moving",
+   "reason": "cyl_fl0",
+   "description": "~Technic Shock Absorber  6.5L Cylinder"
+  },
+  {
+   "id": "0/0/79/2",
+   "role": "moving",
+   "reason": "spring_fl0",
+   "description": "~Spring for Technic Shock Absorber  6.5L Extra Stiff"
+  },
+  {
+   "id": "0/0/80/0",
+   "role": "moving",
+   "reason": "rod_fl1",
+   "description": "~Technic Shock Absorber  6.5L Piston Rod"
+  },
+  {
+   "id": "0/0/80/1",
+   "role": "moving",
+   "reason": "cyl_fl1",
+   "description": "~Technic Shock Absorber  6.5L Cylinder"
+  },
+  {
+   "id": "0/0/80/2",
+   "role": "moving",
+   "reason": "spring_fl1",
+   "description": "~Spring for Technic Shock Absorber  6.5L Soft"
+  },
+  {
+   "id": "0/0/81",
+   "role": "moving",
+   "reason": "lower_fl",
+   "description": "Technic Axle  3 with Stop"
+  },
+  {
+   "id": "0/0/82",
+   "role": "moving",
+   "reason": "lower_fl",
+   "description": "Technic Cross Block 1 x 3 (Axle/Pin/Pin)"
+  },
+  {
+   "id": "0/0/83",
+   "role": "moving",
+   "reason": "lower_fl",
+   "description": "Technic Pin  1/2"
+  },
+  {
+   "id": "0/0/84",
+   "role": "moving",
+   "reason": "lower_fl",
+   "description": "Technic Pin  1/2"
+  },
+  {
+   "id": "0/0/85",
+   "role": "moving",
+   "reason": "lower_fl",
+   "description": "Plate  1 x  2 with Round Ends and 2 Open Studs"
+  },
+  {
+   "id": "0/0/86",
+   "role": "moving",
+   "reason": "lower_fl",
+   "description": "Tile  1 x  1 Round with Groove"
+  },
+  {
+   "id": "0/0/87",
+   "role": "moving",
+   "reason": "lower_fr",
+   "description": "Technic Axle  3 with Stop"
+  },
+  {
+   "id": "0/0/88",
+   "role": "moving",
+   "reason": "lower_fr",
+   "description": "Technic Cross Block 1 x 3 (Axle/Pin/Pin)"
+  },
+  {
+   "id": "0/0/89",
+   "role": "moving",
+   "reason": "lower_fr",
+   "description": "Technic Pin  1/2"
+  },
+  {
+   "id": "0/0/90",
+   "role": "moving",
+   "reason": "lower_fr",
+   "description": "Technic Pin  1/2"
+  },
+  {
+   "id": "0/0/91",
+   "role": "moving",
+   "reason": "lower_fr",
+   "description": "Plate  1 x  2 with Round Ends and 2 Open Studs"
+  },
+  {
+   "id": "0/0/92",
+   "role": "moving",
+   "reason": "lower_fr",
+   "description": "Tile  1 x  1 Round with Groove"
+  },
+  {
+   "id": "0/0/111/11",
+   "role": "moving",
+   "reason": "link_fr0",
+   "description": "Technic Steering Link  6L Type 1"
+  },
+  {
+   "id": "0/0/111/12",
+   "role": "moving",
+   "reason": "link_fl0",
+   "description": "Technic Steering Link  6L Type 1"
+  },
+  {
+   "id": "0/1/16",
+   "role": "moving",
+   "reason": "halfshaft_rl",
+   "description": "Technic Universal Joint 3L End"
+  },
+  {
+   "id": "0/1/20",
+   "role": "moving",
+   "reason": "halfshaft_rr",
+   "description": "Technic Universal Joint 3L End"
+  },
+  {
+   "id": "0/1/21",
+   "role": "moving",
+   "reason": "halfshaft_rr",
+   "description": "Technic Universal Joint 3L Centre"
+  },
+  {
+   "id": "0/1/22",
+   "role": "moving",
+   "reason": "halfshaft_rr",
+   "description": "Technic Axle  3"
+  },
+  {
+   "id": "0/1/23",
+   "role": "moving",
+   "reason": "halfshaft_rl",
+   "description": "Technic Axle  3"
+  },
+  {
+   "id": "0/1/24",
+   "role": "moving",
+   "reason": "halfshaft_rl",
+   "description": "Technic Bush with Two Flanges"
+  },
+  {
+   "id": "0/1/25",
+   "role": "moving",
+   "reason": "halfshaft_rr",
+   "description": "Technic Bush with Two Flanges"
+  },
+  {
+   "id": "0/1/39",
+   "role": "moving",
+   "reason": "lower_rr",
+   "description": "Technic Suspension Arm  2 x  6"
+  },
+  {
+   "id": "0/1/47",
+   "role": "moving",
+   "reason": "lower_rl",
+   "description": "Technic Suspension Arm  2 x  6"
+  },
+  {
+   "id": "0/1/70",
+   "role": "moving",
+   "reason": "link_rl0",
+   "description": "Technic Steering Link  6L Type 1"
+  },
+  {
+   "id": "0/1/71",
+   "role": "moving",
+   "reason": "link_rl1",
+   "description": "Technic Steering Link  6L Type 1"
+  },
+  {
+   "id": "0/1/72",
+   "role": "moving",
+   "reason": "link_rr0",
+   "description": "Technic Steering Link  6L Type 1"
+  },
+  {
+   "id": "0/1/73",
+   "role": "moving",
+   "reason": "link_rr1",
+   "description": "Technic Steering Link  6L Type 1"
+  },
+  {
+   "id": "0/1/88",
+   "role": "moving",
+   "reason": "upper_rl",
+   "description": "Technic Suspension Arm  2 x  6"
+  },
+  {
+   "id": "0/1/89",
+   "role": "moving",
+   "reason": "knuckle_rl",
+   "description": "Technic Steering Wheel Bearing with 2 Pegholes & 2 Axleholes Arms"
+  },
+  {
+   "id": "0/1/90",
+   "role": "moving",
+   "reason": "knuckle_rl",
+   "description": "Technic Pin Towball with Friction"
+  },
+  {
+   "id": "0/1/91",
+   "role": "moving",
+   "reason": "knuckle_rl",
+   "description": "Technic Pin Towball with Friction"
+  },
+  {
+   "id": "0/1/92",
+   "role": "moving",
+   "reason": "knuckle_rl",
+   "description": "Technic Steering Wheel Hub for Portal Axle"
+  },
+  {
+   "id": "0/1/93",
+   "role": "moving",
+   "reason": "halfshaft_rl",
+   "description": "Technic Wheel Spindle Axle Driver"
+  },
+  {
+   "id": "0/1/94",
+   "role": "moving",
+   "reason": "knuckle_rl",
+   "description": "Technic Axle Towball"
+  },
+  {
+   "id": "0/1/95",
+   "role": "moving",
+   "reason": "knuckle_rl",
+   "description": "Technic Axle Towball"
+  },
+  {
+   "id": "0/1/96",
+   "role": "moving",
+   "reason": "knuckle_rr",
+   "description": "Technic Steering Wheel Bearing with 2 Pegholes & 2 Axleholes Arms"
+  },
+  {
+   "id": "0/1/97",
+   "role": "moving",
+   "reason": "knuckle_rr",
+   "description": "Technic Pin Towball with Friction"
+  },
+  {
+   "id": "0/1/98",
+   "role": "moving",
+   "reason": "knuckle_rr",
+   "description": "Technic Pin Towball with Friction"
+  },
+  {
+   "id": "0/1/99",
+   "role": "moving",
+   "reason": "knuckle_rr",
+   "description": "Technic Steering Wheel Hub for Portal Axle"
+  },
+  {
+   "id": "0/1/100",
+   "role": "moving",
+   "reason": "halfshaft_rr",
+   "description": "Technic Wheel Spindle Axle Driver"
+  },
+  {
+   "id": "0/1/101",
+   "role": "moving",
+   "reason": "knuckle_rr",
+   "description": "Technic Axle Towball"
+  },
+  {
+   "id": "0/1/102",
+   "role": "moving",
+   "reason": "knuckle_rr",
+   "description": "Technic Axle Towball"
+  },
+  {
+   "id": "0/1/104",
+   "role": "moving",
+   "reason": "upper_rr",
+   "description": "Technic Suspension Arm  2 x  6"
+  },
+  {
+   "id": "0/1/105",
+   "role": "moving",
+   "reason": "coupler_rl",
+   "description": "Technic Axle  3"
+  },
+  {
+   "id": "0/1/106",
+   "role": "moving",
+   "reason": "coupler_rl",
+   "description": "Technic Axle  3"
+  },
+  {
+   "id": "0/1/107",
+   "role": "moving",
+   "reason": "coupler_rr",
+   "description": "Technic Axle  3"
+  },
+  {
+   "id": "0/1/108",
+   "role": "moving",
+   "reason": "coupler_rr",
+   "description": "Technic Axle  3"
+  },
+  {
+   "id": "0/1/109",
+   "role": "moving",
+   "reason": "coupler_rl",
+   "description": "Technic Beam  5 x  0.5 Liftarm with Axle Holes at Both Ends"
+  },
+  {
+   "id": "0/1/110",
+   "role": "moving",
+   "reason": "coupler_rl",
+   "description": "Technic Beam  5 x  0.5 Liftarm with Axle Holes at Both Ends"
+  },
+  {
+   "id": "0/1/111",
+   "role": "moving",
+   "reason": "coupler_rr",
+   "description": "Technic Beam  5 x  0.5 Liftarm with Axle Holes at Both Ends"
+  },
+  {
+   "id": "0/1/112",
+   "role": "moving",
+   "reason": "coupler_rr",
+   "description": "Technic Beam  5 x  0.5 Liftarm with Axle Holes at Both Ends"
+  },
+  {
+   "id": "0/1/227/0",
+   "role": "moving",
+   "reason": "rod_rl0",
+   "description": "~Technic Shock Absorber  6.5L Piston Rod"
+  },
+  {
+   "id": "0/1/227/1",
+   "role": "moving",
+   "reason": "cyl_rl0",
+   "description": "~Technic Shock Absorber  6.5L Cylinder"
+  },
+  {
+   "id": "0/1/227/2",
+   "role": "moving",
+   "reason": "spring_rl0",
+   "description": "~Spring for Technic Shock Absorber  6.5L Extra Stiff"
+  },
+  {
+   "id": "0/1/228",
+   "role": "moving",
+   "reason": "upper_rl",
+   "description": "Technic Axle  3 with Stop"
+  },
+  {
+   "id": "0/1/229/0",
+   "role": "moving",
+   "reason": "rod_rl1",
+   "description": "~Technic Shock Absorber  6.5L Piston Rod"
+  },
+  {
+   "id": "0/1/229/1",
+   "role": "moving",
+   "reason": "cyl_rl1",
+   "description": "~Technic Shock Absorber  6.5L Cylinder"
+  },
+  {
+   "id": "0/1/229/2",
+   "role": "moving",
+   "reason": "spring_rl1",
+   "description": "~Spring for Technic Shock Absorber  6.5L Extra Stiff"
+  },
+  {
+   "id": "0/1/232",
+   "role": "moving",
+   "reason": "upper_rr",
+   "description": "Technic Axle  3 with Stop"
+  },
+  {
+   "id": "0/1/236/0",
+   "role": "moving",
+   "reason": "rod_rr0",
+   "description": "~Technic Shock Absorber  6.5L Piston Rod"
+  },
+  {
+   "id": "0/1/236/1",
+   "role": "moving",
+   "reason": "cyl_rr0",
+   "description": "~Technic Shock Absorber  6.5L Cylinder"
+  },
+  {
+   "id": "0/1/236/2",
+   "role": "moving",
+   "reason": "spring_rr0",
+   "description": "~Spring for Technic Shock Absorber  6.5L Extra Stiff"
+  },
+  {
+   "id": "0/1/237/0",
+   "role": "moving",
+   "reason": "rod_rr1",
+   "description": "~Technic Shock Absorber  6.5L Piston Rod"
+  },
+  {
+   "id": "0/1/237/1",
+   "role": "moving",
+   "reason": "cyl_rr1",
+   "description": "~Technic Shock Absorber  6.5L Cylinder"
+  },
+  {
+   "id": "0/1/237/2",
+   "role": "moving",
+   "reason": "spring_rr1",
+   "description": "~Spring for Technic Shock Absorber  6.5L Extra Stiff"
+  },
+  {
+   "id": "0/380",
+   "role": "moving",
+   "reason": "knuckle_fl",
+   "description": "Wheel Rim 34 x 56 with  6 Double Spokes and  6 Pegholes"
+  },
+  {
+   "id": "0/381",
+   "role": "moving",
+   "reason": "knuckle_fl",
+   "description": "Tyre 35/ 42 x 56 Racing"
+  },
+  {
+   "id": "0/382",
+   "role": "moving",
+   "reason": "knuckle_rl",
+   "description": "Wheel Rim 34 x 56 with  6 Double Spokes and  6 Pegholes"
+  },
+  {
+   "id": "0/383",
+   "role": "moving",
+   "reason": "knuckle_rl",
+   "description": "Tyre 35/ 42 x 56 Racing"
+  },
+  {
+   "id": "0/384",
+   "role": "moving",
+   "reason": "knuckle_rr",
+   "description": "Tyre 35/ 42 x 56 Racing"
+  },
+  {
+   "id": "0/385",
+   "role": "moving",
+   "reason": "knuckle_rr",
+   "description": "Wheel Rim 34 x 56 with  6 Double Spokes and  6 Pegholes"
+  },
+  {
+   "id": "0/386",
+   "role": "moving",
+   "reason": "knuckle_fr",
+   "description": "Tyre 35/ 42 x 56 Racing"
+  },
+  {
+   "id": "0/387",
+   "role": "moving",
+   "reason": "knuckle_fr",
+   "description": "Wheel Rim 34 x 56 with  6 Double Spokes and  6 Pegholes"
+  },
+  {
+   "id": "0/0/0",
+   "role": "frame",
+   "reason": "depth 1 from 0/0/14 (Technic Axle  5 with Stop)",
+   "description": "Technic Beam  9"
+  },
+  {
+   "id": "0/0/3",
+   "role": "frame",
+   "reason": "depth 1 from 0/0/14 (Technic Axle  5 with Stop)",
+   "description": "=Technic Beam  2 Liftarm"
+  },
+  {
+   "id": "0/0/10",
+   "role": "frame",
+   "reason": "depth 1 from 0/0/15 (Technic Beam  5 x  0.5 Liftarm with Axle Holes at Both Ends)",
+   "description": "=Technic Beam  2 Liftarm"
+  },
+  {
+   "id": "0/0/12",
+   "role": "frame",
+   "reason": "depth 1 from 0/0/14 (Technic Axle  5 with Stop)",
+   "description": "Technic Beam  9"
+  },
+  {
+   "id": "0/0/13",
+   "role": "mount",
+   "reason": "joined to moving 0/0/20 (Technic Suspension Arm  2 x  6)",
+   "description": "Technic Axle  5 with Stop"
+  },
+  {
+   "id": "0/0/14",
+   "role": "mount",
+   "reason": "joined to moving 0/0/19 (Technic Suspension Arm  2 x  6)",
+   "description": "Technic Axle  5 with Stop"
+  },
+  {
+   "id": "0/0/15",
+   "role": "mount",
+   "reason": "joined to moving 0/0/20 (Technic Suspension Arm  2 x  6)",
+   "description": "Technic Beam  5 x  0.5 Liftarm with Axle Holes at Both Ends"
+  },
+  {
+   "id": "0/0/16",
+   "role": "mount",
+   "reason": "joined to moving 0/0/19 (Technic Suspension Arm  2 x  6)",
+   "description": "Technic Beam  5 x  0.5 Liftarm with Axle Holes at Both Ends"
+  },
+  {
+   "id": "0/0/17",
+   "role": "mount",
+   "reason": "joined to moving 0/0/19 (Technic Suspension Arm  2 x  6)",
+   "description": "Technic Beam  5 x  0.5 Liftarm with Axle Holes at Both Ends"
+  },
+  {
+   "id": "0/0/18",
+   "role": "mount",
+   "reason": "joined to moving 0/0/20 (Technic Suspension Arm  2 x  6)",
+   "description": "Technic Beam  5 x  0.5 Liftarm with Axle Holes at Both Ends"
+  },
+  {
+   "id": "0/0/27/17",
+   "role": "mount",
+   "reason": "joined to moving 0/0/27/16 (Technic Universal Joint 3L End)",
+   "description": "Technic Universal Joint 3L Centre"
+  },
+  {
+   "id": "0/0/27/20",
+   "role": "mount",
+   "reason": "joined to moving 0/0/27/19 (Technic Universal Joint 3L End)",
+   "description": "Technic Universal Joint 3L Centre"
+  },
+  {
+   "id": "0/0/39",
+   "role": "frame",
+   "reason": "depth 1 from 0/0/16 (Technic Beam  5 x  0.5 Liftarm with Axle Holes at Both Ends)",
+   "description": "=Technic Beam  2 Liftarm"
+  },
+  {
+   "id": "0/0/40",
+   "role": "frame",
+   "reason": "depth 1 from 0/0/17 (Technic Beam  5 x  0.5 Liftarm with Axle Holes at Both Ends)",
+   "description": "Technic Beam  9"
+  },
+  {
+   "id": "0/0/44",
+   "role": "frame",
+   "reason": "depth 1 from 0/0/15 (Technic Beam  5 x  0.5 Liftarm with Axle Holes at Both Ends)",
+   "description": "=Technic Beam  2 Liftarm"
+  },
+  {
+   "id": "0/0/47",
+   "role": "frame",
+   "reason": "depth 1 from 0/0/16 (Technic Beam  5 x  0.5 Liftarm with Axle Holes at Both Ends)",
+   "description": "Technic Beam  9"
+  },
+  {
+   "id": "0/0/51",
+   "role": "mount",
+   "reason": "joined to moving 0/0/53 (Technic Suspension Arm  2 x  6)",
+   "description": "Technic Axle  5 with Stop"
+  },
+  {
+   "id": "0/0/52",
+   "role": "mount",
+   "reason": "joined to moving 0/0/54 (Technic Suspension Arm  2 x  6)",
+   "description": "Technic Axle  5 with Stop"
+  },
+  {
+   "id": "0/0/111/9",
+   "role": "mount",
+   "reason": "joined to moving 0/0/111/12 (Technic Steering Link  6L Type 1)",
+   "description": "Technic Pin Towball with Friction"
+  },
+  {
+   "id": "0/0/111/10",
+   "role": "mount",
+   "reason": "joined to moving 0/0/111/11 (Technic Steering Link  6L Type 1)",
+   "description": "Technic Pin Towball with Friction"
+  },
+  {
+   "id": "0/1/0",
+   "role": "frame",
+   "reason": "depth 2 from 0/1/165 (Technic Cross Block 1 x 3 (Axle/Pin/Pin))",
+   "description": "Technic Beam 11 x  5 with Open Center  5 x  3"
+  },
+  {
+   "id": "0/1/18",
+   "role": "mount",
+   "reason": "joined to moving 0/1/16 (Technic Universal Joint 3L End)",
+   "description": "Technic Universal Joint 3L Centre"
+  },
+  {
+   "id": "0/1/30",
+   "role": "frame",
+   "reason": "depth 1 from 0/1/69 (Technic Pin Towball with Friction)",
+   "description": "Technic Beam  3 x  3 T-shaped"
+  },
+  {
+   "id": "0/1/31",
+   "role": "frame",
+   "reason": "depth 1 from 0/1/68 (Technic Pin Towball with Friction)",
+   "description": "Technic Beam  3 x  3 T-shaped"
+  },
+  {
+   "id": "0/1/32",
+   "role": "frame",
+   "reason": "depth 1 from 0/1/66 (Technic Pin Towball with Friction)",
+   "description": "Technic Beam  3 x  3 T-shaped"
+  },
+  {
+   "id": "0/1/33",
+   "role": "frame",
+   "reason": "depth 1 from 0/1/67 (Technic Pin Towball with Friction)",
+   "description": "Technic Beam  3 x  3 T-shaped"
+  },
+  {
+   "id": "0/1/37",
+   "role": "frame",
+   "reason": "depth 1 from 0/1/40 (Technic Beam  5 x  0.5 Liftarm with Axle Holes at Both Ends)",
+   "description": "=Technic Beam  2 Liftarm"
+  },
+  {
+   "id": "0/1/38",
+   "role": "mount",
+   "reason": "joined to moving 0/1/39 (Technic Suspension Arm  2 x  6)",
+   "description": "Technic Axle  7"
+  },
+  {
+   "id": "0/1/40",
+   "role": "mount",
+   "reason": "joined to moving 0/1/39 (Technic Suspension Arm  2 x  6)",
+   "description": "Technic Beam  5 x  0.5 Liftarm with Axle Holes at Both Ends"
+  },
+  {
+   "id": "0/1/41",
+   "role": "mount",
+   "reason": "joined to moving 0/1/39 (Technic Suspension Arm  2 x  6)",
+   "description": "Technic Beam  5 x  0.5 Liftarm with Axle Holes at Both Ends"
+  },
+  {
+   "id": "0/1/45",
+   "role": "frame",
+   "reason": "depth 1 from 0/1/46 (Technic Axle  7)",
+   "description": "=Technic Beam  2 Liftarm"
+  },
+  {
+   "id": "0/1/46",
+   "role": "mount",
+   "reason": "joined to moving 0/1/47 (Technic Suspension Arm  2 x  6)",
+   "description": "Technic Axle  7"
+  },
+  {
+   "id": "0/1/48",
+   "role": "mount",
+   "reason": "joined to moving 0/1/47 (Technic Suspension Arm  2 x  6)",
+   "description": "Technic Beam  5 x  0.5 Liftarm with Axle Holes at Both Ends"
+  },
+  {
+   "id": "0/1/49",
+   "role": "mount",
+   "reason": "joined to moving 0/1/47 (Technic Suspension Arm  2 x  6)",
+   "description": "Technic Beam  5 x  0.5 Liftarm with Axle Holes at Both Ends"
+  },
+  {
+   "id": "0/1/50",
+   "role": "frame",
+   "reason": "depth 1 from 0/1/40 (Technic Beam  5 x  0.5 Liftarm with Axle Holes at Both Ends)",
+   "description": "Technic Beam  9"
+  },
+  {
+   "id": "0/1/51",
+   "role": "frame",
+   "reason": "depth 1 from 0/1/41 (Technic Beam  5 x  0.5 Liftarm with Axle Holes at Both Ends)",
+   "description": "Technic Beam  9"
+  },
+  {
+   "id": "0/1/59",
+   "role": "frame",
+   "reason": "depth 3 from 0/1/115 (Technic Pin Long with Friction and Slot)",
+   "description": "Technic Beam 11"
+  },
+  {
+   "id": "0/1/65",
+   "role": "frame",
+   "reason": "depth 2 from 0/1/165 (Technic Cross Block 1 x 3 (Axle/Pin/Pin))",
+   "description": "Technic Beam 11"
+  },
+  {
+   "id": "0/1/66",
+   "role": "mount",
+   "reason": "joined to moving 0/1/71 (Technic Steering Link  6L Type 1)",
+   "description": "Technic Pin Towball with Friction"
+  },
+  {
+   "id": "0/1/67",
+   "role": "mount",
+   "reason": "joined to moving 0/1/70 (Technic Steering Link  6L Type 1)",
+   "description": "Technic Pin Towball with Friction"
+  },
+  {
+   "id": "0/1/68",
+   "role": "mount",
+   "reason": "joined to moving 0/1/72 (Technic Steering Link  6L Type 1)",
+   "description": "Technic Pin Towball with Friction"
+  },
+  {
+   "id": "0/1/69",
+   "role": "mount",
+   "reason": "joined to moving 0/1/73 (Technic Steering Link  6L Type 1)",
+   "description": "Technic Pin Towball with Friction"
+  },
+  {
+   "id": "0/1/80",
+   "role": "frame",
+   "reason": "depth 1 from 0/1/40 (Technic Beam  5 x  0.5 Liftarm with Axle Holes at Both Ends)",
+   "description": "=Technic Beam  2 Liftarm"
+  },
+  {
+   "id": "0/1/81",
+   "role": "frame",
+   "reason": "depth 1 from 0/1/48 (Technic Beam  5 x  0.5 Liftarm with Axle Holes at Both Ends)",
+   "description": "=Technic Beam  2 Liftarm"
+  },
+  {
+   "id": "0/1/84",
+   "role": "frame",
+   "reason": "depth 1 from 0/1/41 (Technic Beam  5 x  0.5 Liftarm with Axle Holes at Both Ends)",
+   "description": "Technic Beam  9"
+  },
+  {
+   "id": "0/1/87",
+   "role": "mount",
+   "reason": "joined to moving 0/1/88 (Technic Suspension Arm  2 x  6)",
+   "description": "Technic Axle  7"
+  },
+  {
+   "id": "0/1/103",
+   "role": "mount",
+   "reason": "joined to moving 0/1/104 (Technic Suspension Arm  2 x  6)",
+   "description": "Technic Axle  7"
+  },
+  {
+   "id": "0/1/113",
+   "role": "frame",
+   "reason": "depth 1 from 0/1/46 (Technic Axle  7)",
+   "description": "Technic Cross Block 1 x 3 (Axle/Pin/Pin)"
+  },
+  {
+   "id": "0/1/114",
+   "role": "frame",
+   "reason": "depth 1 from 0/1/41 (Technic Beam  5 x  0.5 Liftarm with Axle Holes at Both Ends)",
+   "description": "Technic Cross Block 1 x 3 (Axle/Pin/Pin)"
+  },
+  {
+   "id": "0/1/115",
+   "role": "frame",
+   "reason": "depth 2 from 0/1/114 (Technic Cross Block 1 x 3 (Axle/Pin/Pin))",
+   "description": "Technic Pin Long with Friction and Slot"
+  },
+  {
+   "id": "0/1/116",
+   "role": "frame",
+   "reason": "depth 2 from 0/1/113 (Technic Cross Block 1 x 3 (Axle/Pin/Pin))",
+   "description": "Technic Pin Long with Friction and Slot"
+  },
+  {
+   "id": "0/1/117",
+   "role": "frame",
+   "reason": "depth 1 from 0/1/46 (Technic Axle  7)",
+   "description": "Technic Cross Block 1 x 3 (Axle/Pin/Pin)"
+  },
+  {
+   "id": "0/1/118",
+   "role": "frame",
+   "reason": "depth 1 from 0/1/40 (Technic Beam  5 x  0.5 Liftarm with Axle Holes at Both Ends)",
+   "description": "Technic Cross Block 1 x 3 (Axle/Pin/Pin)"
+  },
+  {
+   "id": "0/1/119",
+   "role": "frame",
+   "reason": "depth 2 from 0/1/117 (Technic Cross Block 1 x 3 (Axle/Pin/Pin))",
+   "description": "Technic Pin with Friction and Slots"
+  },
+  {
+   "id": "0/1/120",
+   "role": "frame",
+   "reason": "depth 2 from 0/1/118 (Technic Cross Block 1 x 3 (Axle/Pin/Pin))",
+   "description": "Technic Pin with Friction and Slots"
+  },
+  {
+   "id": "0/1/121",
+   "role": "frame",
+   "reason": "depth 2 from 0/1/117 (Technic Cross Block 1 x 3 (Axle/Pin/Pin))",
+   "description": "Technic Axle Pin with Friction"
+  },
+  {
+   "id": "0/1/122",
+   "role": "frame",
+   "reason": "depth 2 from 0/1/118 (Technic Cross Block 1 x 3 (Axle/Pin/Pin))",
+   "description": "Technic Axle Pin with Friction"
+  },
+  {
+   "id": "0/1/123",
+   "role": "frame",
+   "reason": "depth 1 from 0/1/40 (Technic Beam  5 x  0.5 Liftarm with Axle Holes at Both Ends)",
+   "description": "Technic Beam  9"
+  },
+  {
+   "id": "0/1/124",
+   "role": "frame",
+   "reason": "depth 1 from 0/1/49 (Technic Beam  5 x  0.5 Liftarm with Axle Holes at Both Ends)",
+   "description": "Technic Cross Block 1 x 2 (Axle/Pin)"
+  },
+  {
+   "id": "0/1/125",
+   "role": "frame",
+   "reason": "depth 1 from 0/1/40 (Technic Beam  5 x  0.5 Liftarm with Axle Holes at Both Ends)",
+   "description": "Technic Cross Block 1 x 2 (Axle/Pin)"
+  },
+  {
+   "id": "0/1/126",
+   "role": "frame",
+   "reason": "depth 2 from 0/1/124 (Technic Cross Block 1 x 2 (Axle/Pin))",
+   "description": "Technic Pin with Friction and Slots"
+  },
+  {
+   "id": "0/1/127",
+   "role": "frame",
+   "reason": "depth 2 from 0/1/125 (Technic Cross Block 1 x 2 (Axle/Pin))",
+   "description": "Technic Pin with Friction and Slots"
+  },
+  {
+   "id": "0/1/148",
+   "role": "frame",
+   "reason": "depth 2 from 0/1/161 (Technic Cross Block 1 x 3 (Axle/Pin/Pin))",
+   "description": "Technic Cross Block 1 x 2 (Axle/Pin)"
+  },
+  {
+   "id": "0/1/149",
+   "role": "frame",
+   "reason": "depth 2 from 0/1/161 (Technic Cross Block 1 x 3 (Axle/Pin/Pin))",
+   "description": "Technic Axle  4"
+  },
+  {
+   "id": "0/1/150",
+   "role": "frame",
+   "reason": "depth 2 from 0/1/161 (Technic Cross Block 1 x 3 (Axle/Pin/Pin))",
+   "description": "Technic Cross Block 1 x 2 (Axle/Pin)"
+  },
+  {
+   "id": "0/1/151",
+   "role": "frame",
+   "reason": "depth 2 from 0/1/161 (Technic Cross Block 1 x 3 (Axle/Pin/Pin))",
+   "description": "Technic Cross Block 3 x 2 (Axle/Triple Pin)"
+  },
+  {
+   "id": "0/1/152",
+   "role": "frame",
+   "reason": "depth 3 from 0/1/148 (Technic Cross Block 1 x 2 (Axle/Pin))",
+   "description": "Technic Cross Block 3 x 2 (Axle/Triple Pin)"
+  },
+  {
+   "id": "0/1/161",
+   "role": "frame",
+   "reason": "depth 1 from 0/1/48 (Technic Beam  5 x  0.5 Liftarm with Axle Holes at Both Ends)",
+   "description": "Technic Cross Block 1 x 3 (Axle/Pin/Pin)"
+  },
+  {
+   "id": "0/1/162",
+   "role": "frame",
+   "reason": "depth 2 from 0/1/161 (Technic Cross Block 1 x 3 (Axle/Pin/Pin))",
+   "description": "Technic Pin with Friction and Slots"
+  },
+  {
+   "id": "0/1/163",
+   "role": "frame",
+   "reason": "depth 2 from 0/1/161 (Technic Cross Block 1 x 3 (Axle/Pin/Pin))",
+   "description": "Technic Axle Pin with Friction"
+  },
+  {
+   "id": "0/1/164",
+   "role": "frame",
+   "reason": "depth 2 from 0/1/165 (Technic Cross Block 1 x 3 (Axle/Pin/Pin))",
+   "description": "Technic Axle Pin with Friction"
+  },
+  {
+   "id": "0/1/165",
+   "role": "frame",
+   "reason": "depth 1 from 0/1/48 (Technic Beam  5 x  0.5 Liftarm with Axle Holes at Both Ends)",
+   "description": "Technic Cross Block 1 x 3 (Axle/Pin/Pin)"
+  },
+  {
+   "id": "0/1/166",
+   "role": "frame",
+   "reason": "depth 1 from 0/1/48 (Technic Beam  5 x  0.5 Liftarm with Axle Holes at Both Ends)",
+   "description": "Technic Pin with Friction and Slots"
+  },
+  {
+   "id": "0/1/167",
+   "role": "frame",
+   "reason": "depth 1 from 0/1/48 (Technic Beam  5 x  0.5 Liftarm with Axle Holes at Both Ends)",
+   "description": "Technic Pin with Friction and Slots"
+  },
+  {
+   "id": "0/1/169",
+   "role": "frame",
+   "reason": "depth 2 from 0/1/161 (Technic Cross Block 1 x 3 (Axle/Pin/Pin))",
+   "description": "Technic Beam  3 x  5 Bent 90"
+  },
+  {
+   "id": "0/1/213",
+   "role": "frame",
+   "reason": "depth 2 from 0/1/225 (Technic Cross Block 1 x 3 (Axle/Pin/Pin))",
+   "description": "Technic Beam 15"
+  },
+  {
+   "id": "0/1/224",
+   "role": "frame",
+   "reason": "depth 1 from 0/1/230 (Technic Bush 1/2 Smooth with Axle Hole Semi-Reduced)",
+   "description": "Technic Cross Block 1 x 3 (Axle/Pin/Pin)"
+  },
+  {
+   "id": "0/1/225",
+   "role": "frame",
+   "reason": "depth 1 from 0/1/235 (Technic Bush 1/2 Smooth with Axle Hole Semi-Reduced)",
+   "description": "Technic Cross Block 1 x 3 (Axle/Pin/Pin)"
+  },
+  {
+   "id": "0/1/226",
+   "role": "mount",
+   "reason": "joined to moving 0/1/229/1 (~Technic Shock Absorber  6.5L Cylinder)",
+   "description": "Technic Axle  6"
+  },
+  {
+   "id": "0/1/230",
+   "role": "mount",
+   "reason": "joined to moving 0/1/227/1 (~Technic Shock Absorber  6.5L Cylinder)",
+   "description": "Technic Bush 1/2 Smooth with Axle Hole Semi-Reduced"
+  },
+  {
+   "id": "0/1/231",
+   "role": "mount",
+   "reason": "joined to moving 0/1/229/1 (~Technic Shock Absorber  6.5L Cylinder)",
+   "description": "Technic Bush 1/2 Smooth with Axle Hole Semi-Reduced"
+  },
+  {
+   "id": "0/1/233",
+   "role": "mount",
+   "reason": "joined to moving 0/1/237/1 (~Technic Shock Absorber  6.5L Cylinder)",
+   "description": "Technic Axle  6"
+  },
+  {
+   "id": "0/1/234",
+   "role": "mount",
+   "reason": "joined to moving 0/1/237/1 (~Technic Shock Absorber  6.5L Cylinder)",
+   "description": "Technic Bush 1/2 Smooth with Axle Hole Semi-Reduced"
+  },
+  {
+   "id": "0/1/235",
+   "role": "mount",
+   "reason": "joined to moving 0/1/236/1 (~Technic Shock Absorber  6.5L Cylinder)",
+   "description": "Technic Bush 1/2 Smooth with Axle Hole Semi-Reduced"
+  },
+  {
+   "id": "0/1/238",
+   "role": "frame",
+   "reason": "depth 1 from 0/1/230 (Technic Bush 1/2 Smooth with Axle Hole Semi-Reduced)",
+   "description": "Technic Cross Block 1 x 3 (Axle/Pin/Pin)"
+  },
+  {
+   "id": "0/1/239",
+   "role": "frame",
+   "reason": "depth 2 from 0/1/238 (Technic Cross Block 1 x 3 (Axle/Pin/Pin))",
+   "description": "Technic Pin Long with Friction and Slot"
+  },
+  {
+   "id": "0/1/240",
+   "role": "frame",
+   "reason": "depth 2 from 0/1/238 (Technic Cross Block 1 x 3 (Axle/Pin/Pin))",
+   "description": "Technic Pin with Friction and Slots"
+  },
+  {
+   "id": "0/1/241",
+   "role": "frame",
+   "reason": "depth 1 from 0/1/235 (Technic Bush 1/2 Smooth with Axle Hole Semi-Reduced)",
+   "description": "Technic Cross Block 1 x 3 (Axle/Pin/Pin)"
+  },
+  {
+   "id": "0/1/242",
+   "role": "frame",
+   "reason": "depth 2 from 0/1/241 (Technic Cross Block 1 x 3 (Axle/Pin/Pin))",
+   "description": "Technic Pin Long with Friction and Slot"
+  },
+  {
+   "id": "0/1/243",
+   "role": "frame",
+   "reason": "depth 2 from 0/1/241 (Technic Cross Block 1 x 3 (Axle/Pin/Pin))",
+   "description": "Technic Pin with Friction and Slots"
+  },
+  {
+   "id": "0/1/244",
+   "role": "frame",
+   "reason": "depth 3 from 0/1/119 (Technic Pin with Friction and Slots)",
+   "description": "Technic Beam  5"
+  },
+  {
+   "id": "0/1/247",
+   "role": "frame",
+   "reason": "depth 3 from 0/1/120 (Technic Pin with Friction and Slots)",
+   "description": "Technic Beam  5"
+  },
+  {
+   "id": "0/1/250",
+   "role": "frame",
+   "reason": "depth 3 from 0/1/239 (Technic Pin Long with Friction and Slot)",
+   "description": "Technic Beam  5"
+  },
+  {
+   "id": "0/1/251",
+   "role": "frame",
+   "reason": "depth 3 from 0/1/242 (Technic Pin Long with Friction and Slot)",
+   "description": "Technic Beam  5"
+  },
+  {
+   "id": "0/1/252",
+   "role": "frame",
+   "reason": "depth 1 from 0/1/235 (Technic Bush 1/2 Smooth with Axle Hole Semi-Reduced)",
+   "description": "Technic Cross Block 1 x 2 (Axle/Pin)"
+  },
+  {
+   "id": "0/1/253",
+   "role": "frame",
+   "reason": "depth 1 from 0/1/230 (Technic Bush 1/2 Smooth with Axle Hole Semi-Reduced)",
+   "description": "Technic Cross Block 1 x 2 (Axle/Pin)"
+  },
+  {
+   "id": "0/1/254",
+   "role": "frame",
+   "reason": "depth 2 from 0/1/253 (Technic Cross Block 1 x 2 (Axle/Pin))",
+   "description": "Technic Pin Long with Friction and Slot"
+  },
+  {
+   "id": "0/1/255",
+   "role": "frame",
+   "reason": "depth 2 from 0/1/252 (Technic Cross Block 1 x 2 (Axle/Pin))",
+   "description": "Technic Pin Long with Friction and Slot"
+  },
+  {
+   "id": "0/1/256",
+   "role": "frame",
+   "reason": "depth 3 from 0/1/254 (Technic Pin Long with Friction and Slot)",
+   "description": "Technic Beam 15"
+  },
+  {
+   "id": "0/1/259",
+   "role": "frame",
+   "reason": "depth 3 from 0/1/254 (Technic Pin Long with Friction and Slot)",
+   "description": "Technic Angle Connector #1"
+  },
+  {
+   "id": "0/1/260",
+   "role": "frame",
+   "reason": "depth 3 from 0/1/255 (Technic Pin Long with Friction and Slot)",
+   "description": "Technic Angle Connector #1"
+  },
+  {
+   "id": "0/1/261",
+   "role": "frame",
+   "reason": "depth 4 from 0/1/260 (Technic Angle Connector #1)",
+   "description": "Technic Axle  2 Notched"
+  },
+  {
+   "id": "0/1/262",
+   "role": "frame",
+   "reason": "depth 4 from 0/1/259 (Technic Angle Connector #1)",
+   "description": "Technic Axle  2 Notched"
+  },
+  {
+   "id": "0/1/263",
+   "role": "frame",
+   "reason": "depth 4 from 0/1/259 (Technic Angle Connector #1)",
+   "description": "Technic Angle Connector #2 (180 degree)"
+  },
+  {
+   "id": "0/1/264",
+   "role": "frame",
+   "reason": "depth 4 from 0/1/260 (Technic Angle Connector #1)",
+   "description": "Technic Angle Connector #2 (180 degree)"
+  },
+  {
+   "id": "0/1/270",
+   "role": "frame",
+   "reason": "depth 3 from 0/1/116 (Technic Pin Long with Friction and Slot)",
+   "description": "Technic Beam  9"
+  },
+  {
+   "id": "0/1/271",
+   "role": "frame",
+   "reason": "depth 3 from 0/1/115 (Technic Pin Long with Friction and Slot)",
+   "description": "Technic Beam  9"
+  },
+  {
+   "id": "0/28",
+   "role": "frame",
+   "reason": "depth 2 from 0/41 (Technic Cross Block 1 x 3 (Axle/Pin/Axle))",
+   "description": "Technic Beam 13"
+  },
+  {
+   "id": "0/29",
+   "role": "frame",
+   "reason": "depth 2 from 0/64 (Technic Cross Block 1 x 3 (Axle/Pin/Axle))",
+   "description": "Technic Beam 13"
+  },
+  {
+   "id": "0/34",
+   "role": "frame",
+   "reason": "depth 3 from 0/38 (Technic Cross Block 2 x 2 Split (Axle/Twin Pin))",
+   "description": "Technic Pin with Friction and Slots"
+  },
+  {
+   "id": "0/35",
+   "role": "frame",
+   "reason": "depth 3 from 0/38 (Technic Cross Block 2 x 2 Split (Axle/Twin Pin))",
+   "description": "Technic Pin with Friction and Slots"
+  },
+  {
+   "id": "0/36",
+   "role": "frame",
+   "reason": "depth 3 from 0/39 (Technic Cross Block 2 x 2 Split (Axle/Twin Pin))",
+   "description": "Technic Pin with Friction and Slots"
+  },
+  {
+   "id": "0/37",
+   "role": "frame",
+   "reason": "depth 3 from 0/39 (Technic Cross Block 2 x 2 Split (Axle/Twin Pin))",
+   "description": "Technic Pin with Friction and Slots"
+  },
+  {
+   "id": "0/38",
+   "role": "frame",
+   "reason": "depth 2 from 0/64 (Technic Cross Block 1 x 3 (Axle/Pin/Axle))",
+   "description": "Technic Cross Block 2 x 2 Split (Axle/Twin Pin)"
+  },
+  {
+   "id": "0/39",
+   "role": "frame",
+   "reason": "depth 2 from 0/41 (Technic Cross Block 1 x 3 (Axle/Pin/Axle))",
+   "description": "Technic Cross Block 2 x 2 Split (Axle/Twin Pin)"
+  },
+  {
+   "id": "0/40",
+   "role": "frame",
+   "reason": "depth 2 from 0/41 (Technic Cross Block 1 x 3 (Axle/Pin/Axle))",
+   "description": "Technic Axle  4"
+  },
+  {
+   "id": "0/41",
+   "role": "frame",
+   "reason": "depth 1 from 0/46 (Technic Bush 1/2 Smooth with Axle Hole Semi-Reduced)",
+   "description": "Technic Cross Block 1 x 3 (Axle/Pin/Axle)"
+  },
+  {
+   "id": "0/42",
+   "role": "frame",
+   "reason": "depth 2 from 0/41 (Technic Cross Block 1 x 3 (Axle/Pin/Axle))",
+   "description": "Technic Axle Pin with Friction"
+  },
+  {
+   "id": "0/43",
+   "role": "frame",
+   "reason": "depth 2 from 0/41 (Technic Cross Block 1 x 3 (Axle/Pin/Axle))",
+   "description": "Technic Angle Connector #2 (180 degree)"
+  },
+  {
+   "id": "0/44",
+   "role": "mount",
+   "reason": "joined to moving 0/0/79/1 (~Technic Shock Absorber  6.5L Cylinder)",
+   "description": "Technic Axle  5 with Stop"
+  },
+  {
+   "id": "0/45",
+   "role": "mount",
+   "reason": "joined to moving 0/0/80/1 (~Technic Shock Absorber  6.5L Cylinder)",
+   "description": "Technic Bush 1/2 Smooth with Axle Hole Semi-Reduced"
+  },
+  {
+   "id": "0/46",
+   "role": "mount",
+   "reason": "joined to moving 0/0/79/1 (~Technic Shock Absorber  6.5L Cylinder)",
+   "description": "Technic Bush 1/2 Smooth with Axle Hole Semi-Reduced"
+  },
+  {
+   "id": "0/47",
+   "role": "frame",
+   "reason": "depth 1 from 0/48 (Technic Cross Block 1 x 2 (Axle/Pin))",
+   "description": "Technic Axle Pin Long with Friction with  2L Pin"
+  },
+  {
+   "id": "0/48",
+   "role": "mount",
+   "reason": "joined to moving 0/0/79/1 (~Technic Shock Absorber  6.5L Cylinder)",
+   "description": "Technic Cross Block 1 x 2 (Axle/Pin)"
+  },
+  {
+   "id": "0/60",
+   "role": "mount",
+   "reason": "joined to moving 0/0/76/1 (~Technic Shock Absorber  6.5L Cylinder)",
+   "description": "Technic Axle  6"
+  },
+  {
+   "id": "0/61",
+   "role": "mount",
+   "reason": "joined to moving 0/0/76/1 (~Technic Shock Absorber  6.5L Cylinder)",
+   "description": "Technic Bush 1/2 Smooth with Axle Hole Semi-Reduced"
+  },
+  {
+   "id": "0/62",
+   "role": "mount",
+   "reason": "joined to moving 0/0/77/1 (~Technic Shock Absorber  6.5L Cylinder)",
+   "description": "Technic Bush 1/2 Smooth with Axle Hole Semi-Reduced"
+  },
+  {
+   "id": "0/63",
+   "role": "frame",
+   "reason": "depth 2 from 0/64 (Technic Cross Block 1 x 3 (Axle/Pin/Axle))",
+   "description": "Technic Axle  4"
+  },
+  {
+   "id": "0/64",
+   "role": "frame",
+   "reason": "depth 1 from 0/60 (Technic Axle  6)",
+   "description": "Technic Cross Block 1 x 3 (Axle/Pin/Axle)"
+  },
+  {
+   "id": "0/65",
+   "role": "frame",
+   "reason": "depth 2 from 0/64 (Technic Cross Block 1 x 3 (Axle/Pin/Axle))",
+   "description": "Technic Angle Connector #2 (180 degree)"
+  },
+  {
+   "id": "0/66",
+   "role": "frame",
+   "reason": "depth 2 from 0/64 (Technic Cross Block 1 x 3 (Axle/Pin/Axle))",
+   "description": "Technic Axle Pin with Friction"
+  },
+  {
+   "id": "0/67",
+   "role": "frame",
+   "reason": "depth 1 from 0/60 (Technic Axle  6)",
+   "description": "Technic Angle Connector #1"
+  },
+  {
+   "id": "0/70",
+   "role": "frame",
+   "reason": "depth 3 from 0/65 (Technic Angle Connector #2 (180 degree))",
+   "description": "Technic Pin with Friction with Perpendicular Pin Hole Type 1"
+  },
+  {
+   "id": "0/71",
+   "role": "frame",
+   "reason": "depth 4 from 0/70 (Technic Pin with Friction with Perpendicular Pin Hole Type 1)",
+   "description": "Technic Axle Pin with Friction"
+  },
+  {
+   "id": "0/83",
+   "role": "frame",
+   "reason": "depth 1 from 0/48 (Technic Cross Block 1 x 2 (Axle/Pin))",
+   "description": "Technic Cross Block 1 x 3 (Axle/Pin/Axle)"
+  },
+  {
+   "id": "0/84",
+   "role": "frame",
+   "reason": "depth 2 from 0/83 (Technic Cross Block 1 x 3 (Axle/Pin/Axle))",
+   "description": "Technic Axle  2 Notched"
+  },
+  {
+   "id": "0/85",
+   "role": "frame",
+   "reason": "depth 2 from 0/83 (Technic Cross Block 1 x 3 (Axle/Pin/Axle))",
+   "description": "Technic Axle Joiner Inline Smooth"
+  },
+  {
+   "id": "0/271",
+   "role": "frame",
+   "reason": "depth 3 from 0/43 (Technic Angle Connector #2 (180 degree))",
+   "description": "Technic Axle Pin with Friction"
+  },
+  {
+   "id": "0/272",
+   "role": "frame",
+   "reason": "depth 2 from 0/83 (Technic Cross Block 1 x 3 (Axle/Pin/Axle))",
+   "description": "Technic Axle Pin with Friction"
+  },
+  {
+   "id": "0/273",
+   "role": "frame",
+   "reason": "depth 3 from 0/65 (Technic Angle Connector #2 (180 degree))",
+   "description": "Technic Axle Pin with Friction"
+  },
+  {
+   "id": "0/299",
+   "role": "frame",
+   "reason": "depth 3 from 0/43 (Technic Angle Connector #2 (180 degree))",
+   "description": "Technic Beam 11"
+  },
+  {
+   "id": "0/302",
+   "role": "frame",
+   "reason": "depth 3 from 0/65 (Technic Angle Connector #2 (180 degree))",
+   "description": "Technic Beam 11"
+  }
+ ],
+ "counts": {
+  "moving": 117,
+  "mount": 38,
+  "frame": 104
+ },
+ "include": [],
+ "exclude": [],
+ "moving_elsewhere": "output/42110/plan.json",
+ "source_plan": "output/42110-suspension/plan.json",
+ "source_digest": "16f986e3c511a0dec38074f3155a375ec75ed838fbf982b4eacbaa55768f3120"
+}

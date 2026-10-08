@@ -1,0 +1,88 @@
+0 FILE p10_rushes.ldr
+0 Plant wind case P10_rushes Rushes row
+0 Name: p10_rushes.ldr
+0 Author: ldraw-mecha scripts/build_plants.py
+0 // Generated mock case: parts picked by constant name from data/categories/parts (vine subfiles by LDraw reference); moving parts placed from LDCad shadow connector frames (data/offLibShadow) via pyldraw3 or copied from official constructions (2518c01, 10315, 10297). Frame: LDU, -Y up, the case front faces -Z, ground (base top) at y = 0. Wind blows toward +X.
+
+0 // base: plates.Plate8X16
+1 2 -30 0 10 1 0 0 0 1 0 0 0 1 92438.dat
+0 // riser1: plates.Plate1X2
+1 288 -150 -8 0 1 0 0 0 1 0 0 0 1 3023b.dat
+0 // socket1: hinges.Plate1X2WithSocketJoint_8WithFriction
+1 72 -150 -16 0 1 0 0 0 1 0 0 0 1 14418.dat
+0 // rush1_85861_0: plates.Plate1X1RoundWithOpenStud
+1 19 -120 -92 0 0 0 -1 0 -1 0 -1 0 0 85861.dat
+0 // rush1_59900_1: cones.Cone1X1WithStop
+1 28 -120 -68 0 0 0 -1 0 -1 0 -1 0 0 59900.dat
+0 // rush1_37762_2: cylinders.Cylinder1X1_333With0_5LBarAndBarHole
+1 330 -120 -64 0 0 0 -1 0 -1 0 -1 0 0 37762.dat
+0 // rush1_22484_3: bars.Bar2LWithBallJoint_8
+1 72 -120 -22 0 0 1 0 0 0 -1 -1 0 0 22484.dat
+0 // rush1_30374_4: bars.Bar4LLightsaberBlade
+1 330 -120 -71 0 0 0 -1 0 -1 0 -1 0 0 30374.dat
+0 // rush1_32607_5: plants.Plate1X1RoundWith3Leaves
+1 330 -120 -156 0 0 0 -1 0 1 0 1 0 0 32607.dat
+0 // rush1_32607_6: plants.Plate1X1RoundWith3Leaves
+1 330 -120 -124 0 0 0 1 0 1 0 -1 0 0 32607.dat
+0 // rush1_32607_7: plants.Plate1X1RoundWith3Leaves
+1 330 -120 -148 0 -1 0 0 0 1 0 0 0 -1 32607.dat
+0 // riser2: plates.Plate1X2
+1 288 -70 -8 0 1 0 0 0 1 0 0 0 1 3023b.dat
+0 // socket2: hinges.Plate1X2WithSocketJoint_8WithFriction
+1 72 -70 -16 0 1 0 0 0 1 0 0 0 1 14418.dat
+0 // rush2_85861_0: plates.Plate1X1RoundWithOpenStud
+1 19 -40 -92 0 0 0 1 0 -1 0 1 0 0 85861.dat
+0 // rush2_59900_1: cones.Cone1X1WithStop
+1 28 -40 -68 0 0 0 1 0 -1 0 1 0 0 59900.dat
+0 // rush2_37762_2: cylinders.Cylinder1X1_333With0_5LBarAndBarHole
+1 330 -40 -64 0 0 0 1 0 -1 0 1 0 0 37762.dat
+0 // rush2_22484_3: bars.Bar2LWithBallJoint_8
+1 72 -40 -22 0 0 -1 0 0 0 -1 1 0 0 22484.dat
+0 // rush2_30374_4: bars.Bar4LLightsaberBlade
+1 330 -40 -71 0 0 0 1 0 -1 0 1 0 0 30374.dat
+0 // rush2_32607_5: plants.Plate1X1RoundWith3Leaves
+1 330 -40 -156 0 0 0 1 0 1 0 -1 0 0 32607.dat
+0 // rush2_32607_6: plants.Plate1X1RoundWith3Leaves
+1 330 -40 -124 0 0 0 -1 0 1 0 1 0 0 32607.dat
+0 // rush2_32607_7: plants.Plate1X1RoundWith3Leaves
+1 330 -40 -148 0 1 0 0 0 1 0 0 0 1 32607.dat
+0 // riser3: plates.Plate1X2
+1 288 10 -8 0 1 0 0 0 1 0 0 0 1 3023b.dat
+0 // socket3: hinges.Plate1X2WithSocketJoint_8WithFriction
+1 72 10 -16 0 1 0 0 0 1 0 0 0 1 14418.dat
+0 // rush3_85861_0: plates.Plate1X1RoundWithOpenStud
+1 19 40 -92 0 0.2588190451 0 -0.9659258263 0 -1 0 -0.9659258263 0 -0.2588190451 85861.dat
+0 // rush3_59900_1: cones.Cone1X1WithStop
+1 28 40 -68 0 0.2588190451 0 -0.9659258263 0 -1 0 -0.9659258263 0 -0.2588190451 59900.dat
+0 // rush3_37762_2: cylinders.Cylinder1X1_333With0_5LBarAndBarHole
+1 330 40 -64 0 0.2588190451 0 -0.9659258263 0 -1 0 -0.9659258263 0 -0.2588190451 37762.dat
+0 // rush3_22484_3: bars.Bar2LWithBallJoint_8
+1 72 40 -22 0 0.2588190451 0.9659258263 0 0 0 -1 -0.9659258263 0.2588190451 0 22484.dat
+0 // rush3_30374_4: bars.Bar4LLightsaberBlade
+1 330 40 -71 0 0.2588190451 0 -0.9659258263 0 -1 0 -0.9659258263 0 -0.2588190451 30374.dat
+0 // rush3_32607_5: plants.Plate1X1RoundWith3Leaves
+1 330 40 -156 0 -0.2588190451 0 -0.9659258263 0 1 0 0.9659258263 0 -0.2588190451 32607.dat
+0 // rush3_32607_6: plants.Plate1X1RoundWith3Leaves
+1 330 40 -124 0 0.2588190451 0 0.9659258263 0 1 0 -0.9659258263 0 0.2588190451 32607.dat
+0 // rush3_32607_7: plants.Plate1X1RoundWith3Leaves
+1 330 40 -148 0 -0.9659258263 0 0.2588190451 0 1 0 -0.2588190451 0 -0.9659258263 32607.dat
+0 // riser4: plates.Plate1X2
+1 288 90 -8 0 1 0 0 0 1 0 0 0 1 3023b.dat
+0 // socket4: hinges.Plate1X2WithSocketJoint_8WithFriction
+1 72 90 -16 0 1 0 0 0 1 0 0 0 1 14418.dat
+0 // rush4_85861_0: plates.Plate1X1RoundWithOpenStud
+1 19 120 -92 0 0.2588190451 0 0.9659258263 0 -1 0 0.9659258263 0 -0.2588190451 85861.dat
+0 // rush4_59900_1: cones.Cone1X1WithStop
+1 28 120 -68 0 0.2588190451 0 0.9659258263 0 -1 0 0.9659258263 0 -0.2588190451 59900.dat
+0 // rush4_37762_2: cylinders.Cylinder1X1_333With0_5LBarAndBarHole
+1 330 120 -64 0 0.2588190451 0 0.9659258263 0 -1 0 0.9659258263 0 -0.2588190451 37762.dat
+0 // rush4_22484_3: bars.Bar2LWithBallJoint_8
+1 72 120 -22 0 0.2588190451 -0.9659258263 0 0 0 -1 0.9659258263 0.2588190451 0 22484.dat
+0 // rush4_30374_4: bars.Bar4LLightsaberBlade
+1 330 120 -71 0 0.2588190451 0 0.9659258263 0 -1 0 0.9659258263 0 -0.2588190451 30374.dat
+0 // rush4_32607_5: plants.Plate1X1RoundWith3Leaves
+1 330 120 -156 0 -0.2588190451 0 0.9659258263 0 1 0 -0.9659258263 0 -0.2588190451 32607.dat
+0 // rush4_32607_6: plants.Plate1X1RoundWith3Leaves
+1 330 120 -124 0 0.2588190451 0 -0.9659258263 0 1 0 0.9659258263 0 0.2588190451 32607.dat
+0 // rush4_32607_7: plants.Plate1X1RoundWith3Leaves
+1 330 120 -148 0 0.9659258263 0 0.2588190451 0 1 0 -0.2588190451 0 0.9659258263 32607.dat

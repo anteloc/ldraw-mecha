@@ -1,0 +1,40 @@
+{
+  "case": "P02_swordleaf_palm",
+  "sweep": {
+    "no_new_surface_crossings": true,
+    "crossings": [],
+    "excluded_rest_pairs": []
+  },
+  "clip_poses": {
+    "samples": 180,
+    "every": 4,
+    "no_new_surface_crossings": true,
+    "crossings_by_clip": {},
+    "frames_with_crossings": {},
+    "vertex_penetration_by_clip": {},
+    "deep_shrink_ldu": 1.5,
+    "no_deep_crossings": true,
+    "deep_crossings_by_clip": {},
+    "frames_with_deep_crossings": {}
+  },
+  "roles": {
+    "0": "base",
+    "1": "trunk0",
+    "2": "trunk1",
+    "3": "trunk2",
+    "4": "trunk3",
+    "5": "trunk4",
+    "6": "trunk5",
+    "7": "hub_x_pos",
+    "8": "hub_x_neg",
+    "9": "hub_fill_a",
+    "10": "hub_fill_b",
+    "11": "hub_z_pos",
+    "12": "hub_z_neg",
+    "13": "frond_downwind",
+    "14": "frond_upwind",
+    "15": "frond_back",
+    "16": "frond_front"
+  },
+  "coverage": "Sampled surface crossings only; excludes rigid-body and rest-contact pairs; containment untested"
+}

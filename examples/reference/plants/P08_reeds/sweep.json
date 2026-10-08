@@ -1,0 +1,414 @@
+{
+  "passed": true,
+  "samples": [
+    {
+      "control": "stalk_1",
+      "value": -0.15,
+      "passed": true,
+      "max_error": 0
+    },
+    {
+      "control": "stalk_1",
+      "value": -0.13125,
+      "passed": true,
+      "max_error": 0
+    },
+    {
+      "control": "stalk_1",
+      "value": -0.11249999999999999,
+      "passed": true,
+      "max_error": 0
+    },
+    {
+      "control": "stalk_1",
+      "value": -0.09375,
+      "passed": true,
+      "max_error": 0
+    },
+    {
+      "control": "stalk_1",
+      "value": -0.075,
+      "passed": true,
+      "max_error": 0
+    },
+    {
+      "control": "stalk_1",
+      "value": -0.056249999999999994,
+      "passed": true,
+      "max_error": 0
+    },
+    {
+      "control": "stalk_1",
+      "value": -0.037500000000000006,
+      "passed": true,
+      "max_error": 0
+    },
+    {
+      "control": "stalk_1",
+      "value": -0.01874999999999999,
+      "passed": true,
+      "max_error": 0
+    },
+    {
+      "control": "stalk_1",
+      "value": 0.0,
+      "passed": true,
+      "max_error": 0
+    },
+    {
+      "control": "stalk_1",
+      "value": 0.01874999999999999,
+      "passed": true,
+      "max_error": 0
+    },
+    {
+      "control": "stalk_1",
+      "value": 0.037500000000000006,
+      "passed": true,
+      "max_error": 0
+    },
+    {
+      "control": "stalk_1",
+      "value": 0.056249999999999994,
+      "passed": true,
+      "max_error": 0
+    },
+    {
+      "control": "stalk_1",
+      "value": 0.07499999999999998,
+      "passed": true,
+      "max_error": 0
+    },
+    {
+      "control": "stalk_1",
+      "value": 0.09375,
+      "passed": true,
+      "max_error": 0
+    },
+    {
+      "control": "stalk_1",
+      "value": 0.11250000000000002,
+      "passed": true,
+      "max_error": 0
+    },
+    {
+      "control": "stalk_1",
+      "value": 0.13125,
+      "passed": true,
+      "max_error": 0
+    },
+    {
+      "control": "stalk_1",
+      "value": 0.15,
+      "passed": true,
+      "max_error": 0
+    },
+    {
+      "control": "stalk_2",
+      "value": -0.15,
+      "passed": true,
+      "max_error": 0
+    },
+    {
+      "control": "stalk_2",
+      "value": -0.13125,
+      "passed": true,
+      "max_error": 0
+    },
+    {
+      "control": "stalk_2",
+      "value": -0.11249999999999999,
+      "passed": true,
+      "max_error": 0
+    },
+    {
+      "control": "stalk_2",
+      "value": -0.09375,
+      "passed": true,
+      "max_error": 0
+    },
+    {
+      "control": "stalk_2",
+      "value": -0.075,
+      "passed": true,
+      "max_error": 0
+    },
+    {
+      "control": "stalk_2",
+      "value": -0.056249999999999994,
+      "passed": true,
+      "max_error": 0
+    },
+    {
+      "control": "stalk_2",
+      "value": -0.037500000000000006,
+      "passed": true,
+      "max_error": 0
+    },
+    {
+      "control": "stalk_2",
+      "value": -0.01874999999999999,
+      "passed": true,
+      "max_error": 0
+    },
+    {
+      "control": "stalk_2",
+      "value": 0.0,
+      "passed": true,
+      "max_error": 0
+    },
+    {
+      "control": "stalk_2",
+      "value": 0.01874999999999999,
+      "passed": true,
+      "max_error": 0
+    },
+    {
+      "control": "stalk_2",
+      "value": 0.037500000000000006,
+      "passed": true,
+      "max_error": 0
+    },
+    {
+      "control": "stalk_2",
+      "value": 0.056249999999999994,
+      "passed": true,
+      "max_error": 0
+    },
+    {
+      "control": "stalk_2",
+      "value": 0.07499999999999998,
+      "passed": true,
+      "max_error": 0
+    },
+    {
+      "control": "stalk_2",
+      "value": 0.09375,
+      "passed": true,
+      "max_error": 0
+    },
+    {
+      "control": "stalk_2",
+      "value": 0.11250000000000002,
+      "passed": true,
+      "max_error": 0
+    },
+    {
+      "control": "stalk_2",
+      "value": 0.13125,
+      "passed": true,
+      "max_error": 0
+    },
+    {
+      "control": "stalk_2",
+      "value": 0.15,
+      "passed": true,
+      "max_error": 0
+    },
+    {
+      "control": "leaf_1",
+      "value": -0.6,
+      "passed": true,
+      "max_error": 0
+    },
+    {
+      "control": "leaf_1",
+      "value": -0.525,
+      "passed": true,
+      "max_error": 0
+    },
+    {
+      "control": "leaf_1",
+      "value": -0.44999999999999996,
+      "passed": true,
+      "max_error": 0
+    },
+    {
+      "control": "leaf_1",
+      "value": -0.375,
+      "passed": true,
+      "max_error": 0
+    },
+    {
+      "control": "leaf_1",
+      "value": -0.3,
+      "passed": true,
+      "max_error": 0
+    },
+    {
+      "control": "leaf_1",
+      "value": -0.22499999999999998,
+      "passed": true,
+      "max_error": 0
+    },
+    {
+      "control": "leaf_1",
+      "value": -0.15000000000000002,
+      "passed": true,
+      "max_error": 0
+    },
+    {
+      "control": "leaf_1",
+      "value": -0.07499999999999996,
+      "passed": true,
+      "max_error": 0
+    },
+    {
+      "control": "leaf_1",
+      "value": 0.0,
+      "passed": true,
+      "max_error": 0
+    },
+    {
+      "control": "leaf_1",
+      "value": 0.07499999999999996,
+      "passed": true,
+      "max_error": 0
+    },
+    {
+      "control": "leaf_1",
+      "value": 0.15000000000000002,
+      "passed": true,
+      "max_error": 0
+    },
+    {
+      "control": "leaf_1",
+      "value": 0.22499999999999998,
+      "passed": true,
+      "max_error": 0
+    },
+    {
+      "control": "leaf_1",
+      "value": 0.29999999999999993,
+      "passed": true,
+      "max_error": 0
+    },
+    {
+      "control": "leaf_1",
+      "value": 0.375,
+      "passed": true,
+      "max_error": 0
+    },
+    {
+      "control": "leaf_1",
+      "value": 0.45000000000000007,
+      "passed": true,
+      "max_error": 0
+    },
+    {
+      "control": "leaf_1",
+      "value": 0.525,
+      "passed": true,
+      "max_error": 0
+    },
+    {
+      "control": "leaf_1",
+      "value": 0.6,
+      "passed": true,
+      "max_error": 0
+    },
+    {
+      "control": "leaf_2",
+      "value": -0.6,
+      "passed": true,
+      "max_error": 0
+    },
+    {
+      "control": "leaf_2",
+      "value": -0.525,
+      "passed": true,
+      "max_error": 0
+    },
+    {
+      "control": "leaf_2",
+      "value": -0.44999999999999996,
+      "passed": true,
+      "max_error": 0
+    },
+    {
+      "control": "leaf_2",
+      "value": -0.375,
+      "passed": true,
+      "max_error": 0
+    },
+    {
+      "control": "leaf_2",
+      "value": -0.3,
+      "passed": true,
+      "max_error": 0
+    },
+    {
+      "control": "leaf_2",
+      "value": -0.22499999999999998,
+      "passed": true,
+      "max_error": 0
+    },
+    {
+      "control": "leaf_2",
+      "value": -0.15000000000000002,
+      "passed": true,
+      "max_error": 0
+    },
+    {
+      "control": "leaf_2",
+      "value": -0.07499999999999996,
+      "passed": true,
+      "max_error": 0
+    },
+    {
+      "control": "leaf_2",
+      "value": 0.0,
+      "passed": true,
+      "max_error": 0
+    },
+    {
+      "control": "leaf_2",
+      "value": 0.07499999999999996,
+      "passed": true,
+      "max_error": 0
+    },
+    {
+      "control": "leaf_2",
+      "value": 0.15000000000000002,
+      "passed": true,
+      "max_error": 0
+    },
+    {
+      "control": "leaf_2",
+      "value": 0.22499999999999998,
+      "passed": true,
+      "max_error": 0
+    },
+    {
+      "control": "leaf_2",
+      "value": 0.29999999999999993,
+      "passed": true,
+      "max_error": 0
+    },
+    {
+      "control": "leaf_2",
+      "value": 0.375,
+      "passed": true,
+      "max_error": 0
+    },
+    {
+      "control": "leaf_2",
+      "value": 0.45000000000000007,
+      "passed": true,
+      "max_error": 0
+    },
+    {
+      "control": "leaf_2",
+      "value": 0.525,
+      "passed": true,
+      "max_error": 0
+    },
+    {
+      "control": "leaf_2",
+      "value": 0.6,
+      "passed": true,
+      "max_error": 0
+    }
+  ],
+  "coverage": "Each control swept independently; analytic closure only, not mesh collisions or dynamics"
+}

@@ -1,0 +1,700 @@
+{
+  "version": 1,
+  "name": "model",
+  "status": "draft",
+  "source": {
+    "version": 1,
+    "path": "/Users/captain/workspaces/workspace-ai/ldraw-mecha/output/plants/P08_reeds/source/scenario.mpd",
+    "sha256": "83b24573a34d341e67e0809b40889055a8f132359d6d86159021987123c72f6b",
+    "section": "p08_reeds.ldr",
+    "description": "Plant wind case P08_reeds Reeds",
+    "author": "ldraw-mecha scripts/build_plants.py",
+    "dependencies": {
+      "/Users/captain/workspaces/workspace-ai/ldraw-mecha/output/plants/P08_reeds/source/scenario.mpd": "83b24573a34d341e67e0809b40889055a8f132359d6d86159021987123c72f6b"
+    },
+    "nodes": [
+      {
+        "id": "0",
+        "parent": "root",
+        "ref": "3958.dat",
+        "kind": "part",
+        "embedded": false,
+        "section": "p08_reeds.ldr",
+        "index": 0,
+        "line": 8,
+        "colour": "2",
+        "effective_colour": "2",
+        "local": [
+          [
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            1.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            1.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "world": [
+          [
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            1.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            1.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "description": "Plate  6 x  6"
+      },
+      {
+        "id": "1",
+        "parent": "root",
+        "ref": "3941.dat",
+        "kind": "part",
+        "embedded": false,
+        "section": "p08_reeds.ldr",
+        "index": 1,
+        "line": 10,
+        "colour": "72",
+        "effective_colour": "72",
+        "local": [
+          [
+            1.0,
+            0.0,
+            0.0,
+            -40.0
+          ],
+          [
+            0.0,
+            1.0,
+            0.0,
+            -24.0
+          ],
+          [
+            0.0,
+            0.0,
+            1.0,
+            -20.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "world": [
+          [
+            1.0,
+            0.0,
+            0.0,
+            -40.0
+          ],
+          [
+            0.0,
+            1.0,
+            0.0,
+            -24.0
+          ],
+          [
+            0.0,
+            0.0,
+            1.0,
+            -20.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "description": "Brick  2 x  2 Round without Reinforcement"
+      },
+      {
+        "id": "2",
+        "parent": "root",
+        "ref": "3942c.dat",
+        "kind": "part",
+        "embedded": false,
+        "section": "p08_reeds.ldr",
+        "index": 2,
+        "line": 12,
+        "colour": "288",
+        "effective_colour": "288",
+        "local": [
+          [
+            1.0,
+            0.0,
+            0.0,
+            -40.0
+          ],
+          [
+            0.0,
+            1.0,
+            0.0,
+            -72.0
+          ],
+          [
+            0.0,
+            0.0,
+            1.0,
+            -20.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "world": [
+          [
+            1.0,
+            0.0,
+            0.0,
+            -40.0
+          ],
+          [
+            0.0,
+            1.0,
+            0.0,
+            -72.0
+          ],
+          [
+            0.0,
+            0.0,
+            1.0,
+            -20.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "description": "Cone  2 x  2 x  2 with Hollow Stud Open"
+      },
+      {
+        "id": "3",
+        "parent": "root",
+        "ref": "30093.dat",
+        "kind": "part",
+        "embedded": false,
+        "section": "p08_reeds.ldr",
+        "index": 3,
+        "line": 14,
+        "colour": "330",
+        "effective_colour": "330",
+        "local": [
+          [
+            1.0,
+            0.0,
+            0.0,
+            -40.0
+          ],
+          [
+            0.0,
+            1.0,
+            0.0,
+            -76.0
+          ],
+          [
+            0.0,
+            0.0,
+            1.0,
+            -20.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "world": [
+          [
+            1.0,
+            0.0,
+            0.0,
+            -40.0
+          ],
+          [
+            0.0,
+            1.0,
+            0.0,
+            -76.0
+          ],
+          [
+            0.0,
+            0.0,
+            1.0,
+            -20.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "description": "Plant Sea Grass"
+      },
+      {
+        "id": "4",
+        "parent": "root",
+        "ref": "30239.dat",
+        "kind": "part",
+        "embedded": false,
+        "section": "p08_reeds.ldr",
+        "index": 4,
+        "line": 16,
+        "colour": "2",
+        "effective_colour": "2",
+        "local": [
+          [
+            1.0,
+            0.0,
+            0.0,
+            -30.0
+          ],
+          [
+            0.0,
+            1.0,
+            0.0,
+            -177.0
+          ],
+          [
+            0.0,
+            0.0,
+            1.0,
+            -50.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "world": [
+          [
+            1.0,
+            0.0,
+            0.0,
+            -30.0
+          ],
+          [
+            0.0,
+            1.0,
+            0.0,
+            -177.0
+          ],
+          [
+            0.0,
+            0.0,
+            1.0,
+            -50.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "description": "Plant Leaves  6 x  5 Swordleaf with U-Clip"
+      },
+      {
+        "id": "5",
+        "parent": "root",
+        "ref": "3941.dat",
+        "kind": "part",
+        "embedded": false,
+        "section": "p08_reeds.ldr",
+        "index": 5,
+        "line": 18,
+        "colour": "72",
+        "effective_colour": "72",
+        "local": [
+          [
+            1.0,
+            0.0,
+            0.0,
+            40.0
+          ],
+          [
+            0.0,
+            1.0,
+            0.0,
+            -24.0
+          ],
+          [
+            0.0,
+            0.0,
+            1.0,
+            20.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "world": [
+          [
+            1.0,
+            0.0,
+            0.0,
+            40.0
+          ],
+          [
+            0.0,
+            1.0,
+            0.0,
+            -24.0
+          ],
+          [
+            0.0,
+            0.0,
+            1.0,
+            20.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "description": "Brick  2 x  2 Round without Reinforcement"
+      },
+      {
+        "id": "6",
+        "parent": "root",
+        "ref": "3942c.dat",
+        "kind": "part",
+        "embedded": false,
+        "section": "p08_reeds.ldr",
+        "index": 6,
+        "line": 20,
+        "colour": "288",
+        "effective_colour": "288",
+        "local": [
+          [
+            1.0,
+            0.0,
+            0.0,
+            40.0
+          ],
+          [
+            0.0,
+            1.0,
+            0.0,
+            -72.0
+          ],
+          [
+            0.0,
+            0.0,
+            1.0,
+            20.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "world": [
+          [
+            1.0,
+            0.0,
+            0.0,
+            40.0
+          ],
+          [
+            0.0,
+            1.0,
+            0.0,
+            -72.0
+          ],
+          [
+            0.0,
+            0.0,
+            1.0,
+            20.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "description": "Cone  2 x  2 x  2 with Hollow Stud Open"
+      },
+      {
+        "id": "7",
+        "parent": "root",
+        "ref": "30093.dat",
+        "kind": "part",
+        "embedded": false,
+        "section": "p08_reeds.ldr",
+        "index": 7,
+        "line": 22,
+        "colour": "330",
+        "effective_colour": "330",
+        "local": [
+          [
+            -1.0,
+            0.0,
+            0.0,
+            40.0
+          ],
+          [
+            0.0,
+            1.0,
+            0.0,
+            -76.0
+          ],
+          [
+            0.0,
+            0.0,
+            -1.0,
+            20.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "world": [
+          [
+            -1.0,
+            0.0,
+            0.0,
+            40.0
+          ],
+          [
+            0.0,
+            1.0,
+            0.0,
+            -76.0
+          ],
+          [
+            0.0,
+            0.0,
+            -1.0,
+            20.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "description": "Plant Sea Grass"
+      },
+      {
+        "id": "8",
+        "parent": "root",
+        "ref": "30239.dat",
+        "kind": "part",
+        "embedded": false,
+        "section": "p08_reeds.ldr",
+        "index": 8,
+        "line": 24,
+        "colour": "2",
+        "effective_colour": "2",
+        "local": [
+          [
+            -1.0,
+            0.0,
+            0.0,
+            30.0
+          ],
+          [
+            0.0,
+            1.0,
+            0.0,
+            -177.0
+          ],
+          [
+            0.0,
+            0.0,
+            -1.0,
+            50.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "world": [
+          [
+            -1.0,
+            0.0,
+            0.0,
+            30.0
+          ],
+          [
+            0.0,
+            1.0,
+            0.0,
+            -177.0
+          ],
+          [
+            0.0,
+            0.0,
+            -1.0,
+            50.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "description": "Plant Leaves  6 x  5 Swordleaf with U-Clip"
+      }
+    ],
+    "diagnostics": [],
+    "coordinate_space": "selected section, LDU, -Y up"
+  },
+  "controls": {},
+  "signals": {},
+  "bodies": {},
+  "anchors": {},
+  "checks": [],
+  "notes": [
+    "Assign rigid groups and measured joints before setting status to ready."
+  ],
+  "mechanisms": {
+    "unresolved": {
+      "label": "No mechanism identified",
+      "parts": [
+        "0",
+        "1",
+        "2",
+        "3",
+        "4",
+        "5",
+        "6",
+        "7",
+        "8"
+      ],
+      "bodies": [],
+      "inputs": [],
+      "outputs": [],
+      "notes": [
+        "No supported mechanical evidence found. Absence of evidence does not imply a static model."
+      ]
+    }
+  },
+  "connections": {},
+  "discovery": {
+    "grouping": "Provisional connected mechanical candidates; agent may split/merge views",
+    "unclassified_parts": [
+      "0",
+      "1",
+      "2",
+      "3",
+      "4",
+      "5",
+      "6",
+      "7",
+      "8"
+    ],
+    "embedded_parts": [],
+    "contact_limit": 300,
+    "rigid_groups": "not inferred",
+    "inputs_outputs": "not inferred",
+    "mechanical_parts": [],
+    "warnings": [
+      {
+        "code": "coaxial_not_run",
+        "message": "not run: 0 shaft/gear candidates outside 2..100; select a section"
+      }
+    ],
+    "surface_contacts": "Not detected: cams, levers bearing on beams, friction and stops need geometric/visual review even when connector contacts are absent",
+    "unsupported_gears": [],
+    "gear_placements": {
+      "policy": "Nearest orthogonal analysis frame within rounding_limit; source translations and handedness preserved",
+      "rounding_limit": 0.002,
+      "counts": {},
+      "affected": []
+    },
+    "contacts": {
+      "complete": true,
+      "tested_parts": 9,
+      "diagnostics": [],
+      "summary": {
+        "tested_parts": 9,
+        "contacts": 4,
+        "contacted_parts": 8,
+        "by_kind": {
+          "axle/axle_hole": 2,
+          "bar/clip": 2
+        },
+        "axles": {
+          "selection": "Catalog descriptions beginning Technic Axle followed by a numeric length; excludes axle pins, joiners and axle-hole supports",
+          "total": 0,
+          "with_axle_hole_contact": 0,
+          "without_axle_hole_contact": []
+        }
+      },
+      "placements": {
+        "policy": "Nearest orthogonal analysis frame within rounding_limit; source translations and handedness preserved",
+        "rounding_limit": 0.002,
+        "counts": {
+          "unchanged": 9
+        },
+        "affected": []
+      }
+    },
+    "coaxial_selection": "Catalog axle, gear, worm and engine crankshaft parts; positive line evidence within 80 LDU axial separation",
+    "coaxial": "not run: 0 shaft/gear candidates outside 2..100; select a section",
+    "isolated_mechanical_parts": []
+  }
+}

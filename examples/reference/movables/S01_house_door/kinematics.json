@@ -1,0 +1,175 @@
+{
+  "semantics": {
+    "door": {
+      "control": "door",
+      "value": 0.2,
+      "test_point": [
+        28.0,
+        -74.0,
+        5.0
+      ],
+      "displacement": [
+        -1.196005,
+        0.0,
+        -11.92016
+      ],
+      "expected": "-z",
+      "flipped": true
+    }
+  },
+  "contacts": {
+    "tested_parts": 23,
+    "contacts": 53,
+    "contacted_parts": 21,
+    "by_kind": {
+      "hinge/hinge": 1,
+      "stud/stud_receptacle": 52
+    },
+    "axles": {
+      "selection": "Catalog descriptions beginning Technic Axle followed by a numeric length; excludes axle pins, joiners and axle-hole supports",
+      "total": 0,
+      "with_axle_hole_contact": 0,
+      "without_axle_hole_contact": []
+    }
+  },
+  "contact_pairs": {
+    "1-2": [
+      "hinge/hinge"
+    ],
+    "1-21": [
+      "stud/stud_receptacle",
+      "stud/stud_receptacle",
+      "stud/stud_receptacle",
+      "stud/stud_receptacle"
+    ],
+    "3-4": [
+      "stud/stud_receptacle",
+      "stud/stud_receptacle"
+    ],
+    "3-5": [
+      "stud/stud_receptacle",
+      "stud/stud_receptacle"
+    ],
+    "4-6": [
+      "stud/stud_receptacle",
+      "stud/stud_receptacle"
+    ],
+    "5-6": [
+      "stud/stud_receptacle",
+      "stud/stud_receptacle"
+    ],
+    "6-7": [
+      "stud/stud_receptacle",
+      "stud/stud_receptacle"
+    ],
+    "6-8": [
+      "stud/stud_receptacle",
+      "stud/stud_receptacle"
+    ],
+    "7-9": [
+      "stud/stud_receptacle",
+      "stud/stud_receptacle"
+    ],
+    "8-9": [
+      "stud/stud_receptacle",
+      "stud/stud_receptacle"
+    ],
+    "9-10": [
+      "stud/stud_receptacle",
+      "stud/stud_receptacle"
+    ],
+    "9-11": [
+      "stud/stud_receptacle",
+      "stud/stud_receptacle"
+    ],
+    "10-21": [
+      "stud/stud_receptacle",
+      "stud/stud_receptacle"
+    ],
+    "11-21": [
+      "stud/stud_receptacle",
+      "stud/stud_receptacle"
+    ],
+    "12-13": [
+      "stud/stud_receptacle",
+      "stud/stud_receptacle"
+    ],
+    "12-14": [
+      "stud/stud_receptacle",
+      "stud/stud_receptacle"
+    ],
+    "13-15": [
+      "stud/stud_receptacle",
+      "stud/stud_receptacle"
+    ],
+    "14-15": [
+      "stud/stud_receptacle",
+      "stud/stud_receptacle"
+    ],
+    "15-16": [
+      "stud/stud_receptacle",
+      "stud/stud_receptacle"
+    ],
+    "15-17": [
+      "stud/stud_receptacle",
+      "stud/stud_receptacle"
+    ],
+    "16-18": [
+      "stud/stud_receptacle",
+      "stud/stud_receptacle"
+    ],
+    "17-18": [
+      "stud/stud_receptacle",
+      "stud/stud_receptacle"
+    ],
+    "18-19": [
+      "stud/stud_receptacle",
+      "stud/stud_receptacle"
+    ],
+    "18-20": [
+      "stud/stud_receptacle",
+      "stud/stud_receptacle"
+    ],
+    "19-21": [
+      "stud/stud_receptacle",
+      "stud/stud_receptacle"
+    ],
+    "20-21": [
+      "stud/stud_receptacle",
+      "stud/stud_receptacle"
+    ]
+  },
+  "asymmetric_sample": {
+    "controls": {
+      "door": 1.1025
+    },
+    "transforms": {
+      "door": [
+        [
+          0.451367,
+          0.0,
+          0.892339,
+          -22.017959
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          -0.892339,
+          0.0,
+          0.451367,
+          -25.811667
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ]
+    }
+  }
+}

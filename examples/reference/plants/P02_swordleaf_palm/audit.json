@@ -1,0 +1,112 @@
+{
+  "summary": {
+    "static": 1,
+    "planned": 4
+  },
+  "review_complete": true,
+  "unresolved": [],
+  "deferred": [],
+  "unaccounted_mechanical_parts": [],
+  "mechanisms": [
+    {
+      "id": "context",
+      "label": "Swordleaf palm: base and mounts (static)",
+      "disposition": "static",
+      "review": "Base, trunk and mounts built for the catalog; they do not move in this case.",
+      "parts": 13,
+      "controlled_parts": [],
+      "parts_without_control": [
+        "0",
+        "1",
+        "10",
+        "11",
+        "12",
+        "2",
+        "3",
+        "4",
+        "5",
+        "6",
+        "7",
+        "8",
+        "9"
+      ],
+      "controls": []
+    },
+    {
+      "id": "frond_back",
+      "label": "Swordleaf palm: frond back",
+      "disposition": "planned",
+      "review": "Joint declared in this plan (scripts/build_plants.py); driven by wind clips.",
+      "parts": 2,
+      "controlled_parts": [
+        "15"
+      ],
+      "parts_without_control": [
+        "11"
+      ],
+      "controls": [
+        "frond_back"
+      ]
+    },
+    {
+      "id": "frond_downwind",
+      "label": "Swordleaf palm: frond downwind",
+      "disposition": "planned",
+      "review": "Joint declared in this plan (scripts/build_plants.py); driven by wind clips.",
+      "parts": 2,
+      "controlled_parts": [
+        "13"
+      ],
+      "parts_without_control": [
+        "7"
+      ],
+      "controls": [
+        "frond_downwind"
+      ]
+    },
+    {
+      "id": "frond_front",
+      "label": "Swordleaf palm: frond front",
+      "disposition": "planned",
+      "review": "Joint declared in this plan (scripts/build_plants.py); driven by wind clips.",
+      "parts": 2,
+      "controlled_parts": [
+        "16"
+      ],
+      "parts_without_control": [
+        "12"
+      ],
+      "controls": [
+        "frond_front"
+      ]
+    },
+    {
+      "id": "frond_upwind",
+      "label": "Swordleaf palm: frond upwind",
+      "disposition": "planned",
+      "review": "Joint declared in this plan (scripts/build_plants.py); driven by wind clips.",
+      "parts": 2,
+      "controlled_parts": [
+        "14"
+      ],
+      "parts_without_control": [
+        "8"
+      ],
+      "controls": [
+        "frond_upwind"
+      ]
+    }
+  ],
+  "warnings": [
+    {
+      "code": "incomplete_inspection",
+      "message": "pyldraw3 inspection is incomplete; inspect its diagnostics."
+    },
+    {
+      "code": "coaxial_not_run",
+      "message": "not run: 0 shaft/gear candidates outside 2..100; select a section"
+    }
+  ],
+  "coverage": "Bookkeeping of declared scope only. Supports may correctly lack controls. Planned, static and deferred dispositions require review notes; none certify discovery completeness, physical motion or clearance.",
+  "passed": true
+}

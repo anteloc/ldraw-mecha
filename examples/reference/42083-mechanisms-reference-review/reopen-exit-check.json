@@ -1,0 +1,17 @@
+{
+  "passed": true,
+  "checks": [
+    {
+      "report": "output/42083-mechanisms-reference-review/reopen-check.json",
+      "expected_pass": true,
+      "actual_pass": true,
+      "exit_code": 0
+    },
+    {
+      "report": "output/42083-mechanisms-reference-review/reopen-expected-failure.json",
+      "expected_pass": false,
+      "actual_pass": false,
+      "exit_code": 1
+    }
+  ]
+}

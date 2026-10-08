@@ -1,0 +1,302 @@
+{
+  "case": "P16_liana",
+  "title": "Lianas",
+  "parts": [
+    {
+      "role": "base",
+      "id": "0",
+      "table": "plates.Plate8X16",
+      "ref": "92438",
+      "colour": 28,
+      "title": "Plate  8 x 16",
+      "library_only": false
+    },
+    {
+      "role": "post_thorny_back0",
+      "id": "1",
+      "table": "bricks.Brick2X2RoundWithoutReinforcement",
+      "ref": "3941",
+      "colour": 70,
+      "title": "Brick  2 x  2 Round without Reinforcement",
+      "library_only": false
+    },
+    {
+      "role": "post_thorny_back1",
+      "id": "2",
+      "table": "bricks.Brick2X2RoundWithoutReinforcement",
+      "ref": "3941",
+      "colour": 70,
+      "title": "Brick  2 x  2 Round without Reinforcement",
+      "library_only": false
+    },
+    {
+      "role": "post_thorny_back2",
+      "id": "3",
+      "table": "bricks.Brick2X2RoundWithoutReinforcement",
+      "ref": "3941",
+      "colour": 70,
+      "title": "Brick  2 x  2 Round without Reinforcement",
+      "library_only": false
+    },
+    {
+      "role": "post_thorny_back3",
+      "id": "4",
+      "table": "bricks.Brick2X2RoundWithoutReinforcement",
+      "ref": "3941",
+      "colour": 70,
+      "title": "Brick  2 x  2 Round without Reinforcement",
+      "library_only": false
+    },
+    {
+      "role": "clip_thorny_back",
+      "id": "5",
+      "table": "plates.Plate1X1WithClipHorizontal_ThickC_Clip_",
+      "ref": "61252",
+      "colour": 70,
+      "title": "Plate  1 x  1 with Clip Horizontal (Thick C-Clip)",
+      "library_only": false
+    },
+    {
+      "role": "post_thorny_front0",
+      "id": "6",
+      "table": "bricks.Brick2X2RoundWithoutReinforcement",
+      "ref": "3941",
+      "colour": 70,
+      "title": "Brick  2 x  2 Round without Reinforcement",
+      "library_only": false
+    },
+    {
+      "role": "post_thorny_front1",
+      "id": "7",
+      "table": "bricks.Brick2X2RoundWithoutReinforcement",
+      "ref": "3941",
+      "colour": 70,
+      "title": "Brick  2 x  2 Round without Reinforcement",
+      "library_only": false
+    },
+    {
+      "role": "post_thorny_front2",
+      "id": "8",
+      "table": "bricks.Brick2X2RoundWithoutReinforcement",
+      "ref": "3941",
+      "colour": 70,
+      "title": "Brick  2 x  2 Round without Reinforcement",
+      "library_only": false
+    },
+    {
+      "role": "post_thorny_front3",
+      "id": "9",
+      "table": "bricks.Brick2X2RoundWithoutReinforcement",
+      "ref": "3941",
+      "colour": 70,
+      "title": "Brick  2 x  2 Round without Reinforcement",
+      "library_only": false
+    },
+    {
+      "role": "clip_thorny_front",
+      "id": "10",
+      "table": "plates.Plate1X1WithClipHorizontal_ThickC_Clip_",
+      "ref": "61252",
+      "colour": 70,
+      "title": "Plate  1 x  1 with Clip Horizontal (Thick C-Clip)",
+      "library_only": false
+    },
+    {
+      "role": "post_leafy_back0",
+      "id": "11",
+      "table": "bricks.Brick2X2RoundWithoutReinforcement",
+      "ref": "3941",
+      "colour": 70,
+      "title": "Brick  2 x  2 Round without Reinforcement",
+      "library_only": false
+    },
+    {
+      "role": "post_leafy_back1",
+      "id": "12",
+      "table": "bricks.Brick2X2RoundWithoutReinforcement",
+      "ref": "3941",
+      "colour": 70,
+      "title": "Brick  2 x  2 Round without Reinforcement",
+      "library_only": false
+    },
+    {
+      "role": "post_leafy_back2",
+      "id": "13",
+      "table": "bricks.Brick2X2RoundWithoutReinforcement",
+      "ref": "3941",
+      "colour": 70,
+      "title": "Brick  2 x  2 Round without Reinforcement",
+      "library_only": false
+    },
+    {
+      "role": "post_leafy_back3",
+      "id": "14",
+      "table": "bricks.Brick2X2RoundWithoutReinforcement",
+      "ref": "3941",
+      "colour": 70,
+      "title": "Brick  2 x  2 Round without Reinforcement",
+      "library_only": false
+    },
+    {
+      "role": "post_leafy_back4",
+      "id": "15",
+      "table": "bricks.Brick2X2RoundWithoutReinforcement",
+      "ref": "3941",
+      "colour": 70,
+      "title": "Brick  2 x  2 Round without Reinforcement",
+      "library_only": false
+    },
+    {
+      "role": "post_leafy_back5",
+      "id": "16",
+      "table": "bricks.Brick2X2RoundWithoutReinforcement",
+      "ref": "3941",
+      "colour": 70,
+      "title": "Brick  2 x  2 Round without Reinforcement",
+      "library_only": false
+    },
+    {
+      "role": "clip_leafy_back",
+      "id": "17",
+      "table": "plates.Plate1X1WithClipHorizontal_ThickC_Clip_",
+      "ref": "61252",
+      "colour": 70,
+      "title": "Plate  1 x  1 with Clip Horizontal (Thick C-Clip)",
+      "library_only": false
+    },
+    {
+      "role": "post_leafy_front0",
+      "id": "18",
+      "table": "bricks.Brick2X2RoundWithoutReinforcement",
+      "ref": "3941",
+      "colour": 70,
+      "title": "Brick  2 x  2 Round without Reinforcement",
+      "library_only": false
+    },
+    {
+      "role": "post_leafy_front1",
+      "id": "19",
+      "table": "bricks.Brick2X2RoundWithoutReinforcement",
+      "ref": "3941",
+      "colour": 70,
+      "title": "Brick  2 x  2 Round without Reinforcement",
+      "library_only": false
+    },
+    {
+      "role": "post_leafy_front2",
+      "id": "20",
+      "table": "bricks.Brick2X2RoundWithoutReinforcement",
+      "ref": "3941",
+      "colour": 70,
+      "title": "Brick  2 x  2 Round without Reinforcement",
+      "library_only": false
+    },
+    {
+      "role": "post_leafy_front3",
+      "id": "21",
+      "table": "bricks.Brick2X2RoundWithoutReinforcement",
+      "ref": "3941",
+      "colour": 70,
+      "title": "Brick  2 x  2 Round without Reinforcement",
+      "library_only": false
+    },
+    {
+      "role": "post_leafy_front4",
+      "id": "22",
+      "table": "bricks.Brick2X2RoundWithoutReinforcement",
+      "ref": "3941",
+      "colour": 70,
+      "title": "Brick  2 x  2 Round without Reinforcement",
+      "library_only": false
+    },
+    {
+      "role": "post_leafy_front5",
+      "id": "23",
+      "table": "bricks.Brick2X2RoundWithoutReinforcement",
+      "ref": "3941",
+      "colour": 70,
+      "title": "Brick  2 x  2 Round without Reinforcement",
+      "library_only": false
+    },
+    {
+      "role": "clip_leafy_front",
+      "id": "24",
+      "table": "plates.Plate1X1WithClipHorizontal_ThickC_Clip_",
+      "ref": "61252",
+      "colour": 70,
+      "title": "Plate  1 x  1 with Clip Horizontal (Thick C-Clip)",
+      "library_only": false
+    },
+    {
+      "role": "vine_thorny",
+      "id": "25",
+      "table": "plants.PlantVineWith8Thorns10L",
+      "ref": "73828",
+      "colour": 330,
+      "title": "Plant Vine with  8 Thorns 10L",
+      "library_only": false
+    },
+    {
+      "role": "vine_leafy",
+      "id": "26",
+      "table": "plants.PlantVineWith10Leaves16L",
+      "ref": "16981",
+      "colour": 2,
+      "title": "Plant Vine with 10 Leaves 16L",
+      "library_only": false
+    }
+  ],
+  "joints": {
+    "rock_thorny": {
+      "origin": [
+        -30.0,
+        -102.0,
+        90.0
+      ],
+      "axis": [
+        0.0,
+        0.0,
+        -1.0
+      ],
+      "parent": "clip_thorny_back",
+      "child": "vine_thorny",
+      "kind": "revolute",
+      "joint": "real",
+      "connector": "real: 73828 end bars (bar with stop, measured from 73828k03: x 0..-20) in two 61252 clips; turns about the line through both clips"
+    },
+    "rock_leafy": {
+      "origin": [
+        30.0,
+        -150.0,
+        150.0
+      ],
+      "axis": [
+        0.0,
+        0.0,
+        -1.0
+      ],
+      "parent": "clip_leafy_back",
+      "child": "vine_leafy",
+      "kind": "revolute",
+      "joint": "real",
+      "connector": "real: 16981 end bars (16981k03 bar connectors) in two 61252 clips; turns about the line through both clips"
+    }
+  },
+  "reference_checks": [],
+  "geometry_checks": [
+    {
+      "name": "thorny_grip_span",
+      "value": 0.0,
+      "limit": 0.5,
+      "passed": true,
+      "note": "73828 end bars (local x 0..-20 and -180..-200) gripped 10 LDU from each end"
+    },
+    {
+      "name": "leafy_grip_span",
+      "value": 0.0,
+      "limit": 0.5,
+      "passed": true,
+      "note": "16981 end bars (connector length 25) gripped 10 LDU from each end"
+    }
+  ]
+}

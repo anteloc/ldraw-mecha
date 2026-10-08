@@ -1,0 +1,116 @@
+{
+  "states": [
+    {
+      "state": {
+        "drive": 0.37
+      },
+      "worst_mesh_error": 1.1102230246251565e-16,
+      "diff_law_error": 0.0
+    },
+    {
+      "state": {
+        "drive": -2.9,
+        "diff_front": 0.4,
+        "diff_rear": -0.25
+      },
+      "worst_mesh_error": 7.997075224253081e-16,
+      "diff_law_error": 0.0
+    },
+    {
+      "state": {
+        "drive": 7.3,
+        "diff_front": -1.1,
+        "diff_rear": 0.9
+      },
+      "worst_mesh_error": 1.2212453270876722e-15,
+      "diff_law_error": 8.881784197001252e-16
+    }
+  ],
+  "meshes": 9,
+  "review": {
+    "rear_axle": [
+      "0/85/36 12 / 0/85/38 12 perpendicular: apex [0.0, 0.0, 320.0]",
+      "0/85/37 12 / 0/85/38 12 perpendicular: apex [0.0, 0.0, 320.0]",
+      "0/85/35 28 / 0/85/125 20 perpendicular: apex [0.0, 0.0, 320.0]",
+      "28T ring / 20T pinion: pinion = -1.4000 x carrier (about +Z / +X)",
+      "l half shaft bend 20.3 deg: exact cardan at the diff, spindle driver turns the hub at the half-shaft rate (CV assumption)",
+      "r half shaft bend 20.3 deg: exact cardan at the diff, spindle driver turns the hub at the half-shaft rate (CV assumption)"
+    ],
+    "front_axle": [
+      "1/89/46/11 12 / 1/89/46/13 12 perpendicular: apex [0.0, -40.0, -500.0]",
+      "1/89/46/12 12 / 1/89/46/13 12 perpendicular: apex [0.0, -40.0, -500.0]",
+      "1/89/46/10 28 / 1/89/46/15 20 perpendicular: apex [0.0, -40.0, -500.0]",
+      "28T ring / 20T pinion: pinion = +1.4000 x carrier (about +Z / +X)",
+      "l half shaft bend 0.0 deg: exact cardan at the diff, spindle driver turns the hub at the half-shaft rate (CV assumption)",
+      "r half shaft bend 0.0 deg: exact cardan at the diff, spindle driver turns the hub at the half-shaft rate (CV assumption)"
+    ],
+    "main_shaft": [
+      "1/40 16T / 1/89/46/28 16T: 40.00 LDU (nominal 40.0), axial +0.0",
+      "No centre differential: both carriers = drive, front pinion +1.4000 = 16:16 (-1) x rear pinion -1.4000 (checked equal, so front and rear wheels roll together)"
+    ],
+    "interfaces": [
+      "0/85/124 8T / 0/90/51 24T: 40.00 LDU (nominal 40.0), axial +0.0",
+      "1/47 16T / 1/57 16T: 40.00 LDU (nominal 40.0), axial +0.0",
+      "Driven context only: the gearbox and D/N/R selector are separate extracts"
+    ]
+  },
+  "continuity": {
+    "limit_radians_per_frame": 0.8,
+    "limit_ldu_per_frame": 6.0,
+    "worst": [
+      [
+        0.22400000000000375,
+        "main",
+        "revolute",
+        163
+      ],
+      [
+        0.22400000000000375,
+        "front_pinion",
+        "revolute",
+        163
+      ],
+      [
+        0.22400000000000375,
+        "dnr_reverse_gear",
+        "revolute",
+        163
+      ],
+      [
+        0.1910210911351058,
+        "wheel_rr",
+        "revolute",
+        281
+      ],
+      [
+        0.1910210911351058,
+        "uj_rr_out",
+        "revolute",
+        281
+      ],
+      [
+        0.19100052557535463,
+        "wheel_rl",
+        "revolute",
+        229
+      ],
+      [
+        0.19100052557535463,
+        "uj_rl_out",
+        "revolute",
+        229
+      ],
+      [
+        0.18560000000000088,
+        "wheel_fr",
+        "revolute",
+        245
+      ]
+    ],
+    "violations": {},
+    "passed": true
+  },
+  "paddle": null,
+  "dnr": null,
+  "gear_ratios": null
+}

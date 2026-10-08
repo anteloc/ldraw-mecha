@@ -1,0 +1,158 @@
+[
+ {
+  "case": "P01_palm_tree",
+  "parts": 15,
+  "joints": 11,
+  "references": [
+   [
+    "all",
+    0.0,
+    0.0
+   ]
+  ]
+ },
+ {
+  "case": "P02_swordleaf_palm",
+  "parts": 17,
+  "joints": 4,
+  "references": [
+   [
+    "10884 clip",
+    0.014,
+    0.0
+   ]
+  ]
+ },
+ {
+  "case": "P03_bamboo",
+  "parts": 51,
+  "joints": 12,
+  "references": [
+   [
+    "stalk",
+    0.0,
+    0.0
+   ]
+  ]
+ },
+ {
+  "case": "P04_flower_bed",
+  "parts": 16,
+  "joints": 12,
+  "references": [
+   [
+    "head1a",
+    0.001,
+    1.7549
+   ]
+  ]
+ },
+ {
+  "case": "P05_sunflower",
+  "parts": 9,
+  "joints": 2,
+  "references": []
+ },
+ {
+  "case": "P06_pinwheel_daisies",
+  "parts": 14,
+  "joints": 3,
+  "references": []
+ },
+ {
+  "case": "P07_grass_meadow",
+  "parts": 11,
+  "joints": 10,
+  "references": []
+ },
+ {
+  "case": "P08_reeds",
+  "parts": 9,
+  "joints": 4,
+  "references": [
+   [
+    "stalk1",
+    0.0,
+    2.0
+   ]
+  ]
+ },
+ {
+  "case": "P09_hanging_vine",
+  "parts": 35,
+  "joints": 5,
+  "references": []
+ },
+ {
+  "case": "P10_rushes",
+  "parts": 41,
+  "joints": 4,
+  "references": []
+ },
+ {
+  "case": "P11_hinged_oak",
+  "parts": 20,
+  "joints": 4,
+  "references": []
+ },
+ {
+  "case": "P12_aspen",
+  "parts": 15,
+  "joints": 5,
+  "references": []
+ },
+ {
+  "case": "P13_fern",
+  "parts": 12,
+  "joints": 4,
+  "references": []
+ },
+ {
+  "case": "P14_bouquet",
+  "parts": 22,
+  "joints": 11,
+  "references": [
+   [
+    "head_b1",
+    0.001,
+    1.8945
+   ]
+  ]
+ },
+ {
+  "case": "P15_tiered_shrub",
+  "parts": 7,
+  "joints": 4,
+  "references": []
+ },
+ {
+  "case": "P16_liana",
+  "parts": 27,
+  "joints": 2,
+  "references": []
+ },
+ {
+  "case": "P17_tendrils",
+  "parts": 23,
+  "joints": 4,
+  "references": []
+ },
+ {
+  "case": "P18_ground_cover",
+  "parts": 7,
+  "joints": 6,
+  "references": []
+ },
+ {
+  "case": "P19_leaf_vanes",
+  "parts": 10,
+  "joints": 3,
+  "references": []
+ },
+ {
+  "case": "P20_friends_palm",
+  "parts": 4,
+  "joints": 2,
+  "references": []
+ }
+]

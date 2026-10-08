@@ -1,0 +1,618 @@
+{
+  "passed": true,
+  "samples": [
+    {
+      "control": "turn_1",
+      "value": -0.5,
+      "passed": true,
+      "max_error": 0
+    },
+    {
+      "control": "turn_1",
+      "value": -0.4375,
+      "passed": true,
+      "max_error": 0
+    },
+    {
+      "control": "turn_1",
+      "value": -0.375,
+      "passed": true,
+      "max_error": 0
+    },
+    {
+      "control": "turn_1",
+      "value": -0.3125,
+      "passed": true,
+      "max_error": 0
+    },
+    {
+      "control": "turn_1",
+      "value": -0.25,
+      "passed": true,
+      "max_error": 0
+    },
+    {
+      "control": "turn_1",
+      "value": -0.1875,
+      "passed": true,
+      "max_error": 0
+    },
+    {
+      "control": "turn_1",
+      "value": -0.125,
+      "passed": true,
+      "max_error": 0
+    },
+    {
+      "control": "turn_1",
+      "value": -0.0625,
+      "passed": true,
+      "max_error": 0
+    },
+    {
+      "control": "turn_1",
+      "value": 0.0,
+      "passed": true,
+      "max_error": 0
+    },
+    {
+      "control": "turn_1",
+      "value": 0.0625,
+      "passed": true,
+      "max_error": 0
+    },
+    {
+      "control": "turn_1",
+      "value": 0.125,
+      "passed": true,
+      "max_error": 0
+    },
+    {
+      "control": "turn_1",
+      "value": 0.1875,
+      "passed": true,
+      "max_error": 0
+    },
+    {
+      "control": "turn_1",
+      "value": 0.25,
+      "passed": true,
+      "max_error": 0
+    },
+    {
+      "control": "turn_1",
+      "value": 0.3125,
+      "passed": true,
+      "max_error": 0
+    },
+    {
+      "control": "turn_1",
+      "value": 0.375,
+      "passed": true,
+      "max_error": 0
+    },
+    {
+      "control": "turn_1",
+      "value": 0.4375,
+      "passed": true,
+      "max_error": 0
+    },
+    {
+      "control": "turn_1",
+      "value": 0.5,
+      "passed": true,
+      "max_error": 0
+    },
+    {
+      "control": "turn_2",
+      "value": -0.5,
+      "passed": true,
+      "max_error": 0
+    },
+    {
+      "control": "turn_2",
+      "value": -0.4375,
+      "passed": true,
+      "max_error": 0
+    },
+    {
+      "control": "turn_2",
+      "value": -0.375,
+      "passed": true,
+      "max_error": 0
+    },
+    {
+      "control": "turn_2",
+      "value": -0.3125,
+      "passed": true,
+      "max_error": 0
+    },
+    {
+      "control": "turn_2",
+      "value": -0.25,
+      "passed": true,
+      "max_error": 0
+    },
+    {
+      "control": "turn_2",
+      "value": -0.1875,
+      "passed": true,
+      "max_error": 0
+    },
+    {
+      "control": "turn_2",
+      "value": -0.125,
+      "passed": true,
+      "max_error": 0
+    },
+    {
+      "control": "turn_2",
+      "value": -0.0625,
+      "passed": true,
+      "max_error": 0
+    },
+    {
+      "control": "turn_2",
+      "value": 0.0,
+      "passed": true,
+      "max_error": 0
+    },
+    {
+      "control": "turn_2",
+      "value": 0.0625,
+      "passed": true,
+      "max_error": 0
+    },
+    {
+      "control": "turn_2",
+      "value": 0.125,
+      "passed": true,
+      "max_error": 0
+    },
+    {
+      "control": "turn_2",
+      "value": 0.1875,
+      "passed": true,
+      "max_error": 0
+    },
+    {
+      "control": "turn_2",
+      "value": 0.25,
+      "passed": true,
+      "max_error": 0
+    },
+    {
+      "control": "turn_2",
+      "value": 0.3125,
+      "passed": true,
+      "max_error": 0
+    },
+    {
+      "control": "turn_2",
+      "value": 0.375,
+      "passed": true,
+      "max_error": 0
+    },
+    {
+      "control": "turn_2",
+      "value": 0.4375,
+      "passed": true,
+      "max_error": 0
+    },
+    {
+      "control": "turn_2",
+      "value": 0.5,
+      "passed": true,
+      "max_error": 0
+    },
+    {
+      "control": "turn_3",
+      "value": -0.5,
+      "passed": true,
+      "max_error": 0
+    },
+    {
+      "control": "turn_3",
+      "value": -0.4375,
+      "passed": true,
+      "max_error": 0
+    },
+    {
+      "control": "turn_3",
+      "value": -0.375,
+      "passed": true,
+      "max_error": 0
+    },
+    {
+      "control": "turn_3",
+      "value": -0.3125,
+      "passed": true,
+      "max_error": 0
+    },
+    {
+      "control": "turn_3",
+      "value": -0.25,
+      "passed": true,
+      "max_error": 0
+    },
+    {
+      "control": "turn_3",
+      "value": -0.1875,
+      "passed": true,
+      "max_error": 0
+    },
+    {
+      "control": "turn_3",
+      "value": -0.125,
+      "passed": true,
+      "max_error": 0
+    },
+    {
+      "control": "turn_3",
+      "value": -0.0625,
+      "passed": true,
+      "max_error": 0
+    },
+    {
+      "control": "turn_3",
+      "value": 0.0,
+      "passed": true,
+      "max_error": 0
+    },
+    {
+      "control": "turn_3",
+      "value": 0.0625,
+      "passed": true,
+      "max_error": 0
+    },
+    {
+      "control": "turn_3",
+      "value": 0.125,
+      "passed": true,
+      "max_error": 0
+    },
+    {
+      "control": "turn_3",
+      "value": 0.1875,
+      "passed": true,
+      "max_error": 0
+    },
+    {
+      "control": "turn_3",
+      "value": 0.25,
+      "passed": true,
+      "max_error": 0
+    },
+    {
+      "control": "turn_3",
+      "value": 0.3125,
+      "passed": true,
+      "max_error": 0
+    },
+    {
+      "control": "turn_3",
+      "value": 0.375,
+      "passed": true,
+      "max_error": 0
+    },
+    {
+      "control": "turn_3",
+      "value": 0.4375,
+      "passed": true,
+      "max_error": 0
+    },
+    {
+      "control": "turn_3",
+      "value": 0.5,
+      "passed": true,
+      "max_error": 0
+    },
+    {
+      "control": "turn_4",
+      "value": -0.5,
+      "passed": true,
+      "max_error": 0
+    },
+    {
+      "control": "turn_4",
+      "value": -0.4375,
+      "passed": true,
+      "max_error": 0
+    },
+    {
+      "control": "turn_4",
+      "value": -0.375,
+      "passed": true,
+      "max_error": 0
+    },
+    {
+      "control": "turn_4",
+      "value": -0.3125,
+      "passed": true,
+      "max_error": 0
+    },
+    {
+      "control": "turn_4",
+      "value": -0.25,
+      "passed": true,
+      "max_error": 0
+    },
+    {
+      "control": "turn_4",
+      "value": -0.1875,
+      "passed": true,
+      "max_error": 0
+    },
+    {
+      "control": "turn_4",
+      "value": -0.125,
+      "passed": true,
+      "max_error": 0
+    },
+    {
+      "control": "turn_4",
+      "value": -0.0625,
+      "passed": true,
+      "max_error": 0
+    },
+    {
+      "control": "turn_4",
+      "value": 0.0,
+      "passed": true,
+      "max_error": 0
+    },
+    {
+      "control": "turn_4",
+      "value": 0.0625,
+      "passed": true,
+      "max_error": 0
+    },
+    {
+      "control": "turn_4",
+      "value": 0.125,
+      "passed": true,
+      "max_error": 0
+    },
+    {
+      "control": "turn_4",
+      "value": 0.1875,
+      "passed": true,
+      "max_error": 0
+    },
+    {
+      "control": "turn_4",
+      "value": 0.25,
+      "passed": true,
+      "max_error": 0
+    },
+    {
+      "control": "turn_4",
+      "value": 0.3125,
+      "passed": true,
+      "max_error": 0
+    },
+    {
+      "control": "turn_4",
+      "value": 0.375,
+      "passed": true,
+      "max_error": 0
+    },
+    {
+      "control": "turn_4",
+      "value": 0.4375,
+      "passed": true,
+      "max_error": 0
+    },
+    {
+      "control": "turn_4",
+      "value": 0.5,
+      "passed": true,
+      "max_error": 0
+    },
+    {
+      "control": "turn_5",
+      "value": -0.5,
+      "passed": true,
+      "max_error": 0
+    },
+    {
+      "control": "turn_5",
+      "value": -0.4375,
+      "passed": true,
+      "max_error": 0
+    },
+    {
+      "control": "turn_5",
+      "value": -0.375,
+      "passed": true,
+      "max_error": 0
+    },
+    {
+      "control": "turn_5",
+      "value": -0.3125,
+      "passed": true,
+      "max_error": 0
+    },
+    {
+      "control": "turn_5",
+      "value": -0.25,
+      "passed": true,
+      "max_error": 0
+    },
+    {
+      "control": "turn_5",
+      "value": -0.1875,
+      "passed": true,
+      "max_error": 0
+    },
+    {
+      "control": "turn_5",
+      "value": -0.125,
+      "passed": true,
+      "max_error": 0
+    },
+    {
+      "control": "turn_5",
+      "value": -0.0625,
+      "passed": true,
+      "max_error": 0
+    },
+    {
+      "control": "turn_5",
+      "value": 0.0,
+      "passed": true,
+      "max_error": 0
+    },
+    {
+      "control": "turn_5",
+      "value": 0.0625,
+      "passed": true,
+      "max_error": 0
+    },
+    {
+      "control": "turn_5",
+      "value": 0.125,
+      "passed": true,
+      "max_error": 0
+    },
+    {
+      "control": "turn_5",
+      "value": 0.1875,
+      "passed": true,
+      "max_error": 0
+    },
+    {
+      "control": "turn_5",
+      "value": 0.25,
+      "passed": true,
+      "max_error": 0
+    },
+    {
+      "control": "turn_5",
+      "value": 0.3125,
+      "passed": true,
+      "max_error": 0
+    },
+    {
+      "control": "turn_5",
+      "value": 0.375,
+      "passed": true,
+      "max_error": 0
+    },
+    {
+      "control": "turn_5",
+      "value": 0.4375,
+      "passed": true,
+      "max_error": 0
+    },
+    {
+      "control": "turn_5",
+      "value": 0.5,
+      "passed": true,
+      "max_error": 0
+    },
+    {
+      "control": "turn_6",
+      "value": -0.5,
+      "passed": true,
+      "max_error": 0
+    },
+    {
+      "control": "turn_6",
+      "value": -0.4375,
+      "passed": true,
+      "max_error": 0
+    },
+    {
+      "control": "turn_6",
+      "value": -0.375,
+      "passed": true,
+      "max_error": 0
+    },
+    {
+      "control": "turn_6",
+      "value": -0.3125,
+      "passed": true,
+      "max_error": 0
+    },
+    {
+      "control": "turn_6",
+      "value": -0.25,
+      "passed": true,
+      "max_error": 0
+    },
+    {
+      "control": "turn_6",
+      "value": -0.1875,
+      "passed": true,
+      "max_error": 0
+    },
+    {
+      "control": "turn_6",
+      "value": -0.125,
+      "passed": true,
+      "max_error": 0
+    },
+    {
+      "control": "turn_6",
+      "value": -0.0625,
+      "passed": true,
+      "max_error": 0
+    },
+    {
+      "control": "turn_6",
+      "value": 0.0,
+      "passed": true,
+      "max_error": 0
+    },
+    {
+      "control": "turn_6",
+      "value": 0.0625,
+      "passed": true,
+      "max_error": 0
+    },
+    {
+      "control": "turn_6",
+      "value": 0.125,
+      "passed": true,
+      "max_error": 0
+    },
+    {
+      "control": "turn_6",
+      "value": 0.1875,
+      "passed": true,
+      "max_error": 0
+    },
+    {
+      "control": "turn_6",
+      "value": 0.25,
+      "passed": true,
+      "max_error": 0
+    },
+    {
+      "control": "turn_6",
+      "value": 0.3125,
+      "passed": true,
+      "max_error": 0
+    },
+    {
+      "control": "turn_6",
+      "value": 0.375,
+      "passed": true,
+      "max_error": 0
+    },
+    {
+      "control": "turn_6",
+      "value": 0.4375,
+      "passed": true,
+      "max_error": 0
+    },
+    {
+      "control": "turn_6",
+      "value": 0.5,
+      "passed": true,
+      "max_error": 0
+    }
+  ],
+  "coverage": "Each control swept independently; analytic closure only, not mesh collisions or dynamics"
+}

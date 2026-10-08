@@ -1,0 +1,33 @@
+{
+  "scenario": "S05_kitchen_cupboard",
+  "sweep": {
+    "no_new_surface_crossings": true,
+    "crossings": [],
+    "excluded_rest_pairs": [
+      "cupboard_low-door",
+      "cupboard_high-drawer_top",
+      "cupboard_high-drawer_low"
+    ]
+  },
+  "clip_poses": {
+    "samples": 108,
+    "every": 4,
+    "no_new_surface_crossings": true,
+    "crossings_by_clip": {},
+    "frames_with_crossings": {},
+    "vertex_penetration_by_clip": {},
+    "deep_shrink_ldu": 1.5,
+    "no_deep_crossings": true,
+    "deep_crossings_by_clip": {},
+    "frames_with_deep_crossings": {}
+  },
+  "roles": {
+    "0": "base",
+    "1": "cupboard_low",
+    "2": "door",
+    "3": "cupboard_high",
+    "4": "drawer_top",
+    "5": "drawer_low"
+  },
+  "coverage": "Sampled surface crossings only; excludes rigid-body and rest-contact pairs; containment untested"
+}

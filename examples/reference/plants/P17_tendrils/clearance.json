@@ -1,0 +1,75 @@
+{
+  "case": "P17_tendrils",
+  "sweep": {
+    "no_new_surface_crossings": true,
+    "crossings": [],
+    "excluded_rest_pairs": []
+  },
+  "clip_poses": {
+    "samples": 180,
+    "every": 4,
+    "no_new_surface_crossings": false,
+    "crossings_by_clip": {
+      "P17_tendrils.breeze": [
+        "hook4-curl"
+      ],
+      "P17_tendrils.gusty": [
+        "hook4-curl"
+      ]
+    },
+    "frames_with_crossings": {
+      "P17_tendrils.breeze": [
+        73,
+        169
+      ],
+      "P17_tendrils.gusty": [
+        101,
+        113
+      ]
+    },
+    "vertex_penetration_by_clip": {
+      "P17_tendrils.breeze": {
+        "hook4-curl": {
+          "max_vertex_depth_ldu": 0.066,
+          "kind": "contact"
+        }
+      },
+      "P17_tendrils.gusty": {
+        "hook4-curl": {
+          "max_vertex_depth_ldu": 0.278,
+          "kind": "contact"
+        }
+      }
+    },
+    "deep_shrink_ldu": 1.5,
+    "no_deep_crossings": true,
+    "deep_crossings_by_clip": {},
+    "frames_with_deep_crossings": {}
+  },
+  "roles": {
+    "0": "base",
+    "1": "post_left0",
+    "2": "post_left1",
+    "3": "post_left2",
+    "4": "post_left3",
+    "5": "post_left4",
+    "6": "post_right0",
+    "7": "post_right1",
+    "8": "post_right2",
+    "9": "post_right3",
+    "10": "post_right4",
+    "11": "beam",
+    "12": "spacer1",
+    "13": "hook1",
+    "14": "tendril1",
+    "15": "spacer2",
+    "16": "hook2",
+    "17": "tendril2",
+    "18": "spacer3",
+    "19": "hook3",
+    "20": "tendril3",
+    "21": "hook4",
+    "22": "curl"
+  },
+  "coverage": "Sampled surface crossings only; excludes rigid-body and rest-contact pairs; containment untested"
+}

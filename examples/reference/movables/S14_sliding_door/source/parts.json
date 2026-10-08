@@ -1,0 +1,210 @@
+{
+  "scenario": "S14_sliding_door",
+  "title": "Sliding shed door",
+  "parts": [
+    {
+      "role": "base",
+      "id": "0",
+      "table": "plates.Plate6X16",
+      "ref": "3027",
+      "colour": 8,
+      "title": "Plate  6 x 16",
+      "library_only": false
+    },
+    {
+      "role": "rail_low_a",
+      "id": "1",
+      "table": "plates.Plate1X8WithDoorRail",
+      "ref": "4510",
+      "colour": 4,
+      "title": "Plate  1 x  8 with Door Rail",
+      "library_only": false
+    },
+    {
+      "role": "rail_low_b",
+      "id": "2",
+      "table": "plates.Plate1X8WithDoorRail",
+      "ref": "4510",
+      "colour": 4,
+      "title": "Plate  1 x  8 with Door Rail",
+      "library_only": false
+    },
+    {
+      "role": "door",
+      "id": "3",
+      "table": "doors.Door6_5X5SlidingWithCorrugatedSurface",
+      "ref": "4511",
+      "colour": 71,
+      "title": "Door  6.5 x  5 Sliding with Corrugated Surface",
+      "library_only": false
+    },
+    {
+      "role": "wall0",
+      "id": "4",
+      "table": "bricks.Brick1X8",
+      "ref": "3008",
+      "colour": 4,
+      "title": "Brick  1 x  8",
+      "library_only": false
+    },
+    {
+      "role": "post0",
+      "id": "5",
+      "table": "bricks.Brick1X1",
+      "ref": "3005",
+      "colour": 4,
+      "title": "Brick  1 x  1",
+      "library_only": false
+    },
+    {
+      "role": "wall1",
+      "id": "6",
+      "table": "bricks.Brick1X8",
+      "ref": "3008",
+      "colour": 4,
+      "title": "Brick  1 x  8",
+      "library_only": false
+    },
+    {
+      "role": "post1",
+      "id": "7",
+      "table": "bricks.Brick1X1",
+      "ref": "3005",
+      "colour": 4,
+      "title": "Brick  1 x  1",
+      "library_only": false
+    },
+    {
+      "role": "wall2",
+      "id": "8",
+      "table": "bricks.Brick1X8",
+      "ref": "3008",
+      "colour": 4,
+      "title": "Brick  1 x  8",
+      "library_only": false
+    },
+    {
+      "role": "post2",
+      "id": "9",
+      "table": "bricks.Brick1X1",
+      "ref": "3005",
+      "colour": 4,
+      "title": "Brick  1 x  1",
+      "library_only": false
+    },
+    {
+      "role": "wall3",
+      "id": "10",
+      "table": "bricks.Brick1X8",
+      "ref": "3008",
+      "colour": 4,
+      "title": "Brick  1 x  8",
+      "library_only": false
+    },
+    {
+      "role": "post3",
+      "id": "11",
+      "table": "bricks.Brick1X1",
+      "ref": "3005",
+      "colour": 4,
+      "title": "Brick  1 x  1",
+      "library_only": false
+    },
+    {
+      "role": "wall4",
+      "id": "12",
+      "table": "bricks.Brick1X8",
+      "ref": "3008",
+      "colour": 4,
+      "title": "Brick  1 x  8",
+      "library_only": false
+    },
+    {
+      "role": "post4",
+      "id": "13",
+      "table": "bricks.Brick1X1",
+      "ref": "3005",
+      "colour": 4,
+      "title": "Brick  1 x  1",
+      "library_only": false
+    },
+    {
+      "role": "wall_cap",
+      "id": "14",
+      "table": "plates.Plate1X8",
+      "ref": "3460",
+      "colour": 4,
+      "title": "Plate  1 x  8",
+      "library_only": false
+    },
+    {
+      "role": "post_cap",
+      "id": "15",
+      "table": "plates.Plate1X1",
+      "ref": "3024",
+      "colour": 4,
+      "title": "Plate  1 x  1",
+      "library_only": false
+    },
+    {
+      "role": "rail_top_a",
+      "id": "16",
+      "table": "plates.Plate1X8WithDoorRail",
+      "ref": "4510",
+      "colour": 4,
+      "title": "Plate  1 x  8 with Door Rail",
+      "library_only": false
+    },
+    {
+      "role": "rail_top_b",
+      "id": "17",
+      "table": "plates.Plate1X8WithDoorRail",
+      "ref": "4510",
+      "colour": 4,
+      "title": "Plate  1 x  8 with Door Rail",
+      "library_only": false
+    },
+    {
+      "role": "roof",
+      "id": "18",
+      "table": "plates.Plate2X16",
+      "ref": "4282",
+      "colour": 8,
+      "title": "Plate  2 x 16",
+      "library_only": false
+    }
+  ],
+  "joints": {
+    "door": {
+      "origin": [
+        -18.0,
+        -67.0,
+        -13.0
+      ],
+      "axis": [
+        1.0,
+        0.0,
+        0.0
+      ],
+      "parent": "rail_low_a",
+      "child": "door",
+      "kind": "prismatic",
+      "connector": "4511 has no connectors: placement and sliding direction from set 7735 (door in the 4510 rail grooves, slides along the rails)"
+    }
+  },
+  "reference_checks": [
+    {
+      "model": "7735-1.mpd",
+      "section": "(flattened main model)",
+      "parent": "rail_low_a",
+      "part": "door",
+      "official_refs": [
+        "4510",
+        "4511"
+      ],
+      "position_offset_ldu": 0.0,
+      "rotation_offset": 0.0,
+      "note": ""
+    }
+  ]
+}

@@ -1,0 +1,250 @@
+[
+ {
+  "case": "P01_palm_tree",
+  "plan": "plant_01_palm_tree",
+  "status": "ready",
+  "bodies": 11,
+  "flipped": [
+   "leaf_front",
+   "leaf_upwind",
+   "leaf_back",
+   "leaf_downwind"
+  ],
+  "roster_problems": [],
+  "joints_without_contact": []
+ },
+ {
+  "case": "P02_swordleaf_palm",
+  "plan": "plant_02_swordleaf_palm",
+  "status": "ready",
+  "bodies": 4,
+  "flipped": [],
+  "roster_problems": [],
+  "joints_without_contact": [
+   "joint_frond_downwind",
+   "joint_frond_upwind",
+   "joint_frond_back",
+   "joint_frond_front"
+  ]
+ },
+ {
+  "case": "P03_bamboo",
+  "plan": "plant_03_bamboo",
+  "status": "ready",
+  "bodies": 12,
+  "flipped": [],
+  "roster_problems": [],
+  "joints_without_contact": [
+   "joint_rustle_1a",
+   "joint_rustle_1b",
+   "joint_rustle_2a",
+   "joint_rustle_2b",
+   "joint_rustle_3a",
+   "joint_rustle_3b",
+   "joint_rustle_4a",
+   "joint_rustle_4b"
+  ]
+ },
+ {
+  "case": "P04_flower_bed",
+  "plan": "plant_04_flower_bed",
+  "status": "ready",
+  "bodies": 12,
+  "flipped": [],
+  "roster_problems": [],
+  "joints_without_contact": [
+   "joint_stem_1",
+   "joint_stem_2",
+   "joint_stem_3"
+  ]
+ },
+ {
+  "case": "P05_sunflower",
+  "plan": "plant_05_sunflower",
+  "status": "ready",
+  "bodies": 2,
+  "flipped": [],
+  "roster_problems": [],
+  "joints_without_contact": []
+ },
+ {
+  "case": "P06_pinwheel_daisies",
+  "plan": "plant_06_pinwheel_daisies",
+  "status": "ready",
+  "bodies": 3,
+  "flipped": [],
+  "roster_problems": [],
+  "joints_without_contact": [
+   "joint_spin_1",
+   "joint_spin_2"
+  ]
+ },
+ {
+  "case": "P07_grass_meadow",
+  "plan": "plant_07_grass_meadow",
+  "status": "ready",
+  "bodies": 10,
+  "flipped": [],
+  "roster_problems": [],
+  "joints_without_contact": []
+ },
+ {
+  "case": "P08_reeds",
+  "plan": "plant_08_reeds",
+  "status": "ready",
+  "bodies": 4,
+  "flipped": [],
+  "roster_problems": [],
+  "joints_without_contact": [
+   "joint_stalk_1",
+   "joint_stalk_2"
+  ]
+ },
+ {
+  "case": "P09_hanging_vine",
+  "plan": "plant_09_hanging_vine",
+  "status": "ready",
+  "bodies": 5,
+  "flipped": [
+   "link1",
+   "link2",
+   "link3",
+   "link4"
+  ],
+  "roster_problems": [],
+  "joints_without_contact": [
+   "joint_bend_1",
+   "joint_bend_2",
+   "joint_bend_3",
+   "joint_bend_4"
+  ]
+ },
+ {
+  "case": "P10_rushes",
+  "plan": "plant_10_rushes",
+  "status": "ready",
+  "bodies": 4,
+  "flipped": [],
+  "roster_problems": [],
+  "joints_without_contact": []
+ },
+ {
+  "case": "P11_hinged_oak",
+  "plan": "plant_11_hinged_oak",
+  "status": "ready",
+  "bodies": 4,
+  "flipped": [],
+  "roster_problems": [],
+  "joints_without_contact": []
+ },
+ {
+  "case": "P12_aspen",
+  "plan": "plant_12_aspen",
+  "status": "ready",
+  "bodies": 5,
+  "flipped": [
+   "leaf_back"
+  ],
+  "roster_problems": [],
+  "joints_without_contact": []
+ },
+ {
+  "case": "P13_fern",
+  "plan": "plant_13_fern",
+  "status": "ready",
+  "bodies": 4,
+  "flipped": [],
+  "roster_problems": [],
+  "joints_without_contact": []
+ },
+ {
+  "case": "P14_bouquet",
+  "plan": "plant_14_bouquet",
+  "status": "ready",
+  "bodies": 11,
+  "flipped": [],
+  "roster_problems": [],
+  "joints_without_contact": [
+   "joint_stem_a",
+   "joint_stem_b"
+  ]
+ },
+ {
+  "case": "P15_tiered_shrub",
+  "plan": "plant_15_tiered_shrub",
+  "status": "ready",
+  "bodies": 4,
+  "flipped": [],
+  "roster_problems": [],
+  "joints_without_contact": [
+   "joint_tier_1",
+   "joint_tier_2",
+   "joint_tier_3",
+   "joint_tier_4"
+  ]
+ },
+ {
+  "case": "P16_liana",
+  "plan": "plant_16_liana",
+  "status": "ready",
+  "bodies": 2,
+  "flipped": [],
+  "roster_problems": [],
+  "joints_without_contact": [
+   "joint_rock_thorny"
+  ]
+ },
+ {
+  "case": "P17_tendrils",
+  "plan": "plant_17_tendrils",
+  "status": "ready",
+  "bodies": 4,
+  "flipped": [
+   "swing_1",
+   "swing_2",
+   "swing_3"
+  ],
+  "roster_problems": [],
+  "joints_without_contact": [
+   "joint_swing_1",
+   "joint_swing_2",
+   "joint_swing_3",
+   "joint_twist_curl"
+  ]
+ },
+ {
+  "case": "P18_ground_cover",
+  "plan": "plant_18_ground_cover",
+  "status": "ready",
+  "bodies": 6,
+  "flipped": [],
+  "roster_problems": [],
+  "joints_without_contact": [
+   "joint_turn_2"
+  ]
+ },
+ {
+  "case": "P19_leaf_vanes",
+  "plan": "plant_19_leaf_vanes",
+  "status": "ready",
+  "bodies": 3,
+  "flipped": [],
+  "roster_problems": [],
+  "joints_without_contact": [
+   "joint_vane_2",
+   "joint_vane_3"
+  ]
+ },
+ {
+  "case": "P20_friends_palm",
+  "plan": "plant_20_friends_palm",
+  "status": "ready",
+  "bodies": 2,
+  "flipped": [],
+  "roster_problems": [],
+  "joints_without_contact": [
+   "joint_crown_1",
+   "joint_crown_2"
+  ]
+ }
+]

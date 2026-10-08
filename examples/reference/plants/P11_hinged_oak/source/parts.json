@@ -1,0 +1,258 @@
+{
+  "case": "P11_hinged_oak",
+  "title": "Oak with hinged branches",
+  "parts": [
+    {
+      "role": "base",
+      "id": "0",
+      "table": "plates.Plate6X6",
+      "ref": "3958",
+      "colour": 2,
+      "title": "Plate  6 x  6",
+      "library_only": false
+    },
+    {
+      "role": "trunk0",
+      "id": "1",
+      "table": "bricks.Brick2X2RoundWithoutReinforcement",
+      "ref": "3941",
+      "colour": 70,
+      "title": "Brick  2 x  2 Round without Reinforcement",
+      "library_only": false
+    },
+    {
+      "role": "trunk1",
+      "id": "2",
+      "table": "bricks.Brick2X2RoundWithoutReinforcement",
+      "ref": "3941",
+      "colour": 70,
+      "title": "Brick  2 x  2 Round without Reinforcement",
+      "library_only": false
+    },
+    {
+      "role": "trunk2",
+      "id": "3",
+      "table": "bricks.Brick2X2RoundWithoutReinforcement",
+      "ref": "3941",
+      "colour": 70,
+      "title": "Brick  2 x  2 Round without Reinforcement",
+      "library_only": false
+    },
+    {
+      "role": "trunk3",
+      "id": "4",
+      "table": "bricks.Brick2X2RoundWithoutReinforcement",
+      "ref": "3941",
+      "colour": 70,
+      "title": "Brick  2 x  2 Round without Reinforcement",
+      "library_only": false
+    },
+    {
+      "role": "hub_front",
+      "id": "5",
+      "table": "plates.Plate1X1WithClipHorizontal_ThickC_Clip_",
+      "ref": "61252",
+      "colour": 70,
+      "title": "Plate  1 x  1 with Clip Horizontal (Thick C-Clip)",
+      "library_only": false
+    },
+    {
+      "role": "branch_front",
+      "id": "6",
+      "table": "plates.Plate1X2WithHandle",
+      "ref": "2540",
+      "colour": 70,
+      "title": "Plate  1 x  2 with Handle",
+      "library_only": false
+    },
+    {
+      "role": "leaves_front",
+      "id": "7",
+      "table": "plants.PlantLeaves4X3",
+      "ref": "2423",
+      "colour": 2,
+      "title": "Plant Leaves  4 x  3",
+      "library_only": false
+    },
+    {
+      "role": "hub_downwind",
+      "id": "8",
+      "table": "plates.Plate1X1WithClipHorizontal_ThickC_Clip_",
+      "ref": "61252",
+      "colour": 70,
+      "title": "Plate  1 x  1 with Clip Horizontal (Thick C-Clip)",
+      "library_only": false
+    },
+    {
+      "role": "branch_downwind",
+      "id": "9",
+      "table": "plates.Plate1X2WithHandle",
+      "ref": "2540",
+      "colour": 70,
+      "title": "Plate  1 x  2 with Handle",
+      "library_only": false
+    },
+    {
+      "role": "leaves_downwind",
+      "id": "10",
+      "table": "plants.PlantLeaves4X3",
+      "ref": "2423",
+      "colour": 10,
+      "title": "Plant Leaves  4 x  3",
+      "library_only": false
+    },
+    {
+      "role": "hub_back",
+      "id": "11",
+      "table": "plates.Plate1X1WithClipHorizontal_ThickC_Clip_",
+      "ref": "61252",
+      "colour": 70,
+      "title": "Plate  1 x  1 with Clip Horizontal (Thick C-Clip)",
+      "library_only": false
+    },
+    {
+      "role": "branch_back",
+      "id": "12",
+      "table": "plates.Plate1X2WithHandle",
+      "ref": "2540",
+      "colour": 70,
+      "title": "Plate  1 x  2 with Handle",
+      "library_only": false
+    },
+    {
+      "role": "leaves_back",
+      "id": "13",
+      "table": "plants.PlantLeaves4X3",
+      "ref": "2423",
+      "colour": 2,
+      "title": "Plant Leaves  4 x  3",
+      "library_only": false
+    },
+    {
+      "role": "hub_upwind",
+      "id": "14",
+      "table": "plates.Plate1X1WithClipHorizontal_ThickC_Clip_",
+      "ref": "61252",
+      "colour": 70,
+      "title": "Plate  1 x  1 with Clip Horizontal (Thick C-Clip)",
+      "library_only": false
+    },
+    {
+      "role": "branch_upwind",
+      "id": "15",
+      "table": "plates.Plate1X2WithHandle",
+      "ref": "2540",
+      "colour": 70,
+      "title": "Plate  1 x  2 with Handle",
+      "library_only": false
+    },
+    {
+      "role": "leaves_upwind",
+      "id": "16",
+      "table": "plants.PlantLeaves4X3",
+      "ref": "2423",
+      "colour": 10,
+      "title": "Plant Leaves  4 x  3",
+      "library_only": false
+    },
+    {
+      "role": "upper0",
+      "id": "17",
+      "table": "bricks.Brick2X2RoundWithoutReinforcement",
+      "ref": "3941",
+      "colour": 70,
+      "title": "Brick  2 x  2 Round without Reinforcement",
+      "library_only": false
+    },
+    {
+      "role": "upper1",
+      "id": "18",
+      "table": "bricks.Brick2X2RoundWithoutReinforcement",
+      "ref": "3941",
+      "colour": 70,
+      "title": "Brick  2 x  2 Round without Reinforcement",
+      "library_only": false
+    },
+    {
+      "role": "crown",
+      "id": "19",
+      "table": "plants.PlantLeaves6X5",
+      "ref": "2417",
+      "colour": 2,
+      "title": "Plant Leaves  6 x  5",
+      "library_only": false
+    }
+  ],
+  "joints": {
+    "branch_front": {
+      "origin": [
+        -10.0,
+        -102.0,
+        -30.0
+      ],
+      "axis": [
+        -1.0,
+        0.0,
+        0.0
+      ],
+      "parent": "hub_front",
+      "child": "branch_front",
+      "kind": "revolute",
+      "joint": "real",
+      "connector": "real: 2540 handle bar in the 61252 clip on the trunk top; the branch turns about the bar"
+    },
+    "branch_downwind": {
+      "origin": [
+        30.0,
+        -102.0,
+        -10.0
+      ],
+      "axis": [
+        0.0,
+        0.0,
+        -1.0
+      ],
+      "parent": "hub_downwind",
+      "child": "branch_downwind",
+      "kind": "revolute",
+      "joint": "real",
+      "connector": "real: 2540 handle bar in the 61252 clip on the trunk top; the branch turns about the bar"
+    },
+    "branch_back": {
+      "origin": [
+        10.0,
+        -102.0,
+        30.0
+      ],
+      "axis": [
+        1.0,
+        0.0,
+        0.0
+      ],
+      "parent": "hub_back",
+      "child": "branch_back",
+      "kind": "revolute",
+      "joint": "real",
+      "connector": "real: 2540 handle bar in the 61252 clip on the trunk top; the branch turns about the bar"
+    },
+    "branch_upwind": {
+      "origin": [
+        -30.0,
+        -102.0,
+        10.0
+      ],
+      "axis": [
+        0.0,
+        0.0,
+        1.0
+      ],
+      "parent": "hub_upwind",
+      "child": "branch_upwind",
+      "kind": "revolute",
+      "joint": "real",
+      "connector": "real: 2540 handle bar in the 61252 clip on the trunk top; the branch turns about the bar"
+    }
+  },
+  "reference_checks": [],
+  "geometry_checks": []
+}

@@ -1,0 +1,33 @@
+{
+  "scenario": "S20_levers",
+  "sweep": {
+    "no_new_surface_crossings": true,
+    "crossings": [],
+    "excluded_rest_pairs": [
+      "lever_base_l-stick_l",
+      "lever_base_r-stick_r"
+    ]
+  },
+  "clip_poses": {
+    "samples": 108,
+    "every": 4,
+    "no_new_surface_crossings": true,
+    "crossings_by_clip": {},
+    "frames_with_crossings": {},
+    "vertex_penetration_by_clip": {},
+    "deep_shrink_ldu": 1.5,
+    "no_deep_crossings": true,
+    "deep_crossings_by_clip": {},
+    "frames_with_deep_crossings": {}
+  },
+  "roles": {
+    "0": "base",
+    "1": "desk",
+    "2": "lever_base_l",
+    "3": "stick_l",
+    "4": "lever_base_r",
+    "5": "stick_r",
+    "6": "screen"
+  },
+  "coverage": "Sampled surface crossings only; excludes rigid-body and rest-contact pairs; containment untested"
+}

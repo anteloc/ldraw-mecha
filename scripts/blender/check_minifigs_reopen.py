@@ -74,9 +74,12 @@ def transfer_test(spec, figures, tolerance):
 def main():
     ap = argparse.ArgumentParser()
     ap.add_argument("--report", required=True)
+    ap.add_argument("--bundle", type=Path, default=mc.OUT,
+                    help="Read plans/clips from this bundle, e.g. examples/reference/minifigs")
     ap.add_argument("--tolerance", type=float, default=0.002)
     ap.add_argument("--transfer", default="MF03_knight.sword_slash:MF05_chef")
     a = ap.parse_args(sys.argv[sys.argv.index("--") + 1:])
+    mc.OUT = a.bundle.resolve()
     cat = am.catalog()
     library = mc.library()
     scene = bpy.context.scene

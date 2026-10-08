@@ -1,0 +1,1384 @@
+{
+  "version": 1,
+  "name": "movable_11_car_roof",
+  "status": "ready",
+  "source": {
+    "version": 1,
+    "path": "/Users/captain/workspaces/workspace-ai/ldraw-mecha/output/movables/S11_car_roof/source/scenario.mpd",
+    "sha256": "2db3da963471eac11993ed91fe98096eb5a1c3c32dc86b5e3adff17e4be29c8e",
+    "section": "s11_car_roof.ldr",
+    "description": "Movable element scenario S11_car_roof Car roof hatch",
+    "author": "ldraw-mecha scripts/build_movables.py",
+    "dependencies": {
+      "/Users/captain/workspaces/workspace-ai/ldraw-mecha/output/movables/S11_car_roof/source/scenario.mpd": "2db3da963471eac11993ed91fe98096eb5a1c3c32dc86b5e3adff17e4be29c8e"
+    },
+    "nodes": [
+      {
+        "id": "0",
+        "parent": "root",
+        "ref": "3035.dat",
+        "kind": "part",
+        "embedded": false,
+        "section": "s11_car_roof.ldr",
+        "index": 0,
+        "line": 8,
+        "colour": "4",
+        "effective_colour": "4",
+        "local": [
+          [
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            1.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            1.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "world": [
+          [
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            1.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            1.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "description": "Plate  4 x  8"
+      },
+      {
+        "id": "1",
+        "parent": "root",
+        "ref": "4600.dat",
+        "kind": "part",
+        "embedded": false,
+        "section": "s11_car_roof.ldr",
+        "index": 1,
+        "line": 10,
+        "colour": "0",
+        "effective_colour": "0",
+        "local": [
+          [
+            0.0,
+            0.0,
+            1.0,
+            -50.0
+          ],
+          [
+            0.0,
+            1.0,
+            0.0,
+            8.0
+          ],
+          [
+            -1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "world": [
+          [
+            0.0,
+            0.0,
+            1.0,
+            -50.0
+          ],
+          [
+            0.0,
+            1.0,
+            0.0,
+            8.0
+          ],
+          [
+            -1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "description": "Plate  2 x  2 with 2 Wheel Pins"
+      },
+      {
+        "id": "2",
+        "parent": "root",
+        "ref": "4624.dat",
+        "kind": "part",
+        "embedded": false,
+        "section": "s11_car_roof.ldr",
+        "index": 2,
+        "line": 12,
+        "colour": "7",
+        "effective_colour": "7",
+        "local": [
+          [
+            1.0,
+            0.0,
+            0.0,
+            -50.0
+          ],
+          [
+            0.0,
+            1.0,
+            0.0,
+            13.0
+          ],
+          [
+            0.0,
+            0.0,
+            1.0,
+            -30.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "world": [
+          [
+            1.0,
+            0.0,
+            0.0,
+            -50.0
+          ],
+          [
+            0.0,
+            1.0,
+            0.0,
+            13.0
+          ],
+          [
+            0.0,
+            0.0,
+            1.0,
+            -30.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "description": "Wheel Rim  6.4 x  8"
+      },
+      {
+        "id": "3",
+        "parent": "root",
+        "ref": "4084.dat",
+        "kind": "part",
+        "embedded": false,
+        "section": "s11_car_roof.ldr",
+        "index": 3,
+        "line": 14,
+        "colour": "0",
+        "effective_colour": "0",
+        "local": [
+          [
+            1.0,
+            0.0,
+            0.0,
+            -50.0
+          ],
+          [
+            0.0,
+            1.0,
+            0.0,
+            13.0
+          ],
+          [
+            0.0,
+            0.0,
+            1.0,
+            -30.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "world": [
+          [
+            1.0,
+            0.0,
+            0.0,
+            -50.0
+          ],
+          [
+            0.0,
+            1.0,
+            0.0,
+            13.0
+          ],
+          [
+            0.0,
+            0.0,
+            1.0,
+            -30.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "description": "Tyre  8/ 75 x  8 Offset Tread"
+      },
+      {
+        "id": "4",
+        "parent": "root",
+        "ref": "4624.dat",
+        "kind": "part",
+        "embedded": false,
+        "section": "s11_car_roof.ldr",
+        "index": 4,
+        "line": 16,
+        "colour": "7",
+        "effective_colour": "7",
+        "local": [
+          [
+            -1.0,
+            0.0,
+            0.0,
+            -50.0
+          ],
+          [
+            0.0,
+            1.0,
+            0.0,
+            13.0
+          ],
+          [
+            0.0,
+            0.0,
+            -1.0,
+            30.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "world": [
+          [
+            -1.0,
+            0.0,
+            0.0,
+            -50.0
+          ],
+          [
+            0.0,
+            1.0,
+            0.0,
+            13.0
+          ],
+          [
+            0.0,
+            0.0,
+            -1.0,
+            30.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "description": "Wheel Rim  6.4 x  8"
+      },
+      {
+        "id": "5",
+        "parent": "root",
+        "ref": "4084.dat",
+        "kind": "part",
+        "embedded": false,
+        "section": "s11_car_roof.ldr",
+        "index": 5,
+        "line": 18,
+        "colour": "0",
+        "effective_colour": "0",
+        "local": [
+          [
+            -1.0,
+            0.0,
+            0.0,
+            -50.0
+          ],
+          [
+            0.0,
+            1.0,
+            0.0,
+            13.0
+          ],
+          [
+            0.0,
+            0.0,
+            -1.0,
+            30.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "world": [
+          [
+            -1.0,
+            0.0,
+            0.0,
+            -50.0
+          ],
+          [
+            0.0,
+            1.0,
+            0.0,
+            13.0
+          ],
+          [
+            0.0,
+            0.0,
+            -1.0,
+            30.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "description": "Tyre  8/ 75 x  8 Offset Tread"
+      },
+      {
+        "id": "6",
+        "parent": "root",
+        "ref": "4600.dat",
+        "kind": "part",
+        "embedded": false,
+        "section": "s11_car_roof.ldr",
+        "index": 6,
+        "line": 20,
+        "colour": "0",
+        "effective_colour": "0",
+        "local": [
+          [
+            0.0,
+            0.0,
+            1.0,
+            50.0
+          ],
+          [
+            0.0,
+            1.0,
+            0.0,
+            8.0
+          ],
+          [
+            -1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "world": [
+          [
+            0.0,
+            0.0,
+            1.0,
+            50.0
+          ],
+          [
+            0.0,
+            1.0,
+            0.0,
+            8.0
+          ],
+          [
+            -1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "description": "Plate  2 x  2 with 2 Wheel Pins"
+      },
+      {
+        "id": "7",
+        "parent": "root",
+        "ref": "4624.dat",
+        "kind": "part",
+        "embedded": false,
+        "section": "s11_car_roof.ldr",
+        "index": 7,
+        "line": 22,
+        "colour": "7",
+        "effective_colour": "7",
+        "local": [
+          [
+            1.0,
+            0.0,
+            0.0,
+            50.0
+          ],
+          [
+            0.0,
+            1.0,
+            0.0,
+            13.0
+          ],
+          [
+            0.0,
+            0.0,
+            1.0,
+            -30.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "world": [
+          [
+            1.0,
+            0.0,
+            0.0,
+            50.0
+          ],
+          [
+            0.0,
+            1.0,
+            0.0,
+            13.0
+          ],
+          [
+            0.0,
+            0.0,
+            1.0,
+            -30.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "description": "Wheel Rim  6.4 x  8"
+      },
+      {
+        "id": "8",
+        "parent": "root",
+        "ref": "4084.dat",
+        "kind": "part",
+        "embedded": false,
+        "section": "s11_car_roof.ldr",
+        "index": 8,
+        "line": 24,
+        "colour": "0",
+        "effective_colour": "0",
+        "local": [
+          [
+            1.0,
+            0.0,
+            0.0,
+            50.0
+          ],
+          [
+            0.0,
+            1.0,
+            0.0,
+            13.0
+          ],
+          [
+            0.0,
+            0.0,
+            1.0,
+            -30.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "world": [
+          [
+            1.0,
+            0.0,
+            0.0,
+            50.0
+          ],
+          [
+            0.0,
+            1.0,
+            0.0,
+            13.0
+          ],
+          [
+            0.0,
+            0.0,
+            1.0,
+            -30.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "description": "Tyre  8/ 75 x  8 Offset Tread"
+      },
+      {
+        "id": "9",
+        "parent": "root",
+        "ref": "4624.dat",
+        "kind": "part",
+        "embedded": false,
+        "section": "s11_car_roof.ldr",
+        "index": 9,
+        "line": 26,
+        "colour": "7",
+        "effective_colour": "7",
+        "local": [
+          [
+            -1.0,
+            0.0,
+            0.0,
+            50.0
+          ],
+          [
+            0.0,
+            1.0,
+            0.0,
+            13.0
+          ],
+          [
+            0.0,
+            0.0,
+            -1.0,
+            30.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "world": [
+          [
+            -1.0,
+            0.0,
+            0.0,
+            50.0
+          ],
+          [
+            0.0,
+            1.0,
+            0.0,
+            13.0
+          ],
+          [
+            0.0,
+            0.0,
+            -1.0,
+            30.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "description": "Wheel Rim  6.4 x  8"
+      },
+      {
+        "id": "10",
+        "parent": "root",
+        "ref": "4084.dat",
+        "kind": "part",
+        "embedded": false,
+        "section": "s11_car_roof.ldr",
+        "index": 10,
+        "line": 28,
+        "colour": "0",
+        "effective_colour": "0",
+        "local": [
+          [
+            -1.0,
+            0.0,
+            0.0,
+            50.0
+          ],
+          [
+            0.0,
+            1.0,
+            0.0,
+            13.0
+          ],
+          [
+            0.0,
+            0.0,
+            -1.0,
+            30.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "world": [
+          [
+            -1.0,
+            0.0,
+            0.0,
+            50.0
+          ],
+          [
+            0.0,
+            1.0,
+            0.0,
+            13.0
+          ],
+          [
+            0.0,
+            0.0,
+            -1.0,
+            30.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "description": "Tyre  8/ 75 x  8 Offset Tread"
+      },
+      {
+        "id": "11",
+        "parent": "root",
+        "ref": "3001.dat",
+        "kind": "part",
+        "embedded": false,
+        "section": "s11_car_roof.ldr",
+        "index": 11,
+        "line": 30,
+        "colour": "4",
+        "effective_colour": "4",
+        "local": [
+          [
+            0.0,
+            0.0,
+            1.0,
+            -60.0
+          ],
+          [
+            0.0,
+            1.0,
+            0.0,
+            -24.0
+          ],
+          [
+            -1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "world": [
+          [
+            0.0,
+            0.0,
+            1.0,
+            -60.0
+          ],
+          [
+            0.0,
+            1.0,
+            0.0,
+            -24.0
+          ],
+          [
+            -1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "description": "Brick  2 x  4"
+      },
+      {
+        "id": "12",
+        "parent": "root",
+        "ref": "3010.dat",
+        "kind": "part",
+        "embedded": false,
+        "section": "s11_car_roof.ldr",
+        "index": 12,
+        "line": 32,
+        "colour": "4",
+        "effective_colour": "4",
+        "local": [
+          [
+            0.0,
+            0.0,
+            1.0,
+            0.0
+          ],
+          [
+            0.0,
+            1.0,
+            0.0,
+            -24.0
+          ],
+          [
+            -1.0,
+            0.0,
+            0.0,
+            -30.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "world": [
+          [
+            0.0,
+            0.0,
+            1.0,
+            0.0
+          ],
+          [
+            0.0,
+            1.0,
+            0.0,
+            -24.0
+          ],
+          [
+            -1.0,
+            0.0,
+            0.0,
+            -30.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "description": "Brick  1 x  4"
+      },
+      {
+        "id": "13",
+        "parent": "root",
+        "ref": "3010.dat",
+        "kind": "part",
+        "embedded": false,
+        "section": "s11_car_roof.ldr",
+        "index": 13,
+        "line": 34,
+        "colour": "4",
+        "effective_colour": "4",
+        "local": [
+          [
+            0.0,
+            0.0,
+            1.0,
+            0.0
+          ],
+          [
+            0.0,
+            1.0,
+            0.0,
+            -24.0
+          ],
+          [
+            -1.0,
+            0.0,
+            0.0,
+            30.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "world": [
+          [
+            0.0,
+            0.0,
+            1.0,
+            0.0
+          ],
+          [
+            0.0,
+            1.0,
+            0.0,
+            -24.0
+          ],
+          [
+            -1.0,
+            0.0,
+            0.0,
+            30.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "description": "Brick  1 x  4"
+      },
+      {
+        "id": "14",
+        "parent": "root",
+        "ref": "3001.dat",
+        "kind": "part",
+        "embedded": false,
+        "section": "s11_car_roof.ldr",
+        "index": 14,
+        "line": 36,
+        "colour": "4",
+        "effective_colour": "4",
+        "local": [
+          [
+            0.0,
+            0.0,
+            1.0,
+            60.0
+          ],
+          [
+            0.0,
+            1.0,
+            0.0,
+            -24.0
+          ],
+          [
+            -1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "world": [
+          [
+            0.0,
+            0.0,
+            1.0,
+            60.0
+          ],
+          [
+            0.0,
+            1.0,
+            0.0,
+            -24.0
+          ],
+          [
+            -1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "description": "Brick  2 x  4"
+      },
+      {
+        "id": "15",
+        "parent": "root",
+        "ref": "3823.dat",
+        "kind": "part",
+        "embedded": false,
+        "section": "s11_car_roof.ldr",
+        "index": 15,
+        "line": 38,
+        "colour": "47",
+        "effective_colour": "47",
+        "local": [
+          [
+            0.0,
+            0.0,
+            1.0,
+            -30.0
+          ],
+          [
+            0.0,
+            1.0,
+            0.0,
+            -72.0
+          ],
+          [
+            -1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "world": [
+          [
+            0.0,
+            0.0,
+            1.0,
+            -30.0
+          ],
+          [
+            0.0,
+            1.0,
+            0.0,
+            -72.0
+          ],
+          [
+            -1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "description": "Windscreen  2 x  4 x  2"
+      },
+      {
+        "id": "16",
+        "parent": "root",
+        "ref": "4214.dat",
+        "kind": "part",
+        "embedded": false,
+        "section": "s11_car_roof.ldr",
+        "index": 16,
+        "line": 40,
+        "colour": "4",
+        "effective_colour": "4",
+        "local": [
+          [
+            0.0,
+            0.0,
+            1.0,
+            30.0
+          ],
+          [
+            0.0,
+            1.0,
+            0.0,
+            -72.0
+          ],
+          [
+            -1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "world": [
+          [
+            0.0,
+            0.0,
+            1.0,
+            30.0
+          ],
+          [
+            0.0,
+            1.0,
+            0.0,
+            -72.0
+          ],
+          [
+            -1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "description": "Hinge Car Roof Holder  1 x  4 x  2"
+      },
+      {
+        "id": "17",
+        "parent": "root",
+        "ref": "4213.dat",
+        "kind": "part",
+        "embedded": false,
+        "section": "s11_car_roof.ldr",
+        "index": 17,
+        "line": 42,
+        "colour": "4",
+        "effective_colour": "4",
+        "local": [
+          [
+            0.0,
+            0.0,
+            1.0,
+            0.0
+          ],
+          [
+            0.0,
+            1.0,
+            0.0,
+            -80.0
+          ],
+          [
+            -1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "world": [
+          [
+            0.0,
+            0.0,
+            1.0,
+            0.0
+          ],
+          [
+            0.0,
+            1.0,
+            0.0,
+            -80.0
+          ],
+          [
+            -1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "description": "Hinge Car Roof  4 x  4"
+      }
+    ],
+    "diagnostics": [],
+    "coordinate_space": "selected section, LDU, -Y up"
+  },
+  "controls": {
+    "roof": {
+      "default": 0,
+      "min": 0.0,
+      "max": 1.3,
+      "unit": "radian",
+      "description": "Roof about the rear holder hinge; + lifts the front edge"
+    }
+  },
+  "signals": {
+    "roof_angle": {
+      "expression": "a",
+      "variables": {
+        "a": "control:roof"
+      }
+    }
+  },
+  "bodies": {
+    "roof": {
+      "instances": [
+        "17"
+      ],
+      "kind": "revolute",
+      "origin": [
+        36.0,
+        -76.0,
+        0.0
+      ],
+      "axis": [
+        -0.0,
+        -0.0,
+        1.0
+      ],
+      "signal": "roof_angle"
+    }
+  },
+  "anchors": {},
+  "checks": [],
+  "notes": [
+    "Mock scenario S11_car_roof (Car roof hatch) written by scripts/build_movables.py: Hinge car roof 4x4 4213 on roof holder 4214. Parts picked by constant name from data/categories/parts; frame LDU, -Y up, the scenario front faces -Z, ground (base top) at y = 0.",
+    "Joints: roof: revolute about [0.0, 0.0, -1.0] through [36.0, -76.0, 0.0] (4214 hinge snap_fgr@L9:I0 receives 4213 hinge snap_fgr@L9:I0).",
+    "Sign convention by meaning (checked with the evaluator, kinematics.json): roof + = Roof about the rear holder hinge; + lifts the front edge.",
+    "Ranges are catalog choices, narrowed by sampled clearance against the mock context (scripts/blender/check_movables_clearance.py); they are not measured mechanical stops.",
+    "Kinematic and transform checks do not prove collision-free or physically feasible motion."
+  ],
+  "mechanisms": {
+    "roof": {
+      "label": "Car roof hatch: roof",
+      "parts": [
+        "16",
+        "17"
+      ],
+      "bodies": [
+        "roof"
+      ],
+      "inputs": [
+        "control:roof"
+      ],
+      "outputs": [
+        "body:roof"
+      ],
+      "disposition": "planned",
+      "notes": [
+        "revolute joint: 4214 hinge snap_fgr@L9:I0 receives 4213 hinge snap_fgr@L9:I0"
+      ],
+      "review": "Measured joint declared in this plan (scripts/build_movables.py)."
+    },
+    "context": {
+      "label": "Car roof hatch: mounting and mock context (static)",
+      "parts": [
+        "0",
+        "1",
+        "2",
+        "3",
+        "4",
+        "5",
+        "6",
+        "7",
+        "8",
+        "9",
+        "10",
+        "11",
+        "12",
+        "13",
+        "14",
+        "15",
+        "16"
+      ],
+      "bodies": [],
+      "inputs": [],
+      "outputs": [],
+      "disposition": "static",
+      "notes": [],
+      "review": "Mock context built for the catalog (walls, floor, chassis, mounts); it does not move in this scenario."
+    }
+  },
+  "connections": {
+    "joint_roof": {
+      "a": "16",
+      "b": "17",
+      "kind": "revolute",
+      "status": "reviewed",
+      "evidence": "4214 hinge snap_fgr@L9:I0 receives 4213 hinge snap_fgr@L9:I0. pyldraw3 contact confirmed (hinge/hinge).",
+      "measurements": {
+        "origin": [
+          36.0,
+          -76.0,
+          0.0
+        ],
+        "axis": [
+          0.0,
+          0.0,
+          -1.0
+        ]
+      },
+      "review": "Joint frame measured as stated (scripts/build_movables.py); see source/parts.json reference_checks for official placements."
+    }
+  },
+  "discovery": {
+    "grouping": "Provisional connected mechanical candidates; agent may split/merge views",
+    "unclassified_parts": [
+      "0",
+      "11",
+      "12",
+      "13",
+      "14",
+      "15"
+    ],
+    "embedded_parts": [],
+    "contact_limit": 300,
+    "rigid_groups": "not inferred",
+    "inputs_outputs": "not inferred",
+    "mechanical_parts": [
+      "1",
+      "10",
+      "16",
+      "17",
+      "2",
+      "3",
+      "4",
+      "5",
+      "6",
+      "7",
+      "8",
+      "9"
+    ],
+    "warnings": [
+      {
+        "code": "coaxial_not_run",
+        "message": "not run: 0 shaft/gear candidates outside 2..100; select a section"
+      }
+    ],
+    "surface_contacts": "Not detected: cams, levers bearing on beams, friction and stops need geometric/visual review even when connector contacts are absent",
+    "unsupported_gears": [],
+    "gear_placements": {
+      "policy": "Nearest orthogonal analysis frame within rounding_limit; source translations and handedness preserved",
+      "rounding_limit": 0.002,
+      "counts": {},
+      "affected": []
+    },
+    "contacts": {
+      "complete": true,
+      "tested_parts": 18,
+      "diagnostics": [],
+      "summary": {
+        "tested_parts": 18,
+        "contacts": 37,
+        "contacted_parts": 15,
+        "by_kind": {
+          "stud/stud_receptacle": 16,
+          "pin/pin_hole": 16,
+          "rim_seat/tyre_bead": 4,
+          "hinge/hinge": 1
+        },
+        "axles": {
+          "selection": "Catalog descriptions beginning Technic Axle followed by a numeric length; excludes axle pins, joiners and axle-hole supports",
+          "total": 0,
+          "with_axle_hole_contact": 0,
+          "without_axle_hole_contact": []
+        }
+      },
+      "placements": {
+        "policy": "Nearest orthogonal analysis frame within rounding_limit; source translations and handedness preserved",
+        "rounding_limit": 0.002,
+        "counts": {
+          "unchanged": 18
+        },
+        "affected": []
+      }
+    },
+    "coaxial_selection": "Catalog axle, gear, worm and engine crankshaft parts; positive line evidence within 80 LDU axial separation",
+    "coaxial": "not run: 0 shaft/gear candidates outside 2..100; select a section",
+    "isolated_mechanical_parts": []
+  }
+}

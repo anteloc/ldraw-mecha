@@ -1,0 +1,309 @@
+{
+  "semantics": {
+    "leaf_front": {
+      "control": "leaf_front",
+      "value": 0.2,
+      "test_point": [
+        0.0,
+        -26.0,
+        -18.0
+      ],
+      "displacement": [
+        11.92016,
+        -1.196005,
+        0.0
+      ],
+      "expected": "+x",
+      "flipped": false
+    },
+    "leaf_back": {
+      "control": "leaf_back",
+      "value": 0.2,
+      "test_point": [
+        0.0,
+        -26.0,
+        18.0
+      ],
+      "displacement": [
+        11.92016,
+        -1.196005,
+        0.0
+      ],
+      "expected": "+x",
+      "flipped": true
+    }
+  },
+  "wind_geometry": {
+    "leaf_top": {
+      "body": "leaf_top",
+      "x": 0.0,
+      "tip": [
+        -20.521209,
+        -224.0,
+        -56.381557
+      ],
+      "swing": [
+        0.94,
+        -0.342
+      ],
+      "lever": 60.0
+    },
+    "leaf_front": {
+      "body": "leaf_front",
+      "x": 0.0,
+      "tip": [
+        0.0,
+        -26.0,
+        -18.0
+      ],
+      "swing": [
+        1.0,
+        0.0
+      ],
+      "lever": 60.0
+    },
+    "leaf_back": {
+      "body": "leaf_back",
+      "x": 0.0,
+      "tip": [
+        0.0,
+        -26.0,
+        18.0
+      ],
+      "swing": [
+        1.0,
+        0.0
+      ],
+      "lever": 60.0
+    },
+    "leaf_upwind": {
+      "body": "leaf_upwind",
+      "x": -10.0,
+      "tip": [
+        -18.0,
+        -122.0,
+        0.0
+      ],
+      "swing": [
+        0.0,
+        -1.0
+      ],
+      "lever": 60.0
+    },
+    "leaf_downwind": {
+      "body": "leaf_downwind",
+      "x": 10.0,
+      "tip": [
+        18.0,
+        -122.0,
+        0.0
+      ],
+      "swing": [
+        0.0,
+        1.0
+      ],
+      "lever": 60.0
+    }
+  },
+  "roster_problems": [],
+  "contacts": {
+    "tested_parts": 15,
+    "contacts": 12,
+    "contacted_parts": 15,
+    "by_kind": {
+      "stud/stud_receptacle": 12
+    },
+    "axles": {
+      "selection": "Catalog descriptions beginning Technic Axle followed by a numeric length; excludes axle pins, joiners and axle-hole supports",
+      "total": 0,
+      "with_axle_hole_contact": 0,
+      "without_axle_hole_contact": []
+    }
+  },
+  "contact_pairs": {
+    "0-1": [
+      "stud/stud_receptacle"
+    ],
+    "1-2": [
+      "stud/stud_receptacle"
+    ],
+    "2-3": [
+      "stud/stud_receptacle"
+    ],
+    "4-5": [
+      "stud/stud_receptacle"
+    ],
+    "4-11": [
+      "stud/stud_receptacle"
+    ],
+    "4-12": [
+      "stud/stud_receptacle"
+    ],
+    "5-6": [
+      "stud/stud_receptacle"
+    ],
+    "6-7": [
+      "stud/stud_receptacle"
+    ],
+    "8-9": [
+      "stud/stud_receptacle"
+    ],
+    "8-13": [
+      "stud/stud_receptacle"
+    ],
+    "8-14": [
+      "stud/stud_receptacle"
+    ],
+    "9-10": [
+      "stud/stud_receptacle"
+    ]
+  },
+  "joints": {
+    "leaf_top": "real",
+    "leaf_front": "real",
+    "leaf_back": "real",
+    "leaf_upwind": "real",
+    "leaf_downwind": "real"
+  },
+  "asymmetric_sample": {
+    "controls": {
+      "leaf_top": 0.252,
+      "leaf_front": -0.148,
+      "leaf_back": 0.324,
+      "leaf_upwind": -0.252,
+      "leaf_downwind": 0.148
+    },
+    "transforms": {
+      "leaf_top": [
+        [
+          0.968416,
+          0.0,
+          -0.249341,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.249341,
+          0.0,
+          0.968416,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "leaf_front": [
+        [
+          0.989068,
+          -0.14746,
+          0.0,
+          -12.681585
+        ],
+        [
+          0.14746,
+          0.989068,
+          0.0,
+          -0.940154
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "leaf_back": [
+        [
+          0.94797,
+          0.318361,
+          0.0,
+          27.379044
+        ],
+        [
+          -0.318361,
+          0.94797,
+          0.0,
+          -4.474618
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "leaf_upwind": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.968416,
+          -0.249341,
+          -5.748347
+        ],
+        [
+          0.0,
+          0.249341,
+          0.968416,
+          45.380114
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "leaf_downwind": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.989068,
+          -0.14746,
+          -1.989628
+        ],
+        [
+          0.0,
+          0.14746,
+          0.989068,
+          26.837773
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ]
+    }
+  }
+}

@@ -1,0 +1,131 @@
+{
+  "semantics": {
+    "roof": {
+      "control": "roof",
+      "value": 0.2,
+      "test_point": [
+        -36.0,
+        -80.0,
+        0.0
+      ],
+      "displacement": [
+        2.229884,
+        -14.224458,
+        0.0
+      ],
+      "expected": "-y",
+      "flipped": true
+    }
+  },
+  "contacts": {
+    "tested_parts": 18,
+    "contacts": 37,
+    "contacted_parts": 15,
+    "by_kind": {
+      "stud/stud_receptacle": 16,
+      "pin/pin_hole": 16,
+      "rim_seat/tyre_bead": 4,
+      "hinge/hinge": 1
+    },
+    "axles": {
+      "selection": "Catalog descriptions beginning Technic Axle followed by a numeric length; excludes axle pins, joiners and axle-hole supports",
+      "total": 0,
+      "with_axle_hole_contact": 0,
+      "without_axle_hole_contact": []
+    }
+  },
+  "contact_pairs": {
+    "0-11": [
+      "stud/stud_receptacle",
+      "stud/stud_receptacle",
+      "stud/stud_receptacle",
+      "stud/stud_receptacle",
+      "stud/stud_receptacle",
+      "stud/stud_receptacle",
+      "stud/stud_receptacle",
+      "stud/stud_receptacle"
+    ],
+    "0-14": [
+      "stud/stud_receptacle",
+      "stud/stud_receptacle",
+      "stud/stud_receptacle",
+      "stud/stud_receptacle",
+      "stud/stud_receptacle",
+      "stud/stud_receptacle",
+      "stud/stud_receptacle",
+      "stud/stud_receptacle"
+    ],
+    "1-2": [
+      "pin/pin_hole",
+      "pin/pin_hole",
+      "pin/pin_hole",
+      "pin/pin_hole"
+    ],
+    "1-4": [
+      "pin/pin_hole",
+      "pin/pin_hole",
+      "pin/pin_hole",
+      "pin/pin_hole"
+    ],
+    "2-3": [
+      "rim_seat/tyre_bead"
+    ],
+    "4-5": [
+      "rim_seat/tyre_bead"
+    ],
+    "6-7": [
+      "pin/pin_hole",
+      "pin/pin_hole",
+      "pin/pin_hole",
+      "pin/pin_hole"
+    ],
+    "6-9": [
+      "pin/pin_hole",
+      "pin/pin_hole",
+      "pin/pin_hole",
+      "pin/pin_hole"
+    ],
+    "7-8": [
+      "rim_seat/tyre_bead"
+    ],
+    "9-10": [
+      "rim_seat/tyre_bead"
+    ],
+    "16-17": [
+      "hinge/hinge"
+    ]
+  },
+  "asymmetric_sample": {
+    "controls": {
+      "roof": 0.819
+    },
+    "transforms": {
+      "roof": [
+        [
+          0.682952,
+          -0.730463,
+          0.0,
+          -44.101479
+        ],
+        [
+          0.730463,
+          0.682952,
+          0.0,
+          -50.392324
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ]
+    }
+  }
+}

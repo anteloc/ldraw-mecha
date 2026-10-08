@@ -1,0 +1,138 @@
+{
+  "scenario": "S12_canopy",
+  "title": "Spaceship canopy",
+  "parts": [
+    {
+      "role": "wings",
+      "id": "0",
+      "table": "plates.Plate4X8",
+      "ref": "3035",
+      "colour": 7,
+      "title": "Plate  4 x  8",
+      "library_only": false
+    },
+    {
+      "role": "hull",
+      "id": "1",
+      "table": "plates.Plate4X10",
+      "ref": "3030",
+      "colour": 7,
+      "title": "Plate  4 x 10",
+      "library_only": false
+    },
+    {
+      "role": "nose",
+      "id": "2",
+      "table": "tiles.Tile1X4WithGroove",
+      "ref": "2431",
+      "colour": 8,
+      "title": "Tile  1 x  4 with Groove",
+      "library_only": false
+    },
+    {
+      "role": "back_wall0",
+      "id": "3",
+      "table": "bricks.Brick1X4",
+      "ref": "3010",
+      "colour": 7,
+      "title": "Brick  1 x  4",
+      "library_only": false
+    },
+    {
+      "role": "back_wall1",
+      "id": "4",
+      "table": "bricks.Brick1X4",
+      "ref": "3010",
+      "colour": 7,
+      "title": "Brick  1 x  4",
+      "library_only": false
+    },
+    {
+      "role": "back_plate",
+      "id": "5",
+      "table": "plates.Plate1X4",
+      "ref": "3710",
+      "colour": 7,
+      "title": "Plate  1 x  4",
+      "library_only": false
+    },
+    {
+      "role": "deck",
+      "id": "6",
+      "table": "plates.Plate4X4",
+      "ref": "3031",
+      "colour": 7,
+      "title": "Plate  4 x  4",
+      "library_only": false
+    },
+    {
+      "role": "holder",
+      "id": "7",
+      "table": "hinges.HingePlate1X4WithCarRoofHolder",
+      "ref": "4315",
+      "colour": 7,
+      "title": "Hinge Plate  1 x  4 with Car Roof Holder",
+      "library_only": false
+    },
+    {
+      "role": "canopy",
+      "id": "8",
+      "table": "windscreens.Windscreen4X4X3WithHinge",
+      "ref": "2620",
+      "colour": 33,
+      "title": "Windscreen  4 x  4 x  3 with Hinge",
+      "library_only": false
+    },
+    {
+      "role": "engine_l",
+      "id": "9",
+      "table": "bricks.Brick2X2RoundWithoutReinforcement",
+      "ref": "3941",
+      "colour": 8,
+      "title": "Brick  2 x  2 Round without Reinforcement",
+      "library_only": false
+    },
+    {
+      "role": "engine_r",
+      "id": "10",
+      "table": "bricks.Brick2X2RoundWithoutReinforcement",
+      "ref": "3941",
+      "colour": 8,
+      "title": "Brick  2 x  2 Round without Reinforcement",
+      "library_only": false
+    }
+  ],
+  "joints": {
+    "canopy": {
+      "origin": [
+        16.0,
+        -68.0,
+        0.0
+      ],
+      "axis": [
+        0.0,
+        0.0,
+        -1.0
+      ],
+      "parent": "holder",
+      "child": "canopy",
+      "kind": "revolute",
+      "connector": "4315 hinge snap_fgr@L9:I0 receives 2620 hinge snap_fgr@L8:I0"
+    }
+  },
+  "reference_checks": [
+    {
+      "model": "6351-1.mpd",
+      "section": "(flattened main model)",
+      "parent": "holder",
+      "part": "canopy",
+      "official_refs": [
+        "4315",
+        "2620"
+      ],
+      "position_offset_ldu": 1.0,
+      "rotation_offset": 0.0,
+      "note": ""
+    }
+  ]
+}

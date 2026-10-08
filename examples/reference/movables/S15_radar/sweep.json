@@ -1,0 +1,108 @@
+{
+  "passed": true,
+  "samples": [
+    {
+      "control": "spin",
+      "value": -25.132741228718345,
+      "passed": true,
+      "max_error": 0
+    },
+    {
+      "control": "spin",
+      "value": -21.991148575128552,
+      "passed": true,
+      "max_error": 0
+    },
+    {
+      "control": "spin",
+      "value": -18.84955592153876,
+      "passed": true,
+      "max_error": 0
+    },
+    {
+      "control": "spin",
+      "value": -15.707963267948966,
+      "passed": true,
+      "max_error": 0
+    },
+    {
+      "control": "spin",
+      "value": -12.566370614359172,
+      "passed": true,
+      "max_error": 0
+    },
+    {
+      "control": "spin",
+      "value": -9.42477796076938,
+      "passed": true,
+      "max_error": 0
+    },
+    {
+      "control": "spin",
+      "value": -6.283185307179586,
+      "passed": true,
+      "max_error": 0
+    },
+    {
+      "control": "spin",
+      "value": -3.141592653589793,
+      "passed": true,
+      "max_error": 0
+    },
+    {
+      "control": "spin",
+      "value": 0.0,
+      "passed": true,
+      "max_error": 0
+    },
+    {
+      "control": "spin",
+      "value": 3.141592653589793,
+      "passed": true,
+      "max_error": 0
+    },
+    {
+      "control": "spin",
+      "value": 6.283185307179586,
+      "passed": true,
+      "max_error": 0
+    },
+    {
+      "control": "spin",
+      "value": 9.424777960769376,
+      "passed": true,
+      "max_error": 0
+    },
+    {
+      "control": "spin",
+      "value": 12.566370614359172,
+      "passed": true,
+      "max_error": 0
+    },
+    {
+      "control": "spin",
+      "value": 15.70796326794897,
+      "passed": true,
+      "max_error": 0
+    },
+    {
+      "control": "spin",
+      "value": 18.84955592153876,
+      "passed": true,
+      "max_error": 0
+    },
+    {
+      "control": "spin",
+      "value": 21.99114857512855,
+      "passed": true,
+      "max_error": 0
+    },
+    {
+      "control": "spin",
+      "value": 25.132741228718345,
+      "passed": true,
+      "max_error": 0
+    }
+  ],
+  "coverage": "Each control swept independently; analytic closure only, not mesh collisions or dynamics"
+}

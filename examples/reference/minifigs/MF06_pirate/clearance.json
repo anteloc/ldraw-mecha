@@ -1,0 +1,127 @@
+{
+  "figure": "MF06_pirate",
+  "sweep": {
+    "no_new_surface_crossings": false,
+    "crossings": [
+      [
+        "hip_r",
+        1.374,
+        [
+          "10",
+          "5"
+        ]
+      ],
+      [
+        "hip_r",
+        1.571,
+        [
+          "10",
+          "5"
+        ]
+      ],
+      [
+        "shoulder_r",
+        -9.425,
+        [
+          "10",
+          "2"
+        ]
+      ],
+      [
+        "shoulder_r",
+        -3.142,
+        [
+          "10",
+          "2"
+        ]
+      ],
+      [
+        "shoulder_r",
+        3.142,
+        [
+          "10",
+          "2"
+        ]
+      ],
+      [
+        "shoulder_r",
+        9.425,
+        [
+          "10",
+          "2"
+        ]
+      ],
+      [
+        "wrist_r",
+        -2.749,
+        [
+          "10",
+          "5"
+        ]
+      ],
+      [
+        "wrist_r",
+        -2.356,
+        [
+          "10",
+          "4"
+        ]
+      ],
+      [
+        "wrist_r",
+        -2.356,
+        [
+          "10",
+          "5"
+        ]
+      ],
+      [
+        "wrist_r",
+        -1.963,
+        [
+          "10",
+          "4"
+        ]
+      ]
+    ],
+    "excluded_rest_pairs": [
+      [
+        "10",
+        "3"
+      ],
+      [
+        "3",
+        "4"
+      ],
+      [
+        "3",
+        "5"
+      ]
+    ]
+  },
+  "clip_poses": {
+    "samples": 72,
+    "every": 6,
+    "no_new_surface_crossings": true,
+    "crossings_by_clip": {},
+    "frames_with_crossings": {},
+    "deep_shrink_ldu": 1.5,
+    "no_deep_crossings": true,
+    "deep_crossings_by_clip": {},
+    "frames_with_deep_crossings": {}
+  },
+  "roles": {
+    "0": "torso",
+    "1": "head",
+    "2": "headgear0",
+    "3": "hips",
+    "4": "leg_l",
+    "5": "leg_r",
+    "6": "arm_l",
+    "7": "hand_l",
+    "8": "arm_r",
+    "9": "hand_r",
+    "10": "item_r"
+  },
+  "coverage": "Sampled surface crossings only; excludes rigid-body and rest-contact pairs; containment untested; joint channels only (whole-figure staging not applied)"
+}

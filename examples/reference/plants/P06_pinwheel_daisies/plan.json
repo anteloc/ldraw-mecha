@@ -1,0 +1,1252 @@
+{
+  "version": 1,
+  "name": "plant_06_pinwheel_daisies",
+  "status": "ready",
+  "source": {
+    "version": 1,
+    "path": "/Users/captain/workspaces/workspace-ai/ldraw-mecha/output/plants/P06_pinwheel_daisies/source/scenario.mpd",
+    "sha256": "7f49fb2e8503eea77197f566d7febe8a1eb023cd7fcc4ef88047da5dd6686646",
+    "section": "p06_pinwheel_daisies.ldr",
+    "description": "Plant wind case P06_pinwheel_daisies Pinwheel daisies",
+    "author": "ldraw-mecha scripts/build_plants.py",
+    "dependencies": {
+      "/Users/captain/workspaces/workspace-ai/ldraw-mecha/output/plants/P06_pinwheel_daisies/source/scenario.mpd": "7f49fb2e8503eea77197f566d7febe8a1eb023cd7fcc4ef88047da5dd6686646"
+    },
+    "nodes": [
+      {
+        "id": "0",
+        "parent": "root",
+        "ref": "3031.dat",
+        "kind": "part",
+        "embedded": false,
+        "section": "p06_pinwheel_daisies.ldr",
+        "index": 0,
+        "line": 8,
+        "colour": "2",
+        "effective_colour": "2",
+        "local": [
+          [
+            1.0,
+            0.0,
+            0.0,
+            10.0
+          ],
+          [
+            0.0,
+            1.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            1.0,
+            10.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "world": [
+          [
+            1.0,
+            0.0,
+            0.0,
+            10.0
+          ],
+          [
+            0.0,
+            1.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            1.0,
+            10.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "description": "Plate  4 x  4"
+      },
+      {
+        "id": "1",
+        "parent": "root",
+        "ref": "3005.dat",
+        "kind": "part",
+        "embedded": false,
+        "section": "p06_pinwheel_daisies.ldr",
+        "index": 1,
+        "line": 10,
+        "colour": "2",
+        "effective_colour": "2",
+        "local": [
+          [
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            1.0,
+            0.0,
+            -24.0
+          ],
+          [
+            0.0,
+            0.0,
+            1.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "world": [
+          [
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            1.0,
+            0.0,
+            -24.0
+          ],
+          [
+            0.0,
+            0.0,
+            1.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "description": "Brick  1 x  1"
+      },
+      {
+        "id": "2",
+        "parent": "root",
+        "ref": "3005.dat",
+        "kind": "part",
+        "embedded": false,
+        "section": "p06_pinwheel_daisies.ldr",
+        "index": 2,
+        "line": 12,
+        "colour": "2",
+        "effective_colour": "2",
+        "local": [
+          [
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            1.0,
+            0.0,
+            -48.0
+          ],
+          [
+            0.0,
+            0.0,
+            1.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "world": [
+          [
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            1.0,
+            0.0,
+            -48.0
+          ],
+          [
+            0.0,
+            0.0,
+            1.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "description": "Brick  1 x  1"
+      },
+      {
+        "id": "3",
+        "parent": "root",
+        "ref": "63868.dat",
+        "kind": "part",
+        "embedded": false,
+        "section": "p06_pinwheel_daisies.ldr",
+        "index": 3,
+        "line": 14,
+        "colour": "2",
+        "effective_colour": "2",
+        "local": [
+          [
+            0.0,
+            0.0,
+            1.0,
+            0.0
+          ],
+          [
+            0.0,
+            1.0,
+            0.0,
+            -56.0
+          ],
+          [
+            -1.0,
+            0.0,
+            0.0,
+            -10.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "world": [
+          [
+            0.0,
+            0.0,
+            1.0,
+            0.0
+          ],
+          [
+            0.0,
+            1.0,
+            0.0,
+            -56.0
+          ],
+          [
+            -1.0,
+            0.0,
+            0.0,
+            -10.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "description": "Plate  1 x  2 with Clip Horizontal on End (Thick C-Clip)"
+      },
+      {
+        "id": "4",
+        "parent": "root",
+        "ref": "32606.dat",
+        "kind": "part",
+        "embedded": false,
+        "section": "p06_pinwheel_daisies.ldr",
+        "index": 4,
+        "line": 16,
+        "colour": "14",
+        "effective_colour": "14",
+        "local": [
+          [
+            0.0,
+            1.0,
+            0.0,
+            4.0
+          ],
+          [
+            -1.0,
+            0.0,
+            0.0,
+            -54.0
+          ],
+          [
+            0.0,
+            0.0,
+            1.0,
+            -40.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "world": [
+          [
+            0.0,
+            1.0,
+            0.0,
+            4.0
+          ],
+          [
+            -1.0,
+            0.0,
+            0.0,
+            -54.0
+          ],
+          [
+            0.0,
+            0.0,
+            1.0,
+            -40.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "description": "Plant Flower with  7 Alternate Petals with Bar and Pin Hole"
+      },
+      {
+        "id": "5",
+        "parent": "root",
+        "ref": "3005.dat",
+        "kind": "part",
+        "embedded": false,
+        "section": "p06_pinwheel_daisies.ldr",
+        "index": 5,
+        "line": 18,
+        "colour": "2",
+        "effective_colour": "2",
+        "local": [
+          [
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            1.0,
+            0.0,
+            -80.0
+          ],
+          [
+            0.0,
+            0.0,
+            1.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "world": [
+          [
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            1.0,
+            0.0,
+            -80.0
+          ],
+          [
+            0.0,
+            0.0,
+            1.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "description": "Brick  1 x  1"
+      },
+      {
+        "id": "6",
+        "parent": "root",
+        "ref": "3005.dat",
+        "kind": "part",
+        "embedded": false,
+        "section": "p06_pinwheel_daisies.ldr",
+        "index": 6,
+        "line": 20,
+        "colour": "2",
+        "effective_colour": "2",
+        "local": [
+          [
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            1.0,
+            0.0,
+            -104.0
+          ],
+          [
+            0.0,
+            0.0,
+            1.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "world": [
+          [
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            1.0,
+            0.0,
+            -104.0
+          ],
+          [
+            0.0,
+            0.0,
+            1.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "description": "Brick  1 x  1"
+      },
+      {
+        "id": "7",
+        "parent": "root",
+        "ref": "63868.dat",
+        "kind": "part",
+        "embedded": false,
+        "section": "p06_pinwheel_daisies.ldr",
+        "index": 7,
+        "line": 22,
+        "colour": "2",
+        "effective_colour": "2",
+        "local": [
+          [
+            0.0,
+            0.0,
+            -1.0,
+            0.0
+          ],
+          [
+            0.0,
+            1.0,
+            0.0,
+            -112.0
+          ],
+          [
+            1.0,
+            0.0,
+            0.0,
+            10.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "world": [
+          [
+            0.0,
+            0.0,
+            -1.0,
+            0.0
+          ],
+          [
+            0.0,
+            1.0,
+            0.0,
+            -112.0
+          ],
+          [
+            1.0,
+            0.0,
+            0.0,
+            10.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "description": "Plate  1 x  2 with Clip Horizontal on End (Thick C-Clip)"
+      },
+      {
+        "id": "8",
+        "parent": "root",
+        "ref": "95831.dat",
+        "kind": "part",
+        "embedded": false,
+        "section": "p06_pinwheel_daisies.ldr",
+        "index": 8,
+        "line": 24,
+        "colour": "15",
+        "effective_colour": "15",
+        "local": [
+          [
+            0.0,
+            1.0,
+            0.0,
+            3.0
+          ],
+          [
+            -1.0,
+            0.0,
+            0.0,
+            -110.0
+          ],
+          [
+            0.0,
+            0.0,
+            1.0,
+            40.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "world": [
+          [
+            0.0,
+            1.0,
+            0.0,
+            3.0
+          ],
+          [
+            -1.0,
+            0.0,
+            0.0,
+            -110.0
+          ],
+          [
+            0.0,
+            0.0,
+            1.0,
+            40.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "description": "Plant Flower with  6 Rounded Petals with Bar and Pin Hole"
+      },
+      {
+        "id": "9",
+        "parent": "root",
+        "ref": "3005.dat",
+        "kind": "part",
+        "embedded": false,
+        "section": "p06_pinwheel_daisies.ldr",
+        "index": 9,
+        "line": 26,
+        "colour": "2",
+        "effective_colour": "2",
+        "local": [
+          [
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            1.0,
+            0.0,
+            -136.0
+          ],
+          [
+            0.0,
+            0.0,
+            1.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "world": [
+          [
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            1.0,
+            0.0,
+            -136.0
+          ],
+          [
+            0.0,
+            0.0,
+            1.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "description": "Brick  1 x  1"
+      },
+      {
+        "id": "10",
+        "parent": "root",
+        "ref": "3005.dat",
+        "kind": "part",
+        "embedded": false,
+        "section": "p06_pinwheel_daisies.ldr",
+        "index": 10,
+        "line": 28,
+        "colour": "2",
+        "effective_colour": "2",
+        "local": [
+          [
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            1.0,
+            0.0,
+            -160.0
+          ],
+          [
+            0.0,
+            0.0,
+            1.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "world": [
+          [
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            1.0,
+            0.0,
+            -160.0
+          ],
+          [
+            0.0,
+            0.0,
+            1.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "description": "Brick  1 x  1"
+      },
+      {
+        "id": "11",
+        "parent": "root",
+        "ref": "63868.dat",
+        "kind": "part",
+        "embedded": false,
+        "section": "p06_pinwheel_daisies.ldr",
+        "index": 11,
+        "line": 30,
+        "colour": "2",
+        "effective_colour": "2",
+        "local": [
+          [
+            0.0,
+            0.0,
+            1.0,
+            0.0
+          ],
+          [
+            0.0,
+            1.0,
+            0.0,
+            -168.0
+          ],
+          [
+            -1.0,
+            0.0,
+            0.0,
+            -10.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "world": [
+          [
+            0.0,
+            0.0,
+            1.0,
+            0.0
+          ],
+          [
+            0.0,
+            1.0,
+            0.0,
+            -168.0
+          ],
+          [
+            -1.0,
+            0.0,
+            0.0,
+            -10.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "description": "Plate  1 x  2 with Clip Horizontal on End (Thick C-Clip)"
+      },
+      {
+        "id": "12",
+        "parent": "root",
+        "ref": "4367.dat",
+        "kind": "part",
+        "embedded": false,
+        "section": "p06_pinwheel_daisies.ldr",
+        "index": 12,
+        "line": 32,
+        "colour": "26",
+        "effective_colour": "26",
+        "local": [
+          [
+            0.0,
+            1.0,
+            0.0,
+            4.0
+          ],
+          [
+            -1.0,
+            0.0,
+            0.0,
+            -166.0
+          ],
+          [
+            0.0,
+            0.0,
+            1.0,
+            -40.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "world": [
+          [
+            0.0,
+            1.0,
+            0.0,
+            4.0
+          ],
+          [
+            -1.0,
+            0.0,
+            0.0,
+            -166.0
+          ],
+          [
+            0.0,
+            0.0,
+            1.0,
+            -40.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "description": "Plant Flower with  7 Alternate Petals with Centre Ring with Bar and Pin Hole"
+      },
+      {
+        "id": "13",
+        "parent": "root",
+        "ref": "6141.dat",
+        "kind": "part",
+        "embedded": false,
+        "section": "p06_pinwheel_daisies.ldr",
+        "index": 13,
+        "line": 34,
+        "colour": "14",
+        "effective_colour": "14",
+        "local": [
+          [
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            1.0,
+            0.0,
+            -176.0
+          ],
+          [
+            0.0,
+            0.0,
+            1.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "world": [
+          [
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            1.0,
+            0.0,
+            -176.0
+          ],
+          [
+            0.0,
+            0.0,
+            1.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "description": "Plate  1 x  1 Round"
+      }
+    ],
+    "diagnostics": [],
+    "coordinate_space": "selected section, LDU, -Y up"
+  },
+  "controls": {
+    "spin_1": {
+      "default": 0,
+      "min": -80.0,
+      "max": 80.0,
+      "unit": "radian",
+      "description": "Daisy 1 about its bar (real); right-hand about +X"
+    },
+    "spin_2": {
+      "default": 0,
+      "min": -80.0,
+      "max": 80.0,
+      "unit": "radian",
+      "description": "Daisy 2 about its bar (real); right-hand about +X"
+    },
+    "spin_3": {
+      "default": 0,
+      "min": -80.0,
+      "max": 80.0,
+      "unit": "radian",
+      "description": "Daisy 3 about its bar (real); right-hand about +X"
+    }
+  },
+  "signals": {
+    "spin_1_angle": {
+      "expression": "a",
+      "variables": {
+        "a": "control:spin_1"
+      }
+    },
+    "spin_2_angle": {
+      "expression": "a",
+      "variables": {
+        "a": "control:spin_2"
+      }
+    },
+    "spin_3_angle": {
+      "expression": "a",
+      "variables": {
+        "a": "control:spin_3"
+      }
+    }
+  },
+  "bodies": {
+    "spin_1": {
+      "instances": [
+        "4"
+      ],
+      "kind": "revolute",
+      "origin": [
+        0.0,
+        -54.0,
+        -40.0
+      ],
+      "axis": [
+        1.0,
+        0.0,
+        0.0
+      ],
+      "signal": "spin_1_angle"
+    },
+    "spin_2": {
+      "instances": [
+        "8"
+      ],
+      "kind": "revolute",
+      "origin": [
+        0.0,
+        -110.0,
+        40.0
+      ],
+      "axis": [
+        1.0,
+        0.0,
+        0.0
+      ],
+      "signal": "spin_2_angle"
+    },
+    "spin_3": {
+      "instances": [
+        "12"
+      ],
+      "kind": "revolute",
+      "origin": [
+        0.0,
+        -166.0,
+        -40.0
+      ],
+      "axis": [
+        1.0,
+        0.0,
+        0.0
+      ],
+      "signal": "spin_3_angle"
+    }
+  },
+  "anchors": {},
+  "checks": [],
+  "notes": [
+    "Plant wind case P06_pinwheel_daisies (Pinwheel daisies) written by scripts/build_plants.py: Flowers with bar 32606 / 95831 / 4367 in 63868 clips on a post, facing the wind. Parts picked by constant name from data/categories/parts; frame LDU, -Y up, the case front faces -Z, ground (base top) at y = 0. The wind blows toward +X.",
+    "Joints: spin_1: real revolute about [1.0, 0.0, 0.0] through [0.0, -54.0, -40.0] (real: 32606 bar in the 63868 clip; turns about the bar (right-hand about +X)); spin_2: real revolute about [1.0, 0.0, 0.0] through [0.0, -110.0, 40.0] (real: 95831 bar in the 63868 clip; turns about the bar (right-hand about +X)); spin_3: real revolute about [1.0, 0.0, 0.0] through [0.0, -166.0, -40.0] (real: 4367 bar in the 63868 clip; turns about the bar (right-hand about +X)).",
+    "Real LEGO freedoms: spin_1, spin_2, spin_3. flex_approx joints (rigid tilt standing in for bending plastic, range <= 0.17 rad): none.",
+    "Sign convention by meaning (checked with the evaluator, kinematics.json): spin_1 + = Daisy 1 about its bar (real); right-hand about +X; spin_2 + = Daisy 2 about its bar (real); right-hand about +X; spin_3 + = Daisy 3 about its bar (real); right-hand about +X.",
+    "Motion comes from wind clips (scripts/wind_clips.py): a damped-response approximation, not aerodynamics. Ranges are catalog choices narrowed by sampled clearance (scripts/blender/check_plants_clearance.py), not measured stops. Kinematic and transform checks do not prove collision-free or physically feasible motion."
+  ],
+  "mechanisms": {
+    "spin_1": {
+      "label": "Pinwheel daisies: spin 1",
+      "parts": [
+        "3",
+        "4"
+      ],
+      "bodies": [
+        "spin_1"
+      ],
+      "inputs": [
+        "control:spin_1"
+      ],
+      "outputs": [
+        "body:spin_1"
+      ],
+      "disposition": "planned",
+      "notes": [
+        "real revolute joint: real: 32606 bar in the 63868 clip; turns about the bar (right-hand about +X)"
+      ],
+      "review": "Joint declared in this plan (scripts/build_plants.py); driven by wind clips."
+    },
+    "spin_2": {
+      "label": "Pinwheel daisies: spin 2",
+      "parts": [
+        "7",
+        "8"
+      ],
+      "bodies": [
+        "spin_2"
+      ],
+      "inputs": [
+        "control:spin_2"
+      ],
+      "outputs": [
+        "body:spin_2"
+      ],
+      "disposition": "planned",
+      "notes": [
+        "real revolute joint: real: 95831 bar in the 63868 clip; turns about the bar (right-hand about +X)"
+      ],
+      "review": "Joint declared in this plan (scripts/build_plants.py); driven by wind clips."
+    },
+    "spin_3": {
+      "label": "Pinwheel daisies: spin 3",
+      "parts": [
+        "11",
+        "12"
+      ],
+      "bodies": [
+        "spin_3"
+      ],
+      "inputs": [
+        "control:spin_3"
+      ],
+      "outputs": [
+        "body:spin_3"
+      ],
+      "disposition": "planned",
+      "notes": [
+        "real revolute joint: real: 4367 bar in the 63868 clip; turns about the bar (right-hand about +X)"
+      ],
+      "review": "Joint declared in this plan (scripts/build_plants.py); driven by wind clips."
+    },
+    "context": {
+      "label": "Pinwheel daisies: base and mounts (static)",
+      "parts": [
+        "0",
+        "1",
+        "2",
+        "3",
+        "5",
+        "6",
+        "7",
+        "9",
+        "10",
+        "11",
+        "13"
+      ],
+      "bodies": [],
+      "inputs": [],
+      "outputs": [],
+      "disposition": "static",
+      "notes": [],
+      "review": "Base, trunk and mounts built for the catalog; they do not move in this case."
+    }
+  },
+  "connections": {
+    "joint_spin_1": {
+      "a": "3",
+      "b": "4",
+      "kind": "revolute",
+      "status": "reviewed",
+      "evidence": "real: 32606 bar in the 63868 clip; turns about the bar (right-hand about +X). not detected by pyldraw3 contacts (no pairing connector kinds, or a placement it does not support); placement from the named source.",
+      "measurements": {
+        "origin": [
+          0.0,
+          -54.0,
+          -40.0
+        ],
+        "axis": [
+          1.0,
+          0.0,
+          0.0
+        ]
+      },
+      "review": "Joint frame measured as stated (scripts/build_plants.py); real LEGO freedom."
+    },
+    "joint_spin_2": {
+      "a": "7",
+      "b": "8",
+      "kind": "revolute",
+      "status": "reviewed",
+      "evidence": "real: 95831 bar in the 63868 clip; turns about the bar (right-hand about +X). not detected by pyldraw3 contacts (no pairing connector kinds, or a placement it does not support); placement from the named source.",
+      "measurements": {
+        "origin": [
+          0.0,
+          -110.0,
+          40.0
+        ],
+        "axis": [
+          1.0,
+          0.0,
+          0.0
+        ]
+      },
+      "review": "Joint frame measured as stated (scripts/build_plants.py); real LEGO freedom."
+    },
+    "joint_spin_3": {
+      "a": "11",
+      "b": "12",
+      "kind": "revolute",
+      "status": "reviewed",
+      "evidence": "real: 4367 bar in the 63868 clip; turns about the bar (right-hand about +X). pyldraw3 contact confirmed (clip/bar).",
+      "measurements": {
+        "origin": [
+          0.0,
+          -166.0,
+          -40.0
+        ],
+        "axis": [
+          1.0,
+          0.0,
+          0.0
+        ]
+      },
+      "review": "Joint frame measured as stated (scripts/build_plants.py); real LEGO freedom."
+    }
+  },
+  "discovery": {
+    "grouping": "Provisional connected mechanical candidates; agent may split/merge views",
+    "unclassified_parts": [
+      "0",
+      "1",
+      "10",
+      "11",
+      "12",
+      "13",
+      "2",
+      "3",
+      "4",
+      "5",
+      "6",
+      "7",
+      "8",
+      "9"
+    ],
+    "embedded_parts": [],
+    "contact_limit": 300,
+    "rigid_groups": "not inferred",
+    "inputs_outputs": "not inferred",
+    "mechanical_parts": [],
+    "warnings": [
+      {
+        "code": "coaxial_not_run",
+        "message": "not run: 0 shaft/gear candidates outside 2..100; select a section"
+      }
+    ],
+    "surface_contacts": "Not detected: cams, levers bearing on beams, friction and stops need geometric/visual review even when connector contacts are absent",
+    "unsupported_gears": [],
+    "gear_placements": {
+      "policy": "Nearest orthogonal analysis frame within rounding_limit; source translations and handedness preserved",
+      "rounding_limit": 0.002,
+      "counts": {},
+      "affected": []
+    },
+    "contacts": {
+      "complete": true,
+      "tested_parts": 14,
+      "diagnostics": [],
+      "summary": {
+        "tested_parts": 14,
+        "contacts": 1,
+        "contacted_parts": 2,
+        "by_kind": {
+          "bar/clip": 1
+        },
+        "axles": {
+          "selection": "Catalog descriptions beginning Technic Axle followed by a numeric length; excludes axle pins, joiners and axle-hole supports",
+          "total": 0,
+          "with_axle_hole_contact": 0,
+          "without_axle_hole_contact": []
+        }
+      },
+      "placements": {
+        "policy": "Nearest orthogonal analysis frame within rounding_limit; source translations and handedness preserved",
+        "rounding_limit": 0.002,
+        "counts": {
+          "unchanged": 14
+        },
+        "affected": []
+      }
+    },
+    "coaxial_selection": "Catalog axle, gear, worm and engine crankshaft parts; positive line evidence within 80 LDU axial separation",
+    "coaxial": "not run: 0 shaft/gear candidates outside 2..100; select a section",
+    "isolated_mechanical_parts": []
+  }
+}

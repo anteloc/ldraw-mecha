@@ -1,0 +1,1128 @@
+{
+  "passed": true,
+  "samples": [
+    {
+      "control": "bend_1",
+      "value": -0.2,
+      "passed": true,
+      "max_error": 0
+    },
+    {
+      "control": "bend_1",
+      "value": -0.17500000000000002,
+      "passed": true,
+      "max_error": 0
+    },
+    {
+      "control": "bend_1",
+      "value": -0.15000000000000002,
+      "passed": true,
+      "max_error": 0
+    },
+    {
+      "control": "bend_1",
+      "value": -0.125,
+      "passed": true,
+      "max_error": 0
+    },
+    {
+      "control": "bend_1",
+      "value": -0.1,
+      "passed": true,
+      "max_error": 0
+    },
+    {
+      "control": "bend_1",
+      "value": -0.07500000000000001,
+      "passed": true,
+      "max_error": 0
+    },
+    {
+      "control": "bend_1",
+      "value": -0.04999999999999999,
+      "passed": true,
+      "max_error": 0
+    },
+    {
+      "control": "bend_1",
+      "value": -0.024999999999999994,
+      "passed": true,
+      "max_error": 0
+    },
+    {
+      "control": "bend_1",
+      "value": 0.0,
+      "passed": true,
+      "max_error": 0
+    },
+    {
+      "control": "bend_1",
+      "value": 0.024999999999999994,
+      "passed": true,
+      "max_error": 0
+    },
+    {
+      "control": "bend_1",
+      "value": 0.04999999999999999,
+      "passed": true,
+      "max_error": 0
+    },
+    {
+      "control": "bend_1",
+      "value": 0.07500000000000001,
+      "passed": true,
+      "max_error": 0
+    },
+    {
+      "control": "bend_1",
+      "value": 0.10000000000000003,
+      "passed": true,
+      "max_error": 0
+    },
+    {
+      "control": "bend_1",
+      "value": 0.125,
+      "passed": true,
+      "max_error": 0
+    },
+    {
+      "control": "bend_1",
+      "value": 0.15000000000000002,
+      "passed": true,
+      "max_error": 0
+    },
+    {
+      "control": "bend_1",
+      "value": 0.175,
+      "passed": true,
+      "max_error": 0
+    },
+    {
+      "control": "bend_1",
+      "value": 0.2,
+      "passed": true,
+      "max_error": 0
+    },
+    {
+      "control": "bend_2",
+      "value": -0.2,
+      "passed": true,
+      "max_error": 0
+    },
+    {
+      "control": "bend_2",
+      "value": -0.17500000000000002,
+      "passed": true,
+      "max_error": 0
+    },
+    {
+      "control": "bend_2",
+      "value": -0.15000000000000002,
+      "passed": true,
+      "max_error": 0
+    },
+    {
+      "control": "bend_2",
+      "value": -0.125,
+      "passed": true,
+      "max_error": 0
+    },
+    {
+      "control": "bend_2",
+      "value": -0.1,
+      "passed": true,
+      "max_error": 0
+    },
+    {
+      "control": "bend_2",
+      "value": -0.07500000000000001,
+      "passed": true,
+      "max_error": 0
+    },
+    {
+      "control": "bend_2",
+      "value": -0.04999999999999999,
+      "passed": true,
+      "max_error": 0
+    },
+    {
+      "control": "bend_2",
+      "value": -0.024999999999999994,
+      "passed": true,
+      "max_error": 0
+    },
+    {
+      "control": "bend_2",
+      "value": 0.0,
+      "passed": true,
+      "max_error": 0
+    },
+    {
+      "control": "bend_2",
+      "value": 0.024999999999999994,
+      "passed": true,
+      "max_error": 0
+    },
+    {
+      "control": "bend_2",
+      "value": 0.04999999999999999,
+      "passed": true,
+      "max_error": 0
+    },
+    {
+      "control": "bend_2",
+      "value": 0.07500000000000001,
+      "passed": true,
+      "max_error": 0
+    },
+    {
+      "control": "bend_2",
+      "value": 0.10000000000000003,
+      "passed": true,
+      "max_error": 0
+    },
+    {
+      "control": "bend_2",
+      "value": 0.125,
+      "passed": true,
+      "max_error": 0
+    },
+    {
+      "control": "bend_2",
+      "value": 0.15000000000000002,
+      "passed": true,
+      "max_error": 0
+    },
+    {
+      "control": "bend_2",
+      "value": 0.175,
+      "passed": true,
+      "max_error": 0
+    },
+    {
+      "control": "bend_2",
+      "value": 0.2,
+      "passed": true,
+      "max_error": 0
+    },
+    {
+      "control": "bend_3",
+      "value": -0.2,
+      "passed": true,
+      "max_error": 0
+    },
+    {
+      "control": "bend_3",
+      "value": -0.17500000000000002,
+      "passed": true,
+      "max_error": 0
+    },
+    {
+      "control": "bend_3",
+      "value": -0.15000000000000002,
+      "passed": true,
+      "max_error": 0
+    },
+    {
+      "control": "bend_3",
+      "value": -0.125,
+      "passed": true,
+      "max_error": 0
+    },
+    {
+      "control": "bend_3",
+      "value": -0.1,
+      "passed": true,
+      "max_error": 0
+    },
+    {
+      "control": "bend_3",
+      "value": -0.07500000000000001,
+      "passed": true,
+      "max_error": 0
+    },
+    {
+      "control": "bend_3",
+      "value": -0.04999999999999999,
+      "passed": true,
+      "max_error": 0
+    },
+    {
+      "control": "bend_3",
+      "value": -0.024999999999999994,
+      "passed": true,
+      "max_error": 0
+    },
+    {
+      "control": "bend_3",
+      "value": 0.0,
+      "passed": true,
+      "max_error": 0
+    },
+    {
+      "control": "bend_3",
+      "value": 0.024999999999999994,
+      "passed": true,
+      "max_error": 0
+    },
+    {
+      "control": "bend_3",
+      "value": 0.04999999999999999,
+      "passed": true,
+      "max_error": 0
+    },
+    {
+      "control": "bend_3",
+      "value": 0.07500000000000001,
+      "passed": true,
+      "max_error": 0
+    },
+    {
+      "control": "bend_3",
+      "value": 0.10000000000000003,
+      "passed": true,
+      "max_error": 0
+    },
+    {
+      "control": "bend_3",
+      "value": 0.125,
+      "passed": true,
+      "max_error": 0
+    },
+    {
+      "control": "bend_3",
+      "value": 0.15000000000000002,
+      "passed": true,
+      "max_error": 0
+    },
+    {
+      "control": "bend_3",
+      "value": 0.175,
+      "passed": true,
+      "max_error": 0
+    },
+    {
+      "control": "bend_3",
+      "value": 0.2,
+      "passed": true,
+      "max_error": 0
+    },
+    {
+      "control": "bend_4",
+      "value": -0.2,
+      "passed": true,
+      "max_error": 0
+    },
+    {
+      "control": "bend_4",
+      "value": -0.17500000000000002,
+      "passed": true,
+      "max_error": 0
+    },
+    {
+      "control": "bend_4",
+      "value": -0.15000000000000002,
+      "passed": true,
+      "max_error": 0
+    },
+    {
+      "control": "bend_4",
+      "value": -0.125,
+      "passed": true,
+      "max_error": 0
+    },
+    {
+      "control": "bend_4",
+      "value": -0.1,
+      "passed": true,
+      "max_error": 0
+    },
+    {
+      "control": "bend_4",
+      "value": -0.07500000000000001,
+      "passed": true,
+      "max_error": 0
+    },
+    {
+      "control": "bend_4",
+      "value": -0.04999999999999999,
+      "passed": true,
+      "max_error": 0
+    },
+    {
+      "control": "bend_4",
+      "value": -0.024999999999999994,
+      "passed": true,
+      "max_error": 0
+    },
+    {
+      "control": "bend_4",
+      "value": 0.0,
+      "passed": true,
+      "max_error": 0
+    },
+    {
+      "control": "bend_4",
+      "value": 0.024999999999999994,
+      "passed": true,
+      "max_error": 0
+    },
+    {
+      "control": "bend_4",
+      "value": 0.04999999999999999,
+      "passed": true,
+      "max_error": 0
+    },
+    {
+      "control": "bend_4",
+      "value": 0.07500000000000001,
+      "passed": true,
+      "max_error": 0
+    },
+    {
+      "control": "bend_4",
+      "value": 0.10000000000000003,
+      "passed": true,
+      "max_error": 0
+    },
+    {
+      "control": "bend_4",
+      "value": 0.125,
+      "passed": true,
+      "max_error": 0
+    },
+    {
+      "control": "bend_4",
+      "value": 0.15000000000000002,
+      "passed": true,
+      "max_error": 0
+    },
+    {
+      "control": "bend_4",
+      "value": 0.175,
+      "passed": true,
+      "max_error": 0
+    },
+    {
+      "control": "bend_4",
+      "value": 0.2,
+      "passed": true,
+      "max_error": 0
+    },
+    {
+      "control": "bend_5",
+      "value": -0.2,
+      "passed": true,
+      "max_error": 0
+    },
+    {
+      "control": "bend_5",
+      "value": -0.17500000000000002,
+      "passed": true,
+      "max_error": 0
+    },
+    {
+      "control": "bend_5",
+      "value": -0.15000000000000002,
+      "passed": true,
+      "max_error": 0
+    },
+    {
+      "control": "bend_5",
+      "value": -0.125,
+      "passed": true,
+      "max_error": 0
+    },
+    {
+      "control": "bend_5",
+      "value": -0.1,
+      "passed": true,
+      "max_error": 0
+    },
+    {
+      "control": "bend_5",
+      "value": -0.07500000000000001,
+      "passed": true,
+      "max_error": 0
+    },
+    {
+      "control": "bend_5",
+      "value": -0.04999999999999999,
+      "passed": true,
+      "max_error": 0
+    },
+    {
+      "control": "bend_5",
+      "value": -0.024999999999999994,
+      "passed": true,
+      "max_error": 0
+    },
+    {
+      "control": "bend_5",
+      "value": 0.0,
+      "passed": true,
+      "max_error": 0
+    },
+    {
+      "control": "bend_5",
+      "value": 0.024999999999999994,
+      "passed": true,
+      "max_error": 0
+    },
+    {
+      "control": "bend_5",
+      "value": 0.04999999999999999,
+      "passed": true,
+      "max_error": 0
+    },
+    {
+      "control": "bend_5",
+      "value": 0.07500000000000001,
+      "passed": true,
+      "max_error": 0
+    },
+    {
+      "control": "bend_5",
+      "value": 0.10000000000000003,
+      "passed": true,
+      "max_error": 0
+    },
+    {
+      "control": "bend_5",
+      "value": 0.125,
+      "passed": true,
+      "max_error": 0
+    },
+    {
+      "control": "bend_5",
+      "value": 0.15000000000000002,
+      "passed": true,
+      "max_error": 0
+    },
+    {
+      "control": "bend_5",
+      "value": 0.175,
+      "passed": true,
+      "max_error": 0
+    },
+    {
+      "control": "bend_5",
+      "value": 0.2,
+      "passed": true,
+      "max_error": 0
+    },
+    {
+      "control": "bend_6",
+      "value": -0.2,
+      "passed": true,
+      "max_error": 0
+    },
+    {
+      "control": "bend_6",
+      "value": -0.17500000000000002,
+      "passed": true,
+      "max_error": 0
+    },
+    {
+      "control": "bend_6",
+      "value": -0.15000000000000002,
+      "passed": true,
+      "max_error": 0
+    },
+    {
+      "control": "bend_6",
+      "value": -0.125,
+      "passed": true,
+      "max_error": 0
+    },
+    {
+      "control": "bend_6",
+      "value": -0.1,
+      "passed": true,
+      "max_error": 0
+    },
+    {
+      "control": "bend_6",
+      "value": -0.07500000000000001,
+      "passed": true,
+      "max_error": 0
+    },
+    {
+      "control": "bend_6",
+      "value": -0.04999999999999999,
+      "passed": true,
+      "max_error": 0
+    },
+    {
+      "control": "bend_6",
+      "value": -0.024999999999999994,
+      "passed": true,
+      "max_error": 0
+    },
+    {
+      "control": "bend_6",
+      "value": 0.0,
+      "passed": true,
+      "max_error": 0
+    },
+    {
+      "control": "bend_6",
+      "value": 0.024999999999999994,
+      "passed": true,
+      "max_error": 0
+    },
+    {
+      "control": "bend_6",
+      "value": 0.04999999999999999,
+      "passed": true,
+      "max_error": 0
+    },
+    {
+      "control": "bend_6",
+      "value": 0.07500000000000001,
+      "passed": true,
+      "max_error": 0
+    },
+    {
+      "control": "bend_6",
+      "value": 0.10000000000000003,
+      "passed": true,
+      "max_error": 0
+    },
+    {
+      "control": "bend_6",
+      "value": 0.125,
+      "passed": true,
+      "max_error": 0
+    },
+    {
+      "control": "bend_6",
+      "value": 0.15000000000000002,
+      "passed": true,
+      "max_error": 0
+    },
+    {
+      "control": "bend_6",
+      "value": 0.175,
+      "passed": true,
+      "max_error": 0
+    },
+    {
+      "control": "bend_6",
+      "value": 0.2,
+      "passed": true,
+      "max_error": 0
+    },
+    {
+      "control": "crown_twist",
+      "value": -0.6,
+      "passed": true,
+      "max_error": 0
+    },
+    {
+      "control": "crown_twist",
+      "value": -0.525,
+      "passed": true,
+      "max_error": 0
+    },
+    {
+      "control": "crown_twist",
+      "value": -0.44999999999999996,
+      "passed": true,
+      "max_error": 0
+    },
+    {
+      "control": "crown_twist",
+      "value": -0.375,
+      "passed": true,
+      "max_error": 0
+    },
+    {
+      "control": "crown_twist",
+      "value": -0.3,
+      "passed": true,
+      "max_error": 0
+    },
+    {
+      "control": "crown_twist",
+      "value": -0.22499999999999998,
+      "passed": true,
+      "max_error": 0
+    },
+    {
+      "control": "crown_twist",
+      "value": -0.15000000000000002,
+      "passed": true,
+      "max_error": 0
+    },
+    {
+      "control": "crown_twist",
+      "value": -0.07499999999999996,
+      "passed": true,
+      "max_error": 0
+    },
+    {
+      "control": "crown_twist",
+      "value": 0.0,
+      "passed": true,
+      "max_error": 0
+    },
+    {
+      "control": "crown_twist",
+      "value": 0.07499999999999996,
+      "passed": true,
+      "max_error": 0
+    },
+    {
+      "control": "crown_twist",
+      "value": 0.15000000000000002,
+      "passed": true,
+      "max_error": 0
+    },
+    {
+      "control": "crown_twist",
+      "value": 0.22499999999999998,
+      "passed": true,
+      "max_error": 0
+    },
+    {
+      "control": "crown_twist",
+      "value": 0.29999999999999993,
+      "passed": true,
+      "max_error": 0
+    },
+    {
+      "control": "crown_twist",
+      "value": 0.375,
+      "passed": true,
+      "max_error": 0
+    },
+    {
+      "control": "crown_twist",
+      "value": 0.45000000000000007,
+      "passed": true,
+      "max_error": 0
+    },
+    {
+      "control": "crown_twist",
+      "value": 0.525,
+      "passed": true,
+      "max_error": 0
+    },
+    {
+      "control": "crown_twist",
+      "value": 0.6,
+      "passed": true,
+      "max_error": 0
+    },
+    {
+      "control": "leaf_front",
+      "value": -0.17,
+      "passed": true,
+      "max_error": 0
+    },
+    {
+      "control": "leaf_front",
+      "value": -0.14875000000000002,
+      "passed": true,
+      "max_error": 0
+    },
+    {
+      "control": "leaf_front",
+      "value": -0.1275,
+      "passed": true,
+      "max_error": 0
+    },
+    {
+      "control": "leaf_front",
+      "value": -0.10625000000000001,
+      "passed": true,
+      "max_error": 0
+    },
+    {
+      "control": "leaf_front",
+      "value": -0.085,
+      "passed": true,
+      "max_error": 0
+    },
+    {
+      "control": "leaf_front",
+      "value": -0.06375,
+      "passed": true,
+      "max_error": 0
+    },
+    {
+      "control": "leaf_front",
+      "value": -0.04250000000000001,
+      "passed": true,
+      "max_error": 0
+    },
+    {
+      "control": "leaf_front",
+      "value": -0.02124999999999999,
+      "passed": true,
+      "max_error": 0
+    },
+    {
+      "control": "leaf_front",
+      "value": 0.0,
+      "passed": true,
+      "max_error": 0
+    },
+    {
+      "control": "leaf_front",
+      "value": 0.02124999999999999,
+      "passed": true,
+      "max_error": 0
+    },
+    {
+      "control": "leaf_front",
+      "value": 0.04250000000000001,
+      "passed": true,
+      "max_error": 0
+    },
+    {
+      "control": "leaf_front",
+      "value": 0.06375,
+      "passed": true,
+      "max_error": 0
+    },
+    {
+      "control": "leaf_front",
+      "value": 0.08499999999999999,
+      "passed": true,
+      "max_error": 0
+    },
+    {
+      "control": "leaf_front",
+      "value": 0.10624999999999998,
+      "passed": true,
+      "max_error": 0
+    },
+    {
+      "control": "leaf_front",
+      "value": 0.12750000000000003,
+      "passed": true,
+      "max_error": 0
+    },
+    {
+      "control": "leaf_front",
+      "value": 0.14875000000000002,
+      "passed": true,
+      "max_error": 0
+    },
+    {
+      "control": "leaf_front",
+      "value": 0.17,
+      "passed": true,
+      "max_error": 0
+    },
+    {
+      "control": "leaf_upwind",
+      "value": -0.17,
+      "passed": true,
+      "max_error": 0
+    },
+    {
+      "control": "leaf_upwind",
+      "value": -0.14875000000000002,
+      "passed": true,
+      "max_error": 0
+    },
+    {
+      "control": "leaf_upwind",
+      "value": -0.1275,
+      "passed": true,
+      "max_error": 0
+    },
+    {
+      "control": "leaf_upwind",
+      "value": -0.10625000000000001,
+      "passed": true,
+      "max_error": 0
+    },
+    {
+      "control": "leaf_upwind",
+      "value": -0.085,
+      "passed": true,
+      "max_error": 0
+    },
+    {
+      "control": "leaf_upwind",
+      "value": -0.06375,
+      "passed": true,
+      "max_error": 0
+    },
+    {
+      "control": "leaf_upwind",
+      "value": -0.04250000000000001,
+      "passed": true,
+      "max_error": 0
+    },
+    {
+      "control": "leaf_upwind",
+      "value": -0.02124999999999999,
+      "passed": true,
+      "max_error": 0
+    },
+    {
+      "control": "leaf_upwind",
+      "value": 0.0,
+      "passed": true,
+      "max_error": 0
+    },
+    {
+      "control": "leaf_upwind",
+      "value": 0.02124999999999999,
+      "passed": true,
+      "max_error": 0
+    },
+    {
+      "control": "leaf_upwind",
+      "value": 0.04250000000000001,
+      "passed": true,
+      "max_error": 0
+    },
+    {
+      "control": "leaf_upwind",
+      "value": 0.06375,
+      "passed": true,
+      "max_error": 0
+    },
+    {
+      "control": "leaf_upwind",
+      "value": 0.08499999999999999,
+      "passed": true,
+      "max_error": 0
+    },
+    {
+      "control": "leaf_upwind",
+      "value": 0.10624999999999998,
+      "passed": true,
+      "max_error": 0
+    },
+    {
+      "control": "leaf_upwind",
+      "value": 0.12750000000000003,
+      "passed": true,
+      "max_error": 0
+    },
+    {
+      "control": "leaf_upwind",
+      "value": 0.14875000000000002,
+      "passed": true,
+      "max_error": 0
+    },
+    {
+      "control": "leaf_upwind",
+      "value": 0.17,
+      "passed": true,
+      "max_error": 0
+    },
+    {
+      "control": "leaf_back",
+      "value": -0.17,
+      "passed": true,
+      "max_error": 0
+    },
+    {
+      "control": "leaf_back",
+      "value": -0.14875000000000002,
+      "passed": true,
+      "max_error": 0
+    },
+    {
+      "control": "leaf_back",
+      "value": -0.1275,
+      "passed": true,
+      "max_error": 0
+    },
+    {
+      "control": "leaf_back",
+      "value": -0.10625000000000001,
+      "passed": true,
+      "max_error": 0
+    },
+    {
+      "control": "leaf_back",
+      "value": -0.085,
+      "passed": true,
+      "max_error": 0
+    },
+    {
+      "control": "leaf_back",
+      "value": -0.06375,
+      "passed": true,
+      "max_error": 0
+    },
+    {
+      "control": "leaf_back",
+      "value": -0.04250000000000001,
+      "passed": true,
+      "max_error": 0
+    },
+    {
+      "control": "leaf_back",
+      "value": -0.02124999999999999,
+      "passed": true,
+      "max_error": 0
+    },
+    {
+      "control": "leaf_back",
+      "value": 0.0,
+      "passed": true,
+      "max_error": 0
+    },
+    {
+      "control": "leaf_back",
+      "value": 0.02124999999999999,
+      "passed": true,
+      "max_error": 0
+    },
+    {
+      "control": "leaf_back",
+      "value": 0.04250000000000001,
+      "passed": true,
+      "max_error": 0
+    },
+    {
+      "control": "leaf_back",
+      "value": 0.06375,
+      "passed": true,
+      "max_error": 0
+    },
+    {
+      "control": "leaf_back",
+      "value": 0.08499999999999999,
+      "passed": true,
+      "max_error": 0
+    },
+    {
+      "control": "leaf_back",
+      "value": 0.10624999999999998,
+      "passed": true,
+      "max_error": 0
+    },
+    {
+      "control": "leaf_back",
+      "value": 0.12750000000000003,
+      "passed": true,
+      "max_error": 0
+    },
+    {
+      "control": "leaf_back",
+      "value": 0.14875000000000002,
+      "passed": true,
+      "max_error": 0
+    },
+    {
+      "control": "leaf_back",
+      "value": 0.17,
+      "passed": true,
+      "max_error": 0
+    },
+    {
+      "control": "leaf_downwind",
+      "value": -0.17,
+      "passed": true,
+      "max_error": 0
+    },
+    {
+      "control": "leaf_downwind",
+      "value": -0.14875000000000002,
+      "passed": true,
+      "max_error": 0
+    },
+    {
+      "control": "leaf_downwind",
+      "value": -0.1275,
+      "passed": true,
+      "max_error": 0
+    },
+    {
+      "control": "leaf_downwind",
+      "value": -0.10625000000000001,
+      "passed": true,
+      "max_error": 0
+    },
+    {
+      "control": "leaf_downwind",
+      "value": -0.085,
+      "passed": true,
+      "max_error": 0
+    },
+    {
+      "control": "leaf_downwind",
+      "value": -0.06375,
+      "passed": true,
+      "max_error": 0
+    },
+    {
+      "control": "leaf_downwind",
+      "value": -0.04250000000000001,
+      "passed": true,
+      "max_error": 0
+    },
+    {
+      "control": "leaf_downwind",
+      "value": -0.02124999999999999,
+      "passed": true,
+      "max_error": 0
+    },
+    {
+      "control": "leaf_downwind",
+      "value": 0.0,
+      "passed": true,
+      "max_error": 0
+    },
+    {
+      "control": "leaf_downwind",
+      "value": 0.02124999999999999,
+      "passed": true,
+      "max_error": 0
+    },
+    {
+      "control": "leaf_downwind",
+      "value": 0.04250000000000001,
+      "passed": true,
+      "max_error": 0
+    },
+    {
+      "control": "leaf_downwind",
+      "value": 0.06375,
+      "passed": true,
+      "max_error": 0
+    },
+    {
+      "control": "leaf_downwind",
+      "value": 0.08499999999999999,
+      "passed": true,
+      "max_error": 0
+    },
+    {
+      "control": "leaf_downwind",
+      "value": 0.10624999999999998,
+      "passed": true,
+      "max_error": 0
+    },
+    {
+      "control": "leaf_downwind",
+      "value": 0.12750000000000003,
+      "passed": true,
+      "max_error": 0
+    },
+    {
+      "control": "leaf_downwind",
+      "value": 0.14875000000000002,
+      "passed": true,
+      "max_error": 0
+    },
+    {
+      "control": "leaf_downwind",
+      "value": 0.17,
+      "passed": true,
+      "max_error": 0
+    }
+  ],
+  "coverage": "Each control swept independently; analytic closure only, not mesh collisions or dynamics"
+}

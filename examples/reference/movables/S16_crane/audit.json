@@ -1,0 +1,92 @@
+{
+  "summary": {
+    "planned": 3,
+    "static": 1
+  },
+  "review_complete": true,
+  "unresolved": [],
+  "deferred": [],
+  "unaccounted_mechanical_parts": [],
+  "mechanisms": [
+    {
+      "id": "boom",
+      "label": "Mini crane: boom",
+      "disposition": "planned",
+      "review": "Measured joint declared in this plan (scripts/build_movables.py).",
+      "parts": 5,
+      "controlled_parts": [
+        "10",
+        "11",
+        "12",
+        "13",
+        "14"
+      ],
+      "parts_without_control": [],
+      "controls": [
+        "luff",
+        "slew"
+      ]
+    },
+    {
+      "id": "context",
+      "label": "Mini crane: mounting and mock context (static)",
+      "disposition": "static",
+      "review": "Mock context built for the catalog (walls, floor, chassis, mounts); it does not move in this scenario.",
+      "parts": 6,
+      "controlled_parts": [],
+      "parts_without_control": [
+        "0",
+        "1",
+        "2",
+        "3",
+        "4",
+        "5"
+      ],
+      "controls": []
+    },
+    {
+      "id": "hook",
+      "label": "Mini crane: hook",
+      "disposition": "planned",
+      "review": "Measured joint declared in this plan (scripts/build_movables.py).",
+      "parts": 2,
+      "controlled_parts": [
+        "14",
+        "15"
+      ],
+      "parts_without_control": [],
+      "controls": [
+        "luff",
+        "slew"
+      ]
+    },
+    {
+      "id": "superstructure",
+      "label": "Mini crane: superstructure",
+      "disposition": "planned",
+      "review": "Measured joint declared in this plan (scripts/build_movables.py).",
+      "parts": 6,
+      "controlled_parts": [
+        "10",
+        "6",
+        "7",
+        "8",
+        "9"
+      ],
+      "parts_without_control": [
+        "5"
+      ],
+      "controls": [
+        "slew"
+      ]
+    }
+  ],
+  "warnings": [
+    {
+      "code": "coaxial_not_run",
+      "message": "not run: 0 shaft/gear candidates outside 2..100; select a section"
+    }
+  ],
+  "coverage": "Bookkeeping of declared scope only. Supports may correctly lack controls. Planned, static and deferred dispositions require review notes; none certify discovery completeness, physical motion or clearance.",
+  "passed": true
+}

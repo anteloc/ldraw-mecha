@@ -1,0 +1,100 @@
+{
+  "scenario": "S04_garden_gate",
+  "sweep": {
+    "no_new_surface_crossings": true,
+    "crossings": [],
+    "excluded_rest_pairs": [
+      "gate_base-gate"
+    ]
+  },
+  "clip_poses": {
+    "samples": 108,
+    "every": 4,
+    "no_new_surface_crossings": false,
+    "crossings_by_clip": {
+      "S04_garden_gate.in_and_out": [
+        "gate-fence_r"
+      ],
+      "S04_garden_gate.open_latch": [
+        "gate-fence_r"
+      ],
+      "S04_garden_gate.push_through": [
+        "gate-fence_r"
+      ]
+    },
+    "frames_with_crossings": {
+      "S04_garden_gate.in_and_out": [
+        69,
+        137
+      ],
+      "S04_garden_gate.open_latch": [
+        13,
+        101,
+        113,
+        117
+      ],
+      "S04_garden_gate.push_through": [
+        9,
+        89
+      ]
+    },
+    "vertex_penetration_by_clip": {
+      "S04_garden_gate.in_and_out": {
+        "gate-fence_r": {
+          "max_vertex_depth_ldu": 0.05,
+          "kind": "contact"
+        }
+      },
+      "S04_garden_gate.open_latch": {
+        "gate-fence_r": {
+          "max_vertex_depth_ldu": 0.054,
+          "kind": "contact"
+        }
+      },
+      "S04_garden_gate.push_through": {
+        "gate-fence_r": {
+          "max_vertex_depth_ldu": 0.064,
+          "kind": "contact"
+        }
+      }
+    },
+    "deep_shrink_ldu": 1.5,
+    "no_deep_crossings": false,
+    "deep_crossings_by_clip": {
+      "S04_garden_gate.in_and_out": [
+        "gate-fence_r"
+      ],
+      "S04_garden_gate.open_latch": [
+        "gate-fence_r"
+      ],
+      "S04_garden_gate.push_through": [
+        "gate-fence_r"
+      ]
+    },
+    "frames_with_deep_crossings": {
+      "S04_garden_gate.in_and_out": [
+        69,
+        137
+      ],
+      "S04_garden_gate.open_latch": [
+        13,
+        101,
+        113,
+        117
+      ],
+      "S04_garden_gate.push_through": [
+        9,
+        89
+      ]
+    }
+  },
+  "roles": {
+    "0": "base",
+    "1": "gate_base",
+    "2": "gate",
+    "3": "fence_l",
+    "4": "fence_r",
+    "5": "path"
+  },
+  "coverage": "Sampled surface crossings only; excludes rigid-body and rest-contact pairs; containment untested"
+}

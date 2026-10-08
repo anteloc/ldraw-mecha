@@ -1,0 +1,204 @@
+{
+  "semantics": {
+    "rock_thorny": {
+      "control": "rock_thorny",
+      "value": 0.2,
+      "test_point": [
+        -30.0,
+        -92.0,
+        0.0
+      ],
+      "displacement": [
+        1.986693,
+        -0.199334,
+        0.0
+      ],
+      "expected": "+x",
+      "flipped": false
+    },
+    "rock_leafy": {
+      "control": "rock_leafy",
+      "value": 0.2,
+      "test_point": [
+        30.0,
+        -125.0,
+        60.0
+      ],
+      "displacement": [
+        4.966733,
+        -0.498336,
+        0.0
+      ],
+      "expected": "+x",
+      "flipped": false
+    }
+  },
+  "wind_geometry": {
+    "rock_thorny": {
+      "body": "rock_thorny",
+      "x": -30.0,
+      "tip": [
+        -30.0,
+        -92.0,
+        0.0
+      ],
+      "swing": [
+        1.0,
+        0.0
+      ],
+      "lever": 10.0
+    },
+    "rock_leafy": {
+      "body": "rock_leafy",
+      "x": 30.0,
+      "tip": [
+        30.0,
+        -125.0,
+        60.0
+      ],
+      "swing": [
+        1.0,
+        0.0
+      ],
+      "lever": 25.0
+    }
+  },
+  "roster_problems": [],
+  "contacts": {
+    "tested_parts": 27,
+    "contacts": 20,
+    "contacted_parts": 23,
+    "by_kind": {
+      "axle/axle_hole": 16,
+      "bar/clip": 4
+    },
+    "axles": {
+      "selection": "Catalog descriptions beginning Technic Axle followed by a numeric length; excludes axle pins, joiners and axle-hole supports",
+      "total": 0,
+      "with_axle_hole_contact": 0,
+      "without_axle_hole_contact": []
+    }
+  },
+  "contact_pairs": {
+    "1-2": [
+      "axle/axle_hole"
+    ],
+    "2-3": [
+      "axle/axle_hole"
+    ],
+    "3-4": [
+      "axle/axle_hole"
+    ],
+    "6-7": [
+      "axle/axle_hole"
+    ],
+    "7-8": [
+      "axle/axle_hole"
+    ],
+    "8-9": [
+      "axle/axle_hole"
+    ],
+    "11-12": [
+      "axle/axle_hole"
+    ],
+    "12-13": [
+      "axle/axle_hole"
+    ],
+    "13-14": [
+      "axle/axle_hole"
+    ],
+    "14-15": [
+      "axle/axle_hole"
+    ],
+    "15-16": [
+      "axle/axle_hole"
+    ],
+    "17-26": [
+      "clip/bar",
+      "clip/bar"
+    ],
+    "18-19": [
+      "axle/axle_hole"
+    ],
+    "19-20": [
+      "axle/axle_hole"
+    ],
+    "20-21": [
+      "axle/axle_hole"
+    ],
+    "21-22": [
+      "axle/axle_hole"
+    ],
+    "22-23": [
+      "axle/axle_hole"
+    ],
+    "24-26": [
+      "clip/bar",
+      "clip/bar"
+    ]
+  },
+  "joints": {
+    "rock_thorny": "real",
+    "rock_leafy": "real"
+  },
+  "asymmetric_sample": {
+    "controls": {
+      "rock_thorny": 0.378,
+      "rock_leafy": -0.222
+    },
+    "transforms": {
+      "rock_thorny": [
+        [
+          0.929405,
+          0.369062,
+          0.0,
+          35.526503
+        ],
+        [
+          -0.369062,
+          0.929405,
+          0.0,
+          -18.272601
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "rock_leafy": [
+        [
+          0.975459,
+          -0.220181,
+          0.0,
+          -32.290918
+        ],
+        [
+          0.220181,
+          0.975459,
+          0.0,
+          -10.286574
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ]
+    }
+  }
+}

@@ -1,0 +1,201 @@
+{
+  "scenario": "S16_crane",
+  "title": "Mini crane",
+  "parts": [
+    {
+      "role": "base",
+      "id": "0",
+      "table": "plates.Plate6X6",
+      "ref": "3958",
+      "colour": 8,
+      "title": "Plate  6 x  6",
+      "library_only": false
+    },
+    {
+      "role": "pedestal00",
+      "id": "1",
+      "table": "bricks.Brick2X4",
+      "ref": "3001",
+      "colour": 14,
+      "title": "Brick  2 x  4",
+      "library_only": false
+    },
+    {
+      "role": "pedestal01",
+      "id": "2",
+      "table": "bricks.Brick2X4",
+      "ref": "3001",
+      "colour": 14,
+      "title": "Brick  2 x  4",
+      "library_only": false
+    },
+    {
+      "role": "pedestal10",
+      "id": "3",
+      "table": "bricks.Brick2X4",
+      "ref": "3001",
+      "colour": 14,
+      "title": "Brick  2 x  4",
+      "library_only": false
+    },
+    {
+      "role": "pedestal11",
+      "id": "4",
+      "table": "bricks.Brick2X4",
+      "ref": "3001",
+      "colour": 14,
+      "title": "Brick  2 x  4",
+      "library_only": false
+    },
+    {
+      "role": "turntable_base",
+      "id": "5",
+      "table": "turntables.Turntable4X4Base",
+      "ref": "3403",
+      "colour": 8,
+      "title": "Turntable  4 x  4 Base",
+      "library_only": false
+    },
+    {
+      "role": "turntable_top",
+      "id": "6",
+      "table": "turntables.Turntable4X4Top",
+      "ref": "3404",
+      "colour": 8,
+      "title": "Turntable  4 x  4 Top",
+      "library_only": false
+    },
+    {
+      "role": "cab",
+      "id": "7",
+      "table": "bricks.Brick1X4",
+      "ref": "3010",
+      "colour": 14,
+      "title": "Brick  1 x  4",
+      "library_only": false
+    },
+    {
+      "role": "cab_window",
+      "id": "8",
+      "table": "bricks.Brick1X4",
+      "ref": "3010",
+      "colour": 0,
+      "title": "Brick  1 x  4",
+      "library_only": false
+    },
+    {
+      "role": "cab_roof",
+      "id": "9",
+      "table": "plates.Plate1X4",
+      "ref": "3710",
+      "colour": 14,
+      "title": "Plate  1 x  4",
+      "library_only": false
+    },
+    {
+      "role": "hinge_base",
+      "id": "10",
+      "table": "hinges.Hinge1X2Base",
+      "ref": "3937",
+      "colour": 8,
+      "title": "Hinge  1 x  2 Base",
+      "library_only": false
+    },
+    {
+      "role": "hinge_top",
+      "id": "11",
+      "table": "hinges.Hinge2X2Top",
+      "ref": "6134",
+      "colour": 8,
+      "title": "Hinge  2 x  2 Top",
+      "library_only": false
+    },
+    {
+      "role": "boom_riser",
+      "id": "12",
+      "table": "plates.Plate1X2",
+      "ref": "3023b",
+      "colour": 8,
+      "title": "Plate  1 x  2",
+      "library_only": false
+    },
+    {
+      "role": "boom",
+      "id": "13",
+      "table": "plates.Plate2X10",
+      "ref": "3832",
+      "colour": 14,
+      "title": "Plate  2 x 10",
+      "library_only": false
+    },
+    {
+      "role": "boom_tip",
+      "id": "14",
+      "table": "technic.TechnicBrick1X2WithHole",
+      "ref": "3700",
+      "colour": 8,
+      "title": "Technic Brick  1 x  2 with Hole",
+      "library_only": false
+    },
+    {
+      "role": "hook",
+      "id": "15",
+      "table": "cranes.CraneHookWith4Studs",
+      "ref": "3136",
+      "colour": 8,
+      "title": "Crane Hook with  4 Studs",
+      "library_only": false
+    }
+  ],
+  "joints": {
+    "slew": {
+      "origin": [
+        0.0,
+        -69.0,
+        0.0
+      ],
+      "axis": [
+        0.0,
+        1.0,
+        0.0
+      ],
+      "parent": "turntable_base",
+      "child": "turntable_top",
+      "kind": "revolute",
+      "connector": "3403 pin_hole snap_cyl@L8:I0 receives 3404 pin snap_cyl@L9:I0"
+    },
+    "luff": {
+      "origin": [
+        0.0,
+        -86.0,
+        -10.0
+      ],
+      "axis": [
+        1.0,
+        0.0,
+        0.0
+      ],
+      "parent": "hinge_base",
+      "child": "hinge_top",
+      "kind": "revolute",
+      "connector": "3937 hinge snap_fgr@L9:I0 receives 6134 hinge snap_fgr@L8:I0"
+    },
+    "hook": {
+      "origin": [
+        10.0,
+        -94.0,
+        -200.0
+      ],
+      "axis": [
+        1.0,
+        0.0,
+        0.0
+      ],
+      "parent": "boom_tip",
+      "child": "hook",
+      "kind": "revolute",
+      "connector": "3136 hook pins (local x) in the 3700 hole; the hook hangs freely and is kept plumb by hook = -luff"
+    }
+  },
+  "reference_checks": []
+}

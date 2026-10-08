@@ -1,0 +1,625 @@
+{
+  "no_new_surface_crossings": true,
+  "samples": [
+    {
+      "control": "drive",
+      "value": -12.566370614359172,
+      "new_surface_crossings": []
+    },
+    {
+      "control": "drive",
+      "value": -12.304571226560023,
+      "new_surface_crossings": []
+    },
+    {
+      "control": "drive",
+      "value": -12.042771838760874,
+      "new_surface_crossings": []
+    },
+    {
+      "control": "drive",
+      "value": -11.780972450961723,
+      "new_surface_crossings": []
+    },
+    {
+      "control": "drive",
+      "value": -11.519173063162574,
+      "new_surface_crossings": []
+    },
+    {
+      "control": "drive",
+      "value": -11.257373675363425,
+      "new_surface_crossings": []
+    },
+    {
+      "control": "drive",
+      "value": -10.995574287564276,
+      "new_surface_crossings": []
+    },
+    {
+      "control": "drive",
+      "value": -10.733774899765127,
+      "new_surface_crossings": []
+    },
+    {
+      "control": "drive",
+      "value": -10.471975511965978,
+      "new_surface_crossings": []
+    },
+    {
+      "control": "drive",
+      "value": -10.210176124166829,
+      "new_surface_crossings": []
+    },
+    {
+      "control": "drive",
+      "value": -9.948376736367678,
+      "new_surface_crossings": []
+    },
+    {
+      "control": "drive",
+      "value": -9.686577348568528,
+      "new_surface_crossings": []
+    },
+    {
+      "control": "drive",
+      "value": -9.42477796076938,
+      "new_surface_crossings": []
+    },
+    {
+      "control": "drive",
+      "value": -9.16297857297023,
+      "new_surface_crossings": []
+    },
+    {
+      "control": "drive",
+      "value": -8.901179185171081,
+      "new_surface_crossings": []
+    },
+    {
+      "control": "drive",
+      "value": -8.639379797371932,
+      "new_surface_crossings": []
+    },
+    {
+      "control": "drive",
+      "value": -8.377580409572783,
+      "new_surface_crossings": []
+    },
+    {
+      "control": "drive",
+      "value": -8.115781021773632,
+      "new_surface_crossings": []
+    },
+    {
+      "control": "drive",
+      "value": -7.853981633974483,
+      "new_surface_crossings": []
+    },
+    {
+      "control": "drive",
+      "value": -7.592182246175334,
+      "new_surface_crossings": []
+    },
+    {
+      "control": "drive",
+      "value": -7.330382858376184,
+      "new_surface_crossings": []
+    },
+    {
+      "control": "drive",
+      "value": -7.0685834705770345,
+      "new_surface_crossings": []
+    },
+    {
+      "control": "drive",
+      "value": -6.806784082777885,
+      "new_surface_crossings": []
+    },
+    {
+      "control": "drive",
+      "value": -6.544984694978736,
+      "new_surface_crossings": []
+    },
+    {
+      "control": "drive",
+      "value": -6.283185307179586,
+      "new_surface_crossings": []
+    },
+    {
+      "control": "drive",
+      "value": -6.021385919380436,
+      "new_surface_crossings": []
+    },
+    {
+      "control": "drive",
+      "value": -5.759586531581287,
+      "new_surface_crossings": []
+    },
+    {
+      "control": "drive",
+      "value": -5.497787143782138,
+      "new_surface_crossings": []
+    },
+    {
+      "control": "drive",
+      "value": -5.235987755982989,
+      "new_surface_crossings": []
+    },
+    {
+      "control": "drive",
+      "value": -4.974188368183839,
+      "new_surface_crossings": []
+    },
+    {
+      "control": "drive",
+      "value": -4.712388980384691,
+      "new_surface_crossings": []
+    },
+    {
+      "control": "drive",
+      "value": -4.4505895925855405,
+      "new_surface_crossings": []
+    },
+    {
+      "control": "drive",
+      "value": -4.188790204786391,
+      "new_surface_crossings": []
+    },
+    {
+      "control": "drive",
+      "value": -3.9269908169872405,
+      "new_surface_crossings": []
+    },
+    {
+      "control": "drive",
+      "value": -3.6651914291880914,
+      "new_surface_crossings": []
+    },
+    {
+      "control": "drive",
+      "value": -3.4033920413889422,
+      "new_surface_crossings": []
+    },
+    {
+      "control": "drive",
+      "value": -3.141592653589793,
+      "new_surface_crossings": []
+    },
+    {
+      "control": "drive",
+      "value": -2.879793265790644,
+      "new_surface_crossings": []
+    },
+    {
+      "control": "drive",
+      "value": -2.617993877991495,
+      "new_surface_crossings": []
+    },
+    {
+      "control": "drive",
+      "value": -2.3561944901923457,
+      "new_surface_crossings": []
+    },
+    {
+      "control": "drive",
+      "value": -2.094395102393195,
+      "new_surface_crossings": []
+    },
+    {
+      "control": "drive",
+      "value": -1.8325957145940475,
+      "new_surface_crossings": []
+    },
+    {
+      "control": "drive",
+      "value": -1.5707963267948966,
+      "new_surface_crossings": []
+    },
+    {
+      "control": "drive",
+      "value": -1.3089969389957474,
+      "new_surface_crossings": []
+    },
+    {
+      "control": "drive",
+      "value": -1.0471975511965983,
+      "new_surface_crossings": []
+    },
+    {
+      "control": "drive",
+      "value": -0.7853981633974474,
+      "new_surface_crossings": []
+    },
+    {
+      "control": "drive",
+      "value": -0.5235987755983,
+      "new_surface_crossings": []
+    },
+    {
+      "control": "drive",
+      "value": -0.26179938779914913,
+      "new_surface_crossings": []
+    },
+    {
+      "control": "drive",
+      "value": 0.0,
+      "new_surface_crossings": []
+    },
+    {
+      "control": "drive",
+      "value": 0.26179938779914913,
+      "new_surface_crossings": []
+    },
+    {
+      "control": "drive",
+      "value": 0.5235987755983,
+      "new_surface_crossings": []
+    },
+    {
+      "control": "drive",
+      "value": 0.7853981633974474,
+      "new_surface_crossings": []
+    },
+    {
+      "control": "drive",
+      "value": 1.0471975511965983,
+      "new_surface_crossings": []
+    },
+    {
+      "control": "drive",
+      "value": 1.3089969389957474,
+      "new_surface_crossings": []
+    },
+    {
+      "control": "drive",
+      "value": 1.5707963267948966,
+      "new_surface_crossings": []
+    },
+    {
+      "control": "drive",
+      "value": 1.8325957145940475,
+      "new_surface_crossings": []
+    },
+    {
+      "control": "drive",
+      "value": 2.094395102393195,
+      "new_surface_crossings": []
+    },
+    {
+      "control": "drive",
+      "value": 2.356194490192344,
+      "new_surface_crossings": []
+    },
+    {
+      "control": "drive",
+      "value": 2.617993877991495,
+      "new_surface_crossings": []
+    },
+    {
+      "control": "drive",
+      "value": 2.879793265790644,
+      "new_surface_crossings": []
+    },
+    {
+      "control": "drive",
+      "value": 3.1415926535897913,
+      "new_surface_crossings": []
+    },
+    {
+      "control": "drive",
+      "value": 3.4033920413889422,
+      "new_surface_crossings": []
+    },
+    {
+      "control": "drive",
+      "value": 3.6651914291880914,
+      "new_surface_crossings": []
+    },
+    {
+      "control": "drive",
+      "value": 3.9269908169872423,
+      "new_surface_crossings": []
+    },
+    {
+      "control": "drive",
+      "value": 4.18879020478639,
+      "new_surface_crossings": []
+    },
+    {
+      "control": "drive",
+      "value": 4.4505895925855405,
+      "new_surface_crossings": []
+    },
+    {
+      "control": "drive",
+      "value": 4.7123889803846915,
+      "new_surface_crossings": []
+    },
+    {
+      "control": "drive",
+      "value": 4.974188368183839,
+      "new_surface_crossings": []
+    },
+    {
+      "control": "drive",
+      "value": 5.23598775598299,
+      "new_surface_crossings": []
+    },
+    {
+      "control": "drive",
+      "value": 5.497787143782137,
+      "new_surface_crossings": []
+    },
+    {
+      "control": "drive",
+      "value": 5.759586531581288,
+      "new_surface_crossings": []
+    },
+    {
+      "control": "drive",
+      "value": 6.021385919380439,
+      "new_surface_crossings": []
+    },
+    {
+      "control": "drive",
+      "value": 6.283185307179586,
+      "new_surface_crossings": []
+    },
+    {
+      "control": "drive",
+      "value": 6.544984694978734,
+      "new_surface_crossings": []
+    },
+    {
+      "control": "drive",
+      "value": 6.8067840827778845,
+      "new_surface_crossings": []
+    },
+    {
+      "control": "drive",
+      "value": 7.068583470577035,
+      "new_surface_crossings": []
+    },
+    {
+      "control": "drive",
+      "value": 7.330382858376183,
+      "new_surface_crossings": []
+    },
+    {
+      "control": "drive",
+      "value": 7.592182246175334,
+      "new_surface_crossings": []
+    },
+    {
+      "control": "drive",
+      "value": 7.853981633974481,
+      "new_surface_crossings": []
+    },
+    {
+      "control": "drive",
+      "value": 8.115781021773632,
+      "new_surface_crossings": []
+    },
+    {
+      "control": "drive",
+      "value": 8.377580409572783,
+      "new_surface_crossings": []
+    },
+    {
+      "control": "drive",
+      "value": 8.63937979737193,
+      "new_surface_crossings": []
+    },
+    {
+      "control": "drive",
+      "value": 8.901179185171078,
+      "new_surface_crossings": []
+    },
+    {
+      "control": "drive",
+      "value": 9.162978572970232,
+      "new_surface_crossings": []
+    },
+    {
+      "control": "drive",
+      "value": 9.42477796076938,
+      "new_surface_crossings": []
+    },
+    {
+      "control": "drive",
+      "value": 9.68657734856853,
+      "new_surface_crossings": []
+    },
+    {
+      "control": "drive",
+      "value": 9.948376736367678,
+      "new_surface_crossings": []
+    },
+    {
+      "control": "drive",
+      "value": 10.210176124166825,
+      "new_surface_crossings": []
+    },
+    {
+      "control": "drive",
+      "value": 10.471975511965976,
+      "new_surface_crossings": []
+    },
+    {
+      "control": "drive",
+      "value": 10.733774899765127,
+      "new_surface_crossings": []
+    },
+    {
+      "control": "drive",
+      "value": 10.995574287564278,
+      "new_surface_crossings": []
+    },
+    {
+      "control": "drive",
+      "value": 11.257373675363425,
+      "new_surface_crossings": []
+    },
+    {
+      "control": "drive",
+      "value": 11.519173063162572,
+      "new_surface_crossings": []
+    },
+    {
+      "control": "drive",
+      "value": 11.780972450961723,
+      "new_surface_crossings": []
+    },
+    {
+      "control": "drive",
+      "value": 12.042771838760874,
+      "new_surface_crossings": []
+    },
+    {
+      "control": "drive",
+      "value": 12.304571226560025,
+      "new_surface_crossings": []
+    },
+    {
+      "control": "drive",
+      "value": 12.566370614359172,
+      "new_surface_crossings": []
+    }
+  ],
+  "excluded_rest_pairs": [
+    [
+      "26",
+      "27"
+    ],
+    [
+      "27",
+      "28"
+    ],
+    [
+      "31",
+      "32"
+    ],
+    [
+      "36",
+      "37"
+    ],
+    [
+      "38",
+      "40"
+    ],
+    [
+      "39",
+      "40"
+    ],
+    [
+      "73",
+      "84/28"
+    ],
+    [
+      "80",
+      "85/28"
+    ]
+  ],
+  "shrink_ldu": 0.4,
+  "touching_tolerance_ldu": 0.05,
+  "excluded_touching_pairs": [
+    [
+      "1",
+      "26"
+    ],
+    [
+      "109/27",
+      "83"
+    ],
+    [
+      "109/28",
+      "83"
+    ],
+    [
+      "109/29",
+      "83"
+    ],
+    [
+      "110",
+      "111"
+    ],
+    [
+      "2",
+      "26"
+    ],
+    [
+      "28",
+      "29"
+    ],
+    [
+      "29",
+      "31"
+    ],
+    [
+      "3",
+      "82"
+    ],
+    [
+      "3",
+      "83"
+    ],
+    [
+      "32",
+      "33"
+    ],
+    [
+      "33",
+      "37"
+    ],
+    [
+      "35",
+      "36"
+    ],
+    [
+      "35",
+      "39"
+    ],
+    [
+      "84/12",
+      "84/17"
+    ],
+    [
+      "84/18",
+      "84/19"
+    ],
+    [
+      "84/21",
+      "84/22"
+    ],
+    [
+      "84/23",
+      "84/24"
+    ],
+    [
+      "84/27",
+      "84/28"
+    ],
+    [
+      "85/12",
+      "85/17"
+    ],
+    [
+      "85/18",
+      "85/19"
+    ],
+    [
+      "85/21",
+      "85/22"
+    ],
+    [
+      "85/23",
+      "85/24"
+    ],
+    [
+      "85/27",
+      "85/28"
+    ]
+  ],
+  "coverage": "Sampled surface crossings only; excludes rigid-body and rest-contact pairs; containment untested"
+}

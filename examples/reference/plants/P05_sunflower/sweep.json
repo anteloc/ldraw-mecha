@@ -1,0 +1,210 @@
+{
+  "passed": true,
+  "samples": [
+    {
+      "control": "stem_lean",
+      "value": -0.12,
+      "passed": true,
+      "max_error": 0
+    },
+    {
+      "control": "stem_lean",
+      "value": -0.105,
+      "passed": true,
+      "max_error": 0
+    },
+    {
+      "control": "stem_lean",
+      "value": -0.09,
+      "passed": true,
+      "max_error": 0
+    },
+    {
+      "control": "stem_lean",
+      "value": -0.075,
+      "passed": true,
+      "max_error": 0
+    },
+    {
+      "control": "stem_lean",
+      "value": -0.06,
+      "passed": true,
+      "max_error": 0
+    },
+    {
+      "control": "stem_lean",
+      "value": -0.045,
+      "passed": true,
+      "max_error": 0
+    },
+    {
+      "control": "stem_lean",
+      "value": -0.03,
+      "passed": true,
+      "max_error": 0
+    },
+    {
+      "control": "stem_lean",
+      "value": -0.015,
+      "passed": true,
+      "max_error": 0
+    },
+    {
+      "control": "stem_lean",
+      "value": 0.0,
+      "passed": true,
+      "max_error": 0
+    },
+    {
+      "control": "stem_lean",
+      "value": 0.015000000000000013,
+      "passed": true,
+      "max_error": 0
+    },
+    {
+      "control": "stem_lean",
+      "value": 0.03,
+      "passed": true,
+      "max_error": 0
+    },
+    {
+      "control": "stem_lean",
+      "value": 0.044999999999999984,
+      "passed": true,
+      "max_error": 0
+    },
+    {
+      "control": "stem_lean",
+      "value": 0.06,
+      "passed": true,
+      "max_error": 0
+    },
+    {
+      "control": "stem_lean",
+      "value": 0.07500000000000001,
+      "passed": true,
+      "max_error": 0
+    },
+    {
+      "control": "stem_lean",
+      "value": 0.09,
+      "passed": true,
+      "max_error": 0
+    },
+    {
+      "control": "stem_lean",
+      "value": 0.10499999999999998,
+      "passed": true,
+      "max_error": 0
+    },
+    {
+      "control": "stem_lean",
+      "value": 0.12,
+      "passed": true,
+      "max_error": 0
+    },
+    {
+      "control": "nod",
+      "value": -0.5,
+      "passed": true,
+      "max_error": 0
+    },
+    {
+      "control": "nod",
+      "value": -0.43125,
+      "passed": true,
+      "max_error": 0
+    },
+    {
+      "control": "nod",
+      "value": -0.3625,
+      "passed": true,
+      "max_error": 0
+    },
+    {
+      "control": "nod",
+      "value": -0.29374999999999996,
+      "passed": true,
+      "max_error": 0
+    },
+    {
+      "control": "nod",
+      "value": -0.22499999999999998,
+      "passed": true,
+      "max_error": 0
+    },
+    {
+      "control": "nod",
+      "value": -0.15625,
+      "passed": true,
+      "max_error": 0
+    },
+    {
+      "control": "nod",
+      "value": -0.08749999999999997,
+      "passed": true,
+      "max_error": 0
+    },
+    {
+      "control": "nod",
+      "value": -0.018749999999999933,
+      "passed": true,
+      "max_error": 0
+    },
+    {
+      "control": "nod",
+      "value": 0.050000000000000044,
+      "passed": true,
+      "max_error": 0
+    },
+    {
+      "control": "nod",
+      "value": 0.11875000000000002,
+      "passed": true,
+      "max_error": 0
+    },
+    {
+      "control": "nod",
+      "value": 0.1875,
+      "passed": true,
+      "max_error": 0
+    },
+    {
+      "control": "nod",
+      "value": 0.2562500000000001,
+      "passed": true,
+      "max_error": 0
+    },
+    {
+      "control": "nod",
+      "value": 0.32500000000000007,
+      "passed": true,
+      "max_error": 0
+    },
+    {
+      "control": "nod",
+      "value": 0.39375000000000004,
+      "passed": true,
+      "max_error": 0
+    },
+    {
+      "control": "nod",
+      "value": 0.46250000000000013,
+      "passed": true,
+      "max_error": 0
+    },
+    {
+      "control": "nod",
+      "value": 0.53125,
+      "passed": true,
+      "max_error": 0
+    },
+    {
+      "control": "nod",
+      "value": 0.6000000000000001,
+      "passed": true,
+      "max_error": 0
+    }
+  ],
+  "coverage": "Each control swept independently; analytic closure only, not mesh collisions or dynamics"
+}

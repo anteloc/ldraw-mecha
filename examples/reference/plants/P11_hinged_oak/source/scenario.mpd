@@ -1,0 +1,46 @@
+0 FILE p11_hinged_oak.ldr
+0 Plant wind case P11_hinged_oak Oak with hinged branches
+0 Name: p11_hinged_oak.ldr
+0 Author: ldraw-mecha scripts/build_plants.py
+0 // Generated mock case: parts picked by constant name from data/categories/parts (vine subfiles by LDraw reference); moving parts placed from LDCad shadow connector frames (data/offLibShadow) via pyldraw3 or copied from official constructions (2518c01, 10315, 10297). Frame: LDU, -Y up, the case front faces -Z, ground (base top) at y = 0. Wind blows toward +X.
+
+0 // base: plates.Plate6X6
+1 2 0 0 0 1 0 0 0 1 0 0 0 1 3958.dat
+0 // trunk0: bricks.Brick2X2RoundWithoutReinforcement
+1 70 0 -24 0 1 0 0 0 1 0 0 0 1 3941.dat
+0 // trunk1: bricks.Brick2X2RoundWithoutReinforcement
+1 70 0 -48 0 1 0 0 0 1 0 0 0 1 3941.dat
+0 // trunk2: bricks.Brick2X2RoundWithoutReinforcement
+1 70 0 -72 0 1 0 0 0 1 0 0 0 1 3941.dat
+0 // trunk3: bricks.Brick2X2RoundWithoutReinforcement
+1 70 0 -96 0 1 0 0 0 1 0 0 0 1 3941.dat
+0 // hub_front: plates.Plate1X1WithClipHorizontal_ThickC_Clip_
+1 70 -10 -104 -10 1 0 0 0 1 0 0 0 1 61252.dat
+0 // branch_front: plates.Plate1X2WithHandle
+1 70 -10 -104 -50 -1 0 0 0 1 0 0 0 -1 2540.dat
+0 // leaves_front: plants.PlantLeaves4X3
+1 2 -20 -112 -50 1 0 0 0 1 0 0 0 1 2423.dat
+0 // hub_downwind: plates.Plate1X1WithClipHorizontal_ThickC_Clip_
+1 70 10 -104 -10 0 0 -1 0 1 0 1 0 0 61252.dat
+0 // branch_downwind: plates.Plate1X2WithHandle
+1 70 50 -104 -10 0 0 1 0 1 0 -1 0 0 2540.dat
+0 // leaves_downwind: plants.PlantLeaves4X3
+1 10 50 -112 -20 0 0 -1 0 1 0 1 0 0 2423.dat
+0 // hub_back: plates.Plate1X1WithClipHorizontal_ThickC_Clip_
+1 70 10 -104 10 -1 0 0 0 1 0 0 0 -1 61252.dat
+0 // branch_back: plates.Plate1X2WithHandle
+1 70 10 -104 50 1 0 0 0 1 0 0 0 1 2540.dat
+0 // leaves_back: plants.PlantLeaves4X3
+1 2 20 -112 50 -1 0 0 0 1 0 0 0 -1 2423.dat
+0 // hub_upwind: plates.Plate1X1WithClipHorizontal_ThickC_Clip_
+1 70 -10 -104 10 0 0 1 0 1 0 -1 0 0 61252.dat
+0 // branch_upwind: plates.Plate1X2WithHandle
+1 70 -50 -104 10 0 0 -1 0 1 0 1 0 0 2540.dat
+0 // leaves_upwind: plants.PlantLeaves4X3
+1 10 -50 -112 20 0 0 1 0 1 0 -1 0 0 2423.dat
+0 // upper0: bricks.Brick2X2RoundWithoutReinforcement
+1 70 0 -128 0 1 0 0 0 1 0 0 0 1 3941.dat
+0 // upper1: bricks.Brick2X2RoundWithoutReinforcement
+1 70 0 -152 0 1 0 0 0 1 0 0 0 1 3941.dat
+0 // crown: plants.PlantLeaves6X5
+1 2 10 -160 -10 1 0 0 0 1 0 0 0 1 2417.dat

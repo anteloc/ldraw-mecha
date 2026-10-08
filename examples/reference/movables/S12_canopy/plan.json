@@ -1,0 +1,913 @@
+{
+  "version": 1,
+  "name": "movable_12_canopy",
+  "status": "ready",
+  "source": {
+    "version": 1,
+    "path": "/Users/captain/workspaces/workspace-ai/ldraw-mecha/output/movables/S12_canopy/source/scenario.mpd",
+    "sha256": "f5de4987cdda3ed30fa98cb8cb6ec2738766a44974cf51ca2a9cadc8b3c0b727",
+    "section": "s12_canopy.ldr",
+    "description": "Movable element scenario S12_canopy Spaceship canopy",
+    "author": "ldraw-mecha scripts/build_movables.py",
+    "dependencies": {
+      "/Users/captain/workspaces/workspace-ai/ldraw-mecha/output/movables/S12_canopy/source/scenario.mpd": "f5de4987cdda3ed30fa98cb8cb6ec2738766a44974cf51ca2a9cadc8b3c0b727"
+    },
+    "nodes": [
+      {
+        "id": "0",
+        "parent": "root",
+        "ref": "3035.dat",
+        "kind": "part",
+        "embedded": false,
+        "section": "s12_canopy.ldr",
+        "index": 0,
+        "line": 8,
+        "colour": "7",
+        "effective_colour": "7",
+        "local": [
+          [
+            0.0,
+            0.0,
+            1.0,
+            0.0
+          ],
+          [
+            0.0,
+            1.0,
+            0.0,
+            8.0
+          ],
+          [
+            -1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "world": [
+          [
+            0.0,
+            0.0,
+            1.0,
+            0.0
+          ],
+          [
+            0.0,
+            1.0,
+            0.0,
+            8.0
+          ],
+          [
+            -1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "description": "Plate  4 x  8"
+      },
+      {
+        "id": "1",
+        "parent": "root",
+        "ref": "3030.dat",
+        "kind": "part",
+        "embedded": false,
+        "section": "s12_canopy.ldr",
+        "index": 1,
+        "line": 10,
+        "colour": "7",
+        "effective_colour": "7",
+        "local": [
+          [
+            -1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            1.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            -1.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "world": [
+          [
+            -1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            1.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            -1.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "description": "Plate  4 x 10"
+      },
+      {
+        "id": "2",
+        "parent": "root",
+        "ref": "2431.dat",
+        "kind": "part",
+        "embedded": false,
+        "section": "s12_canopy.ldr",
+        "index": 2,
+        "line": 12,
+        "colour": "8",
+        "effective_colour": "8",
+        "local": [
+          [
+            0.0,
+            0.0,
+            1.0,
+            -90.0
+          ],
+          [
+            0.0,
+            1.0,
+            0.0,
+            -8.0
+          ],
+          [
+            -1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "world": [
+          [
+            0.0,
+            0.0,
+            1.0,
+            -90.0
+          ],
+          [
+            0.0,
+            1.0,
+            0.0,
+            -8.0
+          ],
+          [
+            -1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "description": "Tile  1 x  4 with Groove"
+      },
+      {
+        "id": "3",
+        "parent": "root",
+        "ref": "3010.dat",
+        "kind": "part",
+        "embedded": false,
+        "section": "s12_canopy.ldr",
+        "index": 3,
+        "line": 14,
+        "colour": "7",
+        "effective_colour": "7",
+        "local": [
+          [
+            0.0,
+            0.0,
+            1.0,
+            90.0
+          ],
+          [
+            0.0,
+            1.0,
+            0.0,
+            -24.0
+          ],
+          [
+            -1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "world": [
+          [
+            0.0,
+            0.0,
+            1.0,
+            90.0
+          ],
+          [
+            0.0,
+            1.0,
+            0.0,
+            -24.0
+          ],
+          [
+            -1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "description": "Brick  1 x  4"
+      },
+      {
+        "id": "4",
+        "parent": "root",
+        "ref": "3010.dat",
+        "kind": "part",
+        "embedded": false,
+        "section": "s12_canopy.ldr",
+        "index": 4,
+        "line": 16,
+        "colour": "7",
+        "effective_colour": "7",
+        "local": [
+          [
+            0.0,
+            0.0,
+            1.0,
+            90.0
+          ],
+          [
+            0.0,
+            1.0,
+            0.0,
+            -48.0
+          ],
+          [
+            -1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "world": [
+          [
+            0.0,
+            0.0,
+            1.0,
+            90.0
+          ],
+          [
+            0.0,
+            1.0,
+            0.0,
+            -48.0
+          ],
+          [
+            -1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "description": "Brick  1 x  4"
+      },
+      {
+        "id": "5",
+        "parent": "root",
+        "ref": "3710.dat",
+        "kind": "part",
+        "embedded": false,
+        "section": "s12_canopy.ldr",
+        "index": 5,
+        "line": 18,
+        "colour": "7",
+        "effective_colour": "7",
+        "local": [
+          [
+            0.0,
+            0.0,
+            1.0,
+            90.0
+          ],
+          [
+            0.0,
+            1.0,
+            0.0,
+            -56.0
+          ],
+          [
+            -1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "world": [
+          [
+            0.0,
+            0.0,
+            1.0,
+            90.0
+          ],
+          [
+            0.0,
+            1.0,
+            0.0,
+            -56.0
+          ],
+          [
+            -1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "description": "Plate  1 x  4"
+      },
+      {
+        "id": "6",
+        "parent": "root",
+        "ref": "3031.dat",
+        "kind": "part",
+        "embedded": false,
+        "section": "s12_canopy.ldr",
+        "index": 6,
+        "line": 20,
+        "colour": "7",
+        "effective_colour": "7",
+        "local": [
+          [
+            0.0,
+            0.0,
+            1.0,
+            60.0
+          ],
+          [
+            0.0,
+            1.0,
+            0.0,
+            -64.0
+          ],
+          [
+            -1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "world": [
+          [
+            0.0,
+            0.0,
+            1.0,
+            60.0
+          ],
+          [
+            0.0,
+            1.0,
+            0.0,
+            -64.0
+          ],
+          [
+            -1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "description": "Plate  4 x  4"
+      },
+      {
+        "id": "7",
+        "parent": "root",
+        "ref": "4315.dat",
+        "kind": "part",
+        "embedded": false,
+        "section": "s12_canopy.ldr",
+        "index": 7,
+        "line": 22,
+        "colour": "7",
+        "effective_colour": "7",
+        "local": [
+          [
+            0.0,
+            0.0,
+            1.0,
+            30.0
+          ],
+          [
+            0.0,
+            1.0,
+            0.0,
+            -72.0
+          ],
+          [
+            -1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "world": [
+          [
+            0.0,
+            0.0,
+            1.0,
+            30.0
+          ],
+          [
+            0.0,
+            1.0,
+            0.0,
+            -72.0
+          ],
+          [
+            -1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "description": "Hinge Plate  1 x  4 with Car Roof Holder"
+      },
+      {
+        "id": "8",
+        "parent": "root",
+        "ref": "2620.dat",
+        "kind": "part",
+        "embedded": false,
+        "section": "s12_canopy.ldr",
+        "index": 8,
+        "line": 24,
+        "colour": "33",
+        "effective_colour": "33",
+        "local": [
+          [
+            0.0,
+            0.0,
+            1.0,
+            16.0
+          ],
+          [
+            0.0,
+            1.0,
+            0.0,
+            -68.0
+          ],
+          [
+            -1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "world": [
+          [
+            0.0,
+            0.0,
+            1.0,
+            16.0
+          ],
+          [
+            0.0,
+            1.0,
+            0.0,
+            -68.0
+          ],
+          [
+            -1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "description": "Windscreen  4 x  4 x  3 with Hinge"
+      },
+      {
+        "id": "9",
+        "parent": "root",
+        "ref": "3941.dat",
+        "kind": "part",
+        "embedded": false,
+        "section": "s12_canopy.ldr",
+        "index": 9,
+        "line": 26,
+        "colour": "8",
+        "effective_colour": "8",
+        "local": [
+          [
+            0.0,
+            0.0,
+            1.0,
+            70.0
+          ],
+          [
+            0.0,
+            1.0,
+            0.0,
+            -88.0
+          ],
+          [
+            -1.0,
+            0.0,
+            0.0,
+            20.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "world": [
+          [
+            0.0,
+            0.0,
+            1.0,
+            70.0
+          ],
+          [
+            0.0,
+            1.0,
+            0.0,
+            -88.0
+          ],
+          [
+            -1.0,
+            0.0,
+            0.0,
+            20.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "description": "Brick  2 x  2 Round without Reinforcement"
+      },
+      {
+        "id": "10",
+        "parent": "root",
+        "ref": "3941.dat",
+        "kind": "part",
+        "embedded": false,
+        "section": "s12_canopy.ldr",
+        "index": 10,
+        "line": 28,
+        "colour": "8",
+        "effective_colour": "8",
+        "local": [
+          [
+            0.0,
+            0.0,
+            1.0,
+            70.0
+          ],
+          [
+            0.0,
+            1.0,
+            0.0,
+            -88.0
+          ],
+          [
+            -1.0,
+            0.0,
+            0.0,
+            -20.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "world": [
+          [
+            0.0,
+            0.0,
+            1.0,
+            70.0
+          ],
+          [
+            0.0,
+            1.0,
+            0.0,
+            -88.0
+          ],
+          [
+            -1.0,
+            0.0,
+            0.0,
+            -20.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "description": "Brick  2 x  2 Round without Reinforcement"
+      }
+    ],
+    "diagnostics": [],
+    "coordinate_space": "selected section, LDU, -Y up"
+  },
+  "controls": {
+    "canopy": {
+      "default": 0,
+      "min": 0.0,
+      "max": 1.6,
+      "unit": "radian",
+      "description": "Canopy about the rear hinge; + lifts the front"
+    }
+  },
+  "signals": {
+    "canopy_angle": {
+      "expression": "a",
+      "variables": {
+        "a": "control:canopy"
+      }
+    }
+  },
+  "bodies": {
+    "canopy": {
+      "instances": [
+        "8"
+      ],
+      "kind": "revolute",
+      "origin": [
+        16.0,
+        -68.0,
+        0.0
+      ],
+      "axis": [
+        -0.0,
+        -0.0,
+        1.0
+      ],
+      "signal": "canopy_angle"
+    }
+  },
+  "anchors": {},
+  "checks": [],
+  "notes": [
+    "Mock scenario S12_canopy (Spaceship canopy) written by scripts/build_movables.py: Windscreen 4x4x3 with hinge 2620 on hinge plate 4315. Parts picked by constant name from data/categories/parts; frame LDU, -Y up, the scenario front faces -Z, ground (base top) at y = 0.",
+    "Joints: canopy: revolute about [0.0, 0.0, -1.0] through [16.0, -68.0, 0.0] (4315 hinge snap_fgr@L9:I0 receives 2620 hinge snap_fgr@L8:I0).",
+    "Sign convention by meaning (checked with the evaluator, kinematics.json): canopy + = Canopy about the rear hinge; + lifts the front.",
+    "Ranges are catalog choices, narrowed by sampled clearance against the mock context (scripts/blender/check_movables_clearance.py); they are not measured mechanical stops.",
+    "Kinematic and transform checks do not prove collision-free or physically feasible motion."
+  ],
+  "mechanisms": {
+    "canopy": {
+      "label": "Spaceship canopy: canopy",
+      "parts": [
+        "7",
+        "8"
+      ],
+      "bodies": [
+        "canopy"
+      ],
+      "inputs": [
+        "control:canopy"
+      ],
+      "outputs": [
+        "body:canopy"
+      ],
+      "disposition": "planned",
+      "notes": [
+        "revolute joint: 4315 hinge snap_fgr@L9:I0 receives 2620 hinge snap_fgr@L8:I0"
+      ],
+      "review": "Measured joint declared in this plan (scripts/build_movables.py)."
+    },
+    "context": {
+      "label": "Spaceship canopy: mounting and mock context (static)",
+      "parts": [
+        "0",
+        "1",
+        "2",
+        "3",
+        "4",
+        "5",
+        "6",
+        "7",
+        "9",
+        "10"
+      ],
+      "bodies": [],
+      "inputs": [],
+      "outputs": [],
+      "disposition": "static",
+      "notes": [],
+      "review": "Mock context built for the catalog (walls, floor, chassis, mounts); it does not move in this scenario."
+    }
+  },
+  "connections": {
+    "joint_canopy": {
+      "a": "7",
+      "b": "8",
+      "kind": "revolute",
+      "status": "reviewed",
+      "evidence": "4315 hinge snap_fgr@L9:I0 receives 2620 hinge snap_fgr@L8:I0. pyldraw3 contact confirmed (hinge/hinge).",
+      "measurements": {
+        "origin": [
+          16.0,
+          -68.0,
+          0.0
+        ],
+        "axis": [
+          0.0,
+          0.0,
+          -1.0
+        ]
+      },
+      "review": "Joint frame measured as stated (scripts/build_movables.py); see source/parts.json reference_checks for official placements."
+    }
+  },
+  "discovery": {
+    "grouping": "Provisional connected mechanical candidates; agent may split/merge views",
+    "unclassified_parts": [
+      "0",
+      "1",
+      "10",
+      "2",
+      "3",
+      "4",
+      "5",
+      "6",
+      "9"
+    ],
+    "embedded_parts": [],
+    "contact_limit": 300,
+    "rigid_groups": "not inferred",
+    "inputs_outputs": "not inferred",
+    "mechanical_parts": [
+      "7",
+      "8"
+    ],
+    "warnings": [
+      {
+        "code": "coaxial_not_run",
+        "message": "not run: 0 shaft/gear candidates outside 2..100; select a section"
+      }
+    ],
+    "surface_contacts": "Not detected: cams, levers bearing on beams, friction and stops need geometric/visual review even when connector contacts are absent",
+    "unsupported_gears": [],
+    "gear_placements": {
+      "policy": "Nearest orthogonal analysis frame within rounding_limit; source translations and handedness preserved",
+      "rounding_limit": 0.002,
+      "counts": {},
+      "affected": []
+    },
+    "contacts": {
+      "complete": true,
+      "tested_parts": 11,
+      "diagnostics": [],
+      "summary": {
+        "tested_parts": 11,
+        "contacts": 9,
+        "contacted_parts": 5,
+        "by_kind": {
+          "stud/stud_receptacle": 8,
+          "hinge/hinge": 1
+        },
+        "axles": {
+          "selection": "Catalog descriptions beginning Technic Axle followed by a numeric length; excludes axle pins, joiners and axle-hole supports",
+          "total": 0,
+          "with_axle_hole_contact": 0,
+          "without_axle_hole_contact": []
+        }
+      },
+      "placements": {
+        "policy": "Nearest orthogonal analysis frame within rounding_limit; source translations and handedness preserved",
+        "rounding_limit": 0.002,
+        "counts": {
+          "unchanged": 11
+        },
+        "affected": []
+      }
+    },
+    "coaxial_selection": "Catalog axle, gear, worm and engine crankshaft parts; positive line evidence within 80 LDU axial separation",
+    "coaxial": "not run: 0 shaft/gear candidates outside 2..100; select a section",
+    "isolated_mechanical_parts": []
+  }
+}

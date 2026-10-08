@@ -1,0 +1,40 @@
+{
+  "case": "P13_fern",
+  "sweep": {
+    "no_new_surface_crossings": true,
+    "crossings": [],
+    "excluded_rest_pairs": [
+      "frond_back-hub_z_pos",
+      "frond_front-hub_z_neg",
+      "hub_x_pos-frond_downwind",
+      "hub_x_neg-frond_upwind"
+    ]
+  },
+  "clip_poses": {
+    "samples": 180,
+    "every": 4,
+    "no_new_surface_crossings": true,
+    "crossings_by_clip": {},
+    "frames_with_crossings": {},
+    "vertex_penetration_by_clip": {},
+    "deep_shrink_ldu": 1.5,
+    "no_deep_crossings": true,
+    "deep_crossings_by_clip": {},
+    "frames_with_deep_crossings": {}
+  },
+  "roles": {
+    "0": "base",
+    "1": "rock",
+    "2": "hub_x_pos",
+    "3": "hub_x_neg",
+    "4": "hub_fill_a",
+    "5": "hub_fill_b",
+    "6": "hub_z_pos",
+    "7": "hub_z_neg",
+    "8": "frond_downwind",
+    "9": "frond_upwind",
+    "10": "frond_back",
+    "11": "frond_front"
+  },
+  "coverage": "Sampled surface crossings only; excludes rigid-body and rest-contact pairs; containment untested"
+}

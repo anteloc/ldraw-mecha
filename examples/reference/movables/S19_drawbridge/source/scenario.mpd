@@ -1,0 +1,54 @@
+0 FILE s19_drawbridge.ldr
+0 Movable element scenario S19_drawbridge Drawbridge
+0 Name: s19_drawbridge.ldr
+0 Author: ldraw-mecha scripts/build_movables.py
+0 // Generated mock scenario: parts picked by constant name from data/categories/parts (a few context parts by LDraw reference); moving parts placed from LDCad shadow connector frames (data/offLibShadow) via pyldraw3 or from official annotated models where no connector pair exists. Frame: LDU, -Y up, the scenario front faces -Z, ground (base top) at y = 0.
+
+0 // ground: baseplates.Baseplate16X16
+1 2 0 0 -60 0 0 1 0 1 0 -1 0 0 3867.dat
+0 // moat: plates.Plate6X6
+1 73 0 -8 -80 0 0 1 0 1 0 -1 0 0 3958.dat
+0 // hinge_wall_l: hinges.Hinge1X2Base
+1 8 -50 -24 0 -1 0 0 0 1 0 0 0 -1 3937.dat
+0 // hinge_deck_l: hinges.Hinge1X2Top
+1 8 -50 -24 0 -1 0 0 0 1 0 0 0 -1 3938.dat
+0 // hinge_wall_r: hinges.Hinge1X2Base
+1 8 50 -24 0 -1 0 0 0 1 0 0 0 -1 3937.dat
+0 // hinge_deck_r: hinges.Hinge1X2Top
+1 8 50 -24 0 -1 0 0 0 1 0 0 0 -1 3938.dat
+0 // deck: plates.Plate6X8
+1 70 0 -32 -70 0 0 1 0 1 0 -1 0 0 3036.dat
+0 // bank: bricks.Brick1X6
+1 8 0 -24 -140 -1 0 0 0 1 0 0 0 -1 3009.dat
+0 // tower_l0: bricks.Brick2X2
+1 71 -80 -24 20 0 0 1 0 1 0 -1 0 0 3003.dat
+0 // tower_r0: bricks.Brick2X2
+1 71 80 -24 20 0 0 1 0 1 0 -1 0 0 3003.dat
+0 // tower_l1: bricks.Brick2X2
+1 71 -80 -48 20 0 0 1 0 1 0 -1 0 0 3003.dat
+0 // tower_r1: bricks.Brick2X2
+1 71 80 -48 20 0 0 1 0 1 0 -1 0 0 3003.dat
+0 // tower_l2: bricks.Brick2X2
+1 71 -80 -72 20 0 0 1 0 1 0 -1 0 0 3003.dat
+0 // tower_r2: bricks.Brick2X2
+1 71 80 -72 20 0 0 1 0 1 0 -1 0 0 3003.dat
+0 // tower_l3: bricks.Brick2X2
+1 71 -80 -96 20 0 0 1 0 1 0 -1 0 0 3003.dat
+0 // tower_r3: bricks.Brick2X2
+1 71 80 -96 20 0 0 1 0 1 0 -1 0 0 3003.dat
+0 // tower_l4: bricks.Brick2X2
+1 71 -80 -120 20 0 0 1 0 1 0 -1 0 0 3003.dat
+0 // tower_r4: bricks.Brick2X2
+1 71 80 -120 20 0 0 1 0 1 0 -1 0 0 3003.dat
+0 // tower_l5: bricks.Brick2X2
+1 71 -80 -144 20 0 0 1 0 1 0 -1 0 0 3003.dat
+0 // tower_r5: bricks.Brick2X2
+1 71 80 -144 20 0 0 1 0 1 0 -1 0 0 3003.dat
+0 // tower_l6: bricks.Brick2X2
+1 71 -80 -168 20 0 0 1 0 1 0 -1 0 0 3003.dat
+0 // tower_r6: bricks.Brick2X2
+1 71 80 -168 20 0 0 1 0 1 0 -1 0 0 3003.dat
+0 // lintel: bricks.Brick1X8
+1 71 0 -192 20 -1 0 0 0 1 0 0 0 -1 3008.dat
+0 // lintel_cap: plates.Plate2X10
+1 8 0 -200 20 -1 0 0 0 1 0 0 0 -1 3832.dat

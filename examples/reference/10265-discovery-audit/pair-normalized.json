@@ -1,0 +1,487 @@
+{
+  "instances": [
+    "0/104/34",
+    "0/104/41"
+  ],
+  "complete": true,
+  "contacts": [
+    {
+      "a": "0/104/34",
+      "b": "0/104/41",
+      "first": {
+        "kind": "axle",
+        "role": "male",
+        "position": [
+          0.0,
+          -49.013000000000005,
+          558.282
+        ],
+        "frame": [
+          [
+            0.0,
+            1.0,
+            0.0
+          ],
+          [
+            0.9986480385886668,
+            0.0,
+            0.051981679686296973
+          ],
+          [
+            0.051981679686296973,
+            0.0,
+            -0.9986480385886668
+          ]
+        ],
+        "profile": {
+          "sections": [
+            {
+              "shape": "axle",
+              "radius": 6.0,
+              "length": 180.0,
+              "flexible": false
+            }
+          ],
+          "centered": true,
+          "friction": false,
+          "caps": "none"
+        },
+        "name": "LDCad cylinder",
+        "feature_id": "snap_cyl@L8:I0",
+        "group": null,
+        "freedoms": [
+          "rotate",
+          "slide"
+        ],
+        "source": "ldcad_shadow",
+        "confidence": 1.0,
+        "owner_code": "60485",
+        "compatible_parts": [],
+        "occupied": false,
+        "occupied_by": null,
+        "provenance": [
+          "/Users/captain/workspaces/workspace-ai/ldraw-mecha/data/offLibShadow/parts/60485.dat:8"
+        ],
+        "metadata_id": null,
+        "connection_provenance": {
+          "source": "ldcad_shadow",
+          "path": "/Users/captain/workspaces/workspace-ai/ldraw-mecha/data/offLibShadow/parts/60485.dat",
+          "archive_member": null,
+          "line_number": 8,
+          "command": "0 !LDCAD SNAP_CYL [gender=M] [caps=none] [secs=A 6 180] [center=true] [slide=true] [ori=0 -1 0 1 0 0 0 0 1]",
+          "include_chain": []
+        },
+        "scale_inheritance": "none",
+        "mirror_inheritance": "cor"
+      },
+      "second": {
+        "kind": "axle_hole",
+        "role": "female",
+        "position": [
+          -10.0,
+          -49.013000000000005,
+          558.282
+        ],
+        "frame": [
+          [
+            1.1087220459378897e-16,
+            1.0,
+            -5.771125764641668e-18
+          ],
+          [
+            0.05198167968629697,
+            0.0,
+            0.9986480385886668
+          ],
+          [
+            -0.9986480385886668,
+            1.1102230246251565e-16,
+            0.05198167968629697
+          ]
+        ],
+        "profile": {
+          "sections": [
+            {
+              "shape": "axle",
+              "radius": 5.999999999999999,
+              "length": 0.0,
+              "flexible": false
+            }
+          ],
+          "centered": false,
+          "friction": false,
+          "caps": "none"
+        },
+        "name": "Technic Axle Hole Side Edges",
+        "feature_id": "axlehol2@R1/axlehol2",
+        "group": null,
+        "freedoms": [
+          "slide"
+        ],
+        "source": "primitive",
+        "confidence": 0.85,
+        "owner_code": "10928",
+        "compatible_parts": [],
+        "occupied": false,
+        "occupied_by": null,
+        "provenance": [
+          "axlehol2"
+        ],
+        "metadata_id": null,
+        "connection_provenance": {
+          "source": "primitive",
+          "path": null,
+          "archive_member": null,
+          "line_number": null,
+          "command": "axlehol2",
+          "include_chain": []
+        },
+        "scale_inheritance": "yandr",
+        "mirror_inheritance": "none"
+      },
+      "status": "confirmed",
+      "residual": {
+        "distance": 0.0,
+        "axial_gap": 0.0,
+        "alignment": 1.0,
+        "roll_alignment": 1.0000000000000002,
+        "entry_face_gap": null,
+        "penetration": null
+      }
+    },
+    {
+      "a": "0/104/34",
+      "b": "0/104/41",
+      "first": {
+        "kind": "axle",
+        "role": "male",
+        "position": [
+          0.0,
+          -49.013000000000005,
+          558.282
+        ],
+        "frame": [
+          [
+            0.0,
+            1.0,
+            0.0
+          ],
+          [
+            0.9986480385886668,
+            0.0,
+            0.051981679686296973
+          ],
+          [
+            0.051981679686296973,
+            0.0,
+            -0.9986480385886668
+          ]
+        ],
+        "profile": {
+          "sections": [
+            {
+              "shape": "axle",
+              "radius": 6.0,
+              "length": 180.0,
+              "flexible": false
+            }
+          ],
+          "centered": true,
+          "friction": false,
+          "caps": "none"
+        },
+        "name": "LDCad cylinder",
+        "feature_id": "snap_cyl@L8:I0",
+        "group": null,
+        "freedoms": [
+          "rotate",
+          "slide"
+        ],
+        "source": "ldcad_shadow",
+        "confidence": 1.0,
+        "owner_code": "60485",
+        "compatible_parts": [],
+        "occupied": false,
+        "occupied_by": null,
+        "provenance": [
+          "/Users/captain/workspaces/workspace-ai/ldraw-mecha/data/offLibShadow/parts/60485.dat:8"
+        ],
+        "metadata_id": null,
+        "connection_provenance": {
+          "source": "ldcad_shadow",
+          "path": "/Users/captain/workspaces/workspace-ai/ldraw-mecha/data/offLibShadow/parts/60485.dat",
+          "archive_member": null,
+          "line_number": 8,
+          "command": "0 !LDCAD SNAP_CYL [gender=M] [caps=none] [secs=A 6 180] [center=true] [slide=true] [ori=0 -1 0 1 0 0 0 0 1]",
+          "include_chain": []
+        },
+        "scale_inheritance": "none",
+        "mirror_inheritance": "cor"
+      },
+      "second": {
+        "kind": "axle_hole",
+        "role": "female",
+        "position": [
+          -10.0,
+          -49.013000000000005,
+          558.282
+        ],
+        "frame": [
+          [
+            1.1087220459378897e-16,
+            1.0,
+            -5.771125764641668e-18
+          ],
+          [
+            0.05198167968629697,
+            0.0,
+            0.9986480385886668
+          ],
+          [
+            -0.9986480385886668,
+            1.1102230246251565e-16,
+            0.05198167968629697
+          ]
+        ],
+        "profile": {
+          "sections": [
+            {
+              "shape": "axle",
+              "radius": 5.999999999999999,
+              "length": 20.0,
+              "flexible": false
+            }
+          ],
+          "centered": false,
+          "friction": false,
+          "caps": "none"
+        },
+        "name": "Technic Axle Hole Rounded Perimeter",
+        "feature_id": "axlehole@R0/axl5hol8@R4/axl5hol8",
+        "group": null,
+        "freedoms": [
+          "slide"
+        ],
+        "source": "primitive",
+        "confidence": 0.85,
+        "owner_code": "10928",
+        "compatible_parts": [],
+        "occupied": false,
+        "occupied_by": null,
+        "provenance": [
+          "axl5hol8"
+        ],
+        "metadata_id": null,
+        "connection_provenance": {
+          "source": "primitive",
+          "path": null,
+          "archive_member": null,
+          "line_number": null,
+          "command": "axl5hol8",
+          "include_chain": []
+        },
+        "scale_inheritance": "yandr",
+        "mirror_inheritance": "none"
+      },
+      "status": "confirmed",
+      "residual": {
+        "distance": 0.0,
+        "axial_gap": 0.0,
+        "alignment": 1.0,
+        "roll_alignment": 1.0000000000000002,
+        "entry_face_gap": null,
+        "penetration": null
+      }
+    },
+    {
+      "a": "0/104/34",
+      "b": "0/104/41",
+      "first": {
+        "kind": "axle",
+        "role": "male",
+        "position": [
+          0.0,
+          -49.013000000000005,
+          558.282
+        ],
+        "frame": [
+          [
+            0.0,
+            1.0,
+            0.0
+          ],
+          [
+            0.9986480385886668,
+            0.0,
+            0.051981679686296973
+          ],
+          [
+            0.051981679686296973,
+            0.0,
+            -0.9986480385886668
+          ]
+        ],
+        "profile": {
+          "sections": [
+            {
+              "shape": "axle",
+              "radius": 6.0,
+              "length": 180.0,
+              "flexible": false
+            }
+          ],
+          "centered": true,
+          "friction": false,
+          "caps": "none"
+        },
+        "name": "LDCad cylinder",
+        "feature_id": "snap_cyl@L8:I0",
+        "group": null,
+        "freedoms": [
+          "rotate",
+          "slide"
+        ],
+        "source": "ldcad_shadow",
+        "confidence": 1.0,
+        "owner_code": "60485",
+        "compatible_parts": [],
+        "occupied": false,
+        "occupied_by": null,
+        "provenance": [
+          "/Users/captain/workspaces/workspace-ai/ldraw-mecha/data/offLibShadow/parts/60485.dat:8"
+        ],
+        "metadata_id": null,
+        "connection_provenance": {
+          "source": "ldcad_shadow",
+          "path": "/Users/captain/workspaces/workspace-ai/ldraw-mecha/data/offLibShadow/parts/60485.dat",
+          "archive_member": null,
+          "line_number": 8,
+          "command": "0 !LDCAD SNAP_CYL [gender=M] [caps=none] [secs=A 6 180] [center=true] [slide=true] [ori=0 -1 0 1 0 0 0 0 1]",
+          "include_chain": []
+        },
+        "scale_inheritance": "none",
+        "mirror_inheritance": "cor"
+      },
+      "second": {
+        "kind": "axle_hole",
+        "role": "female",
+        "position": [
+          10.0,
+          -49.013000000000005,
+          558.282
+        ],
+        "frame": [
+          [
+            -1.1087220459378897e-16,
+            -1.0,
+            5.771125764641668e-18
+          ],
+          [
+            -0.05198167968629697,
+            0.0,
+            -0.9986480385886668
+          ],
+          [
+            0.9986480385886668,
+            -1.1102230246251565e-16,
+            -0.05198167968629697
+          ]
+        ],
+        "profile": {
+          "sections": [
+            {
+              "shape": "axle",
+              "radius": 6.0,
+              "length": 20.0,
+              "flexible": false
+            }
+          ],
+          "centered": false,
+          "friction": false,
+          "caps": "none"
+        },
+        "name": "axleHole",
+        "feature_id": "axlehole@R0/axleHole",
+        "group": null,
+        "freedoms": [
+          "rotate",
+          "slide"
+        ],
+        "source": "ldcad_shadow",
+        "confidence": 1.0,
+        "owner_code": "10928",
+        "compatible_parts": [],
+        "occupied": false,
+        "occupied_by": null,
+        "provenance": [
+          "/Users/captain/workspaces/workspace-ai/ldraw-mecha/data/offLibShadow/p/axlehole.dat:11"
+        ],
+        "metadata_id": "axleHole",
+        "connection_provenance": {
+          "source": "ldcad_shadow",
+          "path": "/Users/captain/workspaces/workspace-ai/ldraw-mecha/data/offLibShadow/p/axlehole.dat",
+          "archive_member": null,
+          "line_number": 11,
+          "command": "0 !LDCAD SNAP_CYL [id=axleHole] [gender=F] [caps=none] [secs=A 6 1] [slide=true] [pos=0 1 0] [scale=YOnly]",
+          "include_chain": []
+        },
+        "scale_inheritance": "yonly",
+        "mirror_inheritance": "cor"
+      },
+      "status": "confirmed",
+      "residual": {
+        "distance": 0.0,
+        "axial_gap": 0.0,
+        "alignment": 1.0,
+        "roll_alignment": 1.0000000000000002,
+        "entry_face_gap": null,
+        "penetration": null
+      }
+    }
+  ],
+  "diagnostics": [],
+  "placements": {
+    "policy": "Nearest orthogonal analysis frame within rounding_limit; source translations and handedness preserved",
+    "rounding_limit": 0.002,
+    "counts": {
+      "normalized": 2
+    },
+    "affected": [
+      {
+        "id": "0/104/34",
+        "status": "normalized",
+        "reflected": false,
+        "max_scale_error": 0.0003524378937656003,
+        "max_coefficient_change": 0.0003519614113333125
+      },
+      {
+        "id": "0/104/41",
+        "status": "normalized",
+        "reflected": false,
+        "max_scale_error": 0.0003524378937656003,
+        "max_coefficient_change": 0.0003519614113333125
+      }
+    ]
+  },
+  "warnings": [
+    {
+      "code": "placement_normalized",
+      "message": "Rounded near-rigid placements normalized for analysis only; inspect placement diagnostics."
+    }
+  ],
+  "summary": {
+    "tested_parts": 2,
+    "contacts": 3,
+    "contacted_parts": 2,
+    "by_kind": {
+      "axle/axle_hole": 3
+    },
+    "axles": {
+      "selection": "Catalog descriptions beginning Technic Axle followed by a numeric length; excludes axle pins, joiners and axle-hole supports",
+      "total": 1,
+      "with_axle_hole_contact": 1,
+      "without_axle_hole_contact": []
+    }
+  },
+  "coverage": "pyldraw3 contacts for selected library parts only; no rigid grouping, collision proof or general mobility inference"
+}

@@ -65,9 +65,12 @@ def transfer_test(spec, entries, tolerance):
 def main():
     ap = argparse.ArgumentParser()
     ap.add_argument("--report", required=True)
+    ap.add_argument("--bundle", type=Path, default=mv.OUT,
+                    help="Read plans/clips from this bundle, e.g. examples/reference/movables")
     ap.add_argument("--tolerance", type=float, default=0.002)
     ap.add_argument("--transfer", default="S10_car_doors.both_doors:S06_double_cabinet")
     a = ap.parse_args(sys.argv[sys.argv.index("--") + 1:])
+    mv.OUT = a.bundle.resolve()
     library = mv.library()
     catalog = bpy.data.scenes["Catalog"]
     catalog.frame_set(1)

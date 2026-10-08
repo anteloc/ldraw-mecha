@@ -1,0 +1,861 @@
+{
+  "version": 1,
+  "name": "model",
+  "status": "draft",
+  "source": {
+    "version": 1,
+    "path": "/Users/captain/workspaces/workspace-ai/ldraw-mecha/output/minifigs/MF04_builder/source/minifig.mpd",
+    "sha256": "ec97e0403ba34b383bca60da6d2d97ab45c8149779d2bad8a863b8324091499c",
+    "section": "mf04_builder.ldr",
+    "description": "Minifig MF04_builder Construction worker",
+    "author": "ldraw-mecha scripts/build_minifigs.py",
+    "dependencies": {
+      "/Users/captain/workspaces/workspace-ai/ldraw-mecha/output/minifigs/MF04_builder/source/minifig.mpd": "ec97e0403ba34b383bca60da6d2d97ab45c8149779d2bad8a863b8324091499c"
+    },
+    "nodes": [
+      {
+        "id": "0",
+        "parent": "root",
+        "ref": "973p8i.dat",
+        "kind": "part",
+        "embedded": false,
+        "section": "mf04_builder.ldr",
+        "index": 0,
+        "line": 8,
+        "colour": "25",
+        "effective_colour": "25",
+        "local": [
+          [
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            1.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            1.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "world": [
+          [
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            1.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            1.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "description": "Minifig Torso with Construction Safety Vest with Reflective Stripes Pattern"
+      },
+      {
+        "id": "1",
+        "parent": "root",
+        "ref": "3626cp72.dat",
+        "kind": "part",
+        "embedded": false,
+        "section": "mf04_builder.ldr",
+        "index": 1,
+        "line": 10,
+        "colour": "14",
+        "effective_colour": "14",
+        "local": [
+          [
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            1.0,
+            0.0,
+            -24.0
+          ],
+          [
+            0.0,
+            0.0,
+            1.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "world": [
+          [
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            1.0,
+            0.0,
+            -24.0
+          ],
+          [
+            0.0,
+            0.0,
+            1.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "description": "Minifig Head with Beard Stubble, Black Raised Right Eyebrow and Smirk Angled to Right Pattern"
+      },
+      {
+        "id": "2",
+        "parent": "root",
+        "ref": "3833.dat",
+        "kind": "part",
+        "embedded": false,
+        "section": "mf04_builder.ldr",
+        "index": 2,
+        "line": 12,
+        "colour": "14",
+        "effective_colour": "14",
+        "local": [
+          [
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            1.0,
+            0.0,
+            -24.0
+          ],
+          [
+            0.0,
+            0.0,
+            1.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "world": [
+          [
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            1.0,
+            0.0,
+            -24.0
+          ],
+          [
+            0.0,
+            0.0,
+            1.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "description": "Minifig Construction Helmet"
+      },
+      {
+        "id": "3",
+        "parent": "root",
+        "ref": "3815b.dat",
+        "kind": "part",
+        "embedded": false,
+        "section": "mf04_builder.ldr",
+        "index": 3,
+        "line": 14,
+        "colour": "1",
+        "effective_colour": "1",
+        "local": [
+          [
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            1.0,
+            0.0,
+            32.0
+          ],
+          [
+            0.0,
+            0.0,
+            1.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "world": [
+          [
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            1.0,
+            0.0,
+            32.0
+          ],
+          [
+            0.0,
+            0.0,
+            1.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "description": "Minifig Hips"
+      },
+      {
+        "id": "4",
+        "parent": "root",
+        "ref": "3817c.dat",
+        "kind": "part",
+        "embedded": false,
+        "section": "mf04_builder.ldr",
+        "index": 4,
+        "line": 16,
+        "colour": "1",
+        "effective_colour": "1",
+        "local": [
+          [
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            1.0,
+            0.0,
+            44.0
+          ],
+          [
+            0.0,
+            0.0,
+            1.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "world": [
+          [
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            1.0,
+            0.0,
+            44.0
+          ],
+          [
+            0.0,
+            0.0,
+            1.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "description": "Minifig Leg Left"
+      },
+      {
+        "id": "5",
+        "parent": "root",
+        "ref": "3816c.dat",
+        "kind": "part",
+        "embedded": false,
+        "section": "mf04_builder.ldr",
+        "index": 5,
+        "line": 18,
+        "colour": "1",
+        "effective_colour": "1",
+        "local": [
+          [
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            1.0,
+            0.0,
+            44.0
+          ],
+          [
+            0.0,
+            0.0,
+            1.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "world": [
+          [
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            1.0,
+            0.0,
+            44.0
+          ],
+          [
+            0.0,
+            0.0,
+            1.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "description": "Minifig Leg Right"
+      },
+      {
+        "id": "6",
+        "parent": "root",
+        "ref": "3819.dat",
+        "kind": "part",
+        "embedded": false,
+        "section": "mf04_builder.ldr",
+        "index": 6,
+        "line": 20,
+        "colour": "25",
+        "effective_colour": "25",
+        "local": [
+          [
+            0.9854312211,
+            0.1700744202,
+            0.0,
+            15.552
+          ],
+          [
+            -0.1700744202,
+            0.9854312211,
+            0.0,
+            9.0
+          ],
+          [
+            0.0,
+            0.0,
+            1.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "world": [
+          [
+            0.9854312211,
+            0.1700744202,
+            0.0,
+            15.552
+          ],
+          [
+            -0.1700744202,
+            0.9854312211,
+            0.0,
+            9.0
+          ],
+          [
+            0.0,
+            0.0,
+            1.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "description": "Minifig Arm Left"
+      },
+      {
+        "id": "7",
+        "parent": "root",
+        "ref": "3820.dat",
+        "kind": "part",
+        "embedded": false,
+        "section": "mf04_builder.ldr",
+        "index": 7,
+        "line": 22,
+        "colour": "14",
+        "effective_colour": "14",
+        "local": [
+          [
+            0.9854312211,
+            0.1202607758,
+            -0.1202607758,
+            23.69082445
+          ],
+          [
+            -0.1700744202,
+            0.6968050989,
+            -0.6968050989,
+            26.75841254
+          ],
+          [
+            0.0,
+            0.7071067812,
+            0.7071067812,
+            -9.8839
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "world": [
+          [
+            0.9854312211,
+            0.1202607758,
+            -0.1202607758,
+            23.69082445
+          ],
+          [
+            -0.1700744202,
+            0.6968050989,
+            -0.6968050989,
+            26.75841254
+          ],
+          [
+            0.0,
+            0.7071067812,
+            0.7071067812,
+            -9.8839
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "description": "Minifig Hand"
+      },
+      {
+        "id": "8",
+        "parent": "root",
+        "ref": "3818.dat",
+        "kind": "part",
+        "embedded": false,
+        "section": "mf04_builder.ldr",
+        "index": 8,
+        "line": 24,
+        "colour": "25",
+        "effective_colour": "25",
+        "local": [
+          [
+            0.9854312211,
+            -0.1700744202,
+            0.0,
+            -15.552
+          ],
+          [
+            0.1700744202,
+            0.9854312211,
+            0.0,
+            9.0
+          ],
+          [
+            0.0,
+            0.0,
+            1.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "world": [
+          [
+            0.9854312211,
+            -0.1700744202,
+            0.0,
+            -15.552
+          ],
+          [
+            0.1700744202,
+            0.9854312211,
+            0.0,
+            9.0
+          ],
+          [
+            0.0,
+            0.0,
+            1.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "description": "Minifig Arm Right"
+      },
+      {
+        "id": "9",
+        "parent": "root",
+        "ref": "3820.dat",
+        "kind": "part",
+        "embedded": false,
+        "section": "mf04_builder.ldr",
+        "index": 9,
+        "line": 26,
+        "colour": "14",
+        "effective_colour": "14",
+        "local": [
+          [
+            0.9854312211,
+            -0.1202607758,
+            0.1202607758,
+            -23.69082445
+          ],
+          [
+            0.1700744202,
+            0.6968050989,
+            -0.6968050989,
+            26.75841254
+          ],
+          [
+            0.0,
+            0.7071067812,
+            0.7071067812,
+            -9.8839
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "world": [
+          [
+            0.9854312211,
+            -0.1202607758,
+            0.1202607758,
+            -23.69082445
+          ],
+          [
+            0.1700744202,
+            0.6968050989,
+            -0.6968050989,
+            26.75841254
+          ],
+          [
+            0.0,
+            0.7071067812,
+            0.7071067812,
+            -9.8839
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "description": "Minifig Hand"
+      },
+      {
+        "id": "10",
+        "parent": "root",
+        "ref": "55295.dat",
+        "kind": "part",
+        "embedded": false,
+        "section": "mf04_builder.ldr",
+        "index": 10,
+        "line": 28,
+        "colour": "72",
+        "effective_colour": "72",
+        "local": [
+          [
+            0.1465437806,
+            -0.08631470771,
+            -0.9854312211,
+            -24.43661347
+          ],
+          [
+            -0.8490919241,
+            0.5001175822,
+            -0.1700744202,
+            31.07960195
+          ],
+          [
+            0.5075114036,
+            0.8616450401,
+            0.0,
+            -20.90914458
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "world": [
+          [
+            0.1465437806,
+            -0.08631470771,
+            -0.9854312211,
+            -24.43661347
+          ],
+          [
+            -0.8490919241,
+            0.5001175822,
+            -0.1700744202,
+            31.07960195
+          ],
+          [
+            0.5075114036,
+            0.8616450401,
+            0.0,
+            -20.90914458
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "description": "Minifig Tool Hammer"
+      }
+    ],
+    "diagnostics": [],
+    "coordinate_space": "selected section, LDU, -Y up"
+  },
+  "controls": {},
+  "signals": {},
+  "bodies": {},
+  "anchors": {},
+  "checks": [],
+  "notes": [
+    "Assign rigid groups and measured joints before setting status to ready."
+  ],
+  "mechanisms": {
+    "unresolved": {
+      "label": "No mechanism identified",
+      "parts": [
+        "0",
+        "1",
+        "10",
+        "2",
+        "3",
+        "4",
+        "5",
+        "6",
+        "7",
+        "8",
+        "9"
+      ],
+      "bodies": [],
+      "inputs": [],
+      "outputs": [],
+      "notes": [
+        "No supported mechanical evidence found. Absence of evidence does not imply a static model."
+      ]
+    }
+  },
+  "connections": {},
+  "discovery": {
+    "grouping": "Provisional connected mechanical candidates; agent may split/merge views",
+    "unclassified_parts": [
+      "0",
+      "1",
+      "10",
+      "2",
+      "3",
+      "4",
+      "5",
+      "6",
+      "7",
+      "8",
+      "9"
+    ],
+    "embedded_parts": [],
+    "contact_limit": 300,
+    "rigid_groups": "not inferred",
+    "inputs_outputs": "not inferred",
+    "mechanical_parts": [],
+    "warnings": [
+      {
+        "code": "incomplete_inspection",
+        "message": "pyldraw3 inspection is incomplete; inspect its diagnostics."
+      },
+      {
+        "code": "coaxial_not_run",
+        "message": "not run: 0 shaft/gear candidates outside 2..100; select a section"
+      }
+    ],
+    "surface_contacts": "Not detected: cams, levers bearing on beams, friction and stops need geometric/visual review even when connector contacts are absent",
+    "unsupported_gears": [],
+    "gear_placements": {
+      "policy": "Nearest orthogonal analysis frame within rounding_limit; source translations and handedness preserved",
+      "rounding_limit": 0.002,
+      "counts": {},
+      "affected": []
+    },
+    "contacts": {
+      "complete": false,
+      "tested_parts": 11,
+      "diagnostics": [
+        {
+          "code": "connection.invalid_transform",
+          "message": "connection feature 'snap_cyl@L11:I0' from /Users/captain/workspaces/workspace-ai/ldraw-mecha/data/offLibShadow/parts/3818.dat:11 rejected under invalid scale or reflection",
+          "severity": "warning",
+          "path": "/Users/captain/workspaces/workspace-ai/ldraw-mecha/data/offLibShadow/parts/3818.dat",
+          "section": null,
+          "line_number": 11,
+          "offending_value": "snap_cyl@L11:I0",
+          "suggestions": [],
+          "cause": null
+        },
+        {
+          "code": "connection.invalid_transform",
+          "message": "connection feature 'snap_cyl@L14:I0' from /Users/captain/workspaces/workspace-ai/ldraw-mecha/data/offLibShadow/parts/3818.dat:14 rejected under invalid scale or reflection",
+          "severity": "warning",
+          "path": "/Users/captain/workspaces/workspace-ai/ldraw-mecha/data/offLibShadow/parts/3818.dat",
+          "section": null,
+          "line_number": 14,
+          "offending_value": "snap_cyl@L14:I0",
+          "suggestions": [],
+          "cause": null
+        }
+      ],
+      "summary": {
+        "tested_parts": 11,
+        "contacts": 12,
+        "contacted_parts": 10,
+        "by_kind": {
+          "pin/pin_hole": 11,
+          "bar/clip": 1
+        },
+        "axles": {
+          "selection": "Catalog descriptions beginning Technic Axle followed by a numeric length; excludes axle pins, joiners and axle-hole supports",
+          "total": 0,
+          "with_axle_hole_contact": 0,
+          "without_axle_hole_contact": []
+        }
+      },
+      "placements": {
+        "policy": "Nearest orthogonal analysis frame within rounding_limit; source translations and handedness preserved",
+        "rounding_limit": 0.002,
+        "counts": {
+          "unchanged": 11
+        },
+        "affected": []
+      }
+    },
+    "coaxial_selection": "Catalog axle, gear, worm and engine crankshaft parts; positive line evidence within 80 LDU axial separation",
+    "coaxial": "not run: 0 shaft/gear candidates outside 2..100; select a section",
+    "isolated_mechanical_parts": []
+  }
+}

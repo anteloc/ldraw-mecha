@@ -1,0 +1,214 @@
+{
+  "scenario": "S11_car_roof",
+  "title": "Car roof hatch",
+  "parts": [
+    {
+      "role": "chassis",
+      "id": "0",
+      "table": "plates.Plate4X8",
+      "ref": "3035",
+      "colour": 4,
+      "title": "Plate  4 x  8",
+      "library_only": false
+    },
+    {
+      "role": "axle0",
+      "id": "1",
+      "table": null,
+      "ref": "4600",
+      "colour": 0,
+      "title": "Plate  2 x  2 with 2 Wheel Pins",
+      "library_only": true
+    },
+    {
+      "role": "rim0l",
+      "id": "2",
+      "table": "wheels.WheelRim6_4X8",
+      "ref": "4624",
+      "colour": 7,
+      "title": "Wheel Rim  6.4 x  8",
+      "library_only": false
+    },
+    {
+      "role": "tyre0l",
+      "id": "3",
+      "table": "tyres.Tyre8_75X8OffsetTread",
+      "ref": "4084",
+      "colour": 0,
+      "title": "Tyre  8/ 75 x  8 Offset Tread",
+      "library_only": false
+    },
+    {
+      "role": "rim0r",
+      "id": "4",
+      "table": "wheels.WheelRim6_4X8",
+      "ref": "4624",
+      "colour": 7,
+      "title": "Wheel Rim  6.4 x  8",
+      "library_only": false
+    },
+    {
+      "role": "tyre0r",
+      "id": "5",
+      "table": "tyres.Tyre8_75X8OffsetTread",
+      "ref": "4084",
+      "colour": 0,
+      "title": "Tyre  8/ 75 x  8 Offset Tread",
+      "library_only": false
+    },
+    {
+      "role": "axle1",
+      "id": "6",
+      "table": null,
+      "ref": "4600",
+      "colour": 0,
+      "title": "Plate  2 x  2 with 2 Wheel Pins",
+      "library_only": true
+    },
+    {
+      "role": "rim1l",
+      "id": "7",
+      "table": "wheels.WheelRim6_4X8",
+      "ref": "4624",
+      "colour": 7,
+      "title": "Wheel Rim  6.4 x  8",
+      "library_only": false
+    },
+    {
+      "role": "tyre1l",
+      "id": "8",
+      "table": "tyres.Tyre8_75X8OffsetTread",
+      "ref": "4084",
+      "colour": 0,
+      "title": "Tyre  8/ 75 x  8 Offset Tread",
+      "library_only": false
+    },
+    {
+      "role": "rim1r",
+      "id": "9",
+      "table": "wheels.WheelRim6_4X8",
+      "ref": "4624",
+      "colour": 7,
+      "title": "Wheel Rim  6.4 x  8",
+      "library_only": false
+    },
+    {
+      "role": "tyre1r",
+      "id": "10",
+      "table": "tyres.Tyre8_75X8OffsetTread",
+      "ref": "4084",
+      "colour": 0,
+      "title": "Tyre  8/ 75 x  8 Offset Tread",
+      "library_only": false
+    },
+    {
+      "role": "nose",
+      "id": "11",
+      "table": "bricks.Brick2X4",
+      "ref": "3001",
+      "colour": 4,
+      "title": "Brick  2 x  4",
+      "library_only": false
+    },
+    {
+      "role": "side_l",
+      "id": "12",
+      "table": "bricks.Brick1X4",
+      "ref": "3010",
+      "colour": 4,
+      "title": "Brick  1 x  4",
+      "library_only": false
+    },
+    {
+      "role": "side_r",
+      "id": "13",
+      "table": "bricks.Brick1X4",
+      "ref": "3010",
+      "colour": 4,
+      "title": "Brick  1 x  4",
+      "library_only": false
+    },
+    {
+      "role": "rear",
+      "id": "14",
+      "table": "bricks.Brick2X4",
+      "ref": "3001",
+      "colour": 4,
+      "title": "Brick  2 x  4",
+      "library_only": false
+    },
+    {
+      "role": "windscreen",
+      "id": "15",
+      "table": "windscreens.Windscreen2X4X2",
+      "ref": "3823",
+      "colour": 47,
+      "title": "Windscreen  2 x  4 x  2",
+      "library_only": false
+    },
+    {
+      "role": "holder",
+      "id": "16",
+      "table": "hinges.HingeCarRoofHolder1X4X2",
+      "ref": "4214",
+      "colour": 4,
+      "title": "Hinge Car Roof Holder  1 x  4 x  2",
+      "library_only": false
+    },
+    {
+      "role": "roof",
+      "id": "17",
+      "table": "hinges.HingeCarRoof4X4",
+      "ref": "4213",
+      "colour": 4,
+      "title": "Hinge Car Roof  4 x  4",
+      "library_only": false
+    }
+  ],
+  "joints": {
+    "roof": {
+      "origin": [
+        36.0,
+        -76.0,
+        0.0
+      ],
+      "axis": [
+        0.0,
+        0.0,
+        -1.0
+      ],
+      "parent": "holder",
+      "child": "roof",
+      "kind": "revolute",
+      "connector": "4214 hinge snap_fgr@L9:I0 receives 4213 hinge snap_fgr@L9:I0"
+    }
+  },
+  "reference_checks": [
+    {
+      "model": "106-1.mpd",
+      "section": "(flattened main model)",
+      "parent": "holder",
+      "part": "roof",
+      "official_refs": [
+        "4214",
+        "4213"
+      ],
+      "position_offset_ldu": 0.0,
+      "rotation_offset": 0.0,
+      "note": ""
+    },
+    {
+      "model": "106-1.mpd",
+      "section": "(flattened main model)",
+      "parent": "windscreen",
+      "part": "holder",
+      "official_refs": [
+        "3823",
+        "4214"
+      ],
+      "position_offset_ldu": 0.0,
+      "rotation_offset": 0.0,
+      "note": ""
+    }
+  ]
+}

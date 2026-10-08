@@ -1,0 +1,126 @@
+{
+  "semantics": {
+    "door_l": {
+      "control": "door_l",
+      "value": 0.2,
+      "test_point": [
+        -7.0,
+        -33.0,
+        -16.0
+      ],
+      "displacement": [
+        -0.897004,
+        0.0,
+        -8.94012
+      ],
+      "expected": "-z",
+      "flipped": true
+    },
+    "door_r": {
+      "control": "door_r",
+      "value": 0.2,
+      "test_point": [
+        7.0,
+        -33.0,
+        -16.0
+      ],
+      "displacement": [
+        0.897004,
+        0.0,
+        -8.94012
+      ],
+      "expected": "-z",
+      "flipped": true
+    }
+  },
+  "contacts": {
+    "tested_parts": 4,
+    "contacts": 12,
+    "contacted_parts": 2,
+    "by_kind": {
+      "stud/stud_receptacle": 12
+    },
+    "axles": {
+      "selection": "Catalog descriptions beginning Technic Axle followed by a numeric length; excludes axle pins, joiners and axle-hole supports",
+      "total": 0,
+      "with_axle_hole_contact": 0,
+      "without_axle_hole_contact": []
+    }
+  },
+  "contact_pairs": {
+    "0-1": [
+      "stud/stud_receptacle",
+      "stud/stud_receptacle",
+      "stud/stud_receptacle",
+      "stud/stud_receptacle",
+      "stud/stud_receptacle",
+      "stud/stud_receptacle",
+      "stud/stud_receptacle",
+      "stud/stud_receptacle",
+      "stud/stud_receptacle",
+      "stud/stud_receptacle",
+      "stud/stud_receptacle",
+      "stud/stud_receptacle"
+    ]
+  },
+  "asymmetric_sample": {
+    "controls": {
+      "door_l": 1.197,
+      "door_r": 0.703
+    },
+    "transforms": {
+      "door_l": [
+        [
+          0.365152,
+          0.0,
+          0.930948,
+          -18.116919
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          -0.930948,
+          0.0,
+          0.365152,
+          -58.566851
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "door_r": [
+        [
+          0.762906,
+          0.0,
+          -0.646509,
+          1.984734
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.646509,
+          0.0,
+          0.762906,
+          -37.411987
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ]
+    }
+  }
+}

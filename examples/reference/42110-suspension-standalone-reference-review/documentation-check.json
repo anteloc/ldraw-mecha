@@ -1,0 +1,38 @@
+{
+  "pages": 7,
+  "links": 46,
+  "instance_references": 92,
+  "diagrams": [
+    {
+      "diagram": "README-1.mmd",
+      "passed": true,
+      "diagnostic": ""
+    },
+    {
+      "diagram": "animation-1.mmd",
+      "passed": true,
+      "diagnostic": ""
+    },
+    {
+      "diagram": "extraction-and-mounts-1.mmd",
+      "passed": true,
+      "diagnostic": ""
+    },
+    {
+      "diagram": "halfshafts-1.mmd",
+      "passed": true,
+      "diagnostic": ""
+    },
+    {
+      "diagram": "shocks-1.mmd",
+      "passed": true,
+      "diagnostic": ""
+    },
+    {
+      "diagram": "wishbones-and-links-1.mmd",
+      "passed": true,
+      "diagnostic": ""
+    }
+  ],
+  "passed": true
+}

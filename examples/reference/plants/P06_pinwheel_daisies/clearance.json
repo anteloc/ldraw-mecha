@@ -1,0 +1,41 @@
+{
+  "case": "P06_pinwheel_daisies",
+  "sweep": {
+    "no_new_surface_crossings": true,
+    "crossings": [],
+    "excluded_rest_pairs": [
+      "arm3-daisy3",
+      "arm1-daisy1",
+      "arm2-daisy2"
+    ]
+  },
+  "clip_poses": {
+    "samples": 180,
+    "every": 4,
+    "no_new_surface_crossings": true,
+    "crossings_by_clip": {},
+    "frames_with_crossings": {},
+    "vertex_penetration_by_clip": {},
+    "deep_shrink_ldu": 1.5,
+    "no_deep_crossings": true,
+    "deep_crossings_by_clip": {},
+    "frames_with_deep_crossings": {}
+  },
+  "roles": {
+    "0": "base",
+    "1": "post0",
+    "2": "post1",
+    "3": "arm1",
+    "4": "daisy1",
+    "5": "post2",
+    "6": "post3",
+    "7": "arm2",
+    "8": "daisy2",
+    "9": "post4",
+    "10": "post5",
+    "11": "arm3",
+    "12": "daisy3",
+    "13": "cap"
+  },
+  "coverage": "Sampled surface crossings only; excludes rigid-body and rest-contact pairs; containment untested"
+}

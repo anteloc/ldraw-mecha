@@ -1,0 +1,155 @@
+{
+  "section": "42083 - engine.ldr",
+  "coordinate_space": "selected section, LDU, -Y up",
+  "gears": [
+    {
+      "id": "68",
+      "ref": "24505.dat",
+      "teeth": 24,
+      "pitch_radius_ldu": 30.0,
+      "center": [
+        0.0,
+        50.0,
+        200.0
+      ],
+      "axis": [
+        0.0,
+        0.0,
+        -1.0
+      ]
+    },
+    {
+      "id": "82",
+      "ref": "32270.dat",
+      "teeth": 12,
+      "pitch_radius_ldu": 15.0,
+      "center": [
+        0.0,
+        50.0,
+        -40.0
+      ],
+      "axis": [
+        0.0,
+        0.0,
+        -1.0
+      ]
+    },
+    {
+      "id": "83",
+      "ref": "18575.dat",
+      "teeth": 20,
+      "pitch_radius_ldu": 25.0,
+      "center": [
+        0.0,
+        90.0,
+        -40.0
+      ],
+      "axis": [
+        0.0,
+        0.0,
+        -1.0
+      ]
+    },
+    {
+      "id": "84/16",
+      "ref": "24505.dat",
+      "teeth": 24,
+      "pitch_radius_ldu": 30.0,
+      "center": [
+        -35.99999999999999,
+        98.0,
+        200.0
+      ],
+      "axis": [
+        0.0,
+        0.0,
+        1.0
+      ]
+    },
+    {
+      "id": "85/16",
+      "ref": "24505.dat",
+      "teeth": 24,
+      "pitch_radius_ldu": 30.0,
+      "center": [
+        35.99999999999999,
+        98.0,
+        200.0
+      ],
+      "axis": [
+        0.0,
+        0.0,
+        1.0
+      ]
+    }
+  ],
+  "worms": [],
+  "meshes": [
+    {
+      "a": "68",
+      "b": "84/16",
+      "kind": "gear_mesh",
+      "status": "candidate",
+      "center_distance_ldu": 59.99999999999999,
+      "expected_distance_ldu": 60.0,
+      "distance_error_ldu": 7.105427357601002e-15,
+      "plane_error_ldu": 0.0,
+      "angle_degrees": 0.0,
+      "b_per_a": 1.0
+    },
+    {
+      "a": "68",
+      "b": "85/16",
+      "kind": "gear_mesh",
+      "status": "candidate",
+      "center_distance_ldu": 59.99999999999999,
+      "expected_distance_ldu": 60.0,
+      "distance_error_ldu": 7.105427357601002e-15,
+      "plane_error_ldu": 0.0,
+      "angle_degrees": 0.0,
+      "b_per_a": 1.0
+    },
+    {
+      "a": "82",
+      "b": "83",
+      "kind": "gear_mesh",
+      "status": "candidate",
+      "center_distance_ldu": 40.0,
+      "expected_distance_ldu": 40.0,
+      "distance_error_ldu": 0.0,
+      "plane_error_ldu": 0.0,
+      "angle_degrees": 0.0,
+      "b_per_a": -0.6
+    }
+  ],
+  "unsupported": [],
+  "placements": {
+    "policy": "Nearest orthogonal analysis frame within rounding_limit; source translations and handedness preserved",
+    "rounding_limit": 0.002,
+    "counts": {
+      "normalized": 2,
+      "unchanged": 3
+    },
+    "affected": [
+      {
+        "id": "68",
+        "status": "normalized",
+        "reflected": false,
+        "max_scale_error": 0.00011849297970689676,
+        "max_coefficient_change": 0.00011445065679760447
+      },
+      {
+        "id": "82",
+        "status": "normalized",
+        "reflected": false,
+        "max_scale_error": 0.00011849297970689676,
+        "max_coefficient_change": 0.00011445065679760447
+      }
+    ]
+  },
+  "tolerances": {
+    "distance_ldu": 0.5,
+    "angle_degrees": 1.0
+  },
+  "coverage": "Candidates for coplanar external gears and reviewed finite perpendicular worm/spur pairs. b_per_a uses reported axes for parallel meshes only; worm ratios are magnitudes, direction requires review. Tooth phase, engagement, backlash, backdriving and collision untested. Unsupported gears are listed, not inferred."
+}

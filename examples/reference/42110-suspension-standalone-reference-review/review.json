@@ -1,0 +1,1908 @@
+{
+  "date": "2026-10-06",
+  "validation": {
+    "valid": true,
+    "status": "ready",
+    "moving_parts": 117,
+    "bodies": 50,
+    "signals": 44,
+    "checks": 48
+  },
+  "plan_digest": "c082e30bbfdea1b183324510cd60c5f29a3318028d88f4b5219340ab208870c6",
+  "source_sha256": "30c62143630438e51b3a6bfa83b78fffc4f8fe06b6b6898b3904944d5f33fc16",
+  "full_builder_matches": {
+    "controls": true,
+    "signals": true,
+    "bodies": true,
+    "anchors": true,
+    "checks": true
+  },
+  "remapped_motion_matches": {
+    "controls": true,
+    "signals": true,
+    "bodies": true,
+    "anchors": true,
+    "checks": true
+  },
+  "extraction": {
+    "parts": 259,
+    "max_world_matrix_error": 5.684341886080802e-14,
+    "counts": {
+      "moving": 117,
+      "mount": 38,
+      "frame": 104
+    }
+  },
+  "corners": {
+    "fl": {
+      "roles": {
+        "upper": "26",
+        "lower": "11",
+        "bearing": "30",
+        "yoke": "14",
+        "wheel": [
+          "38",
+          "251",
+          "252"
+        ],
+        "links": [
+          "77"
+        ],
+        "shocks": [
+          {
+            "rod": "56",
+            "cylinder": "57",
+            "spring": "58"
+          },
+          {
+            "rod": "59",
+            "cylinder": "60",
+            "spring": "61"
+          }
+        ]
+      },
+      "source_roles": {
+        "label": "Front left",
+        "upper": "0/0/53",
+        "lower": "0/0/20",
+        "bearing": "0/0/57",
+        "wheel": [
+          "0/0/65",
+          "0/380",
+          "0/381"
+        ],
+        "yoke": "0/0/27/19",
+        "links": [
+          "0/0/111/12"
+        ],
+        "shocks": [
+          "0/0/79",
+          "0/0/80"
+        ]
+      },
+      "geometry": {
+        "label": "Front left",
+        "pivots": {
+          "upper": [
+            80.0,
+            -165.04,
+            -299.76
+          ],
+          "lower": [
+            80.0,
+            -85.04,
+            -300.0
+          ]
+        },
+        "balls": {
+          "upper": [
+            177.812325,
+            -144.237472,
+            -299.822408
+          ],
+          "lower": [
+            177.812325,
+            -64.237472,
+            -300.062408
+          ]
+        },
+        "axis": [
+          0.0,
+          -0.003,
+          -0.999996
+        ],
+        "arm_vector": [
+          97.812325,
+          20.802528,
+          -0.062408
+        ],
+        "arm_vector_upper": [
+          97.812325,
+          20.802528,
+          -0.062408
+        ],
+        "arm_length": 100.0,
+        "uj_centre": [
+          80.0,
+          -125.04,
+          -299.88
+        ],
+        "cv_centre": [
+          177.81,
+          -104.228,
+          -299.942436
+        ],
+        "coupler_holes": [
+          [
+            158.24986,
+            -68.397978,
+            -300.049926
+          ],
+          [
+            158.24986,
+            -148.397978,
+            -299.809926
+          ]
+        ],
+        "shocks": [
+          {
+            "shock": "0/0/79",
+            "top": [
+              100.0,
+              -265.04,
+              -299.46
+            ],
+            "eye": [
+              119.14,
+              -156.69,
+              -299.78505
+            ],
+            "free_length": 110.028,
+            "out_of_plane": -0.0,
+            "spring": "0/0/79/2",
+            "spring_length": 44.0,
+            "spring_seat_from_top": 56.0143
+          },
+          {
+            "shock": "0/0/80",
+            "top": [
+              100.0,
+              -264.95,
+              -269.46
+            ],
+            "eye": [
+              119.14,
+              -156.6,
+              -269.78505
+            ],
+            "free_length": 110.028,
+            "out_of_plane": -0.0,
+            "spring": "0/0/80/2",
+            "spring_length": 44.0,
+            "spring_seat_from_top": 56.0143
+          }
+        ],
+        "travel_for_max_compression": 40.749,
+        "dangling_clusters": {
+          "lower": [
+            "0/0/83",
+            "0/0/84",
+            "0/0/85",
+            "0/0/86"
+          ],
+          "upper": [],
+          "knuckle": []
+        },
+        "members": {
+          "lower": [
+            "0/0/20",
+            "0/0/81",
+            "0/0/82",
+            "0/0/83",
+            "0/0/84",
+            "0/0/85",
+            "0/0/86"
+          ],
+          "upper": [
+            "0/0/53",
+            "0/0/78"
+          ],
+          "knuckle": [
+            "0/0/55",
+            "0/0/56",
+            "0/0/57",
+            "0/0/58",
+            "0/0/65",
+            "0/380",
+            "0/381"
+          ],
+          "coupler": [
+            "0/0/67",
+            "0/0/68",
+            "0/0/69",
+            "0/0/70"
+          ],
+          "halfshaft": [
+            "0/0/27/19",
+            "0/0/27/22",
+            "0/0/27/24",
+            "0/0/59"
+          ]
+        },
+        "travel_limit": 30.5
+      },
+      "basis": {
+        "e1": [
+          1.0000000000000002,
+          0.0,
+          0.0
+        ],
+        "e2": [
+          0.0,
+          -0.999995500030375,
+          0.0029999865000911257
+        ],
+        "normal": [
+          0.0,
+          -0.002999986500091125,
+          -0.9999955000303749
+        ],
+        "vx": 97.81232512949842,
+        "vy": -20.80262129543524
+      }
+    },
+    "fr": {
+      "roles": {
+        "upper": "27",
+        "lower": "10",
+        "bearing": "35",
+        "yoke": "12",
+        "wheel": [
+          "39",
+          "258",
+          "257"
+        ],
+        "links": [
+          "76"
+        ],
+        "shocks": [
+          {
+            "rod": "49",
+            "cylinder": "50",
+            "spring": "51"
+          },
+          {
+            "rod": "52",
+            "cylinder": "53",
+            "spring": "54"
+          }
+        ]
+      },
+      "source_roles": {
+        "label": "Front right",
+        "upper": "0/0/54",
+        "lower": "0/0/19",
+        "bearing": "0/0/62",
+        "wheel": [
+          "0/0/66",
+          "0/387",
+          "0/386"
+        ],
+        "yoke": "0/0/27/16",
+        "links": [
+          "0/0/111/11"
+        ],
+        "shocks": [
+          "0/0/76",
+          "0/0/77"
+        ]
+      },
+      "geometry": {
+        "label": "Front right",
+        "pivots": {
+          "upper": [
+            -80.0,
+            -165.04,
+            -299.76
+          ],
+          "lower": [
+            -80.0,
+            -85.04,
+            -300.0
+          ]
+        },
+        "balls": {
+          "upper": [
+            -177.812325,
+            -144.237472,
+            -299.822408
+          ],
+          "lower": [
+            -177.812325,
+            -64.237472,
+            -300.062408
+          ]
+        },
+        "axis": [
+          0.0,
+          0.003,
+          0.999996
+        ],
+        "arm_vector": [
+          -97.812325,
+          20.802528,
+          -0.062408
+        ],
+        "arm_vector_upper": [
+          -97.812325,
+          20.802528,
+          -0.062408
+        ],
+        "arm_length": 100.0,
+        "uj_centre": [
+          -80.0,
+          -125.04,
+          -299.88
+        ],
+        "cv_centre": [
+          -177.81,
+          -104.228,
+          -299.942436
+        ],
+        "coupler_holes": [
+          [
+            -158.24986,
+            -68.397978,
+            -300.049926
+          ],
+          [
+            -158.24986,
+            -148.397978,
+            -299.809926
+          ]
+        ],
+        "shocks": [
+          {
+            "shock": "0/0/76",
+            "top": [
+              -100.0,
+              -265.04,
+              -299.46
+            ],
+            "eye": [
+              -119.14,
+              -156.69,
+              -299.78505
+            ],
+            "free_length": 110.028,
+            "out_of_plane": 0.0,
+            "spring": "0/0/76/2",
+            "spring_length": 44.0,
+            "spring_seat_from_top": 56.0143
+          },
+          {
+            "shock": "0/0/77",
+            "top": [
+              -100.0,
+              -264.95,
+              -269.46
+            ],
+            "eye": [
+              -119.14,
+              -156.6,
+              -269.78505
+            ],
+            "free_length": 110.028,
+            "out_of_plane": 0.0,
+            "spring": "0/0/77/2",
+            "spring_length": 44.0,
+            "spring_seat_from_top": 56.0143
+          }
+        ],
+        "travel_for_max_compression": 40.749,
+        "dangling_clusters": {
+          "lower": [
+            "0/0/89",
+            "0/0/90",
+            "0/0/91",
+            "0/0/92"
+          ],
+          "upper": [],
+          "knuckle": []
+        },
+        "members": {
+          "lower": [
+            "0/0/19",
+            "0/0/87",
+            "0/0/88",
+            "0/0/89",
+            "0/0/90",
+            "0/0/91",
+            "0/0/92"
+          ],
+          "upper": [
+            "0/0/54",
+            "0/0/75"
+          ],
+          "knuckle": [
+            "0/0/60",
+            "0/0/61",
+            "0/0/62",
+            "0/0/63",
+            "0/0/66",
+            "0/386",
+            "0/387"
+          ],
+          "coupler": [
+            "0/0/71",
+            "0/0/72",
+            "0/0/73",
+            "0/0/74"
+          ],
+          "halfshaft": [
+            "0/0/27/16",
+            "0/0/27/21",
+            "0/0/27/23",
+            "0/0/64"
+          ]
+        },
+        "travel_limit": 30.5
+      },
+      "basis": {
+        "e1": [
+          -1.0000000000000002,
+          0.0,
+          0.0
+        ],
+        "e2": [
+          0.0,
+          -0.999995500030375,
+          0.0029999865000911257
+        ],
+        "normal": [
+          0.0,
+          0.002999986500091125,
+          0.9999955000303749
+        ],
+        "vx": 97.81232512949842,
+        "vy": -20.80262129543524
+      }
+    },
+    "rl": {
+      "roles": {
+        "upper": "117",
+        "lower": "98",
+        "bearing": "118",
+        "yoke": "79",
+        "wheel": [
+          "121",
+          "253",
+          "254"
+        ],
+        "links": [
+          "109",
+          "110"
+        ],
+        "shocks": [
+          {
+            "rod": "174",
+            "cylinder": "175",
+            "spring": "176"
+          },
+          {
+            "rod": "178",
+            "cylinder": "179",
+            "spring": "180"
+          }
+        ]
+      },
+      "source_roles": {
+        "label": "Rear left",
+        "upper": "0/1/88",
+        "lower": "0/1/47",
+        "bearing": "0/1/89",
+        "wheel": [
+          "0/1/92",
+          "0/382",
+          "0/383"
+        ],
+        "yoke": "0/1/16",
+        "links": [
+          "0/1/70",
+          "0/1/71"
+        ],
+        "shocks": [
+          "0/1/227",
+          "0/1/229"
+        ]
+      },
+      "geometry": {
+        "label": "Rear left",
+        "pivots": {
+          "upper": [
+            80.0,
+            -163.3,
+            280.24
+          ],
+          "lower": [
+            80.0,
+            -83.3,
+            280.0
+          ]
+        },
+        "balls": {
+          "upper": [
+            177.812325,
+            -142.497472,
+            280.177592
+          ],
+          "lower": [
+            177.812325,
+            -62.497472,
+            279.937592
+          ]
+        },
+        "axis": [
+          0.0,
+          -0.003,
+          -0.999996
+        ],
+        "arm_vector": [
+          97.812325,
+          20.802528,
+          -0.062408
+        ],
+        "arm_vector_upper": [
+          97.812325,
+          20.802528,
+          -0.062408
+        ],
+        "arm_length": 100.0,
+        "uj_centre": [
+          80.0,
+          -123.3,
+          280.12
+        ],
+        "cv_centre": [
+          177.81,
+          -102.488,
+          280.057564
+        ],
+        "coupler_holes": [
+          [
+            158.24986,
+            -66.657978,
+            279.950074
+          ],
+          [
+            158.24986,
+            -146.657978,
+            280.190074
+          ]
+        ],
+        "shocks": [
+          {
+            "shock": "0/1/227",
+            "top": [
+              100.0,
+              -263.3,
+              280.54
+            ],
+            "eye": [
+              119.14,
+              -154.95,
+              280.21495
+            ],
+            "free_length": 110.028,
+            "out_of_plane": -0.0,
+            "spring": "0/1/227/2",
+            "spring_length": 44.0,
+            "spring_seat_from_top": 56.0143
+          },
+          {
+            "shock": "0/1/229",
+            "top": [
+              100.0,
+              -263.21,
+              310.54
+            ],
+            "eye": [
+              119.14,
+              -154.86,
+              310.21495
+            ],
+            "free_length": 110.028,
+            "out_of_plane": -0.0,
+            "spring": "0/1/229/2",
+            "spring_length": 44.0,
+            "spring_seat_from_top": 56.0143
+          }
+        ],
+        "travel_for_max_compression": 40.749,
+        "dangling_clusters": {
+          "lower": [],
+          "upper": [],
+          "knuckle": []
+        },
+        "members": {
+          "lower": [
+            "0/1/47"
+          ],
+          "upper": [
+            "0/1/88",
+            "0/1/228"
+          ],
+          "knuckle": [
+            "0/1/89",
+            "0/1/90",
+            "0/1/91",
+            "0/1/92",
+            "0/1/94",
+            "0/1/95",
+            "0/382",
+            "0/383"
+          ],
+          "coupler": [
+            "0/1/105",
+            "0/1/106",
+            "0/1/109",
+            "0/1/110"
+          ],
+          "halfshaft": [
+            "0/1/16",
+            "0/1/23",
+            "0/1/24",
+            "0/1/93"
+          ]
+        },
+        "travel_limit": 40.5
+      },
+      "basis": {
+        "e1": [
+          1.0000000000000002,
+          0.0,
+          0.0
+        ],
+        "e2": [
+          0.0,
+          -0.999995500030375,
+          0.0029999865000911257
+        ],
+        "normal": [
+          0.0,
+          -0.002999986500091125,
+          -0.9999955000303749
+        ],
+        "vx": 97.81232512949842,
+        "vy": -20.80262129543524
+      }
+    },
+    "rr": {
+      "roles": {
+        "upper": "133",
+        "lower": "93",
+        "bearing": "125",
+        "yoke": "81",
+        "wheel": [
+          "128",
+          "256",
+          "255"
+        ],
+        "links": [
+          "111",
+          "112"
+        ],
+        "shocks": [
+          {
+            "rod": "187",
+            "cylinder": "188",
+            "spring": "189"
+          },
+          {
+            "rod": "190",
+            "cylinder": "191",
+            "spring": "192"
+          }
+        ]
+      },
+      "source_roles": {
+        "label": "Rear right",
+        "upper": "0/1/104",
+        "lower": "0/1/39",
+        "bearing": "0/1/96",
+        "wheel": [
+          "0/1/99",
+          "0/385",
+          "0/384"
+        ],
+        "yoke": "0/1/20",
+        "links": [
+          "0/1/72",
+          "0/1/73"
+        ],
+        "shocks": [
+          "0/1/236",
+          "0/1/237"
+        ]
+      },
+      "geometry": {
+        "label": "Rear right",
+        "pivots": {
+          "upper": [
+            -80.0,
+            -163.3,
+            280.24
+          ],
+          "lower": [
+            -80.0,
+            -83.3,
+            280.0
+          ]
+        },
+        "balls": {
+          "upper": [
+            -177.812325,
+            -142.497472,
+            280.177592
+          ],
+          "lower": [
+            -177.812325,
+            -62.497472,
+            279.937592
+          ]
+        },
+        "axis": [
+          0.0,
+          0.003,
+          0.999996
+        ],
+        "arm_vector": [
+          -97.812325,
+          20.802528,
+          -0.062408
+        ],
+        "arm_vector_upper": [
+          -97.812325,
+          20.802528,
+          -0.062408
+        ],
+        "arm_length": 100.0,
+        "uj_centre": [
+          -80.0,
+          -123.3,
+          280.12
+        ],
+        "cv_centre": [
+          -177.81,
+          -102.488,
+          280.057564
+        ],
+        "coupler_holes": [
+          [
+            -158.24986,
+            -66.657978,
+            279.950074
+          ],
+          [
+            -158.24986,
+            -146.657978,
+            280.190074
+          ]
+        ],
+        "shocks": [
+          {
+            "shock": "0/1/236",
+            "top": [
+              -100.0,
+              -263.3,
+              280.54
+            ],
+            "eye": [
+              -119.14,
+              -154.95,
+              280.21495
+            ],
+            "free_length": 110.028,
+            "out_of_plane": 0.0,
+            "spring": "0/1/236/2",
+            "spring_length": 44.0,
+            "spring_seat_from_top": 56.0143
+          },
+          {
+            "shock": "0/1/237",
+            "top": [
+              -100.0,
+              -263.21,
+              310.54
+            ],
+            "eye": [
+              -119.14,
+              -154.86,
+              310.21495
+            ],
+            "free_length": 110.028,
+            "out_of_plane": 0.0,
+            "spring": "0/1/237/2",
+            "spring_length": 44.0,
+            "spring_seat_from_top": 56.0143
+          }
+        ],
+        "travel_for_max_compression": 40.749,
+        "dangling_clusters": {
+          "lower": [],
+          "upper": [],
+          "knuckle": []
+        },
+        "members": {
+          "lower": [
+            "0/1/39"
+          ],
+          "upper": [
+            "0/1/104",
+            "0/1/232"
+          ],
+          "knuckle": [
+            "0/1/96",
+            "0/1/97",
+            "0/1/98",
+            "0/1/99",
+            "0/1/101",
+            "0/1/102",
+            "0/384",
+            "0/385"
+          ],
+          "coupler": [
+            "0/1/107",
+            "0/1/108",
+            "0/1/111",
+            "0/1/112"
+          ],
+          "halfshaft": [
+            "0/1/20",
+            "0/1/21",
+            "0/1/22",
+            "0/1/25",
+            "0/1/100"
+          ]
+        },
+        "travel_limit": 40.5
+      },
+      "basis": {
+        "e1": [
+          -1.0000000000000002,
+          0.0,
+          0.0
+        ],
+        "e2": [
+          0.0,
+          -0.999995500030375,
+          0.0029999865000911257
+        ],
+        "normal": [
+          0.0,
+          0.002999986500091125,
+          0.9999955000303749
+        ],
+        "vx": 97.81232512949842,
+        "vy": -20.80262129543524
+      }
+    }
+  },
+  "samples": [
+    {
+      "controls": {
+        "travel_fl": 0.0,
+        "travel_fr": 0.0,
+        "travel_rl": 0.0,
+        "travel_rr": 0.0
+      },
+      "max_closure_error": 4.909183815016149e-07,
+      "angles": {
+        "fl": 0.0,
+        "fr": 0.0,
+        "rl": 0.0,
+        "rr": 0.0
+      },
+      "compression": {
+        "fl": -1.4210854715202004e-14,
+        "fr": -1.4210854715202004e-14,
+        "rl": -1.4210854715202004e-14,
+        "rr": -1.4210854715202004e-14
+      },
+      "spring_scale": {
+        "fl": 1.0000000000000002,
+        "fr": 1.0000000000000002,
+        "rl": 1.0000000000000002,
+        "rr": 1.0000000000000002
+      }
+    },
+    {
+      "controls": {
+        "travel_fl": 30.5,
+        "travel_fr": 30.5,
+        "travel_rl": 40.5,
+        "travel_rr": 40.5
+      },
+      "max_closure_error": 0.003841865183602522,
+      "angles": {
+        "fl": 0.3066830150567247,
+        "fr": 0.3066830150567247,
+        "rl": 0.4078268655618983,
+        "rr": 0.4078268655618983
+      },
+      "compression": {
+        "fl": 11.858828314283869,
+        "fr": 11.858828314283869,
+        "rl": 15.89825425761272,
+        "rr": 15.89825425761272
+      },
+      "spring_scale": {
+        "fl": 0.7304811746753667,
+        "fr": 0.7304811746753667,
+        "rl": 0.6386760395997109,
+        "rr": 0.6386760395997109
+      }
+    },
+    {
+      "controls": {
+        "travel_fl": 9.15,
+        "travel_fr": 30.5,
+        "travel_rl": 0.0,
+        "travel_rr": 28.349999999999998
+      },
+      "max_closure_error": 0.0029292191519658672,
+      "angles": {
+        "fl": 0.09276504913684168,
+        "fr": 0.3066830150567247,
+        "rl": 0.0,
+        "rr": 0.285102217129718
+      },
+      "compression": {
+        "fl": 3.4932836655659827,
+        "fr": 11.858828314283869,
+        "rl": -1.4210854715202004e-14,
+        "rr": 11.001092179956302
+      },
+      "spring_scale": {
+        "fl": 0.9206071894189549,
+        "fr": 0.7304811746753667,
+        "rl": 1.0000000000000002,
+        "rr": 0.7499751777282658
+      }
+    },
+    {
+      "controls": {
+        "travel_fl": 27.45,
+        "travel_fr": 1.5250000000000001,
+        "travel_rl": 24.3,
+        "travel_rr": 10.125
+      },
+      "max_closure_error": 0.002646128513902113,
+      "angles": {
+        "fl": 0.27607943230667653,
+        "fr": 0.015565945390714181,
+        "rl": 0.2445375130885617,
+        "rr": 0.10257643585038671
+      },
+      "compression": {
+        "fl": 10.64312528771437,
+        "fr": 0.5789091689620705,
+        "rl": 9.395183990362483,
+        "rr": 3.868464420414554
+      },
+      "spring_scale": {
+        "fl": 0.7581107889155825,
+        "fr": 0.9868429734326802,
+        "rl": 0.7864730911281254,
+        "rr": 0.9120803540814874
+      }
+    }
+  ],
+  "sweep": {
+    "passed": true,
+    "samples": 196,
+    "max_error": 0.003841865183602522
+  },
+  "timeline": {
+    "frames": 612,
+    "fps": 24,
+    "closures_every_frame": true,
+    "continuity": {
+      "limits_per_frame": {
+        "revolute": 0.2,
+        "prismatic": 3.0,
+        "stretch": 0.1
+      },
+      "worst": {
+        "revolute": [
+          [
+            0.03140862305707143,
+            "th_rr",
+            "revolute",
+            513
+          ],
+          [
+            0.03140862305707143,
+            "th_rl",
+            "revolute",
+            453
+          ],
+          [
+            0.020407696637492728,
+            "th_fr",
+            "revolute",
+            498
+          ],
+          [
+            0.020407696637492728,
+            "th_fl",
+            "revolute",
+            438
+          ]
+        ],
+        "prismatic": [
+          [
+            1.2388892398526252,
+            "ext_rr0",
+            "prismatic",
+            513
+          ],
+          [
+            1.2388892398526252,
+            "ext_rl0",
+            "prismatic",
+            453
+          ],
+          [
+            1.238889239852611,
+            "ext_rr1",
+            "prismatic",
+            513
+          ],
+          [
+            1.238889239852611,
+            "ext_rl1",
+            "prismatic",
+            453
+          ]
+        ],
+        "stretch": [
+          [
+            0.02815657363301416,
+            "k_rr0",
+            "stretch",
+            513
+          ],
+          [
+            0.02815657363301416,
+            "k_rl0",
+            "stretch",
+            453
+          ],
+          [
+            0.028156573633013826,
+            "k_rr1",
+            "stretch",
+            513
+          ],
+          [
+            0.028156573633013826,
+            "k_rl1",
+            "stretch",
+            453
+          ]
+        ]
+      },
+      "violations": {},
+      "passed": true
+    }
+  },
+  "max_spring_endpoint_error_ldu": 1.3406493525361332e-13,
+  "bodies": {
+    "lower_fl": {
+      "instances": [
+        "11",
+        "62",
+        "63",
+        "64",
+        "65",
+        "66",
+        "67"
+      ],
+      "kind": "revolute",
+      "parent": null
+    },
+    "upper_fl": {
+      "instances": [
+        "26",
+        "55"
+      ],
+      "kind": "revolute",
+      "parent": null
+    },
+    "knuckle_fl": {
+      "instances": [
+        "28",
+        "29",
+        "30",
+        "31",
+        "38",
+        "251",
+        "252"
+      ],
+      "kind": "revolute",
+      "parent": "lower_fl"
+    },
+    "coupler_fl": {
+      "instances": [
+        "40",
+        "41",
+        "42",
+        "43"
+      ],
+      "kind": "revolute",
+      "parent": "lower_fl"
+    },
+    "halfshaft_fl": {
+      "instances": [
+        "14",
+        "17",
+        "19",
+        "32"
+      ],
+      "kind": "revolute",
+      "parent": null
+    },
+    "link_fl0": {
+      "instances": [
+        "77"
+      ],
+      "kind": "revolute",
+      "parent": null
+    },
+    "cyl_fl0": {
+      "instances": [
+        "57"
+      ],
+      "kind": "revolute",
+      "parent": null
+    },
+    "rod_fl0": {
+      "instances": [
+        "56"
+      ],
+      "kind": "prismatic",
+      "parent": "cyl_fl0"
+    },
+    "spring_fl0": {
+      "instances": [
+        "58"
+      ],
+      "kind": "stretch",
+      "parent": "cyl_fl0"
+    },
+    "cyl_fl1": {
+      "instances": [
+        "60"
+      ],
+      "kind": "revolute",
+      "parent": null
+    },
+    "rod_fl1": {
+      "instances": [
+        "59"
+      ],
+      "kind": "prismatic",
+      "parent": "cyl_fl1"
+    },
+    "spring_fl1": {
+      "instances": [
+        "61"
+      ],
+      "kind": "stretch",
+      "parent": "cyl_fl1"
+    },
+    "lower_fr": {
+      "instances": [
+        "10",
+        "68",
+        "69",
+        "70",
+        "71",
+        "72",
+        "73"
+      ],
+      "kind": "revolute",
+      "parent": null
+    },
+    "upper_fr": {
+      "instances": [
+        "27",
+        "48"
+      ],
+      "kind": "revolute",
+      "parent": null
+    },
+    "knuckle_fr": {
+      "instances": [
+        "33",
+        "34",
+        "35",
+        "36",
+        "39",
+        "257",
+        "258"
+      ],
+      "kind": "revolute",
+      "parent": "lower_fr"
+    },
+    "coupler_fr": {
+      "instances": [
+        "44",
+        "45",
+        "46",
+        "47"
+      ],
+      "kind": "revolute",
+      "parent": "lower_fr"
+    },
+    "halfshaft_fr": {
+      "instances": [
+        "12",
+        "16",
+        "18",
+        "37"
+      ],
+      "kind": "revolute",
+      "parent": null
+    },
+    "link_fr0": {
+      "instances": [
+        "76"
+      ],
+      "kind": "revolute",
+      "parent": null
+    },
+    "cyl_fr0": {
+      "instances": [
+        "50"
+      ],
+      "kind": "revolute",
+      "parent": null
+    },
+    "rod_fr0": {
+      "instances": [
+        "49"
+      ],
+      "kind": "prismatic",
+      "parent": "cyl_fr0"
+    },
+    "spring_fr0": {
+      "instances": [
+        "51"
+      ],
+      "kind": "stretch",
+      "parent": "cyl_fr0"
+    },
+    "cyl_fr1": {
+      "instances": [
+        "53"
+      ],
+      "kind": "revolute",
+      "parent": null
+    },
+    "rod_fr1": {
+      "instances": [
+        "52"
+      ],
+      "kind": "prismatic",
+      "parent": "cyl_fr1"
+    },
+    "spring_fr1": {
+      "instances": [
+        "54"
+      ],
+      "kind": "stretch",
+      "parent": "cyl_fr1"
+    },
+    "lower_rl": {
+      "instances": [
+        "98"
+      ],
+      "kind": "revolute",
+      "parent": null
+    },
+    "upper_rl": {
+      "instances": [
+        "117",
+        "177"
+      ],
+      "kind": "revolute",
+      "parent": null
+    },
+    "knuckle_rl": {
+      "instances": [
+        "118",
+        "119",
+        "120",
+        "121",
+        "123",
+        "124",
+        "253",
+        "254"
+      ],
+      "kind": "revolute",
+      "parent": "lower_rl"
+    },
+    "coupler_rl": {
+      "instances": [
+        "134",
+        "135",
+        "138",
+        "139"
+      ],
+      "kind": "revolute",
+      "parent": "lower_rl"
+    },
+    "halfshaft_rl": {
+      "instances": [
+        "79",
+        "84",
+        "85",
+        "122"
+      ],
+      "kind": "revolute",
+      "parent": null
+    },
+    "link_rl0": {
+      "instances": [
+        "109"
+      ],
+      "kind": "revolute",
+      "parent": null
+    },
+    "link_rl1": {
+      "instances": [
+        "110"
+      ],
+      "kind": "revolute",
+      "parent": null
+    },
+    "cyl_rl0": {
+      "instances": [
+        "175"
+      ],
+      "kind": "revolute",
+      "parent": null
+    },
+    "rod_rl0": {
+      "instances": [
+        "174"
+      ],
+      "kind": "prismatic",
+      "parent": "cyl_rl0"
+    },
+    "spring_rl0": {
+      "instances": [
+        "176"
+      ],
+      "kind": "stretch",
+      "parent": "cyl_rl0"
+    },
+    "cyl_rl1": {
+      "instances": [
+        "179"
+      ],
+      "kind": "revolute",
+      "parent": null
+    },
+    "rod_rl1": {
+      "instances": [
+        "178"
+      ],
+      "kind": "prismatic",
+      "parent": "cyl_rl1"
+    },
+    "spring_rl1": {
+      "instances": [
+        "180"
+      ],
+      "kind": "stretch",
+      "parent": "cyl_rl1"
+    },
+    "lower_rr": {
+      "instances": [
+        "93"
+      ],
+      "kind": "revolute",
+      "parent": null
+    },
+    "upper_rr": {
+      "instances": [
+        "133",
+        "183"
+      ],
+      "kind": "revolute",
+      "parent": null
+    },
+    "knuckle_rr": {
+      "instances": [
+        "125",
+        "126",
+        "127",
+        "128",
+        "130",
+        "131",
+        "255",
+        "256"
+      ],
+      "kind": "revolute",
+      "parent": "lower_rr"
+    },
+    "coupler_rr": {
+      "instances": [
+        "136",
+        "137",
+        "140",
+        "141"
+      ],
+      "kind": "revolute",
+      "parent": "lower_rr"
+    },
+    "halfshaft_rr": {
+      "instances": [
+        "81",
+        "82",
+        "83",
+        "86",
+        "129"
+      ],
+      "kind": "revolute",
+      "parent": null
+    },
+    "link_rr0": {
+      "instances": [
+        "111"
+      ],
+      "kind": "revolute",
+      "parent": null
+    },
+    "link_rr1": {
+      "instances": [
+        "112"
+      ],
+      "kind": "revolute",
+      "parent": null
+    },
+    "cyl_rr0": {
+      "instances": [
+        "188"
+      ],
+      "kind": "revolute",
+      "parent": null
+    },
+    "rod_rr0": {
+      "instances": [
+        "187"
+      ],
+      "kind": "prismatic",
+      "parent": "cyl_rr0"
+    },
+    "spring_rr0": {
+      "instances": [
+        "189"
+      ],
+      "kind": "stretch",
+      "parent": "cyl_rr0"
+    },
+    "cyl_rr1": {
+      "instances": [
+        "191"
+      ],
+      "kind": "revolute",
+      "parent": null
+    },
+    "rod_rr1": {
+      "instances": [
+        "190"
+      ],
+      "kind": "prismatic",
+      "parent": "cyl_rr1"
+    },
+    "spring_rr1": {
+      "instances": [
+        "192"
+      ],
+      "kind": "stretch",
+      "parent": "cyl_rr1"
+    }
+  },
+  "coupling_evidence": {
+    "susp_ball_0_0_111_12_0_0_58": {
+      "a": "0/0/111/12",
+      "b": "0/0/58",
+      "kind": "ball",
+      "status": "reviewed",
+      "evidence": "Steering-link socket on the knuckle towball (generic connectors).",
+      "review": "Link 100.000 LDU, parallel to the wishbones: no bump steer. Socket-to-ball offset in the source: 0.010 LDU; closure uses the socket point.",
+      "measurements": {}
+    },
+    "susp_revolute_0_0_79_1_0_44": {
+      "a": "0/0/79/1",
+      "b": "0/44",
+      "kind": "revolute",
+      "status": "reviewed",
+      "evidence": "Cylinder eye on a frame axle (connector line).",
+      "review": "Cylinder pivots about the frame pin, parallel to the wishbone axis.",
+      "measurements": {}
+    },
+    "susp_revolute_0_0_79_0_0_0_78": {
+      "a": "0/0/79/0",
+      "b": "0/0/78",
+      "kind": "revolute",
+      "status": "reviewed",
+      "evidence": "Rod eye on the axle locked in the upper wishbone.",
+      "review": "Eye 40.021 LDU from the upper pivot, on the arm line.",
+      "measurements": {}
+    },
+    "susp_revolute_0_0_80_1_0_45": {
+      "a": "0/0/80/1",
+      "b": "0/45",
+      "kind": "revolute",
+      "status": "reviewed",
+      "evidence": "Cylinder eye on a frame axle (connector line).",
+      "review": "Cylinder pivots about the frame pin, parallel to the wishbone axis.",
+      "measurements": {}
+    },
+    "susp_revolute_0_0_80_0_0_0_78": {
+      "a": "0/0/80/0",
+      "b": "0/0/78",
+      "kind": "revolute",
+      "status": "reviewed",
+      "evidence": "Rod eye on the axle locked in the upper wishbone.",
+      "review": "Eye 50.017 LDU from the upper pivot, on the arm line.",
+      "measurements": {}
+    },
+    "susp_revolute_0_0_53_0_0_51": {
+      "a": "0/0/53",
+      "b": "0/0/51",
+      "kind": "revolute",
+      "status": "reviewed",
+      "evidence": "Wishbone inner pin holes on a frame axle (connector line).",
+      "review": "Pivot axis parallel to the other wishbone; arm length 100.000 LDU.",
+      "measurements": {}
+    },
+    "susp_revolute_0_0_20_0_0_13": {
+      "a": "0/0/20",
+      "b": "0/0/13",
+      "kind": "revolute",
+      "status": "reviewed",
+      "evidence": "Wishbone inner pin holes on a frame axle (connector line).",
+      "review": "Pivot axis parallel to the other wishbone; arm length 100.000 LDU.",
+      "measurements": {}
+    },
+    "susp_ball_0_0_53_0_0_55": {
+      "a": "0/0/53",
+      "b": "0/0/55",
+      "kind": "ball",
+      "status": "reviewed",
+      "evidence": "Wishbone cup on a towball pin seated in the knuckle bearing.",
+      "review": "Ball joint, cup-to-ball offset 2.010 LDU in the source; the parallelogram keeps the knuckle orientation fixed.",
+      "measurements": {}
+    },
+    "susp_ball_0_0_20_0_0_56": {
+      "a": "0/0/20",
+      "b": "0/0/56",
+      "kind": "ball",
+      "status": "reviewed",
+      "evidence": "Wishbone cup on a towball pin seated in the knuckle bearing.",
+      "review": "Ball joint, cup-to-ball offset 2.009 LDU in the source; the parallelogram keeps the knuckle orientation fixed.",
+      "measurements": {}
+    },
+    "susp_revolute_0_0_27_19_0_0_27_20": {
+      "a": "0/0/27/19",
+      "b": "0/0/27/20",
+      "kind": "revolute",
+      "status": "reviewed",
+      "evidence": "Output yoke fork on the cross arm parallel to the wishbone axis.",
+      "review": "The bend changes about this arm only; the cross stays with the input yoke (wheels not driven).",
+      "measurements": {}
+    },
+    "susp_ball_0_0_111_11_0_0_63": {
+      "a": "0/0/111/11",
+      "b": "0/0/63",
+      "kind": "ball",
+      "status": "reviewed",
+      "evidence": "Steering-link socket on the knuckle towball (generic connectors).",
+      "review": "Link 100.000 LDU, parallel to the wishbones: no bump steer. Socket-to-ball offset in the source: 0.010 LDU; closure uses the socket point.",
+      "measurements": {}
+    },
+    "susp_revolute_0_0_76_1_0_61": {
+      "a": "0/0/76/1",
+      "b": "0/61",
+      "kind": "revolute",
+      "status": "reviewed",
+      "evidence": "Cylinder eye on a frame axle (connector line).",
+      "review": "Cylinder pivots about the frame pin, parallel to the wishbone axis.",
+      "measurements": {}
+    },
+    "susp_revolute_0_0_76_0_0_0_54": {
+      "a": "0/0/76/0",
+      "b": "0/0/54",
+      "kind": "revolute",
+      "status": "reviewed",
+      "evidence": "Rod eye on the axle locked in the upper wishbone.",
+      "review": "Eye 40.021 LDU from the upper pivot, on the arm line.",
+      "measurements": {}
+    },
+    "susp_revolute_0_0_77_1_0_61": {
+      "a": "0/0/77/1",
+      "b": "0/61",
+      "kind": "revolute",
+      "status": "reviewed",
+      "evidence": "Cylinder eye on a frame axle (connector line).",
+      "review": "Cylinder pivots about the frame pin, parallel to the wishbone axis.",
+      "measurements": {}
+    },
+    "susp_revolute_0_0_77_0_0_0_54": {
+      "a": "0/0/77/0",
+      "b": "0/0/54",
+      "kind": "revolute",
+      "status": "reviewed",
+      "evidence": "Rod eye on the axle locked in the upper wishbone.",
+      "review": "Eye 50.017 LDU from the upper pivot, on the arm line.",
+      "measurements": {}
+    },
+    "susp_revolute_0_0_54_0_0_52": {
+      "a": "0/0/54",
+      "b": "0/0/52",
+      "kind": "revolute",
+      "status": "reviewed",
+      "evidence": "Wishbone inner pin holes on a frame axle (connector line).",
+      "review": "Pivot axis parallel to the other wishbone; arm length 100.000 LDU.",
+      "measurements": {}
+    },
+    "susp_revolute_0_0_19_0_0_14": {
+      "a": "0/0/19",
+      "b": "0/0/14",
+      "kind": "revolute",
+      "status": "reviewed",
+      "evidence": "Wishbone inner pin holes on a frame axle (connector line).",
+      "review": "Pivot axis parallel to the other wishbone; arm length 100.000 LDU.",
+      "measurements": {}
+    },
+    "susp_ball_0_0_54_0_0_60": {
+      "a": "0/0/54",
+      "b": "0/0/60",
+      "kind": "ball",
+      "status": "reviewed",
+      "evidence": "Wishbone cup on a towball pin seated in the knuckle bearing.",
+      "review": "Ball joint, cup-to-ball offset 2.010 LDU in the source; the parallelogram keeps the knuckle orientation fixed.",
+      "measurements": {}
+    },
+    "susp_ball_0_0_19_0_0_61": {
+      "a": "0/0/19",
+      "b": "0/0/61",
+      "kind": "ball",
+      "status": "reviewed",
+      "evidence": "Wishbone cup on a towball pin seated in the knuckle bearing.",
+      "review": "Ball joint, cup-to-ball offset 2.009 LDU in the source; the parallelogram keeps the knuckle orientation fixed.",
+      "measurements": {}
+    },
+    "susp_revolute_0_0_27_16_0_0_27_17": {
+      "a": "0/0/27/16",
+      "b": "0/0/27/17",
+      "kind": "revolute",
+      "status": "reviewed",
+      "evidence": "Output yoke fork on the cross arm parallel to the wishbone axis.",
+      "review": "The bend changes about this arm only; the cross stays with the input yoke (wheels not driven).",
+      "measurements": {}
+    },
+    "susp_ball_0_1_70_0_1_95": {
+      "a": "0/1/70",
+      "b": "0/1/95",
+      "kind": "ball",
+      "status": "reviewed",
+      "evidence": "Steering-link socket on the knuckle towball (generic connectors).",
+      "review": "Link 100.000 LDU, parallel to the wishbones: no bump steer. Socket-to-ball offset in the source: 1.990 LDU; closure uses the socket point.",
+      "measurements": {}
+    },
+    "susp_ball_0_1_71_0_1_94": {
+      "a": "0/1/71",
+      "b": "0/1/94",
+      "kind": "ball",
+      "status": "reviewed",
+      "evidence": "Steering-link socket on the knuckle towball (generic connectors).",
+      "review": "Link 100.000 LDU, parallel to the wishbones: no bump steer. Socket-to-ball offset in the source: 0.010 LDU; closure uses the socket point.",
+      "measurements": {}
+    },
+    "susp_revolute_0_1_227_1_0_1_230": {
+      "a": "0/1/227/1",
+      "b": "0/1/230",
+      "kind": "revolute",
+      "status": "reviewed",
+      "evidence": "Cylinder eye on a frame axle (connector line).",
+      "review": "Cylinder pivots about the frame pin, parallel to the wishbone axis.",
+      "measurements": {}
+    },
+    "susp_revolute_0_1_227_0_0_1_88": {
+      "a": "0/1/227/0",
+      "b": "0/1/88",
+      "kind": "revolute",
+      "status": "reviewed",
+      "evidence": "Rod eye on the axle locked in the upper wishbone.",
+      "review": "Eye 40.021 LDU from the upper pivot, on the arm line.",
+      "measurements": {}
+    },
+    "susp_revolute_0_1_229_1_0_1_230": {
+      "a": "0/1/229/1",
+      "b": "0/1/230",
+      "kind": "revolute",
+      "status": "reviewed",
+      "evidence": "Cylinder eye on a frame axle (connector line).",
+      "review": "Cylinder pivots about the frame pin, parallel to the wishbone axis.",
+      "measurements": {}
+    },
+    "susp_revolute_0_1_229_0_0_1_88": {
+      "a": "0/1/229/0",
+      "b": "0/1/88",
+      "kind": "revolute",
+      "status": "reviewed",
+      "evidence": "Rod eye on the axle locked in the upper wishbone.",
+      "review": "Eye 50.017 LDU from the upper pivot, on the arm line.",
+      "measurements": {}
+    },
+    "susp_revolute_0_1_88_0_1_87": {
+      "a": "0/1/88",
+      "b": "0/1/87",
+      "kind": "revolute",
+      "status": "reviewed",
+      "evidence": "Wishbone inner pin holes on a frame axle (connector line).",
+      "review": "Pivot axis parallel to the other wishbone; arm length 100.000 LDU.",
+      "measurements": {}
+    },
+    "susp_revolute_0_1_47_0_1_46": {
+      "a": "0/1/47",
+      "b": "0/1/46",
+      "kind": "revolute",
+      "status": "reviewed",
+      "evidence": "Wishbone inner pin holes on a frame axle (connector line).",
+      "review": "Pivot axis parallel to the other wishbone; arm length 100.000 LDU.",
+      "measurements": {}
+    },
+    "susp_ball_0_1_88_0_1_90": {
+      "a": "0/1/88",
+      "b": "0/1/90",
+      "kind": "ball",
+      "status": "reviewed",
+      "evidence": "Wishbone cup on a towball pin seated in the knuckle bearing.",
+      "review": "Ball joint, cup-to-ball offset 0.010 LDU in the source; the parallelogram keeps the knuckle orientation fixed.",
+      "measurements": {}
+    },
+    "susp_ball_0_1_47_0_1_91": {
+      "a": "0/1/47",
+      "b": "0/1/91",
+      "kind": "ball",
+      "status": "reviewed",
+      "evidence": "Wishbone cup on a towball pin seated in the knuckle bearing.",
+      "review": "Ball joint, cup-to-ball offset 0.010 LDU in the source; the parallelogram keeps the knuckle orientation fixed.",
+      "measurements": {}
+    },
+    "susp_revolute_0_1_16_0_1_18": {
+      "a": "0/1/16",
+      "b": "0/1/18",
+      "kind": "revolute",
+      "status": "reviewed",
+      "evidence": "Output yoke fork on the cross arm parallel to the wishbone axis.",
+      "review": "The bend changes about this arm only; the cross stays with the input yoke (wheels not driven).",
+      "measurements": {}
+    },
+    "susp_ball_0_1_72_0_1_101": {
+      "a": "0/1/72",
+      "b": "0/1/101",
+      "kind": "ball",
+      "status": "reviewed",
+      "evidence": "Steering-link socket on the knuckle towball (generic connectors).",
+      "review": "Link 100.000 LDU, parallel to the wishbones: no bump steer. Socket-to-ball offset in the source: 0.010 LDU; closure uses the socket point.",
+      "measurements": {}
+    },
+    "susp_ball_0_1_73_0_1_102": {
+      "a": "0/1/73",
+      "b": "0/1/102",
+      "kind": "ball",
+      "status": "reviewed",
+      "evidence": "Steering-link socket on the knuckle towball (generic connectors).",
+      "review": "Link 100.000 LDU, parallel to the wishbones: no bump steer. Socket-to-ball offset in the source: 1.990 LDU; closure uses the socket point.",
+      "measurements": {}
+    },
+    "susp_revolute_0_1_236_1_0_1_235": {
+      "a": "0/1/236/1",
+      "b": "0/1/235",
+      "kind": "revolute",
+      "status": "reviewed",
+      "evidence": "Cylinder eye on a frame axle (connector line).",
+      "review": "Cylinder pivots about the frame pin, parallel to the wishbone axis.",
+      "measurements": {}
+    },
+    "susp_revolute_0_1_236_0_0_1_104": {
+      "a": "0/1/236/0",
+      "b": "0/1/104",
+      "kind": "revolute",
+      "status": "reviewed",
+      "evidence": "Rod eye on the axle locked in the upper wishbone.",
+      "review": "Eye 40.021 LDU from the upper pivot, on the arm line.",
+      "measurements": {}
+    },
+    "susp_revolute_0_1_237_1_0_1_235": {
+      "a": "0/1/237/1",
+      "b": "0/1/235",
+      "kind": "revolute",
+      "status": "reviewed",
+      "evidence": "Cylinder eye on a frame axle (connector line).",
+      "review": "Cylinder pivots about the frame pin, parallel to the wishbone axis.",
+      "measurements": {}
+    },
+    "susp_revolute_0_1_237_0_0_1_104": {
+      "a": "0/1/237/0",
+      "b": "0/1/104",
+      "kind": "revolute",
+      "status": "reviewed",
+      "evidence": "Rod eye on the axle locked in the upper wishbone.",
+      "review": "Eye 50.017 LDU from the upper pivot, on the arm line.",
+      "measurements": {}
+    },
+    "susp_revolute_0_1_104_0_1_103": {
+      "a": "0/1/104",
+      "b": "0/1/103",
+      "kind": "revolute",
+      "status": "reviewed",
+      "evidence": "Wishbone inner pin holes on a frame axle (connector line).",
+      "review": "Pivot axis parallel to the other wishbone; arm length 100.000 LDU.",
+      "measurements": {}
+    },
+    "susp_revolute_0_1_39_0_1_38": {
+      "a": "0/1/39",
+      "b": "0/1/38",
+      "kind": "revolute",
+      "status": "reviewed",
+      "evidence": "Wishbone inner pin holes on a frame axle (connector line).",
+      "review": "Pivot axis parallel to the other wishbone; arm length 100.000 LDU.",
+      "measurements": {}
+    },
+    "susp_ball_0_1_104_0_1_97": {
+      "a": "0/1/104",
+      "b": "0/1/97",
+      "kind": "ball",
+      "status": "reviewed",
+      "evidence": "Wishbone cup on a towball pin seated in the knuckle bearing.",
+      "review": "Ball joint, cup-to-ball offset 0.010 LDU in the source; the parallelogram keeps the knuckle orientation fixed.",
+      "measurements": {}
+    },
+    "susp_ball_0_1_39_0_1_98": {
+      "a": "0/1/39",
+      "b": "0/1/98",
+      "kind": "ball",
+      "status": "reviewed",
+      "evidence": "Wishbone cup on a towball pin seated in the knuckle bearing.",
+      "review": "Ball joint, cup-to-ball offset 0.010 LDU in the source; the parallelogram keeps the knuckle orientation fixed.",
+      "measurements": {}
+    },
+    "susp_revolute_0_1_19_0_1_21": {
+      "a": "0/1/19",
+      "b": "0/1/21",
+      "kind": "revolute",
+      "status": "reviewed",
+      "evidence": "Input yoke fork on the cross arm parallel to the wishbone axis.",
+      "review": "The cross swings with the output yoke about this arm (wheels not driven).",
+      "measurements": {}
+    }
+  },
+  "provenance": {
+    "output/42110-suspension-standalone/plan.json": "bf7d31a66b08333299c53c1f3543edbb5e0405f87c40be4514c652285c47da61",
+    "output/42110-suspension-standalone/source/idmap.json": "f6b6c8829c30075e8b2e3522ec215529deadcfb88c396f7d5ea6752a054e7800",
+    "output/42110-suspension-standalone/source/42110-suspension-standalone.mpd": "30c62143630438e51b3a6bfa83b78fffc4f8fe06b6b6898b3904944d5f33fc16",
+    "scripts/build_defender_suspension.py": "ccfb433ae6c894381c2f484430721754fc65acb23948f275785a96ddba9fd5c0",
+    "scripts/build_suspension_standalone.py": "cb32c4c727ff45fd65aeccfa42498ee7b4a574b27e86bdeef1b1ad902ba274a2",
+    "scripts/blender/animate_defender_suspension.py": "f8432caf052768aa5a435abe29dcad8349b139ad03a1bbc2c69d453111517474"
+  }
+}

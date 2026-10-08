@@ -1,0 +1,699 @@
+{
+  "parts": [
+    {
+      "id": "395",
+      "role": "mount",
+      "reason": "joined to 400 (Technic Pin Long with Stop Bush)",
+      "description": "Technic Beam  2 x  4 Liftarm Bent 90"
+    },
+    {
+      "id": "396/0",
+      "role": "frame",
+      "reason": "depth 3 from 396/1 (Technic Pin with Friction and Slots)",
+      "description": "Technic Beam  3 x  3.8 x  7 Liftarm Bent 45 Double"
+    },
+    {
+      "id": "396/1",
+      "role": "frame",
+      "reason": "depth 2 from 396/5 (Technic Cross Block 3 x 2 (Axle/Triple Pin))",
+      "description": "Technic Pin with Friction and Slots"
+    },
+    {
+      "id": "396/2",
+      "role": "frame",
+      "reason": "depth 2 from 396/5 (Technic Cross Block 3 x 2 (Axle/Triple Pin))",
+      "description": "Technic Pin with Friction and Slots"
+    },
+    {
+      "id": "396/5",
+      "role": "frame",
+      "reason": "depth 1 from 452 (Technic Beam  2 x  4 Liftarm Bent 90)",
+      "description": "Technic Cross Block 3 x 2 (Axle/Triple Pin)"
+    },
+    {
+      "id": "397/3",
+      "role": "frame",
+      "reason": "depth 1 from 399 (Technic Cross Block 1 x 3 (Axle/Pin/Pin))",
+      "description": "Technic Pin with Friction and Slots"
+    },
+    {
+      "id": "397/5",
+      "role": "frame",
+      "reason": "depth 1 from 399 (Technic Cross Block 1 x 3 (Axle/Pin/Pin))",
+      "description": "Technic Cross Block 1 x 2 (Axle/Pin)"
+    },
+    {
+      "id": "398",
+      "role": "frame",
+      "reason": "depth 1 from 399 (Technic Cross Block 1 x 3 (Axle/Pin/Pin))",
+      "description": "Technic Pin with Friction and Slots"
+    },
+    {
+      "id": "399",
+      "role": "mount",
+      "reason": "joined to 400 (Technic Pin Long with Stop Bush)",
+      "description": "Technic Cross Block 1 x 3 (Axle/Pin/Pin)"
+    },
+    {
+      "id": "400",
+      "role": "moving",
+      "reason": "plan body",
+      "description": "Technic Pin Long with Stop Bush"
+    },
+    {
+      "id": "429",
+      "role": "mount",
+      "reason": "joined to 438 (Technic Pin Long with Stop Bush)",
+      "description": "Technic Beam  2 x  4 Liftarm Bent 90"
+    },
+    {
+      "id": "434/0",
+      "role": "frame",
+      "reason": "depth 3 from 434/1 (Technic Pin with Friction and Slots)",
+      "description": "Technic Beam  3 x  3.8 x  7 Liftarm Bent 45 Double"
+    },
+    {
+      "id": "434/1",
+      "role": "frame",
+      "reason": "depth 2 from 434/5 (Technic Cross Block 3 x 2 (Axle/Triple Pin))",
+      "description": "Technic Pin with Friction and Slots"
+    },
+    {
+      "id": "434/2",
+      "role": "frame",
+      "reason": "depth 2 from 434/5 (Technic Cross Block 3 x 2 (Axle/Triple Pin))",
+      "description": "Technic Pin with Friction and Slots"
+    },
+    {
+      "id": "434/5",
+      "role": "frame",
+      "reason": "depth 1 from 429 (Technic Beam  2 x  4 Liftarm Bent 90)",
+      "description": "Technic Cross Block 3 x 2 (Axle/Triple Pin)"
+    },
+    {
+      "id": "435/3",
+      "role": "frame",
+      "reason": "depth 1 from 437 (Technic Cross Block 1 x 3 (Axle/Pin/Pin))",
+      "description": "Technic Pin with Friction and Slots"
+    },
+    {
+      "id": "435/5",
+      "role": "frame",
+      "reason": "depth 1 from 429 (Technic Beam  2 x  4 Liftarm Bent 90)",
+      "description": "Technic Cross Block 1 x 2 (Axle/Pin)"
+    },
+    {
+      "id": "436",
+      "role": "frame",
+      "reason": "depth 1 from 429 (Technic Beam  2 x  4 Liftarm Bent 90)",
+      "description": "Technic Pin with Friction and Slots"
+    },
+    {
+      "id": "437",
+      "role": "mount",
+      "reason": "joined to 438 (Technic Pin Long with Stop Bush)",
+      "description": "Technic Cross Block 1 x 3 (Axle/Pin/Pin)"
+    },
+    {
+      "id": "438",
+      "role": "moving",
+      "reason": "plan body",
+      "description": "Technic Pin Long with Stop Bush"
+    },
+    {
+      "id": "443/0",
+      "role": "moving",
+      "reason": "plan body",
+      "description": "Technic Panel Smooth 11 x  2 x  3"
+    },
+    {
+      "id": "443/1",
+      "role": "moving",
+      "reason": "plan body",
+      "description": "Technic Pin Long with Friction and Slot"
+    },
+    {
+      "id": "443/2",
+      "role": "moving",
+      "reason": "plan body",
+      "description": "Technic Pin with Friction and Slots"
+    },
+    {
+      "id": "443/3",
+      "role": "moving",
+      "reason": "plan body",
+      "description": "Technic Pin with Friction and Slots"
+    },
+    {
+      "id": "443/4",
+      "role": "moving",
+      "reason": "plan body",
+      "description": "Technic Pin with Friction and Slots"
+    },
+    {
+      "id": "443/5",
+      "role": "moving",
+      "reason": "plan body",
+      "description": "Technic Pin with Friction and Slots"
+    },
+    {
+      "id": "443/6",
+      "role": "moving",
+      "reason": "plan body",
+      "description": "Technic Pin with Friction and Slots"
+    },
+    {
+      "id": "443/7",
+      "role": "moving",
+      "reason": "plan body",
+      "description": "Technic Panel Fairing Smooth #1 (Short)"
+    },
+    {
+      "id": "443/8",
+      "role": "moving",
+      "reason": "plan body",
+      "description": "Technic Panel Fairing Smooth #17 (Wide Long)"
+    },
+    {
+      "id": "443/9",
+      "role": "moving",
+      "reason": "plan body",
+      "description": "Technic Pin with Friction and Slots"
+    },
+    {
+      "id": "443/10",
+      "role": "moving",
+      "reason": "plan body",
+      "description": "Technic Beam  2 x  4 Liftarm Bent 90"
+    },
+    {
+      "id": "443/11",
+      "role": "moving",
+      "reason": "plan body",
+      "description": "Technic Axle Pin with Friction"
+    },
+    {
+      "id": "443/12",
+      "role": "moving",
+      "reason": "plan body",
+      "description": "Technic Pin with Friction with Perpendicular Pin Hole Type 1"
+    },
+    {
+      "id": "443/13",
+      "role": "moving",
+      "reason": "plan body",
+      "description": "Technic Pin Long with Stop Bush"
+    },
+    {
+      "id": "443/14",
+      "role": "moving",
+      "reason": "plan body",
+      "description": "Technic Axle Pin with Friction"
+    },
+    {
+      "id": "443/15",
+      "role": "moving",
+      "reason": "plan body",
+      "description": "Technic Pin Long with Friction and Slot"
+    },
+    {
+      "id": "443/16",
+      "role": "moving",
+      "reason": "plan body",
+      "description": "Technic Beam  2 x  4 Liftarm Bent 90"
+    },
+    {
+      "id": "443/17",
+      "role": "moving",
+      "reason": "plan body",
+      "description": "Technic Beam  2 x  4 Liftarm Bent 90"
+    },
+    {
+      "id": "443/18",
+      "role": "moving",
+      "reason": "plan body",
+      "description": "Technic Pin Long with Friction and Slot"
+    },
+    {
+      "id": "443/19",
+      "role": "moving",
+      "reason": "plan body",
+      "description": "Technic Pin Long with Friction and Slot"
+    },
+    {
+      "id": "443/20",
+      "role": "moving",
+      "reason": "plan body",
+      "description": "Technic Cross Block 1 x 3 (Axle/Pin/Pin)"
+    },
+    {
+      "id": "443/21",
+      "role": "moving",
+      "reason": "plan body",
+      "description": "Technic Axle Pin with Friction"
+    },
+    {
+      "id": "443/22",
+      "role": "moving",
+      "reason": "plan body",
+      "description": "Technic Cross Block 1 x 3 (Axle/Pin/Pin)"
+    },
+    {
+      "id": "443/23",
+      "role": "moving",
+      "reason": "plan body",
+      "description": "Technic Pin with Friction and Slots"
+    },
+    {
+      "id": "443/24",
+      "role": "moving",
+      "reason": "plan body",
+      "description": "Technic Pin with Friction and Slots"
+    },
+    {
+      "id": "443/25",
+      "role": "moving",
+      "reason": "plan body",
+      "description": "Technic Panel Fairing Smooth #14 (Wide Medium)"
+    },
+    {
+      "id": "443/26",
+      "role": "moving",
+      "reason": "plan body",
+      "description": "Technic Beam 11"
+    },
+    {
+      "id": "443/27",
+      "role": "moving",
+      "reason": "plan body",
+      "description": "Technic Axle Pin Long with Friction with  2L Axle"
+    },
+    {
+      "id": "443/28",
+      "role": "moving",
+      "reason": "plan body",
+      "description": "Technic Axle Joiner Inline Smooth"
+    },
+    {
+      "id": "443/29",
+      "role": "moving",
+      "reason": "plan body",
+      "description": "Technic Axle  4"
+    },
+    {
+      "id": "443/30",
+      "role": "moving",
+      "reason": "plan body",
+      "description": "=Technic Beam  2 Liftarm"
+    },
+    {
+      "id": "443/31",
+      "role": "moving",
+      "reason": "plan body",
+      "description": "Technic Pin with Friction with Perpendicular Pin Hole Type 1"
+    },
+    {
+      "id": "443/32",
+      "role": "moving",
+      "reason": "plan body",
+      "description": "Technic Pin with Friction and Slots"
+    },
+    {
+      "id": "443/33",
+      "role": "moving",
+      "reason": "plan body",
+      "description": "Technic Axle Pin with Friction"
+    },
+    {
+      "id": "443/34",
+      "role": "moving",
+      "reason": "plan body",
+      "description": "Technic Beam 11"
+    },
+    {
+      "id": "443/35",
+      "role": "moving",
+      "reason": "plan body",
+      "description": "Technic Pin  1/2"
+    },
+    {
+      "id": "443/36",
+      "role": "moving",
+      "reason": "plan body",
+      "description": "Technic Pin  1/2"
+    },
+    {
+      "id": "443/37",
+      "role": "moving",
+      "reason": "plan body",
+      "description": "Technic Pin  1/2"
+    },
+    {
+      "id": "443/38",
+      "role": "moving",
+      "reason": "plan body",
+      "description": "Technic Pin  1/2"
+    },
+    {
+      "id": "443/39",
+      "role": "moving",
+      "reason": "plan body",
+      "description": "Tile  1 x  4 with Groove"
+    },
+    {
+      "id": "443/40",
+      "role": "moving",
+      "reason": "plan body",
+      "description": "Tile  1 x  6"
+    },
+    {
+      "id": "443/41",
+      "role": "moving",
+      "reason": "plan body",
+      "description": "Technic Axle Pin Long with Friction with  2L Axle"
+    },
+    {
+      "id": "444",
+      "role": "mount",
+      "reason": "joined to 438 (Technic Pin Long with Stop Bush)",
+      "description": "Technic Beam  2 x  4 Liftarm Bent 90"
+    },
+    {
+      "id": "445",
+      "role": "frame",
+      "reason": "depth 1 from 429 (Technic Beam  2 x  4 Liftarm Bent 90)",
+      "description": "Technic Axle  6"
+    },
+    {
+      "id": "450/0",
+      "role": "moving",
+      "reason": "plan body",
+      "description": "Technic Panel Smooth 11 x  2 x  3"
+    },
+    {
+      "id": "450/1",
+      "role": "moving",
+      "reason": "plan body",
+      "description": "Technic Pin Long with Friction and Slot"
+    },
+    {
+      "id": "450/2",
+      "role": "moving",
+      "reason": "plan body",
+      "description": "Technic Pin with Friction and Slots"
+    },
+    {
+      "id": "450/3",
+      "role": "moving",
+      "reason": "plan body",
+      "description": "Technic Pin with Friction and Slots"
+    },
+    {
+      "id": "450/4",
+      "role": "moving",
+      "reason": "plan body",
+      "description": "Technic Pin with Friction and Slots"
+    },
+    {
+      "id": "450/5",
+      "role": "moving",
+      "reason": "plan body",
+      "description": "Technic Pin with Friction and Slots"
+    },
+    {
+      "id": "450/6",
+      "role": "moving",
+      "reason": "plan body",
+      "description": "Technic Pin with Friction and Slots"
+    },
+    {
+      "id": "450/7",
+      "role": "moving",
+      "reason": "plan body",
+      "description": "Technic Panel Fairing Smooth #2 (Short)"
+    },
+    {
+      "id": "450/8",
+      "role": "moving",
+      "reason": "plan body",
+      "description": "Technic Panel Fairing Smooth #18 (Wide Long)"
+    },
+    {
+      "id": "450/9",
+      "role": "moving",
+      "reason": "plan body",
+      "description": "Technic Pin with Friction and Slots"
+    },
+    {
+      "id": "450/10",
+      "role": "moving",
+      "reason": "plan body",
+      "description": "Technic Beam  2 x  4 Liftarm Bent 90"
+    },
+    {
+      "id": "450/11",
+      "role": "moving",
+      "reason": "plan body",
+      "description": "Technic Axle Pin with Friction"
+    },
+    {
+      "id": "450/12",
+      "role": "moving",
+      "reason": "plan body",
+      "description": "Technic Pin with Friction with Perpendicular Pin Hole Type 1"
+    },
+    {
+      "id": "450/13",
+      "role": "moving",
+      "reason": "plan body",
+      "description": "Technic Pin Long with Stop Bush"
+    },
+    {
+      "id": "450/14",
+      "role": "moving",
+      "reason": "plan body",
+      "description": "Technic Axle Pin with Friction"
+    },
+    {
+      "id": "450/15",
+      "role": "moving",
+      "reason": "plan body",
+      "description": "Technic Pin Long with Friction and Slot"
+    },
+    {
+      "id": "450/16",
+      "role": "moving",
+      "reason": "plan body",
+      "description": "Technic Beam  2 x  4 Liftarm Bent 90"
+    },
+    {
+      "id": "450/17",
+      "role": "moving",
+      "reason": "plan body",
+      "description": "Technic Beam  2 x  4 Liftarm Bent 90"
+    },
+    {
+      "id": "450/18",
+      "role": "moving",
+      "reason": "plan body",
+      "description": "Technic Pin Long with Friction and Slot"
+    },
+    {
+      "id": "450/19",
+      "role": "moving",
+      "reason": "plan body",
+      "description": "Technic Pin Long with Friction and Slot"
+    },
+    {
+      "id": "450/20",
+      "role": "moving",
+      "reason": "plan body",
+      "description": "Technic Cross Block 1 x 3 (Axle/Pin/Pin)"
+    },
+    {
+      "id": "450/21",
+      "role": "moving",
+      "reason": "plan body",
+      "description": "Technic Axle Pin with Friction"
+    },
+    {
+      "id": "450/22",
+      "role": "moving",
+      "reason": "plan body",
+      "description": "Technic Cross Block 1 x 3 (Axle/Pin/Pin)"
+    },
+    {
+      "id": "450/23",
+      "role": "moving",
+      "reason": "plan body",
+      "description": "Technic Pin with Friction and Slots"
+    },
+    {
+      "id": "450/24",
+      "role": "moving",
+      "reason": "plan body",
+      "description": "Technic Pin with Friction and Slots"
+    },
+    {
+      "id": "450/25",
+      "role": "moving",
+      "reason": "plan body",
+      "description": "Technic Panel Fairing Smooth #13 (Wide Medium)"
+    },
+    {
+      "id": "450/26",
+      "role": "moving",
+      "reason": "plan body",
+      "description": "Technic Beam 11"
+    },
+    {
+      "id": "450/27",
+      "role": "moving",
+      "reason": "plan body",
+      "description": "Technic Axle Pin Long with Friction with  2L Axle"
+    },
+    {
+      "id": "450/28",
+      "role": "moving",
+      "reason": "plan body",
+      "description": "Technic Axle Joiner Inline Smooth"
+    },
+    {
+      "id": "450/29",
+      "role": "moving",
+      "reason": "plan body",
+      "description": "Technic Axle  4"
+    },
+    {
+      "id": "450/30",
+      "role": "moving",
+      "reason": "plan body",
+      "description": "=Technic Beam  2 Liftarm"
+    },
+    {
+      "id": "450/31",
+      "role": "moving",
+      "reason": "plan body",
+      "description": "Technic Pin with Friction with Perpendicular Pin Hole Type 1"
+    },
+    {
+      "id": "450/32",
+      "role": "moving",
+      "reason": "plan body",
+      "description": "Technic Pin with Friction and Slots"
+    },
+    {
+      "id": "450/33",
+      "role": "moving",
+      "reason": "plan body",
+      "description": "Technic Axle Pin with Friction"
+    },
+    {
+      "id": "450/34",
+      "role": "moving",
+      "reason": "plan body",
+      "description": "Technic Beam 11"
+    },
+    {
+      "id": "450/35",
+      "role": "moving",
+      "reason": "plan body",
+      "description": "Technic Pin  1/2"
+    },
+    {
+      "id": "450/36",
+      "role": "moving",
+      "reason": "plan body",
+      "description": "Technic Pin  1/2"
+    },
+    {
+      "id": "450/37",
+      "role": "moving",
+      "reason": "plan body",
+      "description": "Technic Pin  1/2"
+    },
+    {
+      "id": "450/38",
+      "role": "moving",
+      "reason": "plan body",
+      "description": "Technic Pin  1/2"
+    },
+    {
+      "id": "450/39",
+      "role": "moving",
+      "reason": "plan body",
+      "description": "Tile  1 x  4 with Groove"
+    },
+    {
+      "id": "450/40",
+      "role": "moving",
+      "reason": "plan body",
+      "description": "Tile  1 x  6"
+    },
+    {
+      "id": "450/41",
+      "role": "moving",
+      "reason": "plan body",
+      "description": "Technic Axle Pin Long with Friction with  2L Axle"
+    },
+    {
+      "id": "452",
+      "role": "mount",
+      "reason": "joined to 400 (Technic Pin Long with Stop Bush)",
+      "description": "Technic Beam  2 x  4 Liftarm Bent 90"
+    },
+    {
+      "id": "453",
+      "role": "frame",
+      "reason": "depth 1 from 452 (Technic Beam  2 x  4 Liftarm Bent 90)",
+      "description": "Technic Axle  6"
+    },
+    {
+      "id": "536",
+      "role": "moving",
+      "reason": "plan body",
+      "description": "=Technic Beam  2 Liftarm"
+    },
+    {
+      "id": "537",
+      "role": "moving",
+      "reason": "plan body",
+      "description": "Technic Axle Pin with Friction"
+    },
+    {
+      "id": "538",
+      "role": "moving",
+      "reason": "plan body",
+      "description": "Technic Panel Fairing Smooth #2 (Short)"
+    },
+    {
+      "id": "547",
+      "role": "moving",
+      "reason": "plan body",
+      "description": "Technic Panel Fairing Smooth #1 (Short)"
+    },
+    {
+      "id": "548",
+      "role": "moving",
+      "reason": "plan body",
+      "description": "=Technic Beam  2 Liftarm"
+    },
+    {
+      "id": "549",
+      "role": "moving",
+      "reason": "plan body",
+      "description": "Technic Axle Pin with Friction"
+    }
+  ],
+  "counts": {
+    "moving": 92,
+    "mount": 6,
+    "frame": 16
+  },
+  "source": "data/models-annotated/42083-1.mpd",
+  "section": "42083 - chiron.ldr",
+  "rule": {
+    "rule": "seeds + non-embedded parts within 70.0 LDU; depth 3 connector closure to the first beams",
+    "tested": 190
+  }
+}

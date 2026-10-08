@@ -1,0 +1,173 @@
+{
+  "semantics": {
+    "pane_l": {
+      "control": "pane_l",
+      "value": 0.2,
+      "test_point": [
+        -2.0,
+        -86.0,
+        -5.0
+      ],
+      "displacement": [
+        -0.598003,
+        0.0,
+        -5.96008
+      ],
+      "expected": "-z",
+      "flipped": true
+    },
+    "pane_r": {
+      "control": "pane_r",
+      "value": 0.2,
+      "test_point": [
+        2.0,
+        -86.0,
+        -5.0
+      ],
+      "displacement": [
+        0.598003,
+        0.0,
+        -5.96008
+      ],
+      "expected": "-z",
+      "flipped": false
+    }
+  },
+  "contacts": {
+    "tested_parts": 19,
+    "contacts": 30,
+    "contacted_parts": 17,
+    "by_kind": {
+      "hinge/hinge": 2,
+      "stud/stud_receptacle": 28
+    },
+    "axles": {
+      "selection": "Catalog descriptions beginning Technic Axle followed by a numeric length; excludes axle pins, joiners and axle-hole supports",
+      "total": 0,
+      "with_axle_hole_contact": 0,
+      "without_axle_hole_contact": []
+    }
+  },
+  "contact_pairs": {
+    "1-2": [
+      "hinge/hinge"
+    ],
+    "1-3": [
+      "hinge/hinge"
+    ],
+    "1-17": [
+      "stud/stud_receptacle",
+      "stud/stud_receptacle",
+      "stud/stud_receptacle",
+      "stud/stud_receptacle"
+    ],
+    "4-5": [
+      "stud/stud_receptacle",
+      "stud/stud_receptacle"
+    ],
+    "4-6": [
+      "stud/stud_receptacle",
+      "stud/stud_receptacle"
+    ],
+    "7-8": [
+      "stud/stud_receptacle",
+      "stud/stud_receptacle"
+    ],
+    "8-9": [
+      "stud/stud_receptacle",
+      "stud/stud_receptacle"
+    ],
+    "9-10": [
+      "stud/stud_receptacle",
+      "stud/stud_receptacle"
+    ],
+    "10-11": [
+      "stud/stud_receptacle",
+      "stud/stud_receptacle"
+    ],
+    "11-17": [
+      "stud/stud_receptacle",
+      "stud/stud_receptacle"
+    ],
+    "12-13": [
+      "stud/stud_receptacle",
+      "stud/stud_receptacle"
+    ],
+    "13-14": [
+      "stud/stud_receptacle",
+      "stud/stud_receptacle"
+    ],
+    "14-15": [
+      "stud/stud_receptacle",
+      "stud/stud_receptacle"
+    ],
+    "15-16": [
+      "stud/stud_receptacle",
+      "stud/stud_receptacle"
+    ],
+    "16-17": [
+      "stud/stud_receptacle",
+      "stud/stud_receptacle"
+    ]
+  },
+  "asymmetric_sample": {
+    "controls": {
+      "pane_l": 0.882,
+      "pane_r": 0.518
+    },
+    "transforms": {
+      "pane_l": [
+        [
+          0.635608,
+          0.0,
+          0.772012,
+          -7.800473
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          -0.772012,
+          0.0,
+          0.635608,
+          -26.52633
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "pane_r": [
+        [
+          0.868811,
+          0.0,
+          -0.495144,
+          1.722324
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.495144,
+          0.0,
+          0.868811,
+          -16.500536
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ]
+    }
+  }
+}

@@ -1,0 +1,173 @@
+{
+  "id": "9",
+  "ref": "55013.dat",
+  "coordinate_space": "selected section, LDU, -Y up",
+  "features": [
+    {
+      "kind": "axle",
+      "role": "male",
+      "position": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "frame": [
+        [
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          -1.0
+        ]
+      ],
+      "profile": {
+        "sections": [
+          {
+            "shape": "axle",
+            "radius": 6.0,
+            "length": 158.0,
+            "flexible": false
+          },
+          {
+            "shape": "round",
+            "radius": 8.0,
+            "length": 2.0,
+            "flexible": false
+          }
+        ],
+        "centered": true,
+        "friction": false,
+        "caps": "none"
+      },
+      "name": "LDCad cylinder",
+      "feature_id": "snap_cyl@L11:I0",
+      "group": null,
+      "freedoms": [
+        "rotate",
+        "slide"
+      ],
+      "source": "ldcad_shadow",
+      "confidence": 1.0,
+      "owner_code": "55013",
+      "compatible_parts": [],
+      "occupied": false,
+      "occupied_by": null,
+      "provenance": [
+        "/Users/captain/workspaces/workspace-ai/ldraw-mecha/data/offLibShadow/parts/55013.dat:11"
+      ],
+      "metadata_id": null,
+      "connection_provenance": {
+        "source": "ldcad_shadow",
+        "path": "/Users/captain/workspaces/workspace-ai/ldraw-mecha/data/offLibShadow/parts/55013.dat",
+        "archive_member": null,
+        "line_number": 11,
+        "command": "0 !LDCAD SNAP_CYL [gender=M] [caps=none] [secs=A 6 158   R 8 2] [center=true] [slide=true] [ori=0 -1 0 1 0 0 0 0 1]",
+        "include_chain": []
+      },
+      "scale_inheritance": "none",
+      "mirror_inheritance": "cor",
+      "world_position": [
+        0.0,
+        90.0,
+        -68.0
+      ],
+      "world_axis": [
+        0.0,
+        0.0,
+        1.0
+      ]
+    }
+  ],
+  "metadata": {
+    "part_code": "55013",
+    "coverage": "complete",
+    "features": [
+      {
+        "kind": "axle",
+        "role": "male",
+        "position": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "frame": [
+          [
+            0.0,
+            1.0,
+            0.0
+          ],
+          [
+            1.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            -1.0
+          ]
+        ],
+        "profile": {
+          "sections": [
+            {
+              "shape": "axle",
+              "radius": 6.0,
+              "length": 158.0,
+              "flexible": false
+            },
+            {
+              "shape": "round",
+              "radius": 8.0,
+              "length": 2.0,
+              "flexible": false
+            }
+          ],
+          "centered": true,
+          "friction": false,
+          "caps": "none"
+        },
+        "name": "LDCad cylinder",
+        "feature_id": "snap_cyl@L11:I0",
+        "group": null,
+        "freedoms": [
+          "rotate",
+          "slide"
+        ],
+        "source": "ldcad_shadow",
+        "confidence": 1.0,
+        "owner_code": "55013",
+        "compatible_parts": [],
+        "occupied": false,
+        "occupied_by": null,
+        "provenance": [
+          "/Users/captain/workspaces/workspace-ai/ldraw-mecha/data/offLibShadow/parts/55013.dat:11"
+        ],
+        "metadata_id": null,
+        "connection_provenance": {
+          "source": "ldcad_shadow",
+          "path": "/Users/captain/workspaces/workspace-ai/ldraw-mecha/data/offLibShadow/parts/55013.dat",
+          "archive_member": null,
+          "line_number": 11,
+          "command": "0 !LDCAD SNAP_CYL [gender=M] [caps=none] [secs=A 6 158   R 8 2] [center=true] [slide=true] [ori=0 -1 0 1 0 0 0 0 1]",
+          "include_chain": []
+        },
+        "scale_inheritance": "none",
+        "mirror_inheritance": "cor"
+      }
+    ],
+    "source_count": 1,
+    "recognized_record_count": 2,
+    "unsupported_record_count": 0,
+    "invalid_record_count": 0,
+    "diagnostics": []
+  },
+  "coverage": "Connector evidence only; mating, mobility, retention and collision require review"
+}

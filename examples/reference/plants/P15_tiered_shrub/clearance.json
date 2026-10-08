@@ -1,0 +1,35 @@
+{
+  "case": "P15_tiered_shrub",
+  "sweep": {
+    "no_new_surface_crossings": true,
+    "crossings": [],
+    "excluded_rest_pairs": [
+      "bar-tier1",
+      "bar-tier2",
+      "bar-tier3",
+      "bar-tier4"
+    ]
+  },
+  "clip_poses": {
+    "samples": 180,
+    "every": 4,
+    "no_new_surface_crossings": true,
+    "crossings_by_clip": {},
+    "frames_with_crossings": {},
+    "vertex_penetration_by_clip": {},
+    "deep_shrink_ldu": 1.5,
+    "no_deep_crossings": true,
+    "deep_crossings_by_clip": {},
+    "frames_with_deep_crossings": {}
+  },
+  "roles": {
+    "0": "base",
+    "1": "seat",
+    "2": "bar",
+    "3": "tier1",
+    "4": "tier2",
+    "5": "tier3",
+    "6": "tier4"
+  },
+  "coverage": "Sampled surface crossings only; excludes rigid-body and rest-contact pairs; containment untested"
+}

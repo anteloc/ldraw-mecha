@@ -1,0 +1,473 @@
+{
+  "figure": "MF06_pirate",
+  "sweep": {
+    "no_new_surface_crossings": false,
+    "crossings": [
+      [
+        "hip_r",
+        1.374,
+        [
+          "10",
+          "5"
+        ]
+      ],
+      [
+        "hip_r",
+        1.571,
+        [
+          "10",
+          "5"
+        ]
+      ],
+      [
+        "shoulder_r",
+        -9.425,
+        [
+          "10",
+          "2"
+        ]
+      ],
+      [
+        "shoulder_r",
+        -3.142,
+        [
+          "10",
+          "2"
+        ]
+      ],
+      [
+        "shoulder_r",
+        3.142,
+        [
+          "10",
+          "2"
+        ]
+      ],
+      [
+        "shoulder_r",
+        9.425,
+        [
+          "10",
+          "2"
+        ]
+      ],
+      [
+        "wrist_r",
+        -2.749,
+        [
+          "10",
+          "5"
+        ]
+      ],
+      [
+        "wrist_r",
+        -2.356,
+        [
+          "10",
+          "4"
+        ]
+      ],
+      [
+        "wrist_r",
+        -2.356,
+        [
+          "10",
+          "5"
+        ]
+      ],
+      [
+        "wrist_r",
+        -1.963,
+        [
+          "10",
+          "4"
+        ]
+      ]
+    ],
+    "excluded_rest_pairs": [
+      [
+        "10",
+        "3"
+      ],
+      [
+        "3",
+        "4"
+      ],
+      [
+        "3",
+        "5"
+      ]
+    ]
+  },
+  "clip_poses": {
+    "samples": 720,
+    "every": 6,
+    "no_new_surface_crossings": false,
+    "crossings_by_clip": {
+      "MF01_police.walk_patrol": [
+        "item_r-leg_r"
+      ],
+      "MF02_spaceman.moon_hop": [
+        "item_r-headgear0",
+        "item_r-leg_r"
+      ],
+      "MF02_spaceman.wave": [
+        "head-arm_r",
+        "head-hand_r",
+        "head-item_r",
+        "headgear0-hand_r",
+        "item_r-headgear0"
+      ],
+      "MF02_spaceman.zero_g_tumble": [
+        "item_r-leg_r"
+      ],
+      "MF05_chef.celebrate": [
+        "head-item_r",
+        "item_r-headgear0"
+      ],
+      "MF07_firefighter.run": [
+        "item_r-leg_r"
+      ],
+      "MF08_athlete.high_jump": [
+        "head-hand_l",
+        "head-hand_r",
+        "head-item_r",
+        "headgear0-hand_l",
+        "headgear0-hand_r",
+        "item_r-headgear0",
+        "item_r-leg_r"
+      ],
+      "MF08_athlete.sprint": [
+        "item_r-leg_r"
+      ],
+      "MF08_athlete.warmup_leg_swings": [
+        "item_r-headgear0"
+      ],
+      "MF10_diver.fall_and_get_up": [
+        "headgear0-hand_l",
+        "item_r-headgear0",
+        "item_r-leg_r"
+      ],
+      "MF10_diver.sit_down_stand_up": [
+        "head-item_r",
+        "headgear0-hand_r",
+        "item_r-headgear0",
+        "item_r-leg_r"
+      ],
+      "MF10_diver.swim_crawl": [
+        "head-arm_l",
+        "head-arm_r",
+        "head-hand_l",
+        "head-hand_r",
+        "head-item_r",
+        "headgear0-hand_l",
+        "headgear0-hand_r",
+        "item_r-headgear0",
+        "item_r-leg_r"
+      ]
+    },
+    "frames_with_crossings": {
+      "MF01_police.walk_patrol": [
+        25,
+        49,
+        97,
+        121
+      ],
+      "MF02_spaceman.moon_hop": [
+        7,
+        19,
+        25,
+        37,
+        49,
+        55,
+        67,
+        79,
+        85,
+        97,
+        109,
+        115
+      ],
+      "MF02_spaceman.wave": [
+        13,
+        19,
+        31,
+        37,
+        43,
+        55,
+        61,
+        67,
+        79,
+        85,
+        91,
+        97
+      ],
+      "MF02_spaceman.zero_g_tumble": [
+        55,
+        61,
+        67
+      ],
+      "MF05_chef.celebrate": [
+        103,
+        109,
+        127
+      ],
+      "MF07_firefighter.run": [
+        19,
+        73
+      ],
+      "MF08_athlete.high_jump": [
+        19,
+        25,
+        31,
+        37,
+        43,
+        49,
+        55,
+        61,
+        67,
+        79,
+        85,
+        109,
+        115
+      ],
+      "MF08_athlete.sprint": [
+        13,
+        25,
+        37,
+        91,
+        115
+      ],
+      "MF08_athlete.warmup_leg_swings": [
+        109,
+        115
+      ],
+      "MF10_diver.fall_and_get_up": [
+        13,
+        19,
+        25,
+        31,
+        85,
+        91,
+        127,
+        133
+      ],
+      "MF10_diver.sit_down_stand_up": [
+        31,
+        37,
+        49,
+        55,
+        61,
+        67,
+        73,
+        85,
+        91
+      ],
+      "MF10_diver.swim_crawl": [
+        37,
+        55,
+        73,
+        79,
+        91,
+        97,
+        115
+      ]
+    },
+    "deep_shrink_ldu": 1.5,
+    "no_deep_crossings": false,
+    "deep_crossings_by_clip": {
+      "MF01_police.walk_patrol": [
+        "item_r-hips",
+        "item_r-leg_r"
+      ],
+      "MF02_spaceman.moon_hop": [
+        "item_r-headgear0",
+        "item_r-hips",
+        "item_r-leg_r"
+      ],
+      "MF02_spaceman.wave": [
+        "head-hand_r",
+        "head-item_r",
+        "headgear0-hand_r",
+        "item_r-headgear0"
+      ],
+      "MF02_spaceman.zero_g_tumble": [
+        "item_r-hips",
+        "item_r-leg_r"
+      ],
+      "MF05_chef.celebrate": [
+        "head-item_r",
+        "item_r-headgear0"
+      ],
+      "MF07_firefighter.run": [
+        "item_r-hips",
+        "item_r-leg_r"
+      ],
+      "MF08_athlete.high_jump": [
+        "head-hand_l",
+        "head-hand_r",
+        "head-item_r",
+        "headgear0-hand_l",
+        "headgear0-hand_r",
+        "item_r-headgear0",
+        "item_r-hips",
+        "item_r-leg_r"
+      ],
+      "MF08_athlete.sprint": [
+        "item_r-hips",
+        "item_r-leg_r"
+      ],
+      "MF08_athlete.warmup_leg_swings": [
+        "item_r-headgear0"
+      ],
+      "MF10_diver.fall_and_get_up": [
+        "headgear0-hand_l",
+        "item_r-headgear0",
+        "item_r-hips",
+        "item_r-leg_r"
+      ],
+      "MF10_diver.sit_down_stand_up": [
+        "head-item_r",
+        "headgear0-hand_r",
+        "item_r-headgear0"
+      ],
+      "MF10_diver.swim_crawl": [
+        "head-hand_l",
+        "head-hand_r",
+        "head-item_r",
+        "headgear0-hand_l",
+        "headgear0-hand_r",
+        "item_r-headgear0",
+        "item_r-hips",
+        "item_r-leg_r"
+      ]
+    },
+    "frames_with_deep_crossings": {
+      "MF01_police.walk_patrol": [
+        25,
+        31,
+        49,
+        55,
+        97,
+        103,
+        121,
+        127
+      ],
+      "MF02_spaceman.moon_hop": [
+        7,
+        19,
+        25,
+        31,
+        37,
+        49,
+        55,
+        61,
+        67,
+        79,
+        85,
+        91,
+        97,
+        109,
+        115
+      ],
+      "MF02_spaceman.wave": [
+        13,
+        19,
+        31,
+        37,
+        43,
+        55,
+        61,
+        67,
+        79,
+        85,
+        91,
+        97
+      ],
+      "MF02_spaceman.zero_g_tumble": [
+        49,
+        55,
+        61,
+        67
+      ],
+      "MF05_chef.celebrate": [
+        103,
+        109,
+        127
+      ],
+      "MF07_firefighter.run": [
+        19,
+        31,
+        37,
+        73,
+        85,
+        91
+      ],
+      "MF08_athlete.high_jump": [
+        19,
+        25,
+        31,
+        37,
+        43,
+        49,
+        55,
+        61,
+        67,
+        79,
+        85,
+        109,
+        115
+      ],
+      "MF08_athlete.sprint": [
+        13,
+        25,
+        37,
+        91,
+        97,
+        115,
+        121
+      ],
+      "MF08_athlete.warmup_leg_swings": [
+        109
+      ],
+      "MF10_diver.fall_and_get_up": [
+        13,
+        19,
+        25,
+        31,
+        49,
+        127,
+        133
+      ],
+      "MF10_diver.sit_down_stand_up": [
+        49,
+        55,
+        61,
+        67,
+        73
+      ],
+      "MF10_diver.swim_crawl": [
+        37,
+        55,
+        73,
+        79,
+        91,
+        97,
+        115
+      ]
+    }
+  },
+  "roles": {
+    "0": "torso",
+    "1": "head",
+    "2": "headgear0",
+    "3": "hips",
+    "4": "leg_l",
+    "5": "leg_r",
+    "6": "arm_l",
+    "7": "hand_l",
+    "8": "arm_r",
+    "9": "hand_r",
+    "10": "item_r"
+  },
+  "coverage": "Sampled surface crossings only; excludes rigid-body and rest-contact pairs; containment untested; joint channels only (whole-figure staging not applied)"
+}

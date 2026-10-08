@@ -1,0 +1,1299 @@
+{
+  "version": 1,
+  "name": "model",
+  "status": "draft",
+  "source": {
+    "version": 1,
+    "path": "/Users/captain/workspaces/workspace-ai/ldraw-mecha/output/movables/S16_crane/source/scenario.mpd",
+    "sha256": "6d03a6ec5cd190e8ee68074c0defd3e01e1707cee22082e4020d69724577ad11",
+    "section": "s16_crane.ldr",
+    "description": "Movable element scenario S16_crane Mini crane",
+    "author": "ldraw-mecha scripts/build_movables.py",
+    "dependencies": {
+      "/Users/captain/workspaces/workspace-ai/ldraw-mecha/output/movables/S16_crane/source/scenario.mpd": "6d03a6ec5cd190e8ee68074c0defd3e01e1707cee22082e4020d69724577ad11"
+    },
+    "nodes": [
+      {
+        "id": "0",
+        "parent": "root",
+        "ref": "3958.dat",
+        "kind": "part",
+        "embedded": false,
+        "section": "s16_crane.ldr",
+        "index": 0,
+        "line": 8,
+        "colour": "8",
+        "effective_colour": "8",
+        "local": [
+          [
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            1.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            1.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "world": [
+          [
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            1.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            1.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "description": "Plate  6 x  6"
+      },
+      {
+        "id": "1",
+        "parent": "root",
+        "ref": "3001.dat",
+        "kind": "part",
+        "embedded": false,
+        "section": "s16_crane.ldr",
+        "index": 1,
+        "line": 10,
+        "colour": "14",
+        "effective_colour": "14",
+        "local": [
+          [
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            1.0,
+            0.0,
+            -24.0
+          ],
+          [
+            0.0,
+            0.0,
+            1.0,
+            -20.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "world": [
+          [
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            1.0,
+            0.0,
+            -24.0
+          ],
+          [
+            0.0,
+            0.0,
+            1.0,
+            -20.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "description": "Brick  2 x  4"
+      },
+      {
+        "id": "2",
+        "parent": "root",
+        "ref": "3001.dat",
+        "kind": "part",
+        "embedded": false,
+        "section": "s16_crane.ldr",
+        "index": 2,
+        "line": 12,
+        "colour": "14",
+        "effective_colour": "14",
+        "local": [
+          [
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            1.0,
+            0.0,
+            -24.0
+          ],
+          [
+            0.0,
+            0.0,
+            1.0,
+            20.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "world": [
+          [
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            1.0,
+            0.0,
+            -24.0
+          ],
+          [
+            0.0,
+            0.0,
+            1.0,
+            20.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "description": "Brick  2 x  4"
+      },
+      {
+        "id": "3",
+        "parent": "root",
+        "ref": "3001.dat",
+        "kind": "part",
+        "embedded": false,
+        "section": "s16_crane.ldr",
+        "index": 3,
+        "line": 14,
+        "colour": "14",
+        "effective_colour": "14",
+        "local": [
+          [
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            1.0,
+            0.0,
+            -48.0
+          ],
+          [
+            0.0,
+            0.0,
+            1.0,
+            -20.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "world": [
+          [
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            1.0,
+            0.0,
+            -48.0
+          ],
+          [
+            0.0,
+            0.0,
+            1.0,
+            -20.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "description": "Brick  2 x  4"
+      },
+      {
+        "id": "4",
+        "parent": "root",
+        "ref": "3001.dat",
+        "kind": "part",
+        "embedded": false,
+        "section": "s16_crane.ldr",
+        "index": 4,
+        "line": 16,
+        "colour": "14",
+        "effective_colour": "14",
+        "local": [
+          [
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            1.0,
+            0.0,
+            -48.0
+          ],
+          [
+            0.0,
+            0.0,
+            1.0,
+            20.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "world": [
+          [
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            1.0,
+            0.0,
+            -48.0
+          ],
+          [
+            0.0,
+            0.0,
+            1.0,
+            20.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "description": "Brick  2 x  4"
+      },
+      {
+        "id": "5",
+        "parent": "root",
+        "ref": "3403.dat",
+        "kind": "part",
+        "embedded": false,
+        "section": "s16_crane.ldr",
+        "index": 5,
+        "line": 18,
+        "colour": "8",
+        "effective_colour": "8",
+        "local": [
+          [
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            1.0,
+            0.0,
+            -72.0
+          ],
+          [
+            0.0,
+            0.0,
+            1.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "world": [
+          [
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            1.0,
+            0.0,
+            -72.0
+          ],
+          [
+            0.0,
+            0.0,
+            1.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "description": "Turntable  4 x  4 Base"
+      },
+      {
+        "id": "6",
+        "parent": "root",
+        "ref": "3404.dat",
+        "kind": "part",
+        "embedded": false,
+        "section": "s16_crane.ldr",
+        "index": 6,
+        "line": 20,
+        "colour": "8",
+        "effective_colour": "8",
+        "local": [
+          [
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            1.0,
+            0.0,
+            -72.0
+          ],
+          [
+            0.0,
+            0.0,
+            1.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "world": [
+          [
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            1.0,
+            0.0,
+            -72.0
+          ],
+          [
+            0.0,
+            0.0,
+            1.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "description": "Turntable  4 x  4 Top"
+      },
+      {
+        "id": "7",
+        "parent": "root",
+        "ref": "3010.dat",
+        "kind": "part",
+        "embedded": false,
+        "section": "s16_crane.ldr",
+        "index": 7,
+        "line": 22,
+        "colour": "14",
+        "effective_colour": "14",
+        "local": [
+          [
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            1.0,
+            0.0,
+            -96.0
+          ],
+          [
+            0.0,
+            0.0,
+            1.0,
+            30.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "world": [
+          [
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            1.0,
+            0.0,
+            -96.0
+          ],
+          [
+            0.0,
+            0.0,
+            1.0,
+            30.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "description": "Brick  1 x  4"
+      },
+      {
+        "id": "8",
+        "parent": "root",
+        "ref": "3010.dat",
+        "kind": "part",
+        "embedded": false,
+        "section": "s16_crane.ldr",
+        "index": 8,
+        "line": 24,
+        "colour": "0",
+        "effective_colour": "0",
+        "local": [
+          [
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            1.0,
+            0.0,
+            -120.0
+          ],
+          [
+            0.0,
+            0.0,
+            1.0,
+            30.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "world": [
+          [
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            1.0,
+            0.0,
+            -120.0
+          ],
+          [
+            0.0,
+            0.0,
+            1.0,
+            30.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "description": "Brick  1 x  4"
+      },
+      {
+        "id": "9",
+        "parent": "root",
+        "ref": "3710.dat",
+        "kind": "part",
+        "embedded": false,
+        "section": "s16_crane.ldr",
+        "index": 9,
+        "line": 26,
+        "colour": "14",
+        "effective_colour": "14",
+        "local": [
+          [
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            1.0,
+            0.0,
+            -128.0
+          ],
+          [
+            0.0,
+            0.0,
+            1.0,
+            30.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "world": [
+          [
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            1.0,
+            0.0,
+            -128.0
+          ],
+          [
+            0.0,
+            0.0,
+            1.0,
+            30.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "description": "Plate  1 x  4"
+      },
+      {
+        "id": "10",
+        "parent": "root",
+        "ref": "3937.dat",
+        "kind": "part",
+        "embedded": false,
+        "section": "s16_crane.ldr",
+        "index": 10,
+        "line": 28,
+        "colour": "8",
+        "effective_colour": "8",
+        "local": [
+          [
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            1.0,
+            0.0,
+            -96.0
+          ],
+          [
+            0.0,
+            0.0,
+            1.0,
+            -10.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "world": [
+          [
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            1.0,
+            0.0,
+            -96.0
+          ],
+          [
+            0.0,
+            0.0,
+            1.0,
+            -10.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "description": "Hinge  1 x  2 Base"
+      },
+      {
+        "id": "11",
+        "parent": "root",
+        "ref": "6134.dat",
+        "kind": "part",
+        "embedded": false,
+        "section": "s16_crane.ldr",
+        "index": 11,
+        "line": 30,
+        "colour": "8",
+        "effective_colour": "8",
+        "local": [
+          [
+            -1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            1.0,
+            0.0,
+            -96.0
+          ],
+          [
+            0.0,
+            0.0,
+            -1.0,
+            -10.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "world": [
+          [
+            -1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            1.0,
+            0.0,
+            -96.0
+          ],
+          [
+            0.0,
+            0.0,
+            -1.0,
+            -10.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "description": "Hinge  2 x  2 Top"
+      },
+      {
+        "id": "12",
+        "parent": "root",
+        "ref": "3023b.dat",
+        "kind": "part",
+        "embedded": false,
+        "section": "s16_crane.ldr",
+        "index": 12,
+        "line": 32,
+        "colour": "8",
+        "effective_colour": "8",
+        "local": [
+          [
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            1.0,
+            0.0,
+            -104.0
+          ],
+          [
+            0.0,
+            0.0,
+            1.0,
+            -30.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "world": [
+          [
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            1.0,
+            0.0,
+            -104.0
+          ],
+          [
+            0.0,
+            0.0,
+            1.0,
+            -30.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "description": "Plate  1 x  2"
+      },
+      {
+        "id": "13",
+        "parent": "root",
+        "ref": "3832.dat",
+        "kind": "part",
+        "embedded": false,
+        "section": "s16_crane.ldr",
+        "index": 13,
+        "line": 34,
+        "colour": "14",
+        "effective_colour": "14",
+        "local": [
+          [
+            0.0,
+            0.0,
+            1.0,
+            0.0
+          ],
+          [
+            0.0,
+            1.0,
+            0.0,
+            -112.0
+          ],
+          [
+            -1.0,
+            0.0,
+            0.0,
+            -120.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "world": [
+          [
+            0.0,
+            0.0,
+            1.0,
+            0.0
+          ],
+          [
+            0.0,
+            1.0,
+            0.0,
+            -112.0
+          ],
+          [
+            -1.0,
+            0.0,
+            0.0,
+            -120.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "description": "Plate  2 x 10"
+      },
+      {
+        "id": "14",
+        "parent": "root",
+        "ref": "3700.dat",
+        "kind": "part",
+        "embedded": false,
+        "section": "s16_crane.ldr",
+        "index": 14,
+        "line": 36,
+        "colour": "8",
+        "effective_colour": "8",
+        "local": [
+          [
+            0.0,
+            0.0,
+            1.0,
+            10.0
+          ],
+          [
+            0.0,
+            1.0,
+            0.0,
+            -104.0
+          ],
+          [
+            -1.0,
+            0.0,
+            0.0,
+            -200.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "world": [
+          [
+            0.0,
+            0.0,
+            1.0,
+            10.0
+          ],
+          [
+            0.0,
+            1.0,
+            0.0,
+            -104.0
+          ],
+          [
+            -1.0,
+            0.0,
+            0.0,
+            -200.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "description": "Technic Brick  1 x  2 with Hole"
+      },
+      {
+        "id": "15",
+        "parent": "root",
+        "ref": "3136.dat",
+        "kind": "part",
+        "embedded": false,
+        "section": "s16_crane.ldr",
+        "index": 15,
+        "line": 38,
+        "colour": "8",
+        "effective_colour": "8",
+        "local": [
+          [
+            1.0,
+            0.0,
+            0.0,
+            10.0
+          ],
+          [
+            0.0,
+            1.0,
+            0.0,
+            -94.0
+          ],
+          [
+            0.0,
+            0.0,
+            1.0,
+            -200.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "world": [
+          [
+            1.0,
+            0.0,
+            0.0,
+            10.0
+          ],
+          [
+            0.0,
+            1.0,
+            0.0,
+            -94.0
+          ],
+          [
+            0.0,
+            0.0,
+            1.0,
+            -200.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "description": "Crane Hook with  4 Studs"
+      }
+    ],
+    "diagnostics": [],
+    "coordinate_space": "selected section, LDU, -Y up"
+  },
+  "controls": {},
+  "signals": {},
+  "bodies": {},
+  "anchors": {},
+  "checks": [],
+  "notes": [
+    "Assign rigid groups and measured joints before setting status to ready."
+  ],
+  "mechanisms": {
+    "m_4a44dc153642": {
+      "label": "Hinge  1 x  2 Base",
+      "parts": [
+        "10",
+        "11"
+      ],
+      "bodies": [],
+      "inputs": [],
+      "outputs": [],
+      "notes": [
+        "Provisional mechanism boundary. Review connections, identify input/output and assign moving groups."
+      ]
+    },
+    "m_ef2d127de37b": {
+      "label": "Turntable  4 x  4 Base",
+      "parts": [
+        "5",
+        "6",
+        "7"
+      ],
+      "bodies": [],
+      "inputs": [],
+      "outputs": [],
+      "notes": [
+        "Provisional mechanism boundary. Review connections, identify input/output and assign moving groups."
+      ]
+    }
+  },
+  "connections": {
+    "c_04c4b1e003a8c9ba": {
+      "a": "10",
+      "b": "11",
+      "kind": "revolute",
+      "status": "candidate",
+      "evidence": "pyldraw3 connector contact; mating metadata does not determine rigidity or free motion",
+      "measurements": {
+        "first_kind": "hinge",
+        "second_kind": "hinge",
+        "first_feature": "snap_fgr@L9:I0",
+        "second_feature": "snap_fgr@L8:I0",
+        "position": [
+          0.0,
+          -86.0,
+          -10.0
+        ],
+        "axis": [
+          1.0,
+          0.0,
+          0.0
+        ],
+        "contact_status": "confirmed",
+        "residual": {
+          "distance": 0.0,
+          "axial_gap": 0.0,
+          "alignment": 1.0,
+          "roll_alignment": 1.0,
+          "entry_face_gap": null,
+          "penetration": null
+        }
+      }
+    },
+    "c_083050f1e0ffd6e3": {
+      "a": "5",
+      "b": "6",
+      "kind": "contact",
+      "status": "candidate",
+      "evidence": "pyldraw3 connector contact; mating metadata does not determine rigidity or free motion",
+      "measurements": {
+        "first_kind": "pin_hole",
+        "second_kind": "pin",
+        "first_feature": "snap_cyl@L8:I0",
+        "second_feature": "snap_cyl@L9:I0",
+        "position": [
+          0.0,
+          -69.0,
+          0.0
+        ],
+        "axis": [
+          0.0,
+          1.0,
+          0.0
+        ],
+        "contact_status": "confirmed",
+        "residual": {
+          "distance": 0.0,
+          "axial_gap": 0.0,
+          "alignment": 1.0,
+          "roll_alignment": 1.0,
+          "entry_face_gap": null,
+          "penetration": null
+        }
+      }
+    },
+    "c_2a41f6ae3ec19092": {
+      "a": "6",
+      "b": "7",
+      "kind": "contact",
+      "status": "candidate",
+      "evidence": "pyldraw3 connector contact; mating metadata does not determine rigidity or free motion",
+      "measurements": {
+        "first_kind": "stud",
+        "second_kind": "stud_receptacle",
+        "first_feature": "stug-1x2@R13/stud@R0/studC",
+        "second_feature": "s/3010s01@R0/stug3-1x3@R1/stud3@R0/stud3:socket:+1+0",
+        "position": [
+          -10.0,
+          -72.0,
+          30.0
+        ],
+        "axis": [
+          0.0,
+          -1.0,
+          0.0
+        ],
+        "contact_status": "confirmed",
+        "residual": {
+          "distance": 0.0,
+          "axial_gap": 0.0,
+          "alignment": 1.0,
+          "roll_alignment": 1.0,
+          "entry_face_gap": 0.0,
+          "penetration": 28.0
+        }
+      }
+    },
+    "c_79e2b3aa814a4356": {
+      "a": "6",
+      "b": "7",
+      "kind": "contact",
+      "status": "candidate",
+      "evidence": "pyldraw3 connector contact; mating metadata does not determine rigidity or free motion",
+      "measurements": {
+        "first_kind": "stud",
+        "second_kind": "stud_receptacle",
+        "first_feature": "stug-1x2@R13/stud@R1/studC",
+        "second_feature": "s/3010s01@R0/stug3-1x3@R1/stud3@R1/stud3:socket:+1+0",
+        "position": [
+          10.0,
+          -72.0,
+          30.0
+        ],
+        "axis": [
+          0.0,
+          -1.0,
+          0.0
+        ],
+        "contact_status": "confirmed",
+        "residual": {
+          "distance": 0.0,
+          "axial_gap": 0.0,
+          "alignment": 1.0,
+          "roll_alignment": 1.0,
+          "entry_face_gap": 0.0,
+          "penetration": 28.0
+        }
+      }
+    }
+  },
+  "discovery": {
+    "grouping": "Provisional connected mechanical candidates; agent may split/merge views",
+    "unclassified_parts": [
+      "0",
+      "1",
+      "12",
+      "13",
+      "14",
+      "15",
+      "2",
+      "3",
+      "4",
+      "8",
+      "9"
+    ],
+    "embedded_parts": [],
+    "contact_limit": 300,
+    "rigid_groups": "not inferred",
+    "inputs_outputs": "not inferred",
+    "mechanical_parts": [
+      "10",
+      "11",
+      "5",
+      "6"
+    ],
+    "warnings": [
+      {
+        "code": "coaxial_not_run",
+        "message": "not run: 0 shaft/gear candidates outside 2..100; select a section"
+      }
+    ],
+    "surface_contacts": "Not detected: cams, levers bearing on beams, friction and stops need geometric/visual review even when connector contacts are absent",
+    "unsupported_gears": [],
+    "gear_placements": {
+      "policy": "Nearest orthogonal analysis frame within rounding_limit; source translations and handedness preserved",
+      "rounding_limit": 0.002,
+      "counts": {},
+      "affected": []
+    },
+    "contacts": {
+      "complete": true,
+      "tested_parts": 16,
+      "diagnostics": [],
+      "summary": {
+        "tested_parts": 16,
+        "contacts": 40,
+        "contacted_parts": 11,
+        "by_kind": {
+          "stud/stud_receptacle": 38,
+          "pin/pin_hole": 1,
+          "hinge/hinge": 1
+        },
+        "axles": {
+          "selection": "Catalog descriptions beginning Technic Axle followed by a numeric length; excludes axle pins, joiners and axle-hole supports",
+          "total": 0,
+          "with_axle_hole_contact": 0,
+          "without_axle_hole_contact": []
+        }
+      },
+      "placements": {
+        "policy": "Nearest orthogonal analysis frame within rounding_limit; source translations and handedness preserved",
+        "rounding_limit": 0.002,
+        "counts": {
+          "unchanged": 16
+        },
+        "affected": []
+      }
+    },
+    "coaxial_selection": "Catalog axle, gear, worm and engine crankshaft parts; positive line evidence within 80 LDU axial separation",
+    "coaxial": "not run: 0 shaft/gear candidates outside 2..100; select a section",
+    "isolated_mechanical_parts": []
+  }
+}

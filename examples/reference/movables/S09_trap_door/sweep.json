@@ -1,0 +1,108 @@
+{
+  "passed": true,
+  "samples": [
+    {
+      "control": "trap",
+      "value": 0.0,
+      "passed": true,
+      "max_error": 0
+    },
+    {
+      "control": "trap",
+      "value": 0.121875,
+      "passed": true,
+      "max_error": 0
+    },
+    {
+      "control": "trap",
+      "value": 0.24375,
+      "passed": true,
+      "max_error": 0
+    },
+    {
+      "control": "trap",
+      "value": 0.365625,
+      "passed": true,
+      "max_error": 0
+    },
+    {
+      "control": "trap",
+      "value": 0.4875,
+      "passed": true,
+      "max_error": 0
+    },
+    {
+      "control": "trap",
+      "value": 0.609375,
+      "passed": true,
+      "max_error": 0
+    },
+    {
+      "control": "trap",
+      "value": 0.73125,
+      "passed": true,
+      "max_error": 0
+    },
+    {
+      "control": "trap",
+      "value": 0.853125,
+      "passed": true,
+      "max_error": 0
+    },
+    {
+      "control": "trap",
+      "value": 0.975,
+      "passed": true,
+      "max_error": 0
+    },
+    {
+      "control": "trap",
+      "value": 1.096875,
+      "passed": true,
+      "max_error": 0
+    },
+    {
+      "control": "trap",
+      "value": 1.21875,
+      "passed": true,
+      "max_error": 0
+    },
+    {
+      "control": "trap",
+      "value": 1.340625,
+      "passed": true,
+      "max_error": 0
+    },
+    {
+      "control": "trap",
+      "value": 1.4625,
+      "passed": true,
+      "max_error": 0
+    },
+    {
+      "control": "trap",
+      "value": 1.5843749999999999,
+      "passed": true,
+      "max_error": 0
+    },
+    {
+      "control": "trap",
+      "value": 1.70625,
+      "passed": true,
+      "max_error": 0
+    },
+    {
+      "control": "trap",
+      "value": 1.828125,
+      "passed": true,
+      "max_error": 0
+    },
+    {
+      "control": "trap",
+      "value": 1.95,
+      "passed": true,
+      "max_error": 0
+    }
+  ],
+  "coverage": "Each control swept independently; analytic closure only, not mesh collisions or dynamics"
+}

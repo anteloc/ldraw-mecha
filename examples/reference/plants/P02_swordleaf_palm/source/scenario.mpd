@@ -1,0 +1,40 @@
+0 FILE p02_swordleaf_palm.ldr
+0 Plant wind case P02_swordleaf_palm Swordleaf palm
+0 Name: p02_swordleaf_palm.ldr
+0 Author: ldraw-mecha scripts/build_plants.py
+0 // Generated mock case: parts picked by constant name from data/categories/parts (vine subfiles by LDraw reference); moving parts placed from LDCad shadow connector frames (data/offLibShadow) via pyldraw3 or copied from official constructions (2518c01, 10315, 10297). Frame: LDU, -Y up, the case front faces -Z, ground (base top) at y = 0. Wind blows toward +X.
+
+0 // base: plates.Plate6X6
+1 2 0 0 0 1 0 0 0 1 0 0 0 1 3958.dat
+0 // trunk0: bricks.Brick2X2RoundWithoutReinforcement
+1 70 0 -24 0 1 0 0 0 1 0 0 0 1 3941.dat
+0 // trunk1: bricks.Brick2X2RoundWithoutReinforcement
+1 70 0 -48 0 1 0 0 0 1 0 0 0 1 3941.dat
+0 // trunk2: bricks.Brick2X2RoundWithoutReinforcement
+1 70 0 -72 0 1 0 0 0 1 0 0 0 1 3941.dat
+0 // trunk3: bricks.Brick2X2RoundWithoutReinforcement
+1 70 0 -96 0 1 0 0 0 1 0 0 0 1 3941.dat
+0 // trunk4: bricks.Brick2X2RoundWithoutReinforcement
+1 70 0 -120 0 1 0 0 0 1 0 0 0 1 3941.dat
+0 // trunk5: bricks.Brick2X2RoundWithoutReinforcement
+1 70 0 -144 0 1 0 0 0 1 0 0 0 1 3941.dat
+0 // hub_x_pos: plates.Plate1X2WithHandleOnEnd
+1 70 20 -152 -10 1 0 0 0 1 0 0 0 1 60478.dat
+0 // hub_x_neg: plates.Plate1X2WithHandleOnEnd
+1 70 -20 -152 -10 -1 0 0 0 1 0 0 0 -1 60478.dat
+0 // hub_fill_a: plates.Plate1X1
+1 70 10 -152 10 1 0 0 0 1 0 0 0 1 3024.dat
+0 // hub_fill_b: plates.Plate1X1
+1 70 -10 -152 10 1 0 0 0 1 0 0 0 1 3024.dat
+0 // hub_z_pos: plates.Plate1X2WithHandleOnEnd
+1 70 10 -160 20 0 0 -1 0 1 0 1 0 0 60478.dat
+0 // hub_z_neg: plates.Plate1X2WithHandleOnEnd
+1 70 10 -160 -20 0 0 1 0 1 0 -1 0 0 60478.dat
+0 // frond_downwind: plants.PlantLeaves6X5SwordleafWithC_Clip
+1 27 75.44144288 -134.1024221 -6 -0.5299192642 0 -0.8480480962 0.8480480962 0 -0.5299192642 0 -1 0 10884.dat
+0 // frond_upwind: plants.PlantLeaves6X5SwordleafWithC_Clip
+1 27 -75.44144288 -134.1024221 -14 0.5299192642 0 0.8480480962 0.8480480962 0 -0.5299192642 0 1 0 10884.dat
+0 // frond_back: plants.PlantLeaves6X5SwordleafWithC_Clip
+1 27 6 -148.7294902 78.53169549 0 1 0 0.9510565163 0 -0.3090169944 -0.3090169944 0 -0.9510565163 10884.dat
+0 // frond_front: plants.PlantLeaves6X5SwordleafWithC_Clip
+1 27 14 -148.7294902 -78.53169549 0 -1 0 0.9510565163 0 -0.3090169944 0.3090169944 0 0.9510565163 10884.dat

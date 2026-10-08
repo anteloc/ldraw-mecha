@@ -1,0 +1,319 @@
+{
+  "instances": [
+    "9",
+    "83",
+    "110",
+    "111",
+    "3",
+    "10",
+    "109/30",
+    "109/27"
+  ],
+  "complete": true,
+  "contacts": [
+    {
+      "a": "9",
+      "b": "83",
+      "first": {
+        "kind": "axle",
+        "role": "male",
+        "position": [
+          0.0,
+          90.0,
+          -68.0
+        ],
+        "frame": [
+          [
+            0.0,
+            0.0,
+            1.0
+          ],
+          [
+            1.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            1.0,
+            0.0
+          ]
+        ],
+        "profile": {
+          "sections": [
+            {
+              "shape": "axle",
+              "radius": 6.0,
+              "length": 158.0,
+              "flexible": false
+            },
+            {
+              "shape": "round",
+              "radius": 8.0,
+              "length": 2.0,
+              "flexible": false
+            }
+          ],
+          "centered": true,
+          "friction": false,
+          "caps": "none"
+        },
+        "name": "LDCad cylinder",
+        "feature_id": "snap_cyl@L11:I0",
+        "group": null,
+        "freedoms": [
+          "slide",
+          "rotate"
+        ],
+        "source": "ldcad_shadow",
+        "confidence": 1.0,
+        "owner_code": "55013",
+        "compatible_parts": [],
+        "occupied": false,
+        "occupied_by": null,
+        "provenance": [
+          "/Users/captain/workspaces/workspace-ai/ldraw-mecha/data/offLibShadow/parts/55013.dat:11"
+        ],
+        "metadata_id": null,
+        "connection_provenance": {
+          "source": "ldcad_shadow",
+          "path": "/Users/captain/workspaces/workspace-ai/ldraw-mecha/data/offLibShadow/parts/55013.dat",
+          "archive_member": null,
+          "line_number": 11,
+          "command": "0 !LDCAD SNAP_CYL [gender=M] [caps=none] [secs=A 6 158   R 8 2] [center=true] [slide=true] [ori=0 -1 0 1 0 0 0 0 1]",
+          "include_chain": []
+        },
+        "scale_inheritance": "none",
+        "mirror_inheritance": "cor"
+      },
+      "second": {
+        "kind": "axle_hole",
+        "role": "female",
+        "position": [
+          0.0,
+          90.0,
+          -50.0
+        ],
+        "frame": [
+          [
+            -1.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            1.0
+          ],
+          [
+            0.0,
+            1.0,
+            -0.0
+          ]
+        ],
+        "profile": {
+          "sections": [
+            {
+              "shape": "axle",
+              "radius": 6.0,
+              "length": 20.0,
+              "flexible": false
+            }
+          ],
+          "centered": false,
+          "friction": false,
+          "caps": "none"
+        },
+        "name": "axleHole",
+        "feature_id": "axlehol5@R0/axleHole",
+        "group": null,
+        "freedoms": [
+          "slide",
+          "rotate"
+        ],
+        "source": "ldcad_shadow",
+        "confidence": 1.0,
+        "owner_code": "18575",
+        "compatible_parts": [],
+        "occupied": false,
+        "occupied_by": null,
+        "provenance": [
+          "/Users/captain/workspaces/workspace-ai/ldraw-mecha/data/offLibShadow/p/axlehol5.dat:12"
+        ],
+        "metadata_id": "axleHole",
+        "connection_provenance": {
+          "source": "ldcad_shadow",
+          "path": "/Users/captain/workspaces/workspace-ai/ldraw-mecha/data/offLibShadow/p/axlehol5.dat",
+          "archive_member": null,
+          "line_number": 12,
+          "command": "0 !LDCAD SNAP_CYL [id=axleHole] [gender=F] [caps=none] [secs=A 6 1] [slide=true] [pos=0 1 0] [scale=YOnly]",
+          "include_chain": []
+        },
+        "scale_inheritance": "yonly",
+        "mirror_inheritance": "cor"
+      },
+      "status": "confirmed",
+      "residual": {
+        "distance": 0.0,
+        "axial_gap": 0.0,
+        "alignment": 1.0,
+        "roll_alignment": 1.0,
+        "entry_face_gap": null,
+        "penetration": null
+      }
+    },
+    {
+      "a": "9",
+      "b": "111",
+      "first": {
+        "kind": "axle",
+        "role": "male",
+        "position": [
+          0.0,
+          90.0,
+          -68.0
+        ],
+        "frame": [
+          [
+            0.0,
+            0.0,
+            1.0
+          ],
+          [
+            1.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            1.0,
+            0.0
+          ]
+        ],
+        "profile": {
+          "sections": [
+            {
+              "shape": "axle",
+              "radius": 6.0,
+              "length": 158.0,
+              "flexible": false
+            },
+            {
+              "shape": "round",
+              "radius": 8.0,
+              "length": 2.0,
+              "flexible": false
+            }
+          ],
+          "centered": true,
+          "friction": false,
+          "caps": "none"
+        },
+        "name": "LDCad cylinder",
+        "feature_id": "snap_cyl@L11:I0",
+        "group": null,
+        "freedoms": [
+          "slide",
+          "rotate"
+        ],
+        "source": "ldcad_shadow",
+        "confidence": 1.0,
+        "owner_code": "55013",
+        "compatible_parts": [],
+        "occupied": false,
+        "occupied_by": null,
+        "provenance": [
+          "/Users/captain/workspaces/workspace-ai/ldraw-mecha/data/offLibShadow/parts/55013.dat:11"
+        ],
+        "metadata_id": null,
+        "connection_provenance": {
+          "source": "ldcad_shadow",
+          "path": "/Users/captain/workspaces/workspace-ai/ldraw-mecha/data/offLibShadow/parts/55013.dat",
+          "archive_member": null,
+          "line_number": 11,
+          "command": "0 !LDCAD SNAP_CYL [gender=M] [caps=none] [secs=A 6 158   R 8 2] [center=true] [slide=true] [ori=0 -1 0 1 0 0 0 0 1]",
+          "include_chain": []
+        },
+        "scale_inheritance": "none",
+        "mirror_inheritance": "cor"
+      },
+      "second": {
+        "kind": "axle_hole",
+        "role": "female",
+        "position": [
+          0.0,
+          90.0,
+          -130.0
+        ],
+        "frame": [
+          [
+            0.0,
+            0.0,
+            1.0
+          ],
+          [
+            -1.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            -1.0,
+            0.0
+          ]
+        ],
+        "profile": {
+          "sections": [
+            {
+              "shape": "axle",
+              "radius": 6.0,
+              "length": 20.0,
+              "flexible": false
+            }
+          ],
+          "centered": false,
+          "friction": false,
+          "caps": "one"
+        },
+        "name": "LDCad cylinder",
+        "feature_id": "snap_cyl@L9:I0",
+        "group": null,
+        "freedoms": [
+          "slide",
+          "rotate"
+        ],
+        "source": "ldcad_shadow",
+        "confidence": 1.0,
+        "owner_code": "59443",
+        "compatible_parts": [],
+        "occupied": false,
+        "occupied_by": null,
+        "provenance": [
+          "/Users/captain/workspaces/workspace-ai/ldraw-mecha/data/offLibShadow/parts/59443.dat:9"
+        ],
+        "metadata_id": null,
+        "connection_provenance": {
+          "source": "ldcad_shadow",
+          "path": "/Users/captain/workspaces/workspace-ai/ldraw-mecha/data/offLibShadow/parts/59443.dat",
+          "archive_member": null,
+          "line_number": 9,
+          "command": "0 !LDCAD SNAP_CYL [gender=F] [caps=one] [secs=A 6 20] [slide=true] [pos=0 0 -20] [ori=1 0 0 0 0 1 0 -1 0]",
+          "include_chain": []
+        },
+        "scale_inheritance": "none",
+        "mirror_inheritance": "cor"
+      },
+      "status": "confirmed",
+      "residual": {
+        "distance": 0.0,
+        "axial_gap": 0.0,
+        "alignment": 1.0,
+        "roll_alignment": 1.0,
+        "entry_face_gap": null,
+        "penetration": null
+      }
+    }
+  ],
+  "diagnostics": [],
+  "coverage": "pyldraw3 contacts for selected library parts only; no rigid grouping, collision proof or general mobility inference"
+}

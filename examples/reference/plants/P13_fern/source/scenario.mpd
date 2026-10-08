@@ -1,0 +1,30 @@
+0 FILE p13_fern.ldr
+0 Plant wind case P13_fern Fern bush
+0 Name: p13_fern.ldr
+0 Author: ldraw-mecha scripts/build_plants.py
+0 // Generated mock case: parts picked by constant name from data/categories/parts (vine subfiles by LDraw reference); moving parts placed from LDCad shadow connector frames (data/offLibShadow) via pyldraw3 or copied from official constructions (2518c01, 10315, 10297). Frame: LDU, -Y up, the case front faces -Z, ground (base top) at y = 0. Wind blows toward +X.
+
+0 // base: plates.Plate6X6
+1 2 0 0 0 1 0 0 0 1 0 0 0 1 3958.dat
+0 // rock: bricks.Brick2X2RoundWithoutReinforcement
+1 72 0 -24 0 1 0 0 0 1 0 0 0 1 3941.dat
+0 // hub_x_pos: plates.Plate1X2WithHandleOnEnd
+1 288 20 -32 -10 1 0 0 0 1 0 0 0 1 60478.dat
+0 // hub_x_neg: plates.Plate1X2WithHandleOnEnd
+1 288 -20 -32 -10 -1 0 0 0 1 0 0 0 -1 60478.dat
+0 // hub_fill_a: plates.Plate1X1
+1 288 10 -32 10 1 0 0 0 1 0 0 0 1 3024.dat
+0 // hub_fill_b: plates.Plate1X1
+1 288 -10 -32 10 1 0 0 0 1 0 0 0 1 3024.dat
+0 // hub_z_pos: plates.Plate1X2WithHandleOnEnd
+1 288 10 -40 20 0 0 -1 0 1 0 1 0 0 60478.dat
+0 // hub_z_neg: plates.Plate1X2WithHandleOnEnd
+1 288 10 -40 -20 0 0 1 0 1 0 -1 0 0 60478.dat
+0 // frond_downwind: plants.PlantLeaves6X5SwordleafWithU_Clip
+1 2 79.34442802 -36.23735072 0 0.2079116908 0 -0.9781476007 0.9781476007 0 0.2079116908 0 -1 0 30239.dat
+0 // frond_upwind: plants.PlantLeaves6X5SwordleafWithU_Clip
+1 2 -79.34442802 -36.23735072 -20 -0.2079116908 0 0.9781476007 0.9781476007 0 0.2079116908 0 1 0 30239.dat
+0 // frond_back: plants.PlantLeaves6X5SwordleafWithU_Clip
+1 10 0 -52.08414688 76.48842779 0 1 0 0.8829475929 0 0.4694715628 0.4694715628 0 -0.8829475929 30239.dat
+0 // frond_front: plants.PlantLeaves6X5SwordleafWithU_Clip
+1 10 20 -52.08414688 -76.48842779 0 -1 0 0.8829475929 0 0.4694715628 -0.4694715628 0 0.8829475929 30239.dat

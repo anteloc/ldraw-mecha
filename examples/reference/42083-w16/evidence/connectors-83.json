@@ -1,0 +1,581 @@
+{
+  "id": "83",
+  "ref": "18575.dat",
+  "coordinate_space": "selected section, LDU, -Y up",
+  "features": [
+    {
+      "kind": "axle",
+      "role": "male",
+      "position": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "frame": [
+        [
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          -1.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0
+        ]
+      ],
+      "profile": {
+        "sections": [
+          {
+            "shape": "axle",
+            "radius": 5.6023,
+            "length": 20.0,
+            "flexible": false
+          }
+        ],
+        "centered": true,
+        "friction": false,
+        "caps": "none"
+      },
+      "name": "Technic Axle Hole Open Two Opposite Sides",
+      "feature_id": "axlehol5@R0/axlehol5",
+      "group": null,
+      "freedoms": [
+        "slide"
+      ],
+      "source": "primitive",
+      "confidence": 0.85,
+      "owner_code": "18575",
+      "compatible_parts": [],
+      "occupied": false,
+      "occupied_by": null,
+      "provenance": [
+        "axlehol5"
+      ],
+      "metadata_id": null,
+      "connection_provenance": {
+        "source": "primitive",
+        "path": null,
+        "archive_member": null,
+        "line_number": null,
+        "command": "axlehol5",
+        "include_chain": []
+      },
+      "scale_inheritance": "yandr",
+      "mirror_inheritance": "none",
+      "world_position": [
+        0.0,
+        90.0,
+        -40.0
+      ],
+      "world_axis": [
+        0.0,
+        0.0,
+        -1.0
+      ]
+    },
+    {
+      "kind": "axle_hole",
+      "role": "female",
+      "position": [
+        0.0,
+        0.0,
+        -10.0
+      ],
+      "frame": [
+        [
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          -1.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0
+        ]
+      ],
+      "profile": {
+        "sections": [
+          {
+            "shape": "axle",
+            "radius": 5.6023,
+            "length": 0.0,
+            "flexible": false
+          }
+        ],
+        "centered": false,
+        "friction": false,
+        "caps": "none"
+      },
+      "name": "Technic Axle Hole Rounded Tooth Outer Edges",
+      "feature_id": "axlehol5@R0/axl5hol9@R0/axl5hol9",
+      "group": null,
+      "freedoms": [
+        "slide"
+      ],
+      "source": "primitive",
+      "confidence": 0.85,
+      "owner_code": "18575",
+      "compatible_parts": [],
+      "occupied": false,
+      "occupied_by": null,
+      "provenance": [
+        "axl5hol9"
+      ],
+      "metadata_id": null,
+      "connection_provenance": {
+        "source": "primitive",
+        "path": null,
+        "archive_member": null,
+        "line_number": null,
+        "command": "axl5hol9",
+        "include_chain": []
+      },
+      "scale_inheritance": "yandr",
+      "mirror_inheritance": "none",
+      "world_position": [
+        0.0,
+        90.0,
+        -30.0
+      ],
+      "world_axis": [
+        0.0,
+        0.0,
+        -1.0
+      ]
+    },
+    {
+      "kind": "axle_hole",
+      "role": "female",
+      "position": [
+        0.0,
+        0.0,
+        -10.0
+      ],
+      "frame": [
+        [
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          -1.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0
+        ]
+      ],
+      "profile": {
+        "sections": [
+          {
+            "shape": "axle",
+            "radius": 5.6023,
+            "length": 0.0,
+            "flexible": false
+          }
+        ],
+        "centered": false,
+        "friction": false,
+        "caps": "none"
+      },
+      "name": "Technic Axle Hole Rounded Tooth Surface",
+      "feature_id": "axlehol5@R0/axl5ho10@R2/axl5ho10",
+      "group": null,
+      "freedoms": [
+        "slide"
+      ],
+      "source": "primitive",
+      "confidence": 0.85,
+      "owner_code": "18575",
+      "compatible_parts": [],
+      "occupied": false,
+      "occupied_by": null,
+      "provenance": [
+        "axl5ho10"
+      ],
+      "metadata_id": null,
+      "connection_provenance": {
+        "source": "primitive",
+        "path": null,
+        "archive_member": null,
+        "line_number": null,
+        "command": "axl5ho10",
+        "include_chain": []
+      },
+      "scale_inheritance": "yandr",
+      "mirror_inheritance": "none",
+      "world_position": [
+        0.0,
+        90.0,
+        -30.0
+      ],
+      "world_axis": [
+        0.0,
+        0.0,
+        -1.0
+      ]
+    },
+    {
+      "kind": "axle_hole",
+      "role": "female",
+      "position": [
+        0.0,
+        0.0,
+        10.0
+      ],
+      "frame": [
+        [
+          1.0,
+          0.0,
+          -0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0
+        ],
+        [
+          0.0,
+          -1.0,
+          0.0
+        ]
+      ],
+      "profile": {
+        "sections": [
+          {
+            "shape": "axle",
+            "radius": 6.0,
+            "length": 20.0,
+            "flexible": false
+          }
+        ],
+        "centered": false,
+        "friction": false,
+        "caps": "none"
+      },
+      "name": "axleHole",
+      "feature_id": "axlehol5@R0/axleHole",
+      "group": null,
+      "freedoms": [
+        "rotate",
+        "slide"
+      ],
+      "source": "ldcad_shadow",
+      "confidence": 1.0,
+      "owner_code": "18575",
+      "compatible_parts": [],
+      "occupied": false,
+      "occupied_by": null,
+      "provenance": [
+        "/Users/captain/workspaces/workspace-ai/ldraw-mecha/data/offLibShadow/p/axlehol5.dat:12"
+      ],
+      "metadata_id": "axleHole",
+      "connection_provenance": {
+        "source": "ldcad_shadow",
+        "path": "/Users/captain/workspaces/workspace-ai/ldraw-mecha/data/offLibShadow/p/axlehol5.dat",
+        "archive_member": null,
+        "line_number": 12,
+        "command": "0 !LDCAD SNAP_CYL [id=axleHole] [gender=F] [caps=none] [secs=A 6 1] [slide=true] [pos=0 1 0] [scale=YOnly]",
+        "include_chain": []
+      },
+      "scale_inheritance": "yonly",
+      "mirror_inheritance": "cor",
+      "world_position": [
+        0.0,
+        90.0,
+        -50.0
+      ],
+      "world_axis": [
+        0.0,
+        0.0,
+        1.0
+      ]
+    }
+  ],
+  "metadata": {
+    "part_code": "18575",
+    "coverage": "complete",
+    "features": [
+      {
+        "kind": "axle",
+        "role": "male",
+        "position": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "frame": [
+          [
+            1.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            -1.0
+          ],
+          [
+            0.0,
+            1.0,
+            0.0
+          ]
+        ],
+        "profile": {
+          "sections": [
+            {
+              "shape": "axle",
+              "radius": 5.6023,
+              "length": 20.0,
+              "flexible": false
+            }
+          ],
+          "centered": true,
+          "friction": false,
+          "caps": "none"
+        },
+        "name": "Technic Axle Hole Open Two Opposite Sides",
+        "feature_id": "axlehol5@R0/axlehol5",
+        "group": null,
+        "freedoms": [
+          "slide"
+        ],
+        "source": "primitive",
+        "confidence": 0.85,
+        "owner_code": "18575",
+        "compatible_parts": [],
+        "occupied": false,
+        "occupied_by": null,
+        "provenance": [
+          "axlehol5"
+        ],
+        "metadata_id": null,
+        "connection_provenance": {
+          "source": "primitive",
+          "path": null,
+          "archive_member": null,
+          "line_number": null,
+          "command": "axlehol5",
+          "include_chain": []
+        },
+        "scale_inheritance": "yandr",
+        "mirror_inheritance": "none"
+      },
+      {
+        "kind": "axle_hole",
+        "role": "female",
+        "position": [
+          0.0,
+          0.0,
+          -10.0
+        ],
+        "frame": [
+          [
+            1.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            -1.0
+          ],
+          [
+            0.0,
+            1.0,
+            0.0
+          ]
+        ],
+        "profile": {
+          "sections": [
+            {
+              "shape": "axle",
+              "radius": 5.6023,
+              "length": 0.0,
+              "flexible": false
+            }
+          ],
+          "centered": false,
+          "friction": false,
+          "caps": "none"
+        },
+        "name": "Technic Axle Hole Rounded Tooth Outer Edges",
+        "feature_id": "axlehol5@R0/axl5hol9@R0/axl5hol9",
+        "group": null,
+        "freedoms": [
+          "slide"
+        ],
+        "source": "primitive",
+        "confidence": 0.85,
+        "owner_code": "18575",
+        "compatible_parts": [],
+        "occupied": false,
+        "occupied_by": null,
+        "provenance": [
+          "axl5hol9"
+        ],
+        "metadata_id": null,
+        "connection_provenance": {
+          "source": "primitive",
+          "path": null,
+          "archive_member": null,
+          "line_number": null,
+          "command": "axl5hol9",
+          "include_chain": []
+        },
+        "scale_inheritance": "yandr",
+        "mirror_inheritance": "none"
+      },
+      {
+        "kind": "axle_hole",
+        "role": "female",
+        "position": [
+          0.0,
+          0.0,
+          -10.0
+        ],
+        "frame": [
+          [
+            1.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            -1.0
+          ],
+          [
+            0.0,
+            1.0,
+            0.0
+          ]
+        ],
+        "profile": {
+          "sections": [
+            {
+              "shape": "axle",
+              "radius": 5.6023,
+              "length": 0.0,
+              "flexible": false
+            }
+          ],
+          "centered": false,
+          "friction": false,
+          "caps": "none"
+        },
+        "name": "Technic Axle Hole Rounded Tooth Surface",
+        "feature_id": "axlehol5@R0/axl5ho10@R2/axl5ho10",
+        "group": null,
+        "freedoms": [
+          "slide"
+        ],
+        "source": "primitive",
+        "confidence": 0.85,
+        "owner_code": "18575",
+        "compatible_parts": [],
+        "occupied": false,
+        "occupied_by": null,
+        "provenance": [
+          "axl5ho10"
+        ],
+        "metadata_id": null,
+        "connection_provenance": {
+          "source": "primitive",
+          "path": null,
+          "archive_member": null,
+          "line_number": null,
+          "command": "axl5ho10",
+          "include_chain": []
+        },
+        "scale_inheritance": "yandr",
+        "mirror_inheritance": "none"
+      },
+      {
+        "kind": "axle_hole",
+        "role": "female",
+        "position": [
+          0.0,
+          0.0,
+          10.0
+        ],
+        "frame": [
+          [
+            1.0,
+            0.0,
+            -0.0
+          ],
+          [
+            0.0,
+            0.0,
+            1.0
+          ],
+          [
+            0.0,
+            -1.0,
+            0.0
+          ]
+        ],
+        "profile": {
+          "sections": [
+            {
+              "shape": "axle",
+              "radius": 6.0,
+              "length": 20.0,
+              "flexible": false
+            }
+          ],
+          "centered": false,
+          "friction": false,
+          "caps": "none"
+        },
+        "name": "axleHole",
+        "feature_id": "axlehol5@R0/axleHole",
+        "group": null,
+        "freedoms": [
+          "rotate",
+          "slide"
+        ],
+        "source": "ldcad_shadow",
+        "confidence": 1.0,
+        "owner_code": "18575",
+        "compatible_parts": [],
+        "occupied": false,
+        "occupied_by": null,
+        "provenance": [
+          "/Users/captain/workspaces/workspace-ai/ldraw-mecha/data/offLibShadow/p/axlehol5.dat:12"
+        ],
+        "metadata_id": "axleHole",
+        "connection_provenance": {
+          "source": "ldcad_shadow",
+          "path": "/Users/captain/workspaces/workspace-ai/ldraw-mecha/data/offLibShadow/p/axlehol5.dat",
+          "archive_member": null,
+          "line_number": 12,
+          "command": "0 !LDCAD SNAP_CYL [id=axleHole] [gender=F] [caps=none] [secs=A 6 1] [slide=true] [pos=0 1 0] [scale=YOnly]",
+          "include_chain": []
+        },
+        "scale_inheritance": "yonly",
+        "mirror_inheritance": "cor"
+      }
+    ],
+    "source_count": 1,
+    "recognized_record_count": 1,
+    "unsupported_record_count": 0,
+    "invalid_record_count": 0,
+    "diagnostics": []
+  },
+  "coverage": "Connector evidence only; mating, mobility, retention and collision require review"
+}

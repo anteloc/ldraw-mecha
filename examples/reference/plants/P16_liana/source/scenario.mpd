@@ -1,0 +1,60 @@
+0 FILE p16_liana.ldr
+0 Plant wind case P16_liana Lianas
+0 Name: p16_liana.ldr
+0 Author: ldraw-mecha scripts/build_plants.py
+0 // Generated mock case: parts picked by constant name from data/categories/parts (vine subfiles by LDraw reference); moving parts placed from LDCad shadow connector frames (data/offLibShadow) via pyldraw3 or copied from official constructions (2518c01, 10315, 10297). Frame: LDU, -Y up, the case front faces -Z, ground (base top) at y = 0. Wind blows toward +X.
+
+0 // base: plates.Plate8X16
+1 28 0 0 0 0 0 1 0 1 0 -1 0 0 92438.dat
+0 // post_thorny_back0: bricks.Brick2X2RoundWithoutReinforcement
+1 70 0 -24 100 1 0 0 0 1 0 0 0 1 3941.dat
+0 // post_thorny_back1: bricks.Brick2X2RoundWithoutReinforcement
+1 70 0 -48 100 1 0 0 0 1 0 0 0 1 3941.dat
+0 // post_thorny_back2: bricks.Brick2X2RoundWithoutReinforcement
+1 70 0 -72 100 1 0 0 0 1 0 0 0 1 3941.dat
+0 // post_thorny_back3: bricks.Brick2X2RoundWithoutReinforcement
+1 70 0 -96 100 1 0 0 0 1 0 0 0 1 3941.dat
+0 // clip_thorny_back: plates.Plate1X1WithClipHorizontal_ThickC_Clip_
+1 70 -10 -104 90 0 0 1 0 1 0 -1 0 0 61252.dat
+0 // post_thorny_front0: bricks.Brick2X2RoundWithoutReinforcement
+1 70 0 -24 -100 1 0 0 0 1 0 0 0 1 3941.dat
+0 // post_thorny_front1: bricks.Brick2X2RoundWithoutReinforcement
+1 70 0 -48 -100 1 0 0 0 1 0 0 0 1 3941.dat
+0 // post_thorny_front2: bricks.Brick2X2RoundWithoutReinforcement
+1 70 0 -72 -100 1 0 0 0 1 0 0 0 1 3941.dat
+0 // post_thorny_front3: bricks.Brick2X2RoundWithoutReinforcement
+1 70 0 -96 -100 1 0 0 0 1 0 0 0 1 3941.dat
+0 // clip_thorny_front: plates.Plate1X1WithClipHorizontal_ThickC_Clip_
+1 70 -10 -104 -90 0 0 1 0 1 0 -1 0 0 61252.dat
+0 // post_leafy_back0: bricks.Brick2X2RoundWithoutReinforcement
+1 70 60 -24 140 1 0 0 0 1 0 0 0 1 3941.dat
+0 // post_leafy_back1: bricks.Brick2X2RoundWithoutReinforcement
+1 70 60 -48 140 1 0 0 0 1 0 0 0 1 3941.dat
+0 // post_leafy_back2: bricks.Brick2X2RoundWithoutReinforcement
+1 70 60 -72 140 1 0 0 0 1 0 0 0 1 3941.dat
+0 // post_leafy_back3: bricks.Brick2X2RoundWithoutReinforcement
+1 70 60 -96 140 1 0 0 0 1 0 0 0 1 3941.dat
+0 // post_leafy_back4: bricks.Brick2X2RoundWithoutReinforcement
+1 70 60 -120 140 1 0 0 0 1 0 0 0 1 3941.dat
+0 // post_leafy_back5: bricks.Brick2X2RoundWithoutReinforcement
+1 70 60 -144 140 1 0 0 0 1 0 0 0 1 3941.dat
+0 // clip_leafy_back: plates.Plate1X1WithClipHorizontal_ThickC_Clip_
+1 70 50 -152 150 0 0 1 0 1 0 -1 0 0 61252.dat
+0 // post_leafy_front0: bricks.Brick2X2RoundWithoutReinforcement
+1 70 60 -24 -140 1 0 0 0 1 0 0 0 1 3941.dat
+0 // post_leafy_front1: bricks.Brick2X2RoundWithoutReinforcement
+1 70 60 -48 -140 1 0 0 0 1 0 0 0 1 3941.dat
+0 // post_leafy_front2: bricks.Brick2X2RoundWithoutReinforcement
+1 70 60 -72 -140 1 0 0 0 1 0 0 0 1 3941.dat
+0 // post_leafy_front3: bricks.Brick2X2RoundWithoutReinforcement
+1 70 60 -96 -140 1 0 0 0 1 0 0 0 1 3941.dat
+0 // post_leafy_front4: bricks.Brick2X2RoundWithoutReinforcement
+1 70 60 -120 -140 1 0 0 0 1 0 0 0 1 3941.dat
+0 // post_leafy_front5: bricks.Brick2X2RoundWithoutReinforcement
+1 70 60 -144 -140 1 0 0 0 1 0 0 0 1 3941.dat
+0 // clip_leafy_front: plates.Plate1X1WithClipHorizontal_ThickC_Clip_
+1 70 50 -152 -150 0 0 1 0 1 0 -1 0 0 61252.dat
+0 // vine_thorny: plants.PlantVineWith8Thorns10L
+1 330 -30 -102 100 0 -1 0 0 0 -1 1 0 0 73828.dat
+0 // vine_leafy: plants.PlantVineWith10Leaves16L
+1 2 30 -150 160 0 1 0 0 0 1 1 0 0 16981.dat

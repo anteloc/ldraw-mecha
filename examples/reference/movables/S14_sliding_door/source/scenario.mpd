@@ -1,0 +1,44 @@
+0 FILE s14_sliding_door.ldr
+0 Movable element scenario S14_sliding_door Sliding shed door
+0 Name: s14_sliding_door.ldr
+0 Author: ldraw-mecha scripts/build_movables.py
+0 // Generated mock scenario: parts picked by constant name from data/categories/parts (a few context parts by LDraw reference); moving parts placed from LDCad shadow connector frames (data/offLibShadow) via pyldraw3 or from official annotated models where no connector pair exists. Frame: LDU, -Y up, the scenario front faces -Z, ground (base top) at y = 0.
+
+0 // base: plates.Plate6X16
+1 8 0 0 10 1 0 0 0 1 0 0 0 1 3027.dat
+0 // rail_low_a: plates.Plate1X8WithDoorRail
+1 4 -80 -8 0 1 0 0 0 1 0 0 0 1 4510.dat
+0 // rail_low_b: plates.Plate1X8WithDoorRail
+1 4 80 -8 0 1 0 0 0 1 0 0 0 1 4510.dat
+0 // door: doors.Door6_5X5SlidingWithCorrugatedSurface
+1 71 -18 -67 -13 1 0 0 0 1 0 0 0 1 4511.dat
+0 // wall0: bricks.Brick1X8
+1 4 80 -32 20 1 0 0 0 1 0 0 0 1 3008.dat
+0 // post0: bricks.Brick1X1
+1 4 -150 -32 20 1 0 0 0 1 0 0 0 1 3005.dat
+0 // wall1: bricks.Brick1X8
+1 4 80 -56 20 1 0 0 0 1 0 0 0 1 3008.dat
+0 // post1: bricks.Brick1X1
+1 4 -150 -56 20 1 0 0 0 1 0 0 0 1 3005.dat
+0 // wall2: bricks.Brick1X8
+1 4 80 -80 20 1 0 0 0 1 0 0 0 1 3008.dat
+0 // post2: bricks.Brick1X1
+1 4 -150 -80 20 1 0 0 0 1 0 0 0 1 3005.dat
+0 // wall3: bricks.Brick1X8
+1 4 80 -104 20 1 0 0 0 1 0 0 0 1 3008.dat
+0 // post3: bricks.Brick1X1
+1 4 -150 -104 20 1 0 0 0 1 0 0 0 1 3005.dat
+0 // wall4: bricks.Brick1X8
+1 4 80 -128 20 1 0 0 0 1 0 0 0 1 3008.dat
+0 // post4: bricks.Brick1X1
+1 4 -150 -128 20 1 0 0 0 1 0 0 0 1 3005.dat
+0 // wall_cap: plates.Plate1X8
+1 4 80 -136 20 1 0 0 0 1 0 0 0 1 3460.dat
+0 // post_cap: plates.Plate1X1
+1 4 -150 -136 20 1 0 0 0 1 0 0 0 1 3024.dat
+0 // rail_top_a: plates.Plate1X8WithDoorRail
+1 4 -80 -136 0 1 0 0 0 1 0 0 0 1 4510.dat
+0 // rail_top_b: plates.Plate1X8WithDoorRail
+1 4 80 -136 0 1 0 0 0 1 0 0 0 1 4510.dat
+0 // roof: plates.Plate2X16
+1 8 0 -144 10 1 0 0 0 1 0 0 0 1 4282.dat

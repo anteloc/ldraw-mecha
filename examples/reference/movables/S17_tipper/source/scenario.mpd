@@ -1,0 +1,44 @@
+0 FILE s17_tipper.ldr
+0 Movable element scenario S17_tipper Dump truck tipper
+0 Name: s17_tipper.ldr
+0 Author: ldraw-mecha scripts/build_movables.py
+0 // Generated mock scenario: parts picked by constant name from data/categories/parts (a few context parts by LDraw reference); moving parts placed from LDCad shadow connector frames (data/offLibShadow) via pyldraw3 or from official annotated models where no connector pair exists. Frame: LDU, -Y up, the scenario front faces -Z, ground (base top) at y = 0.
+
+0 // chassis: plates.Plate4X10
+1 8 0 0 60 0 0 1 0 1 0 -1 0 0 3030.dat
+0 // axle0: library 4600
+1 0 0 8 20 1 0 0 0 1 0 0 0 1 4600.dat
+0 // rim0l: wheels.WheelRim6_4X8
+1 7 -30 13 20 0 0 1 0 1 0 -1 0 0 4624.dat
+0 // tyre0l: tyres.Tyre8_75X8OffsetTread
+1 0 -30 13 20 0 0 1 0 1 0 -1 0 0 4084.dat
+0 // rim0r: wheels.WheelRim6_4X8
+1 7 30 13 20 0 0 -1 0 1 0 1 0 0 4624.dat
+0 // tyre0r: tyres.Tyre8_75X8OffsetTread
+1 0 30 13 20 0 0 -1 0 1 0 1 0 0 4084.dat
+0 // axle1: library 4600
+1 0 0 8 120 1 0 0 0 1 0 0 0 1 4600.dat
+0 // rim1l: wheels.WheelRim6_4X8
+1 7 -30 13 120 0 0 1 0 1 0 -1 0 0 4624.dat
+0 // tyre1l: tyres.Tyre8_75X8OffsetTread
+1 0 -30 13 120 0 0 1 0 1 0 -1 0 0 4084.dat
+0 // rim1r: wheels.WheelRim6_4X8
+1 7 30 13 120 0 0 -1 0 1 0 1 0 0 4624.dat
+0 // tyre1r: tyres.Tyre8_75X8OffsetTread
+1 0 30 13 120 0 0 -1 0 1 0 1 0 0 4084.dat
+0 // cab: bricks.Brick2X4
+1 14 0 -24 -20 0 0 1 0 1 0 -1 0 0 3001.dat
+0 // cab_roof: plates.Plate2X4
+1 14 0 -32 -20 0 0 1 0 1 0 -1 0 0 3020.dat
+0 // bed: plates.Plate2X4
+1 8 0 -8 140 0 0 1 0 1 0 -1 0 0 3020.dat
+0 // hinge_tile_l: hinges.HingeTile1X2With2Fingers
+1 8 -10 -24 140 0 0 -1 0 1 0 1 0 0 4531.dat
+0 // hinge_plate_l: hinges.HingePlate1X2With3FingersAndHollowStuds
+1 8 -10 -24 140 0 0 -1 0 1 0 1 0 0 4275b.dat
+0 // hinge_tile_r: hinges.HingeTile1X2With2Fingers
+1 8 10 -24 140 0 0 -1 0 1 0 1 0 0 4531.dat
+0 // hinge_plate_r: hinges.HingePlate1X2With3FingersAndHollowStuds
+1 8 10 -24 140 0 0 -1 0 1 0 1 0 0 4275b.dat
+0 // bucket: others.TipperBucket4X6WithOpenStudsFrontLip
+1 14 0 -32 120 1 0 0 0 1 0 0 0 1 4080.dat

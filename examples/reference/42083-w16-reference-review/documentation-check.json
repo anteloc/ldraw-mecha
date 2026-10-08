@@ -1,0 +1,38 @@
+{
+  "pages": 6,
+  "links": 47,
+  "instance_references": 79,
+  "diagrams": [
+    {
+      "diagram": "README-1.mmd",
+      "passed": true,
+      "diagnostic": ""
+    },
+    {
+      "diagram": "central-eight-1.mmd",
+      "passed": true,
+      "diagnostic": ""
+    },
+    {
+      "diagram": "gear-train-1.mmd",
+      "passed": true,
+      "diagnostic": ""
+    },
+    {
+      "diagram": "lower-banks-1.mmd",
+      "passed": true,
+      "diagnostic": ""
+    },
+    {
+      "diagram": "slider-crank-1.mmd",
+      "passed": true,
+      "diagnostic": ""
+    },
+    {
+      "diagram": "slider-crank-2.mmd",
+      "passed": true,
+      "diagnostic": ""
+    }
+  ],
+  "passed": true
+}

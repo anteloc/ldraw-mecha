@@ -1,0 +1,43 @@
+{
+  "case": "P04_flower_bed",
+  "sweep": {
+    "no_new_surface_crossings": true,
+    "crossings": [],
+    "excluded_rest_pairs": [
+      "pot1-stem1",
+      "pot3-stem3",
+      "pot2-stem2"
+    ]
+  },
+  "clip_poses": {
+    "samples": 180,
+    "every": 4,
+    "no_new_surface_crossings": true,
+    "crossings_by_clip": {},
+    "frames_with_crossings": {},
+    "vertex_penetration_by_clip": {},
+    "deep_shrink_ldu": 1.5,
+    "no_deep_crossings": true,
+    "deep_crossings_by_clip": {},
+    "frames_with_deep_crossings": {}
+  },
+  "roles": {
+    "0": "base",
+    "1": "pot1",
+    "2": "stem1",
+    "3": "head1a",
+    "4": "head1b",
+    "5": "head1c",
+    "6": "pot2",
+    "7": "stem2",
+    "8": "head2a",
+    "9": "head2b",
+    "10": "head2c",
+    "11": "pot3",
+    "12": "stem3",
+    "13": "head3a",
+    "14": "head3b",
+    "15": "head3c"
+  },
+  "coverage": "Sampled surface crossings only; excludes rigid-body and rest-contact pairs; containment untested"
+}

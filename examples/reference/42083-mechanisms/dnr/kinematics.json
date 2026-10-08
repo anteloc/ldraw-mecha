@@ -1,0 +1,103 @@
+{
+  "states": [
+    {
+      "selector": -1.0,
+      "engine_per_main": 2.9999999999999805,
+      "worst_mesh_error": 2.220446049250313e-16
+    },
+    {
+      "selector": 0.0,
+      "engine_per_main": 0.0,
+      "worst_mesh_error": 1.5612511283791264e-17
+    },
+    {
+      "selector": 1.0,
+      "engine_per_main": -1.1999999999999955,
+      "worst_mesh_error": 2.6020852139652106e-17
+    }
+  ],
+  "meshes": 10,
+  "review": {
+    "interfaces": [
+      "0/85/124 8T / 0/90/51 24T: 40.00 LDU (nominal 40.0), axial +0.0",
+      "0/90/49 16T / 0/90/33/24 16T: 40.00 LDU (nominal 40.0), axial +0.0",
+      "0/90/146 16T / 0/94 16T: 40.00 LDU (nominal 40.0), axial +0.0",
+      "0/94 16T / 0/92 16T: 40.00 LDU (nominal 40.0), axial +0.0",
+      "0/92 16T / 0/90/148 16T: 40.00 LDU (nominal 40.0), axial +0.0",
+      "0/90/148 16T / 0/90/147 16T: 40.00 LDU (nominal 40.0), axial +0.0",
+      "0/90/7 16T / 0/90/28 16T: 40.00 LDU (nominal 40.0), axial +0.0",
+      "Gearbox output held in gear 3: output shaft = -0.3333 x main shaft"
+    ],
+    "selector": [
+      "1/47 16T / 1/57 16T: 40.00 LDU (nominal 40.0), axial +0.0",
+      "1/64/31 24T / 1/63 20T: 56.57 LDU (nominal 55.0), axial +0.0",
+      "1/63 20T and 1/64/31 24T sit on the 2x2 diagonal: 56.57 LDU against 55 nominal (+1.57 LDU, loose); the only partner of 1/63, accepted as the designed mesh",
+      "1/66 24T / 1/231/12 8T: 40.00 LDU (nominal 40.0), axial +0.0",
+      "Changeover catch 1/150/39: fork 40 LDU from its X pivot, lever 1/150/40 rises into the console",
+      "Engine input per main-shaft radian: D -1.2000 (gear 3), R +3.0000: opposite signs, so pushing the car backwards in R turns the engine forwards"
+    ]
+  },
+  "continuity": {
+    "limit_radians_per_frame": 0.8,
+    "limit_ldu_per_frame": 6.0,
+    "worst": [
+      [
+        0.9326171875,
+        "ring",
+        "prismatic",
+        58
+      ],
+      [
+        0.6000000000000085,
+        "engine_in",
+        "revolute",
+        319
+      ],
+      [
+        0.3000000000000007,
+        "input_v",
+        "revolute",
+        112
+      ],
+      [
+        0.3000000000000007,
+        "g57",
+        "revolute",
+        112
+      ],
+      [
+        0.20000000000000284,
+        "ring_shaft",
+        "revolute",
+        373
+      ],
+      [
+        0.12000000000000277,
+        "g63",
+        "revolute",
+        174
+      ],
+      [
+        0.10000000000000142,
+        "gb_out",
+        "revolute",
+        168
+      ],
+      [
+        0.023536813301156645,
+        "lever",
+        "revolute",
+        59
+      ]
+    ],
+    "violations": {},
+    "passed": true
+  },
+  "paddle": null,
+  "dnr": {
+    "d_engine": -1.1999999999999997,
+    "r_engine": 3.0,
+    "gb_out": -0.3333333333333333
+  },
+  "gear_ratios": null
+}

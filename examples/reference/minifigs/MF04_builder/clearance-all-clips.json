@@ -1,0 +1,360 @@
+{
+  "figure": "MF04_builder",
+  "sweep": {
+    "no_new_surface_crossings": false,
+    "crossings": [
+      [
+        "shoulder_l",
+        -9.425,
+        [
+          "2",
+          "7"
+        ]
+      ],
+      [
+        "shoulder_l",
+        -3.142,
+        [
+          "2",
+          "7"
+        ]
+      ],
+      [
+        "shoulder_l",
+        3.142,
+        [
+          "2",
+          "7"
+        ]
+      ],
+      [
+        "shoulder_l",
+        9.425,
+        [
+          "2",
+          "7"
+        ]
+      ],
+      [
+        "shoulder_r",
+        -9.425,
+        [
+          "10",
+          "2"
+        ]
+      ],
+      [
+        "shoulder_r",
+        -9.425,
+        [
+          "2",
+          "9"
+        ]
+      ],
+      [
+        "shoulder_r",
+        -3.142,
+        [
+          "10",
+          "2"
+        ]
+      ],
+      [
+        "shoulder_r",
+        -3.142,
+        [
+          "2",
+          "9"
+        ]
+      ],
+      [
+        "shoulder_r",
+        3.142,
+        [
+          "10",
+          "2"
+        ]
+      ],
+      [
+        "shoulder_r",
+        3.142,
+        [
+          "2",
+          "9"
+        ]
+      ],
+      [
+        "shoulder_r",
+        9.425,
+        [
+          "10",
+          "2"
+        ]
+      ],
+      [
+        "shoulder_r",
+        9.425,
+        [
+          "2",
+          "9"
+        ]
+      ],
+      [
+        "wrist_r",
+        -2.749,
+        [
+          "10",
+          "5"
+        ]
+      ],
+      [
+        "wrist_r",
+        -2.356,
+        [
+          "10",
+          "5"
+        ]
+      ],
+      [
+        "wrist_r",
+        -1.963,
+        [
+          "10",
+          "4"
+        ]
+      ]
+    ],
+    "excluded_rest_pairs": [
+      [
+        "3",
+        "4"
+      ],
+      [
+        "3",
+        "5"
+      ]
+    ]
+  },
+  "clip_poses": {
+    "samples": 720,
+    "every": 6,
+    "no_new_surface_crossings": false,
+    "crossings_by_clip": {
+      "MF02_spaceman.moon_hop": [
+        "headgear0-hand_l",
+        "headgear0-hand_r",
+        "item_r-headgear0"
+      ],
+      "MF02_spaceman.wave": [
+        "head-arm_r",
+        "head-hand_r",
+        "head-item_r",
+        "headgear0-hand_l",
+        "headgear0-hand_r",
+        "item_r-headgear0"
+      ],
+      "MF02_spaceman.zero_g_tumble": [
+        "headgear0-hand_l"
+      ],
+      "MF05_chef.celebrate": [
+        "headgear0-hand_r"
+      ],
+      "MF05_chef.stirring": [
+        "item_r-headgear0"
+      ],
+      "MF08_athlete.high_jump": [
+        "head-hand_l",
+        "head-hand_r",
+        "head-item_r",
+        "headgear0-hand_l",
+        "headgear0-hand_r",
+        "item_r-headgear0"
+      ],
+      "MF10_diver.fall_and_get_up": [
+        "headgear0-hand_l",
+        "headgear0-hand_r",
+        "item_r-headgear0"
+      ],
+      "MF10_diver.sit_down_stand_up": [
+        "head-item_r",
+        "headgear0-hand_r",
+        "item_r-headgear0"
+      ],
+      "MF10_diver.swim_crawl": [
+        "head-arm_l",
+        "head-arm_r",
+        "head-hand_l",
+        "head-hand_r",
+        "head-item_r",
+        "headgear0-hand_l",
+        "headgear0-hand_r",
+        "item_r-headgear0"
+      ]
+    },
+    "frames_with_crossings": {
+      "MF02_spaceman.moon_hop": [
+        19,
+        49,
+        79,
+        109,
+        115
+      ],
+      "MF02_spaceman.wave": [
+        13,
+        97,
+        115,
+        127
+      ],
+      "MF02_spaceman.zero_g_tumble": [
+        55,
+        61
+      ],
+      "MF05_chef.celebrate": [
+        127
+      ],
+      "MF05_chef.stirring": [
+        115
+      ],
+      "MF08_athlete.high_jump": [
+        31,
+        37,
+        43,
+        49,
+        55,
+        61,
+        67,
+        79,
+        115
+      ],
+      "MF10_diver.fall_and_get_up": [
+        13,
+        19,
+        25
+      ],
+      "MF10_diver.sit_down_stand_up": [
+        49,
+        55,
+        61,
+        67,
+        73
+      ],
+      "MF10_diver.swim_crawl": [
+        37,
+        55,
+        73,
+        79,
+        91,
+        97
+      ]
+    },
+    "deep_shrink_ldu": 1.5,
+    "no_deep_crossings": false,
+    "deep_crossings_by_clip": {
+      "MF02_spaceman.moon_hop": [
+        "headgear0-hand_l",
+        "headgear0-hand_r",
+        "item_r-headgear0"
+      ],
+      "MF02_spaceman.wave": [
+        "head-hand_r",
+        "headgear0-hand_l",
+        "headgear0-hand_r",
+        "item_r-headgear0"
+      ],
+      "MF02_spaceman.zero_g_tumble": [
+        "headgear0-hand_l"
+      ],
+      "MF05_chef.celebrate": [
+        "headgear0-hand_r"
+      ],
+      "MF08_athlete.high_jump": [
+        "head-hand_l",
+        "head-hand_r",
+        "headgear0-hand_l",
+        "headgear0-hand_r",
+        "item_r-headgear0"
+      ],
+      "MF10_diver.fall_and_get_up": [
+        "headgear0-hand_l",
+        "headgear0-hand_r",
+        "item_r-headgear0"
+      ],
+      "MF10_diver.sit_down_stand_up": [
+        "head-item_r",
+        "headgear0-hand_r",
+        "item_r-headgear0"
+      ],
+      "MF10_diver.swim_crawl": [
+        "head-hand_l",
+        "head-hand_r",
+        "headgear0-hand_l",
+        "headgear0-hand_r",
+        "item_r-headgear0"
+      ]
+    },
+    "frames_with_deep_crossings": {
+      "MF02_spaceman.moon_hop": [
+        19,
+        49,
+        79,
+        109
+      ],
+      "MF02_spaceman.wave": [
+        13,
+        97,
+        115,
+        127
+      ],
+      "MF02_spaceman.zero_g_tumble": [
+        55,
+        61
+      ],
+      "MF05_chef.celebrate": [
+        127
+      ],
+      "MF08_athlete.high_jump": [
+        31,
+        37,
+        43,
+        49,
+        55,
+        61,
+        79,
+        115
+      ],
+      "MF10_diver.fall_and_get_up": [
+        13,
+        19,
+        25
+      ],
+      "MF10_diver.sit_down_stand_up": [
+        49,
+        55,
+        61,
+        67,
+        73
+      ],
+      "MF10_diver.swim_crawl": [
+        37,
+        55,
+        73,
+        79,
+        97
+      ]
+    }
+  },
+  "roles": {
+    "0": "torso",
+    "1": "head",
+    "2": "headgear0",
+    "3": "hips",
+    "4": "leg_l",
+    "5": "leg_r",
+    "6": "arm_l",
+    "7": "hand_l",
+    "8": "arm_r",
+    "9": "hand_r",
+    "10": "item_r"
+  },
+  "coverage": "Sampled surface crossings only; excludes rigid-body and rest-contact pairs; containment untested; joint channels only (whole-figure staging not applied)"
+}

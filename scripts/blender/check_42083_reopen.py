@@ -23,8 +23,11 @@ NAMES = ("doors", "drivetrain", "gearbox", "dnr", "wing")
 def main():
     ap = argparse.ArgumentParser()
     ap.add_argument("--report", required=True)
+    ap.add_argument("--bundle", type=Path, default=t.OUT,
+                    help="Read plans/evidence from this bundle, e.g. examples/reference/42083-mechanisms")
     ap.add_argument("--tolerance", type=float, default=0.002)
     a = ap.parse_args(sys.argv[sys.argv.index("--") + 1:])
+    t.OUT = a.bundle.resolve()
     scene = bpy.context.scene
     out, ok = {}, True
     for name in NAMES:

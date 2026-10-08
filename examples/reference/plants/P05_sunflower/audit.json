@@ -1,0 +1,70 @@
+{
+  "summary": {
+    "static": 1,
+    "planned": 2
+  },
+  "review_complete": true,
+  "unresolved": [],
+  "deferred": [],
+  "unaccounted_mechanical_parts": [],
+  "mechanisms": [
+    {
+      "id": "context",
+      "label": "Sunflower: base and mounts (static)",
+      "disposition": "static",
+      "review": "Base, trunk and mounts built for the catalog; they do not move in this case.",
+      "parts": 1,
+      "controlled_parts": [],
+      "parts_without_control": [
+        "0"
+      ],
+      "controls": []
+    },
+    {
+      "id": "head",
+      "label": "Sunflower: head",
+      "disposition": "planned",
+      "review": "Joint declared in this plan (scripts/build_plants.py); driven by wind clips.",
+      "parts": 3,
+      "controlled_parts": [
+        "6",
+        "7",
+        "8"
+      ],
+      "parts_without_control": [],
+      "controls": [
+        "nod",
+        "stem_lean"
+      ]
+    },
+    {
+      "id": "stem",
+      "label": "Sunflower: stem",
+      "disposition": "planned",
+      "review": "Joint declared in this plan (scripts/build_plants.py); driven by wind clips.",
+      "parts": 7,
+      "controlled_parts": [
+        "1",
+        "2",
+        "3",
+        "4",
+        "5",
+        "6"
+      ],
+      "parts_without_control": [
+        "0"
+      ],
+      "controls": [
+        "stem_lean"
+      ]
+    }
+  ],
+  "warnings": [
+    {
+      "code": "coaxial_not_run",
+      "message": "not run: 0 shaft/gear candidates outside 2..100; select a section"
+    }
+  ],
+  "coverage": "Bookkeeping of declared scope only. Supports may correctly lack controls. Planned, static and deferred dispositions require review notes; none certify discovery completeness, physical motion or clearance.",
+  "passed": true
+}

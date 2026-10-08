@@ -1,0 +1,61 @@
+{
+  "instances": [
+    "0/104/34",
+    "0/104/41"
+  ],
+  "complete": true,
+  "contacts": [],
+  "diagnostics": [],
+  "placements": {
+    "policy": "Nearest orthogonal analysis frame within rounding_limit; source translations and handedness preserved",
+    "rounding_limit": 0.002,
+    "counts": {
+      "raw_near_rigid": 2
+    },
+    "affected": [
+      {
+        "id": "0/104/34",
+        "status": "raw_near_rigid",
+        "reflected": false,
+        "max_scale_error": 0.0003524378937656003,
+        "max_coefficient_change": 0.0
+      },
+      {
+        "id": "0/104/41",
+        "status": "raw_near_rigid",
+        "reflected": false,
+        "max_scale_error": 0.0003524378937656003,
+        "max_coefficient_change": 0.0
+      }
+    ]
+  },
+  "warnings": [
+    {
+      "code": "placement_raw_near_rigid",
+      "message": "Raw rounded placements can silently suppress pyldraw3 axle contacts; compare with normalization enabled."
+    },
+    {
+      "code": "zero_axle_contacts",
+      "message": "No axle-in-hole contacts for 1 selected axle parts. Investigate transforms, metadata and selection before planning motion."
+    },
+    {
+      "code": "zero_contacts",
+      "message": "No contacts in this selection. Absence of connector evidence does not establish disconnection or free motion."
+    }
+  ],
+  "summary": {
+    "tested_parts": 2,
+    "contacts": 0,
+    "contacted_parts": 0,
+    "by_kind": {},
+    "axles": {
+      "selection": "Catalog descriptions beginning Technic Axle followed by a numeric length; excludes axle pins, joiners and axle-hole supports",
+      "total": 1,
+      "with_axle_hole_contact": 0,
+      "without_axle_hole_contact": [
+        "0/104/34"
+      ]
+    }
+  },
+  "coverage": "pyldraw3 contacts for selected library parts only; no rigid grouping, collision proof or general mobility inference"
+}

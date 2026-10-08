@@ -1,0 +1,14 @@
+0 FILE p20_friends_palm.ldr
+0 Plant wind case P20_friends_palm Palm crowns on an axle
+0 Name: p20_friends_palm.ldr
+0 Author: ldraw-mecha scripts/build_plants.py
+0 // Generated mock case: parts picked by constant name from data/categories/parts (vine subfiles by LDraw reference); moving parts placed from LDCad shadow connector frames (data/offLibShadow) via pyldraw3 or copied from official constructions (2518c01, 10315, 10297). Frame: LDU, -Y up, the case front faces -Z, ground (base top) at y = 0. Wind blows toward +X.
+
+0 // base: plates.Plate6X6
+1 19 0 0 0 1 0 0 0 1 0 0 0 1 3958.dat
+0 // trunk: plants.PlantTreePalmBase4X4
+1 70 0 -8 0 1 0 0 0 1 0 0 0 1 30338.dat
+0 // crown1: plants.PlantTreePalmLeafQuadruple
+1 2 -5.86598578 -279.3519859 0 -0.9659265572 -0.2588163172 0 -0.2588163172 0.9659265572 0 0 0 -1 30339.dat
+0 // crown2: plants.PlantTreePalmLeafQuadruple
+1 10 -5.089536828 -282.2497656 0 -0.6830132187 -0.2588163172 0.6830132187 -0.1830107729 0.9659265572 0.1830107729 -0.7071067812 0 -0.7071067812 30339.dat

@@ -1,0 +1,132 @@
+{
+  "summary": {
+    "static": 1,
+    "planned": 4
+  },
+  "review_complete": true,
+  "unresolved": [],
+  "deferred": [],
+  "unaccounted_mechanical_parts": [],
+  "mechanisms": [
+    {
+      "id": "context",
+      "label": "Rushes row: base and mounts (static)",
+      "disposition": "static",
+      "review": "Base, trunk and mounts built for the catalog; they do not move in this case.",
+      "parts": 9,
+      "controlled_parts": [],
+      "parts_without_control": [
+        "0",
+        "1",
+        "11",
+        "12",
+        "2",
+        "21",
+        "22",
+        "31",
+        "32"
+      ],
+      "controls": []
+    },
+    {
+      "id": "rush_1",
+      "label": "Rushes row: rush 1",
+      "disposition": "planned",
+      "review": "Joint declared in this plan (scripts/build_plants.py); driven by wind clips.",
+      "parts": 9,
+      "controlled_parts": [
+        "10",
+        "3",
+        "4",
+        "5",
+        "6",
+        "7",
+        "8",
+        "9"
+      ],
+      "parts_without_control": [
+        "2"
+      ],
+      "controls": [
+        "rush_1"
+      ]
+    },
+    {
+      "id": "rush_2",
+      "label": "Rushes row: rush 2",
+      "disposition": "planned",
+      "review": "Joint declared in this plan (scripts/build_plants.py); driven by wind clips.",
+      "parts": 9,
+      "controlled_parts": [
+        "13",
+        "14",
+        "15",
+        "16",
+        "17",
+        "18",
+        "19",
+        "20"
+      ],
+      "parts_without_control": [
+        "12"
+      ],
+      "controls": [
+        "rush_2"
+      ]
+    },
+    {
+      "id": "rush_3",
+      "label": "Rushes row: rush 3",
+      "disposition": "planned",
+      "review": "Joint declared in this plan (scripts/build_plants.py); driven by wind clips.",
+      "parts": 9,
+      "controlled_parts": [
+        "23",
+        "24",
+        "25",
+        "26",
+        "27",
+        "28",
+        "29",
+        "30"
+      ],
+      "parts_without_control": [
+        "22"
+      ],
+      "controls": [
+        "rush_3"
+      ]
+    },
+    {
+      "id": "rush_4",
+      "label": "Rushes row: rush 4",
+      "disposition": "planned",
+      "review": "Joint declared in this plan (scripts/build_plants.py); driven by wind clips.",
+      "parts": 9,
+      "controlled_parts": [
+        "33",
+        "34",
+        "35",
+        "36",
+        "37",
+        "38",
+        "39",
+        "40"
+      ],
+      "parts_without_control": [
+        "32"
+      ],
+      "controls": [
+        "rush_4"
+      ]
+    }
+  ],
+  "warnings": [
+    {
+      "code": "coaxial_not_run",
+      "message": "not run: 0 shaft/gear candidates outside 2..100; select a section"
+    }
+  ],
+  "coverage": "Bookkeeping of declared scope only. Supports may correctly lack controls. Planned, static and deferred dispositions require review notes; none certify discovery completeness, physical motion or clearance.",
+  "passed": true
+}

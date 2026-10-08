@@ -1,0 +1,257 @@
+{
+  "scenario": "S19_drawbridge",
+  "title": "Drawbridge",
+  "parts": [
+    {
+      "role": "ground",
+      "id": "0",
+      "table": "baseplates.Baseplate16X16",
+      "ref": "3867",
+      "colour": 2,
+      "title": "Baseplate 16 x 16",
+      "library_only": false
+    },
+    {
+      "role": "moat",
+      "id": "1",
+      "table": "plates.Plate6X6",
+      "ref": "3958",
+      "colour": 73,
+      "title": "Plate  6 x  6",
+      "library_only": false
+    },
+    {
+      "role": "hinge_wall_l",
+      "id": "2",
+      "table": "hinges.Hinge1X2Base",
+      "ref": "3937",
+      "colour": 8,
+      "title": "Hinge  1 x  2 Base",
+      "library_only": false
+    },
+    {
+      "role": "hinge_deck_l",
+      "id": "3",
+      "table": "hinges.Hinge1X2Top",
+      "ref": "3938",
+      "colour": 8,
+      "title": "Hinge  1 x  2 Top",
+      "library_only": false
+    },
+    {
+      "role": "hinge_wall_r",
+      "id": "4",
+      "table": "hinges.Hinge1X2Base",
+      "ref": "3937",
+      "colour": 8,
+      "title": "Hinge  1 x  2 Base",
+      "library_only": false
+    },
+    {
+      "role": "hinge_deck_r",
+      "id": "5",
+      "table": "hinges.Hinge1X2Top",
+      "ref": "3938",
+      "colour": 8,
+      "title": "Hinge  1 x  2 Top",
+      "library_only": false
+    },
+    {
+      "role": "deck",
+      "id": "6",
+      "table": "plates.Plate6X8",
+      "ref": "3036",
+      "colour": 70,
+      "title": "Plate  6 x  8",
+      "library_only": false
+    },
+    {
+      "role": "bank",
+      "id": "7",
+      "table": "bricks.Brick1X6",
+      "ref": "3009",
+      "colour": 8,
+      "title": "Brick  1 x  6",
+      "library_only": false
+    },
+    {
+      "role": "tower_l0",
+      "id": "8",
+      "table": "bricks.Brick2X2",
+      "ref": "3003",
+      "colour": 71,
+      "title": "Brick  2 x  2",
+      "library_only": false
+    },
+    {
+      "role": "tower_r0",
+      "id": "9",
+      "table": "bricks.Brick2X2",
+      "ref": "3003",
+      "colour": 71,
+      "title": "Brick  2 x  2",
+      "library_only": false
+    },
+    {
+      "role": "tower_l1",
+      "id": "10",
+      "table": "bricks.Brick2X2",
+      "ref": "3003",
+      "colour": 71,
+      "title": "Brick  2 x  2",
+      "library_only": false
+    },
+    {
+      "role": "tower_r1",
+      "id": "11",
+      "table": "bricks.Brick2X2",
+      "ref": "3003",
+      "colour": 71,
+      "title": "Brick  2 x  2",
+      "library_only": false
+    },
+    {
+      "role": "tower_l2",
+      "id": "12",
+      "table": "bricks.Brick2X2",
+      "ref": "3003",
+      "colour": 71,
+      "title": "Brick  2 x  2",
+      "library_only": false
+    },
+    {
+      "role": "tower_r2",
+      "id": "13",
+      "table": "bricks.Brick2X2",
+      "ref": "3003",
+      "colour": 71,
+      "title": "Brick  2 x  2",
+      "library_only": false
+    },
+    {
+      "role": "tower_l3",
+      "id": "14",
+      "table": "bricks.Brick2X2",
+      "ref": "3003",
+      "colour": 71,
+      "title": "Brick  2 x  2",
+      "library_only": false
+    },
+    {
+      "role": "tower_r3",
+      "id": "15",
+      "table": "bricks.Brick2X2",
+      "ref": "3003",
+      "colour": 71,
+      "title": "Brick  2 x  2",
+      "library_only": false
+    },
+    {
+      "role": "tower_l4",
+      "id": "16",
+      "table": "bricks.Brick2X2",
+      "ref": "3003",
+      "colour": 71,
+      "title": "Brick  2 x  2",
+      "library_only": false
+    },
+    {
+      "role": "tower_r4",
+      "id": "17",
+      "table": "bricks.Brick2X2",
+      "ref": "3003",
+      "colour": 71,
+      "title": "Brick  2 x  2",
+      "library_only": false
+    },
+    {
+      "role": "tower_l5",
+      "id": "18",
+      "table": "bricks.Brick2X2",
+      "ref": "3003",
+      "colour": 71,
+      "title": "Brick  2 x  2",
+      "library_only": false
+    },
+    {
+      "role": "tower_r5",
+      "id": "19",
+      "table": "bricks.Brick2X2",
+      "ref": "3003",
+      "colour": 71,
+      "title": "Brick  2 x  2",
+      "library_only": false
+    },
+    {
+      "role": "tower_l6",
+      "id": "20",
+      "table": "bricks.Brick2X2",
+      "ref": "3003",
+      "colour": 71,
+      "title": "Brick  2 x  2",
+      "library_only": false
+    },
+    {
+      "role": "tower_r6",
+      "id": "21",
+      "table": "bricks.Brick2X2",
+      "ref": "3003",
+      "colour": 71,
+      "title": "Brick  2 x  2",
+      "library_only": false
+    },
+    {
+      "role": "lintel",
+      "id": "22",
+      "table": "bricks.Brick1X8",
+      "ref": "3008",
+      "colour": 71,
+      "title": "Brick  1 x  8",
+      "library_only": false
+    },
+    {
+      "role": "lintel_cap",
+      "id": "23",
+      "table": "plates.Plate2X10",
+      "ref": "3832",
+      "colour": 8,
+      "title": "Plate  2 x 10",
+      "library_only": false
+    }
+  ],
+  "joints": {
+    "bridge_l": {
+      "origin": [
+        -50.0,
+        -14.0,
+        0.0
+      ],
+      "axis": [
+        -1.0,
+        0.0,
+        0.0
+      ],
+      "parent": "hinge_wall_l",
+      "child": "hinge_deck_l",
+      "kind": "revolute",
+      "connector": "3937 hinge snap_fgr@L9:I0 receives 3938 hinge snap_fgr@L8:I0"
+    },
+    "bridge_r": {
+      "origin": [
+        50.0,
+        -14.0,
+        0.0
+      ],
+      "axis": [
+        -1.0,
+        0.0,
+        0.0
+      ],
+      "parent": "hinge_wall_r",
+      "child": "hinge_deck_r",
+      "kind": "revolute",
+      "connector": "3937 hinge snap_fgr@L9:I0 receives 3938 hinge snap_fgr@L8:I0"
+    }
+  },
+  "reference_checks": []
+}

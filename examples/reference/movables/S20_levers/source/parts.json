@@ -1,0 +1,104 @@
+{
+  "scenario": "S20_levers",
+  "title": "Control levers",
+  "parts": [
+    {
+      "role": "base",
+      "id": "0",
+      "table": "plates.Plate4X6",
+      "ref": "3032",
+      "colour": 8,
+      "title": "Plate  4 x  6",
+      "library_only": false
+    },
+    {
+      "role": "desk",
+      "id": "1",
+      "table": "bricks.Brick2X4",
+      "ref": "3001",
+      "colour": 71,
+      "title": "Brick  2 x  4",
+      "library_only": false
+    },
+    {
+      "role": "lever_base_l",
+      "id": "2",
+      "table": "hinges.HingeControlStickBase",
+      "ref": "4592",
+      "colour": 0,
+      "title": "Hinge Control Stick Base",
+      "library_only": false
+    },
+    {
+      "role": "stick_l",
+      "id": "3",
+      "table": "hinges.HingeControlStick",
+      "ref": "4593",
+      "colour": 4,
+      "title": "Hinge Control Stick",
+      "library_only": false
+    },
+    {
+      "role": "lever_base_r",
+      "id": "4",
+      "table": "hinges.HingeControlStickBase",
+      "ref": "4592",
+      "colour": 0,
+      "title": "Hinge Control Stick Base",
+      "library_only": false
+    },
+    {
+      "role": "stick_r",
+      "id": "5",
+      "table": "hinges.HingeControlStick",
+      "ref": "4593",
+      "colour": 1,
+      "title": "Hinge Control Stick",
+      "library_only": false
+    },
+    {
+      "role": "screen",
+      "id": "6",
+      "table": "tiles.Tile1X2GrilleWithGroove",
+      "ref": "2412b",
+      "colour": 8,
+      "title": "Tile  1 x  2 Grille with Groove",
+      "library_only": false
+    }
+  ],
+  "joints": {
+    "lever_l": {
+      "origin": [
+        -30.0,
+        -32.0,
+        0.0
+      ],
+      "axis": [
+        1.0,
+        0.0,
+        0.0
+      ],
+      "parent": "lever_base_l",
+      "child": "stick_l",
+      "kind": "revolute",
+      "connector": "4592 hinge snap_fgr@L9:I0 receives 4593 hinge snap_fgr@L8:I0"
+    },
+    "lever_r": {
+      "origin": [
+        30.0,
+        -32.0,
+        0.0
+      ],
+      "axis": [
+        1.0,
+        0.0,
+        0.0
+      ],
+      "parent": "lever_base_r",
+      "child": "stick_r",
+      "kind": "revolute",
+      "connector": "4592 hinge snap_fgr@L9:I0 receives 4593 hinge snap_fgr@L8:I0"
+    }
+  },
+  "reference_checks": []
+}

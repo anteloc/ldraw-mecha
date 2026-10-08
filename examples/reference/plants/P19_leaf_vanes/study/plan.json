@@ -1,0 +1,767 @@
+{
+  "version": 1,
+  "name": "model",
+  "status": "draft",
+  "source": {
+    "version": 1,
+    "path": "/Users/captain/workspaces/workspace-ai/ldraw-mecha/output/plants/P19_leaf_vanes/source/scenario.mpd",
+    "sha256": "52153f1d4ca1c51eab9abb94b9b57220a6a269d002adb6208008dae4de8de4c3",
+    "section": "p19_leaf_vanes.ldr",
+    "description": "Plant wind case P19_leaf_vanes Leaf weathervanes",
+    "author": "ldraw-mecha scripts/build_plants.py",
+    "dependencies": {
+      "/Users/captain/workspaces/workspace-ai/ldraw-mecha/output/plants/P19_leaf_vanes/source/scenario.mpd": "52153f1d4ca1c51eab9abb94b9b57220a6a269d002adb6208008dae4de8de4c3"
+    },
+    "nodes": [
+      {
+        "id": "0",
+        "parent": "root",
+        "ref": "41539.dat",
+        "kind": "part",
+        "embedded": false,
+        "section": "p19_leaf_vanes.ldr",
+        "index": 0,
+        "line": 8,
+        "colour": "2",
+        "effective_colour": "2",
+        "local": [
+          [
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            1.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            1.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "world": [
+          [
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            1.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            1.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "description": "Plate  8 x  8"
+      },
+      {
+        "id": "1",
+        "parent": "root",
+        "ref": "85861.dat",
+        "kind": "part",
+        "embedded": false,
+        "section": "p19_leaf_vanes.ldr",
+        "index": 1,
+        "line": 10,
+        "colour": "72",
+        "effective_colour": "72",
+        "local": [
+          [
+            1.0,
+            0.0,
+            0.0,
+            -50.0
+          ],
+          [
+            0.0,
+            1.0,
+            0.0,
+            -8.0
+          ],
+          [
+            0.0,
+            0.0,
+            1.0,
+            -10.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "world": [
+          [
+            1.0,
+            0.0,
+            0.0,
+            -50.0
+          ],
+          [
+            0.0,
+            1.0,
+            0.0,
+            -8.0
+          ],
+          [
+            0.0,
+            0.0,
+            1.0,
+            -10.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "description": "Plate  1 x  1 Round with Open Stud"
+      },
+      {
+        "id": "2",
+        "parent": "root",
+        "ref": "2714a.dat",
+        "kind": "part",
+        "embedded": false,
+        "section": "p19_leaf_vanes.ldr",
+        "index": 2,
+        "line": 12,
+        "colour": "70",
+        "effective_colour": "70",
+        "local": [
+          [
+            1.0,
+            0.0,
+            0.0,
+            -50.0
+          ],
+          [
+            0.0,
+            1.0,
+            0.0,
+            -22.0
+          ],
+          [
+            0.0,
+            0.0,
+            1.0,
+            -10.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "world": [
+          [
+            1.0,
+            0.0,
+            0.0,
+            -50.0
+          ],
+          [
+            0.0,
+            1.0,
+            0.0,
+            -22.0
+          ],
+          [
+            0.0,
+            0.0,
+            1.0,
+            -10.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "description": "Bar  8L with Stop Rings and Pin - Rounded End"
+      },
+      {
+        "id": "3",
+        "parent": "root",
+        "ref": "2518.dat",
+        "kind": "part",
+        "embedded": false,
+        "section": "p19_leaf_vanes.ldr",
+        "index": 3,
+        "line": 14,
+        "colour": "10",
+        "effective_colour": "10",
+        "local": [
+          [
+            -0.7071067812,
+            0.0,
+            -0.7071067812,
+            -57.07106781
+          ],
+          [
+            0.0,
+            1.0,
+            0.0,
+            -163.5
+          ],
+          [
+            0.7071067812,
+            0.0,
+            -0.7071067812,
+            -2.928932188
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "world": [
+          [
+            -0.7071067812,
+            0.0,
+            -0.7071067812,
+            -57.07106781
+          ],
+          [
+            0.0,
+            1.0,
+            0.0,
+            -163.5
+          ],
+          [
+            0.7071067812,
+            0.0,
+            -0.7071067812,
+            -2.928932188
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "description": "Plant Tree Palm Leaf Large"
+      },
+      {
+        "id": "4",
+        "parent": "root",
+        "ref": "85861.dat",
+        "kind": "part",
+        "embedded": false,
+        "section": "p19_leaf_vanes.ldr",
+        "index": 4,
+        "line": 16,
+        "colour": "72",
+        "effective_colour": "72",
+        "local": [
+          [
+            1.0,
+            0.0,
+            0.0,
+            10.0
+          ],
+          [
+            0.0,
+            1.0,
+            0.0,
+            -8.0
+          ],
+          [
+            0.0,
+            0.0,
+            1.0,
+            -10.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "world": [
+          [
+            1.0,
+            0.0,
+            0.0,
+            10.0
+          ],
+          [
+            0.0,
+            1.0,
+            0.0,
+            -8.0
+          ],
+          [
+            0.0,
+            0.0,
+            1.0,
+            -10.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "description": "Plate  1 x  1 Round with Open Stud"
+      },
+      {
+        "id": "5",
+        "parent": "root",
+        "ref": "63965a.dat",
+        "kind": "part",
+        "embedded": false,
+        "section": "p19_leaf_vanes.ldr",
+        "index": 5,
+        "line": 18,
+        "colour": "70",
+        "effective_colour": "70",
+        "local": [
+          [
+            1.0,
+            0.0,
+            0.0,
+            10.0
+          ],
+          [
+            0.0,
+            1.0,
+            0.0,
+            -20.0
+          ],
+          [
+            0.0,
+            0.0,
+            1.0,
+            -10.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "world": [
+          [
+            1.0,
+            0.0,
+            0.0,
+            10.0
+          ],
+          [
+            0.0,
+            1.0,
+            0.0,
+            -20.0
+          ],
+          [
+            0.0,
+            0.0,
+            1.0,
+            -10.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "description": "Bar  6L with Thick Stop"
+      },
+      {
+        "id": "6",
+        "parent": "root",
+        "ref": "6148.dat",
+        "kind": "part",
+        "embedded": false,
+        "section": "p19_leaf_vanes.ldr",
+        "index": 6,
+        "line": 20,
+        "colour": "2",
+        "effective_colour": "2",
+        "local": [
+          [
+            0.0,
+            0.0,
+            1.0,
+            10.0
+          ],
+          [
+            0.0,
+            1.0,
+            0.0,
+            -124.0
+          ],
+          [
+            -1.0,
+            0.0,
+            0.0,
+            -20.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "world": [
+          [
+            0.0,
+            0.0,
+            1.0,
+            10.0
+          ],
+          [
+            0.0,
+            1.0,
+            0.0,
+            -124.0
+          ],
+          [
+            -1.0,
+            0.0,
+            0.0,
+            -20.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "description": "Plant Palm Leaf Small"
+      },
+      {
+        "id": "7",
+        "parent": "root",
+        "ref": "85861.dat",
+        "kind": "part",
+        "embedded": false,
+        "section": "p19_leaf_vanes.ldr",
+        "index": 7,
+        "line": 22,
+        "colour": "72",
+        "effective_colour": "72",
+        "local": [
+          [
+            1.0,
+            0.0,
+            0.0,
+            70.0
+          ],
+          [
+            0.0,
+            1.0,
+            0.0,
+            -8.0
+          ],
+          [
+            0.0,
+            0.0,
+            1.0,
+            -10.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "world": [
+          [
+            1.0,
+            0.0,
+            0.0,
+            70.0
+          ],
+          [
+            0.0,
+            1.0,
+            0.0,
+            -8.0
+          ],
+          [
+            0.0,
+            0.0,
+            1.0,
+            -10.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "description": "Plate  1 x  1 Round with Open Stud"
+      },
+      {
+        "id": "8",
+        "parent": "root",
+        "ref": "87994.dat",
+        "kind": "part",
+        "embedded": false,
+        "section": "p19_leaf_vanes.ldr",
+        "index": 8,
+        "line": 24,
+        "colour": "70",
+        "effective_colour": "70",
+        "local": [
+          [
+            1.0,
+            0.0,
+            0.0,
+            70.0
+          ],
+          [
+            0.0,
+            1.0,
+            0.0,
+            -64.0
+          ],
+          [
+            0.0,
+            0.0,
+            1.0,
+            -10.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "world": [
+          [
+            1.0,
+            0.0,
+            0.0,
+            70.0
+          ],
+          [
+            0.0,
+            1.0,
+            0.0,
+            -64.0
+          ],
+          [
+            0.0,
+            0.0,
+            1.0,
+            -10.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "description": "Bar  3L"
+      },
+      {
+        "id": "9",
+        "parent": "root",
+        "ref": "6148.dat",
+        "kind": "part",
+        "embedded": false,
+        "section": "p19_leaf_vanes.ldr",
+        "index": 9,
+        "line": 26,
+        "colour": "27",
+        "effective_colour": "27",
+        "local": [
+          [
+            0.0,
+            0.0,
+            -1.0,
+            70.0
+          ],
+          [
+            0.0,
+            1.0,
+            0.0,
+            -64.0
+          ],
+          [
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "world": [
+          [
+            0.0,
+            0.0,
+            -1.0,
+            70.0
+          ],
+          [
+            0.0,
+            1.0,
+            0.0,
+            -64.0
+          ],
+          [
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "description": "Plant Palm Leaf Small"
+      }
+    ],
+    "diagnostics": [],
+    "coordinate_space": "selected section, LDU, -Y up"
+  },
+  "controls": {},
+  "signals": {},
+  "bodies": {},
+  "anchors": {},
+  "checks": [],
+  "notes": [
+    "Assign rigid groups and measured joints before setting status to ready."
+  ],
+  "mechanisms": {
+    "unresolved": {
+      "label": "No mechanism identified",
+      "parts": [
+        "0",
+        "1",
+        "2",
+        "3",
+        "4",
+        "5",
+        "6",
+        "7",
+        "8",
+        "9"
+      ],
+      "bodies": [],
+      "inputs": [],
+      "outputs": [],
+      "notes": [
+        "No supported mechanical evidence found. Absence of evidence does not imply a static model."
+      ]
+    }
+  },
+  "connections": {},
+  "discovery": {
+    "grouping": "Provisional connected mechanical candidates; agent may split/merge views",
+    "unclassified_parts": [
+      "0",
+      "1",
+      "2",
+      "3",
+      "4",
+      "5",
+      "6",
+      "7",
+      "8",
+      "9"
+    ],
+    "embedded_parts": [],
+    "contact_limit": 300,
+    "rigid_groups": "not inferred",
+    "inputs_outputs": "not inferred",
+    "mechanical_parts": [],
+    "warnings": [
+      {
+        "code": "coaxial_not_run",
+        "message": "not run: 0 shaft/gear candidates outside 2..100; select a section"
+      }
+    ],
+    "surface_contacts": "Not detected: cams, levers bearing on beams, friction and stops need geometric/visual review even when connector contacts are absent",
+    "unsupported_gears": [],
+    "gear_placements": {
+      "policy": "Nearest orthogonal analysis frame within rounding_limit; source translations and handedness preserved",
+      "rounding_limit": 0.002,
+      "counts": {},
+      "affected": []
+    },
+    "contacts": {
+      "complete": true,
+      "tested_parts": 10,
+      "diagnostics": [],
+      "summary": {
+        "tested_parts": 10,
+        "contacts": 5,
+        "contacted_parts": 6,
+        "by_kind": {
+          "stud/stud_receptacle": 3,
+          "pin/pin_hole": 2
+        },
+        "axles": {
+          "selection": "Catalog descriptions beginning Technic Axle followed by a numeric length; excludes axle pins, joiners and axle-hole supports",
+          "total": 0,
+          "with_axle_hole_contact": 0,
+          "without_axle_hole_contact": []
+        }
+      },
+      "placements": {
+        "policy": "Nearest orthogonal analysis frame within rounding_limit; source translations and handedness preserved",
+        "rounding_limit": 0.002,
+        "counts": {
+          "unchanged": 10
+        },
+        "affected": []
+      }
+    },
+    "coaxial_selection": "Catalog axle, gear, worm and engine crankshaft parts; positive line evidence within 80 LDU axial separation",
+    "coaxial": "not run: 0 shaft/gear candidates outside 2..100; select a section",
+    "isolated_mechanical_parts": []
+  }
+}

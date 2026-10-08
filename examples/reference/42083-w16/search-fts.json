@@ -1,0 +1,340 @@
+{
+  "engine": "sqlite FTS5 (bm25)",
+  "reason": "Jev unavailable: jev-rerank returned HTTP 402 (TypeSafe organization has no API credits); user requested FTS fallback",
+  "tables_note": "*_FTS are external-content FTS5 tables over the same rows that *_DESCRIPTIONS_JEV.full_description concatenates",
+  "results": {
+    "submodels": {
+      "table": "SUBMODELS_DESCRIPTIONS_FTS",
+      "match": "description:(engine OR motor) AND description:(piston* OR crankshaft*) AND description:(V8 OR V12 OR V6 OR \"six cylinder\" OR \"six-cylinder\" OR eight OR twelve OR W16 OR flat OR boxer OR radial OR \"dual crankshaft\")",
+      "rows": [
+        {
+          "bm25": -34.28418520121222,
+          "model": "42131-1.mpd",
+          "submodel": "42131 - engine.ldr",
+          "description": "Detailed V-engine with twelve cylinders, pistons, connecting rods, and a dual crankshaft."
+        },
+        {
+          "bm25": -31.62628860834252,
+          "model": "42043-1_Flatbed-Trailer.mpd",
+          "submodel": "42043 - engine.ldr",
+          "description": "Detailed inline Technic engine assembly with six cylinder heads, crankshaft, pistons, and connecting rods."
+        },
+        {
+          "bm25": -30.524057826150496,
+          "model": "42082-1.mpd",
+          "submodel": "42082 - engine.ldr",
+          "description": "Inline V8 engine assembly with eight pistons, cylinder heads, connecting rods, crankshaft sections, and engine block bricks."
+        },
+        {
+          "bm25": -30.49808641806107,
+          "model": "8285-1.mpd",
+          "submodel": "8285 - engine.ldr",
+          "description": "Inline six-cylinder Technic engine with cylinder heads, pistons, connecting rods, crankshaft, and a 16-tooth drive gear."
+        },
+        {
+          "bm25": -30.49808641806107,
+          "model": "8868-1.mpd",
+          "submodel": "8868-1 - Motorblock.ldr",
+          "description": "Inline six-cylinder Technic engine assembly with crankshafts, connecting rods, and pistons mounted on a plate base."
+        },
+        {
+          "bm25": -23.605682565225838,
+          "model": "42039-1.mpd",
+          "submodel": "42039 - motor.ldr",
+          "description": "A Technic V8 engine assembly with 8 cylinders, pistons, connecting rods, and dual crankshafts."
+        },
+        {
+          "bm25": -21.537364736636874,
+          "model": "8880-1_F1-Racer.mpd",
+          "submodel": "8880 - step21-1-5.ldr",
+          "description": "Engine block lower assembly with crankshafts, connecting rods, and pistons forming the V8 reciprocating mechanism."
+        },
+        {
+          "bm25": -20.808087156532675,
+          "model": "42083-1.mpd",
+          "submodel": "42083 - engine.ldr",
+          "description": "V8 engine assembly with 8 cylinder heads, pistons, connecting rods, and two crankshafts mounted on a stud-and-peghole brick base."
+        },
+        {
+          "bm25": -19.650523680387657,
+          "model": "8448-1_Racer.mpd",
+          "submodel": "8448 - box5step1-5.ldr",
+          "description": "Engine crankshaft assembly with two crankshafts, crankshaft centres, eight connecting rods, and supporting axles."
+        },
+        {
+          "bm25": -19.580925601885138,
+          "model": "42050-1.mpd",
+          "submodel": "42050 - engine.ldr",
+          "description": "A Technic V-engine assembly with eight cylinder heads, pistons, connecting rods, and dual crankshafts mounted on a 5x3 brick base."
+        },
+        {
+          "bm25": -18.532655958594148,
+          "model": "8448-1_Concept-Car.mpd",
+          "submodel": "8448 - box5step1-5.ldr",
+          "description": "An engine crankshaft assembly with crankshafts, centers, eight connecting rods, and supporting axles."
+        },
+        {
+          "bm25": -18.532655958594148,
+          "model": "8448-1_Hot-Rod.mpd",
+          "submodel": "8448 - box5step1-5.ldr",
+          "description": "An engine crankshaft assembly with crankshafts, eight connecting rods, crank centers, and axles."
+        },
+        {
+          "bm25": -17.93776132948365,
+          "model": "42056-1.mpd",
+          "submodel": "42056 - engine.ldr",
+          "description": "Flat-six engine assembly with cylinder heads, pistons, connecting rods, crankshaft, and cross blocks mounted on a 13-stud beam."
+        },
+        {
+          "bm25": -16.719918863709054,
+          "model": "8448-1_Hot-Rod.mpd",
+          "submodel": "8448 - box5.ldr",
+          "description": "An engine piston assembly with eight pistons, a 3-blade rotor, and connecting cross blocks on axles."
+        },
+        {
+          "bm25": -16.26859279744715,
+          "model": "8448-1_Wing-Doors.mpd",
+          "submodel": "8448 - box5.ldr",
+          "description": "Engine assembly with eight pistons, rotor, and cross blocks mounted on axles."
+        },
+        {
+          "bm25": -16.26859279744715,
+          "model": "8448-1.mpd",
+          "submodel": "8448 - box5.ldr",
+          "description": "Engine assembly with eight pistons, a 3-blade rotor, and cross blocks on axles."
+        },
+        {
+          "bm25": -15.66677595637454,
+          "model": "8448-1_Concept-Car.mpd",
+          "submodel": "8448 - box5.ldr",
+          "description": "An engine subassembly with eight pistons, a three-blade rotor, cross blocks, and axles."
+        },
+        {
+          "bm25": -15.382261368644391,
+          "model": "8448-1_Racer.mpd",
+          "submodel": "8448 - box5.ldr",
+          "description": "Engine block assembly with eight pistons, cylinder cross blocks, a 3-blade rotor, and supporting axles."
+        },
+        {
+          "bm25": -14.933662844066047,
+          "model": "42115-1.mpd",
+          "submodel": "42115 - 2-2-0-v12-engine.ldr",
+          "description": "V12 engine base structure with two 5x3 Technic bricks, an 11-stud beam, and inline axle joiners supporting the crankshaft and cylinder bank mounting."
+        }
+      ]
+    },
+    "models": {
+      "table": "MODELS_DESCRIPTIONS_FTS",
+      "match": "description:(V8 OR V12 OR W16 OR \"six-cylinder\" OR \"flat-six\" OR piston* OR crankshaft*) AND description:(engine OR motor)",
+      "rows": [
+        {
+          "bm25": -14.058640946083298,
+          "model": "8464-1.mpd",
+          "description": "Main chassis of a Technic vehicle featuring long beams, gears, differentials, and axles with two piston engine assemblies and an engine crankshaft submodel."
+        },
+        {
+          "bm25": -13.117789355447997,
+          "model": "42045-1.mpd",
+          "description": "A hydroplane racer model featuring a multi-cylinder engine with pistons, crankshafts and connecting rods, cross blocks and axles forming the structural frame."
+        },
+        {
+          "bm25": -12.518648685505237,
+          "model": "8256-1.mpd",
+          "description": "A Technic vehicle chassis featuring an engine with pistons and crankshafts, gears, beams, and integrated submodels for the seat, sides, steering wheel, and flexible soft axles."
+        },
+        {
+          "bm25": -11.633100158770874,
+          "model": "8024-1_120270---Racer.mpd",
+          "description": "A Technic racer model composed of a red and black chassis, engine assembly with pistons and crankshaft, steering linkage, gear-driven drivetrain, and detailed substeps for bodywork and wheels."
+        },
+        {
+          "bm25": -11.312995124524633,
+          "model": "8840-1_B-Model.mpd",
+          "description": "A yellow Technic rally car B-model featuring an engine with pistons and crankshaft, gears, shock absorbers, body panels with racing stripes and 'RALLY' decals, and a Technic action figure driver."
+        },
+        {
+          "bm25": -8.943695501612888,
+          "model": "42082-1.mpd",
+          "description": "Main chassis assembly of a large Technic crane combining structural beams, multiple gearboxes, drive axles with differentials, V8 engine, and four outriggers into a complex mechanical build."
+        },
+        {
+          "bm25": -8.683261536448114,
+          "model": "42115-1.mpd",
+          "description": "Main chassis assembly of the Lamborghini Si\u00e1n supercar, integrating rear differential, suspension, 8-speed gearbox, V12 engine, front steering axle, and body framework with extensive beams, pins, and axles."
+        },
+        {
+          "bm25": -7.917223246609861,
+          "model": "8256-1_Lawn-Mover.mpd",
+          "description": "Main chassis of a Technic lawn mower featuring beams, pins, axles, a steering mechanism, an engine crankshaft assembly, and flexible axles."
+        },
+        {
+          "bm25": -7.6820202877804675,
+          "model": "8815-1.mpd",
+          "description": "A red Technic racing go-cart (the Speedway Bandit) with a steering assembly, piston engine, exhaust, and number plate built from multiple submodels."
+        },
+        {
+          "bm25": -7.56139126615796,
+          "model": "8841-1.mpd",
+          "description": "Main chassis of a Technic desert racer featuring blue structural beams, axles, and gear connectors housing piston, engine, seat, steering, and suspension hose submodels."
+        },
+        {
+          "bm25": -7.555612741095062,
+          "model": "8218-1.mpd",
+          "description": "A yellow Technic motorcycle chassis featuring an engine crankshaft, bent blue liftarms, angle connectors, wheels with tyres, a seat, flexible hose, and a front wheel assembly."
+        },
+        {
+          "bm25": -7.33115241995462,
+          "model": "42022-1.mpd",
+          "description": "A Technic Hot Rod featuring an engine with pistons, functioning steering, six wide rubber tyres, and blue medium body panels over a liftarm and pin chassis."
+        }
+      ]
+    },
+    "parts": {
+      "table": "PARTS_DESCRIPTIONS_FTS",
+      "match": "description:(piston OR crankshaft OR \"engine cylinder\" OR \"connecting rod\")",
+      "rows": [
+        {
+          "bm25": -12.60291887230232,
+          "part": "2853.dat",
+          "description": "Technic Engine Crankshaft"
+        },
+        {
+          "bm25": -12.07054933468534,
+          "part": "2852.dat",
+          "description": "Technic Engine Connecting Rod"
+        },
+        {
+          "bm25": -12.07054933468534,
+          "part": "2854.dat",
+          "description": "Technic Engine Crankshaft Centre"
+        },
+        {
+          "bm25": -11.130228353174727,
+          "part": "502.dat",
+          "description": "Electric Train Motor 12V Connecting Rod"
+        },
+        {
+          "bm25": -10.524227060139395,
+          "part": "32061.dat",
+          "description": "=Technic Engine Cylinder Head"
+        },
+        {
+          "bm25": -9.704367810619265,
+          "part": "6608.dat",
+          "description": "Technic Engine Cylinder Head without Studs"
+        },
+        {
+          "bm25": -9.340543880728562,
+          "part": "2850.dat",
+          "description": "Technic Engine Cylinder Head with Side Slots"
+        },
+        {
+          "bm25": -9.340543880728562,
+          "part": "2850a.dat",
+          "description": "Technic Engine Cylinder Head with Side Slots"
+        },
+        {
+          "bm25": -9.340543880728562,
+          "part": "2850b.dat",
+          "description": "Technic Engine Cylinder Head with Bottom Slots"
+        },
+        {
+          "bm25": -9.003014216058999,
+          "part": "s/2850s01.dat",
+          "description": "~Technic Engine Cylinder Head Common Geometry Half"
+        },
+        {
+          "bm25": -9.003014216058999,
+          "part": "s/6608s01.dat",
+          "description": "~Technic Engine Cylinder Head without Studs Half"
+        },
+        {
+          "bm25": -9.003014216058999,
+          "part": "s/6608s02.dat",
+          "description": "~Technic Engine Cylinder Head without Studs Quarter"
+        },
+        {
+          "bm25": -8.413984053874136,
+          "part": "s/65141s01.dat",
+          "description": "~Technic Shock Absorber 11L Piston End with Peghole, Adapter to Piston Quarter"
+        },
+        {
+          "bm25": -8.222333110237894,
+          "part": "2851.dat",
+          "description": "Technic Engine Piston Round"
+        },
+        {
+          "bm25": -8.222333110237894,
+          "part": "62114.dat",
+          "description": "~Constraction Ball Cannon Piston"
+        }
+      ]
+    },
+    "submodels_42083": {
+      "table": "SUBMODELS_DESCRIPTIONS_FTS",
+      "match": "model:42083 AND description:(engine OR piston* OR crankshaft*)",
+      "rows": [
+        {
+          "bm25": -18.006186767814143,
+          "model": "42083-1.mpd",
+          "submodel": "42083 - engine.ldr",
+          "description": "V8 engine assembly with 8 cylinder heads, pistons, connecting rods, and two crankshafts mounted on a stud-and-peghole brick base."
+        },
+        {
+          "bm25": -17.70640806727348,
+          "model": "42083-1.mpd",
+          "submodel": "42083 - enginelower.ldr",
+          "description": "Lower half of the engine with 4 cylinder heads, a crankshaft assembly, connecting rods, and pistons driving off a 24-tooth gear."
+        },
+        {
+          "bm25": -9.88334801025507,
+          "model": "42083-1.mpd",
+          "submodel": "42083 - enginebeam.ldr",
+          "description": "Engine support beam framework using long liftarms, bent beams, and angle connectors to mount and brace the engine block."
+        },
+        {
+          "bm25": -9.50392448819521,
+          "model": "42083-1.mpd",
+          "submodel": "42083 - shock-06_5L-hard-1.ldr",
+          "description": "Hard 6.5L shock absorber unit with a cylinder and piston rod providing rear suspension damping."
+        },
+        {
+          "bm25": -9.50392448819521,
+          "model": "42083-1.mpd",
+          "submodel": "42083 - shock-06_5L-hard-2.ldr",
+          "description": "Second hard 6.5L shock absorber unit with cylinder and piston rod providing front suspension damping."
+        },
+        {
+          "bm25": -8.332903523774995,
+          "model": "42083-1.mpd",
+          "submodel": "42083 - fairingmotortop.ldr",
+          "description": "An upper motor/engine fairing assembly using dark blue panels and multiple smooth fairings attached via cross blocks and beams."
+        },
+        {
+          "bm25": -8.332903523774995,
+          "model": "42083-1.mpd",
+          "submodel": "42083 - fairingmotortop2.ldr",
+          "description": "A secondary upper engine fairing section with dark blue panels, long and short fairings, and liftarms joined by friction pins."
+        },
+        {
+          "bm25": -8.191823131828926,
+          "model": "42083-1.mpd",
+          "submodel": "42083 - enginecover.ldr",
+          "description": "Engine cover assembly built from plates, slopes, and grille tiles in dark and light bluish grey with dark blue curved accents."
+        },
+        {
+          "bm25": -8.055440336005201,
+          "model": "42083-1.mpd",
+          "submodel": "42083 - fairingmotortop3.ldr",
+          "description": "A compact upper engine fairing section using a dark blue panel, bent beams, and clip bars to form a smaller cover piece."
+        }
+      ]
+    }
+  },
+  "selected": {
+    "model": "42083-1.mpd",
+    "section": "42083 - engine.ldr",
+    "why": "Most complex engine found: W16 with 16 pistons on three gear-coupled crankshafts plus a geared input shaft"
+  },
+  "coverage": "Discovery only; geometry and joints were established from the source and connector evidence"
+}

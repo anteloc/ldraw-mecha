@@ -1,0 +1,30 @@
+0 FILE mf10_diver.ldr
+0 Minifig MF10_diver Diver
+0 Name: mf10_diver.ldr
+0 Author: ldraw-mecha scripts/build_minifigs.py
+0 // Generated minifig: parts picked by constant name from data/categories/parts/minifig; placements composed from LDCad shadow connector frames (data/offLibShadow) read through pyldraw3. Frame: torso origin at the neck, -Y up, the face looks along -Z, the figure's left is +X; feet at y=+72.
+
+0 // torso: torsos.TorsoWithDivingSuit_OrangeStripes_Belt_PressureGaugeAndBreathingHosePattern
+1 0 0 0 0 1 0 0 0 1 0 0 0 1 973p5f.dat
+0 // head: heads.HeadWithBrownEyebrows_Freckles_OpenSmilePattern_HollowStud_
+1 14 0 -24 0 1 0 0 0 1 0 0 0 1 3626cp8b.dat
+0 // hips: accessories.Hips
+1 0 0 32 0 1 0 0 0 1 0 0 0 1 3815b.dat
+0 // leg_l: legs.LegLeft
+1 0 0 44 0 1 0 0 0 1 0 0 0 1 3817c.dat
+0 // leg_r: legs.LegRight
+1 0 0 44 0 1 0 0 0 1 0 0 0 1 3816c.dat
+0 // arm_l: arms.ArmLeft
+1 0 15.552 9 0 0.9854312211 0.1700744202 0 -0.1700744202 0.9854312211 0 0 0 1 3819.dat
+0 // hand_l: hands.Hand
+1 0 23.69082445 26.75841254 -9.8839 0.9854312211 0.1202607758 -0.1202607758 -0.1700744202 0.6968050989 -0.6968050989 0 0.7071067812 0.7071067812 3820.dat
+0 // arm_r: arms.ArmRight
+1 0 -15.552 9 0 0.9854312211 -0.1700744202 0 0.1700744202 0.9854312211 0 0 0 1 3818.dat
+0 // hand_r: hands.Hand
+1 0 -23.69082445 26.75841254 -9.8839 0.9854312211 -0.1202607758 0.1202607758 0.1700744202 0.6968050989 -0.6968050989 0 0.7071067812 0.7071067812 3820.dat
+0 // back0: accessories.Airtanks
+1 14 0 0 0 1 0 0 0 1 0 0 0 1 3838.dat
+0 // foot_l: accessories.FlipperThin
+1 25 10 72 -1.2 1 0 0 0 1 0 0 0 1 59275a.dat
+0 // foot_r: accessories.FlipperThin
+1 25 -10 72 -1.2 1 0 0 0 1 0 0 0 1 59275a.dat

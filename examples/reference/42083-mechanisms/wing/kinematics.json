@@ -1,0 +1,47 @@
+{
+  "states": [],
+  "meshes": 0,
+  "review": {
+    "wing": [
+      "Parallelogram: lower axle L [0.0, -80.0, 420.0], upper axle U [0.0, -118.637, 430.353], crank pins 40 LDU along the 15 deg strut line (difference 0.00 LDU); links 107/13/16 hold U 40 LDU from L.",
+      "Rear link l: 107/29 (40.01 LDU on L) and rod 107/27+107/31+107/32+107/33 (120.00 LDU) close on the lifting wing by circle intersection",
+      "Rear link r: 107/37 (40.01 LDU on L) and rod 107/35+107/39+107/40+107/34 (120.00 LDU) close on the lifting wing by circle intersection",
+      "Assumption: the upper axle 107/14 stays put (links 107/13/16 static), so the struts and wing translate; the real set switches the active wing with the top-speed key (not installed here)."
+    ]
+  },
+  "continuity": {
+    "limit_radians_per_frame": 0.8,
+    "limit_ldu_per_frame": 6.0,
+    "worst": [
+      [
+        0.005459911825850039,
+        "wlr_ang",
+        "revolute",
+        115
+      ],
+      [
+        0.005459911825850039,
+        "wll_ang",
+        "revolute",
+        115
+      ],
+      [
+        0.005453944402704747,
+        "wing_v",
+        "revolute",
+        115
+      ],
+      [
+        0.005453944402704747,
+        "wing_neg",
+        "revolute",
+        115
+      ]
+    ],
+    "violations": {},
+    "passed": true
+  },
+  "paddle": null,
+  "dnr": null,
+  "gear_ratios": null
+}

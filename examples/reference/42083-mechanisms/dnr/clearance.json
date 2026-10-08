@@ -1,0 +1,330 @@
+{
+  "no_new_surface_crossings": false,
+  "samples": [
+    {
+      "control": "selector",
+      "value": -1.0,
+      "new_surface_crossings": [
+        [
+          "166",
+          "212"
+        ]
+      ]
+    },
+    {
+      "control": "selector",
+      "value": -0.875,
+      "new_surface_crossings": [
+        [
+          "166",
+          "212"
+        ]
+      ]
+    },
+    {
+      "control": "selector",
+      "value": -0.75,
+      "new_surface_crossings": [
+        [
+          "166",
+          "212"
+        ]
+      ]
+    },
+    {
+      "control": "selector",
+      "value": -0.625,
+      "new_surface_crossings": [
+        [
+          "166",
+          "212"
+        ]
+      ]
+    },
+    {
+      "control": "selector",
+      "value": -0.5,
+      "new_surface_crossings": [
+        [
+          "166",
+          "212"
+        ]
+      ]
+    },
+    {
+      "control": "selector",
+      "value": -0.375,
+      "new_surface_crossings": [
+        [
+          "166",
+          "212"
+        ]
+      ]
+    },
+    {
+      "control": "selector",
+      "value": -0.25,
+      "new_surface_crossings": []
+    },
+    {
+      "control": "selector",
+      "value": -0.125,
+      "new_surface_crossings": []
+    },
+    {
+      "control": "selector",
+      "value": 0.0,
+      "new_surface_crossings": []
+    },
+    {
+      "control": "selector",
+      "value": 0.125,
+      "new_surface_crossings": []
+    },
+    {
+      "control": "selector",
+      "value": 0.25,
+      "new_surface_crossings": []
+    },
+    {
+      "control": "selector",
+      "value": 0.375,
+      "new_surface_crossings": [
+        [
+          "166",
+          "212"
+        ]
+      ]
+    },
+    {
+      "control": "selector",
+      "value": 0.5,
+      "new_surface_crossings": [
+        [
+          "166",
+          "212"
+        ]
+      ]
+    },
+    {
+      "control": "selector",
+      "value": 0.625,
+      "new_surface_crossings": [
+        [
+          "166",
+          "212"
+        ]
+      ]
+    },
+    {
+      "control": "selector",
+      "value": 0.75,
+      "new_surface_crossings": [
+        [
+          "166",
+          "212"
+        ]
+      ]
+    },
+    {
+      "control": "selector",
+      "value": 0.875,
+      "new_surface_crossings": [
+        [
+          "166",
+          "212"
+        ]
+      ]
+    },
+    {
+      "control": "selector",
+      "value": 1.0,
+      "new_surface_crossings": [
+        [
+          "166",
+          "167"
+        ],
+        [
+          "166",
+          "212"
+        ]
+      ]
+    },
+    {
+      "control": "input",
+      "value": -3000.0,
+      "new_surface_crossings": []
+    },
+    {
+      "control": "input",
+      "value": -2625.0,
+      "new_surface_crossings": []
+    },
+    {
+      "control": "input",
+      "value": -2250.0,
+      "new_surface_crossings": []
+    },
+    {
+      "control": "input",
+      "value": -1875.0,
+      "new_surface_crossings": []
+    },
+    {
+      "control": "input",
+      "value": -1500.0,
+      "new_surface_crossings": []
+    },
+    {
+      "control": "input",
+      "value": -1125.0,
+      "new_surface_crossings": []
+    },
+    {
+      "control": "input",
+      "value": -750.0,
+      "new_surface_crossings": []
+    },
+    {
+      "control": "input",
+      "value": -375.0,
+      "new_surface_crossings": []
+    },
+    {
+      "control": "input",
+      "value": 0.0,
+      "new_surface_crossings": []
+    },
+    {
+      "control": "input",
+      "value": 375.0,
+      "new_surface_crossings": []
+    },
+    {
+      "control": "input",
+      "value": 750.0,
+      "new_surface_crossings": []
+    },
+    {
+      "control": "input",
+      "value": 1125.0,
+      "new_surface_crossings": []
+    },
+    {
+      "control": "input",
+      "value": 1500.0,
+      "new_surface_crossings": []
+    },
+    {
+      "control": "input",
+      "value": 1875.0,
+      "new_surface_crossings": []
+    },
+    {
+      "control": "input",
+      "value": 2250.0,
+      "new_surface_crossings": []
+    },
+    {
+      "control": "input",
+      "value": 2625.0,
+      "new_surface_crossings": []
+    },
+    {
+      "control": "input",
+      "value": 3000.0,
+      "new_surface_crossings": []
+    }
+  ],
+  "excluded_rest_pairs": [
+    [
+      "194",
+      "238"
+    ],
+    [
+      "209",
+      "211"
+    ]
+  ],
+  "shrink_ldu": 0.4,
+  "touching_tolerance_ldu": 0.05,
+  "excluded_touching_pairs": [
+    [
+      "109",
+      "117"
+    ],
+    [
+      "109",
+      "118"
+    ],
+    [
+      "109",
+      "119"
+    ],
+    [
+      "122",
+      "123"
+    ],
+    [
+      "146",
+      "148"
+    ],
+    [
+      "152",
+      "158"
+    ],
+    [
+      "167",
+      "175"
+    ],
+    [
+      "194",
+      "229"
+    ],
+    [
+      "194",
+      "231"
+    ],
+    [
+      "194",
+      "233"
+    ],
+    [
+      "194",
+      "234"
+    ],
+    [
+      "211",
+      "214"
+    ],
+    [
+      "239",
+      "241"
+    ],
+    [
+      "248",
+      "98"
+    ],
+    [
+      "30",
+      "38"
+    ],
+    [
+      "31",
+      "38"
+    ],
+    [
+      "48",
+      "59"
+    ],
+    [
+      "54",
+      "59"
+    ],
+    [
+      "59",
+      "65"
+    ]
+  ],
+  "coverage": "Sampled surface crossings only; excludes rigid-body and rest-contact pairs; containment untested"
+}

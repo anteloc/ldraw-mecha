@@ -1,0 +1,38 @@
+{
+  "pages": 6,
+  "links": 317,
+  "instance_references": 64,
+  "diagrams": [
+    {
+      "diagram": "cascaded-gearbox-1.mmd",
+      "passed": true,
+      "diagnostic": ""
+    },
+    {
+      "diagram": "cascaded-gearbox-2.mmd",
+      "passed": true,
+      "diagnostic": ""
+    },
+    {
+      "diagram": "independent-rigs-1.mmd",
+      "passed": true,
+      "diagnostic": ""
+    },
+    {
+      "diagram": "paddle-stepper-1.mmd",
+      "passed": true,
+      "diagnostic": ""
+    },
+    {
+      "diagram": "paddle-stepper-2.mmd",
+      "passed": true,
+      "diagnostic": ""
+    },
+    {
+      "diagram": "wing-lift-1.mmd",
+      "passed": true,
+      "diagnostic": ""
+    }
+  ],
+  "passed": true
+}

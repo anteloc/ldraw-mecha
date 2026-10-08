@@ -1,0 +1,2824 @@
+{
+  "passed": true,
+  "blender": "5.2.2 LTS",
+  "frames": 480,
+  "fps": 24,
+  "windows": {
+    "A": [
+      1,
+      144
+    ],
+    "B": [
+      161,
+      304
+    ],
+    "C": [
+      321,
+      464
+    ]
+  },
+  "tolerance": 0.002,
+  "build": {
+    "MF01_police": {
+      "passed": true,
+      "samples": 23,
+      "max_matrix_error": 1.1444091796875e-05
+    },
+    "MF02_spaceman": {
+      "passed": true,
+      "samples": 23,
+      "max_matrix_error": 1.1444091796875e-05
+    },
+    "MF03_knight": {
+      "passed": true,
+      "samples": 23,
+      "max_matrix_error": 1.1444091796875e-05
+    },
+    "MF04_builder": {
+      "passed": true,
+      "samples": 23,
+      "max_matrix_error": 1.1444091796875e-05
+    },
+    "MF05_chef": {
+      "passed": true,
+      "samples": 23,
+      "max_matrix_error": 4.0531158447265625e-05
+    },
+    "MF06_pirate": {
+      "passed": true,
+      "samples": 23,
+      "max_matrix_error": 1.33514404296875e-05
+    },
+    "MF07_firefighter": {
+      "passed": true,
+      "samples": 23,
+      "max_matrix_error": 1.1444091796875e-05
+    },
+    "MF08_athlete": {
+      "passed": true,
+      "samples": 23,
+      "max_matrix_error": 1.1444091796875e-05
+    },
+    "MF09_wizard": {
+      "passed": true,
+      "samples": 23,
+      "max_matrix_error": 1.33514404296875e-05
+    },
+    "MF10_diver": {
+      "passed": true,
+      "samples": 23,
+      "max_matrix_error": 1.1444091796875e-05
+    }
+  },
+  "layout": {
+    "MF01_police": {
+      "collection": "MF01_police Police officer",
+      "slot": [
+        0.0,
+        0.16,
+        0.0112
+      ],
+      "controller": "CTRL_minifig_01_police",
+      "mover": "MOVE_MF01_police",
+      "rig_collection": "MECHA_minifig_01_police",
+      "nla_tracks": [
+        "A walk_patrol",
+        "B look_around",
+        "C halt_signal"
+      ],
+      "actions": [
+        "MF01_police.walk_patrol",
+        "MF01_police.look_around",
+        "MF01_police.halt_signal"
+      ]
+    },
+    "MF02_spaceman": {
+      "collection": "MF02_spaceman Classic spaceman",
+      "slot": [
+        0.096,
+        0.16,
+        0.0112
+      ],
+      "controller": "CTRL_minifig_02_spaceman",
+      "mover": "MOVE_MF02_spaceman",
+      "rig_collection": "MECHA_minifig_02_spaceman",
+      "nla_tracks": [
+        "A moon_hop",
+        "B zero_g_tumble",
+        "C wave"
+      ],
+      "actions": [
+        "MF02_spaceman.moon_hop",
+        "MF02_spaceman.zero_g_tumble",
+        "MF02_spaceman.wave"
+      ]
+    },
+    "MF03_knight": {
+      "collection": "MF03_knight Knight",
+      "slot": [
+        0.192,
+        0.16,
+        0.0112
+      ],
+      "controller": "CTRL_minifig_03_knight",
+      "mover": "MOVE_MF03_knight",
+      "rig_collection": "MECHA_minifig_03_knight",
+      "nla_tracks": [
+        "A sword_slash",
+        "B shield_block",
+        "C courtly_bow"
+      ],
+      "actions": [
+        "MF03_knight.sword_slash",
+        "MF03_knight.shield_block",
+        "MF03_knight.courtly_bow"
+      ]
+    },
+    "MF04_builder": {
+      "collection": "MF04_builder Construction worker",
+      "slot": [
+        0.288,
+        0.16,
+        0.0112
+      ],
+      "controller": "CTRL_minifig_04_builder",
+      "mover": "MOVE_MF04_builder",
+      "rig_collection": "MECHA_minifig_04_builder",
+      "nla_tracks": [
+        "A hammering",
+        "B carry_load",
+        "C head_shake_no"
+      ],
+      "actions": [
+        "MF04_builder.hammering",
+        "MF04_builder.carry_load",
+        "MF04_builder.head_shake_no"
+      ]
+    },
+    "MF05_chef": {
+      "collection": "MF05_chef Chef",
+      "slot": [
+        0.384,
+        0.16,
+        0.01294
+      ],
+      "controller": "CTRL_minifig_05_chef",
+      "mover": "MOVE_MF05_chef",
+      "rig_collection": "MECHA_minifig_05_chef",
+      "nla_tracks": [
+        "A stirring",
+        "B pan_flip",
+        "C celebrate"
+      ],
+      "actions": [
+        "MF05_chef.stirring",
+        "MF05_chef.pan_flip",
+        "MF05_chef.celebrate"
+      ]
+    },
+    "MF06_pirate": {
+      "collection": "MF06_pirate Pirate",
+      "slot": [
+        0.0,
+        -0.0,
+        0.0112
+      ],
+      "controller": "CTRL_minifig_06_pirate",
+      "mover": "MOVE_MF06_pirate",
+      "rig_collection": "MECHA_minifig_06_pirate",
+      "nla_tracks": [
+        "A hornpipe_jig",
+        "B lookout",
+        "C cutlass_lunge"
+      ],
+      "actions": [
+        "MF06_pirate.hornpipe_jig",
+        "MF06_pirate.lookout",
+        "MF06_pirate.cutlass_lunge"
+      ]
+    },
+    "MF07_firefighter": {
+      "collection": "MF07_firefighter Firefighter",
+      "slot": [
+        0.096,
+        -0.0,
+        0.0112
+      ],
+      "controller": "CTRL_minifig_07_firefighter",
+      "mover": "MOVE_MF07_firefighter",
+      "rig_collection": "MECHA_minifig_07_firefighter",
+      "nla_tracks": [
+        "A ladder_climb",
+        "B run",
+        "C hose_sweep"
+      ],
+      "actions": [
+        "MF07_firefighter.ladder_climb",
+        "MF07_firefighter.run",
+        "MF07_firefighter.hose_sweep"
+      ]
+    },
+    "MF08_athlete": {
+      "collection": "MF08_athlete Athlete",
+      "slot": [
+        0.192,
+        -0.0,
+        0.0112
+      ],
+      "controller": "CTRL_minifig_08_athlete",
+      "mover": "MOVE_MF08_athlete",
+      "rig_collection": "MECHA_minifig_08_athlete",
+      "nla_tracks": [
+        "A sprint",
+        "B high_jump",
+        "C warmup_leg_swings"
+      ],
+      "actions": [
+        "MF08_athlete.sprint",
+        "MF08_athlete.high_jump",
+        "MF08_athlete.warmup_leg_swings"
+      ]
+    },
+    "MF09_wizard": {
+      "collection": "MF09_wizard Wizard",
+      "slot": [
+        0.288,
+        -0.0,
+        0.0112
+      ],
+      "controller": "CTRL_minifig_09_wizard",
+      "mover": "MOVE_MF09_wizard",
+      "rig_collection": "MECHA_minifig_09_wizard",
+      "nla_tracks": [
+        "A spell_spin",
+        "B levitate",
+        "C cast_spell"
+      ],
+      "actions": [
+        "MF09_wizard.spell_spin",
+        "MF09_wizard.levitate",
+        "MF09_wizard.cast_spell"
+      ]
+    },
+    "MF10_diver": {
+      "collection": "MF10_diver Diver",
+      "slot": [
+        0.384,
+        -0.0,
+        0.012
+      ],
+      "controller": "CTRL_minifig_10_diver",
+      "mover": "MOVE_MF10_diver",
+      "rig_collection": "MECHA_minifig_10_diver",
+      "nla_tracks": [
+        "A swim_crawl",
+        "B sit_down_stand_up",
+        "C fall_and_get_up"
+      ],
+      "actions": [
+        "MF10_diver.swim_crawl",
+        "MF10_diver.sit_down_stand_up",
+        "MF10_diver.fall_and_get_up"
+      ]
+    }
+  },
+  "worst": {
+    "key_error": 3.335356069555928e-06,
+    "max_matrix_error": 0.000194549560546875,
+    "figure_rotation_error": 5.960464477539063e-08,
+    "figure_translation_error_ldu": 9.490976187955865e-05
+  },
+  "samples": [
+    {
+      "frame": 1,
+      "figure": "MF01_police",
+      "key_error": 0.0,
+      "max_matrix_error": 4.1961669921875e-05,
+      "max_static_error": 3.0517578125e-05,
+      "invalid_drivers": [],
+      "figure_rotation_error": 0.0,
+      "figure_translation_error_ldu": 3.0517578125e-05,
+      "passed": true
+    },
+    {
+      "frame": 1,
+      "figure": "MF02_spaceman",
+      "key_error": 0.0,
+      "max_matrix_error": 4.1961669921875e-05,
+      "max_static_error": 3.0517578125e-05,
+      "invalid_drivers": [],
+      "figure_rotation_error": 0.0,
+      "figure_translation_error_ldu": 3.411968959808029e-05,
+      "passed": true
+    },
+    {
+      "frame": 1,
+      "figure": "MF03_knight",
+      "key_error": 0.0,
+      "max_matrix_error": 6.29425048828125e-05,
+      "max_static_error": 3.0517578125e-05,
+      "invalid_drivers": [],
+      "figure_rotation_error": 0.0,
+      "figure_translation_error_ldu": 4.315837287515549e-05,
+      "passed": true
+    },
+    {
+      "frame": 1,
+      "figure": "MF04_builder",
+      "key_error": 0.0,
+      "max_matrix_error": 8.96453857421875e-05,
+      "max_static_error": 6.103515625e-05,
+      "invalid_drivers": [],
+      "figure_rotation_error": 0.0,
+      "figure_translation_error_ldu": 6.823937919616058e-05,
+      "passed": true
+    },
+    {
+      "frame": 1,
+      "figure": "MF05_chef",
+      "key_error": 0.0,
+      "max_matrix_error": 0.00011444091796875,
+      "max_static_error": 6.103515625e-05,
+      "invalid_drivers": [],
+      "figure_rotation_error": 0.0,
+      "figure_translation_error_ldu": 6.99245558922705e-05,
+      "passed": true
+    },
+    {
+      "frame": 1,
+      "figure": "MF06_pirate",
+      "key_error": 0.0,
+      "max_matrix_error": 5.7220458984375e-06,
+      "max_static_error": 4.235164736271502e-22,
+      "invalid_drivers": [],
+      "figure_rotation_error": 0.0,
+      "figure_translation_error_ldu": 0.0,
+      "passed": true
+    },
+    {
+      "frame": 1,
+      "figure": "MF07_firefighter",
+      "key_error": 0.0,
+      "max_matrix_error": 1.71661376953125e-05,
+      "max_static_error": 1.52587890625e-05,
+      "invalid_drivers": [],
+      "figure_rotation_error": 0.0,
+      "figure_translation_error_ldu": 1.52587890625e-05,
+      "passed": true
+    },
+    {
+      "frame": 1,
+      "figure": "MF08_athlete",
+      "key_error": 0.0,
+      "max_matrix_error": 3.24249267578125e-05,
+      "max_static_error": 3.0517578125e-05,
+      "invalid_drivers": [],
+      "figure_rotation_error": 0.0,
+      "figure_translation_error_ldu": 3.0517578125e-05,
+      "passed": true
+    },
+    {
+      "frame": 1,
+      "figure": "MF09_wizard",
+      "key_error": 0.0,
+      "max_matrix_error": 8.96453857421875e-05,
+      "max_static_error": 6.103515625e-05,
+      "invalid_drivers": [],
+      "figure_rotation_error": 0.0,
+      "figure_translation_error_ldu": 6.103515625e-05,
+      "passed": true
+    },
+    {
+      "frame": 1,
+      "figure": "MF10_diver",
+      "key_error": 0.0,
+      "max_matrix_error": 8.96453857421875e-05,
+      "max_static_error": 6.103515625e-05,
+      "invalid_drivers": [],
+      "figure_rotation_error": 0.0,
+      "figure_translation_error_ldu": 6.103515625e-05,
+      "passed": true
+    },
+    {
+      "frame": 24,
+      "figure": "MF01_police",
+      "key_error": 5.943472025649044e-07,
+      "max_matrix_error": 3.24249267578125e-05,
+      "max_static_error": 3.0517578125e-05,
+      "invalid_drivers": [],
+      "figure_rotation_error": 0.0,
+      "figure_translation_error_ldu": 4.975642090871058e-05,
+      "passed": true
+    },
+    {
+      "frame": 24,
+      "figure": "MF02_spaceman",
+      "key_error": 3.178914393942023e-07,
+      "max_matrix_error": 6.103515625e-05,
+      "max_static_error": 6.103515625e-05,
+      "invalid_drivers": [],
+      "figure_rotation_error": 0.0,
+      "figure_translation_error_ldu": 4.375484370023522e-05,
+      "passed": true
+    },
+    {
+      "frame": 24,
+      "figure": "MF03_knight",
+      "key_error": 2.384185793236071e-08,
+      "max_matrix_error": 8.58306884765625e-05,
+      "max_static_error": 5.6743621826171875e-05,
+      "invalid_drivers": [],
+      "figure_rotation_error": 9.313225746154785e-10,
+      "figure_translation_error_ldu": 4.729980537461107e-05,
+      "passed": true
+    },
+    {
+      "frame": 24,
+      "figure": "MF04_builder",
+      "key_error": 7.486525466227079e-08,
+      "max_matrix_error": 5.91278076171875e-05,
+      "max_static_error": 1.0013580322265625e-05,
+      "invalid_drivers": [],
+      "figure_rotation_error": 0.0,
+      "figure_translation_error_ldu": 6.702533691599168e-05,
+      "passed": true
+    },
+    {
+      "frame": 24,
+      "figure": "MF05_chef",
+      "key_error": 1.3786163766127402e-08,
+      "max_matrix_error": 8.20159912109375e-05,
+      "max_static_error": 2.8192996978759766e-05,
+      "invalid_drivers": [],
+      "figure_rotation_error": 5.960464477539063e-08,
+      "figure_translation_error_ldu": 9.406354315209373e-05,
+      "passed": true
+    },
+    {
+      "frame": 24,
+      "figure": "MF06_pirate",
+      "key_error": 4.768371586472142e-08,
+      "max_matrix_error": 7.62939453125e-06,
+      "max_static_error": 4.235164736271502e-22,
+      "invalid_drivers": [],
+      "figure_rotation_error": 0.0,
+      "figure_translation_error_ldu": 0.0,
+      "passed": true
+    },
+    {
+      "frame": 24,
+      "figure": "MF07_firefighter",
+      "key_error": 7.450580569168253e-10,
+      "max_matrix_error": 1.52587890625e-05,
+      "max_static_error": 8.337199687957764e-06,
+      "invalid_drivers": [],
+      "figure_rotation_error": 3.725290298461914e-09,
+      "figure_translation_error_ldu": 1.5730206683355984e-05,
+      "passed": true
+    },
+    {
+      "frame": 24,
+      "figure": "MF08_athlete",
+      "key_error": 2.646651395821209e-07,
+      "max_matrix_error": 3.24249267578125e-05,
+      "max_static_error": 3.0517578125e-05,
+      "invalid_drivers": [],
+      "figure_rotation_error": 5.960464477539063e-08,
+      "figure_translation_error_ldu": 3.05457376410526e-05,
+      "passed": true
+    },
+    {
+      "frame": 24,
+      "figure": "MF09_wizard",
+      "key_error": 6.188995171907408e-08,
+      "max_matrix_error": 9.5367431640625e-05,
+      "max_static_error": 6.103515625e-05,
+      "invalid_drivers": [],
+      "figure_rotation_error": 5.0036165179499995e-17,
+      "figure_translation_error_ldu": 6.103515625e-05,
+      "passed": true
+    },
+    {
+      "frame": 24,
+      "figure": "MF10_diver",
+      "key_error": 4.371139006309477e-08,
+      "max_matrix_error": 5.245208740234375e-05,
+      "max_static_error": 3.221751467208378e-05,
+      "invalid_drivers": [],
+      "figure_rotation_error": 5.960464477539063e-08,
+      "figure_translation_error_ldu": 3.010595146703694e-05,
+      "passed": true
+    },
+    {
+      "frame": 48,
+      "figure": "MF01_police",
+      "key_error": 3.303843527646677e-07,
+      "max_matrix_error": 4.482269287109375e-05,
+      "max_static_error": 3.0517578125e-05,
+      "invalid_drivers": [],
+      "figure_rotation_error": 0.0,
+      "figure_translation_error_ldu": 3.078555379827123e-05,
+      "passed": true
+    },
+    {
+      "frame": 48,
+      "figure": "MF02_spaceman",
+      "key_error": 1.9073486328125e-06,
+      "max_matrix_error": 3.4332275390625e-05,
+      "max_static_error": 3.0517578125e-05,
+      "invalid_drivers": [],
+      "figure_rotation_error": 0.0,
+      "figure_translation_error_ldu": 4.2904746548469516e-05,
+      "passed": true
+    },
+    {
+      "frame": 48,
+      "figure": "MF03_knight",
+      "key_error": 4.768371586472142e-08,
+      "max_matrix_error": 5.14984130859375e-05,
+      "max_static_error": 3.0517578125e-05,
+      "invalid_drivers": [],
+      "figure_rotation_error": 0.0,
+      "figure_translation_error_ldu": 4.315837287515549e-05,
+      "passed": true
+    },
+    {
+      "frame": 48,
+      "figure": "MF04_builder",
+      "key_error": 2.384185793236071e-08,
+      "max_matrix_error": 5.817413330078125e-05,
+      "max_static_error": 1.0013580322265625e-05,
+      "invalid_drivers": [],
+      "figure_rotation_error": 0.0,
+      "figure_translation_error_ldu": 6.702533691599168e-05,
+      "passed": true
+    },
+    {
+      "frame": 48,
+      "figure": "MF05_chef",
+      "key_error": 1.3786163766127402e-08,
+      "max_matrix_error": 8.20159912109375e-05,
+      "max_static_error": 2.8192996978759766e-05,
+      "invalid_drivers": [],
+      "figure_rotation_error": 5.960464477539063e-08,
+      "figure_translation_error_ldu": 9.406354315209373e-05,
+      "passed": true
+    },
+    {
+      "frame": 48,
+      "figure": "MF06_pirate",
+      "key_error": 4.768371586472142e-08,
+      "max_matrix_error": 7.62939453125e-06,
+      "max_static_error": 4.235164736271502e-22,
+      "invalid_drivers": [],
+      "figure_rotation_error": 0.0,
+      "figure_translation_error_ldu": 0.0,
+      "passed": true
+    },
+    {
+      "frame": 48,
+      "figure": "MF07_firefighter",
+      "key_error": 4.768371586472142e-08,
+      "max_matrix_error": 1.9073486328125e-05,
+      "max_static_error": 8.337199687957764e-06,
+      "invalid_drivers": [],
+      "figure_rotation_error": 3.725290298461914e-09,
+      "figure_translation_error_ldu": 1.5730206683355984e-05,
+      "passed": true
+    },
+    {
+      "frame": 48,
+      "figure": "MF08_athlete",
+      "key_error": 1.1920928966180355e-09,
+      "max_matrix_error": 3.24249267578125e-05,
+      "max_static_error": 3.0517578125e-05,
+      "invalid_drivers": [],
+      "figure_rotation_error": 2.9802322387695312e-08,
+      "figure_translation_error_ldu": 3.071276450323161e-05,
+      "passed": true
+    },
+    {
+      "frame": 48,
+      "figure": "MF09_wizard",
+      "key_error": 2.3841857821338408e-08,
+      "max_matrix_error": 6.122061313362792e-05,
+      "max_static_error": 6.103515625e-05,
+      "invalid_drivers": [],
+      "figure_rotation_error": 1.2246468525851679e-16,
+      "figure_translation_error_ldu": 6.103515625e-05,
+      "passed": true
+    },
+    {
+      "frame": 48,
+      "figure": "MF10_diver",
+      "key_error": 3.6081047127822785e-07,
+      "max_matrix_error": 4.482269287109375e-05,
+      "max_static_error": 2.2453155906987377e-05,
+      "invalid_drivers": [],
+      "figure_rotation_error": 4.440892098500626e-16,
+      "figure_translation_error_ldu": 9.490976187955865e-05,
+      "passed": true
+    },
+    {
+      "frame": 72,
+      "figure": "MF01_police",
+      "key_error": 1.853225057857344e-06,
+      "max_matrix_error": 2.288818359375e-05,
+      "max_static_error": 1.52587890625e-05,
+      "invalid_drivers": [],
+      "figure_rotation_error": 2.201414542414489e-16,
+      "figure_translation_error_ldu": 3.0517578125e-05,
+      "passed": true
+    },
+    {
+      "frame": 72,
+      "figure": "MF02_spaceman",
+      "key_error": 1.2715657575768091e-06,
+      "max_matrix_error": 4.1961669921875e-05,
+      "max_static_error": 3.0517578125e-05,
+      "invalid_drivers": [],
+      "figure_rotation_error": 0.0,
+      "figure_translation_error_ldu": 5.1885492358152176e-05,
+      "passed": true
+    },
+    {
+      "frame": 72,
+      "figure": "MF03_knight",
+      "key_error": 1.9001211093438997e-07,
+      "max_matrix_error": 7.2479248046875e-05,
+      "max_static_error": 4.673004150390625e-05,
+      "invalid_drivers": [],
+      "figure_rotation_error": 5.960464477539063e-08,
+      "figure_translation_error_ldu": 6.0452115691143795e-05,
+      "passed": true
+    },
+    {
+      "frame": 72,
+      "figure": "MF04_builder",
+      "key_error": 2.384185793236071e-08,
+      "max_matrix_error": 5.817413330078125e-05,
+      "max_static_error": 1.0013580322265625e-05,
+      "invalid_drivers": [],
+      "figure_rotation_error": 0.0,
+      "figure_translation_error_ldu": 6.702533691599168e-05,
+      "passed": true
+    },
+    {
+      "frame": 72,
+      "figure": "MF05_chef",
+      "key_error": 1.3786163766127402e-08,
+      "max_matrix_error": 8.20159912109375e-05,
+      "max_static_error": 2.8192996978759766e-05,
+      "invalid_drivers": [],
+      "figure_rotation_error": 5.960464477539063e-08,
+      "figure_translation_error_ldu": 9.406354315209373e-05,
+      "passed": true
+    },
+    {
+      "frame": 72,
+      "figure": "MF06_pirate",
+      "key_error": 4.768371586472142e-08,
+      "max_matrix_error": 7.62939453125e-06,
+      "max_static_error": 4.235164736271502e-22,
+      "invalid_drivers": [],
+      "figure_rotation_error": 0.0,
+      "figure_translation_error_ldu": 0.0,
+      "passed": true
+    },
+    {
+      "frame": 72,
+      "figure": "MF07_firefighter",
+      "key_error": 7.450580569168253e-10,
+      "max_matrix_error": 1.7523765563964844e-05,
+      "max_static_error": 1.5966594219207764e-05,
+      "invalid_drivers": [],
+      "figure_rotation_error": 3.725290298461914e-09,
+      "figure_translation_error_ldu": 1.5730206683355984e-05,
+      "passed": true
+    },
+    {
+      "frame": 72,
+      "figure": "MF08_athlete",
+      "key_error": 8.742278012618954e-08,
+      "max_matrix_error": 4.1961669921875e-05,
+      "max_static_error": 4.0134083974407986e-05,
+      "invalid_drivers": [],
+      "figure_rotation_error": 2.4492937051703357e-16,
+      "figure_translation_error_ldu": 3.0517578125e-05,
+      "passed": true
+    },
+    {
+      "frame": 72,
+      "figure": "MF09_wizard",
+      "key_error": 1.7484556025237907e-07,
+      "max_matrix_error": 0.000133514404296875,
+      "max_static_error": 6.103515625e-05,
+      "invalid_drivers": [],
+      "figure_rotation_error": 2.1412406537821273e-23,
+      "figure_translation_error_ldu": 6.103515625e-05,
+      "passed": true
+    },
+    {
+      "frame": 72,
+      "figure": "MF10_diver",
+      "key_error": 4.657178074296553e-07,
+      "max_matrix_error": 0.000118255615234375,
+      "max_static_error": 6.719223165418953e-05,
+      "invalid_drivers": [],
+      "figure_rotation_error": 1.4901161193847656e-08,
+      "figure_translation_error_ldu": 2.8197974094338453e-05,
+      "passed": true
+    },
+    {
+      "frame": 96,
+      "figure": "MF01_police",
+      "key_error": 1.3671250087554654e-06,
+      "max_matrix_error": 5.507469177246094e-05,
+      "max_static_error": 3.0517578125e-05,
+      "invalid_drivers": [],
+      "figure_rotation_error": 2.4492937051703357e-16,
+      "figure_translation_error_ldu": 4.595545169983209e-05,
+      "passed": true
+    },
+    {
+      "frame": 96,
+      "figure": "MF02_spaceman",
+      "key_error": 5.40400113546724e-09,
+      "max_matrix_error": 3.62396240234375e-05,
+      "max_static_error": 3.0517578125e-05,
+      "invalid_drivers": [],
+      "figure_rotation_error": 5.960464477539063e-08,
+      "figure_translation_error_ldu": 5.1890629658391046e-05,
+      "passed": true
+    },
+    {
+      "frame": 96,
+      "figure": "MF03_knight",
+      "key_error": 4.7683715642676816e-08,
+      "max_matrix_error": 5.91278076171875e-05,
+      "max_static_error": 4.57763671875e-05,
+      "invalid_drivers": [],
+      "figure_rotation_error": 7.450580596923828e-09,
+      "figure_translation_error_ldu": 4.315837287515549e-05,
+      "passed": true
+    },
+    {
+      "frame": 96,
+      "figure": "MF04_builder",
+      "key_error": 4.768371586472142e-08,
+      "max_matrix_error": 7.724761962890625e-05,
+      "max_static_error": 4.011392593383789e-05,
+      "invalid_drivers": [],
+      "figure_rotation_error": 2.3283064365386963e-10,
+      "figure_translation_error_ldu": 4.347072008590519e-05,
+      "passed": true
+    },
+    {
+      "frame": 96,
+      "figure": "MF05_chef",
+      "key_error": 1.3786163766127402e-08,
+      "max_matrix_error": 8.20159912109375e-05,
+      "max_static_error": 2.8192996978759766e-05,
+      "invalid_drivers": [],
+      "figure_rotation_error": 5.960464477539063e-08,
+      "figure_translation_error_ldu": 9.406354315209373e-05,
+      "passed": true
+    },
+    {
+      "frame": 96,
+      "figure": "MF06_pirate",
+      "key_error": 4.768371586472142e-08,
+      "max_matrix_error": 7.62939453125e-06,
+      "max_static_error": 4.235164736271502e-22,
+      "invalid_drivers": [],
+      "figure_rotation_error": 0.0,
+      "figure_translation_error_ldu": 0.0,
+      "passed": true
+    },
+    {
+      "frame": 96,
+      "figure": "MF07_firefighter",
+      "key_error": 7.450580569168253e-10,
+      "max_matrix_error": 1.71661376953125e-05,
+      "max_static_error": 1.5966594219207764e-05,
+      "invalid_drivers": [],
+      "figure_rotation_error": 3.725290298461914e-09,
+      "figure_translation_error_ldu": 1.5730206683355984e-05,
+      "passed": true
+    },
+    {
+      "frame": 96,
+      "figure": "MF08_athlete",
+      "key_error": 1.0826909146999242e-07,
+      "max_matrix_error": 4.76837158203125e-05,
+      "max_static_error": 3.5752578696701676e-05,
+      "invalid_drivers": [],
+      "figure_rotation_error": 5.960464477539063e-08,
+      "figure_translation_error_ldu": 3.060576990518689e-05,
+      "passed": true
+    },
+    {
+      "frame": 96,
+      "figure": "MF09_wizard",
+      "key_error": 1.7484556025237907e-07,
+      "max_matrix_error": 0.0001220703125,
+      "max_static_error": 6.103515625e-05,
+      "invalid_drivers": [],
+      "figure_rotation_error": 2.1412406537821273e-23,
+      "figure_translation_error_ldu": 6.103515625e-05,
+      "passed": true
+    },
+    {
+      "frame": 96,
+      "figure": "MF10_diver",
+      "key_error": 7.216209425564557e-07,
+      "max_matrix_error": 0.00011539459228515625,
+      "max_static_error": 5.1228988013463095e-05,
+      "invalid_drivers": [],
+      "figure_rotation_error": 5.960464477539063e-08,
+      "figure_translation_error_ldu": 9.252606998996863e-05,
+      "passed": true
+    },
+    {
+      "frame": 120,
+      "figure": "MF01_police",
+      "key_error": 2.7626078313858216e-07,
+      "max_matrix_error": 2.09808349609375e-05,
+      "max_static_error": 3.637978807091713e-12,
+      "invalid_drivers": [],
+      "figure_rotation_error": 2.4492937051703357e-16,
+      "figure_translation_error_ldu": 3.267726462389835e-05,
+      "passed": true
+    },
+    {
+      "frame": 120,
+      "figure": "MF02_spaceman",
+      "key_error": 6.357828787884046e-07,
+      "max_matrix_error": 4.00543212890625e-05,
+      "max_static_error": 3.0517578125e-05,
+      "invalid_drivers": [],
+      "figure_rotation_error": 0.0,
+      "figure_translation_error_ldu": 2.5942746179076088e-05,
+      "passed": true
+    },
+    {
+      "frame": 120,
+      "figure": "MF03_knight",
+      "key_error": 1.9001211093438997e-07,
+      "max_matrix_error": 6.866455078125e-05,
+      "max_static_error": 2.2881939003127627e-05,
+      "invalid_drivers": [],
+      "figure_rotation_error": 5.960464477539063e-08,
+      "figure_translation_error_ldu": 3.166935578917851e-05,
+      "passed": true
+    },
+    {
+      "frame": 120,
+      "figure": "MF04_builder",
+      "key_error": 2.384185793236071e-08,
+      "max_matrix_error": 9.72747802734375e-05,
+      "max_static_error": 7.152557373046875e-05,
+      "invalid_drivers": [],
+      "figure_rotation_error": 7.450580596923828e-09,
+      "figure_translation_error_ldu": 7.716591898019981e-05,
+      "passed": true
+    },
+    {
+      "frame": 120,
+      "figure": "MF05_chef",
+      "key_error": 4.768371586472142e-08,
+      "max_matrix_error": 0.0001087188720703125,
+      "max_static_error": 4.0531158447265625e-06,
+      "invalid_drivers": [],
+      "figure_rotation_error": 0.0,
+      "figure_translation_error_ldu": 8.081944213000076e-05,
+      "passed": true
+    },
+    {
+      "frame": 120,
+      "figure": "MF06_pirate",
+      "key_error": 4.768371586472142e-08,
+      "max_matrix_error": 7.62939453125e-06,
+      "max_static_error": 4.235164736271502e-22,
+      "invalid_drivers": [],
+      "figure_rotation_error": 0.0,
+      "figure_translation_error_ldu": 0.0,
+      "passed": true
+    },
+    {
+      "frame": 120,
+      "figure": "MF07_firefighter",
+      "key_error": 4.768371586472142e-08,
+      "max_matrix_error": 1.9073486328125e-05,
+      "max_static_error": 8.337199687957764e-06,
+      "invalid_drivers": [],
+      "figure_rotation_error": 3.725290298461914e-09,
+      "figure_translation_error_ldu": 1.5730206683355984e-05,
+      "passed": true
+    },
+    {
+      "frame": 120,
+      "figure": "MF08_athlete",
+      "key_error": 6.935852887579586e-07,
+      "max_matrix_error": 3.0517578125e-05,
+      "max_static_error": 7.982870897649263e-07,
+      "invalid_drivers": [],
+      "figure_rotation_error": 2.7755575615628914e-17,
+      "figure_translation_error_ldu": 3.128922927101646e-05,
+      "passed": true
+    },
+    {
+      "frame": 120,
+      "figure": "MF09_wizard",
+      "key_error": 1.7484556025237907e-07,
+      "max_matrix_error": 0.0001220703125,
+      "max_static_error": 6.103515625e-05,
+      "invalid_drivers": [],
+      "figure_rotation_error": 2.1412406537821273e-23,
+      "figure_translation_error_ldu": 6.103515625e-05,
+      "passed": true
+    },
+    {
+      "frame": 120,
+      "figure": "MF10_diver",
+      "key_error": 3.4969112050475815e-07,
+      "max_matrix_error": 8.96453857421875e-05,
+      "max_static_error": 6.103515625e-05,
+      "invalid_drivers": [],
+      "figure_rotation_error": 0.0,
+      "figure_translation_error_ldu": 6.103515625e-05,
+      "passed": true
+    },
+    {
+      "frame": 144,
+      "figure": "MF01_police",
+      "key_error": 1.7484556025237907e-07,
+      "max_matrix_error": 4.57763671875e-05,
+      "max_static_error": 3.0517578125e-05,
+      "invalid_drivers": [],
+      "figure_rotation_error": 2.1412406537821273e-23,
+      "figure_translation_error_ldu": 3.0517578125e-05,
+      "passed": true
+    },
+    {
+      "frame": 144,
+      "figure": "MF02_spaceman",
+      "key_error": 0.0,
+      "max_matrix_error": 4.1961669921875e-05,
+      "max_static_error": 3.0517578125e-05,
+      "invalid_drivers": [],
+      "figure_rotation_error": 0.0,
+      "figure_translation_error_ldu": 3.411968959808029e-05,
+      "passed": true
+    },
+    {
+      "frame": 144,
+      "figure": "MF03_knight",
+      "key_error": 0.0,
+      "max_matrix_error": 6.29425048828125e-05,
+      "max_static_error": 3.0517578125e-05,
+      "invalid_drivers": [],
+      "figure_rotation_error": 0.0,
+      "figure_translation_error_ldu": 4.315837287515549e-05,
+      "passed": true
+    },
+    {
+      "frame": 144,
+      "figure": "MF04_builder",
+      "key_error": 0.0,
+      "max_matrix_error": 8.96453857421875e-05,
+      "max_static_error": 6.103515625e-05,
+      "invalid_drivers": [],
+      "figure_rotation_error": 0.0,
+      "figure_translation_error_ldu": 6.823937919616058e-05,
+      "passed": true
+    },
+    {
+      "frame": 144,
+      "figure": "MF05_chef",
+      "key_error": 0.0,
+      "max_matrix_error": 0.00011444091796875,
+      "max_static_error": 6.103515625e-05,
+      "invalid_drivers": [],
+      "figure_rotation_error": 0.0,
+      "figure_translation_error_ldu": 6.99245558922705e-05,
+      "passed": true
+    },
+    {
+      "frame": 144,
+      "figure": "MF06_pirate",
+      "key_error": 0.0,
+      "max_matrix_error": 5.7220458984375e-06,
+      "max_static_error": 4.235164736271502e-22,
+      "invalid_drivers": [],
+      "figure_rotation_error": 0.0,
+      "figure_translation_error_ldu": 0.0,
+      "passed": true
+    },
+    {
+      "frame": 144,
+      "figure": "MF07_firefighter",
+      "key_error": 0.0,
+      "max_matrix_error": 1.71661376953125e-05,
+      "max_static_error": 1.52587890625e-05,
+      "invalid_drivers": [],
+      "figure_rotation_error": 0.0,
+      "figure_translation_error_ldu": 1.52587890625e-05,
+      "passed": true
+    },
+    {
+      "frame": 144,
+      "figure": "MF08_athlete",
+      "key_error": 1.7484556025237907e-07,
+      "max_matrix_error": 3.4332275390625e-05,
+      "max_static_error": 3.0517578125e-05,
+      "invalid_drivers": [],
+      "figure_rotation_error": 2.1412406537821273e-23,
+      "figure_translation_error_ldu": 3.0517578125e-05,
+      "passed": true
+    },
+    {
+      "frame": 144,
+      "figure": "MF09_wizard",
+      "key_error": 1.7484556025237907e-07,
+      "max_matrix_error": 9.1552734375e-05,
+      "max_static_error": 6.103515625e-05,
+      "invalid_drivers": [],
+      "figure_rotation_error": 2.1412406537821273e-23,
+      "figure_translation_error_ldu": 6.103515625e-05,
+      "passed": true
+    },
+    {
+      "frame": 144,
+      "figure": "MF10_diver",
+      "key_error": 3.4969112050475815e-07,
+      "max_matrix_error": 8.96453857421875e-05,
+      "max_static_error": 6.103515625e-05,
+      "invalid_drivers": [],
+      "figure_rotation_error": 0.0,
+      "figure_translation_error_ldu": 6.103515625e-05,
+      "passed": true
+    },
+    {
+      "frame": 152,
+      "figure": "MF01_police",
+      "key_error": 1.7484556025237907e-07,
+      "max_matrix_error": 4.57763671875e-05,
+      "max_static_error": 3.0517578125e-05,
+      "invalid_drivers": [],
+      "figure_rotation_error": 2.1412406537821273e-23,
+      "figure_translation_error_ldu": 3.0517578125e-05,
+      "passed": true
+    },
+    {
+      "frame": 152,
+      "figure": "MF02_spaceman",
+      "key_error": 0.0,
+      "max_matrix_error": 4.1961669921875e-05,
+      "max_static_error": 3.0517578125e-05,
+      "invalid_drivers": [],
+      "figure_rotation_error": 0.0,
+      "figure_translation_error_ldu": 3.411968959808029e-05,
+      "passed": true
+    },
+    {
+      "frame": 152,
+      "figure": "MF03_knight",
+      "key_error": 0.0,
+      "max_matrix_error": 6.29425048828125e-05,
+      "max_static_error": 3.0517578125e-05,
+      "invalid_drivers": [],
+      "figure_rotation_error": 0.0,
+      "figure_translation_error_ldu": 4.315837287515549e-05,
+      "passed": true
+    },
+    {
+      "frame": 152,
+      "figure": "MF04_builder",
+      "key_error": 0.0,
+      "max_matrix_error": 8.96453857421875e-05,
+      "max_static_error": 6.103515625e-05,
+      "invalid_drivers": [],
+      "figure_rotation_error": 0.0,
+      "figure_translation_error_ldu": 6.823937919616058e-05,
+      "passed": true
+    },
+    {
+      "frame": 152,
+      "figure": "MF05_chef",
+      "key_error": 0.0,
+      "max_matrix_error": 0.00011444091796875,
+      "max_static_error": 6.103515625e-05,
+      "invalid_drivers": [],
+      "figure_rotation_error": 0.0,
+      "figure_translation_error_ldu": 6.99245558922705e-05,
+      "passed": true
+    },
+    {
+      "frame": 152,
+      "figure": "MF06_pirate",
+      "key_error": 0.0,
+      "max_matrix_error": 5.7220458984375e-06,
+      "max_static_error": 4.235164736271502e-22,
+      "invalid_drivers": [],
+      "figure_rotation_error": 0.0,
+      "figure_translation_error_ldu": 0.0,
+      "passed": true
+    },
+    {
+      "frame": 152,
+      "figure": "MF07_firefighter",
+      "key_error": 0.0,
+      "max_matrix_error": 1.71661376953125e-05,
+      "max_static_error": 1.52587890625e-05,
+      "invalid_drivers": [],
+      "figure_rotation_error": 0.0,
+      "figure_translation_error_ldu": 1.52587890625e-05,
+      "passed": true
+    },
+    {
+      "frame": 152,
+      "figure": "MF08_athlete",
+      "key_error": 1.7484556025237907e-07,
+      "max_matrix_error": 3.4332275390625e-05,
+      "max_static_error": 3.0517578125e-05,
+      "invalid_drivers": [],
+      "figure_rotation_error": 2.1412406537821273e-23,
+      "figure_translation_error_ldu": 3.0517578125e-05,
+      "passed": true
+    },
+    {
+      "frame": 152,
+      "figure": "MF09_wizard",
+      "key_error": 1.7484556025237907e-07,
+      "max_matrix_error": 9.1552734375e-05,
+      "max_static_error": 6.103515625e-05,
+      "invalid_drivers": [],
+      "figure_rotation_error": 2.1412406537821273e-23,
+      "figure_translation_error_ldu": 6.103515625e-05,
+      "passed": true
+    },
+    {
+      "frame": 152,
+      "figure": "MF10_diver",
+      "key_error": 3.4969112050475815e-07,
+      "max_matrix_error": 8.96453857421875e-05,
+      "max_static_error": 6.103515625e-05,
+      "invalid_drivers": [],
+      "figure_rotation_error": 0.0,
+      "figure_translation_error_ldu": 6.103515625e-05,
+      "passed": true
+    },
+    {
+      "frame": 161,
+      "figure": "MF01_police",
+      "key_error": 0.0,
+      "max_matrix_error": 4.1961669921875e-05,
+      "max_static_error": 3.0517578125e-05,
+      "invalid_drivers": [],
+      "figure_rotation_error": 0.0,
+      "figure_translation_error_ldu": 3.0517578125e-05,
+      "passed": true
+    },
+    {
+      "frame": 161,
+      "figure": "MF02_spaceman",
+      "key_error": 0.0,
+      "max_matrix_error": 4.1961669921875e-05,
+      "max_static_error": 3.0517578125e-05,
+      "invalid_drivers": [],
+      "figure_rotation_error": 0.0,
+      "figure_translation_error_ldu": 3.411968959808029e-05,
+      "passed": true
+    },
+    {
+      "frame": 161,
+      "figure": "MF03_knight",
+      "key_error": 0.0,
+      "max_matrix_error": 6.29425048828125e-05,
+      "max_static_error": 3.0517578125e-05,
+      "invalid_drivers": [],
+      "figure_rotation_error": 0.0,
+      "figure_translation_error_ldu": 4.315837287515549e-05,
+      "passed": true
+    },
+    {
+      "frame": 161,
+      "figure": "MF04_builder",
+      "key_error": 0.0,
+      "max_matrix_error": 8.96453857421875e-05,
+      "max_static_error": 6.103515625e-05,
+      "invalid_drivers": [],
+      "figure_rotation_error": 0.0,
+      "figure_translation_error_ldu": 6.823937919616058e-05,
+      "passed": true
+    },
+    {
+      "frame": 161,
+      "figure": "MF05_chef",
+      "key_error": 0.0,
+      "max_matrix_error": 0.00011444091796875,
+      "max_static_error": 6.103515625e-05,
+      "invalid_drivers": [],
+      "figure_rotation_error": 0.0,
+      "figure_translation_error_ldu": 6.99245558922705e-05,
+      "passed": true
+    },
+    {
+      "frame": 161,
+      "figure": "MF06_pirate",
+      "key_error": 0.0,
+      "max_matrix_error": 5.7220458984375e-06,
+      "max_static_error": 4.235164736271502e-22,
+      "invalid_drivers": [],
+      "figure_rotation_error": 0.0,
+      "figure_translation_error_ldu": 0.0,
+      "passed": true
+    },
+    {
+      "frame": 161,
+      "figure": "MF07_firefighter",
+      "key_error": 0.0,
+      "max_matrix_error": 1.71661376953125e-05,
+      "max_static_error": 1.52587890625e-05,
+      "invalid_drivers": [],
+      "figure_rotation_error": 0.0,
+      "figure_translation_error_ldu": 1.52587890625e-05,
+      "passed": true
+    },
+    {
+      "frame": 161,
+      "figure": "MF08_athlete",
+      "key_error": 0.0,
+      "max_matrix_error": 3.24249267578125e-05,
+      "max_static_error": 3.0517578125e-05,
+      "invalid_drivers": [],
+      "figure_rotation_error": 0.0,
+      "figure_translation_error_ldu": 3.0517578125e-05,
+      "passed": true
+    },
+    {
+      "frame": 161,
+      "figure": "MF09_wizard",
+      "key_error": 0.0,
+      "max_matrix_error": 8.96453857421875e-05,
+      "max_static_error": 6.103515625e-05,
+      "invalid_drivers": [],
+      "figure_rotation_error": 0.0,
+      "figure_translation_error_ldu": 6.103515625e-05,
+      "passed": true
+    },
+    {
+      "frame": 161,
+      "figure": "MF10_diver",
+      "key_error": 0.0,
+      "max_matrix_error": 8.96453857421875e-05,
+      "max_static_error": 6.103515625e-05,
+      "invalid_drivers": [],
+      "figure_rotation_error": 0.0,
+      "figure_translation_error_ldu": 6.103515625e-05,
+      "passed": true
+    },
+    {
+      "frame": 190,
+      "figure": "MF01_police",
+      "key_error": 4.768371586472142e-08,
+      "max_matrix_error": 4.1961669921875e-05,
+      "max_static_error": 3.0517578125e-05,
+      "invalid_drivers": [],
+      "figure_rotation_error": 0.0,
+      "figure_translation_error_ldu": 3.0517578125e-05,
+      "passed": true
+    },
+    {
+      "frame": 190,
+      "figure": "MF02_spaceman",
+      "key_error": 3.672630034812219e-08,
+      "max_matrix_error": 5.53131103515625e-05,
+      "max_static_error": 1.2061202141921967e-05,
+      "invalid_drivers": [],
+      "figure_rotation_error": 5.960464477539063e-08,
+      "figure_translation_error_ldu": 2.669010537940317e-05,
+      "passed": true
+    },
+    {
+      "frame": 190,
+      "figure": "MF03_knight",
+      "key_error": 2.3841857821338408e-08,
+      "max_matrix_error": 5.340576171875e-05,
+      "max_static_error": 3.0517578125e-05,
+      "invalid_drivers": [],
+      "figure_rotation_error": 0.0,
+      "figure_translation_error_ldu": 4.3186187417712923e-05,
+      "passed": true
+    },
+    {
+      "frame": 190,
+      "figure": "MF04_builder",
+      "key_error": 3.2072047062570164e-07,
+      "max_matrix_error": 6.175041198730469e-05,
+      "max_static_error": 6.103515625e-05,
+      "invalid_drivers": [],
+      "figure_rotation_error": 0.0,
+      "figure_translation_error_ldu": 7.985856910617976e-05,
+      "passed": true
+    },
+    {
+      "frame": 190,
+      "figure": "MF05_chef",
+      "key_error": 5.7220459037665705e-08,
+      "max_matrix_error": 0.00010728836059570312,
+      "max_static_error": 6.103515625e-05,
+      "invalid_drivers": [],
+      "figure_rotation_error": 0.0,
+      "figure_translation_error_ldu": 6.99245558922705e-05,
+      "passed": true
+    },
+    {
+      "frame": 190,
+      "figure": "MF06_pirate",
+      "key_error": 4.768371586472142e-08,
+      "max_matrix_error": 1.4543533325195312e-05,
+      "max_static_error": 3.814697265625e-06,
+      "invalid_drivers": [],
+      "figure_rotation_error": 5.960464477539063e-08,
+      "figure_translation_error_ldu": 1.6167759895324707e-06,
+      "passed": true
+    },
+    {
+      "frame": 190,
+      "figure": "MF07_firefighter",
+      "key_error": 3.335356069555928e-06,
+      "max_matrix_error": 3.0517578125e-05,
+      "max_static_error": 1.52587890625e-05,
+      "invalid_drivers": [],
+      "figure_rotation_error": 0.0,
+      "figure_translation_error_ldu": 1.7130088704213012e-05,
+      "passed": true
+    },
+    {
+      "frame": 190,
+      "figure": "MF08_athlete",
+      "key_error": 2.5431315151536182e-06,
+      "max_matrix_error": 3.24249267578125e-05,
+      "max_static_error": 1.52587890625e-05,
+      "invalid_drivers": [],
+      "figure_rotation_error": 2.9802322387695312e-08,
+      "figure_translation_error_ldu": 3.0517578125e-05,
+      "passed": true
+    },
+    {
+      "frame": 190,
+      "figure": "MF09_wizard",
+      "key_error": 4.768371586472142e-08,
+      "max_matrix_error": 9.72747802734375e-05,
+      "max_static_error": 6.103515625e-05,
+      "invalid_drivers": [],
+      "figure_rotation_error": 0.0,
+      "figure_translation_error_ldu": 6.151014517439689e-05,
+      "passed": true
+    },
+    {
+      "frame": 190,
+      "figure": "MF10_diver",
+      "key_error": 3.3814161071177296e-07,
+      "max_matrix_error": 8.96453857421875e-05,
+      "max_static_error": 5.7220458984375e-06,
+      "invalid_drivers": [],
+      "figure_rotation_error": 0.0,
+      "figure_translation_error_ldu": 6.103515625e-05,
+      "passed": true
+    },
+    {
+      "frame": 220,
+      "figure": "MF01_police",
+      "key_error": 4.768371586472142e-08,
+      "max_matrix_error": 4.1961669921875e-05,
+      "max_static_error": 3.0517578125e-05,
+      "invalid_drivers": [],
+      "figure_rotation_error": 0.0,
+      "figure_translation_error_ldu": 3.0517578125e-05,
+      "passed": true
+    },
+    {
+      "frame": 220,
+      "figure": "MF02_spaceman",
+      "key_error": 2.3841857821338408e-08,
+      "max_matrix_error": 4.4345855712890625e-05,
+      "max_static_error": 3.4332275390625e-05,
+      "invalid_drivers": [],
+      "figure_rotation_error": 5.960464477539063e-08,
+      "figure_translation_error_ldu": 5.239353379593841e-05,
+      "passed": true
+    },
+    {
+      "frame": 220,
+      "figure": "MF03_knight",
+      "key_error": 2.384185793236071e-08,
+      "max_matrix_error": 5.340576171875e-05,
+      "max_static_error": 3.0517578125e-05,
+      "invalid_drivers": [],
+      "figure_rotation_error": 0.0,
+      "figure_translation_error_ldu": 4.3186187417712923e-05,
+      "passed": true
+    },
+    {
+      "frame": 220,
+      "figure": "MF04_builder",
+      "key_error": 1.368541433066639e-06,
+      "max_matrix_error": 7.62939453125e-05,
+      "max_static_error": 7.62939453125e-06,
+      "invalid_drivers": [],
+      "figure_rotation_error": 5.960464477539063e-08,
+      "figure_translation_error_ldu": 7.002853298448875e-05,
+      "passed": true
+    },
+    {
+      "frame": 220,
+      "figure": "MF05_chef",
+      "key_error": 5.7220459037665705e-08,
+      "max_matrix_error": 0.00010728836059570312,
+      "max_static_error": 6.103515625e-05,
+      "invalid_drivers": [],
+      "figure_rotation_error": 0.0,
+      "figure_translation_error_ldu": 6.99245558922705e-05,
+      "passed": true
+    },
+    {
+      "frame": 220,
+      "figure": "MF06_pirate",
+      "key_error": 4.768371586472142e-08,
+      "max_matrix_error": 1.4543533325195312e-05,
+      "max_static_error": 3.814697265625e-06,
+      "invalid_drivers": [],
+      "figure_rotation_error": 5.960464477539063e-08,
+      "figure_translation_error_ldu": 1.6211648451172083e-06,
+      "passed": true
+    },
+    {
+      "frame": 220,
+      "figure": "MF07_firefighter",
+      "key_error": 8.742278012618954e-08,
+      "max_matrix_error": 3.814697265625e-05,
+      "max_static_error": 2.3563952709082514e-05,
+      "invalid_drivers": [],
+      "figure_rotation_error": 2.4492937051703357e-16,
+      "figure_translation_error_ldu": 1.52587890625e-05,
+      "passed": true
+    },
+    {
+      "frame": 220,
+      "figure": "MF08_athlete",
+      "key_error": 1.7484556025237907e-07,
+      "max_matrix_error": 4.76837158203125e-05,
+      "max_static_error": 4.1426546886214055e-06,
+      "invalid_drivers": [],
+      "figure_rotation_error": 3.725290298461914e-09,
+      "figure_translation_error_ldu": 3.1177931997283165e-05,
+      "passed": true
+    },
+    {
+      "frame": 220,
+      "figure": "MF09_wizard",
+      "key_error": 6.971422621404599e-07,
+      "max_matrix_error": 8.0108642578125e-05,
+      "max_static_error": 3.0517578125e-05,
+      "invalid_drivers": [],
+      "figure_rotation_error": 5.960464477539063e-08,
+      "figure_translation_error_ldu": 6.115424935104904e-05,
+      "passed": true
+    },
+    {
+      "frame": 220,
+      "figure": "MF10_diver",
+      "key_error": 3.3814161071177296e-07,
+      "max_matrix_error": 6.008148193359375e-05,
+      "max_static_error": 5.7220458984375e-06,
+      "invalid_drivers": [],
+      "figure_rotation_error": 0.0,
+      "figure_translation_error_ldu": 6.103515625e-05,
+      "passed": true
+    },
+    {
+      "frame": 250,
+      "figure": "MF01_police",
+      "key_error": 7.036939148052923e-08,
+      "max_matrix_error": 3.814697265625e-05,
+      "max_static_error": 3.0517578125e-05,
+      "invalid_drivers": [],
+      "figure_rotation_error": 5.960464477539063e-08,
+      "figure_translation_error_ldu": 3.0517578125e-05,
+      "passed": true
+    },
+    {
+      "frame": 250,
+      "figure": "MF02_spaceman",
+      "key_error": 1.1547340772466441e-07,
+      "max_matrix_error": 4.00543212890625e-05,
+      "max_static_error": 2.288818359375e-05,
+      "invalid_drivers": [],
+      "figure_rotation_error": 5.960464477539063e-08,
+      "figure_translation_error_ldu": 3.9347012035133836e-05,
+      "passed": true
+    },
+    {
+      "frame": 250,
+      "figure": "MF03_knight",
+      "key_error": 2.3841857821338408e-08,
+      "max_matrix_error": 5.340576171875e-05,
+      "max_static_error": 3.0517578125e-05,
+      "invalid_drivers": [],
+      "figure_rotation_error": 0.0,
+      "figure_translation_error_ldu": 4.3186187417712923e-05,
+      "passed": true
+    },
+    {
+      "frame": 250,
+      "figure": "MF04_builder",
+      "key_error": 9.468491981579064e-07,
+      "max_matrix_error": 4.1961669921875e-05,
+      "max_static_error": 3.24268257827498e-05,
+      "invalid_drivers": [],
+      "figure_rotation_error": 2.4492937051703357e-16,
+      "figure_translation_error_ldu": 7.864199877963373e-05,
+      "passed": true
+    },
+    {
+      "frame": 250,
+      "figure": "MF05_chef",
+      "key_error": 5.7220459037665705e-08,
+      "max_matrix_error": 0.00010728836059570312,
+      "max_static_error": 6.103515625e-05,
+      "invalid_drivers": [],
+      "figure_rotation_error": 0.0,
+      "figure_translation_error_ldu": 6.99245558922705e-05,
+      "passed": true
+    },
+    {
+      "frame": 250,
+      "figure": "MF06_pirate",
+      "key_error": 4.768371586472142e-08,
+      "max_matrix_error": 7.62939453125e-06,
+      "max_static_error": 3.814697265625e-06,
+      "invalid_drivers": [],
+      "figure_rotation_error": 5.960464477539063e-08,
+      "figure_translation_error_ldu": 1.6167759895324707e-06,
+      "passed": true
+    },
+    {
+      "frame": 250,
+      "figure": "MF07_firefighter",
+      "key_error": 1.9317907273830315e-07,
+      "max_matrix_error": 1.811981201171875e-05,
+      "max_static_error": 1.536331001261715e-05,
+      "invalid_drivers": [],
+      "figure_rotation_error": 5.960464477539063e-08,
+      "figure_translation_error_ldu": 1.5852218575451995e-05,
+      "passed": true
+    },
+    {
+      "frame": 250,
+      "figure": "MF08_athlete",
+      "key_error": 1.7484556025237907e-07,
+      "max_matrix_error": 5.53131103515625e-05,
+      "max_static_error": 3.0517578125e-05,
+      "invalid_drivers": [],
+      "figure_rotation_error": 2.1412406537821273e-23,
+      "figure_translation_error_ldu": 3.0517578125e-05,
+      "passed": true
+    },
+    {
+      "frame": 250,
+      "figure": "MF09_wizard",
+      "key_error": 1.4045722684929984e-07,
+      "max_matrix_error": 7.82012939453125e-05,
+      "max_static_error": 7.62939453125e-06,
+      "invalid_drivers": [],
+      "figure_rotation_error": 6.544698666889368e-17,
+      "figure_translation_error_ldu": 6.103515625e-05,
+      "passed": true
+    },
+    {
+      "frame": 250,
+      "figure": "MF10_diver",
+      "key_error": 3.3814161071177296e-07,
+      "max_matrix_error": 8.96453857421875e-05,
+      "max_static_error": 5.7220458984375e-06,
+      "invalid_drivers": [],
+      "figure_rotation_error": 0.0,
+      "figure_translation_error_ldu": 6.103515625e-05,
+      "passed": true
+    },
+    {
+      "frame": 280,
+      "figure": "MF01_police",
+      "key_error": 6.452920631172532e-08,
+      "max_matrix_error": 4.38690185546875e-05,
+      "max_static_error": 3.0517578125e-05,
+      "invalid_drivers": [],
+      "figure_rotation_error": 1.2246468525851679e-16,
+      "figure_translation_error_ldu": 3.0517578125e-05,
+      "passed": true
+    },
+    {
+      "frame": 280,
+      "figure": "MF02_spaceman",
+      "key_error": 7.656593510318999e-07,
+      "max_matrix_error": 2.6702880859375e-05,
+      "max_static_error": 1.653246727073565e-05,
+      "invalid_drivers": [],
+      "figure_rotation_error": 0.0,
+      "figure_translation_error_ldu": 2.745510239302209e-05,
+      "passed": true
+    },
+    {
+      "frame": 280,
+      "figure": "MF03_knight",
+      "key_error": 2.3841857821338408e-08,
+      "max_matrix_error": 5.7220458984375e-05,
+      "max_static_error": 3.0517578125e-05,
+      "invalid_drivers": [],
+      "figure_rotation_error": 0.0,
+      "figure_translation_error_ldu": 4.3186187417712923e-05,
+      "passed": true
+    },
+    {
+      "frame": 280,
+      "figure": "MF04_builder",
+      "key_error": 1.151399819931953e-07,
+      "max_matrix_error": 0.00011444091796875,
+      "max_static_error": 7.2479248046875e-05,
+      "invalid_drivers": [],
+      "figure_rotation_error": 2.440549678176711e-16,
+      "figure_translation_error_ldu": 6.823937919616058e-05,
+      "passed": true
+    },
+    {
+      "frame": 280,
+      "figure": "MF05_chef",
+      "key_error": 5.7220459037665705e-08,
+      "max_matrix_error": 0.00010728836059570312,
+      "max_static_error": 6.103515625e-05,
+      "invalid_drivers": [],
+      "figure_rotation_error": 0.0,
+      "figure_translation_error_ldu": 6.99245558922705e-05,
+      "passed": true
+    },
+    {
+      "frame": 280,
+      "figure": "MF06_pirate",
+      "key_error": 5.245208734017126e-08,
+      "max_matrix_error": 1.1444091796875e-05,
+      "max_static_error": 3.814697265625e-06,
+      "invalid_drivers": [],
+      "figure_rotation_error": 5.960464477539063e-08,
+      "figure_translation_error_ldu": 1.6168446570198464e-06,
+      "passed": true
+    },
+    {
+      "frame": 280,
+      "figure": "MF07_firefighter",
+      "key_error": 1.7484556025237907e-07,
+      "max_matrix_error": 1.9073486328125e-05,
+      "max_static_error": 1.52587890625e-05,
+      "invalid_drivers": [],
+      "figure_rotation_error": 2.1412406537821273e-23,
+      "figure_translation_error_ldu": 1.52587890625e-05,
+      "passed": true
+    },
+    {
+      "frame": 280,
+      "figure": "MF08_athlete",
+      "key_error": 1.7484556025237907e-07,
+      "max_matrix_error": 4.1961669921875e-05,
+      "max_static_error": 3.0517578125e-05,
+      "invalid_drivers": [],
+      "figure_rotation_error": 2.1412406537821273e-23,
+      "figure_translation_error_ldu": 3.0517578125e-05,
+      "passed": true
+    },
+    {
+      "frame": 280,
+      "figure": "MF09_wizard",
+      "key_error": 8.101238933022614e-07,
+      "max_matrix_error": 8.20159912109375e-05,
+      "max_static_error": 6.103515625e-05,
+      "invalid_drivers": [],
+      "figure_rotation_error": 0.0,
+      "figure_translation_error_ldu": 6.103515625e-05,
+      "passed": true
+    },
+    {
+      "frame": 280,
+      "figure": "MF10_diver",
+      "key_error": 0.0,
+      "max_matrix_error": 8.96453857421875e-05,
+      "max_static_error": 6.103515625e-05,
+      "invalid_drivers": [],
+      "figure_rotation_error": 0.0,
+      "figure_translation_error_ldu": 6.103515625e-05,
+      "passed": true
+    },
+    {
+      "frame": 304,
+      "figure": "MF01_police",
+      "key_error": 0.0,
+      "max_matrix_error": 4.1961669921875e-05,
+      "max_static_error": 3.0517578125e-05,
+      "invalid_drivers": [],
+      "figure_rotation_error": 0.0,
+      "figure_translation_error_ldu": 3.0517578125e-05,
+      "passed": true
+    },
+    {
+      "frame": 304,
+      "figure": "MF02_spaceman",
+      "key_error": 1.7484556025237907e-07,
+      "max_matrix_error": 3.4332275390625e-05,
+      "max_static_error": 2.3523754862253554e-05,
+      "invalid_drivers": [],
+      "figure_rotation_error": 0.0,
+      "figure_translation_error_ldu": 2.74551023930221e-05,
+      "passed": true
+    },
+    {
+      "frame": 304,
+      "figure": "MF03_knight",
+      "key_error": 0.0,
+      "max_matrix_error": 6.29425048828125e-05,
+      "max_static_error": 3.0517578125e-05,
+      "invalid_drivers": [],
+      "figure_rotation_error": 0.0,
+      "figure_translation_error_ldu": 4.315837287515549e-05,
+      "passed": true
+    },
+    {
+      "frame": 304,
+      "figure": "MF04_builder",
+      "key_error": 1.7484556025237907e-07,
+      "max_matrix_error": 9.72747802734375e-05,
+      "max_static_error": 8.903072739485651e-06,
+      "invalid_drivers": [],
+      "figure_rotation_error": 2.1412406537821273e-23,
+      "figure_translation_error_ldu": 6.823937919616058e-05,
+      "passed": true
+    },
+    {
+      "frame": 304,
+      "figure": "MF05_chef",
+      "key_error": 0.0,
+      "max_matrix_error": 0.00011444091796875,
+      "max_static_error": 6.103515625e-05,
+      "invalid_drivers": [],
+      "figure_rotation_error": 0.0,
+      "figure_translation_error_ldu": 6.99245558922705e-05,
+      "passed": true
+    },
+    {
+      "frame": 304,
+      "figure": "MF06_pirate",
+      "key_error": 0.0,
+      "max_matrix_error": 5.7220458984375e-06,
+      "max_static_error": 4.235164736271502e-22,
+      "invalid_drivers": [],
+      "figure_rotation_error": 0.0,
+      "figure_translation_error_ldu": 0.0,
+      "passed": true
+    },
+    {
+      "frame": 304,
+      "figure": "MF07_firefighter",
+      "key_error": 1.7484556025237907e-07,
+      "max_matrix_error": 1.9073486328125e-05,
+      "max_static_error": 1.52587890625e-05,
+      "invalid_drivers": [],
+      "figure_rotation_error": 2.1412406537821273e-23,
+      "figure_translation_error_ldu": 1.52587890625e-05,
+      "passed": true
+    },
+    {
+      "frame": 304,
+      "figure": "MF08_athlete",
+      "key_error": 1.7484556025237907e-07,
+      "max_matrix_error": 3.4332275390625e-05,
+      "max_static_error": 3.0517578125e-05,
+      "invalid_drivers": [],
+      "figure_rotation_error": 2.1412406537821273e-23,
+      "figure_translation_error_ldu": 3.0517578125e-05,
+      "passed": true
+    },
+    {
+      "frame": 304,
+      "figure": "MF09_wizard",
+      "key_error": 0.0,
+      "max_matrix_error": 8.96453857421875e-05,
+      "max_static_error": 6.103515625e-05,
+      "invalid_drivers": [],
+      "figure_rotation_error": 0.0,
+      "figure_translation_error_ldu": 6.103515625e-05,
+      "passed": true
+    },
+    {
+      "frame": 304,
+      "figure": "MF10_diver",
+      "key_error": 0.0,
+      "max_matrix_error": 8.96453857421875e-05,
+      "max_static_error": 6.103515625e-05,
+      "invalid_drivers": [],
+      "figure_rotation_error": 0.0,
+      "figure_translation_error_ldu": 6.103515625e-05,
+      "passed": true
+    },
+    {
+      "frame": 312,
+      "figure": "MF01_police",
+      "key_error": 0.0,
+      "max_matrix_error": 4.1961669921875e-05,
+      "max_static_error": 3.0517578125e-05,
+      "invalid_drivers": [],
+      "figure_rotation_error": 0.0,
+      "figure_translation_error_ldu": 3.0517578125e-05,
+      "passed": true
+    },
+    {
+      "frame": 312,
+      "figure": "MF02_spaceman",
+      "key_error": 1.7484556025237907e-07,
+      "max_matrix_error": 3.4332275390625e-05,
+      "max_static_error": 2.3523754862253554e-05,
+      "invalid_drivers": [],
+      "figure_rotation_error": 0.0,
+      "figure_translation_error_ldu": 2.74551023930221e-05,
+      "passed": true
+    },
+    {
+      "frame": 312,
+      "figure": "MF03_knight",
+      "key_error": 0.0,
+      "max_matrix_error": 6.29425048828125e-05,
+      "max_static_error": 3.0517578125e-05,
+      "invalid_drivers": [],
+      "figure_rotation_error": 0.0,
+      "figure_translation_error_ldu": 4.315837287515549e-05,
+      "passed": true
+    },
+    {
+      "frame": 312,
+      "figure": "MF04_builder",
+      "key_error": 1.7484556025237907e-07,
+      "max_matrix_error": 9.72747802734375e-05,
+      "max_static_error": 8.903072739485651e-06,
+      "invalid_drivers": [],
+      "figure_rotation_error": 2.1412406537821273e-23,
+      "figure_translation_error_ldu": 6.823937919616058e-05,
+      "passed": true
+    },
+    {
+      "frame": 312,
+      "figure": "MF05_chef",
+      "key_error": 0.0,
+      "max_matrix_error": 0.00011444091796875,
+      "max_static_error": 6.103515625e-05,
+      "invalid_drivers": [],
+      "figure_rotation_error": 0.0,
+      "figure_translation_error_ldu": 6.99245558922705e-05,
+      "passed": true
+    },
+    {
+      "frame": 312,
+      "figure": "MF06_pirate",
+      "key_error": 0.0,
+      "max_matrix_error": 5.7220458984375e-06,
+      "max_static_error": 4.235164736271502e-22,
+      "invalid_drivers": [],
+      "figure_rotation_error": 0.0,
+      "figure_translation_error_ldu": 0.0,
+      "passed": true
+    },
+    {
+      "frame": 312,
+      "figure": "MF07_firefighter",
+      "key_error": 1.7484556025237907e-07,
+      "max_matrix_error": 1.9073486328125e-05,
+      "max_static_error": 1.52587890625e-05,
+      "invalid_drivers": [],
+      "figure_rotation_error": 2.1412406537821273e-23,
+      "figure_translation_error_ldu": 1.52587890625e-05,
+      "passed": true
+    },
+    {
+      "frame": 312,
+      "figure": "MF08_athlete",
+      "key_error": 1.7484556025237907e-07,
+      "max_matrix_error": 3.4332275390625e-05,
+      "max_static_error": 3.0517578125e-05,
+      "invalid_drivers": [],
+      "figure_rotation_error": 2.1412406537821273e-23,
+      "figure_translation_error_ldu": 3.0517578125e-05,
+      "passed": true
+    },
+    {
+      "frame": 312,
+      "figure": "MF09_wizard",
+      "key_error": 0.0,
+      "max_matrix_error": 8.96453857421875e-05,
+      "max_static_error": 6.103515625e-05,
+      "invalid_drivers": [],
+      "figure_rotation_error": 0.0,
+      "figure_translation_error_ldu": 6.103515625e-05,
+      "passed": true
+    },
+    {
+      "frame": 312,
+      "figure": "MF10_diver",
+      "key_error": 0.0,
+      "max_matrix_error": 8.96453857421875e-05,
+      "max_static_error": 6.103515625e-05,
+      "invalid_drivers": [],
+      "figure_rotation_error": 0.0,
+      "figure_translation_error_ldu": 6.103515625e-05,
+      "passed": true
+    },
+    {
+      "frame": 321,
+      "figure": "MF01_police",
+      "key_error": 0.0,
+      "max_matrix_error": 4.1961669921875e-05,
+      "max_static_error": 3.0517578125e-05,
+      "invalid_drivers": [],
+      "figure_rotation_error": 0.0,
+      "figure_translation_error_ldu": 3.0517578125e-05,
+      "passed": true
+    },
+    {
+      "frame": 321,
+      "figure": "MF02_spaceman",
+      "key_error": 0.0,
+      "max_matrix_error": 4.1961669921875e-05,
+      "max_static_error": 3.0517578125e-05,
+      "invalid_drivers": [],
+      "figure_rotation_error": 0.0,
+      "figure_translation_error_ldu": 3.411968959808029e-05,
+      "passed": true
+    },
+    {
+      "frame": 321,
+      "figure": "MF03_knight",
+      "key_error": 0.0,
+      "max_matrix_error": 6.29425048828125e-05,
+      "max_static_error": 3.0517578125e-05,
+      "invalid_drivers": [],
+      "figure_rotation_error": 0.0,
+      "figure_translation_error_ldu": 4.315837287515549e-05,
+      "passed": true
+    },
+    {
+      "frame": 321,
+      "figure": "MF04_builder",
+      "key_error": 0.0,
+      "max_matrix_error": 8.96453857421875e-05,
+      "max_static_error": 6.103515625e-05,
+      "invalid_drivers": [],
+      "figure_rotation_error": 0.0,
+      "figure_translation_error_ldu": 6.823937919616058e-05,
+      "passed": true
+    },
+    {
+      "frame": 321,
+      "figure": "MF05_chef",
+      "key_error": 0.0,
+      "max_matrix_error": 0.00011444091796875,
+      "max_static_error": 6.103515625e-05,
+      "invalid_drivers": [],
+      "figure_rotation_error": 0.0,
+      "figure_translation_error_ldu": 6.99245558922705e-05,
+      "passed": true
+    },
+    {
+      "frame": 321,
+      "figure": "MF06_pirate",
+      "key_error": 0.0,
+      "max_matrix_error": 5.7220458984375e-06,
+      "max_static_error": 4.235164736271502e-22,
+      "invalid_drivers": [],
+      "figure_rotation_error": 0.0,
+      "figure_translation_error_ldu": 0.0,
+      "passed": true
+    },
+    {
+      "frame": 321,
+      "figure": "MF07_firefighter",
+      "key_error": 0.0,
+      "max_matrix_error": 1.71661376953125e-05,
+      "max_static_error": 1.52587890625e-05,
+      "invalid_drivers": [],
+      "figure_rotation_error": 0.0,
+      "figure_translation_error_ldu": 1.52587890625e-05,
+      "passed": true
+    },
+    {
+      "frame": 321,
+      "figure": "MF08_athlete",
+      "key_error": 0.0,
+      "max_matrix_error": 3.24249267578125e-05,
+      "max_static_error": 3.0517578125e-05,
+      "invalid_drivers": [],
+      "figure_rotation_error": 0.0,
+      "figure_translation_error_ldu": 3.0517578125e-05,
+      "passed": true
+    },
+    {
+      "frame": 321,
+      "figure": "MF09_wizard",
+      "key_error": 0.0,
+      "max_matrix_error": 8.96453857421875e-05,
+      "max_static_error": 6.103515625e-05,
+      "invalid_drivers": [],
+      "figure_rotation_error": 0.0,
+      "figure_translation_error_ldu": 6.103515625e-05,
+      "passed": true
+    },
+    {
+      "frame": 321,
+      "figure": "MF10_diver",
+      "key_error": 0.0,
+      "max_matrix_error": 8.96453857421875e-05,
+      "max_static_error": 6.103515625e-05,
+      "invalid_drivers": [],
+      "figure_rotation_error": 0.0,
+      "figure_translation_error_ldu": 6.103515625e-05,
+      "passed": true
+    },
+    {
+      "frame": 350,
+      "figure": "MF01_police",
+      "key_error": 5.245208734017126e-08,
+      "max_matrix_error": 5.340576171875e-05,
+      "max_static_error": 3.0517578125e-05,
+      "invalid_drivers": [],
+      "figure_rotation_error": 0.0,
+      "figure_translation_error_ldu": 3.0517578125e-05,
+      "passed": true
+    },
+    {
+      "frame": 350,
+      "figure": "MF02_spaceman",
+      "key_error": 1.9073486345888568e-07,
+      "max_matrix_error": 3.62396240234375e-05,
+      "max_static_error": 4.1961669921875e-05,
+      "invalid_drivers": [],
+      "figure_rotation_error": 5.960464477539063e-08,
+      "figure_translation_error_ldu": 3.079753974661246e-05,
+      "passed": true
+    },
+    {
+      "frame": 350,
+      "figure": "MF03_knight",
+      "key_error": 2.3841857821338408e-08,
+      "max_matrix_error": 4.1961669921875e-05,
+      "max_static_error": 3.0517578125e-05,
+      "invalid_drivers": [],
+      "figure_rotation_error": 0.0,
+      "figure_translation_error_ldu": 4.8185664478262344e-05,
+      "passed": true
+    },
+    {
+      "frame": 350,
+      "figure": "MF04_builder",
+      "key_error": 3.4917088109764904e-08,
+      "max_matrix_error": 6.4849853515625e-05,
+      "max_static_error": 6.103515625e-05,
+      "invalid_drivers": [],
+      "figure_rotation_error": 5.960464477539063e-08,
+      "figure_translation_error_ldu": 7.289080254594152e-05,
+      "passed": true
+    },
+    {
+      "frame": 350,
+      "figure": "MF05_chef",
+      "key_error": 9.155273446026513e-07,
+      "max_matrix_error": 0.000141143798828125,
+      "max_static_error": 6.103515625e-05,
+      "invalid_drivers": [],
+      "figure_rotation_error": 0.0,
+      "figure_translation_error_ldu": 6.99245558922705e-05,
+      "passed": true
+    },
+    {
+      "frame": 350,
+      "figure": "MF06_pirate",
+      "key_error": 3.5559457911560344e-07,
+      "max_matrix_error": 1.52587890625e-05,
+      "max_static_error": 3.814697265625e-06,
+      "invalid_drivers": [],
+      "figure_rotation_error": 0.0,
+      "figure_translation_error_ldu": 5.245208740234375e-06,
+      "passed": true
+    },
+    {
+      "frame": 350,
+      "figure": "MF07_firefighter",
+      "key_error": 4.768371586472142e-08,
+      "max_matrix_error": 3.24249267578125e-05,
+      "max_static_error": 2.7698757548932917e-05,
+      "invalid_drivers": [],
+      "figure_rotation_error": 5.960464477539063e-08,
+      "figure_translation_error_ldu": 1.3133596405140593e-05,
+      "passed": true
+    },
+    {
+      "frame": 350,
+      "figure": "MF08_athlete",
+      "key_error": 6.659458284818953e-08,
+      "max_matrix_error": 5.7220458984375e-05,
+      "max_static_error": 3.0517578125e-05,
+      "invalid_drivers": [],
+      "figure_rotation_error": 0.0,
+      "figure_translation_error_ldu": 3.051860037992343e-05,
+      "passed": true
+    },
+    {
+      "frame": 350,
+      "figure": "MF09_wizard",
+      "key_error": 2.8709951038763393e-07,
+      "max_matrix_error": 6.103515625e-05,
+      "max_static_error": 6.103515625e-05,
+      "invalid_drivers": [],
+      "figure_rotation_error": 0.0,
+      "figure_translation_error_ldu": 6.110217468124904e-05,
+      "passed": true
+    },
+    {
+      "frame": 350,
+      "figure": "MF10_diver",
+      "key_error": 1.5894571969710114e-07,
+      "max_matrix_error": 9.34600830078125e-05,
+      "max_static_error": 6.103515625e-05,
+      "invalid_drivers": [],
+      "figure_rotation_error": 0.0,
+      "figure_translation_error_ldu": 6.115424935104904e-05,
+      "passed": true
+    },
+    {
+      "frame": 380,
+      "figure": "MF01_police",
+      "key_error": 7.125454171141854e-09,
+      "max_matrix_error": 5.53131103515625e-05,
+      "max_static_error": 3.0517578125e-05,
+      "invalid_drivers": [],
+      "figure_rotation_error": 0.0,
+      "figure_translation_error_ldu": 3.0517578125e-05,
+      "passed": true
+    },
+    {
+      "frame": 380,
+      "figure": "MF02_spaceman",
+      "key_error": 2.8610229740877458e-08,
+      "max_matrix_error": 4.863739013671875e-05,
+      "max_static_error": 4.1961669921875e-05,
+      "invalid_drivers": [],
+      "figure_rotation_error": 5.960464477539063e-08,
+      "figure_translation_error_ldu": 3.079753974661246e-05,
+      "passed": true
+    },
+    {
+      "frame": 380,
+      "figure": "MF03_knight",
+      "key_error": 2.3841857821338408e-08,
+      "max_matrix_error": 5.340576171875e-05,
+      "max_static_error": 3.24249267578125e-05,
+      "invalid_drivers": [],
+      "figure_rotation_error": 0.0,
+      "figure_translation_error_ldu": 3.7144359768200774e-05,
+      "passed": true
+    },
+    {
+      "frame": 380,
+      "figure": "MF04_builder",
+      "key_error": 5.0278469942988124e-08,
+      "max_matrix_error": 0.000110626220703125,
+      "max_static_error": 2.372264862060547e-05,
+      "invalid_drivers": [],
+      "figure_rotation_error": 3.1813678619470683e-18,
+      "figure_translation_error_ldu": 8.620278637622862e-05,
+      "passed": true
+    },
+    {
+      "frame": 380,
+      "figure": "MF05_chef",
+      "key_error": 4.768371586472142e-08,
+      "max_matrix_error": 0.000141143798828125,
+      "max_static_error": 6.103515625e-05,
+      "invalid_drivers": [],
+      "figure_rotation_error": 0.0,
+      "figure_translation_error_ldu": 6.99245558922705e-05,
+      "passed": true
+    },
+    {
+      "frame": 380,
+      "figure": "MF06_pirate",
+      "key_error": 4.768371586472142e-08,
+      "max_matrix_error": 1.33514404296875e-05,
+      "max_static_error": 7.62939453125e-06,
+      "invalid_drivers": [],
+      "figure_rotation_error": 0.0,
+      "figure_translation_error_ldu": 1.5497207641601562e-06,
+      "passed": true
+    },
+    {
+      "frame": 380,
+      "figure": "MF07_firefighter",
+      "key_error": 4.768371586472142e-08,
+      "max_matrix_error": 2.8252601623535156e-05,
+      "max_static_error": 1.77919864654541e-05,
+      "invalid_drivers": [],
+      "figure_rotation_error": 5.960464477539063e-08,
+      "figure_translation_error_ldu": 2.7603322214273156e-05,
+      "passed": true
+    },
+    {
+      "frame": 380,
+      "figure": "MF08_athlete",
+      "key_error": 2.3841857821338408e-08,
+      "max_matrix_error": 5.7220458984375e-05,
+      "max_static_error": 3.0517578125e-05,
+      "invalid_drivers": [],
+      "figure_rotation_error": 0.0,
+      "figure_translation_error_ldu": 3.0517578125e-05,
+      "passed": true
+    },
+    {
+      "frame": 380,
+      "figure": "MF09_wizard",
+      "key_error": 4.768371586472142e-08,
+      "max_matrix_error": 0.000148773193359375,
+      "max_static_error": 6.103515625e-05,
+      "invalid_drivers": [],
+      "figure_rotation_error": 5.960464477539063e-08,
+      "figure_translation_error_ldu": 6.10399891135082e-05,
+      "passed": true
+    },
+    {
+      "frame": 380,
+      "figure": "MF10_diver",
+      "key_error": 4.371139006309477e-08,
+      "max_matrix_error": 8.96453857421875e-05,
+      "max_static_error": 6.103515625e-05,
+      "invalid_drivers": [],
+      "figure_rotation_error": 0.0,
+      "figure_translation_error_ldu": 6.115424935104904e-05,
+      "passed": true
+    },
+    {
+      "frame": 410,
+      "figure": "MF01_police",
+      "key_error": 4.7683715642676816e-08,
+      "max_matrix_error": 3.075599670410156e-05,
+      "max_static_error": 3.0517578125e-05,
+      "invalid_drivers": [],
+      "figure_rotation_error": 0.0,
+      "figure_translation_error_ldu": 3.0517578125e-05,
+      "passed": true
+    },
+    {
+      "frame": 410,
+      "figure": "MF02_spaceman",
+      "key_error": 4.7683715642676816e-08,
+      "max_matrix_error": 4.00543212890625e-05,
+      "max_static_error": 4.1961669921875e-05,
+      "invalid_drivers": [],
+      "figure_rotation_error": 5.960464477539063e-08,
+      "figure_translation_error_ldu": 3.079753974661246e-05,
+      "passed": true
+    },
+    {
+      "frame": 410,
+      "figure": "MF03_knight",
+      "key_error": 5.6969339690127185e-08,
+      "max_matrix_error": 4.1961669921875e-05,
+      "max_static_error": 3.0517578125e-05,
+      "invalid_drivers": [],
+      "figure_rotation_error": 0.0,
+      "figure_translation_error_ldu": 5.921666713100616e-05,
+      "passed": true
+    },
+    {
+      "frame": 410,
+      "figure": "MF04_builder",
+      "key_error": 4.014398813367848e-09,
+      "max_matrix_error": 6.103515625e-05,
+      "max_static_error": 2.372264862060547e-05,
+      "invalid_drivers": [],
+      "figure_rotation_error": 3.1813678619470683e-18,
+      "figure_translation_error_ldu": 3.631963632956186e-05,
+      "passed": true
+    },
+    {
+      "frame": 410,
+      "figure": "MF05_chef",
+      "key_error": 6.188995171907408e-08,
+      "max_matrix_error": 8.58306884765625e-05,
+      "max_static_error": 1.52587890625e-05,
+      "invalid_drivers": [],
+      "figure_rotation_error": 5.0036165179499995e-17,
+      "figure_translation_error_ldu": 6.99245558922705e-05,
+      "passed": true
+    },
+    {
+      "frame": 410,
+      "figure": "MF06_pirate",
+      "key_error": 1.3086733225975422e-06,
+      "max_matrix_error": 1.71661376953125e-05,
+      "max_static_error": 7.62939453125e-06,
+      "invalid_drivers": [],
+      "figure_rotation_error": 5.960464477539063e-08,
+      "figure_translation_error_ldu": 9.059906005859375e-06,
+      "passed": true
+    },
+    {
+      "frame": 410,
+      "figure": "MF07_firefighter",
+      "key_error": 4.768371586472142e-08,
+      "max_matrix_error": 6.4849853515625e-05,
+      "max_static_error": 5.161762237548828e-05,
+      "invalid_drivers": [],
+      "figure_rotation_error": 3.725290298461914e-09,
+      "figure_translation_error_ldu": 6.116450213660614e-06,
+      "passed": true
+    },
+    {
+      "frame": 410,
+      "figure": "MF08_athlete",
+      "key_error": 5.261470681361402e-08,
+      "max_matrix_error": 5.7220458984375e-05,
+      "max_static_error": 3.0517578125e-05,
+      "invalid_drivers": [],
+      "figure_rotation_error": 3.725290298461914e-09,
+      "figure_translation_error_ldu": 3.05176363326054e-05,
+      "passed": true
+    },
+    {
+      "frame": 410,
+      "figure": "MF09_wizard",
+      "key_error": 9.590949634485924e-08,
+      "max_matrix_error": 0.00012969970703125,
+      "max_static_error": 6.103515625e-05,
+      "invalid_drivers": [],
+      "figure_rotation_error": 5.960464477539063e-08,
+      "figure_translation_error_ldu": 6.108444233218606e-05,
+      "passed": true
+    },
+    {
+      "frame": 410,
+      "figure": "MF10_diver",
+      "key_error": 8.798795541054005e-07,
+      "max_matrix_error": 8.96453857421875e-05,
+      "max_static_error": 4.76837158203125e-06,
+      "invalid_drivers": [],
+      "figure_rotation_error": 0.0,
+      "figure_translation_error_ldu": 6.106495129998063e-05,
+      "passed": true
+    },
+    {
+      "frame": 440,
+      "figure": "MF01_police",
+      "key_error": 2.3841857821338408e-08,
+      "max_matrix_error": 4.1961669921875e-05,
+      "max_static_error": 3.0517578125e-05,
+      "invalid_drivers": [],
+      "figure_rotation_error": 0.0,
+      "figure_translation_error_ldu": 3.0517578125e-05,
+      "passed": true
+    },
+    {
+      "frame": 440,
+      "figure": "MF02_spaceman",
+      "key_error": 4.768371586472142e-08,
+      "max_matrix_error": 4.279613494873047e-05,
+      "max_static_error": 2.7418136596679688e-05,
+      "invalid_drivers": [],
+      "figure_rotation_error": 3.725290298461914e-09,
+      "figure_translation_error_ldu": 3.347150944036264e-05,
+      "passed": true
+    },
+    {
+      "frame": 440,
+      "figure": "MF03_knight",
+      "key_error": 2.175881586019557e-08,
+      "max_matrix_error": 5.91278076171875e-05,
+      "max_static_error": 3.0517578125e-05,
+      "invalid_drivers": [],
+      "figure_rotation_error": 0.0,
+      "figure_translation_error_ldu": 4.315837287515549e-05,
+      "passed": true
+    },
+    {
+      "frame": 440,
+      "figure": "MF04_builder",
+      "key_error": 2.3841857821338408e-08,
+      "max_matrix_error": 8.96453857421875e-05,
+      "max_static_error": 4.57763671875e-05,
+      "invalid_drivers": [],
+      "figure_rotation_error": 7.450580596923828e-09,
+      "figure_translation_error_ldu": 8.565626208040287e-05,
+      "passed": true
+    },
+    {
+      "frame": 440,
+      "figure": "MF05_chef",
+      "key_error": 1.7484556025237907e-07,
+      "max_matrix_error": 0.000194549560546875,
+      "max_static_error": 0.00011316723976051435,
+      "invalid_drivers": [],
+      "figure_rotation_error": 2.1412406537821273e-23,
+      "figure_translation_error_ldu": 6.99245558922705e-05,
+      "passed": true
+    },
+    {
+      "frame": 440,
+      "figure": "MF06_pirate",
+      "key_error": 2.6942277076003052e-08,
+      "max_matrix_error": 1.2159347534179688e-05,
+      "max_static_error": 4.235164736271502e-22,
+      "invalid_drivers": [],
+      "figure_rotation_error": 0.0,
+      "figure_translation_error_ldu": 4.291534423828125e-06,
+      "passed": true
+    },
+    {
+      "frame": 440,
+      "figure": "MF07_firefighter",
+      "key_error": 4.768371586472142e-08,
+      "max_matrix_error": 2.288818359375e-05,
+      "max_static_error": 3.814697265625e-06,
+      "invalid_drivers": [],
+      "figure_rotation_error": 3.725290298461914e-09,
+      "figure_translation_error_ldu": 1.537938444411291e-05,
+      "passed": true
+    },
+    {
+      "frame": 440,
+      "figure": "MF08_athlete",
+      "key_error": 5.562836769001933e-08,
+      "max_matrix_error": 5.14984130859375e-05,
+      "max_static_error": 3.0517578125e-05,
+      "invalid_drivers": [],
+      "figure_rotation_error": 0.0,
+      "figure_translation_error_ldu": 3.0517578125e-05,
+      "passed": true
+    },
+    {
+      "frame": 440,
+      "figure": "MF09_wizard",
+      "key_error": 4.768371586472142e-08,
+      "max_matrix_error": 0.00012969970703125,
+      "max_static_error": 6.103515625e-05,
+      "invalid_drivers": [],
+      "figure_rotation_error": 0.0,
+      "figure_translation_error_ldu": 6.103515625e-05,
+      "passed": true
+    },
+    {
+      "frame": 440,
+      "figure": "MF10_diver",
+      "key_error": 4.496688865707199e-08,
+      "max_matrix_error": 8.7738037109375e-05,
+      "max_static_error": 6.103515625e-05,
+      "invalid_drivers": [],
+      "figure_rotation_error": 0.0,
+      "figure_translation_error_ldu": 6.137368451389767e-05,
+      "passed": true
+    },
+    {
+      "frame": 464,
+      "figure": "MF01_police",
+      "key_error": 0.0,
+      "max_matrix_error": 4.1961669921875e-05,
+      "max_static_error": 3.0517578125e-05,
+      "invalid_drivers": [],
+      "figure_rotation_error": 0.0,
+      "figure_translation_error_ldu": 3.0517578125e-05,
+      "passed": true
+    },
+    {
+      "frame": 464,
+      "figure": "MF02_spaceman",
+      "key_error": 0.0,
+      "max_matrix_error": 4.1961669921875e-05,
+      "max_static_error": 3.0517578125e-05,
+      "invalid_drivers": [],
+      "figure_rotation_error": 0.0,
+      "figure_translation_error_ldu": 3.411968959808029e-05,
+      "passed": true
+    },
+    {
+      "frame": 464,
+      "figure": "MF03_knight",
+      "key_error": 0.0,
+      "max_matrix_error": 6.29425048828125e-05,
+      "max_static_error": 3.0517578125e-05,
+      "invalid_drivers": [],
+      "figure_rotation_error": 0.0,
+      "figure_translation_error_ldu": 4.315837287515549e-05,
+      "passed": true
+    },
+    {
+      "frame": 464,
+      "figure": "MF04_builder",
+      "key_error": 0.0,
+      "max_matrix_error": 8.96453857421875e-05,
+      "max_static_error": 6.103515625e-05,
+      "invalid_drivers": [],
+      "figure_rotation_error": 0.0,
+      "figure_translation_error_ldu": 6.823937919616058e-05,
+      "passed": true
+    },
+    {
+      "frame": 464,
+      "figure": "MF05_chef",
+      "key_error": 1.7484556025237907e-07,
+      "max_matrix_error": 0.0001735687255859375,
+      "max_static_error": 0.00011316723976051435,
+      "invalid_drivers": [],
+      "figure_rotation_error": 2.1412406537821273e-23,
+      "figure_translation_error_ldu": 6.99245558922705e-05,
+      "passed": true
+    },
+    {
+      "frame": 464,
+      "figure": "MF06_pirate",
+      "key_error": 0.0,
+      "max_matrix_error": 5.7220458984375e-06,
+      "max_static_error": 4.235164736271502e-22,
+      "invalid_drivers": [],
+      "figure_rotation_error": 0.0,
+      "figure_translation_error_ldu": 0.0,
+      "passed": true
+    },
+    {
+      "frame": 464,
+      "figure": "MF07_firefighter",
+      "key_error": 0.0,
+      "max_matrix_error": 1.71661376953125e-05,
+      "max_static_error": 1.52587890625e-05,
+      "invalid_drivers": [],
+      "figure_rotation_error": 0.0,
+      "figure_translation_error_ldu": 1.52587890625e-05,
+      "passed": true
+    },
+    {
+      "frame": 464,
+      "figure": "MF08_athlete",
+      "key_error": 1.7484556025237907e-07,
+      "max_matrix_error": 3.24249267578125e-05,
+      "max_static_error": 3.0517578125e-05,
+      "invalid_drivers": [],
+      "figure_rotation_error": 0.0,
+      "figure_translation_error_ldu": 3.0517578125e-05,
+      "passed": true
+    },
+    {
+      "frame": 464,
+      "figure": "MF09_wizard",
+      "key_error": 0.0,
+      "max_matrix_error": 8.96453857421875e-05,
+      "max_static_error": 6.103515625e-05,
+      "invalid_drivers": [],
+      "figure_rotation_error": 0.0,
+      "figure_translation_error_ldu": 6.103515625e-05,
+      "passed": true
+    },
+    {
+      "frame": 464,
+      "figure": "MF10_diver",
+      "key_error": 0.0,
+      "max_matrix_error": 8.96453857421875e-05,
+      "max_static_error": 6.103515625e-05,
+      "invalid_drivers": [],
+      "figure_rotation_error": 0.0,
+      "figure_translation_error_ldu": 6.103515625e-05,
+      "passed": true
+    },
+    {
+      "frame": 470,
+      "figure": "MF01_police",
+      "key_error": 0.0,
+      "max_matrix_error": 4.1961669921875e-05,
+      "max_static_error": 3.0517578125e-05,
+      "invalid_drivers": [],
+      "figure_rotation_error": 0.0,
+      "figure_translation_error_ldu": 3.0517578125e-05,
+      "passed": true
+    },
+    {
+      "frame": 470,
+      "figure": "MF02_spaceman",
+      "key_error": 0.0,
+      "max_matrix_error": 4.1961669921875e-05,
+      "max_static_error": 3.0517578125e-05,
+      "invalid_drivers": [],
+      "figure_rotation_error": 0.0,
+      "figure_translation_error_ldu": 3.411968959808029e-05,
+      "passed": true
+    },
+    {
+      "frame": 470,
+      "figure": "MF03_knight",
+      "key_error": 0.0,
+      "max_matrix_error": 6.29425048828125e-05,
+      "max_static_error": 3.0517578125e-05,
+      "invalid_drivers": [],
+      "figure_rotation_error": 0.0,
+      "figure_translation_error_ldu": 4.315837287515549e-05,
+      "passed": true
+    },
+    {
+      "frame": 470,
+      "figure": "MF04_builder",
+      "key_error": 0.0,
+      "max_matrix_error": 8.96453857421875e-05,
+      "max_static_error": 6.103515625e-05,
+      "invalid_drivers": [],
+      "figure_rotation_error": 0.0,
+      "figure_translation_error_ldu": 6.823937919616058e-05,
+      "passed": true
+    },
+    {
+      "frame": 470,
+      "figure": "MF05_chef",
+      "key_error": 1.7484556025237907e-07,
+      "max_matrix_error": 0.0001735687255859375,
+      "max_static_error": 0.00011316723976051435,
+      "invalid_drivers": [],
+      "figure_rotation_error": 2.1412406537821273e-23,
+      "figure_translation_error_ldu": 6.99245558922705e-05,
+      "passed": true
+    },
+    {
+      "frame": 470,
+      "figure": "MF06_pirate",
+      "key_error": 0.0,
+      "max_matrix_error": 5.7220458984375e-06,
+      "max_static_error": 4.235164736271502e-22,
+      "invalid_drivers": [],
+      "figure_rotation_error": 0.0,
+      "figure_translation_error_ldu": 0.0,
+      "passed": true
+    },
+    {
+      "frame": 470,
+      "figure": "MF07_firefighter",
+      "key_error": 0.0,
+      "max_matrix_error": 1.71661376953125e-05,
+      "max_static_error": 1.52587890625e-05,
+      "invalid_drivers": [],
+      "figure_rotation_error": 0.0,
+      "figure_translation_error_ldu": 1.52587890625e-05,
+      "passed": true
+    },
+    {
+      "frame": 470,
+      "figure": "MF08_athlete",
+      "key_error": 1.7484556025237907e-07,
+      "max_matrix_error": 3.24249267578125e-05,
+      "max_static_error": 3.0517578125e-05,
+      "invalid_drivers": [],
+      "figure_rotation_error": 0.0,
+      "figure_translation_error_ldu": 3.0517578125e-05,
+      "passed": true
+    },
+    {
+      "frame": 470,
+      "figure": "MF09_wizard",
+      "key_error": 0.0,
+      "max_matrix_error": 8.96453857421875e-05,
+      "max_static_error": 6.103515625e-05,
+      "invalid_drivers": [],
+      "figure_rotation_error": 0.0,
+      "figure_translation_error_ldu": 6.103515625e-05,
+      "passed": true
+    },
+    {
+      "frame": 470,
+      "figure": "MF10_diver",
+      "key_error": 0.0,
+      "max_matrix_error": 8.96453857421875e-05,
+      "max_static_error": 6.103515625e-05,
+      "invalid_drivers": [],
+      "figure_rotation_error": 0.0,
+      "figure_translation_error_ldu": 6.103515625e-05,
+      "passed": true
+    },
+    {
+      "frame": 480,
+      "figure": "MF01_police",
+      "key_error": 0.0,
+      "max_matrix_error": 4.1961669921875e-05,
+      "max_static_error": 3.0517578125e-05,
+      "invalid_drivers": [],
+      "figure_rotation_error": 0.0,
+      "figure_translation_error_ldu": 3.0517578125e-05,
+      "passed": true
+    },
+    {
+      "frame": 480,
+      "figure": "MF02_spaceman",
+      "key_error": 0.0,
+      "max_matrix_error": 4.1961669921875e-05,
+      "max_static_error": 3.0517578125e-05,
+      "invalid_drivers": [],
+      "figure_rotation_error": 0.0,
+      "figure_translation_error_ldu": 3.411968959808029e-05,
+      "passed": true
+    },
+    {
+      "frame": 480,
+      "figure": "MF03_knight",
+      "key_error": 0.0,
+      "max_matrix_error": 6.29425048828125e-05,
+      "max_static_error": 3.0517578125e-05,
+      "invalid_drivers": [],
+      "figure_rotation_error": 0.0,
+      "figure_translation_error_ldu": 4.315837287515549e-05,
+      "passed": true
+    },
+    {
+      "frame": 480,
+      "figure": "MF04_builder",
+      "key_error": 0.0,
+      "max_matrix_error": 8.96453857421875e-05,
+      "max_static_error": 6.103515625e-05,
+      "invalid_drivers": [],
+      "figure_rotation_error": 0.0,
+      "figure_translation_error_ldu": 6.823937919616058e-05,
+      "passed": true
+    },
+    {
+      "frame": 480,
+      "figure": "MF05_chef",
+      "key_error": 1.7484556025237907e-07,
+      "max_matrix_error": 0.0001735687255859375,
+      "max_static_error": 0.00011316723976051435,
+      "invalid_drivers": [],
+      "figure_rotation_error": 2.1412406537821273e-23,
+      "figure_translation_error_ldu": 6.99245558922705e-05,
+      "passed": true
+    },
+    {
+      "frame": 480,
+      "figure": "MF06_pirate",
+      "key_error": 0.0,
+      "max_matrix_error": 5.7220458984375e-06,
+      "max_static_error": 4.235164736271502e-22,
+      "invalid_drivers": [],
+      "figure_rotation_error": 0.0,
+      "figure_translation_error_ldu": 0.0,
+      "passed": true
+    },
+    {
+      "frame": 480,
+      "figure": "MF07_firefighter",
+      "key_error": 0.0,
+      "max_matrix_error": 1.71661376953125e-05,
+      "max_static_error": 1.52587890625e-05,
+      "invalid_drivers": [],
+      "figure_rotation_error": 0.0,
+      "figure_translation_error_ldu": 1.52587890625e-05,
+      "passed": true
+    },
+    {
+      "frame": 480,
+      "figure": "MF08_athlete",
+      "key_error": 1.7484556025237907e-07,
+      "max_matrix_error": 3.24249267578125e-05,
+      "max_static_error": 3.0517578125e-05,
+      "invalid_drivers": [],
+      "figure_rotation_error": 0.0,
+      "figure_translation_error_ldu": 3.0517578125e-05,
+      "passed": true
+    },
+    {
+      "frame": 480,
+      "figure": "MF09_wizard",
+      "key_error": 0.0,
+      "max_matrix_error": 8.96453857421875e-05,
+      "max_static_error": 6.103515625e-05,
+      "invalid_drivers": [],
+      "figure_rotation_error": 0.0,
+      "figure_translation_error_ldu": 6.103515625e-05,
+      "passed": true
+    },
+    {
+      "frame": 480,
+      "figure": "MF10_diver",
+      "key_error": 0.0,
+      "max_matrix_error": 8.96453857421875e-05,
+      "max_static_error": 6.103515625e-05,
+      "invalid_drivers": [],
+      "figure_rotation_error": 0.0,
+      "figure_translation_error_ldu": 6.103515625e-05,
+      "passed": true
+    }
+  ],
+  "coverage": "Plans verified at build (apply_plan sweep); at sampled timeline frames (inside every window and in the gaps) the NLA-evaluated controller equals the clip library, every rig matches the portable evaluator root-relative, and each root equals rest @ figure_transform(whole-figure channels). No collision or ground-contact test of the clips."
+}

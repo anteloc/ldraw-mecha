@@ -1,0 +1,133 @@
+{
+  "version": 1,
+  "purpose": "Reviewed source/evidence/playback assets. Excludes backup blends, logs, bulk frame renders and obsolete automatic diagrams. Add a new bundle/version deliberately; output remains disposable.",
+  "bundles": {
+    "42110": [
+      "*.json",
+      "*.png",
+      "animated.blend",
+      "model.glb",
+      "REPORT.md",
+      "study/plan.json",
+      "evidence/*.json"
+    ],
+    "42110-reference-review": [
+      "review.json",
+      "review.py"
+    ],
+    "42083-w16": [
+      "*.json",
+      "*.mpd",
+      "*.png",
+      "model.glb",
+      "rigged.blend",
+      "evidence/*.json"
+    ],
+    "42083-w16-reference-review": [
+      "*.json",
+      "review.py",
+      "inspect_blend.py"
+    ],
+    "42110-suspension": [
+      "plan.json",
+      "study/plan.json",
+      "evidence/contacts-suspension.json",
+      "stop-sweep.json",
+      "geometry.json"
+    ],
+    "42110-suspension-standalone": [
+      "*.json",
+      "*.png",
+      "REPORT.md",
+      "animated.blend",
+      "source/*.json",
+      "source/*.mpd",
+      "study/plan.json",
+      "study/model.glb"
+    ],
+    "42110-suspension-standalone-reference-review": [
+      "*.json",
+      "*.py"
+    ],
+    "42083-mechanisms": [
+      "*.json",
+      "REPORT.md",
+      "mechanisms.blend",
+      "evidence/*.json",
+      "*/plan.json",
+      "*/keep.json",
+      "*/kinematics.json",
+      "*/clearance.json",
+      "*/lifecycle.json",
+      "*/source/*.json",
+      "*/source/*.mpd",
+      "*/study/plan.json",
+      "*/study/model.glb",
+      "*/previews/*.png",
+      "previews/*.png"
+    ],
+    "42083-mechanisms-reference-review": [
+      "*.json",
+      "review.py"
+    ],
+    "minifigs": [
+      "*.json",
+      "*.md",
+      "minifigs.blend",
+      "clips/*.json",
+      "MF*/*.json",
+      "MF*/source/*.json",
+      "MF*/source/*.mpd",
+      "MF*/study/plan.json",
+      "MF*/study/model.glb",
+      "previews/overview-f232.png",
+      "previews/figures/MF10_diver-B2-f239.png",
+      "previews/figures/MF10_diver-C2-f399.png"
+    ],
+    "minifigs-reference-review": [
+      "*.json",
+      "review.py"
+    ],
+    "movables": [
+      "*.json",
+      "*.md",
+      "movables.blend",
+      "clips/*.json",
+      "S*/*.json",
+      "S*/source/*.json",
+      "S*/source/*.mpd",
+      "S*/study/plan.json",
+      "S*/study/model.glb",
+      "previews/*.png",
+      "adapter-checks/*.json"
+    ],
+    "movables-reference-review": [
+      "*.json"
+    ],
+    "plants": [
+      "*.json",
+      "*.md",
+      "plants.blend",
+      "clips/*.json",
+      "P*/*.json",
+      "P*/source/*.json",
+      "P*/source/*.mpd",
+      "P*/study/plan.json",
+      "P*/study/model.glb",
+      "previews/*.png",
+      "previews/overview.mp4",
+      "adapter-checks/*.json"
+    ],
+    "plants-reference-review": [
+      "*.json"
+    ],
+    "toolkit-improvements": [
+      "w16/workflow-check.json"
+    ],
+    "10265-discovery-audit": [
+      "*.json",
+      "README.md",
+      "ride-height-candidate.svg"
+    ]
+  }
+}

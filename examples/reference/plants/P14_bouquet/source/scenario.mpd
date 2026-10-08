@@ -1,0 +1,50 @@
+0 FILE p14_bouquet.ldr
+0 Plant wind case P14_bouquet Vase bouquet
+0 Name: p14_bouquet.ldr
+0 Author: ldraw-mecha scripts/build_plants.py
+0 // Generated mock case: parts picked by constant name from data/categories/parts (vine subfiles by LDraw reference); moving parts placed from LDCad shadow connector frames (data/offLibShadow) via pyldraw3 or copied from official constructions (2518c01, 10315, 10297). Frame: LDU, -Y up, the case front faces -Z, ground (base top) at y = 0. Wind blows toward +X.
+
+0 // base: plates.Plate6X6
+1 15 0 0 0 1 0 0 0 1 0 0 0 1 3958.dat
+0 // vase_a_18674: plates.Plate2X2RoundWith1CentreStud
+1 0 -40 -8 -20 1 0 0 0 1 0 0 0 1 18674.dat
+0 // vase_a_20482: tiles.Tile1X1RoundWithPinAndPinHole
+1 297 -40 -16 -20 1 0 0 0 1 0 0 0 1 20482.dat
+0 // vase_a_3942c: cones.Cone2X2X2WithHollowStudOpen
+1 0 -40 -20 -20 -1 0 0 0 -1 0 0 0 1 3942c.dat
+0 // vase_a_15395: spheres.Dome2X2InvertedWithStudAndTube
+1 0 -40 -84 -20 -1 0 0 0 -1 0 0 0 1 15395.dat
+0 // vase_a_85861: plates.Plate1X1RoundWithOpenStud
+1 297 -40 -92 -20 -1 0 0 0 -1 0 0 0 1 85861.dat
+0 // stem_a: plants.PlantFlowerStemWithBarAndHole
+1 2 -40 -110 -20 -1 0 0 0 1 0 0 0 -1 24855.dat
+0 // head_a1: plants.PlantFlowerWith7AlternatePetalsWithBarAndPinHole
+1 15 -18.765 -132.527 -7.74 -0.864 -0.497 0.078 -0.497 0.819 -0.287 0.078 -0.287 -0.955 32606.dat
+0 // head_a2: plants.PlantFlowerWith7AlternatePetalsWithBarAndPinHole
+1 29 -58.752 -128.431 -9.174 -0.801 0.497 -0.333 0.56 0.819 -0.125 0.211 -0.287 -0.934 32606.dat
+0 // head_a3: plants.PlantFlowerWith7AlternatePetalsWithBarAndPinHole
+1 14 -40 -123.107 -37.924 0.16 0 -0.987 -0.566 0.819 -0.092 0.809 0.574 0.131 32606.dat
+0 // vase_b_18674: plates.Plate2X2RoundWith1CentreStud
+1 72 40 -8 20 1 0 0 0 1 0 0 0 1 18674.dat
+0 // vase_b_20482: tiles.Tile1X1RoundWithPinAndPinHole
+1 7 40 -16 20 1 0 0 0 1 0 0 0 1 20482.dat
+0 // vase_b_3942c: cones.Cone2X2X2WithHollowStudOpen
+1 72 40 -20 20 -1 0 0 0 -1 0 0 0 1 3942c.dat
+0 // vase_b_15395: spheres.Dome2X2InvertedWithStudAndTube
+1 72 40 -84 20 -1 0 0 0 -1 0 0 0 1 15395.dat
+0 // vase_b_85861: plates.Plate1X1RoundWithOpenStud
+1 7 40 -92 20 -1 0 0 0 -1 0 0 0 1 85861.dat
+0 // stem_b: plants.PlantFlowerStemWithBarAnd6Stems
+1 2 40 -100 20 0.8660254038 0 0.5 0 1 0 -0.5 0 0.8660254038 19119.dat
+0 // head_b1: plants.PlantFlower
+1 4 25.71058145 -127.3828988 28.24999965 -0.8944141809 0.4330128512 -0.1119068529 0.4472396008 0.8660253042 -0.2235551652 0.000111906853 -0.2500000862 -0.9682458078 3742.dat
+0 // head_b2: plants.PlantFlower
+1 14 54.2891782 -127.3829022 28.24959002 -0.8944134459 -0.4330141974 0.111907518 -0.4472410705 0.8660244394 -0.2235555753 -0.000111907518 -0.2500007506 -0.9682456363 3742.dat
+0 // head_b3: plants.PlantFlower
+1 26 18.02803283 -112.2349249 7.314662709 -0.3872350507 0.813798204 0.4333376267 0.9219809259 0.3420187794 0.1815883444 -0.000433337627 0.469846398 -0.882748081 3742.dat
+0 // head_b4: plants.PlantFlower
+1 15 40.00023457 -127.3829022 3.500413669 -1 -9.7689e-08 -5.6466e-08 -1.12835e-07 0.8660244394 0.5000016704 0 0.5000016704 -0.8660244394 3742.dat
+0 // head_b5: plants.PlantFlower
+1 25 39.99984076 -112.2349249 45.37095039 -1 1.85405e-07 -5.10891e-07 5.43493e-07 0.3420187794 -0.9396931172 0 -0.9396931172 -0.3420187794 3742.dat
+0 // head_b6: plants.PlantFlower
+1 29 61.97212817 -112.234923 7.314385889 -0.3872355999 -0.8137979633 -0.4333375878 -0.9219806952 0.3420192487 0.1815886317 0.000433337588 0.4698464732 -0.882748041 3742.dat

@@ -1,0 +1,70 @@
+{
+  "summary": {
+    "static": 1,
+    "planned": 1
+  },
+  "review_complete": true,
+  "unresolved": [],
+  "deferred": [],
+  "unaccounted_mechanical_parts": [],
+  "mechanisms": [
+    {
+      "id": "context",
+      "label": "Drawbridge: mounting and mock context (static)",
+      "disposition": "static",
+      "review": "Mock context built for the catalog (walls, floor, chassis, mounts); it does not move in this scenario.",
+      "parts": 21,
+      "controlled_parts": [],
+      "parts_without_control": [
+        "0",
+        "1",
+        "10",
+        "11",
+        "12",
+        "13",
+        "14",
+        "15",
+        "16",
+        "17",
+        "18",
+        "19",
+        "2",
+        "20",
+        "21",
+        "22",
+        "23",
+        "4",
+        "7",
+        "8",
+        "9"
+      ],
+      "controls": []
+    },
+    {
+      "id": "deck",
+      "label": "Drawbridge: deck",
+      "disposition": "planned",
+      "review": "Measured joint declared in this plan (scripts/build_movables.py).",
+      "parts": 4,
+      "controlled_parts": [
+        "3",
+        "5",
+        "6"
+      ],
+      "parts_without_control": [
+        "2"
+      ],
+      "controls": [
+        "bridge"
+      ]
+    }
+  ],
+  "warnings": [
+    {
+      "code": "coaxial_not_run",
+      "message": "not run: 0 shaft/gear candidates outside 2..100; select a section"
+    }
+  ],
+  "coverage": "Bookkeeping of declared scope only. Supports may correctly lack controls. Planned, static and deferred dispositions require review notes; none certify discovery completeness, physical motion or clearance.",
+  "passed": true
+}

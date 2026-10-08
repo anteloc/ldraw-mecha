@@ -1,0 +1,80 @@
+{
+  "case": "P20_friends_palm",
+  "title": "Palm crowns on an axle",
+  "parts": [
+    {
+      "role": "base",
+      "id": "0",
+      "table": "plates.Plate6X6",
+      "ref": "3958",
+      "colour": 19,
+      "title": "Plate  6 x  6",
+      "library_only": false
+    },
+    {
+      "role": "trunk",
+      "id": "1",
+      "table": "plants.PlantTreePalmBase4X4",
+      "ref": "30338",
+      "colour": 70,
+      "title": "Plant Tree Palm Base  4 x  4",
+      "library_only": false
+    },
+    {
+      "role": "crown1",
+      "id": "2",
+      "table": "plants.PlantTreePalmLeafQuadruple",
+      "ref": "30339",
+      "colour": 2,
+      "title": "Plant Tree Palm Leaf Quadruple",
+      "library_only": false
+    },
+    {
+      "role": "crown2",
+      "id": "3",
+      "table": "plants.PlantTreePalmLeafQuadruple",
+      "ref": "30339",
+      "colour": 10,
+      "title": "Plant Tree Palm Leaf Quadruple",
+      "library_only": false
+    }
+  ],
+  "joints": {
+    "crown_1": {
+      "origin": [
+        -7.6777,
+        -272.5905,
+        0.0
+      ],
+      "axis": [
+        0.258816,
+        -0.965927,
+        0.0
+      ],
+      "parent": "trunk",
+      "child": "crown1",
+      "kind": "revolute",
+      "joint": "real",
+      "connector": "real: 30339 round centre hole on the 30338 trunk-top axle; turns about the axle (right-hand about the axle's up direction)"
+    },
+    "crown_2": {
+      "origin": [
+        -7.6777,
+        -272.5905,
+        0.0
+      ],
+      "axis": [
+        0.258816,
+        -0.965927,
+        0.0
+      ],
+      "parent": "crown1",
+      "child": "crown2",
+      "kind": "revolute",
+      "joint": "real",
+      "connector": "real: 30339 round centre hole on the 30338 trunk-top axle; turns about the axle (right-hand about the axle's up direction)"
+    }
+  },
+  "reference_checks": [],
+  "geometry_checks": []
+}

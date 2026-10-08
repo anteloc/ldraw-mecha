@@ -1,0 +1,151 @@
+{
+  "scenario": "S05_kitchen_cupboard",
+  "title": "Kitchen cupboard",
+  "parts": [
+    {
+      "role": "base",
+      "id": "0",
+      "table": "plates.Plate4X6",
+      "ref": "3032",
+      "colour": 71,
+      "title": "Plate  4 x  6",
+      "library_only": false
+    },
+    {
+      "role": "cupboard_low",
+      "id": "1",
+      "table": "containers.ContainerCupboard2X3X2WithSolidStuds",
+      "ref": "4532",
+      "colour": 15,
+      "title": "Container Cupboard  2 x  3 x  2 with Solid Studs",
+      "library_only": false
+    },
+    {
+      "role": "door",
+      "id": "2",
+      "table": "containers.ContainerCupboard2X3X2Door",
+      "ref": "4533",
+      "colour": 4,
+      "title": "Container Cupboard  2 x  3 x  2 Door",
+      "library_only": false
+    },
+    {
+      "role": "cupboard_high",
+      "id": "3",
+      "table": "containers.ContainerCupboard2X3X2WithSolidStuds",
+      "ref": "4532",
+      "colour": 15,
+      "title": "Container Cupboard  2 x  3 x  2 with Solid Studs",
+      "library_only": false
+    },
+    {
+      "role": "drawer_top",
+      "id": "4",
+      "table": "containers.ContainerCupboard2X3X2Drawer",
+      "ref": "4536",
+      "colour": 14,
+      "title": "Container Cupboard  2 x  3 x  2 Drawer",
+      "library_only": false
+    },
+    {
+      "role": "drawer_low",
+      "id": "5",
+      "table": "containers.ContainerCupboard2X3X2Drawer",
+      "ref": "4536",
+      "colour": 14,
+      "title": "Container Cupboard  2 x  3 x  2 Drawer",
+      "library_only": false
+    }
+  ],
+  "joints": {
+    "door": {
+      "origin": [
+        -24.0,
+        -26.0,
+        -17.0
+      ],
+      "axis": [
+        0.0,
+        -1.0,
+        0.0
+      ],
+      "parent": "cupboard_low",
+      "child": "door",
+      "kind": "revolute",
+      "connector": "4532 hinge snap_incl@L8:I0/snap_fgr@L9:I0 receives 4533 hinge snap_fgr@L8:I0"
+    },
+    "drawer_top": {
+      "origin": [
+        0.0,
+        -81.0,
+        -2.0
+      ],
+      "axis": [
+        0.0,
+        0.0,
+        -1.0
+      ],
+      "parent": "cupboard_high",
+      "child": "drawer_top",
+      "kind": "prismatic",
+      "connector": "4532 generic snap_incl@L8:I0/snap_gen@L11:I0 receives 4536 generic snap_gen@L8:I0; slide axis [0, 0, -1] along the guide (the connector axis only locates the part)"
+    },
+    "drawer_low": {
+      "origin": [
+        0.0,
+        -63.0,
+        -2.0
+      ],
+      "axis": [
+        0.0,
+        0.0,
+        -1.0
+      ],
+      "parent": "cupboard_high",
+      "child": "drawer_low",
+      "kind": "prismatic",
+      "connector": "4532 generic snap_incl@L8:I0/snap_gen@L12:I0 receives 4536 generic snap_gen@L8:I0; slide axis [0, 0, -1] along the guide (the connector axis only locates the part)"
+    }
+  },
+  "reference_checks": [
+    {
+      "model": "10197-1.mpd",
+      "section": "(flattened main model)",
+      "parent": "cupboard_low",
+      "part": "door",
+      "official_refs": [
+        "4532",
+        "4533"
+      ],
+      "position_offset_ldu": 0.0,
+      "rotation_offset": 0.0,
+      "note": ""
+    },
+    {
+      "model": "6416-1.mpd",
+      "section": "(flattened main model)",
+      "parent": "cupboard_high",
+      "part": "drawer_top",
+      "official_refs": [
+        "4532",
+        "4536"
+      ],
+      "position_offset_ldu": 0.0,
+      "rotation_offset": 0.0,
+      "note": ""
+    },
+    {
+      "model": "6416-1.mpd",
+      "section": "(flattened main model)",
+      "parent": "cupboard_high",
+      "part": "drawer_low",
+      "official_refs": [
+        "4532",
+        "4536"
+      ],
+      "position_offset_ldu": 0.0,
+      "rotation_offset": 0.0,
+      "note": ""
+    }
+  ]
+}

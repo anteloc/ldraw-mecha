@@ -1,0 +1,407 @@
+{
+  "passed": true,
+  "frames": 612,
+  "fps": 24,
+  "hidden_bodywork": 0,
+  "closures_every_frame": true,
+  "max_travel": 39.69,
+  "continuity": {
+    "limits_per_frame": {
+      "revolute": 0.2,
+      "prismatic": 3.0,
+      "stretch": 0.1
+    },
+    "worst": {
+      "revolute": [
+        [
+          0.03140862305707143,
+          "th_rr",
+          "revolute",
+          513
+        ],
+        [
+          0.03140862305707143,
+          "th_rl",
+          "revolute",
+          453
+        ],
+        [
+          0.020407696637492728,
+          "th_fr",
+          "revolute",
+          498
+        ],
+        [
+          0.020407696637492728,
+          "th_fl",
+          "revolute",
+          438
+        ]
+      ],
+      "prismatic": [
+        [
+          1.2388892398526252,
+          "ext_rr0",
+          "prismatic",
+          513
+        ],
+        [
+          1.2388892398526252,
+          "ext_rl0",
+          "prismatic",
+          453
+        ],
+        [
+          1.238889239852611,
+          "ext_rr1",
+          "prismatic",
+          513
+        ],
+        [
+          1.238889239852611,
+          "ext_rl1",
+          "prismatic",
+          453
+        ]
+      ],
+      "stretch": [
+        [
+          0.02815657363301416,
+          "k_rr0",
+          "stretch",
+          513
+        ],
+        [
+          0.02815657363301416,
+          "k_rl0",
+          "stretch",
+          453
+        ],
+        [
+          0.028156573633013826,
+          "k_rr1",
+          "stretch",
+          513
+        ],
+        [
+          0.028156573633013826,
+          "k_rl1",
+          "stretch",
+          453
+        ]
+      ]
+    },
+    "violations": {},
+    "passed": true
+  },
+  "samples": [
+    {
+      "frame": 1,
+      "key_error": 0.0,
+      "passed": true,
+      "detail": {
+        "controls": {
+          "travel_fl": 0.0,
+          "travel_fr": 0.0,
+          "travel_rl": 0.0,
+          "travel_rr": 0.0
+        },
+        "max_matrix_error": 0.0001296401023864746,
+        "max_static_error": 3.0517578125e-05,
+        "max_closure_error": 4.844659250125005e-05,
+        "invalid_drivers": [],
+        "passed": true
+      }
+    },
+    {
+      "frame": 42,
+      "key_error": 1.5894571969710114e-07,
+      "passed": true,
+      "detail": {
+        "controls": {
+          "travel_fl": 5.083333492279053,
+          "travel_fr": 5.083333492279053,
+          "travel_rl": 5.083333492279053,
+          "travel_rr": 5.083333492279053
+        },
+        "max_matrix_error": 0.00028228759765625,
+        "max_static_error": 3.0517578125e-05,
+        "max_closure_error": 0.0005409762556070064,
+        "invalid_drivers": [],
+        "passed": true
+      }
+    },
+    {
+      "frame": 71,
+      "key_error": 6.487406771782389e-07,
+      "passed": true,
+      "detail": {
+        "controls": {
+          "travel_fl": 19.629196166992188,
+          "travel_fr": 19.629196166992188,
+          "travel_rl": 19.629196166992188,
+          "travel_rr": 19.629196166992188
+        },
+        "max_matrix_error": 0.001007080078125,
+        "max_static_error": 3.0517578125e-05,
+        "max_closure_error": 0.0019390782111941007,
+        "invalid_drivers": [],
+        "passed": true
+      }
+    },
+    {
+      "frame": 120,
+      "key_error": 5.60072237476561e-08,
+      "passed": true,
+      "detail": {
+        "controls": {
+          "travel_fl": 18.531028747558594,
+          "travel_fr": 18.531028747558594,
+          "travel_rl": 18.531028747558594,
+          "travel_rr": 18.531028747558594
+        },
+        "max_matrix_error": 0.00096893310546875,
+        "max_static_error": 3.0517578125e-05,
+        "max_closure_error": 0.0018351034543542255,
+        "invalid_drivers": [],
+        "passed": true
+      }
+    },
+    {
+      "frame": 168,
+      "key_error": 7.629394573882564e-07,
+      "passed": true,
+      "detail": {
+        "controls": {
+          "travel_fl": 19.825000762939453,
+          "travel_fr": 0.5083333253860474,
+          "travel_rl": 19.825000762939453,
+          "travel_rr": 0.5083333253860474
+        },
+        "max_matrix_error": 0.00096893310546875,
+        "max_static_error": 3.0517578125e-05,
+        "max_closure_error": 0.00195902781354107,
+        "invalid_drivers": [],
+        "passed": true
+      }
+    },
+    {
+      "frame": 204,
+      "key_error": 7.629394573882564e-07,
+      "passed": true,
+      "detail": {
+        "controls": {
+          "travel_fl": 0.5083333253860474,
+          "travel_fr": 19.825000762939453,
+          "travel_rl": 0.5083333253860474,
+          "travel_rr": 19.825000762939453
+        },
+        "max_matrix_error": 0.0010223388671875,
+        "max_static_error": 3.0517578125e-05,
+        "max_closure_error": 0.0019591786167012515,
+        "invalid_drivers": [],
+        "passed": true
+      }
+    },
+    {
+      "frame": 240,
+      "key_error": 7.629394573882564e-07,
+      "passed": true,
+      "detail": {
+        "controls": {
+          "travel_fl": 19.825000762939453,
+          "travel_fr": 19.825000762939453,
+          "travel_rl": 0.5083333253860474,
+          "travel_rr": 0.5083333253860474
+        },
+        "max_matrix_error": 0.0010223388671875,
+        "max_static_error": 3.0517578125e-05,
+        "max_closure_error": 0.0019591786167012515,
+        "invalid_drivers": [],
+        "passed": true
+      }
+    },
+    {
+      "frame": 276,
+      "key_error": 7.629394573882564e-07,
+      "passed": true,
+      "detail": {
+        "controls": {
+          "travel_fl": 0.5083333253860474,
+          "travel_fr": 0.5083333253860474,
+          "travel_rl": 19.825000762939453,
+          "travel_rr": 19.825000762939453
+        },
+        "max_matrix_error": 0.0010223388671875,
+        "max_static_error": 3.0517578125e-05,
+        "max_closure_error": 0.0019590269147897743,
+        "invalid_drivers": [],
+        "passed": true
+      }
+    },
+    {
+      "frame": 342,
+      "key_error": 1.3732910133512632e-06,
+      "passed": true,
+      "detail": {
+        "controls": {
+          "travel_fl": 29.889999389648438,
+          "travel_fr": 0.0,
+          "travel_rl": 0.0,
+          "travel_rr": 39.689998626708984
+        },
+        "max_matrix_error": 0.0020294189453125,
+        "max_static_error": 3.0517578125e-05,
+        "max_closure_error": 0.0037897770829715682,
+        "invalid_drivers": [],
+        "passed": true
+      }
+    },
+    {
+      "frame": 380,
+      "key_error": 6.087478610083963e-07,
+      "passed": true,
+      "detail": {
+        "controls": {
+          "travel_fl": 6.604326248168945,
+          "travel_fr": 17.077606201171875,
+          "travel_rl": 20.5114688873291,
+          "travel_rr": 6.604326248168945
+        },
+        "max_matrix_error": 0.0009765625,
+        "max_static_error": 3.0517578125e-05,
+        "max_closure_error": 0.002013689374038563,
+        "invalid_drivers": [],
+        "passed": true
+      }
+    },
+    {
+      "frame": 402,
+      "key_error": 1.3732910133512632e-06,
+      "passed": true,
+      "detail": {
+        "controls": {
+          "travel_fl": 0.0,
+          "travel_fr": 29.889999389648438,
+          "travel_rl": 39.689998626708984,
+          "travel_rr": 0.0
+        },
+        "max_matrix_error": 0.001953125,
+        "max_static_error": 3.0517578125e-05,
+        "max_closure_error": 0.0037897770829715682,
+        "invalid_drivers": [],
+        "passed": true
+      }
+    },
+    {
+      "frame": 444,
+      "key_error": 7.629394538355427e-07,
+      "passed": true,
+      "detail": {
+        "controls": {
+          "travel_fl": 25.924999237060547,
+          "travel_fr": 10.166666984558105,
+          "travel_rl": 10.166666984558105,
+          "travel_rr": 10.166666984558105
+        },
+        "max_matrix_error": 0.00128173828125,
+        "max_static_error": 3.0517578125e-05,
+        "max_closure_error": 0.0025422177495784126,
+        "invalid_drivers": [],
+        "passed": true
+      }
+    },
+    {
+      "frame": 456,
+      "key_error": 5.563415399478799e-07,
+      "passed": true,
+      "detail": {
+        "controls": {
+          "travel_fl": 10.166666984558105,
+          "travel_fr": 10.166666984558105,
+          "travel_rl": 32.79999923706055,
+          "travel_rr": 10.166666984558105
+        },
+        "max_matrix_error": 0.0016021728515625,
+        "max_static_error": 3.0517578125e-05,
+        "max_closure_error": 0.003185319393665509,
+        "invalid_drivers": [],
+        "passed": true
+      }
+    },
+    {
+      "frame": 504,
+      "key_error": 7.629394538355427e-07,
+      "passed": true,
+      "detail": {
+        "controls": {
+          "travel_fl": 10.166666984558105,
+          "travel_fr": 25.924999237060547,
+          "travel_rl": 10.166666984558105,
+          "travel_rr": 10.166666984558105
+        },
+        "max_matrix_error": 0.0013275146484375,
+        "max_static_error": 3.0517578125e-05,
+        "max_closure_error": 0.0025422177495784126,
+        "invalid_drivers": [],
+        "passed": true
+      }
+    },
+    {
+      "frame": 518,
+      "key_error": 7.629394502828291e-07,
+      "passed": true,
+      "detail": {
+        "controls": {
+          "travel_fl": 10.166666984558105,
+          "travel_fr": 10.166666984558105,
+          "travel_rl": 10.166666984558105,
+          "travel_rr": 34.42499923706055
+        },
+        "max_matrix_error": 0.00176239013671875,
+        "max_static_error": 3.0517578125e-05,
+        "max_closure_error": 0.003322533570496944,
+        "invalid_drivers": [],
+        "passed": true
+      }
+    },
+    {
+      "frame": 570,
+      "key_error": 1.5894571969710114e-07,
+      "passed": true,
+      "detail": {
+        "controls": {
+          "travel_fl": 5.083333492279053,
+          "travel_fr": 5.083333492279053,
+          "travel_rl": 5.083333492279053,
+          "travel_rr": 5.083333492279053
+        },
+        "max_matrix_error": 0.00028228759765625,
+        "max_static_error": 3.0517578125e-05,
+        "max_closure_error": 0.0005409762556070064,
+        "invalid_drivers": [],
+        "passed": true
+      }
+    },
+    {
+      "frame": 612,
+      "key_error": 0.0,
+      "passed": true,
+      "detail": {
+        "controls": {
+          "travel_fl": 0.0,
+          "travel_fr": 0.0,
+          "travel_rl": 0.0,
+          "travel_rr": 0.0
+        },
+        "max_matrix_error": 0.0001296401023864746,
+        "max_static_error": 3.0517578125e-05,
+        "max_closure_error": 4.844659250125005e-05,
+        "invalid_drivers": [],
+        "passed": true
+      }
+    }
+  ],
+  "tolerance": 0.01,
+  "coverage": "Keys are the four travel controls (one per frame); every frame evaluated for closure; sampled frames re-verified in Blender against the portable evaluator; no collision test of the whole sequence"
+}

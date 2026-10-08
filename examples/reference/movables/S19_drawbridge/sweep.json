@@ -1,0 +1,108 @@
+{
+  "passed": true,
+  "samples": [
+    {
+      "control": "bridge",
+      "value": 0.0,
+      "passed": true,
+      "max_error": 0
+    },
+    {
+      "control": "bridge",
+      "value": 0.096875,
+      "passed": true,
+      "max_error": 0
+    },
+    {
+      "control": "bridge",
+      "value": 0.19375,
+      "passed": true,
+      "max_error": 0
+    },
+    {
+      "control": "bridge",
+      "value": 0.290625,
+      "passed": true,
+      "max_error": 0
+    },
+    {
+      "control": "bridge",
+      "value": 0.3875,
+      "passed": true,
+      "max_error": 0
+    },
+    {
+      "control": "bridge",
+      "value": 0.484375,
+      "passed": true,
+      "max_error": 0
+    },
+    {
+      "control": "bridge",
+      "value": 0.58125,
+      "passed": true,
+      "max_error": 0
+    },
+    {
+      "control": "bridge",
+      "value": 0.678125,
+      "passed": true,
+      "max_error": 0
+    },
+    {
+      "control": "bridge",
+      "value": 0.775,
+      "passed": true,
+      "max_error": 0
+    },
+    {
+      "control": "bridge",
+      "value": 0.8718750000000001,
+      "passed": true,
+      "max_error": 0
+    },
+    {
+      "control": "bridge",
+      "value": 0.96875,
+      "passed": true,
+      "max_error": 0
+    },
+    {
+      "control": "bridge",
+      "value": 1.065625,
+      "passed": true,
+      "max_error": 0
+    },
+    {
+      "control": "bridge",
+      "value": 1.1625,
+      "passed": true,
+      "max_error": 0
+    },
+    {
+      "control": "bridge",
+      "value": 1.2593750000000001,
+      "passed": true,
+      "max_error": 0
+    },
+    {
+      "control": "bridge",
+      "value": 1.35625,
+      "passed": true,
+      "max_error": 0
+    },
+    {
+      "control": "bridge",
+      "value": 1.453125,
+      "passed": true,
+      "max_error": 0
+    },
+    {
+      "control": "bridge",
+      "value": 1.55,
+      "passed": true,
+      "max_error": 0
+    }
+  ],
+  "coverage": "Each control swept independently; analytic closure only, not mesh collisions or dynamics"
+}

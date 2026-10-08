@@ -1,0 +1,52 @@
+0 FILE p17_tendrils.ldr
+0 Plant wind case P17_tendrils Hanging tendrils
+0 Name: p17_tendrils.ldr
+0 Author: ldraw-mecha scripts/build_plants.py
+0 // Generated mock case: parts picked by constant name from data/categories/parts (vine subfiles by LDraw reference); moving parts placed from LDCad shadow connector frames (data/offLibShadow) via pyldraw3 or copied from official constructions (2518c01, 10315, 10297). Frame: LDU, -Y up, the case front faces -Z, ground (base top) at y = 0. Wind blows toward +X.
+
+0 // base: plates.Plate4X12
+1 28 0 0 0 1 0 0 0 1 0 0 0 1 3029.dat
+0 // post_left0: bricks.Brick2X2RoundWithoutReinforcement
+1 72 -100 -24 0 1 0 0 0 1 0 0 0 1 3941.dat
+0 // post_left1: bricks.Brick2X2RoundWithoutReinforcement
+1 72 -100 -48 0 1 0 0 0 1 0 0 0 1 3941.dat
+0 // post_left2: bricks.Brick2X2RoundWithoutReinforcement
+1 72 -100 -72 0 1 0 0 0 1 0 0 0 1 3941.dat
+0 // post_left3: bricks.Brick2X2RoundWithoutReinforcement
+1 72 -100 -96 0 1 0 0 0 1 0 0 0 1 3941.dat
+0 // post_left4: bricks.Brick2X2RoundWithoutReinforcement
+1 72 -100 -120 0 1 0 0 0 1 0 0 0 1 3941.dat
+0 // post_right0: bricks.Brick2X2RoundWithoutReinforcement
+1 72 100 -24 0 1 0 0 0 1 0 0 0 1 3941.dat
+0 // post_right1: bricks.Brick2X2RoundWithoutReinforcement
+1 72 100 -48 0 1 0 0 0 1 0 0 0 1 3941.dat
+0 // post_right2: bricks.Brick2X2RoundWithoutReinforcement
+1 72 100 -72 0 1 0 0 0 1 0 0 0 1 3941.dat
+0 // post_right3: bricks.Brick2X2RoundWithoutReinforcement
+1 72 100 -96 0 1 0 0 0 1 0 0 0 1 3941.dat
+0 // post_right4: bricks.Brick2X2RoundWithoutReinforcement
+1 72 100 -120 0 1 0 0 0 1 0 0 0 1 3941.dat
+0 // beam: plates.Plate2X10
+1 72 0 -128 0 1 0 0 0 1 0 0 0 1 3832.dat
+0 // spacer1: plates.Plate1X1
+1 72 -30 -120 -10 1 0 0 0 1 0 0 0 1 3024.dat
+0 // hook1: plates.Plate1X1WithClipHorizontal_ThickC_Clip_
+1 72 -30 -112 -10 0 0 1 0 1 0 -1 0 0 61252.dat
+0 // tendril1: plants.PlantStemCurvedWith2ThornsAnd2Swirls
+1 2 -50 -110 -15 1 0 0 0 0 -1 0 1 0 28870.dat
+0 // spacer2: plates.Plate1X1
+1 72 10 -120 -10 1 0 0 0 1 0 0 0 1 3024.dat
+0 // hook2: plates.Plate1X1WithClipHorizontal_ThickC_Clip_
+1 72 10 -112 -10 0 0 1 0 1 0 -1 0 0 61252.dat
+0 // tendril2: plants.PlantStemCurvedWith2ThornsAnd2Swirls
+1 330 -10 -110 -15 1 0 0 0 0 -1 0 1 0 28870.dat
+0 // spacer3: plates.Plate1X1
+1 72 50 -120 -10 1 0 0 0 1 0 0 0 1 3024.dat
+0 // hook3: plates.Plate1X1WithClipHorizontal_ThickC_Clip_
+1 72 50 -112 -10 0 0 1 0 1 0 -1 0 0 61252.dat
+0 // tendril3: plants.PlantStemCurvedWith2ThornsAnd2Swirls
+1 10 30 -110 -15 1 0 0 0 0 -1 0 1 0 28870.dat
+0 // hook4: plates.Plate1X1WithClipVertical_ThickC_Clip_
+1 72 -10 -120 10 -1 0 0 0 1 0 0 0 -1 60897.dat
+0 // curl: plants.PlantVineCurledWithBar
+1 2 -10 -120 30 1 0 0 0 -1 0 0 0 -1 1997.dat

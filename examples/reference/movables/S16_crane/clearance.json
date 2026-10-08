@@ -1,0 +1,43 @@
+{
+  "scenario": "S16_crane",
+  "sweep": {
+    "no_new_surface_crossings": true,
+    "crossings": [],
+    "excluded_rest_pairs": [
+      "hinge_base-hinge_top",
+      "boom_tip-hook",
+      "turntable_base-turntable_top"
+    ]
+  },
+  "clip_poses": {
+    "samples": 108,
+    "every": 4,
+    "no_new_surface_crossings": true,
+    "crossings_by_clip": {},
+    "frames_with_crossings": {},
+    "vertex_penetration_by_clip": {},
+    "deep_shrink_ldu": 1.5,
+    "no_deep_crossings": true,
+    "deep_crossings_by_clip": {},
+    "frames_with_deep_crossings": {}
+  },
+  "roles": {
+    "0": "base",
+    "1": "pedestal00",
+    "2": "pedestal01",
+    "3": "pedestal10",
+    "4": "pedestal11",
+    "5": "turntable_base",
+    "6": "turntable_top",
+    "7": "cab",
+    "8": "cab_window",
+    "9": "cab_roof",
+    "10": "hinge_base",
+    "11": "hinge_top",
+    "12": "boom_riser",
+    "13": "boom",
+    "14": "boom_tip",
+    "15": "hook"
+  },
+  "coverage": "Sampled surface crossings only; excludes rigid-body and rest-contact pairs; containment untested"
+}

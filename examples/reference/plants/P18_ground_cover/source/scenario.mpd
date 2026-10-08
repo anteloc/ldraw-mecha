@@ -1,0 +1,20 @@
+0 FILE p18_ground_cover.ldr
+0 Plant wind case P18_ground_cover Ground cover
+0 Name: p18_ground_cover.ldr
+0 Author: ldraw-mecha scripts/build_plants.py
+0 // Generated mock case: parts picked by constant name from data/categories/parts (vine subfiles by LDraw reference); moving parts placed from LDCad shadow connector frames (data/offLibShadow) via pyldraw3 or copied from official constructions (2518c01, 10315, 10297). Frame: LDU, -Y up, the case front faces -Z, ground (base top) at y = 0. Wind blows toward +X.
+
+0 // base: plates.Plate8X8
+1 28 0 0 0 1 0 0 0 1 0 0 0 1 41539.dat
+0 // plant1: plants.Plant1X1X0_667RoundWith3LargeLeaves
+1 2 -50 -16 -30 0.6427876097 0 0.7660444431 0 1 0 -0.7660444431 0 0.6427876097 6255.dat
+0 // plant2: plants.Plant3X3With3LongLeaves
+1 10 50 -8 -50 -0.1736481777 0 0.984807753 0 1 0 -0.984807753 0 -0.1736481777 7264.dat
+0 // plant3: plants.Plate1X1RoundWith3Leaves
+1 27 -10 -8 10 -0.8660254038 0 0.5 0 1 0 -0.5 0 -0.8660254038 32607.dat
+0 // plant4: plants.PlantFlower2X2WithHollowStud
+1 14 -50 -24 50 -0.9396926208 0 -0.3420201433 0 1 0 0.3420201433 0 -0.9396926208 4728.dat
+0 // plant5: plants.PlantFlower2X2WithSolidStud
+1 29 50 -24 30 -0.3420201433 0 -0.9396926208 0 1 0 0.9396926208 0 -0.3420201433 98262.dat
+0 // plant6: plants.PlantSerratedLeaf
+1 2 10 -8 -50 0.5 0 -0.8660254038 0 1 0 0.8660254038 0 0.5 2682a.dat

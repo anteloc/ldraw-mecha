@@ -1,0 +1,2041 @@
+{
+  "version": 1,
+  "name": "plant_04_flower_bed",
+  "status": "ready",
+  "source": {
+    "version": 1,
+    "path": "/Users/captain/workspaces/workspace-ai/ldraw-mecha/output/plants/P04_flower_bed/source/scenario.mpd",
+    "sha256": "9d343bb0b53e2716141f7fe1a7b6fa593a53af220fa0582523e876e6372ca387",
+    "section": "p04_flower_bed.ldr",
+    "description": "Plant wind case P04_flower_bed Flower bed",
+    "author": "ldraw-mecha scripts/build_plants.py",
+    "dependencies": {
+      "/Users/captain/workspaces/workspace-ai/ldraw-mecha/output/plants/P04_flower_bed/source/scenario.mpd": "9d343bb0b53e2716141f7fe1a7b6fa593a53af220fa0582523e876e6372ca387"
+    },
+    "nodes": [
+      {
+        "id": "0",
+        "parent": "root",
+        "ref": "3036.dat",
+        "kind": "part",
+        "embedded": false,
+        "section": "p04_flower_bed.ldr",
+        "index": 0,
+        "line": 8,
+        "colour": "2",
+        "effective_colour": "2",
+        "local": [
+          [
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            1.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            1.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "world": [
+          [
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            1.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            1.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "description": "Plate  6 x  8"
+      },
+      {
+        "id": "1",
+        "parent": "root",
+        "ref": "3941.dat",
+        "kind": "part",
+        "embedded": false,
+        "section": "p04_flower_bed.ldr",
+        "index": 1,
+        "line": 10,
+        "colour": "70",
+        "effective_colour": "70",
+        "local": [
+          [
+            1.0,
+            0.0,
+            0.0,
+            -60.0
+          ],
+          [
+            0.0,
+            1.0,
+            0.0,
+            -24.0
+          ],
+          [
+            0.0,
+            0.0,
+            1.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "world": [
+          [
+            1.0,
+            0.0,
+            0.0,
+            -60.0
+          ],
+          [
+            0.0,
+            1.0,
+            0.0,
+            -24.0
+          ],
+          [
+            0.0,
+            0.0,
+            1.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "description": "Brick  2 x  2 Round without Reinforcement"
+      },
+      {
+        "id": "2",
+        "parent": "root",
+        "ref": "3741a.dat",
+        "kind": "part",
+        "embedded": false,
+        "section": "p04_flower_bed.ldr",
+        "index": 2,
+        "line": 12,
+        "colour": "2",
+        "effective_colour": "2",
+        "local": [
+          [
+            0.7660444431,
+            0.0,
+            0.6427876097,
+            -60.0
+          ],
+          [
+            0.0,
+            1.0,
+            0.0,
+            -32.0
+          ],
+          [
+            -0.6427876097,
+            0.0,
+            0.7660444431,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "world": [
+          [
+            0.7660444431,
+            0.0,
+            0.6427876097,
+            -60.0
+          ],
+          [
+            0.0,
+            1.0,
+            0.0,
+            -32.0
+          ],
+          [
+            -0.6427876097,
+            0.0,
+            0.7660444431,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "description": "Plant Flower Stem"
+      },
+      {
+        "id": "3",
+        "parent": "root",
+        "ref": "3742.dat",
+        "kind": "part",
+        "embedded": false,
+        "section": "p04_flower_bed.ldr",
+        "index": 3,
+        "line": 14,
+        "colour": "14",
+        "effective_colour": "14",
+        "local": [
+          [
+            -0.9854901986,
+            -0.1663566157,
+            0.03368300629,
+            -50.37514908
+          ],
+          [
+            -0.1697323403,
+            0.9659296028,
+            -0.1953738344,
+            -49.62785921
+          ],
+          [
+            -3.3683006e-05,
+            -0.1982560944,
+            -0.9801502537,
+            11.47045066
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "world": [
+          [
+            -0.9854901986,
+            -0.1663566157,
+            0.03368300629,
+            -50.37514908
+          ],
+          [
+            -0.1697323403,
+            0.9659296028,
+            -0.1953738344,
+            -49.62785921
+          ],
+          [
+            -3.3683006e-05,
+            -0.1982560944,
+            -0.9801502537,
+            11.47045066
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "description": "Plant Flower"
+      },
+      {
+        "id": "4",
+        "parent": "root",
+        "ref": "3742.dat",
+        "kind": "part",
+        "embedded": false,
+        "section": "p04_flower_bed.ldr",
+        "index": 4,
+        "line": 16,
+        "colour": "4",
+        "effective_colour": "4",
+        "local": [
+          [
+            -0.9669088696,
+            0.2548637416,
+            -0.01147654741,
+            -76.02052611
+          ],
+          [
+            0.2551220057,
+            0.9659320739,
+            -0.0434510167,
+            -54.45786415
+          ],
+          [
+            1.1476547e-05,
+            -0.04494109323,
+            -0.9989896386,
+            2.824905193
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "world": [
+          [
+            -0.9669088696,
+            0.2548637416,
+            -0.01147654741,
+            -76.02052611
+          ],
+          [
+            0.2551220057,
+            0.9659320739,
+            -0.0434510167,
+            -54.45786415
+          ],
+          [
+            1.1476547e-05,
+            -0.04494109323,
+            -0.9989896386,
+            2.824905193
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "description": "Plant Flower"
+      },
+      {
+        "id": "5",
+        "parent": "root",
+        "ref": "3742.dat",
+        "kind": "part",
+        "embedded": false,
+        "section": "p04_flower_bed.ldr",
+        "index": 5,
+        "line": 18,
+        "colour": "14",
+        "effective_colour": "14",
+        "local": [
+          [
+            -0.9958271542,
+            -0.08851407498,
+            -0.02221570396,
+            -53.99322583
+          ],
+          [
+            -0.09125940214,
+            0.9659292103,
+            0.2421827453,
+            -59.28785842
+          ],
+          [
+            2.2215704e-05,
+            0.2431995459,
+            -0.9699762782,
+            -16.50281774
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "world": [
+          [
+            -0.9958271542,
+            -0.08851407498,
+            -0.02221570396,
+            -53.99322583
+          ],
+          [
+            -0.09125940214,
+            0.9659292103,
+            0.2421827453,
+            -59.28785842
+          ],
+          [
+            2.2215704e-05,
+            0.2431995459,
+            -0.9699762782,
+            -16.50281774
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "description": "Plant Flower"
+      },
+      {
+        "id": "6",
+        "parent": "root",
+        "ref": "3941.dat",
+        "kind": "part",
+        "embedded": false,
+        "section": "p04_flower_bed.ldr",
+        "index": 6,
+        "line": 20,
+        "colour": "70",
+        "effective_colour": "70",
+        "local": [
+          [
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            1.0,
+            0.0,
+            -24.0
+          ],
+          [
+            0.0,
+            0.0,
+            1.0,
+            -20.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "world": [
+          [
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            1.0,
+            0.0,
+            -24.0
+          ],
+          [
+            0.0,
+            0.0,
+            1.0,
+            -20.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "description": "Brick  2 x  2 Round without Reinforcement"
+      },
+      {
+        "id": "7",
+        "parent": "root",
+        "ref": "3741a.dat",
+        "kind": "part",
+        "embedded": false,
+        "section": "p04_flower_bed.ldr",
+        "index": 7,
+        "line": 22,
+        "colour": "2",
+        "effective_colour": "2",
+        "local": [
+          [
+            0.1736481777,
+            0.0,
+            0.984807753,
+            0.0
+          ],
+          [
+            0.0,
+            1.0,
+            0.0,
+            -32.0
+          ],
+          [
+            -0.984807753,
+            0.0,
+            0.1736481777,
+            -20.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "world": [
+          [
+            0.1736481777,
+            0.0,
+            0.984807753,
+            0.0
+          ],
+          [
+            0.0,
+            1.0,
+            0.0,
+            -32.0
+          ],
+          [
+            -0.984807753,
+            0.0,
+            0.1736481777,
+            -20.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "description": "Plant Flower Stem"
+      },
+      {
+        "id": "8",
+        "parent": "root",
+        "ref": "3742.dat",
+        "kind": "part",
+        "embedded": false,
+        "section": "p04_flower_bed.ldr",
+        "index": 8,
+        "line": 24,
+        "colour": "15",
+        "effective_colour": "15",
+        "local": [
+          [
+            -0.9669063922,
+            -0.254873122,
+            0.01147694799,
+            14.74612712
+          ],
+          [
+            -0.2551313946,
+            0.9659296028,
+            -0.04345082281,
+            -49.62785921
+          ],
+          [
+            -1.1476948e-05,
+            -0.04494100807,
+            -0.9989896424,
+            -17.39985993
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "world": [
+          [
+            -0.9669063922,
+            -0.254873122,
+            0.01147694799,
+            14.74612712
+          ],
+          [
+            -0.2551313946,
+            0.9659296028,
+            -0.04345082281,
+            -49.62785921
+          ],
+          [
+            -1.1476948e-05,
+            -0.04494100807,
+            -0.9989896424,
+            -17.39985993
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "description": "Plant Flower"
+      },
+      {
+        "id": "9",
+        "parent": "root",
+        "ref": "3742.dat",
+        "kind": "part",
+        "embedded": false,
+        "section": "p04_flower_bed.ldr",
+        "index": 9,
+        "line": 26,
+        "colour": "26",
+        "effective_colour": "26",
+        "local": [
+          [
+            -0.985491507,
+            0.1663493751,
+            -0.03368048553,
+            -10.45662095
+          ],
+          [
+            0.1697247435,
+            0.9659320739,
+            -0.1953682166,
+            -54.45786415
+          ],
+          [
+            3.3680486e-05,
+            -0.19825013,
+            -0.9801514601,
+            -7.538201388
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "world": [
+          [
+            -0.985491507,
+            0.1663493751,
+            -0.03368048553,
+            -10.45662095
+          ],
+          [
+            0.1697247435,
+            0.9659320739,
+            -0.1953682166,
+            -54.45786415
+          ],
+          [
+            3.3680486e-05,
+            -0.19825013,
+            -0.9801514601,
+            -7.538201388
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "description": "Plant Flower"
+      },
+      {
+        "id": "10",
+        "parent": "root",
+        "ref": "3742.dat",
+        "kind": "part",
+        "embedded": false,
+        "section": "p04_flower_bed.ldr",
+        "index": 10,
+        "line": 28,
+        "colour": "15",
+        "effective_colour": "15",
+        "local": [
+          [
+            -0.9958266047,
+            0.08851993953,
+            0.02221696859,
+            -6.0063508
+          ],
+          [
+            0.09126539812,
+            0.9659292103,
+            0.2421804858,
+            -59.28785842
+          ],
+          [
+            -2.2216969e-05,
+            0.2431974114,
+            -0.9699768134,
+            -36.50297184
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "world": [
+          [
+            -0.9958266047,
+            0.08851993953,
+            0.02221696859,
+            -6.0063508
+          ],
+          [
+            0.09126539812,
+            0.9659292103,
+            0.2421804858,
+            -59.28785842
+          ],
+          [
+            -2.2216969e-05,
+            0.2431974114,
+            -0.9699768134,
+            -36.50297184
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "description": "Plant Flower"
+      },
+      {
+        "id": "11",
+        "parent": "root",
+        "ref": "3941.dat",
+        "kind": "part",
+        "embedded": false,
+        "section": "p04_flower_bed.ldr",
+        "index": 11,
+        "line": 30,
+        "colour": "70",
+        "effective_colour": "70",
+        "local": [
+          [
+            1.0,
+            0.0,
+            0.0,
+            60.0
+          ],
+          [
+            0.0,
+            1.0,
+            0.0,
+            -24.0
+          ],
+          [
+            0.0,
+            0.0,
+            1.0,
+            20.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "world": [
+          [
+            1.0,
+            0.0,
+            0.0,
+            60.0
+          ],
+          [
+            0.0,
+            1.0,
+            0.0,
+            -24.0
+          ],
+          [
+            0.0,
+            0.0,
+            1.0,
+            20.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "description": "Brick  2 x  2 Round without Reinforcement"
+      },
+      {
+        "id": "12",
+        "parent": "root",
+        "ref": "3741a.dat",
+        "kind": "part",
+        "embedded": false,
+        "section": "p04_flower_bed.ldr",
+        "index": 12,
+        "line": 32,
+        "colour": "2",
+        "effective_colour": "2",
+        "local": [
+          [
+            -0.5,
+            0.0,
+            0.8660254038,
+            60.0
+          ],
+          [
+            0.0,
+            1.0,
+            0.0,
+            -32.0
+          ],
+          [
+            -0.8660254038,
+            0.0,
+            -0.5,
+            20.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "world": [
+          [
+            -0.5,
+            0.0,
+            0.8660254038,
+            60.0
+          ],
+          [
+            0.0,
+            1.0,
+            0.0,
+            -32.0
+          ],
+          [
+            -0.8660254038,
+            0.0,
+            -0.5,
+            20.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "description": "Plant Flower Stem"
+      },
+      {
+        "id": "13",
+        "parent": "root",
+        "ref": "3742.dat",
+        "kind": "part",
+        "embedded": false,
+        "section": "p04_flower_bed.ldr",
+        "index": 13,
+        "line": 34,
+        "colour": "4",
+        "effective_colour": "4",
+        "local": [
+          [
+            -0.9741189887,
+            -0.224131662,
+            -0.02927787589,
+            72.96752656
+          ],
+          [
+            -0.2260358269,
+            0.9659296028,
+            0.1260468463,
+            -49.62785921
+          ],
+          [
+            2.9277876e-05,
+            0.1294024754,
+            -0.9915921533,
+            12.51319505
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "world": [
+          [
+            -0.9741189887,
+            -0.224131662,
+            -0.02927787589,
+            72.96752656
+          ],
+          [
+            -0.2260358269,
+            0.9659296028,
+            0.1260468463,
+            -49.62785921
+          ],
+          [
+            2.9277876e-05,
+            0.1294024754,
+            -0.9915921533,
+            12.51319505
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "description": "Plant Flower"
+      },
+      {
+        "id": "14",
+        "parent": "root",
+        "ref": "3742.dat",
+        "kind": "part",
+        "embedded": false,
+        "section": "p04_flower_bed.ldr",
+        "index": 14,
+        "line": 36,
+        "colour": "14",
+        "effective_colour": "14",
+        "local": [
+          [
+            -1.0,
+            -1.712762e-06,
+            4.59365e-07,
+            60.00005337
+          ],
+          [
+            -1.773294e-06,
+            0.9659320739,
+            -0.2587957276,
+            -54.45786415
+          ],
+          [
+            0.0,
+            -0.2587957276,
+            -0.9659320739,
+            36.26767796
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "world": [
+          [
+            -1.0,
+            -1.712762e-06,
+            4.59365e-07,
+            60.00005337
+          ],
+          [
+            -1.773294e-06,
+            0.9659320739,
+            -0.2587957276,
+            -54.45786415
+          ],
+          [
+            0.0,
+            -0.2587957276,
+            -0.9659320739,
+            36.26767796
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "description": "Plant Flower"
+      },
+      {
+        "id": "15",
+        "parent": "root",
+        "ref": "3742.dat",
+        "kind": "part",
+        "embedded": false,
+        "section": "p04_flower_bed.ldr",
+        "index": 15,
+        "line": 38,
+        "colour": "29",
+        "effective_colour": "29",
+        "local": [
+          [
+            -0.9741183404,
+            0.2241344905,
+            0.02927779201,
+            44.79096253
+          ],
+          [
+            0.2260386208,
+            0.9659292103,
+            0.1260448433,
+            -59.28785842
+          ],
+          [
+            -2.9277792e-05,
+            0.1294005053,
+            -0.9915924104,
+            11.218798
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "world": [
+          [
+            -0.9741183404,
+            0.2241344905,
+            0.02927779201,
+            44.79096253
+          ],
+          [
+            0.2260386208,
+            0.9659292103,
+            0.1260448433,
+            -59.28785842
+          ],
+          [
+            -2.9277792e-05,
+            0.1294005053,
+            -0.9915924104,
+            11.218798
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "description": "Plant Flower"
+      }
+    ],
+    "diagnostics": [],
+    "coordinate_space": "selected section, LDU, -Y up"
+  },
+  "controls": {
+    "stem_1": {
+      "default": 0,
+      "min": -0.17,
+      "max": 0.17,
+      "unit": "radian",
+      "description": "Stem 1 at its pot (flex_approx); + leans it downwind (+X)"
+    },
+    "stem_2": {
+      "default": 0,
+      "min": -0.17,
+      "max": 0.17,
+      "unit": "radian",
+      "description": "Stem 2 at its pot (flex_approx); + leans it downwind (+X)"
+    },
+    "stem_3": {
+      "default": 0,
+      "min": -0.17,
+      "max": 0.17,
+      "unit": "radian",
+      "description": "Stem 3 at its pot (flex_approx); + leans it downwind (+X)"
+    },
+    "head_1a": {
+      "default": 0,
+      "min": -0.8,
+      "max": 0.8,
+      "unit": "radian",
+      "description": "Flower 1a on its pin (real); right-hand about the pin"
+    },
+    "head_1b": {
+      "default": 0,
+      "min": -0.8,
+      "max": 0.8,
+      "unit": "radian",
+      "description": "Flower 1b on its pin (real); right-hand about the pin"
+    },
+    "head_1c": {
+      "default": 0,
+      "min": -0.8,
+      "max": 0.8,
+      "unit": "radian",
+      "description": "Flower 1c on its pin (real); right-hand about the pin"
+    },
+    "head_2a": {
+      "default": 0,
+      "min": -0.8,
+      "max": 0.8,
+      "unit": "radian",
+      "description": "Flower 2a on its pin (real); right-hand about the pin"
+    },
+    "head_2b": {
+      "default": 0,
+      "min": -0.8,
+      "max": 0.8,
+      "unit": "radian",
+      "description": "Flower 2b on its pin (real); right-hand about the pin"
+    },
+    "head_2c": {
+      "default": 0,
+      "min": -0.8,
+      "max": 0.8,
+      "unit": "radian",
+      "description": "Flower 2c on its pin (real); right-hand about the pin"
+    },
+    "head_3a": {
+      "default": 0,
+      "min": -0.8,
+      "max": 0.8,
+      "unit": "radian",
+      "description": "Flower 3a on its pin (real); right-hand about the pin"
+    },
+    "head_3b": {
+      "default": 0,
+      "min": -0.8,
+      "max": 0.8,
+      "unit": "radian",
+      "description": "Flower 3b on its pin (real); right-hand about the pin"
+    },
+    "head_3c": {
+      "default": 0,
+      "min": -0.8,
+      "max": 0.8,
+      "unit": "radian",
+      "description": "Flower 3c on its pin (real); right-hand about the pin"
+    }
+  },
+  "signals": {
+    "stem_1_angle": {
+      "expression": "a",
+      "variables": {
+        "a": "control:stem_1"
+      }
+    },
+    "head_1a_angle": {
+      "expression": "a",
+      "variables": {
+        "a": "control:head_1a"
+      }
+    },
+    "head_1b_angle": {
+      "expression": "a",
+      "variables": {
+        "a": "control:head_1b"
+      }
+    },
+    "head_1c_angle": {
+      "expression": "a",
+      "variables": {
+        "a": "control:head_1c"
+      }
+    },
+    "stem_2_angle": {
+      "expression": "a",
+      "variables": {
+        "a": "control:stem_2"
+      }
+    },
+    "head_2a_angle": {
+      "expression": "a",
+      "variables": {
+        "a": "control:head_2a"
+      }
+    },
+    "head_2b_angle": {
+      "expression": "a",
+      "variables": {
+        "a": "control:head_2b"
+      }
+    },
+    "head_2c_angle": {
+      "expression": "a",
+      "variables": {
+        "a": "control:head_2c"
+      }
+    },
+    "stem_3_angle": {
+      "expression": "a",
+      "variables": {
+        "a": "control:stem_3"
+      }
+    },
+    "head_3a_angle": {
+      "expression": "a",
+      "variables": {
+        "a": "control:head_3a"
+      }
+    },
+    "head_3b_angle": {
+      "expression": "a",
+      "variables": {
+        "a": "control:head_3b"
+      }
+    },
+    "head_3c_angle": {
+      "expression": "a",
+      "variables": {
+        "a": "control:head_3c"
+      }
+    }
+  },
+  "bodies": {
+    "stem_1": {
+      "instances": [
+        "2"
+      ],
+      "kind": "revolute",
+      "origin": [
+        -60.0,
+        -24.0,
+        0.0
+      ],
+      "axis": [
+        0.0,
+        0.0,
+        1.0
+      ],
+      "signal": "stem_1_angle"
+    },
+    "head_1a": {
+      "instances": [
+        "3"
+      ],
+      "kind": "revolute",
+      "origin": [
+        -50.707862,
+        -47.696,
+        11.073938
+      ],
+      "axis": [
+        0.166357,
+        -0.96593,
+        0.198256
+      ],
+      "signal": "head_1a_angle",
+      "parent": "stem_1"
+    },
+    "head_1b": {
+      "instances": [
+        "4"
+      ],
+      "kind": "revolute",
+      "origin": [
+        -75.510799,
+        -52.526,
+        2.735023
+      ],
+      "axis": [
+        -0.254864,
+        -0.965932,
+        0.044941
+      ],
+      "signal": "head_1b_angle",
+      "parent": "stem_1"
+    },
+    "head_1c": {
+      "instances": [
+        "5"
+      ],
+      "kind": "revolute",
+      "origin": [
+        -54.170254,
+        -57.356,
+        -16.016419
+      ],
+      "axis": [
+        0.088514,
+        -0.965929,
+        -0.2432
+      ],
+      "signal": "head_1c_angle",
+      "parent": "stem_1"
+    },
+    "stem_2": {
+      "instances": [
+        "7"
+      ],
+      "kind": "revolute",
+      "origin": [
+        0.0,
+        -24.0,
+        -20.0
+      ],
+      "axis": [
+        0.0,
+        0.0,
+        1.0
+      ],
+      "signal": "stem_2_angle"
+    },
+    "head_2a": {
+      "instances": [
+        "8"
+      ],
+      "kind": "revolute",
+      "origin": [
+        14.236381,
+        -47.696,
+        -17.489742
+      ],
+      "axis": [
+        0.254873,
+        -0.96593,
+        0.044941
+      ],
+      "signal": "head_2a_angle",
+      "parent": "stem_2"
+    },
+    "head_2b": {
+      "instances": [
+        "9"
+      ],
+      "kind": "revolute",
+      "origin": [
+        -10.123922,
+        -52.526,
+        -7.934702
+      ],
+      "axis": [
+        -0.166349,
+        -0.965932,
+        0.19825
+      ],
+      "signal": "head_2b_angle",
+      "parent": "stem_2"
+    },
+    "head_2c": {
+      "instances": [
+        "10"
+      ],
+      "kind": "revolute",
+      "origin": [
+        -5.829311,
+        -57.356,
+        -36.016577
+      ],
+      "axis": [
+        -0.08852,
+        -0.965929,
+        -0.243197
+      ],
+      "signal": "head_2c_angle",
+      "parent": "stem_2"
+    },
+    "stem_3": {
+      "instances": [
+        "12"
+      ],
+      "kind": "revolute",
+      "origin": [
+        60.0,
+        -24.0,
+        20.0
+      ],
+      "axis": [
+        0.0,
+        0.0,
+        1.0
+      ],
+      "signal": "stem_3_angle"
+    },
+    "head_3a": {
+      "instances": [
+        "13"
+      ],
+      "kind": "revolute",
+      "origin": [
+        72.519263,
+        -47.696,
+        12.772
+      ],
+      "axis": [
+        0.224132,
+        -0.96593,
+        -0.129402
+      ],
+      "signal": "head_3a_angle",
+      "parent": "stem_3"
+    },
+    "head_3b": {
+      "instances": [
+        "14"
+      ],
+      "kind": "revolute",
+      "origin": [
+        60.00005,
+        -52.526,
+        35.750087
+      ],
+      "axis": [
+        2e-06,
+        -0.965932,
+        0.258796
+      ],
+      "signal": "head_3b_angle",
+      "parent": "stem_3"
+    },
+    "head_3c": {
+      "instances": [
+        "15"
+      ],
+      "kind": "revolute",
+      "origin": [
+        45.239232,
+        -57.356,
+        11.477599
+      ],
+      "axis": [
+        -0.224134,
+        -0.965929,
+        -0.129401
+      ],
+      "signal": "head_3c_angle",
+      "parent": "stem_3"
+    }
+  },
+  "anchors": {},
+  "checks": [],
+  "notes": [
+    "Plant wind case P04_flower_bed (Flower bed) written by scripts/build_plants.py: Three 3741a flower stems with nine 3742 flowers in round-brick pots. Parts picked by constant name from data/categories/parts; frame LDU, -Y up, the case front faces -Z, ground (base top) at y = 0. The wind blows toward +X.",
+    "Joints: stem_1: flex_approx revolute about [0.0, 0.0, 1.0] through [-60.0, -24.0, 0.0] (flex_approx: the stem is a single rigid part on its stud; the tilt stands in for its thin stems bending. 3741a stem on the 2x2 round brick (official 10037 mount)); head_1a: real revolute about [0.166357, -0.96593, 0.198256] through [-50.707862, -47.696, 11.073938] (real: 3742 on the 3741a flower pin (R2 pin in the flower's hole); spins about the pin); head_1b: real revolute about [-0.254864, -0.965932, 0.044941] through [-75.510799, -52.526, 2.735023] (real: 3742 on the 3741a flower pin (R2 pin in the flower's hole); spins about the pin); head_1c: real revolute about [0.088514, -0.965929, -0.2432] through [-54.170254, -57.356, -16.016419] (real: 3742 on the 3741a flower pin (R2 pin in the flower's hole); spins about the pin); stem_2: flex_approx revolute about [0.0, 0.0, 1.0] through [0.0, -24.0, -20.0] (flex_approx: the stem is a single rigid part on its stud; the tilt stands in for its thin stems bending. 3741a stem on the 2x2 round brick (official 10037 mount)); head_2a: real revolute about [0.254873, -0.96593, 0.044941] through [14.236381, -47.696, -17.489742] (real: 3742 on the 3741a flower pin (R2 pin in the flower's hole); spins about the pin); head_2b: real revolute about [-0.166349, -0.965932, 0.19825] through [-10.123922, -52.526, -7.934702] (real: 3742 on the 3741a flower pin (R2 pin in the flower's hole); spins about the pin); head_2c: real revolute about [-0.08852, -0.965929, -0.243197] through [-5.829311, -57.356, -36.016577] (real: 3742 on the 3741a flower pin (R2 pin in the flower's hole); spins about the pin); stem_3: flex_approx revolute about [0.0, 0.0, 1.0] through [60.0, -24.0, 20.0] (flex_approx: the stem is a single rigid part on its stud; the tilt stands in for its thin stems bending. 3741a stem on the 2x2 round brick (official 10037 mount)); head_3a: real revolute about [0.224132, -0.96593, -0.129402] through [72.519263, -47.696, 12.772] (real: 3742 on the 3741a flower pin (R2 pin in the flower's hole); spins about the pin); head_3b: real revolute about [2e-06, -0.965932, 0.258796] through [60.00005, -52.526, 35.750087] (real: 3742 on the 3741a flower pin (R2 pin in the flower's hole); spins about the pin); head_3c: real revolute about [-0.224134, -0.965929, -0.129401] through [45.239232, -57.356, 11.477599] (real: 3742 on the 3741a flower pin (R2 pin in the flower's hole); spins about the pin).",
+    "Real LEGO freedoms: head_1a, head_1b, head_1c, head_2a, head_2b, head_2c, head_3a, head_3b, head_3c. flex_approx joints (rigid tilt standing in for bending plastic, range <= 0.17 rad): stem_1, stem_2, stem_3.",
+    "Sign convention by meaning (checked with the evaluator, kinematics.json): stem_1 + = Stem 1 at its pot (flex_approx); + leans it downwind (+X); stem_2 + = Stem 2 at its pot (flex_approx); + leans it downwind (+X); stem_3 + = Stem 3 at its pot (flex_approx); + leans it downwind (+X); head_1a + = Flower 1a on its pin (real); right-hand about the pin; head_1b + = Flower 1b on its pin (real); right-hand about the pin; head_1c + = Flower 1c on its pin (real); right-hand about the pin; head_2a + = Flower 2a on its pin (real); right-hand about the pin; head_2b + = Flower 2b on its pin (real); right-hand about the pin; head_2c + = Flower 2c on its pin (real); right-hand about the pin; head_3a + = Flower 3a on its pin (real); right-hand about the pin; head_3b + = Flower 3b on its pin (real); right-hand about the pin; head_3c + = Flower 3c on its pin (real); right-hand about the pin.",
+    "Motion comes from wind clips (scripts/wind_clips.py): a damped-response approximation, not aerodynamics. Ranges are catalog choices narrowed by sampled clearance (scripts/blender/check_plants_clearance.py), not measured stops. Kinematic and transform checks do not prove collision-free or physically feasible motion."
+  ],
+  "mechanisms": {
+    "stem_1": {
+      "label": "Flower bed: stem 1",
+      "parts": [
+        "1",
+        "2"
+      ],
+      "bodies": [
+        "stem_1"
+      ],
+      "inputs": [
+        "control:stem_1"
+      ],
+      "outputs": [
+        "body:stem_1"
+      ],
+      "disposition": "planned",
+      "notes": [
+        "flex_approx revolute joint: flex_approx: the stem is a single rigid part on its stud; the tilt stands in for its thin stems bending. 3741a stem on the 2x2 round brick (official 10037 mount)"
+      ],
+      "review": "Joint declared in this plan (scripts/build_plants.py); driven by wind clips."
+    },
+    "head_1a": {
+      "label": "Flower bed: head 1a",
+      "parts": [
+        "2",
+        "3"
+      ],
+      "bodies": [
+        "head_1a"
+      ],
+      "inputs": [
+        "control:head_1a"
+      ],
+      "outputs": [
+        "body:head_1a"
+      ],
+      "disposition": "planned",
+      "notes": [
+        "real revolute joint: real: 3742 on the 3741a flower pin (R2 pin in the flower's hole); spins about the pin"
+      ],
+      "review": "Joint declared in this plan (scripts/build_plants.py); driven by wind clips."
+    },
+    "head_1b": {
+      "label": "Flower bed: head 1b",
+      "parts": [
+        "2",
+        "4"
+      ],
+      "bodies": [
+        "head_1b"
+      ],
+      "inputs": [
+        "control:head_1b"
+      ],
+      "outputs": [
+        "body:head_1b"
+      ],
+      "disposition": "planned",
+      "notes": [
+        "real revolute joint: real: 3742 on the 3741a flower pin (R2 pin in the flower's hole); spins about the pin"
+      ],
+      "review": "Joint declared in this plan (scripts/build_plants.py); driven by wind clips."
+    },
+    "head_1c": {
+      "label": "Flower bed: head 1c",
+      "parts": [
+        "2",
+        "5"
+      ],
+      "bodies": [
+        "head_1c"
+      ],
+      "inputs": [
+        "control:head_1c"
+      ],
+      "outputs": [
+        "body:head_1c"
+      ],
+      "disposition": "planned",
+      "notes": [
+        "real revolute joint: real: 3742 on the 3741a flower pin (R2 pin in the flower's hole); spins about the pin"
+      ],
+      "review": "Joint declared in this plan (scripts/build_plants.py); driven by wind clips."
+    },
+    "stem_2": {
+      "label": "Flower bed: stem 2",
+      "parts": [
+        "6",
+        "7"
+      ],
+      "bodies": [
+        "stem_2"
+      ],
+      "inputs": [
+        "control:stem_2"
+      ],
+      "outputs": [
+        "body:stem_2"
+      ],
+      "disposition": "planned",
+      "notes": [
+        "flex_approx revolute joint: flex_approx: the stem is a single rigid part on its stud; the tilt stands in for its thin stems bending. 3741a stem on the 2x2 round brick (official 10037 mount)"
+      ],
+      "review": "Joint declared in this plan (scripts/build_plants.py); driven by wind clips."
+    },
+    "head_2a": {
+      "label": "Flower bed: head 2a",
+      "parts": [
+        "7",
+        "8"
+      ],
+      "bodies": [
+        "head_2a"
+      ],
+      "inputs": [
+        "control:head_2a"
+      ],
+      "outputs": [
+        "body:head_2a"
+      ],
+      "disposition": "planned",
+      "notes": [
+        "real revolute joint: real: 3742 on the 3741a flower pin (R2 pin in the flower's hole); spins about the pin"
+      ],
+      "review": "Joint declared in this plan (scripts/build_plants.py); driven by wind clips."
+    },
+    "head_2b": {
+      "label": "Flower bed: head 2b",
+      "parts": [
+        "7",
+        "9"
+      ],
+      "bodies": [
+        "head_2b"
+      ],
+      "inputs": [
+        "control:head_2b"
+      ],
+      "outputs": [
+        "body:head_2b"
+      ],
+      "disposition": "planned",
+      "notes": [
+        "real revolute joint: real: 3742 on the 3741a flower pin (R2 pin in the flower's hole); spins about the pin"
+      ],
+      "review": "Joint declared in this plan (scripts/build_plants.py); driven by wind clips."
+    },
+    "head_2c": {
+      "label": "Flower bed: head 2c",
+      "parts": [
+        "7",
+        "10"
+      ],
+      "bodies": [
+        "head_2c"
+      ],
+      "inputs": [
+        "control:head_2c"
+      ],
+      "outputs": [
+        "body:head_2c"
+      ],
+      "disposition": "planned",
+      "notes": [
+        "real revolute joint: real: 3742 on the 3741a flower pin (R2 pin in the flower's hole); spins about the pin"
+      ],
+      "review": "Joint declared in this plan (scripts/build_plants.py); driven by wind clips."
+    },
+    "stem_3": {
+      "label": "Flower bed: stem 3",
+      "parts": [
+        "11",
+        "12"
+      ],
+      "bodies": [
+        "stem_3"
+      ],
+      "inputs": [
+        "control:stem_3"
+      ],
+      "outputs": [
+        "body:stem_3"
+      ],
+      "disposition": "planned",
+      "notes": [
+        "flex_approx revolute joint: flex_approx: the stem is a single rigid part on its stud; the tilt stands in for its thin stems bending. 3741a stem on the 2x2 round brick (official 10037 mount)"
+      ],
+      "review": "Joint declared in this plan (scripts/build_plants.py); driven by wind clips."
+    },
+    "head_3a": {
+      "label": "Flower bed: head 3a",
+      "parts": [
+        "12",
+        "13"
+      ],
+      "bodies": [
+        "head_3a"
+      ],
+      "inputs": [
+        "control:head_3a"
+      ],
+      "outputs": [
+        "body:head_3a"
+      ],
+      "disposition": "planned",
+      "notes": [
+        "real revolute joint: real: 3742 on the 3741a flower pin (R2 pin in the flower's hole); spins about the pin"
+      ],
+      "review": "Joint declared in this plan (scripts/build_plants.py); driven by wind clips."
+    },
+    "head_3b": {
+      "label": "Flower bed: head 3b",
+      "parts": [
+        "12",
+        "14"
+      ],
+      "bodies": [
+        "head_3b"
+      ],
+      "inputs": [
+        "control:head_3b"
+      ],
+      "outputs": [
+        "body:head_3b"
+      ],
+      "disposition": "planned",
+      "notes": [
+        "real revolute joint: real: 3742 on the 3741a flower pin (R2 pin in the flower's hole); spins about the pin"
+      ],
+      "review": "Joint declared in this plan (scripts/build_plants.py); driven by wind clips."
+    },
+    "head_3c": {
+      "label": "Flower bed: head 3c",
+      "parts": [
+        "12",
+        "15"
+      ],
+      "bodies": [
+        "head_3c"
+      ],
+      "inputs": [
+        "control:head_3c"
+      ],
+      "outputs": [
+        "body:head_3c"
+      ],
+      "disposition": "planned",
+      "notes": [
+        "real revolute joint: real: 3742 on the 3741a flower pin (R2 pin in the flower's hole); spins about the pin"
+      ],
+      "review": "Joint declared in this plan (scripts/build_plants.py); driven by wind clips."
+    },
+    "context": {
+      "label": "Flower bed: base and mounts (static)",
+      "parts": [
+        "0",
+        "1",
+        "6",
+        "11"
+      ],
+      "bodies": [],
+      "inputs": [],
+      "outputs": [],
+      "disposition": "static",
+      "notes": [],
+      "review": "Base, trunk and mounts built for the catalog; they do not move in this case."
+    }
+  },
+  "connections": {
+    "joint_stem_1": {
+      "a": "1",
+      "b": "2",
+      "kind": "revolute",
+      "status": "reviewed",
+      "evidence": "flex_approx: the stem is a single rigid part on its stud; the tilt stands in for its thin stems bending. 3741a stem on the 2x2 round brick (official 10037 mount). not detected by pyldraw3 contacts (no pairing connector kinds, or a placement it does not support); placement from the named source.",
+      "measurements": {
+        "origin": [
+          -60.0,
+          -24.0,
+          0.0
+        ],
+        "axis": [
+          0.0,
+          0.0,
+          1.0
+        ]
+      },
+      "review": "Joint frame measured as stated (scripts/build_plants.py); flex_approx: not a real LEGO freedom."
+    },
+    "joint_head_1a": {
+      "a": "2",
+      "b": "3",
+      "kind": "revolute",
+      "status": "reviewed",
+      "evidence": "real: 3742 on the 3741a flower pin (R2 pin in the flower's hole); spins about the pin. pyldraw3 contact confirmed (pin/pin_hole).",
+      "measurements": {
+        "origin": [
+          -50.707862,
+          -47.696,
+          11.073938
+        ],
+        "axis": [
+          0.166357,
+          -0.96593,
+          0.198256
+        ]
+      },
+      "review": "Joint frame measured as stated (scripts/build_plants.py); real LEGO freedom."
+    },
+    "joint_head_1b": {
+      "a": "2",
+      "b": "4",
+      "kind": "revolute",
+      "status": "reviewed",
+      "evidence": "real: 3742 on the 3741a flower pin (R2 pin in the flower's hole); spins about the pin. pyldraw3 contact confirmed (pin/pin_hole).",
+      "measurements": {
+        "origin": [
+          -75.510799,
+          -52.526,
+          2.735023
+        ],
+        "axis": [
+          -0.254864,
+          -0.965932,
+          0.044941
+        ]
+      },
+      "review": "Joint frame measured as stated (scripts/build_plants.py); real LEGO freedom."
+    },
+    "joint_head_1c": {
+      "a": "2",
+      "b": "5",
+      "kind": "revolute",
+      "status": "reviewed",
+      "evidence": "real: 3742 on the 3741a flower pin (R2 pin in the flower's hole); spins about the pin. pyldraw3 contact confirmed (pin/pin_hole).",
+      "measurements": {
+        "origin": [
+          -54.170254,
+          -57.356,
+          -16.016419
+        ],
+        "axis": [
+          0.088514,
+          -0.965929,
+          -0.2432
+        ]
+      },
+      "review": "Joint frame measured as stated (scripts/build_plants.py); real LEGO freedom."
+    },
+    "joint_stem_2": {
+      "a": "6",
+      "b": "7",
+      "kind": "revolute",
+      "status": "reviewed",
+      "evidence": "flex_approx: the stem is a single rigid part on its stud; the tilt stands in for its thin stems bending. 3741a stem on the 2x2 round brick (official 10037 mount). not detected by pyldraw3 contacts (no pairing connector kinds, or a placement it does not support); placement from the named source.",
+      "measurements": {
+        "origin": [
+          0.0,
+          -24.0,
+          -20.0
+        ],
+        "axis": [
+          0.0,
+          0.0,
+          1.0
+        ]
+      },
+      "review": "Joint frame measured as stated (scripts/build_plants.py); flex_approx: not a real LEGO freedom."
+    },
+    "joint_head_2a": {
+      "a": "7",
+      "b": "8",
+      "kind": "revolute",
+      "status": "reviewed",
+      "evidence": "real: 3742 on the 3741a flower pin (R2 pin in the flower's hole); spins about the pin. pyldraw3 contact confirmed (pin/pin_hole).",
+      "measurements": {
+        "origin": [
+          14.236381,
+          -47.696,
+          -17.489742
+        ],
+        "axis": [
+          0.254873,
+          -0.96593,
+          0.044941
+        ]
+      },
+      "review": "Joint frame measured as stated (scripts/build_plants.py); real LEGO freedom."
+    },
+    "joint_head_2b": {
+      "a": "7",
+      "b": "9",
+      "kind": "revolute",
+      "status": "reviewed",
+      "evidence": "real: 3742 on the 3741a flower pin (R2 pin in the flower's hole); spins about the pin. pyldraw3 contact confirmed (pin/pin_hole).",
+      "measurements": {
+        "origin": [
+          -10.123922,
+          -52.526,
+          -7.934702
+        ],
+        "axis": [
+          -0.166349,
+          -0.965932,
+          0.19825
+        ]
+      },
+      "review": "Joint frame measured as stated (scripts/build_plants.py); real LEGO freedom."
+    },
+    "joint_head_2c": {
+      "a": "7",
+      "b": "10",
+      "kind": "revolute",
+      "status": "reviewed",
+      "evidence": "real: 3742 on the 3741a flower pin (R2 pin in the flower's hole); spins about the pin. pyldraw3 contact confirmed (pin/pin_hole).",
+      "measurements": {
+        "origin": [
+          -5.829311,
+          -57.356,
+          -36.016577
+        ],
+        "axis": [
+          -0.08852,
+          -0.965929,
+          -0.243197
+        ]
+      },
+      "review": "Joint frame measured as stated (scripts/build_plants.py); real LEGO freedom."
+    },
+    "joint_stem_3": {
+      "a": "11",
+      "b": "12",
+      "kind": "revolute",
+      "status": "reviewed",
+      "evidence": "flex_approx: the stem is a single rigid part on its stud; the tilt stands in for its thin stems bending. 3741a stem on the 2x2 round brick (official 10037 mount). not detected by pyldraw3 contacts (no pairing connector kinds, or a placement it does not support); placement from the named source.",
+      "measurements": {
+        "origin": [
+          60.0,
+          -24.0,
+          20.0
+        ],
+        "axis": [
+          0.0,
+          0.0,
+          1.0
+        ]
+      },
+      "review": "Joint frame measured as stated (scripts/build_plants.py); flex_approx: not a real LEGO freedom."
+    },
+    "joint_head_3a": {
+      "a": "12",
+      "b": "13",
+      "kind": "revolute",
+      "status": "reviewed",
+      "evidence": "real: 3742 on the 3741a flower pin (R2 pin in the flower's hole); spins about the pin. pyldraw3 contact confirmed (pin/pin_hole).",
+      "measurements": {
+        "origin": [
+          72.519263,
+          -47.696,
+          12.772
+        ],
+        "axis": [
+          0.224132,
+          -0.96593,
+          -0.129402
+        ]
+      },
+      "review": "Joint frame measured as stated (scripts/build_plants.py); real LEGO freedom."
+    },
+    "joint_head_3b": {
+      "a": "12",
+      "b": "14",
+      "kind": "revolute",
+      "status": "reviewed",
+      "evidence": "real: 3742 on the 3741a flower pin (R2 pin in the flower's hole); spins about the pin. pyldraw3 contact confirmed (pin/pin_hole).",
+      "measurements": {
+        "origin": [
+          60.00005,
+          -52.526,
+          35.750087
+        ],
+        "axis": [
+          2e-06,
+          -0.965932,
+          0.258796
+        ]
+      },
+      "review": "Joint frame measured as stated (scripts/build_plants.py); real LEGO freedom."
+    },
+    "joint_head_3c": {
+      "a": "12",
+      "b": "15",
+      "kind": "revolute",
+      "status": "reviewed",
+      "evidence": "real: 3742 on the 3741a flower pin (R2 pin in the flower's hole); spins about the pin. pyldraw3 contact confirmed (pin/pin_hole).",
+      "measurements": {
+        "origin": [
+          45.239232,
+          -57.356,
+          11.477599
+        ],
+        "axis": [
+          -0.224134,
+          -0.965929,
+          -0.129401
+        ]
+      },
+      "review": "Joint frame measured as stated (scripts/build_plants.py); real LEGO freedom."
+    }
+  },
+  "discovery": {
+    "grouping": "Provisional connected mechanical candidates; agent may split/merge views",
+    "unclassified_parts": [
+      "0",
+      "1",
+      "10",
+      "11",
+      "12",
+      "13",
+      "14",
+      "15",
+      "2",
+      "3",
+      "4",
+      "5",
+      "6",
+      "7",
+      "8",
+      "9"
+    ],
+    "embedded_parts": [],
+    "contact_limit": 300,
+    "rigid_groups": "not inferred",
+    "inputs_outputs": "not inferred",
+    "mechanical_parts": [],
+    "warnings": [
+      {
+        "code": "incomplete_inspection",
+        "message": "pyldraw3 inspection is incomplete; inspect its diagnostics."
+      },
+      {
+        "code": "coaxial_not_run",
+        "message": "not run: 0 shaft/gear candidates outside 2..100; select a section"
+      }
+    ],
+    "surface_contacts": "Not detected: cams, levers bearing on beams, friction and stops need geometric/visual review even when connector contacts are absent",
+    "unsupported_gears": [],
+    "gear_placements": {
+      "policy": "Nearest orthogonal analysis frame within rounding_limit; source translations and handedness preserved",
+      "rounding_limit": 0.002,
+      "counts": {},
+      "affected": []
+    },
+    "contacts": {
+      "complete": false,
+      "tested_parts": 16,
+      "diagnostics": [
+        {
+          "code": "connection.invalid_transform",
+          "message": "connection feature 'studC' from /Users/captain/workspaces/workspace-ai/ldraw-mecha/data/offLibShadow/p/stud.dat:8 rejected under invalid scale or reflection",
+          "severity": "warning",
+          "path": "/Users/captain/workspaces/workspace-ai/ldraw-mecha/data/offLibShadow/p/stud.dat",
+          "section": null,
+          "line_number": 8,
+          "offending_value": "studC",
+          "suggestions": [],
+          "cause": null
+        }
+      ],
+      "summary": {
+        "tested_parts": 16,
+        "contacts": 9,
+        "contacted_parts": 12,
+        "by_kind": {
+          "pin/pin_hole": 9
+        },
+        "axles": {
+          "selection": "Catalog descriptions beginning Technic Axle followed by a numeric length; excludes axle pins, joiners and axle-hole supports",
+          "total": 0,
+          "with_axle_hole_contact": 0,
+          "without_axle_hole_contact": []
+        }
+      },
+      "placements": {
+        "policy": "Nearest orthogonal analysis frame within rounding_limit; source translations and handedness preserved",
+        "rounding_limit": 0.002,
+        "counts": {
+          "unchanged": 16
+        },
+        "affected": []
+      }
+    },
+    "coaxial_selection": "Catalog axle, gear, worm and engine crankshaft parts; positive line evidence within 80 LDU axial separation",
+    "coaxial": "not run: 0 shaft/gear candidates outside 2..100; select a section",
+    "isolated_mechanical_parts": []
+  }
+}

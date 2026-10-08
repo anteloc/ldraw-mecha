@@ -1,0 +1,176 @@
+{
+  "semantics": {
+    "door_l": {
+      "control": "door_l",
+      "value": 0.2,
+      "test_point": [
+        15.0,
+        -14.0,
+        -30.0
+      ],
+      "displacement": [
+        -0.897004,
+        0.0,
+        -8.94012
+      ],
+      "expected": "-z",
+      "flipped": true
+    },
+    "door_r": {
+      "control": "door_r",
+      "value": 0.2,
+      "test_point": [
+        15.0,
+        -14.0,
+        30.0
+      ],
+      "displacement": [
+        -0.897004,
+        0.0,
+        8.94012
+      ],
+      "expected": "+z",
+      "flipped": false
+    }
+  },
+  "contacts": {
+    "tested_parts": 19,
+    "contacts": 40,
+    "contacted_parts": 14,
+    "by_kind": {
+      "stud/stud_receptacle": 20,
+      "pin/pin_hole": 16,
+      "rim_seat/tyre_bead": 4
+    },
+    "axles": {
+      "selection": "Catalog descriptions beginning Technic Axle followed by a numeric length; excludes axle pins, joiners and axle-hole supports",
+      "total": 0,
+      "with_axle_hole_contact": 0,
+      "without_axle_hole_contact": []
+    }
+  },
+  "contact_pairs": {
+    "0-11": [
+      "stud/stud_receptacle",
+      "stud/stud_receptacle",
+      "stud/stud_receptacle",
+      "stud/stud_receptacle",
+      "stud/stud_receptacle",
+      "stud/stud_receptacle",
+      "stud/stud_receptacle",
+      "stud/stud_receptacle"
+    ],
+    "0-16": [
+      "stud/stud_receptacle",
+      "stud/stud_receptacle",
+      "stud/stud_receptacle",
+      "stud/stud_receptacle",
+      "stud/stud_receptacle",
+      "stud/stud_receptacle",
+      "stud/stud_receptacle",
+      "stud/stud_receptacle"
+    ],
+    "0-18": [
+      "stud/stud_receptacle",
+      "stud/stud_receptacle",
+      "stud/stud_receptacle",
+      "stud/stud_receptacle"
+    ],
+    "1-2": [
+      "pin/pin_hole",
+      "pin/pin_hole",
+      "pin/pin_hole",
+      "pin/pin_hole"
+    ],
+    "1-4": [
+      "pin/pin_hole",
+      "pin/pin_hole",
+      "pin/pin_hole",
+      "pin/pin_hole"
+    ],
+    "2-3": [
+      "rim_seat/tyre_bead"
+    ],
+    "4-5": [
+      "rim_seat/tyre_bead"
+    ],
+    "6-7": [
+      "pin/pin_hole",
+      "pin/pin_hole",
+      "pin/pin_hole",
+      "pin/pin_hole"
+    ],
+    "6-9": [
+      "pin/pin_hole",
+      "pin/pin_hole",
+      "pin/pin_hole",
+      "pin/pin_hole"
+    ],
+    "7-8": [
+      "rim_seat/tyre_bead"
+    ],
+    "9-10": [
+      "rim_seat/tyre_bead"
+    ]
+  },
+  "asymmetric_sample": {
+    "controls": {
+      "door_l": 0.819,
+      "door_r": 0.481
+    },
+    "transforms": {
+      "door_l": [
+        [
+          0.682952,
+          0.0,
+          0.730463,
+          12.402458
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          -0.730463,
+          0.0,
+          0.682952,
+          -31.425337
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "door_r": [
+        [
+          0.886533,
+          0.0,
+          -0.462666,
+          10.475959
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.462666,
+          0.0,
+          0.886533,
+          17.283997
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ]
+    }
+  }
+}

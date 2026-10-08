@@ -1,0 +1,690 @@
+{
+  "case": "P03_bamboo",
+  "title": "Bamboo clump",
+  "parts": [
+    {
+      "role": "base",
+      "id": "0",
+      "table": "plates.Plate6X6",
+      "ref": "3958",
+      "colour": 2,
+      "title": "Plate  6 x  6",
+      "library_only": false
+    },
+    {
+      "role": "riser1",
+      "id": "1",
+      "table": "plates.Plate1X2",
+      "ref": "3023b",
+      "colour": 288,
+      "title": "Plate  1 x  2",
+      "library_only": false
+    },
+    {
+      "role": "socket1",
+      "id": "2",
+      "table": "hinges.Plate1X2WithSocketJoint_8WithFriction",
+      "ref": "14418",
+      "colour": 72,
+      "title": "Plate  1 x  2 with Socket Joint-8 with Friction",
+      "library_only": false
+    },
+    {
+      "role": "riser2",
+      "id": "3",
+      "table": "plates.Plate1X2",
+      "ref": "3023b",
+      "colour": 288,
+      "title": "Plate  1 x  2",
+      "library_only": false
+    },
+    {
+      "role": "socket2",
+      "id": "4",
+      "table": "hinges.Plate1X2WithSocketJoint_8WithFriction",
+      "ref": "14418",
+      "colour": 72,
+      "title": "Plate  1 x  2 with Socket Joint-8 with Friction",
+      "library_only": false
+    },
+    {
+      "role": "riser3",
+      "id": "5",
+      "table": "plates.Plate1X2",
+      "ref": "3023b",
+      "colour": 288,
+      "title": "Plate  1 x  2",
+      "library_only": false
+    },
+    {
+      "role": "socket3",
+      "id": "6",
+      "table": "hinges.Plate1X2WithSocketJoint_8WithFriction",
+      "ref": "14418",
+      "colour": 72,
+      "title": "Plate  1 x  2 with Socket Joint-8 with Friction",
+      "library_only": false
+    },
+    {
+      "role": "riser4",
+      "id": "7",
+      "table": "plates.Plate1X2",
+      "ref": "3023b",
+      "colour": 288,
+      "title": "Plate  1 x  2",
+      "library_only": false
+    },
+    {
+      "role": "socket4",
+      "id": "8",
+      "table": "hinges.Plate1X2WithSocketJoint_8WithFriction",
+      "ref": "14418",
+      "colour": 72,
+      "title": "Plate  1 x  2 with Socket Joint-8 with Friction",
+      "library_only": false
+    },
+    {
+      "role": "cane1_85861_0",
+      "id": "9",
+      "table": "plates.Plate1X1RoundWithOpenStud",
+      "ref": "85861",
+      "colour": 27,
+      "title": "Plate  1 x  1 Round with Open Stud",
+      "library_only": false
+    },
+    {
+      "role": "cane1_59900_1",
+      "id": "10",
+      "table": "cones.Cone1X1WithStop",
+      "ref": "59900",
+      "colour": 10,
+      "title": "Cone  1 x  1 with Stop",
+      "library_only": false
+    },
+    {
+      "role": "cane1_37762_2",
+      "id": "11",
+      "table": "cylinders.Cylinder1X1_333With0_5LBarAndBarHole",
+      "ref": "37762",
+      "colour": 10,
+      "title": "Cylinder  1 x  1.333 with  0.5L Bar and Bar Hole",
+      "library_only": false
+    },
+    {
+      "role": "cane1_37762_3",
+      "id": "12",
+      "table": "cylinders.Cylinder1X1_333With0_5LBarAndBarHole",
+      "ref": "37762",
+      "colour": 10,
+      "title": "Cylinder  1 x  1.333 with  0.5L Bar and Bar Hole",
+      "library_only": false
+    },
+    {
+      "role": "cane1_37762_4",
+      "id": "13",
+      "table": "cylinders.Cylinder1X1_333With0_5LBarAndBarHole",
+      "ref": "37762",
+      "colour": 10,
+      "title": "Cylinder  1 x  1.333 with  0.5L Bar and Bar Hole",
+      "library_only": false
+    },
+    {
+      "role": "cane1_22484_5",
+      "id": "14",
+      "table": "bars.Bar2LWithBallJoint_8",
+      "ref": "22484",
+      "colour": 72,
+      "title": "Bar  2L with Ball Joint-8",
+      "library_only": false
+    },
+    {
+      "role": "cane1_63965a_6",
+      "id": "15",
+      "table": "bars.Bar6LWithThickStop",
+      "ref": "63965a",
+      "colour": 70,
+      "title": "Bar  6L with Thick Stop",
+      "library_only": false
+    },
+    {
+      "role": "cane1_30176_7",
+      "id": "16",
+      "table": "plants.PlantBrick1X1RoundWith3BambooLeaves",
+      "ref": "30176",
+      "colour": 2,
+      "title": "Plant Brick  1 x  1 Round with 3 Bamboo Leaves",
+      "library_only": false
+    },
+    {
+      "role": "cane1_32607_8",
+      "id": "17",
+      "table": "plants.Plate1X1RoundWith3Leaves",
+      "ref": "32607",
+      "colour": 27,
+      "title": "Plate  1 x  1 Round with  3 Leaves",
+      "library_only": false
+    },
+    {
+      "role": "cane1_leaf1",
+      "id": "18",
+      "table": "plants.PlantBrick1X1RoundWith3BambooLeaves",
+      "ref": "30176",
+      "colour": 2,
+      "title": "Plant Brick  1 x  1 Round with 3 Bamboo Leaves",
+      "library_only": false
+    },
+    {
+      "role": "cane1_32607_10",
+      "id": "19",
+      "table": "plants.Plate1X1RoundWith3Leaves",
+      "ref": "32607",
+      "colour": 27,
+      "title": "Plate  1 x  1 Round with  3 Leaves",
+      "library_only": false
+    },
+    {
+      "role": "cane1_leaf2",
+      "id": "20",
+      "table": "plants.PlantBrick1X1RoundWith3BambooLeaves",
+      "ref": "30176",
+      "colour": 2,
+      "title": "Plant Brick  1 x  1 Round with 3 Bamboo Leaves",
+      "library_only": false
+    },
+    {
+      "role": "cane1_32607_12",
+      "id": "21",
+      "table": "plants.Plate1X1RoundWith3Leaves",
+      "ref": "32607",
+      "colour": 27,
+      "title": "Plate  1 x  1 Round with  3 Leaves",
+      "library_only": false
+    },
+    {
+      "role": "cane2_85861_0",
+      "id": "22",
+      "table": "plates.Plate1X1RoundWithOpenStud",
+      "ref": "85861",
+      "colour": 27,
+      "title": "Plate  1 x  1 Round with Open Stud",
+      "library_only": false
+    },
+    {
+      "role": "cane2_59900_1",
+      "id": "23",
+      "table": "cones.Cone1X1WithStop",
+      "ref": "59900",
+      "colour": 10,
+      "title": "Cone  1 x  1 with Stop",
+      "library_only": false
+    },
+    {
+      "role": "cane2_37762_2",
+      "id": "24",
+      "table": "cylinders.Cylinder1X1_333With0_5LBarAndBarHole",
+      "ref": "37762",
+      "colour": 10,
+      "title": "Cylinder  1 x  1.333 with  0.5L Bar and Bar Hole",
+      "library_only": false
+    },
+    {
+      "role": "cane2_37762_3",
+      "id": "25",
+      "table": "cylinders.Cylinder1X1_333With0_5LBarAndBarHole",
+      "ref": "37762",
+      "colour": 10,
+      "title": "Cylinder  1 x  1.333 with  0.5L Bar and Bar Hole",
+      "library_only": false
+    },
+    {
+      "role": "cane2_22484_4",
+      "id": "26",
+      "table": "bars.Bar2LWithBallJoint_8",
+      "ref": "22484",
+      "colour": 72,
+      "title": "Bar  2L with Ball Joint-8",
+      "library_only": false
+    },
+    {
+      "role": "cane2_63965a_5",
+      "id": "27",
+      "table": "bars.Bar6LWithThickStop",
+      "ref": "63965a",
+      "colour": 70,
+      "title": "Bar  6L with Thick Stop",
+      "library_only": false
+    },
+    {
+      "role": "cane2_30176_6",
+      "id": "28",
+      "table": "plants.PlantBrick1X1RoundWith3BambooLeaves",
+      "ref": "30176",
+      "colour": 2,
+      "title": "Plant Brick  1 x  1 Round with 3 Bamboo Leaves",
+      "library_only": false
+    },
+    {
+      "role": "cane2_32607_7",
+      "id": "29",
+      "table": "plants.Plate1X1RoundWith3Leaves",
+      "ref": "32607",
+      "colour": 27,
+      "title": "Plate  1 x  1 Round with  3 Leaves",
+      "library_only": false
+    },
+    {
+      "role": "cane2_leaf1",
+      "id": "30",
+      "table": "plants.PlantBrick1X1RoundWith3BambooLeaves",
+      "ref": "30176",
+      "colour": 2,
+      "title": "Plant Brick  1 x  1 Round with 3 Bamboo Leaves",
+      "library_only": false
+    },
+    {
+      "role": "cane2_32607_9",
+      "id": "31",
+      "table": "plants.Plate1X1RoundWith3Leaves",
+      "ref": "32607",
+      "colour": 27,
+      "title": "Plate  1 x  1 Round with  3 Leaves",
+      "library_only": false
+    },
+    {
+      "role": "cane2_leaf2",
+      "id": "32",
+      "table": "plants.PlantBrick1X1RoundWith3BambooLeaves",
+      "ref": "30176",
+      "colour": 2,
+      "title": "Plant Brick  1 x  1 Round with 3 Bamboo Leaves",
+      "library_only": false
+    },
+    {
+      "role": "cane2_32607_11",
+      "id": "33",
+      "table": "plants.Plate1X1RoundWith3Leaves",
+      "ref": "32607",
+      "colour": 27,
+      "title": "Plate  1 x  1 Round with  3 Leaves",
+      "library_only": false
+    },
+    {
+      "role": "cane3_85861_0",
+      "id": "34",
+      "table": "plates.Plate1X1RoundWithOpenStud",
+      "ref": "85861",
+      "colour": 27,
+      "title": "Plate  1 x  1 Round with Open Stud",
+      "library_only": false
+    },
+    {
+      "role": "cane3_59900_1",
+      "id": "35",
+      "table": "cones.Cone1X1WithStop",
+      "ref": "59900",
+      "colour": 10,
+      "title": "Cone  1 x  1 with Stop",
+      "library_only": false
+    },
+    {
+      "role": "cane3_37762_2",
+      "id": "36",
+      "table": "cylinders.Cylinder1X1_333With0_5LBarAndBarHole",
+      "ref": "37762",
+      "colour": 10,
+      "title": "Cylinder  1 x  1.333 with  0.5L Bar and Bar Hole",
+      "library_only": false
+    },
+    {
+      "role": "cane3_37762_3",
+      "id": "37",
+      "table": "cylinders.Cylinder1X1_333With0_5LBarAndBarHole",
+      "ref": "37762",
+      "colour": 10,
+      "title": "Cylinder  1 x  1.333 with  0.5L Bar and Bar Hole",
+      "library_only": false
+    },
+    {
+      "role": "cane3_22484_4",
+      "id": "38",
+      "table": "bars.Bar2LWithBallJoint_8",
+      "ref": "22484",
+      "colour": 72,
+      "title": "Bar  2L with Ball Joint-8",
+      "library_only": false
+    },
+    {
+      "role": "cane3_30374_5",
+      "id": "39",
+      "table": "bars.Bar4LLightsaberBlade",
+      "ref": "30374",
+      "colour": 70,
+      "title": "Bar  4L Lightsaber Blade",
+      "library_only": false
+    },
+    {
+      "role": "cane3_32607_6",
+      "id": "40",
+      "table": "plants.Plate1X1RoundWith3Leaves",
+      "ref": "32607",
+      "colour": 27,
+      "title": "Plate  1 x  1 Round with  3 Leaves",
+      "library_only": false
+    },
+    {
+      "role": "cane3_leaf1",
+      "id": "41",
+      "table": "plants.PlantBrick1X1RoundWith3BambooLeaves",
+      "ref": "30176",
+      "colour": 2,
+      "title": "Plant Brick  1 x  1 Round with 3 Bamboo Leaves",
+      "library_only": false
+    },
+    {
+      "role": "cane3_leaf2",
+      "id": "42",
+      "table": "plants.PlantBrick1X1RoundWith3BambooLeaves",
+      "ref": "30176",
+      "colour": 2,
+      "title": "Plant Brick  1 x  1 Round with 3 Bamboo Leaves",
+      "library_only": false
+    },
+    {
+      "role": "cane4_85861_0",
+      "id": "43",
+      "table": "plates.Plate1X1RoundWithOpenStud",
+      "ref": "85861",
+      "colour": 27,
+      "title": "Plate  1 x  1 Round with Open Stud",
+      "library_only": false
+    },
+    {
+      "role": "cane4_59900_1",
+      "id": "44",
+      "table": "cones.Cone1X1WithStop",
+      "ref": "59900",
+      "colour": 10,
+      "title": "Cone  1 x  1 with Stop",
+      "library_only": false
+    },
+    {
+      "role": "cane4_37762_2",
+      "id": "45",
+      "table": "cylinders.Cylinder1X1_333With0_5LBarAndBarHole",
+      "ref": "37762",
+      "colour": 10,
+      "title": "Cylinder  1 x  1.333 with  0.5L Bar and Bar Hole",
+      "library_only": false
+    },
+    {
+      "role": "cane4_22484_3",
+      "id": "46",
+      "table": "bars.Bar2LWithBallJoint_8",
+      "ref": "22484",
+      "colour": 72,
+      "title": "Bar  2L with Ball Joint-8",
+      "library_only": false
+    },
+    {
+      "role": "cane4_30374_4",
+      "id": "47",
+      "table": "bars.Bar4LLightsaberBlade",
+      "ref": "30374",
+      "colour": 70,
+      "title": "Bar  4L Lightsaber Blade",
+      "library_only": false
+    },
+    {
+      "role": "cane4_32607_5",
+      "id": "48",
+      "table": "plants.Plate1X1RoundWith3Leaves",
+      "ref": "32607",
+      "colour": 27,
+      "title": "Plate  1 x  1 Round with  3 Leaves",
+      "library_only": false
+    },
+    {
+      "role": "cane4_leaf1",
+      "id": "49",
+      "table": "plants.PlantBrick1X1RoundWith3BambooLeaves",
+      "ref": "30176",
+      "colour": 2,
+      "title": "Plant Brick  1 x  1 Round with 3 Bamboo Leaves",
+      "library_only": false
+    },
+    {
+      "role": "cane4_leaf2",
+      "id": "50",
+      "table": "plants.PlantBrick1X1RoundWith3BambooLeaves",
+      "ref": "30176",
+      "colour": 2,
+      "title": "Plant Brick  1 x  1 Round with 3 Bamboo Leaves",
+      "library_only": false
+    }
+  ],
+  "joints": {
+    "cane_1": {
+      "origin": [
+        -10.0,
+        -12.0,
+        -10.0
+      ],
+      "axis": [
+        0.0,
+        0.0,
+        1.0
+      ],
+      "parent": "socket1",
+      "child": "cane1_22484_5",
+      "kind": "revolute",
+      "joint": "real",
+      "connector": "real: 22484 ball (centre at the stalk origin, as in 10315) in the 14418 friction socket; one of the ball's two tilt freedoms used, about Z"
+    },
+    "rustle_1a": {
+      "origin": [
+        -69.534491,
+        -201.10391,
+        -69.534491
+      ],
+      "axis": [
+        -0.287606,
+        -0.913545,
+        -0.287606
+      ],
+      "parent": "cane1_63965a_6",
+      "child": "cane1_leaf1",
+      "kind": "revolute",
+      "joint": "real",
+      "connector": "real: 30176 threaded on the cane's bar (bar hole and hollow stud); turns about the bar"
+    },
+    "rustle_1b": {
+      "origin": [
+        -78.737891,
+        -230.337364,
+        -78.737891
+      ],
+      "axis": [
+        -0.287606,
+        -0.913545,
+        -0.287606
+      ],
+      "parent": "cane1_63965a_6",
+      "child": "cane1_leaf2",
+      "kind": "revolute",
+      "joint": "real",
+      "connector": "real: 30176 threaded on the cane's bar (bar hole and hollow stud); turns about the bar"
+    },
+    "cane_2": {
+      "origin": [
+        10.0,
+        -12.0,
+        10.0
+      ],
+      "axis": [
+        0.0,
+        0.0,
+        1.0
+      ],
+      "parent": "socket2",
+      "child": "cane2_22484_4",
+      "kind": "revolute",
+      "joint": "real",
+      "connector": "real: 22484 ball (centre at the stalk origin, as in 10315) in the 14418 friction socket; one of the ball's two tilt freedoms used, about Z"
+    },
+    "rustle_2a": {
+      "origin": [
+        52.322833,
+        -176.446209,
+        52.322833
+      ],
+      "axis": [
+        0.241845,
+        -0.939693,
+        0.241845
+      ],
+      "parent": "cane2_63965a_5",
+      "child": "cane2_leaf1",
+      "kind": "revolute",
+      "joint": "real",
+      "connector": "real: 30176 threaded on the cane's bar (bar hole and hollow stud); turns about the bar"
+    },
+    "rustle_2b": {
+      "origin": [
+        60.061866,
+        -206.516373,
+        60.061866
+      ],
+      "axis": [
+        0.241845,
+        -0.939693,
+        0.241845
+      ],
+      "parent": "cane2_63965a_5",
+      "child": "cane2_leaf2",
+      "kind": "revolute",
+      "joint": "real",
+      "connector": "real: 30176 threaded on the cane's bar (bar hole and hollow stud); turns about the bar"
+    },
+    "cane_3": {
+      "origin": [
+        10.0,
+        -12.0,
+        -10.0
+      ],
+      "axis": [
+        0.0,
+        0.0,
+        1.0
+      ],
+      "parent": "socket3",
+      "child": "cane3_22484_4",
+      "kind": "revolute",
+      "joint": "real",
+      "connector": "real: 22484 ball (centre at the stalk origin, as in 10315) in the 14418 friction socket; one of the ball's two tilt freedoms used, about Z"
+    },
+    "rustle_3a": {
+      "origin": [
+        57.80318,
+        -139.144453,
+        -57.80318
+      ],
+      "axis": [
+        0.331967,
+        -0.882948,
+        -0.331967
+      ],
+      "parent": "cane3_30374_5",
+      "child": "cane3_leaf1",
+      "kind": "revolute",
+      "joint": "real",
+      "connector": "real: 30176 threaded on the cane's bar (bar hole and hollow stud); turns about the bar"
+    },
+    "rustle_3b": {
+      "origin": [
+        65.770376,
+        -160.335196,
+        -65.770376
+      ],
+      "axis": [
+        0.331967,
+        -0.882948,
+        -0.331967
+      ],
+      "parent": "cane3_30374_5",
+      "child": "cane3_leaf2",
+      "kind": "revolute",
+      "joint": "real",
+      "connector": "real: 30176 threaded on the cane's bar (bar hole and hollow stud); turns about the bar"
+    },
+    "cane_4": {
+      "origin": [
+        -10.0,
+        -12.0,
+        10.0
+      ],
+      "axis": [
+        0.0,
+        0.0,
+        1.0
+      ],
+      "parent": "socket4",
+      "child": "cane4_22484_3",
+      "kind": "revolute",
+      "joint": "real",
+      "connector": "real: 22484 ball (centre at the stalk origin, as in 10315) in the 14418 friction socket; one of the ball's two tilt freedoms used, about Z"
+    },
+    "rustle_4a": {
+      "origin": [
+        -49.59798,
+        -108.994845,
+        49.59798
+      ],
+      "axis": [
+        -0.353553,
+        -0.866025,
+        0.353553
+      ],
+      "parent": "cane4_30374_4",
+      "child": "cane4_leaf1",
+      "kind": "revolute",
+      "joint": "real",
+      "connector": "real: 30176 threaded on the cane's bar (bar hole and hollow stud); turns about the bar"
+    },
+    "rustle_4b": {
+      "origin": [
+        -58.083261,
+        -129.779455,
+        58.083261
+      ],
+      "axis": [
+        -0.353553,
+        -0.866025,
+        0.353553
+      ],
+      "parent": "cane4_30374_4",
+      "child": "cane4_leaf2",
+      "kind": "revolute",
+      "joint": "real",
+      "connector": "real: 30176 threaded on the cane's bar (bar hole and hollow stud); turns about the bar"
+    }
+  },
+  "reference_checks": [
+    {
+      "model": "10315-1.mpd",
+      "section": "10315 - bamboo-stalk-1..4.ldr",
+      "parent": "22484",
+      "part": "stalk",
+      "official_refs": [
+        "22484",
+        "63965a",
+        "30374",
+        "30176",
+        "32607"
+      ],
+      "position_offset_ldu": 0.0,
+      "rotation_offset": 0.0,
+      "note": "Stalk contents copied from the official sections (ball centre at the stalk origin); each stalk is placed on its own socket with a catalog splay and yaw."
+    }
+  ],
+  "geometry_checks": []
+}

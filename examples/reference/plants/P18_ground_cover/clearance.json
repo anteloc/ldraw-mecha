@@ -1,0 +1,81 @@
+{
+  "case": "P18_ground_cover",
+  "sweep": {
+    "no_new_surface_crossings": true,
+    "crossings": [],
+    "excluded_rest_pairs": [
+      "base-plant2",
+      "plant1-plant6",
+      "plant2-plant6"
+    ]
+  },
+  "clip_poses": {
+    "samples": 180,
+    "every": 4,
+    "no_new_surface_crossings": true,
+    "crossings_by_clip": {},
+    "frames_with_crossings": {},
+    "vertex_penetration_by_clip": {},
+    "deep_shrink_ldu": 1.5,
+    "no_deep_crossings": false,
+    "deep_crossings_by_clip": {
+      "P18_ground_cover.gusty": [
+        "plant1-plant6"
+      ],
+      "P18_ground_cover.storm": [
+        "plant1-plant6"
+      ]
+    },
+    "frames_with_deep_crossings": {
+      "P18_ground_cover.gusty": [
+        45,
+        49,
+        53,
+        57,
+        61,
+        109,
+        113,
+        117,
+        149,
+        153,
+        157,
+        161
+      ],
+      "P18_ground_cover.storm": [
+        45,
+        49,
+        53,
+        57,
+        65,
+        69,
+        73,
+        77,
+        85,
+        89,
+        101,
+        105,
+        109,
+        117,
+        125,
+        137,
+        141,
+        145,
+        149,
+        157,
+        165,
+        169,
+        177
+      ]
+    }
+  },
+  "roles": {
+    "0": "base",
+    "1": "plant1",
+    "2": "plant2",
+    "3": "plant3",
+    "4": "plant4",
+    "5": "plant5",
+    "6": "plant6"
+  },
+  "coverage": "Sampled surface crossings only; excludes rigid-body and rest-contact pairs; containment untested"
+}

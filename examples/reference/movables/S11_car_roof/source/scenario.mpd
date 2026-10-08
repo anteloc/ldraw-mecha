@@ -1,0 +1,42 @@
+0 FILE s11_car_roof.ldr
+0 Movable element scenario S11_car_roof Car roof hatch
+0 Name: s11_car_roof.ldr
+0 Author: ldraw-mecha scripts/build_movables.py
+0 // Generated mock scenario: parts picked by constant name from data/categories/parts (a few context parts by LDraw reference); moving parts placed from LDCad shadow connector frames (data/offLibShadow) via pyldraw3 or from official annotated models where no connector pair exists. Frame: LDU, -Y up, the scenario front faces -Z, ground (base top) at y = 0.
+
+0 // chassis: plates.Plate4X8
+1 4 0 0 0 1 0 0 0 1 0 0 0 1 3035.dat
+0 // axle0: library 4600
+1 0 -50 8 0 0 0 1 0 1 0 -1 0 0 4600.dat
+0 // rim0l: wheels.WheelRim6_4X8
+1 7 -50 13 -30 1 0 0 0 1 0 0 0 1 4624.dat
+0 // tyre0l: tyres.Tyre8_75X8OffsetTread
+1 0 -50 13 -30 1 0 0 0 1 0 0 0 1 4084.dat
+0 // rim0r: wheels.WheelRim6_4X8
+1 7 -50 13 30 -1 0 0 0 1 0 0 0 -1 4624.dat
+0 // tyre0r: tyres.Tyre8_75X8OffsetTread
+1 0 -50 13 30 -1 0 0 0 1 0 0 0 -1 4084.dat
+0 // axle1: library 4600
+1 0 50 8 0 0 0 1 0 1 0 -1 0 0 4600.dat
+0 // rim1l: wheels.WheelRim6_4X8
+1 7 50 13 -30 1 0 0 0 1 0 0 0 1 4624.dat
+0 // tyre1l: tyres.Tyre8_75X8OffsetTread
+1 0 50 13 -30 1 0 0 0 1 0 0 0 1 4084.dat
+0 // rim1r: wheels.WheelRim6_4X8
+1 7 50 13 30 -1 0 0 0 1 0 0 0 -1 4624.dat
+0 // tyre1r: tyres.Tyre8_75X8OffsetTread
+1 0 50 13 30 -1 0 0 0 1 0 0 0 -1 4084.dat
+0 // nose: bricks.Brick2X4
+1 4 -60 -24 0 0 0 1 0 1 0 -1 0 0 3001.dat
+0 // side_l: bricks.Brick1X4
+1 4 0 -24 -30 0 0 1 0 1 0 -1 0 0 3010.dat
+0 // side_r: bricks.Brick1X4
+1 4 0 -24 30 0 0 1 0 1 0 -1 0 0 3010.dat
+0 // rear: bricks.Brick2X4
+1 4 60 -24 0 0 0 1 0 1 0 -1 0 0 3001.dat
+0 // windscreen: windscreens.Windscreen2X4X2
+1 47 -30 -72 0 0 0 1 0 1 0 -1 0 0 3823.dat
+0 // holder: hinges.HingeCarRoofHolder1X4X2
+1 4 30 -72 0 0 0 1 0 1 0 -1 0 0 4214.dat
+0 // roof: hinges.HingeCarRoof4X4
+1 4 0 -80 0 0 0 1 0 1 0 -1 0 0 4213.dat

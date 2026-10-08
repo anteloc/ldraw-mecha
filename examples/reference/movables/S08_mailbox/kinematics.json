@@ -1,0 +1,79 @@
+{
+  "semantics": {
+    "door": {
+      "control": "door",
+      "value": 0.2,
+      "test_point": [
+        0.0,
+        -124.0,
+        -26.0
+      ],
+      "displacement": [
+        0.0,
+        0.797337,
+        -7.946773
+      ],
+      "expected": "-z",
+      "flipped": false
+    }
+  },
+  "contacts": {
+    "tested_parts": 7,
+    "contacts": 3,
+    "contacted_parts": 5,
+    "by_kind": {
+      "axle/axle_hole": 2,
+      "hinge/hinge": 1
+    },
+    "axles": {
+      "selection": "Catalog descriptions beginning Technic Axle followed by a numeric length; excludes axle pins, joiners and axle-hole supports",
+      "total": 0,
+      "with_axle_hole_contact": 0,
+      "without_axle_hole_contact": []
+    }
+  },
+  "contact_pairs": {
+    "1-2": [
+      "axle/axle_hole"
+    ],
+    "2-3": [
+      "axle/axle_hole"
+    ],
+    "5-6": [
+      "hinge/hinge"
+    ]
+  },
+  "asymmetric_sample": {
+    "controls": {
+      "door": 1.008
+    },
+    "transforms": {
+      "door": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.533553,
+          -0.845766,
+          -61.171448
+        ],
+        [
+          0.0,
+          0.845766,
+          0.533553,
+          58.916766
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ]
+    }
+  }
+}

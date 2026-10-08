@@ -1,0 +1,75 @@
+{
+  "figure": "MF10_diver",
+  "sweep": {
+    "no_new_surface_crossings": true,
+    "crossings": [],
+    "excluded_rest_pairs": [
+      [
+        "1",
+        "9"
+      ],
+      [
+        "10",
+        "11"
+      ],
+      [
+        "2",
+        "3"
+      ],
+      [
+        "2",
+        "4"
+      ]
+    ]
+  },
+  "clip_poses": {
+    "samples": 72,
+    "every": 6,
+    "no_new_surface_crossings": false,
+    "crossings_by_clip": {
+      "MF10_diver.swim_crawl": [
+        "head-arm_l",
+        "head-arm_r",
+        "head-hand_l",
+        "head-hand_r"
+      ]
+    },
+    "frames_with_crossings": {
+      "MF10_diver.swim_crawl": [
+        37,
+        55,
+        97
+      ]
+    },
+    "deep_shrink_ldu": 1.5,
+    "no_deep_crossings": false,
+    "deep_crossings_by_clip": {
+      "MF10_diver.swim_crawl": [
+        "head-hand_l",
+        "head-hand_r"
+      ]
+    },
+    "frames_with_deep_crossings": {
+      "MF10_diver.swim_crawl": [
+        37,
+        55,
+        97
+      ]
+    }
+  },
+  "roles": {
+    "0": "torso",
+    "1": "head",
+    "2": "hips",
+    "3": "leg_l",
+    "4": "leg_r",
+    "5": "arm_l",
+    "6": "hand_l",
+    "7": "arm_r",
+    "8": "hand_r",
+    "9": "back0",
+    "10": "foot_l",
+    "11": "foot_r"
+  },
+  "coverage": "Sampled surface crossings only; excludes rigid-body and rest-contact pairs; containment untested; joint channels only (whole-figure staging not applied)"
+}

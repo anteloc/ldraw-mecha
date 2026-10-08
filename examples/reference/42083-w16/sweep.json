@@ -1,0 +1,108 @@
+{
+  "passed": true,
+  "samples": [
+    {
+      "control": "drive",
+      "value": -12.566370614359172,
+      "passed": true,
+      "max_error": 2.1316282072803006e-14
+    },
+    {
+      "control": "drive",
+      "value": -10.995574287564276,
+      "passed": true,
+      "max_error": 1.4210854715202004e-14
+    },
+    {
+      "control": "drive",
+      "value": -9.42477796076938,
+      "passed": true,
+      "max_error": 2.842170943040401e-14
+    },
+    {
+      "control": "drive",
+      "value": -7.853981633974483,
+      "passed": true,
+      "max_error": 1.4210854715202004e-14
+    },
+    {
+      "control": "drive",
+      "value": -6.283185307179586,
+      "passed": true,
+      "max_error": 1.4210854715202004e-14
+    },
+    {
+      "control": "drive",
+      "value": -4.71238898038469,
+      "passed": true,
+      "max_error": 2.1316282072803006e-14
+    },
+    {
+      "control": "drive",
+      "value": -3.141592653589793,
+      "passed": true,
+      "max_error": 2.1316282072803006e-14
+    },
+    {
+      "control": "drive",
+      "value": -1.5707963267948966,
+      "passed": true,
+      "max_error": 1.4210854715202004e-14
+    },
+    {
+      "control": "drive",
+      "value": 0.0,
+      "passed": true,
+      "max_error": 7.105427357601002e-15
+    },
+    {
+      "control": "drive",
+      "value": 1.5707963267948966,
+      "passed": true,
+      "max_error": 1.4210854715202004e-14
+    },
+    {
+      "control": "drive",
+      "value": 3.141592653589793,
+      "passed": true,
+      "max_error": 2.1316282072803006e-14
+    },
+    {
+      "control": "drive",
+      "value": 4.712388980384688,
+      "passed": true,
+      "max_error": 1.4210854715202004e-14
+    },
+    {
+      "control": "drive",
+      "value": 6.283185307179586,
+      "passed": true,
+      "max_error": 1.4210854715202004e-14
+    },
+    {
+      "control": "drive",
+      "value": 7.853981633974485,
+      "passed": true,
+      "max_error": 1.4210854715202004e-14
+    },
+    {
+      "control": "drive",
+      "value": 9.42477796076938,
+      "passed": true,
+      "max_error": 1.4210854715202004e-14
+    },
+    {
+      "control": "drive",
+      "value": 10.995574287564274,
+      "passed": true,
+      "max_error": 2.1316282072803006e-14
+    },
+    {
+      "control": "drive",
+      "value": 12.566370614359172,
+      "passed": true,
+      "max_error": 2.842170943040401e-14
+    }
+  ],
+  "coverage": "Each control swept independently; analytic closure only, not mesh collisions or dynamics"
+}

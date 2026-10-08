@@ -1,0 +1,42 @@
+{
+  "scenario": "S14_sliding_door",
+  "sweep": {
+    "no_new_surface_crossings": true,
+    "crossings": [],
+    "excluded_rest_pairs": []
+  },
+  "clip_poses": {
+    "samples": 108,
+    "every": 4,
+    "no_new_surface_crossings": true,
+    "crossings_by_clip": {},
+    "frames_with_crossings": {},
+    "vertex_penetration_by_clip": {},
+    "deep_shrink_ldu": 1.5,
+    "no_deep_crossings": true,
+    "deep_crossings_by_clip": {},
+    "frames_with_deep_crossings": {}
+  },
+  "roles": {
+    "0": "base",
+    "1": "rail_low_a",
+    "2": "rail_low_b",
+    "3": "door",
+    "4": "wall0",
+    "5": "post0",
+    "6": "wall1",
+    "7": "post1",
+    "8": "wall2",
+    "9": "post2",
+    "10": "wall3",
+    "11": "post3",
+    "12": "wall4",
+    "13": "post4",
+    "14": "wall_cap",
+    "15": "post_cap",
+    "16": "rail_top_a",
+    "17": "rail_top_b",
+    "18": "roof"
+  },
+  "coverage": "Sampled surface crossings only; excludes rigid-body and rest-contact pairs; containment untested"
+}

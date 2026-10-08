@@ -1,0 +1,3244 @@
+{
+  "conventions": {
+    "figure_frame": "LDraw LDU in the minifig's own frame: torso origin at the neck, -Y up, the face looks along -Z, the figure's left is +X. Ground at y = +72 (feet).",
+    "pivot": [
+      0.0,
+      44.0,
+      0.0
+    ],
+    "hip_height": 28.0,
+    "seated_height": 8.75,
+    "joints": {
+      "neck": {
+        "min": -3.141592653589793,
+        "max": 3.141592653589793,
+        "description": "Head yaw about the neck stud; + turns the face to the figure's left"
+      },
+      "shoulder_l": {
+        "min": -12.566370614359172,
+        "max": 12.566370614359172,
+        "description": "Left arm about its shoulder pin; + swings the arm forward and up (free spin)"
+      },
+      "shoulder_r": {
+        "min": -12.566370614359172,
+        "max": 12.566370614359172,
+        "description": "Right arm about its shoulder pin; + swings the arm forward and up (free spin)"
+      },
+      "wrist_l": {
+        "min": -3.141592653589793,
+        "max": 3.141592653589793,
+        "description": "Left hand about the arm socket axis; + rolls the held item's tip outward (+X)"
+      },
+      "wrist_r": {
+        "min": -3.141592653589793,
+        "max": 3.141592653589793,
+        "description": "Right hand about the arm socket axis; + rolls the held item's tip outward (-X)"
+      },
+      "hip_l": {
+        "min": -1.5707963267948966,
+        "max": 1.5707963267948966,
+        "description": "Left leg about the hip pin; + swings the leg forward (+pi/2 = seated)"
+      },
+      "hip_r": {
+        "min": -1.5707963267948966,
+        "max": 1.5707963267948966,
+        "description": "Right leg about the hip pin; + swings the leg forward (+pi/2 = seated)"
+      }
+    },
+    "figure_channels": {
+      "move_forward": {
+        "unit": "ldu",
+        "min": -400.0,
+        "max": 400.0,
+        "description": "Offset of the hip-axis centre along the home facing direction"
+      },
+      "move_left": {
+        "unit": "ldu",
+        "min": -400.0,
+        "max": 400.0,
+        "description": "Offset of the hip-axis centre toward the figure's home left"
+      },
+      "move_up": {
+        "unit": "ldu",
+        "min": -200.0,
+        "max": 400.0,
+        "description": "Height offset of the hip-axis centre"
+      },
+      "turn": {
+        "unit": "radian",
+        "min": -12.566370614359172,
+        "max": 12.566370614359172,
+        "description": "Yaw about the vertical through the hip-axis centre; + turns left (counter-clockwise seen from above)"
+      },
+      "pitch": {
+        "unit": "radian",
+        "min": -12.566370614359172,
+        "max": 12.566370614359172,
+        "description": "Rotation about the hip axis (figure's left-right line); + leans forward"
+      },
+      "roll": {
+        "unit": "radian",
+        "min": -12.566370614359172,
+        "max": 12.566370614359172,
+        "description": "Rotation about the figure's front-back line through the hip-axis centre; + leans toward the figure's left"
+      }
+    },
+    "channel_order": [
+      "neck",
+      "shoulder_l",
+      "shoulder_r",
+      "wrist_l",
+      "wrist_r",
+      "hip_l",
+      "hip_r",
+      "move_forward",
+      "move_left",
+      "move_up",
+      "turn",
+      "pitch",
+      "roll"
+    ],
+    "periodic_channels": [
+      "pitch",
+      "roll",
+      "shoulder_l",
+      "shoulder_r",
+      "turn"
+    ],
+    "whole_figure_transform": "world = T(pivot) * T(move_left*left + move_up*up + move_forward*forward) * R(up, turn) * R(left, pitch) * R(back, roll) * T(-pivot); home-frame axes forward=(0,0,-1), left=(1,0,0), up=(0,-1,0), back=(0,0,1). In Blender (figure facing -Y): MOVE location = (move_left, -move_forward, move_up) * 0.0004 m, rotation_mode 'YXZ', rotation_euler = (pitch, roll, turn).",
+    "rules": "Every clip starts at the neutral pose (all channels 0) and ends at it (periodic channels may end on whole turns, an identical pose); the figure returns to its home spot.",
+    "windows": {
+      "A": [
+        1,
+        144
+      ],
+      "B": [
+        161,
+        304
+      ],
+      "C": [
+        321,
+        464
+      ]
+    },
+    "fps": 24,
+    "frames": 480
+  },
+  "figures": [
+    {
+      "figure": "MF01_police",
+      "title": "Police officer",
+      "plan": "minifig_01_police",
+      "controller": "CTRL_minifig_01_police",
+      "collection": "MF01_police Police officer",
+      "parts": [
+        {
+          "role": "torso",
+          "id": "0",
+          "table": "torsos.TorsoWithButtonsAndPoliceBadgePlainPattern",
+          "ref": "973p1f",
+          "colour": 0,
+          "title": "Minifig Torso with Buttons and Police Badge Plain Pattern"
+        },
+        {
+          "role": "head",
+          "id": "1",
+          "table": "heads.HeadWithBlack_SilverSunglasses_ChinDimpleAndGrimMouthPattern",
+          "ref": "3626cp84",
+          "colour": 14,
+          "title": "Minifig Head with Black/Silver Sunglasses, Chin Dimple and Grim Mouth Pattern"
+        },
+        {
+          "role": "headgear0",
+          "id": "2",
+          "table": "hats.PoliceHat",
+          "ref": "3624",
+          "colour": 0,
+          "title": "Minifig Police Hat"
+        },
+        {
+          "role": "hips",
+          "id": "3",
+          "table": "accessories.Hips",
+          "ref": "3815b",
+          "colour": 0,
+          "title": "Minifig Hips"
+        },
+        {
+          "role": "leg_l",
+          "id": "4",
+          "table": "legs.LegLeft",
+          "ref": "3817c",
+          "colour": 1,
+          "title": "Minifig Leg Left"
+        },
+        {
+          "role": "leg_r",
+          "id": "5",
+          "table": "legs.LegRight",
+          "ref": "3816c",
+          "colour": 1,
+          "title": "Minifig Leg Right"
+        },
+        {
+          "role": "arm_l",
+          "id": "6",
+          "table": "arms.ArmLeft",
+          "ref": "3819",
+          "colour": 0,
+          "title": "Minifig Arm Left"
+        },
+        {
+          "role": "hand_l",
+          "id": "7",
+          "table": "hands.Hand",
+          "ref": "3820",
+          "colour": 14,
+          "title": "Minifig Hand"
+        },
+        {
+          "role": "item_l",
+          "id": "8",
+          "table": "accessories.RadioWithLongHandle",
+          "ref": "3962b",
+          "colour": 0,
+          "title": "Minifig Radio with Long Handle"
+        },
+        {
+          "role": "arm_r",
+          "id": "9",
+          "table": "arms.ArmRight",
+          "ref": "3818",
+          "colour": 0,
+          "title": "Minifig Arm Right"
+        },
+        {
+          "role": "hand_r",
+          "id": "10",
+          "table": "hands.Hand",
+          "ref": "3820",
+          "colour": 14,
+          "title": "Minifig Hand"
+        }
+      ],
+      "joints": {
+        "head": {
+          "origin": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "axis": [
+            0.0,
+            -1.0,
+            0.0
+          ],
+          "parent": null,
+          "instances": [
+            "1",
+            "2"
+          ]
+        },
+        "arm_l": {
+          "origin": [
+            15.552,
+            9.0,
+            0.0
+          ],
+          "axis": [
+            -0.985431,
+            0.170074,
+            0.0
+          ],
+          "parent": null,
+          "instances": [
+            "6"
+          ]
+        },
+        "hand_l": {
+          "origin": [
+            23.690824,
+            26.758413,
+            -9.8839
+          ],
+          "axis": [
+            -0.120261,
+            -0.696805,
+            0.707107
+          ],
+          "parent": "arm_l",
+          "instances": [
+            "7",
+            "8"
+          ]
+        },
+        "arm_r": {
+          "origin": [
+            -15.552,
+            9.0,
+            0.0
+          ],
+          "axis": [
+            -0.985431,
+            -0.170074,
+            -0.0
+          ],
+          "parent": null,
+          "instances": [
+            "9"
+          ]
+        },
+        "hand_r": {
+          "origin": [
+            -23.690824,
+            26.758413,
+            -9.8839
+          ],
+          "axis": [
+            -0.120261,
+            0.696805,
+            -0.707107
+          ],
+          "parent": "arm_r",
+          "instances": [
+            "10"
+          ]
+        },
+        "leg_l": {
+          "origin": [
+            2.0,
+            44.0,
+            0.0
+          ],
+          "axis": [
+            -1.0,
+            -0.0,
+            -0.0
+          ],
+          "parent": null,
+          "instances": [
+            "4"
+          ]
+        },
+        "leg_r": {
+          "origin": [
+            -2.0,
+            44.0,
+            0.0
+          ],
+          "axis": [
+            -1.0,
+            0.0,
+            0.0
+          ],
+          "parent": null,
+          "instances": [
+            "5"
+          ]
+        }
+      },
+      "clips": [
+        "MF01_police.walk_patrol",
+        "MF01_police.look_around",
+        "MF01_police.halt_signal"
+      ]
+    },
+    {
+      "figure": "MF02_spaceman",
+      "title": "Classic spaceman",
+      "plan": "minifig_02_spaceman",
+      "controller": "CTRL_minifig_02_spaceman",
+      "collection": "MF02_spaceman Classic spaceman",
+      "parts": [
+        {
+          "role": "torso",
+          "id": "0",
+          "table": "torsos.TorsoWithClassicSpacePattern",
+          "ref": "973p90",
+          "colour": 4,
+          "title": "Minifig Torso with Classic Space Pattern"
+        },
+        {
+          "role": "head",
+          "id": "1",
+          "table": "heads.HeadWithStandardGrinPattern_HollowStud_",
+          "ref": "3626cp01",
+          "colour": 14,
+          "title": "Minifig Head with Standard Grin Pattern (Hollow Stud)"
+        },
+        {
+          "role": "headgear0",
+          "id": "2",
+          "table": "accessories.HelmetClassicWithThinChinGuardAndVisorDimples",
+          "ref": "3842a",
+          "colour": 4,
+          "title": "Minifig Helmet Classic with Thin Chin Guard and Visor Dimples"
+        },
+        {
+          "role": "hips",
+          "id": "3",
+          "table": "accessories.Hips",
+          "ref": "3815b",
+          "colour": 4,
+          "title": "Minifig Hips"
+        },
+        {
+          "role": "leg_l",
+          "id": "4",
+          "table": "legs.LegLeft",
+          "ref": "3817c",
+          "colour": 4,
+          "title": "Minifig Leg Left"
+        },
+        {
+          "role": "leg_r",
+          "id": "5",
+          "table": "legs.LegRight",
+          "ref": "3816c",
+          "colour": 4,
+          "title": "Minifig Leg Right"
+        },
+        {
+          "role": "arm_l",
+          "id": "6",
+          "table": "arms.ArmLeft",
+          "ref": "3819",
+          "colour": 4,
+          "title": "Minifig Arm Left"
+        },
+        {
+          "role": "hand_l",
+          "id": "7",
+          "table": "hands.Hand",
+          "ref": "3820",
+          "colour": 0,
+          "title": "Minifig Hand"
+        },
+        {
+          "role": "arm_r",
+          "id": "8",
+          "table": "arms.ArmRight",
+          "ref": "3818",
+          "colour": 4,
+          "title": "Minifig Arm Right"
+        },
+        {
+          "role": "hand_r",
+          "id": "9",
+          "table": "hands.Hand",
+          "ref": "3820",
+          "colour": 0,
+          "title": "Minifig Hand"
+        },
+        {
+          "role": "back0",
+          "id": "10",
+          "table": "accessories.Airtanks",
+          "ref": "3838",
+          "colour": 71,
+          "title": "Minifig Airtanks"
+        }
+      ],
+      "joints": {
+        "head": {
+          "origin": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "axis": [
+            0.0,
+            -1.0,
+            0.0
+          ],
+          "parent": null,
+          "instances": [
+            "1",
+            "2"
+          ]
+        },
+        "arm_l": {
+          "origin": [
+            15.552,
+            9.0,
+            0.0
+          ],
+          "axis": [
+            -0.985431,
+            0.170074,
+            0.0
+          ],
+          "parent": null,
+          "instances": [
+            "6"
+          ]
+        },
+        "hand_l": {
+          "origin": [
+            23.690824,
+            26.758413,
+            -9.8839
+          ],
+          "axis": [
+            -0.120261,
+            -0.696805,
+            0.707107
+          ],
+          "parent": "arm_l",
+          "instances": [
+            "7"
+          ]
+        },
+        "arm_r": {
+          "origin": [
+            -15.552,
+            9.0,
+            0.0
+          ],
+          "axis": [
+            -0.985431,
+            -0.170074,
+            -0.0
+          ],
+          "parent": null,
+          "instances": [
+            "8"
+          ]
+        },
+        "hand_r": {
+          "origin": [
+            -23.690824,
+            26.758413,
+            -9.8839
+          ],
+          "axis": [
+            -0.120261,
+            0.696805,
+            -0.707107
+          ],
+          "parent": "arm_r",
+          "instances": [
+            "9"
+          ]
+        },
+        "leg_l": {
+          "origin": [
+            2.0,
+            44.0,
+            0.0
+          ],
+          "axis": [
+            -1.0,
+            -0.0,
+            -0.0
+          ],
+          "parent": null,
+          "instances": [
+            "4"
+          ]
+        },
+        "leg_r": {
+          "origin": [
+            -2.0,
+            44.0,
+            0.0
+          ],
+          "axis": [
+            -1.0,
+            0.0,
+            0.0
+          ],
+          "parent": null,
+          "instances": [
+            "5"
+          ]
+        }
+      },
+      "clips": [
+        "MF02_spaceman.moon_hop",
+        "MF02_spaceman.zero_g_tumble",
+        "MF02_spaceman.wave"
+      ]
+    },
+    {
+      "figure": "MF03_knight",
+      "title": "Knight",
+      "plan": "minifig_03_knight",
+      "controller": "CTRL_minifig_03_knight",
+      "collection": "MF03_knight Knight",
+      "parts": [
+        {
+          "role": "torso",
+          "id": "0",
+          "table": "torsos.TorsoWithCastleChainmailPattern",
+          "ref": "973p41",
+          "colour": 71,
+          "title": "Minifig Torso with Castle Chainmail Pattern"
+        },
+        {
+          "role": "head",
+          "id": "1",
+          "table": "heads.HeadWithSternBlackEyebrows_WhitePupilsAndDarkOrangeChinDimplePattern",
+          "ref": "3626cp07",
+          "colour": 14,
+          "title": "Minifig Head with Stern Black Eyebrows, White Pupils and Dark Orange Chin Dimple Pattern"
+        },
+        {
+          "role": "headgear0",
+          "id": "2",
+          "table": "accessories.HelmetCastleWithNeckProtector",
+          "ref": "3844",
+          "colour": 71,
+          "title": "Minifig Helmet Castle with Neck Protector"
+        },
+        {
+          "role": "hips",
+          "id": "3",
+          "table": "accessories.Hips",
+          "ref": "3815b",
+          "colour": 0,
+          "title": "Minifig Hips"
+        },
+        {
+          "role": "leg_l",
+          "id": "4",
+          "table": "legs.LegLeft",
+          "ref": "3817c",
+          "colour": 72,
+          "title": "Minifig Leg Left"
+        },
+        {
+          "role": "leg_r",
+          "id": "5",
+          "table": "legs.LegRight",
+          "ref": "3816c",
+          "colour": 72,
+          "title": "Minifig Leg Right"
+        },
+        {
+          "role": "arm_l",
+          "id": "6",
+          "table": "arms.ArmLeft",
+          "ref": "3819",
+          "colour": 0,
+          "title": "Minifig Arm Left"
+        },
+        {
+          "role": "hand_l",
+          "id": "7",
+          "table": "hands.Hand",
+          "ref": "3820",
+          "colour": 0,
+          "title": "Minifig Hand"
+        },
+        {
+          "role": "item_l",
+          "id": "8",
+          "table": "accessories.ShieldTriangularWithBlackFalconBlueBorderPattern",
+          "ref": "3846p45",
+          "colour": 15,
+          "title": "Minifig Shield Triangular with Black Falcon Blue Border Pattern"
+        },
+        {
+          "role": "arm_r",
+          "id": "9",
+          "table": "arms.ArmRight",
+          "ref": "3818",
+          "colour": 0,
+          "title": "Minifig Arm Right"
+        },
+        {
+          "role": "hand_r",
+          "id": "10",
+          "table": "hands.Hand",
+          "ref": "3820",
+          "colour": 0,
+          "title": "Minifig Hand"
+        },
+        {
+          "role": "item_r",
+          "id": "11",
+          "table": "accessories.SwordShortsword",
+          "ref": "3847",
+          "colour": 71,
+          "title": "Minifig Sword Shortsword"
+        }
+      ],
+      "joints": {
+        "head": {
+          "origin": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "axis": [
+            0.0,
+            -1.0,
+            0.0
+          ],
+          "parent": null,
+          "instances": [
+            "1",
+            "2"
+          ]
+        },
+        "arm_l": {
+          "origin": [
+            15.552,
+            9.0,
+            0.0
+          ],
+          "axis": [
+            -0.985431,
+            0.170074,
+            0.0
+          ],
+          "parent": null,
+          "instances": [
+            "6"
+          ]
+        },
+        "hand_l": {
+          "origin": [
+            23.690824,
+            26.758413,
+            -9.8839
+          ],
+          "axis": [
+            -0.120261,
+            -0.696805,
+            0.707107
+          ],
+          "parent": "arm_l",
+          "instances": [
+            "7",
+            "8"
+          ]
+        },
+        "arm_r": {
+          "origin": [
+            -15.552,
+            9.0,
+            0.0
+          ],
+          "axis": [
+            -0.985431,
+            -0.170074,
+            -0.0
+          ],
+          "parent": null,
+          "instances": [
+            "9"
+          ]
+        },
+        "hand_r": {
+          "origin": [
+            -23.690824,
+            26.758413,
+            -9.8839
+          ],
+          "axis": [
+            -0.120261,
+            0.696805,
+            -0.707107
+          ],
+          "parent": "arm_r",
+          "instances": [
+            "10",
+            "11"
+          ]
+        },
+        "leg_l": {
+          "origin": [
+            2.0,
+            44.0,
+            0.0
+          ],
+          "axis": [
+            -1.0,
+            -0.0,
+            -0.0
+          ],
+          "parent": null,
+          "instances": [
+            "4"
+          ]
+        },
+        "leg_r": {
+          "origin": [
+            -2.0,
+            44.0,
+            0.0
+          ],
+          "axis": [
+            -1.0,
+            0.0,
+            0.0
+          ],
+          "parent": null,
+          "instances": [
+            "5"
+          ]
+        }
+      },
+      "clips": [
+        "MF03_knight.sword_slash",
+        "MF03_knight.shield_block",
+        "MF03_knight.courtly_bow"
+      ]
+    },
+    {
+      "figure": "MF04_builder",
+      "title": "Construction worker",
+      "plan": "minifig_04_builder",
+      "controller": "CTRL_minifig_04_builder",
+      "collection": "MF04_builder Construction worker",
+      "parts": [
+        {
+          "role": "torso",
+          "id": "0",
+          "table": "torsos.TorsoWithConstructionSafetyVestWithReflectiveStripesPattern",
+          "ref": "973p8i",
+          "colour": 25,
+          "title": "Minifig Torso with Construction Safety Vest with Reflective Stripes Pattern"
+        },
+        {
+          "role": "head",
+          "id": "1",
+          "table": "heads.HeadWithBeardStubble_BlackRaisedRightEyebrowAndSmirkAngledToRightPattern",
+          "ref": "3626cp72",
+          "colour": 14,
+          "title": "Minifig Head with Beard Stubble, Black Raised Right Eyebrow and Smirk Angled to Right Pattern"
+        },
+        {
+          "role": "headgear0",
+          "id": "2",
+          "table": "accessories.ConstructionHelmet",
+          "ref": "3833",
+          "colour": 14,
+          "title": "Minifig Construction Helmet"
+        },
+        {
+          "role": "hips",
+          "id": "3",
+          "table": "accessories.Hips",
+          "ref": "3815b",
+          "colour": 1,
+          "title": "Minifig Hips"
+        },
+        {
+          "role": "leg_l",
+          "id": "4",
+          "table": "legs.LegLeft",
+          "ref": "3817c",
+          "colour": 1,
+          "title": "Minifig Leg Left"
+        },
+        {
+          "role": "leg_r",
+          "id": "5",
+          "table": "legs.LegRight",
+          "ref": "3816c",
+          "colour": 1,
+          "title": "Minifig Leg Right"
+        },
+        {
+          "role": "arm_l",
+          "id": "6",
+          "table": "arms.ArmLeft",
+          "ref": "3819",
+          "colour": 25,
+          "title": "Minifig Arm Left"
+        },
+        {
+          "role": "hand_l",
+          "id": "7",
+          "table": "hands.Hand",
+          "ref": "3820",
+          "colour": 14,
+          "title": "Minifig Hand"
+        },
+        {
+          "role": "arm_r",
+          "id": "8",
+          "table": "arms.ArmRight",
+          "ref": "3818",
+          "colour": 25,
+          "title": "Minifig Arm Right"
+        },
+        {
+          "role": "hand_r",
+          "id": "9",
+          "table": "hands.Hand",
+          "ref": "3820",
+          "colour": 14,
+          "title": "Minifig Hand"
+        },
+        {
+          "role": "item_r",
+          "id": "10",
+          "table": "accessories.ToolHammer",
+          "ref": "55295",
+          "colour": 72,
+          "title": "Minifig Tool Hammer"
+        }
+      ],
+      "joints": {
+        "head": {
+          "origin": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "axis": [
+            0.0,
+            -1.0,
+            0.0
+          ],
+          "parent": null,
+          "instances": [
+            "1",
+            "2"
+          ]
+        },
+        "arm_l": {
+          "origin": [
+            15.552,
+            9.0,
+            0.0
+          ],
+          "axis": [
+            -0.985431,
+            0.170074,
+            0.0
+          ],
+          "parent": null,
+          "instances": [
+            "6"
+          ]
+        },
+        "hand_l": {
+          "origin": [
+            23.690824,
+            26.758413,
+            -9.8839
+          ],
+          "axis": [
+            -0.120261,
+            -0.696805,
+            0.707107
+          ],
+          "parent": "arm_l",
+          "instances": [
+            "7"
+          ]
+        },
+        "arm_r": {
+          "origin": [
+            -15.552,
+            9.0,
+            0.0
+          ],
+          "axis": [
+            -0.985431,
+            -0.170074,
+            -0.0
+          ],
+          "parent": null,
+          "instances": [
+            "8"
+          ]
+        },
+        "hand_r": {
+          "origin": [
+            -23.690824,
+            26.758413,
+            -9.8839
+          ],
+          "axis": [
+            -0.120261,
+            0.696805,
+            -0.707107
+          ],
+          "parent": "arm_r",
+          "instances": [
+            "9",
+            "10"
+          ]
+        },
+        "leg_l": {
+          "origin": [
+            2.0,
+            44.0,
+            0.0
+          ],
+          "axis": [
+            -1.0,
+            -0.0,
+            -0.0
+          ],
+          "parent": null,
+          "instances": [
+            "4"
+          ]
+        },
+        "leg_r": {
+          "origin": [
+            -2.0,
+            44.0,
+            0.0
+          ],
+          "axis": [
+            -1.0,
+            0.0,
+            0.0
+          ],
+          "parent": null,
+          "instances": [
+            "5"
+          ]
+        }
+      },
+      "clips": [
+        "MF04_builder.hammering",
+        "MF04_builder.carry_load",
+        "MF04_builder.head_shake_no"
+      ]
+    },
+    {
+      "figure": "MF05_chef",
+      "title": "Chef",
+      "plan": "minifig_05_chef",
+      "controller": "CTRL_minifig_05_chef",
+      "collection": "MF05_chef Chef",
+      "parts": [
+        {
+          "role": "torso",
+          "id": "0",
+          "table": "torsos.TorsoWithChefPattern",
+          "ref": "973p2a",
+          "colour": 15,
+          "title": "Minifig Torso with Chef Pattern"
+        },
+        {
+          "role": "head",
+          "id": "1",
+          "table": "heads.HeadWithBlackMoustacheAndEyebrows_NougatCheekLinesAndSmilePattern",
+          "ref": "3626cp7c",
+          "colour": 14,
+          "title": "Minifig Head with Black Moustache and Eyebrows, Nougat Cheek Lines and Smile Pattern"
+        },
+        {
+          "role": "headgear0",
+          "id": "2",
+          "table": "hats.Cook_SHat",
+          "ref": "3898",
+          "colour": 15,
+          "title": "Minifig Cook's Hat"
+        },
+        {
+          "role": "hips",
+          "id": "3",
+          "table": "accessories.Hips",
+          "ref": "3815b",
+          "colour": 0,
+          "title": "Minifig Hips"
+        },
+        {
+          "role": "leg_l",
+          "id": "4",
+          "table": "legs.LegLeft",
+          "ref": "3817c",
+          "colour": 0,
+          "title": "Minifig Leg Left"
+        },
+        {
+          "role": "leg_r",
+          "id": "5",
+          "table": "legs.LegRight",
+          "ref": "3816c",
+          "colour": 0,
+          "title": "Minifig Leg Right"
+        },
+        {
+          "role": "arm_l",
+          "id": "6",
+          "table": "arms.ArmLeft",
+          "ref": "3819",
+          "colour": 15,
+          "title": "Minifig Arm Left"
+        },
+        {
+          "role": "hand_l",
+          "id": "7",
+          "table": "hands.Hand",
+          "ref": "3820",
+          "colour": 14,
+          "title": "Minifig Hand"
+        },
+        {
+          "role": "item_l",
+          "id": "8",
+          "table": "accessories.Frypan",
+          "ref": "4528",
+          "colour": 0,
+          "title": "Minifig Frypan"
+        },
+        {
+          "role": "arm_r",
+          "id": "9",
+          "table": "arms.ArmRight",
+          "ref": "3818",
+          "colour": 15,
+          "title": "Minifig Arm Right"
+        },
+        {
+          "role": "hand_r",
+          "id": "10",
+          "table": "hands.Hand",
+          "ref": "3820",
+          "colour": 14,
+          "title": "Minifig Hand"
+        },
+        {
+          "role": "item_r",
+          "id": "11",
+          "table": "accessories.Ladle",
+          "ref": "4337",
+          "colour": 71,
+          "title": "Minifig Ladle"
+        }
+      ],
+      "joints": {
+        "head": {
+          "origin": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "axis": [
+            0.0,
+            -1.0,
+            0.0
+          ],
+          "parent": null,
+          "instances": [
+            "1",
+            "2"
+          ]
+        },
+        "arm_l": {
+          "origin": [
+            15.552,
+            9.0,
+            0.0
+          ],
+          "axis": [
+            -0.985431,
+            0.170074,
+            0.0
+          ],
+          "parent": null,
+          "instances": [
+            "6"
+          ]
+        },
+        "hand_l": {
+          "origin": [
+            23.690824,
+            26.758413,
+            -9.8839
+          ],
+          "axis": [
+            -0.120261,
+            -0.696805,
+            0.707107
+          ],
+          "parent": "arm_l",
+          "instances": [
+            "7",
+            "8"
+          ]
+        },
+        "arm_r": {
+          "origin": [
+            -15.552,
+            9.0,
+            0.0
+          ],
+          "axis": [
+            -0.985431,
+            -0.170074,
+            -0.0
+          ],
+          "parent": null,
+          "instances": [
+            "9"
+          ]
+        },
+        "hand_r": {
+          "origin": [
+            -23.690824,
+            26.758413,
+            -9.8839
+          ],
+          "axis": [
+            -0.120261,
+            0.696805,
+            -0.707107
+          ],
+          "parent": "arm_r",
+          "instances": [
+            "10",
+            "11"
+          ]
+        },
+        "leg_l": {
+          "origin": [
+            2.0,
+            44.0,
+            0.0
+          ],
+          "axis": [
+            -1.0,
+            -0.0,
+            -0.0
+          ],
+          "parent": null,
+          "instances": [
+            "4"
+          ]
+        },
+        "leg_r": {
+          "origin": [
+            -2.0,
+            44.0,
+            0.0
+          ],
+          "axis": [
+            -1.0,
+            0.0,
+            0.0
+          ],
+          "parent": null,
+          "instances": [
+            "5"
+          ]
+        }
+      },
+      "clips": [
+        "MF05_chef.stirring",
+        "MF05_chef.pan_flip",
+        "MF05_chef.celebrate"
+      ]
+    },
+    {
+      "figure": "MF06_pirate",
+      "title": "Pirate",
+      "plan": "minifig_06_pirate",
+      "controller": "CTRL_minifig_06_pirate",
+      "collection": "MF06_pirate Pirate",
+      "parts": [
+        {
+          "role": "torso",
+          "id": "0",
+          "table": "torsos.TorsoWithPirateStripesBlue_WhiteAndBlackBucklePattern",
+          "ref": "973p3e",
+          "colour": 15,
+          "title": "Minifig Torso with Pirate Stripes Blue/White and Black Buckle Pattern"
+        },
+        {
+          "role": "head",
+          "id": "1",
+          "table": "heads.HeadWithDarkOrangeBeard_GoldTeethAndEyepatchPattern",
+          "ref": "3626cp30",
+          "colour": 14,
+          "title": "Minifig Head with Dark Orange Beard, Gold Teeth and Eyepatch Pattern"
+        },
+        {
+          "role": "headgear0",
+          "id": "2",
+          "table": "hats.HatBicorne",
+          "ref": "2528a",
+          "colour": 0,
+          "title": "Minifig Hat Bicorne"
+        },
+        {
+          "role": "hips",
+          "id": "3",
+          "table": "accessories.Hips",
+          "ref": "3815b",
+          "colour": 1,
+          "title": "Minifig Hips"
+        },
+        {
+          "role": "leg_l",
+          "id": "4",
+          "table": "legs.LegLeft",
+          "ref": "3817c",
+          "colour": 1,
+          "title": "Minifig Leg Left"
+        },
+        {
+          "role": "leg_r",
+          "id": "5",
+          "table": "legs.LegRight",
+          "ref": "3816c",
+          "colour": 1,
+          "title": "Minifig Leg Right"
+        },
+        {
+          "role": "arm_l",
+          "id": "6",
+          "table": "arms.ArmLeft",
+          "ref": "3819",
+          "colour": 15,
+          "title": "Minifig Arm Left"
+        },
+        {
+          "role": "hand_l",
+          "id": "7",
+          "table": "hands.Hand",
+          "ref": "3820",
+          "colour": 14,
+          "title": "Minifig Hand"
+        },
+        {
+          "role": "arm_r",
+          "id": "8",
+          "table": "arms.ArmRight",
+          "ref": "3818",
+          "colour": 15,
+          "title": "Minifig Arm Right"
+        },
+        {
+          "role": "hand_r",
+          "id": "9",
+          "table": "hands.Hand",
+          "ref": "3820",
+          "colour": 14,
+          "title": "Minifig Hand"
+        },
+        {
+          "role": "item_r",
+          "id": "10",
+          "table": "accessories.SwordCutlass",
+          "ref": "2530",
+          "colour": 72,
+          "title": "Minifig Sword Cutlass"
+        }
+      ],
+      "joints": {
+        "head": {
+          "origin": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "axis": [
+            0.0,
+            -1.0,
+            0.0
+          ],
+          "parent": null,
+          "instances": [
+            "1",
+            "2"
+          ]
+        },
+        "arm_l": {
+          "origin": [
+            15.552,
+            9.0,
+            0.0
+          ],
+          "axis": [
+            -0.985431,
+            0.170074,
+            0.0
+          ],
+          "parent": null,
+          "instances": [
+            "6"
+          ]
+        },
+        "hand_l": {
+          "origin": [
+            23.690824,
+            26.758413,
+            -9.8839
+          ],
+          "axis": [
+            -0.120261,
+            -0.696805,
+            0.707107
+          ],
+          "parent": "arm_l",
+          "instances": [
+            "7"
+          ]
+        },
+        "arm_r": {
+          "origin": [
+            -15.552,
+            9.0,
+            0.0
+          ],
+          "axis": [
+            -0.985431,
+            -0.170074,
+            -0.0
+          ],
+          "parent": null,
+          "instances": [
+            "8"
+          ]
+        },
+        "hand_r": {
+          "origin": [
+            -23.690824,
+            26.758413,
+            -9.8839
+          ],
+          "axis": [
+            -0.120261,
+            0.696805,
+            -0.707107
+          ],
+          "parent": "arm_r",
+          "instances": [
+            "9",
+            "10"
+          ]
+        },
+        "leg_l": {
+          "origin": [
+            2.0,
+            44.0,
+            0.0
+          ],
+          "axis": [
+            -1.0,
+            -0.0,
+            -0.0
+          ],
+          "parent": null,
+          "instances": [
+            "4"
+          ]
+        },
+        "leg_r": {
+          "origin": [
+            -2.0,
+            44.0,
+            0.0
+          ],
+          "axis": [
+            -1.0,
+            0.0,
+            0.0
+          ],
+          "parent": null,
+          "instances": [
+            "5"
+          ]
+        }
+      },
+      "clips": [
+        "MF06_pirate.hornpipe_jig",
+        "MF06_pirate.lookout",
+        "MF06_pirate.cutlass_lunge"
+      ]
+    },
+    {
+      "figure": "MF07_firefighter",
+      "title": "Firefighter",
+      "plan": "minifig_07_firefighter",
+      "controller": "CTRL_minifig_07_firefighter",
+      "collection": "MF07_firefighter Firefighter",
+      "parts": [
+        {
+          "role": "torso",
+          "id": "0",
+          "table": "torsos.TorsoWithFireFighterFiveButtonPattern",
+          "ref": "973p21",
+          "colour": 0,
+          "title": "Minifig Torso with Fire Fighter Five Button Pattern"
+        },
+        {
+          "role": "head",
+          "id": "1",
+          "table": "heads.HeadWithDarkOrangeEyebrows_Goatee_MoustacheAndDarkBluishGreySootMarksPattern",
+          "ref": "3626cp7i",
+          "colour": 14,
+          "title": "Minifig Head with Dark Orange Eyebrows, Goatee, Moustache and Dark Bluish Grey Soot Marks Pattern"
+        },
+        {
+          "role": "headgear0",
+          "id": "2",
+          "table": "accessories.FireHelmetWithFireLogoShieldPattern",
+          "ref": "3834p01",
+          "colour": 4,
+          "title": "Minifig Fire Helmet with Fire Logo Shield Pattern"
+        },
+        {
+          "role": "hips",
+          "id": "3",
+          "table": "accessories.Hips",
+          "ref": "3815b",
+          "colour": 0,
+          "title": "Minifig Hips"
+        },
+        {
+          "role": "leg_l",
+          "id": "4",
+          "table": "legs.LegLeft",
+          "ref": "3817c",
+          "colour": 0,
+          "title": "Minifig Leg Left"
+        },
+        {
+          "role": "leg_r",
+          "id": "5",
+          "table": "legs.LegRight",
+          "ref": "3816c",
+          "colour": 0,
+          "title": "Minifig Leg Right"
+        },
+        {
+          "role": "arm_l",
+          "id": "6",
+          "table": "arms.ArmLeft",
+          "ref": "3819",
+          "colour": 0,
+          "title": "Minifig Arm Left"
+        },
+        {
+          "role": "hand_l",
+          "id": "7",
+          "table": "hands.Hand",
+          "ref": "3820",
+          "colour": 14,
+          "title": "Minifig Hand"
+        },
+        {
+          "role": "arm_r",
+          "id": "8",
+          "table": "arms.ArmRight",
+          "ref": "3818",
+          "colour": 0,
+          "title": "Minifig Arm Right"
+        },
+        {
+          "role": "hand_r",
+          "id": "9",
+          "table": "hands.Hand",
+          "ref": "3820",
+          "colour": 14,
+          "title": "Minifig Hand"
+        },
+        {
+          "role": "item_r",
+          "id": "10",
+          "table": "accessories.ToolHoseNozzleWithHandle",
+          "ref": "4210a",
+          "colour": 0,
+          "title": "Minifig Tool Hose Nozzle with Handle"
+        }
+      ],
+      "joints": {
+        "head": {
+          "origin": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "axis": [
+            0.0,
+            -1.0,
+            0.0
+          ],
+          "parent": null,
+          "instances": [
+            "1",
+            "2"
+          ]
+        },
+        "arm_l": {
+          "origin": [
+            15.552,
+            9.0,
+            0.0
+          ],
+          "axis": [
+            -0.985431,
+            0.170074,
+            0.0
+          ],
+          "parent": null,
+          "instances": [
+            "6"
+          ]
+        },
+        "hand_l": {
+          "origin": [
+            23.690824,
+            26.758413,
+            -9.8839
+          ],
+          "axis": [
+            -0.120261,
+            -0.696805,
+            0.707107
+          ],
+          "parent": "arm_l",
+          "instances": [
+            "7"
+          ]
+        },
+        "arm_r": {
+          "origin": [
+            -15.552,
+            9.0,
+            0.0
+          ],
+          "axis": [
+            -0.985431,
+            -0.170074,
+            -0.0
+          ],
+          "parent": null,
+          "instances": [
+            "8"
+          ]
+        },
+        "hand_r": {
+          "origin": [
+            -23.690824,
+            26.758413,
+            -9.8839
+          ],
+          "axis": [
+            -0.120261,
+            0.696805,
+            -0.707107
+          ],
+          "parent": "arm_r",
+          "instances": [
+            "9",
+            "10"
+          ]
+        },
+        "leg_l": {
+          "origin": [
+            2.0,
+            44.0,
+            0.0
+          ],
+          "axis": [
+            -1.0,
+            -0.0,
+            -0.0
+          ],
+          "parent": null,
+          "instances": [
+            "4"
+          ]
+        },
+        "leg_r": {
+          "origin": [
+            -2.0,
+            44.0,
+            0.0
+          ],
+          "axis": [
+            -1.0,
+            0.0,
+            0.0
+          ],
+          "parent": null,
+          "instances": [
+            "5"
+          ]
+        }
+      },
+      "clips": [
+        "MF07_firefighter.ladder_climb",
+        "MF07_firefighter.run",
+        "MF07_firefighter.hose_sweep"
+      ]
+    },
+    {
+      "figure": "MF08_athlete",
+      "title": "Athlete",
+      "plan": "minifig_08_athlete",
+      "controller": "CTRL_minifig_08_athlete",
+      "collection": "MF08_athlete Athlete",
+      "parts": [
+        {
+          "role": "torso",
+          "id": "0",
+          "table": "torsos.TorsoWithSoccerTeamRed_BlueStripesAndRed_10Pattern",
+          "ref": "973pg7",
+          "colour": 15,
+          "title": "Minifig Torso with Soccer Team Red/Blue Stripes and Red #10 Pattern"
+        },
+        {
+          "role": "head",
+          "id": "1",
+          "table": "heads.HeadWithBlackEyebrows_WhitePupils_ChinDimple_OpenMouthSmileWithTeethPattern",
+          "ref": "3626cp73",
+          "colour": 14,
+          "title": "Minifig Head with Black Eyebrows, White Pupils, Chin Dimple, Open Mouth Smile with Teeth Pattern"
+        },
+        {
+          "role": "headgear0",
+          "id": "2",
+          "table": "accessories.HairMale",
+          "ref": "3901",
+          "colour": 70,
+          "title": "Minifig Hair Male"
+        },
+        {
+          "role": "hips",
+          "id": "3",
+          "table": "accessories.Hips",
+          "ref": "3815b",
+          "colour": 1,
+          "title": "Minifig Hips"
+        },
+        {
+          "role": "leg_l",
+          "id": "4",
+          "table": "legs.LegLeft",
+          "ref": "3817c",
+          "colour": 1,
+          "title": "Minifig Leg Left"
+        },
+        {
+          "role": "leg_r",
+          "id": "5",
+          "table": "legs.LegRight",
+          "ref": "3816c",
+          "colour": 1,
+          "title": "Minifig Leg Right"
+        },
+        {
+          "role": "arm_l",
+          "id": "6",
+          "table": "arms.ArmLeft",
+          "ref": "3819",
+          "colour": 15,
+          "title": "Minifig Arm Left"
+        },
+        {
+          "role": "hand_l",
+          "id": "7",
+          "table": "hands.Hand",
+          "ref": "3820",
+          "colour": 14,
+          "title": "Minifig Hand"
+        },
+        {
+          "role": "arm_r",
+          "id": "8",
+          "table": "arms.ArmRight",
+          "ref": "3818",
+          "colour": 15,
+          "title": "Minifig Arm Right"
+        },
+        {
+          "role": "hand_r",
+          "id": "9",
+          "table": "hands.Hand",
+          "ref": "3820",
+          "colour": 14,
+          "title": "Minifig Hand"
+        }
+      ],
+      "joints": {
+        "head": {
+          "origin": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "axis": [
+            0.0,
+            -1.0,
+            0.0
+          ],
+          "parent": null,
+          "instances": [
+            "1",
+            "2"
+          ]
+        },
+        "arm_l": {
+          "origin": [
+            15.552,
+            9.0,
+            0.0
+          ],
+          "axis": [
+            -0.985431,
+            0.170074,
+            0.0
+          ],
+          "parent": null,
+          "instances": [
+            "6"
+          ]
+        },
+        "hand_l": {
+          "origin": [
+            23.690824,
+            26.758413,
+            -9.8839
+          ],
+          "axis": [
+            -0.120261,
+            -0.696805,
+            0.707107
+          ],
+          "parent": "arm_l",
+          "instances": [
+            "7"
+          ]
+        },
+        "arm_r": {
+          "origin": [
+            -15.552,
+            9.0,
+            0.0
+          ],
+          "axis": [
+            -0.985431,
+            -0.170074,
+            -0.0
+          ],
+          "parent": null,
+          "instances": [
+            "8"
+          ]
+        },
+        "hand_r": {
+          "origin": [
+            -23.690824,
+            26.758413,
+            -9.8839
+          ],
+          "axis": [
+            -0.120261,
+            0.696805,
+            -0.707107
+          ],
+          "parent": "arm_r",
+          "instances": [
+            "9"
+          ]
+        },
+        "leg_l": {
+          "origin": [
+            2.0,
+            44.0,
+            0.0
+          ],
+          "axis": [
+            -1.0,
+            -0.0,
+            -0.0
+          ],
+          "parent": null,
+          "instances": [
+            "4"
+          ]
+        },
+        "leg_r": {
+          "origin": [
+            -2.0,
+            44.0,
+            0.0
+          ],
+          "axis": [
+            -1.0,
+            0.0,
+            0.0
+          ],
+          "parent": null,
+          "instances": [
+            "5"
+          ]
+        }
+      },
+      "clips": [
+        "MF08_athlete.sprint",
+        "MF08_athlete.high_jump",
+        "MF08_athlete.warmup_leg_swings"
+      ]
+    },
+    {
+      "figure": "MF09_wizard",
+      "title": "Wizard",
+      "plan": "minifig_09_wizard",
+      "controller": "CTRL_minifig_09_wizard",
+      "collection": "MF09_wizard Wizard",
+      "parts": [
+        {
+          "role": "torso",
+          "id": "0",
+          "table": "torsos.TorsoWithDarkBluishGreyRobeGatherLines_WrinklesAndClaspAtRightShoulderPattern",
+          "ref": "973pmc",
+          "colour": 272,
+          "title": "Minifig Torso with Dark Bluish Grey Robe Gather Lines, Wrinkles and Clasp at Right Shoulder Pattern"
+        },
+        {
+          "role": "head",
+          "id": "1",
+          "table": "heads.HeadWithGrin_BrownBeard_WhitePupilsPattern_HollowStud_",
+          "ref": "3626cp88",
+          "colour": 14,
+          "title": "Minifig Head with Grin, Brown Beard, White Pupils Pattern (Hollow Stud)"
+        },
+        {
+          "role": "headgear0",
+          "id": "2",
+          "table": "hats.WizardsHat",
+          "ref": "6131",
+          "colour": 272,
+          "title": "Minifig Wizards Hat"
+        },
+        {
+          "role": "hips",
+          "id": "3",
+          "table": "accessories.Hips",
+          "ref": "3815b",
+          "colour": 272,
+          "title": "Minifig Hips"
+        },
+        {
+          "role": "leg_l",
+          "id": "4",
+          "table": "legs.LegLeft",
+          "ref": "3817c",
+          "colour": 272,
+          "title": "Minifig Leg Left"
+        },
+        {
+          "role": "leg_r",
+          "id": "5",
+          "table": "legs.LegRight",
+          "ref": "3816c",
+          "colour": 272,
+          "title": "Minifig Leg Right"
+        },
+        {
+          "role": "arm_l",
+          "id": "6",
+          "table": "arms.ArmLeft",
+          "ref": "3819",
+          "colour": 272,
+          "title": "Minifig Arm Left"
+        },
+        {
+          "role": "hand_l",
+          "id": "7",
+          "table": "hands.Hand",
+          "ref": "3820",
+          "colour": 14,
+          "title": "Minifig Hand"
+        },
+        {
+          "role": "arm_r",
+          "id": "8",
+          "table": "arms.ArmRight",
+          "ref": "3818",
+          "colour": 272,
+          "title": "Minifig Arm Right"
+        },
+        {
+          "role": "hand_r",
+          "id": "9",
+          "table": "hands.Hand",
+          "ref": "3820",
+          "colour": 14,
+          "title": "Minifig Hand"
+        },
+        {
+          "role": "item_r",
+          "id": "10",
+          "table": "accessories.StaffWithSphericalEnd",
+          "ref": "95049",
+          "colour": 70,
+          "title": "Minifig Staff with Spherical End"
+        }
+      ],
+      "joints": {
+        "head": {
+          "origin": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "axis": [
+            0.0,
+            -1.0,
+            0.0
+          ],
+          "parent": null,
+          "instances": [
+            "1",
+            "2"
+          ]
+        },
+        "arm_l": {
+          "origin": [
+            15.552,
+            9.0,
+            0.0
+          ],
+          "axis": [
+            -0.985431,
+            0.170074,
+            0.0
+          ],
+          "parent": null,
+          "instances": [
+            "6"
+          ]
+        },
+        "hand_l": {
+          "origin": [
+            23.690824,
+            26.758413,
+            -9.8839
+          ],
+          "axis": [
+            -0.120261,
+            -0.696805,
+            0.707107
+          ],
+          "parent": "arm_l",
+          "instances": [
+            "7"
+          ]
+        },
+        "arm_r": {
+          "origin": [
+            -15.552,
+            9.0,
+            0.0
+          ],
+          "axis": [
+            -0.985431,
+            -0.170074,
+            -0.0
+          ],
+          "parent": null,
+          "instances": [
+            "8"
+          ]
+        },
+        "hand_r": {
+          "origin": [
+            -23.690824,
+            26.758413,
+            -9.8839
+          ],
+          "axis": [
+            -0.120261,
+            0.696805,
+            -0.707107
+          ],
+          "parent": "arm_r",
+          "instances": [
+            "9",
+            "10"
+          ]
+        },
+        "leg_l": {
+          "origin": [
+            2.0,
+            44.0,
+            0.0
+          ],
+          "axis": [
+            -1.0,
+            -0.0,
+            -0.0
+          ],
+          "parent": null,
+          "instances": [
+            "4"
+          ]
+        },
+        "leg_r": {
+          "origin": [
+            -2.0,
+            44.0,
+            0.0
+          ],
+          "axis": [
+            -1.0,
+            0.0,
+            0.0
+          ],
+          "parent": null,
+          "instances": [
+            "5"
+          ]
+        }
+      },
+      "clips": [
+        "MF09_wizard.spell_spin",
+        "MF09_wizard.levitate",
+        "MF09_wizard.cast_spell"
+      ]
+    },
+    {
+      "figure": "MF10_diver",
+      "title": "Diver",
+      "plan": "minifig_10_diver",
+      "controller": "CTRL_minifig_10_diver",
+      "collection": "MF10_diver Diver",
+      "parts": [
+        {
+          "role": "torso",
+          "id": "0",
+          "table": "torsos.TorsoWithDivingSuit_OrangeStripes_Belt_PressureGaugeAndBreathingHosePattern",
+          "ref": "973p5f",
+          "colour": 0,
+          "title": "Minifig Torso with Diving Suit, Orange Stripes, Belt, Pressure Gauge and Breathing Hose Pattern"
+        },
+        {
+          "role": "head",
+          "id": "1",
+          "table": "heads.HeadWithBrownEyebrows_Freckles_OpenSmilePattern_HollowStud_",
+          "ref": "3626cp8b",
+          "colour": 14,
+          "title": "Minifig Head with Brown Eyebrows, Freckles, Open Smile Pattern (Hollow Stud)"
+        },
+        {
+          "role": "hips",
+          "id": "2",
+          "table": "accessories.Hips",
+          "ref": "3815b",
+          "colour": 0,
+          "title": "Minifig Hips"
+        },
+        {
+          "role": "leg_l",
+          "id": "3",
+          "table": "legs.LegLeft",
+          "ref": "3817c",
+          "colour": 0,
+          "title": "Minifig Leg Left"
+        },
+        {
+          "role": "leg_r",
+          "id": "4",
+          "table": "legs.LegRight",
+          "ref": "3816c",
+          "colour": 0,
+          "title": "Minifig Leg Right"
+        },
+        {
+          "role": "arm_l",
+          "id": "5",
+          "table": "arms.ArmLeft",
+          "ref": "3819",
+          "colour": 0,
+          "title": "Minifig Arm Left"
+        },
+        {
+          "role": "hand_l",
+          "id": "6",
+          "table": "hands.Hand",
+          "ref": "3820",
+          "colour": 0,
+          "title": "Minifig Hand"
+        },
+        {
+          "role": "arm_r",
+          "id": "7",
+          "table": "arms.ArmRight",
+          "ref": "3818",
+          "colour": 0,
+          "title": "Minifig Arm Right"
+        },
+        {
+          "role": "hand_r",
+          "id": "8",
+          "table": "hands.Hand",
+          "ref": "3820",
+          "colour": 0,
+          "title": "Minifig Hand"
+        },
+        {
+          "role": "back0",
+          "id": "9",
+          "table": "accessories.Airtanks",
+          "ref": "3838",
+          "colour": 14,
+          "title": "Minifig Airtanks"
+        },
+        {
+          "role": "foot_l",
+          "id": "10",
+          "table": "accessories.FlipperThin",
+          "ref": "59275a",
+          "colour": 25,
+          "title": "Minifig Flipper Thin"
+        },
+        {
+          "role": "foot_r",
+          "id": "11",
+          "table": "accessories.FlipperThin",
+          "ref": "59275a",
+          "colour": 25,
+          "title": "Minifig Flipper Thin"
+        }
+      ],
+      "joints": {
+        "head": {
+          "origin": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "axis": [
+            0.0,
+            -1.0,
+            0.0
+          ],
+          "parent": null,
+          "instances": [
+            "1"
+          ]
+        },
+        "arm_l": {
+          "origin": [
+            15.552,
+            9.0,
+            0.0
+          ],
+          "axis": [
+            -0.985431,
+            0.170074,
+            0.0
+          ],
+          "parent": null,
+          "instances": [
+            "5"
+          ]
+        },
+        "hand_l": {
+          "origin": [
+            23.690824,
+            26.758413,
+            -9.8839
+          ],
+          "axis": [
+            -0.120261,
+            -0.696805,
+            0.707107
+          ],
+          "parent": "arm_l",
+          "instances": [
+            "6"
+          ]
+        },
+        "arm_r": {
+          "origin": [
+            -15.552,
+            9.0,
+            0.0
+          ],
+          "axis": [
+            -0.985431,
+            -0.170074,
+            -0.0
+          ],
+          "parent": null,
+          "instances": [
+            "7"
+          ]
+        },
+        "hand_r": {
+          "origin": [
+            -23.690824,
+            26.758413,
+            -9.8839
+          ],
+          "axis": [
+            -0.120261,
+            0.696805,
+            -0.707107
+          ],
+          "parent": "arm_r",
+          "instances": [
+            "8"
+          ]
+        },
+        "leg_l": {
+          "origin": [
+            2.0,
+            44.0,
+            0.0
+          ],
+          "axis": [
+            -1.0,
+            -0.0,
+            -0.0
+          ],
+          "parent": null,
+          "instances": [
+            "3",
+            "10"
+          ]
+        },
+        "leg_r": {
+          "origin": [
+            -2.0,
+            44.0,
+            0.0
+          ],
+          "axis": [
+            -1.0,
+            0.0,
+            0.0
+          ],
+          "parent": null,
+          "instances": [
+            "4",
+            "11"
+          ]
+        }
+      },
+      "clips": [
+        "MF10_diver.swim_crawl",
+        "MF10_diver.sit_down_stand_up",
+        "MF10_diver.fall_and_get_up"
+      ]
+    }
+  ],
+  "clips": [
+    {
+      "id": "MF01_police.walk_patrol",
+      "figure": "MF01_police",
+      "clip": "walk_patrol",
+      "title": "Walk patrol",
+      "description": "Walks four steps out, turns round, walks back, turns to face front again. Legs alternate, arms counter-swing, the hips dip as the straight legs split.",
+      "window": "A",
+      "timeline_start": 1,
+      "frames": 144,
+      "loop_range": [
+        20,
+        44
+      ],
+      "blender": {
+        "action": "MF01_police.walk_patrol",
+        "nla_track": "A walk_patrol",
+        "controller_slot": "OBminifig_controller",
+        "strip_start": 1
+      }
+    },
+    {
+      "id": "MF01_police.look_around",
+      "figure": "MF01_police",
+      "clip": "look_around",
+      "title": "Look around",
+      "description": "Head scans left and right, then the whole body turns left to look along the street with the head sweeping, and turns back.",
+      "window": "B",
+      "timeline_start": 161,
+      "frames": 144,
+      "loop_range": null,
+      "blender": {
+        "action": "MF01_police.look_around",
+        "nla_track": "B look_around",
+        "controller_slot": "OBminifig_controller",
+        "strip_start": 161
+      }
+    },
+    {
+      "id": "MF01_police.halt_signal",
+      "figure": "MF01_police",
+      "clip": "halt_signal",
+      "title": "Halt signal",
+      "description": "Right arm straight forward to halt traffic, then beckons; the left hand lifts the radio to the chin.",
+      "window": "C",
+      "timeline_start": 321,
+      "frames": 144,
+      "loop_range": null,
+      "blender": {
+        "action": "MF01_police.halt_signal",
+        "nla_track": "C halt_signal",
+        "controller_slot": "OBminifig_controller",
+        "strip_start": 321
+      }
+    },
+    {
+      "id": "MF02_spaceman.moon_hop",
+      "figure": "MF02_spaceman",
+      "clip": "moon_hop",
+      "title": "Moon hop",
+      "description": "Four slow low-gravity bounds (two forward, two back to the start): arms swing back, then up in front through the jump, legs split in the air; exact parabolic flight.",
+      "window": "A",
+      "timeline_start": 1,
+      "frames": 144,
+      "loop_range": [
+        40,
+        70
+      ],
+      "blender": {
+        "action": "MF02_spaceman.moon_hop",
+        "nla_track": "A moon_hop",
+        "controller_slot": "OBminifig_controller",
+        "strip_start": 1
+      }
+    },
+    {
+      "id": "MF02_spaceman.zero_g_tumble",
+      "figure": "MF02_spaceman",
+      "clip": "zero_g_tumble",
+      "title": "Zero-g tumble",
+      "description": "Floats up, turns one slow forward somersault with limbs drifting, and drifts back down to land.",
+      "window": "B",
+      "timeline_start": 161,
+      "frames": 144,
+      "loop_range": null,
+      "blender": {
+        "action": "MF02_spaceman.zero_g_tumble",
+        "nla_track": "B zero_g_tumble",
+        "controller_slot": "OBminifig_controller",
+        "strip_start": 161
+      }
+    },
+    {
+      "id": "MF02_spaceman.wave",
+      "figure": "MF02_spaceman",
+      "clip": "wave",
+      "title": "Wave",
+      "description": "Waves with the right arm raised just past vertical (wrist waggles), leaning away and glancing to the right; then a smaller wave with the left hand in front of the chest.",
+      "window": "C",
+      "timeline_start": 321,
+      "frames": 144,
+      "loop_range": [
+        18,
+        42
+      ],
+      "blender": {
+        "action": "MF02_spaceman.wave",
+        "nla_track": "C wave",
+        "controller_slot": "OBminifig_controller",
+        "strip_start": 321
+      }
+    },
+    {
+      "id": "MF03_knight.sword_slash",
+      "figure": "MF03_knight",
+      "clip": "sword_slash",
+      "title": "Sword slash",
+      "description": "Three diagonal slashes: blade raised in front, then the wrist rolls it outward and down while the body turns and lunges into the cut; the shield stays on guard.",
+      "window": "A",
+      "timeline_start": 1,
+      "frames": 144,
+      "loop_range": [
+        50,
+        90
+      ],
+      "blender": {
+        "action": "MF03_knight.sword_slash",
+        "nla_track": "A sword_slash",
+        "controller_slot": "OBminifig_controller",
+        "strip_start": 1
+      }
+    },
+    {
+      "id": "MF03_knight.shield_block",
+      "figure": "MF03_knight",
+      "clip": "shield_block",
+      "title": "Shield block",
+      "description": "Raises the shield in front of the chest in a braced stance with the sword held low, takes three blows (jolts back), peeks round the shield between blows, counter-thrusts and relaxes.",
+      "window": "B",
+      "timeline_start": 161,
+      "frames": 144,
+      "loop_range": null,
+      "blender": {
+        "action": "MF03_knight.shield_block",
+        "nla_track": "B shield_block",
+        "controller_slot": "OBminifig_controller",
+        "strip_start": 161
+      }
+    },
+    {
+      "id": "MF03_knight.courtly_bow",
+      "figure": "MF03_knight",
+      "clip": "courtly_bow",
+      "title": "Courtly bow",
+      "description": "Sword hand to the chest (blade across the body), shield arm back, bows from the hips (legs stay upright, feet planted), rises and finishes with the blade raised before the face.",
+      "window": "C",
+      "timeline_start": 321,
+      "frames": 144,
+      "loop_range": null,
+      "blender": {
+        "action": "MF03_knight.courtly_bow",
+        "nla_track": "C courtly_bow",
+        "controller_slot": "OBminifig_controller",
+        "strip_start": 321
+      }
+    },
+    {
+      "id": "MF04_builder.hammering",
+      "figure": "MF04_builder",
+      "clip": "hammering",
+      "title": "Hammering",
+      "description": "Leans in holding a nail with the left hand and strikes five times with the hammer, the last two faster; the body nods into each blow.",
+      "window": "A",
+      "timeline_start": 1,
+      "frames": 144,
+      "loop_range": [
+        14,
+        38
+      ],
+      "blender": {
+        "action": "MF04_builder.hammering",
+        "nla_track": "A hammering",
+        "controller_slot": "OBminifig_controller",
+        "strip_start": 1
+      }
+    },
+    {
+      "id": "MF04_builder.carry_load",
+      "figure": "MF04_builder",
+      "clip": "carry_load",
+      "title": "Carry load",
+      "description": "Both arms held forward as if carrying a load; short careful steps out, turn round, back, turn to the front and lower the arms.",
+      "window": "B",
+      "timeline_start": 161,
+      "frames": 144,
+      "loop_range": [
+        28,
+        56
+      ],
+      "blender": {
+        "action": "MF04_builder.carry_load",
+        "nla_track": "B carry_load",
+        "controller_slot": "OBminifig_controller",
+        "strip_start": 161
+      }
+    },
+    {
+      "id": "MF04_builder.head_shake_no",
+      "figure": "MF04_builder",
+      "clip": "head_shake_no",
+      "title": "Shrug and head shake",
+      "description": "Shrugs (both arms forward a little, hands roll outward), shakes the head 'no', then a facepalm with the free left hand.",
+      "window": "C",
+      "timeline_start": 321,
+      "frames": 144,
+      "loop_range": null,
+      "blender": {
+        "action": "MF04_builder.head_shake_no",
+        "nla_track": "C head_shake_no",
+        "controller_slot": "OBminifig_controller",
+        "strip_start": 321
+      }
+    },
+    {
+      "id": "MF05_chef.stirring",
+      "figure": "MF05_chef",
+      "clip": "stirring",
+      "title": "Stirring",
+      "description": "Stirs a pot with the ladle (bowl down): shoulder and wrist oscillate a quarter cycle apart so the bowl circles; the pan hangs at the side; glances aside, then taps the ladle twice.",
+      "window": "A",
+      "timeline_start": 1,
+      "frames": 144,
+      "loop_range": [
+        16,
+        40
+      ],
+      "blender": {
+        "action": "MF05_chef.stirring",
+        "nla_track": "A stirring",
+        "controller_slot": "OBminifig_controller",
+        "strip_start": 1
+      }
+    },
+    {
+      "id": "MF05_chef.pan_flip",
+      "figure": "MF05_chef",
+      "clip": "pan_flip",
+      "title": "Pan flip",
+      "description": "Holds the frying pan level in front and flips three times (dip, flick up with a wrist snap, follow the pancake); the third flip comes with a hop; then points at the pan with the ladle.",
+      "window": "B",
+      "timeline_start": 161,
+      "frames": 144,
+      "loop_range": null,
+      "blender": {
+        "action": "MF05_chef.pan_flip",
+        "nla_track": "B pan_flip",
+        "controller_slot": "OBminifig_controller",
+        "strip_start": 161
+      }
+    },
+    {
+      "id": "MF05_chef.celebrate",
+      "figure": "MF05_chef",
+      "clip": "celebrate",
+      "title": "Celebrate",
+      "description": "Arms up in front (utensils rolled outward), three happy hops with kicking legs and waving hands, a full spin, fist pumps, arms down.",
+      "window": "C",
+      "timeline_start": 321,
+      "frames": 144,
+      "loop_range": null,
+      "blender": {
+        "action": "MF05_chef.celebrate",
+        "nla_track": "C celebrate",
+        "controller_slot": "OBminifig_controller",
+        "strip_start": 321
+      }
+    },
+    {
+      "id": "MF06_pirate.hornpipe_jig",
+      "figure": "MF06_pirate",
+      "clip": "hornpipe_jig",
+      "title": "Hornpipe jig",
+      "description": "Ten alternating forward kicks with a little hop on the standing leg, arms swinging, body twisting with each kick.",
+      "window": "A",
+      "timeline_start": 1,
+      "frames": 144,
+      "loop_range": [
+        12,
+        36
+      ],
+      "blender": {
+        "action": "MF06_pirate.hornpipe_jig",
+        "nla_track": "A hornpipe_jig",
+        "controller_slot": "OBminifig_controller",
+        "strip_start": 1
+      }
+    },
+    {
+      "id": "MF06_pirate.lookout",
+      "figure": "MF06_pirate",
+      "clip": "lookout",
+      "title": "Lookout",
+      "description": "Left hand raised to shade the eyes, leans to peer and scans the horizon left and right with body and head; spots something and points the cutlass at it.",
+      "window": "B",
+      "timeline_start": 161,
+      "frames": 144,
+      "loop_range": null,
+      "blender": {
+        "action": "MF06_pirate.lookout",
+        "nla_track": "B lookout",
+        "controller_slot": "OBminifig_controller",
+        "strip_start": 161
+      }
+    },
+    {
+      "id": "MF06_pirate.cutlass_lunge",
+      "figure": "MF06_pirate",
+      "clip": "cutlass_lunge",
+      "title": "Cutlass lunge",
+      "description": "En garde stance, two fencing lunges (thrust, front leg forward, back leg extended), recover, then a flourish with the blade swung out to the side.",
+      "window": "C",
+      "timeline_start": 321,
+      "frames": 144,
+      "loop_range": null,
+      "blender": {
+        "action": "MF06_pirate.cutlass_lunge",
+        "nla_track": "C cutlass_lunge",
+        "controller_slot": "OBminifig_controller",
+        "strip_start": 321
+      }
+    },
+    {
+      "id": "MF07_firefighter.ladder_climb",
+      "figure": "MF07_firefighter",
+      "clip": "ladder_climb",
+      "title": "Ladder climb",
+      "description": "Climbs four rungs of an imaginary ladder in front (16 LDU each) with alternating hands gripping at chest-to-face height and alternating feet, looks around at the top, climbs back down.",
+      "window": "A",
+      "timeline_start": 1,
+      "frames": 144,
+      "loop_range": [
+        8,
+        40
+      ],
+      "blender": {
+        "action": "MF07_firefighter.ladder_climb",
+        "nla_track": "A ladder_climb",
+        "controller_slot": "OBminifig_controller",
+        "strip_start": 1
+      }
+    },
+    {
+      "id": "MF07_firefighter.run",
+      "figure": "MF07_firefighter",
+      "clip": "run",
+      "title": "Run",
+      "description": "Runs out (fast leg and arm swing, forward lean, a short flight lift at each stride), turns round with a skid, runs back and turns to the front. Feet slide: travel is shorter than the stride.",
+      "window": "B",
+      "timeline_start": 161,
+      "frames": 144,
+      "loop_range": [
+        14,
+        30
+      ],
+      "blender": {
+        "action": "MF07_firefighter.run",
+        "nla_track": "B run",
+        "controller_slot": "OBminifig_controller",
+        "strip_start": 161
+      }
+    },
+    {
+      "id": "MF07_firefighter.hose_sweep",
+      "figure": "MF07_firefighter",
+      "clip": "hose_sweep",
+      "title": "Hose sweep",
+      "description": "Braced stance, both hands forward on the hose, sweeps the spray left and right with body and head and leans back against the pressure.",
+      "window": "C",
+      "timeline_start": 321,
+      "frames": 144,
+      "loop_range": [
+        20,
+        68
+      ],
+      "blender": {
+        "action": "MF07_firefighter.hose_sweep",
+        "nla_track": "C hose_sweep",
+        "controller_slot": "OBminifig_controller",
+        "strip_start": 321
+      }
+    },
+    {
+      "id": "MF08_athlete.sprint",
+      "figure": "MF08_athlete",
+      "clip": "sprint",
+      "title": "Sprint",
+      "description": "Set position, sprints out with big leg and arm swings and a strong forward lean, turns round, jogs back and turns to the front.",
+      "window": "A",
+      "timeline_start": 1,
+      "frames": 144,
+      "loop_range": [
+        18,
+        30
+      ],
+      "blender": {
+        "action": "MF08_athlete.sprint",
+        "nla_track": "A sprint",
+        "controller_slot": "OBminifig_controller",
+        "strip_start": 1
+      }
+    },
+    {
+      "id": "MF08_athlete.high_jump",
+      "figure": "MF08_athlete",
+      "clip": "high_jump",
+      "title": "Spin jump",
+      "description": "Two arm pre-swings, a big jump (75 LDU) with a full turn in the air, arms straight up and legs tucked, landing with a forward lean, fist pumps overhead and a victory hop.",
+      "window": "B",
+      "timeline_start": 161,
+      "frames": 144,
+      "loop_range": null,
+      "blender": {
+        "action": "MF08_athlete.high_jump",
+        "nla_track": "B high_jump",
+        "controller_slot": "OBminifig_controller",
+        "strip_start": 161
+      }
+    },
+    {
+      "id": "MF08_athlete.warmup_leg_swings",
+      "figure": "MF08_athlete",
+      "clip": "warmup_leg_swings",
+      "title": "Warm-up",
+      "description": "Arms forward for balance: three right-leg swings, three left-leg swings (the body counter-leans), then forward arm circles.",
+      "window": "C",
+      "timeline_start": 321,
+      "frames": 144,
+      "loop_range": [
+        12,
+        28
+      ],
+      "blender": {
+        "action": "MF08_athlete.warmup_leg_swings",
+        "nla_track": "C warmup_leg_swings",
+        "controller_slot": "OBminifig_controller",
+        "strip_start": 321
+      }
+    },
+    {
+      "id": "MF09_wizard.spell_spin",
+      "figure": "MF09_wizard",
+      "clip": "spell_spin",
+      "title": "Spell spin",
+      "description": "Raises both arms forward (staff up), pirouettes a full turn with the head lagging, points the staff forward and twirls it with the wrist.",
+      "window": "A",
+      "timeline_start": 1,
+      "frames": 144,
+      "loop_range": null,
+      "blender": {
+        "action": "MF09_wizard.spell_spin",
+        "nla_track": "A spell_spin",
+        "controller_slot": "OBminifig_controller",
+        "strip_start": 1
+      }
+    },
+    {
+      "id": "MF09_wizard.levitate",
+      "figure": "MF09_wizard",
+      "clip": "levitate",
+      "title": "Levitate",
+      "description": "Arms forward with the palms rolled out, rises 40 LDU, hovers with a slow bob and yaw while the legs dangle, and settles back down.",
+      "window": "B",
+      "timeline_start": 161,
+      "frames": 144,
+      "loop_range": [
+        40,
+        64
+      ],
+      "blender": {
+        "action": "MF09_wizard.levitate",
+        "nla_track": "B levitate",
+        "controller_slot": "OBminifig_controller",
+        "strip_start": 161
+      }
+    },
+    {
+      "id": "MF09_wizard.cast_spell",
+      "figure": "MF09_wizard",
+      "clip": "cast_spell",
+      "title": "Cast spell",
+      "description": "Raises the staff, casts it down and forward with a lean and a step (recoil back), twice; then circles the staff with the wrist.",
+      "window": "C",
+      "timeline_start": 321,
+      "frames": 144,
+      "loop_range": null,
+      "blender": {
+        "action": "MF09_wizard.cast_spell",
+        "nla_track": "C cast_spell",
+        "controller_slot": "OBminifig_controller",
+        "strip_start": 321
+      }
+    },
+    {
+      "id": "MF10_diver.swim_crawl",
+      "figure": "MF10_diver",
+      "clip": "swim_crawl",
+      "title": "Swim crawl",
+      "description": "Rises into imaginary water and lies prone (pitch pi/2), front-crawl arms windmill half a stroke apart with a flutter kick and side breaths, then rights itself, drifts home and sinks.",
+      "window": "A",
+      "timeline_start": 1,
+      "frames": 144,
+      "loop_range": [
+        40,
+        80
+      ],
+      "blender": {
+        "action": "MF10_diver.swim_crawl",
+        "nla_track": "A swim_crawl",
+        "controller_slot": "OBminifig_controller",
+        "strip_start": 1
+      }
+    },
+    {
+      "id": "MF10_diver.sit_down_stand_up",
+      "figure": "MF10_diver",
+      "clip": "sit_down_stand_up",
+      "title": "Sit down and stand up",
+      "description": "Sits down on the floor leaning back a little (legs flat, hip axis lowered to the seated height, flippers point up), hands at the sides, waves and looks around while seated, stands back up.",
+      "window": "B",
+      "timeline_start": 161,
+      "frames": 144,
+      "loop_range": null,
+      "blender": {
+        "action": "MF10_diver.sit_down_stand_up",
+        "nla_track": "B sit_down_stand_up",
+        "controller_slot": "OBminifig_controller",
+        "strip_start": 161
+      }
+    },
+    {
+      "id": "MF10_diver.fall_and_get_up",
+      "figure": "MF10_diver",
+      "clip": "fall_and_get_up",
+      "title": "Fall and get up",
+      "description": "Stumbles backward, falls onto its air tanks (the hip axis swings round the heels), kicks and flails, sits up, stands up and walks back to the start.",
+      "window": "C",
+      "timeline_start": 321,
+      "frames": 144,
+      "loop_range": null,
+      "blender": {
+        "action": "MF10_diver.fall_and_get_up",
+        "nla_track": "C fall_and_get_up",
+        "controller_slot": "OBminifig_controller",
+        "strip_start": 321
+      }
+    }
+  ],
+  "joint_clearance": {
+    "MF01_police.walk_patrol": {
+      "MF01_police": "clear",
+      "MF02_spaceman": "clear",
+      "MF03_knight": "clear",
+      "MF04_builder": "clear",
+      "MF05_chef": "clear",
+      "MF06_pirate": "deep",
+      "MF07_firefighter": "clear",
+      "MF08_athlete": "clear",
+      "MF09_wizard": "clear",
+      "MF10_diver": "clear"
+    },
+    "MF01_police.look_around": {
+      "MF01_police": "clear",
+      "MF02_spaceman": "clear",
+      "MF03_knight": "clear",
+      "MF04_builder": "clear",
+      "MF05_chef": "clear",
+      "MF06_pirate": "clear",
+      "MF07_firefighter": "clear",
+      "MF08_athlete": "clear",
+      "MF09_wizard": "clear",
+      "MF10_diver": "clear"
+    },
+    "MF01_police.halt_signal": {
+      "MF01_police": "clear",
+      "MF02_spaceman": "clear",
+      "MF03_knight": "deep",
+      "MF04_builder": "clear",
+      "MF05_chef": "deep",
+      "MF06_pirate": "clear",
+      "MF07_firefighter": "clear",
+      "MF08_athlete": "clear",
+      "MF09_wizard": "deep",
+      "MF10_diver": "clear"
+    },
+    "MF02_spaceman.moon_hop": {
+      "MF01_police": "deep",
+      "MF02_spaceman": "clear",
+      "MF03_knight": "deep",
+      "MF04_builder": "deep",
+      "MF05_chef": "deep",
+      "MF06_pirate": "deep",
+      "MF07_firefighter": "deep",
+      "MF08_athlete": "clear",
+      "MF09_wizard": "deep",
+      "MF10_diver": "clear"
+    },
+    "MF02_spaceman.zero_g_tumble": {
+      "MF01_police": "deep",
+      "MF02_spaceman": "clear",
+      "MF03_knight": "deep",
+      "MF04_builder": "deep",
+      "MF05_chef": "deep",
+      "MF06_pirate": "deep",
+      "MF07_firefighter": "deep",
+      "MF08_athlete": "clear",
+      "MF09_wizard": "deep",
+      "MF10_diver": "clear"
+    },
+    "MF02_spaceman.wave": {
+      "MF01_police": "deep",
+      "MF02_spaceman": "deep",
+      "MF03_knight": "deep",
+      "MF04_builder": "deep",
+      "MF05_chef": "deep",
+      "MF06_pirate": "deep",
+      "MF07_firefighter": "deep",
+      "MF08_athlete": "deep",
+      "MF09_wizard": "deep",
+      "MF10_diver": "deep"
+    },
+    "MF03_knight.sword_slash": {
+      "MF01_police": "clear",
+      "MF02_spaceman": "clear",
+      "MF03_knight": "clear",
+      "MF04_builder": "clear",
+      "MF05_chef": "clear",
+      "MF06_pirate": "clear",
+      "MF07_firefighter": "clear",
+      "MF08_athlete": "clear",
+      "MF09_wizard": "deep",
+      "MF10_diver": "clear"
+    },
+    "MF03_knight.shield_block": {
+      "MF01_police": "clear",
+      "MF02_spaceman": "clear",
+      "MF03_knight": "clear",
+      "MF04_builder": "clear",
+      "MF05_chef": "clear",
+      "MF06_pirate": "clear",
+      "MF07_firefighter": "clear",
+      "MF08_athlete": "clear",
+      "MF09_wizard": "deep",
+      "MF10_diver": "clear"
+    },
+    "MF03_knight.courtly_bow": {
+      "MF01_police": "clear",
+      "MF02_spaceman": "clear",
+      "MF03_knight": "clear",
+      "MF04_builder": "clear",
+      "MF05_chef": "deep",
+      "MF06_pirate": "clear",
+      "MF07_firefighter": "deep",
+      "MF08_athlete": "clear",
+      "MF09_wizard": "deep",
+      "MF10_diver": "clear"
+    },
+    "MF04_builder.hammering": {
+      "MF01_police": "clear",
+      "MF02_spaceman": "clear",
+      "MF03_knight": "deep",
+      "MF04_builder": "clear",
+      "MF05_chef": "clear",
+      "MF06_pirate": "clear",
+      "MF07_firefighter": "clear",
+      "MF08_athlete": "clear",
+      "MF09_wizard": "deep",
+      "MF10_diver": "clear"
+    },
+    "MF04_builder.carry_load": {
+      "MF01_police": "deep",
+      "MF02_spaceman": "clear",
+      "MF03_knight": "deep",
+      "MF04_builder": "clear",
+      "MF05_chef": "deep",
+      "MF06_pirate": "clear",
+      "MF07_firefighter": "clear",
+      "MF08_athlete": "clear",
+      "MF09_wizard": "deep",
+      "MF10_diver": "clear"
+    },
+    "MF04_builder.head_shake_no": {
+      "MF01_police": "deep",
+      "MF02_spaceman": "clear",
+      "MF03_knight": "deep",
+      "MF04_builder": "clear",
+      "MF05_chef": "contact",
+      "MF06_pirate": "clear",
+      "MF07_firefighter": "clear",
+      "MF08_athlete": "clear",
+      "MF09_wizard": "deep",
+      "MF10_diver": "clear"
+    },
+    "MF05_chef.stirring": {
+      "MF01_police": "clear",
+      "MF02_spaceman": "clear",
+      "MF03_knight": "clear",
+      "MF04_builder": "contact",
+      "MF05_chef": "clear",
+      "MF06_pirate": "clear",
+      "MF07_firefighter": "deep",
+      "MF08_athlete": "clear",
+      "MF09_wizard": "deep",
+      "MF10_diver": "clear"
+    },
+    "MF05_chef.pan_flip": {
+      "MF01_police": "clear",
+      "MF02_spaceman": "clear",
+      "MF03_knight": "clear",
+      "MF04_builder": "clear",
+      "MF05_chef": "clear",
+      "MF06_pirate": "clear",
+      "MF07_firefighter": "clear",
+      "MF08_athlete": "clear",
+      "MF09_wizard": "clear",
+      "MF10_diver": "clear"
+    },
+    "MF05_chef.celebrate": {
+      "MF01_police": "deep",
+      "MF02_spaceman": "clear",
+      "MF03_knight": "deep",
+      "MF04_builder": "deep",
+      "MF05_chef": "clear",
+      "MF06_pirate": "deep",
+      "MF07_firefighter": "deep",
+      "MF08_athlete": "clear",
+      "MF09_wizard": "deep",
+      "MF10_diver": "clear"
+    },
+    "MF06_pirate.hornpipe_jig": {
+      "MF01_police": "deep",
+      "MF02_spaceman": "clear",
+      "MF03_knight": "deep",
+      "MF04_builder": "clear",
+      "MF05_chef": "deep",
+      "MF06_pirate": "clear",
+      "MF07_firefighter": "clear",
+      "MF08_athlete": "clear",
+      "MF09_wizard": "clear",
+      "MF10_diver": "clear"
+    },
+    "MF06_pirate.lookout": {
+      "MF01_police": "deep",
+      "MF02_spaceman": "clear",
+      "MF03_knight": "deep",
+      "MF04_builder": "clear",
+      "MF05_chef": "deep",
+      "MF06_pirate": "clear",
+      "MF07_firefighter": "deep",
+      "MF08_athlete": "clear",
+      "MF09_wizard": "deep",
+      "MF10_diver": "clear"
+    },
+    "MF06_pirate.cutlass_lunge": {
+      "MF01_police": "clear",
+      "MF02_spaceman": "clear",
+      "MF03_knight": "contact",
+      "MF04_builder": "clear",
+      "MF05_chef": "clear",
+      "MF06_pirate": "clear",
+      "MF07_firefighter": "clear",
+      "MF08_athlete": "clear",
+      "MF09_wizard": "clear",
+      "MF10_diver": "clear"
+    },
+    "MF07_firefighter.ladder_climb": {
+      "MF01_police": "deep",
+      "MF02_spaceman": "clear",
+      "MF03_knight": "deep",
+      "MF04_builder": "clear",
+      "MF05_chef": "deep",
+      "MF06_pirate": "clear",
+      "MF07_firefighter": "clear",
+      "MF08_athlete": "clear",
+      "MF09_wizard": "contact",
+      "MF10_diver": "clear"
+    },
+    "MF07_firefighter.run": {
+      "MF01_police": "clear",
+      "MF02_spaceman": "clear",
+      "MF03_knight": "deep",
+      "MF04_builder": "clear",
+      "MF05_chef": "clear",
+      "MF06_pirate": "deep",
+      "MF07_firefighter": "clear",
+      "MF08_athlete": "clear",
+      "MF09_wizard": "contact",
+      "MF10_diver": "clear"
+    },
+    "MF07_firefighter.hose_sweep": {
+      "MF01_police": "clear",
+      "MF02_spaceman": "clear",
+      "MF03_knight": "deep",
+      "MF04_builder": "clear",
+      "MF05_chef": "contact",
+      "MF06_pirate": "clear",
+      "MF07_firefighter": "clear",
+      "MF08_athlete": "clear",
+      "MF09_wizard": "deep",
+      "MF10_diver": "clear"
+    },
+    "MF08_athlete.sprint": {
+      "MF01_police": "clear",
+      "MF02_spaceman": "clear",
+      "MF03_knight": "deep",
+      "MF04_builder": "clear",
+      "MF05_chef": "clear",
+      "MF06_pirate": "deep",
+      "MF07_firefighter": "clear",
+      "MF08_athlete": "clear",
+      "MF09_wizard": "clear",
+      "MF10_diver": "clear"
+    },
+    "MF08_athlete.high_jump": {
+      "MF01_police": "deep",
+      "MF02_spaceman": "deep",
+      "MF03_knight": "deep",
+      "MF04_builder": "deep",
+      "MF05_chef": "deep",
+      "MF06_pirate": "deep",
+      "MF07_firefighter": "deep",
+      "MF08_athlete": "deep",
+      "MF09_wizard": "deep",
+      "MF10_diver": "deep"
+    },
+    "MF08_athlete.warmup_leg_swings": {
+      "MF01_police": "deep",
+      "MF02_spaceman": "clear",
+      "MF03_knight": "deep",
+      "MF04_builder": "clear",
+      "MF05_chef": "deep",
+      "MF06_pirate": "deep",
+      "MF07_firefighter": "deep",
+      "MF08_athlete": "clear",
+      "MF09_wizard": "deep",
+      "MF10_diver": "clear"
+    },
+    "MF09_wizard.spell_spin": {
+      "MF01_police": "deep",
+      "MF02_spaceman": "clear",
+      "MF03_knight": "deep",
+      "MF04_builder": "clear",
+      "MF05_chef": "deep",
+      "MF06_pirate": "clear",
+      "MF07_firefighter": "deep",
+      "MF08_athlete": "clear",
+      "MF09_wizard": "clear",
+      "MF10_diver": "clear"
+    },
+    "MF09_wizard.levitate": {
+      "MF01_police": "clear",
+      "MF02_spaceman": "clear",
+      "MF03_knight": "clear",
+      "MF04_builder": "clear",
+      "MF05_chef": "clear",
+      "MF06_pirate": "clear",
+      "MF07_firefighter": "clear",
+      "MF08_athlete": "clear",
+      "MF09_wizard": "clear",
+      "MF10_diver": "clear"
+    },
+    "MF09_wizard.cast_spell": {
+      "MF01_police": "deep",
+      "MF02_spaceman": "clear",
+      "MF03_knight": "deep",
+      "MF04_builder": "clear",
+      "MF05_chef": "deep",
+      "MF06_pirate": "clear",
+      "MF07_firefighter": "deep",
+      "MF08_athlete": "clear",
+      "MF09_wizard": "clear",
+      "MF10_diver": "clear"
+    },
+    "MF10_diver.swim_crawl": {
+      "MF01_police": "deep",
+      "MF02_spaceman": "deep",
+      "MF03_knight": "deep",
+      "MF04_builder": "deep",
+      "MF05_chef": "deep",
+      "MF06_pirate": "deep",
+      "MF07_firefighter": "deep",
+      "MF08_athlete": "deep",
+      "MF09_wizard": "deep",
+      "MF10_diver": "deep"
+    },
+    "MF10_diver.sit_down_stand_up": {
+      "MF01_police": "deep",
+      "MF02_spaceman": "clear",
+      "MF03_knight": "deep",
+      "MF04_builder": "deep",
+      "MF05_chef": "deep",
+      "MF06_pirate": "deep",
+      "MF07_firefighter": "deep",
+      "MF08_athlete": "clear",
+      "MF09_wizard": "deep",
+      "MF10_diver": "clear"
+    },
+    "MF10_diver.fall_and_get_up": {
+      "MF01_police": "deep",
+      "MF02_spaceman": "clear",
+      "MF03_knight": "deep",
+      "MF04_builder": "deep",
+      "MF05_chef": "deep",
+      "MF06_pirate": "deep",
+      "MF07_firefighter": "deep",
+      "MF08_athlete": "clear",
+      "MF09_wizard": "deep",
+      "MF10_diver": "clear"
+    }
+  }
+}

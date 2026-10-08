@@ -1,0 +1,30 @@
+0 FILE mf05_chef.ldr
+0 Minifig MF05_chef Chef
+0 Name: mf05_chef.ldr
+0 Author: ldraw-mecha scripts/build_minifigs.py
+0 // Generated minifig: parts picked by constant name from data/categories/parts/minifig; placements composed from LDCad shadow connector frames (data/offLibShadow) read through pyldraw3. Frame: torso origin at the neck, -Y up, the face looks along -Z, the figure's left is +X; feet at y=+72.
+
+0 // torso: torsos.TorsoWithChefPattern
+1 15 0 0 0 1 0 0 0 1 0 0 0 1 973p2a.dat
+0 // head: heads.HeadWithBlackMoustacheAndEyebrows_NougatCheekLinesAndSmilePattern
+1 14 0 -24 0 1 0 0 0 1 0 0 0 1 3626cp7c.dat
+0 // headgear0: hats.Cook_SHat
+1 15 0 -24 0 1 0 0 0 1 0 0 0 1 3898.dat
+0 // hips: accessories.Hips
+1 0 0 32 0 1 0 0 0 1 0 0 0 1 3815b.dat
+0 // leg_l: legs.LegLeft
+1 0 0 44 0 1 0 0 0 1 0 0 0 1 3817c.dat
+0 // leg_r: legs.LegRight
+1 0 0 44 0 1 0 0 0 1 0 0 0 1 3816c.dat
+0 // arm_l: arms.ArmLeft
+1 15 15.552 9 0 0.9854312211 0.1700744202 0 -0.1700744202 0.9854312211 0 0 0 1 3819.dat
+0 // hand_l: hands.Hand
+1 14 23.69082445 26.75841254 -9.8839 0.9854312211 0.1202607758 -0.1202607758 -0.1700744202 0.6968050989 -0.6968050989 0 0.7071067812 0.7071067812 3820.dat
+0 // item_l: accessories.Frypan
+1 0 26.36601989 19.54108856 -37.61663091 0.39659879 -0.9139251452 0.08631470771 0.7761413193 0.3840404359 0.5001175822 -0.4902183719 -0.1313536169 0.8616450401 4528.dat
+0 // arm_r: arms.ArmRight
+1 15 -15.552 9 0 0.9854312211 -0.1700744202 0 0.1700744202 0.9854312211 0 0 0 1 3818.dat
+0 // hand_r: hands.Hand
+1 14 -23.69082445 26.75841254 -9.8839 0.9854312211 -0.1202607758 0.1202607758 0.1700744202 0.6968050989 -0.6968050989 0 0.7071067812 0.7071067812 3820.dat
+0 // item_r: accessories.Ladle
+1 71 -20.25035014 6.823899209 -62.69892902 0.9854312211 -0.08631470771 0.1465437806 0.1700744202 0.5001175822 -0.8490919241 0 0.8616450401 0.5075114036 4337.dat

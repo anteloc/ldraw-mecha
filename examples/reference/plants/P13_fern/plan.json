@@ -1,0 +1,1188 @@
+{
+  "version": 1,
+  "name": "plant_13_fern",
+  "status": "ready",
+  "source": {
+    "version": 1,
+    "path": "/Users/captain/workspaces/workspace-ai/ldraw-mecha/output/plants/P13_fern/source/scenario.mpd",
+    "sha256": "da63363e09b828a789395e96998b115c23ca85027a5735de6f0e60326200a2d5",
+    "section": "p13_fern.ldr",
+    "description": "Plant wind case P13_fern Fern bush",
+    "author": "ldraw-mecha scripts/build_plants.py",
+    "dependencies": {
+      "/Users/captain/workspaces/workspace-ai/ldraw-mecha/output/plants/P13_fern/source/scenario.mpd": "da63363e09b828a789395e96998b115c23ca85027a5735de6f0e60326200a2d5"
+    },
+    "nodes": [
+      {
+        "id": "0",
+        "parent": "root",
+        "ref": "3958.dat",
+        "kind": "part",
+        "embedded": false,
+        "section": "p13_fern.ldr",
+        "index": 0,
+        "line": 8,
+        "colour": "2",
+        "effective_colour": "2",
+        "local": [
+          [
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            1.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            1.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "world": [
+          [
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            1.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            1.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "description": "Plate  6 x  6"
+      },
+      {
+        "id": "1",
+        "parent": "root",
+        "ref": "3941.dat",
+        "kind": "part",
+        "embedded": false,
+        "section": "p13_fern.ldr",
+        "index": 1,
+        "line": 10,
+        "colour": "72",
+        "effective_colour": "72",
+        "local": [
+          [
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            1.0,
+            0.0,
+            -24.0
+          ],
+          [
+            0.0,
+            0.0,
+            1.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "world": [
+          [
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            1.0,
+            0.0,
+            -24.0
+          ],
+          [
+            0.0,
+            0.0,
+            1.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "description": "Brick  2 x  2 Round without Reinforcement"
+      },
+      {
+        "id": "2",
+        "parent": "root",
+        "ref": "60478.dat",
+        "kind": "part",
+        "embedded": false,
+        "section": "p13_fern.ldr",
+        "index": 2,
+        "line": 12,
+        "colour": "288",
+        "effective_colour": "288",
+        "local": [
+          [
+            1.0,
+            0.0,
+            0.0,
+            20.0
+          ],
+          [
+            0.0,
+            1.0,
+            0.0,
+            -32.0
+          ],
+          [
+            0.0,
+            0.0,
+            1.0,
+            -10.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "world": [
+          [
+            1.0,
+            0.0,
+            0.0,
+            20.0
+          ],
+          [
+            0.0,
+            1.0,
+            0.0,
+            -32.0
+          ],
+          [
+            0.0,
+            0.0,
+            1.0,
+            -10.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "description": "Plate  1 x  2 with Handle on End"
+      },
+      {
+        "id": "3",
+        "parent": "root",
+        "ref": "60478.dat",
+        "kind": "part",
+        "embedded": false,
+        "section": "p13_fern.ldr",
+        "index": 3,
+        "line": 14,
+        "colour": "288",
+        "effective_colour": "288",
+        "local": [
+          [
+            -1.0,
+            0.0,
+            0.0,
+            -20.0
+          ],
+          [
+            0.0,
+            1.0,
+            0.0,
+            -32.0
+          ],
+          [
+            0.0,
+            0.0,
+            -1.0,
+            -10.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "world": [
+          [
+            -1.0,
+            0.0,
+            0.0,
+            -20.0
+          ],
+          [
+            0.0,
+            1.0,
+            0.0,
+            -32.0
+          ],
+          [
+            0.0,
+            0.0,
+            -1.0,
+            -10.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "description": "Plate  1 x  2 with Handle on End"
+      },
+      {
+        "id": "4",
+        "parent": "root",
+        "ref": "3024.dat",
+        "kind": "part",
+        "embedded": false,
+        "section": "p13_fern.ldr",
+        "index": 4,
+        "line": 16,
+        "colour": "288",
+        "effective_colour": "288",
+        "local": [
+          [
+            1.0,
+            0.0,
+            0.0,
+            10.0
+          ],
+          [
+            0.0,
+            1.0,
+            0.0,
+            -32.0
+          ],
+          [
+            0.0,
+            0.0,
+            1.0,
+            10.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "world": [
+          [
+            1.0,
+            0.0,
+            0.0,
+            10.0
+          ],
+          [
+            0.0,
+            1.0,
+            0.0,
+            -32.0
+          ],
+          [
+            0.0,
+            0.0,
+            1.0,
+            10.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "description": "Plate  1 x  1"
+      },
+      {
+        "id": "5",
+        "parent": "root",
+        "ref": "3024.dat",
+        "kind": "part",
+        "embedded": false,
+        "section": "p13_fern.ldr",
+        "index": 5,
+        "line": 18,
+        "colour": "288",
+        "effective_colour": "288",
+        "local": [
+          [
+            1.0,
+            0.0,
+            0.0,
+            -10.0
+          ],
+          [
+            0.0,
+            1.0,
+            0.0,
+            -32.0
+          ],
+          [
+            0.0,
+            0.0,
+            1.0,
+            10.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "world": [
+          [
+            1.0,
+            0.0,
+            0.0,
+            -10.0
+          ],
+          [
+            0.0,
+            1.0,
+            0.0,
+            -32.0
+          ],
+          [
+            0.0,
+            0.0,
+            1.0,
+            10.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "description": "Plate  1 x  1"
+      },
+      {
+        "id": "6",
+        "parent": "root",
+        "ref": "60478.dat",
+        "kind": "part",
+        "embedded": false,
+        "section": "p13_fern.ldr",
+        "index": 6,
+        "line": 20,
+        "colour": "288",
+        "effective_colour": "288",
+        "local": [
+          [
+            0.0,
+            0.0,
+            -1.0,
+            10.0
+          ],
+          [
+            0.0,
+            1.0,
+            0.0,
+            -40.0
+          ],
+          [
+            1.0,
+            0.0,
+            0.0,
+            20.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "world": [
+          [
+            0.0,
+            0.0,
+            -1.0,
+            10.0
+          ],
+          [
+            0.0,
+            1.0,
+            0.0,
+            -40.0
+          ],
+          [
+            1.0,
+            0.0,
+            0.0,
+            20.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "description": "Plate  1 x  2 with Handle on End"
+      },
+      {
+        "id": "7",
+        "parent": "root",
+        "ref": "60478.dat",
+        "kind": "part",
+        "embedded": false,
+        "section": "p13_fern.ldr",
+        "index": 7,
+        "line": 22,
+        "colour": "288",
+        "effective_colour": "288",
+        "local": [
+          [
+            0.0,
+            0.0,
+            1.0,
+            10.0
+          ],
+          [
+            0.0,
+            1.0,
+            0.0,
+            -40.0
+          ],
+          [
+            -1.0,
+            0.0,
+            0.0,
+            -20.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "world": [
+          [
+            0.0,
+            0.0,
+            1.0,
+            10.0
+          ],
+          [
+            0.0,
+            1.0,
+            0.0,
+            -40.0
+          ],
+          [
+            -1.0,
+            0.0,
+            0.0,
+            -20.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "description": "Plate  1 x  2 with Handle on End"
+      },
+      {
+        "id": "8",
+        "parent": "root",
+        "ref": "30239.dat",
+        "kind": "part",
+        "embedded": false,
+        "section": "p13_fern.ldr",
+        "index": 8,
+        "line": 24,
+        "colour": "2",
+        "effective_colour": "2",
+        "local": [
+          [
+            0.2079116908,
+            0.0,
+            -0.9781476007,
+            79.34442802
+          ],
+          [
+            0.9781476007,
+            0.0,
+            0.2079116908,
+            -36.23735072
+          ],
+          [
+            0.0,
+            -1.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "world": [
+          [
+            0.2079116908,
+            0.0,
+            -0.9781476007,
+            79.34442802
+          ],
+          [
+            0.9781476007,
+            0.0,
+            0.2079116908,
+            -36.23735072
+          ],
+          [
+            0.0,
+            -1.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "description": "Plant Leaves  6 x  5 Swordleaf with U-Clip"
+      },
+      {
+        "id": "9",
+        "parent": "root",
+        "ref": "30239.dat",
+        "kind": "part",
+        "embedded": false,
+        "section": "p13_fern.ldr",
+        "index": 9,
+        "line": 26,
+        "colour": "2",
+        "effective_colour": "2",
+        "local": [
+          [
+            -0.2079116908,
+            0.0,
+            0.9781476007,
+            -79.34442802
+          ],
+          [
+            0.9781476007,
+            0.0,
+            0.2079116908,
+            -36.23735072
+          ],
+          [
+            0.0,
+            1.0,
+            0.0,
+            -20.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "world": [
+          [
+            -0.2079116908,
+            0.0,
+            0.9781476007,
+            -79.34442802
+          ],
+          [
+            0.9781476007,
+            0.0,
+            0.2079116908,
+            -36.23735072
+          ],
+          [
+            0.0,
+            1.0,
+            0.0,
+            -20.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "description": "Plant Leaves  6 x  5 Swordleaf with U-Clip"
+      },
+      {
+        "id": "10",
+        "parent": "root",
+        "ref": "30239.dat",
+        "kind": "part",
+        "embedded": false,
+        "section": "p13_fern.ldr",
+        "index": 10,
+        "line": 28,
+        "colour": "10",
+        "effective_colour": "10",
+        "local": [
+          [
+            0.0,
+            1.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.8829475929,
+            0.0,
+            0.4694715628,
+            -52.08414688
+          ],
+          [
+            0.4694715628,
+            0.0,
+            -0.8829475929,
+            76.48842779
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "world": [
+          [
+            0.0,
+            1.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.8829475929,
+            0.0,
+            0.4694715628,
+            -52.08414688
+          ],
+          [
+            0.4694715628,
+            0.0,
+            -0.8829475929,
+            76.48842779
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "description": "Plant Leaves  6 x  5 Swordleaf with U-Clip"
+      },
+      {
+        "id": "11",
+        "parent": "root",
+        "ref": "30239.dat",
+        "kind": "part",
+        "embedded": false,
+        "section": "p13_fern.ldr",
+        "index": 11,
+        "line": 30,
+        "colour": "10",
+        "effective_colour": "10",
+        "local": [
+          [
+            0.0,
+            -1.0,
+            0.0,
+            20.0
+          ],
+          [
+            0.8829475929,
+            0.0,
+            0.4694715628,
+            -52.08414688
+          ],
+          [
+            -0.4694715628,
+            0.0,
+            0.8829475929,
+            -76.48842779
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "world": [
+          [
+            0.0,
+            -1.0,
+            0.0,
+            20.0
+          ],
+          [
+            0.8829475929,
+            0.0,
+            0.4694715628,
+            -52.08414688
+          ],
+          [
+            -0.4694715628,
+            0.0,
+            0.8829475929,
+            -76.48842779
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "description": "Plant Leaves  6 x  5 Swordleaf with U-Clip"
+      }
+    ],
+    "diagnostics": [],
+    "coordinate_space": "selected section, LDU, -Y up"
+  },
+  "controls": {
+    "frond_downwind": {
+      "default": 0,
+      "min": -0.28,
+      "max": 0.5,
+      "unit": "radian",
+      "description": "Frond downwind on its clip (real); + lifts the tip"
+    },
+    "frond_upwind": {
+      "default": 0,
+      "min": -0.28,
+      "max": 0.5,
+      "unit": "radian",
+      "description": "Frond upwind on its clip (real); + lifts the tip"
+    },
+    "frond_back": {
+      "default": 0,
+      "min": -0.28,
+      "max": 0.5,
+      "unit": "radian",
+      "description": "Frond back on its clip (real); + lifts the tip"
+    },
+    "frond_front": {
+      "default": 0,
+      "min": -0.28,
+      "max": 0.5,
+      "unit": "radian",
+      "description": "Frond front on its clip (real); + lifts the tip"
+    }
+  },
+  "signals": {
+    "frond_downwind_angle": {
+      "expression": "a",
+      "variables": {
+        "a": "control:frond_downwind"
+      }
+    },
+    "frond_upwind_angle": {
+      "expression": "a",
+      "variables": {
+        "a": "control:frond_upwind"
+      }
+    },
+    "frond_back_angle": {
+      "expression": "a",
+      "variables": {
+        "a": "control:frond_back"
+      }
+    },
+    "frond_front_angle": {
+      "expression": "a",
+      "variables": {
+        "a": "control:frond_front"
+      }
+    }
+  },
+  "bodies": {
+    "frond_downwind": {
+      "instances": [
+        "8"
+      ],
+      "kind": "revolute",
+      "origin": [
+        50.0,
+        -30.0,
+        -10.0
+      ],
+      "axis": [
+        0.0,
+        0.0,
+        -1.0
+      ],
+      "signal": "frond_downwind_angle"
+    },
+    "frond_upwind": {
+      "instances": [
+        "9"
+      ],
+      "kind": "revolute",
+      "origin": [
+        -50.0,
+        -30.0,
+        -10.0
+      ],
+      "axis": [
+        0.0,
+        0.0,
+        1.0
+      ],
+      "signal": "frond_upwind_angle"
+    },
+    "frond_back": {
+      "instances": [
+        "10"
+      ],
+      "kind": "revolute",
+      "origin": [
+        10.0,
+        -38.0,
+        50.0
+      ],
+      "axis": [
+        1.0,
+        0.0,
+        0.0
+      ],
+      "signal": "frond_back_angle"
+    },
+    "frond_front": {
+      "instances": [
+        "11"
+      ],
+      "kind": "revolute",
+      "origin": [
+        10.0,
+        -38.0,
+        -50.0
+      ],
+      "axis": [
+        -1.0,
+        0.0,
+        0.0
+      ],
+      "signal": "frond_front_angle"
+    }
+  },
+  "anchors": {},
+  "checks": [],
+  "notes": [
+    "Plant wind case P13_fern (Fern bush) written by scripts/build_plants.py: Four 30239 swordleaves clipped on 60478 handle bars over a round brick. Parts picked by constant name from data/categories/parts; frame LDU, -Y up, the case front faces -Z, ground (base top) at y = 0. The wind blows toward +X.",
+    "Joints: frond_downwind: real revolute about [0.0, 0.0, -1.0] through [50.0, -30.0, -10.0] (real: 30239 U-clip on the 60478 handle bar; turns about the bar); frond_upwind: real revolute about [0.0, 0.0, 1.0] through [-50.0, -30.0, -10.0] (real: 30239 U-clip on the 60478 handle bar; turns about the bar); frond_back: real revolute about [1.0, 0.0, 0.0] through [10.0, -38.0, 50.0] (real: 30239 U-clip on the 60478 handle bar; turns about the bar); frond_front: real revolute about [-1.0, 0.0, 0.0] through [10.0, -38.0, -50.0] (real: 30239 U-clip on the 60478 handle bar; turns about the bar).",
+    "Real LEGO freedoms: frond_downwind, frond_upwind, frond_back, frond_front. flex_approx joints (rigid tilt standing in for bending plastic, range <= 0.17 rad): none.",
+    "Sign convention by meaning (checked with the evaluator, kinematics.json): frond_downwind + = Frond downwind on its clip (real); + lifts the tip; frond_upwind + = Frond upwind on its clip (real); + lifts the tip; frond_back + = Frond back on its clip (real); + lifts the tip; frond_front + = Frond front on its clip (real); + lifts the tip.",
+    "Motion comes from wind clips (scripts/wind_clips.py): a damped-response approximation, not aerodynamics. Ranges are catalog choices narrowed by sampled clearance (scripts/blender/check_plants_clearance.py), not measured stops. Kinematic and transform checks do not prove collision-free or physically feasible motion."
+  ],
+  "mechanisms": {
+    "frond_downwind": {
+      "label": "Fern bush: frond downwind",
+      "parts": [
+        "2",
+        "8"
+      ],
+      "bodies": [
+        "frond_downwind"
+      ],
+      "inputs": [
+        "control:frond_downwind"
+      ],
+      "outputs": [
+        "body:frond_downwind"
+      ],
+      "disposition": "planned",
+      "notes": [
+        "real revolute joint: real: 30239 U-clip on the 60478 handle bar; turns about the bar"
+      ],
+      "review": "Joint declared in this plan (scripts/build_plants.py); driven by wind clips."
+    },
+    "frond_upwind": {
+      "label": "Fern bush: frond upwind",
+      "parts": [
+        "3",
+        "9"
+      ],
+      "bodies": [
+        "frond_upwind"
+      ],
+      "inputs": [
+        "control:frond_upwind"
+      ],
+      "outputs": [
+        "body:frond_upwind"
+      ],
+      "disposition": "planned",
+      "notes": [
+        "real revolute joint: real: 30239 U-clip on the 60478 handle bar; turns about the bar"
+      ],
+      "review": "Joint declared in this plan (scripts/build_plants.py); driven by wind clips."
+    },
+    "frond_back": {
+      "label": "Fern bush: frond back",
+      "parts": [
+        "6",
+        "10"
+      ],
+      "bodies": [
+        "frond_back"
+      ],
+      "inputs": [
+        "control:frond_back"
+      ],
+      "outputs": [
+        "body:frond_back"
+      ],
+      "disposition": "planned",
+      "notes": [
+        "real revolute joint: real: 30239 U-clip on the 60478 handle bar; turns about the bar"
+      ],
+      "review": "Joint declared in this plan (scripts/build_plants.py); driven by wind clips."
+    },
+    "frond_front": {
+      "label": "Fern bush: frond front",
+      "parts": [
+        "7",
+        "11"
+      ],
+      "bodies": [
+        "frond_front"
+      ],
+      "inputs": [
+        "control:frond_front"
+      ],
+      "outputs": [
+        "body:frond_front"
+      ],
+      "disposition": "planned",
+      "notes": [
+        "real revolute joint: real: 30239 U-clip on the 60478 handle bar; turns about the bar"
+      ],
+      "review": "Joint declared in this plan (scripts/build_plants.py); driven by wind clips."
+    },
+    "context": {
+      "label": "Fern bush: base and mounts (static)",
+      "parts": [
+        "0",
+        "1",
+        "2",
+        "3",
+        "4",
+        "5",
+        "6",
+        "7"
+      ],
+      "bodies": [],
+      "inputs": [],
+      "outputs": [],
+      "disposition": "static",
+      "notes": [],
+      "review": "Base, trunk and mounts built for the catalog; they do not move in this case."
+    }
+  },
+  "connections": {
+    "joint_frond_downwind": {
+      "a": "2",
+      "b": "8",
+      "kind": "revolute",
+      "status": "reviewed",
+      "evidence": "real: 30239 U-clip on the 60478 handle bar; turns about the bar. pyldraw3 contact confirmed (bar/clip).",
+      "measurements": {
+        "origin": [
+          50.0,
+          -30.0,
+          -10.0
+        ],
+        "axis": [
+          0.0,
+          0.0,
+          -1.0
+        ]
+      },
+      "review": "Joint frame measured as stated (scripts/build_plants.py); real LEGO freedom."
+    },
+    "joint_frond_upwind": {
+      "a": "3",
+      "b": "9",
+      "kind": "revolute",
+      "status": "reviewed",
+      "evidence": "real: 30239 U-clip on the 60478 handle bar; turns about the bar. pyldraw3 contact confirmed (bar/clip).",
+      "measurements": {
+        "origin": [
+          -50.0,
+          -30.0,
+          -10.0
+        ],
+        "axis": [
+          0.0,
+          0.0,
+          1.0
+        ]
+      },
+      "review": "Joint frame measured as stated (scripts/build_plants.py); real LEGO freedom."
+    },
+    "joint_frond_back": {
+      "a": "6",
+      "b": "10",
+      "kind": "revolute",
+      "status": "reviewed",
+      "evidence": "real: 30239 U-clip on the 60478 handle bar; turns about the bar. pyldraw3 contact confirmed (bar/clip).",
+      "measurements": {
+        "origin": [
+          10.0,
+          -38.0,
+          50.0
+        ],
+        "axis": [
+          1.0,
+          0.0,
+          0.0
+        ]
+      },
+      "review": "Joint frame measured as stated (scripts/build_plants.py); real LEGO freedom."
+    },
+    "joint_frond_front": {
+      "a": "7",
+      "b": "11",
+      "kind": "revolute",
+      "status": "reviewed",
+      "evidence": "real: 30239 U-clip on the 60478 handle bar; turns about the bar. pyldraw3 contact confirmed (bar/clip).",
+      "measurements": {
+        "origin": [
+          10.0,
+          -38.0,
+          -50.0
+        ],
+        "axis": [
+          -1.0,
+          0.0,
+          0.0
+        ]
+      },
+      "review": "Joint frame measured as stated (scripts/build_plants.py); real LEGO freedom."
+    }
+  },
+  "discovery": {
+    "grouping": "Provisional connected mechanical candidates; agent may split/merge views",
+    "unclassified_parts": [
+      "0",
+      "1",
+      "10",
+      "11",
+      "2",
+      "3",
+      "4",
+      "5",
+      "6",
+      "7",
+      "8",
+      "9"
+    ],
+    "embedded_parts": [],
+    "contact_limit": 300,
+    "rigid_groups": "not inferred",
+    "inputs_outputs": "not inferred",
+    "mechanical_parts": [],
+    "warnings": [
+      {
+        "code": "coaxial_not_run",
+        "message": "not run: 0 shaft/gear candidates outside 2..100; select a section"
+      }
+    ],
+    "surface_contacts": "Not detected: cams, levers bearing on beams, friction and stops need geometric/visual review even when connector contacts are absent",
+    "unsupported_gears": [],
+    "gear_placements": {
+      "policy": "Nearest orthogonal analysis frame within rounding_limit; source translations and handedness preserved",
+      "rounding_limit": 0.002,
+      "counts": {},
+      "affected": []
+    },
+    "contacts": {
+      "complete": true,
+      "tested_parts": 12,
+      "diagnostics": [],
+      "summary": {
+        "tested_parts": 12,
+        "contacts": 4,
+        "contacted_parts": 8,
+        "by_kind": {
+          "bar/clip": 4
+        },
+        "axles": {
+          "selection": "Catalog descriptions beginning Technic Axle followed by a numeric length; excludes axle pins, joiners and axle-hole supports",
+          "total": 0,
+          "with_axle_hole_contact": 0,
+          "without_axle_hole_contact": []
+        }
+      },
+      "placements": {
+        "policy": "Nearest orthogonal analysis frame within rounding_limit; source translations and handedness preserved",
+        "rounding_limit": 0.002,
+        "counts": {
+          "unchanged": 12
+        },
+        "affected": []
+      }
+    },
+    "coaxial_selection": "Catalog axle, gear, worm and engine crankshaft parts; positive line evidence within 80 LDU axial separation",
+    "coaxial": "not run: 0 shaft/gear candidates outside 2..100; select a section",
+    "isolated_mechanical_parts": []
+  }
+}

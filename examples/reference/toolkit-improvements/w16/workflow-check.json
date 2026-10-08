@@ -1,0 +1,10 @@
+{
+  "passed": true,
+  "animated_pose_restored": true,
+  "nla_and_drivers_restored": true,
+  "exception_state_restored": true,
+  "visibility_restored_after_reopen": true,
+  "notes_only_update": true,
+  "duplicate_import_isolated": true,
+  "no_new_surface_crossings": true
+}

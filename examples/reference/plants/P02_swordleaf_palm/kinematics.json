@@ -1,0 +1,278 @@
+{
+  "semantics": {
+    "frond_downwind": {
+      "control": "frond_downwind",
+      "value": 0.2,
+      "test_point": [
+        143.285291,
+        -91.708881,
+        -10.0
+      ],
+      "displacement": [
+        9.721163,
+        -19.694868,
+        0.0
+      ],
+      "expected": "-y",
+      "flipped": false
+    },
+    "frond_upwind": {
+      "control": "frond_upwind",
+      "value": 0.2,
+      "test_point": [
+        -143.285291,
+        -91.708881,
+        -10.0
+      ],
+      "displacement": [
+        -9.721163,
+        -19.694868,
+        0.0
+      ],
+      "expected": "-y",
+      "flipped": false
+    },
+    "frond_back": {
+      "control": "frond_back",
+      "value": 0.2,
+      "test_point": [
+        10.0,
+        -124.008131,
+        154.616217
+      ],
+      "displacement": [
+        0.0,
+        -21.461608,
+        4.667783
+      ],
+      "expected": "-y",
+      "flipped": false
+    },
+    "frond_front": {
+      "control": "frond_front",
+      "value": 0.2,
+      "test_point": [
+        10.0,
+        -124.008131,
+        -154.616217
+      ],
+      "displacement": [
+        0.0,
+        -21.461608,
+        -4.667783
+      ],
+      "expected": "-y",
+      "flipped": false
+    }
+  },
+  "wind_geometry": {
+    "frond_downwind": {
+      "body": "frond_downwind",
+      "x": 50.0,
+      "tip": [
+        143.285291,
+        -91.708881,
+        -10.0
+      ],
+      "swing": [
+        0.53,
+        0.0
+      ],
+      "lever": 110.0
+    },
+    "frond_upwind": {
+      "body": "frond_upwind",
+      "x": -50.0,
+      "tip": [
+        -143.285291,
+        -91.708881,
+        -10.0
+      ],
+      "swing": [
+        -0.53,
+        0.0
+      ],
+      "lever": 110.0
+    },
+    "frond_back": {
+      "body": "frond_back",
+      "x": 10.0,
+      "tip": [
+        10.0,
+        -124.008131,
+        154.616217
+      ],
+      "swing": [
+        0.0,
+        0.309
+      ],
+      "lever": 110.0
+    },
+    "frond_front": {
+      "body": "frond_front",
+      "x": 10.0,
+      "tip": [
+        10.0,
+        -124.008131,
+        -154.616217
+      ],
+      "swing": [
+        -0.0,
+        -0.309
+      ],
+      "lever": 110.0
+    }
+  },
+  "roster_problems": [],
+  "contacts": {
+    "tested_parts": 17,
+    "contacts": 5,
+    "contacted_parts": 6,
+    "by_kind": {
+      "axle/axle_hole": 5
+    },
+    "axles": {
+      "selection": "Catalog descriptions beginning Technic Axle followed by a numeric length; excludes axle pins, joiners and axle-hole supports",
+      "total": 0,
+      "with_axle_hole_contact": 0,
+      "without_axle_hole_contact": []
+    }
+  },
+  "contact_pairs": {
+    "1-2": [
+      "axle/axle_hole"
+    ],
+    "2-3": [
+      "axle/axle_hole"
+    ],
+    "3-4": [
+      "axle/axle_hole"
+    ],
+    "4-5": [
+      "axle/axle_hole"
+    ],
+    "5-6": [
+      "axle/axle_hole"
+    ]
+  },
+  "joints": {
+    "frond_downwind": "real",
+    "frond_upwind": "real",
+    "frond_back": "real",
+    "frond_front": "real"
+  },
+  "asymmetric_sample": {
+    "controls": {
+      "frond_downwind": 0.2835,
+      "frond_upwind": -0.1665,
+      "frond_back": 0.3645,
+      "frond_front": -0.2835
+    },
+    "transforms": {
+      "frond_downwind": [
+        [
+          0.960082,
+          0.279718,
+          0.0,
+          43.953531
+        ],
+        [
+          -0.279718,
+          0.960082,
+          0.0,
+          7.998229
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "frond_upwind": [
+        [
+          0.986171,
+          0.165732,
+          0.0,
+          24.168309
+        ],
+        [
+          -0.165732,
+          0.986171,
+          0.0,
+          -10.360959
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "frond_back": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.934302,
+          -0.356482,
+          7.443844
+        ],
+        [
+          0.0,
+          0.356482,
+          0.934302,
+          59.60908
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "frond_front": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.960082,
+          -0.279718,
+          -20.292877
+        ],
+        [
+          0.0,
+          0.279718,
+          0.960082,
+          42.199503
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ]
+    }
+  }
+}

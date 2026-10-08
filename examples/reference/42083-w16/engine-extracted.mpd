@@ -1,0 +1,424 @@
+0 FILE 42083 - engine.ldr
+0 V8 engine assembly with 8 cylinder heads, pistons, connecting rods, and two crankshafts mounted on a stud-and-peghole brick base.
+0 Name: 42083 - engine.ldr
+0 Author: Philippe Hurbain [Philo]
+0 !LDRAW_ORG Model
+0 !LICENSE Redistributable under CCAL version 2.0 : see CAreadme.txt
+0 // Technic Brick 5 x 3 x 1 with 8 Pegholes and 2 Studs (light_bluish_grey)
+1 71 0 0 0 -1 0 0 0 1 0 0 0 -1 32333.dat
+0 // Technic Pin Long with Friction and Slot (blue)
+1 1 20 50 0 0 0 -1 0 1 0 1 0 0 6558.dat
+0 // Technic Pin Long with Friction and Slot (blue)
+1 1 -20 50 0 0 0 -1 0 1 0 1 0 0 6558.dat
+0 // Technic Beam 3 x 3 T-shaped (light_bluish_grey)
+1 71 0 90 -20 1 0 0 0 0 -1 0 1 0 60484.dat
+0 // Technic Pin Long with Stop Bush (light_bluish_grey)
+1 71 44 42 0 0 0 -1 0 -1 0 -1 0 0 32054.dat
+0 // Technic Pin Long with Stop Bush (light_bluish_grey)
+1 71 20 10 0 0 0 -1 0 -1 0 -1 0 0 32054.dat
+0 // Technic Axle Pin with Friction (blue)
+1 1 20 10 30 0 0 -1 0 -1 0 -1 0 0 43093.dat
+0 // Technic Axle Pin with Friction (blue)
+1 1 44 42 30 0 0 -1 0 -1 0 -1 0 0 43093.dat
+0 // Technic Pin Joiner Plate 1 x 2 x 1 & 1/2 (black)
+1 0 0 64 0 1 0 0 0 1 0 0 0 1 32529.dat
+0 STEP
+0 // Technic Axle 8 with Stop (dark_bluish_grey)
+1 72 0 90 -68 0 0 -1 0 1 0 1 0 0 55013.dat
+0 // Technic Beam 3 x 3 T-shaped (light_bluish_grey)
+1 71 0 90 20 1 0 0 0 0 -1 0 1 0 60484.dat
+0 // Technic Pin Long with Stop Bush (light_bluish_grey)
+1 71 -20 10 0 0 0 -1 0 -1 0 -1 0 0 32054.dat
+0 // Technic Axle Pin with Friction (blue)
+1 1 -20 10 30 0 0 -1 0 -1 0 -1 0 0 43093.dat
+0 // Technic Pin Long with Stop Bush (light_bluish_grey)
+1 71 -44 42 0 0 0 -1 0 -1 0 -1 0 0 32054.dat
+0 // Technic Axle Pin with Friction (blue)
+1 1 -44 42 30 0 0 -1 0 -1 0 -1 0 0 43093.dat
+0 // Technic Engine Cylinder Head with Bottom Slots (light_bluish_grey)
+1 71 -52.8 10.4 50 -0.6 0.8 0 0.8 0.6 0 0 0 -1 2850b.dat
+0 // Technic Pin with Friction and Slots (black)
+1 0 -20 10 70 0 0 -1 0 -1 0 -1 0 0 2780.dat
+0 // Technic Pin with Friction and Slots (black)
+1 0 -44 42 70 0 0 -1 0 -1 0 -1 0 0 2780.dat
+0 // Technic Pin with Friction and Slots (black)
+1 0 -44 42 110 0 0 -1 0 -1 0 -1 0 0 2780.dat
+0 // Technic Pin with Friction and Slots (black)
+1 0 -20 10 110 0 0 -1 0 -1 0 -1 0 0 2780.dat
+0 // Technic Engine Cylinder Head with Bottom Slots (light_bluish_grey)
+1 71 -52.8 10.4 90 -0.6 0.8 0 0.8 0.6 0 0 0 -1 2850b.dat
+0 // Technic Pin with Friction and Slots (black)
+1 0 -44 42 150 0 0 -1 0 -1 0 -1 0 0 2780.dat
+0 // Technic Pin with Friction and Slots (black)
+1 0 -20 10 150 0 0 -1 0 -1 0 -1 0 0 2780.dat
+0 // Technic Engine Cylinder Head with Bottom Slots (light_bluish_grey)
+1 71 -52.8 10.4 130 -0.6 0.8 0 0.8 0.6 0 0 0 -1 2850b.dat
+0 // Technic Engine Cylinder Head with Bottom Slots (light_bluish_grey)
+1 71 -52.8 10.4 170 -0.6 0.8 0 0.8 0.6 0 0 0 -1 2850b.dat
+0 STEP
+0 // Technic Axle 5 (light_bluish_grey)
+1 71 0 50 -10 0 0.259 -0.966 0 -0.966 -0.259 -1 0 0 32073.dat
+0 // Technic Engine Crankshaft (yellow)
+1 14 0 50 50 0.966 -0.259 0 0.259 0.966 0 0 0 1 2853.dat
+0 // Technic Engine Connecting Rod (light_bluish_grey)
+1 71 -9.659 47.412 50 0.672 0.741 0 -0.741 0.672 0 0 0 1 2852.dat
+0 // Technic Engine Connecting Rod (light_bluish_grey)
+1 71 -9.659 47.412 50 -0.431 -0.902 0 -0.902 0.431 0 0 0 -1 2852.dat
+0 // Technic Engine Crankshaft Centre (tan)
+1 19 0 50 70 -0.966 -0.259 0 -0.259 0.966 0 0 0 -1 2854.dat
+0 // Technic Axle 2 Notched (red)
+1 4 9.659 52.588 90 0 -0.259 0.966 0 0.966 0.259 -1 0 0 32062.dat
+0 // Technic Engine Connecting Rod (light_bluish_grey)
+1 71 9.659 52.588 90 0.523 0.852 0 -0.852 0.523 0 0 0 1 2852.dat
+0 // Technic Engine Connecting Rod (light_bluish_grey)
+1 71 9.659 52.588 90 -0.746 -0.666 0 -0.666 0.746 0 0 0 -1 2852.dat
+0 // Technic Engine Crankshaft Centre (tan)
+1 19 0 50 110 -0.966 0.259 0 -0.259 -0.966 0 0 0 1 2854.dat
+0 // Technic Axle 2 Notched (red)
+1 4 -9.659 47.412 130 0 -0.259 0.966 0 0.966 0.259 -1 0 0 32062.dat
+0 // Technic Engine Crankshaft Centre (tan)
+1 19 0 50 150 0.966 -0.259 0 0.259 0.966 0 0 0 1 2854.dat
+0 // Technic Engine Connecting Rod (light_bluish_grey)
+1 71 -9.659 47.412 130 -0.672 0.741 0 0.741 0.672 0 0 0 -1 2852.dat
+0 // Technic Engine Connecting Rod (light_bluish_grey)
+1 71 -9.659 47.412 130 0.431 -0.902 0 0.902 0.431 0 0 0 1 2852.dat
+0 // Technic Engine Crankshaft (yellow)
+1 14 0 50 170 -0.966 -0.259 0 -0.259 0.966 0 0 0 -1 2853.dat
+0 // Technic Engine Connecting Rod (light_bluish_grey)
+1 71 9.659 52.588 170 0.523 0.852 0 -0.852 0.523 0 0 0 1 2852.dat
+0 // Technic Engine Connecting Rod (light_bluish_grey)
+1 71 9.659 52.588 170 -0.746 -0.666 0 -0.666 0.746 0 0 0 -1 2852.dat
+0 // Technic Engine Piston Round (yellow)
+1 14 -39.285 20.536 50 -0.6 0.8 0 0.8 0.6 0 0 0 -1 2851.dat
+0 // Technic Engine Piston Round (yellow)
+1 14 26.436 30.173 50 -0.6 -0.8 0 -0.8 0.6 0 0 0 -1 2851.dat
+0 // Technic Engine Piston Round (yellow)
+1 14 -24.437 31.672 90 -0.6 0.8 0 0.8 0.6 0 0 0 -1 2851.dat
+0 // Technic Engine Piston Round (yellow)
+1 14 36.315 22.764 90 -0.6 -0.8 0 -0.8 0.6 0 0 0 -1 2851.dat
+0 // Technic Engine Piston Round (yellow)
+1 14 -39.285 20.536 130 -0.6 0.8 0 0.8 0.6 0 0 0 -1 2851.dat
+0 // Technic Engine Piston Round (yellow)
+1 14 26.436 30.173 130 -0.6 -0.8 0 -0.8 0.6 0 0 0 -1 2851.dat
+0 // Technic Engine Piston Round (yellow)
+1 14 -24.437 31.672 170 -0.6 0.8 0 0.8 0.6 0 0 0 -1 2851.dat
+0 // Technic Engine Piston Round (yellow)
+1 14 36.315 22.764 170 -0.6 -0.8 0 -0.8 0.6 0 0 0 -1 2851.dat
+0 STEP
+0 // Technic Engine Cylinder Head with Bottom Slots (light_bluish_grey)
+1 71 52.8 10.4 50 -0.6 -0.8 0 -0.8 0.6 0 0 0 -1 2850b.dat
+0 // Technic Pin with Friction and Slots (black)
+1 0 20 10 70 0 0 1 0 -1 0 1 0 0 2780.dat
+0 // Technic Pin with Friction and Slots (black)
+1 0 44 42 70 0 0 1 0 -1 0 1 0 0 2780.dat
+0 // Technic Pin with Friction and Slots (black)
+1 0 44 42 110 0 0 1 0 -1 0 1 0 0 2780.dat
+0 // Technic Pin with Friction and Slots (black)
+1 0 20 10 110 0 0 1 0 -1 0 1 0 0 2780.dat
+0 // Technic Engine Cylinder Head with Bottom Slots (light_bluish_grey)
+1 71 52.8 10.4 90 -0.6 -0.8 0 -0.8 0.6 0 0 0 -1 2850b.dat
+0 // Technic Pin with Friction and Slots (black)
+1 0 44 42 150 0 0 1 0 -1 0 1 0 0 2780.dat
+0 // Technic Pin with Friction and Slots (black)
+1 0 20 10 150 0 0 1 0 -1 0 1 0 0 2780.dat
+0 // Technic Engine Cylinder Head with Bottom Slots (light_bluish_grey)
+1 71 52.8 10.4 130 -0.6 -0.8 0 -0.8 0.6 0 0 0 -1 2850b.dat
+0 // Technic Engine Cylinder Head with Bottom Slots (light_bluish_grey)
+1 71 52.8 10.4 170 -0.6 -0.8 0 -0.8 0.6 0 0 0 -1 2850b.dat
+0 STEP
+0 // Technic Axle Pin with Friction (blue)
+1 1 44 42 190 0 0 -1 0 1 0 1 0 0 43093.dat
+0 // Technic Axle Pin with Friction (blue)
+1 1 20 10 190 0 0 -1 0 1 0 1 0 0 43093.dat
+0 // Technic Axle Pin with Friction (blue)
+1 1 -20 10 190 0 0 -1 0 1 0 1 0 0 43093.dat
+0 // Technic Axle Pin with Friction (blue)
+1 1 -44 42 190 0 0 -1 0 1 0 1 0 0 43093.dat
+0 // Technic Pin Long with Stop Bush (light_bluish_grey)
+1 71 -20 10 220 0 0 -1 0 1 0 1 0 0 32054.dat
+0 // Technic Pin Long with Stop Bush (light_bluish_grey)
+1 71 -44 42 220 0 0 -1 0 1 0 1 0 0 32054.dat
+0 // Technic Pin Long with Stop Bush (light_bluish_grey)
+1 71 20 10 220 0 0 -1 0 1 0 1 0 0 32054.dat
+0 // Technic Pin Long with Stop Bush (light_bluish_grey)
+1 71 44 42 220 0 0 -1 0 1 0 1 0 0 32054.dat
+0 // Technic Axle 3 (yellow)
+1 14 0 50 210 0 -0.259 -0.966 0 0.966 -0.259 1 0 0 4519.dat
+0 // =Technic Gear 24 Tooth with Single Axle Hole (dark_bluish_grey)
+1 72 0 50 200 -0.966 -0.259 0 -0.259 0.966 0 0 0 -1 24505.dat
+0 STEP
+0 // Technic Brick 5 x 3 x 1 with 8 Pegholes and 2 Studs (light_bluish_grey)
+1 71 0 0 220 -1 0 0 0 1 0 0 0 -1 32333.dat
+0 // Technic Beam 5 (black)
+1 0 -44 42 -20 0.8 0 0.6 0.6 0 -0.8 0 1 0 32316.dat
+0 // Technic Pin Long with Friction and Slot (blue)
+1 1 -56 58 0 0 0 -1 0 1 0 1 0 0 6558.dat
+0 // Technic Pin with Friction and Slots (black)
+1 0 -68 74 -10 0 0 -1 0 1 0 1 0 0 2780.dat
+0 // Technic Beam 3 x 3 T-shaped (light_bluish_grey)
+1 71 -36 98 0 0.6 0 -0.8 -0.8 0 -0.6 0 1 0 60484.dat
+0 // Technic Pin Long with Stop Bush (light_bluish_grey)
+1 71 -80 90 0 0 0 -1 0 1 0 1 0 0 32054.dat
+0 // Technic Axle Pin Long with Friction with 2L Pin (red)
+1 4 -80 90 -40 0 0 -1 0 1 0 1 0 0 11214.dat
+0 STEP
+0 // Technic Axle Pin Long with Friction with 2L Pin (red)
+1 4 80 90 -40 0 0 -1 0 1 0 1 0 0 11214.dat
+0 // Technic Beam 5 (black)
+1 0 44 42 -20 0.8 0 -0.6 -0.6 0 -0.8 0 1 0 32316.dat
+0 // Technic Pin Long with Friction and Slot (blue)
+1 1 56 58 0 0 0 -1 0 1 0 1 0 0 6558.dat
+0 // Technic Pin with Friction and Slots (black)
+1 0 68 74 -10 0 0 1 0 1 0 -1 0 0 2780.dat
+0 // Technic Beam 3 x 3 T-shaped (light_bluish_grey)
+1 71 36 98 0 0.6 0 0.8 0.8 0 -0.6 0 1 0 60484.dat
+0 // Technic Pin Long with Stop Bush (light_bluish_grey)
+1 71 80 90 0 0 0 -1 0 1 0 1 0 0 32054.dat
+0 STEP
+0 // Technic Gear 12 Tooth Double Bevel (black)
+1 0 0 50 -40 -0.966 -0.259 0 -0.259 0.966 0 0 0 -1 32270.dat
+0 // Technic Gear 20 Tooth Double Bevel Reinforced (tan)
+1 19 0 90 -40 -1 0 0 0 1 0 0 0 -1 18575.dat
+0 STEP
+1 71 -88.8 58.4 30 -0.6 0.8 0 0.8 0.6 0 0 0 -1 42083 - enginelower.ldr
+1 71 88.8 58.4 30 -0.6 -0.8 0 -0.8 0.6 0 0 0 -1 42083 - enginelower.ldr
+0 STEP
+0 // Technic Beam 13 (light_bluish_grey)
+1 71 0 90 240 0 0 1 1 0 0 0 1 0 41239.dat
+0 // Technic Pin with Friction and Slots (black)
+1 0 40 90 250 0 1 0 0 0 1 1 0 0 2780.dat
+0 // Technic Pin with Friction and Slots (black)
+1 0 20 90 250 0 1 0 0 0 1 1 0 0 2780.dat
+0 // Technic Pin with Friction and Slots (black)
+1 0 -40 90 250 0 1 0 0 0 1 1 0 0 2780.dat
+0 // Technic Pin with Friction and Slots (black)
+1 0 -20 90 250 0 1 0 0 0 1 1 0 0 2780.dat
+0 STEP
+0 // Technic Cross Block 2 x 2 (Axle/Twin Pin) (light_bluish_grey)
+1 71 42 6 240 -0.6 -0.8 0 -0.8 0.6 0 0 0 -1 32291.dat
+0 // Technic Cross Block 2 x 2 (Axle/Twin Pin) (light_bluish_grey)
+1 71 66 38 240 -0.6 -0.8 0 -0.8 0.6 0 0 0 -1 32291.dat
+0 // Technic Axle 5 (light_bluish_grey)
+1 71 54 22 240 -0.6 -0.8 0 -0.8 0.6 0 0 0 -1 32073.dat
+0 // Technic Connector (Axle/Bush) Type 1 (black)
+1 0 30 -10 220 -0.6 -0.8 0 -0.8 0.6 0 0 0 -1 32039.dat
+0 // Technic Connector (Axle/Bush) Type 1 (black)
+1 0 78 54 220 -0.6 -0.8 0 -0.8 0.6 0 0 0 -1 32039.dat
+0 // Technic Axle Pin with Friction (blue)
+1 1 30 -10 210 0 -0.8 -0.6 0 0.6 -0.8 1 0 0 43093.dat
+0 // Technic Axle Pin with Friction (blue)
+1 1 78 54 210 0 -0.8 -0.6 0 0.6 -0.8 1 0 0 43093.dat
+0 // Technic Beam 5 (black)
+1 0 54 22 200 0.8 0 -0.6 -0.6 0 -0.8 0 1 0 32316.dat
+0 // Technic Cross Block 3 x 2 (Axle/Triple Pin) (black)
+1 0 54 22 240 -0.6 0 0.8 -0.8 0 -0.6 0 -1 0 63869.dat
+0 STEP
+0 // Technic Cross Block 3 x 2 (Axle/Triple Pin) (black)
+1 0 -54 22 240 -0.6 0 -0.8 0.8 0 -0.6 0 -1 0 63869.dat
+0 // Technic Cross Block 2 x 2 (Axle/Twin Pin) (light_bluish_grey)
+1 71 -42 6 240 -0.6 0.8 0 0.8 0.6 0 0 0 -1 32291.dat
+0 // Technic Cross Block 2 x 2 (Axle/Twin Pin) (light_bluish_grey)
+1 71 -66 38 240 -0.6 0.8 0 0.8 0.6 0 0 0 -1 32291.dat
+0 // Technic Axle 5 (light_bluish_grey)
+1 71 -54 22 240 -0.6 0.8 0 0.8 0.6 0 0 0 -1 32073.dat
+0 // Technic Connector (Axle/Bush) Type 1 (black)
+1 0 -30 -10 220 -0.6 0.8 0 0.8 0.6 0 0 0 -1 32039.dat
+0 // Technic Connector (Axle/Bush) Type 1 (black)
+1 0 -78 54 220 -0.6 0.8 0 0.8 0.6 0 0 0 -1 32039.dat
+0 // Technic Axle Pin with Friction (blue)
+1 1 -30 -10 210 0 0.8 -0.6 0 0.6 0.8 1 0 0 43093.dat
+0 // Technic Axle Pin with Friction (blue)
+1 1 -78 54 210 0 0.8 -0.6 0 0.6 0.8 1 0 0 43093.dat
+0 // Technic Beam 5 (black)
+1 0 -54 22 200 0.8 0 0.6 0.6 0 -0.8 0 1 0 32316.dat
+0 STEP
+1 71 -180 170 -120 1 0 0 0 1 0 0 0 1 42083 - enginebeam.ldr
+0 // Technic Beam 1 (white)
+1 15 0 90 -120 0 0 -1 -1 0 0 0 1 0 18654.dat
+0 // Technic Axle Joiner Inline Smooth (black)
+1 0 0 90 -150 0 -1 0 -1 0 0 0 0 -1 59443.dat
+0 STEP
+0 NOFILE
+0 FILE 42083 - enginelower.ldr
+0 Lower half of the engine with 4 cylinder heads, a crankshaft assembly, connecting rods, and pistons driving off a 24-tooth gear.
+0 Name: 42083 - enginelower.ldr
+0 Author: Philippe Hurbain [Philo]
+0 !LDRAW_ORG Model
+0 !LICENSE Redistributable under CCAL version 2.0 : see CAreadme.txt
+0 // Technic Engine Cylinder Head with Bottom Slots (light_bluish_grey)
+1 71 0 0 0 1 0 0 0 1 0 0 0 1 2850b.dat
+0 // Technic Pin with Friction and Slots (black)
+1 0 -20 26 -20 0 0 -1 0 1 0 1 0 0 2780.dat
+0 // Technic Pin with Friction and Slots (black)
+1 0 20 26 -20 0 0 -1 0 1 0 1 0 0 2780.dat
+0 // Technic Pin with Friction and Slots (black)
+1 0 20 26 -60 0 0 -1 0 1 0 1 0 0 2780.dat
+0 // Technic Engine Cylinder Head with Bottom Slots (light_bluish_grey)
+1 71 0 0 -40 1 0 0 0 1 0 0 0 1 2850b.dat
+0 // Technic Pin with Friction and Slots (black)
+1 0 -20 26 -60 0 0 -1 0 1 0 1 0 0 2780.dat
+0 STEP
+0 // Technic Pin with Friction and Slots (black)
+1 0 20 26 -100 0 0 -1 0 1 0 1 0 0 2780.dat
+0 // Technic Engine Cylinder Head with Bottom Slots (light_bluish_grey)
+1 71 0 0 -80 1 0 0 0 1 0 0 0 1 2850b.dat
+0 // Technic Pin with Friction and Slots (black)
+1 0 -20 26 -100 0 0 -1 0 1 0 1 0 0 2780.dat
+0 // Technic Engine Cylinder Head with Bottom Slots (light_bluish_grey)
+1 71 0 0 -120 1 0 0 0 1 0 0 0 1 2850b.dat
+0 STEP
+0 // Technic Pin Long with Stop Bush (light_bluish_grey)
+1 71 20 26 -150 0 0 -1 0 1 0 1 0 0 32054.dat
+0 // Technic Pin Long with Stop Bush (light_bluish_grey)
+1 71 -20 26 -150 0 0 -1 0 1 0 1 0 0 32054.dat
+0 // Technic Beam 3 x 3 T-shaped (light_bluish_grey)
+1 71 0 66 -150 -1 0 0 0 0 -1 0 -1 0 60484.dat
+0 // Technic Axle Pin Long with Friction with 2L Pin (red)
+1 4 20 26 -190 0 -1 0 0 0 -1 1 0 0 11214.dat
+0 // Technic Axle Pin Long with Friction with 2L Pin (red)
+1 4 -20 26 -190 0 -1 0 0 0 -1 1 0 0 11214.dat
+0 STEP
+0 // Technic Axle 3 (yellow)
+1 14 0 66 -160 0 -1 0 0 0 -1 1 0 0 4519.dat
+0 // =Technic Gear 24 Tooth with Single Axle Hole (dark_bluish_grey)
+1 72 0 66 -170 -1 0 0 0 1 0 0 0 -1 24505.dat
+0 // Technic Engine Crankshaft (yellow)
+1 14 0 66 -120 0 1 0 -1 0 0 0 0 1 2853.dat
+0 // Technic Engine Connecting Rod (light_bluish_grey)
+1 71 0 76 -120 -1 0 0 0 1 0 0 0 -1 2852.dat
+0 // Technic Engine Crankshaft Centre (tan)
+1 19 0 66 -100 0 1 0 1 0 0 0 0 -1 2854.dat
+0 // Technic Axle 2 Notched (red)
+1 4 0 56 -80 0 0 1 0 -1 0 1 0 0 32062.dat
+0 // Technic Engine Connecting Rod (light_bluish_grey)
+1 71 0 56 -80 -1 0 0 0 1 0 0 0 -1 2852.dat
+0 // Technic Engine Crankshaft Centre (tan)
+1 19 0 66 -60 0 -1 0 -1 0 0 0 0 -1 2854.dat
+0 // Technic Engine Crankshaft Centre (tan)
+1 19 0 66 -20 0 1 0 1 0 0 0 0 -1 2854.dat
+0 // Technic Engine Connecting Rod (light_bluish_grey)
+1 71 0 76 -40 -1 0 0 0 1 0 0 0 -1 2852.dat
+0 // Technic Axle 2 Notched (red)
+1 4 0 76 -40 0 0 -1 0 1 0 1 0 0 32062.dat
+0 // Technic Axle 2 Notched (red)
+1 4 0 56 0 0 0 1 0 -1 0 1 0 0 32062.dat
+0 // Technic Engine Connecting Rod (light_bluish_grey)
+1 71 0 56 0 -1 0 0 0 1 0 0 0 -1 2852.dat
+0 // Technic Engine Crankshaft (yellow)
+1 14 0 56 30 0 1 0 -1 0 0 0 0 1 2853.dat
+0 // Technic Beam 3 x 3 T-shaped (light_bluish_grey)
+1 71 0 66 -190 -1 0 0 0 0 -1 0 -1 0 60484.dat
+0 // Technic Engine Piston Round (yellow)
+1 14 0 36 -120 1 0 0 0 1 0 0 0 1 2851.dat
+0 // Technic Engine Piston Round (yellow)
+1 14 0 16 -80 1 0 0 0 1 0 0 0 1 2851.dat
+0 // Technic Engine Piston Round (yellow)
+1 14 0 36 -40 1 0 0 0 1 0 0 0 1 2851.dat
+0 // Technic Engine Piston Round (yellow)
+1 14 0 16 0 1 0 0 0 1 0 0 0 1 2851.dat
+0 STEP
+0 NOFILE
+0 FILE 42083 - enginebeam.ldr
+0 Engine support beam framework using long liftarms, bent beams, and angle connectors to mount and brace the engine block.
+0 Name: 42083 - enginebeam.ldr
+0 Author: Philippe Hurbain [Philo]
+0 !LDRAW_ORG Model
+0 !LICENSE Redistributable under CCAL version 2.0 : see CAreadme.txt
+0 // Technic Axle 3 (yellow)
+1 14 0 0 0 0 0 -1 0 1 0 1 0 0 4519.dat
+0 // Technic Angle Connector #2 (180 degree) (light_bluish_grey)
+1 71 0 0 40 -1 0 0 0 1 0 0 0 -1 32034.dat
+0 // Technic Beam 3 x 3.8 x 7 Liftarm Bent 45 Double (black)
+1 0 0 -80 0 0 0 -1 1 0 0 0 -1 0 32009.dat
+0 // Technic Pin with Friction and Slots (black)
+1 0 0 -40 10 0 0 -1 0 1 0 1 0 0 2780.dat
+0 // Technic Pin Joiner Round with Slot (orange)
+1 25 0 -40 30 0 -1 0 0 0 -1 1 0 0 62462.dat
+0 // Technic Pin Long with Friction and Slot (blue)
+1 1 40 -80 20 0 -1 0 0 0 -1 1 0 0 6558.dat
+0 // Technic Axle Pin with Friction (blue)
+1 1 160 -80 10 0 1 0 0 0 -1 -1 0 0 43093.dat
+0 // Technic Beam 15 (black)
+1 0 180 -80 20 0 0 1 1 0 0 0 1 0 32278.dat
+0 STEP
+0 // Technic Axle 3 (yellow)
+1 14 360 0 0 0 0 1 0 1 0 -1 0 0 4519.dat
+0 // Technic Angle Connector #2 (180 degree) (light_bluish_grey)
+1 71 360 0 40 -1 0 0 0 1 0 0 0 -1 32034.dat
+0 // Technic Beam 3 x 3.8 x 7 Liftarm Bent 45 Double (black)
+1 0 360 -80 0 0 0 1 1 0 0 0 1 0 32009.dat
+0 // Technic Pin with Friction and Slots (black)
+1 0 360 -40 10 0 0 1 0 1 0 -1 0 0 2780.dat
+0 // Technic Pin Joiner Round with Slot (orange)
+1 25 360 -40 30 0 1 0 0 0 -1 -1 0 0 62462.dat
+0 // Technic Pin Long with Friction and Slot (blue)
+1 1 320 -80 20 0 1 0 0 0 1 1 0 0 6558.dat
+0 // Technic Axle Pin with Friction (blue)
+1 1 200 -80 10 0 -1 0 0 0 1 -1 0 0 43093.dat
+0 STEP
+0 // Technic Pin with Friction and Slots (black)
+1 0 220 -80 30 0 0 1 0 1 0 -1 0 0 2780.dat
+0 // Technic Pin with Friction and Slots (black)
+1 0 140 -80 30 0 0 1 0 1 0 -1 0 0 2780.dat
+0 // Technic Axle Pin Long with Friction with 2L Pin (red)
+1 4 280 -80 0 0 0 1 0 1 0 -1 0 0 11214.dat
+0 // Technic Axle Pin Long with Friction with 2L Pin (red)
+1 4 80 -80 0 0 0 1 0 1 0 -1 0 0 11214.dat
+0 // Technic Beam 7 (black)
+1 0 280 -80 40 0 0 1 1 0 0 0 1 0 32524.dat
+0 // Technic Pin Long with Friction and Slot (blue)
+1 1 340 -80 60 0 -1 0 0 0 -1 1 0 0 6558.dat
+0 // Technic Pin Long with Friction and Slot (blue)
+1 1 280 -80 60 0 -1 0 0 0 -1 1 0 0 6558.dat
+0 // Technic Pin Long with Friction and Slot (blue)
+1 1 240 -80 60 0 -1 0 0 0 -1 1 0 0 6558.dat
+0 // Technic Pin Long with Friction and Slot (blue)
+1 1 120 -80 60 0 1 0 0 0 1 1 0 0 6558.dat
+0 // Technic Pin Long with Friction and Slot (blue)
+1 1 80 -80 60 0 1 0 0 0 1 1 0 0 6558.dat
+0 // Technic Pin Long with Friction and Slot (blue)
+1 1 20 -80 60 0 1 0 0 0 1 1 0 0 6558.dat
+0 // Technic Beam 7 (black)
+1 0 80 -80 40 0 0 -1 -1 0 0 0 1 0 32524.dat
+0 STEP
+0 // Technic Beam 9 (light_bluish_grey)
+1 71 180 -80 60 0 0 -1 1 0 0 0 -1 0 40490.dat
+0 // Technic Pin with Friction and Slots (black)
+1 0 200 -80 50 0 0 -1 0 1 0 1 0 0 2780.dat
+0 // Technic Pin with Friction and Slots (black)
+1 0 160 -80 50 0 0 -1 0 1 0 1 0 0 2780.dat
+0 // Technic Beam 3 x 3 T-shaped (light_bluish_grey)
+1 71 180 -120 40 -1 0 0 0 0 1 0 1 0 60484.dat
+0 // Technic Pin 3/4 (tan)
+1 19 180 -120 50 0 1 0 0 0 1 1 0 0 32002.dat
+0 // Technic Beam 3 x 5 Bent 90 (light_bluish_grey)
+1 71 280 -80 60 0 0 1 1 0 0 0 1 0 32526.dat
+0 // Technic Beam 3 x 5 Bent 90 (light_bluish_grey)
+1 71 80 -80 60 0 0 -1 1 0 0 0 -1 0 32526.dat
+0 STEP
+0 // Technic Pin Long with Friction and Slot (blue)
+1 1 360 -40 60 0 1 0 0 0 -1 -1 0 0 6558.dat
+0 // Technic Pin Long with Friction and Slot (blue)
+1 1 0 -40 60 0 1 0 0 0 -1 -1 0 0 6558.dat
+0 // Technic Pin with Friction and Slots (black)
+1 0 360 -80 70 0 0 -1 0 1 0 1 0 0 2780.dat
+0 // Technic Pin with Friction and Slots (black)
+1 0 320 -80 70 0 0 -1 0 1 0 1 0 0 2780.dat
+0 // Technic Pin with Friction and Slots (black)
+1 0 300 -80 70 0 0 -1 0 1 0 1 0 0 2780.dat
+0 // Technic Pin with Friction and Slots (black)
+1 0 0 -80 70 0 0 -1 0 1 0 1 0 0 2780.dat
+0 // Technic Pin with Friction and Slots (black)
+1 0 40 -80 70 0 0 -1 0 1 0 1 0 0 2780.dat
+0 // Technic Pin with Friction and Slots (black)
+1 0 60 -80 70 0 0 -1 0 1 0 1 0 0 2780.dat
+0 // Technic Beam 3 x 5 Bent 90 (light_bluish_grey)
+1 71 0 0 80 1 0 0 0 0 -1 0 1 0 32526.dat
+0 // Technic Beam 3 x 5 Bent 90 (light_bluish_grey)
+1 71 360 0 80 -1 0 0 0 0 -1 0 -1 0 32526.dat
+0 // Technic Beam 5 (black)
+1 0 260 -80 80 0 0 -1 1 0 0 0 -1 0 32316.dat
+0 // Technic Beam 5 (black)
+1 0 100 -80 80 0 0 -1 1 0 0 0 -1 0 32316.dat
+0 STEP
+0 NOFILE

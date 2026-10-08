@@ -1,0 +1,729 @@
+{
+  "parts": [
+    {
+      "id": "0/85/10",
+      "role": "mount",
+      "reason": "joined to 107/0 (Technic Beam  5 x  3 H-shaped)",
+      "description": "Technic Pin Long without Friction with Single Slot"
+    },
+    {
+      "id": "0/85/11",
+      "role": "mount",
+      "reason": "joined to 107/0 (Technic Beam  5 x  3 H-shaped)",
+      "description": "Technic Pin with Friction and Slots"
+    },
+    {
+      "id": "0/85/12",
+      "role": "mount",
+      "reason": "joined to 107/0 (Technic Beam  5 x  3 H-shaped)",
+      "description": "Technic Pin with Friction and Slots"
+    },
+    {
+      "id": "0/85/90",
+      "role": "frame",
+      "reason": "depth 2 from 0/158 (Technic Pin Long with Friction and Slot)",
+      "description": "Technic Beam  7"
+    },
+    {
+      "id": "0/85/91",
+      "role": "frame",
+      "reason": "depth 2 from 0/159 (Technic Pin Long with Friction and Slot)",
+      "description": "Technic Beam  7"
+    },
+    {
+      "id": "0/157/84/13",
+      "role": "frame",
+      "reason": "depth 1 from 21 (Technic Beam  7 x  5 with Open Center  5 x  3)",
+      "description": "Technic Axle Pin Long with Friction with  2L Pin"
+    },
+    {
+      "id": "0/157/84/29",
+      "role": "frame",
+      "reason": "depth 2 from 0/157/84/13 (Technic Axle Pin Long with Friction with  2L Pin)",
+      "description": "Technic Beam  3 x  3 T-shaped"
+    },
+    {
+      "id": "0/157/85/14",
+      "role": "frame",
+      "reason": "depth 1 from 22 (Technic Beam  7 x  5 with Open Center  5 x  3)",
+      "description": "Technic Axle Pin Long with Friction with  2L Pin"
+    },
+    {
+      "id": "0/157/85/29",
+      "role": "frame",
+      "reason": "depth 2 from 0/157/85/14 (Technic Axle Pin Long with Friction with  2L Pin)",
+      "description": "Technic Beam  3 x  3 T-shaped"
+    },
+    {
+      "id": "0/157/86",
+      "role": "frame",
+      "reason": "depth 1 from 0/157/88 (Technic Pin with Friction and Slots)",
+      "description": "Technic Beam 13"
+    },
+    {
+      "id": "0/157/87",
+      "role": "frame",
+      "reason": "depth 1 from 22 (Technic Beam  7 x  5 with Open Center  5 x  3)",
+      "description": "Technic Pin with Friction and Slots"
+    },
+    {
+      "id": "0/157/88",
+      "role": "mount",
+      "reason": "joined to 107/0 (Technic Beam  5 x  3 H-shaped)",
+      "description": "Technic Pin with Friction and Slots"
+    },
+    {
+      "id": "0/157/89",
+      "role": "frame",
+      "reason": "depth 1 from 21 (Technic Beam  7 x  5 with Open Center  5 x  3)",
+      "description": "Technic Pin with Friction and Slots"
+    },
+    {
+      "id": "0/157/90",
+      "role": "mount",
+      "reason": "joined to 107/0 (Technic Beam  5 x  3 H-shaped)",
+      "description": "Technic Pin with Friction and Slots"
+    },
+    {
+      "id": "0/158",
+      "role": "frame",
+      "reason": "depth 1 from 22 (Technic Beam  7 x  5 with Open Center  5 x  3)",
+      "description": "Technic Pin Long with Friction and Slot"
+    },
+    {
+      "id": "0/159",
+      "role": "frame",
+      "reason": "depth 1 from 21 (Technic Beam  7 x  5 with Open Center  5 x  3)",
+      "description": "Technic Pin Long with Friction and Slot"
+    },
+    {
+      "id": "21",
+      "role": "mount",
+      "reason": "joined to 107/1 (Technic Pin Long with Friction and Slot)",
+      "description": "Technic Beam  7 x  5 with Open Center  5 x  3"
+    },
+    {
+      "id": "22",
+      "role": "mount",
+      "reason": "joined to 107/1 (Technic Pin Long with Friction and Slot)",
+      "description": "Technic Beam  7 x  5 with Open Center  5 x  3"
+    },
+    {
+      "id": "23",
+      "role": "frame",
+      "reason": "depth 1 from 22 (Technic Beam  7 x  5 with Open Center  5 x  3)",
+      "description": "Technic Pin Long with Stop Bush"
+    },
+    {
+      "id": "24",
+      "role": "frame",
+      "reason": "depth 1 from 21 (Technic Beam  7 x  5 with Open Center  5 x  3)",
+      "description": "Technic Pin Long with Stop Bush"
+    },
+    {
+      "id": "25",
+      "role": "mount",
+      "reason": "listed static context (bearing, knuckle, latch, base or band)",
+      "description": "Technic Pin with Friction with Perpendicular Pin Hole Type 1"
+    },
+    {
+      "id": "26",
+      "role": "mount",
+      "reason": "listed static context (bearing, knuckle, latch, base or band)",
+      "description": "Technic Pin with Friction with Perpendicular Pin Hole Type 1"
+    },
+    {
+      "id": "27",
+      "role": "frame",
+      "reason": "depth 1 from 22 (Technic Beam  7 x  5 with Open Center  5 x  3)",
+      "description": "Technic Pin with Friction and Slots"
+    },
+    {
+      "id": "28",
+      "role": "frame",
+      "reason": "depth 1 from 22 (Technic Beam  7 x  5 with Open Center  5 x  3)",
+      "description": "Technic Pin with Friction and Slots"
+    },
+    {
+      "id": "29",
+      "role": "frame",
+      "reason": "depth 1 from 21 (Technic Beam  7 x  5 with Open Center  5 x  3)",
+      "description": "Technic Pin with Friction and Slots"
+    },
+    {
+      "id": "30",
+      "role": "frame",
+      "reason": "depth 1 from 21 (Technic Beam  7 x  5 with Open Center  5 x  3)",
+      "description": "Technic Pin with Friction and Slots"
+    },
+    {
+      "id": "31",
+      "role": "frame",
+      "reason": "depth 2 from 29 (Technic Pin with Friction and Slots)",
+      "description": "Technic Beam 11"
+    },
+    {
+      "id": "36",
+      "role": "frame",
+      "reason": "depth 1 from 21 (Technic Beam  7 x  5 with Open Center  5 x  3)",
+      "description": "Technic Pin with Friction and Slots"
+    },
+    {
+      "id": "37",
+      "role": "frame",
+      "reason": "depth 1 from 22 (Technic Beam  7 x  5 with Open Center  5 x  3)",
+      "description": "Technic Pin with Friction and Slots"
+    },
+    {
+      "id": "38",
+      "role": "frame",
+      "reason": "depth 2 from 37 (Technic Pin with Friction and Slots)",
+      "description": "Technic Beam  5"
+    },
+    {
+      "id": "39",
+      "role": "frame",
+      "reason": "depth 2 from 36 (Technic Pin with Friction and Slots)",
+      "description": "Technic Beam  5"
+    },
+    {
+      "id": "107/0",
+      "role": "mount",
+      "reason": "listed static context (bearing, knuckle, latch, base or band)",
+      "description": "Technic Beam  5 x  3 H-shaped"
+    },
+    {
+      "id": "107/1",
+      "role": "mount",
+      "reason": "listed static context (bearing, knuckle, latch, base or band)",
+      "description": "Technic Pin Long with Friction and Slot"
+    },
+    {
+      "id": "107/2",
+      "role": "mount",
+      "reason": "listed static context (bearing, knuckle, latch, base or band)",
+      "description": "Technic Pin Long with Friction and Slot"
+    },
+    {
+      "id": "107/3",
+      "role": "mount",
+      "reason": "listed static context (bearing, knuckle, latch, base or band)",
+      "description": "Technic Beam  2 x  4 Liftarm Bent 90"
+    },
+    {
+      "id": "107/4",
+      "role": "mount",
+      "reason": "listed static context (bearing, knuckle, latch, base or band)",
+      "description": "Technic Pin Long with Friction and Slot"
+    },
+    {
+      "id": "107/5",
+      "role": "mount",
+      "reason": "listed static context (bearing, knuckle, latch, base or band)",
+      "description": "Technic Pin Long with Friction and Slot"
+    },
+    {
+      "id": "107/6",
+      "role": "mount",
+      "reason": "listed static context (bearing, knuckle, latch, base or band)",
+      "description": "Technic Beam  2 x  4 Liftarm Bent 90"
+    },
+    {
+      "id": "107/7",
+      "role": "mount",
+      "reason": "listed static context (bearing, knuckle, latch, base or band)",
+      "description": "Technic Axle  5"
+    },
+    {
+      "id": "107/8",
+      "role": "mount",
+      "reason": "listed static context (bearing, knuckle, latch, base or band)",
+      "description": "Technic Bush with Two Flanges"
+    },
+    {
+      "id": "107/9",
+      "role": "mount",
+      "reason": "listed static context (bearing, knuckle, latch, base or band)",
+      "description": "Technic Beam  2 x  4 Liftarm Bent 90"
+    },
+    {
+      "id": "107/10",
+      "role": "moving",
+      "reason": "plan body",
+      "description": "Technic Axle Joiner Inline Smooth"
+    },
+    {
+      "id": "107/11",
+      "role": "moving",
+      "reason": "plan body",
+      "description": "Technic Axle  7"
+    },
+    {
+      "id": "107/12",
+      "role": "moving",
+      "reason": "plan body",
+      "description": "Technic connector element with reduced closed axle holes, peg holes, and rings forming a joint housing."
+    },
+    {
+      "id": "107/13",
+      "role": "mount",
+      "reason": "listed static context (bearing, knuckle, latch, base or band)",
+      "description": "Technic Beam  3"
+    },
+    {
+      "id": "107/14",
+      "role": "moving",
+      "reason": "plan body",
+      "description": "Technic Axle  5"
+    },
+    {
+      "id": "107/15",
+      "role": "moving",
+      "reason": "plan body",
+      "description": "Technic Bush with Two Flanges"
+    },
+    {
+      "id": "107/16",
+      "role": "mount",
+      "reason": "listed static context (bearing, knuckle, latch, base or band)",
+      "description": "Technic Beam  3"
+    },
+    {
+      "id": "107/17",
+      "role": "moving",
+      "reason": "plan body",
+      "description": "Technic connector element with reduced closed axle holes, peg holes, and rings forming a joint housing."
+    },
+    {
+      "id": "107/18",
+      "role": "moving",
+      "reason": "plan body",
+      "description": "Technic connector element with reduced closed axle holes, peg holes, and rings forming a joint housing."
+    },
+    {
+      "id": "107/19",
+      "role": "moving",
+      "reason": "plan body",
+      "description": "Technic connector element with reduced closed axle holes, peg holes, and rings forming a joint housing."
+    },
+    {
+      "id": "107/20",
+      "role": "moving",
+      "reason": "plan body",
+      "description": "Technic Axle Joiner Inline Smooth"
+    },
+    {
+      "id": "107/21",
+      "role": "moving",
+      "reason": "plan body",
+      "description": "Technic Beam  7"
+    },
+    {
+      "id": "107/22",
+      "role": "moving",
+      "reason": "plan body",
+      "description": "Technic Pin with Friction and Slots"
+    },
+    {
+      "id": "107/23",
+      "role": "moving",
+      "reason": "plan body",
+      "description": "Technic Pin with Friction with Perpendicular Pin Hole Type 1"
+    },
+    {
+      "id": "107/24",
+      "role": "moving",
+      "reason": "plan body",
+      "description": "Technic Beam  7"
+    },
+    {
+      "id": "107/25",
+      "role": "moving",
+      "reason": "plan body",
+      "description": "Technic Pin with Friction and Slots"
+    },
+    {
+      "id": "107/26",
+      "role": "moving",
+      "reason": "plan body",
+      "description": "Technic Pin with Friction with Perpendicular Pin Hole Type 1"
+    },
+    {
+      "id": "107/27",
+      "role": "moving",
+      "reason": "plan body",
+      "description": "Technic Beam  7"
+    },
+    {
+      "id": "107/28",
+      "role": "moving",
+      "reason": "plan body",
+      "description": "Technic Pin with Friction and Slots"
+    },
+    {
+      "id": "107/29",
+      "role": "moving",
+      "reason": "plan body",
+      "description": "Technic Beam  3"
+    },
+    {
+      "id": "107/30",
+      "role": "moving",
+      "reason": "plan body",
+      "description": "Technic Axle  3"
+    },
+    {
+      "id": "107/31",
+      "role": "moving",
+      "reason": "plan body",
+      "description": "Technic Pin with Friction and Slots"
+    },
+    {
+      "id": "107/32",
+      "role": "moving",
+      "reason": "plan body",
+      "description": "Technic Pin Long with Friction and Slot"
+    },
+    {
+      "id": "107/33",
+      "role": "moving",
+      "reason": "plan body",
+      "description": "Technic Beam  3"
+    },
+    {
+      "id": "107/34",
+      "role": "moving",
+      "reason": "plan body",
+      "description": "Technic Beam  3"
+    },
+    {
+      "id": "107/35",
+      "role": "moving",
+      "reason": "plan body",
+      "description": "Technic Beam  7"
+    },
+    {
+      "id": "107/36",
+      "role": "moving",
+      "reason": "plan body",
+      "description": "Technic Pin with Friction and Slots"
+    },
+    {
+      "id": "107/37",
+      "role": "moving",
+      "reason": "plan body",
+      "description": "Technic Beam  3"
+    },
+    {
+      "id": "107/38",
+      "role": "moving",
+      "reason": "plan body",
+      "description": "Technic Axle  3"
+    },
+    {
+      "id": "107/39",
+      "role": "moving",
+      "reason": "plan body",
+      "description": "Technic Pin with Friction and Slots"
+    },
+    {
+      "id": "107/40",
+      "role": "moving",
+      "reason": "plan body",
+      "description": "Technic Pin Long with Friction and Slot"
+    },
+    {
+      "id": "107/41",
+      "role": "moving",
+      "reason": "plan body",
+      "description": "Technic Axle Joiner Inline Smooth"
+    },
+    {
+      "id": "107/42",
+      "role": "moving",
+      "reason": "plan body",
+      "description": "Technic Axle Joiner Inline Smooth"
+    },
+    {
+      "id": "107/43",
+      "role": "moving",
+      "reason": "plan body",
+      "description": "Technic Panel  3 x 11"
+    },
+    {
+      "id": "108",
+      "role": "moving",
+      "reason": "plan body",
+      "description": "Technic Pin with Friction and Slots"
+    },
+    {
+      "id": "109",
+      "role": "moving",
+      "reason": "plan body",
+      "description": "Technic Pin with Friction and Slots"
+    },
+    {
+      "id": "110",
+      "role": "moving",
+      "reason": "plan body",
+      "description": "Technic Beam 11"
+    },
+    {
+      "id": "111",
+      "role": "moving",
+      "reason": "plan body",
+      "description": "Technic Axle  3"
+    },
+    {
+      "id": "114",
+      "role": "frame",
+      "reason": "depth 1 from 21 (Technic Beam  7 x  5 with Open Center  5 x  3)",
+      "description": "Technic Axle Pin with Friction"
+    },
+    {
+      "id": "115",
+      "role": "frame",
+      "reason": "depth 1 from 21 (Technic Beam  7 x  5 with Open Center  5 x  3)",
+      "description": "Technic Cross Block 1 x 3 (Axle/Pin/Pin)"
+    },
+    {
+      "id": "116",
+      "role": "frame",
+      "reason": "depth 2 from 115 (Technic Cross Block 1 x 3 (Axle/Pin/Pin))",
+      "description": "Technic Pin Long with Friction and Slot"
+    },
+    {
+      "id": "117",
+      "role": "frame",
+      "reason": "depth 2 from 115 (Technic Cross Block 1 x 3 (Axle/Pin/Pin))",
+      "description": "Technic Pin Long with Friction and Slot"
+    },
+    {
+      "id": "118",
+      "role": "frame",
+      "reason": "depth 3 from 116 (Technic Pin Long with Friction and Slot)",
+      "description": "Technic Beam  3 x  5 Bent 90"
+    },
+    {
+      "id": "124",
+      "role": "frame",
+      "reason": "depth 1 from 22 (Technic Beam  7 x  5 with Open Center  5 x  3)",
+      "description": "Technic Axle Pin with Friction"
+    },
+    {
+      "id": "125",
+      "role": "frame",
+      "reason": "depth 1 from 22 (Technic Beam  7 x  5 with Open Center  5 x  3)",
+      "description": "Technic Cross Block 1 x 3 (Axle/Pin/Pin)"
+    },
+    {
+      "id": "126",
+      "role": "frame",
+      "reason": "depth 2 from 125 (Technic Cross Block 1 x 3 (Axle/Pin/Pin))",
+      "description": "Technic Pin Long with Friction and Slot"
+    },
+    {
+      "id": "127",
+      "role": "frame",
+      "reason": "depth 2 from 125 (Technic Cross Block 1 x 3 (Axle/Pin/Pin))",
+      "description": "Technic Pin Long with Friction and Slot"
+    },
+    {
+      "id": "128",
+      "role": "frame",
+      "reason": "depth 3 from 126 (Technic Pin Long with Friction and Slot)",
+      "description": "Technic Beam  3 x  5 Bent 90"
+    },
+    {
+      "id": "132",
+      "role": "mount",
+      "reason": "listed static context (bearing, knuckle, latch, base or band)",
+      "description": "Technic Cross Block 2 x 2 (Axle/Twin Pin)"
+    },
+    {
+      "id": "133",
+      "role": "mount",
+      "reason": "joined to 132 (Technic Cross Block 2 x 2 (Axle/Twin Pin))",
+      "description": "Technic Pin Long with Friction and Slot"
+    },
+    {
+      "id": "134",
+      "role": "mount",
+      "reason": "joined to 132 (Technic Cross Block 2 x 2 (Axle/Twin Pin))",
+      "description": "Technic Pin Long with Friction and Slot"
+    },
+    {
+      "id": "135",
+      "role": "frame",
+      "reason": "depth 1 from 134 (Technic Pin Long with Friction and Slot)",
+      "description": "Technic Cross Block 1 x 3 (Axle/Pin/Pin)"
+    },
+    {
+      "id": "136",
+      "role": "frame",
+      "reason": "depth 1 from 134 (Technic Pin Long with Friction and Slot)",
+      "description": "Technic Cross Block 1 x 3 (Axle/Pin/Pin)"
+    },
+    {
+      "id": "137",
+      "role": "frame",
+      "reason": "depth 2 from 135 (Technic Cross Block 1 x 3 (Axle/Pin/Pin))",
+      "description": "Technic Axle Pin Long with Friction with  2L Pin"
+    },
+    {
+      "id": "138",
+      "role": "frame",
+      "reason": "depth 2 from 136 (Technic Cross Block 1 x 3 (Axle/Pin/Pin))",
+      "description": "Technic Axle Pin Long with Friction with  2L Pin"
+    },
+    {
+      "id": "141",
+      "role": "mount",
+      "reason": "listed static context (bearing, knuckle, latch, base or band)",
+      "description": "Technic Cross Block 2 x 2 (Axle/Twin Pin)"
+    },
+    {
+      "id": "142",
+      "role": "mount",
+      "reason": "joined to 141 (Technic Cross Block 2 x 2 (Axle/Twin Pin))",
+      "description": "Technic Pin Long with Friction and Slot"
+    },
+    {
+      "id": "143",
+      "role": "mount",
+      "reason": "joined to 141 (Technic Cross Block 2 x 2 (Axle/Twin Pin))",
+      "description": "Technic Pin Long with Friction and Slot"
+    },
+    {
+      "id": "144",
+      "role": "frame",
+      "reason": "depth 1 from 143 (Technic Pin Long with Friction and Slot)",
+      "description": "Technic Cross Block 1 x 3 (Axle/Pin/Pin)"
+    },
+    {
+      "id": "145",
+      "role": "frame",
+      "reason": "depth 1 from 143 (Technic Pin Long with Friction and Slot)",
+      "description": "Technic Cross Block 1 x 3 (Axle/Pin/Pin)"
+    },
+    {
+      "id": "146",
+      "role": "frame",
+      "reason": "depth 2 from 144 (Technic Cross Block 1 x 3 (Axle/Pin/Pin))",
+      "description": "Technic Axle Pin Long with Friction with  2L Pin"
+    },
+    {
+      "id": "147",
+      "role": "frame",
+      "reason": "depth 2 from 145 (Technic Cross Block 1 x 3 (Axle/Pin/Pin))",
+      "description": "Technic Axle Pin Long with Friction with  2L Pin"
+    },
+    {
+      "id": "148",
+      "role": "moving",
+      "reason": "plan body",
+      "description": "Technic Axle Pin Long with Friction with  2L Pin"
+    },
+    {
+      "id": "149",
+      "role": "moving",
+      "reason": "plan body",
+      "description": "Technic Axle Pin Long with Friction with  2L Pin"
+    },
+    {
+      "id": "150",
+      "role": "moving",
+      "reason": "plan body",
+      "description": "Technic Beam  2 x  4 Liftarm Bent 90"
+    },
+    {
+      "id": "151",
+      "role": "moving",
+      "reason": "plan body",
+      "description": "Technic Panel Fairing Smooth #22 (Thin Short)"
+    },
+    {
+      "id": "152",
+      "role": "moving",
+      "reason": "plan body",
+      "description": "Technic Panel Fairing Smooth #21 (Thin Short)"
+    },
+    {
+      "id": "153",
+      "role": "moving",
+      "reason": "plan body",
+      "description": "Technic Axle Pin Long with Friction with  2L Pin"
+    },
+    {
+      "id": "154",
+      "role": "moving",
+      "reason": "plan body",
+      "description": "Technic Axle Pin Long with Friction with  2L Pin"
+    },
+    {
+      "id": "155",
+      "role": "moving",
+      "reason": "plan body",
+      "description": "Technic Beam  2 x  4 Liftarm Bent 90"
+    },
+    {
+      "id": "156",
+      "role": "moving",
+      "reason": "plan body",
+      "description": "Technic Panel Fairing Smooth #21 (Thin Short)"
+    },
+    {
+      "id": "157",
+      "role": "moving",
+      "reason": "plan body",
+      "description": "Technic Panel Fairing Smooth #22 (Thin Short)"
+    },
+    {
+      "id": "158",
+      "role": "moving",
+      "reason": "plan body",
+      "description": "Technic Pin with Friction and Slots"
+    },
+    {
+      "id": "159",
+      "role": "moving",
+      "reason": "plan body",
+      "description": "Technic Pin with Friction and Slots"
+    },
+    {
+      "id": "160",
+      "role": "moving",
+      "reason": "plan body",
+      "description": "Technic Pin with Friction and Slots"
+    },
+    {
+      "id": "161",
+      "role": "moving",
+      "reason": "plan body",
+      "description": "Technic Pin with Friction and Slots"
+    },
+    {
+      "id": "171",
+      "role": "frame",
+      "reason": "depth 3 from 126 (Technic Pin Long with Friction and Slot)",
+      "description": "Technic Beam  3 x  3 T-shaped"
+    },
+    {
+      "id": "172",
+      "role": "frame",
+      "reason": "depth 3 from 116 (Technic Pin Long with Friction and Slot)",
+      "description": "Technic Beam  3 x  3 T-shaped"
+    }
+  ],
+  "counts": {
+    "moving": 50,
+    "mount": 27,
+    "frame": 42
+  },
+  "source": "data/models-annotated/42083-1.mpd",
+  "section": "42083 - chiron.ldr",
+  "rule": {
+    "rule": "seeds + non-embedded parts within 70.0 LDU; depth 3 connector closure to the first beams",
+    "tested": 226
+  }
+}

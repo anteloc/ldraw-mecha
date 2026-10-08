@@ -1,0 +1,1230 @@
+{
+  "passed": true,
+  "samples": [
+    {
+      "control": "drive",
+      "value": -2000.0,
+      "passed": true,
+      "max_error": 3.1479993367611314e-07
+    },
+    {
+      "control": "drive",
+      "value": -1750.0,
+      "passed": true,
+      "max_error": 3.1479993367611314e-07
+    },
+    {
+      "control": "drive",
+      "value": -1500.0,
+      "passed": true,
+      "max_error": 3.1479993367611314e-07
+    },
+    {
+      "control": "drive",
+      "value": -1250.0,
+      "passed": true,
+      "max_error": 3.1479993367611314e-07
+    },
+    {
+      "control": "drive",
+      "value": -1000.0,
+      "passed": true,
+      "max_error": 3.1479993367611314e-07
+    },
+    {
+      "control": "drive",
+      "value": -750.0,
+      "passed": true,
+      "max_error": 3.1479993367611314e-07
+    },
+    {
+      "control": "drive",
+      "value": -500.0,
+      "passed": true,
+      "max_error": 3.1479993367611314e-07
+    },
+    {
+      "control": "drive",
+      "value": -250.0,
+      "passed": true,
+      "max_error": 3.1479993367611314e-07
+    },
+    {
+      "control": "drive",
+      "value": 0.0,
+      "passed": true,
+      "max_error": 3.1479993367611314e-07
+    },
+    {
+      "control": "drive",
+      "value": 250.0,
+      "passed": true,
+      "max_error": 3.1479993367611314e-07
+    },
+    {
+      "control": "drive",
+      "value": 500.0,
+      "passed": true,
+      "max_error": 3.1479993367611314e-07
+    },
+    {
+      "control": "drive",
+      "value": 750.0,
+      "passed": true,
+      "max_error": 3.1479993367611314e-07
+    },
+    {
+      "control": "drive",
+      "value": 1000.0,
+      "passed": true,
+      "max_error": 3.1479993367611314e-07
+    },
+    {
+      "control": "drive",
+      "value": 1250.0,
+      "passed": true,
+      "max_error": 3.1479993367611314e-07
+    },
+    {
+      "control": "drive",
+      "value": 1500.0,
+      "passed": true,
+      "max_error": 3.1479993367611314e-07
+    },
+    {
+      "control": "drive",
+      "value": 1750.0,
+      "passed": true,
+      "max_error": 3.1479993367611314e-07
+    },
+    {
+      "control": "drive",
+      "value": 2000.0,
+      "passed": true,
+      "max_error": 3.1479993367611314e-07
+    },
+    {
+      "control": "diff_front",
+      "value": -200.0,
+      "passed": true,
+      "max_error": 3.1479993367611314e-07
+    },
+    {
+      "control": "diff_front",
+      "value": -175.0,
+      "passed": true,
+      "max_error": 3.1479993367611314e-07
+    },
+    {
+      "control": "diff_front",
+      "value": -150.0,
+      "passed": true,
+      "max_error": 3.1479993367611314e-07
+    },
+    {
+      "control": "diff_front",
+      "value": -125.0,
+      "passed": true,
+      "max_error": 3.1479993367611314e-07
+    },
+    {
+      "control": "diff_front",
+      "value": -100.0,
+      "passed": true,
+      "max_error": 3.1479993367611314e-07
+    },
+    {
+      "control": "diff_front",
+      "value": -75.0,
+      "passed": true,
+      "max_error": 3.1479993367611314e-07
+    },
+    {
+      "control": "diff_front",
+      "value": -50.0,
+      "passed": true,
+      "max_error": 3.1479993367611314e-07
+    },
+    {
+      "control": "diff_front",
+      "value": -25.0,
+      "passed": true,
+      "max_error": 3.1479993367611314e-07
+    },
+    {
+      "control": "diff_front",
+      "value": 0.0,
+      "passed": true,
+      "max_error": 3.1479993367611314e-07
+    },
+    {
+      "control": "diff_front",
+      "value": 25.0,
+      "passed": true,
+      "max_error": 3.1479993367611314e-07
+    },
+    {
+      "control": "diff_front",
+      "value": 50.0,
+      "passed": true,
+      "max_error": 3.1479993367611314e-07
+    },
+    {
+      "control": "diff_front",
+      "value": 75.0,
+      "passed": true,
+      "max_error": 3.1479993367611314e-07
+    },
+    {
+      "control": "diff_front",
+      "value": 100.0,
+      "passed": true,
+      "max_error": 3.1479993367611314e-07
+    },
+    {
+      "control": "diff_front",
+      "value": 125.0,
+      "passed": true,
+      "max_error": 3.1479993367611314e-07
+    },
+    {
+      "control": "diff_front",
+      "value": 150.0,
+      "passed": true,
+      "max_error": 3.1479993367611314e-07
+    },
+    {
+      "control": "diff_front",
+      "value": 175.0,
+      "passed": true,
+      "max_error": 3.1479993367611314e-07
+    },
+    {
+      "control": "diff_front",
+      "value": 200.0,
+      "passed": true,
+      "max_error": 3.1479993367611314e-07
+    },
+    {
+      "control": "diff_rear",
+      "value": -200.0,
+      "passed": true,
+      "max_error": 3.1479993367611314e-07
+    },
+    {
+      "control": "diff_rear",
+      "value": -175.0,
+      "passed": true,
+      "max_error": 3.1479993367611314e-07
+    },
+    {
+      "control": "diff_rear",
+      "value": -150.0,
+      "passed": true,
+      "max_error": 3.1479993367611314e-07
+    },
+    {
+      "control": "diff_rear",
+      "value": -125.0,
+      "passed": true,
+      "max_error": 3.1479993367611314e-07
+    },
+    {
+      "control": "diff_rear",
+      "value": -100.0,
+      "passed": true,
+      "max_error": 3.1479993367611314e-07
+    },
+    {
+      "control": "diff_rear",
+      "value": -75.0,
+      "passed": true,
+      "max_error": 3.1479993367611314e-07
+    },
+    {
+      "control": "diff_rear",
+      "value": -50.0,
+      "passed": true,
+      "max_error": 3.1479993367611314e-07
+    },
+    {
+      "control": "diff_rear",
+      "value": -25.0,
+      "passed": true,
+      "max_error": 3.1479993367611314e-07
+    },
+    {
+      "control": "diff_rear",
+      "value": 0.0,
+      "passed": true,
+      "max_error": 3.1479993367611314e-07
+    },
+    {
+      "control": "diff_rear",
+      "value": 25.0,
+      "passed": true,
+      "max_error": 3.1479993367611314e-07
+    },
+    {
+      "control": "diff_rear",
+      "value": 50.0,
+      "passed": true,
+      "max_error": 3.1479993367611314e-07
+    },
+    {
+      "control": "diff_rear",
+      "value": 75.0,
+      "passed": true,
+      "max_error": 3.1479993367611314e-07
+    },
+    {
+      "control": "diff_rear",
+      "value": 100.0,
+      "passed": true,
+      "max_error": 3.1479993367611314e-07
+    },
+    {
+      "control": "diff_rear",
+      "value": 125.0,
+      "passed": true,
+      "max_error": 3.1479993367611314e-07
+    },
+    {
+      "control": "diff_rear",
+      "value": 150.0,
+      "passed": true,
+      "max_error": 3.1479993367611314e-07
+    },
+    {
+      "control": "diff_rear",
+      "value": 175.0,
+      "passed": true,
+      "max_error": 3.1479993367611314e-07
+    },
+    {
+      "control": "diff_rear",
+      "value": 200.0,
+      "passed": true,
+      "max_error": 3.1479993367611314e-07
+    },
+    {
+      "control": "diff_center",
+      "value": -200.0,
+      "passed": true,
+      "max_error": 3.1479993367611314e-07
+    },
+    {
+      "control": "diff_center",
+      "value": -175.0,
+      "passed": true,
+      "max_error": 3.1479993367611314e-07
+    },
+    {
+      "control": "diff_center",
+      "value": -150.0,
+      "passed": true,
+      "max_error": 3.1479993367611314e-07
+    },
+    {
+      "control": "diff_center",
+      "value": -125.0,
+      "passed": true,
+      "max_error": 3.1479993367611314e-07
+    },
+    {
+      "control": "diff_center",
+      "value": -100.0,
+      "passed": true,
+      "max_error": 3.1479993367611314e-07
+    },
+    {
+      "control": "diff_center",
+      "value": -75.0,
+      "passed": true,
+      "max_error": 3.1479993367611314e-07
+    },
+    {
+      "control": "diff_center",
+      "value": -50.0,
+      "passed": true,
+      "max_error": 3.1479993367611314e-07
+    },
+    {
+      "control": "diff_center",
+      "value": -25.0,
+      "passed": true,
+      "max_error": 3.1479993367611314e-07
+    },
+    {
+      "control": "diff_center",
+      "value": 0.0,
+      "passed": true,
+      "max_error": 3.1479993367611314e-07
+    },
+    {
+      "control": "diff_center",
+      "value": 25.0,
+      "passed": true,
+      "max_error": 3.1479993367611314e-07
+    },
+    {
+      "control": "diff_center",
+      "value": 50.0,
+      "passed": true,
+      "max_error": 3.1479993367611314e-07
+    },
+    {
+      "control": "diff_center",
+      "value": 75.0,
+      "passed": true,
+      "max_error": 3.1479993367611314e-07
+    },
+    {
+      "control": "diff_center",
+      "value": 100.0,
+      "passed": true,
+      "max_error": 3.1479993367611314e-07
+    },
+    {
+      "control": "diff_center",
+      "value": 125.0,
+      "passed": true,
+      "max_error": 3.1479993367611314e-07
+    },
+    {
+      "control": "diff_center",
+      "value": 150.0,
+      "passed": true,
+      "max_error": 3.1479993367611314e-07
+    },
+    {
+      "control": "diff_center",
+      "value": 175.0,
+      "passed": true,
+      "max_error": 3.1479993367611314e-07
+    },
+    {
+      "control": "diff_center",
+      "value": 200.0,
+      "passed": true,
+      "max_error": 3.1479993367611314e-07
+    },
+    {
+      "control": "gear_select",
+      "value": -0.5,
+      "passed": true,
+      "max_error": 3.1479993367611314e-07
+    },
+    {
+      "control": "gear_select",
+      "value": -0.07605091830127586,
+      "passed": true,
+      "max_error": 3.1479993367611314e-07
+    },
+    {
+      "control": "gear_select",
+      "value": 0.3478981633974483,
+      "passed": true,
+      "max_error": 3.1479993367611314e-07
+    },
+    {
+      "control": "gear_select",
+      "value": 0.7718472450961724,
+      "passed": true,
+      "max_error": 3.1479993367611314e-07
+    },
+    {
+      "control": "gear_select",
+      "value": 1.1957963267948966,
+      "passed": true,
+      "max_error": 3.1479993367611314e-07
+    },
+    {
+      "control": "gear_select",
+      "value": 1.6197454084936207,
+      "passed": true,
+      "max_error": 3.1479993367611314e-07
+    },
+    {
+      "control": "gear_select",
+      "value": 2.043694490192345,
+      "passed": true,
+      "max_error": 3.1479993367611314e-07
+    },
+    {
+      "control": "gear_select",
+      "value": 2.467643571891069,
+      "passed": true,
+      "max_error": 3.1479993367611314e-07
+    },
+    {
+      "control": "gear_select",
+      "value": 2.891592653589793,
+      "passed": true,
+      "max_error": 3.1479993367611314e-07
+    },
+    {
+      "control": "gear_select",
+      "value": 3.3155417352885173,
+      "passed": true,
+      "max_error": 3.1479993367611314e-07
+    },
+    {
+      "control": "gear_select",
+      "value": 3.7394908169872414,
+      "passed": true,
+      "max_error": 3.1479993367611314e-07
+    },
+    {
+      "control": "gear_select",
+      "value": 4.163439898685965,
+      "passed": true,
+      "max_error": 3.1479993367611314e-07
+    },
+    {
+      "control": "gear_select",
+      "value": 4.58738898038469,
+      "passed": true,
+      "max_error": 3.1479993367611314e-07
+    },
+    {
+      "control": "gear_select",
+      "value": 5.011338062083414,
+      "passed": true,
+      "max_error": 3.1479993367611314e-07
+    },
+    {
+      "control": "gear_select",
+      "value": 5.435287143782138,
+      "passed": true,
+      "max_error": 3.1479993367611314e-07
+    },
+    {
+      "control": "gear_select",
+      "value": 5.859236225480862,
+      "passed": true,
+      "max_error": 3.1479993367611314e-07
+    },
+    {
+      "control": "gear_select",
+      "value": 6.283185307179586,
+      "passed": true,
+      "max_error": 3.1479993367611314e-07
+    },
+    {
+      "control": "range_select",
+      "value": -1.0,
+      "passed": true,
+      "max_error": 3.1479993367611314e-07
+    },
+    {
+      "control": "range_select",
+      "value": -0.875,
+      "passed": true,
+      "max_error": 3.1479993367611314e-07
+    },
+    {
+      "control": "range_select",
+      "value": -0.75,
+      "passed": true,
+      "max_error": 3.1479993367611314e-07
+    },
+    {
+      "control": "range_select",
+      "value": -0.625,
+      "passed": true,
+      "max_error": 3.1479993367611314e-07
+    },
+    {
+      "control": "range_select",
+      "value": -0.5,
+      "passed": true,
+      "max_error": 3.1479993367611314e-07
+    },
+    {
+      "control": "range_select",
+      "value": -0.375,
+      "passed": true,
+      "max_error": 3.1479993367611314e-07
+    },
+    {
+      "control": "range_select",
+      "value": -0.25,
+      "passed": true,
+      "max_error": 3.1479993367611314e-07
+    },
+    {
+      "control": "range_select",
+      "value": -0.125,
+      "passed": true,
+      "max_error": 3.1479993367611314e-07
+    },
+    {
+      "control": "range_select",
+      "value": 0.0,
+      "passed": true,
+      "max_error": 3.1479993367611314e-07
+    },
+    {
+      "control": "range_select",
+      "value": 0.125,
+      "passed": true,
+      "max_error": 3.1479993367611314e-07
+    },
+    {
+      "control": "range_select",
+      "value": 0.25,
+      "passed": true,
+      "max_error": 3.1479993367611314e-07
+    },
+    {
+      "control": "range_select",
+      "value": 0.375,
+      "passed": true,
+      "max_error": 3.1479993367611314e-07
+    },
+    {
+      "control": "range_select",
+      "value": 0.5,
+      "passed": true,
+      "max_error": 3.1479993367611314e-07
+    },
+    {
+      "control": "range_select",
+      "value": 0.625,
+      "passed": true,
+      "max_error": 3.1479993367611314e-07
+    },
+    {
+      "control": "range_select",
+      "value": 0.75,
+      "passed": true,
+      "max_error": 3.1479993367611314e-07
+    },
+    {
+      "control": "range_select",
+      "value": 0.875,
+      "passed": true,
+      "max_error": 3.1479993367611314e-07
+    },
+    {
+      "control": "range_select",
+      "value": 1.0,
+      "passed": true,
+      "max_error": 3.1479993367611314e-07
+    },
+    {
+      "control": "direction_select",
+      "value": -1.0,
+      "passed": true,
+      "max_error": 3.1479993367611314e-07
+    },
+    {
+      "control": "direction_select",
+      "value": -0.875,
+      "passed": true,
+      "max_error": 3.1479993367611314e-07
+    },
+    {
+      "control": "direction_select",
+      "value": -0.75,
+      "passed": true,
+      "max_error": 3.1479993367611314e-07
+    },
+    {
+      "control": "direction_select",
+      "value": -0.625,
+      "passed": true,
+      "max_error": 3.1479993367611314e-07
+    },
+    {
+      "control": "direction_select",
+      "value": -0.5,
+      "passed": true,
+      "max_error": 3.1479993367611314e-07
+    },
+    {
+      "control": "direction_select",
+      "value": -0.375,
+      "passed": true,
+      "max_error": 3.1479993367611314e-07
+    },
+    {
+      "control": "direction_select",
+      "value": -0.25,
+      "passed": true,
+      "max_error": 3.1479993367611314e-07
+    },
+    {
+      "control": "direction_select",
+      "value": -0.125,
+      "passed": true,
+      "max_error": 3.1479993367611314e-07
+    },
+    {
+      "control": "direction_select",
+      "value": 0.0,
+      "passed": true,
+      "max_error": 3.1479993367611314e-07
+    },
+    {
+      "control": "direction_select",
+      "value": 0.125,
+      "passed": true,
+      "max_error": 3.1479993367611314e-07
+    },
+    {
+      "control": "direction_select",
+      "value": 0.25,
+      "passed": true,
+      "max_error": 3.1479993367611314e-07
+    },
+    {
+      "control": "direction_select",
+      "value": 0.375,
+      "passed": true,
+      "max_error": 3.1479993367611314e-07
+    },
+    {
+      "control": "direction_select",
+      "value": 0.5,
+      "passed": true,
+      "max_error": 3.1479993367611314e-07
+    },
+    {
+      "control": "direction_select",
+      "value": 0.625,
+      "passed": true,
+      "max_error": 3.1479993367611314e-07
+    },
+    {
+      "control": "direction_select",
+      "value": 0.75,
+      "passed": true,
+      "max_error": 3.1479993367611314e-07
+    },
+    {
+      "control": "direction_select",
+      "value": 0.875,
+      "passed": true,
+      "max_error": 3.1479993367611314e-07
+    },
+    {
+      "control": "direction_select",
+      "value": 1.0,
+      "passed": true,
+      "max_error": 3.1479993367611314e-07
+    },
+    {
+      "control": "phase_engine",
+      "value": -4000.0,
+      "passed": true,
+      "max_error": 3.1479993367611314e-07
+    },
+    {
+      "control": "phase_engine",
+      "value": -3500.0,
+      "passed": true,
+      "max_error": 3.1479993367611314e-07
+    },
+    {
+      "control": "phase_engine",
+      "value": -3000.0,
+      "passed": true,
+      "max_error": 3.1479993367611314e-07
+    },
+    {
+      "control": "phase_engine",
+      "value": -2500.0,
+      "passed": true,
+      "max_error": 3.1479993367611314e-07
+    },
+    {
+      "control": "phase_engine",
+      "value": -2000.0,
+      "passed": true,
+      "max_error": 3.1479993367611314e-07
+    },
+    {
+      "control": "phase_engine",
+      "value": -1500.0,
+      "passed": true,
+      "max_error": 3.1479993367611314e-07
+    },
+    {
+      "control": "phase_engine",
+      "value": -1000.0,
+      "passed": true,
+      "max_error": 3.1479993367611314e-07
+    },
+    {
+      "control": "phase_engine",
+      "value": -500.0,
+      "passed": true,
+      "max_error": 3.1479993367611314e-07
+    },
+    {
+      "control": "phase_engine",
+      "value": 0.0,
+      "passed": true,
+      "max_error": 3.1479993367611314e-07
+    },
+    {
+      "control": "phase_engine",
+      "value": 500.0,
+      "passed": true,
+      "max_error": 3.1479993367611314e-07
+    },
+    {
+      "control": "phase_engine",
+      "value": 1000.0,
+      "passed": true,
+      "max_error": 3.1479993367611314e-07
+    },
+    {
+      "control": "phase_engine",
+      "value": 1500.0,
+      "passed": true,
+      "max_error": 3.1479993367611314e-07
+    },
+    {
+      "control": "phase_engine",
+      "value": 2000.0,
+      "passed": true,
+      "max_error": 3.1479993367611314e-07
+    },
+    {
+      "control": "phase_engine",
+      "value": 2500.0,
+      "passed": true,
+      "max_error": 3.1479993367611314e-07
+    },
+    {
+      "control": "phase_engine",
+      "value": 3000.0,
+      "passed": true,
+      "max_error": 3.1479993367611314e-07
+    },
+    {
+      "control": "phase_engine",
+      "value": 3500.0,
+      "passed": true,
+      "max_error": 3.1479993367611314e-07
+    },
+    {
+      "control": "phase_engine",
+      "value": 4000.0,
+      "passed": true,
+      "max_error": 3.1479993367611314e-07
+    },
+    {
+      "control": "phase_mid",
+      "value": -4000.0,
+      "passed": true,
+      "max_error": 3.1479993367611314e-07
+    },
+    {
+      "control": "phase_mid",
+      "value": -3500.0,
+      "passed": true,
+      "max_error": 3.1479993367611314e-07
+    },
+    {
+      "control": "phase_mid",
+      "value": -3000.0,
+      "passed": true,
+      "max_error": 3.1479993367611314e-07
+    },
+    {
+      "control": "phase_mid",
+      "value": -2500.0,
+      "passed": true,
+      "max_error": 3.1479993367611314e-07
+    },
+    {
+      "control": "phase_mid",
+      "value": -2000.0,
+      "passed": true,
+      "max_error": 3.1479993367611314e-07
+    },
+    {
+      "control": "phase_mid",
+      "value": -1500.0,
+      "passed": true,
+      "max_error": 3.1479993367611314e-07
+    },
+    {
+      "control": "phase_mid",
+      "value": -1000.0,
+      "passed": true,
+      "max_error": 3.1479993367611314e-07
+    },
+    {
+      "control": "phase_mid",
+      "value": -500.0,
+      "passed": true,
+      "max_error": 3.1479993367611314e-07
+    },
+    {
+      "control": "phase_mid",
+      "value": 0.0,
+      "passed": true,
+      "max_error": 3.1479993367611314e-07
+    },
+    {
+      "control": "phase_mid",
+      "value": 500.0,
+      "passed": true,
+      "max_error": 3.1479993367611314e-07
+    },
+    {
+      "control": "phase_mid",
+      "value": 1000.0,
+      "passed": true,
+      "max_error": 3.1479993367611314e-07
+    },
+    {
+      "control": "phase_mid",
+      "value": 1500.0,
+      "passed": true,
+      "max_error": 3.1479993367611314e-07
+    },
+    {
+      "control": "phase_mid",
+      "value": 2000.0,
+      "passed": true,
+      "max_error": 3.1479993367611314e-07
+    },
+    {
+      "control": "phase_mid",
+      "value": 2500.0,
+      "passed": true,
+      "max_error": 3.1479993367611314e-07
+    },
+    {
+      "control": "phase_mid",
+      "value": 3000.0,
+      "passed": true,
+      "max_error": 3.1479993367611314e-07
+    },
+    {
+      "control": "phase_mid",
+      "value": 3500.0,
+      "passed": true,
+      "max_error": 3.1479993367611314e-07
+    },
+    {
+      "control": "phase_mid",
+      "value": 4000.0,
+      "passed": true,
+      "max_error": 3.1479993367611314e-07
+    },
+    {
+      "control": "phase_c26",
+      "value": -4000.0,
+      "passed": true,
+      "max_error": 3.1479993367611314e-07
+    },
+    {
+      "control": "phase_c26",
+      "value": -3500.0,
+      "passed": true,
+      "max_error": 3.1479993367611314e-07
+    },
+    {
+      "control": "phase_c26",
+      "value": -3000.0,
+      "passed": true,
+      "max_error": 3.1479993367611314e-07
+    },
+    {
+      "control": "phase_c26",
+      "value": -2500.0,
+      "passed": true,
+      "max_error": 3.1479993367611314e-07
+    },
+    {
+      "control": "phase_c26",
+      "value": -2000.0,
+      "passed": true,
+      "max_error": 3.1479993367611314e-07
+    },
+    {
+      "control": "phase_c26",
+      "value": -1500.0,
+      "passed": true,
+      "max_error": 3.1479993367611314e-07
+    },
+    {
+      "control": "phase_c26",
+      "value": -1000.0,
+      "passed": true,
+      "max_error": 3.1479993367611314e-07
+    },
+    {
+      "control": "phase_c26",
+      "value": -500.0,
+      "passed": true,
+      "max_error": 3.1479993367611314e-07
+    },
+    {
+      "control": "phase_c26",
+      "value": 0.0,
+      "passed": true,
+      "max_error": 3.1479993367611314e-07
+    },
+    {
+      "control": "phase_c26",
+      "value": 500.0,
+      "passed": true,
+      "max_error": 3.1479993367611314e-07
+    },
+    {
+      "control": "phase_c26",
+      "value": 1000.0,
+      "passed": true,
+      "max_error": 3.1479993367611314e-07
+    },
+    {
+      "control": "phase_c26",
+      "value": 1500.0,
+      "passed": true,
+      "max_error": 3.1479993367611314e-07
+    },
+    {
+      "control": "phase_c26",
+      "value": 2000.0,
+      "passed": true,
+      "max_error": 3.1479993367611314e-07
+    },
+    {
+      "control": "phase_c26",
+      "value": 2500.0,
+      "passed": true,
+      "max_error": 3.1479993367611314e-07
+    },
+    {
+      "control": "phase_c26",
+      "value": 3000.0,
+      "passed": true,
+      "max_error": 3.1479993367611314e-07
+    },
+    {
+      "control": "phase_c26",
+      "value": 3500.0,
+      "passed": true,
+      "max_error": 3.1479993367611314e-07
+    },
+    {
+      "control": "phase_c26",
+      "value": 4000.0,
+      "passed": true,
+      "max_error": 3.1479993367611314e-07
+    },
+    {
+      "control": "winch",
+      "value": -400.0,
+      "passed": true,
+      "max_error": 3.1479993367611314e-07
+    },
+    {
+      "control": "winch",
+      "value": -350.0,
+      "passed": true,
+      "max_error": 3.1479993367611314e-07
+    },
+    {
+      "control": "winch",
+      "value": -300.0,
+      "passed": true,
+      "max_error": 3.1479993367611314e-07
+    },
+    {
+      "control": "winch",
+      "value": -250.0,
+      "passed": true,
+      "max_error": 3.1479993367611314e-07
+    },
+    {
+      "control": "winch",
+      "value": -200.0,
+      "passed": true,
+      "max_error": 3.1479993367611314e-07
+    },
+    {
+      "control": "winch",
+      "value": -150.0,
+      "passed": true,
+      "max_error": 3.1479993367611314e-07
+    },
+    {
+      "control": "winch",
+      "value": -100.0,
+      "passed": true,
+      "max_error": 3.1479993367611314e-07
+    },
+    {
+      "control": "winch",
+      "value": -50.0,
+      "passed": true,
+      "max_error": 3.1479993367611314e-07
+    },
+    {
+      "control": "winch",
+      "value": 0.0,
+      "passed": true,
+      "max_error": 3.1479993367611314e-07
+    },
+    {
+      "control": "winch",
+      "value": 50.0,
+      "passed": true,
+      "max_error": 3.1479993367611314e-07
+    },
+    {
+      "control": "winch",
+      "value": 100.0,
+      "passed": true,
+      "max_error": 3.1479993367611314e-07
+    },
+    {
+      "control": "winch",
+      "value": 150.0,
+      "passed": true,
+      "max_error": 3.1479993367611314e-07
+    },
+    {
+      "control": "winch",
+      "value": 200.0,
+      "passed": true,
+      "max_error": 3.1479993367611314e-07
+    },
+    {
+      "control": "winch",
+      "value": 250.0,
+      "passed": true,
+      "max_error": 3.1479993367611314e-07
+    },
+    {
+      "control": "winch",
+      "value": 300.0,
+      "passed": true,
+      "max_error": 3.1479993367611314e-07
+    },
+    {
+      "control": "winch",
+      "value": 350.0,
+      "passed": true,
+      "max_error": 3.1479993367611314e-07
+    },
+    {
+      "control": "winch",
+      "value": 400.0,
+      "passed": true,
+      "max_error": 3.1479993367611314e-07
+    },
+    {
+      "control": "steering",
+      "value": -2.583,
+      "passed": true,
+      "max_error": 3.8333685381530813e-07
+    },
+    {
+      "control": "steering",
+      "value": -2.2601250000000004,
+      "passed": true,
+      "max_error": 3.789764519979144e-07
+    },
+    {
+      "control": "steering",
+      "value": -1.9372500000000001,
+      "passed": true,
+      "max_error": 3.7401802899239556e-07
+    },
+    {
+      "control": "steering",
+      "value": -1.6143750000000001,
+      "passed": true,
+      "max_error": 3.68277341067369e-07
+    },
+    {
+      "control": "steering",
+      "value": -1.2915,
+      "passed": true,
+      "max_error": 3.613293699800124e-07
+    },
+    {
+      "control": "steering",
+      "value": -0.9686250000000001,
+      "passed": true,
+      "max_error": 3.5259559183487e-07
+    },
+    {
+      "control": "steering",
+      "value": -0.64575,
+      "passed": true,
+      "max_error": 3.4161189432779793e-07
+    },
+    {
+      "control": "steering",
+      "value": -0.3228749999999998,
+      "passed": true,
+      "max_error": 3.286132681523668e-07
+    },
+    {
+      "control": "steering",
+      "value": 0.0,
+      "passed": true,
+      "max_error": 3.1479993367611314e-07
+    },
+    {
+      "control": "steering",
+      "value": 0.3228749999999998,
+      "passed": true,
+      "max_error": 3.272477329119283e-07
+    },
+    {
+      "control": "steering",
+      "value": 0.64575,
+      "passed": true,
+      "max_error": 3.374013317625213e-07
+    },
+    {
+      "control": "steering",
+      "value": 0.9686250000000003,
+      "passed": true,
+      "max_error": 3.459452528886686e-07
+    },
+    {
+      "control": "steering",
+      "value": 1.2915,
+      "passed": true,
+      "max_error": 3.535677990385011e-07
+    },
+    {
+      "control": "steering",
+      "value": 1.614375,
+      "passed": true,
+      "max_error": 3.608077463468362e-07
+    },
+    {
+      "control": "steering",
+      "value": 1.9372500000000006,
+      "passed": true,
+      "max_error": 3.6801051805923635e-07
+    },
+    {
+      "control": "steering",
+      "value": 2.2601250000000004,
+      "passed": true,
+      "max_error": 3.7519895101922884e-07
+    },
+    {
+      "control": "steering",
+      "value": 2.583,
+      "passed": true,
+      "max_error": 3.818183387238605e-07
+    }
+  ],
+  "coverage": "Each control swept independently; analytic closure only, not mesh collisions or dynamics"
+}

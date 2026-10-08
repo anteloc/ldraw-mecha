@@ -1,0 +1,5776 @@
+{
+  "passed": true,
+  "blender": "5.2.2 LTS",
+  "frames": 752,
+  "fps": 24,
+  "windows": {
+    "A": [
+      1,
+      240
+    ],
+    "B": [
+      257,
+      496
+    ],
+    "C": [
+      513,
+      752
+    ]
+  },
+  "tolerance": 0.002,
+  "build": {
+    "P01_palm_tree": {
+      "passed": true,
+      "samples": 35,
+      "max_matrix_error": 9.1552734375e-05
+    },
+    "P02_swordleaf_palm": {
+      "passed": true,
+      "samples": 14,
+      "max_matrix_error": 1.52587890625e-05
+    },
+    "P03_bamboo": {
+      "passed": true,
+      "samples": 38,
+      "max_matrix_error": 4.57763671875e-05
+    },
+    "P04_flower_bed": {
+      "passed": true,
+      "samples": 38,
+      "max_matrix_error": 1.52587890625e-05
+    },
+    "P05_sunflower": {
+      "passed": true,
+      "samples": 8,
+      "max_matrix_error": 1.52587890625e-05
+    },
+    "P06_pinwheel_daisies": {
+      "passed": true,
+      "samples": 11,
+      "max_matrix_error": 1.52587890625e-05
+    },
+    "P07_grass_meadow": {
+      "passed": true,
+      "samples": 32,
+      "max_matrix_error": 2.86102294921875e-06
+    },
+    "P08_reeds": {
+      "passed": true,
+      "samples": 14,
+      "max_matrix_error": 1.52587890625e-05
+    },
+    "P09_hanging_vine": {
+      "passed": true,
+      "samples": 17,
+      "max_matrix_error": 6.4849853515625e-05
+    },
+    "P10_rushes": {
+      "passed": true,
+      "samples": 14,
+      "max_matrix_error": 1.52587890625e-05
+    },
+    "P11_hinged_oak": {
+      "passed": true,
+      "samples": 14,
+      "max_matrix_error": 1.52587890625e-05
+    },
+    "P12_aspen": {
+      "passed": true,
+      "samples": 17,
+      "max_matrix_error": 3.0517578125e-05
+    },
+    "P13_fern": {
+      "passed": true,
+      "samples": 14,
+      "max_matrix_error": 7.62939453125e-06
+    },
+    "P14_bouquet": {
+      "passed": true,
+      "samples": 35,
+      "max_matrix_error": 0.000597536563873291
+    },
+    "P15_tiered_shrub": {
+      "passed": true,
+      "samples": 14,
+      "max_matrix_error": 1.52587890625e-05
+    },
+    "P16_liana": {
+      "passed": true,
+      "samples": 8,
+      "max_matrix_error": 1.52587890625e-05
+    },
+    "P17_tendrils": {
+      "passed": true,
+      "samples": 14,
+      "max_matrix_error": 7.62939453125e-06
+    },
+    "P18_ground_cover": {
+      "passed": true,
+      "samples": 20,
+      "max_matrix_error": 5.7220458984375e-06
+    },
+    "P19_leaf_vanes": {
+      "passed": true,
+      "samples": 11,
+      "max_matrix_error": 3.0517578125e-05
+    },
+    "P20_friends_palm": {
+      "passed": true,
+      "samples": 8,
+      "max_matrix_error": 3.0517578125e-05
+    }
+  },
+  "layout": {
+    "P01_palm_tree": {
+      "collection": "P01_palm_tree Ball-chain palm",
+      "slot_ldu": [
+        -1040.0,
+        750.0
+      ],
+      "controller": "CTRL_plant_01_palm_tree",
+      "rig_collection": "MECHA_plant_01_palm_tree",
+      "camera": "CAM_P01",
+      "nla_tracks": [
+        "A breeze",
+        "B gusty",
+        "C storm"
+      ],
+      "actions": [
+        "P01_palm_tree.breeze",
+        "P01_palm_tree.gusty",
+        "P01_palm_tree.storm"
+      ],
+      "envelope_m": [
+        [
+          -0.5051,
+          0.2221,
+          -0.0032
+        ],
+        [
+          -0.321,
+          0.365,
+          0.1503
+        ]
+      ]
+    },
+    "P02_swordleaf_palm": {
+      "collection": "P02_swordleaf_palm Swordleaf palm",
+      "slot_ldu": [
+        -520.0,
+        750.0
+      ],
+      "controller": "CTRL_plant_02_swordleaf_palm",
+      "rig_collection": "MECHA_plant_02_swordleaf_palm",
+      "camera": "CAM_P02",
+      "nla_tracks": [
+        "A breeze",
+        "B gusty",
+        "C storm"
+      ],
+      "actions": [
+        "P02_swordleaf_palm.breeze",
+        "P02_swordleaf_palm.gusty",
+        "P02_swordleaf_palm.storm"
+      ],
+      "envelope_m": [
+        [
+          -0.2795,
+          0.2288,
+          -0.0032
+        ],
+        [
+          -0.1365,
+          0.3714,
+          0.0857
+        ]
+      ]
+    },
+    "P03_bamboo": {
+      "collection": "P03_bamboo Bamboo clump",
+      "slot_ldu": [
+        0.0,
+        750.0
+      ],
+      "controller": "CTRL_plant_03_bamboo",
+      "rig_collection": "MECHA_plant_03_bamboo",
+      "camera": "CAM_P03",
+      "nla_tracks": [
+        "A breeze",
+        "B gusty",
+        "C storm"
+      ],
+      "actions": [
+        "P03_bamboo.breeze",
+        "P03_bamboo.gusty",
+        "P03_bamboo.storm"
+      ],
+      "envelope_m": [
+        [
+          -0.06,
+          0.2537,
+          -0.0032
+        ],
+        [
+          0.0526,
+          0.3462,
+          0.1014
+        ]
+      ]
+    },
+    "P04_flower_bed": {
+      "collection": "P04_flower_bed Flower bed",
+      "slot_ldu": [
+        -520.0,
+        -750.0
+      ],
+      "controller": "CTRL_plant_04_flower_bed",
+      "rig_collection": "MECHA_plant_04_flower_bed",
+      "camera": "CAM_P04",
+      "nla_tracks": [
+        "A breeze",
+        "B gusty",
+        "C storm"
+      ],
+      "actions": [
+        "P04_flower_bed.breeze",
+        "P04_flower_bed.gusty",
+        "P04_flower_bed.storm"
+      ],
+      "envelope_m": [
+        [
+          -0.2433,
+          -0.324,
+          -0.0032
+        ],
+        [
+          -0.1709,
+          -0.276,
+          0.0272
+        ]
+      ]
+    },
+    "P05_sunflower": {
+      "collection": "P05_sunflower Sunflower",
+      "slot_ldu": [
+        520.0,
+        -250.0
+      ],
+      "controller": "CTRL_plant_05_sunflower",
+      "rig_collection": "MECHA_plant_05_sunflower",
+      "camera": "CAM_P05",
+      "nla_tracks": [
+        "A breeze",
+        "B gusty",
+        "C storm"
+      ],
+      "actions": [
+        "P05_sunflower.breeze",
+        "P05_sunflower.gusty",
+        "P05_sunflower.storm"
+      ],
+      "envelope_m": [
+        [
+          0.1825,
+          -0.12,
+          -0.0032
+        ],
+        [
+          0.236,
+          -0.072,
+          0.0754
+        ]
+      ]
+    },
+    "P06_pinwheel_daisies": {
+      "collection": "P06_pinwheel_daisies Pinwheel daisies",
+      "slot_ldu": [
+        520.0,
+        -750.0
+      ],
+      "controller": "CTRL_plant_06_pinwheel_daisies",
+      "rig_collection": "MECHA_plant_06_pinwheel_daisies",
+      "camera": "CAM_P06",
+      "nla_tracks": [
+        "A breeze",
+        "B gusty",
+        "C storm"
+      ],
+      "actions": [
+        "P06_pinwheel_daisies.breeze",
+        "P06_pinwheel_daisies.gusty",
+        "P06_pinwheel_daisies.storm"
+      ],
+      "envelope_m": [
+        [
+          0.196,
+          -0.3235,
+          -0.0032
+        ],
+        [
+          0.228,
+          -0.2771,
+          0.0737
+        ]
+      ]
+    },
+    "P07_grass_meadow": {
+      "collection": "P07_grass_meadow Grass meadow",
+      "slot_ldu": [
+        0.0,
+        -750.0
+      ],
+      "controller": "CTRL_plant_07_grass_meadow",
+      "rig_collection": "MECHA_plant_07_grass_meadow",
+      "camera": "CAM_P07",
+      "nla_tracks": [
+        "A breeze",
+        "B gusty",
+        "C storm"
+      ],
+      "actions": [
+        "P07_grass_meadow.breeze",
+        "P07_grass_meadow.gusty",
+        "P07_grass_meadow.storm"
+      ],
+      "envelope_m": [
+        [
+          -0.0355,
+          -0.324,
+          -0.0032
+        ],
+        [
+          0.0364,
+          -0.276,
+          0.0266
+        ]
+      ]
+    },
+    "P08_reeds": {
+      "collection": "P08_reeds Reeds",
+      "slot_ldu": [
+        -1040.0,
+        250.0
+      ],
+      "controller": "CTRL_plant_08_reeds",
+      "rig_collection": "MECHA_plant_08_reeds",
+      "camera": "CAM_P08",
+      "nla_tracks": [
+        "A breeze",
+        "B gusty",
+        "C storm"
+      ],
+      "actions": [
+        "P08_reeds.breeze",
+        "P08_reeds.gusty",
+        "P08_reeds.storm"
+      ],
+      "envelope_m": [
+        [
+          -0.4548,
+          0.0405,
+          -0.0032
+        ],
+        [
+          -0.3544,
+          0.1595,
+          0.0756
+        ]
+      ]
+    },
+    "P09_hanging_vine": {
+      "collection": "P09_hanging_vine Hanging leafy vine",
+      "slot_ldu": [
+        520.0,
+        750.0
+      ],
+      "controller": "CTRL_plant_09_hanging_vine",
+      "rig_collection": "MECHA_plant_09_hanging_vine",
+      "camera": "CAM_P09",
+      "nla_tracks": [
+        "A breeze",
+        "B gusty",
+        "C storm"
+      ],
+      "actions": [
+        "P09_hanging_vine.breeze",
+        "P09_hanging_vine.gusty",
+        "P09_hanging_vine.storm"
+      ],
+      "envelope_m": [
+        [
+          0.144,
+          0.2688,
+          -0.0032
+        ],
+        [
+          0.2563,
+          0.324,
+          0.1424
+        ]
+      ]
+    },
+    "P10_rushes": {
+      "collection": "P10_rushes Rushes row",
+      "slot_ldu": [
+        -520.0,
+        250.0
+      ],
+      "controller": "CTRL_plant_10_rushes",
+      "rig_collection": "MECHA_plant_10_rushes",
+      "camera": "CAM_P10",
+      "nla_tracks": [
+        "A breeze",
+        "B gusty",
+        "C storm"
+      ],
+      "actions": [
+        "P10_rushes.breeze",
+        "P10_rushes.gusty",
+        "P10_rushes.storm"
+      ],
+      "envelope_m": [
+        [
+          -0.284,
+          0.072,
+          -0.0032
+        ],
+        [
+          -0.1358,
+          0.136,
+          0.0654
+        ]
+      ]
+    },
+    "P11_hinged_oak": {
+      "collection": "P11_hinged_oak Oak with hinged branches",
+      "slot_ldu": [
+        0.0,
+        250.0
+      ],
+      "controller": "CTRL_plant_11_hinged_oak",
+      "rig_collection": "MECHA_plant_11_hinged_oak",
+      "camera": "CAM_P11",
+      "nla_tracks": [
+        "A breeze",
+        "B gusty",
+        "C storm"
+      ],
+      "actions": [
+        "P11_hinged_oak.breeze",
+        "P11_hinged_oak.gusty",
+        "P11_hinged_oak.storm"
+      ],
+      "envelope_m": [
+        [
+          -0.0475,
+          0.0526,
+          -0.0032
+        ],
+        [
+          0.0473,
+          0.1473,
+          0.0656
+        ]
+      ]
+    },
+    "P12_aspen": {
+      "collection": "P12_aspen Shivering aspen",
+      "slot_ldu": [
+        1040.0,
+        -250.0
+      ],
+      "controller": "CTRL_plant_12_aspen",
+      "rig_collection": "MECHA_plant_12_aspen",
+      "camera": "CAM_P12",
+      "nla_tracks": [
+        "A breeze",
+        "B gusty",
+        "C storm"
+      ],
+      "actions": [
+        "P12_aspen.breeze",
+        "P12_aspen.gusty",
+        "P12_aspen.storm"
+      ],
+      "envelope_m": [
+        [
+          0.3969,
+          -0.1291,
+          -0.0032
+        ],
+        [
+          0.436,
+          -0.08,
+          0.0912
+        ]
+      ]
+    },
+    "P13_fern": {
+      "collection": "P13_fern Fern bush",
+      "slot_ldu": [
+        0.0,
+        -250.0
+      ],
+      "controller": "CTRL_plant_13_fern",
+      "rig_collection": "MECHA_plant_13_fern",
+      "camera": "CAM_P13",
+      "nla_tracks": [
+        "A breeze",
+        "B gusty",
+        "C storm"
+      ],
+      "actions": [
+        "P13_fern.breeze",
+        "P13_fern.gusty",
+        "P13_fern.storm"
+      ],
+      "envelope_m": [
+        [
+          -0.0715,
+          -0.1715,
+          -0.0128
+        ],
+        [
+          0.0703,
+          -0.0285,
+          0.061
+        ]
+      ]
+    },
+    "P14_bouquet": {
+      "collection": "P14_bouquet Vase bouquet",
+      "slot_ldu": [
+        -1040.0,
+        -250.0
+      ],
+      "controller": "CTRL_plant_14_bouquet",
+      "rig_collection": "MECHA_plant_14_bouquet",
+      "camera": "CAM_P14",
+      "nla_tracks": [
+        "A breeze",
+        "B gusty",
+        "C storm"
+      ],
+      "actions": [
+        "P14_bouquet.breeze",
+        "P14_bouquet.gusty",
+        "P14_bouquet.storm"
+      ],
+      "envelope_m": [
+        [
+          -0.4491,
+          -0.1241,
+          -0.0032
+        ],
+        [
+          -0.3835,
+          -0.076,
+          0.0627
+        ]
+      ]
+    },
+    "P15_tiered_shrub": {
+      "collection": "P15_tiered_shrub Tiered shrub",
+      "slot_ldu": [
+        1040.0,
+        -750.0
+      ],
+      "controller": "CTRL_plant_15_tiered_shrub",
+      "rig_collection": "MECHA_plant_15_tiered_shrub",
+      "camera": "CAM_P15",
+      "nla_tracks": [
+        "A breeze",
+        "B gusty",
+        "C storm"
+      ],
+      "actions": [
+        "P15_tiered_shrub.breeze",
+        "P15_tiered_shrub.gusty",
+        "P15_tiered_shrub.storm"
+      ],
+      "envelope_m": [
+        [
+          0.404,
+          -0.312,
+          -0.0032
+        ],
+        [
+          0.436,
+          -0.28,
+          0.056
+        ]
+      ]
+    },
+    "P16_liana": {
+      "collection": "P16_liana Lianas",
+      "slot_ldu": [
+        520.0,
+        250.0
+      ],
+      "controller": "CTRL_plant_16_liana",
+      "rig_collection": "MECHA_plant_16_liana",
+      "camera": "CAM_P16",
+      "nla_tracks": [
+        "A breeze",
+        "B gusty",
+        "C storm"
+      ],
+      "actions": [
+        "P16_liana.breeze",
+        "P16_liana.gusty",
+        "P16_liana.storm"
+      ],
+      "envelope_m": [
+        [
+          0.176,
+          0.036,
+          -0.0032
+        ],
+        [
+          0.24,
+          0.164,
+          0.0724
+        ]
+      ]
+    },
+    "P17_tendrils": {
+      "collection": "P17_tendrils Hanging tendrils",
+      "slot_ldu": [
+        1040.0,
+        250.0
+      ],
+      "controller": "CTRL_plant_17_tendrils",
+      "rig_collection": "MECHA_plant_17_tendrils",
+      "camera": "CAM_P17",
+      "nla_tracks": [
+        "A breeze",
+        "B gusty",
+        "C storm"
+      ],
+      "actions": [
+        "P17_tendrils.breeze",
+        "P17_tendrils.gusty",
+        "P17_tendrils.storm"
+      ],
+      "envelope_m": [
+        [
+          0.368,
+          0.0815,
+          -0.0032
+        ],
+        [
+          0.464,
+          0.1168,
+          0.0528
+        ]
+      ]
+    },
+    "P18_ground_cover": {
+      "collection": "P18_ground_cover Ground cover",
+      "slot_ldu": [
+        -1040.0,
+        -750.0
+      ],
+      "controller": "CTRL_plant_18_ground_cover",
+      "rig_collection": "MECHA_plant_18_ground_cover",
+      "camera": "CAM_P18",
+      "nla_tracks": [
+        "A breeze",
+        "B gusty",
+        "C storm"
+      ],
+      "actions": [
+        "P18_ground_cover.breeze",
+        "P18_ground_cover.gusty",
+        "P18_ground_cover.storm"
+      ],
+      "envelope_m": [
+        [
+          -0.4587,
+          -0.3347,
+          -0.0032
+        ],
+        [
+          -0.384,
+          -0.268,
+          0.0176
+        ]
+      ]
+    },
+    "P19_leaf_vanes": {
+      "collection": "P19_leaf_vanes Leaf weathervanes",
+      "slot_ldu": [
+        -520.0,
+        -250.0
+      ],
+      "controller": "CTRL_plant_19_leaf_vanes",
+      "rig_collection": "MECHA_plant_19_leaf_vanes",
+      "camera": "CAM_P19",
+      "nla_tracks": [
+        "A breeze",
+        "B gusty",
+        "C storm"
+      ],
+      "actions": [
+        "P19_leaf_vanes.breeze",
+        "P19_leaf_vanes.gusty",
+        "P19_leaf_vanes.storm"
+      ],
+      "envelope_m": [
+        [
+          -0.2933,
+          -0.1655,
+          -0.0032
+        ],
+        [
+          -0.1185,
+          -0.0275,
+          0.067
+        ]
+      ]
+    },
+    "P20_friends_palm": {
+      "collection": "P20_friends_palm Palm crowns on an axle",
+      "slot_ldu": [
+        1040.0,
+        750.0
+      ],
+      "controller": "CTRL_plant_20_friends_palm",
+      "rig_collection": "MECHA_plant_20_friends_palm",
+      "camera": "CAM_P20",
+      "nla_tracks": [
+        "A breeze",
+        "B gusty",
+        "C storm"
+      ],
+      "actions": [
+        "P20_friends_palm.breeze",
+        "P20_friends_palm.gusty",
+        "P20_friends_palm.storm"
+      ],
+      "envelope_m": [
+        [
+          0.3148,
+          0.2019,
+          -0.0032
+        ],
+        [
+          0.5087,
+          0.3981,
+          0.1383
+        ]
+      ]
+    }
+  },
+  "slot_fit": [
+    {
+      "case": "P01_palm_tree",
+      "envelope_m": [
+        [
+          -0.0891,
+          -0.0779,
+          -0.0032
+        ],
+        [
+          0.095,
+          0.065,
+          0.1503
+        ]
+      ],
+      "passed": true
+    },
+    {
+      "case": "P02_swordleaf_palm",
+      "envelope_m": [
+        [
+          -0.0715,
+          -0.0712,
+          -0.0032
+        ],
+        [
+          0.0715,
+          0.0714,
+          0.0857
+        ]
+      ],
+      "passed": true
+    },
+    {
+      "case": "P03_bamboo",
+      "envelope_m": [
+        [
+          -0.06,
+          -0.0463,
+          -0.0032
+        ],
+        [
+          0.0526,
+          0.0462,
+          0.1014
+        ]
+      ],
+      "passed": true
+    },
+    {
+      "case": "P04_flower_bed",
+      "envelope_m": [
+        [
+          -0.0353,
+          -0.024,
+          -0.0032
+        ],
+        [
+          0.0371,
+          0.024,
+          0.0272
+        ]
+      ],
+      "passed": true
+    },
+    {
+      "case": "P05_sunflower",
+      "envelope_m": [
+        [
+          -0.0255,
+          -0.02,
+          -0.0032
+        ],
+        [
+          0.028,
+          0.028,
+          0.0754
+        ]
+      ],
+      "passed": true
+    },
+    {
+      "case": "P06_pinwheel_daisies",
+      "envelope_m": [
+        [
+          -0.012,
+          -0.0235,
+          -0.0032
+        ],
+        [
+          0.02,
+          0.0229,
+          0.0737
+        ]
+      ],
+      "passed": true
+    },
+    {
+      "case": "P07_grass_meadow",
+      "envelope_m": [
+        [
+          -0.0355,
+          -0.024,
+          -0.0032
+        ],
+        [
+          0.0364,
+          0.024,
+          0.0266
+        ]
+      ],
+      "passed": true
+    },
+    {
+      "case": "P08_reeds",
+      "envelope_m": [
+        [
+          -0.0388,
+          -0.0595,
+          -0.0032
+        ],
+        [
+          0.0616,
+          0.0595,
+          0.0756
+        ]
+      ],
+      "passed": true
+    },
+    {
+      "case": "P09_hanging_vine",
+      "envelope_m": [
+        [
+          -0.064,
+          -0.0312,
+          -0.0032
+        ],
+        [
+          0.0483,
+          0.024,
+          0.1424
+        ]
+      ],
+      "passed": true
+    },
+    {
+      "case": "P10_rushes",
+      "envelope_m": [
+        [
+          -0.076,
+          -0.028,
+          -0.0032
+        ],
+        [
+          0.0722,
+          0.036,
+          0.0654
+        ]
+      ],
+      "passed": true
+    },
+    {
+      "case": "P11_hinged_oak",
+      "envelope_m": [
+        [
+          -0.0475,
+          -0.0474,
+          -0.0032
+        ],
+        [
+          0.0473,
+          0.0473,
+          0.0656
+        ]
+      ],
+      "passed": true
+    },
+    {
+      "case": "P12_aspen",
+      "envelope_m": [
+        [
+          -0.0191,
+          -0.0291,
+          -0.0032
+        ],
+        [
+          0.02,
+          0.02,
+          0.0912
+        ]
+      ],
+      "passed": true
+    },
+    {
+      "case": "P13_fern",
+      "envelope_m": [
+        [
+          -0.0715,
+          -0.0715,
+          -0.0128
+        ],
+        [
+          0.0703,
+          0.0715,
+          0.061
+        ]
+      ],
+      "passed": true
+    },
+    {
+      "case": "P14_bouquet",
+      "envelope_m": [
+        [
+          -0.0331,
+          -0.0241,
+          -0.0032
+        ],
+        [
+          0.0325,
+          0.024,
+          0.0627
+        ]
+      ],
+      "passed": true
+    },
+    {
+      "case": "P15_tiered_shrub",
+      "envelope_m": [
+        [
+          -0.012,
+          -0.012,
+          -0.0032
+        ],
+        [
+          0.02,
+          0.02,
+          0.056
+        ]
+      ],
+      "passed": true
+    },
+    {
+      "case": "P16_liana",
+      "envelope_m": [
+        [
+          -0.032,
+          -0.064,
+          -0.0032
+        ],
+        [
+          0.032,
+          0.064,
+          0.0724
+        ]
+      ],
+      "passed": true
+    },
+    {
+      "case": "P17_tendrils",
+      "envelope_m": [
+        [
+          -0.048,
+          -0.0185,
+          -0.0032
+        ],
+        [
+          0.048,
+          0.0168,
+          0.0528
+        ]
+      ],
+      "passed": true
+    },
+    {
+      "case": "P18_ground_cover",
+      "envelope_m": [
+        [
+          -0.0427,
+          -0.0347,
+          -0.0032
+        ],
+        [
+          0.032,
+          0.032,
+          0.0176
+        ]
+      ],
+      "passed": true
+    },
+    {
+      "case": "P19_leaf_vanes",
+      "envelope_m": [
+        [
+          -0.0853,
+          -0.0655,
+          -0.0032
+        ],
+        [
+          0.0895,
+          0.0725,
+          0.067
+        ]
+      ],
+      "passed": true
+    },
+    {
+      "case": "P20_friends_palm",
+      "envelope_m": [
+        [
+          -0.1012,
+          -0.0981,
+          -0.0032
+        ],
+        [
+          0.0927,
+          0.0981,
+          0.1383
+        ]
+      ],
+      "passed": true
+    }
+  ],
+  "wind_controller_error": 2.6787875251343962e-08,
+  "worst": {
+    "key_error": 9.59963436741873e-07,
+    "max_matrix_error": 0.0005557537078857422,
+    "max_static_error": 0.0001220703125
+  },
+  "samples": [
+    {
+      "frame": 1,
+      "case": "P01_palm_tree",
+      "key_error": 0.0,
+      "max_matrix_error": 0.0001220703125,
+      "max_static_error": 0.0001220703125,
+      "invalid_drivers": [],
+      "passed": true
+    },
+    {
+      "frame": 1,
+      "case": "P02_swordleaf_palm",
+      "key_error": 0.0,
+      "max_matrix_error": 9.918212890625e-05,
+      "max_static_error": 6.103515625e-05,
+      "invalid_drivers": [],
+      "passed": true
+    },
+    {
+      "frame": 1,
+      "case": "P03_bamboo",
+      "key_error": 0.0,
+      "max_matrix_error": 0.000102996826171875,
+      "max_static_error": 6.103515625e-05,
+      "invalid_drivers": [],
+      "passed": true
+    },
+    {
+      "frame": 1,
+      "case": "P04_flower_bed",
+      "key_error": 0.0,
+      "max_matrix_error": 0.00011539459228515625,
+      "max_static_error": 6.103515625e-05,
+      "invalid_drivers": [],
+      "passed": true
+    },
+    {
+      "frame": 1,
+      "case": "P05_sunflower",
+      "key_error": 0.0,
+      "max_matrix_error": 6.103515625e-05,
+      "max_static_error": 6.103515625e-05,
+      "invalid_drivers": [],
+      "passed": true
+    },
+    {
+      "frame": 1,
+      "case": "P06_pinwheel_daisies",
+      "key_error": 0.0,
+      "max_matrix_error": 6.103515625e-05,
+      "max_static_error": 6.103515625e-05,
+      "invalid_drivers": [],
+      "passed": true
+    },
+    {
+      "frame": 1,
+      "case": "P07_grass_meadow",
+      "key_error": 0.0,
+      "max_matrix_error": 6.103515625e-05,
+      "max_static_error": 6.103515625e-05,
+      "invalid_drivers": [],
+      "passed": true
+    },
+    {
+      "frame": 1,
+      "case": "P08_reeds",
+      "key_error": 0.0,
+      "max_matrix_error": 0.0001220703125,
+      "max_static_error": 0.0001220703125,
+      "invalid_drivers": [],
+      "passed": true
+    },
+    {
+      "frame": 1,
+      "case": "P09_hanging_vine",
+      "key_error": 0.0,
+      "max_matrix_error": 6.103515625e-05,
+      "max_static_error": 6.103515625e-05,
+      "invalid_drivers": [],
+      "passed": true
+    },
+    {
+      "frame": 1,
+      "case": "P10_rushes",
+      "key_error": 0.0,
+      "max_matrix_error": 6.103515625e-05,
+      "max_static_error": 6.103515625e-05,
+      "invalid_drivers": [],
+      "passed": true
+    },
+    {
+      "frame": 1,
+      "case": "P11_hinged_oak",
+      "key_error": 0.0,
+      "max_matrix_error": 1.52587890625e-05,
+      "max_static_error": 1.52587890625e-05,
+      "invalid_drivers": [],
+      "passed": true
+    },
+    {
+      "frame": 1,
+      "case": "P12_aspen",
+      "key_error": 0.0,
+      "max_matrix_error": 0.0001220703125,
+      "max_static_error": 0.0001220703125,
+      "invalid_drivers": [],
+      "passed": true
+    },
+    {
+      "frame": 1,
+      "case": "P13_fern",
+      "key_error": 0.0,
+      "max_matrix_error": 1.52587890625e-05,
+      "max_static_error": 1.52587890625e-05,
+      "invalid_drivers": [],
+      "passed": true
+    },
+    {
+      "frame": 1,
+      "case": "P14_bouquet",
+      "key_error": 0.0,
+      "max_matrix_error": 0.0005527351750060916,
+      "max_static_error": 0.0001220703125,
+      "invalid_drivers": [],
+      "passed": true
+    },
+    {
+      "frame": 1,
+      "case": "P15_tiered_shrub",
+      "key_error": 0.0,
+      "max_matrix_error": 0.0001220703125,
+      "max_static_error": 0.0001220703125,
+      "invalid_drivers": [],
+      "passed": true
+    },
+    {
+      "frame": 1,
+      "case": "P16_liana",
+      "key_error": 0.0,
+      "max_matrix_error": 6.103515625e-05,
+      "max_static_error": 6.103515625e-05,
+      "invalid_drivers": [],
+      "passed": true
+    },
+    {
+      "frame": 1,
+      "case": "P17_tendrils",
+      "key_error": 0.0,
+      "max_matrix_error": 0.0001220703125,
+      "max_static_error": 0.0001220703125,
+      "invalid_drivers": [],
+      "passed": true
+    },
+    {
+      "frame": 1,
+      "case": "P18_ground_cover",
+      "key_error": 0.0,
+      "max_matrix_error": 0.0001220703125,
+      "max_static_error": 0.0001220703125,
+      "invalid_drivers": [],
+      "passed": true
+    },
+    {
+      "frame": 1,
+      "case": "P19_leaf_vanes",
+      "key_error": 0.0,
+      "max_matrix_error": 8.392333984375e-05,
+      "max_static_error": 6.103515625e-05,
+      "invalid_drivers": [],
+      "passed": true
+    },
+    {
+      "frame": 1,
+      "case": "P20_friends_palm",
+      "key_error": 0.0,
+      "max_matrix_error": 0.000102996826171875,
+      "max_static_error": 0.0001220703125,
+      "invalid_drivers": [],
+      "passed": true
+    },
+    {
+      "frame": 13,
+      "case": "P01_palm_tree",
+      "key_error": 3.758933615760629e-10,
+      "max_matrix_error": 0.00011444091796875,
+      "max_static_error": 0.0001220703125,
+      "invalid_drivers": [],
+      "passed": true
+    },
+    {
+      "frame": 13,
+      "case": "P02_swordleaf_palm",
+      "key_error": 6.924669726515731e-10,
+      "max_matrix_error": 9.918212890625e-05,
+      "max_static_error": 6.103515625e-05,
+      "invalid_drivers": [],
+      "passed": true
+    },
+    {
+      "frame": 13,
+      "case": "P03_bamboo",
+      "key_error": 8.151409408574395e-10,
+      "max_matrix_error": 0.000102996826171875,
+      "max_static_error": 6.103515625e-05,
+      "invalid_drivers": [],
+      "passed": true
+    },
+    {
+      "frame": 13,
+      "case": "P04_flower_bed",
+      "key_error": 1.6171911726425847e-09,
+      "max_matrix_error": 0.00011539459228515625,
+      "max_static_error": 6.103515625e-05,
+      "invalid_drivers": [],
+      "passed": true
+    },
+    {
+      "frame": 13,
+      "case": "P05_sunflower",
+      "key_error": 5.367992959859347e-10,
+      "max_matrix_error": 7.808208465576172e-05,
+      "max_static_error": 6.103515625e-05,
+      "invalid_drivers": [],
+      "passed": true
+    },
+    {
+      "frame": 13,
+      "case": "P06_pinwheel_daisies",
+      "key_error": 1.3702750600863567e-09,
+      "max_matrix_error": 6.103515625e-05,
+      "max_static_error": 6.103515625e-05,
+      "invalid_drivers": [],
+      "passed": true
+    },
+    {
+      "frame": 13,
+      "case": "P07_grass_meadow",
+      "key_error": 8.957011417287664e-10,
+      "max_matrix_error": 6.103515625e-05,
+      "max_static_error": 6.103515625e-05,
+      "invalid_drivers": [],
+      "passed": true
+    },
+    {
+      "frame": 13,
+      "case": "P08_reeds",
+      "key_error": 1.833509635784658e-09,
+      "max_matrix_error": 0.000133514404296875,
+      "max_static_error": 0.0001220703125,
+      "invalid_drivers": [],
+      "passed": true
+    },
+    {
+      "frame": 13,
+      "case": "P09_hanging_vine",
+      "key_error": 2.1987272939838487e-10,
+      "max_matrix_error": 0.0001125335693359375,
+      "max_static_error": 6.103515625e-05,
+      "invalid_drivers": [],
+      "passed": true
+    },
+    {
+      "frame": 13,
+      "case": "P10_rushes",
+      "key_error": 7.054925497962383e-10,
+      "max_matrix_error": 9.1552734375e-05,
+      "max_static_error": 6.103515625e-05,
+      "invalid_drivers": [],
+      "passed": true
+    },
+    {
+      "frame": 13,
+      "case": "P11_hinged_oak",
+      "key_error": 3.6721583759891097e-10,
+      "max_matrix_error": 3.0517578125e-05,
+      "max_static_error": 1.52587890625e-05,
+      "invalid_drivers": [],
+      "passed": true
+    },
+    {
+      "frame": 13,
+      "case": "P12_aspen",
+      "key_error": 7.374603046284012e-10,
+      "max_matrix_error": 0.0001220703125,
+      "max_static_error": 0.0001220703125,
+      "invalid_drivers": [],
+      "passed": true
+    },
+    {
+      "frame": 13,
+      "case": "P13_fern",
+      "key_error": 9.184008969986834e-10,
+      "max_matrix_error": 1.52587890625e-05,
+      "max_static_error": 1.52587890625e-05,
+      "invalid_drivers": [],
+      "passed": true
+    },
+    {
+      "frame": 13,
+      "case": "P14_bouquet",
+      "key_error": 1.8230596962598433e-09,
+      "max_matrix_error": 0.000552808865904808,
+      "max_static_error": 0.0001220703125,
+      "invalid_drivers": [],
+      "passed": true
+    },
+    {
+      "frame": 13,
+      "case": "P15_tiered_shrub",
+      "key_error": 5.167650266035828e-10,
+      "max_matrix_error": 0.0001220703125,
+      "max_static_error": 0.0001220703125,
+      "invalid_drivers": [],
+      "passed": true
+    },
+    {
+      "frame": 13,
+      "case": "P16_liana",
+      "key_error": 4.3582578518330806e-10,
+      "max_matrix_error": 6.103515625e-05,
+      "max_static_error": 6.103515625e-05,
+      "invalid_drivers": [],
+      "passed": true
+    },
+    {
+      "frame": 13,
+      "case": "P17_tendrils",
+      "key_error": 1.804381137560096e-09,
+      "max_matrix_error": 0.0001220703125,
+      "max_static_error": 0.0001220703125,
+      "invalid_drivers": [],
+      "passed": true
+    },
+    {
+      "frame": 13,
+      "case": "P18_ground_cover",
+      "key_error": 0.0,
+      "max_matrix_error": 0.0001220703125,
+      "max_static_error": 0.0001220703125,
+      "invalid_drivers": [],
+      "passed": true
+    },
+    {
+      "frame": 13,
+      "case": "P19_leaf_vanes",
+      "key_error": 8.23175927422426e-09,
+      "max_matrix_error": 6.103515625e-05,
+      "max_static_error": 6.103515625e-05,
+      "invalid_drivers": [],
+      "passed": true
+    },
+    {
+      "frame": 13,
+      "case": "P20_friends_palm",
+      "key_error": 8.064705708799025e-10,
+      "max_matrix_error": 0.000102996826171875,
+      "max_static_error": 0.0001220703125,
+      "invalid_drivers": [],
+      "passed": true
+    },
+    {
+      "frame": 25,
+      "case": "P01_palm_tree",
+      "key_error": 1.448893706401666e-09,
+      "max_matrix_error": 0.00017499923706054688,
+      "max_static_error": 0.0001220703125,
+      "invalid_drivers": [],
+      "passed": true
+    },
+    {
+      "frame": 25,
+      "case": "P02_swordleaf_palm",
+      "key_error": 3.07452344139314e-09,
+      "max_matrix_error": 6.103515625e-05,
+      "max_static_error": 6.103515625e-05,
+      "invalid_drivers": [],
+      "passed": true
+    },
+    {
+      "frame": 25,
+      "case": "P03_bamboo",
+      "key_error": 3.2212394140973544e-09,
+      "max_matrix_error": 0.000102996826171875,
+      "max_static_error": 6.103515625e-05,
+      "invalid_drivers": [],
+      "passed": true
+    },
+    {
+      "frame": 25,
+      "case": "P04_flower_bed",
+      "key_error": 3.7029490862483527e-09,
+      "max_matrix_error": 0.00011491775512695312,
+      "max_static_error": 6.103515625e-05,
+      "invalid_drivers": [],
+      "passed": true
+    },
+    {
+      "frame": 25,
+      "case": "P05_sunflower",
+      "key_error": 9.386987437354222e-10,
+      "max_matrix_error": 9.131431579589844e-05,
+      "max_static_error": 6.103515625e-05,
+      "invalid_drivers": [],
+      "passed": true
+    },
+    {
+      "frame": 25,
+      "case": "P06_pinwheel_daisies",
+      "key_error": 1.3100856177672426e-08,
+      "max_matrix_error": 6.103515625e-05,
+      "max_static_error": 6.103515625e-05,
+      "invalid_drivers": [],
+      "passed": true
+    },
+    {
+      "frame": 25,
+      "case": "P07_grass_meadow",
+      "key_error": 1.777715516459999e-09,
+      "max_matrix_error": 6.103515625e-05,
+      "max_static_error": 6.103515625e-05,
+      "invalid_drivers": [],
+      "passed": true
+    },
+    {
+      "frame": 25,
+      "case": "P08_reeds",
+      "key_error": 7.2935153749842385e-09,
+      "max_matrix_error": 0.000125885009765625,
+      "max_static_error": 0.0001220703125,
+      "invalid_drivers": [],
+      "passed": true
+    },
+    {
+      "frame": 25,
+      "case": "P09_hanging_vine",
+      "key_error": 8.894963030026126e-10,
+      "max_matrix_error": 8.0108642578125e-05,
+      "max_static_error": 6.103515625e-05,
+      "invalid_drivers": [],
+      "passed": true
+    },
+    {
+      "frame": 25,
+      "case": "P10_rushes",
+      "key_error": 1.7835279225719702e-09,
+      "max_matrix_error": 8.392333984375e-05,
+      "max_static_error": 6.103515625e-05,
+      "invalid_drivers": [],
+      "passed": true
+    },
+    {
+      "frame": 25,
+      "case": "P11_hinged_oak",
+      "key_error": 1.6568308253139818e-09,
+      "max_matrix_error": 2.288818359375e-05,
+      "max_static_error": 1.52587890625e-05,
+      "invalid_drivers": [],
+      "passed": true
+    },
+    {
+      "frame": 25,
+      "case": "P12_aspen",
+      "key_error": 1.188806275642662e-09,
+      "max_matrix_error": 0.00012254714965820312,
+      "max_static_error": 0.0001220703125,
+      "invalid_drivers": [],
+      "passed": true
+    },
+    {
+      "frame": 25,
+      "case": "P13_fern",
+      "key_error": 1.817894008937504e-09,
+      "max_matrix_error": 3.0517578125e-05,
+      "max_static_error": 1.52587890625e-05,
+      "invalid_drivers": [],
+      "passed": true
+    },
+    {
+      "frame": 25,
+      "case": "P14_bouquet",
+      "key_error": 3.1834496844185267e-09,
+      "max_matrix_error": 0.0005476325750350952,
+      "max_static_error": 0.0001220703125,
+      "invalid_drivers": [],
+      "passed": true
+    },
+    {
+      "frame": 25,
+      "case": "P15_tiered_shrub",
+      "key_error": 1.8465371037779121e-09,
+      "max_matrix_error": 0.0001220703125,
+      "max_static_error": 0.0001220703125,
+      "invalid_drivers": [],
+      "passed": true
+    },
+    {
+      "frame": 25,
+      "case": "P16_liana",
+      "key_error": 2.76353290251663e-09,
+      "max_matrix_error": 6.103515625e-05,
+      "max_static_error": 6.103515625e-05,
+      "invalid_drivers": [],
+      "passed": true
+    },
+    {
+      "frame": 25,
+      "case": "P17_tendrils",
+      "key_error": 7.345205610409522e-09,
+      "max_matrix_error": 0.0001220703125,
+      "max_static_error": 0.0001220703125,
+      "invalid_drivers": [],
+      "passed": true
+    },
+    {
+      "frame": 25,
+      "case": "P18_ground_cover",
+      "key_error": 0.0,
+      "max_matrix_error": 0.0001220703125,
+      "max_static_error": 0.0001220703125,
+      "invalid_drivers": [],
+      "passed": true
+    },
+    {
+      "frame": 25,
+      "case": "P19_leaf_vanes",
+      "key_error": 5.577515915788922e-08,
+      "max_matrix_error": 6.866455078125e-05,
+      "max_static_error": 6.103515625e-05,
+      "invalid_drivers": [],
+      "passed": true
+    },
+    {
+      "frame": 25,
+      "case": "P20_friends_palm",
+      "key_error": 2.7646786249224675e-09,
+      "max_matrix_error": 0.00010347366333007812,
+      "max_static_error": 0.0001220703125,
+      "invalid_drivers": [],
+      "passed": true
+    },
+    {
+      "frame": 61,
+      "case": "P01_palm_tree",
+      "key_error": 8.297762026099331e-10,
+      "max_matrix_error": 0.00020706653594970703,
+      "max_static_error": 0.0001220703125,
+      "invalid_drivers": [],
+      "passed": true
+    },
+    {
+      "frame": 61,
+      "case": "P02_swordleaf_palm",
+      "key_error": 3.2452959902729006e-09,
+      "max_matrix_error": 6.103515625e-05,
+      "max_static_error": 6.103515625e-05,
+      "invalid_drivers": [],
+      "passed": true
+    },
+    {
+      "frame": 61,
+      "case": "P03_bamboo",
+      "key_error": 3.69438282743495e-09,
+      "max_matrix_error": 0.000102996826171875,
+      "max_static_error": 6.103515625e-05,
+      "invalid_drivers": [],
+      "passed": true
+    },
+    {
+      "frame": 61,
+      "case": "P04_flower_bed",
+      "key_error": 2.3728580489379425e-09,
+      "max_matrix_error": 0.00011539459228515625,
+      "max_static_error": 6.103515625e-05,
+      "invalid_drivers": [],
+      "passed": true
+    },
+    {
+      "frame": 61,
+      "case": "P05_sunflower",
+      "key_error": 6.894718858341253e-10,
+      "max_matrix_error": 7.462501525878906e-05,
+      "max_static_error": 6.103515625e-05,
+      "invalid_drivers": [],
+      "passed": true
+    },
+    {
+      "frame": 61,
+      "case": "P06_pinwheel_daisies",
+      "key_error": 1.6459472540475417e-07,
+      "max_matrix_error": 6.103515625e-05,
+      "max_static_error": 6.103515625e-05,
+      "invalid_drivers": [],
+      "passed": true
+    },
+    {
+      "frame": 61,
+      "case": "P07_grass_meadow",
+      "key_error": 1.843521529876213e-09,
+      "max_matrix_error": 6.103515625e-05,
+      "max_static_error": 6.103515625e-05,
+      "invalid_drivers": [],
+      "passed": true
+    },
+    {
+      "frame": 61,
+      "case": "P08_reeds",
+      "key_error": 3.359491101972978e-09,
+      "max_matrix_error": 0.000125885009765625,
+      "max_static_error": 0.0001220703125,
+      "invalid_drivers": [],
+      "passed": true
+    },
+    {
+      "frame": 61,
+      "case": "P09_hanging_vine",
+      "key_error": 1.8044273297768143e-09,
+      "max_matrix_error": 0.000118255615234375,
+      "max_static_error": 6.103515625e-05,
+      "invalid_drivers": [],
+      "passed": true
+    },
+    {
+      "frame": 61,
+      "case": "P10_rushes",
+      "key_error": 2.9363893677691877e-09,
+      "max_matrix_error": 8.392333984375e-05,
+      "max_static_error": 6.103515625e-05,
+      "invalid_drivers": [],
+      "passed": true
+    },
+    {
+      "frame": 61,
+      "case": "P11_hinged_oak",
+      "key_error": 1.3750996522010617e-09,
+      "max_matrix_error": 2.288818359375e-05,
+      "max_static_error": 1.52587890625e-05,
+      "invalid_drivers": [],
+      "passed": true
+    },
+    {
+      "frame": 61,
+      "case": "P12_aspen",
+      "key_error": 1.692994411328641e-09,
+      "max_matrix_error": 0.0001220703125,
+      "max_static_error": 0.0001220703125,
+      "invalid_drivers": [],
+      "passed": true
+    },
+    {
+      "frame": 61,
+      "case": "P13_fern",
+      "key_error": 1.1514306869075952e-09,
+      "max_matrix_error": 3.0517578125e-05,
+      "max_static_error": 1.52587890625e-05,
+      "invalid_drivers": [],
+      "passed": true
+    },
+    {
+      "frame": 61,
+      "case": "P14_bouquet",
+      "key_error": 1.6004186448315139e-09,
+      "max_matrix_error": 0.0005491673946380615,
+      "max_static_error": 0.0001220703125,
+      "invalid_drivers": [],
+      "passed": true
+    },
+    {
+      "frame": 61,
+      "case": "P15_tiered_shrub",
+      "key_error": 2.5156930150149748e-09,
+      "max_matrix_error": 0.0001220703125,
+      "max_static_error": 0.0001220703125,
+      "invalid_drivers": [],
+      "passed": true
+    },
+    {
+      "frame": 61,
+      "case": "P16_liana",
+      "key_error": 6.949766012676051e-09,
+      "max_matrix_error": 6.103515625e-05,
+      "max_static_error": 6.103515625e-05,
+      "invalid_drivers": [],
+      "passed": true
+    },
+    {
+      "frame": 61,
+      "case": "P17_tendrils",
+      "key_error": 1.4194449005078269e-08,
+      "max_matrix_error": 0.0001220703125,
+      "max_static_error": 0.0001220703125,
+      "invalid_drivers": [],
+      "passed": true
+    },
+    {
+      "frame": 61,
+      "case": "P18_ground_cover",
+      "key_error": 0.0,
+      "max_matrix_error": 0.0001220703125,
+      "max_static_error": 0.0001220703125,
+      "invalid_drivers": [],
+      "passed": true
+    },
+    {
+      "frame": 61,
+      "case": "P19_leaf_vanes",
+      "key_error": 1.0932344851610765e-07,
+      "max_matrix_error": 6.4849853515625e-05,
+      "max_static_error": 6.103515625e-05,
+      "invalid_drivers": [],
+      "passed": true
+    },
+    {
+      "frame": 61,
+      "case": "P20_friends_palm",
+      "key_error": 2.85140237810122e-09,
+      "max_matrix_error": 0.000102996826171875,
+      "max_static_error": 0.0001220703125,
+      "invalid_drivers": [],
+      "passed": true
+    },
+    {
+      "frame": 121,
+      "case": "P01_palm_tree",
+      "key_error": 1.448893706401666e-09,
+      "max_matrix_error": 0.00017499923706054688,
+      "max_static_error": 0.0001220703125,
+      "invalid_drivers": [],
+      "passed": true
+    },
+    {
+      "frame": 121,
+      "case": "P02_swordleaf_palm",
+      "key_error": 3.0745234830265034e-09,
+      "max_matrix_error": 6.103515625e-05,
+      "max_static_error": 6.103515625e-05,
+      "invalid_drivers": [],
+      "passed": true
+    },
+    {
+      "frame": 121,
+      "case": "P03_bamboo",
+      "key_error": 3.2212394140973544e-09,
+      "max_matrix_error": 0.000102996826171875,
+      "max_static_error": 6.103515625e-05,
+      "invalid_drivers": [],
+      "passed": true
+    },
+    {
+      "frame": 121,
+      "case": "P04_flower_bed",
+      "key_error": 3.7029490862483527e-09,
+      "max_matrix_error": 0.00011491775512695312,
+      "max_static_error": 6.103515625e-05,
+      "invalid_drivers": [],
+      "passed": true
+    },
+    {
+      "frame": 121,
+      "case": "P05_sunflower",
+      "key_error": 9.386987437354222e-10,
+      "max_matrix_error": 9.131431579589844e-05,
+      "max_static_error": 6.103515625e-05,
+      "invalid_drivers": [],
+      "passed": true
+    },
+    {
+      "frame": 121,
+      "case": "P06_pinwheel_daisies",
+      "key_error": 3.5246374352482235e-07,
+      "max_matrix_error": 6.103515625e-05,
+      "max_static_error": 6.103515625e-05,
+      "invalid_drivers": [],
+      "passed": true
+    },
+    {
+      "frame": 121,
+      "case": "P07_grass_meadow",
+      "key_error": 1.777715516459999e-09,
+      "max_matrix_error": 6.103515625e-05,
+      "max_static_error": 6.103515625e-05,
+      "invalid_drivers": [],
+      "passed": true
+    },
+    {
+      "frame": 121,
+      "case": "P08_reeds",
+      "key_error": 7.29351543049539e-09,
+      "max_matrix_error": 0.000125885009765625,
+      "max_static_error": 0.0001220703125,
+      "invalid_drivers": [],
+      "passed": true
+    },
+    {
+      "frame": 121,
+      "case": "P09_hanging_vine",
+      "key_error": 8.894963030026126e-10,
+      "max_matrix_error": 8.0108642578125e-05,
+      "max_static_error": 6.103515625e-05,
+      "invalid_drivers": [],
+      "passed": true
+    },
+    {
+      "frame": 121,
+      "case": "P10_rushes",
+      "key_error": 1.7835279225719702e-09,
+      "max_matrix_error": 8.392333984375e-05,
+      "max_static_error": 6.103515625e-05,
+      "invalid_drivers": [],
+      "passed": true
+    },
+    {
+      "frame": 121,
+      "case": "P11_hinged_oak",
+      "key_error": 1.6568308253139818e-09,
+      "max_matrix_error": 2.288818359375e-05,
+      "max_static_error": 1.52587890625e-05,
+      "invalid_drivers": [],
+      "passed": true
+    },
+    {
+      "frame": 121,
+      "case": "P12_aspen",
+      "key_error": 1.1888060813536327e-09,
+      "max_matrix_error": 0.00012254714965820312,
+      "max_static_error": 0.0001220703125,
+      "invalid_drivers": [],
+      "passed": true
+    },
+    {
+      "frame": 121,
+      "case": "P13_fern",
+      "key_error": 1.8178939534263527e-09,
+      "max_matrix_error": 3.0517578125e-05,
+      "max_static_error": 1.52587890625e-05,
+      "invalid_drivers": [],
+      "passed": true
+    },
+    {
+      "frame": 121,
+      "case": "P14_bouquet",
+      "key_error": 3.183449670540739e-09,
+      "max_matrix_error": 0.0005476325750350952,
+      "max_static_error": 0.0001220703125,
+      "invalid_drivers": [],
+      "passed": true
+    },
+    {
+      "frame": 121,
+      "case": "P15_tiered_shrub",
+      "key_error": 1.8465371037779121e-09,
+      "max_matrix_error": 0.0001220703125,
+      "max_static_error": 0.0001220703125,
+      "invalid_drivers": [],
+      "passed": true
+    },
+    {
+      "frame": 121,
+      "case": "P16_liana",
+      "key_error": 2.76353290251663e-09,
+      "max_matrix_error": 6.103515625e-05,
+      "max_static_error": 6.103515625e-05,
+      "invalid_drivers": [],
+      "passed": true
+    },
+    {
+      "frame": 121,
+      "case": "P17_tendrils",
+      "key_error": 7.345205610409522e-09,
+      "max_matrix_error": 0.0001220703125,
+      "max_static_error": 0.0001220703125,
+      "invalid_drivers": [],
+      "passed": true
+    },
+    {
+      "frame": 121,
+      "case": "P18_ground_cover",
+      "key_error": 0.0,
+      "max_matrix_error": 0.0001220703125,
+      "max_static_error": 0.0001220703125,
+      "invalid_drivers": [],
+      "passed": true
+    },
+    {
+      "frame": 121,
+      "case": "P19_leaf_vanes",
+      "key_error": 5.577515915788922e-08,
+      "max_matrix_error": 6.866455078125e-05,
+      "max_static_error": 6.103515625e-05,
+      "invalid_drivers": [],
+      "passed": true
+    },
+    {
+      "frame": 121,
+      "case": "P20_friends_palm",
+      "key_error": 2.7646786249224675e-09,
+      "max_matrix_error": 0.00010347366333007812,
+      "max_static_error": 0.0001220703125,
+      "invalid_drivers": [],
+      "passed": true
+    },
+    {
+      "frame": 180,
+      "case": "P01_palm_tree",
+      "key_error": 4.422708674983733e-10,
+      "max_matrix_error": 0.0001552104949951172,
+      "max_static_error": 0.0001220703125,
+      "invalid_drivers": [],
+      "passed": true
+    },
+    {
+      "frame": 180,
+      "case": "P02_swordleaf_palm",
+      "key_error": 4.654128749059794e-10,
+      "max_matrix_error": 9.1552734375e-05,
+      "max_static_error": 6.103515625e-05,
+      "invalid_drivers": [],
+      "passed": true
+    },
+    {
+      "frame": 180,
+      "case": "P03_bamboo",
+      "key_error": 2.2497878282567996e-09,
+      "max_matrix_error": 0.000102996826171875,
+      "max_static_error": 6.103515625e-05,
+      "invalid_drivers": [],
+      "passed": true
+    },
+    {
+      "frame": 180,
+      "case": "P04_flower_bed",
+      "key_error": 1.7642343072554745e-09,
+      "max_matrix_error": 0.00011587142944335938,
+      "max_static_error": 6.103515625e-05,
+      "invalid_drivers": [],
+      "passed": true
+    },
+    {
+      "frame": 180,
+      "case": "P05_sunflower",
+      "key_error": 1.386608730613581e-09,
+      "max_matrix_error": 8.702278137207031e-05,
+      "max_static_error": 6.103515625e-05,
+      "invalid_drivers": [],
+      "passed": true
+    },
+    {
+      "frame": 180,
+      "case": "P06_pinwheel_daisies",
+      "key_error": 6.162092205386216e-07,
+      "max_matrix_error": 6.103515625e-05,
+      "max_static_error": 6.103515625e-05,
+      "invalid_drivers": [],
+      "passed": true
+    },
+    {
+      "frame": 180,
+      "case": "P07_grass_meadow",
+      "key_error": 1.0149449336527283e-09,
+      "max_matrix_error": 6.103515625e-05,
+      "max_static_error": 6.103515625e-05,
+      "invalid_drivers": [],
+      "passed": true
+    },
+    {
+      "frame": 180,
+      "case": "P08_reeds",
+      "key_error": 3.686762187204984e-09,
+      "max_matrix_error": 0.000125885009765625,
+      "max_static_error": 0.0001220703125,
+      "invalid_drivers": [],
+      "passed": true
+    },
+    {
+      "frame": 180,
+      "case": "P09_hanging_vine",
+      "key_error": 1.4961913027966567e-09,
+      "max_matrix_error": 9.1552734375e-05,
+      "max_static_error": 6.103515625e-05,
+      "invalid_drivers": [],
+      "passed": true
+    },
+    {
+      "frame": 180,
+      "case": "P10_rushes",
+      "key_error": 7.461627427041151e-10,
+      "max_matrix_error": 8.7738037109375e-05,
+      "max_static_error": 6.103515625e-05,
+      "invalid_drivers": [],
+      "passed": true
+    },
+    {
+      "frame": 180,
+      "case": "P11_hinged_oak",
+      "key_error": 3.667700879117497e-09,
+      "max_matrix_error": 2.288818359375e-05,
+      "max_static_error": 1.52587890625e-05,
+      "invalid_drivers": [],
+      "passed": true
+    },
+    {
+      "frame": 180,
+      "case": "P12_aspen",
+      "key_error": 3.2978202391120703e-09,
+      "max_matrix_error": 0.0001220703125,
+      "max_static_error": 0.0001220703125,
+      "invalid_drivers": [],
+      "passed": true
+    },
+    {
+      "frame": 180,
+      "case": "P13_fern",
+      "key_error": 1.753653278147027e-09,
+      "max_matrix_error": 2.288818359375e-05,
+      "max_static_error": 1.52587890625e-05,
+      "invalid_drivers": [],
+      "passed": true
+    },
+    {
+      "frame": 180,
+      "case": "P14_bouquet",
+      "key_error": 1.8064131995787491e-09,
+      "max_matrix_error": 0.0005500409752130508,
+      "max_static_error": 0.0001220703125,
+      "invalid_drivers": [],
+      "passed": true
+    },
+    {
+      "frame": 180,
+      "case": "P15_tiered_shrub",
+      "key_error": 2.8037894783672357e-09,
+      "max_matrix_error": 0.0001220703125,
+      "max_static_error": 0.0001220703125,
+      "invalid_drivers": [],
+      "passed": true
+    },
+    {
+      "frame": 180,
+      "case": "P16_liana",
+      "key_error": 5.677024184080892e-09,
+      "max_matrix_error": 6.103515625e-05,
+      "max_static_error": 6.103515625e-05,
+      "invalid_drivers": [],
+      "passed": true
+    },
+    {
+      "frame": 180,
+      "case": "P17_tendrils",
+      "key_error": 4.103914236219808e-09,
+      "max_matrix_error": 0.0001220703125,
+      "max_static_error": 0.0001220703125,
+      "invalid_drivers": [],
+      "passed": true
+    },
+    {
+      "frame": 180,
+      "case": "P18_ground_cover",
+      "key_error": 0.0,
+      "max_matrix_error": 0.0001220703125,
+      "max_static_error": 0.0001220703125,
+      "invalid_drivers": [],
+      "passed": true
+    },
+    {
+      "frame": 180,
+      "case": "P19_leaf_vanes",
+      "key_error": 5.3847661218853204e-08,
+      "max_matrix_error": 3.814697265625e-05,
+      "max_static_error": 6.103515625e-05,
+      "invalid_drivers": [],
+      "passed": true
+    },
+    {
+      "frame": 180,
+      "case": "P20_friends_palm",
+      "key_error": 3.3905561691582875e-09,
+      "max_matrix_error": 0.000102996826171875,
+      "max_static_error": 0.0001220703125,
+      "invalid_drivers": [],
+      "passed": true
+    },
+    {
+      "frame": 217,
+      "case": "P01_palm_tree",
+      "key_error": 1.448893706401666e-09,
+      "max_matrix_error": 0.00017499923706054688,
+      "max_static_error": 0.0001220703125,
+      "invalid_drivers": [],
+      "passed": true
+    },
+    {
+      "frame": 217,
+      "case": "P02_swordleaf_palm",
+      "key_error": 3.07452344139314e-09,
+      "max_matrix_error": 6.103515625e-05,
+      "max_static_error": 6.103515625e-05,
+      "invalid_drivers": [],
+      "passed": true
+    },
+    {
+      "frame": 217,
+      "case": "P03_bamboo",
+      "key_error": 3.221239455730718e-09,
+      "max_matrix_error": 0.000102996826171875,
+      "max_static_error": 6.103515625e-05,
+      "invalid_drivers": [],
+      "passed": true
+    },
+    {
+      "frame": 217,
+      "case": "P04_flower_bed",
+      "key_error": 3.7029490862483527e-09,
+      "max_matrix_error": 0.00011491775512695312,
+      "max_static_error": 6.103515625e-05,
+      "invalid_drivers": [],
+      "passed": true
+    },
+    {
+      "frame": 217,
+      "case": "P05_sunflower",
+      "key_error": 9.386987437354222e-10,
+      "max_matrix_error": 9.131431579589844e-05,
+      "max_static_error": 6.103515625e-05,
+      "invalid_drivers": [],
+      "passed": true
+    },
+    {
+      "frame": 217,
+      "case": "P06_pinwheel_daisies",
+      "key_error": 2.7726336782052385e-09,
+      "max_matrix_error": 6.103515625e-05,
+      "max_static_error": 6.103515625e-05,
+      "invalid_drivers": [],
+      "passed": true
+    },
+    {
+      "frame": 217,
+      "case": "P07_grass_meadow",
+      "key_error": 1.777715516459999e-09,
+      "max_matrix_error": 6.103515625e-05,
+      "max_static_error": 6.103515625e-05,
+      "invalid_drivers": [],
+      "passed": true
+    },
+    {
+      "frame": 217,
+      "case": "P08_reeds",
+      "key_error": 7.293515402739814e-09,
+      "max_matrix_error": 0.000125885009765625,
+      "max_static_error": 0.0001220703125,
+      "invalid_drivers": [],
+      "passed": true
+    },
+    {
+      "frame": 217,
+      "case": "P09_hanging_vine",
+      "key_error": 8.894963030026126e-10,
+      "max_matrix_error": 8.0108642578125e-05,
+      "max_static_error": 6.103515625e-05,
+      "invalid_drivers": [],
+      "passed": true
+    },
+    {
+      "frame": 217,
+      "case": "P10_rushes",
+      "key_error": 1.7835279225719702e-09,
+      "max_matrix_error": 8.392333984375e-05,
+      "max_static_error": 6.103515625e-05,
+      "invalid_drivers": [],
+      "passed": true
+    },
+    {
+      "frame": 217,
+      "case": "P11_hinged_oak",
+      "key_error": 1.6568308253139818e-09,
+      "max_matrix_error": 2.288818359375e-05,
+      "max_static_error": 1.52587890625e-05,
+      "invalid_drivers": [],
+      "passed": true
+    },
+    {
+      "frame": 217,
+      "case": "P12_aspen",
+      "key_error": 1.1888058315534522e-09,
+      "max_matrix_error": 0.00012254714965820312,
+      "max_static_error": 0.0001220703125,
+      "invalid_drivers": [],
+      "passed": true
+    },
+    {
+      "frame": 217,
+      "case": "P13_fern",
+      "key_error": 1.81789400199861e-09,
+      "max_matrix_error": 3.0517578125e-05,
+      "max_static_error": 1.52587890625e-05,
+      "invalid_drivers": [],
+      "passed": true
+    },
+    {
+      "frame": 217,
+      "case": "P14_bouquet",
+      "key_error": 3.1834496289073755e-09,
+      "max_matrix_error": 0.0005476325750350952,
+      "max_static_error": 0.0001220703125,
+      "invalid_drivers": [],
+      "passed": true
+    },
+    {
+      "frame": 217,
+      "case": "P15_tiered_shrub",
+      "key_error": 1.8465371037779121e-09,
+      "max_matrix_error": 0.0001220703125,
+      "max_static_error": 0.0001220703125,
+      "invalid_drivers": [],
+      "passed": true
+    },
+    {
+      "frame": 217,
+      "case": "P16_liana",
+      "key_error": 2.76353290251663e-09,
+      "max_matrix_error": 6.103515625e-05,
+      "max_static_error": 6.103515625e-05,
+      "invalid_drivers": [],
+      "passed": true
+    },
+    {
+      "frame": 217,
+      "case": "P17_tendrils",
+      "key_error": 7.345205610409522e-09,
+      "max_matrix_error": 0.0001220703125,
+      "max_static_error": 0.0001220703125,
+      "invalid_drivers": [],
+      "passed": true
+    },
+    {
+      "frame": 217,
+      "case": "P18_ground_cover",
+      "key_error": 0.0,
+      "max_matrix_error": 0.0001220703125,
+      "max_static_error": 0.0001220703125,
+      "invalid_drivers": [],
+      "passed": true
+    },
+    {
+      "frame": 217,
+      "case": "P19_leaf_vanes",
+      "key_error": 5.577515915788922e-08,
+      "max_matrix_error": 6.866455078125e-05,
+      "max_static_error": 6.103515625e-05,
+      "invalid_drivers": [],
+      "passed": true
+    },
+    {
+      "frame": 217,
+      "case": "P20_friends_palm",
+      "key_error": 2.7646786249224675e-09,
+      "max_matrix_error": 0.00010347366333007812,
+      "max_static_error": 0.0001220703125,
+      "invalid_drivers": [],
+      "passed": true
+    },
+    {
+      "frame": 230,
+      "case": "P01_palm_tree",
+      "key_error": 4.651225377072521e-10,
+      "max_matrix_error": 0.0001876354217529297,
+      "max_static_error": 0.0001220703125,
+      "invalid_drivers": [],
+      "passed": true
+    },
+    {
+      "frame": 230,
+      "case": "P02_swordleaf_palm",
+      "key_error": 9.03278493669113e-11,
+      "max_matrix_error": 9.918212890625e-05,
+      "max_static_error": 6.103515625e-05,
+      "invalid_drivers": [],
+      "passed": true
+    },
+    {
+      "frame": 230,
+      "case": "P03_bamboo",
+      "key_error": 1.4482673810212177e-09,
+      "max_matrix_error": 0.000102996826171875,
+      "max_static_error": 6.103515625e-05,
+      "invalid_drivers": [],
+      "passed": true
+    },
+    {
+      "frame": 230,
+      "case": "P04_flower_bed",
+      "key_error": 1.6137256808601563e-09,
+      "max_matrix_error": 0.00011491775512695312,
+      "max_static_error": 6.103515625e-05,
+      "invalid_drivers": [],
+      "passed": true
+    },
+    {
+      "frame": 230,
+      "case": "P05_sunflower",
+      "key_error": 1.7442711927606602e-09,
+      "max_matrix_error": 8.112192153930664e-05,
+      "max_static_error": 6.103515625e-05,
+      "invalid_drivers": [],
+      "passed": true
+    },
+    {
+      "frame": 230,
+      "case": "P06_pinwheel_daisies",
+      "key_error": 9.500260134132077e-07,
+      "max_matrix_error": 6.103515625e-05,
+      "max_static_error": 6.103515625e-05,
+      "invalid_drivers": [],
+      "passed": true
+    },
+    {
+      "frame": 230,
+      "case": "P07_grass_meadow",
+      "key_error": 8.808404283744409e-10,
+      "max_matrix_error": 6.103515625e-05,
+      "max_static_error": 6.103515625e-05,
+      "invalid_drivers": [],
+      "passed": true
+    },
+    {
+      "frame": 230,
+      "case": "P08_reeds",
+      "key_error": 2.363094081525574e-09,
+      "max_matrix_error": 0.00018310546875,
+      "max_static_error": 0.0001220703125,
+      "invalid_drivers": [],
+      "passed": true
+    },
+    {
+      "frame": 230,
+      "case": "P09_hanging_vine",
+      "key_error": 4.2390595027252953e-10,
+      "max_matrix_error": 0.0001125335693359375,
+      "max_static_error": 6.103515625e-05,
+      "invalid_drivers": [],
+      "passed": true
+    },
+    {
+      "frame": 230,
+      "case": "P10_rushes",
+      "key_error": 5.667750886673151e-10,
+      "max_matrix_error": 9.5367431640625e-05,
+      "max_static_error": 6.103515625e-05,
+      "invalid_drivers": [],
+      "passed": true
+    },
+    {
+      "frame": 230,
+      "case": "P11_hinged_oak",
+      "key_error": 2.056122268973004e-10,
+      "max_matrix_error": 2.288818359375e-05,
+      "max_static_error": 1.52587890625e-05,
+      "invalid_drivers": [],
+      "passed": true
+    },
+    {
+      "frame": 230,
+      "case": "P12_aspen",
+      "key_error": 9.031259316782947e-10,
+      "max_matrix_error": 0.00012218952178955078,
+      "max_static_error": 0.0001220703125,
+      "invalid_drivers": [],
+      "passed": true
+    },
+    {
+      "frame": 230,
+      "case": "P13_fern",
+      "key_error": 2.2235164057193835e-10,
+      "max_matrix_error": 1.52587890625e-05,
+      "max_static_error": 1.52587890625e-05,
+      "invalid_drivers": [],
+      "passed": true
+    },
+    {
+      "frame": 230,
+      "case": "P14_bouquet",
+      "key_error": 1.1753053669183444e-09,
+      "max_matrix_error": 0.0005498211830854416,
+      "max_static_error": 0.0001220703125,
+      "invalid_drivers": [],
+      "passed": true
+    },
+    {
+      "frame": 230,
+      "case": "P15_tiered_shrub",
+      "key_error": 1.717089713471065e-09,
+      "max_matrix_error": 0.0001220703125,
+      "max_static_error": 0.0001220703125,
+      "invalid_drivers": [],
+      "passed": true
+    },
+    {
+      "frame": 230,
+      "case": "P16_liana",
+      "key_error": 2.6101247552201556e-10,
+      "max_matrix_error": 6.29425048828125e-05,
+      "max_static_error": 6.103515625e-05,
+      "invalid_drivers": [],
+      "passed": true
+    },
+    {
+      "frame": 230,
+      "case": "P17_tendrils",
+      "key_error": 2.4322830034784193e-10,
+      "max_matrix_error": 0.0001239776611328125,
+      "max_static_error": 0.0001220703125,
+      "invalid_drivers": [],
+      "passed": true
+    },
+    {
+      "frame": 230,
+      "case": "P18_ground_cover",
+      "key_error": 0.0,
+      "max_matrix_error": 0.0001220703125,
+      "max_static_error": 0.0001220703125,
+      "invalid_drivers": [],
+      "passed": true
+    },
+    {
+      "frame": 230,
+      "case": "P19_leaf_vanes",
+      "key_error": 2.5279794590993276e-08,
+      "max_matrix_error": 4.57763671875e-05,
+      "max_static_error": 6.103515625e-05,
+      "invalid_drivers": [],
+      "passed": true
+    },
+    {
+      "frame": 230,
+      "case": "P20_friends_palm",
+      "key_error": 4.3031319653386024e-10,
+      "max_matrix_error": 0.000102996826171875,
+      "max_static_error": 0.0001220703125,
+      "invalid_drivers": [],
+      "passed": true
+    },
+    {
+      "frame": 240,
+      "case": "P01_palm_tree",
+      "key_error": 0.0,
+      "max_matrix_error": 0.0001220703125,
+      "max_static_error": 0.0001220703125,
+      "invalid_drivers": [],
+      "passed": true
+    },
+    {
+      "frame": 240,
+      "case": "P02_swordleaf_palm",
+      "key_error": 0.0,
+      "max_matrix_error": 9.918212890625e-05,
+      "max_static_error": 6.103515625e-05,
+      "invalid_drivers": [],
+      "passed": true
+    },
+    {
+      "frame": 240,
+      "case": "P03_bamboo",
+      "key_error": 0.0,
+      "max_matrix_error": 0.000102996826171875,
+      "max_static_error": 6.103515625e-05,
+      "invalid_drivers": [],
+      "passed": true
+    },
+    {
+      "frame": 240,
+      "case": "P04_flower_bed",
+      "key_error": 0.0,
+      "max_matrix_error": 0.00011539459228515625,
+      "max_static_error": 6.103515625e-05,
+      "invalid_drivers": [],
+      "passed": true
+    },
+    {
+      "frame": 240,
+      "case": "P05_sunflower",
+      "key_error": 0.0,
+      "max_matrix_error": 6.103515625e-05,
+      "max_static_error": 6.103515625e-05,
+      "invalid_drivers": [],
+      "passed": true
+    },
+    {
+      "frame": 240,
+      "case": "P06_pinwheel_daisies",
+      "key_error": 1.271686187465093e-07,
+      "max_matrix_error": 6.103515625e-05,
+      "max_static_error": 6.103515625e-05,
+      "invalid_drivers": [],
+      "passed": true
+    },
+    {
+      "frame": 240,
+      "case": "P07_grass_meadow",
+      "key_error": 0.0,
+      "max_matrix_error": 6.103515625e-05,
+      "max_static_error": 6.103515625e-05,
+      "invalid_drivers": [],
+      "passed": true
+    },
+    {
+      "frame": 240,
+      "case": "P08_reeds",
+      "key_error": 0.0,
+      "max_matrix_error": 0.0001220703125,
+      "max_static_error": 0.0001220703125,
+      "invalid_drivers": [],
+      "passed": true
+    },
+    {
+      "frame": 240,
+      "case": "P09_hanging_vine",
+      "key_error": 0.0,
+      "max_matrix_error": 6.103515625e-05,
+      "max_static_error": 6.103515625e-05,
+      "invalid_drivers": [],
+      "passed": true
+    },
+    {
+      "frame": 240,
+      "case": "P10_rushes",
+      "key_error": 0.0,
+      "max_matrix_error": 6.103515625e-05,
+      "max_static_error": 6.103515625e-05,
+      "invalid_drivers": [],
+      "passed": true
+    },
+    {
+      "frame": 240,
+      "case": "P11_hinged_oak",
+      "key_error": 0.0,
+      "max_matrix_error": 1.52587890625e-05,
+      "max_static_error": 1.52587890625e-05,
+      "invalid_drivers": [],
+      "passed": true
+    },
+    {
+      "frame": 240,
+      "case": "P12_aspen",
+      "key_error": 0.0,
+      "max_matrix_error": 0.0001220703125,
+      "max_static_error": 0.0001220703125,
+      "invalid_drivers": [],
+      "passed": true
+    },
+    {
+      "frame": 240,
+      "case": "P13_fern",
+      "key_error": 0.0,
+      "max_matrix_error": 1.52587890625e-05,
+      "max_static_error": 1.52587890625e-05,
+      "invalid_drivers": [],
+      "passed": true
+    },
+    {
+      "frame": 240,
+      "case": "P14_bouquet",
+      "key_error": 0.0,
+      "max_matrix_error": 0.0005527351750060916,
+      "max_static_error": 0.0001220703125,
+      "invalid_drivers": [],
+      "passed": true
+    },
+    {
+      "frame": 240,
+      "case": "P15_tiered_shrub",
+      "key_error": 0.0,
+      "max_matrix_error": 0.0001220703125,
+      "max_static_error": 0.0001220703125,
+      "invalid_drivers": [],
+      "passed": true
+    },
+    {
+      "frame": 240,
+      "case": "P16_liana",
+      "key_error": 0.0,
+      "max_matrix_error": 6.103515625e-05,
+      "max_static_error": 6.103515625e-05,
+      "invalid_drivers": [],
+      "passed": true
+    },
+    {
+      "frame": 240,
+      "case": "P17_tendrils",
+      "key_error": 0.0,
+      "max_matrix_error": 0.0001220703125,
+      "max_static_error": 0.0001220703125,
+      "invalid_drivers": [],
+      "passed": true
+    },
+    {
+      "frame": 240,
+      "case": "P18_ground_cover",
+      "key_error": 0.0,
+      "max_matrix_error": 0.0001220703125,
+      "max_static_error": 0.0001220703125,
+      "invalid_drivers": [],
+      "passed": true
+    },
+    {
+      "frame": 240,
+      "case": "P19_leaf_vanes",
+      "key_error": 0.0,
+      "max_matrix_error": 8.392333984375e-05,
+      "max_static_error": 6.103515625e-05,
+      "invalid_drivers": [],
+      "passed": true
+    },
+    {
+      "frame": 240,
+      "case": "P20_friends_palm",
+      "key_error": 0.0,
+      "max_matrix_error": 0.000102996826171875,
+      "max_static_error": 0.0001220703125,
+      "invalid_drivers": [],
+      "passed": true
+    },
+    {
+      "frame": 248,
+      "case": "P01_palm_tree",
+      "key_error": 0.0,
+      "max_matrix_error": 0.0001220703125,
+      "max_static_error": 0.0001220703125,
+      "invalid_drivers": [],
+      "passed": true
+    },
+    {
+      "frame": 248,
+      "case": "P02_swordleaf_palm",
+      "key_error": 0.0,
+      "max_matrix_error": 9.918212890625e-05,
+      "max_static_error": 6.103515625e-05,
+      "invalid_drivers": [],
+      "passed": true
+    },
+    {
+      "frame": 248,
+      "case": "P03_bamboo",
+      "key_error": 0.0,
+      "max_matrix_error": 0.000102996826171875,
+      "max_static_error": 6.103515625e-05,
+      "invalid_drivers": [],
+      "passed": true
+    },
+    {
+      "frame": 248,
+      "case": "P04_flower_bed",
+      "key_error": 0.0,
+      "max_matrix_error": 0.00011539459228515625,
+      "max_static_error": 6.103515625e-05,
+      "invalid_drivers": [],
+      "passed": true
+    },
+    {
+      "frame": 248,
+      "case": "P05_sunflower",
+      "key_error": 0.0,
+      "max_matrix_error": 6.103515625e-05,
+      "max_static_error": 6.103515625e-05,
+      "invalid_drivers": [],
+      "passed": true
+    },
+    {
+      "frame": 248,
+      "case": "P06_pinwheel_daisies",
+      "key_error": 1.271686187465093e-07,
+      "max_matrix_error": 6.103515625e-05,
+      "max_static_error": 6.103515625e-05,
+      "invalid_drivers": [],
+      "passed": true
+    },
+    {
+      "frame": 248,
+      "case": "P07_grass_meadow",
+      "key_error": 0.0,
+      "max_matrix_error": 6.103515625e-05,
+      "max_static_error": 6.103515625e-05,
+      "invalid_drivers": [],
+      "passed": true
+    },
+    {
+      "frame": 248,
+      "case": "P08_reeds",
+      "key_error": 0.0,
+      "max_matrix_error": 0.0001220703125,
+      "max_static_error": 0.0001220703125,
+      "invalid_drivers": [],
+      "passed": true
+    },
+    {
+      "frame": 248,
+      "case": "P09_hanging_vine",
+      "key_error": 0.0,
+      "max_matrix_error": 6.103515625e-05,
+      "max_static_error": 6.103515625e-05,
+      "invalid_drivers": [],
+      "passed": true
+    },
+    {
+      "frame": 248,
+      "case": "P10_rushes",
+      "key_error": 0.0,
+      "max_matrix_error": 6.103515625e-05,
+      "max_static_error": 6.103515625e-05,
+      "invalid_drivers": [],
+      "passed": true
+    },
+    {
+      "frame": 248,
+      "case": "P11_hinged_oak",
+      "key_error": 0.0,
+      "max_matrix_error": 1.52587890625e-05,
+      "max_static_error": 1.52587890625e-05,
+      "invalid_drivers": [],
+      "passed": true
+    },
+    {
+      "frame": 248,
+      "case": "P12_aspen",
+      "key_error": 0.0,
+      "max_matrix_error": 0.0001220703125,
+      "max_static_error": 0.0001220703125,
+      "invalid_drivers": [],
+      "passed": true
+    },
+    {
+      "frame": 248,
+      "case": "P13_fern",
+      "key_error": 0.0,
+      "max_matrix_error": 1.52587890625e-05,
+      "max_static_error": 1.52587890625e-05,
+      "invalid_drivers": [],
+      "passed": true
+    },
+    {
+      "frame": 248,
+      "case": "P14_bouquet",
+      "key_error": 0.0,
+      "max_matrix_error": 0.0005527351750060916,
+      "max_static_error": 0.0001220703125,
+      "invalid_drivers": [],
+      "passed": true
+    },
+    {
+      "frame": 248,
+      "case": "P15_tiered_shrub",
+      "key_error": 0.0,
+      "max_matrix_error": 0.0001220703125,
+      "max_static_error": 0.0001220703125,
+      "invalid_drivers": [],
+      "passed": true
+    },
+    {
+      "frame": 248,
+      "case": "P16_liana",
+      "key_error": 0.0,
+      "max_matrix_error": 6.103515625e-05,
+      "max_static_error": 6.103515625e-05,
+      "invalid_drivers": [],
+      "passed": true
+    },
+    {
+      "frame": 248,
+      "case": "P17_tendrils",
+      "key_error": 0.0,
+      "max_matrix_error": 0.0001220703125,
+      "max_static_error": 0.0001220703125,
+      "invalid_drivers": [],
+      "passed": true
+    },
+    {
+      "frame": 248,
+      "case": "P18_ground_cover",
+      "key_error": 0.0,
+      "max_matrix_error": 0.0001220703125,
+      "max_static_error": 0.0001220703125,
+      "invalid_drivers": [],
+      "passed": true
+    },
+    {
+      "frame": 248,
+      "case": "P19_leaf_vanes",
+      "key_error": 0.0,
+      "max_matrix_error": 8.392333984375e-05,
+      "max_static_error": 6.103515625e-05,
+      "invalid_drivers": [],
+      "passed": true
+    },
+    {
+      "frame": 248,
+      "case": "P20_friends_palm",
+      "key_error": 0.0,
+      "max_matrix_error": 0.000102996826171875,
+      "max_static_error": 0.0001220703125,
+      "invalid_drivers": [],
+      "passed": true
+    },
+    {
+      "frame": 257,
+      "case": "P01_palm_tree",
+      "key_error": 0.0,
+      "max_matrix_error": 0.0001220703125,
+      "max_static_error": 0.0001220703125,
+      "invalid_drivers": [],
+      "passed": true
+    },
+    {
+      "frame": 257,
+      "case": "P02_swordleaf_palm",
+      "key_error": 0.0,
+      "max_matrix_error": 9.918212890625e-05,
+      "max_static_error": 6.103515625e-05,
+      "invalid_drivers": [],
+      "passed": true
+    },
+    {
+      "frame": 257,
+      "case": "P03_bamboo",
+      "key_error": 0.0,
+      "max_matrix_error": 0.000102996826171875,
+      "max_static_error": 6.103515625e-05,
+      "invalid_drivers": [],
+      "passed": true
+    },
+    {
+      "frame": 257,
+      "case": "P04_flower_bed",
+      "key_error": 0.0,
+      "max_matrix_error": 0.00011539459228515625,
+      "max_static_error": 6.103515625e-05,
+      "invalid_drivers": [],
+      "passed": true
+    },
+    {
+      "frame": 257,
+      "case": "P05_sunflower",
+      "key_error": 0.0,
+      "max_matrix_error": 6.103515625e-05,
+      "max_static_error": 6.103515625e-05,
+      "invalid_drivers": [],
+      "passed": true
+    },
+    {
+      "frame": 257,
+      "case": "P06_pinwheel_daisies",
+      "key_error": 0.0,
+      "max_matrix_error": 6.103515625e-05,
+      "max_static_error": 6.103515625e-05,
+      "invalid_drivers": [],
+      "passed": true
+    },
+    {
+      "frame": 257,
+      "case": "P07_grass_meadow",
+      "key_error": 0.0,
+      "max_matrix_error": 6.103515625e-05,
+      "max_static_error": 6.103515625e-05,
+      "invalid_drivers": [],
+      "passed": true
+    },
+    {
+      "frame": 257,
+      "case": "P08_reeds",
+      "key_error": 0.0,
+      "max_matrix_error": 0.0001220703125,
+      "max_static_error": 0.0001220703125,
+      "invalid_drivers": [],
+      "passed": true
+    },
+    {
+      "frame": 257,
+      "case": "P09_hanging_vine",
+      "key_error": 0.0,
+      "max_matrix_error": 6.103515625e-05,
+      "max_static_error": 6.103515625e-05,
+      "invalid_drivers": [],
+      "passed": true
+    },
+    {
+      "frame": 257,
+      "case": "P10_rushes",
+      "key_error": 0.0,
+      "max_matrix_error": 6.103515625e-05,
+      "max_static_error": 6.103515625e-05,
+      "invalid_drivers": [],
+      "passed": true
+    },
+    {
+      "frame": 257,
+      "case": "P11_hinged_oak",
+      "key_error": 0.0,
+      "max_matrix_error": 1.52587890625e-05,
+      "max_static_error": 1.52587890625e-05,
+      "invalid_drivers": [],
+      "passed": true
+    },
+    {
+      "frame": 257,
+      "case": "P12_aspen",
+      "key_error": 0.0,
+      "max_matrix_error": 0.0001220703125,
+      "max_static_error": 0.0001220703125,
+      "invalid_drivers": [],
+      "passed": true
+    },
+    {
+      "frame": 257,
+      "case": "P13_fern",
+      "key_error": 0.0,
+      "max_matrix_error": 1.52587890625e-05,
+      "max_static_error": 1.52587890625e-05,
+      "invalid_drivers": [],
+      "passed": true
+    },
+    {
+      "frame": 257,
+      "case": "P14_bouquet",
+      "key_error": 0.0,
+      "max_matrix_error": 0.0005527351750060916,
+      "max_static_error": 0.0001220703125,
+      "invalid_drivers": [],
+      "passed": true
+    },
+    {
+      "frame": 257,
+      "case": "P15_tiered_shrub",
+      "key_error": 0.0,
+      "max_matrix_error": 0.0001220703125,
+      "max_static_error": 0.0001220703125,
+      "invalid_drivers": [],
+      "passed": true
+    },
+    {
+      "frame": 257,
+      "case": "P16_liana",
+      "key_error": 0.0,
+      "max_matrix_error": 6.103515625e-05,
+      "max_static_error": 6.103515625e-05,
+      "invalid_drivers": [],
+      "passed": true
+    },
+    {
+      "frame": 257,
+      "case": "P17_tendrils",
+      "key_error": 0.0,
+      "max_matrix_error": 0.0001220703125,
+      "max_static_error": 0.0001220703125,
+      "invalid_drivers": [],
+      "passed": true
+    },
+    {
+      "frame": 257,
+      "case": "P18_ground_cover",
+      "key_error": 0.0,
+      "max_matrix_error": 0.0001220703125,
+      "max_static_error": 0.0001220703125,
+      "invalid_drivers": [],
+      "passed": true
+    },
+    {
+      "frame": 257,
+      "case": "P19_leaf_vanes",
+      "key_error": 0.0,
+      "max_matrix_error": 8.392333984375e-05,
+      "max_static_error": 6.103515625e-05,
+      "invalid_drivers": [],
+      "passed": true
+    },
+    {
+      "frame": 257,
+      "case": "P20_friends_palm",
+      "key_error": 0.0,
+      "max_matrix_error": 0.000102996826171875,
+      "max_static_error": 0.0001220703125,
+      "invalid_drivers": [],
+      "passed": true
+    },
+    {
+      "frame": 290,
+      "case": "P01_palm_tree",
+      "key_error": 4.590979055252298e-10,
+      "max_matrix_error": 0.00011897087097167969,
+      "max_static_error": 0.0001220703125,
+      "invalid_drivers": [],
+      "passed": true
+    },
+    {
+      "frame": 290,
+      "case": "P02_swordleaf_palm",
+      "key_error": 2.6285823691296617e-10,
+      "max_matrix_error": 0.0001220703125,
+      "max_static_error": 6.103515625e-05,
+      "invalid_drivers": [],
+      "passed": true
+    },
+    {
+      "frame": 290,
+      "case": "P03_bamboo",
+      "key_error": 1.8540638100326967e-11,
+      "max_matrix_error": 0.000102996826171875,
+      "max_static_error": 6.103515625e-05,
+      "invalid_drivers": [],
+      "passed": true
+    },
+    {
+      "frame": 290,
+      "case": "P04_flower_bed",
+      "key_error": 1.7333794052887264e-09,
+      "max_matrix_error": 0.00011539459228515625,
+      "max_static_error": 6.103515625e-05,
+      "invalid_drivers": [],
+      "passed": true
+    },
+    {
+      "frame": 290,
+      "case": "P05_sunflower",
+      "key_error": 0.0,
+      "max_matrix_error": 6.103515625e-05,
+      "max_static_error": 6.103515625e-05,
+      "invalid_drivers": [],
+      "passed": true
+    },
+    {
+      "frame": 290,
+      "case": "P06_pinwheel_daisies",
+      "key_error": 0.0,
+      "max_matrix_error": 6.103515625e-05,
+      "max_static_error": 6.103515625e-05,
+      "invalid_drivers": [],
+      "passed": true
+    },
+    {
+      "frame": 290,
+      "case": "P07_grass_meadow",
+      "key_error": 1.1478963070875314e-11,
+      "max_matrix_error": 6.103515625e-05,
+      "max_static_error": 6.103515625e-05,
+      "invalid_drivers": [],
+      "passed": true
+    },
+    {
+      "frame": 290,
+      "case": "P08_reeds",
+      "key_error": 2.4838157086648494e-09,
+      "max_matrix_error": 0.0001220703125,
+      "max_static_error": 0.0001220703125,
+      "invalid_drivers": [],
+      "passed": true
+    },
+    {
+      "frame": 290,
+      "case": "P09_hanging_vine",
+      "key_error": 0.0,
+      "max_matrix_error": 6.103515625e-05,
+      "max_static_error": 6.103515625e-05,
+      "invalid_drivers": [],
+      "passed": true
+    },
+    {
+      "frame": 290,
+      "case": "P10_rushes",
+      "key_error": 3.4481668215180505e-10,
+      "max_matrix_error": 9.1552734375e-05,
+      "max_static_error": 6.103515625e-05,
+      "invalid_drivers": [],
+      "passed": true
+    },
+    {
+      "frame": 290,
+      "case": "P11_hinged_oak",
+      "key_error": 5.328141682199583e-12,
+      "max_matrix_error": 1.9073486328125e-05,
+      "max_static_error": 1.52587890625e-05,
+      "invalid_drivers": [],
+      "passed": true
+    },
+    {
+      "frame": 290,
+      "case": "P12_aspen",
+      "key_error": 0.0,
+      "max_matrix_error": 0.0001220703125,
+      "max_static_error": 0.0001220703125,
+      "invalid_drivers": [],
+      "passed": true
+    },
+    {
+      "frame": 290,
+      "case": "P13_fern",
+      "key_error": 1.1443871078629236e-11,
+      "max_matrix_error": 2.288818359375e-05,
+      "max_static_error": 1.52587890625e-05,
+      "invalid_drivers": [],
+      "passed": true
+    },
+    {
+      "frame": 290,
+      "case": "P14_bouquet",
+      "key_error": 1.634482001133808e-09,
+      "max_matrix_error": 0.0005518905818462372,
+      "max_static_error": 0.0001220703125,
+      "invalid_drivers": [],
+      "passed": true
+    },
+    {
+      "frame": 290,
+      "case": "P15_tiered_shrub",
+      "key_error": 0.0,
+      "max_matrix_error": 0.0001220703125,
+      "max_static_error": 0.0001220703125,
+      "invalid_drivers": [],
+      "passed": true
+    },
+    {
+      "frame": 290,
+      "case": "P16_liana",
+      "key_error": 0.0,
+      "max_matrix_error": 6.103515625e-05,
+      "max_static_error": 6.103515625e-05,
+      "invalid_drivers": [],
+      "passed": true
+    },
+    {
+      "frame": 290,
+      "case": "P17_tendrils",
+      "key_error": 0.0,
+      "max_matrix_error": 0.0001220703125,
+      "max_static_error": 0.0001220703125,
+      "invalid_drivers": [],
+      "passed": true
+    },
+    {
+      "frame": 290,
+      "case": "P18_ground_cover",
+      "key_error": 0.0,
+      "max_matrix_error": 0.0001220703125,
+      "max_static_error": 0.0001220703125,
+      "invalid_drivers": [],
+      "passed": true
+    },
+    {
+      "frame": 290,
+      "case": "P19_leaf_vanes",
+      "key_error": 2.6792206370140903e-09,
+      "max_matrix_error": 9.5367431640625e-05,
+      "max_static_error": 6.103515625e-05,
+      "invalid_drivers": [],
+      "passed": true
+    },
+    {
+      "frame": 290,
+      "case": "P20_friends_palm",
+      "key_error": 0.0,
+      "max_matrix_error": 0.000102996826171875,
+      "max_static_error": 0.0001220703125,
+      "invalid_drivers": [],
+      "passed": true
+    },
+    {
+      "frame": 320,
+      "case": "P01_palm_tree",
+      "key_error": 5.480410236735622e-09,
+      "max_matrix_error": 0.0001652240753173828,
+      "max_static_error": 0.0001220703125,
+      "invalid_drivers": [],
+      "passed": true
+    },
+    {
+      "frame": 320,
+      "case": "P02_swordleaf_palm",
+      "key_error": 5.294905180974752e-09,
+      "max_matrix_error": 6.866455078125e-05,
+      "max_static_error": 6.103515625e-05,
+      "invalid_drivers": [],
+      "passed": true
+    },
+    {
+      "frame": 320,
+      "case": "P03_bamboo",
+      "key_error": 7.327081413821546e-09,
+      "max_matrix_error": 0.000102996826171875,
+      "max_static_error": 6.103515625e-05,
+      "invalid_drivers": [],
+      "passed": true
+    },
+    {
+      "frame": 320,
+      "case": "P04_flower_bed",
+      "key_error": 9.495740360687677e-09,
+      "max_matrix_error": 0.00011491775512695312,
+      "max_static_error": 6.103515625e-05,
+      "invalid_drivers": [],
+      "passed": true
+    },
+    {
+      "frame": 320,
+      "case": "P05_sunflower",
+      "key_error": 7.34449431827322e-10,
+      "max_matrix_error": 8.33272933959961e-05,
+      "max_static_error": 6.103515625e-05,
+      "invalid_drivers": [],
+      "passed": true
+    },
+    {
+      "frame": 320,
+      "case": "P06_pinwheel_daisies",
+      "key_error": 4.34814410171791e-10,
+      "max_matrix_error": 6.103515625e-05,
+      "max_static_error": 6.103515625e-05,
+      "invalid_drivers": [],
+      "passed": true
+    },
+    {
+      "frame": 320,
+      "case": "P07_grass_meadow",
+      "key_error": 3.0654968008470007e-09,
+      "max_matrix_error": 6.103515625e-05,
+      "max_static_error": 6.103515625e-05,
+      "invalid_drivers": [],
+      "passed": true
+    },
+    {
+      "frame": 320,
+      "case": "P08_reeds",
+      "key_error": 1.8091829978583718e-09,
+      "max_matrix_error": 0.0001220703125,
+      "max_static_error": 0.0001220703125,
+      "invalid_drivers": [],
+      "passed": true
+    },
+    {
+      "frame": 320,
+      "case": "P09_hanging_vine",
+      "key_error": 9.280067408967696e-10,
+      "max_matrix_error": 0.0001068115234375,
+      "max_static_error": 6.103515625e-05,
+      "invalid_drivers": [],
+      "passed": true
+    },
+    {
+      "frame": 320,
+      "case": "P10_rushes",
+      "key_error": 2.563550066669862e-09,
+      "max_matrix_error": 9.1552734375e-05,
+      "max_static_error": 6.103515625e-05,
+      "invalid_drivers": [],
+      "passed": true
+    },
+    {
+      "frame": 320,
+      "case": "P11_hinged_oak",
+      "key_error": 1.973761945550656e-09,
+      "max_matrix_error": 2.288818359375e-05,
+      "max_static_error": 1.52587890625e-05,
+      "invalid_drivers": [],
+      "passed": true
+    },
+    {
+      "frame": 320,
+      "case": "P12_aspen",
+      "key_error": 8.317753881492695e-10,
+      "max_matrix_error": 0.0001220703125,
+      "max_static_error": 0.0001220703125,
+      "invalid_drivers": [],
+      "passed": true
+    },
+    {
+      "frame": 320,
+      "case": "P13_fern",
+      "key_error": 2.930459791494755e-09,
+      "max_matrix_error": 3.0517578125e-05,
+      "max_static_error": 1.52587890625e-05,
+      "invalid_drivers": [],
+      "passed": true
+    },
+    {
+      "frame": 320,
+      "case": "P14_bouquet",
+      "key_error": 6.184377426832199e-09,
+      "max_matrix_error": 0.0005492568016052246,
+      "max_static_error": 0.0001220703125,
+      "invalid_drivers": [],
+      "passed": true
+    },
+    {
+      "frame": 320,
+      "case": "P15_tiered_shrub",
+      "key_error": 3.3431370519143577e-10,
+      "max_matrix_error": 0.0001220703125,
+      "max_static_error": 0.0001220703125,
+      "invalid_drivers": [],
+      "passed": true
+    },
+    {
+      "frame": 320,
+      "case": "P16_liana",
+      "key_error": 2.2812006589267853e-09,
+      "max_matrix_error": 6.103515625e-05,
+      "max_static_error": 6.103515625e-05,
+      "invalid_drivers": [],
+      "passed": true
+    },
+    {
+      "frame": 320,
+      "case": "P17_tendrils",
+      "key_error": 3.480378901743464e-10,
+      "max_matrix_error": 0.0001220703125,
+      "max_static_error": 0.0001220703125,
+      "invalid_drivers": [],
+      "passed": true
+    },
+    {
+      "frame": 320,
+      "case": "P18_ground_cover",
+      "key_error": 3.434289554127279e-10,
+      "max_matrix_error": 0.0001220703125,
+      "max_static_error": 0.0001220703125,
+      "invalid_drivers": [],
+      "passed": true
+    },
+    {
+      "frame": 320,
+      "case": "P19_leaf_vanes",
+      "key_error": 7.05059366445937e-08,
+      "max_matrix_error": 6.103515625e-05,
+      "max_static_error": 6.103515625e-05,
+      "invalid_drivers": [],
+      "passed": true
+    },
+    {
+      "frame": 320,
+      "case": "P20_friends_palm",
+      "key_error": 3.13831903173134e-11,
+      "max_matrix_error": 0.000102996826171875,
+      "max_static_error": 0.0001220703125,
+      "invalid_drivers": [],
+      "passed": true
+    },
+    {
+      "frame": 361,
+      "case": "P01_palm_tree",
+      "key_error": 1.6291014856562036e-09,
+      "max_matrix_error": 0.0001983642578125,
+      "max_static_error": 0.0001220703125,
+      "invalid_drivers": [],
+      "passed": true
+    },
+    {
+      "frame": 361,
+      "case": "P02_swordleaf_palm",
+      "key_error": 1.52641282946675e-09,
+      "max_matrix_error": 0.0001068115234375,
+      "max_static_error": 6.103515625e-05,
+      "invalid_drivers": [],
+      "passed": true
+    },
+    {
+      "frame": 361,
+      "case": "P03_bamboo",
+      "key_error": 3.3731471227316234e-09,
+      "max_matrix_error": 0.000102996826171875,
+      "max_static_error": 6.103515625e-05,
+      "invalid_drivers": [],
+      "passed": true
+    },
+    {
+      "frame": 361,
+      "case": "P04_flower_bed",
+      "key_error": 5.8501513910957925e-09,
+      "max_matrix_error": 0.00011539459228515625,
+      "max_static_error": 6.103515625e-05,
+      "invalid_drivers": [],
+      "passed": true
+    },
+    {
+      "frame": 361,
+      "case": "P05_sunflower",
+      "key_error": 1.1576555547510026e-08,
+      "max_matrix_error": 7.829070091247559e-05,
+      "max_static_error": 6.103515625e-05,
+      "invalid_drivers": [],
+      "passed": true
+    },
+    {
+      "frame": 361,
+      "case": "P06_pinwheel_daisies",
+      "key_error": 8.54995687582516e-08,
+      "max_matrix_error": 6.103515625e-05,
+      "max_static_error": 6.103515625e-05,
+      "invalid_drivers": [],
+      "passed": true
+    },
+    {
+      "frame": 361,
+      "case": "P07_grass_meadow",
+      "key_error": 3.4511938723502666e-09,
+      "max_matrix_error": 6.103515625e-05,
+      "max_static_error": 6.103515625e-05,
+      "invalid_drivers": [],
+      "passed": true
+    },
+    {
+      "frame": 361,
+      "case": "P08_reeds",
+      "key_error": 6.6480548843728116e-09,
+      "max_matrix_error": 0.0001983642578125,
+      "max_static_error": 0.0001220703125,
+      "invalid_drivers": [],
+      "passed": true
+    },
+    {
+      "frame": 361,
+      "case": "P09_hanging_vine",
+      "key_error": 1.4315399976538856e-08,
+      "max_matrix_error": 9.059906005859375e-05,
+      "max_static_error": 6.103515625e-05,
+      "invalid_drivers": [],
+      "passed": true
+    },
+    {
+      "frame": 361,
+      "case": "P10_rushes",
+      "key_error": 3.5414694510294e-09,
+      "max_matrix_error": 9.1552734375e-05,
+      "max_static_error": 6.103515625e-05,
+      "invalid_drivers": [],
+      "passed": true
+    },
+    {
+      "frame": 361,
+      "case": "P11_hinged_oak",
+      "key_error": 3.1543257311694717e-09,
+      "max_matrix_error": 2.6702880859375e-05,
+      "max_static_error": 1.52587890625e-05,
+      "invalid_drivers": [],
+      "passed": true
+    },
+    {
+      "frame": 361,
+      "case": "P12_aspen",
+      "key_error": 3.5302778894630293e-09,
+      "max_matrix_error": 0.0001220703125,
+      "max_static_error": 0.0001220703125,
+      "invalid_drivers": [],
+      "passed": true
+    },
+    {
+      "frame": 361,
+      "case": "P13_fern",
+      "key_error": 1.1421791221155608e-09,
+      "max_matrix_error": 1.52587890625e-05,
+      "max_static_error": 1.52587890625e-05,
+      "invalid_drivers": [],
+      "passed": true
+    },
+    {
+      "frame": 361,
+      "case": "P14_bouquet",
+      "key_error": 6.161475329946597e-09,
+      "max_matrix_error": 0.000543057918548584,
+      "max_static_error": 0.0001220703125,
+      "invalid_drivers": [],
+      "passed": true
+    },
+    {
+      "frame": 361,
+      "case": "P15_tiered_shrub",
+      "key_error": 1.3187906433564933e-08,
+      "max_matrix_error": 0.0001220703125,
+      "max_static_error": 0.0001220703125,
+      "invalid_drivers": [],
+      "passed": true
+    },
+    {
+      "frame": 361,
+      "case": "P16_liana",
+      "key_error": 1.1465403237931326e-08,
+      "max_matrix_error": 5.7220458984375e-05,
+      "max_static_error": 6.103515625e-05,
+      "invalid_drivers": [],
+      "passed": true
+    },
+    {
+      "frame": 361,
+      "case": "P17_tendrils",
+      "key_error": 7.18993309334337e-09,
+      "max_matrix_error": 0.000125885009765625,
+      "max_static_error": 0.0001220703125,
+      "invalid_drivers": [],
+      "passed": true
+    },
+    {
+      "frame": 361,
+      "case": "P18_ground_cover",
+      "key_error": 8.635634221598742e-10,
+      "max_matrix_error": 0.0001220703125,
+      "max_static_error": 0.0001220703125,
+      "invalid_drivers": [],
+      "passed": true
+    },
+    {
+      "frame": 361,
+      "case": "P19_leaf_vanes",
+      "key_error": 1.1281657696926572e-07,
+      "max_matrix_error": 4.9591064453125e-05,
+      "max_static_error": 6.103515625e-05,
+      "invalid_drivers": [],
+      "passed": true
+    },
+    {
+      "frame": 361,
+      "case": "P20_friends_palm",
+      "key_error": 7.1718183891622544e-09,
+      "max_matrix_error": 0.000102996826171875,
+      "max_static_error": 0.0001220703125,
+      "invalid_drivers": [],
+      "passed": true
+    },
+    {
+      "frame": 400,
+      "case": "P01_palm_tree",
+      "key_error": 6.098809825216822e-10,
+      "max_matrix_error": 0.0001373291015625,
+      "max_static_error": 0.0001220703125,
+      "invalid_drivers": [],
+      "passed": true
+    },
+    {
+      "frame": 400,
+      "case": "P02_swordleaf_palm",
+      "key_error": 2.1660279125867987e-09,
+      "max_matrix_error": 6.103515625e-05,
+      "max_static_error": 6.103515625e-05,
+      "invalid_drivers": [],
+      "passed": true
+    },
+    {
+      "frame": 400,
+      "case": "P03_bamboo",
+      "key_error": 3.4160314993370022e-09,
+      "max_matrix_error": 0.000102996826171875,
+      "max_static_error": 6.103515625e-05,
+      "invalid_drivers": [],
+      "passed": true
+    },
+    {
+      "frame": 400,
+      "case": "P04_flower_bed",
+      "key_error": 3.595723094274028e-09,
+      "max_matrix_error": 0.00011539459228515625,
+      "max_static_error": 6.103515625e-05,
+      "invalid_drivers": [],
+      "passed": true
+    },
+    {
+      "frame": 400,
+      "case": "P05_sunflower",
+      "key_error": 1.3510709995223635e-08,
+      "max_matrix_error": 7.62939453125e-05,
+      "max_static_error": 6.103515625e-05,
+      "invalid_drivers": [],
+      "passed": true
+    },
+    {
+      "frame": 400,
+      "case": "P06_pinwheel_daisies",
+      "key_error": 1.987921240953483e-07,
+      "max_matrix_error": 6.103515625e-05,
+      "max_static_error": 6.103515625e-05,
+      "invalid_drivers": [],
+      "passed": true
+    },
+    {
+      "frame": 400,
+      "case": "P07_grass_meadow",
+      "key_error": 1.631517393407833e-09,
+      "max_matrix_error": 6.103515625e-05,
+      "max_static_error": 6.103515625e-05,
+      "invalid_drivers": [],
+      "passed": true
+    },
+    {
+      "frame": 400,
+      "case": "P08_reeds",
+      "key_error": 7.349184344418447e-09,
+      "max_matrix_error": 0.0001220703125,
+      "max_static_error": 0.0001220703125,
+      "invalid_drivers": [],
+      "passed": true
+    },
+    {
+      "frame": 400,
+      "case": "P09_hanging_vine",
+      "key_error": 2.893293771233374e-09,
+      "max_matrix_error": 0.0001125335693359375,
+      "max_static_error": 6.103515625e-05,
+      "invalid_drivers": [],
+      "passed": true
+    },
+    {
+      "frame": 400,
+      "case": "P10_rushes",
+      "key_error": 4.162495403914335e-09,
+      "max_matrix_error": 9.1552734375e-05,
+      "max_static_error": 6.103515625e-05,
+      "invalid_drivers": [],
+      "passed": true
+    },
+    {
+      "frame": 400,
+      "case": "P11_hinged_oak",
+      "key_error": 1.7738850596749067e-09,
+      "max_matrix_error": 1.52587890625e-05,
+      "max_static_error": 1.52587890625e-05,
+      "invalid_drivers": [],
+      "passed": true
+    },
+    {
+      "frame": 400,
+      "case": "P12_aspen",
+      "key_error": 2.077934491140354e-09,
+      "max_matrix_error": 0.0001220703125,
+      "max_static_error": 0.0001220703125,
+      "invalid_drivers": [],
+      "passed": true
+    },
+    {
+      "frame": 400,
+      "case": "P13_fern",
+      "key_error": 1.4861256461551342e-09,
+      "max_matrix_error": 2.288818359375e-05,
+      "max_static_error": 1.52587890625e-05,
+      "invalid_drivers": [],
+      "passed": true
+    },
+    {
+      "frame": 400,
+      "case": "P14_bouquet",
+      "key_error": 3.168123888230845e-09,
+      "max_matrix_error": 0.0005362778902053833,
+      "max_static_error": 0.0001220703125,
+      "invalid_drivers": [],
+      "passed": true
+    },
+    {
+      "frame": 400,
+      "case": "P15_tiered_shrub",
+      "key_error": 3.766144063277466e-09,
+      "max_matrix_error": 0.0001220703125,
+      "max_static_error": 0.0001220703125,
+      "invalid_drivers": [],
+      "passed": true
+    },
+    {
+      "frame": 400,
+      "case": "P16_liana",
+      "key_error": 3.943871063061266e-09,
+      "max_matrix_error": 6.29425048828125e-05,
+      "max_static_error": 6.103515625e-05,
+      "invalid_drivers": [],
+      "passed": true
+    },
+    {
+      "frame": 400,
+      "case": "P17_tendrils",
+      "key_error": 7.120144529526584e-09,
+      "max_matrix_error": 0.0001239776611328125,
+      "max_static_error": 0.0001220703125,
+      "invalid_drivers": [],
+      "passed": true
+    },
+    {
+      "frame": 400,
+      "case": "P18_ground_cover",
+      "key_error": 2.376745751164061e-11,
+      "max_matrix_error": 0.0001220703125,
+      "max_static_error": 0.0001220703125,
+      "invalid_drivers": [],
+      "passed": true
+    },
+    {
+      "frame": 400,
+      "case": "P19_leaf_vanes",
+      "key_error": 4.339486059379283e-08,
+      "max_matrix_error": 6.4849853515625e-05,
+      "max_static_error": 6.103515625e-05,
+      "invalid_drivers": [],
+      "passed": true
+    },
+    {
+      "frame": 400,
+      "case": "P20_friends_palm",
+      "key_error": 3.03700942172469e-09,
+      "max_matrix_error": 0.000102996826171875,
+      "max_static_error": 0.0001220703125,
+      "invalid_drivers": [],
+      "passed": true
+    },
+    {
+      "frame": 440,
+      "case": "P01_palm_tree",
+      "key_error": 7.409770921840142e-10,
+      "max_matrix_error": 0.000133514404296875,
+      "max_static_error": 0.0001220703125,
+      "invalid_drivers": [],
+      "passed": true
+    },
+    {
+      "frame": 440,
+      "case": "P02_swordleaf_palm",
+      "key_error": 2.2408855326894184e-09,
+      "max_matrix_error": 8.392333984375e-05,
+      "max_static_error": 6.103515625e-05,
+      "invalid_drivers": [],
+      "passed": true
+    },
+    {
+      "frame": 440,
+      "case": "P03_bamboo",
+      "key_error": 3.6441074879878244e-09,
+      "max_matrix_error": 0.000102996826171875,
+      "max_static_error": 6.103515625e-05,
+      "invalid_drivers": [],
+      "passed": true
+    },
+    {
+      "frame": 440,
+      "case": "P04_flower_bed",
+      "key_error": 9.009024984352187e-10,
+      "max_matrix_error": 0.00011539459228515625,
+      "max_static_error": 6.103515625e-05,
+      "invalid_drivers": [],
+      "passed": true
+    },
+    {
+      "frame": 440,
+      "case": "P05_sunflower",
+      "key_error": 1.622655315669519e-09,
+      "max_matrix_error": 6.151199340820312e-05,
+      "max_static_error": 6.103515625e-05,
+      "invalid_drivers": [],
+      "passed": true
+    },
+    {
+      "frame": 440,
+      "case": "P06_pinwheel_daisies",
+      "key_error": 2.6309880141184294e-07,
+      "max_matrix_error": 6.103515625e-05,
+      "max_static_error": 6.103515625e-05,
+      "invalid_drivers": [],
+      "passed": true
+    },
+    {
+      "frame": 440,
+      "case": "P07_grass_meadow",
+      "key_error": 2.909186849753276e-09,
+      "max_matrix_error": 6.103515625e-05,
+      "max_static_error": 6.103515625e-05,
+      "invalid_drivers": [],
+      "passed": true
+    },
+    {
+      "frame": 440,
+      "case": "P08_reeds",
+      "key_error": 1.6894119436727806e-09,
+      "max_matrix_error": 0.000202178955078125,
+      "max_static_error": 0.0001220703125,
+      "invalid_drivers": [],
+      "passed": true
+    },
+    {
+      "frame": 440,
+      "case": "P09_hanging_vine",
+      "key_error": 1.8557178779743388e-09,
+      "max_matrix_error": 9.5367431640625e-05,
+      "max_static_error": 6.103515625e-05,
+      "invalid_drivers": [],
+      "passed": true
+    },
+    {
+      "frame": 440,
+      "case": "P10_rushes",
+      "key_error": 3.313287644246543e-09,
+      "max_matrix_error": 0.0001068115234375,
+      "max_static_error": 6.103515625e-05,
+      "invalid_drivers": [],
+      "passed": true
+    },
+    {
+      "frame": 440,
+      "case": "P11_hinged_oak",
+      "key_error": 1.8733071083937292e-10,
+      "max_matrix_error": 1.52587890625e-05,
+      "max_static_error": 1.52587890625e-05,
+      "invalid_drivers": [],
+      "passed": true
+    },
+    {
+      "frame": 440,
+      "case": "P12_aspen",
+      "key_error": 9.109721831046524e-10,
+      "max_matrix_error": 0.0001220703125,
+      "max_static_error": 0.0001220703125,
+      "invalid_drivers": [],
+      "passed": true
+    },
+    {
+      "frame": 440,
+      "case": "P13_fern",
+      "key_error": 2.2556477241586492e-09,
+      "max_matrix_error": 1.52587890625e-05,
+      "max_static_error": 1.52587890625e-05,
+      "invalid_drivers": [],
+      "passed": true
+    },
+    {
+      "frame": 440,
+      "case": "P14_bouquet",
+      "key_error": 5.441197215017013e-10,
+      "max_matrix_error": 0.0005557537078857422,
+      "max_static_error": 0.0001220703125,
+      "invalid_drivers": [],
+      "passed": true
+    },
+    {
+      "frame": 440,
+      "case": "P15_tiered_shrub",
+      "key_error": 2.6304975420110566e-09,
+      "max_matrix_error": 0.0001220703125,
+      "max_static_error": 0.0001220703125,
+      "invalid_drivers": [],
+      "passed": true
+    },
+    {
+      "frame": 440,
+      "case": "P16_liana",
+      "key_error": 9.874888129424164e-10,
+      "max_matrix_error": 6.103515625e-05,
+      "max_static_error": 6.103515625e-05,
+      "invalid_drivers": [],
+      "passed": true
+    },
+    {
+      "frame": 440,
+      "case": "P17_tendrils",
+      "key_error": 4.278737170126945e-09,
+      "max_matrix_error": 0.0001239776611328125,
+      "max_static_error": 0.0001220703125,
+      "invalid_drivers": [],
+      "passed": true
+    },
+    {
+      "frame": 440,
+      "case": "P18_ground_cover",
+      "key_error": 1.1023266804563447e-10,
+      "max_matrix_error": 0.0001220703125,
+      "max_static_error": 0.0001220703125,
+      "invalid_drivers": [],
+      "passed": true
+    },
+    {
+      "frame": 440,
+      "case": "P19_leaf_vanes",
+      "key_error": 3.489988387173071e-08,
+      "max_matrix_error": 7.62939453125e-05,
+      "max_static_error": 6.103515625e-05,
+      "invalid_drivers": [],
+      "passed": true
+    },
+    {
+      "frame": 440,
+      "case": "P20_friends_palm",
+      "key_error": 3.5482124877139753e-09,
+      "max_matrix_error": 0.000102996826171875,
+      "max_static_error": 0.0001220703125,
+      "invalid_drivers": [],
+      "passed": true
+    },
+    {
+      "frame": 476,
+      "case": "P01_palm_tree",
+      "key_error": 1.8212374663928443e-09,
+      "max_matrix_error": 0.00012874603271484375,
+      "max_static_error": 0.0001220703125,
+      "invalid_drivers": [],
+      "passed": true
+    },
+    {
+      "frame": 476,
+      "case": "P02_swordleaf_palm",
+      "key_error": 6.626969216438905e-10,
+      "max_matrix_error": 6.103515625e-05,
+      "max_static_error": 6.103515625e-05,
+      "invalid_drivers": [],
+      "passed": true
+    },
+    {
+      "frame": 476,
+      "case": "P03_bamboo",
+      "key_error": 3.3334717763899846e-09,
+      "max_matrix_error": 0.000102996826171875,
+      "max_static_error": 6.103515625e-05,
+      "invalid_drivers": [],
+      "passed": true
+    },
+    {
+      "frame": 476,
+      "case": "P04_flower_bed",
+      "key_error": 1.0431189592652323e-10,
+      "max_matrix_error": 0.00011491775512695312,
+      "max_static_error": 6.103515625e-05,
+      "invalid_drivers": [],
+      "passed": true
+    },
+    {
+      "frame": 476,
+      "case": "P05_sunflower",
+      "key_error": 3.102445245151131e-10,
+      "max_matrix_error": 8.225440979003906e-05,
+      "max_static_error": 6.103515625e-05,
+      "invalid_drivers": [],
+      "passed": true
+    },
+    {
+      "frame": 476,
+      "case": "P06_pinwheel_daisies",
+      "key_error": 1.2420594153184084e-07,
+      "max_matrix_error": 6.866455078125e-05,
+      "max_static_error": 6.103515625e-05,
+      "invalid_drivers": [],
+      "passed": true
+    },
+    {
+      "frame": 476,
+      "case": "P07_grass_meadow",
+      "key_error": 3.311160243560374e-11,
+      "max_matrix_error": 6.103515625e-05,
+      "max_static_error": 6.103515625e-05,
+      "invalid_drivers": [],
+      "passed": true
+    },
+    {
+      "frame": 476,
+      "case": "P08_reeds",
+      "key_error": 2.8079305547379363e-10,
+      "max_matrix_error": 0.0001277923583984375,
+      "max_static_error": 0.0001220703125,
+      "invalid_drivers": [],
+      "passed": true
+    },
+    {
+      "frame": 476,
+      "case": "P09_hanging_vine",
+      "key_error": 1.5746484671730343e-09,
+      "max_matrix_error": 0.00012969970703125,
+      "max_static_error": 6.103515625e-05,
+      "invalid_drivers": [],
+      "passed": true
+    },
+    {
+      "frame": 476,
+      "case": "P10_rushes",
+      "key_error": 7.669117146891224e-10,
+      "max_matrix_error": 8.392333984375e-05,
+      "max_static_error": 6.103515625e-05,
+      "invalid_drivers": [],
+      "passed": true
+    },
+    {
+      "frame": 476,
+      "case": "P11_hinged_oak",
+      "key_error": 3.861716987851871e-10,
+      "max_matrix_error": 1.9073486328125e-05,
+      "max_static_error": 1.52587890625e-05,
+      "invalid_drivers": [],
+      "passed": true
+    },
+    {
+      "frame": 476,
+      "case": "P12_aspen",
+      "key_error": 4.198554698353618e-11,
+      "max_matrix_error": 0.0001220703125,
+      "max_static_error": 0.0001220703125,
+      "invalid_drivers": [],
+      "passed": true
+    },
+    {
+      "frame": 476,
+      "case": "P13_fern",
+      "key_error": 4.0565036919792963e-10,
+      "max_matrix_error": 2.288818359375e-05,
+      "max_static_error": 1.52587890625e-05,
+      "invalid_drivers": [],
+      "passed": true
+    },
+    {
+      "frame": 476,
+      "case": "P14_bouquet",
+      "key_error": 6.766902524435459e-10,
+      "max_matrix_error": 0.0005528554320335388,
+      "max_static_error": 0.0001220703125,
+      "invalid_drivers": [],
+      "passed": true
+    },
+    {
+      "frame": 476,
+      "case": "P15_tiered_shrub",
+      "key_error": 7.065904972236581e-09,
+      "max_matrix_error": 0.0001220703125,
+      "max_static_error": 0.0001220703125,
+      "invalid_drivers": [],
+      "passed": true
+    },
+    {
+      "frame": 476,
+      "case": "P16_liana",
+      "key_error": 4.559105593049395e-09,
+      "max_matrix_error": 6.29425048828125e-05,
+      "max_static_error": 6.103515625e-05,
+      "invalid_drivers": [],
+      "passed": true
+    },
+    {
+      "frame": 476,
+      "case": "P17_tendrils",
+      "key_error": 6.693288090442451e-09,
+      "max_matrix_error": 0.0001220703125,
+      "max_static_error": 0.0001220703125,
+      "invalid_drivers": [],
+      "passed": true
+    },
+    {
+      "frame": 476,
+      "case": "P18_ground_cover",
+      "key_error": 3.144111991701566e-12,
+      "max_matrix_error": 0.0001220703125,
+      "max_static_error": 0.0001220703125,
+      "invalid_drivers": [],
+      "passed": true
+    },
+    {
+      "frame": 476,
+      "case": "P19_leaf_vanes",
+      "key_error": 1.0036641917565703e-07,
+      "max_matrix_error": 6.103515625e-05,
+      "max_static_error": 6.103515625e-05,
+      "invalid_drivers": [],
+      "passed": true
+    },
+    {
+      "frame": 476,
+      "case": "P20_friends_palm",
+      "key_error": 7.396452589292224e-09,
+      "max_matrix_error": 0.000102996826171875,
+      "max_static_error": 0.0001220703125,
+      "invalid_drivers": [],
+      "passed": true
+    },
+    {
+      "frame": 496,
+      "case": "P01_palm_tree",
+      "key_error": 0.0,
+      "max_matrix_error": 0.0001220703125,
+      "max_static_error": 0.0001220703125,
+      "invalid_drivers": [],
+      "passed": true
+    },
+    {
+      "frame": 496,
+      "case": "P02_swordleaf_palm",
+      "key_error": 0.0,
+      "max_matrix_error": 9.918212890625e-05,
+      "max_static_error": 6.103515625e-05,
+      "invalid_drivers": [],
+      "passed": true
+    },
+    {
+      "frame": 496,
+      "case": "P03_bamboo",
+      "key_error": 0.0,
+      "max_matrix_error": 0.000102996826171875,
+      "max_static_error": 6.103515625e-05,
+      "invalid_drivers": [],
+      "passed": true
+    },
+    {
+      "frame": 496,
+      "case": "P04_flower_bed",
+      "key_error": 0.0,
+      "max_matrix_error": 0.00011539459228515625,
+      "max_static_error": 6.103515625e-05,
+      "invalid_drivers": [],
+      "passed": true
+    },
+    {
+      "frame": 496,
+      "case": "P05_sunflower",
+      "key_error": 0.0,
+      "max_matrix_error": 6.103515625e-05,
+      "max_static_error": 6.103515625e-05,
+      "invalid_drivers": [],
+      "passed": true
+    },
+    {
+      "frame": 496,
+      "case": "P06_pinwheel_daisies",
+      "key_error": 8.583204333945105e-07,
+      "max_matrix_error": 6.103515625e-05,
+      "max_static_error": 6.103515625e-05,
+      "invalid_drivers": [],
+      "passed": true
+    },
+    {
+      "frame": 496,
+      "case": "P07_grass_meadow",
+      "key_error": 0.0,
+      "max_matrix_error": 6.103515625e-05,
+      "max_static_error": 6.103515625e-05,
+      "invalid_drivers": [],
+      "passed": true
+    },
+    {
+      "frame": 496,
+      "case": "P08_reeds",
+      "key_error": 0.0,
+      "max_matrix_error": 0.0001220703125,
+      "max_static_error": 0.0001220703125,
+      "invalid_drivers": [],
+      "passed": true
+    },
+    {
+      "frame": 496,
+      "case": "P09_hanging_vine",
+      "key_error": 0.0,
+      "max_matrix_error": 6.103515625e-05,
+      "max_static_error": 6.103515625e-05,
+      "invalid_drivers": [],
+      "passed": true
+    },
+    {
+      "frame": 496,
+      "case": "P10_rushes",
+      "key_error": 0.0,
+      "max_matrix_error": 6.103515625e-05,
+      "max_static_error": 6.103515625e-05,
+      "invalid_drivers": [],
+      "passed": true
+    },
+    {
+      "frame": 496,
+      "case": "P11_hinged_oak",
+      "key_error": 0.0,
+      "max_matrix_error": 1.52587890625e-05,
+      "max_static_error": 1.52587890625e-05,
+      "invalid_drivers": [],
+      "passed": true
+    },
+    {
+      "frame": 496,
+      "case": "P12_aspen",
+      "key_error": 0.0,
+      "max_matrix_error": 0.0001220703125,
+      "max_static_error": 0.0001220703125,
+      "invalid_drivers": [],
+      "passed": true
+    },
+    {
+      "frame": 496,
+      "case": "P13_fern",
+      "key_error": 0.0,
+      "max_matrix_error": 1.52587890625e-05,
+      "max_static_error": 1.52587890625e-05,
+      "invalid_drivers": [],
+      "passed": true
+    },
+    {
+      "frame": 496,
+      "case": "P14_bouquet",
+      "key_error": 0.0,
+      "max_matrix_error": 0.0005527351750060916,
+      "max_static_error": 0.0001220703125,
+      "invalid_drivers": [],
+      "passed": true
+    },
+    {
+      "frame": 496,
+      "case": "P15_tiered_shrub",
+      "key_error": 0.0,
+      "max_matrix_error": 0.0001220703125,
+      "max_static_error": 0.0001220703125,
+      "invalid_drivers": [],
+      "passed": true
+    },
+    {
+      "frame": 496,
+      "case": "P16_liana",
+      "key_error": 0.0,
+      "max_matrix_error": 6.103515625e-05,
+      "max_static_error": 6.103515625e-05,
+      "invalid_drivers": [],
+      "passed": true
+    },
+    {
+      "frame": 496,
+      "case": "P17_tendrils",
+      "key_error": 0.0,
+      "max_matrix_error": 0.0001220703125,
+      "max_static_error": 0.0001220703125,
+      "invalid_drivers": [],
+      "passed": true
+    },
+    {
+      "frame": 496,
+      "case": "P18_ground_cover",
+      "key_error": 0.0,
+      "max_matrix_error": 0.0001220703125,
+      "max_static_error": 0.0001220703125,
+      "invalid_drivers": [],
+      "passed": true
+    },
+    {
+      "frame": 496,
+      "case": "P19_leaf_vanes",
+      "key_error": 0.0,
+      "max_matrix_error": 8.392333984375e-05,
+      "max_static_error": 6.103515625e-05,
+      "invalid_drivers": [],
+      "passed": true
+    },
+    {
+      "frame": 496,
+      "case": "P20_friends_palm",
+      "key_error": 0.0,
+      "max_matrix_error": 0.000102996826171875,
+      "max_static_error": 0.0001220703125,
+      "invalid_drivers": [],
+      "passed": true
+    },
+    {
+      "frame": 505,
+      "case": "P01_palm_tree",
+      "key_error": 0.0,
+      "max_matrix_error": 0.0001220703125,
+      "max_static_error": 0.0001220703125,
+      "invalid_drivers": [],
+      "passed": true
+    },
+    {
+      "frame": 505,
+      "case": "P02_swordleaf_palm",
+      "key_error": 0.0,
+      "max_matrix_error": 9.918212890625e-05,
+      "max_static_error": 6.103515625e-05,
+      "invalid_drivers": [],
+      "passed": true
+    },
+    {
+      "frame": 505,
+      "case": "P03_bamboo",
+      "key_error": 0.0,
+      "max_matrix_error": 0.000102996826171875,
+      "max_static_error": 6.103515625e-05,
+      "invalid_drivers": [],
+      "passed": true
+    },
+    {
+      "frame": 505,
+      "case": "P04_flower_bed",
+      "key_error": 0.0,
+      "max_matrix_error": 0.00011539459228515625,
+      "max_static_error": 6.103515625e-05,
+      "invalid_drivers": [],
+      "passed": true
+    },
+    {
+      "frame": 505,
+      "case": "P05_sunflower",
+      "key_error": 0.0,
+      "max_matrix_error": 6.103515625e-05,
+      "max_static_error": 6.103515625e-05,
+      "invalid_drivers": [],
+      "passed": true
+    },
+    {
+      "frame": 505,
+      "case": "P06_pinwheel_daisies",
+      "key_error": 8.583204333945105e-07,
+      "max_matrix_error": 6.103515625e-05,
+      "max_static_error": 6.103515625e-05,
+      "invalid_drivers": [],
+      "passed": true
+    },
+    {
+      "frame": 505,
+      "case": "P07_grass_meadow",
+      "key_error": 0.0,
+      "max_matrix_error": 6.103515625e-05,
+      "max_static_error": 6.103515625e-05,
+      "invalid_drivers": [],
+      "passed": true
+    },
+    {
+      "frame": 505,
+      "case": "P08_reeds",
+      "key_error": 0.0,
+      "max_matrix_error": 0.0001220703125,
+      "max_static_error": 0.0001220703125,
+      "invalid_drivers": [],
+      "passed": true
+    },
+    {
+      "frame": 505,
+      "case": "P09_hanging_vine",
+      "key_error": 0.0,
+      "max_matrix_error": 6.103515625e-05,
+      "max_static_error": 6.103515625e-05,
+      "invalid_drivers": [],
+      "passed": true
+    },
+    {
+      "frame": 505,
+      "case": "P10_rushes",
+      "key_error": 0.0,
+      "max_matrix_error": 6.103515625e-05,
+      "max_static_error": 6.103515625e-05,
+      "invalid_drivers": [],
+      "passed": true
+    },
+    {
+      "frame": 505,
+      "case": "P11_hinged_oak",
+      "key_error": 0.0,
+      "max_matrix_error": 1.52587890625e-05,
+      "max_static_error": 1.52587890625e-05,
+      "invalid_drivers": [],
+      "passed": true
+    },
+    {
+      "frame": 505,
+      "case": "P12_aspen",
+      "key_error": 0.0,
+      "max_matrix_error": 0.0001220703125,
+      "max_static_error": 0.0001220703125,
+      "invalid_drivers": [],
+      "passed": true
+    },
+    {
+      "frame": 505,
+      "case": "P13_fern",
+      "key_error": 0.0,
+      "max_matrix_error": 1.52587890625e-05,
+      "max_static_error": 1.52587890625e-05,
+      "invalid_drivers": [],
+      "passed": true
+    },
+    {
+      "frame": 505,
+      "case": "P14_bouquet",
+      "key_error": 0.0,
+      "max_matrix_error": 0.0005527351750060916,
+      "max_static_error": 0.0001220703125,
+      "invalid_drivers": [],
+      "passed": true
+    },
+    {
+      "frame": 505,
+      "case": "P15_tiered_shrub",
+      "key_error": 0.0,
+      "max_matrix_error": 0.0001220703125,
+      "max_static_error": 0.0001220703125,
+      "invalid_drivers": [],
+      "passed": true
+    },
+    {
+      "frame": 505,
+      "case": "P16_liana",
+      "key_error": 0.0,
+      "max_matrix_error": 6.103515625e-05,
+      "max_static_error": 6.103515625e-05,
+      "invalid_drivers": [],
+      "passed": true
+    },
+    {
+      "frame": 505,
+      "case": "P17_tendrils",
+      "key_error": 0.0,
+      "max_matrix_error": 0.0001220703125,
+      "max_static_error": 0.0001220703125,
+      "invalid_drivers": [],
+      "passed": true
+    },
+    {
+      "frame": 505,
+      "case": "P18_ground_cover",
+      "key_error": 0.0,
+      "max_matrix_error": 0.0001220703125,
+      "max_static_error": 0.0001220703125,
+      "invalid_drivers": [],
+      "passed": true
+    },
+    {
+      "frame": 505,
+      "case": "P19_leaf_vanes",
+      "key_error": 0.0,
+      "max_matrix_error": 8.392333984375e-05,
+      "max_static_error": 6.103515625e-05,
+      "invalid_drivers": [],
+      "passed": true
+    },
+    {
+      "frame": 505,
+      "case": "P20_friends_palm",
+      "key_error": 0.0,
+      "max_matrix_error": 0.000102996826171875,
+      "max_static_error": 0.0001220703125,
+      "invalid_drivers": [],
+      "passed": true
+    },
+    {
+      "frame": 513,
+      "case": "P01_palm_tree",
+      "key_error": 0.0,
+      "max_matrix_error": 0.0001220703125,
+      "max_static_error": 0.0001220703125,
+      "invalid_drivers": [],
+      "passed": true
+    },
+    {
+      "frame": 513,
+      "case": "P02_swordleaf_palm",
+      "key_error": 0.0,
+      "max_matrix_error": 9.918212890625e-05,
+      "max_static_error": 6.103515625e-05,
+      "invalid_drivers": [],
+      "passed": true
+    },
+    {
+      "frame": 513,
+      "case": "P03_bamboo",
+      "key_error": 0.0,
+      "max_matrix_error": 0.000102996826171875,
+      "max_static_error": 6.103515625e-05,
+      "invalid_drivers": [],
+      "passed": true
+    },
+    {
+      "frame": 513,
+      "case": "P04_flower_bed",
+      "key_error": 0.0,
+      "max_matrix_error": 0.00011539459228515625,
+      "max_static_error": 6.103515625e-05,
+      "invalid_drivers": [],
+      "passed": true
+    },
+    {
+      "frame": 513,
+      "case": "P05_sunflower",
+      "key_error": 0.0,
+      "max_matrix_error": 6.103515625e-05,
+      "max_static_error": 6.103515625e-05,
+      "invalid_drivers": [],
+      "passed": true
+    },
+    {
+      "frame": 513,
+      "case": "P06_pinwheel_daisies",
+      "key_error": 0.0,
+      "max_matrix_error": 6.103515625e-05,
+      "max_static_error": 6.103515625e-05,
+      "invalid_drivers": [],
+      "passed": true
+    },
+    {
+      "frame": 513,
+      "case": "P07_grass_meadow",
+      "key_error": 0.0,
+      "max_matrix_error": 6.103515625e-05,
+      "max_static_error": 6.103515625e-05,
+      "invalid_drivers": [],
+      "passed": true
+    },
+    {
+      "frame": 513,
+      "case": "P08_reeds",
+      "key_error": 0.0,
+      "max_matrix_error": 0.0001220703125,
+      "max_static_error": 0.0001220703125,
+      "invalid_drivers": [],
+      "passed": true
+    },
+    {
+      "frame": 513,
+      "case": "P09_hanging_vine",
+      "key_error": 0.0,
+      "max_matrix_error": 6.103515625e-05,
+      "max_static_error": 6.103515625e-05,
+      "invalid_drivers": [],
+      "passed": true
+    },
+    {
+      "frame": 513,
+      "case": "P10_rushes",
+      "key_error": 0.0,
+      "max_matrix_error": 6.103515625e-05,
+      "max_static_error": 6.103515625e-05,
+      "invalid_drivers": [],
+      "passed": true
+    },
+    {
+      "frame": 513,
+      "case": "P11_hinged_oak",
+      "key_error": 0.0,
+      "max_matrix_error": 1.52587890625e-05,
+      "max_static_error": 1.52587890625e-05,
+      "invalid_drivers": [],
+      "passed": true
+    },
+    {
+      "frame": 513,
+      "case": "P12_aspen",
+      "key_error": 0.0,
+      "max_matrix_error": 0.0001220703125,
+      "max_static_error": 0.0001220703125,
+      "invalid_drivers": [],
+      "passed": true
+    },
+    {
+      "frame": 513,
+      "case": "P13_fern",
+      "key_error": 0.0,
+      "max_matrix_error": 1.52587890625e-05,
+      "max_static_error": 1.52587890625e-05,
+      "invalid_drivers": [],
+      "passed": true
+    },
+    {
+      "frame": 513,
+      "case": "P14_bouquet",
+      "key_error": 0.0,
+      "max_matrix_error": 0.0005527351750060916,
+      "max_static_error": 0.0001220703125,
+      "invalid_drivers": [],
+      "passed": true
+    },
+    {
+      "frame": 513,
+      "case": "P15_tiered_shrub",
+      "key_error": 0.0,
+      "max_matrix_error": 0.0001220703125,
+      "max_static_error": 0.0001220703125,
+      "invalid_drivers": [],
+      "passed": true
+    },
+    {
+      "frame": 513,
+      "case": "P16_liana",
+      "key_error": 0.0,
+      "max_matrix_error": 6.103515625e-05,
+      "max_static_error": 6.103515625e-05,
+      "invalid_drivers": [],
+      "passed": true
+    },
+    {
+      "frame": 513,
+      "case": "P17_tendrils",
+      "key_error": 0.0,
+      "max_matrix_error": 0.0001220703125,
+      "max_static_error": 0.0001220703125,
+      "invalid_drivers": [],
+      "passed": true
+    },
+    {
+      "frame": 513,
+      "case": "P18_ground_cover",
+      "key_error": 0.0,
+      "max_matrix_error": 0.0001220703125,
+      "max_static_error": 0.0001220703125,
+      "invalid_drivers": [],
+      "passed": true
+    },
+    {
+      "frame": 513,
+      "case": "P19_leaf_vanes",
+      "key_error": 0.0,
+      "max_matrix_error": 8.392333984375e-05,
+      "max_static_error": 6.103515625e-05,
+      "invalid_drivers": [],
+      "passed": true
+    },
+    {
+      "frame": 513,
+      "case": "P20_friends_palm",
+      "key_error": 0.0,
+      "max_matrix_error": 0.000102996826171875,
+      "max_static_error": 0.0001220703125,
+      "invalid_drivers": [],
+      "passed": true
+    },
+    {
+      "frame": 553,
+      "case": "P01_palm_tree",
+      "key_error": 1.4200433051669847e-09,
+      "max_matrix_error": 0.000156402587890625,
+      "max_static_error": 0.0001220703125,
+      "invalid_drivers": [],
+      "passed": true
+    },
+    {
+      "frame": 553,
+      "case": "P02_swordleaf_palm",
+      "key_error": 3.385157459900867e-09,
+      "max_matrix_error": 6.866455078125e-05,
+      "max_static_error": 6.103515625e-05,
+      "invalid_drivers": [],
+      "passed": true
+    },
+    {
+      "frame": 553,
+      "case": "P03_bamboo",
+      "key_error": 8.602971772464496e-10,
+      "max_matrix_error": 0.000102996826171875,
+      "max_static_error": 6.103515625e-05,
+      "invalid_drivers": [],
+      "passed": true
+    },
+    {
+      "frame": 553,
+      "case": "P04_flower_bed",
+      "key_error": 6.663759655189949e-09,
+      "max_matrix_error": 0.00011539459228515625,
+      "max_static_error": 6.103515625e-05,
+      "invalid_drivers": [],
+      "passed": true
+    },
+    {
+      "frame": 553,
+      "case": "P05_sunflower",
+      "key_error": 2.8357353349379283e-14,
+      "max_matrix_error": 7.663432734261733e-05,
+      "max_static_error": 6.103515625e-05,
+      "invalid_drivers": [],
+      "passed": true
+    },
+    {
+      "frame": 553,
+      "case": "P06_pinwheel_daisies",
+      "key_error": 0.0,
+      "max_matrix_error": 6.103515625e-05,
+      "max_static_error": 6.103515625e-05,
+      "invalid_drivers": [],
+      "passed": true
+    },
+    {
+      "frame": 553,
+      "case": "P07_grass_meadow",
+      "key_error": 4.2621053387981167e-10,
+      "max_matrix_error": 6.103515625e-05,
+      "max_static_error": 6.103515625e-05,
+      "invalid_drivers": [],
+      "passed": true
+    },
+    {
+      "frame": 553,
+      "case": "P08_reeds",
+      "key_error": 1.9477608081963638e-08,
+      "max_matrix_error": 0.000179290771484375,
+      "max_static_error": 0.0001220703125,
+      "invalid_drivers": [],
+      "passed": true
+    },
+    {
+      "frame": 553,
+      "case": "P09_hanging_vine",
+      "key_error": 1.4282761936132822e-15,
+      "max_matrix_error": 6.103515625e-05,
+      "max_static_error": 6.103515625e-05,
+      "invalid_drivers": [],
+      "passed": true
+    },
+    {
+      "frame": 553,
+      "case": "P10_rushes",
+      "key_error": 1.907816640778215e-09,
+      "max_matrix_error": 8.392333984375e-05,
+      "max_static_error": 6.103515625e-05,
+      "invalid_drivers": [],
+      "passed": true
+    },
+    {
+      "frame": 553,
+      "case": "P11_hinged_oak",
+      "key_error": 2.230390785257219e-10,
+      "max_matrix_error": 2.288818359375e-05,
+      "max_static_error": 1.52587890625e-05,
+      "invalid_drivers": [],
+      "passed": true
+    },
+    {
+      "frame": 553,
+      "case": "P12_aspen",
+      "key_error": 0.0,
+      "max_matrix_error": 0.0001220703125,
+      "max_static_error": 0.0001220703125,
+      "invalid_drivers": [],
+      "passed": true
+    },
+    {
+      "frame": 553,
+      "case": "P13_fern",
+      "key_error": 5.856906279411156e-10,
+      "max_matrix_error": 1.52587890625e-05,
+      "max_static_error": 1.52587890625e-05,
+      "invalid_drivers": [],
+      "passed": true
+    },
+    {
+      "frame": 553,
+      "case": "P14_bouquet",
+      "key_error": 1.4741197096324044e-08,
+      "max_matrix_error": 0.0005338191986083984,
+      "max_static_error": 0.0001220703125,
+      "invalid_drivers": [],
+      "passed": true
+    },
+    {
+      "frame": 553,
+      "case": "P15_tiered_shrub",
+      "key_error": 0.0,
+      "max_matrix_error": 0.0001220703125,
+      "max_static_error": 0.0001220703125,
+      "invalid_drivers": [],
+      "passed": true
+    },
+    {
+      "frame": 553,
+      "case": "P16_liana",
+      "key_error": 7.346648661396928e-14,
+      "max_matrix_error": 6.103515625e-05,
+      "max_static_error": 6.103515625e-05,
+      "invalid_drivers": [],
+      "passed": true
+    },
+    {
+      "frame": 553,
+      "case": "P17_tendrils",
+      "key_error": 0.0,
+      "max_matrix_error": 0.0001220703125,
+      "max_static_error": 0.0001220703125,
+      "invalid_drivers": [],
+      "passed": true
+    },
+    {
+      "frame": 553,
+      "case": "P18_ground_cover",
+      "key_error": 1.3814386579102944e-08,
+      "max_matrix_error": 0.0001220703125,
+      "max_static_error": 0.0001220703125,
+      "invalid_drivers": [],
+      "passed": true
+    },
+    {
+      "frame": 553,
+      "case": "P19_leaf_vanes",
+      "key_error": 2.3655584380222194e-08,
+      "max_matrix_error": 4.673004150390625e-05,
+      "max_static_error": 6.103515625e-05,
+      "invalid_drivers": [],
+      "passed": true
+    },
+    {
+      "frame": 553,
+      "case": "P20_friends_palm",
+      "key_error": 0.0,
+      "max_matrix_error": 0.000102996826171875,
+      "max_static_error": 0.0001220703125,
+      "invalid_drivers": [],
+      "passed": true
+    },
+    {
+      "frame": 601,
+      "case": "P01_palm_tree",
+      "key_error": 5.944635006471799e-09,
+      "max_matrix_error": 0.0002460479736328125,
+      "max_static_error": 0.0001220703125,
+      "invalid_drivers": [],
+      "passed": true
+    },
+    {
+      "frame": 601,
+      "case": "P02_swordleaf_palm",
+      "key_error": 5.905423205998517e-09,
+      "max_matrix_error": 6.103515625e-05,
+      "max_static_error": 6.103515625e-05,
+      "invalid_drivers": [],
+      "passed": true
+    },
+    {
+      "frame": 601,
+      "case": "P03_bamboo",
+      "key_error": 6.403331476168006e-09,
+      "max_matrix_error": 0.000102996826171875,
+      "max_static_error": 6.103515625e-05,
+      "invalid_drivers": [],
+      "passed": true
+    },
+    {
+      "frame": 601,
+      "case": "P04_flower_bed",
+      "key_error": 1.474476674090397e-08,
+      "max_matrix_error": 0.00011539459228515625,
+      "max_static_error": 6.103515625e-05,
+      "invalid_drivers": [],
+      "passed": true
+    },
+    {
+      "frame": 601,
+      "case": "P05_sunflower",
+      "key_error": 2.7684300407671003e-09,
+      "max_matrix_error": 8.344650268554688e-05,
+      "max_static_error": 6.103515625e-05,
+      "invalid_drivers": [],
+      "passed": true
+    },
+    {
+      "frame": 601,
+      "case": "P06_pinwheel_daisies",
+      "key_error": 9.965247071974659e-08,
+      "max_matrix_error": 6.103515625e-05,
+      "max_static_error": 6.103515625e-05,
+      "invalid_drivers": [],
+      "passed": true
+    },
+    {
+      "frame": 601,
+      "case": "P07_grass_meadow",
+      "key_error": 7.230358811671778e-09,
+      "max_matrix_error": 6.103515625e-05,
+      "max_static_error": 6.103515625e-05,
+      "invalid_drivers": [],
+      "passed": true
+    },
+    {
+      "frame": 601,
+      "case": "P08_reeds",
+      "key_error": 2.9283913294264607e-08,
+      "max_matrix_error": 0.0001220703125,
+      "max_static_error": 0.0001220703125,
+      "invalid_drivers": [],
+      "passed": true
+    },
+    {
+      "frame": 601,
+      "case": "P09_hanging_vine",
+      "key_error": 7.96320648310811e-09,
+      "max_matrix_error": 8.296966552734375e-05,
+      "max_static_error": 6.103515625e-05,
+      "invalid_drivers": [],
+      "passed": true
+    },
+    {
+      "frame": 601,
+      "case": "P10_rushes",
+      "key_error": 6.324801321566653e-09,
+      "max_matrix_error": 9.1552734375e-05,
+      "max_static_error": 6.103515625e-05,
+      "invalid_drivers": [],
+      "passed": true
+    },
+    {
+      "frame": 601,
+      "case": "P11_hinged_oak",
+      "key_error": 5.864733282345824e-09,
+      "max_matrix_error": 3.0517578125e-05,
+      "max_static_error": 1.52587890625e-05,
+      "invalid_drivers": [],
+      "passed": true
+    },
+    {
+      "frame": 601,
+      "case": "P12_aspen",
+      "key_error": 2.8451086209191345e-09,
+      "max_matrix_error": 0.0001220703125,
+      "max_static_error": 0.0001220703125,
+      "invalid_drivers": [],
+      "passed": true
+    },
+    {
+      "frame": 601,
+      "case": "P13_fern",
+      "key_error": 6.44348449596599e-09,
+      "max_matrix_error": 3.814697265625e-05,
+      "max_static_error": 1.52587890625e-05,
+      "invalid_drivers": [],
+      "passed": true
+    },
+    {
+      "frame": 601,
+      "case": "P14_bouquet",
+      "key_error": 1.467905957897031e-08,
+      "max_matrix_error": 0.000540614128112793,
+      "max_static_error": 0.0001220703125,
+      "invalid_drivers": [],
+      "passed": true
+    },
+    {
+      "frame": 601,
+      "case": "P15_tiered_shrub",
+      "key_error": 1.634630952818128e-08,
+      "max_matrix_error": 0.0001220703125,
+      "max_static_error": 0.0001220703125,
+      "invalid_drivers": [],
+      "passed": true
+    },
+    {
+      "frame": 601,
+      "case": "P16_liana",
+      "key_error": 2.9453629424303074e-08,
+      "max_matrix_error": 6.103515625e-05,
+      "max_static_error": 6.103515625e-05,
+      "invalid_drivers": [],
+      "passed": true
+    },
+    {
+      "frame": 601,
+      "case": "P17_tendrils",
+      "key_error": 1.1921317044638613e-08,
+      "max_matrix_error": 0.0001220703125,
+      "max_static_error": 0.0001220703125,
+      "invalid_drivers": [],
+      "passed": true
+    },
+    {
+      "frame": 601,
+      "case": "P18_ground_cover",
+      "key_error": 1.4798603398258336e-08,
+      "max_matrix_error": 0.00012302398681640625,
+      "max_static_error": 0.0001220703125,
+      "invalid_drivers": [],
+      "passed": true
+    },
+    {
+      "frame": 601,
+      "case": "P19_leaf_vanes",
+      "key_error": 5.346626119617781e-08,
+      "max_matrix_error": 6.103515625e-05,
+      "max_static_error": 6.103515625e-05,
+      "invalid_drivers": [],
+      "passed": true
+    },
+    {
+      "frame": 601,
+      "case": "P20_friends_palm",
+      "key_error": 6.213852044023582e-09,
+      "max_matrix_error": 0.000102996826171875,
+      "max_static_error": 0.0001220703125,
+      "invalid_drivers": [],
+      "passed": true
+    },
+    {
+      "frame": 640,
+      "case": "P01_palm_tree",
+      "key_error": 3.4506359020136657e-09,
+      "max_matrix_error": 0.000125885009765625,
+      "max_static_error": 0.0001220703125,
+      "invalid_drivers": [],
+      "passed": true
+    },
+    {
+      "frame": 640,
+      "case": "P02_swordleaf_palm",
+      "key_error": 7.1466075834969445e-09,
+      "max_matrix_error": 9.918212890625e-05,
+      "max_static_error": 6.103515625e-05,
+      "invalid_drivers": [],
+      "passed": true
+    },
+    {
+      "frame": 640,
+      "case": "P03_bamboo",
+      "key_error": 1.3462129244690146e-08,
+      "max_matrix_error": 0.000102996826171875,
+      "max_static_error": 6.103515625e-05,
+      "invalid_drivers": [],
+      "passed": true
+    },
+    {
+      "frame": 640,
+      "case": "P04_flower_bed",
+      "key_error": 7.180464223210947e-09,
+      "max_matrix_error": 0.00011539459228515625,
+      "max_static_error": 6.103515625e-05,
+      "invalid_drivers": [],
+      "passed": true
+    },
+    {
+      "frame": 640,
+      "case": "P05_sunflower",
+      "key_error": 4.707690182126356e-09,
+      "max_matrix_error": 8.702278137207031e-05,
+      "max_static_error": 6.103515625e-05,
+      "invalid_drivers": [],
+      "passed": true
+    },
+    {
+      "frame": 640,
+      "case": "P06_pinwheel_daisies",
+      "key_error": 2.8950405628336284e-07,
+      "max_matrix_error": 6.103515625e-05,
+      "max_static_error": 6.103515625e-05,
+      "invalid_drivers": [],
+      "passed": true
+    },
+    {
+      "frame": 640,
+      "case": "P07_grass_meadow",
+      "key_error": 6.087837678414587e-09,
+      "max_matrix_error": 6.103515625e-05,
+      "max_static_error": 6.103515625e-05,
+      "invalid_drivers": [],
+      "passed": true
+    },
+    {
+      "frame": 640,
+      "case": "P08_reeds",
+      "key_error": 2.8516358718810864e-08,
+      "max_matrix_error": 0.000186920166015625,
+      "max_static_error": 0.0001220703125,
+      "invalid_drivers": [],
+      "passed": true
+    },
+    {
+      "frame": 640,
+      "case": "P09_hanging_vine",
+      "key_error": 2.289916173348061e-09,
+      "max_matrix_error": 0.0001010894775390625,
+      "max_static_error": 6.103515625e-05,
+      "invalid_drivers": [],
+      "passed": true
+    },
+    {
+      "frame": 640,
+      "case": "P10_rushes",
+      "key_error": 2.3628912715345507e-09,
+      "max_matrix_error": 9.1552734375e-05,
+      "max_static_error": 6.103515625e-05,
+      "invalid_drivers": [],
+      "passed": true
+    },
+    {
+      "frame": 640,
+      "case": "P11_hinged_oak",
+      "key_error": 1.6044055459185635e-09,
+      "max_matrix_error": 3.0517578125e-05,
+      "max_static_error": 1.52587890625e-05,
+      "invalid_drivers": [],
+      "passed": true
+    },
+    {
+      "frame": 640,
+      "case": "P12_aspen",
+      "key_error": 7.346598579482944e-09,
+      "max_matrix_error": 0.0001220703125,
+      "max_static_error": 0.0001220703125,
+      "invalid_drivers": [],
+      "passed": true
+    },
+    {
+      "frame": 640,
+      "case": "P13_fern",
+      "key_error": 3.427449116188974e-09,
+      "max_matrix_error": 3.0517578125e-05,
+      "max_static_error": 1.52587890625e-05,
+      "invalid_drivers": [],
+      "passed": true
+    },
+    {
+      "frame": 640,
+      "case": "P14_bouquet",
+      "key_error": 1.2408192529012041e-08,
+      "max_matrix_error": 0.0005425214767456055,
+      "max_static_error": 0.0001220703125,
+      "invalid_drivers": [],
+      "passed": true
+    },
+    {
+      "frame": 640,
+      "case": "P15_tiered_shrub",
+      "key_error": 1.066376703606764e-08,
+      "max_matrix_error": 0.0001220703125,
+      "max_static_error": 0.0001220703125,
+      "invalid_drivers": [],
+      "passed": true
+    },
+    {
+      "frame": 640,
+      "case": "P16_liana",
+      "key_error": 9.865675054676615e-09,
+      "max_matrix_error": 6.103515625e-05,
+      "max_static_error": 6.103515625e-05,
+      "invalid_drivers": [],
+      "passed": true
+    },
+    {
+      "frame": 640,
+      "case": "P17_tendrils",
+      "key_error": 1.4298169315196674e-08,
+      "max_matrix_error": 0.0001220703125,
+      "max_static_error": 0.0001220703125,
+      "invalid_drivers": [],
+      "passed": true
+    },
+    {
+      "frame": 640,
+      "case": "P18_ground_cover",
+      "key_error": 1.3622680539171483e-08,
+      "max_matrix_error": 0.0001220703125,
+      "max_static_error": 0.0001220703125,
+      "invalid_drivers": [],
+      "passed": true
+    },
+    {
+      "frame": 640,
+      "case": "P19_leaf_vanes",
+      "key_error": 5.180949025351822e-08,
+      "max_matrix_error": 4.1961669921875e-05,
+      "max_static_error": 6.103515625e-05,
+      "invalid_drivers": [],
+      "passed": true
+    },
+    {
+      "frame": 640,
+      "case": "P20_friends_palm",
+      "key_error": 1.2963821127698338e-09,
+      "max_matrix_error": 0.000102996826171875,
+      "max_static_error": 0.0001220703125,
+      "invalid_drivers": [],
+      "passed": true
+    },
+    {
+      "frame": 690,
+      "case": "P01_palm_tree",
+      "key_error": 2.946512367429932e-09,
+      "max_matrix_error": 0.00012159347534179688,
+      "max_static_error": 0.0001220703125,
+      "invalid_drivers": [],
+      "passed": true
+    },
+    {
+      "frame": 690,
+      "case": "P02_swordleaf_palm",
+      "key_error": 4.1752126755945085e-09,
+      "max_matrix_error": 6.103515625e-05,
+      "max_static_error": 6.103515625e-05,
+      "invalid_drivers": [],
+      "passed": true
+    },
+    {
+      "frame": 690,
+      "case": "P03_bamboo",
+      "key_error": 8.206510193620176e-09,
+      "max_matrix_error": 0.000102996826171875,
+      "max_static_error": 6.103515625e-05,
+      "invalid_drivers": [],
+      "passed": true
+    },
+    {
+      "frame": 690,
+      "case": "P04_flower_bed",
+      "key_error": 1.186030668121063e-08,
+      "max_matrix_error": 0.00011539459228515625,
+      "max_static_error": 6.103515625e-05,
+      "invalid_drivers": [],
+      "passed": true
+    },
+    {
+      "frame": 690,
+      "case": "P05_sunflower",
+      "key_error": 3.341557863745237e-09,
+      "max_matrix_error": 7.05718994140625e-05,
+      "max_static_error": 6.103515625e-05,
+      "invalid_drivers": [],
+      "passed": true
+    },
+    {
+      "frame": 690,
+      "case": "P06_pinwheel_daisies",
+      "key_error": 8.754305191871481e-07,
+      "max_matrix_error": 6.103515625e-05,
+      "max_static_error": 6.103515625e-05,
+      "invalid_drivers": [],
+      "passed": true
+    },
+    {
+      "frame": 690,
+      "case": "P07_grass_meadow",
+      "key_error": 5.533252522837984e-09,
+      "max_matrix_error": 6.103515625e-05,
+      "max_static_error": 6.103515625e-05,
+      "invalid_drivers": [],
+      "passed": true
+    },
+    {
+      "frame": 690,
+      "case": "P08_reeds",
+      "key_error": 2.823519362760152e-09,
+      "max_matrix_error": 0.0001373291015625,
+      "max_static_error": 0.0001220703125,
+      "invalid_drivers": [],
+      "passed": true
+    },
+    {
+      "frame": 690,
+      "case": "P09_hanging_vine",
+      "key_error": 7.0419239328600725e-09,
+      "max_matrix_error": 8.392333984375e-05,
+      "max_static_error": 6.103515625e-05,
+      "invalid_drivers": [],
+      "passed": true
+    },
+    {
+      "frame": 690,
+      "case": "P10_rushes",
+      "key_error": 6.412709196990107e-09,
+      "max_matrix_error": 9.918212890625e-05,
+      "max_static_error": 6.103515625e-05,
+      "invalid_drivers": [],
+      "passed": true
+    },
+    {
+      "frame": 690,
+      "case": "P11_hinged_oak",
+      "key_error": 5.006348474667632e-09,
+      "max_matrix_error": 1.52587890625e-05,
+      "max_static_error": 1.52587890625e-05,
+      "invalid_drivers": [],
+      "passed": true
+    },
+    {
+      "frame": 690,
+      "case": "P12_aspen",
+      "key_error": 6.666741353411609e-09,
+      "max_matrix_error": 0.0001220703125,
+      "max_static_error": 0.0001220703125,
+      "invalid_drivers": [],
+      "passed": true
+    },
+    {
+      "frame": 690,
+      "case": "P13_fern",
+      "key_error": 1.3071532911634876e-08,
+      "max_matrix_error": 3.0517578125e-05,
+      "max_static_error": 1.52587890625e-05,
+      "invalid_drivers": [],
+      "passed": true
+    },
+    {
+      "frame": 690,
+      "case": "P14_bouquet",
+      "key_error": 1.1499414059867874e-09,
+      "max_matrix_error": 0.0005433410406112671,
+      "max_static_error": 0.0001220703125,
+      "invalid_drivers": [],
+      "passed": true
+    },
+    {
+      "frame": 690,
+      "case": "P15_tiered_shrub",
+      "key_error": 9.337456918778742e-09,
+      "max_matrix_error": 0.0001220703125,
+      "max_static_error": 0.0001220703125,
+      "invalid_drivers": [],
+      "passed": true
+    },
+    {
+      "frame": 690,
+      "case": "P16_liana",
+      "key_error": 2.0902003572409456e-08,
+      "max_matrix_error": 5.91278076171875e-05,
+      "max_static_error": 6.103515625e-05,
+      "invalid_drivers": [],
+      "passed": true
+    },
+    {
+      "frame": 690,
+      "case": "P17_tendrils",
+      "key_error": 1.3200814941161099e-08,
+      "max_matrix_error": 0.0001239776611328125,
+      "max_static_error": 0.0001220703125,
+      "invalid_drivers": [],
+      "passed": true
+    },
+    {
+      "frame": 690,
+      "case": "P18_ground_cover",
+      "key_error": 6.704877555940847e-10,
+      "max_matrix_error": 0.00012302398681640625,
+      "max_static_error": 0.0001220703125,
+      "invalid_drivers": [],
+      "passed": true
+    },
+    {
+      "frame": 690,
+      "case": "P19_leaf_vanes",
+      "key_error": 2.9253185207522847e-08,
+      "max_matrix_error": 8.0108642578125e-05,
+      "max_static_error": 6.103515625e-05,
+      "invalid_drivers": [],
+      "passed": true
+    },
+    {
+      "frame": 690,
+      "case": "P20_friends_palm",
+      "key_error": 1.7061882878754986e-09,
+      "max_matrix_error": 0.00010251998901367188,
+      "max_static_error": 0.0001220703125,
+      "invalid_drivers": [],
+      "passed": true
+    },
+    {
+      "frame": 732,
+      "case": "P01_palm_tree",
+      "key_error": 1.5308366449473532e-09,
+      "max_matrix_error": 0.00017833709716796875,
+      "max_static_error": 0.0001220703125,
+      "invalid_drivers": [],
+      "passed": true
+    },
+    {
+      "frame": 732,
+      "case": "P02_swordleaf_palm",
+      "key_error": 6.731795121339701e-10,
+      "max_matrix_error": 9.1552734375e-05,
+      "max_static_error": 6.103515625e-05,
+      "invalid_drivers": [],
+      "passed": true
+    },
+    {
+      "frame": 732,
+      "case": "P03_bamboo",
+      "key_error": 2.9499340886696146e-09,
+      "max_matrix_error": 0.000102996826171875,
+      "max_static_error": 6.103515625e-05,
+      "invalid_drivers": [],
+      "passed": true
+    },
+    {
+      "frame": 732,
+      "case": "P04_flower_bed",
+      "key_error": 2.218997589842342e-10,
+      "max_matrix_error": 0.00011539459228515625,
+      "max_static_error": 6.103515625e-05,
+      "invalid_drivers": [],
+      "passed": true
+    },
+    {
+      "frame": 732,
+      "case": "P05_sunflower",
+      "key_error": 7.484484199071773e-09,
+      "max_matrix_error": 8.189678192138672e-05,
+      "max_static_error": 6.103515625e-05,
+      "invalid_drivers": [],
+      "passed": true
+    },
+    {
+      "frame": 732,
+      "case": "P06_pinwheel_daisies",
+      "key_error": 9.59963436741873e-07,
+      "max_matrix_error": 6.103515625e-05,
+      "max_static_error": 6.103515625e-05,
+      "invalid_drivers": [],
+      "passed": true
+    },
+    {
+      "frame": 732,
+      "case": "P07_grass_meadow",
+      "key_error": 1.0281641597137403e-10,
+      "max_matrix_error": 6.103515625e-05,
+      "max_static_error": 6.103515625e-05,
+      "invalid_drivers": [],
+      "passed": true
+    },
+    {
+      "frame": 732,
+      "case": "P08_reeds",
+      "key_error": 1.925965414928399e-09,
+      "max_matrix_error": 0.000225067138671875,
+      "max_static_error": 0.0001220703125,
+      "invalid_drivers": [],
+      "passed": true
+    },
+    {
+      "frame": 732,
+      "case": "P09_hanging_vine",
+      "key_error": 3.052190999941473e-09,
+      "max_matrix_error": 0.000133514404296875,
+      "max_static_error": 6.103515625e-05,
+      "invalid_drivers": [],
+      "passed": true
+    },
+    {
+      "frame": 732,
+      "case": "P10_rushes",
+      "key_error": 1.6684034084835098e-09,
+      "max_matrix_error": 9.1552734375e-05,
+      "max_static_error": 6.103515625e-05,
+      "invalid_drivers": [],
+      "passed": true
+    },
+    {
+      "frame": 732,
+      "case": "P11_hinged_oak",
+      "key_error": 7.983747066231395e-10,
+      "max_matrix_error": 1.52587890625e-05,
+      "max_static_error": 1.52587890625e-05,
+      "invalid_drivers": [],
+      "passed": true
+    },
+    {
+      "frame": 732,
+      "case": "P12_aspen",
+      "key_error": 3.6421626409266494e-09,
+      "max_matrix_error": 0.0001220703125,
+      "max_static_error": 0.0001220703125,
+      "invalid_drivers": [],
+      "passed": true
+    },
+    {
+      "frame": 732,
+      "case": "P13_fern",
+      "key_error": 2.14173193069378e-10,
+      "max_matrix_error": 2.288818359375e-05,
+      "max_static_error": 1.52587890625e-05,
+      "invalid_drivers": [],
+      "passed": true
+    },
+    {
+      "frame": 732,
+      "case": "P14_bouquet",
+      "key_error": 8.3126980993109e-10,
+      "max_matrix_error": 0.0005528652109205723,
+      "max_static_error": 0.0001220703125,
+      "invalid_drivers": [],
+      "passed": true
+    },
+    {
+      "frame": 732,
+      "case": "P15_tiered_shrub",
+      "key_error": 9.42303030049274e-09,
+      "max_matrix_error": 0.0001220703125,
+      "max_static_error": 0.0001220703125,
+      "invalid_drivers": [],
+      "passed": true
+    },
+    {
+      "frame": 732,
+      "case": "P16_liana",
+      "key_error": 1.4033892825615624e-08,
+      "max_matrix_error": 6.103515625e-05,
+      "max_static_error": 6.103515625e-05,
+      "invalid_drivers": [],
+      "passed": true
+    },
+    {
+      "frame": 732,
+      "case": "P17_tendrils",
+      "key_error": 3.551823973824142e-09,
+      "max_matrix_error": 0.00012302398681640625,
+      "max_static_error": 0.0001220703125,
+      "invalid_drivers": [],
+      "passed": true
+    },
+    {
+      "frame": 732,
+      "case": "P18_ground_cover",
+      "key_error": 1.3606872139443338e-11,
+      "max_matrix_error": 0.00012302398681640625,
+      "max_static_error": 0.0001220703125,
+      "invalid_drivers": [],
+      "passed": true
+    },
+    {
+      "frame": 732,
+      "case": "P19_leaf_vanes",
+      "key_error": 5.9217740044914535e-08,
+      "max_matrix_error": 5.340576171875e-05,
+      "max_static_error": 6.103515625e-05,
+      "invalid_drivers": [],
+      "passed": true
+    },
+    {
+      "frame": 732,
+      "case": "P20_friends_palm",
+      "key_error": 1.0641365913444112e-09,
+      "max_matrix_error": 0.000102996826171875,
+      "max_static_error": 0.0001220703125,
+      "invalid_drivers": [],
+      "passed": true
+    },
+    {
+      "frame": 752,
+      "case": "P01_palm_tree",
+      "key_error": 0.0,
+      "max_matrix_error": 0.0001220703125,
+      "max_static_error": 0.0001220703125,
+      "invalid_drivers": [],
+      "passed": true
+    },
+    {
+      "frame": 752,
+      "case": "P02_swordleaf_palm",
+      "key_error": 0.0,
+      "max_matrix_error": 9.918212890625e-05,
+      "max_static_error": 6.103515625e-05,
+      "invalid_drivers": [],
+      "passed": true
+    },
+    {
+      "frame": 752,
+      "case": "P03_bamboo",
+      "key_error": 0.0,
+      "max_matrix_error": 0.000102996826171875,
+      "max_static_error": 6.103515625e-05,
+      "invalid_drivers": [],
+      "passed": true
+    },
+    {
+      "frame": 752,
+      "case": "P04_flower_bed",
+      "key_error": 0.0,
+      "max_matrix_error": 0.00011539459228515625,
+      "max_static_error": 6.103515625e-05,
+      "invalid_drivers": [],
+      "passed": true
+    },
+    {
+      "frame": 752,
+      "case": "P05_sunflower",
+      "key_error": 0.0,
+      "max_matrix_error": 6.103515625e-05,
+      "max_static_error": 6.103515625e-05,
+      "invalid_drivers": [],
+      "passed": true
+    },
+    {
+      "frame": 752,
+      "case": "P06_pinwheel_daisies",
+      "key_error": 9.218595806714802e-07,
+      "max_matrix_error": 6.103515625e-05,
+      "max_static_error": 6.103515625e-05,
+      "invalid_drivers": [],
+      "passed": true
+    },
+    {
+      "frame": 752,
+      "case": "P07_grass_meadow",
+      "key_error": 0.0,
+      "max_matrix_error": 6.103515625e-05,
+      "max_static_error": 6.103515625e-05,
+      "invalid_drivers": [],
+      "passed": true
+    },
+    {
+      "frame": 752,
+      "case": "P08_reeds",
+      "key_error": 0.0,
+      "max_matrix_error": 0.0001220703125,
+      "max_static_error": 0.0001220703125,
+      "invalid_drivers": [],
+      "passed": true
+    },
+    {
+      "frame": 752,
+      "case": "P09_hanging_vine",
+      "key_error": 0.0,
+      "max_matrix_error": 6.103515625e-05,
+      "max_static_error": 6.103515625e-05,
+      "invalid_drivers": [],
+      "passed": true
+    },
+    {
+      "frame": 752,
+      "case": "P10_rushes",
+      "key_error": 0.0,
+      "max_matrix_error": 6.103515625e-05,
+      "max_static_error": 6.103515625e-05,
+      "invalid_drivers": [],
+      "passed": true
+    },
+    {
+      "frame": 752,
+      "case": "P11_hinged_oak",
+      "key_error": 0.0,
+      "max_matrix_error": 1.52587890625e-05,
+      "max_static_error": 1.52587890625e-05,
+      "invalid_drivers": [],
+      "passed": true
+    },
+    {
+      "frame": 752,
+      "case": "P12_aspen",
+      "key_error": 0.0,
+      "max_matrix_error": 0.0001220703125,
+      "max_static_error": 0.0001220703125,
+      "invalid_drivers": [],
+      "passed": true
+    },
+    {
+      "frame": 752,
+      "case": "P13_fern",
+      "key_error": 0.0,
+      "max_matrix_error": 1.52587890625e-05,
+      "max_static_error": 1.52587890625e-05,
+      "invalid_drivers": [],
+      "passed": true
+    },
+    {
+      "frame": 752,
+      "case": "P14_bouquet",
+      "key_error": 0.0,
+      "max_matrix_error": 0.0005527351750060916,
+      "max_static_error": 0.0001220703125,
+      "invalid_drivers": [],
+      "passed": true
+    },
+    {
+      "frame": 752,
+      "case": "P15_tiered_shrub",
+      "key_error": 0.0,
+      "max_matrix_error": 0.0001220703125,
+      "max_static_error": 0.0001220703125,
+      "invalid_drivers": [],
+      "passed": true
+    },
+    {
+      "frame": 752,
+      "case": "P16_liana",
+      "key_error": 0.0,
+      "max_matrix_error": 6.103515625e-05,
+      "max_static_error": 6.103515625e-05,
+      "invalid_drivers": [],
+      "passed": true
+    },
+    {
+      "frame": 752,
+      "case": "P17_tendrils",
+      "key_error": 0.0,
+      "max_matrix_error": 0.0001220703125,
+      "max_static_error": 0.0001220703125,
+      "invalid_drivers": [],
+      "passed": true
+    },
+    {
+      "frame": 752,
+      "case": "P18_ground_cover",
+      "key_error": 0.0,
+      "max_matrix_error": 0.0001220703125,
+      "max_static_error": 0.0001220703125,
+      "invalid_drivers": [],
+      "passed": true
+    },
+    {
+      "frame": 752,
+      "case": "P19_leaf_vanes",
+      "key_error": 0.0,
+      "max_matrix_error": 8.392333984375e-05,
+      "max_static_error": 6.103515625e-05,
+      "invalid_drivers": [],
+      "passed": true
+    },
+    {
+      "frame": 752,
+      "case": "P20_friends_palm",
+      "key_error": 0.0,
+      "max_matrix_error": 0.000102996826171875,
+      "max_static_error": 0.0001220703125,
+      "invalid_drivers": [],
+      "passed": true
+    }
+  ],
+  "coverage": "Plans verified at build (apply_plan sweep of every control's min/mid/max and a combined sample); at sampled timeline frames (inside every window and in the gaps) the NLA-evaluated controller equals the clip library and every rig matches the portable evaluator root-relative; the WIND controller equals wind_clips.wind at x = 0; every case's motion envelope stays inside its grid slot. No collision test here (see scripts/blender/check_plants_clearance.py)."
+}

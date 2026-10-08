@@ -1,0 +1,2136 @@
+{
+  "version": 1,
+  "name": "plant_01_palm_tree",
+  "status": "ready",
+  "source": {
+    "version": 1,
+    "path": "/Users/captain/workspaces/workspace-ai/ldraw-mecha/output/plants/P01_palm_tree/source/scenario.mpd",
+    "sha256": "c694bceba7d493f644e2589510b714c7e1d4928b04d7542a0823df05aa81b662",
+    "section": "p01_palm_tree.ldr",
+    "description": "Plant wind case P01_palm_tree Ball-chain palm",
+    "author": "ldraw-mecha scripts/build_plants.py",
+    "dependencies": {
+      "/Users/captain/workspaces/workspace-ai/ldraw-mecha/output/plants/P01_palm_tree/source/scenario.mpd": "c694bceba7d493f644e2589510b714c7e1d4928b04d7542a0823df05aa81b662"
+    },
+    "nodes": [
+      {
+        "id": "0",
+        "parent": "root",
+        "ref": "3958.dat",
+        "kind": "part",
+        "embedded": false,
+        "section": "p01_palm_tree.ldr",
+        "index": 0,
+        "line": 8,
+        "colour": "28",
+        "effective_colour": "28",
+        "local": [
+          [
+            1.0,
+            0.0,
+            0.0,
+            10.0
+          ],
+          [
+            0.0,
+            1.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            1.0,
+            10.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "world": [
+          [
+            1.0,
+            0.0,
+            0.0,
+            10.0
+          ],
+          [
+            0.0,
+            1.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            1.0,
+            10.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "description": "Plate  6 x  6"
+      },
+      {
+        "id": "1",
+        "parent": "root",
+        "ref": "2563a.dat",
+        "kind": "part",
+        "embedded": false,
+        "section": "p01_palm_tree.ldr",
+        "index": 1,
+        "line": 10,
+        "colour": "70",
+        "effective_colour": "70",
+        "local": [
+          [
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            1.0,
+            0.0,
+            -8.0
+          ],
+          [
+            0.0,
+            0.0,
+            1.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "world": [
+          [
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            1.0,
+            0.0,
+            -8.0
+          ],
+          [
+            0.0,
+            0.0,
+            1.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "description": "Plant Tree Palm Base"
+      },
+      {
+        "id": "2",
+        "parent": "root",
+        "ref": "2536a.dat",
+        "kind": "part",
+        "embedded": false,
+        "section": "p01_palm_tree.ldr",
+        "index": 2,
+        "line": 12,
+        "colour": "70",
+        "effective_colour": "70",
+        "local": [
+          [
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.966,
+            0.259,
+            -42.898
+          ],
+          [
+            0.0,
+            -0.259,
+            0.966,
+            0.777
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "world": [
+          [
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.966,
+            0.259,
+            -42.898
+          ],
+          [
+            0.0,
+            -0.259,
+            0.966,
+            0.777
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "description": "Plant Tree Palm Trunk with Long Indented Connector"
+      },
+      {
+        "id": "3",
+        "parent": "root",
+        "ref": "2536a.dat",
+        "kind": "part",
+        "embedded": false,
+        "section": "p01_palm_tree.ldr",
+        "index": 3,
+        "line": 14,
+        "colour": "70",
+        "effective_colour": "70",
+        "local": [
+          [
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.993,
+            0.12,
+            -76.789
+          ],
+          [
+            0.0,
+            -0.12,
+            0.993,
+            9.425
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "world": [
+          [
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.993,
+            0.12,
+            -76.789
+          ],
+          [
+            0.0,
+            -0.12,
+            0.993,
+            9.425
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "description": "Plant Tree Palm Trunk with Long Indented Connector"
+      },
+      {
+        "id": "4",
+        "parent": "root",
+        "ref": "2536a.dat",
+        "kind": "part",
+        "embedded": false,
+        "section": "p01_palm_tree.ldr",
+        "index": 4,
+        "line": 16,
+        "colour": "70",
+        "effective_colour": "70",
+        "local": [
+          [
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            1.0,
+            0.021,
+            -111.565
+          ],
+          [
+            0.0,
+            -0.021,
+            1.0,
+            13.328
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "world": [
+          [
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            1.0,
+            0.021,
+            -111.565
+          ],
+          [
+            0.0,
+            -0.021,
+            1.0,
+            13.328
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "description": "Plant Tree Palm Trunk with Long Indented Connector"
+      },
+      {
+        "id": "5",
+        "parent": "root",
+        "ref": "2536a.dat",
+        "kind": "part",
+        "embedded": false,
+        "section": "p01_palm_tree.ldr",
+        "index": 5,
+        "line": 18,
+        "colour": "70",
+        "effective_colour": "70",
+        "local": [
+          [
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.993,
+            -0.12,
+            -146.544
+          ],
+          [
+            0.0,
+            0.12,
+            0.993,
+            13.64
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "world": [
+          [
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.993,
+            -0.12,
+            -146.544
+          ],
+          [
+            0.0,
+            0.12,
+            0.993,
+            13.64
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "description": "Plant Tree Palm Trunk with Long Indented Connector"
+      },
+      {
+        "id": "6",
+        "parent": "root",
+        "ref": "2536a.dat",
+        "kind": "part",
+        "embedded": false,
+        "section": "p01_palm_tree.ldr",
+        "index": 6,
+        "line": 20,
+        "colour": "70",
+        "effective_colour": "70",
+        "local": [
+          [
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.966,
+            -0.259,
+            -181.218
+          ],
+          [
+            0.0,
+            0.259,
+            0.966,
+            9.023
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "world": [
+          [
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.966,
+            -0.259,
+            -181.218
+          ],
+          [
+            0.0,
+            0.259,
+            0.966,
+            9.023
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "description": "Plant Tree Palm Trunk with Long Indented Connector"
+      },
+      {
+        "id": "7",
+        "parent": "root",
+        "ref": "2536a.dat",
+        "kind": "part",
+        "embedded": false,
+        "section": "p01_palm_tree.ldr",
+        "index": 7,
+        "line": 22,
+        "colour": "70",
+        "effective_colour": "70",
+        "local": [
+          [
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.906,
+            -0.423,
+            -214.848
+          ],
+          [
+            0.0,
+            0.423,
+            0.906,
+            -0.534
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "world": [
+          [
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.906,
+            -0.423,
+            -214.848
+          ],
+          [
+            0.0,
+            0.423,
+            0.906,
+            -0.534
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "description": "Plant Tree Palm Trunk with Long Indented Connector"
+      },
+      {
+        "id": "8",
+        "parent": "root",
+        "ref": "2566b.dat",
+        "kind": "part",
+        "embedded": false,
+        "section": "p01_palm_tree.ldr",
+        "index": 8,
+        "line": 24,
+        "colour": "70",
+        "effective_colour": "70",
+        "local": [
+          [
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.906,
+            -0.423,
+            -251.088
+          ],
+          [
+            0.0,
+            0.423,
+            0.906,
+            -17.454
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "world": [
+          [
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.906,
+            -0.423,
+            -251.088
+          ],
+          [
+            0.0,
+            0.423,
+            0.906,
+            -17.454
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "description": "Plant Tree Palm Top"
+      },
+      {
+        "id": "9",
+        "parent": "root",
+        "ref": "2518.dat",
+        "kind": "part",
+        "embedded": false,
+        "section": "p01_palm_tree.ldr",
+        "index": 9,
+        "line": 26,
+        "colour": "2",
+        "effective_colour": "2",
+        "local": [
+          [
+            0.0,
+            0.0,
+            1.0,
+            -10.0
+          ],
+          [
+            0.423,
+            0.906,
+            0.0,
+            -265.588
+          ],
+          [
+            -0.906,
+            0.423,
+            0.0,
+            -24.216
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "world": [
+          [
+            0.0,
+            0.0,
+            1.0,
+            -10.0
+          ],
+          [
+            0.423,
+            0.906,
+            0.0,
+            -265.588
+          ],
+          [
+            -0.906,
+            0.423,
+            0.0,
+            -24.216
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "description": "Plant Tree Palm Leaf Large"
+      },
+      {
+        "id": "10",
+        "parent": "root",
+        "ref": "2518.dat",
+        "kind": "part",
+        "embedded": false,
+        "section": "p01_palm_tree.ldr",
+        "index": 10,
+        "line": 28,
+        "colour": "2",
+        "effective_colour": "2",
+        "local": [
+          [
+            -1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.906,
+            0.423,
+            -262.564
+          ],
+          [
+            0.0,
+            0.423,
+            -0.906,
+            -11.772
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "world": [
+          [
+            -1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.906,
+            0.423,
+            -262.564
+          ],
+          [
+            0.0,
+            0.423,
+            -0.906,
+            -11.772
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "description": "Plant Tree Palm Leaf Large"
+      },
+      {
+        "id": "11",
+        "parent": "root",
+        "ref": "2518.dat",
+        "kind": "part",
+        "embedded": false,
+        "section": "p01_palm_tree.ldr",
+        "index": 11,
+        "line": 30,
+        "colour": "2",
+        "effective_colour": "2",
+        "local": [
+          [
+            0.0,
+            0.0,
+            -1.0,
+            10.0
+          ],
+          [
+            -0.423,
+            0.906,
+            0.0,
+            -265.588
+          ],
+          [
+            0.906,
+            0.423,
+            0.0,
+            -24.216
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "world": [
+          [
+            0.0,
+            0.0,
+            -1.0,
+            10.0
+          ],
+          [
+            -0.423,
+            0.906,
+            0.0,
+            -265.588
+          ],
+          [
+            0.906,
+            0.423,
+            0.0,
+            -24.216
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "description": "Plant Tree Palm Leaf Large"
+      },
+      {
+        "id": "12",
+        "parent": "root",
+        "ref": "2518.dat",
+        "kind": "part",
+        "embedded": false,
+        "section": "p01_palm_tree.ldr",
+        "index": 12,
+        "line": 32,
+        "colour": "2",
+        "effective_colour": "2",
+        "local": [
+          [
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.906,
+            -0.423,
+            -254.112
+          ],
+          [
+            0.0,
+            0.423,
+            0.906,
+            -29.898
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "world": [
+          [
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.906,
+            -0.423,
+            -254.112
+          ],
+          [
+            0.0,
+            0.423,
+            0.906,
+            -29.898
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "description": "Plant Tree Palm Leaf Large"
+      },
+      {
+        "id": "13",
+        "parent": "root",
+        "ref": "4032a.dat",
+        "kind": "part",
+        "embedded": false,
+        "section": "p01_palm_tree.ldr",
+        "index": 13,
+        "line": 34,
+        "colour": "2",
+        "effective_colour": "2",
+        "local": [
+          [
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.906,
+            -0.423,
+            -272.839
+          ],
+          [
+            0.0,
+            0.423,
+            0.906,
+            -27.597
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "world": [
+          [
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.906,
+            -0.423,
+            -272.839
+          ],
+          [
+            0.0,
+            0.423,
+            0.906,
+            -27.597
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "description": "Plate  2 x  2 Round with Axlehole"
+      },
+      {
+        "id": "14",
+        "parent": "root",
+        "ref": "3062b.dat",
+        "kind": "part",
+        "embedded": false,
+        "section": "p01_palm_tree.ldr",
+        "index": 14,
+        "line": 36,
+        "colour": "2",
+        "effective_colour": "2",
+        "local": [
+          [
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.906,
+            -0.423,
+            -294.59
+          ],
+          [
+            0.0,
+            0.423,
+            0.906,
+            -37.74
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "world": [
+          [
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.906,
+            -0.423,
+            -294.59
+          ],
+          [
+            0.0,
+            0.423,
+            0.906,
+            -37.74
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "description": "Brick  1 x  1 Round with Hollow Stud"
+      }
+    ],
+    "diagnostics": [
+      {
+        "code": "model.non_orthonormal_matrix",
+        "message": "transformation matrix is not orthonormal (scaled or sheared part)",
+        "severity": "warning",
+        "path": "/Users/captain/workspaces/workspace-ai/ldraw-mecha/output/plants/P01_palm_tree/source/scenario.mpd",
+        "section": "p01_palm_tree.ldr",
+        "line_number": 12,
+        "offending_value": "((1, 0, 0),\n (0, 0.966, 0.259),\n (0, -0.259, 0.966))",
+        "suggestions": [],
+        "cause": null
+      },
+      {
+        "code": "model.non_orthonormal_matrix",
+        "message": "transformation matrix is not orthonormal (scaled or sheared part)",
+        "severity": "warning",
+        "path": "/Users/captain/workspaces/workspace-ai/ldraw-mecha/output/plants/P01_palm_tree/source/scenario.mpd",
+        "section": "p01_palm_tree.ldr",
+        "line_number": 14,
+        "offending_value": "((1, 0, 0),\n (0, 0.993, 0.12),\n (0, -0.12, 0.993))",
+        "suggestions": [],
+        "cause": null
+      },
+      {
+        "code": "model.non_orthonormal_matrix",
+        "message": "transformation matrix is not orthonormal (scaled or sheared part)",
+        "severity": "warning",
+        "path": "/Users/captain/workspaces/workspace-ai/ldraw-mecha/output/plants/P01_palm_tree/source/scenario.mpd",
+        "section": "p01_palm_tree.ldr",
+        "line_number": 16,
+        "offending_value": "((1, 0, 0),\n (0, 1, 0.021),\n (0, -0.021, 1))",
+        "suggestions": [],
+        "cause": null
+      },
+      {
+        "code": "model.non_orthonormal_matrix",
+        "message": "transformation matrix is not orthonormal (scaled or sheared part)",
+        "severity": "warning",
+        "path": "/Users/captain/workspaces/workspace-ai/ldraw-mecha/output/plants/P01_palm_tree/source/scenario.mpd",
+        "section": "p01_palm_tree.ldr",
+        "line_number": 18,
+        "offending_value": "((1, 0, 0),\n (0, 0.993, -0.12),\n (0, 0.12, 0.993))",
+        "suggestions": [],
+        "cause": null
+      },
+      {
+        "code": "model.non_orthonormal_matrix",
+        "message": "transformation matrix is not orthonormal (scaled or sheared part)",
+        "severity": "warning",
+        "path": "/Users/captain/workspaces/workspace-ai/ldraw-mecha/output/plants/P01_palm_tree/source/scenario.mpd",
+        "section": "p01_palm_tree.ldr",
+        "line_number": 20,
+        "offending_value": "((1, 0, 0),\n (0, 0.966, -0.259),\n (0, 0.259, 0.966))",
+        "suggestions": [],
+        "cause": null
+      },
+      {
+        "code": "model.non_orthonormal_matrix",
+        "message": "transformation matrix is not orthonormal (scaled or sheared part)",
+        "severity": "warning",
+        "path": "/Users/captain/workspaces/workspace-ai/ldraw-mecha/output/plants/P01_palm_tree/source/scenario.mpd",
+        "section": "p01_palm_tree.ldr",
+        "line_number": 22,
+        "offending_value": "((1, 0, 0),\n (0, 0.906, -0.423),\n (0, 0.423, 0.906))",
+        "suggestions": [],
+        "cause": null
+      },
+      {
+        "code": "model.non_orthonormal_matrix",
+        "message": "transformation matrix is not orthonormal (scaled or sheared part)",
+        "severity": "warning",
+        "path": "/Users/captain/workspaces/workspace-ai/ldraw-mecha/output/plants/P01_palm_tree/source/scenario.mpd",
+        "section": "p01_palm_tree.ldr",
+        "line_number": 24,
+        "offending_value": "((1, 0, 0),\n (0, 0.906, -0.423),\n (0, 0.423, 0.906))",
+        "suggestions": [],
+        "cause": null
+      },
+      {
+        "code": "model.non_orthonormal_matrix",
+        "message": "transformation matrix is not orthonormal (scaled or sheared part)",
+        "severity": "warning",
+        "path": "/Users/captain/workspaces/workspace-ai/ldraw-mecha/output/plants/P01_palm_tree/source/scenario.mpd",
+        "section": "p01_palm_tree.ldr",
+        "line_number": 26,
+        "offending_value": "((0, 0, 1),\n (0.423, 0.906, 0),\n (-0.906, 0.423, 0))",
+        "suggestions": [],
+        "cause": null
+      },
+      {
+        "code": "model.non_orthonormal_matrix",
+        "message": "transformation matrix is not orthonormal (scaled or sheared part)",
+        "severity": "warning",
+        "path": "/Users/captain/workspaces/workspace-ai/ldraw-mecha/output/plants/P01_palm_tree/source/scenario.mpd",
+        "section": "p01_palm_tree.ldr",
+        "line_number": 28,
+        "offending_value": "((-1, 0, 0),\n (0, 0.906, 0.423),\n (0, 0.423, -0.906))",
+        "suggestions": [],
+        "cause": null
+      },
+      {
+        "code": "model.non_orthonormal_matrix",
+        "message": "transformation matrix is not orthonormal (scaled or sheared part)",
+        "severity": "warning",
+        "path": "/Users/captain/workspaces/workspace-ai/ldraw-mecha/output/plants/P01_palm_tree/source/scenario.mpd",
+        "section": "p01_palm_tree.ldr",
+        "line_number": 30,
+        "offending_value": "((0, 0, -1),\n (-0.423, 0.906, 0),\n (0.906, 0.423, 0))",
+        "suggestions": [],
+        "cause": null
+      },
+      {
+        "code": "model.non_orthonormal_matrix",
+        "message": "transformation matrix is not orthonormal (scaled or sheared part)",
+        "severity": "warning",
+        "path": "/Users/captain/workspaces/workspace-ai/ldraw-mecha/output/plants/P01_palm_tree/source/scenario.mpd",
+        "section": "p01_palm_tree.ldr",
+        "line_number": 32,
+        "offending_value": "((1, 0, 0),\n (0, 0.906, -0.423),\n (0, 0.423, 0.906))",
+        "suggestions": [],
+        "cause": null
+      },
+      {
+        "code": "model.non_orthonormal_matrix",
+        "message": "transformation matrix is not orthonormal (scaled or sheared part)",
+        "severity": "warning",
+        "path": "/Users/captain/workspaces/workspace-ai/ldraw-mecha/output/plants/P01_palm_tree/source/scenario.mpd",
+        "section": "p01_palm_tree.ldr",
+        "line_number": 34,
+        "offending_value": "((1, 0, 0),\n (0, 0.906, -0.423),\n (0, 0.423, 0.906))",
+        "suggestions": [],
+        "cause": null
+      },
+      {
+        "code": "model.non_orthonormal_matrix",
+        "message": "transformation matrix is not orthonormal (scaled or sheared part)",
+        "severity": "warning",
+        "path": "/Users/captain/workspaces/workspace-ai/ldraw-mecha/output/plants/P01_palm_tree/source/scenario.mpd",
+        "section": "p01_palm_tree.ldr",
+        "line_number": 36,
+        "offending_value": "((1, 0, 0),\n (0, 0.906, -0.423),\n (0, 0.423, 0.906))",
+        "suggestions": [],
+        "cause": null
+      }
+    ],
+    "coordinate_space": "selected section, LDU, -Y up"
+  },
+  "controls": {
+    "bend_1": {
+      "default": 0,
+      "min": -0.2,
+      "max": 0.2,
+      "unit": "radian",
+      "description": "Trunk segment 1 on its ball joint (real, 1 of 2 tilts); + leans it downwind (+X)"
+    },
+    "bend_2": {
+      "default": 0,
+      "min": -0.2,
+      "max": 0.2,
+      "unit": "radian",
+      "description": "Trunk segment 2 on its ball joint (real, 1 of 2 tilts); + leans it downwind (+X)"
+    },
+    "bend_3": {
+      "default": 0,
+      "min": -0.2,
+      "max": 0.2,
+      "unit": "radian",
+      "description": "Trunk segment 3 on its ball joint (real, 1 of 2 tilts); + leans it downwind (+X)"
+    },
+    "bend_4": {
+      "default": 0,
+      "min": -0.2,
+      "max": 0.2,
+      "unit": "radian",
+      "description": "Trunk segment 4 on its ball joint (real, 1 of 2 tilts); + leans it downwind (+X)"
+    },
+    "bend_5": {
+      "default": 0,
+      "min": -0.2,
+      "max": 0.2,
+      "unit": "radian",
+      "description": "Trunk segment 5 on its ball joint (real, 1 of 2 tilts); + leans it downwind (+X)"
+    },
+    "bend_6": {
+      "default": 0,
+      "min": -0.2,
+      "max": 0.2,
+      "unit": "radian",
+      "description": "Trunk segment 6 on its ball joint (real, 1 of 2 tilts); + leans it downwind (+X)"
+    },
+    "crown_twist": {
+      "default": 0,
+      "min": -0.6,
+      "max": 0.6,
+      "unit": "radian",
+      "description": "Crown on the top segment's spike (real); right-hand about up (-Y): + turns +X toward +Z about the trunk"
+    },
+    "leaf_front": {
+      "default": 0,
+      "min": -0.17,
+      "max": 0.17,
+      "unit": "radian",
+      "description": "Leaf front at its root (flex_approx); + lifts the tip"
+    },
+    "leaf_upwind": {
+      "default": 0,
+      "min": -0.17,
+      "max": 0.17,
+      "unit": "radian",
+      "description": "Leaf upwind at its root (flex_approx); + lifts the tip"
+    },
+    "leaf_back": {
+      "default": 0,
+      "min": -0.17,
+      "max": 0.17,
+      "unit": "radian",
+      "description": "Leaf back at its root (flex_approx); + lifts the tip"
+    },
+    "leaf_downwind": {
+      "default": 0,
+      "min": -0.17,
+      "max": 0.17,
+      "unit": "radian",
+      "description": "Leaf downwind at its root (flex_approx); + lifts the tip"
+    }
+  },
+  "signals": {
+    "bend_1_angle": {
+      "expression": "a",
+      "variables": {
+        "a": "control:bend_1"
+      }
+    },
+    "bend_2_angle": {
+      "expression": "a",
+      "variables": {
+        "a": "control:bend_2"
+      }
+    },
+    "bend_3_angle": {
+      "expression": "a",
+      "variables": {
+        "a": "control:bend_3"
+      }
+    },
+    "bend_4_angle": {
+      "expression": "a",
+      "variables": {
+        "a": "control:bend_4"
+      }
+    },
+    "bend_5_angle": {
+      "expression": "a",
+      "variables": {
+        "a": "control:bend_5"
+      }
+    },
+    "bend_6_angle": {
+      "expression": "a",
+      "variables": {
+        "a": "control:bend_6"
+      }
+    },
+    "crown_twist_angle": {
+      "expression": "a",
+      "variables": {
+        "a": "control:crown_twist"
+      }
+    },
+    "leaf_front_angle": {
+      "expression": "a",
+      "variables": {
+        "a": "control:leaf_front"
+      }
+    },
+    "leaf_upwind_angle": {
+      "expression": "a",
+      "variables": {
+        "a": "control:leaf_upwind"
+      }
+    },
+    "leaf_back_angle": {
+      "expression": "a",
+      "variables": {
+        "a": "control:leaf_back"
+      }
+    },
+    "leaf_downwind_angle": {
+      "expression": "a",
+      "variables": {
+        "a": "control:leaf_downwind"
+      }
+    }
+  },
+  "bodies": {
+    "seg1": {
+      "instances": [
+        "2"
+      ],
+      "kind": "revolute",
+      "origin": [
+        0.0,
+        -40.0,
+        0.0
+      ],
+      "axis": [
+        0.0,
+        0.0,
+        1.0
+      ],
+      "signal": "bend_1_angle"
+    },
+    "seg2": {
+      "instances": [
+        "3"
+      ],
+      "kind": "revolute",
+      "origin": [
+        0.0,
+        -73.81,
+        9.065
+      ],
+      "axis": [
+        0.0,
+        0.0,
+        1.0
+      ],
+      "signal": "bend_2_angle",
+      "parent": "seg1"
+    },
+    "seg3": {
+      "instances": [
+        "4"
+      ],
+      "kind": "revolute",
+      "origin": [
+        0.0,
+        -108.565,
+        13.265
+      ],
+      "axis": [
+        0.0,
+        0.0,
+        1.0
+      ],
+      "signal": "bend_3_angle",
+      "parent": "seg2"
+    },
+    "seg4": {
+      "instances": [
+        "5"
+      ],
+      "kind": "revolute",
+      "origin": [
+        0.0,
+        -143.565,
+        14.0
+      ],
+      "axis": [
+        0.0,
+        0.0,
+        1.0
+      ],
+      "signal": "bend_4_angle",
+      "parent": "seg3"
+    },
+    "seg5": {
+      "instances": [
+        "6"
+      ],
+      "kind": "revolute",
+      "origin": [
+        0.0,
+        -178.32,
+        9.8
+      ],
+      "axis": [
+        0.0,
+        0.0,
+        1.0
+      ],
+      "signal": "bend_5_angle",
+      "parent": "seg4"
+    },
+    "seg6": {
+      "instances": [
+        "7"
+      ],
+      "kind": "revolute",
+      "origin": [
+        0.0,
+        -212.13,
+        0.735
+      ],
+      "axis": [
+        0.0,
+        0.0,
+        1.0
+      ],
+      "signal": "bend_6_angle",
+      "parent": "seg5"
+    },
+    "crown": {
+      "instances": [
+        "8",
+        "13",
+        "14"
+      ],
+      "kind": "revolute",
+      "origin": [
+        0.0,
+        -232.968,
+        -8.994
+      ],
+      "axis": [
+        0.0,
+        -0.906106,
+        -0.42305
+      ],
+      "signal": "crown_twist_angle",
+      "parent": "seg6"
+    },
+    "leaf_front": {
+      "instances": [
+        "9"
+      ],
+      "kind": "revolute",
+      "origin": [
+        -10.0,
+        -258.34,
+        -20.832
+      ],
+      "axis": [
+        -1.0,
+        -0.0,
+        -0.0
+      ],
+      "signal": "leaf_front_angle",
+      "parent": "crown"
+    },
+    "leaf_upwind": {
+      "instances": [
+        "10"
+      ],
+      "kind": "revolute",
+      "origin": [
+        0.0,
+        -255.316,
+        -8.388
+      ],
+      "axis": [
+        -0.0,
+        -0.42305,
+        0.906106
+      ],
+      "signal": "leaf_upwind_angle",
+      "parent": "crown"
+    },
+    "leaf_back": {
+      "instances": [
+        "11"
+      ],
+      "kind": "revolute",
+      "origin": [
+        10.0,
+        -258.34,
+        -20.832
+      ],
+      "axis": [
+        1.0,
+        -0.0,
+        -0.0
+      ],
+      "signal": "leaf_back_angle",
+      "parent": "crown"
+    },
+    "leaf_downwind": {
+      "instances": [
+        "12"
+      ],
+      "kind": "revolute",
+      "origin": [
+        0.0,
+        -246.864,
+        -26.514
+      ],
+      "axis": [
+        -0.0,
+        0.42305,
+        -0.906106
+      ],
+      "signal": "leaf_downwind_angle",
+      "parent": "crown"
+    }
+  },
+  "anchors": {},
+  "checks": [],
+  "notes": [
+    "Plant wind case P01_palm_tree (Ball-chain palm) written by scripts/build_plants.py: Palm 2518c01 taken apart: base 2563a, six 2536a ball-jointed trunk segments, top 2566b, four 2518 leaves. Parts picked by constant name from data/categories/parts; frame LDU, -Y up, the case front faces -Z, ground (base top) at y = 0. The wind blows toward +X.",
+    "Joints: bend_1: real revolute about [0.0, 0.0, 1.0] through [0.0, -40.0, 0.0] (real: 2536a ball (y=+3) in the socket (y=-32) of 2563a; one of the ball's two tilt freedoms used, about Z so that the trunk bends with the wind); bend_2: real revolute about [0.0, 0.0, 1.0] through [0.0, -73.81, 9.065] (real: 2536a ball (y=+3) in the socket (y=-32) of 2536a; one of the ball's two tilt freedoms used, about Z so that the trunk bends with the wind); bend_3: real revolute about [0.0, 0.0, 1.0] through [0.0, -108.565, 13.265] (real: 2536a ball (y=+3) in the socket (y=-32) of 2536a; one of the ball's two tilt freedoms used, about Z so that the trunk bends with the wind); bend_4: real revolute about [0.0, 0.0, 1.0] through [0.0, -143.565, 14.0] (real: 2536a ball (y=+3) in the socket (y=-32) of 2536a; one of the ball's two tilt freedoms used, about Z so that the trunk bends with the wind); bend_5: real revolute about [0.0, 0.0, 1.0] through [0.0, -178.32, 9.8] (real: 2536a ball (y=+3) in the socket (y=-32) of 2536a; one of the ball's two tilt freedoms used, about Z so that the trunk bends with the wind); bend_6: real revolute about [0.0, 0.0, 1.0] through [0.0, -212.13, 0.735] (real: 2536a ball (y=+3) in the socket (y=-32) of 2536a; one of the ball's two tilt freedoms used, about Z so that the trunk bends with the wind); crown_twist: real revolute about [0.0, -0.906106, -0.42305] through [0.0, -232.968, -8.994] (real: 2566b spike (pin, local y 20..44) turning in the top 2536a; twist about the trunk axis); leaf_front: flex_approx revolute about [1.0, 0.0, 0.0] through [-10.0, -258.34, -20.832] (flex_approx: the leaf is held rigidly on two 2566b prongs; the tilt stands in for the long leaf bending. 2518 leaf root between its two prong holes; tilt about the leaf's own cross axis); leaf_upwind: flex_approx revolute about [0.0, 0.42305, -0.906106] through [0.0, -255.316, -8.388] (flex_approx: the leaf is held rigidly on two 2566b prongs; the tilt stands in for the long leaf bending. 2518 leaf root between its two prong holes; tilt about the leaf's own cross axis); leaf_back: flex_approx revolute about [-1.0, 0.0, 0.0] through [10.0, -258.34, -20.832] (flex_approx: the leaf is held rigidly on two 2566b prongs; the tilt stands in for the long leaf bending. 2518 leaf root between its two prong holes; tilt about the leaf's own cross axis); leaf_downwind: flex_approx revolute about [0.0, -0.42305, 0.906106] through [0.0, -246.864, -26.514] (flex_approx: the leaf is held rigidly on two 2566b prongs; the tilt stands in for the long leaf bending. 2518 leaf root between its two prong holes; tilt about the leaf's own cross axis).",
+    "Real LEGO freedoms: bend_1, bend_2, bend_3, bend_4, bend_5, bend_6, crown_twist. flex_approx joints (rigid tilt standing in for bending plastic, range <= 0.17 rad): leaf_front, leaf_upwind, leaf_back, leaf_downwind.",
+    "Sign convention by meaning (checked with the evaluator, kinematics.json): bend_1 + = Trunk segment 1 on its ball joint (real, 1 of 2 tilts); + leans it downwind (+X); bend_2 + = Trunk segment 2 on its ball joint (real, 1 of 2 tilts); + leans it downwind (+X); bend_3 + = Trunk segment 3 on its ball joint (real, 1 of 2 tilts); + leans it downwind (+X); bend_4 + = Trunk segment 4 on its ball joint (real, 1 of 2 tilts); + leans it downwind (+X); bend_5 + = Trunk segment 5 on its ball joint (real, 1 of 2 tilts); + leans it downwind (+X); bend_6 + = Trunk segment 6 on its ball joint (real, 1 of 2 tilts); + leans it downwind (+X); crown_twist + = Crown on the top segment's spike (real); right-hand about up (-Y): + turns +X toward +Z about the trunk; leaf_front + = Leaf front at its root (flex_approx); + lifts the tip; leaf_upwind + = Leaf upwind at its root (flex_approx); + lifts the tip; leaf_back + = Leaf back at its root (flex_approx); + lifts the tip; leaf_downwind + = Leaf downwind at its root (flex_approx); + lifts the tip.",
+    "Motion comes from wind clips (scripts/wind_clips.py): a damped-response approximation, not aerodynamics. Ranges are catalog choices narrowed by sampled clearance (scripts/blender/check_plants_clearance.py), not measured stops. Kinematic and transform checks do not prove collision-free or physically feasible motion."
+  ],
+  "mechanisms": {
+    "seg1": {
+      "label": "Ball-chain palm: seg1",
+      "parts": [
+        "1",
+        "2"
+      ],
+      "bodies": [
+        "seg1"
+      ],
+      "inputs": [
+        "control:bend_1"
+      ],
+      "outputs": [
+        "body:seg1"
+      ],
+      "disposition": "planned",
+      "notes": [
+        "real revolute joint: real: 2536a ball (y=+3) in the socket (y=-32) of 2563a; one of the ball's two tilt freedoms used, about Z so that the trunk bends with the wind"
+      ],
+      "review": "Joint declared in this plan (scripts/build_plants.py); driven by wind clips."
+    },
+    "seg2": {
+      "label": "Ball-chain palm: seg2",
+      "parts": [
+        "2",
+        "3"
+      ],
+      "bodies": [
+        "seg2"
+      ],
+      "inputs": [
+        "control:bend_2"
+      ],
+      "outputs": [
+        "body:seg2"
+      ],
+      "disposition": "planned",
+      "notes": [
+        "real revolute joint: real: 2536a ball (y=+3) in the socket (y=-32) of 2536a; one of the ball's two tilt freedoms used, about Z so that the trunk bends with the wind"
+      ],
+      "review": "Joint declared in this plan (scripts/build_plants.py); driven by wind clips."
+    },
+    "seg3": {
+      "label": "Ball-chain palm: seg3",
+      "parts": [
+        "3",
+        "4"
+      ],
+      "bodies": [
+        "seg3"
+      ],
+      "inputs": [
+        "control:bend_3"
+      ],
+      "outputs": [
+        "body:seg3"
+      ],
+      "disposition": "planned",
+      "notes": [
+        "real revolute joint: real: 2536a ball (y=+3) in the socket (y=-32) of 2536a; one of the ball's two tilt freedoms used, about Z so that the trunk bends with the wind"
+      ],
+      "review": "Joint declared in this plan (scripts/build_plants.py); driven by wind clips."
+    },
+    "seg4": {
+      "label": "Ball-chain palm: seg4",
+      "parts": [
+        "4",
+        "5"
+      ],
+      "bodies": [
+        "seg4"
+      ],
+      "inputs": [
+        "control:bend_4"
+      ],
+      "outputs": [
+        "body:seg4"
+      ],
+      "disposition": "planned",
+      "notes": [
+        "real revolute joint: real: 2536a ball (y=+3) in the socket (y=-32) of 2536a; one of the ball's two tilt freedoms used, about Z so that the trunk bends with the wind"
+      ],
+      "review": "Joint declared in this plan (scripts/build_plants.py); driven by wind clips."
+    },
+    "seg5": {
+      "label": "Ball-chain palm: seg5",
+      "parts": [
+        "5",
+        "6"
+      ],
+      "bodies": [
+        "seg5"
+      ],
+      "inputs": [
+        "control:bend_5"
+      ],
+      "outputs": [
+        "body:seg5"
+      ],
+      "disposition": "planned",
+      "notes": [
+        "real revolute joint: real: 2536a ball (y=+3) in the socket (y=-32) of 2536a; one of the ball's two tilt freedoms used, about Z so that the trunk bends with the wind"
+      ],
+      "review": "Joint declared in this plan (scripts/build_plants.py); driven by wind clips."
+    },
+    "seg6": {
+      "label": "Ball-chain palm: seg6",
+      "parts": [
+        "6",
+        "7"
+      ],
+      "bodies": [
+        "seg6"
+      ],
+      "inputs": [
+        "control:bend_6"
+      ],
+      "outputs": [
+        "body:seg6"
+      ],
+      "disposition": "planned",
+      "notes": [
+        "real revolute joint: real: 2536a ball (y=+3) in the socket (y=-32) of 2536a; one of the ball's two tilt freedoms used, about Z so that the trunk bends with the wind"
+      ],
+      "review": "Joint declared in this plan (scripts/build_plants.py); driven by wind clips."
+    },
+    "crown": {
+      "label": "Ball-chain palm: crown",
+      "parts": [
+        "7",
+        "8",
+        "13",
+        "14"
+      ],
+      "bodies": [
+        "crown"
+      ],
+      "inputs": [
+        "control:crown_twist"
+      ],
+      "outputs": [
+        "body:crown"
+      ],
+      "disposition": "planned",
+      "notes": [
+        "real revolute joint: real: 2566b spike (pin, local y 20..44) turning in the top 2536a; twist about the trunk axis"
+      ],
+      "review": "Joint declared in this plan (scripts/build_plants.py); driven by wind clips."
+    },
+    "leaf_front": {
+      "label": "Ball-chain palm: leaf front",
+      "parts": [
+        "8",
+        "9"
+      ],
+      "bodies": [
+        "leaf_front"
+      ],
+      "inputs": [
+        "control:leaf_front"
+      ],
+      "outputs": [
+        "body:leaf_front"
+      ],
+      "disposition": "planned",
+      "notes": [
+        "flex_approx revolute joint: flex_approx: the leaf is held rigidly on two 2566b prongs; the tilt stands in for the long leaf bending. 2518 leaf root between its two prong holes; tilt about the leaf's own cross axis"
+      ],
+      "review": "Joint declared in this plan (scripts/build_plants.py); driven by wind clips."
+    },
+    "leaf_upwind": {
+      "label": "Ball-chain palm: leaf upwind",
+      "parts": [
+        "8",
+        "10"
+      ],
+      "bodies": [
+        "leaf_upwind"
+      ],
+      "inputs": [
+        "control:leaf_upwind"
+      ],
+      "outputs": [
+        "body:leaf_upwind"
+      ],
+      "disposition": "planned",
+      "notes": [
+        "flex_approx revolute joint: flex_approx: the leaf is held rigidly on two 2566b prongs; the tilt stands in for the long leaf bending. 2518 leaf root between its two prong holes; tilt about the leaf's own cross axis"
+      ],
+      "review": "Joint declared in this plan (scripts/build_plants.py); driven by wind clips."
+    },
+    "leaf_back": {
+      "label": "Ball-chain palm: leaf back",
+      "parts": [
+        "8",
+        "11"
+      ],
+      "bodies": [
+        "leaf_back"
+      ],
+      "inputs": [
+        "control:leaf_back"
+      ],
+      "outputs": [
+        "body:leaf_back"
+      ],
+      "disposition": "planned",
+      "notes": [
+        "flex_approx revolute joint: flex_approx: the leaf is held rigidly on two 2566b prongs; the tilt stands in for the long leaf bending. 2518 leaf root between its two prong holes; tilt about the leaf's own cross axis"
+      ],
+      "review": "Joint declared in this plan (scripts/build_plants.py); driven by wind clips."
+    },
+    "leaf_downwind": {
+      "label": "Ball-chain palm: leaf downwind",
+      "parts": [
+        "8",
+        "12"
+      ],
+      "bodies": [
+        "leaf_downwind"
+      ],
+      "inputs": [
+        "control:leaf_downwind"
+      ],
+      "outputs": [
+        "body:leaf_downwind"
+      ],
+      "disposition": "planned",
+      "notes": [
+        "flex_approx revolute joint: flex_approx: the leaf is held rigidly on two 2566b prongs; the tilt stands in for the long leaf bending. 2518 leaf root between its two prong holes; tilt about the leaf's own cross axis"
+      ],
+      "review": "Joint declared in this plan (scripts/build_plants.py); driven by wind clips."
+    },
+    "context": {
+      "label": "Ball-chain palm: base and mounts (static)",
+      "parts": [
+        "0",
+        "1"
+      ],
+      "bodies": [],
+      "inputs": [],
+      "outputs": [],
+      "disposition": "static",
+      "notes": [],
+      "review": "Base, trunk and mounts built for the catalog; they do not move in this case."
+    }
+  },
+  "connections": {
+    "joint_bend_1": {
+      "a": "1",
+      "b": "2",
+      "kind": "revolute",
+      "status": "reviewed",
+      "evidence": "real: 2536a ball (y=+3) in the socket (y=-32) of 2563a; one of the ball's two tilt freedoms used, about Z so that the trunk bends with the wind. pyldraw3 contact confirmed (generic/generic).",
+      "measurements": {
+        "origin": [
+          0.0,
+          -40.0,
+          0.0
+        ],
+        "axis": [
+          0.0,
+          0.0,
+          1.0
+        ]
+      },
+      "review": "Joint frame measured as stated (scripts/build_plants.py); real LEGO freedom."
+    },
+    "joint_bend_2": {
+      "a": "2",
+      "b": "3",
+      "kind": "revolute",
+      "status": "reviewed",
+      "evidence": "real: 2536a ball (y=+3) in the socket (y=-32) of 2536a; one of the ball's two tilt freedoms used, about Z so that the trunk bends with the wind. pyldraw3 contact confirmed (generic/generic).",
+      "measurements": {
+        "origin": [
+          0.0,
+          -73.81,
+          9.065
+        ],
+        "axis": [
+          0.0,
+          0.0,
+          1.0
+        ]
+      },
+      "review": "Joint frame measured as stated (scripts/build_plants.py); real LEGO freedom."
+    },
+    "joint_bend_3": {
+      "a": "3",
+      "b": "4",
+      "kind": "revolute",
+      "status": "reviewed",
+      "evidence": "real: 2536a ball (y=+3) in the socket (y=-32) of 2536a; one of the ball's two tilt freedoms used, about Z so that the trunk bends with the wind. pyldraw3 contact confirmed (generic/generic).",
+      "measurements": {
+        "origin": [
+          0.0,
+          -108.565,
+          13.265
+        ],
+        "axis": [
+          0.0,
+          0.0,
+          1.0
+        ]
+      },
+      "review": "Joint frame measured as stated (scripts/build_plants.py); real LEGO freedom."
+    },
+    "joint_bend_4": {
+      "a": "4",
+      "b": "5",
+      "kind": "revolute",
+      "status": "reviewed",
+      "evidence": "real: 2536a ball (y=+3) in the socket (y=-32) of 2536a; one of the ball's two tilt freedoms used, about Z so that the trunk bends with the wind. pyldraw3 contact confirmed (generic/generic).",
+      "measurements": {
+        "origin": [
+          0.0,
+          -143.565,
+          14.0
+        ],
+        "axis": [
+          0.0,
+          0.0,
+          1.0
+        ]
+      },
+      "review": "Joint frame measured as stated (scripts/build_plants.py); real LEGO freedom."
+    },
+    "joint_bend_5": {
+      "a": "5",
+      "b": "6",
+      "kind": "revolute",
+      "status": "reviewed",
+      "evidence": "real: 2536a ball (y=+3) in the socket (y=-32) of 2536a; one of the ball's two tilt freedoms used, about Z so that the trunk bends with the wind. pyldraw3 contact confirmed (generic/generic).",
+      "measurements": {
+        "origin": [
+          0.0,
+          -178.32,
+          9.8
+        ],
+        "axis": [
+          0.0,
+          0.0,
+          1.0
+        ]
+      },
+      "review": "Joint frame measured as stated (scripts/build_plants.py); real LEGO freedom."
+    },
+    "joint_bend_6": {
+      "a": "6",
+      "b": "7",
+      "kind": "revolute",
+      "status": "reviewed",
+      "evidence": "real: 2536a ball (y=+3) in the socket (y=-32) of 2536a; one of the ball's two tilt freedoms used, about Z so that the trunk bends with the wind. pyldraw3 contact confirmed (generic/generic).",
+      "measurements": {
+        "origin": [
+          0.0,
+          -212.13,
+          0.735
+        ],
+        "axis": [
+          0.0,
+          0.0,
+          1.0
+        ]
+      },
+      "review": "Joint frame measured as stated (scripts/build_plants.py); real LEGO freedom."
+    },
+    "joint_crown_twist": {
+      "a": "7",
+      "b": "8",
+      "kind": "revolute",
+      "status": "reviewed",
+      "evidence": "real: 2566b spike (pin, local y 20..44) turning in the top 2536a; twist about the trunk axis. pyldraw3 contact confirmed (pin_hole/pin).",
+      "measurements": {
+        "origin": [
+          0.0,
+          -232.968,
+          -8.994
+        ],
+        "axis": [
+          0.0,
+          -0.906106,
+          -0.42305
+        ]
+      },
+      "review": "Joint frame measured as stated (scripts/build_plants.py); real LEGO freedom."
+    },
+    "joint_leaf_front": {
+      "a": "8",
+      "b": "9",
+      "kind": "revolute",
+      "status": "reviewed",
+      "evidence": "flex_approx: the leaf is held rigidly on two 2566b prongs; the tilt stands in for the long leaf bending. 2518 leaf root between its two prong holes; tilt about the leaf's own cross axis. pyldraw3 contact confirmed (pin/pin_hole).",
+      "measurements": {
+        "origin": [
+          -10.0,
+          -258.34,
+          -20.832
+        ],
+        "axis": [
+          1.0,
+          0.0,
+          0.0
+        ]
+      },
+      "review": "Joint frame measured as stated (scripts/build_plants.py); flex_approx: not a real LEGO freedom."
+    },
+    "joint_leaf_upwind": {
+      "a": "8",
+      "b": "10",
+      "kind": "revolute",
+      "status": "reviewed",
+      "evidence": "flex_approx: the leaf is held rigidly on two 2566b prongs; the tilt stands in for the long leaf bending. 2518 leaf root between its two prong holes; tilt about the leaf's own cross axis. pyldraw3 contact confirmed (pin/pin_hole).",
+      "measurements": {
+        "origin": [
+          0.0,
+          -255.316,
+          -8.388
+        ],
+        "axis": [
+          0.0,
+          0.42305,
+          -0.906106
+        ]
+      },
+      "review": "Joint frame measured as stated (scripts/build_plants.py); flex_approx: not a real LEGO freedom."
+    },
+    "joint_leaf_back": {
+      "a": "8",
+      "b": "11",
+      "kind": "revolute",
+      "status": "reviewed",
+      "evidence": "flex_approx: the leaf is held rigidly on two 2566b prongs; the tilt stands in for the long leaf bending. 2518 leaf root between its two prong holes; tilt about the leaf's own cross axis. pyldraw3 contact confirmed (pin/pin_hole).",
+      "measurements": {
+        "origin": [
+          10.0,
+          -258.34,
+          -20.832
+        ],
+        "axis": [
+          -1.0,
+          0.0,
+          0.0
+        ]
+      },
+      "review": "Joint frame measured as stated (scripts/build_plants.py); flex_approx: not a real LEGO freedom."
+    },
+    "joint_leaf_downwind": {
+      "a": "8",
+      "b": "12",
+      "kind": "revolute",
+      "status": "reviewed",
+      "evidence": "flex_approx: the leaf is held rigidly on two 2566b prongs; the tilt stands in for the long leaf bending. 2518 leaf root between its two prong holes; tilt about the leaf's own cross axis. pyldraw3 contact confirmed (pin/pin_hole).",
+      "measurements": {
+        "origin": [
+          0.0,
+          -246.864,
+          -26.514
+        ],
+        "axis": [
+          0.0,
+          -0.42305,
+          0.906106
+        ]
+      },
+      "review": "Joint frame measured as stated (scripts/build_plants.py); flex_approx: not a real LEGO freedom."
+    }
+  },
+  "discovery": {
+    "grouping": "Provisional connected mechanical candidates; agent may split/merge views",
+    "unclassified_parts": [
+      "0",
+      "1",
+      "10",
+      "11",
+      "12",
+      "14",
+      "2",
+      "3",
+      "4",
+      "5",
+      "6",
+      "7",
+      "8",
+      "9"
+    ],
+    "embedded_parts": [],
+    "contact_limit": 300,
+    "rigid_groups": "not inferred",
+    "inputs_outputs": "not inferred",
+    "mechanical_parts": [
+      "13"
+    ],
+    "warnings": [
+      {
+        "code": "placement_normalized",
+        "message": "Rounded near-rigid placements normalized for analysis only; inspect placement diagnostics."
+      },
+      {
+        "code": "coaxial_not_run",
+        "message": "not run: 0 shaft/gear candidates outside 2..100; select a section"
+      }
+    ],
+    "surface_contacts": "Not detected: cams, levers bearing on beams, friction and stops need geometric/visual review even when connector contacts are absent",
+    "unsupported_gears": [],
+    "gear_placements": {
+      "policy": "Nearest orthogonal analysis frame within rounding_limit; source translations and handedness preserved",
+      "rounding_limit": 0.002,
+      "counts": {},
+      "affected": []
+    },
+    "contacts": {
+      "complete": true,
+      "tested_parts": 15,
+      "diagnostics": [],
+      "summary": {
+        "tested_parts": 15,
+        "contacts": 15,
+        "contacted_parts": 12,
+        "by_kind": {
+          "generic/generic": 6,
+          "pin/pin_hole": 9
+        },
+        "axles": {
+          "selection": "Catalog descriptions beginning Technic Axle followed by a numeric length; excludes axle pins, joiners and axle-hole supports",
+          "total": 0,
+          "with_axle_hole_contact": 0,
+          "without_axle_hole_contact": []
+        }
+      },
+      "placements": {
+        "policy": "Nearest orthogonal analysis frame within rounding_limit; source translations and handedness preserved",
+        "rounding_limit": 0.002,
+        "counts": {
+          "unchanged": 2,
+          "normalized": 13
+        },
+        "affected": [
+          {
+            "id": "2",
+            "status": "normalized",
+            "reflected": false,
+            "max_scale_error": 0.00011849297970689676,
+            "max_coefficient_change": 0.00011445065679760447
+          },
+          {
+            "id": "3",
+            "status": "normalized",
+            "reflected": false,
+            "max_scale_error": 0.00022447480553089427,
+            "max_coefficient_change": 0.0002228534569057583
+          },
+          {
+            "id": "4",
+            "status": "normalized",
+            "reflected": false,
+            "max_scale_error": 0.00022047569523397925,
+            "max_coefficient_change": 0.00022042709641656444
+          },
+          {
+            "id": "5",
+            "status": "normalized",
+            "reflected": false,
+            "max_scale_error": 0.00022447480553089427,
+            "max_coefficient_change": 0.0002228534569057583
+          },
+          {
+            "id": "6",
+            "status": "normalized",
+            "reflected": false,
+            "max_scale_error": 0.00011849297970689676,
+            "max_coefficient_change": 0.00011445065679760447
+          },
+          {
+            "id": "7",
+            "status": "normalized",
+            "reflected": false,
+            "max_scale_error": 0.00011750690393619312,
+            "max_coefficient_change": 0.00010647376636885308
+          },
+          {
+            "id": "8",
+            "status": "normalized",
+            "reflected": false,
+            "max_scale_error": 0.00011750690393619312,
+            "max_coefficient_change": 0.00010647376636885308
+          },
+          {
+            "id": "9",
+            "status": "normalized",
+            "reflected": false,
+            "max_scale_error": 0.00011750690393619312,
+            "max_coefficient_change": 0.00010647376636885308
+          },
+          {
+            "id": "10",
+            "status": "normalized",
+            "reflected": false,
+            "max_scale_error": 0.00011750690393619312,
+            "max_coefficient_change": 0.00010647376636885308
+          },
+          {
+            "id": "11",
+            "status": "normalized",
+            "reflected": false,
+            "max_scale_error": 0.00011750690393619312,
+            "max_coefficient_change": 0.00010647376636885308
+          },
+          {
+            "id": "12",
+            "status": "normalized",
+            "reflected": false,
+            "max_scale_error": 0.00011750690393619312,
+            "max_coefficient_change": 0.00010647376636885308
+          },
+          {
+            "id": "13",
+            "status": "normalized",
+            "reflected": false,
+            "max_scale_error": 0.00011750690393619312,
+            "max_coefficient_change": 0.00010647376636885308
+          },
+          {
+            "id": "14",
+            "status": "normalized",
+            "reflected": false,
+            "max_scale_error": 0.00011750690393619312,
+            "max_coefficient_change": 0.00010647376636885308
+          }
+        ]
+      }
+    },
+    "coaxial_selection": "Catalog axle, gear, worm and engine crankshaft parts; positive line evidence within 80 LDU axial separation",
+    "coaxial": "not run: 0 shaft/gear candidates outside 2..100; select a section",
+    "isolated_mechanical_parts": [
+      "13"
+    ]
+  }
+}

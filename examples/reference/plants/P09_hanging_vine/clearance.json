@@ -1,0 +1,766 @@
+{
+  "case": "P09_hanging_vine",
+  "sweep": {
+    "no_new_surface_crossings": false,
+    "crossings": [
+      [
+        "bend_1",
+        -0.17,
+        "vine_stem0-vine_stem1"
+      ],
+      [
+        "bend_1",
+        -0.149,
+        "vine_stem0-vine_stem1"
+      ],
+      [
+        "bend_1",
+        -0.128,
+        "vine_stem0-vine_stem1"
+      ],
+      [
+        "bend_1",
+        -0.106,
+        "vine_stem0-vine_stem1"
+      ],
+      [
+        "bend_1",
+        -0.085,
+        "vine_stem0-vine_stem1"
+      ],
+      [
+        "bend_1",
+        -0.064,
+        "vine_stem0-vine_stem1"
+      ],
+      [
+        "bend_1",
+        -0.043,
+        "vine_stem0-vine_stem1"
+      ],
+      [
+        "bend_1",
+        -0.021,
+        "vine_stem0-vine_stem1"
+      ],
+      [
+        "bend_1",
+        0.021,
+        "vine_stem0-vine_stem1"
+      ],
+      [
+        "bend_1",
+        0.043,
+        "vine_stem0-vine_stem1"
+      ],
+      [
+        "bend_1",
+        0.064,
+        "vine_stem0-vine_stem1"
+      ],
+      [
+        "bend_1",
+        0.085,
+        "vine_stem0-vine_stem1"
+      ],
+      [
+        "bend_1",
+        0.106,
+        "vine_stem0-vine_stem1"
+      ],
+      [
+        "bend_1",
+        0.128,
+        "vine_stem0-vine_stem1"
+      ],
+      [
+        "bend_1",
+        0.149,
+        "vine_stem0-vine_stem1"
+      ],
+      [
+        "bend_1",
+        0.17,
+        "vine_stem0-vine_stem1"
+      ],
+      [
+        "bend_2",
+        -0.17,
+        "vine_stem1-vine_stem2"
+      ],
+      [
+        "bend_2",
+        -0.149,
+        "vine_stem1-vine_stem2"
+      ],
+      [
+        "bend_2",
+        -0.128,
+        "vine_stem1-vine_stem2"
+      ],
+      [
+        "bend_2",
+        -0.106,
+        "vine_stem1-vine_stem2"
+      ],
+      [
+        "bend_2",
+        -0.085,
+        "vine_stem1-vine_stem2"
+      ],
+      [
+        "bend_2",
+        -0.064,
+        "vine_stem1-vine_stem2"
+      ],
+      [
+        "bend_2",
+        -0.043,
+        "vine_stem1-vine_stem2"
+      ],
+      [
+        "bend_2",
+        -0.021,
+        "vine_stem1-vine_stem2"
+      ],
+      [
+        "bend_2",
+        0.021,
+        "vine_stem1-vine_stem2"
+      ],
+      [
+        "bend_2",
+        0.043,
+        "vine_stem1-vine_stem2"
+      ],
+      [
+        "bend_2",
+        0.064,
+        "vine_stem1-vine_stem2"
+      ],
+      [
+        "bend_2",
+        0.085,
+        "vine_stem1-vine_stem2"
+      ],
+      [
+        "bend_2",
+        0.106,
+        "vine_stem1-vine_stem2"
+      ],
+      [
+        "bend_2",
+        0.128,
+        "vine_stem1-vine_stem2"
+      ],
+      [
+        "bend_2",
+        0.149,
+        "vine_stem1-vine_stem2"
+      ],
+      [
+        "bend_2",
+        0.17,
+        "vine_stem1-vine_stem2"
+      ],
+      [
+        "bend_3",
+        -0.17,
+        "vine_stem2-vine_stem3"
+      ],
+      [
+        "bend_3",
+        -0.149,
+        "vine_stem2-vine_stem3"
+      ],
+      [
+        "bend_3",
+        -0.128,
+        "vine_stem2-vine_stem3"
+      ],
+      [
+        "bend_3",
+        -0.106,
+        "vine_stem2-vine_stem3"
+      ],
+      [
+        "bend_3",
+        -0.085,
+        "vine_stem2-vine_stem3"
+      ],
+      [
+        "bend_3",
+        -0.064,
+        "vine_stem2-vine_stem3"
+      ],
+      [
+        "bend_3",
+        -0.043,
+        "vine_stem2-vine_stem3"
+      ],
+      [
+        "bend_3",
+        -0.021,
+        "vine_stem2-vine_stem3"
+      ],
+      [
+        "bend_3",
+        0.021,
+        "vine_stem2-vine_stem3"
+      ],
+      [
+        "bend_3",
+        0.043,
+        "vine_stem2-vine_stem3"
+      ],
+      [
+        "bend_3",
+        0.064,
+        "vine_stem2-vine_stem3"
+      ],
+      [
+        "bend_3",
+        0.085,
+        "vine_stem2-vine_stem3"
+      ],
+      [
+        "bend_3",
+        0.106,
+        "vine_stem2-vine_stem3"
+      ],
+      [
+        "bend_3",
+        0.128,
+        "vine_stem2-vine_stem3"
+      ],
+      [
+        "bend_3",
+        0.149,
+        "vine_stem2-vine_stem3"
+      ],
+      [
+        "bend_3",
+        0.17,
+        "vine_stem2-vine_stem3"
+      ],
+      [
+        "bend_4",
+        -0.17,
+        "vine_stem3-vine_stem4"
+      ],
+      [
+        "bend_4",
+        -0.149,
+        "vine_stem3-vine_stem4"
+      ],
+      [
+        "bend_4",
+        -0.128,
+        "vine_stem3-vine_stem4"
+      ],
+      [
+        "bend_4",
+        -0.106,
+        "vine_stem3-vine_stem4"
+      ],
+      [
+        "bend_4",
+        -0.085,
+        "vine_stem3-vine_stem4"
+      ],
+      [
+        "bend_4",
+        -0.064,
+        "vine_stem3-vine_stem4"
+      ],
+      [
+        "bend_4",
+        -0.043,
+        "vine_stem3-vine_stem4"
+      ],
+      [
+        "bend_4",
+        -0.021,
+        "vine_stem3-vine_stem4"
+      ],
+      [
+        "bend_4",
+        0.021,
+        "vine_stem3-vine_stem4"
+      ],
+      [
+        "bend_4",
+        0.043,
+        "vine_stem3-vine_stem4"
+      ],
+      [
+        "bend_4",
+        0.064,
+        "vine_stem3-vine_stem4"
+      ],
+      [
+        "bend_4",
+        0.085,
+        "vine_stem3-vine_stem4"
+      ],
+      [
+        "bend_4",
+        0.106,
+        "vine_stem3-vine_stem4"
+      ],
+      [
+        "bend_4",
+        0.128,
+        "vine_stem3-vine_stem4"
+      ],
+      [
+        "bend_4",
+        0.149,
+        "vine_stem3-vine_stem4"
+      ],
+      [
+        "bend_4",
+        0.17,
+        "vine_stem3-vine_stem4"
+      ]
+    ],
+    "excluded_rest_pairs": []
+  },
+  "clip_poses": {
+    "samples": 180,
+    "every": 4,
+    "no_new_surface_crossings": false,
+    "crossings_by_clip": {
+      "P09_hanging_vine.breeze": [
+        "vine_stem0-vine_stem1",
+        "vine_stem1-vine_stem2",
+        "vine_stem2-vine_stem3",
+        "vine_stem3-vine_stem4"
+      ],
+      "P09_hanging_vine.gusty": [
+        "vine_stem0-vine_stem1",
+        "vine_stem1-vine_stem2",
+        "vine_stem2-vine_stem3",
+        "vine_stem3-vine_stem4"
+      ],
+      "P09_hanging_vine.storm": [
+        "vine_stem0-vine_stem1",
+        "vine_stem1-vine_stem2",
+        "vine_stem2-vine_stem3",
+        "vine_stem3-vine_stem4"
+      ]
+    },
+    "frames_with_crossings": {
+      "P09_hanging_vine.breeze": [
+        13,
+        17,
+        21,
+        25,
+        29,
+        33,
+        37,
+        41,
+        45,
+        49,
+        53,
+        57,
+        61,
+        65,
+        69,
+        73,
+        77,
+        81,
+        85,
+        89,
+        93,
+        97,
+        101,
+        105,
+        109,
+        113,
+        117,
+        121,
+        125,
+        129,
+        133,
+        137,
+        141,
+        145,
+        149,
+        153,
+        157,
+        161,
+        165,
+        169,
+        173,
+        177,
+        181,
+        185,
+        189,
+        193,
+        197,
+        201,
+        205,
+        209,
+        213,
+        217,
+        221,
+        225,
+        229
+      ],
+      "P09_hanging_vine.gusty": [
+        69,
+        73,
+        77,
+        81,
+        85,
+        89,
+        93,
+        97,
+        101,
+        105,
+        109,
+        113,
+        117,
+        121,
+        125,
+        129,
+        133,
+        137,
+        141,
+        145,
+        149,
+        153,
+        157,
+        161,
+        165,
+        169,
+        173,
+        177,
+        181,
+        185,
+        189,
+        193,
+        197,
+        201,
+        205,
+        209,
+        213,
+        217,
+        221,
+        225,
+        229,
+        233
+      ],
+      "P09_hanging_vine.storm": [
+        65,
+        69,
+        73,
+        77,
+        81,
+        85,
+        89,
+        93,
+        97,
+        101,
+        105,
+        109,
+        113,
+        117,
+        121,
+        125,
+        129,
+        133,
+        137,
+        141,
+        145,
+        149,
+        153,
+        157,
+        161,
+        165,
+        169,
+        173,
+        177,
+        181,
+        185,
+        189,
+        193,
+        197,
+        201,
+        205,
+        209,
+        213,
+        217,
+        221,
+        225,
+        229,
+        233
+      ]
+    },
+    "vertex_penetration_by_clip": {
+      "P09_hanging_vine.breeze": {
+        "vine_stem0-vine_stem1": {
+          "max_vertex_depth_ldu": 0.003,
+          "kind": "contact"
+        },
+        "vine_stem1-vine_stem2": {
+          "max_vertex_depth_ldu": 0.071,
+          "kind": "contact"
+        },
+        "vine_stem2-vine_stem3": {
+          "max_vertex_depth_ldu": 0.083,
+          "kind": "contact"
+        },
+        "vine_stem3-vine_stem4": {
+          "max_vertex_depth_ldu": 0.095,
+          "kind": "contact"
+        }
+      },
+      "P09_hanging_vine.gusty": {
+        "vine_stem0-vine_stem1": {
+          "max_vertex_depth_ldu": 0.027,
+          "kind": "contact"
+        },
+        "vine_stem1-vine_stem2": {
+          "max_vertex_depth_ldu": 0.344,
+          "kind": "contact"
+        },
+        "vine_stem2-vine_stem3": {
+          "max_vertex_depth_ldu": 0.484,
+          "kind": "contact"
+        },
+        "vine_stem3-vine_stem4": {
+          "max_vertex_depth_ldu": 0.517,
+          "kind": "shallow"
+        }
+      },
+      "P09_hanging_vine.storm": {
+        "vine_stem0-vine_stem1": {
+          "max_vertex_depth_ldu": 0.05,
+          "kind": "contact"
+        },
+        "vine_stem1-vine_stem2": {
+          "max_vertex_depth_ldu": 0.599,
+          "kind": "shallow"
+        },
+        "vine_stem2-vine_stem3": {
+          "max_vertex_depth_ldu": 0.662,
+          "kind": "shallow"
+        },
+        "vine_stem3-vine_stem4": {
+          "max_vertex_depth_ldu": 0.668,
+          "kind": "shallow"
+        }
+      }
+    },
+    "deep_shrink_ldu": 1.5,
+    "no_deep_crossings": false,
+    "deep_crossings_by_clip": {
+      "P09_hanging_vine.breeze": [
+        "vine_stem0-vine_stem1",
+        "vine_stem1-vine_stem2",
+        "vine_stem2-vine_stem3",
+        "vine_stem3-vine_stem4"
+      ],
+      "P09_hanging_vine.gusty": [
+        "vine_stem0-vine_stem1",
+        "vine_stem1-vine_stem2",
+        "vine_stem2-vine_stem3",
+        "vine_stem3-vine_stem4"
+      ],
+      "P09_hanging_vine.storm": [
+        "vine_stem0-vine_stem1",
+        "vine_stem1-vine_stem2",
+        "vine_stem2-vine_stem3",
+        "vine_stem3-vine_stem4"
+      ]
+    },
+    "frames_with_deep_crossings": {
+      "P09_hanging_vine.breeze": [
+        13,
+        17,
+        21,
+        25,
+        29,
+        33,
+        37,
+        41,
+        45,
+        49,
+        53,
+        57,
+        61,
+        65,
+        69,
+        73,
+        77,
+        81,
+        85,
+        89,
+        93,
+        97,
+        101,
+        105,
+        109,
+        113,
+        117,
+        121,
+        125,
+        129,
+        133,
+        137,
+        141,
+        145,
+        149,
+        153,
+        157,
+        161,
+        165,
+        169,
+        173,
+        177,
+        181,
+        185,
+        189,
+        193,
+        197,
+        201,
+        205,
+        209,
+        213,
+        217,
+        221,
+        225,
+        229
+      ],
+      "P09_hanging_vine.gusty": [
+        69,
+        73,
+        77,
+        81,
+        85,
+        89,
+        93,
+        97,
+        101,
+        105,
+        109,
+        113,
+        117,
+        121,
+        125,
+        129,
+        133,
+        137,
+        141,
+        145,
+        149,
+        153,
+        157,
+        161,
+        165,
+        169,
+        173,
+        177,
+        181,
+        185,
+        189,
+        193,
+        197,
+        201,
+        205,
+        209,
+        213,
+        217,
+        221,
+        225,
+        229,
+        233
+      ],
+      "P09_hanging_vine.storm": [
+        65,
+        69,
+        73,
+        77,
+        81,
+        85,
+        89,
+        93,
+        97,
+        101,
+        105,
+        109,
+        113,
+        117,
+        121,
+        125,
+        129,
+        133,
+        137,
+        141,
+        145,
+        149,
+        153,
+        157,
+        161,
+        165,
+        169,
+        173,
+        177,
+        181,
+        185,
+        189,
+        193,
+        197,
+        201,
+        205,
+        209,
+        213,
+        217,
+        221,
+        225,
+        229,
+        233
+      ]
+    }
+  },
+  "roles": {
+    "0": "base",
+    "1": "trunk0",
+    "2": "trunk1",
+    "3": "trunk2",
+    "4": "trunk3",
+    "5": "trunk4",
+    "6": "trunk5",
+    "7": "trunk6",
+    "8": "trunk7",
+    "9": "trunk8",
+    "10": "trunk9",
+    "11": "trunk10",
+    "12": "trunk11",
+    "13": "trunk12",
+    "14": "trunk13",
+    "15": "arm",
+    "16": "crown",
+    "17": "hanger",
+    "18": "vine_k03_0",
+    "19": "vine_stem0",
+    "20": "vine_stem1",
+    "21": "vine_stem2",
+    "22": "vine_stem3",
+    "23": "vine_stem4",
+    "24": "vine_k03_320",
+    "25": "vine_k01_50",
+    "26": "vine_k02_64",
+    "27": "vine_k01_101",
+    "28": "vine_k02_115",
+    "29": "vine_k01_152",
+    "30": "vine_k02_166",
+    "31": "vine_k01_203",
+    "32": "vine_k02_217",
+    "33": "vine_k01_254",
+    "34": "vine_k02_268"
+  },
+  "coverage": "Sampled surface crossings only; excludes rigid-body and rest-contact pairs; containment untested"
+}

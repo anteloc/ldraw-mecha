@@ -1,0 +1,149 @@
+{
+  "passed": true,
+  "samples": [
+    {
+      "controls": {},
+      "max_matrix_error": 0.0001296401023864746,
+      "max_static_error": 3.0517578125e-05,
+      "max_closure_error": 4.844659250125005e-05,
+      "invalid_drivers": [],
+      "passed": true
+    },
+    {
+      "controls": {
+        "travel_fl": 0.0
+      },
+      "max_matrix_error": 0.0001296401023864746,
+      "max_static_error": 3.0517578125e-05,
+      "max_closure_error": 4.844659250125005e-05,
+      "invalid_drivers": [],
+      "passed": true
+    },
+    {
+      "controls": {
+        "travel_fl": 15.25
+      },
+      "max_matrix_error": 0.00075531005859375,
+      "max_static_error": 3.0517578125e-05,
+      "max_closure_error": 0.0015113860006437108,
+      "invalid_drivers": [],
+      "passed": true
+    },
+    {
+      "controls": {
+        "travel_fl": 30.5
+      },
+      "max_matrix_error": 0.0015106201171875,
+      "max_static_error": 3.0517578125e-05,
+      "max_closure_error": 0.0029539704069634354,
+      "invalid_drivers": [],
+      "passed": true
+    },
+    {
+      "controls": {
+        "travel_fr": 0.0
+      },
+      "max_matrix_error": 0.0001296401023864746,
+      "max_static_error": 3.0517578125e-05,
+      "max_closure_error": 4.844659250125005e-05,
+      "invalid_drivers": [],
+      "passed": true
+    },
+    {
+      "controls": {
+        "travel_fr": 15.25
+      },
+      "max_matrix_error": 0.00078582763671875,
+      "max_static_error": 3.0517578125e-05,
+      "max_closure_error": 0.0015113860006437108,
+      "invalid_drivers": [],
+      "passed": true
+    },
+    {
+      "controls": {
+        "travel_fr": 30.5
+      },
+      "max_matrix_error": 0.00156402587890625,
+      "max_static_error": 3.0517578125e-05,
+      "max_closure_error": 0.0029539704069634354,
+      "invalid_drivers": [],
+      "passed": true
+    },
+    {
+      "controls": {
+        "travel_rl": 0.0
+      },
+      "max_matrix_error": 0.0001296401023864746,
+      "max_static_error": 3.0517578125e-05,
+      "max_closure_error": 4.844659250125005e-05,
+      "invalid_drivers": [],
+      "passed": true
+    },
+    {
+      "controls": {
+        "travel_rl": 20.25
+      },
+      "max_matrix_error": 0.00095367431640625,
+      "max_static_error": 3.0517578125e-05,
+      "max_closure_error": 0.002013696727004799,
+      "invalid_drivers": [],
+      "passed": true
+    },
+    {
+      "controls": {
+        "travel_rl": 40.5
+      },
+      "max_matrix_error": 0.001983642578125,
+      "max_static_error": 3.0517578125e-05,
+      "max_closure_error": 0.0038724437981585424,
+      "invalid_drivers": [],
+      "passed": true
+    },
+    {
+      "controls": {
+        "travel_rr": 0.0
+      },
+      "max_matrix_error": 0.0001296401023864746,
+      "max_static_error": 3.0517578125e-05,
+      "max_closure_error": 4.844659250125005e-05,
+      "invalid_drivers": [],
+      "passed": true
+    },
+    {
+      "controls": {
+        "travel_rr": 20.25
+      },
+      "max_matrix_error": 0.00104522705078125,
+      "max_static_error": 3.0517578125e-05,
+      "max_closure_error": 0.0020137824106711832,
+      "invalid_drivers": [],
+      "passed": true
+    },
+    {
+      "controls": {
+        "travel_rr": 40.5
+      },
+      "max_matrix_error": 0.0020904541015625,
+      "max_static_error": 3.0517578125e-05,
+      "max_closure_error": 0.0038695625337226147,
+      "invalid_drivers": [],
+      "passed": true
+    },
+    {
+      "controls": {
+        "travel_fl": 12.200000000000001,
+        "travel_fr": 12.200000000000001,
+        "travel_rl": 16.2,
+        "travel_rr": 16.2
+      },
+      "max_matrix_error": 0.00083160400390625,
+      "max_static_error": 3.0517578125e-05,
+      "max_closure_error": 0.001611679740250338,
+      "invalid_drivers": [],
+      "passed": true
+    }
+  ],
+  "units": "LDU",
+  "tolerance": 0.01,
+  "coverage": "Evaluated transforms, driver validity and declared link closure; no mesh collision test"
+}

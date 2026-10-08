@@ -1,0 +1,20 @@
+0 FILE s09_trap_door.ldr
+0 Movable element scenario S09_trap_door Floor trap door
+0 Name: s09_trap_door.ldr
+0 Author: ldraw-mecha scripts/build_movables.py
+0 // Generated mock scenario: parts picked by constant name from data/categories/parts (a few context parts by LDraw reference); moving parts placed from LDCad shadow connector frames (data/offLibShadow) via pyldraw3 or from official annotated models where no connector pair exists. Frame: LDU, -Y up, the scenario front faces -Z, ground (base top) at y = 0.
+
+0 // base: plates.Plate6X8
+1 8 0 0 0 1 0 0 0 1 0 0 0 1 3036.dat
+0 // pillar0: bricks.Brick1X1X5WithSolidStud
+1 71 -70 -120 -50 1 0 0 0 1 0 0 0 1 2453b.dat
+0 // pillar1: bricks.Brick1X1X5WithSolidStud
+1 71 70 -120 -50 1 0 0 0 1 0 0 0 1 2453b.dat
+0 // pillar2: bricks.Brick1X1X5WithSolidStud
+1 71 -70 -120 50 1 0 0 0 1 0 0 0 1 2453b.dat
+0 // pillar3: bricks.Brick1X1X5WithSolidStud
+1 71 70 -120 50 1 0 0 0 1 0 0 0 1 2453b.dat
+0 // frame: plates.Plate6X8TrapDoorFrame
+1 8 0 -138 0 1 0 0 0 1 0 0 0 1 30041.dat
+0 // trapdoor: plates.Plate4X5TrapDoor
+1 70 -50 -128 0 1 0 0 0 1 0 0 0 1 30042.dat

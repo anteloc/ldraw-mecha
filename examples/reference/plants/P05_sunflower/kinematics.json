@@ -1,0 +1,167 @@
+{
+  "semantics": {
+    "stem": {
+      "control": "stem_lean",
+      "value": 0.2,
+      "test_point": [
+        0.0,
+        -128.0,
+        0.0
+      ],
+      "displacement": [
+        15.323163,
+        0.920495,
+        0.0
+      ],
+      "expected": "+x",
+      "flipped": false
+    },
+    "head": {
+      "control": "nod",
+      "value": 0.2,
+      "test_point": [
+        -48.0,
+        -146.0,
+        10.0
+      ],
+      "displacement": [
+        4.531522,
+        -5.164073,
+        0.0
+      ],
+      "expected": "+x",
+      "flipped": false
+    }
+  },
+  "wind_geometry": {
+    "stem_lean": {
+      "body": "stem",
+      "x": 0.0,
+      "tip": [
+        0.0,
+        -128.0,
+        0.0
+      ],
+      "swing": [
+        1.0,
+        -0.0
+      ],
+      "lever": 128.0
+    },
+    "nod": {
+      "body": "head",
+      "x": -20.0,
+      "tip": [
+        -48.0,
+        -146.0,
+        10.0
+      ],
+      "swing": [
+        0.581,
+        0.0
+      ],
+      "lever": 34.4
+    }
+  },
+  "roster_problems": [],
+  "contacts": {
+    "tested_parts": 9,
+    "contacts": 7,
+    "contacted_parts": 8,
+    "by_kind": {
+      "stud/stud_receptacle": 5,
+      "bar/clip": 2
+    },
+    "axles": {
+      "selection": "Catalog descriptions beginning Technic Axle followed by a numeric length; excludes axle pins, joiners and axle-hole supports",
+      "total": 0,
+      "with_axle_hole_contact": 0,
+      "without_axle_hole_contact": []
+    }
+  },
+  "contact_pairs": {
+    "0-1": [
+      "stud/stud_receptacle"
+    ],
+    "1-2": [
+      "stud/stud_receptacle"
+    ],
+    "2-3": [
+      "stud/stud_receptacle"
+    ],
+    "3-4": [
+      "stud/stud_receptacle"
+    ],
+    "4-5": [
+      "stud/stud_receptacle"
+    ],
+    "6-7": [
+      "clip/bar",
+      "clip/bar"
+    ]
+  },
+  "joints": {
+    "nod": "real",
+    "stem_lean": "flex_approx"
+  },
+  "asymmetric_sample": {
+    "controls": {
+      "stem_lean": 0.0756,
+      "nod": -0.222
+    },
+    "transforms": {
+      "stem": [
+        [
+          0.997144,
+          -0.075528,
+          0.0,
+          0.0
+        ],
+        [
+          0.075528,
+          0.997144,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "head": [
+        [
+          0.989303,
+          0.145878,
+          0.0,
+          27.740285
+        ],
+        [
+          -0.145878,
+          0.989303,
+          0.0,
+          -5.416082
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ]
+    }
+  }
+}

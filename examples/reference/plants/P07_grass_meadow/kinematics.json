@@ -1,0 +1,641 @@
+{
+  "semantics": {
+    "blade_1": {
+      "control": "blade_1",
+      "value": 0.2,
+      "test_point": [
+        -70.0,
+        -60.0,
+        -30.0
+      ],
+      "displacement": [
+        10.150941,
+        0.864914,
+        0.0
+      ],
+      "expected": "+x",
+      "flipped": false
+    },
+    "blade_2": {
+      "control": "blade_2",
+      "value": 0.2,
+      "test_point": [
+        -50.0,
+        -60.0,
+        10.0
+      ],
+      "displacement": [
+        10.150941,
+        0.864914,
+        0.0
+      ],
+      "expected": "+x",
+      "flipped": false
+    },
+    "blade_3": {
+      "control": "blade_3",
+      "value": 0.2,
+      "test_point": [
+        -30.0,
+        -60.0,
+        -10.0
+      ],
+      "displacement": [
+        10.150941,
+        0.864914,
+        0.0
+      ],
+      "expected": "+x",
+      "flipped": false
+    },
+    "blade_4": {
+      "control": "blade_4",
+      "value": 0.2,
+      "test_point": [
+        -30.0,
+        -60.0,
+        30.0
+      ],
+      "displacement": [
+        10.150941,
+        0.864914,
+        0.0
+      ],
+      "expected": "+x",
+      "flipped": false
+    },
+    "blade_5": {
+      "control": "blade_5",
+      "value": 0.2,
+      "test_point": [
+        -10.0,
+        -60.0,
+        -30.0
+      ],
+      "displacement": [
+        10.150941,
+        0.864914,
+        0.0
+      ],
+      "expected": "+x",
+      "flipped": false
+    },
+    "blade_6": {
+      "control": "blade_6",
+      "value": 0.2,
+      "test_point": [
+        10.0,
+        -60.0,
+        10.0
+      ],
+      "displacement": [
+        10.150941,
+        0.864914,
+        0.0
+      ],
+      "expected": "+x",
+      "flipped": false
+    },
+    "blade_7": {
+      "control": "blade_7",
+      "value": 0.2,
+      "test_point": [
+        30.0,
+        -60.0,
+        -10.0
+      ],
+      "displacement": [
+        10.150941,
+        0.864914,
+        0.0
+      ],
+      "expected": "+x",
+      "flipped": false
+    },
+    "blade_8": {
+      "control": "blade_8",
+      "value": 0.2,
+      "test_point": [
+        30.0,
+        -60.0,
+        30.0
+      ],
+      "displacement": [
+        10.150941,
+        0.864914,
+        0.0
+      ],
+      "expected": "+x",
+      "flipped": false
+    },
+    "blade_9": {
+      "control": "blade_9",
+      "value": 0.2,
+      "test_point": [
+        50.0,
+        -60.0,
+        -30.0
+      ],
+      "displacement": [
+        10.150941,
+        0.864914,
+        0.0
+      ],
+      "expected": "+x",
+      "flipped": false
+    },
+    "blade_10": {
+      "control": "blade_10",
+      "value": 0.2,
+      "test_point": [
+        70.0,
+        -60.0,
+        10.0
+      ],
+      "displacement": [
+        10.150941,
+        0.864914,
+        0.0
+      ],
+      "expected": "+x",
+      "flipped": false
+    }
+  },
+  "wind_geometry": {
+    "blade_1": {
+      "body": "blade_1",
+      "x": -70.0,
+      "tip": [
+        -70.0,
+        -60.0,
+        -30.0
+      ],
+      "swing": [
+        1.0,
+        -0.0
+      ],
+      "lever": 60.0
+    },
+    "blade_2": {
+      "body": "blade_2",
+      "x": -50.0,
+      "tip": [
+        -50.0,
+        -60.0,
+        10.0
+      ],
+      "swing": [
+        1.0,
+        -0.0
+      ],
+      "lever": 60.0
+    },
+    "blade_3": {
+      "body": "blade_3",
+      "x": -30.0,
+      "tip": [
+        -30.0,
+        -60.0,
+        -10.0
+      ],
+      "swing": [
+        1.0,
+        -0.0
+      ],
+      "lever": 60.0
+    },
+    "blade_4": {
+      "body": "blade_4",
+      "x": -30.0,
+      "tip": [
+        -30.0,
+        -60.0,
+        30.0
+      ],
+      "swing": [
+        1.0,
+        -0.0
+      ],
+      "lever": 60.0
+    },
+    "blade_5": {
+      "body": "blade_5",
+      "x": -10.0,
+      "tip": [
+        -10.0,
+        -60.0,
+        -30.0
+      ],
+      "swing": [
+        1.0,
+        -0.0
+      ],
+      "lever": 60.0
+    },
+    "blade_6": {
+      "body": "blade_6",
+      "x": 10.0,
+      "tip": [
+        10.0,
+        -60.0,
+        10.0
+      ],
+      "swing": [
+        1.0,
+        -0.0
+      ],
+      "lever": 60.0
+    },
+    "blade_7": {
+      "body": "blade_7",
+      "x": 30.0,
+      "tip": [
+        30.0,
+        -60.0,
+        -10.0
+      ],
+      "swing": [
+        1.0,
+        -0.0
+      ],
+      "lever": 60.0
+    },
+    "blade_8": {
+      "body": "blade_8",
+      "x": 30.0,
+      "tip": [
+        30.0,
+        -60.0,
+        30.0
+      ],
+      "swing": [
+        1.0,
+        -0.0
+      ],
+      "lever": 60.0
+    },
+    "blade_9": {
+      "body": "blade_9",
+      "x": 50.0,
+      "tip": [
+        50.0,
+        -60.0,
+        -30.0
+      ],
+      "swing": [
+        1.0,
+        -0.0
+      ],
+      "lever": 60.0
+    },
+    "blade_10": {
+      "body": "blade_10",
+      "x": 70.0,
+      "tip": [
+        70.0,
+        -60.0,
+        10.0
+      ],
+      "swing": [
+        1.0,
+        -0.0
+      ],
+      "lever": 60.0
+    }
+  },
+  "roster_problems": [],
+  "contacts": {
+    "tested_parts": 11,
+    "contacts": 10,
+    "contacted_parts": 11,
+    "by_kind": {
+      "stud/stud_receptacle": 10
+    },
+    "axles": {
+      "selection": "Catalog descriptions beginning Technic Axle followed by a numeric length; excludes axle pins, joiners and axle-hole supports",
+      "total": 0,
+      "with_axle_hole_contact": 0,
+      "without_axle_hole_contact": []
+    }
+  },
+  "contact_pairs": {
+    "0-1": [
+      "stud/stud_receptacle"
+    ],
+    "0-2": [
+      "stud/stud_receptacle"
+    ],
+    "0-3": [
+      "stud/stud_receptacle"
+    ],
+    "0-4": [
+      "stud/stud_receptacle"
+    ],
+    "0-5": [
+      "stud/stud_receptacle"
+    ],
+    "0-6": [
+      "stud/stud_receptacle"
+    ],
+    "0-7": [
+      "stud/stud_receptacle"
+    ],
+    "0-8": [
+      "stud/stud_receptacle"
+    ],
+    "0-9": [
+      "stud/stud_receptacle"
+    ],
+    "0-10": [
+      "stud/stud_receptacle"
+    ]
+  },
+  "joints": {
+    "blade_1": "flex_approx",
+    "blade_2": "flex_approx",
+    "blade_3": "flex_approx",
+    "blade_4": "flex_approx",
+    "blade_5": "flex_approx",
+    "blade_6": "flex_approx",
+    "blade_7": "flex_approx",
+    "blade_8": "flex_approx",
+    "blade_9": "flex_approx",
+    "blade_10": "flex_approx"
+  },
+  "asymmetric_sample": {
+    "controls": {
+      "blade_1": 0.1071,
+      "blade_2": -0.0629,
+      "blade_3": 0.1377,
+      "blade_4": -0.1071,
+      "blade_5": 0.0629,
+      "blade_6": -0.1377,
+      "blade_7": 0.1071,
+      "blade_8": -0.0629,
+      "blade_9": 0.1377,
+      "blade_10": -0.1071
+    },
+    "transforms": {
+      "blade_1": [
+        [
+          0.99427,
+          -0.106895,
+          0.0,
+          -0.401081
+        ],
+        [
+          0.106895,
+          0.99427,
+          0.0,
+          7.482676
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "blade_2": [
+        [
+          0.998022,
+          0.062859,
+          0.0,
+          -0.098878
+        ],
+        [
+          -0.062859,
+          0.998022,
+          0.0,
+          -3.142927
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "blade_3": [
+        [
+          0.990534,
+          -0.137265,
+          0.0,
+          -0.28397
+        ],
+        [
+          0.137265,
+          0.990534,
+          0.0,
+          4.117958
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "blade_4": [
+        [
+          0.99427,
+          0.106895,
+          0.0,
+          -0.171892
+        ],
+        [
+          -0.106895,
+          0.99427,
+          0.0,
+          -3.206861
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "blade_5": [
+        [
+          0.998022,
+          -0.062859,
+          0.0,
+          -0.019776
+        ],
+        [
+          0.062859,
+          0.998022,
+          0.0,
+          0.628585
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "blade_6": [
+        [
+          0.990534,
+          0.137265,
+          0.0,
+          0.094657
+        ],
+        [
+          -0.137265,
+          0.990534,
+          0.0,
+          1.372653
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "blade_7": [
+        [
+          0.99427,
+          -0.106895,
+          0.0,
+          0.171892
+        ],
+        [
+          0.106895,
+          0.99427,
+          0.0,
+          -3.206861
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "blade_8": [
+        [
+          0.998022,
+          0.062859,
+          0.0,
+          0.059327
+        ],
+        [
+          -0.062859,
+          0.998022,
+          0.0,
+          1.885756
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "blade_9": [
+        [
+          0.990534,
+          -0.137265,
+          0.0,
+          0.473284
+        ],
+        [
+          0.137265,
+          0.990534,
+          0.0,
+          -6.863263
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "blade_10": [
+        [
+          0.99427,
+          0.106895,
+          0.0,
+          0.401081
+        ],
+        [
+          -0.106895,
+          0.99427,
+          0.0,
+          7.482676
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ]
+    }
+  }
+}

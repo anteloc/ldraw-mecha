@@ -1,0 +1,6116 @@
+{
+  "passed": true,
+  "blender": "5.2.2 LTS",
+  "frames": 480,
+  "fps": 24,
+  "windows": {
+    "A": [
+      1,
+      144
+    ],
+    "B": [
+      161,
+      304
+    ],
+    "C": [
+      321,
+      464
+    ]
+  },
+  "tolerance": 0.002,
+  "build": {
+    "S01_house_door": {
+      "passed": true,
+      "samples": 4,
+      "max_matrix_error": 1.9073486328125e-06
+    },
+    "S02_casement_window": {
+      "passed": true,
+      "samples": 8,
+      "max_matrix_error": 7.62939453125e-06
+    },
+    "S03_shuttered_window": {
+      "passed": true,
+      "samples": 8,
+      "max_matrix_error": 7.62939453125e-06
+    },
+    "S04_garden_gate": {
+      "passed": true,
+      "samples": 4,
+      "max_matrix_error": 3.814697265625e-06
+    },
+    "S05_kitchen_cupboard": {
+      "passed": true,
+      "samples": 11,
+      "max_matrix_error": 3.814697265625e-06
+    },
+    "S06_double_cabinet": {
+      "passed": true,
+      "samples": 8,
+      "max_matrix_error": 3.814697265625e-06
+    },
+    "S07_treasure_chest": {
+      "passed": true,
+      "samples": 4,
+      "max_matrix_error": 7.62939453125e-06
+    },
+    "S08_mailbox": {
+      "passed": true,
+      "samples": 4,
+      "max_matrix_error": 8.620726475783158e-06
+    },
+    "S09_trap_door": {
+      "passed": true,
+      "samples": 4,
+      "max_matrix_error": 7.62939453125e-06
+    },
+    "S10_car_doors": {
+      "passed": true,
+      "samples": 8,
+      "max_matrix_error": 5.7220458984375e-06
+    },
+    "S11_car_roof": {
+      "passed": true,
+      "samples": 4,
+      "max_matrix_error": 1.52587890625e-05
+    },
+    "S12_canopy": {
+      "passed": true,
+      "samples": 4,
+      "max_matrix_error": 2.86102294921875e-06
+    },
+    "S13_forklift": {
+      "passed": true,
+      "samples": 4,
+      "max_matrix_error": 1.9073486328125e-05
+    },
+    "S14_sliding_door": {
+      "passed": true,
+      "samples": 4,
+      "max_matrix_error": 2.193450927734375e-05
+    },
+    "S15_radar": {
+      "passed": true,
+      "samples": 4,
+      "max_matrix_error": 1.8183936870634604e-05
+    },
+    "S16_crane": {
+      "passed": true,
+      "samples": 8,
+      "max_matrix_error": 4.863739013671875e-05
+    },
+    "S17_tipper": {
+      "passed": true,
+      "samples": 4,
+      "max_matrix_error": 1.52587890625e-05
+    },
+    "S18_barrier": {
+      "passed": true,
+      "samples": 4,
+      "max_matrix_error": 1.52587890625e-05
+    },
+    "S19_drawbridge": {
+      "passed": true,
+      "samples": 4,
+      "max_matrix_error": 7.62939453125e-06
+    },
+    "S20_levers": {
+      "passed": true,
+      "samples": 8,
+      "max_matrix_error": 2.980232238769531e-07
+    }
+  },
+  "layout": {
+    "S01_house_door": {
+      "collection": "S01_house_door House front door",
+      "slot": [
+        0.08302,
+        -0.0278,
+        0.0032
+      ],
+      "controller": "CTRL_movable_01_house_door",
+      "rig_collection": "MECHA_movable_01_house_door",
+      "nla_tracks": [
+        "A open_close",
+        "B slam",
+        "C creak"
+      ],
+      "actions": [
+        "S01_house_door.open_close",
+        "S01_house_door.slam",
+        "S01_house_door.creak"
+      ],
+      "envelope_m": [
+        [
+          0.035,
+          -0.0528,
+          0.0
+        ],
+        [
+          0.131,
+          -0.0038,
+          0.0752
+        ]
+      ],
+      "scene": "S01 House front door"
+    },
+    "S02_casement_window": {
+      "collection": "S02_casement_window Casement window",
+      "slot": [
+        0.23803,
+        -0.02828,
+        0.0032
+      ],
+      "controller": "CTRL_movable_02_casement_window",
+      "rig_collection": "MECHA_movable_02_casement_window",
+      "nla_tracks": [
+        "A open_both",
+        "B one_by_one",
+        "C wind_flutter"
+      ],
+      "actions": [
+        "S02_casement_window.open_both",
+        "S02_casement_window.one_by_one",
+        "S02_casement_window.wind_flutter"
+      ],
+      "envelope_m": [
+        [
+          0.206,
+          -0.0443,
+          0.0
+        ],
+        [
+          0.27,
+          -0.0123,
+          0.0656
+        ]
+      ],
+      "scene": "S02 Casement window"
+    },
+    "S03_shuttered_window": {
+      "collection": "S03_shuttered_window Shuttered window",
+      "slot": [
+        0.35887,
+        -0.02587,
+        0.0032
+      ],
+      "controller": "CTRL_movable_03_shuttered_window",
+      "rig_collection": "MECHA_movable_03_shuttered_window",
+      "nla_tracks": [
+        "A fold_open",
+        "B one_at_a_time",
+        "C storm"
+      ],
+      "actions": [
+        "S03_shuttered_window.fold_open",
+        "S03_shuttered_window.one_at_a_time",
+        "S03_shuttered_window.storm"
+      ],
+      "envelope_m": [
+        [
+          0.3189,
+          -0.0467,
+          0.0
+        ],
+        [
+          0.3989,
+          -0.0099,
+          0.0624
+        ]
+      ],
+      "scene": "S03 Shuttered window"
+    },
+    "S04_garden_gate": {
+      "collection": "S04_garden_gate Garden gate",
+      "slot": [
+        0.5037,
+        -0.02827,
+        0.0032
+      ],
+      "controller": "CTRL_movable_04_garden_gate",
+      "rig_collection": "MECHA_movable_04_garden_gate",
+      "nla_tracks": [
+        "A push_through",
+        "B open_latch",
+        "C in_and_out"
+      ],
+      "actions": [
+        "S04_garden_gate.push_through",
+        "S04_garden_gate.open_latch",
+        "S04_garden_gate.in_and_out"
+      ],
+      "envelope_m": [
+        [
+          0.4557,
+          -0.0566,
+          0.0
+        ],
+        [
+          0.5517,
+          -0.0,
+          0.024
+        ]
+      ],
+      "scene": "S04 Garden gate"
+    },
+    "S05_kitchen_cupboard": {
+      "collection": "S05_kitchen_cupboard Kitchen cupboard",
+      "slot": [
+        0.6317,
+        -0.02284,
+        0.0032
+      ],
+      "controller": "CTRL_movable_05_kitchen_cupboard",
+      "rig_collection": "MECHA_movable_05_kitchen_cupboard",
+      "nla_tracks": [
+        "A door_cycle",
+        "B drawer_pull",
+        "C kitchen_sequence"
+      ],
+      "actions": [
+        "S05_kitchen_cupboard.door_cycle",
+        "S05_kitchen_cupboard.drawer_pull",
+        "S05_kitchen_cupboard.kitchen_sequence"
+      ],
+      "envelope_m": [
+        [
+          0.6077,
+          -0.0497,
+          0.0
+        ],
+        [
+          0.6557,
+          -0.0068,
+          0.0432
+        ]
+      ],
+      "scene": "S05 Kitchen cupboard"
+    },
+    "S06_double_cabinet": {
+      "collection": "S06_double_cabinet Double-door cabinet",
+      "slot": [
+        0.08302,
+        -0.1796,
+        0.0032
+      ],
+      "controller": "CTRL_movable_06_double_cabinet",
+      "rig_collection": "MECHA_movable_06_double_cabinet",
+      "nla_tracks": [
+        "A open_both",
+        "B left_then_right",
+        "C peek"
+      ],
+      "actions": [
+        "S06_double_cabinet.open_both",
+        "S06_double_cabinet.left_then_right",
+        "S06_double_cabinet.peek"
+      ],
+      "envelope_m": [
+        [
+          0.051,
+          -0.2071,
+          0.0
+        ],
+        [
+          0.115,
+          -0.1636,
+          0.072
+        ]
+      ],
+      "scene": "S06 Double-door cabinet"
+    },
+    "S07_treasure_chest": {
+      "collection": "S07_treasure_chest Treasure chest",
+      "slot": [
+        0.23803,
+        -0.18537,
+        0.0032
+      ],
+      "controller": "CTRL_movable_07_treasure_chest",
+      "rig_collection": "MECHA_movable_07_treasure_chest",
+      "nla_tracks": [
+        "A slow_reveal",
+        "B snap_shut",
+        "C peek_twice"
+      ],
+      "actions": [
+        "S07_treasure_chest.slow_reveal",
+        "S07_treasure_chest.snap_shut",
+        "S07_treasure_chest.peek_twice"
+      ],
+      "envelope_m": [
+        [
+          0.206,
+          -0.2094,
+          0.0
+        ],
+        [
+          0.27,
+          -0.1614,
+          0.0317
+        ]
+      ],
+      "scene": "S07 Treasure chest"
+    },
+    "S08_mailbox": {
+      "collection": "S08_mailbox Mailbox",
+      "slot": [
+        0.35887,
+        -0.17934,
+        0.0032
+      ],
+      "controller": "CTRL_movable_08_mailbox",
+      "rig_collection": "MECHA_movable_08_mailbox",
+      "nla_tracks": [
+        "A gravity_drop",
+        "B eased_loop",
+        "C flap_rattle"
+      ],
+      "actions": [
+        "S08_mailbox.gravity_drop",
+        "S08_mailbox.eased_loop",
+        "S08_mailbox.flap_rattle"
+      ],
+      "envelope_m": [
+        [
+          0.3429,
+          -0.2074,
+          0.0
+        ],
+        [
+          0.3749,
+          -0.1633,
+          0.056
+        ]
+      ],
+      "scene": "S08 Mailbox"
+    },
+    "S09_trap_door": {
+      "collection": "S09_trap_door Floor trap door",
+      "slot": [
+        0.50455,
+        -0.18537,
+        0.0032
+      ],
+      "controller": "CTRL_movable_09_trap_door",
+      "rig_collection": "MECHA_movable_09_trap_door",
+      "nla_tracks": [
+        "A drop_and_winch",
+        "B quick_trap",
+        "C test_wiggle"
+      ],
+      "actions": [
+        "S09_trap_door.drop_and_winch",
+        "S09_trap_door.quick_trap",
+        "S09_trap_door.test_wiggle"
+      ],
+      "envelope_m": [
+        [
+          0.4709,
+          -0.2094,
+          0.0
+        ],
+        [
+          0.5366,
+          -0.1614,
+          0.0613
+        ]
+      ],
+      "scene": "S09 Floor trap door"
+    },
+    "S10_car_doors": {
+      "collection": "S10_car_doors Town car doors",
+      "slot": [
+        0.6317,
+        -0.18537,
+        0.0152
+      ],
+      "controller": "CTRL_movable_10_car_doors",
+      "rig_collection": "MECHA_movable_10_car_doors",
+      "nla_tracks": [
+        "A driver_door",
+        "B both_doors",
+        "C slam"
+      ],
+      "actions": [
+        "S10_car_doors.driver_door",
+        "S10_car_doors.both_doors",
+        "S10_car_doors.slam"
+      ],
+      "envelope_m": [
+        [
+          0.5997,
+          -0.2182,
+          0.0
+        ],
+        [
+          0.6637,
+          -0.1526,
+          0.0456
+        ]
+      ],
+      "scene": "S10 Town car doors"
+    },
+    "S11_car_roof": {
+      "collection": "S11_car_roof Car roof hatch",
+      "slot": [
+        0.08302,
+        -0.35499,
+        0.0152
+      ],
+      "controller": "CTRL_movable_11_car_roof",
+      "rig_collection": "MECHA_movable_11_car_roof",
+      "nla_tracks": [
+        "A lift_close",
+        "B gas_strut",
+        "C slam"
+      ],
+      "actions": [
+        "S11_car_roof.lift_close",
+        "S11_car_roof.gas_strut",
+        "S11_car_roof.slam"
+      ],
+      "envelope_m": [
+        [
+          0.051,
+          -0.383,
+          0.0
+        ],
+        [
+          0.115,
+          -0.327,
+          0.0752
+        ]
+      ],
+      "scene": "S11 Car roof hatch"
+    },
+    "S12_canopy": {
+      "collection": "S12_canopy Spaceship canopy",
+      "slot": [
+        0.23803,
+        -0.35499,
+        0.0064
+      ],
+      "controller": "CTRL_movable_12_canopy",
+      "rig_collection": "MECHA_movable_12_canopy",
+      "nla_tracks": [
+        "A flip_open",
+        "B slow_seal",
+        "C pop_open"
+      ],
+      "actions": [
+        "S12_canopy.flip_open",
+        "S12_canopy.slow_seal",
+        "S12_canopy.pop_open"
+      ],
+      "envelope_m": [
+        [
+          0.198,
+          -0.387,
+          0.0
+        ],
+        [
+          0.278,
+          -0.323,
+          0.064
+        ]
+      ],
+      "scene": "S12 Spaceship canopy"
+    },
+    "S13_forklift": {
+      "collection": "S13_forklift Forklift mast",
+      "slot": [
+        0.35887,
+        -0.35419,
+        0.0152
+      ],
+      "controller": "CTRL_movable_13_forklift",
+      "rig_collection": "MECHA_movable_13_forklift",
+      "nla_tracks": [
+        "A raise_lower",
+        "B chain_hoist",
+        "C drop"
+      ],
+      "actions": [
+        "S13_forklift.raise_lower",
+        "S13_forklift.chain_hoist",
+        "S13_forklift.drop"
+      ],
+      "envelope_m": [
+        [
+          0.3421,
+          -0.3958,
+          0.0
+        ],
+        [
+          0.3757,
+          -0.3142,
+          0.0728
+        ]
+      ],
+      "scene": "S13 Forklift mast"
+    },
+    "S14_sliding_door": {
+      "collection": "S14_sliding_door Sliding shed door",
+      "slot": [
+        0.5037,
+        -0.35899,
+        0.0032
+      ],
+      "controller": "CTRL_movable_14_sliding_door",
+      "rig_collection": "MECHA_movable_14_sliding_door",
+      "nla_tracks": [
+        "A slide_cycle",
+        "B shove",
+        "C crack_open"
+      ],
+      "actions": [
+        "S14_sliding_door.slide_cycle",
+        "S14_sliding_door.shove",
+        "S14_sliding_door.crack_open"
+      ],
+      "envelope_m": [
+        [
+          0.4397,
+          -0.379,
+          0.0
+        ],
+        [
+          0.5677,
+          -0.331,
+          0.0624
+        ]
+      ],
+      "scene": "S14 Sliding shed door"
+    },
+    "S15_radar": {
+      "collection": "S15_radar Rotating radar",
+      "slot": [
+        0.6317,
+        -0.35497,
+        0.0032
+      ],
+      "controller": "CTRL_movable_15_radar",
+      "rig_collection": "MECHA_movable_15_radar",
+      "nla_tracks": [
+        "A constant_spin",
+        "B spin_up_down",
+        "C sweep_scan"
+      ],
+      "actions": [
+        "S15_radar.constant_spin",
+        "S15_radar.spin_up_down",
+        "S15_radar.sweep_scan"
+      ],
+      "envelope_m": [
+        [
+          0.6117,
+          -0.375,
+          0.0
+        ],
+        [
+          0.6517,
+          -0.335,
+          0.0696
+        ]
+      ],
+      "scene": "S15 Rotating radar"
+    },
+    "S16_crane": {
+      "collection": "S16_crane Mini crane",
+      "slot": [
+        0.0823,
+        -0.52378,
+        0.0032
+      ],
+      "controller": "CTRL_movable_16_crane",
+      "rig_collection": "MECHA_movable_16_crane",
+      "nla_tracks": [
+        "A slew_sweep",
+        "B luff_cycle",
+        "C pick_and_place"
+      ],
+      "actions": [
+        "S16_crane.slew_sweep",
+        "S16_crane.luff_cycle",
+        "S16_crane.pick_and_place"
+      ],
+      "envelope_m": [
+        [
+          0.0,
+          -0.6118,
+          0.0
+        ],
+        [
+          0.166,
+          -0.4998,
+          0.1148
+        ]
+      ],
+      "scene": "S16 Mini crane"
+    },
+    "S17_tipper": {
+      "collection": "S17_tipper Dump truck tipper",
+      "slot": [
+        0.23803,
+        -0.59095,
+        0.0152
+      ],
+      "controller": "CTRL_movable_17_tipper",
+      "rig_collection": "MECHA_movable_17_tipper",
+      "nla_tracks": [
+        "A tip_return",
+        "B hydraulic_steps",
+        "C shake_to_empty"
+      ],
+      "actions": [
+        "S17_tipper.tip_return",
+        "S17_tipper.hydraulic_steps",
+        "S17_tipper.shake_to_empty"
+      ],
+      "envelope_m": [
+        [
+          0.218,
+          -0.6149,
+          0.0
+        ],
+        [
+          0.258,
+          -0.4966,
+          0.085
+        ]
+      ],
+      "scene": "S17 Dump truck tipper"
+    },
+    "S18_barrier": {
+      "collection": "S18_barrier Parking barrier",
+      "slot": [
+        0.3597,
+        -0.55579,
+        0.0032
+      ],
+      "controller": "CTRL_movable_18_barrier",
+      "rig_collection": "MECHA_movable_18_barrier",
+      "nla_tracks": [
+        "A raise_lower",
+        "B bounce_down",
+        "C quick_up_slow_down"
+      ],
+      "actions": [
+        "S18_barrier.raise_lower",
+        "S18_barrier.bounce_down",
+        "S18_barrier.quick_up_slow_down"
+      ],
+      "envelope_m": [
+        [
+          0.31,
+          -0.5718,
+          0.0
+        ],
+        [
+          0.4077,
+          -0.5398,
+          0.1047
+        ]
+      ],
+      "scene": "S18 Parking barrier"
+    },
+    "S19_drawbridge": {
+      "collection": "S19_drawbridge Drawbridge",
+      "slot": [
+        0.5037,
+        -0.53179,
+        0.0016
+      ],
+      "controller": "CTRL_movable_19_drawbridge",
+      "rig_collection": "MECHA_movable_19_drawbridge",
+      "nla_tracks": [
+        "A winch_and_drop",
+        "B eased_cycle",
+        "C half_raise"
+      ],
+      "actions": [
+        "S19_drawbridge.winch_and_drop",
+        "S19_drawbridge.eased_cycle",
+        "S19_drawbridge.half_raise"
+      ],
+      "envelope_m": [
+        [
+          0.4397,
+          -0.6198,
+          0.0
+        ],
+        [
+          0.5677,
+          -0.4918,
+          0.0832
+        ]
+      ],
+      "scene": "S19 Drawbridge"
+    },
+    "S20_levers": {
+      "collection": "S20_levers Control levers",
+      "slot": [
+        0.6317,
+        -0.55579,
+        0.0032
+      ],
+      "controller": "CTRL_movable_20_levers",
+      "rig_collection": "MECHA_movable_20_levers",
+      "nla_tracks": [
+        "A toggle_snap",
+        "B throttle",
+        "C jiggle"
+      ],
+      "actions": [
+        "S20_levers.toggle_snap",
+        "S20_levers.throttle",
+        "S20_levers.jiggle"
+      ],
+      "envelope_m": [
+        [
+          0.6077,
+          -0.5718,
+          0.0
+        ],
+        [
+          0.6557,
+          -0.5398,
+          0.0313
+        ]
+      ],
+      "scene": "S20 Control levers"
+    }
+  },
+  "worst": {
+    "key_error": 1.0393152592769184e-05,
+    "max_matrix_error": 0.000396728515625,
+    "max_static_error": 0.000244140625,
+    "scene_difference_m": 0.0
+  },
+  "samples": [
+    {
+      "frame": 1,
+      "scenario": "S01_house_door",
+      "key_error": 0.0,
+      "max_matrix_error": 1.52587890625e-05,
+      "max_static_error": 1.52587890625e-05,
+      "invalid_drivers": [],
+      "passed": true
+    },
+    {
+      "frame": 1,
+      "scenario": "S02_casement_window",
+      "key_error": 0.0,
+      "max_matrix_error": 7.62939453125e-06,
+      "max_static_error": 6.103515625e-05,
+      "invalid_drivers": [],
+      "passed": true
+    },
+    {
+      "frame": 1,
+      "scenario": "S03_shuttered_window",
+      "key_error": 0.0,
+      "max_matrix_error": 6.103515625e-05,
+      "max_static_error": 6.103515625e-05,
+      "invalid_drivers": [],
+      "passed": true
+    },
+    {
+      "frame": 1,
+      "scenario": "S04_garden_gate",
+      "key_error": 0.0,
+      "max_matrix_error": 0.0001220703125,
+      "max_static_error": 0.0001220703125,
+      "invalid_drivers": [],
+      "passed": true
+    },
+    {
+      "frame": 1,
+      "scenario": "S05_kitchen_cupboard",
+      "key_error": 0.0,
+      "max_matrix_error": 0.0001220703125,
+      "max_static_error": 0.0001220703125,
+      "invalid_drivers": [],
+      "passed": true
+    },
+    {
+      "frame": 1,
+      "scenario": "S06_double_cabinet",
+      "key_error": 0.0,
+      "max_matrix_error": 1.52587890625e-05,
+      "max_static_error": 3.0517578125e-05,
+      "invalid_drivers": [],
+      "passed": true
+    },
+    {
+      "frame": 1,
+      "scenario": "S07_treasure_chest",
+      "key_error": 0.0,
+      "max_matrix_error": 3.0517578125e-05,
+      "max_static_error": 6.103515625e-05,
+      "invalid_drivers": [],
+      "passed": true
+    },
+    {
+      "frame": 1,
+      "scenario": "S08_mailbox",
+      "key_error": 0.0,
+      "max_matrix_error": 6.103515625e-05,
+      "max_static_error": 6.103515625e-05,
+      "invalid_drivers": [],
+      "passed": true
+    },
+    {
+      "frame": 1,
+      "scenario": "S09_trap_door",
+      "key_error": 0.0,
+      "max_matrix_error": 0.000244140625,
+      "max_static_error": 0.0001220703125,
+      "invalid_drivers": [],
+      "passed": true
+    },
+    {
+      "frame": 1,
+      "scenario": "S10_car_doors",
+      "key_error": 0.0,
+      "max_matrix_error": 0.0001220703125,
+      "max_static_error": 0.0001220703125,
+      "invalid_drivers": [],
+      "passed": true
+    },
+    {
+      "frame": 1,
+      "scenario": "S11_car_roof",
+      "key_error": 0.0,
+      "max_matrix_error": 2.288818359375e-05,
+      "max_static_error": 3.0517578125e-05,
+      "invalid_drivers": [],
+      "passed": true
+    },
+    {
+      "frame": 1,
+      "scenario": "S12_canopy",
+      "key_error": 0.0,
+      "max_matrix_error": 7.62939453125e-06,
+      "max_static_error": 6.103515625e-05,
+      "invalid_drivers": [],
+      "passed": true
+    },
+    {
+      "frame": 1,
+      "scenario": "S13_forklift",
+      "key_error": 0.0,
+      "max_matrix_error": 6.103515625e-05,
+      "max_static_error": 6.103515625e-05,
+      "invalid_drivers": [],
+      "passed": true
+    },
+    {
+      "frame": 1,
+      "scenario": "S14_sliding_door",
+      "key_error": 0.0,
+      "max_matrix_error": 0.0001220703125,
+      "max_static_error": 0.0001220703125,
+      "invalid_drivers": [],
+      "passed": true
+    },
+    {
+      "frame": 1,
+      "scenario": "S15_radar",
+      "key_error": 0.0,
+      "max_matrix_error": 0.0001220703125,
+      "max_static_error": 0.0001220703125,
+      "invalid_drivers": [],
+      "passed": true
+    },
+    {
+      "frame": 1,
+      "scenario": "S16_crane",
+      "key_error": 0.0,
+      "max_matrix_error": 0.0001220703125,
+      "max_static_error": 1.52587890625e-05,
+      "invalid_drivers": [],
+      "passed": true
+    },
+    {
+      "frame": 1,
+      "scenario": "S17_tipper",
+      "key_error": 0.0,
+      "max_matrix_error": 0.0003662109375,
+      "max_static_error": 0.000244140625,
+      "invalid_drivers": [],
+      "passed": true
+    },
+    {
+      "frame": 1,
+      "scenario": "S18_barrier",
+      "key_error": 0.0,
+      "max_matrix_error": 6.103515625e-05,
+      "max_static_error": 7.62939453125e-06,
+      "invalid_drivers": [],
+      "passed": true
+    },
+    {
+      "frame": 1,
+      "scenario": "S19_drawbridge",
+      "key_error": 0.0,
+      "max_matrix_error": 0.000244140625,
+      "max_static_error": 0.000244140625,
+      "invalid_drivers": [],
+      "passed": true
+    },
+    {
+      "frame": 1,
+      "scenario": "S20_levers",
+      "key_error": 0.0,
+      "max_matrix_error": 0.0001220703125,
+      "max_static_error": 0.0001220703125,
+      "invalid_drivers": [],
+      "passed": true
+    },
+    {
+      "frame": 20,
+      "scenario": "S01_house_door",
+      "key_error": 5.9604645663569045e-09,
+      "max_matrix_error": 1.52587890625e-05,
+      "max_static_error": 1.52587890625e-05,
+      "invalid_drivers": [],
+      "passed": true
+    },
+    {
+      "frame": 20,
+      "scenario": "S02_casement_window",
+      "key_error": 7.1759579112207206e-09,
+      "max_matrix_error": 7.62939453125e-06,
+      "max_static_error": 6.103515625e-05,
+      "invalid_drivers": [],
+      "passed": true
+    },
+    {
+      "frame": 20,
+      "scenario": "S03_shuttered_window",
+      "key_error": 7.927435280441486e-08,
+      "max_matrix_error": 6.103515625e-05,
+      "max_static_error": 6.103515625e-05,
+      "invalid_drivers": [],
+      "passed": true
+    },
+    {
+      "frame": 20,
+      "scenario": "S04_garden_gate",
+      "key_error": 2.3841858043383013e-08,
+      "max_matrix_error": 0.0001220703125,
+      "max_static_error": 0.0001220703125,
+      "invalid_drivers": [],
+      "passed": true
+    },
+    {
+      "frame": 20,
+      "scenario": "S05_kitchen_cupboard",
+      "key_error": 2.487031330877798e-08,
+      "max_matrix_error": 0.0001220703125,
+      "max_static_error": 0.0001220703125,
+      "invalid_drivers": [],
+      "passed": true
+    },
+    {
+      "frame": 20,
+      "scenario": "S06_double_cabinet",
+      "key_error": 1.892366785494204e-08,
+      "max_matrix_error": 1.52587890625e-05,
+      "max_static_error": 3.0517578125e-05,
+      "invalid_drivers": [],
+      "passed": true
+    },
+    {
+      "frame": 20,
+      "scenario": "S07_treasure_chest",
+      "key_error": 1.7467008950333707e-08,
+      "max_matrix_error": 5.53131103515625e-05,
+      "max_static_error": 6.103515625e-05,
+      "invalid_drivers": [],
+      "passed": true
+    },
+    {
+      "frame": 20,
+      "scenario": "S08_mailbox",
+      "key_error": 9.488086316622457e-08,
+      "max_matrix_error": 6.103515625e-05,
+      "max_static_error": 6.103515625e-05,
+      "invalid_drivers": [],
+      "passed": true
+    },
+    {
+      "frame": 20,
+      "scenario": "S09_trap_door",
+      "key_error": 8.636591375399405e-08,
+      "max_matrix_error": 0.000247955322265625,
+      "max_static_error": 0.0001220703125,
+      "invalid_drivers": [],
+      "passed": true
+    },
+    {
+      "frame": 20,
+      "scenario": "S10_car_doors",
+      "key_error": 3.148137006636631e-08,
+      "max_matrix_error": 0.0001220703125,
+      "max_static_error": 0.0001220703125,
+      "invalid_drivers": [],
+      "passed": true
+    },
+    {
+      "frame": 20,
+      "scenario": "S11_car_roof",
+      "key_error": 1.0847492099008704e-08,
+      "max_matrix_error": 3.24249267578125e-05,
+      "max_static_error": 3.0517578125e-05,
+      "invalid_drivers": [],
+      "passed": true
+    },
+    {
+      "frame": 20,
+      "scenario": "S12_canopy",
+      "key_error": 5.594940910569335e-08,
+      "max_matrix_error": 7.62939453125e-06,
+      "max_static_error": 6.103515625e-05,
+      "invalid_drivers": [],
+      "passed": true
+    },
+    {
+      "frame": 20,
+      "scenario": "S13_forklift",
+      "key_error": 5.350060092723652e-07,
+      "max_matrix_error": 6.103515625e-05,
+      "max_static_error": 6.103515625e-05,
+      "invalid_drivers": [],
+      "passed": true
+    },
+    {
+      "frame": 20,
+      "scenario": "S14_sliding_door",
+      "key_error": 4.541074350328245e-06,
+      "max_matrix_error": 0.000274658203125,
+      "max_static_error": 0.0001220703125,
+      "invalid_drivers": [],
+      "passed": true
+    },
+    {
+      "frame": 20,
+      "scenario": "S15_radar",
+      "key_error": 7.313866134950331e-08,
+      "max_matrix_error": 0.0001220703125,
+      "max_static_error": 0.0001220703125,
+      "invalid_drivers": [],
+      "passed": true
+    },
+    {
+      "frame": 20,
+      "scenario": "S16_crane",
+      "key_error": 2.5034471731744112e-08,
+      "max_matrix_error": 0.000152587890625,
+      "max_static_error": 1.52587890625e-05,
+      "invalid_drivers": [],
+      "passed": true
+    },
+    {
+      "frame": 20,
+      "scenario": "S17_tipper",
+      "key_error": 8.873337759007782e-09,
+      "max_matrix_error": 0.000274658203125,
+      "max_static_error": 0.000244140625,
+      "invalid_drivers": [],
+      "passed": true
+    },
+    {
+      "frame": 20,
+      "scenario": "S18_barrier",
+      "key_error": 1.1920929021691506e-08,
+      "max_matrix_error": 4.57763671875e-05,
+      "max_static_error": 7.62939453125e-06,
+      "invalid_drivers": [],
+      "passed": true
+    },
+    {
+      "frame": 20,
+      "scenario": "S19_drawbridge",
+      "key_error": 0.0,
+      "max_matrix_error": 0.000244140625,
+      "max_static_error": 0.000244140625,
+      "invalid_drivers": [],
+      "passed": true
+    },
+    {
+      "frame": 20,
+      "scenario": "S20_levers",
+      "key_error": 2.384185793236071e-08,
+      "max_matrix_error": 0.0001220703125,
+      "max_static_error": 0.0001220703125,
+      "invalid_drivers": [],
+      "passed": true
+    },
+    {
+      "frame": 40,
+      "scenario": "S01_house_door",
+      "key_error": 1.395925866010117e-07,
+      "max_matrix_error": 1.71661376953125e-05,
+      "max_static_error": 1.52587890625e-05,
+      "invalid_drivers": [],
+      "passed": true
+    },
+    {
+      "frame": 40,
+      "scenario": "S02_casement_window",
+      "key_error": 1.9044052557148916e-08,
+      "max_matrix_error": 7.62939453125e-06,
+      "max_static_error": 6.103515625e-05,
+      "invalid_drivers": [],
+      "passed": true
+    },
+    {
+      "frame": 40,
+      "scenario": "S03_shuttered_window",
+      "key_error": 3.8732266283147965e-09,
+      "max_matrix_error": 6.103515625e-05,
+      "max_static_error": 6.103515625e-05,
+      "invalid_drivers": [],
+      "passed": true
+    },
+    {
+      "frame": 40,
+      "scenario": "S04_garden_gate",
+      "key_error": 5.1962841363106804e-08,
+      "max_matrix_error": 0.0001220703125,
+      "max_static_error": 0.0001220703125,
+      "invalid_drivers": [],
+      "passed": true
+    },
+    {
+      "frame": 40,
+      "scenario": "S05_kitchen_cupboard",
+      "key_error": 9.572783610245494e-08,
+      "max_matrix_error": 0.0001220703125,
+      "max_static_error": 0.0001220703125,
+      "invalid_drivers": [],
+      "passed": true
+    },
+    {
+      "frame": 40,
+      "scenario": "S06_double_cabinet",
+      "key_error": 4.8701068289247473e-08,
+      "max_matrix_error": 1.52587890625e-05,
+      "max_static_error": 3.0517578125e-05,
+      "invalid_drivers": [],
+      "passed": true
+    },
+    {
+      "frame": 40,
+      "scenario": "S07_treasure_chest",
+      "key_error": 2.3525653869427288e-08,
+      "max_matrix_error": 5.340576171875e-05,
+      "max_static_error": 6.103515625e-05,
+      "invalid_drivers": [],
+      "passed": true
+    },
+    {
+      "frame": 40,
+      "scenario": "S08_mailbox",
+      "key_error": 0.0,
+      "max_matrix_error": 6.103515625e-05,
+      "max_static_error": 6.103515625e-05,
+      "invalid_drivers": [],
+      "passed": true
+    },
+    {
+      "frame": 40,
+      "scenario": "S09_trap_door",
+      "key_error": 5.97307188154872e-08,
+      "max_matrix_error": 0.000244140625,
+      "max_static_error": 0.0001220703125,
+      "invalid_drivers": [],
+      "passed": true
+    },
+    {
+      "frame": 40,
+      "scenario": "S10_car_doors",
+      "key_error": 9.512716192539017e-08,
+      "max_matrix_error": 0.0001220703125,
+      "max_static_error": 0.0001220703125,
+      "invalid_drivers": [],
+      "passed": true
+    },
+    {
+      "frame": 40,
+      "scenario": "S11_car_roof",
+      "key_error": 1.1513853115374673e-07,
+      "max_matrix_error": 2.6702880859375e-05,
+      "max_static_error": 3.0517578125e-05,
+      "invalid_drivers": [],
+      "passed": true
+    },
+    {
+      "frame": 40,
+      "scenario": "S12_canopy",
+      "key_error": 4.504211603695296e-08,
+      "max_matrix_error": 7.62939453125e-06,
+      "max_static_error": 6.103515625e-05,
+      "invalid_drivers": [],
+      "passed": true
+    },
+    {
+      "frame": 40,
+      "scenario": "S13_forklift",
+      "key_error": 1.0393152592769184e-05,
+      "max_matrix_error": 6.103515625e-05,
+      "max_static_error": 6.103515625e-05,
+      "invalid_drivers": [],
+      "passed": true
+    },
+    {
+      "frame": 40,
+      "scenario": "S14_sliding_door",
+      "key_error": 2.3563511177826513e-06,
+      "max_matrix_error": 0.0001678466796875,
+      "max_static_error": 0.0001220703125,
+      "invalid_drivers": [],
+      "passed": true
+    },
+    {
+      "frame": 40,
+      "scenario": "S15_radar",
+      "key_error": 2.2541680344545512e-07,
+      "max_matrix_error": 0.00014495849609375,
+      "max_static_error": 0.0001220703125,
+      "invalid_drivers": [],
+      "passed": true
+    },
+    {
+      "frame": 40,
+      "scenario": "S16_crane",
+      "key_error": 3.142076865358945e-08,
+      "max_matrix_error": 0.0001201629638671875,
+      "max_static_error": 1.52587890625e-05,
+      "invalid_drivers": [],
+      "passed": true
+    },
+    {
+      "frame": 40,
+      "scenario": "S17_tipper",
+      "key_error": 2.7615761899468794e-08,
+      "max_matrix_error": 0.0002593994140625,
+      "max_static_error": 0.000244140625,
+      "invalid_drivers": [],
+      "passed": true
+    },
+    {
+      "frame": 40,
+      "scenario": "S18_barrier",
+      "key_error": 4.768371586472142e-08,
+      "max_matrix_error": 3.0517578125e-05,
+      "max_static_error": 7.62939453125e-06,
+      "invalid_drivers": [],
+      "passed": true
+    },
+    {
+      "frame": 40,
+      "scenario": "S19_drawbridge",
+      "key_error": 0.0,
+      "max_matrix_error": 0.000244140625,
+      "max_static_error": 0.000244140625,
+      "invalid_drivers": [],
+      "passed": true
+    },
+    {
+      "frame": 40,
+      "scenario": "S20_levers",
+      "key_error": 2.384185793236071e-08,
+      "max_matrix_error": 0.0001220703125,
+      "max_static_error": 0.0001220703125,
+      "invalid_drivers": [],
+      "passed": true
+    },
+    {
+      "frame": 60,
+      "scenario": "S01_house_door",
+      "key_error": 2.3841857821338408e-08,
+      "max_matrix_error": 1.52587890625e-05,
+      "max_static_error": 1.52587890625e-05,
+      "invalid_drivers": [],
+      "passed": true
+    },
+    {
+      "frame": 60,
+      "scenario": "S02_casement_window",
+      "key_error": 4.768371586472142e-08,
+      "max_matrix_error": 8.106231689453125e-06,
+      "max_static_error": 6.103515625e-05,
+      "invalid_drivers": [],
+      "passed": true
+    },
+    {
+      "frame": 60,
+      "scenario": "S03_shuttered_window",
+      "key_error": 4.7683715642676816e-08,
+      "max_matrix_error": 6.103515625e-05,
+      "max_static_error": 6.103515625e-05,
+      "invalid_drivers": [],
+      "passed": true
+    },
+    {
+      "frame": 60,
+      "scenario": "S04_garden_gate",
+      "key_error": 1.5833110822427443e-08,
+      "max_matrix_error": 0.0001220703125,
+      "max_static_error": 0.0001220703125,
+      "invalid_drivers": [],
+      "passed": true
+    },
+    {
+      "frame": 60,
+      "scenario": "S05_kitchen_cupboard",
+      "key_error": 4.768371586472142e-08,
+      "max_matrix_error": 0.0001220703125,
+      "max_static_error": 0.0001220703125,
+      "invalid_drivers": [],
+      "passed": true
+    },
+    {
+      "frame": 60,
+      "scenario": "S06_double_cabinet",
+      "key_error": 0.0,
+      "max_matrix_error": 1.52587890625e-05,
+      "max_static_error": 3.0517578125e-05,
+      "invalid_drivers": [],
+      "passed": true
+    },
+    {
+      "frame": 60,
+      "scenario": "S07_treasure_chest",
+      "key_error": 6.058644697048976e-09,
+      "max_matrix_error": 5.340576171875e-05,
+      "max_static_error": 6.103515625e-05,
+      "invalid_drivers": [],
+      "passed": true
+    },
+    {
+      "frame": 60,
+      "scenario": "S08_mailbox",
+      "key_error": 0.0,
+      "max_matrix_error": 6.103515625e-05,
+      "max_static_error": 6.103515625e-05,
+      "invalid_drivers": [],
+      "passed": true
+    },
+    {
+      "frame": 60,
+      "scenario": "S09_trap_door",
+      "key_error": 4.371139006309477e-08,
+      "max_matrix_error": 0.000247955322265625,
+      "max_static_error": 0.0001220703125,
+      "invalid_drivers": [],
+      "passed": true
+    },
+    {
+      "frame": 60,
+      "scenario": "S10_car_doors",
+      "key_error": 4.768371586472142e-08,
+      "max_matrix_error": 0.0001220703125,
+      "max_static_error": 0.0001220703125,
+      "invalid_drivers": [],
+      "passed": true
+    },
+    {
+      "frame": 60,
+      "scenario": "S11_car_roof",
+      "key_error": 4.768371586472142e-08,
+      "max_matrix_error": 3.4332275390625e-05,
+      "max_static_error": 3.0517578125e-05,
+      "invalid_drivers": [],
+      "passed": true
+    },
+    {
+      "frame": 60,
+      "scenario": "S12_canopy",
+      "key_error": 2.3841857821338408e-08,
+      "max_matrix_error": 7.62939453125e-06,
+      "max_static_error": 6.103515625e-05,
+      "invalid_drivers": [],
+      "passed": true
+    },
+    {
+      "frame": 60,
+      "scenario": "S13_forklift",
+      "key_error": 0.0,
+      "max_matrix_error": 6.103515625e-05,
+      "max_static_error": 6.103515625e-05,
+      "invalid_drivers": [],
+      "passed": true
+    },
+    {
+      "frame": 60,
+      "scenario": "S14_sliding_door",
+      "key_error": 0.0,
+      "max_matrix_error": 0.000244140625,
+      "max_static_error": 0.0001220703125,
+      "invalid_drivers": [],
+      "passed": true
+    },
+    {
+      "frame": 60,
+      "scenario": "S15_radar",
+      "key_error": 3.776949455414069e-07,
+      "max_matrix_error": 0.0001220703125,
+      "max_static_error": 0.0001220703125,
+      "invalid_drivers": [],
+      "passed": true
+    },
+    {
+      "frame": 60,
+      "scenario": "S16_crane",
+      "key_error": 3.2869945432167924e-08,
+      "max_matrix_error": 0.00013113021850585938,
+      "max_static_error": 1.52587890625e-05,
+      "invalid_drivers": [],
+      "passed": true
+    },
+    {
+      "frame": 60,
+      "scenario": "S17_tipper",
+      "key_error": 1.1920928910669204e-08,
+      "max_matrix_error": 0.00030517578125,
+      "max_static_error": 0.000244140625,
+      "invalid_drivers": [],
+      "passed": true
+    },
+    {
+      "frame": 60,
+      "scenario": "S18_barrier",
+      "key_error": 4.768371586472142e-08,
+      "max_matrix_error": 3.0517578125e-05,
+      "max_static_error": 7.62939453125e-06,
+      "invalid_drivers": [],
+      "passed": true
+    },
+    {
+      "frame": 60,
+      "scenario": "S19_drawbridge",
+      "key_error": 0.0,
+      "max_matrix_error": 0.000244140625,
+      "max_static_error": 0.000244140625,
+      "invalid_drivers": [],
+      "passed": true
+    },
+    {
+      "frame": 60,
+      "scenario": "S20_levers",
+      "key_error": 2.384185793236071e-08,
+      "max_matrix_error": 0.0001220703125,
+      "max_static_error": 0.0001220703125,
+      "invalid_drivers": [],
+      "passed": true
+    },
+    {
+      "frame": 80,
+      "scenario": "S01_house_door",
+      "key_error": 2.3841857821338408e-08,
+      "max_matrix_error": 1.52587890625e-05,
+      "max_static_error": 1.52587890625e-05,
+      "invalid_drivers": [],
+      "passed": true
+    },
+    {
+      "frame": 80,
+      "scenario": "S02_casement_window",
+      "key_error": 4.768371586472142e-08,
+      "max_matrix_error": 8.106231689453125e-06,
+      "max_static_error": 6.103515625e-05,
+      "invalid_drivers": [],
+      "passed": true
+    },
+    {
+      "frame": 80,
+      "scenario": "S03_shuttered_window",
+      "key_error": 4.7683715642676816e-08,
+      "max_matrix_error": 6.103515625e-05,
+      "max_static_error": 6.103515625e-05,
+      "invalid_drivers": [],
+      "passed": true
+    },
+    {
+      "frame": 80,
+      "scenario": "S04_garden_gate",
+      "key_error": 1.1819799500267791e-08,
+      "max_matrix_error": 0.0001239776611328125,
+      "max_static_error": 0.0001220703125,
+      "invalid_drivers": [],
+      "passed": true
+    },
+    {
+      "frame": 80,
+      "scenario": "S05_kitchen_cupboard",
+      "key_error": 4.768371586472142e-08,
+      "max_matrix_error": 0.0001220703125,
+      "max_static_error": 0.0001220703125,
+      "invalid_drivers": [],
+      "passed": true
+    },
+    {
+      "frame": 80,
+      "scenario": "S06_double_cabinet",
+      "key_error": 0.0,
+      "max_matrix_error": 1.52587890625e-05,
+      "max_static_error": 3.0517578125e-05,
+      "invalid_drivers": [],
+      "passed": true
+    },
+    {
+      "frame": 80,
+      "scenario": "S07_treasure_chest",
+      "key_error": 0.0,
+      "max_matrix_error": 1.9073486328125e-05,
+      "max_static_error": 6.103515625e-05,
+      "invalid_drivers": [],
+      "passed": true
+    },
+    {
+      "frame": 80,
+      "scenario": "S08_mailbox",
+      "key_error": 0.0,
+      "max_matrix_error": 6.103515625e-05,
+      "max_static_error": 6.103515625e-05,
+      "invalid_drivers": [],
+      "passed": true
+    },
+    {
+      "frame": 80,
+      "scenario": "S09_trap_door",
+      "key_error": 4.371139006309477e-08,
+      "max_matrix_error": 0.000247955322265625,
+      "max_static_error": 0.0001220703125,
+      "invalid_drivers": [],
+      "passed": true
+    },
+    {
+      "frame": 80,
+      "scenario": "S10_car_doors",
+      "key_error": 4.768371586472142e-08,
+      "max_matrix_error": 0.0001220703125,
+      "max_static_error": 0.0001220703125,
+      "invalid_drivers": [],
+      "passed": true
+    },
+    {
+      "frame": 80,
+      "scenario": "S11_car_roof",
+      "key_error": 4.768371586472142e-08,
+      "max_matrix_error": 3.4332275390625e-05,
+      "max_static_error": 3.0517578125e-05,
+      "invalid_drivers": [],
+      "passed": true
+    },
+    {
+      "frame": 80,
+      "scenario": "S12_canopy",
+      "key_error": 2.3841857821338408e-08,
+      "max_matrix_error": 7.62939453125e-06,
+      "max_static_error": 6.103515625e-05,
+      "invalid_drivers": [],
+      "passed": true
+    },
+    {
+      "frame": 80,
+      "scenario": "S13_forklift",
+      "key_error": 0.0,
+      "max_matrix_error": 6.103515625e-05,
+      "max_static_error": 6.103515625e-05,
+      "invalid_drivers": [],
+      "passed": true
+    },
+    {
+      "frame": 80,
+      "scenario": "S14_sliding_door",
+      "key_error": 0.0,
+      "max_matrix_error": 0.000244140625,
+      "max_static_error": 0.0001220703125,
+      "invalid_drivers": [],
+      "passed": true
+    },
+    {
+      "frame": 80,
+      "scenario": "S15_radar",
+      "key_error": 5.313592854605531e-08,
+      "max_matrix_error": 0.00016498565673828125,
+      "max_static_error": 0.0001220703125,
+      "invalid_drivers": [],
+      "passed": true
+    },
+    {
+      "frame": 80,
+      "scenario": "S16_crane",
+      "key_error": 1.0775121861428261e-07,
+      "max_matrix_error": 9.1552734375e-05,
+      "max_static_error": 1.52587890625e-05,
+      "invalid_drivers": [],
+      "passed": true
+    },
+    {
+      "frame": 80,
+      "scenario": "S17_tipper",
+      "key_error": 1.1920928910669204e-08,
+      "max_matrix_error": 0.00030517578125,
+      "max_static_error": 0.000244140625,
+      "invalid_drivers": [],
+      "passed": true
+    },
+    {
+      "frame": 80,
+      "scenario": "S18_barrier",
+      "key_error": 4.768371586472142e-08,
+      "max_matrix_error": 3.0517578125e-05,
+      "max_static_error": 7.62939453125e-06,
+      "invalid_drivers": [],
+      "passed": true
+    },
+    {
+      "frame": 80,
+      "scenario": "S19_drawbridge",
+      "key_error": 0.0,
+      "max_matrix_error": 0.000244140625,
+      "max_static_error": 0.000244140625,
+      "invalid_drivers": [],
+      "passed": true
+    },
+    {
+      "frame": 80,
+      "scenario": "S20_levers",
+      "key_error": 2.384185793236071e-08,
+      "max_matrix_error": 0.0001220703125,
+      "max_static_error": 0.0001220703125,
+      "invalid_drivers": [],
+      "passed": true
+    },
+    {
+      "frame": 100,
+      "scenario": "S01_house_door",
+      "key_error": 4.2815622602887515e-08,
+      "max_matrix_error": 1.52587890625e-05,
+      "max_static_error": 1.52587890625e-05,
+      "invalid_drivers": [],
+      "passed": true
+    },
+    {
+      "frame": 100,
+      "scenario": "S02_casement_window",
+      "key_error": 2.7060169216497343e-08,
+      "max_matrix_error": 7.62939453125e-06,
+      "max_static_error": 6.103515625e-05,
+      "invalid_drivers": [],
+      "passed": true
+    },
+    {
+      "frame": 100,
+      "scenario": "S03_shuttered_window",
+      "key_error": 2.909211449519944e-08,
+      "max_matrix_error": 6.4849853515625e-05,
+      "max_static_error": 6.103515625e-05,
+      "invalid_drivers": [],
+      "passed": true
+    },
+    {
+      "frame": 100,
+      "scenario": "S04_garden_gate",
+      "key_error": 0.0,
+      "max_matrix_error": 0.0001220703125,
+      "max_static_error": 0.0001220703125,
+      "invalid_drivers": [],
+      "passed": true
+    },
+    {
+      "frame": 100,
+      "scenario": "S05_kitchen_cupboard",
+      "key_error": 3.245366686499551e-08,
+      "max_matrix_error": 0.0001220703125,
+      "max_static_error": 0.0001220703125,
+      "invalid_drivers": [],
+      "passed": true
+    },
+    {
+      "frame": 100,
+      "scenario": "S06_double_cabinet",
+      "key_error": 2.1429730434618932e-08,
+      "max_matrix_error": 1.52587890625e-05,
+      "max_static_error": 3.0517578125e-05,
+      "invalid_drivers": [],
+      "passed": true
+    },
+    {
+      "frame": 100,
+      "scenario": "S07_treasure_chest",
+      "key_error": 0.0,
+      "max_matrix_error": 1.9073486328125e-05,
+      "max_static_error": 6.103515625e-05,
+      "invalid_drivers": [],
+      "passed": true
+    },
+    {
+      "frame": 100,
+      "scenario": "S08_mailbox",
+      "key_error": 3.8629463183781354e-08,
+      "max_matrix_error": 6.103515625e-05,
+      "max_static_error": 6.103515625e-05,
+      "invalid_drivers": [],
+      "passed": true
+    },
+    {
+      "frame": 100,
+      "scenario": "S09_trap_door",
+      "key_error": 1.6061073360162936e-08,
+      "max_matrix_error": 0.00025177001953125,
+      "max_static_error": 0.0001220703125,
+      "invalid_drivers": [],
+      "passed": true
+    },
+    {
+      "frame": 100,
+      "scenario": "S10_car_doors",
+      "key_error": 1.8100652088293145e-08,
+      "max_matrix_error": 0.0001220703125,
+      "max_static_error": 0.0001220703125,
+      "invalid_drivers": [],
+      "passed": true
+    },
+    {
+      "frame": 100,
+      "scenario": "S11_car_roof",
+      "key_error": 1.8100652088293145e-08,
+      "max_matrix_error": 2.288818359375e-05,
+      "max_static_error": 3.0517578125e-05,
+      "invalid_drivers": [],
+      "passed": true
+    },
+    {
+      "frame": 100,
+      "scenario": "S12_canopy",
+      "key_error": 2.4340250259768936e-08,
+      "max_matrix_error": 7.62939453125e-06,
+      "max_static_error": 6.103515625e-05,
+      "invalid_drivers": [],
+      "passed": true
+    },
+    {
+      "frame": 100,
+      "scenario": "S13_forklift",
+      "key_error": 1.4886803256786152e-06,
+      "max_matrix_error": 6.103515625e-05,
+      "max_static_error": 6.103515625e-05,
+      "invalid_drivers": [],
+      "passed": true
+    },
+    {
+      "frame": 100,
+      "scenario": "S14_sliding_door",
+      "key_error": 6.716870700529398e-06,
+      "max_matrix_error": 0.0001678466796875,
+      "max_static_error": 0.0001220703125,
+      "invalid_drivers": [],
+      "passed": true
+    },
+    {
+      "frame": 100,
+      "scenario": "S15_radar",
+      "key_error": 2.714230884492963e-07,
+      "max_matrix_error": 0.0001220703125,
+      "max_static_error": 0.0001220703125,
+      "invalid_drivers": [],
+      "passed": true
+    },
+    {
+      "frame": 100,
+      "scenario": "S16_crane",
+      "key_error": 4.371139006309477e-08,
+      "max_matrix_error": 3.0517578125e-05,
+      "max_static_error": 1.52587890625e-05,
+      "invalid_drivers": [],
+      "passed": true
+    },
+    {
+      "frame": 100,
+      "scenario": "S17_tipper",
+      "key_error": 6.7953245252994066e-09,
+      "max_matrix_error": 0.0002593994140625,
+      "max_static_error": 0.000244140625,
+      "invalid_drivers": [],
+      "passed": true
+    },
+    {
+      "frame": 100,
+      "scenario": "S18_barrier",
+      "key_error": 4.768371586472142e-08,
+      "max_matrix_error": 3.0517578125e-05,
+      "max_static_error": 7.62939453125e-06,
+      "invalid_drivers": [],
+      "passed": true
+    },
+    {
+      "frame": 100,
+      "scenario": "S19_drawbridge",
+      "key_error": 0.0,
+      "max_matrix_error": 0.000244140625,
+      "max_static_error": 0.000244140625,
+      "invalid_drivers": [],
+      "passed": true
+    },
+    {
+      "frame": 100,
+      "scenario": "S20_levers",
+      "key_error": 2.384185793236071e-08,
+      "max_matrix_error": 0.0001220703125,
+      "max_static_error": 0.0001220703125,
+      "invalid_drivers": [],
+      "passed": true
+    },
+    {
+      "frame": 120,
+      "scenario": "S01_house_door",
+      "key_error": 5.4249797987182546e-08,
+      "max_matrix_error": 1.52587890625e-05,
+      "max_static_error": 1.52587890625e-05,
+      "invalid_drivers": [],
+      "passed": true
+    },
+    {
+      "frame": 120,
+      "scenario": "S02_casement_window",
+      "key_error": 9.634484632314866e-08,
+      "max_matrix_error": 7.62939453125e-06,
+      "max_static_error": 6.103515625e-05,
+      "invalid_drivers": [],
+      "passed": true
+    },
+    {
+      "frame": 120,
+      "scenario": "S03_shuttered_window",
+      "key_error": 8.512190374787565e-08,
+      "max_matrix_error": 6.103515625e-05,
+      "max_static_error": 6.103515625e-05,
+      "invalid_drivers": [],
+      "passed": true
+    },
+    {
+      "frame": 120,
+      "scenario": "S04_garden_gate",
+      "key_error": 0.0,
+      "max_matrix_error": 0.0001220703125,
+      "max_static_error": 0.0001220703125,
+      "invalid_drivers": [],
+      "passed": true
+    },
+    {
+      "frame": 120,
+      "scenario": "S05_kitchen_cupboard",
+      "key_error": 8.434373932608707e-08,
+      "max_matrix_error": 0.0001220703125,
+      "max_static_error": 0.0001220703125,
+      "invalid_drivers": [],
+      "passed": true
+    },
+    {
+      "frame": 120,
+      "scenario": "S06_double_cabinet",
+      "key_error": 3.233032042082584e-08,
+      "max_matrix_error": 1.52587890625e-05,
+      "max_static_error": 3.0517578125e-05,
+      "invalid_drivers": [],
+      "passed": true
+    },
+    {
+      "frame": 120,
+      "scenario": "S07_treasure_chest",
+      "key_error": 1.0677042361351141e-07,
+      "max_matrix_error": 2.288818359375e-05,
+      "max_static_error": 6.103515625e-05,
+      "invalid_drivers": [],
+      "passed": true
+    },
+    {
+      "frame": 120,
+      "scenario": "S08_mailbox",
+      "key_error": 6.710236233331557e-08,
+      "max_matrix_error": 6.103515625e-05,
+      "max_static_error": 6.103515625e-05,
+      "invalid_drivers": [],
+      "passed": true
+    },
+    {
+      "frame": 120,
+      "scenario": "S09_trap_door",
+      "key_error": 2.7650316702931832e-08,
+      "max_matrix_error": 0.000244140625,
+      "max_static_error": 0.0001220703125,
+      "invalid_drivers": [],
+      "passed": true
+    },
+    {
+      "frame": 120,
+      "scenario": "S10_car_doors",
+      "key_error": 5.6229159550724717e-08,
+      "max_matrix_error": 0.0001220703125,
+      "max_static_error": 0.0001220703125,
+      "invalid_drivers": [],
+      "passed": true
+    },
+    {
+      "frame": 120,
+      "scenario": "S11_car_roof",
+      "key_error": 5.6229159550724717e-08,
+      "max_matrix_error": 3.0517578125e-05,
+      "max_static_error": 3.0517578125e-05,
+      "invalid_drivers": [],
+      "passed": true
+    },
+    {
+      "frame": 120,
+      "scenario": "S12_canopy",
+      "key_error": 3.345548205135884e-08,
+      "max_matrix_error": 7.62939453125e-06,
+      "max_static_error": 6.103515625e-05,
+      "invalid_drivers": [],
+      "passed": true
+    },
+    {
+      "frame": 120,
+      "scenario": "S13_forklift",
+      "key_error": 1.0393152592769184e-05,
+      "max_matrix_error": 6.103515625e-05,
+      "max_static_error": 6.103515625e-05,
+      "invalid_drivers": [],
+      "passed": true
+    },
+    {
+      "frame": 120,
+      "scenario": "S14_sliding_door",
+      "key_error": 4.126991044017814e-06,
+      "max_matrix_error": 0.0001983642578125,
+      "max_static_error": 0.0001220703125,
+      "invalid_drivers": [],
+      "passed": true
+    },
+    {
+      "frame": 120,
+      "scenario": "S15_radar",
+      "key_error": 3.5769221362613735e-07,
+      "max_matrix_error": 0.0001220703125,
+      "max_static_error": 0.0001220703125,
+      "invalid_drivers": [],
+      "passed": true
+    },
+    {
+      "frame": 120,
+      "scenario": "S16_crane",
+      "key_error": 6.915551975517076e-08,
+      "max_matrix_error": 0.0001373291015625,
+      "max_static_error": 1.52587890625e-05,
+      "invalid_drivers": [],
+      "passed": true
+    },
+    {
+      "frame": 120,
+      "scenario": "S17_tipper",
+      "key_error": 1.7309656263897466e-08,
+      "max_matrix_error": 0.00026702880859375,
+      "max_static_error": 0.000244140625,
+      "invalid_drivers": [],
+      "passed": true
+    },
+    {
+      "frame": 120,
+      "scenario": "S18_barrier",
+      "key_error": 1.3030020962201405e-07,
+      "max_matrix_error": 4.57763671875e-05,
+      "max_static_error": 7.62939453125e-06,
+      "invalid_drivers": [],
+      "passed": true
+    },
+    {
+      "frame": 120,
+      "scenario": "S19_drawbridge",
+      "key_error": 9.731370376186987e-09,
+      "max_matrix_error": 0.000244140625,
+      "max_static_error": 0.000244140625,
+      "invalid_drivers": [],
+      "passed": true
+    },
+    {
+      "frame": 120,
+      "scenario": "S20_levers",
+      "key_error": 3.8925481726792555e-09,
+      "max_matrix_error": 0.0001220703125,
+      "max_static_error": 0.0001220703125,
+      "invalid_drivers": [],
+      "passed": true
+    },
+    {
+      "frame": 144,
+      "scenario": "S01_house_door",
+      "key_error": 0.0,
+      "max_matrix_error": 1.52587890625e-05,
+      "max_static_error": 1.52587890625e-05,
+      "invalid_drivers": [],
+      "passed": true
+    },
+    {
+      "frame": 144,
+      "scenario": "S02_casement_window",
+      "key_error": 0.0,
+      "max_matrix_error": 7.62939453125e-06,
+      "max_static_error": 6.103515625e-05,
+      "invalid_drivers": [],
+      "passed": true
+    },
+    {
+      "frame": 144,
+      "scenario": "S03_shuttered_window",
+      "key_error": 0.0,
+      "max_matrix_error": 6.103515625e-05,
+      "max_static_error": 6.103515625e-05,
+      "invalid_drivers": [],
+      "passed": true
+    },
+    {
+      "frame": 144,
+      "scenario": "S04_garden_gate",
+      "key_error": 0.0,
+      "max_matrix_error": 0.0001220703125,
+      "max_static_error": 0.0001220703125,
+      "invalid_drivers": [],
+      "passed": true
+    },
+    {
+      "frame": 144,
+      "scenario": "S05_kitchen_cupboard",
+      "key_error": 0.0,
+      "max_matrix_error": 0.0001220703125,
+      "max_static_error": 0.0001220703125,
+      "invalid_drivers": [],
+      "passed": true
+    },
+    {
+      "frame": 144,
+      "scenario": "S06_double_cabinet",
+      "key_error": 0.0,
+      "max_matrix_error": 1.52587890625e-05,
+      "max_static_error": 3.0517578125e-05,
+      "invalid_drivers": [],
+      "passed": true
+    },
+    {
+      "frame": 144,
+      "scenario": "S07_treasure_chest",
+      "key_error": 0.0,
+      "max_matrix_error": 3.0517578125e-05,
+      "max_static_error": 6.103515625e-05,
+      "invalid_drivers": [],
+      "passed": true
+    },
+    {
+      "frame": 144,
+      "scenario": "S08_mailbox",
+      "key_error": 0.0,
+      "max_matrix_error": 6.103515625e-05,
+      "max_static_error": 6.103515625e-05,
+      "invalid_drivers": [],
+      "passed": true
+    },
+    {
+      "frame": 144,
+      "scenario": "S09_trap_door",
+      "key_error": 0.0,
+      "max_matrix_error": 0.000244140625,
+      "max_static_error": 0.0001220703125,
+      "invalid_drivers": [],
+      "passed": true
+    },
+    {
+      "frame": 144,
+      "scenario": "S10_car_doors",
+      "key_error": 0.0,
+      "max_matrix_error": 0.0001220703125,
+      "max_static_error": 0.0001220703125,
+      "invalid_drivers": [],
+      "passed": true
+    },
+    {
+      "frame": 144,
+      "scenario": "S11_car_roof",
+      "key_error": 0.0,
+      "max_matrix_error": 2.288818359375e-05,
+      "max_static_error": 3.0517578125e-05,
+      "invalid_drivers": [],
+      "passed": true
+    },
+    {
+      "frame": 144,
+      "scenario": "S12_canopy",
+      "key_error": 0.0,
+      "max_matrix_error": 7.62939453125e-06,
+      "max_static_error": 6.103515625e-05,
+      "invalid_drivers": [],
+      "passed": true
+    },
+    {
+      "frame": 144,
+      "scenario": "S13_forklift",
+      "key_error": 0.0,
+      "max_matrix_error": 6.103515625e-05,
+      "max_static_error": 6.103515625e-05,
+      "invalid_drivers": [],
+      "passed": true
+    },
+    {
+      "frame": 144,
+      "scenario": "S14_sliding_door",
+      "key_error": 0.0,
+      "max_matrix_error": 0.0001220703125,
+      "max_static_error": 0.0001220703125,
+      "invalid_drivers": [],
+      "passed": true
+    },
+    {
+      "frame": 144,
+      "scenario": "S15_radar",
+      "key_error": 3.4969112050475815e-07,
+      "max_matrix_error": 0.00013116228092258098,
+      "max_static_error": 0.0001220703125,
+      "invalid_drivers": [],
+      "passed": true
+    },
+    {
+      "frame": 144,
+      "scenario": "S16_crane",
+      "key_error": 0.0,
+      "max_matrix_error": 0.0001220703125,
+      "max_static_error": 1.52587890625e-05,
+      "invalid_drivers": [],
+      "passed": true
+    },
+    {
+      "frame": 144,
+      "scenario": "S17_tipper",
+      "key_error": 0.0,
+      "max_matrix_error": 0.0003662109375,
+      "max_static_error": 0.000244140625,
+      "invalid_drivers": [],
+      "passed": true
+    },
+    {
+      "frame": 144,
+      "scenario": "S18_barrier",
+      "key_error": 0.0,
+      "max_matrix_error": 6.103515625e-05,
+      "max_static_error": 7.62939453125e-06,
+      "invalid_drivers": [],
+      "passed": true
+    },
+    {
+      "frame": 144,
+      "scenario": "S19_drawbridge",
+      "key_error": 0.0,
+      "max_matrix_error": 0.000244140625,
+      "max_static_error": 0.000244140625,
+      "invalid_drivers": [],
+      "passed": true
+    },
+    {
+      "frame": 144,
+      "scenario": "S20_levers",
+      "key_error": 0.0,
+      "max_matrix_error": 0.0001220703125,
+      "max_static_error": 0.0001220703125,
+      "invalid_drivers": [],
+      "passed": true
+    },
+    {
+      "frame": 152,
+      "scenario": "S01_house_door",
+      "key_error": 0.0,
+      "max_matrix_error": 1.52587890625e-05,
+      "max_static_error": 1.52587890625e-05,
+      "invalid_drivers": [],
+      "passed": true
+    },
+    {
+      "frame": 152,
+      "scenario": "S02_casement_window",
+      "key_error": 0.0,
+      "max_matrix_error": 7.62939453125e-06,
+      "max_static_error": 6.103515625e-05,
+      "invalid_drivers": [],
+      "passed": true
+    },
+    {
+      "frame": 152,
+      "scenario": "S03_shuttered_window",
+      "key_error": 0.0,
+      "max_matrix_error": 6.103515625e-05,
+      "max_static_error": 6.103515625e-05,
+      "invalid_drivers": [],
+      "passed": true
+    },
+    {
+      "frame": 152,
+      "scenario": "S04_garden_gate",
+      "key_error": 0.0,
+      "max_matrix_error": 0.0001220703125,
+      "max_static_error": 0.0001220703125,
+      "invalid_drivers": [],
+      "passed": true
+    },
+    {
+      "frame": 152,
+      "scenario": "S05_kitchen_cupboard",
+      "key_error": 0.0,
+      "max_matrix_error": 0.0001220703125,
+      "max_static_error": 0.0001220703125,
+      "invalid_drivers": [],
+      "passed": true
+    },
+    {
+      "frame": 152,
+      "scenario": "S06_double_cabinet",
+      "key_error": 0.0,
+      "max_matrix_error": 1.52587890625e-05,
+      "max_static_error": 3.0517578125e-05,
+      "invalid_drivers": [],
+      "passed": true
+    },
+    {
+      "frame": 152,
+      "scenario": "S07_treasure_chest",
+      "key_error": 0.0,
+      "max_matrix_error": 3.0517578125e-05,
+      "max_static_error": 6.103515625e-05,
+      "invalid_drivers": [],
+      "passed": true
+    },
+    {
+      "frame": 152,
+      "scenario": "S08_mailbox",
+      "key_error": 0.0,
+      "max_matrix_error": 6.103515625e-05,
+      "max_static_error": 6.103515625e-05,
+      "invalid_drivers": [],
+      "passed": true
+    },
+    {
+      "frame": 152,
+      "scenario": "S09_trap_door",
+      "key_error": 0.0,
+      "max_matrix_error": 0.000244140625,
+      "max_static_error": 0.0001220703125,
+      "invalid_drivers": [],
+      "passed": true
+    },
+    {
+      "frame": 152,
+      "scenario": "S10_car_doors",
+      "key_error": 0.0,
+      "max_matrix_error": 0.0001220703125,
+      "max_static_error": 0.0001220703125,
+      "invalid_drivers": [],
+      "passed": true
+    },
+    {
+      "frame": 152,
+      "scenario": "S11_car_roof",
+      "key_error": 0.0,
+      "max_matrix_error": 2.288818359375e-05,
+      "max_static_error": 3.0517578125e-05,
+      "invalid_drivers": [],
+      "passed": true
+    },
+    {
+      "frame": 152,
+      "scenario": "S12_canopy",
+      "key_error": 0.0,
+      "max_matrix_error": 7.62939453125e-06,
+      "max_static_error": 6.103515625e-05,
+      "invalid_drivers": [],
+      "passed": true
+    },
+    {
+      "frame": 152,
+      "scenario": "S13_forklift",
+      "key_error": 0.0,
+      "max_matrix_error": 6.103515625e-05,
+      "max_static_error": 6.103515625e-05,
+      "invalid_drivers": [],
+      "passed": true
+    },
+    {
+      "frame": 152,
+      "scenario": "S14_sliding_door",
+      "key_error": 0.0,
+      "max_matrix_error": 0.0001220703125,
+      "max_static_error": 0.0001220703125,
+      "invalid_drivers": [],
+      "passed": true
+    },
+    {
+      "frame": 152,
+      "scenario": "S15_radar",
+      "key_error": 3.4969112050475815e-07,
+      "max_matrix_error": 0.00013116228092258098,
+      "max_static_error": 0.0001220703125,
+      "invalid_drivers": [],
+      "passed": true
+    },
+    {
+      "frame": 152,
+      "scenario": "S16_crane",
+      "key_error": 0.0,
+      "max_matrix_error": 0.0001220703125,
+      "max_static_error": 1.52587890625e-05,
+      "invalid_drivers": [],
+      "passed": true
+    },
+    {
+      "frame": 152,
+      "scenario": "S17_tipper",
+      "key_error": 0.0,
+      "max_matrix_error": 0.0003662109375,
+      "max_static_error": 0.000244140625,
+      "invalid_drivers": [],
+      "passed": true
+    },
+    {
+      "frame": 152,
+      "scenario": "S18_barrier",
+      "key_error": 0.0,
+      "max_matrix_error": 6.103515625e-05,
+      "max_static_error": 7.62939453125e-06,
+      "invalid_drivers": [],
+      "passed": true
+    },
+    {
+      "frame": 152,
+      "scenario": "S19_drawbridge",
+      "key_error": 0.0,
+      "max_matrix_error": 0.000244140625,
+      "max_static_error": 0.000244140625,
+      "invalid_drivers": [],
+      "passed": true
+    },
+    {
+      "frame": 152,
+      "scenario": "S20_levers",
+      "key_error": 0.0,
+      "max_matrix_error": 0.0001220703125,
+      "max_static_error": 0.0001220703125,
+      "invalid_drivers": [],
+      "passed": true
+    },
+    {
+      "frame": 161,
+      "scenario": "S01_house_door",
+      "key_error": 0.0,
+      "max_matrix_error": 1.52587890625e-05,
+      "max_static_error": 1.52587890625e-05,
+      "invalid_drivers": [],
+      "passed": true
+    },
+    {
+      "frame": 161,
+      "scenario": "S02_casement_window",
+      "key_error": 0.0,
+      "max_matrix_error": 7.62939453125e-06,
+      "max_static_error": 6.103515625e-05,
+      "invalid_drivers": [],
+      "passed": true
+    },
+    {
+      "frame": 161,
+      "scenario": "S03_shuttered_window",
+      "key_error": 0.0,
+      "max_matrix_error": 6.103515625e-05,
+      "max_static_error": 6.103515625e-05,
+      "invalid_drivers": [],
+      "passed": true
+    },
+    {
+      "frame": 161,
+      "scenario": "S04_garden_gate",
+      "key_error": 0.0,
+      "max_matrix_error": 0.0001220703125,
+      "max_static_error": 0.0001220703125,
+      "invalid_drivers": [],
+      "passed": true
+    },
+    {
+      "frame": 161,
+      "scenario": "S05_kitchen_cupboard",
+      "key_error": 0.0,
+      "max_matrix_error": 0.0001220703125,
+      "max_static_error": 0.0001220703125,
+      "invalid_drivers": [],
+      "passed": true
+    },
+    {
+      "frame": 161,
+      "scenario": "S06_double_cabinet",
+      "key_error": 0.0,
+      "max_matrix_error": 1.52587890625e-05,
+      "max_static_error": 3.0517578125e-05,
+      "invalid_drivers": [],
+      "passed": true
+    },
+    {
+      "frame": 161,
+      "scenario": "S07_treasure_chest",
+      "key_error": 0.0,
+      "max_matrix_error": 3.0517578125e-05,
+      "max_static_error": 6.103515625e-05,
+      "invalid_drivers": [],
+      "passed": true
+    },
+    {
+      "frame": 161,
+      "scenario": "S08_mailbox",
+      "key_error": 0.0,
+      "max_matrix_error": 6.103515625e-05,
+      "max_static_error": 6.103515625e-05,
+      "invalid_drivers": [],
+      "passed": true
+    },
+    {
+      "frame": 161,
+      "scenario": "S09_trap_door",
+      "key_error": 0.0,
+      "max_matrix_error": 0.000244140625,
+      "max_static_error": 0.0001220703125,
+      "invalid_drivers": [],
+      "passed": true
+    },
+    {
+      "frame": 161,
+      "scenario": "S10_car_doors",
+      "key_error": 0.0,
+      "max_matrix_error": 0.0001220703125,
+      "max_static_error": 0.0001220703125,
+      "invalid_drivers": [],
+      "passed": true
+    },
+    {
+      "frame": 161,
+      "scenario": "S11_car_roof",
+      "key_error": 0.0,
+      "max_matrix_error": 2.288818359375e-05,
+      "max_static_error": 3.0517578125e-05,
+      "invalid_drivers": [],
+      "passed": true
+    },
+    {
+      "frame": 161,
+      "scenario": "S12_canopy",
+      "key_error": 0.0,
+      "max_matrix_error": 7.62939453125e-06,
+      "max_static_error": 6.103515625e-05,
+      "invalid_drivers": [],
+      "passed": true
+    },
+    {
+      "frame": 161,
+      "scenario": "S13_forklift",
+      "key_error": 0.0,
+      "max_matrix_error": 6.103515625e-05,
+      "max_static_error": 6.103515625e-05,
+      "invalid_drivers": [],
+      "passed": true
+    },
+    {
+      "frame": 161,
+      "scenario": "S14_sliding_door",
+      "key_error": 0.0,
+      "max_matrix_error": 0.0001220703125,
+      "max_static_error": 0.0001220703125,
+      "invalid_drivers": [],
+      "passed": true
+    },
+    {
+      "frame": 161,
+      "scenario": "S15_radar",
+      "key_error": 0.0,
+      "max_matrix_error": 0.0001220703125,
+      "max_static_error": 0.0001220703125,
+      "invalid_drivers": [],
+      "passed": true
+    },
+    {
+      "frame": 161,
+      "scenario": "S16_crane",
+      "key_error": 0.0,
+      "max_matrix_error": 0.0001220703125,
+      "max_static_error": 1.52587890625e-05,
+      "invalid_drivers": [],
+      "passed": true
+    },
+    {
+      "frame": 161,
+      "scenario": "S17_tipper",
+      "key_error": 0.0,
+      "max_matrix_error": 0.0003662109375,
+      "max_static_error": 0.000244140625,
+      "invalid_drivers": [],
+      "passed": true
+    },
+    {
+      "frame": 161,
+      "scenario": "S18_barrier",
+      "key_error": 0.0,
+      "max_matrix_error": 6.103515625e-05,
+      "max_static_error": 7.62939453125e-06,
+      "invalid_drivers": [],
+      "passed": true
+    },
+    {
+      "frame": 161,
+      "scenario": "S19_drawbridge",
+      "key_error": 0.0,
+      "max_matrix_error": 0.000244140625,
+      "max_static_error": 0.000244140625,
+      "invalid_drivers": [],
+      "passed": true
+    },
+    {
+      "frame": 161,
+      "scenario": "S20_levers",
+      "key_error": 0.0,
+      "max_matrix_error": 0.0001220703125,
+      "max_static_error": 0.0001220703125,
+      "invalid_drivers": [],
+      "passed": true
+    },
+    {
+      "frame": 180,
+      "scenario": "S01_house_door",
+      "key_error": 2.70192550000381e-08,
+      "max_matrix_error": 1.52587890625e-05,
+      "max_static_error": 1.52587890625e-05,
+      "invalid_drivers": [],
+      "passed": true
+    },
+    {
+      "frame": 180,
+      "scenario": "S02_casement_window",
+      "key_error": 3.7417206999457164e-08,
+      "max_matrix_error": 7.62939453125e-06,
+      "max_static_error": 6.103515625e-05,
+      "invalid_drivers": [],
+      "passed": true
+    },
+    {
+      "frame": 180,
+      "scenario": "S03_shuttered_window",
+      "key_error": 9.615070606372456e-08,
+      "max_matrix_error": 6.103515625e-05,
+      "max_static_error": 6.103515625e-05,
+      "invalid_drivers": [],
+      "passed": true
+    },
+    {
+      "frame": 180,
+      "scenario": "S04_garden_gate",
+      "key_error": 2.547359900795243e-08,
+      "max_matrix_error": 0.0001220703125,
+      "max_static_error": 0.0001220703125,
+      "invalid_drivers": [],
+      "passed": true
+    },
+    {
+      "frame": 180,
+      "scenario": "S05_kitchen_cupboard",
+      "key_error": 9.633486044435813e-07,
+      "max_matrix_error": 0.0001220703125,
+      "max_static_error": 0.0001220703125,
+      "invalid_drivers": [],
+      "passed": true
+    },
+    {
+      "frame": 180,
+      "scenario": "S06_double_cabinet",
+      "key_error": 1.210748203916978e-07,
+      "max_matrix_error": 1.52587890625e-05,
+      "max_static_error": 3.0517578125e-05,
+      "invalid_drivers": [],
+      "passed": true
+    },
+    {
+      "frame": 180,
+      "scenario": "S07_treasure_chest",
+      "key_error": 8.094457948359945e-08,
+      "max_matrix_error": 3.0517578125e-05,
+      "max_static_error": 6.103515625e-05,
+      "invalid_drivers": [],
+      "passed": true
+    },
+    {
+      "frame": 180,
+      "scenario": "S08_mailbox",
+      "key_error": 1.3244020796721045e-08,
+      "max_matrix_error": 6.103515625e-05,
+      "max_static_error": 6.103515625e-05,
+      "invalid_drivers": [],
+      "passed": true
+    },
+    {
+      "frame": 180,
+      "scenario": "S09_trap_door",
+      "key_error": 4.371139006309477e-08,
+      "max_matrix_error": 0.000247955322265625,
+      "max_static_error": 0.0001220703125,
+      "invalid_drivers": [],
+      "passed": true
+    },
+    {
+      "frame": 180,
+      "scenario": "S10_car_doors",
+      "key_error": 3.148137006636631e-08,
+      "max_matrix_error": 0.0001201629638671875,
+      "max_static_error": 0.0001220703125,
+      "invalid_drivers": [],
+      "passed": true
+    },
+    {
+      "frame": 180,
+      "scenario": "S11_car_roof",
+      "key_error": 1.4610346932286689e-08,
+      "max_matrix_error": 3.814697265625e-05,
+      "max_static_error": 3.0517578125e-05,
+      "invalid_drivers": [],
+      "passed": true
+    },
+    {
+      "frame": 180,
+      "scenario": "S12_canopy",
+      "key_error": 1.1114720949167989e-08,
+      "max_matrix_error": 1.52587890625e-05,
+      "max_static_error": 6.103515625e-05,
+      "invalid_drivers": [],
+      "passed": true
+    },
+    {
+      "frame": 180,
+      "scenario": "S13_forklift",
+      "key_error": 0.0,
+      "max_matrix_error": 6.103515625e-05,
+      "max_static_error": 6.103515625e-05,
+      "invalid_drivers": [],
+      "passed": true
+    },
+    {
+      "frame": 180,
+      "scenario": "S14_sliding_door",
+      "key_error": 8.477105055249012e-06,
+      "max_matrix_error": 0.0001983642578125,
+      "max_static_error": 0.0001220703125,
+      "invalid_drivers": [],
+      "passed": true
+    },
+    {
+      "frame": 180,
+      "scenario": "S15_radar",
+      "key_error": 5.7510888384904035e-08,
+      "max_matrix_error": 0.0001220703125,
+      "max_static_error": 0.0001220703125,
+      "invalid_drivers": [],
+      "passed": true
+    },
+    {
+      "frame": 180,
+      "scenario": "S16_crane",
+      "key_error": 2.6160086485926826e-08,
+      "max_matrix_error": 0.0001068115234375,
+      "max_static_error": 1.52587890625e-05,
+      "invalid_drivers": [],
+      "passed": true
+    },
+    {
+      "frame": 180,
+      "scenario": "S17_tipper",
+      "key_error": 0.0,
+      "max_matrix_error": 0.00032806396484375,
+      "max_static_error": 0.000244140625,
+      "invalid_drivers": [],
+      "passed": true
+    },
+    {
+      "frame": 180,
+      "scenario": "S18_barrier",
+      "key_error": 1.1920928955078125e-07,
+      "max_matrix_error": 6.103515625e-05,
+      "max_static_error": 7.62939453125e-06,
+      "invalid_drivers": [],
+      "passed": true
+    },
+    {
+      "frame": 180,
+      "scenario": "S19_drawbridge",
+      "key_error": 3.924012972889024e-08,
+      "max_matrix_error": 0.000244140625,
+      "max_static_error": 0.000244140625,
+      "invalid_drivers": [],
+      "passed": true
+    },
+    {
+      "frame": 180,
+      "scenario": "S20_levers",
+      "key_error": 9.93410742555767e-10,
+      "max_matrix_error": 0.0001220703125,
+      "max_static_error": 0.0001220703125,
+      "invalid_drivers": [],
+      "passed": true
+    },
+    {
+      "frame": 200,
+      "scenario": "S01_house_door",
+      "key_error": 0.0,
+      "max_matrix_error": 1.52587890625e-05,
+      "max_static_error": 1.52587890625e-05,
+      "invalid_drivers": [],
+      "passed": true
+    },
+    {
+      "frame": 200,
+      "scenario": "S02_casement_window",
+      "key_error": 3.7347532788611915e-08,
+      "max_matrix_error": 9.059906005859375e-06,
+      "max_static_error": 6.103515625e-05,
+      "invalid_drivers": [],
+      "passed": true
+    },
+    {
+      "frame": 200,
+      "scenario": "S03_shuttered_window",
+      "key_error": 2.579551017234394e-08,
+      "max_matrix_error": 6.103515625e-05,
+      "max_static_error": 6.103515625e-05,
+      "invalid_drivers": [],
+      "passed": true
+    },
+    {
+      "frame": 200,
+      "scenario": "S04_garden_gate",
+      "key_error": 3.304576545737348e-08,
+      "max_matrix_error": 0.0001220703125,
+      "max_static_error": 0.0001220703125,
+      "invalid_drivers": [],
+      "passed": true
+    },
+    {
+      "frame": 200,
+      "scenario": "S05_kitchen_cupboard",
+      "key_error": 0.0,
+      "max_matrix_error": 0.0001220703125,
+      "max_static_error": 0.0001220703125,
+      "invalid_drivers": [],
+      "passed": true
+    },
+    {
+      "frame": 200,
+      "scenario": "S06_double_cabinet",
+      "key_error": 4.768371586472142e-08,
+      "max_matrix_error": 1.52587890625e-05,
+      "max_static_error": 3.0517578125e-05,
+      "invalid_drivers": [],
+      "passed": true
+    },
+    {
+      "frame": 200,
+      "scenario": "S07_treasure_chest",
+      "key_error": 4.768371586472142e-08,
+      "max_matrix_error": 2.6702880859375e-05,
+      "max_static_error": 6.103515625e-05,
+      "invalid_drivers": [],
+      "passed": true
+    },
+    {
+      "frame": 200,
+      "scenario": "S08_mailbox",
+      "key_error": 1.238466622588419e-07,
+      "max_matrix_error": 6.103515625e-05,
+      "max_static_error": 6.103515625e-05,
+      "invalid_drivers": [],
+      "passed": true
+    },
+    {
+      "frame": 200,
+      "scenario": "S09_trap_door",
+      "key_error": 4.371139006309477e-08,
+      "max_matrix_error": 0.000247955322265625,
+      "max_static_error": 0.0001220703125,
+      "invalid_drivers": [],
+      "passed": true
+    },
+    {
+      "frame": 200,
+      "scenario": "S10_car_doors",
+      "key_error": 9.512716192539017e-08,
+      "max_matrix_error": 0.0001220703125,
+      "max_static_error": 0.0001220703125,
+      "invalid_drivers": [],
+      "passed": true
+    },
+    {
+      "frame": 200,
+      "scenario": "S11_car_roof",
+      "key_error": 4.76837147544984e-09,
+      "max_matrix_error": 3.814697265625e-05,
+      "max_static_error": 3.0517578125e-05,
+      "invalid_drivers": [],
+      "passed": true
+    },
+    {
+      "frame": 200,
+      "scenario": "S12_canopy",
+      "key_error": 1.0814666762115621e-07,
+      "max_matrix_error": 7.62939453125e-06,
+      "max_static_error": 6.103515625e-05,
+      "invalid_drivers": [],
+      "passed": true
+    },
+    {
+      "frame": 200,
+      "scenario": "S13_forklift",
+      "key_error": 0.0,
+      "max_matrix_error": 6.103515625e-05,
+      "max_static_error": 6.103515625e-05,
+      "invalid_drivers": [],
+      "passed": true
+    },
+    {
+      "frame": 200,
+      "scenario": "S14_sliding_door",
+      "key_error": 0.0,
+      "max_matrix_error": 0.000244140625,
+      "max_static_error": 0.0001220703125,
+      "invalid_drivers": [],
+      "passed": true
+    },
+    {
+      "frame": 200,
+      "scenario": "S15_radar",
+      "key_error": 3.0523314986652395e-08,
+      "max_matrix_error": 0.0001220703125,
+      "max_static_error": 0.0001220703125,
+      "invalid_drivers": [],
+      "passed": true
+    },
+    {
+      "frame": 200,
+      "scenario": "S16_crane",
+      "key_error": 4.434395761698795e-08,
+      "max_matrix_error": 0.00011396408081054688,
+      "max_static_error": 1.52587890625e-05,
+      "invalid_drivers": [],
+      "passed": true
+    },
+    {
+      "frame": 200,
+      "scenario": "S17_tipper",
+      "key_error": 0.0,
+      "max_matrix_error": 0.0003509521484375,
+      "max_static_error": 0.000244140625,
+      "invalid_drivers": [],
+      "passed": true
+    },
+    {
+      "frame": 200,
+      "scenario": "S18_barrier",
+      "key_error": 4.768371586472142e-08,
+      "max_matrix_error": 3.0517578125e-05,
+      "max_static_error": 7.62939453125e-06,
+      "invalid_drivers": [],
+      "passed": true
+    },
+    {
+      "frame": 200,
+      "scenario": "S19_drawbridge",
+      "key_error": 1.2612058108985025e-07,
+      "max_matrix_error": 0.000244140625,
+      "max_static_error": 0.000244140625,
+      "invalid_drivers": [],
+      "passed": true
+    },
+    {
+      "frame": 200,
+      "scenario": "S20_levers",
+      "key_error": 1.1920928966180355e-08,
+      "max_matrix_error": 0.0001220703125,
+      "max_static_error": 0.0001220703125,
+      "invalid_drivers": [],
+      "passed": true
+    },
+    {
+      "frame": 220,
+      "scenario": "S01_house_door",
+      "key_error": 0.0,
+      "max_matrix_error": 1.52587890625e-05,
+      "max_static_error": 1.52587890625e-05,
+      "invalid_drivers": [],
+      "passed": true
+    },
+    {
+      "frame": 220,
+      "scenario": "S02_casement_window",
+      "key_error": 5.5918635277762974e-08,
+      "max_matrix_error": 9.059906005859375e-06,
+      "max_static_error": 6.103515625e-05,
+      "invalid_drivers": [],
+      "passed": true
+    },
+    {
+      "frame": 220,
+      "scenario": "S03_shuttered_window",
+      "key_error": 9.536743172944284e-08,
+      "max_matrix_error": 6.103515625e-05,
+      "max_static_error": 6.103515625e-05,
+      "invalid_drivers": [],
+      "passed": true
+    },
+    {
+      "frame": 220,
+      "scenario": "S04_garden_gate",
+      "key_error": 0.0,
+      "max_matrix_error": 0.0001220703125,
+      "max_static_error": 0.0001220703125,
+      "invalid_drivers": [],
+      "passed": true
+    },
+    {
+      "frame": 220,
+      "scenario": "S05_kitchen_cupboard",
+      "key_error": 1.0033431934175496e-06,
+      "max_matrix_error": 0.0001220703125,
+      "max_static_error": 0.0001220703125,
+      "invalid_drivers": [],
+      "passed": true
+    },
+    {
+      "frame": 220,
+      "scenario": "S06_double_cabinet",
+      "key_error": 9.502704956254604e-08,
+      "max_matrix_error": 1.52587890625e-05,
+      "max_static_error": 3.0517578125e-05,
+      "invalid_drivers": [],
+      "passed": true
+    },
+    {
+      "frame": 220,
+      "scenario": "S07_treasure_chest",
+      "key_error": 4.768371586472142e-08,
+      "max_matrix_error": 2.6702880859375e-05,
+      "max_static_error": 6.103515625e-05,
+      "invalid_drivers": [],
+      "passed": true
+    },
+    {
+      "frame": 220,
+      "scenario": "S08_mailbox",
+      "key_error": 4.768371586472142e-08,
+      "max_matrix_error": 6.103515625e-05,
+      "max_static_error": 6.103515625e-05,
+      "invalid_drivers": [],
+      "passed": true
+    },
+    {
+      "frame": 220,
+      "scenario": "S09_trap_door",
+      "key_error": 4.371139006309477e-08,
+      "max_matrix_error": 0.000247955322265625,
+      "max_static_error": 0.0001220703125,
+      "invalid_drivers": [],
+      "passed": true
+    },
+    {
+      "frame": 220,
+      "scenario": "S10_car_doors",
+      "key_error": 4.768371586472142e-08,
+      "max_matrix_error": 0.0001220703125,
+      "max_static_error": 0.0001220703125,
+      "invalid_drivers": [],
+      "passed": true
+    },
+    {
+      "frame": 220,
+      "scenario": "S11_car_roof",
+      "key_error": 4.76837147544984e-09,
+      "max_matrix_error": 3.814697265625e-05,
+      "max_static_error": 3.0517578125e-05,
+      "invalid_drivers": [],
+      "passed": true
+    },
+    {
+      "frame": 220,
+      "scenario": "S12_canopy",
+      "key_error": 3.8683855896337604e-08,
+      "max_matrix_error": 7.62939453125e-06,
+      "max_static_error": 6.103515625e-05,
+      "invalid_drivers": [],
+      "passed": true
+    },
+    {
+      "frame": 220,
+      "scenario": "S13_forklift",
+      "key_error": 0.0,
+      "max_matrix_error": 6.103515625e-05,
+      "max_static_error": 6.103515625e-05,
+      "invalid_drivers": [],
+      "passed": true
+    },
+    {
+      "frame": 220,
+      "scenario": "S14_sliding_door",
+      "key_error": 0.0,
+      "max_matrix_error": 0.000244140625,
+      "max_static_error": 0.0001220703125,
+      "invalid_drivers": [],
+      "passed": true
+    },
+    {
+      "frame": 220,
+      "scenario": "S15_radar",
+      "key_error": 6.306450117676832e-08,
+      "max_matrix_error": 0.000213623046875,
+      "max_static_error": 0.0001220703125,
+      "invalid_drivers": [],
+      "passed": true
+    },
+    {
+      "frame": 220,
+      "scenario": "S16_crane",
+      "key_error": 0.0,
+      "max_matrix_error": 9.918212890625e-05,
+      "max_static_error": 1.52587890625e-05,
+      "invalid_drivers": [],
+      "passed": true
+    },
+    {
+      "frame": 220,
+      "scenario": "S17_tipper",
+      "key_error": 0.0,
+      "max_matrix_error": 0.0002288818359375,
+      "max_static_error": 0.000244140625,
+      "invalid_drivers": [],
+      "passed": true
+    },
+    {
+      "frame": 220,
+      "scenario": "S18_barrier",
+      "key_error": 4.768371586472142e-08,
+      "max_matrix_error": 3.0517578125e-05,
+      "max_static_error": 7.62939453125e-06,
+      "invalid_drivers": [],
+      "passed": true
+    },
+    {
+      "frame": 220,
+      "scenario": "S19_drawbridge",
+      "key_error": 0.0,
+      "max_matrix_error": 0.000244140625,
+      "max_static_error": 0.000244140625,
+      "invalid_drivers": [],
+      "passed": true
+    },
+    {
+      "frame": 220,
+      "scenario": "S20_levers",
+      "key_error": 1.9868214962137642e-08,
+      "max_matrix_error": 0.0001220703125,
+      "max_static_error": 0.0001220703125,
+      "invalid_drivers": [],
+      "passed": true
+    },
+    {
+      "frame": 240,
+      "scenario": "S01_house_door",
+      "key_error": 7.947285984855057e-08,
+      "max_matrix_error": 1.52587890625e-05,
+      "max_static_error": 1.52587890625e-05,
+      "invalid_drivers": [],
+      "passed": true
+    },
+    {
+      "frame": 240,
+      "scenario": "S02_casement_window",
+      "key_error": 0.0,
+      "max_matrix_error": 9.059906005859375e-06,
+      "max_static_error": 6.103515625e-05,
+      "invalid_drivers": [],
+      "passed": true
+    },
+    {
+      "frame": 240,
+      "scenario": "S03_shuttered_window",
+      "key_error": 9.536743172944284e-08,
+      "max_matrix_error": 6.4849853515625e-05,
+      "max_static_error": 6.103515625e-05,
+      "invalid_drivers": [],
+      "passed": true
+    },
+    {
+      "frame": 240,
+      "scenario": "S04_garden_gate",
+      "key_error": 0.0,
+      "max_matrix_error": 0.0001220703125,
+      "max_static_error": 0.0001220703125,
+      "invalid_drivers": [],
+      "passed": true
+    },
+    {
+      "frame": 240,
+      "scenario": "S05_kitchen_cupboard",
+      "key_error": 0.0,
+      "max_matrix_error": 0.0001220703125,
+      "max_static_error": 0.0001220703125,
+      "invalid_drivers": [],
+      "passed": true
+    },
+    {
+      "frame": 240,
+      "scenario": "S06_double_cabinet",
+      "key_error": 4.768371586472142e-08,
+      "max_matrix_error": 1.52587890625e-05,
+      "max_static_error": 3.0517578125e-05,
+      "invalid_drivers": [],
+      "passed": true
+    },
+    {
+      "frame": 240,
+      "scenario": "S07_treasure_chest",
+      "key_error": 8.760824732334527e-08,
+      "max_matrix_error": 4.076957702636719e-05,
+      "max_static_error": 6.103515625e-05,
+      "invalid_drivers": [],
+      "passed": true
+    },
+    {
+      "frame": 240,
+      "scenario": "S08_mailbox",
+      "key_error": 4.768371586472142e-08,
+      "max_matrix_error": 6.103515625e-05,
+      "max_static_error": 6.103515625e-05,
+      "invalid_drivers": [],
+      "passed": true
+    },
+    {
+      "frame": 240,
+      "scenario": "S09_trap_door",
+      "key_error": 3.142076865358945e-08,
+      "max_matrix_error": 0.000247955322265625,
+      "max_static_error": 0.0001220703125,
+      "invalid_drivers": [],
+      "passed": true
+    },
+    {
+      "frame": 240,
+      "scenario": "S10_car_doors",
+      "key_error": 4.768371586472142e-08,
+      "max_matrix_error": 0.0001220703125,
+      "max_static_error": 0.0001220703125,
+      "invalid_drivers": [],
+      "passed": true
+    },
+    {
+      "frame": 240,
+      "scenario": "S11_car_roof",
+      "key_error": 4.76837147544984e-09,
+      "max_matrix_error": 3.814697265625e-05,
+      "max_static_error": 3.0517578125e-05,
+      "invalid_drivers": [],
+      "passed": true
+    },
+    {
+      "frame": 240,
+      "scenario": "S12_canopy",
+      "key_error": 2.3841857821338408e-08,
+      "max_matrix_error": 7.62939453125e-06,
+      "max_static_error": 6.103515625e-05,
+      "invalid_drivers": [],
+      "passed": true
+    },
+    {
+      "frame": 240,
+      "scenario": "S13_forklift",
+      "key_error": 0.0,
+      "max_matrix_error": 6.103515625e-05,
+      "max_static_error": 6.103515625e-05,
+      "invalid_drivers": [],
+      "passed": true
+    },
+    {
+      "frame": 240,
+      "scenario": "S14_sliding_door",
+      "key_error": 0.0,
+      "max_matrix_error": 0.000244140625,
+      "max_static_error": 0.0001220703125,
+      "invalid_drivers": [],
+      "passed": true
+    },
+    {
+      "frame": 240,
+      "scenario": "S15_radar",
+      "key_error": 3.201848386424899e-07,
+      "max_matrix_error": 0.0001316070556640625,
+      "max_static_error": 0.0001220703125,
+      "invalid_drivers": [],
+      "passed": true
+    },
+    {
+      "frame": 240,
+      "scenario": "S16_crane",
+      "key_error": 0.0,
+      "max_matrix_error": 9.918212890625e-05,
+      "max_static_error": 1.52587890625e-05,
+      "invalid_drivers": [],
+      "passed": true
+    },
+    {
+      "frame": 240,
+      "scenario": "S17_tipper",
+      "key_error": 1.1920928910669204e-08,
+      "max_matrix_error": 0.00030517578125,
+      "max_static_error": 0.000244140625,
+      "invalid_drivers": [],
+      "passed": true
+    },
+    {
+      "frame": 240,
+      "scenario": "S18_barrier",
+      "key_error": 4.768371586472142e-08,
+      "max_matrix_error": 3.0517578125e-05,
+      "max_static_error": 7.62939453125e-06,
+      "invalid_drivers": [],
+      "passed": true
+    },
+    {
+      "frame": 240,
+      "scenario": "S19_drawbridge",
+      "key_error": 0.0,
+      "max_matrix_error": 0.000244140625,
+      "max_static_error": 0.000244140625,
+      "invalid_drivers": [],
+      "passed": true
+    },
+    {
+      "frame": 240,
+      "scenario": "S20_levers",
+      "key_error": 2.384185793236071e-08,
+      "max_matrix_error": 0.0001220703125,
+      "max_static_error": 0.0001220703125,
+      "invalid_drivers": [],
+      "passed": true
+    },
+    {
+      "frame": 260,
+      "scenario": "S01_house_door",
+      "key_error": 0.0,
+      "max_matrix_error": 1.52587890625e-05,
+      "max_static_error": 1.52587890625e-05,
+      "invalid_drivers": [],
+      "passed": true
+    },
+    {
+      "frame": 260,
+      "scenario": "S02_casement_window",
+      "key_error": 2.258976872226981e-08,
+      "max_matrix_error": 9.059906005859375e-06,
+      "max_static_error": 6.103515625e-05,
+      "invalid_drivers": [],
+      "passed": true
+    },
+    {
+      "frame": 260,
+      "scenario": "S03_shuttered_window",
+      "key_error": 9.536743172944284e-08,
+      "max_matrix_error": 6.4849853515625e-05,
+      "max_static_error": 6.103515625e-05,
+      "invalid_drivers": [],
+      "passed": true
+    },
+    {
+      "frame": 260,
+      "scenario": "S04_garden_gate",
+      "key_error": 7.947285984855057e-08,
+      "max_matrix_error": 0.0001220703125,
+      "max_static_error": 0.0001220703125,
+      "invalid_drivers": [],
+      "passed": true
+    },
+    {
+      "frame": 260,
+      "scenario": "S05_kitchen_cupboard",
+      "key_error": 0.0,
+      "max_matrix_error": 0.0001220703125,
+      "max_static_error": 0.0001220703125,
+      "invalid_drivers": [],
+      "passed": true
+    },
+    {
+      "frame": 260,
+      "scenario": "S06_double_cabinet",
+      "key_error": 8.262700301742143e-08,
+      "max_matrix_error": 1.52587890625e-05,
+      "max_static_error": 3.0517578125e-05,
+      "invalid_drivers": [],
+      "passed": true
+    },
+    {
+      "frame": 260,
+      "scenario": "S07_treasure_chest",
+      "key_error": 0.0,
+      "max_matrix_error": 3.0517578125e-05,
+      "max_static_error": 6.103515625e-05,
+      "invalid_drivers": [],
+      "passed": true
+    },
+    {
+      "frame": 260,
+      "scenario": "S08_mailbox",
+      "key_error": 4.637372708060639e-09,
+      "max_matrix_error": 6.103515625e-05,
+      "max_static_error": 6.103515625e-05,
+      "invalid_drivers": [],
+      "passed": true
+    },
+    {
+      "frame": 260,
+      "scenario": "S09_trap_door",
+      "key_error": 1.229062140950532e-08,
+      "max_matrix_error": 0.000244140625,
+      "max_static_error": 0.0001220703125,
+      "invalid_drivers": [],
+      "passed": true
+    },
+    {
+      "frame": 260,
+      "scenario": "S10_car_doors",
+      "key_error": 1.8100652088293145e-08,
+      "max_matrix_error": 0.0001220703125,
+      "max_static_error": 0.0001220703125,
+      "invalid_drivers": [],
+      "passed": true
+    },
+    {
+      "frame": 260,
+      "scenario": "S11_car_roof",
+      "key_error": 3.6323083651979005e-08,
+      "max_matrix_error": 2.288818359375e-05,
+      "max_static_error": 3.0517578125e-05,
+      "invalid_drivers": [],
+      "passed": true
+    },
+    {
+      "frame": 260,
+      "scenario": "S12_canopy",
+      "key_error": 2.8257016726485062e-08,
+      "max_matrix_error": 7.62939453125e-06,
+      "max_static_error": 6.103515625e-05,
+      "invalid_drivers": [],
+      "passed": true
+    },
+    {
+      "frame": 260,
+      "scenario": "S13_forklift",
+      "key_error": 0.0,
+      "max_matrix_error": 6.103515625e-05,
+      "max_static_error": 6.103515625e-05,
+      "invalid_drivers": [],
+      "passed": true
+    },
+    {
+      "frame": 260,
+      "scenario": "S14_sliding_door",
+      "key_error": 4.238552520519079e-06,
+      "max_matrix_error": 9.918212890625e-05,
+      "max_static_error": 0.0001220703125,
+      "invalid_drivers": [],
+      "passed": true
+    },
+    {
+      "frame": 260,
+      "scenario": "S15_radar",
+      "key_error": 2.50240136168145e-07,
+      "max_matrix_error": 0.0001220703125,
+      "max_static_error": 0.0001220703125,
+      "invalid_drivers": [],
+      "passed": true
+    },
+    {
+      "frame": 260,
+      "scenario": "S16_crane",
+      "key_error": 6.886476833223298e-09,
+      "max_matrix_error": 9.250640869140625e-05,
+      "max_static_error": 1.52587890625e-05,
+      "invalid_drivers": [],
+      "passed": true
+    },
+    {
+      "frame": 260,
+      "scenario": "S17_tipper",
+      "key_error": 9.008055745773902e-09,
+      "max_matrix_error": 0.0002593994140625,
+      "max_static_error": 0.000244140625,
+      "invalid_drivers": [],
+      "passed": true
+    },
+    {
+      "frame": 260,
+      "scenario": "S18_barrier",
+      "key_error": 4.719714730150315e-08,
+      "max_matrix_error": 6.866455078125e-05,
+      "max_static_error": 7.62939453125e-06,
+      "invalid_drivers": [],
+      "passed": true
+    },
+    {
+      "frame": 260,
+      "scenario": "S19_drawbridge",
+      "key_error": 4.9274929470044526e-08,
+      "max_matrix_error": 0.000244140625,
+      "max_static_error": 0.000244140625,
+      "invalid_drivers": [],
+      "passed": true
+    },
+    {
+      "frame": 260,
+      "scenario": "S20_levers",
+      "key_error": 4.483307125546787e-08,
+      "max_matrix_error": 0.0001220703125,
+      "max_static_error": 0.0001220703125,
+      "invalid_drivers": [],
+      "passed": true
+    },
+    {
+      "frame": 280,
+      "scenario": "S01_house_door",
+      "key_error": 0.0,
+      "max_matrix_error": 1.52587890625e-05,
+      "max_static_error": 1.52587890625e-05,
+      "invalid_drivers": [],
+      "passed": true
+    },
+    {
+      "frame": 280,
+      "scenario": "S02_casement_window",
+      "key_error": 3.7014876053120815e-08,
+      "max_matrix_error": 7.62939453125e-06,
+      "max_static_error": 6.103515625e-05,
+      "invalid_drivers": [],
+      "passed": true
+    },
+    {
+      "frame": 280,
+      "scenario": "S03_shuttered_window",
+      "key_error": 1.4977338391730655e-07,
+      "max_matrix_error": 6.103515625e-05,
+      "max_static_error": 6.103515625e-05,
+      "invalid_drivers": [],
+      "passed": true
+    },
+    {
+      "frame": 280,
+      "scenario": "S04_garden_gate",
+      "key_error": 0.0,
+      "max_matrix_error": 0.0001220703125,
+      "max_static_error": 0.0001220703125,
+      "invalid_drivers": [],
+      "passed": true
+    },
+    {
+      "frame": 280,
+      "scenario": "S05_kitchen_cupboard",
+      "key_error": 5.340576159085231e-07,
+      "max_matrix_error": 0.0001220703125,
+      "max_static_error": 0.0001220703125,
+      "invalid_drivers": [],
+      "passed": true
+    },
+    {
+      "frame": 280,
+      "scenario": "S06_double_cabinet",
+      "key_error": 2.3841857821338408e-08,
+      "max_matrix_error": 1.52587890625e-05,
+      "max_static_error": 3.0517578125e-05,
+      "invalid_drivers": [],
+      "passed": true
+    },
+    {
+      "frame": 280,
+      "scenario": "S07_treasure_chest",
+      "key_error": 0.0,
+      "max_matrix_error": 3.0517578125e-05,
+      "max_static_error": 6.103515625e-05,
+      "invalid_drivers": [],
+      "passed": true
+    },
+    {
+      "frame": 280,
+      "scenario": "S08_mailbox",
+      "key_error": 7.616294639412047e-08,
+      "max_matrix_error": 6.103515625e-05,
+      "max_static_error": 6.103515625e-05,
+      "invalid_drivers": [],
+      "passed": true
+    },
+    {
+      "frame": 280,
+      "scenario": "S09_trap_door",
+      "key_error": 0.0,
+      "max_matrix_error": 0.000244140625,
+      "max_static_error": 0.0001220703125,
+      "invalid_drivers": [],
+      "passed": true
+    },
+    {
+      "frame": 280,
+      "scenario": "S10_car_doors",
+      "key_error": 5.6229159550724717e-08,
+      "max_matrix_error": 0.0001220703125,
+      "max_static_error": 0.0001220703125,
+      "invalid_drivers": [],
+      "passed": true
+    },
+    {
+      "frame": 280,
+      "scenario": "S11_car_roof",
+      "key_error": 1.0814939410686009e-07,
+      "max_matrix_error": 3.0517578125e-05,
+      "max_static_error": 3.0517578125e-05,
+      "invalid_drivers": [],
+      "passed": true
+    },
+    {
+      "frame": 280,
+      "scenario": "S12_canopy",
+      "key_error": 5.2098874769868075e-08,
+      "max_matrix_error": 7.62939453125e-06,
+      "max_static_error": 6.103515625e-05,
+      "invalid_drivers": [],
+      "passed": true
+    },
+    {
+      "frame": 280,
+      "scenario": "S13_forklift",
+      "key_error": 9.241478750254828e-06,
+      "max_matrix_error": 6.103515625e-05,
+      "max_static_error": 6.103515625e-05,
+      "invalid_drivers": [],
+      "passed": true
+    },
+    {
+      "frame": 280,
+      "scenario": "S14_sliding_door",
+      "key_error": 0.0,
+      "max_matrix_error": 0.0001220703125,
+      "max_static_error": 0.0001220703125,
+      "invalid_drivers": [],
+      "passed": true
+    },
+    {
+      "frame": 280,
+      "scenario": "S15_radar",
+      "key_error": 1.9674093110211288e-07,
+      "max_matrix_error": 0.0001735687255859375,
+      "max_static_error": 0.0001220703125,
+      "invalid_drivers": [],
+      "passed": true
+    },
+    {
+      "frame": 280,
+      "scenario": "S16_crane",
+      "key_error": 7.740332319539078e-08,
+      "max_matrix_error": 6.866455078125e-05,
+      "max_static_error": 1.52587890625e-05,
+      "invalid_drivers": [],
+      "passed": true
+    },
+    {
+      "frame": 280,
+      "scenario": "S17_tipper",
+      "key_error": 5.837252670115589e-08,
+      "max_matrix_error": 0.00025177001953125,
+      "max_static_error": 0.000244140625,
+      "invalid_drivers": [],
+      "passed": true
+    },
+    {
+      "frame": 280,
+      "scenario": "S18_barrier",
+      "key_error": 0.0,
+      "max_matrix_error": 6.103515625e-05,
+      "max_static_error": 7.62939453125e-06,
+      "invalid_drivers": [],
+      "passed": true
+    },
+    {
+      "frame": 280,
+      "scenario": "S19_drawbridge",
+      "key_error": 8.630266234987971e-08,
+      "max_matrix_error": 0.000244140625,
+      "max_static_error": 0.000244140625,
+      "invalid_drivers": [],
+      "passed": true
+    },
+    {
+      "frame": 280,
+      "scenario": "S20_levers",
+      "key_error": 2.0523353960744117e-08,
+      "max_matrix_error": 0.0001220703125,
+      "max_static_error": 0.0001220703125,
+      "invalid_drivers": [],
+      "passed": true
+    },
+    {
+      "frame": 304,
+      "scenario": "S01_house_door",
+      "key_error": 0.0,
+      "max_matrix_error": 1.52587890625e-05,
+      "max_static_error": 1.52587890625e-05,
+      "invalid_drivers": [],
+      "passed": true
+    },
+    {
+      "frame": 304,
+      "scenario": "S02_casement_window",
+      "key_error": 0.0,
+      "max_matrix_error": 7.62939453125e-06,
+      "max_static_error": 6.103515625e-05,
+      "invalid_drivers": [],
+      "passed": true
+    },
+    {
+      "frame": 304,
+      "scenario": "S03_shuttered_window",
+      "key_error": 0.0,
+      "max_matrix_error": 6.103515625e-05,
+      "max_static_error": 6.103515625e-05,
+      "invalid_drivers": [],
+      "passed": true
+    },
+    {
+      "frame": 304,
+      "scenario": "S04_garden_gate",
+      "key_error": 0.0,
+      "max_matrix_error": 0.0001220703125,
+      "max_static_error": 0.0001220703125,
+      "invalid_drivers": [],
+      "passed": true
+    },
+    {
+      "frame": 304,
+      "scenario": "S05_kitchen_cupboard",
+      "key_error": 0.0,
+      "max_matrix_error": 0.0001220703125,
+      "max_static_error": 0.0001220703125,
+      "invalid_drivers": [],
+      "passed": true
+    },
+    {
+      "frame": 304,
+      "scenario": "S06_double_cabinet",
+      "key_error": 0.0,
+      "max_matrix_error": 1.52587890625e-05,
+      "max_static_error": 3.0517578125e-05,
+      "invalid_drivers": [],
+      "passed": true
+    },
+    {
+      "frame": 304,
+      "scenario": "S07_treasure_chest",
+      "key_error": 0.0,
+      "max_matrix_error": 3.0517578125e-05,
+      "max_static_error": 6.103515625e-05,
+      "invalid_drivers": [],
+      "passed": true
+    },
+    {
+      "frame": 304,
+      "scenario": "S08_mailbox",
+      "key_error": 0.0,
+      "max_matrix_error": 6.103515625e-05,
+      "max_static_error": 6.103515625e-05,
+      "invalid_drivers": [],
+      "passed": true
+    },
+    {
+      "frame": 304,
+      "scenario": "S09_trap_door",
+      "key_error": 0.0,
+      "max_matrix_error": 0.000244140625,
+      "max_static_error": 0.0001220703125,
+      "invalid_drivers": [],
+      "passed": true
+    },
+    {
+      "frame": 304,
+      "scenario": "S10_car_doors",
+      "key_error": 0.0,
+      "max_matrix_error": 0.0001220703125,
+      "max_static_error": 0.0001220703125,
+      "invalid_drivers": [],
+      "passed": true
+    },
+    {
+      "frame": 304,
+      "scenario": "S11_car_roof",
+      "key_error": 0.0,
+      "max_matrix_error": 2.288818359375e-05,
+      "max_static_error": 3.0517578125e-05,
+      "invalid_drivers": [],
+      "passed": true
+    },
+    {
+      "frame": 304,
+      "scenario": "S12_canopy",
+      "key_error": 0.0,
+      "max_matrix_error": 7.62939453125e-06,
+      "max_static_error": 6.103515625e-05,
+      "invalid_drivers": [],
+      "passed": true
+    },
+    {
+      "frame": 304,
+      "scenario": "S13_forklift",
+      "key_error": 0.0,
+      "max_matrix_error": 6.103515625e-05,
+      "max_static_error": 6.103515625e-05,
+      "invalid_drivers": [],
+      "passed": true
+    },
+    {
+      "frame": 304,
+      "scenario": "S14_sliding_door",
+      "key_error": 0.0,
+      "max_matrix_error": 0.0001220703125,
+      "max_static_error": 0.0001220703125,
+      "invalid_drivers": [],
+      "passed": true
+    },
+    {
+      "frame": 304,
+      "scenario": "S15_radar",
+      "key_error": 4.769952255401222e-08,
+      "max_matrix_error": 0.00012331050004377175,
+      "max_static_error": 0.0001220703125,
+      "invalid_drivers": [],
+      "passed": true
+    },
+    {
+      "frame": 304,
+      "scenario": "S16_crane",
+      "key_error": 0.0,
+      "max_matrix_error": 0.0001220703125,
+      "max_static_error": 1.52587890625e-05,
+      "invalid_drivers": [],
+      "passed": true
+    },
+    {
+      "frame": 304,
+      "scenario": "S17_tipper",
+      "key_error": 0.0,
+      "max_matrix_error": 0.0003662109375,
+      "max_static_error": 0.000244140625,
+      "invalid_drivers": [],
+      "passed": true
+    },
+    {
+      "frame": 304,
+      "scenario": "S18_barrier",
+      "key_error": 0.0,
+      "max_matrix_error": 6.103515625e-05,
+      "max_static_error": 7.62939453125e-06,
+      "invalid_drivers": [],
+      "passed": true
+    },
+    {
+      "frame": 304,
+      "scenario": "S19_drawbridge",
+      "key_error": 0.0,
+      "max_matrix_error": 0.000244140625,
+      "max_static_error": 0.000244140625,
+      "invalid_drivers": [],
+      "passed": true
+    },
+    {
+      "frame": 304,
+      "scenario": "S20_levers",
+      "key_error": 0.0,
+      "max_matrix_error": 0.0001220703125,
+      "max_static_error": 0.0001220703125,
+      "invalid_drivers": [],
+      "passed": true
+    },
+    {
+      "frame": 312,
+      "scenario": "S01_house_door",
+      "key_error": 0.0,
+      "max_matrix_error": 1.52587890625e-05,
+      "max_static_error": 1.52587890625e-05,
+      "invalid_drivers": [],
+      "passed": true
+    },
+    {
+      "frame": 312,
+      "scenario": "S02_casement_window",
+      "key_error": 0.0,
+      "max_matrix_error": 7.62939453125e-06,
+      "max_static_error": 6.103515625e-05,
+      "invalid_drivers": [],
+      "passed": true
+    },
+    {
+      "frame": 312,
+      "scenario": "S03_shuttered_window",
+      "key_error": 0.0,
+      "max_matrix_error": 6.103515625e-05,
+      "max_static_error": 6.103515625e-05,
+      "invalid_drivers": [],
+      "passed": true
+    },
+    {
+      "frame": 312,
+      "scenario": "S04_garden_gate",
+      "key_error": 0.0,
+      "max_matrix_error": 0.0001220703125,
+      "max_static_error": 0.0001220703125,
+      "invalid_drivers": [],
+      "passed": true
+    },
+    {
+      "frame": 312,
+      "scenario": "S05_kitchen_cupboard",
+      "key_error": 0.0,
+      "max_matrix_error": 0.0001220703125,
+      "max_static_error": 0.0001220703125,
+      "invalid_drivers": [],
+      "passed": true
+    },
+    {
+      "frame": 312,
+      "scenario": "S06_double_cabinet",
+      "key_error": 0.0,
+      "max_matrix_error": 1.52587890625e-05,
+      "max_static_error": 3.0517578125e-05,
+      "invalid_drivers": [],
+      "passed": true
+    },
+    {
+      "frame": 312,
+      "scenario": "S07_treasure_chest",
+      "key_error": 0.0,
+      "max_matrix_error": 3.0517578125e-05,
+      "max_static_error": 6.103515625e-05,
+      "invalid_drivers": [],
+      "passed": true
+    },
+    {
+      "frame": 312,
+      "scenario": "S08_mailbox",
+      "key_error": 0.0,
+      "max_matrix_error": 6.103515625e-05,
+      "max_static_error": 6.103515625e-05,
+      "invalid_drivers": [],
+      "passed": true
+    },
+    {
+      "frame": 312,
+      "scenario": "S09_trap_door",
+      "key_error": 0.0,
+      "max_matrix_error": 0.000244140625,
+      "max_static_error": 0.0001220703125,
+      "invalid_drivers": [],
+      "passed": true
+    },
+    {
+      "frame": 312,
+      "scenario": "S10_car_doors",
+      "key_error": 0.0,
+      "max_matrix_error": 0.0001220703125,
+      "max_static_error": 0.0001220703125,
+      "invalid_drivers": [],
+      "passed": true
+    },
+    {
+      "frame": 312,
+      "scenario": "S11_car_roof",
+      "key_error": 0.0,
+      "max_matrix_error": 2.288818359375e-05,
+      "max_static_error": 3.0517578125e-05,
+      "invalid_drivers": [],
+      "passed": true
+    },
+    {
+      "frame": 312,
+      "scenario": "S12_canopy",
+      "key_error": 0.0,
+      "max_matrix_error": 7.62939453125e-06,
+      "max_static_error": 6.103515625e-05,
+      "invalid_drivers": [],
+      "passed": true
+    },
+    {
+      "frame": 312,
+      "scenario": "S13_forklift",
+      "key_error": 0.0,
+      "max_matrix_error": 6.103515625e-05,
+      "max_static_error": 6.103515625e-05,
+      "invalid_drivers": [],
+      "passed": true
+    },
+    {
+      "frame": 312,
+      "scenario": "S14_sliding_door",
+      "key_error": 0.0,
+      "max_matrix_error": 0.0001220703125,
+      "max_static_error": 0.0001220703125,
+      "invalid_drivers": [],
+      "passed": true
+    },
+    {
+      "frame": 312,
+      "scenario": "S15_radar",
+      "key_error": 4.769952255401222e-08,
+      "max_matrix_error": 0.00012331050004377175,
+      "max_static_error": 0.0001220703125,
+      "invalid_drivers": [],
+      "passed": true
+    },
+    {
+      "frame": 312,
+      "scenario": "S16_crane",
+      "key_error": 0.0,
+      "max_matrix_error": 0.0001220703125,
+      "max_static_error": 1.52587890625e-05,
+      "invalid_drivers": [],
+      "passed": true
+    },
+    {
+      "frame": 312,
+      "scenario": "S17_tipper",
+      "key_error": 0.0,
+      "max_matrix_error": 0.0003662109375,
+      "max_static_error": 0.000244140625,
+      "invalid_drivers": [],
+      "passed": true
+    },
+    {
+      "frame": 312,
+      "scenario": "S18_barrier",
+      "key_error": 0.0,
+      "max_matrix_error": 6.103515625e-05,
+      "max_static_error": 7.62939453125e-06,
+      "invalid_drivers": [],
+      "passed": true
+    },
+    {
+      "frame": 312,
+      "scenario": "S19_drawbridge",
+      "key_error": 0.0,
+      "max_matrix_error": 0.000244140625,
+      "max_static_error": 0.000244140625,
+      "invalid_drivers": [],
+      "passed": true
+    },
+    {
+      "frame": 312,
+      "scenario": "S20_levers",
+      "key_error": 0.0,
+      "max_matrix_error": 0.0001220703125,
+      "max_static_error": 0.0001220703125,
+      "invalid_drivers": [],
+      "passed": true
+    },
+    {
+      "frame": 321,
+      "scenario": "S01_house_door",
+      "key_error": 0.0,
+      "max_matrix_error": 1.52587890625e-05,
+      "max_static_error": 1.52587890625e-05,
+      "invalid_drivers": [],
+      "passed": true
+    },
+    {
+      "frame": 321,
+      "scenario": "S02_casement_window",
+      "key_error": 0.0,
+      "max_matrix_error": 7.62939453125e-06,
+      "max_static_error": 6.103515625e-05,
+      "invalid_drivers": [],
+      "passed": true
+    },
+    {
+      "frame": 321,
+      "scenario": "S03_shuttered_window",
+      "key_error": 0.0,
+      "max_matrix_error": 6.103515625e-05,
+      "max_static_error": 6.103515625e-05,
+      "invalid_drivers": [],
+      "passed": true
+    },
+    {
+      "frame": 321,
+      "scenario": "S04_garden_gate",
+      "key_error": 0.0,
+      "max_matrix_error": 0.0001220703125,
+      "max_static_error": 0.0001220703125,
+      "invalid_drivers": [],
+      "passed": true
+    },
+    {
+      "frame": 321,
+      "scenario": "S05_kitchen_cupboard",
+      "key_error": 0.0,
+      "max_matrix_error": 0.0001220703125,
+      "max_static_error": 0.0001220703125,
+      "invalid_drivers": [],
+      "passed": true
+    },
+    {
+      "frame": 321,
+      "scenario": "S06_double_cabinet",
+      "key_error": 0.0,
+      "max_matrix_error": 1.52587890625e-05,
+      "max_static_error": 3.0517578125e-05,
+      "invalid_drivers": [],
+      "passed": true
+    },
+    {
+      "frame": 321,
+      "scenario": "S07_treasure_chest",
+      "key_error": 0.0,
+      "max_matrix_error": 3.0517578125e-05,
+      "max_static_error": 6.103515625e-05,
+      "invalid_drivers": [],
+      "passed": true
+    },
+    {
+      "frame": 321,
+      "scenario": "S08_mailbox",
+      "key_error": 0.0,
+      "max_matrix_error": 6.103515625e-05,
+      "max_static_error": 6.103515625e-05,
+      "invalid_drivers": [],
+      "passed": true
+    },
+    {
+      "frame": 321,
+      "scenario": "S09_trap_door",
+      "key_error": 0.0,
+      "max_matrix_error": 0.000244140625,
+      "max_static_error": 0.0001220703125,
+      "invalid_drivers": [],
+      "passed": true
+    },
+    {
+      "frame": 321,
+      "scenario": "S10_car_doors",
+      "key_error": 0.0,
+      "max_matrix_error": 0.0001220703125,
+      "max_static_error": 0.0001220703125,
+      "invalid_drivers": [],
+      "passed": true
+    },
+    {
+      "frame": 321,
+      "scenario": "S11_car_roof",
+      "key_error": 0.0,
+      "max_matrix_error": 2.288818359375e-05,
+      "max_static_error": 3.0517578125e-05,
+      "invalid_drivers": [],
+      "passed": true
+    },
+    {
+      "frame": 321,
+      "scenario": "S12_canopy",
+      "key_error": 0.0,
+      "max_matrix_error": 7.62939453125e-06,
+      "max_static_error": 6.103515625e-05,
+      "invalid_drivers": [],
+      "passed": true
+    },
+    {
+      "frame": 321,
+      "scenario": "S13_forklift",
+      "key_error": 0.0,
+      "max_matrix_error": 6.103515625e-05,
+      "max_static_error": 6.103515625e-05,
+      "invalid_drivers": [],
+      "passed": true
+    },
+    {
+      "frame": 321,
+      "scenario": "S14_sliding_door",
+      "key_error": 0.0,
+      "max_matrix_error": 0.0001220703125,
+      "max_static_error": 0.0001220703125,
+      "invalid_drivers": [],
+      "passed": true
+    },
+    {
+      "frame": 321,
+      "scenario": "S15_radar",
+      "key_error": 0.0,
+      "max_matrix_error": 0.0001220703125,
+      "max_static_error": 0.0001220703125,
+      "invalid_drivers": [],
+      "passed": true
+    },
+    {
+      "frame": 321,
+      "scenario": "S16_crane",
+      "key_error": 0.0,
+      "max_matrix_error": 0.0001220703125,
+      "max_static_error": 1.52587890625e-05,
+      "invalid_drivers": [],
+      "passed": true
+    },
+    {
+      "frame": 321,
+      "scenario": "S17_tipper",
+      "key_error": 0.0,
+      "max_matrix_error": 0.0003662109375,
+      "max_static_error": 0.000244140625,
+      "invalid_drivers": [],
+      "passed": true
+    },
+    {
+      "frame": 321,
+      "scenario": "S18_barrier",
+      "key_error": 0.0,
+      "max_matrix_error": 6.103515625e-05,
+      "max_static_error": 7.62939453125e-06,
+      "invalid_drivers": [],
+      "passed": true
+    },
+    {
+      "frame": 321,
+      "scenario": "S19_drawbridge",
+      "key_error": 0.0,
+      "max_matrix_error": 0.000244140625,
+      "max_static_error": 0.000244140625,
+      "invalid_drivers": [],
+      "passed": true
+    },
+    {
+      "frame": 321,
+      "scenario": "S20_levers",
+      "key_error": 0.0,
+      "max_matrix_error": 0.0001220703125,
+      "max_static_error": 0.0001220703125,
+      "invalid_drivers": [],
+      "passed": true
+    },
+    {
+      "frame": 340,
+      "scenario": "S01_house_door",
+      "key_error": 7.152557379708213e-09,
+      "max_matrix_error": 1.52587890625e-05,
+      "max_static_error": 1.52587890625e-05,
+      "invalid_drivers": [],
+      "passed": true
+    },
+    {
+      "frame": 340,
+      "scenario": "S02_casement_window",
+      "key_error": 3.354952915479714e-08,
+      "max_matrix_error": 8.106231689453125e-06,
+      "max_static_error": 6.103515625e-05,
+      "invalid_drivers": [],
+      "passed": true
+    },
+    {
+      "frame": 340,
+      "scenario": "S03_shuttered_window",
+      "key_error": 2.3841857821338408e-08,
+      "max_matrix_error": 6.103515625e-05,
+      "max_static_error": 6.103515625e-05,
+      "invalid_drivers": [],
+      "passed": true
+    },
+    {
+      "frame": 340,
+      "scenario": "S04_garden_gate",
+      "key_error": 2.470897153550311e-09,
+      "max_matrix_error": 0.0001201629638671875,
+      "max_static_error": 0.0001220703125,
+      "invalid_drivers": [],
+      "passed": true
+    },
+    {
+      "frame": 340,
+      "scenario": "S05_kitchen_cupboard",
+      "key_error": 1.8015929925674357e-07,
+      "max_matrix_error": 0.0001220703125,
+      "max_static_error": 0.0001220703125,
+      "invalid_drivers": [],
+      "passed": true
+    },
+    {
+      "frame": 340,
+      "scenario": "S06_double_cabinet",
+      "key_error": 5.960464455334602e-09,
+      "max_matrix_error": 1.52587890625e-05,
+      "max_static_error": 3.0517578125e-05,
+      "invalid_drivers": [],
+      "passed": true
+    },
+    {
+      "frame": 340,
+      "scenario": "S07_treasure_chest",
+      "key_error": 3.803150799841504e-08,
+      "max_matrix_error": 5.3882598876953125e-05,
+      "max_static_error": 6.103515625e-05,
+      "invalid_drivers": [],
+      "passed": true
+    },
+    {
+      "frame": 340,
+      "scenario": "S08_mailbox",
+      "key_error": 0.0,
+      "max_matrix_error": 6.103515625e-05,
+      "max_static_error": 6.103515625e-05,
+      "invalid_drivers": [],
+      "passed": true
+    },
+    {
+      "frame": 340,
+      "scenario": "S09_trap_door",
+      "key_error": 0.0,
+      "max_matrix_error": 0.000244140625,
+      "max_static_error": 0.0001220703125,
+      "invalid_drivers": [],
+      "passed": true
+    },
+    {
+      "frame": 340,
+      "scenario": "S10_car_doors",
+      "key_error": 3.550495331072767e-08,
+      "max_matrix_error": 0.0001220703125,
+      "max_static_error": 0.0001220703125,
+      "invalid_drivers": [],
+      "passed": true
+    },
+    {
+      "frame": 340,
+      "scenario": "S11_car_roof",
+      "key_error": 1.1920929021691506e-08,
+      "max_matrix_error": 3.0517578125e-05,
+      "max_static_error": 3.0517578125e-05,
+      "invalid_drivers": [],
+      "passed": true
+    },
+    {
+      "frame": 340,
+      "scenario": "S12_canopy",
+      "key_error": 0.0,
+      "max_matrix_error": 7.62939453125e-06,
+      "max_static_error": 6.103515625e-05,
+      "invalid_drivers": [],
+      "passed": true
+    },
+    {
+      "frame": 340,
+      "scenario": "S13_forklift",
+      "key_error": 9.618052860815851e-07,
+      "max_matrix_error": 6.103515625e-05,
+      "max_static_error": 6.103515625e-05,
+      "invalid_drivers": [],
+      "passed": true
+    },
+    {
+      "frame": 340,
+      "scenario": "S14_sliding_door",
+      "key_error": 1.1283444063536763e-06,
+      "max_matrix_error": 8.678436279296875e-05,
+      "max_static_error": 0.0001220703125,
+      "invalid_drivers": [],
+      "passed": true
+    },
+    {
+      "frame": 340,
+      "scenario": "S15_radar",
+      "key_error": 6.496324778115792e-08,
+      "max_matrix_error": 0.0001544952392578125,
+      "max_static_error": 0.0001220703125,
+      "invalid_drivers": [],
+      "passed": true
+    },
+    {
+      "frame": 340,
+      "scenario": "S16_crane",
+      "key_error": 2.384185793236071e-08,
+      "max_matrix_error": 7.62939453125e-05,
+      "max_static_error": 1.52587890625e-05,
+      "invalid_drivers": [],
+      "passed": true
+    },
+    {
+      "frame": 340,
+      "scenario": "S17_tipper",
+      "key_error": 1.8291143433213364e-08,
+      "max_matrix_error": 0.0003204345703125,
+      "max_static_error": 0.000244140625,
+      "invalid_drivers": [],
+      "passed": true
+    },
+    {
+      "frame": 340,
+      "scenario": "S18_barrier",
+      "key_error": 5.298190663971525e-08,
+      "max_matrix_error": 4.57763671875e-05,
+      "max_static_error": 7.62939453125e-06,
+      "invalid_drivers": [],
+      "passed": true
+    },
+    {
+      "frame": 340,
+      "scenario": "S19_drawbridge",
+      "key_error": 1.2354485767751555e-09,
+      "max_matrix_error": 0.000244140625,
+      "max_static_error": 0.000244140625,
+      "invalid_drivers": [],
+      "passed": true
+    },
+    {
+      "frame": 340,
+      "scenario": "S20_levers",
+      "key_error": 1.1718601700128062e-08,
+      "max_matrix_error": 0.0001220703125,
+      "max_static_error": 0.0001220703125,
+      "invalid_drivers": [],
+      "passed": true
+    },
+    {
+      "frame": 360,
+      "scenario": "S01_house_door",
+      "key_error": 5.960464455334602e-09,
+      "max_matrix_error": 1.52587890625e-05,
+      "max_static_error": 1.52587890625e-05,
+      "invalid_drivers": [],
+      "passed": true
+    },
+    {
+      "frame": 360,
+      "scenario": "S02_casement_window",
+      "key_error": 2.6481059456351375e-08,
+      "max_matrix_error": 8.106231689453125e-06,
+      "max_static_error": 6.103515625e-05,
+      "invalid_drivers": [],
+      "passed": true
+    },
+    {
+      "frame": 360,
+      "scenario": "S03_shuttered_window",
+      "key_error": 1.1391109899783203e-07,
+      "max_matrix_error": 6.103515625e-05,
+      "max_static_error": 6.103515625e-05,
+      "invalid_drivers": [],
+      "passed": true
+    },
+    {
+      "frame": 360,
+      "scenario": "S04_garden_gate",
+      "key_error": 2.3841857821338408e-08,
+      "max_matrix_error": 0.0001220703125,
+      "max_static_error": 0.0001220703125,
+      "invalid_drivers": [],
+      "passed": true
+    },
+    {
+      "frame": 360,
+      "scenario": "S05_kitchen_cupboard",
+      "key_error": 2.3411572591669483e-07,
+      "max_matrix_error": 0.0001220703125,
+      "max_static_error": 0.0001220703125,
+      "invalid_drivers": [],
+      "passed": true
+    },
+    {
+      "frame": 360,
+      "scenario": "S06_double_cabinet",
+      "key_error": 1.1867143295818394e-08,
+      "max_matrix_error": 1.52587890625e-05,
+      "max_static_error": 3.0517578125e-05,
+      "invalid_drivers": [],
+      "passed": true
+    },
+    {
+      "frame": 360,
+      "scenario": "S07_treasure_chest",
+      "key_error": 1.1920928966180355e-08,
+      "max_matrix_error": 4.00543212890625e-05,
+      "max_static_error": 6.103515625e-05,
+      "invalid_drivers": [],
+      "passed": true
+    },
+    {
+      "frame": 360,
+      "scenario": "S08_mailbox",
+      "key_error": 4.482269305716713e-09,
+      "max_matrix_error": 6.103515625e-05,
+      "max_static_error": 6.103515625e-05,
+      "invalid_drivers": [],
+      "passed": true
+    },
+    {
+      "frame": 360,
+      "scenario": "S09_trap_door",
+      "key_error": 0.0,
+      "max_matrix_error": 0.000244140625,
+      "max_static_error": 0.0001220703125,
+      "invalid_drivers": [],
+      "passed": true
+    },
+    {
+      "frame": 360,
+      "scenario": "S10_car_doors",
+      "key_error": 3.282958194184005e-08,
+      "max_matrix_error": 0.0001220703125,
+      "max_static_error": 0.0001220703125,
+      "invalid_drivers": [],
+      "passed": true
+    },
+    {
+      "frame": 360,
+      "scenario": "S11_car_roof",
+      "key_error": 4.768371586472142e-08,
+      "max_matrix_error": 3.4332275390625e-05,
+      "max_static_error": 3.0517578125e-05,
+      "invalid_drivers": [],
+      "passed": true
+    },
+    {
+      "frame": 360,
+      "scenario": "S12_canopy",
+      "key_error": 0.0,
+      "max_matrix_error": 7.62939453125e-06,
+      "max_static_error": 6.103515625e-05,
+      "invalid_drivers": [],
+      "passed": true
+    },
+    {
+      "frame": 360,
+      "scenario": "S13_forklift",
+      "key_error": 3.8065662977260217e-06,
+      "max_matrix_error": 6.103515625e-05,
+      "max_static_error": 6.103515625e-05,
+      "invalid_drivers": [],
+      "passed": true
+    },
+    {
+      "frame": 360,
+      "scenario": "S14_sliding_door",
+      "key_error": 0.0,
+      "max_matrix_error": 0.0001220703125,
+      "max_static_error": 0.0001220703125,
+      "invalid_drivers": [],
+      "passed": true
+    },
+    {
+      "frame": 360,
+      "scenario": "S15_radar",
+      "key_error": 3.209479126908832e-08,
+      "max_matrix_error": 0.0001220703125,
+      "max_static_error": 0.0001220703125,
+      "invalid_drivers": [],
+      "passed": true
+    },
+    {
+      "frame": 360,
+      "scenario": "S16_crane",
+      "key_error": 9.501849285165065e-08,
+      "max_matrix_error": 0.00017547607421875,
+      "max_static_error": 1.52587890625e-05,
+      "invalid_drivers": [],
+      "passed": true
+    },
+    {
+      "frame": 360,
+      "scenario": "S17_tipper",
+      "key_error": 2.384185793236071e-08,
+      "max_matrix_error": 0.000396728515625,
+      "max_static_error": 0.000244140625,
+      "invalid_drivers": [],
+      "passed": true
+    },
+    {
+      "frame": 360,
+      "scenario": "S18_barrier",
+      "key_error": 2.3841857821338408e-08,
+      "max_matrix_error": 4.57763671875e-05,
+      "max_static_error": 7.62939453125e-06,
+      "invalid_drivers": [],
+      "passed": true
+    },
+    {
+      "frame": 360,
+      "scenario": "S19_drawbridge",
+      "key_error": 1.1920928910669204e-08,
+      "max_matrix_error": 0.000244140625,
+      "max_static_error": 0.000244140625,
+      "invalid_drivers": [],
+      "passed": true
+    },
+    {
+      "frame": 360,
+      "scenario": "S20_levers",
+      "key_error": 1.7686877129552414e-08,
+      "max_matrix_error": 0.0001220703125,
+      "max_static_error": 0.0001220703125,
+      "invalid_drivers": [],
+      "passed": true
+    },
+    {
+      "frame": 380,
+      "scenario": "S01_house_door",
+      "key_error": 1.1920928910669204e-08,
+      "max_matrix_error": 1.52587890625e-05,
+      "max_static_error": 1.52587890625e-05,
+      "invalid_drivers": [],
+      "passed": true
+    },
+    {
+      "frame": 380,
+      "scenario": "S02_casement_window",
+      "key_error": 1.3146405741792933e-08,
+      "max_matrix_error": 8.106231689453125e-06,
+      "max_static_error": 6.103515625e-05,
+      "invalid_drivers": [],
+      "passed": true
+    },
+    {
+      "frame": 380,
+      "scenario": "S03_shuttered_window",
+      "key_error": 4.768371586472142e-08,
+      "max_matrix_error": 6.103515625e-05,
+      "max_static_error": 6.103515625e-05,
+      "invalid_drivers": [],
+      "passed": true
+    },
+    {
+      "frame": 380,
+      "scenario": "S04_garden_gate",
+      "key_error": 1.1606223460081111e-07,
+      "max_matrix_error": 0.0001220703125,
+      "max_static_error": 0.0001220703125,
+      "invalid_drivers": [],
+      "passed": true
+    },
+    {
+      "frame": 380,
+      "scenario": "S05_kitchen_cupboard",
+      "key_error": 0.0,
+      "max_matrix_error": 0.0001220703125,
+      "max_static_error": 0.0001220703125,
+      "invalid_drivers": [],
+      "passed": true
+    },
+    {
+      "frame": 380,
+      "scenario": "S06_double_cabinet",
+      "key_error": 1.695306184323897e-08,
+      "max_matrix_error": 1.52587890625e-05,
+      "max_static_error": 3.0517578125e-05,
+      "invalid_drivers": [],
+      "passed": true
+    },
+    {
+      "frame": 380,
+      "scenario": "S07_treasure_chest",
+      "key_error": 0.0,
+      "max_matrix_error": 3.0517578125e-05,
+      "max_static_error": 6.103515625e-05,
+      "invalid_drivers": [],
+      "passed": true
+    },
+    {
+      "frame": 380,
+      "scenario": "S08_mailbox",
+      "key_error": 0.0,
+      "max_matrix_error": 6.103515625e-05,
+      "max_static_error": 6.103515625e-05,
+      "invalid_drivers": [],
+      "passed": true
+    },
+    {
+      "frame": 380,
+      "scenario": "S09_trap_door",
+      "key_error": 0.0,
+      "max_matrix_error": 0.000244140625,
+      "max_static_error": 0.0001220703125,
+      "invalid_drivers": [],
+      "passed": true
+    },
+    {
+      "frame": 380,
+      "scenario": "S10_car_doors",
+      "key_error": 2.3841857821338408e-08,
+      "max_matrix_error": 0.0001201629638671875,
+      "max_static_error": 0.0001220703125,
+      "invalid_drivers": [],
+      "passed": true
+    },
+    {
+      "frame": 380,
+      "scenario": "S11_car_roof",
+      "key_error": 4.768371586472142e-08,
+      "max_matrix_error": 3.4332275390625e-05,
+      "max_static_error": 3.0517578125e-05,
+      "invalid_drivers": [],
+      "passed": true
+    },
+    {
+      "frame": 380,
+      "scenario": "S12_canopy",
+      "key_error": 0.0,
+      "max_matrix_error": 7.62939453125e-06,
+      "max_static_error": 6.103515625e-05,
+      "invalid_drivers": [],
+      "passed": true
+    },
+    {
+      "frame": 380,
+      "scenario": "S13_forklift",
+      "key_error": 0.0,
+      "max_matrix_error": 6.103515625e-05,
+      "max_static_error": 6.103515625e-05,
+      "invalid_drivers": [],
+      "passed": true
+    },
+    {
+      "frame": 380,
+      "scenario": "S14_sliding_door",
+      "key_error": 0.0,
+      "max_matrix_error": 0.0001220703125,
+      "max_static_error": 0.0001220703125,
+      "invalid_drivers": [],
+      "passed": true
+    },
+    {
+      "frame": 380,
+      "scenario": "S15_radar",
+      "key_error": 1.5130408104191417e-07,
+      "max_matrix_error": 0.0001239776611328125,
+      "max_static_error": 0.0001220703125,
+      "invalid_drivers": [],
+      "passed": true
+    },
+    {
+      "frame": 380,
+      "scenario": "S16_crane",
+      "key_error": 4.371139006309477e-08,
+      "max_matrix_error": 3.0517578125e-05,
+      "max_static_error": 1.52587890625e-05,
+      "invalid_drivers": [],
+      "passed": true
+    },
+    {
+      "frame": 380,
+      "scenario": "S17_tipper",
+      "key_error": 2.384185793236071e-08,
+      "max_matrix_error": 0.000396728515625,
+      "max_static_error": 0.000244140625,
+      "invalid_drivers": [],
+      "passed": true
+    },
+    {
+      "frame": 380,
+      "scenario": "S18_barrier",
+      "key_error": 2.3841857821338408e-08,
+      "max_matrix_error": 4.57763671875e-05,
+      "max_static_error": 7.62939453125e-06,
+      "invalid_drivers": [],
+      "passed": true
+    },
+    {
+      "frame": 380,
+      "scenario": "S19_drawbridge",
+      "key_error": 6.068035740547373e-09,
+      "max_matrix_error": 0.000244140625,
+      "max_static_error": 0.000244140625,
+      "invalid_drivers": [],
+      "passed": true
+    },
+    {
+      "frame": 380,
+      "scenario": "S20_levers",
+      "key_error": 3.732228509578661e-08,
+      "max_matrix_error": 0.0001220703125,
+      "max_static_error": 0.0001220703125,
+      "invalid_drivers": [],
+      "passed": true
+    },
+    {
+      "frame": 400,
+      "scenario": "S01_house_door",
+      "key_error": 8.349202440527392e-10,
+      "max_matrix_error": 1.52587890625e-05,
+      "max_static_error": 1.52587890625e-05,
+      "invalid_drivers": [],
+      "passed": true
+    },
+    {
+      "frame": 400,
+      "scenario": "S02_casement_window",
+      "key_error": 2.384185793236071e-08,
+      "max_matrix_error": 7.62939453125e-06,
+      "max_static_error": 6.103515625e-05,
+      "invalid_drivers": [],
+      "passed": true
+    },
+    {
+      "frame": 400,
+      "scenario": "S03_shuttered_window",
+      "key_error": 4.768371586472142e-08,
+      "max_matrix_error": 6.4849853515625e-05,
+      "max_static_error": 6.103515625e-05,
+      "invalid_drivers": [],
+      "passed": true
+    },
+    {
+      "frame": 400,
+      "scenario": "S04_garden_gate",
+      "key_error": 0.0,
+      "max_matrix_error": 0.0001220703125,
+      "max_static_error": 0.0001220703125,
+      "invalid_drivers": [],
+      "passed": true
+    },
+    {
+      "frame": 400,
+      "scenario": "S05_kitchen_cupboard",
+      "key_error": 1.7789376727250783e-07,
+      "max_matrix_error": 0.0001220703125,
+      "max_static_error": 0.0001220703125,
+      "invalid_drivers": [],
+      "passed": true
+    },
+    {
+      "frame": 400,
+      "scenario": "S06_double_cabinet",
+      "key_error": 0.0,
+      "max_matrix_error": 1.52587890625e-05,
+      "max_static_error": 3.0517578125e-05,
+      "invalid_drivers": [],
+      "passed": true
+    },
+    {
+      "frame": 400,
+      "scenario": "S07_treasure_chest",
+      "key_error": 4.48891626092518e-08,
+      "max_matrix_error": 2.765655517578125e-05,
+      "max_static_error": 6.103515625e-05,
+      "invalid_drivers": [],
+      "passed": true
+    },
+    {
+      "frame": 400,
+      "scenario": "S08_mailbox",
+      "key_error": 0.0,
+      "max_matrix_error": 6.103515625e-05,
+      "max_static_error": 6.103515625e-05,
+      "invalid_drivers": [],
+      "passed": true
+    },
+    {
+      "frame": 400,
+      "scenario": "S09_trap_door",
+      "key_error": 5.960464483090178e-09,
+      "max_matrix_error": 0.000244140625,
+      "max_static_error": 0.0001220703125,
+      "invalid_drivers": [],
+      "passed": true
+    },
+    {
+      "frame": 400,
+      "scenario": "S10_car_doors",
+      "key_error": 2.3841857821338408e-08,
+      "max_matrix_error": 0.0001201629638671875,
+      "max_static_error": 0.0001220703125,
+      "invalid_drivers": [],
+      "passed": true
+    },
+    {
+      "frame": 400,
+      "scenario": "S11_car_roof",
+      "key_error": 3.9853993327731985e-08,
+      "max_matrix_error": 3.0517578125e-05,
+      "max_static_error": 3.0517578125e-05,
+      "invalid_drivers": [],
+      "passed": true
+    },
+    {
+      "frame": 400,
+      "scenario": "S12_canopy",
+      "key_error": 0.0,
+      "max_matrix_error": 7.62939453125e-06,
+      "max_static_error": 6.103515625e-05,
+      "invalid_drivers": [],
+      "passed": true
+    },
+    {
+      "frame": 400,
+      "scenario": "S13_forklift",
+      "key_error": 0.0,
+      "max_matrix_error": 6.103515625e-05,
+      "max_static_error": 6.103515625e-05,
+      "invalid_drivers": [],
+      "passed": true
+    },
+    {
+      "frame": 400,
+      "scenario": "S14_sliding_door",
+      "key_error": 0.0,
+      "max_matrix_error": 0.0001220703125,
+      "max_static_error": 0.0001220703125,
+      "invalid_drivers": [],
+      "passed": true
+    },
+    {
+      "frame": 400,
+      "scenario": "S15_radar",
+      "key_error": 1.8417253699887226e-07,
+      "max_matrix_error": 0.0001220703125,
+      "max_static_error": 0.0001220703125,
+      "invalid_drivers": [],
+      "passed": true
+    },
+    {
+      "frame": 400,
+      "scenario": "S16_crane",
+      "key_error": 4.371139006309477e-08,
+      "max_matrix_error": 4.57763671875e-05,
+      "max_static_error": 1.52587890625e-05,
+      "invalid_drivers": [],
+      "passed": true
+    },
+    {
+      "frame": 400,
+      "scenario": "S17_tipper",
+      "key_error": 2.384185793236071e-08,
+      "max_matrix_error": 0.000396728515625,
+      "max_static_error": 0.000244140625,
+      "invalid_drivers": [],
+      "passed": true
+    },
+    {
+      "frame": 400,
+      "scenario": "S18_barrier",
+      "key_error": 4.893855032328531e-08,
+      "max_matrix_error": 5.340576171875e-05,
+      "max_static_error": 7.62939453125e-06,
+      "invalid_drivers": [],
+      "passed": true
+    },
+    {
+      "frame": 400,
+      "scenario": "S19_drawbridge",
+      "key_error": 0.0,
+      "max_matrix_error": 0.000244140625,
+      "max_static_error": 0.000244140625,
+      "invalid_drivers": [],
+      "passed": true
+    },
+    {
+      "frame": 400,
+      "scenario": "S20_levers",
+      "key_error": 1.625369908109242e-08,
+      "max_matrix_error": 0.0001220703125,
+      "max_static_error": 0.0001220703125,
+      "invalid_drivers": [],
+      "passed": true
+    },
+    {
+      "frame": 420,
+      "scenario": "S01_house_door",
+      "key_error": 0.0,
+      "max_matrix_error": 1.52587890625e-05,
+      "max_static_error": 1.52587890625e-05,
+      "invalid_drivers": [],
+      "passed": true
+    },
+    {
+      "frame": 420,
+      "scenario": "S02_casement_window",
+      "key_error": 2.384185793236071e-08,
+      "max_matrix_error": 7.62939453125e-06,
+      "max_static_error": 6.103515625e-05,
+      "invalid_drivers": [],
+      "passed": true
+    },
+    {
+      "frame": 420,
+      "scenario": "S03_shuttered_window",
+      "key_error": 1.1920928910669204e-08,
+      "max_matrix_error": 6.103515625e-05,
+      "max_static_error": 6.103515625e-05,
+      "invalid_drivers": [],
+      "passed": true
+    },
+    {
+      "frame": 420,
+      "scenario": "S04_garden_gate",
+      "key_error": 1.576121557711474e-07,
+      "max_matrix_error": 0.0001220703125,
+      "max_static_error": 0.0001220703125,
+      "invalid_drivers": [],
+      "passed": true
+    },
+    {
+      "frame": 420,
+      "scenario": "S05_kitchen_cupboard",
+      "key_error": 0.0,
+      "max_matrix_error": 0.0001220703125,
+      "max_static_error": 0.0001220703125,
+      "invalid_drivers": [],
+      "passed": true
+    },
+    {
+      "frame": 420,
+      "scenario": "S06_double_cabinet",
+      "key_error": 5.147367532210012e-10,
+      "max_matrix_error": 1.52587890625e-05,
+      "max_static_error": 3.0517578125e-05,
+      "invalid_drivers": [],
+      "passed": true
+    },
+    {
+      "frame": 420,
+      "scenario": "S07_treasure_chest",
+      "key_error": 1.1920928910669204e-08,
+      "max_matrix_error": 3.0517578125e-05,
+      "max_static_error": 6.103515625e-05,
+      "invalid_drivers": [],
+      "passed": true
+    },
+    {
+      "frame": 420,
+      "scenario": "S08_mailbox",
+      "key_error": 2.3841857821338408e-08,
+      "max_matrix_error": 6.103515625e-05,
+      "max_static_error": 6.103515625e-05,
+      "invalid_drivers": [],
+      "passed": true
+    },
+    {
+      "frame": 420,
+      "scenario": "S09_trap_door",
+      "key_error": 4.768371586472142e-08,
+      "max_matrix_error": 0.000240325927734375,
+      "max_static_error": 0.0001220703125,
+      "invalid_drivers": [],
+      "passed": true
+    },
+    {
+      "frame": 420,
+      "scenario": "S10_car_doors",
+      "key_error": 8.079740743127672e-08,
+      "max_matrix_error": 0.0001220703125,
+      "max_static_error": 0.0001220703125,
+      "invalid_drivers": [],
+      "passed": true
+    },
+    {
+      "frame": 420,
+      "scenario": "S11_car_roof",
+      "key_error": 4.6414031062980143e-08,
+      "max_matrix_error": 2.759695053100586e-05,
+      "max_static_error": 3.0517578125e-05,
+      "invalid_drivers": [],
+      "passed": true
+    },
+    {
+      "frame": 420,
+      "scenario": "S12_canopy",
+      "key_error": 0.0,
+      "max_matrix_error": 7.62939453125e-06,
+      "max_static_error": 6.103515625e-05,
+      "invalid_drivers": [],
+      "passed": true
+    },
+    {
+      "frame": 420,
+      "scenario": "S13_forklift",
+      "key_error": 0.0,
+      "max_matrix_error": 6.103515625e-05,
+      "max_static_error": 6.103515625e-05,
+      "invalid_drivers": [],
+      "passed": true
+    },
+    {
+      "frame": 420,
+      "scenario": "S14_sliding_door",
+      "key_error": 0.0,
+      "max_matrix_error": 0.0001220703125,
+      "max_static_error": 0.0001220703125,
+      "invalid_drivers": [],
+      "passed": true
+    },
+    {
+      "frame": 420,
+      "scenario": "S15_radar",
+      "key_error": 8.682060692599691e-08,
+      "max_matrix_error": 0.0001220703125,
+      "max_static_error": 0.0001220703125,
+      "invalid_drivers": [],
+      "passed": true
+    },
+    {
+      "frame": 420,
+      "scenario": "S16_crane",
+      "key_error": 3.142076865358945e-08,
+      "max_matrix_error": 0.000110626220703125,
+      "max_static_error": 1.52587890625e-05,
+      "invalid_drivers": [],
+      "passed": true
+    },
+    {
+      "frame": 420,
+      "scenario": "S17_tipper",
+      "key_error": 9.61353563422307e-09,
+      "max_matrix_error": 0.000244140625,
+      "max_static_error": 0.000244140625,
+      "invalid_drivers": [],
+      "passed": true
+    },
+    {
+      "frame": 420,
+      "scenario": "S18_barrier",
+      "key_error": 1.4430598160863894e-08,
+      "max_matrix_error": 4.1961669921875e-05,
+      "max_static_error": 7.62939453125e-06,
+      "invalid_drivers": [],
+      "passed": true
+    },
+    {
+      "frame": 420,
+      "scenario": "S19_drawbridge",
+      "key_error": 1.3969869760988018e-08,
+      "max_matrix_error": 0.000244140625,
+      "max_static_error": 0.000244140625,
+      "invalid_drivers": [],
+      "passed": true
+    },
+    {
+      "frame": 420,
+      "scenario": "S20_levers",
+      "key_error": 1.6391277363192458e-09,
+      "max_matrix_error": 0.0001220703125,
+      "max_static_error": 0.0001220703125,
+      "invalid_drivers": [],
+      "passed": true
+    },
+    {
+      "frame": 440,
+      "scenario": "S01_house_door",
+      "key_error": 4.5299529904951896e-08,
+      "max_matrix_error": 1.52587890625e-05,
+      "max_static_error": 1.52587890625e-05,
+      "invalid_drivers": [],
+      "passed": true
+    },
+    {
+      "frame": 440,
+      "scenario": "S02_casement_window",
+      "key_error": 2.5893741151250538e-08,
+      "max_matrix_error": 7.62939453125e-06,
+      "max_static_error": 6.103515625e-05,
+      "invalid_drivers": [],
+      "passed": true
+    },
+    {
+      "frame": 440,
+      "scenario": "S03_shuttered_window",
+      "key_error": 1.8013848213094263e-07,
+      "max_matrix_error": 6.103515625e-05,
+      "max_static_error": 6.103515625e-05,
+      "invalid_drivers": [],
+      "passed": true
+    },
+    {
+      "frame": 440,
+      "scenario": "S04_garden_gate",
+      "key_error": 1.1434024393963682e-08,
+      "max_matrix_error": 0.0001220703125,
+      "max_static_error": 0.0001220703125,
+      "invalid_drivers": [],
+      "passed": true
+    },
+    {
+      "frame": 440,
+      "scenario": "S05_kitchen_cupboard",
+      "key_error": 1.0758380852848859e-08,
+      "max_matrix_error": 0.0001220703125,
+      "max_static_error": 0.0001220703125,
+      "invalid_drivers": [],
+      "passed": true
+    },
+    {
+      "frame": 440,
+      "scenario": "S06_double_cabinet",
+      "key_error": 2.384185793236071e-08,
+      "max_matrix_error": 1.52587890625e-05,
+      "max_static_error": 3.0517578125e-05,
+      "invalid_drivers": [],
+      "passed": true
+    },
+    {
+      "frame": 440,
+      "scenario": "S07_treasure_chest",
+      "key_error": 0.0,
+      "max_matrix_error": 3.0517578125e-05,
+      "max_static_error": 6.103515625e-05,
+      "invalid_drivers": [],
+      "passed": true
+    },
+    {
+      "frame": 440,
+      "scenario": "S08_mailbox",
+      "key_error": 7.494413534203659e-09,
+      "max_matrix_error": 6.103515625e-05,
+      "max_static_error": 6.103515625e-05,
+      "invalid_drivers": [],
+      "passed": true
+    },
+    {
+      "frame": 440,
+      "scenario": "S09_trap_door",
+      "key_error": 3.973642970223068e-09,
+      "max_matrix_error": 0.000244140625,
+      "max_static_error": 0.0001220703125,
+      "invalid_drivers": [],
+      "passed": true
+    },
+    {
+      "frame": 440,
+      "scenario": "S10_car_doors",
+      "key_error": 0.0,
+      "max_matrix_error": 0.0001220703125,
+      "max_static_error": 0.0001220703125,
+      "invalid_drivers": [],
+      "passed": true
+    },
+    {
+      "frame": 440,
+      "scenario": "S11_car_roof",
+      "key_error": 0.0,
+      "max_matrix_error": 2.288818359375e-05,
+      "max_static_error": 3.0517578125e-05,
+      "invalid_drivers": [],
+      "passed": true
+    },
+    {
+      "frame": 440,
+      "scenario": "S12_canopy",
+      "key_error": 0.0,
+      "max_matrix_error": 7.62939453125e-06,
+      "max_static_error": 6.103515625e-05,
+      "invalid_drivers": [],
+      "passed": true
+    },
+    {
+      "frame": 440,
+      "scenario": "S13_forklift",
+      "key_error": 0.0,
+      "max_matrix_error": 6.103515625e-05,
+      "max_static_error": 6.103515625e-05,
+      "invalid_drivers": [],
+      "passed": true
+    },
+    {
+      "frame": 440,
+      "scenario": "S14_sliding_door",
+      "key_error": 2.730388366956049e-06,
+      "max_matrix_error": 0.00012969970703125,
+      "max_static_error": 0.0001220703125,
+      "invalid_drivers": [],
+      "passed": true
+    },
+    {
+      "frame": 440,
+      "scenario": "S15_radar",
+      "key_error": 9.6269001659266e-09,
+      "max_matrix_error": 0.0001583099365234375,
+      "max_static_error": 0.0001220703125,
+      "invalid_drivers": [],
+      "passed": true
+    },
+    {
+      "frame": 440,
+      "scenario": "S16_crane",
+      "key_error": 2.384185793236071e-08,
+      "max_matrix_error": 7.62939453125e-05,
+      "max_static_error": 1.52587890625e-05,
+      "invalid_drivers": [],
+      "passed": true
+    },
+    {
+      "frame": 440,
+      "scenario": "S17_tipper",
+      "key_error": 2.6149251208806845e-08,
+      "max_matrix_error": 0.00029754638671875,
+      "max_static_error": 0.000244140625,
+      "invalid_drivers": [],
+      "passed": true
+    },
+    {
+      "frame": 440,
+      "scenario": "S18_barrier",
+      "key_error": 2.007735422360213e-08,
+      "max_matrix_error": 3.910064697265625e-05,
+      "max_static_error": 7.62939453125e-06,
+      "invalid_drivers": [],
+      "passed": true
+    },
+    {
+      "frame": 440,
+      "scenario": "S19_drawbridge",
+      "key_error": 1.1920928966180355e-08,
+      "max_matrix_error": 0.000244140625,
+      "max_static_error": 0.000244140625,
+      "invalid_drivers": [],
+      "passed": true
+    },
+    {
+      "frame": 440,
+      "scenario": "S20_levers",
+      "key_error": 0.0,
+      "max_matrix_error": 0.0001220703125,
+      "max_static_error": 0.0001220703125,
+      "invalid_drivers": [],
+      "passed": true
+    },
+    {
+      "frame": 464,
+      "scenario": "S01_house_door",
+      "key_error": 0.0,
+      "max_matrix_error": 1.52587890625e-05,
+      "max_static_error": 1.52587890625e-05,
+      "invalid_drivers": [],
+      "passed": true
+    },
+    {
+      "frame": 464,
+      "scenario": "S02_casement_window",
+      "key_error": 0.0,
+      "max_matrix_error": 7.62939453125e-06,
+      "max_static_error": 6.103515625e-05,
+      "invalid_drivers": [],
+      "passed": true
+    },
+    {
+      "frame": 464,
+      "scenario": "S03_shuttered_window",
+      "key_error": 0.0,
+      "max_matrix_error": 6.103515625e-05,
+      "max_static_error": 6.103515625e-05,
+      "invalid_drivers": [],
+      "passed": true
+    },
+    {
+      "frame": 464,
+      "scenario": "S04_garden_gate",
+      "key_error": 0.0,
+      "max_matrix_error": 0.0001220703125,
+      "max_static_error": 0.0001220703125,
+      "invalid_drivers": [],
+      "passed": true
+    },
+    {
+      "frame": 464,
+      "scenario": "S05_kitchen_cupboard",
+      "key_error": 0.0,
+      "max_matrix_error": 0.0001220703125,
+      "max_static_error": 0.0001220703125,
+      "invalid_drivers": [],
+      "passed": true
+    },
+    {
+      "frame": 464,
+      "scenario": "S06_double_cabinet",
+      "key_error": 0.0,
+      "max_matrix_error": 1.52587890625e-05,
+      "max_static_error": 3.0517578125e-05,
+      "invalid_drivers": [],
+      "passed": true
+    },
+    {
+      "frame": 464,
+      "scenario": "S07_treasure_chest",
+      "key_error": 0.0,
+      "max_matrix_error": 3.0517578125e-05,
+      "max_static_error": 6.103515625e-05,
+      "invalid_drivers": [],
+      "passed": true
+    },
+    {
+      "frame": 464,
+      "scenario": "S08_mailbox",
+      "key_error": 0.0,
+      "max_matrix_error": 6.103515625e-05,
+      "max_static_error": 6.103515625e-05,
+      "invalid_drivers": [],
+      "passed": true
+    },
+    {
+      "frame": 464,
+      "scenario": "S09_trap_door",
+      "key_error": 0.0,
+      "max_matrix_error": 0.000244140625,
+      "max_static_error": 0.0001220703125,
+      "invalid_drivers": [],
+      "passed": true
+    },
+    {
+      "frame": 464,
+      "scenario": "S10_car_doors",
+      "key_error": 0.0,
+      "max_matrix_error": 0.0001220703125,
+      "max_static_error": 0.0001220703125,
+      "invalid_drivers": [],
+      "passed": true
+    },
+    {
+      "frame": 464,
+      "scenario": "S11_car_roof",
+      "key_error": 0.0,
+      "max_matrix_error": 2.288818359375e-05,
+      "max_static_error": 3.0517578125e-05,
+      "invalid_drivers": [],
+      "passed": true
+    },
+    {
+      "frame": 464,
+      "scenario": "S12_canopy",
+      "key_error": 0.0,
+      "max_matrix_error": 7.62939453125e-06,
+      "max_static_error": 6.103515625e-05,
+      "invalid_drivers": [],
+      "passed": true
+    },
+    {
+      "frame": 464,
+      "scenario": "S13_forklift",
+      "key_error": 0.0,
+      "max_matrix_error": 6.103515625e-05,
+      "max_static_error": 6.103515625e-05,
+      "invalid_drivers": [],
+      "passed": true
+    },
+    {
+      "frame": 464,
+      "scenario": "S14_sliding_door",
+      "key_error": 0.0,
+      "max_matrix_error": 0.0001220703125,
+      "max_static_error": 0.0001220703125,
+      "invalid_drivers": [],
+      "passed": true
+    },
+    {
+      "frame": 464,
+      "scenario": "S15_radar",
+      "key_error": 0.0,
+      "max_matrix_error": 0.0001220703125,
+      "max_static_error": 0.0001220703125,
+      "invalid_drivers": [],
+      "passed": true
+    },
+    {
+      "frame": 464,
+      "scenario": "S16_crane",
+      "key_error": 0.0,
+      "max_matrix_error": 0.0001220703125,
+      "max_static_error": 1.52587890625e-05,
+      "invalid_drivers": [],
+      "passed": true
+    },
+    {
+      "frame": 464,
+      "scenario": "S17_tipper",
+      "key_error": 0.0,
+      "max_matrix_error": 0.0003662109375,
+      "max_static_error": 0.000244140625,
+      "invalid_drivers": [],
+      "passed": true
+    },
+    {
+      "frame": 464,
+      "scenario": "S18_barrier",
+      "key_error": 0.0,
+      "max_matrix_error": 6.103515625e-05,
+      "max_static_error": 7.62939453125e-06,
+      "invalid_drivers": [],
+      "passed": true
+    },
+    {
+      "frame": 464,
+      "scenario": "S19_drawbridge",
+      "key_error": 0.0,
+      "max_matrix_error": 0.000244140625,
+      "max_static_error": 0.000244140625,
+      "invalid_drivers": [],
+      "passed": true
+    },
+    {
+      "frame": 464,
+      "scenario": "S20_levers",
+      "key_error": 0.0,
+      "max_matrix_error": 0.0001220703125,
+      "max_static_error": 0.0001220703125,
+      "invalid_drivers": [],
+      "passed": true
+    },
+    {
+      "frame": 472,
+      "scenario": "S01_house_door",
+      "key_error": 0.0,
+      "max_matrix_error": 1.52587890625e-05,
+      "max_static_error": 1.52587890625e-05,
+      "invalid_drivers": [],
+      "passed": true
+    },
+    {
+      "frame": 472,
+      "scenario": "S02_casement_window",
+      "key_error": 0.0,
+      "max_matrix_error": 7.62939453125e-06,
+      "max_static_error": 6.103515625e-05,
+      "invalid_drivers": [],
+      "passed": true
+    },
+    {
+      "frame": 472,
+      "scenario": "S03_shuttered_window",
+      "key_error": 0.0,
+      "max_matrix_error": 6.103515625e-05,
+      "max_static_error": 6.103515625e-05,
+      "invalid_drivers": [],
+      "passed": true
+    },
+    {
+      "frame": 472,
+      "scenario": "S04_garden_gate",
+      "key_error": 0.0,
+      "max_matrix_error": 0.0001220703125,
+      "max_static_error": 0.0001220703125,
+      "invalid_drivers": [],
+      "passed": true
+    },
+    {
+      "frame": 472,
+      "scenario": "S05_kitchen_cupboard",
+      "key_error": 0.0,
+      "max_matrix_error": 0.0001220703125,
+      "max_static_error": 0.0001220703125,
+      "invalid_drivers": [],
+      "passed": true
+    },
+    {
+      "frame": 472,
+      "scenario": "S06_double_cabinet",
+      "key_error": 0.0,
+      "max_matrix_error": 1.52587890625e-05,
+      "max_static_error": 3.0517578125e-05,
+      "invalid_drivers": [],
+      "passed": true
+    },
+    {
+      "frame": 472,
+      "scenario": "S07_treasure_chest",
+      "key_error": 0.0,
+      "max_matrix_error": 3.0517578125e-05,
+      "max_static_error": 6.103515625e-05,
+      "invalid_drivers": [],
+      "passed": true
+    },
+    {
+      "frame": 472,
+      "scenario": "S08_mailbox",
+      "key_error": 0.0,
+      "max_matrix_error": 6.103515625e-05,
+      "max_static_error": 6.103515625e-05,
+      "invalid_drivers": [],
+      "passed": true
+    },
+    {
+      "frame": 472,
+      "scenario": "S09_trap_door",
+      "key_error": 0.0,
+      "max_matrix_error": 0.000244140625,
+      "max_static_error": 0.0001220703125,
+      "invalid_drivers": [],
+      "passed": true
+    },
+    {
+      "frame": 472,
+      "scenario": "S10_car_doors",
+      "key_error": 0.0,
+      "max_matrix_error": 0.0001220703125,
+      "max_static_error": 0.0001220703125,
+      "invalid_drivers": [],
+      "passed": true
+    },
+    {
+      "frame": 472,
+      "scenario": "S11_car_roof",
+      "key_error": 0.0,
+      "max_matrix_error": 2.288818359375e-05,
+      "max_static_error": 3.0517578125e-05,
+      "invalid_drivers": [],
+      "passed": true
+    },
+    {
+      "frame": 472,
+      "scenario": "S12_canopy",
+      "key_error": 0.0,
+      "max_matrix_error": 7.62939453125e-06,
+      "max_static_error": 6.103515625e-05,
+      "invalid_drivers": [],
+      "passed": true
+    },
+    {
+      "frame": 472,
+      "scenario": "S13_forklift",
+      "key_error": 0.0,
+      "max_matrix_error": 6.103515625e-05,
+      "max_static_error": 6.103515625e-05,
+      "invalid_drivers": [],
+      "passed": true
+    },
+    {
+      "frame": 472,
+      "scenario": "S14_sliding_door",
+      "key_error": 0.0,
+      "max_matrix_error": 0.0001220703125,
+      "max_static_error": 0.0001220703125,
+      "invalid_drivers": [],
+      "passed": true
+    },
+    {
+      "frame": 472,
+      "scenario": "S15_radar",
+      "key_error": 0.0,
+      "max_matrix_error": 0.0001220703125,
+      "max_static_error": 0.0001220703125,
+      "invalid_drivers": [],
+      "passed": true
+    },
+    {
+      "frame": 472,
+      "scenario": "S16_crane",
+      "key_error": 0.0,
+      "max_matrix_error": 0.0001220703125,
+      "max_static_error": 1.52587890625e-05,
+      "invalid_drivers": [],
+      "passed": true
+    },
+    {
+      "frame": 472,
+      "scenario": "S17_tipper",
+      "key_error": 0.0,
+      "max_matrix_error": 0.0003662109375,
+      "max_static_error": 0.000244140625,
+      "invalid_drivers": [],
+      "passed": true
+    },
+    {
+      "frame": 472,
+      "scenario": "S18_barrier",
+      "key_error": 0.0,
+      "max_matrix_error": 6.103515625e-05,
+      "max_static_error": 7.62939453125e-06,
+      "invalid_drivers": [],
+      "passed": true
+    },
+    {
+      "frame": 472,
+      "scenario": "S19_drawbridge",
+      "key_error": 0.0,
+      "max_matrix_error": 0.000244140625,
+      "max_static_error": 0.000244140625,
+      "invalid_drivers": [],
+      "passed": true
+    },
+    {
+      "frame": 472,
+      "scenario": "S20_levers",
+      "key_error": 0.0,
+      "max_matrix_error": 0.0001220703125,
+      "max_static_error": 0.0001220703125,
+      "invalid_drivers": [],
+      "passed": true
+    },
+    {
+      "frame": 480,
+      "scenario": "S01_house_door",
+      "key_error": 0.0,
+      "max_matrix_error": 1.52587890625e-05,
+      "max_static_error": 1.52587890625e-05,
+      "invalid_drivers": [],
+      "passed": true
+    },
+    {
+      "frame": 480,
+      "scenario": "S02_casement_window",
+      "key_error": 0.0,
+      "max_matrix_error": 7.62939453125e-06,
+      "max_static_error": 6.103515625e-05,
+      "invalid_drivers": [],
+      "passed": true
+    },
+    {
+      "frame": 480,
+      "scenario": "S03_shuttered_window",
+      "key_error": 0.0,
+      "max_matrix_error": 6.103515625e-05,
+      "max_static_error": 6.103515625e-05,
+      "invalid_drivers": [],
+      "passed": true
+    },
+    {
+      "frame": 480,
+      "scenario": "S04_garden_gate",
+      "key_error": 0.0,
+      "max_matrix_error": 0.0001220703125,
+      "max_static_error": 0.0001220703125,
+      "invalid_drivers": [],
+      "passed": true
+    },
+    {
+      "frame": 480,
+      "scenario": "S05_kitchen_cupboard",
+      "key_error": 0.0,
+      "max_matrix_error": 0.0001220703125,
+      "max_static_error": 0.0001220703125,
+      "invalid_drivers": [],
+      "passed": true
+    },
+    {
+      "frame": 480,
+      "scenario": "S06_double_cabinet",
+      "key_error": 0.0,
+      "max_matrix_error": 1.52587890625e-05,
+      "max_static_error": 3.0517578125e-05,
+      "invalid_drivers": [],
+      "passed": true
+    },
+    {
+      "frame": 480,
+      "scenario": "S07_treasure_chest",
+      "key_error": 0.0,
+      "max_matrix_error": 3.0517578125e-05,
+      "max_static_error": 6.103515625e-05,
+      "invalid_drivers": [],
+      "passed": true
+    },
+    {
+      "frame": 480,
+      "scenario": "S08_mailbox",
+      "key_error": 0.0,
+      "max_matrix_error": 6.103515625e-05,
+      "max_static_error": 6.103515625e-05,
+      "invalid_drivers": [],
+      "passed": true
+    },
+    {
+      "frame": 480,
+      "scenario": "S09_trap_door",
+      "key_error": 0.0,
+      "max_matrix_error": 0.000244140625,
+      "max_static_error": 0.0001220703125,
+      "invalid_drivers": [],
+      "passed": true
+    },
+    {
+      "frame": 480,
+      "scenario": "S10_car_doors",
+      "key_error": 0.0,
+      "max_matrix_error": 0.0001220703125,
+      "max_static_error": 0.0001220703125,
+      "invalid_drivers": [],
+      "passed": true
+    },
+    {
+      "frame": 480,
+      "scenario": "S11_car_roof",
+      "key_error": 0.0,
+      "max_matrix_error": 2.288818359375e-05,
+      "max_static_error": 3.0517578125e-05,
+      "invalid_drivers": [],
+      "passed": true
+    },
+    {
+      "frame": 480,
+      "scenario": "S12_canopy",
+      "key_error": 0.0,
+      "max_matrix_error": 7.62939453125e-06,
+      "max_static_error": 6.103515625e-05,
+      "invalid_drivers": [],
+      "passed": true
+    },
+    {
+      "frame": 480,
+      "scenario": "S13_forklift",
+      "key_error": 0.0,
+      "max_matrix_error": 6.103515625e-05,
+      "max_static_error": 6.103515625e-05,
+      "invalid_drivers": [],
+      "passed": true
+    },
+    {
+      "frame": 480,
+      "scenario": "S14_sliding_door",
+      "key_error": 0.0,
+      "max_matrix_error": 0.0001220703125,
+      "max_static_error": 0.0001220703125,
+      "invalid_drivers": [],
+      "passed": true
+    },
+    {
+      "frame": 480,
+      "scenario": "S15_radar",
+      "key_error": 0.0,
+      "max_matrix_error": 0.0001220703125,
+      "max_static_error": 0.0001220703125,
+      "invalid_drivers": [],
+      "passed": true
+    },
+    {
+      "frame": 480,
+      "scenario": "S16_crane",
+      "key_error": 0.0,
+      "max_matrix_error": 0.0001220703125,
+      "max_static_error": 1.52587890625e-05,
+      "invalid_drivers": [],
+      "passed": true
+    },
+    {
+      "frame": 480,
+      "scenario": "S17_tipper",
+      "key_error": 0.0,
+      "max_matrix_error": 0.0003662109375,
+      "max_static_error": 0.000244140625,
+      "invalid_drivers": [],
+      "passed": true
+    },
+    {
+      "frame": 480,
+      "scenario": "S18_barrier",
+      "key_error": 0.0,
+      "max_matrix_error": 6.103515625e-05,
+      "max_static_error": 7.62939453125e-06,
+      "invalid_drivers": [],
+      "passed": true
+    },
+    {
+      "frame": 480,
+      "scenario": "S19_drawbridge",
+      "key_error": 0.0,
+      "max_matrix_error": 0.000244140625,
+      "max_static_error": 0.000244140625,
+      "invalid_drivers": [],
+      "passed": true
+    },
+    {
+      "frame": 480,
+      "scenario": "S20_levers",
+      "key_error": 0.0,
+      "max_matrix_error": 0.0001220703125,
+      "max_static_error": 0.0001220703125,
+      "invalid_drivers": [],
+      "passed": true
+    }
+  ],
+  "scene_checks": [
+    {
+      "scene": "S01 House front door",
+      "frames": [
+        40,
+        60,
+        200,
+        230,
+        360,
+        380
+      ],
+      "max_matrix_difference_m": 0.0,
+      "max_motion_from_rest_m": 0.0004116798081668094,
+      "passed": true
+    },
+    {
+      "scene": "S02 Casement window",
+      "frames": [
+        40,
+        60,
+        200,
+        230,
+        360,
+        380
+      ],
+      "max_matrix_difference_m": 0.0,
+      "max_motion_from_rest_m": 0.0003854233319467819,
+      "passed": true
+    },
+    {
+      "scene": "S03 Shuttered window",
+      "frames": [
+        40,
+        60,
+        200,
+        230,
+        360,
+        380
+      ],
+      "max_matrix_difference_m": 0.0,
+      "max_motion_from_rest_m": 0.0007926808611955494,
+      "passed": true
+    },
+    {
+      "scene": "S04 Garden gate",
+      "frames": [
+        40,
+        60,
+        200,
+        230,
+        360,
+        380
+      ],
+      "max_matrix_difference_m": 0.0,
+      "max_motion_from_rest_m": 0.0003989979203728074,
+      "passed": true
+    },
+    {
+      "scene": "S05 Kitchen cupboard",
+      "frames": [
+        40,
+        60,
+        200,
+        230,
+        360,
+        380
+      ],
+      "max_matrix_difference_m": 0.0,
+      "max_motion_from_rest_m": 0.01119999960064888,
+      "passed": true
+    },
+    {
+      "scene": "S06 Double-door cabinet",
+      "frames": [
+        40,
+        60,
+        200,
+        230,
+        360,
+        380
+      ],
+      "max_matrix_difference_m": 0.0,
+      "max_motion_from_rest_m": 0.000471298408228904,
+      "passed": true
+    },
+    {
+      "scene": "S07 Treasure chest",
+      "frames": [
+        40,
+        60,
+        200,
+        230,
+        360,
+        380
+      ],
+      "max_matrix_difference_m": 0.0,
+      "max_motion_from_rest_m": 0.015157923102378845,
+      "passed": true
+    },
+    {
+      "scene": "S08 Mailbox",
+      "frames": [
+        40,
+        60,
+        200,
+        230,
+        360,
+        380
+      ],
+      "max_matrix_difference_m": 0.0,
+      "max_motion_from_rest_m": 0.02722024917602539,
+      "passed": true
+    },
+    {
+      "scene": "S09 Floor trap door",
+      "frames": [
+        40,
+        60,
+        200,
+        230,
+        360,
+        380
+      ],
+      "max_matrix_difference_m": 0.0,
+      "max_motion_from_rest_m": 0.0004493945889407769,
+      "passed": true
+    },
+    {
+      "scene": "S10 Town car doors",
+      "frames": [
+        40,
+        60,
+        200,
+        230,
+        360,
+        380
+      ],
+      "max_matrix_difference_m": 0.0,
+      "max_motion_from_rest_m": 0.00037281566728724486,
+      "passed": true
+    },
+    {
+      "scene": "S11 Car roof hatch",
+      "frames": [
+        40,
+        60,
+        200,
+        230,
+        360,
+        380
+      ],
+      "max_matrix_difference_m": 0.0,
+      "max_motion_from_rest_m": 0.012401137501001358,
+      "passed": true
+    },
+    {
+      "scene": "S12 Spaceship canopy",
+      "frames": [
+        40,
+        60,
+        200,
+        230,
+        360,
+        380
+      ],
+      "max_matrix_difference_m": 0.0,
+      "max_motion_from_rest_m": 0.0003989980614278483,
+      "passed": true
+    },
+    {
+      "scene": "S13 Forklift mast",
+      "frames": [
+        40,
+        60,
+        200,
+        230,
+        360,
+        380
+      ],
+      "max_matrix_difference_m": 0.0,
+      "max_motion_from_rest_m": 0.03799999877810478,
+      "passed": true
+    },
+    {
+      "scene": "S14 Sliding shed door",
+      "frames": [
+        40,
+        60,
+        200,
+        230,
+        360,
+        380
+      ],
+      "max_matrix_difference_m": 0.0,
+      "max_motion_from_rest_m": 0.05799996852874756,
+      "passed": true
+    },
+    {
+      "scene": "S15 Rotating radar",
+      "frames": [
+        40,
+        60,
+        200,
+        230,
+        360,
+        380
+      ],
+      "max_matrix_difference_m": 0.0,
+      "max_motion_from_rest_m": 0.02037873864173889,
+      "passed": true
+    },
+    {
+      "scene": "S16 Mini crane",
+      "frames": [
+        40,
+        60,
+        200,
+        230,
+        360,
+        380
+      ],
+      "max_matrix_difference_m": 0.0,
+      "max_motion_from_rest_m": 0.08399999141693115,
+      "passed": true
+    },
+    {
+      "scene": "S17 Dump truck tipper",
+      "frames": [
+        40,
+        60,
+        200,
+        230,
+        360,
+        380
+      ],
+      "max_matrix_difference_m": 0.0,
+      "max_motion_from_rest_m": 0.014260390773415565,
+      "passed": true
+    },
+    {
+      "scene": "S18 Parking barrier",
+      "frames": [
+        40,
+        60,
+        200,
+        230,
+        360,
+        380
+      ],
+      "max_matrix_difference_m": 0.0,
+      "max_motion_from_rest_m": 0.07013002038002014,
+      "passed": true
+    },
+    {
+      "scene": "S19 Drawbridge",
+      "frames": [
+        40,
+        60,
+        200,
+        230,
+        360,
+        380
+      ],
+      "max_matrix_difference_m": 0.0,
+      "max_motion_from_rest_m": 0.03320133686065674,
+      "passed": true
+    },
+    {
+      "scene": "S20 Control levers",
+      "frames": [
+        40,
+        60,
+        200,
+        230,
+        360,
+        380
+      ],
+      "max_matrix_difference_m": 0.0,
+      "max_motion_from_rest_m": 0.0002420746604911938,
+      "passed": true
+    }
+  ],
+  "coverage": "Plans verified at build (apply_plan sweep of every control's min/mid/max and a combined sample); at sampled catalog frames (inside every window and in the gaps) the NLA-evaluated controller equals the clip library and every rig matches the portable evaluator root-relative; each scenario scene evaluates the same object matrices as the catalog scene. No collision test here (see scripts/blender/check_movables_clearance.py)."
+}

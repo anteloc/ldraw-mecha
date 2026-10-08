@@ -1,0 +1,44 @@
+0 FILE s02_casement_window.ldr
+0 Movable element scenario S02_casement_window Casement window
+0 Name: s02_casement_window.ldr
+0 Author: ldraw-mecha scripts/build_movables.py
+0 // Generated mock scenario: parts picked by constant name from data/categories/parts (a few context parts by LDraw reference); moving parts placed from LDCad shadow connector frames (data/offLibShadow) via pyldraw3 or from official annotated models where no connector pair exists. Frame: LDU, -Y up, the scenario front faces -Z, ground (base top) at y = 0.
+
+0 // base: plates.Plate4X8
+1 2 0 0 0 -1 0 0 0 1 0 0 0 -1 3035.dat
+0 // window: windows.Window1X4X3WithoutShutterTabs
+1 15 0 -120 0 -1 0 0 0 1 0 0 0 -1 60594.dat
+0 // pane_l: windows.Window1X2X3PaneWithThickCornerTabs
+1 15 -32 -116 -5 0 0 -1 0 1 0 1 0 0 60608.dat
+0 // pane_r: windows.Window1X2X3PaneWithThickCornerTabs
+1 15 32 -116 -5 0 0 1 0 1 0 -1 0 0 60608.dat
+0 // sill0: bricks.Brick1X4
+1 378 0 -24 0 -1 0 0 0 1 0 0 0 -1 3010.dat
+0 // sill1a: bricks.Brick1X2
+1 378 20 -48 0 -1 0 0 0 1 0 0 0 -1 3004.dat
+0 // sill1b: bricks.Brick1X2
+1 378 -20 -48 0 -1 0 0 0 1 0 0 0 -1 3004.dat
+0 // wall_l0: bricks.Brick1X2
+1 378 60 -24 0 -1 0 0 0 1 0 0 0 -1 3004.dat
+0 // wall_l1: bricks.Brick1X2
+1 378 60 -48 0 -1 0 0 0 1 0 0 0 -1 3004.dat
+0 // wall_l2: bricks.Brick1X2
+1 378 60 -72 0 -1 0 0 0 1 0 0 0 -1 3004.dat
+0 // wall_l3: bricks.Brick1X2
+1 378 60 -96 0 -1 0 0 0 1 0 0 0 -1 3004.dat
+0 // wall_l4: bricks.Brick1X2
+1 378 60 -120 0 -1 0 0 0 1 0 0 0 -1 3004.dat
+0 // wall_r0: bricks.Brick1X2
+1 378 -60 -24 0 -1 0 0 0 1 0 0 0 -1 3004.dat
+0 // wall_r1: bricks.Brick1X2
+1 378 -60 -48 0 -1 0 0 0 1 0 0 0 -1 3004.dat
+0 // wall_r2: bricks.Brick1X2
+1 378 -60 -72 0 -1 0 0 0 1 0 0 0 -1 3004.dat
+0 // wall_r3: bricks.Brick1X2
+1 378 -60 -96 0 -1 0 0 0 1 0 0 0 -1 3004.dat
+0 // wall_r4: bricks.Brick1X2
+1 378 -60 -120 0 -1 0 0 0 1 0 0 0 -1 3004.dat
+0 // lintel: bricks.Brick1X8
+1 378 0 -144 0 -1 0 0 0 1 0 0 0 -1 3008.dat
+0 // cap: plates.Plate1X8
+1 28 0 -152 0 -1 0 0 0 1 0 0 0 -1 3460.dat

@@ -1,0 +1,565 @@
+{
+  "version": 1,
+  "name": "model",
+  "status": "draft",
+  "source": {
+    "version": 1,
+    "path": "/Users/captain/workspaces/workspace-ai/ldraw-mecha/output/plants/P15_tiered_shrub/source/scenario.mpd",
+    "sha256": "d8a1d13307bb73271eebbf3c1088b20ad438047ee4c996bb4d2838258b6ada25",
+    "section": "p15_tiered_shrub.ldr",
+    "description": "Plant wind case P15_tiered_shrub Tiered shrub",
+    "author": "ldraw-mecha scripts/build_plants.py",
+    "dependencies": {
+      "/Users/captain/workspaces/workspace-ai/ldraw-mecha/output/plants/P15_tiered_shrub/source/scenario.mpd": "d8a1d13307bb73271eebbf3c1088b20ad438047ee4c996bb4d2838258b6ada25"
+    },
+    "nodes": [
+      {
+        "id": "0",
+        "parent": "root",
+        "ref": "3031.dat",
+        "kind": "part",
+        "embedded": false,
+        "section": "p15_tiered_shrub.ldr",
+        "index": 0,
+        "line": 8,
+        "colour": "2",
+        "effective_colour": "2",
+        "local": [
+          [
+            1.0,
+            0.0,
+            0.0,
+            10.0
+          ],
+          [
+            0.0,
+            1.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            1.0,
+            10.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "world": [
+          [
+            1.0,
+            0.0,
+            0.0,
+            10.0
+          ],
+          [
+            0.0,
+            1.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            1.0,
+            10.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "description": "Plate  4 x  4"
+      },
+      {
+        "id": "1",
+        "parent": "root",
+        "ref": "85861.dat",
+        "kind": "part",
+        "embedded": false,
+        "section": "p15_tiered_shrub.ldr",
+        "index": 1,
+        "line": 10,
+        "colour": "288",
+        "effective_colour": "288",
+        "local": [
+          [
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            1.0,
+            0.0,
+            -8.0
+          ],
+          [
+            0.0,
+            0.0,
+            1.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "world": [
+          [
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            1.0,
+            0.0,
+            -8.0
+          ],
+          [
+            0.0,
+            0.0,
+            1.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "description": "Plate  1 x  1 Round with Open Stud"
+      },
+      {
+        "id": "2",
+        "parent": "root",
+        "ref": "63965a.dat",
+        "kind": "part",
+        "embedded": false,
+        "section": "p15_tiered_shrub.ldr",
+        "index": 2,
+        "line": 12,
+        "colour": "70",
+        "effective_colour": "70",
+        "local": [
+          [
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            1.0,
+            0.0,
+            -20.0
+          ],
+          [
+            0.0,
+            0.0,
+            1.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "world": [
+          [
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            1.0,
+            0.0,
+            -20.0
+          ],
+          [
+            0.0,
+            0.0,
+            1.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "description": "Bar  6L with Thick Stop"
+      },
+      {
+        "id": "3",
+        "parent": "root",
+        "ref": "1566.dat",
+        "kind": "part",
+        "embedded": false,
+        "section": "p15_tiered_shrub.ldr",
+        "index": 3,
+        "line": 14,
+        "colour": "2",
+        "effective_colour": "2",
+        "local": [
+          [
+            0.8660254038,
+            0.0,
+            0.5,
+            0.0
+          ],
+          [
+            0.0,
+            1.0,
+            0.0,
+            -12.0
+          ],
+          [
+            -0.5,
+            0.0,
+            0.8660254038,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "world": [
+          [
+            0.8660254038,
+            0.0,
+            0.5,
+            0.0
+          ],
+          [
+            0.0,
+            1.0,
+            0.0,
+            -12.0
+          ],
+          [
+            -0.5,
+            0.0,
+            0.8660254038,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "description": "Plant with Bar and Off-Shoot with Hollow Stud"
+      },
+      {
+        "id": "4",
+        "parent": "root",
+        "ref": "1566.dat",
+        "kind": "part",
+        "embedded": false,
+        "section": "p15_tiered_shrub.ldr",
+        "index": 4,
+        "line": 16,
+        "colour": "10",
+        "effective_colour": "10",
+        "local": [
+          [
+            -0.6427876097,
+            0.0,
+            0.7660444431,
+            0.0
+          ],
+          [
+            0.0,
+            1.0,
+            0.0,
+            -44.0
+          ],
+          [
+            -0.7660444431,
+            0.0,
+            -0.6427876097,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "world": [
+          [
+            -0.6427876097,
+            0.0,
+            0.7660444431,
+            0.0
+          ],
+          [
+            0.0,
+            1.0,
+            0.0,
+            -44.0
+          ],
+          [
+            -0.7660444431,
+            0.0,
+            -0.6427876097,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "description": "Plant with Bar and Off-Shoot with Hollow Stud"
+      },
+      {
+        "id": "5",
+        "parent": "root",
+        "ref": "1566.dat",
+        "kind": "part",
+        "embedded": false,
+        "section": "p15_tiered_shrub.ldr",
+        "index": 5,
+        "line": 18,
+        "colour": "27",
+        "effective_colour": "27",
+        "local": [
+          [
+            -0.6427876097,
+            0.0,
+            -0.7660444431,
+            0.0
+          ],
+          [
+            0.0,
+            1.0,
+            0.0,
+            -76.0
+          ],
+          [
+            0.7660444431,
+            0.0,
+            -0.6427876097,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "world": [
+          [
+            -0.6427876097,
+            0.0,
+            -0.7660444431,
+            0.0
+          ],
+          [
+            0.0,
+            1.0,
+            0.0,
+            -76.0
+          ],
+          [
+            0.7660444431,
+            0.0,
+            -0.6427876097,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "description": "Plant with Bar and Off-Shoot with Hollow Stud"
+      },
+      {
+        "id": "6",
+        "parent": "root",
+        "ref": "1566.dat",
+        "kind": "part",
+        "embedded": false,
+        "section": "p15_tiered_shrub.ldr",
+        "index": 6,
+        "line": 20,
+        "colour": "2",
+        "effective_colour": "2",
+        "local": [
+          [
+            0.8660254038,
+            0.0,
+            -0.5,
+            0.0
+          ],
+          [
+            0.0,
+            1.0,
+            0.0,
+            -108.0
+          ],
+          [
+            0.5,
+            0.0,
+            0.8660254038,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "world": [
+          [
+            0.8660254038,
+            0.0,
+            -0.5,
+            0.0
+          ],
+          [
+            0.0,
+            1.0,
+            0.0,
+            -108.0
+          ],
+          [
+            0.5,
+            0.0,
+            0.8660254038,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "description": "Plant with Bar and Off-Shoot with Hollow Stud"
+      }
+    ],
+    "diagnostics": [],
+    "coordinate_space": "selected section, LDU, -Y up"
+  },
+  "controls": {},
+  "signals": {},
+  "bodies": {},
+  "anchors": {},
+  "checks": [],
+  "notes": [
+    "Assign rigid groups and measured joints before setting status to ready."
+  ],
+  "mechanisms": {
+    "unresolved": {
+      "label": "No mechanism identified",
+      "parts": [
+        "0",
+        "1",
+        "2",
+        "3",
+        "4",
+        "5",
+        "6"
+      ],
+      "bodies": [],
+      "inputs": [],
+      "outputs": [],
+      "notes": [
+        "No supported mechanical evidence found. Absence of evidence does not imply a static model."
+      ]
+    }
+  },
+  "connections": {},
+  "discovery": {
+    "grouping": "Provisional connected mechanical candidates; agent may split/merge views",
+    "unclassified_parts": [
+      "0",
+      "1",
+      "2",
+      "3",
+      "4",
+      "5",
+      "6"
+    ],
+    "embedded_parts": [],
+    "contact_limit": 300,
+    "rigid_groups": "not inferred",
+    "inputs_outputs": "not inferred",
+    "mechanical_parts": [],
+    "warnings": [
+      {
+        "code": "coaxial_not_run",
+        "message": "not run: 0 shaft/gear candidates outside 2..100; select a section"
+      }
+    ],
+    "surface_contacts": "Not detected: cams, levers bearing on beams, friction and stops need geometric/visual review even when connector contacts are absent",
+    "unsupported_gears": [],
+    "gear_placements": {
+      "policy": "Nearest orthogonal analysis frame within rounding_limit; source translations and handedness preserved",
+      "rounding_limit": 0.002,
+      "counts": {},
+      "affected": []
+    },
+    "contacts": {
+      "complete": true,
+      "tested_parts": 7,
+      "diagnostics": [],
+      "summary": {
+        "tested_parts": 7,
+        "contacts": 1,
+        "contacted_parts": 2,
+        "by_kind": {
+          "stud/stud_receptacle": 1
+        },
+        "axles": {
+          "selection": "Catalog descriptions beginning Technic Axle followed by a numeric length; excludes axle pins, joiners and axle-hole supports",
+          "total": 0,
+          "with_axle_hole_contact": 0,
+          "without_axle_hole_contact": []
+        }
+      },
+      "placements": {
+        "policy": "Nearest orthogonal analysis frame within rounding_limit; source translations and handedness preserved",
+        "rounding_limit": 0.002,
+        "counts": {
+          "unchanged": 7
+        },
+        "affected": []
+      }
+    },
+    "coaxial_selection": "Catalog axle, gear, worm and engine crankshaft parts; positive line evidence within 80 LDU axial separation",
+    "coaxial": "not run: 0 shaft/gear candidates outside 2..100; select a section",
+    "isolated_mechanical_parts": []
+  }
+}

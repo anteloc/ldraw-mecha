@@ -1,0 +1,50 @@
+{
+  "case": "P16_liana",
+  "sweep": {
+    "no_new_surface_crossings": true,
+    "crossings": [],
+    "excluded_rest_pairs": []
+  },
+  "clip_poses": {
+    "samples": 180,
+    "every": 4,
+    "no_new_surface_crossings": true,
+    "crossings_by_clip": {},
+    "frames_with_crossings": {},
+    "vertex_penetration_by_clip": {},
+    "deep_shrink_ldu": 1.5,
+    "no_deep_crossings": true,
+    "deep_crossings_by_clip": {},
+    "frames_with_deep_crossings": {}
+  },
+  "roles": {
+    "0": "base",
+    "1": "post_thorny_back0",
+    "2": "post_thorny_back1",
+    "3": "post_thorny_back2",
+    "4": "post_thorny_back3",
+    "5": "clip_thorny_back",
+    "6": "post_thorny_front0",
+    "7": "post_thorny_front1",
+    "8": "post_thorny_front2",
+    "9": "post_thorny_front3",
+    "10": "clip_thorny_front",
+    "11": "post_leafy_back0",
+    "12": "post_leafy_back1",
+    "13": "post_leafy_back2",
+    "14": "post_leafy_back3",
+    "15": "post_leafy_back4",
+    "16": "post_leafy_back5",
+    "17": "clip_leafy_back",
+    "18": "post_leafy_front0",
+    "19": "post_leafy_front1",
+    "20": "post_leafy_front2",
+    "21": "post_leafy_front3",
+    "22": "post_leafy_front4",
+    "23": "post_leafy_front5",
+    "24": "clip_leafy_front",
+    "25": "vine_thorny",
+    "26": "vine_leafy"
+  },
+  "coverage": "Sampled surface crossings only; excludes rigid-body and rest-contact pairs; containment untested"
+}

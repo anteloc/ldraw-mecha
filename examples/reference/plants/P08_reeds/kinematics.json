@@ -1,0 +1,244 @@
+{
+  "semantics": {
+    "stalk_1": {
+      "control": "stalk_1",
+      "value": 0.2,
+      "test_point": [
+        -30.0,
+        -180.0,
+        -20.0
+      ],
+      "displacement": [
+        15.429277,
+        2.662189,
+        0.0
+      ],
+      "expected": "+x",
+      "flipped": false
+    },
+    "stalk_2": {
+      "control": "stalk_2",
+      "value": 0.2,
+      "test_point": [
+        30.0,
+        -180.0,
+        20.0
+      ],
+      "displacement": [
+        15.653855,
+        -0.326573,
+        0.0
+      ],
+      "expected": "+x",
+      "flipped": false
+    }
+  },
+  "wind_geometry": {
+    "stalk_1": {
+      "body": "stalk_1",
+      "x": -40.0,
+      "tip": [
+        -30.0,
+        -180.0,
+        -20.0
+      ],
+      "swing": [
+        0.995,
+        -0.0
+      ],
+      "lever": 104.5
+    },
+    "leaf_1": {
+      "body": "leaf_1",
+      "x": -30.0,
+      "tip": [
+        -30.0,
+        -167.0,
+        -120.0
+      ],
+      "swing": [
+        1.0,
+        0.0
+      ],
+      "lever": 100.0
+    },
+    "stalk_2": {
+      "body": "stalk_2",
+      "x": 40.0,
+      "tip": [
+        30.0,
+        -180.0,
+        20.0
+      ],
+      "swing": [
+        0.995,
+        0.0
+      ],
+      "lever": 104.5
+    },
+    "leaf_2": {
+      "body": "leaf_2",
+      "x": 30.0,
+      "tip": [
+        30.0,
+        -167.0,
+        120.0
+      ],
+      "swing": [
+        -1.0,
+        0.0
+      ],
+      "lever": 100.0
+    }
+  },
+  "roster_problems": [],
+  "contacts": {
+    "tested_parts": 9,
+    "contacts": 4,
+    "contacted_parts": 8,
+    "by_kind": {
+      "axle/axle_hole": 2,
+      "bar/clip": 2
+    },
+    "axles": {
+      "selection": "Catalog descriptions beginning Technic Axle followed by a numeric length; excludes axle pins, joiners and axle-hole supports",
+      "total": 0,
+      "with_axle_hole_contact": 0,
+      "without_axle_hole_contact": []
+    }
+  },
+  "contact_pairs": {
+    "1-2": [
+      "axle/axle_hole"
+    ],
+    "3-4": [
+      "bar/clip"
+    ],
+    "5-6": [
+      "axle/axle_hole"
+    ],
+    "7-8": [
+      "bar/clip"
+    ]
+  },
+  "joints": {
+    "stalk_1": "flex_approx",
+    "leaf_1": "real",
+    "stalk_2": "flex_approx",
+    "leaf_2": "real"
+  },
+  "asymmetric_sample": {
+    "controls": {
+      "stalk_1": 0.0945,
+      "stalk_2": -0.0555,
+      "leaf_1": 0.486,
+      "leaf_2": -0.378
+    },
+    "transforms": {
+      "stalk_1": [
+        [
+          0.995538,
+          -0.094359,
+          0.0,
+          -7.349787
+        ],
+        [
+          0.094359,
+          0.995538,
+          0.0,
+          3.435279
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "leaf_1": [
+        [
+          0.880263,
+          -0.094359,
+          -0.465009,
+          -20.108214
+        ],
+        [
+          0.083433,
+          0.995538,
+          -0.044075,
+          2.226006
+        ],
+        [
+          0.467093,
+          0.0,
+          0.884208,
+          11.69695
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "stalk_2": [
+        [
+          0.99846,
+          0.055472,
+          0.0,
+          4.277424
+        ],
+        [
+          -0.055472,
+          0.99846,
+          0.0,
+          2.101841
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "leaf_2": [
+        [
+          0.927974,
+          0.055472,
+          0.368494,
+          -0.977858
+        ],
+        [
+          -0.051555,
+          0.99846,
+          -0.020472,
+          2.393809
+        ],
+        [
+          -0.369062,
+          0.0,
+          0.929405,
+          12.48378
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ]
+    }
+  }
+}
