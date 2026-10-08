@@ -40,6 +40,11 @@ def _driver(obj, path, index, expression, variables):
     d.expression = expression
     for modifier in list(fc.modifiers):
         fc.modifiers.remove(modifier)
+    # Blender 5.x creates driver F-curves with identity keys at (0, 0) and (1, 1); evaluating them snaps a driver
+    # value within about 1e-4 of a key onto it (so 5e-5 rad became 0). With no keys and no modifiers the F-curve
+    # passes the driver value through exactly.
+    while fc.keyframe_points:
+        fc.keyframe_points.remove(fc.keyframe_points[0])
     if not d.is_simple_expression:
         raise ValueError(f"Not a simple Blender expression: {expression}")
 
