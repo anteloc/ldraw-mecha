@@ -4,12 +4,12 @@ import hashlib
 import json
 import sys
 
-ROOT=Path(__file__).resolve().parents[2]
+ROOT=Path(__file__).resolve().parents[3]
 sys.path.insert(0,str(ROOT))
 import bpy
 from ldraw_mechanisms import blender as adapter, plan
 
-p=plan.load(ROOT/"output/42083-w16/plan.json")
+p=plan.load(ROOT/"examples/reference/42083-w16/plan.json")
 rig=adapter.context_from_scene(p)
 ctrl=rig["controller"]
 embedded=json.loads(rig["root"]["mecha_plan"])
@@ -38,6 +38,7 @@ result=dict(blender_version=bpy.app.version_string,
     fps=bpy.context.scene.render.fps/bpy.context.scene.render.fps_base,
     action=action.name if action else None,curves=curves,verification=report,
     source_blend_saved=False)
-target=ROOT/"output/42083-w16-reference-review/blender-check.json"
+target=ROOT/"output/reference-rechecks/42083-w16/blender-check.json"
+target.parent.mkdir(parents=True, exist_ok=True)
 target.write_text(json.dumps(result,indent=2)+"\n")
 print("W16_REFERENCE_REVIEW",json.dumps(dict(passed=report["passed"],action=result["action"],curves=curves)))

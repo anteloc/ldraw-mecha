@@ -1,0 +1,1193 @@
+{
+  "passed": true,
+  "blender": "5.2.2 LTS",
+  "file": "/private/var/folders/f2/2f3xbvns3c7f926qwwqy65r00000gn/T/ldraw-reference-check-ctvwpmy3/examples/reference/movables/movables.blend",
+  "scenes": [
+    "Catalog",
+    "S01 House front door",
+    "S02 Casement window",
+    "S03 Shuttered window",
+    "S04 Garden gate",
+    "S05 Kitchen cupboard",
+    "S06 Double-door cabinet",
+    "S07 Treasure chest",
+    "S08 Mailbox",
+    "S09 Floor trap door",
+    "S10 Town car doors",
+    "S11 Car roof hatch",
+    "S12 Spaceship canopy",
+    "S13 Forklift mast",
+    "S14 Sliding shed door",
+    "S15 Rotating radar",
+    "S16 Mini crane",
+    "S17 Dump truck tipper",
+    "S18 Parking barrier",
+    "S19 Drawbridge",
+    "S20 Control levers"
+  ],
+  "frames": [
+    1,
+    480
+  ],
+  "fps": 24,
+  "tolerance": 0.002,
+  "clip_actions": 60,
+  "scenarios": {
+    "S01_house_door": {
+      "embedded_plan_matches": true,
+      "controller": "CTRL_movable_01_house_door",
+      "tracks": [
+        {
+          "track": "A open_close",
+          "strips": 1,
+          "action": "S01_house_door.open_close",
+          "slot": "OBmovable_controller",
+          "start": 1.0,
+          "fake_user": true,
+          "metadata": true
+        },
+        {
+          "track": "B slam",
+          "strips": 1,
+          "action": "S01_house_door.slam",
+          "slot": "OBmovable_controller",
+          "start": 161.0,
+          "fake_user": true,
+          "metadata": true
+        },
+        {
+          "track": "C creak",
+          "strips": 1,
+          "action": "S01_house_door.creak",
+          "slot": "OBmovable_controller",
+          "start": 321.0,
+          "fake_user": true,
+          "metadata": true
+        }
+      ],
+      "tracks_ok": true,
+      "drivers_ok": true,
+      "hierarchy_ok": true,
+      "scene": "S01 House front door",
+      "scene_ok": true,
+      "scene_check": {
+        "scene": "S01 House front door",
+        "frames": [
+          40,
+          200,
+          360
+        ],
+        "max_matrix_difference_m": 0.0,
+        "max_motion_from_rest_m": 0.0003999274631496519,
+        "passed": true
+      },
+      "worst_key_error": 1.395925866010117e-07,
+      "worst_matrix_error": 1.71661376953125e-05,
+      "samples": 11,
+      "passed": true
+    },
+    "S02_casement_window": {
+      "embedded_plan_matches": true,
+      "controller": "CTRL_movable_02_casement_window",
+      "tracks": [
+        {
+          "track": "A open_both",
+          "strips": 1,
+          "action": "S02_casement_window.open_both",
+          "slot": "OBmovable_controller",
+          "start": 1.0,
+          "fake_user": true,
+          "metadata": true
+        },
+        {
+          "track": "B one_by_one",
+          "strips": 1,
+          "action": "S02_casement_window.one_by_one",
+          "slot": "OBmovable_controller",
+          "start": 161.0,
+          "fake_user": true,
+          "metadata": true
+        },
+        {
+          "track": "C wind_flutter",
+          "strips": 1,
+          "action": "S02_casement_window.wind_flutter",
+          "slot": "OBmovable_controller",
+          "start": 321.0,
+          "fake_user": true,
+          "metadata": true
+        }
+      ],
+      "tracks_ok": true,
+      "drivers_ok": true,
+      "hierarchy_ok": true,
+      "scene": "S02 Casement window",
+      "scene_ok": true,
+      "scene_check": {
+        "scene": "S02 Casement window",
+        "frames": [
+          40,
+          200,
+          360
+        ],
+        "max_matrix_difference_m": 0.0,
+        "max_motion_from_rest_m": 0.0003795938638101286,
+        "passed": true
+      },
+      "worst_key_error": 3.7347532788611915e-08,
+      "worst_matrix_error": 9.059906005859375e-06,
+      "samples": 11,
+      "passed": true
+    },
+    "S03_shuttered_window": {
+      "embedded_plan_matches": true,
+      "controller": "CTRL_movable_03_shuttered_window",
+      "tracks": [
+        {
+          "track": "A fold_open",
+          "strips": 1,
+          "action": "S03_shuttered_window.fold_open",
+          "slot": "OBmovable_controller",
+          "start": 1.0,
+          "fake_user": true,
+          "metadata": true
+        },
+        {
+          "track": "B one_at_a_time",
+          "strips": 1,
+          "action": "S03_shuttered_window.one_at_a_time",
+          "slot": "OBmovable_controller",
+          "start": 161.0,
+          "fake_user": true,
+          "metadata": true
+        },
+        {
+          "track": "C storm",
+          "strips": 1,
+          "action": "S03_shuttered_window.storm",
+          "slot": "OBmovable_controller",
+          "start": 321.0,
+          "fake_user": true,
+          "metadata": true
+        }
+      ],
+      "tracks_ok": true,
+      "drivers_ok": true,
+      "hierarchy_ok": true,
+      "scene": "S03 Shuttered window",
+      "scene_ok": true,
+      "scene_check": {
+        "scene": "S03 Shuttered window",
+        "frames": [
+          40,
+          200,
+          360
+        ],
+        "max_matrix_difference_m": 0.0,
+        "max_motion_from_rest_m": 0.0007796742720529437,
+        "passed": true
+      },
+      "worst_key_error": 9.536743172944284e-08,
+      "worst_matrix_error": 6.4849853515625e-05,
+      "samples": 11,
+      "passed": true
+    },
+    "S04_garden_gate": {
+      "embedded_plan_matches": true,
+      "controller": "CTRL_movable_04_garden_gate",
+      "tracks": [
+        {
+          "track": "A push_through",
+          "strips": 1,
+          "action": "S04_garden_gate.push_through",
+          "slot": "OBmovable_controller",
+          "start": 1.0,
+          "fake_user": true,
+          "metadata": true
+        },
+        {
+          "track": "B open_latch",
+          "strips": 1,
+          "action": "S04_garden_gate.open_latch",
+          "slot": "OBmovable_controller",
+          "start": 161.0,
+          "fake_user": true,
+          "metadata": true
+        },
+        {
+          "track": "C in_and_out",
+          "strips": 1,
+          "action": "S04_garden_gate.in_and_out",
+          "slot": "OBmovable_controller",
+          "start": 321.0,
+          "fake_user": true,
+          "metadata": true
+        }
+      ],
+      "tracks_ok": true,
+      "drivers_ok": true,
+      "hierarchy_ok": true,
+      "scene": "S04 Garden gate",
+      "scene_ok": true,
+      "scene_check": {
+        "scene": "S04 Garden gate",
+        "frames": [
+          40,
+          200,
+          360
+        ],
+        "max_matrix_difference_m": 0.0,
+        "max_motion_from_rest_m": 0.000394179839448356,
+        "passed": true
+      },
+      "worst_key_error": 7.947285984855057e-08,
+      "worst_matrix_error": 0.0001220703125,
+      "samples": 11,
+      "passed": true
+    },
+    "S05_kitchen_cupboard": {
+      "embedded_plan_matches": true,
+      "controller": "CTRL_movable_05_kitchen_cupboard",
+      "tracks": [
+        {
+          "track": "A door_cycle",
+          "strips": 1,
+          "action": "S05_kitchen_cupboard.door_cycle",
+          "slot": "OBmovable_controller",
+          "start": 1.0,
+          "fake_user": true,
+          "metadata": true
+        },
+        {
+          "track": "B drawer_pull",
+          "strips": 1,
+          "action": "S05_kitchen_cupboard.drawer_pull",
+          "slot": "OBmovable_controller",
+          "start": 161.0,
+          "fake_user": true,
+          "metadata": true
+        },
+        {
+          "track": "C kitchen_sequence",
+          "strips": 1,
+          "action": "S05_kitchen_cupboard.kitchen_sequence",
+          "slot": "OBmovable_controller",
+          "start": 321.0,
+          "fake_user": true,
+          "metadata": true
+        }
+      ],
+      "tracks_ok": true,
+      "drivers_ok": true,
+      "hierarchy_ok": true,
+      "scene": "S05 Kitchen cupboard",
+      "scene_ok": true,
+      "scene_check": {
+        "scene": "S05 Kitchen cupboard",
+        "frames": [
+          40,
+          200,
+          360
+        ],
+        "max_matrix_difference_m": 0.0,
+        "max_motion_from_rest_m": 0.010400000959634781,
+        "passed": true
+      },
+      "worst_key_error": 1.8015929925674357e-07,
+      "worst_matrix_error": 0.0001220703125,
+      "samples": 11,
+      "passed": true
+    },
+    "S06_double_cabinet": {
+      "embedded_plan_matches": true,
+      "controller": "CTRL_movable_06_double_cabinet",
+      "tracks": [
+        {
+          "track": "A open_both",
+          "strips": 1,
+          "action": "S06_double_cabinet.open_both",
+          "slot": "OBmovable_controller",
+          "start": 1.0,
+          "fake_user": true,
+          "metadata": true
+        },
+        {
+          "track": "B left_then_right",
+          "strips": 1,
+          "action": "S06_double_cabinet.left_then_right",
+          "slot": "OBmovable_controller",
+          "start": 161.0,
+          "fake_user": true,
+          "metadata": true
+        },
+        {
+          "track": "C peek",
+          "strips": 1,
+          "action": "S06_double_cabinet.peek",
+          "slot": "OBmovable_controller",
+          "start": 321.0,
+          "fake_user": true,
+          "metadata": true
+        }
+      ],
+      "tracks_ok": true,
+      "drivers_ok": true,
+      "hierarchy_ok": true,
+      "scene": "S06 Double-door cabinet",
+      "scene_ok": true,
+      "scene_check": {
+        "scene": "S06 Double-door cabinet",
+        "frames": [
+          40,
+          200,
+          360
+        ],
+        "max_matrix_difference_m": 0.0,
+        "max_motion_from_rest_m": 0.0004515378059295472,
+        "passed": true
+      },
+      "worst_key_error": 8.262700301742143e-08,
+      "worst_matrix_error": 1.52587890625e-05,
+      "samples": 11,
+      "passed": true
+    },
+    "S07_treasure_chest": {
+      "embedded_plan_matches": true,
+      "controller": "CTRL_movable_07_treasure_chest",
+      "tracks": [
+        {
+          "track": "A slow_reveal",
+          "strips": 1,
+          "action": "S07_treasure_chest.slow_reveal",
+          "slot": "OBmovable_controller",
+          "start": 1.0,
+          "fake_user": true,
+          "metadata": true
+        },
+        {
+          "track": "B snap_shut",
+          "strips": 1,
+          "action": "S07_treasure_chest.snap_shut",
+          "slot": "OBmovable_controller",
+          "start": 161.0,
+          "fake_user": true,
+          "metadata": true
+        },
+        {
+          "track": "C peek_twice",
+          "strips": 1,
+          "action": "S07_treasure_chest.peek_twice",
+          "slot": "OBmovable_controller",
+          "start": 321.0,
+          "fake_user": true,
+          "metadata": true
+        }
+      ],
+      "tracks_ok": true,
+      "drivers_ok": true,
+      "hierarchy_ok": true,
+      "scene": "S07 Treasure chest",
+      "scene_ok": true,
+      "scene_check": {
+        "scene": "S07 Treasure chest",
+        "frames": [
+          40,
+          200,
+          360
+        ],
+        "max_matrix_difference_m": 0.0,
+        "max_motion_from_rest_m": 0.015157923102378845,
+        "passed": true
+      },
+      "worst_key_error": 4.768371586472142e-08,
+      "worst_matrix_error": 5.3882598876953125e-05,
+      "samples": 11,
+      "passed": true
+    },
+    "S08_mailbox": {
+      "embedded_plan_matches": true,
+      "controller": "CTRL_movable_08_mailbox",
+      "tracks": [
+        {
+          "track": "A gravity_drop",
+          "strips": 1,
+          "action": "S08_mailbox.gravity_drop",
+          "slot": "OBmovable_controller",
+          "start": 1.0,
+          "fake_user": true,
+          "metadata": true
+        },
+        {
+          "track": "B eased_loop",
+          "strips": 1,
+          "action": "S08_mailbox.eased_loop",
+          "slot": "OBmovable_controller",
+          "start": 161.0,
+          "fake_user": true,
+          "metadata": true
+        },
+        {
+          "track": "C flap_rattle",
+          "strips": 1,
+          "action": "S08_mailbox.flap_rattle",
+          "slot": "OBmovable_controller",
+          "start": 321.0,
+          "fake_user": true,
+          "metadata": true
+        }
+      ],
+      "tracks_ok": true,
+      "drivers_ok": true,
+      "hierarchy_ok": true,
+      "scene": "S08 Mailbox",
+      "scene_ok": true,
+      "scene_check": {
+        "scene": "S08 Mailbox",
+        "frames": [
+          40,
+          200,
+          360
+        ],
+        "max_matrix_difference_m": 0.0,
+        "max_motion_from_rest_m": 0.02722024917602539,
+        "passed": true
+      },
+      "worst_key_error": 1.238466622588419e-07,
+      "worst_matrix_error": 6.103515625e-05,
+      "samples": 11,
+      "passed": true
+    },
+    "S09_trap_door": {
+      "embedded_plan_matches": true,
+      "controller": "CTRL_movable_09_trap_door",
+      "tracks": [
+        {
+          "track": "A drop_and_winch",
+          "strips": 1,
+          "action": "S09_trap_door.drop_and_winch",
+          "slot": "OBmovable_controller",
+          "start": 1.0,
+          "fake_user": true,
+          "metadata": true
+        },
+        {
+          "track": "B quick_trap",
+          "strips": 1,
+          "action": "S09_trap_door.quick_trap",
+          "slot": "OBmovable_controller",
+          "start": 161.0,
+          "fake_user": true,
+          "metadata": true
+        },
+        {
+          "track": "C test_wiggle",
+          "strips": 1,
+          "action": "S09_trap_door.test_wiggle",
+          "slot": "OBmovable_controller",
+          "start": 321.0,
+          "fake_user": true,
+          "metadata": true
+        }
+      ],
+      "tracks_ok": true,
+      "drivers_ok": true,
+      "hierarchy_ok": true,
+      "scene": "S09 Floor trap door",
+      "scene_ok": true,
+      "scene_check": {
+        "scene": "S09 Floor trap door",
+        "frames": [
+          40,
+          200,
+          360
+        ],
+        "max_matrix_difference_m": 0.0,
+        "max_motion_from_rest_m": 0.0004493945889407769,
+        "passed": true
+      },
+      "worst_key_error": 5.97307188154872e-08,
+      "worst_matrix_error": 0.00025177001953125,
+      "samples": 11,
+      "passed": true
+    },
+    "S10_car_doors": {
+      "embedded_plan_matches": true,
+      "controller": "CTRL_movable_10_car_doors",
+      "tracks": [
+        {
+          "track": "A driver_door",
+          "strips": 1,
+          "action": "S10_car_doors.driver_door",
+          "slot": "OBmovable_controller",
+          "start": 1.0,
+          "fake_user": true,
+          "metadata": true
+        },
+        {
+          "track": "B both_doors",
+          "strips": 1,
+          "action": "S10_car_doors.both_doors",
+          "slot": "OBmovable_controller",
+          "start": 161.0,
+          "fake_user": true,
+          "metadata": true
+        },
+        {
+          "track": "C slam",
+          "strips": 1,
+          "action": "S10_car_doors.slam",
+          "slot": "OBmovable_controller",
+          "start": 321.0,
+          "fake_user": true,
+          "metadata": true
+        }
+      ],
+      "tracks_ok": true,
+      "drivers_ok": true,
+      "hierarchy_ok": true,
+      "scene": "S10 Town car doors",
+      "scene_ok": true,
+      "scene_check": {
+        "scene": "S10 Town car doors",
+        "frames": [
+          40,
+          200,
+          360
+        ],
+        "max_matrix_difference_m": 0.0,
+        "max_motion_from_rest_m": 0.0003666387285187686,
+        "passed": true
+      },
+      "worst_key_error": 9.512716192539017e-08,
+      "worst_matrix_error": 0.0001220703125,
+      "samples": 11,
+      "passed": true
+    },
+    "S11_car_roof": {
+      "embedded_plan_matches": true,
+      "controller": "CTRL_movable_11_car_roof",
+      "tracks": [
+        {
+          "track": "A lift_close",
+          "strips": 1,
+          "action": "S11_car_roof.lift_close",
+          "slot": "OBmovable_controller",
+          "start": 1.0,
+          "fake_user": true,
+          "metadata": true
+        },
+        {
+          "track": "B gas_strut",
+          "strips": 1,
+          "action": "S11_car_roof.gas_strut",
+          "slot": "OBmovable_controller",
+          "start": 161.0,
+          "fake_user": true,
+          "metadata": true
+        },
+        {
+          "track": "C slam",
+          "strips": 1,
+          "action": "S11_car_roof.slam",
+          "slot": "OBmovable_controller",
+          "start": 321.0,
+          "fake_user": true,
+          "metadata": true
+        }
+      ],
+      "tracks_ok": true,
+      "drivers_ok": true,
+      "hierarchy_ok": true,
+      "scene": "S11 Car roof hatch",
+      "scene_ok": true,
+      "scene_check": {
+        "scene": "S11 Car roof hatch",
+        "frames": [
+          40,
+          200,
+          360
+        ],
+        "max_matrix_difference_m": 0.0,
+        "max_motion_from_rest_m": 0.012401137501001358,
+        "passed": true
+      },
+      "worst_key_error": 1.1513853115374673e-07,
+      "worst_matrix_error": 3.814697265625e-05,
+      "samples": 11,
+      "passed": true
+    },
+    "S12_canopy": {
+      "embedded_plan_matches": true,
+      "controller": "CTRL_movable_12_canopy",
+      "tracks": [
+        {
+          "track": "A flip_open",
+          "strips": 1,
+          "action": "S12_canopy.flip_open",
+          "slot": "OBmovable_controller",
+          "start": 1.0,
+          "fake_user": true,
+          "metadata": true
+        },
+        {
+          "track": "B slow_seal",
+          "strips": 1,
+          "action": "S12_canopy.slow_seal",
+          "slot": "OBmovable_controller",
+          "start": 161.0,
+          "fake_user": true,
+          "metadata": true
+        },
+        {
+          "track": "C pop_open",
+          "strips": 1,
+          "action": "S12_canopy.pop_open",
+          "slot": "OBmovable_controller",
+          "start": 321.0,
+          "fake_user": true,
+          "metadata": true
+        }
+      ],
+      "tracks_ok": true,
+      "drivers_ok": true,
+      "hierarchy_ok": true,
+      "scene": "S12 Spaceship canopy",
+      "scene_ok": true,
+      "scene_check": {
+        "scene": "S12 Spaceship canopy",
+        "frames": [
+          40,
+          200,
+          360
+        ],
+        "max_matrix_difference_m": 0.0,
+        "max_motion_from_rest_m": 0.0003989980614278483,
+        "passed": true
+      },
+      "worst_key_error": 1.0814666762115621e-07,
+      "worst_matrix_error": 7.62939453125e-06,
+      "samples": 11,
+      "passed": true
+    },
+    "S13_forklift": {
+      "embedded_plan_matches": true,
+      "controller": "CTRL_movable_13_forklift",
+      "tracks": [
+        {
+          "track": "A raise_lower",
+          "strips": 1,
+          "action": "S13_forklift.raise_lower",
+          "slot": "OBmovable_controller",
+          "start": 1.0,
+          "fake_user": true,
+          "metadata": true
+        },
+        {
+          "track": "B chain_hoist",
+          "strips": 1,
+          "action": "S13_forklift.chain_hoist",
+          "slot": "OBmovable_controller",
+          "start": 161.0,
+          "fake_user": true,
+          "metadata": true
+        },
+        {
+          "track": "C drop",
+          "strips": 1,
+          "action": "S13_forklift.drop",
+          "slot": "OBmovable_controller",
+          "start": 321.0,
+          "fake_user": true,
+          "metadata": true
+        }
+      ],
+      "tracks_ok": true,
+      "drivers_ok": true,
+      "hierarchy_ok": true,
+      "scene": "S13 Forklift mast",
+      "scene_ok": true,
+      "scene_check": {
+        "scene": "S13 Forklift mast",
+        "frames": [
+          40,
+          200,
+          360
+        ],
+        "max_matrix_difference_m": 0.0,
+        "max_motion_from_rest_m": 0.030727926641702652,
+        "passed": true
+      },
+      "worst_key_error": 1.0393152592769184e-05,
+      "worst_matrix_error": 6.103515625e-05,
+      "samples": 11,
+      "passed": true
+    },
+    "S14_sliding_door": {
+      "embedded_plan_matches": true,
+      "controller": "CTRL_movable_14_sliding_door",
+      "tracks": [
+        {
+          "track": "A slide_cycle",
+          "strips": 1,
+          "action": "S14_sliding_door.slide_cycle",
+          "slot": "OBmovable_controller",
+          "start": 1.0,
+          "fake_user": true,
+          "metadata": true
+        },
+        {
+          "track": "B shove",
+          "strips": 1,
+          "action": "S14_sliding_door.shove",
+          "slot": "OBmovable_controller",
+          "start": 161.0,
+          "fake_user": true,
+          "metadata": true
+        },
+        {
+          "track": "C crack_open",
+          "strips": 1,
+          "action": "S14_sliding_door.crack_open",
+          "slot": "OBmovable_controller",
+          "start": 321.0,
+          "fake_user": true,
+          "metadata": true
+        }
+      ],
+      "tracks_ok": true,
+      "drivers_ok": true,
+      "hierarchy_ok": true,
+      "scene": "S14 Sliding shed door",
+      "scene_ok": true,
+      "scene_check": {
+        "scene": "S14 Sliding shed door",
+        "frames": [
+          40,
+          200,
+          360
+        ],
+        "max_matrix_difference_m": 0.0,
+        "max_motion_from_rest_m": 0.05799996852874756,
+        "passed": true
+      },
+      "worst_key_error": 6.716870700529398e-06,
+      "worst_matrix_error": 0.000244140625,
+      "samples": 11,
+      "passed": true
+    },
+    "S15_radar": {
+      "embedded_plan_matches": true,
+      "controller": "CTRL_movable_15_radar",
+      "tracks": [
+        {
+          "track": "A constant_spin",
+          "strips": 1,
+          "action": "S15_radar.constant_spin",
+          "slot": "OBmovable_controller",
+          "start": 1.0,
+          "fake_user": true,
+          "metadata": true
+        },
+        {
+          "track": "B spin_up_down",
+          "strips": 1,
+          "action": "S15_radar.spin_up_down",
+          "slot": "OBmovable_controller",
+          "start": 161.0,
+          "fake_user": true,
+          "metadata": true
+        },
+        {
+          "track": "C sweep_scan",
+          "strips": 1,
+          "action": "S15_radar.sweep_scan",
+          "slot": "OBmovable_controller",
+          "start": 321.0,
+          "fake_user": true,
+          "metadata": true
+        }
+      ],
+      "tracks_ok": true,
+      "drivers_ok": true,
+      "hierarchy_ok": true,
+      "scene": "S15 Rotating radar",
+      "scene_ok": true,
+      "scene_check": {
+        "scene": "S15 Rotating radar",
+        "frames": [
+          40,
+          200,
+          360
+        ],
+        "max_matrix_difference_m": 0.0,
+        "max_motion_from_rest_m": 0.02037873864173889,
+        "passed": true
+      },
+      "worst_key_error": 3.4969112050475815e-07,
+      "worst_matrix_error": 0.0001544952392578125,
+      "samples": 11,
+      "passed": true
+    },
+    "S16_crane": {
+      "embedded_plan_matches": true,
+      "controller": "CTRL_movable_16_crane",
+      "tracks": [
+        {
+          "track": "A slew_sweep",
+          "strips": 1,
+          "action": "S16_crane.slew_sweep",
+          "slot": "OBmovable_controller",
+          "start": 1.0,
+          "fake_user": true,
+          "metadata": true
+        },
+        {
+          "track": "B luff_cycle",
+          "strips": 1,
+          "action": "S16_crane.luff_cycle",
+          "slot": "OBmovable_controller",
+          "start": 161.0,
+          "fake_user": true,
+          "metadata": true
+        },
+        {
+          "track": "C pick_and_place",
+          "strips": 1,
+          "action": "S16_crane.pick_and_place",
+          "slot": "OBmovable_controller",
+          "start": 321.0,
+          "fake_user": true,
+          "metadata": true
+        }
+      ],
+      "tracks_ok": true,
+      "drivers_ok": true,
+      "hierarchy_ok": true,
+      "scene": "S16 Mini crane",
+      "scene_ok": true,
+      "scene_check": {
+        "scene": "S16 Mini crane",
+        "frames": [
+          40,
+          200,
+          360
+        ],
+        "max_matrix_difference_m": 0.0,
+        "max_motion_from_rest_m": 0.06775004416704178,
+        "passed": true
+      },
+      "worst_key_error": 4.434395761698795e-08,
+      "worst_matrix_error": 0.0001220703125,
+      "samples": 11,
+      "passed": true
+    },
+    "S17_tipper": {
+      "embedded_plan_matches": true,
+      "controller": "CTRL_movable_17_tipper",
+      "tracks": [
+        {
+          "track": "A tip_return",
+          "strips": 1,
+          "action": "S17_tipper.tip_return",
+          "slot": "OBmovable_controller",
+          "start": 1.0,
+          "fake_user": true,
+          "metadata": true
+        },
+        {
+          "track": "B hydraulic_steps",
+          "strips": 1,
+          "action": "S17_tipper.hydraulic_steps",
+          "slot": "OBmovable_controller",
+          "start": 161.0,
+          "fake_user": true,
+          "metadata": true
+        },
+        {
+          "track": "C shake_to_empty",
+          "strips": 1,
+          "action": "S17_tipper.shake_to_empty",
+          "slot": "OBmovable_controller",
+          "start": 321.0,
+          "fake_user": true,
+          "metadata": true
+        }
+      ],
+      "tracks_ok": true,
+      "drivers_ok": true,
+      "hierarchy_ok": true,
+      "scene": "S17 Dump truck tipper",
+      "scene_ok": true,
+      "scene_check": {
+        "scene": "S17 Dump truck tipper",
+        "frames": [
+          40,
+          200,
+          360
+        ],
+        "max_matrix_difference_m": 0.0,
+        "max_motion_from_rest_m": 0.013393526896834373,
+        "passed": true
+      },
+      "worst_key_error": 2.7615761899468794e-08,
+      "worst_matrix_error": 0.000396728515625,
+      "samples": 11,
+      "passed": true
+    },
+    "S18_barrier": {
+      "embedded_plan_matches": true,
+      "controller": "CTRL_movable_18_barrier",
+      "tracks": [
+        {
+          "track": "A raise_lower",
+          "strips": 1,
+          "action": "S18_barrier.raise_lower",
+          "slot": "OBmovable_controller",
+          "start": 1.0,
+          "fake_user": true,
+          "metadata": true
+        },
+        {
+          "track": "B bounce_down",
+          "strips": 1,
+          "action": "S18_barrier.bounce_down",
+          "slot": "OBmovable_controller",
+          "start": 161.0,
+          "fake_user": true,
+          "metadata": true
+        },
+        {
+          "track": "C quick_up_slow_down",
+          "strips": 1,
+          "action": "S18_barrier.quick_up_slow_down",
+          "slot": "OBmovable_controller",
+          "start": 321.0,
+          "fake_user": true,
+          "metadata": true
+        }
+      ],
+      "tracks_ok": true,
+      "drivers_ok": true,
+      "hierarchy_ok": true,
+      "scene": "S18 Parking barrier",
+      "scene_ok": true,
+      "scene_check": {
+        "scene": "S18 Parking barrier",
+        "frames": [
+          40,
+          200,
+          360
+        ],
+        "max_matrix_difference_m": 0.0,
+        "max_motion_from_rest_m": 0.07013002038002014,
+        "passed": true
+      },
+      "worst_key_error": 5.298190663971525e-08,
+      "worst_matrix_error": 6.866455078125e-05,
+      "samples": 11,
+      "passed": true
+    },
+    "S19_drawbridge": {
+      "embedded_plan_matches": true,
+      "controller": "CTRL_movable_19_drawbridge",
+      "tracks": [
+        {
+          "track": "A winch_and_drop",
+          "strips": 1,
+          "action": "S19_drawbridge.winch_and_drop",
+          "slot": "OBmovable_controller",
+          "start": 1.0,
+          "fake_user": true,
+          "metadata": true
+        },
+        {
+          "track": "B eased_cycle",
+          "strips": 1,
+          "action": "S19_drawbridge.eased_cycle",
+          "slot": "OBmovable_controller",
+          "start": 161.0,
+          "fake_user": true,
+          "metadata": true
+        },
+        {
+          "track": "C half_raise",
+          "strips": 1,
+          "action": "S19_drawbridge.half_raise",
+          "slot": "OBmovable_controller",
+          "start": 321.0,
+          "fake_user": true,
+          "metadata": true
+        }
+      ],
+      "tracks_ok": true,
+      "drivers_ok": true,
+      "hierarchy_ok": true,
+      "scene": "S19 Drawbridge",
+      "scene_ok": true,
+      "scene_check": {
+        "scene": "S19 Drawbridge",
+        "frames": [
+          40,
+          200,
+          360
+        ],
+        "max_matrix_difference_m": 0.0,
+        "max_motion_from_rest_m": 0.021576344966888428,
+        "passed": true
+      },
+      "worst_key_error": 1.2612058108985025e-07,
+      "worst_matrix_error": 0.000244140625,
+      "samples": 11,
+      "passed": true
+    },
+    "S20_levers": {
+      "embedded_plan_matches": true,
+      "controller": "CTRL_movable_20_levers",
+      "tracks": [
+        {
+          "track": "A toggle_snap",
+          "strips": 1,
+          "action": "S20_levers.toggle_snap",
+          "slot": "OBmovable_controller",
+          "start": 1.0,
+          "fake_user": true,
+          "metadata": true
+        },
+        {
+          "track": "B throttle",
+          "strips": 1,
+          "action": "S20_levers.throttle",
+          "slot": "OBmovable_controller",
+          "start": 161.0,
+          "fake_user": true,
+          "metadata": true
+        },
+        {
+          "track": "C jiggle",
+          "strips": 1,
+          "action": "S20_levers.jiggle",
+          "slot": "OBmovable_controller",
+          "start": 321.0,
+          "fake_user": true,
+          "metadata": true
+        }
+      ],
+      "tracks_ok": true,
+      "drivers_ok": true,
+      "hierarchy_ok": true,
+      "scene": "S20 Control levers",
+      "scene_ok": true,
+      "scene_check": {
+        "scene": "S20 Control levers",
+        "frames": [
+          40,
+          200,
+          360
+        ],
+        "max_matrix_difference_m": 0.0,
+        "max_motion_from_rest_m": 0.0002258570457343057,
+        "passed": true
+      },
+      "worst_key_error": 4.483307125546787e-08,
+      "worst_matrix_error": 0.0001220703125,
+      "samples": 11,
+      "passed": true
+    }
+  },
+  "transfer": {
+    "clip": "S10_car_doors.both_doors",
+    "target_controller": "CTRL_movable_06_double_cabinet",
+    "channels": [
+      "door_l",
+      "door_r"
+    ],
+    "samples": [
+      {
+        "frame": 1,
+        "key_error": 0.0,
+        "rig_passed": true,
+        "passed": true
+      },
+      {
+        "frame": 12,
+        "key_error": 1.4111959934295926e-07,
+        "rig_passed": true,
+        "passed": true
+      },
+      {
+        "frame": 23,
+        "key_error": 6.448745726306271e-08,
+        "rig_passed": true,
+        "passed": true
+      },
+      {
+        "frame": 34,
+        "key_error": 1.8706893922804113e-07,
+        "rig_passed": true,
+        "passed": true
+      },
+      {
+        "frame": 45,
+        "key_error": 4.768371586472142e-08,
+        "rig_passed": true,
+        "passed": true
+      },
+      {
+        "frame": 56,
+        "key_error": 4.768371586472142e-08,
+        "rig_passed": true,
+        "passed": true
+      },
+      {
+        "frame": 67,
+        "key_error": 4.768371586472142e-08,
+        "rig_passed": true,
+        "passed": true
+      },
+      {
+        "frame": 78,
+        "key_error": 4.768371586472142e-08,
+        "rig_passed": true,
+        "passed": true
+      },
+      {
+        "frame": 89,
+        "key_error": 4.768371586472142e-08,
+        "rig_passed": true,
+        "passed": true
+      },
+      {
+        "frame": 100,
+        "key_error": 3.6312103279811936e-07,
+        "rig_passed": true,
+        "passed": true
+      },
+      {
+        "frame": 111,
+        "key_error": 2.873611449905056e-07,
+        "rig_passed": true,
+        "passed": true
+      },
+      {
+        "frame": 122,
+        "key_error": 9.521865845796285e-08,
+        "rig_passed": true,
+        "passed": true
+      },
+      {
+        "frame": 133,
+        "key_error": 3.268966674804287e-07,
+        "rig_passed": true,
+        "passed": true
+      },
+      {
+        "frame": 144,
+        "key_error": 0.0,
+        "rig_passed": true,
+        "passed": true
+      }
+    ],
+    "passed": true
+  },
+  "coverage": "Saved file reopened in a fresh process; embedded plans compared with the plan files; hierarchy, drivers, NLA tracks, Actions, scenario scenes and markers inspected; controller values and root-relative rig transforms checked at sampled catalog frames; each scenario scene compared with the catalog at three frames; one clip played on another scenario's controller and compared with its exported JSON. No collision test."
+}

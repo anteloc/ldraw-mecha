@@ -106,4 +106,4 @@ not share this state order or cam law.
 
 Implementation: [rear-box authoring](../../../scripts/build_defender_rig.py).
 Interfaces: [internal propshafts](internal-propshafts.md), [middle gearbox](range-direction-gearbox.md).
-Preview: [3rd gear](../../../output/42110/preview-sequential-3rd.png).
+Preview: [3rd gear](../../../examples/reference/42110/preview-sequential-3rd.png).

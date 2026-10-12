@@ -17,7 +17,8 @@ the current Python definitions. It also repeats the geometry/recipe checks for
 
 The related pure tests pass: **195 combined** (102 plant, 93 movable). Wind
 tests cover advection delay, periodic forcing, linear steady-state versus a long
-RK4 run, mirrored frond direction, lag toward a chain tip, shelter thresholds,+vane heading, bounds and loop equivalence. Geometric tests cover assembly and
+RK4 run, mirrored frond direction, lag toward a chain tip, shelter thresholds,
+vane heading, bounds and loop equivalence. Geometric tests cover assembly and
 semantic axis signs. These are implementation checks, not measured dynamics.
 
 The fresh [saved-scene check](../../../examples/reference/plants-reference-review/reopen-check.json)
@@ -75,3 +76,8 @@ The archive is input; fresh reports go to `output/`. To rebuild a rig from a
 snapshot, first relocate its source paths into a working plan using the
 [archive guide](../../../examples/README.md). Preserve source attribution and
 the separate library/shadow notices when constructing further examples.
+
+The [archive portability review](../../../examples/reference/reference-portability/verification.json)
+repeated source/reopen checks on **2026-10-12** without the working bundle.
+Both wind code examples executed successfully, and all three Mermaid blocks
+in these plant/wind references rendered successfully.

@@ -184,6 +184,10 @@ Deliver the exact source selection, plan, blend, animation, relevant builder,
 reports and previews under `output/`, with scope and limitations. The user can
 then visually select a useful case for the reference catalog. Curation is a
 separate requested task; normal rigging agents need not write reference diagrams.
+When a selected result becomes a reference, copy its relevant source, evidence,
+scripts and playback assets into `examples/reference/` before linking them in
+docs. Keep the originals under `output/`. The [archive guide](../examples/README.md)
+explains selection, portable review commands and dependency checks.
 
 ## Optional diagnostic exports
 

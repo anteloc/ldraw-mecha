@@ -73,6 +73,12 @@ fresh diagrams, exact identities, equations, evidence and limitations; follow
 agents can find the example. Selection establishes usefulness, not mechanical
 proof; qualify or exclude unsupported relationships.
 
+Before publishing reference docs, **copy, do not move**, their relevant sources,
+plans, evidence, scripts and playback assets into `examples/reference/`. Link to
+those committed copies, not `output/`; the working directory may be deleted.
+Use the [archive guide](examples/README.md) for selection, path relocation and
+`scripts/reference_assets.py check`. This applies to every future reference too.
+
 Automatic `diagrams PLAN` exports remain optional diagnostics of recorded plan
 fields. They do not reconstruct signal maths or unrecorded couplings and are not
 reference documents. Neither preparation nor Blender inspection generates them.
@@ -107,6 +113,7 @@ Old generated diagrams should not be used as authority for curation.
   conversion. Identity binding must succeed; do not substitute an unbound GLB
   or infer identity from `.001` names. Preserve source attribution and original
   Blender reference scripts. Keep generated artifacts under `output/`.
+  Selected reference snapshots are copied to `examples/reference/` for retention.
 - Prefer background Blender for builds and previews. Live inspection is additive;
   pass an explicit root when copies exist. `remove(root)` restores the source
   pose. `set_moving_only` and `set_hidden` provide reversible visibility.

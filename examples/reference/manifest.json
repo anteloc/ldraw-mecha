@@ -4,8 +4,9 @@
     "10265-discovery-audit/README.md": {
       "source": "output/10265-discovery-audit/README.md",
       "source_sha256": "1e72f2fe7474506ee6daf57d1f5e48fd56afb825138421471ef1af16821db836",
-      "sha256": "1e72f2fe7474506ee6daf57d1f5e48fd56afb825138421471ef1af16821db836",
-      "bytes": 1197
+      "sha256": "253291457ae05822058d2dbe570f3df8ea7629c431129291fe2e5f1b24b9f4cd",
+      "bytes": 1261,
+      "adaptation": "Removed obsolete automatic-diagram link; retained study plan and reviewed candidate diagram."
     },
     "10265-discovery-audit/adopted-asymmetric.json": {
       "source": "output/10265-discovery-audit/adopted-asymmetric.json",
@@ -112,8 +113,9 @@
     "42083-mechanisms-reference-review/review.py": {
       "source": "output/42083-mechanisms-reference-review/review.py",
       "source_sha256": "92391801e5b0508935475950a8ac13289b9de391e302e978609b8b92e9e6b284",
-      "sha256": "92391801e5b0508935475950a8ac13289b9de391e302e978609b8b92e9e6b284",
-      "bytes": 6223
+      "sha256": "14aefef3953c6b396428fabca08250fd04e46d7a9b019883f0605dbd32165a2d",
+      "bytes": 6399,
+      "adaptation": "Archive portability: read retained inputs, rebase source paths in memory, and write fresh reports under output/reference-rechecks."
     },
     "42083-mechanisms-reference-review/w16-lifecycle.json": {
       "source": "output/42083-mechanisms-reference-review/w16-lifecycle.json",
@@ -574,8 +576,9 @@
     "42083-w16-reference-review/inspect_blend.py": {
       "source": "output/42083-w16-reference-review/inspect_blend.py",
       "source_sha256": "0c7749549e17b6263e4f7b67870061ebf991505a30c52fff8fb0909b89a1d76a",
-      "sha256": "0c7749549e17b6263e4f7b67870061ebf991505a30c52fff8fb0909b89a1d76a",
-      "bytes": 1997
+      "sha256": "cb71ff006aca59ce487862a189ed7ad1aa5af8c6b5fb3ad4b66b07dea47d124e",
+      "bytes": 2060,
+      "adaptation": "Archive portability: read retained inputs, rebase source paths in memory, and write fresh reports under output/reference-rechecks."
     },
     "42083-w16-reference-review/review.json": {
       "source": "output/42083-w16-reference-review/review.json",
@@ -586,8 +589,9 @@
     "42083-w16-reference-review/review.py": {
       "source": "output/42083-w16-reference-review/review.py",
       "source_sha256": "431f0ef19186372ca4fa3b4f43e563126a1672bb56ca24a53306a0314d4c667b",
-      "sha256": "431f0ef19186372ca4fa3b4f43e563126a1672bb56ca24a53306a0314d4c667b",
-      "bytes": 6543
+      "sha256": "5f5146dd228d2d096f0b293e7946091e4c2733b94e5156c6ce8308e106a60e52",
+      "bytes": 6688,
+      "adaptation": "Archive portability: read retained inputs, rebase source paths in memory, and write fresh reports under output/reference-rechecks."
     },
     "42083-w16/blender-check.json": {
       "source": "output/42083-w16/blender-check.json",
@@ -826,8 +830,9 @@
     "42110-reference-review/review.py": {
       "source": "output/42110-reference-review/review.py",
       "source_sha256": "4f304c812fda9e570085101e93312047e7f0aa2a16f25b4a49d857eb68a2c4f0",
-      "sha256": "4f304c812fda9e570085101e93312047e7f0aa2a16f25b4a49d857eb68a2c4f0",
-      "bytes": 5180
+      "sha256": "5dd2c40a520240716ff376839de277ad5286513bdb060c302bd3279a78924de8",
+      "bytes": 5321,
+      "adaptation": "Archive portability: read retained inputs, rebase source paths in memory, and write fresh reports under output/reference-rechecks."
     },
     "42110-suspension-standalone-reference-review/blender-check.json": {
       "source": "output/42110-suspension-standalone-reference-review/blender-check.json",
@@ -844,8 +849,9 @@
     "42110-suspension-standalone-reference-review/inspect_blend.py": {
       "source": "output/42110-suspension-standalone-reference-review/inspect_blend.py",
       "source_sha256": "fed63b79ecad7b750df9a1e63d5240782ecb52eeed46e939c3d8c0de43a1cffc",
-      "sha256": "fed63b79ecad7b750df9a1e63d5240782ecb52eeed46e939c3d8c0de43a1cffc",
-      "bytes": 1993
+      "sha256": "68e627a9f0116e6487f3945bc8ae82f606ea4da05449f3e688cc647b6a9ef424",
+      "bytes": 2072,
+      "adaptation": "Archive portability: read retained inputs, rebase source paths in memory, and write fresh reports under output/reference-rechecks."
     },
     "42110-suspension-standalone-reference-review/review.json": {
       "source": "output/42110-suspension-standalone-reference-review/review.json",
@@ -856,8 +862,9 @@
     "42110-suspension-standalone-reference-review/review.py": {
       "source": "output/42110-suspension-standalone-reference-review/review.py",
       "source_sha256": "31dd7b19231a940ad21fd3818aaf823d6fd6be98e9e8f4964c2d2f464cdd8823",
-      "sha256": "31dd7b19231a940ad21fd3818aaf823d6fd6be98e9e8f4964c2d2f464cdd8823",
-      "bytes": 5622
+      "sha256": "ca944a16f07dbb6594836e7e47167d9c19cbfa6954e495c4836066a99cd9fc01",
+      "bytes": 5757,
+      "adaptation": "Archive portability: read retained inputs, rebase source paths in memory, and write fresh reports under output/reference-rechecks."
     },
     "42110-suspension-standalone/REPORT.md": {
       "source": "output/42110-suspension-standalone/REPORT.md",
@@ -1246,8 +1253,9 @@
     "minifigs-reference-review/review.py": {
       "source": "output/minifigs-reference-review/review.py",
       "source_sha256": "b6d4e935a14ea5ffd09d8f6357d7ace2074ca6de302343e99ce44a527d53665e",
-      "sha256": "b6d4e935a14ea5ffd09d8f6357d7ace2074ca6de302343e99ce44a527d53665e",
-      "bytes": 6025
+      "sha256": "58b9963e32bbe2e76fd4c36827d17da24b021d3c6a045e61a362406a5ce3d541",
+      "bytes": 6133,
+      "adaptation": "Archive portability: read retained inputs, rebase source paths in memory, and write fresh reports under output/reference-rechecks."
     },
     "minifigs-reference-review/taxonomy-audit.json": {
       "source": "output/minifigs-reference-review/taxonomy-audit.json",
@@ -6000,6 +6008,120 @@
       "source_sha256": "4af72c7d4f11881d4a62e4ba6381732a32e7163018298945af34c175a2e89d2d",
       "sha256": "4af72c7d4f11881d4a62e4ba6381732a32e7163018298945af34c175a2e89d2d",
       "bytes": 273
+    },
+    "10265-discovery-audit/study/plan.json": {
+      "source": "output/10265-discovery-audit/study/plan.json",
+      "source_sha256": "af86e6dceffe02b889884043f4cc109b65b7fc5607ac569bc51afa722698d30a",
+      "sha256": "af86e6dceffe02b889884043f4cc109b65b7fc5607ac569bc51afa722698d30a",
+      "bytes": 2737049
+    },
+    "42110-suspension/source/42110-1-shocks-split.mpd": {
+      "source": "output/42110-suspension/source/42110-1-shocks-split.mpd",
+      "source_sha256": "3dbd0c355529cfcbac95c9b10de02c81eb7994b8bd4e596c3914a1ed81798398",
+      "sha256": "3dbd0c355529cfcbac95c9b10de02c81eb7994b8bd4e596c3914a1ed81798398",
+      "bytes": 732906
+    },
+    "reference-portability/door/check.json": {
+      "source": "output/reference-portability/door/check.json",
+      "source_sha256": "2c5982a310c0c29f57fcf990dcfbce207ebd8e3dacdf1ee3e349ef856b1571cb",
+      "sha256": "2c5982a310c0c29f57fcf990dcfbce207ebd8e3dacdf1ee3e349ef856b1571cb",
+      "bytes": 1097
+    },
+    "reference-portability/door/lifecycle.json": {
+      "source": "output/reference-portability/door/lifecycle.json",
+      "source_sha256": "b5cf98d7ff86d0ef65c1fa6cf0ad1e99f7fdd4aecb8fbcc51b924d4e41599836",
+      "sha256": "b5cf98d7ff86d0ef65c1fa6cf0ad1e99f7fdd4aecb8fbcc51b924d4e41599836",
+      "bytes": 535
+    },
+    "reference-portability/door/reopen.json": {
+      "source": "output/reference-portability/door/reopen.json",
+      "source_sha256": "2c5982a310c0c29f57fcf990dcfbce207ebd8e3dacdf1ee3e349ef856b1571cb",
+      "sha256": "2c5982a310c0c29f57fcf990dcfbce207ebd8e3dacdf1ee3e349ef856b1571cb",
+      "bytes": 1097
+    },
+    "reference-portability/rechecks/42083-mechanisms/reopen-check.json": {
+      "source": "output/reference-portability/rechecks/42083-mechanisms/reopen-check.json",
+      "source_sha256": "761b5e50bc5bcf297d0489cbc73e4f18def3f34889f010cedec5b4b4c5101e9c",
+      "sha256": "761b5e50bc5bcf297d0489cbc73e4f18def3f34889f010cedec5b4b4c5101e9c",
+      "bytes": 10570
+    },
+    "reference-portability/rechecks/42083-mechanisms/review.json": {
+      "source": "output/reference-portability/rechecks/42083-mechanisms/review.json",
+      "source_sha256": "25b49e4f961bfe12e9b45b0fb8d1d366fdac71d43b513154af9ccb58c19998cb",
+      "sha256": "25b49e4f961bfe12e9b45b0fb8d1d366fdac71d43b513154af9ccb58c19998cb",
+      "bytes": 22342
+    },
+    "reference-portability/rechecks/42083-w16/blender-check.json": {
+      "source": "output/reference-portability/rechecks/42083-w16/blender-check.json",
+      "source_sha256": "347a344231657fdcd44c7630a0ff080f87b8d959d7ae5c3b90fdb94d48d33752",
+      "sha256": "347a344231657fdcd44c7630a0ff080f87b8d959d7ae5c3b90fdb94d48d33752",
+      "bytes": 2521
+    },
+    "reference-portability/rechecks/42083-w16/review.json": {
+      "source": "output/reference-portability/rechecks/42083-w16/review.json",
+      "source_sha256": "9618bfc8346e0300010803a2e17fd6ec77a4d55da424108ecd24d7895c756145",
+      "sha256": "9618bfc8346e0300010803a2e17fd6ec77a4d55da424108ecd24d7895c756145",
+      "bytes": 20115
+    },
+    "reference-portability/rechecks/42110-suspension-standalone/blender-check.json": {
+      "source": "output/reference-portability/rechecks/42110-suspension-standalone/blender-check.json",
+      "source_sha256": "95037cef92f6c3699e1c42599197abab7c61f5ee13502f2e58c6f68df675613f",
+      "sha256": "95037cef92f6c3699e1c42599197abab7c61f5ee13502f2e58c6f68df675613f",
+      "bytes": 3643
+    },
+    "reference-portability/rechecks/42110-suspension-standalone/review.json": {
+      "source": "output/reference-portability/rechecks/42110-suspension-standalone/review.json",
+      "source_sha256": "a220ee813537aedfb8a5b6ce113cf001b59ebbe49677a1949b20e2f8c6b194d6",
+      "sha256": "a220ee813537aedfb8a5b6ce113cf001b59ebbe49677a1949b20e2f8c6b194d6",
+      "bytes": 45464
+    },
+    "reference-portability/rechecks/42110/review.json": {
+      "source": "output/reference-portability/rechecks/42110/review.json",
+      "source_sha256": "b884ce4644ec748b9b274db3b0738597464922f93ecea6406354ffb362e3ba78",
+      "sha256": "b884ce4644ec748b9b274db3b0738597464922f93ecea6406354ffb362e3ba78",
+      "bytes": 27935
+    },
+    "reference-portability/rechecks/minifigs/reopen-check.json": {
+      "source": "output/reference-portability/rechecks/minifigs/reopen-check.json",
+      "source_sha256": "be610ea4eae235376501cb7cdea4a2b051c2eb7119e243f843d34a959d9104ec",
+      "sha256": "be610ea4eae235376501cb7cdea4a2b051c2eb7119e243f843d34a959d9104ec",
+      "bytes": 15206
+    },
+    "reference-portability/rechecks/minifigs/review.json": {
+      "source": "output/reference-portability/rechecks/minifigs/review.json",
+      "source_sha256": "0d3003988626be93604c02ab6c5c329c7924f448ca2b900c66561560e84eba8d",
+      "sha256": "0d3003988626be93604c02ab6c5c329c7924f448ca2b900c66561560e84eba8d",
+      "bytes": 29689
+    },
+    "reference-portability/rechecks/movables/reopen-check.json": {
+      "source": "output/reference-portability/rechecks/movables/reopen-check.json",
+      "source_sha256": "418d1bab9324eb1e1db53079b59a719d73ce97b6ac5386be3a26e0fdd73f2c5d",
+      "sha256": "418d1bab9324eb1e1db53079b59a719d73ce97b6ac5386be3a26e0fdd73f2c5d",
+      "bytes": 32126
+    },
+    "reference-portability/rechecks/movables/review.json": {
+      "source": "output/reference-portability/rechecks/movables/review.json",
+      "source_sha256": "5c0ddf6b139bc363b0a8b0601ea55675fd38f1c20603405f55326bc8b54e393b",
+      "sha256": "5c0ddf6b139bc363b0a8b0601ea55675fd38f1c20603405f55326bc8b54e393b",
+      "bytes": 148727
+    },
+    "reference-portability/rechecks/plants/reopen-check.json": {
+      "source": "output/reference-portability/rechecks/plants/reopen-check.json",
+      "source_sha256": "436e87d521b8b998eba768097f6bbef1a70a6d53915313ab008d2abf578e380e",
+      "sha256": "436e87d521b8b998eba768097f6bbef1a70a6d53915313ab008d2abf578e380e",
+      "bytes": 27336
+    },
+    "reference-portability/rechecks/plants/review.json": {
+      "source": "output/reference-portability/rechecks/plants/review.json",
+      "source_sha256": "44f4f4f96cfb0f37b47aa8dc50cded8c7bd3169c127882c37e92bd0bb77e0401",
+      "sha256": "44f4f4f96cfb0f37b47aa8dc50cded8c7bd3169c127882c37e92bd0bb77e0401",
+      "bytes": 361889
+    },
+    "reference-portability/verification.json": {
+      "source": "output/reference-portability/verification.json",
+      "source_sha256": "14802d45083b0cf69cecd299f3bbdfddf4cc3c0f21eb3326405995bc068cabdb",
+      "sha256": "14802d45083b0cf69cecd299f3bbdfddf4cc3c0f21eb3326405995bc068cabdb",
+      "bytes": 6293
     }
   }
 }

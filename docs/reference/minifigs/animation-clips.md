@@ -75,7 +75,7 @@ the prior playback state. Its tested source is `MF03_knight.sword_slash`, target
 `CTRL_minifig_05_chef`. This verifies channel transfer, not that every gesture
 is appropriate or clear with every accessory.
 
-To adapt a clip, first check the [compatibility matrix](../../../output/minifigs/CATALOG.md)
+To adapt a clip, first check the [compatibility matrix](../../../examples/reference/minifigs/CATALOG.md)
 and then sample its combined poses with the new figure. Use the generated
 `clips/<figure>.<clip>.json` for portable data or the existing Action for Blender
 playback. Neither route requires reverse-engineering rendered movement.

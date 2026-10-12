@@ -5,7 +5,8 @@ Source analysis only. Existing 10265-v2 artifacts and Blender scenes were not mo
 - [Comparison](comparison.json): 29 → 921 contact records across 1441 parts;
   straight axles with axle-hole evidence 0/25 → 25/25 (pins/joiners excluded).
 - [Raw contacts](contacts-raw.json) and [corrected contacts](contacts-normalized.json).
-- [New study](study/plan.json) and [mechanism diagrams](study/diagrams/README.md).
+- [New study](study/plan.json). The obsolete automatic diagrams were not retained;
+  use the reviewed candidate diagram below for this regression.
 - [Adjuster candidate diagram](ride-height-candidate.svg): knob → axle → worm → 8T
   → output axle → both liftarm cranks. The crank-to-frame coupling remains unverified.
 - [Old study audit](previous-study-audit.json): flags the missing coverage diagnostics.

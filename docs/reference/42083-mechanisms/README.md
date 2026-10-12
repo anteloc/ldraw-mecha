@@ -1,10 +1,10 @@
 # 42083 Chiron: independent mechanism studies
 
 These references document the five animated extracts in
-[output/42083-mechanisms](../../../output/42083-mechanisms), introduced in commit
+[archived 42083-mechanisms](../../../examples/reference/42083-mechanisms), introduced in commit
 `079b6c8`. Curation date: **2026-10-07**. The earlier
 [W16 reference](../42083-w16/README.md) remains the engine example; the directory
-`output/42083-w16-reference-review` contains its earlier review evidence.
+`examples/reference/42083-w16-reference-review` contains its earlier review evidence.
 
 The new material focuses on mechanisms and techniques beyond that engine and
 the existing Defender references. Diagrams describe the implemented motion and
@@ -30,7 +30,7 @@ its assumptions; they are not executable plans or contact simulations.
 
 Those mechanisms do not need another full explanation here. Their exact
 implementations remain in the [builder](../../../scripts/build_42083_mechanisms.py)
-and individual [saved plans](../../../output/42083-mechanisms).
+and individual [saved plans](../../../examples/reference/42083-mechanisms).
 
 ## Identity and controls
 
@@ -41,7 +41,7 @@ Each extraction retains this frame but assigns new leaf IDs. Tables distinguish
 **source IDs in that selected FILE** from **extract IDs**; do not use either with
 another root selection. Each extract has its own `source/idmap.json`.
 
-Open [mechanisms.blend](../../../output/42083-mechanisms/mechanisms.blend):
+Open [mechanisms.blend](../../../examples/reference/42083-mechanisms/mechanisms.blend):
 
 | Controller suffix after `CTRL_chiron_42083_` | Main controls |
 | --- | --- |
@@ -57,5 +57,5 @@ pause or release the controller action before adjusting properties. Updating a
 selector alone does not perform the demonstration's phase-carry calculation.
 
 The engine, steering, suspension and wing key/tilt are outside these five rigs.
-See the [overview preview](../../../output/42083-mechanisms/previews/overview-f140.png)
+See the [overview preview](../../../examples/reference/42083-mechanisms/previews/overview-f140.png)
 and [evidence page](scope-and-evidence.md) before extending any claim.

@@ -33,14 +33,23 @@ When the user selects another successful result, follow the
 | Reusable controller animation | [Shared channels, Action slots and NLA clips](minifigs/animation-clips.md) |
 | Whole-character movement and seated poses | [Separate root staging and joint motion](minifigs/whole-figure-staging.md) |
 | Accessory-dependent animation clearance | [Combined poses and clip compatibility](minifigs/pose-clearance.md) |
+| Doors, windows, lids and sliding elements | [Joint placement, signs and context](movables/hinges-and-sliders.md) |
+| Plumb crane hook and forklift spring | [Dependent motion and directed axes](movables/dependent-motion.md) |
+| Opening styles and independent scene playback | [Bounce, overshoot and scene evaluation](movables/motion-styles-and-scenes.md) |
+| Articulating plant parts | [Ball chains, clip/bar joints and bending approximations](plants/plant-joints.md) |
+| Flexible vines and fixed-end supports | [Rigid links versus axial rocking](plants/flexible-vines.md) |
+| Coherent wind across a scene | [Shared field and spatial gust delay](plants/wind-field.md) |
+| Wind-driven plants and other objects | [Oscillator, rotor and vane responses](plants/wind-responses.md) |
 
 Case indexes: [42110 Defender](42110/README.md), [42083 W16](42083-w16/README.md),
 [standalone suspension](42110-suspension-standalone/README.md),
 [42083 independent mechanisms](42083-mechanisms/README.md),
-[minifigs](minifigs/README.md).
+[minifigs](minifigs/README.md), [movable elements](movables/README.md),
+[plants and wind](plants/README.md).
 
 Each page describes a particular implementation, including approximations and
 unimplemented interfaces. Visual acceptance selects a useful candidate; numerical
 and geometric evidence determine which relationships are suitable to reuse.
-Remeasure the new model and test nonzero inputs. Output evidence is kept under
-`output/` and may need to accompany the documents when sharing them.
+Remeasure the new model and test nonzero inputs. Selected evidence and playback
+are retained under `examples/reference/`; see the [archive guide](../../examples/README.md).
+`output/` is a disposable working directory, not a published reference dependency.

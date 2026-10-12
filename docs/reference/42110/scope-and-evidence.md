@@ -9,9 +9,9 @@ visual inspection alone can miss.
 
 - [Source model](../../../data/models-annotated/42110-1.mpd), by Philippe Hurbain,
   selecting `42110 - main.ldr`.
-- [Saved plan](../../../output/42110/plan.json), [rig builder](../../../scripts/build_defender_rig.py)
+- [Saved plan](../../../examples/reference/42110/plan.json), [rig builder](../../../scripts/build_defender_rig.py)
   and [animation script](../../../scripts/blender/animate_defender.py).
-- [Bounded connector evidence](../../../output/42110/evidence/contacts-mechanical.json):
+- [Bounded connector evidence](../../../examples/reference/42110/evidence/contacts-mechanical.json):
   3,894 contact records over 1,538 selected parts. Contacts inform grouping;
   their existence does not by itself prove a rigid lock.
 - Saved numerical reports, lifecycle/reopen reports and rendered previews.
@@ -42,8 +42,8 @@ carrier-relative differential motion. It does not establish the correct absolute
 tooth phase. The timeline check does not establish smooth subframe motion,
 synchronization, forces or clutch engagement under load.
 
-Fresh review artifacts: [review.json](../../../output/42110-reference-review/review.json)
-and [reproduction script](../../../output/42110-reference-review/review.py).
+Fresh review artifacts: [review.json](../../../examples/reference/42110-reference-review/review.json)
+and [reproduction script](../../../examples/reference/42110-reference-review/review.py).
 Run the latter from the repository root with `.venv/bin/python`. The script
 evaluates existing definitions in memory and writes its report under `output/`.
 
@@ -51,17 +51,17 @@ evaluates existing definitions in memory and writes its report under `output/`.
 
 | Evidence | Artifact |
 | --- | --- |
-| Original drivetrain checks | [kinematics.json](../../../output/42110/kinematics.json) |
-| Plan/control sweep | [sweep.json](../../../output/42110/sweep.json) |
-| Blender transform verification | [blender-check.json](../../../output/42110/blender-check.json) |
-| Saved rig reopened | [reopen-check.json](../../../output/42110/reopen-check.json) |
-| Remove/rebuild lifecycle | [lifecycle.json](../../../output/42110/lifecycle.json) |
-| Animation verification | [animation-check.json](../../../output/42110/animation-check.json) |
-| Saved animation reopened | [animated-reopen-check.json](../../../output/42110/animated-reopen-check.json) |
-| General clearance samples | [clearance.json](../../../output/42110/clearance.json) |
-| Steering clearance samples | [clearance-steering.json](../../../output/42110/clearance-steering.json) |
-| Whole-model context | [rest preview](../../../output/42110/preview-rest.png) |
-| Bodywork visibility selection | [bodywork.json](../../../output/42110/bodywork.json) |
+| Original drivetrain checks | [kinematics.json](../../../examples/reference/42110/kinematics.json) |
+| Plan/control sweep | [sweep.json](../../../examples/reference/42110/sweep.json) |
+| Blender transform verification | [blender-check.json](../../../examples/reference/42110/blender-check.json) |
+| Saved rig reopened | [reopen-check.json](../../../examples/reference/42110/reopen-check.json) |
+| Remove/rebuild lifecycle | [lifecycle.json](../../../examples/reference/42110/lifecycle.json) |
+| Animation verification | [animation-check.json](../../../examples/reference/42110/animation-check.json) |
+| Saved animation reopened | [animated-reopen-check.json](../../../examples/reference/42110/animated-reopen-check.json) |
+| General clearance samples | [clearance.json](../../../examples/reference/42110/clearance.json) |
+| Steering clearance samples | [clearance-steering.json](../../../examples/reference/42110/clearance-steering.json) |
+| Whole-model context | [rest preview](../../../examples/reference/42110/preview-rest.png) |
+| Bodywork visibility selection | [bodywork.json](../../../examples/reference/42110/bodywork.json) |
 
 Saved Blender comparisons used a 0.01 LDU transform tolerance. Reported maximum
 moving/static matrix errors are approximately 0.00363/0.00403 respectively;

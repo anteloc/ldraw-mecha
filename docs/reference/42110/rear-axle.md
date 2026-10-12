@@ -58,5 +58,5 @@ clearance. Remeasure the target shaft directions and fork phases and decide
 explicitly whether its hubs need a proper CV mapping.
 
 Implementation: [axle loop and rear wheel bodies](../../../scripts/build_defender_rig.py).
-Evidence: [curation review](../../../output/42110-reference-review/review.json),
-[original kinematic report](../../../output/42110/kinematics.json).
+Evidence: [curation review](../../../examples/reference/42110-reference-review/review.json),
+[original kinematic report](../../../examples/reference/42110/kinematics.json).

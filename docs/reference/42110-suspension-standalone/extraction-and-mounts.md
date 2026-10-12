@@ -20,8 +20,9 @@ flowchart TB
   E -->|"remap only part IDs"| R
 ```
 
-All generated source files live under `output/`. The original attributed model
-and its hierarchy remain intact.
+Generated source files are written under `output/`; the reviewed copies are
+retained in `examples/reference/`. The original attributed model and its
+hierarchy remain intact.
 
 ## Split complete shocks before conversion
 
@@ -58,7 +59,7 @@ retains:
 
 The reviewed selection excludes the rack, drivetrain, engine, bodywork and
 Cardan input yokes. It also excludes parts moved by the separate Defender
-drivetrain rig. The stored [keep.json](../../../output/42110-suspension-standalone/keep.json)
+drivetrain rig. The stored [keep.json](../../../examples/reference/42110-suspension-standalone/keep.json)
 records each retained part's role and reason.
 
 Two front tie-rod inner pins remain as fixed anchors: old paths
@@ -89,7 +90,7 @@ The original IDs change, but no coordinate rebasing is needed. Example:
 | `0/0/79/2` | `58` | Its spring |
 | `0/380` | `251` | Front-left rim |
 
-[The ID map](../../../output/42110-suspension-standalone/source/idmap.json)
+[The ID map](../../../examples/reference/42110-suspension-standalone/source/idmap.json)
 is a bijection onto all 259 retained leaves. Curation found a maximum world-matrix
 difference of approximately 5.7e-14. Re-extraction is also covered by a
 byte-for-byte reproduction test.
@@ -110,6 +111,6 @@ the saved preparation reports 419 contacts and axle-hole evidence for all
 36 axles. That supports further analysis; it does not infer every rigid group
 or prove a mechanically complete mounting structure.
 
-Executable workflow: [original reproduction commands](../../../output/42110-suspension-standalone/REPORT.md).
+Executable workflow: [original reproduction commands](../../../examples/reference/42110-suspension-standalone/REPORT.md).
 Those commands recreate the selected output paths; choose a new output directory
 when making an independent copy.

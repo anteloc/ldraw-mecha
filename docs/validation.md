@@ -66,9 +66,11 @@ which catches rod-roll references that accidentally depend on world placement.
 restoration, exception cleanup, visibility, notes updates and duplicate imports:
 
 ```sh
+.venv/bin/python scripts/reference_assets.py plan \
+  examples/reference/42083-w16/plan.json --output output/w16-workflows/plan.json
 "$BLENDER_BIN" -b --factory-startup --python-exit-code 1 \
   --python scripts/blender/check_workflows.py -- \
-  --plan output/42083-w16/plan.json --glb output/42083-w16/model.glb \
+  --plan output/w16-workflows/plan.json --glb examples/reference/42083-w16/model.glb \
   --output output/check-w16-workflows
 ```
 

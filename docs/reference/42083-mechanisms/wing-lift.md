@@ -7,8 +7,8 @@ top-speed-key mechanism. See [scope and evidence](scope-and-evidence.md).
 
 ## Four-bar geometry and identity
 
-Use the wing [plan](../../../output/42083-mechanisms/wing/plan.json) and
-[identity map](../../../output/42083-mechanisms/wing/source/idmap.json).
+Use the wing [plan](../../../examples/reference/42083-mechanisms/wing/plan.json) and
+[identity map](../../../examples/reference/42083-mechanisms/wing/source/idmap.json).
 All revolute axes below are +X; the linkage is described in the YZ plane.
 
 | Element | Selected-source ID | Extract ID | Body/role |
@@ -109,7 +109,7 @@ remain assumptions; key-driven tilt has not been solved.
 
 Implementation: `build_wing` in the
 [builder](../../../scripts/build_42083_mechanisms.py). Visual evidence:
-[lowered](../../../output/42083-mechanisms/wing/previews/lowered.png),
-[lifted](../../../output/42083-mechanisms/wing/previews/lifted.png).
+[lowered](../../../examples/reference/42083-mechanisms/wing/previews/lowered.png),
+[lifted](../../../examples/reference/42083-mechanisms/wing/previews/lifted.png).
 For another lift, remeasure both axis lines, all four sides, rod endpoints,
 branch and surrounding travel limits before reusing the equations.

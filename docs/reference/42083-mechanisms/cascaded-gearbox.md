@@ -8,7 +8,7 @@ unchanged source assembly. See [scope and evidence](scope-and-evidence.md).
 
 ## Two stages and the ratio convention
 
-Use the gearbox [plan](../../../output/42083-mechanisms/gearbox/plan.json).
+Use the gearbox [plan](../../../examples/reference/42083-mechanisms/gearbox/plan.json).
 Power-path shaft angles use +Z. The control `input` is the **neighbouring main
 shaft**, not the gearbox input shaft: its 8T to 24T mesh gives
 `s1 = -input/3`. Ratios quoted as output/input shaft mean `delta(s2)/delta(s1)`.
@@ -38,7 +38,7 @@ physical catch-index combinations but eight distinct ratios.
 
 ## Rings and the carry crank
 
-All IDs here use the [source-to-extract map](../../../output/42083-mechanisms/gearbox/source/idmap.json).
+All IDs here use the [source-to-extract map](../../../examples/reference/42083-mechanisms/gearbox/source/idmap.json).
 
 | Element | Selected-source ID | Extract ID | Plan role |
 | --- | --- | --- | --- |
@@ -137,5 +137,5 @@ detent context. This is an ideal kinematic reference with explicit contact limit
 
 Implementation: `gearbox_ratios`, `build_gearbox` and `verify` in the
 [builder](../../../scripts/build_42083_mechanisms.py). Visual evidence:
-[gear 1](../../../output/42083-mechanisms/gearbox/previews/gear1.png),
-[gear 5](../../../output/42083-mechanisms/gearbox/previews/gear5.png).
+[gear 1](../../../examples/reference/42083-mechanisms/gearbox/previews/gear1.png),
+[gear 5](../../../examples/reference/42083-mechanisms/gearbox/previews/gear5.png).

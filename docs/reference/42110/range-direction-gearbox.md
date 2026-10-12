@@ -112,4 +112,4 @@ load. Preserve the separate ring/extension bodies, verify which clutch is select
 on each side, and retain [phase carries](shift-animation.md) when ratios change.
 
 Implementation: [middle gearbox and locks](../../../scripts/build_defender_rig.py).
-Original close-up: [2nd/low gearbox preview](../../../output/42110/preview-gearbox-2nd-low.png).
+Original close-up: [2nd/low gearbox preview](../../../examples/reference/42110/preview-gearbox-2nd-low.png).

@@ -35,24 +35,24 @@ it does not claim every animation frame or subframe was independently verified.
 
 | Evidence | Artifact |
 | --- | --- |
-| Fresh measured dimensions, phases, strokes, ratios and reproduction | [review.json](../../../output/42083-w16-reference-review/review.json) |
-| Source-only reproduction script | [review.py](../../../output/42083-w16-reference-review/review.py) |
-| Fresh mesh candidates | [gear-meshes.json](../../../output/42083-w16-reference-review/gear-meshes.json) |
-| Fresh rotated-crank connector lines | [coaxial.json](../../../output/42083-w16-reference-review/coaxial.json) |
-| Fresh saved-scene inspection and transform checks | [blender-check.json](../../../output/42083-w16-reference-review/blender-check.json) |
-| Read-only Blender inspection script | [inspect_blend.py](../../../output/42083-w16-reference-review/inspect_blend.py) |
-| Original plan sweep | [sweep.json](../../../output/42083-w16/sweep.json) |
-| Original Blender / reopen checks | [blender-check.json](../../../output/42083-w16/blender-check.json), [reopen-check.json](../../../output/42083-w16/reopen-check.json) |
-| Original clearance samples | [clearance.json](../../../output/42083-w16/clearance.json) |
-| Source and converted identity binding | [inspection.json](../../../output/42083-w16/inspection.json), [conversion.json](../../../output/42083-w16/conversion.json) |
-| Exposed mechanism previews | [rest](../../../output/42083-w16/pose-rest.png), [quarter-crank pose](../../../output/42083-w16/pose-crank-quarter.png), [half-crank pose](../../../output/42083-w16/pose-crank-half.png) |
+| Fresh measured dimensions, phases, strokes, ratios and reproduction | [review.json](../../../examples/reference/42083-w16-reference-review/review.json) |
+| Source-only reproduction script | [review.py](../../../examples/reference/42083-w16-reference-review/review.py) |
+| Fresh mesh candidates | [gear-meshes.json](../../../examples/reference/42083-w16-reference-review/gear-meshes.json) |
+| Fresh rotated-crank connector lines | [coaxial.json](../../../examples/reference/42083-w16-reference-review/coaxial.json) |
+| Fresh saved-scene inspection and transform checks | [blender-check.json](../../../examples/reference/42083-w16-reference-review/blender-check.json) |
+| Read-only Blender inspection script | [inspect_blend.py](../../../examples/reference/42083-w16-reference-review/inspect_blend.py) |
+| Original plan sweep | [sweep.json](../../../examples/reference/42083-w16/sweep.json) |
+| Original Blender / reopen checks | [blender-check.json](../../../examples/reference/42083-w16/blender-check.json), [reopen-check.json](../../../examples/reference/42083-w16/reopen-check.json) |
+| Original clearance samples | [clearance.json](../../../examples/reference/42083-w16/clearance.json) |
+| Source and converted identity binding | [inspection.json](../../../examples/reference/42083-w16/inspection.json), [conversion.json](../../../examples/reference/42083-w16/conversion.json) |
+| Exposed mechanism previews | [rest](../../../examples/reference/42083-w16/pose-rest.png), [quarter-crank pose](../../../examples/reference/42083-w16/pose-crank-quarter.png), [half-crank pose](../../../examples/reference/42083-w16/pose-crank-half.png) |
 
-Run `.venv/bin/python output/42083-w16-reference-review/review.py` from the
+Run `.venv/bin/python examples/reference/42083-w16-reference-review/review.py` from the
 repository root to reproduce the source review. Connector expansion requires
 the configured LDraw library and supplied shadow data.
 
 The later toolkit workflow tests also used this engine:
-[workflow-check.json](../../../output/toolkit-improvements/w16/workflow-check.json).
+[workflow-check.json](../../../examples/reference/toolkit-improvements/w16/workflow-check.json).
 That report covers animation/action restoration, NLA/driver preservation,
 exception cleanup, reversible visibility, notes-only updates and duplicate import
 isolation. It belongs to a separate generated copy and is not a fresh lifecycle
@@ -106,7 +106,8 @@ original MPD and the standalone extraction. These hashes identify this review.
 | Selected blend SHA-256 | `1a39cc0777372b09efee75f25082dc046f84eef77c8a0ebd4d20234f9779d287` |
 
 The references are hand-curated. A changed source, recipe or saved plan needs
-a review of the affected claims and diagrams. Generated `output/` evidence may
-be absent from another checkout; retain the output bundle when sharing it.
+a review of the affected claims and diagrams. Selected evidence and playback
+assets are retained in the [example archive](../../../examples/README.md),
+including the source files needed to reproduce the review without `output/`.
 
 [Back to engine index](README.md)

@@ -16,6 +16,9 @@ half-shafts and telescoping shocks. The
 parallelogram, paddle/pawl geometry and a qualified eight-speed selector cascade.
 The [minifig examples](docs/reference/minifigs/README.md) add articulated limbs,
 held items, reusable animation clips and separate whole-figure staging.
+The [movable elements](docs/reference/movables/README.md) cover doors, windows,
+lids, slides and dependent motion. [Plants and wind](docs/reference/plants/README.md)
+cover plant articulation and reusable wind responses for other objects.
 Each subsystem has diagrams, identities,
 relationships and evidence limits. Agents adapt these references without having
 to create new diagrams during rigging.
@@ -66,6 +69,8 @@ See [scope selection](docs/workflow.md#choose-the-deliverable).
 
 - [Workflow](docs/workflow.md): preparation, inspection, authoring and delivery.
 - [Reference catalog](docs/reference/README.md) and [curation guide](docs/reference/curation.md).
+- [Preserved example assets](examples/README.md): retained sources/evidence,
+  playback, path relocation and archive checks independent of `output/`.
 - [Analysis and Blender APIs](docs/discovery-and-blender.md): search, inventory,
   compact coordinates, contacts, gear/coaxial evidence and callable scene tools.
 - [Discovery quality](docs/discovery-quality.md): coverage, rounded transforms

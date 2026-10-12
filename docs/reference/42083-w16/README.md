@@ -1,7 +1,7 @@
 # 42083 W16: curated engine references
 
 This collection describes the working engine rig selected by the user in
-[output/42083-w16](../../../output/42083-w16). It was recovered from the saved
+[archived 42083-w16](../../../examples/reference/42083-w16). It was recovered from the saved
 motion plan, recipe, LDraw geometry, connector evidence, previews and Blender
 file. Curation date: **2026-10-06**. The diagrams are fresh documentation of
 that implementation, not executable plans.
@@ -47,7 +47,7 @@ gears' tooth form; it does not imply a right-angle drive in this arrangement.
   Philippe Hurbain [Philo], CCAL 2.0. Selected section: `42083 - engine.ldr`.
 - Occurrence IDs such as `83` and `84/16` belong to that **section selection**.
   They are not the paths those parts have in the complete car.
-- The [standalone extraction](../../../output/42083-w16/engine-extracted.mpd)
+- The [standalone extraction](../../../examples/reference/42083-w16/engine-extracted.mpd)
   retains the section's physical identities and transforms; that equivalence
   was checked during curation.
 - Lengths are LDU; angles are radians, right-hand rule, offsets from the source
@@ -55,7 +55,7 @@ gears' tooth form; it does not imply a right-angle drive in this arrangement.
 - Lower “left” / `crank_l` means the **-X** shaft in these documents;
   `crank_r` means +X. These names do not assert the installed car's handedness.
 - Exact body membership, axes, anchors and signals are in the
-  [saved plan](../../../output/42083-w16/plan.json).
+  [saved plan](../../../examples/reference/42083-w16/plan.json).
   Diagram nodes summarize moving bodies or repeated linkage groups.
 
 This engine is a useful reference for crank-and-conrod motion. The
@@ -64,7 +64,7 @@ Match the actual mechanism before choosing an example.
 
 ## Use the existing example
 
-Open [rigged.blend](../../../output/42083-w16/rigged.blend), select
+Open [rigged.blend](../../../examples/reference/42083-w16/rigged.blend), select
 `CTRL_w16_42083` and inspect `drive`. Its range is -4*pi..+4*pi radians.
 One control propagates through all three meshes, sixteen pistons and sixteen rods.
 

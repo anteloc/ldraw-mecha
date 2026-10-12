@@ -95,5 +95,5 @@ and source branch. Check both signs and unequal wheel angles. If suspension
 travel is added, the loop must include the moving suspension geometry.
 
 Implementation: [steering authoring](../../../scripts/build_defender_rig.py).
-Preview: [full lock](../../../output/42110/preview-full-lock.png).
-Evidence: [steering clearance](../../../output/42110/clearance-steering.json).
+Preview: [full lock](../../../examples/reference/42110/preview-full-lock.png).
+Evidence: [steering clearance](../../../examples/reference/42110/clearance-steering.json).

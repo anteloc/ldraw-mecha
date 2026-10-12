@@ -1,0 +1,652 @@
+{
+  "date": "2026-10-06",
+  "plan_digest": "b3ee6a9493d9f1a3736a9ef0cc3cd1a4fdff5a479f13a87313ba663c9f7759a8",
+  "source_sha256": "72df8a1a852d6584eeba935320de411b9dc9dc23582177336341af68156469db",
+  "validation": {
+    "valid": true,
+    "status": "ready",
+    "moving_parts": 66,
+    "bodies": 36,
+    "signals": 20,
+    "checks": 16
+  },
+  "recipe_matches_saved_motion": {
+    "controls": true,
+    "signals": true,
+    "bodies": true,
+    "anchors": true,
+    "checks": true
+  },
+  "extracted_manifest_matches": true,
+  "inventory": {
+    "parts": 223,
+    "nodes": 226,
+    "moving": 66,
+    "bodies": 36,
+    "signals": 20,
+    "checks": 16
+  },
+  "meshes": [
+    {
+      "a": "68",
+      "b": "84/16",
+      "a_body": "crank_c",
+      "b_body": "crank_l",
+      "ratio_about_plus_z": -1.0,
+      "reported_ratio": 1.0,
+      "distance_ldu": 59.99999999999999,
+      "plane_error_ldu": 0.0
+    },
+    {
+      "a": "68",
+      "b": "85/16",
+      "a_body": "crank_c",
+      "b_body": "crank_r",
+      "ratio_about_plus_z": -1.0,
+      "reported_ratio": 1.0,
+      "distance_ldu": 59.99999999999999,
+      "plane_error_ldu": 0.0
+    },
+    {
+      "a": "82",
+      "b": "83",
+      "a_body": "crank_c",
+      "b_body": "input_shaft",
+      "ratio_about_plus_z": -0.6,
+      "reported_ratio": -0.6,
+      "distance_ldu": 40.0,
+      "plane_error_ldu": 0.0
+    }
+  ],
+  "cylinders": [
+    {
+      "index": 0,
+      "crank": "crank_c",
+      "piston": "41",
+      "rod": "27",
+      "z": 50.0,
+      "bank_axis": [
+        -0.7999975563200352,
+        -0.6000032582261301,
+        0.0
+      ],
+      "phase_radians": -0.38171750595383847,
+      "phase_degrees": -21.870802057414817,
+      "throw_ldu": 9.99970124553729,
+      "rod_length_ldu": 40.000240649276094,
+      "rest_radius_ldu": 49.10640000040728,
+      "expected_stroke_ldu": 19.99940249107458,
+      "source_axis_offset_ldu": 0.0002000000000030866,
+      "minimum_displacement_ldu": -19.10586059666847,
+      "maximum_displacement_ldu": 0.8935418944061055,
+      "checked_stroke_ldu": 19.999402491074576
+    },
+    {
+      "index": 1,
+      "crank": "crank_c",
+      "piston": "42",
+      "rod": "28",
+      "z": 50.0,
+      "bank_axis": [
+        0.7999999999999999,
+        -0.6,
+        0.0
+      ],
+      "phase_radians": -2.2363038691681796,
+      "phase_degrees": -128.13077341211292,
+      "throw_ldu": 9.99970124553729,
+      "rod_length_ldu": 40.00040182298173,
+      "rest_radius_ldu": 33.045,
+      "expected_stroke_ldu": 19.99940249107458,
+      "source_axis_offset_ldu": 3.552713678800501e-15,
+      "minimum_displacement_ldu": -3.044299422555561,
+      "maximum_displacement_ldu": 16.955103068519016,
+      "checked_stroke_ldu": 19.999402491074576
+    },
+    {
+      "index": 2,
+      "crank": "crank_c",
+      "piston": "43",
+      "rod": "31",
+      "z": 90.0,
+      "bank_axis": [
+        -0.7999960715330189,
+        -0.6000052379202508,
+        0.0
+      ],
+      "phase_radians": 2.759872673008448,
+      "phase_degrees": 158.1290561568732,
+      "throw_ldu": 9.99970124553729,
+      "rod_length_ldu": 40.000203399482864,
+      "rest_radius_ldu": 30.546400000654742,
+      "expected_stroke_ldu": 19.99940249107458,
+      "source_axis_offset_ldu": 0.00019999999999953388,
+      "minimum_displacement_ldu": -0.5458978467091669,
+      "maximum_displacement_ldu": 19.45350464436541,
+      "checked_stroke_ldu": 19.999402491074576
+    },
+    {
+      "index": 3,
+      "crank": "crank_c",
+      "piston": "44",
+      "rod": "32",
+      "z": 90.0,
+      "bank_axis": [
+        0.8000026435366996,
+        -0.599996475268224,
+        0.0
+      ],
+      "phase_radians": 0.9052843785141726,
+      "phase_degrees": 51.868974147985796,
+      "throw_ldu": 9.99970124553729,
+      "rod_length_ldu": 40.00016639965389,
+      "rest_radius_ldu": 45.39360000044059,
+      "expected_stroke_ldu": 19.99940249107458,
+      "source_axis_offset_ldu": 0.00019999999999598117,
+      "minimum_displacement_ldu": -15.393134846323989,
+      "maximum_displacement_ldu": 4.606267644750588,
+      "checked_stroke_ldu": 19.999402491074576
+    },
+    {
+      "index": 4,
+      "crank": "crank_c",
+      "piston": "45",
+      "rod": "36",
+      "z": 130.0,
+      "bank_axis": [
+        -0.7999975563200352,
+        -0.6000032582261301,
+        0.0
+      ],
+      "phase_radians": -0.38171750595383847,
+      "phase_degrees": -21.870802057414817,
+      "throw_ldu": 9.99970124553729,
+      "rod_length_ldu": 40.000240649276094,
+      "rest_radius_ldu": 49.10640000040728,
+      "expected_stroke_ldu": 19.99940249107458,
+      "source_axis_offset_ldu": 0.0002000000000030866,
+      "minimum_displacement_ldu": -19.10586059666847,
+      "maximum_displacement_ldu": 0.8935418944061055,
+      "checked_stroke_ldu": 19.999402491074576
+    },
+    {
+      "index": 5,
+      "crank": "crank_c",
+      "piston": "46",
+      "rod": "37",
+      "z": 130.0,
+      "bank_axis": [
+        0.7999999999999999,
+        -0.6,
+        0.0
+      ],
+      "phase_radians": -2.2363038691681796,
+      "phase_degrees": -128.13077341211292,
+      "throw_ldu": 9.99970124553729,
+      "rod_length_ldu": 40.00040182298173,
+      "rest_radius_ldu": 33.045,
+      "expected_stroke_ldu": 19.99940249107458,
+      "source_axis_offset_ldu": 3.552713678800501e-15,
+      "minimum_displacement_ldu": -3.044299422555561,
+      "maximum_displacement_ldu": 16.955103068519016,
+      "checked_stroke_ldu": 19.999402491074576
+    },
+    {
+      "index": 6,
+      "crank": "crank_c",
+      "piston": "47",
+      "rod": "39",
+      "z": 170.0,
+      "bank_axis": [
+        -0.7999960715330189,
+        -0.6000052379202508,
+        0.0
+      ],
+      "phase_radians": 2.759872673008448,
+      "phase_degrees": 158.1290561568732,
+      "throw_ldu": 9.99970124553729,
+      "rod_length_ldu": 40.000203399482864,
+      "rest_radius_ldu": 30.546400000654742,
+      "expected_stroke_ldu": 19.99940249107458,
+      "source_axis_offset_ldu": 0.00019999999999953388,
+      "minimum_displacement_ldu": -0.5458978467091669,
+      "maximum_displacement_ldu": 19.45350464436541,
+      "checked_stroke_ldu": 19.999402491074576
+    },
+    {
+      "index": 7,
+      "crank": "crank_c",
+      "piston": "48",
+      "rod": "40",
+      "z": 170.0,
+      "bank_axis": [
+        0.8000026435366996,
+        -0.599996475268224,
+        0.0
+      ],
+      "phase_radians": 0.9052843785141726,
+      "phase_degrees": 51.868974147985796,
+      "throw_ldu": 9.99970124553729,
+      "rod_length_ldu": 40.00016639965389,
+      "rest_radius_ldu": 45.39360000044059,
+      "expected_stroke_ldu": 19.99940249107458,
+      "source_axis_offset_ldu": 0.00019999999999598117,
+      "minimum_displacement_ldu": -15.393134846323989,
+      "maximum_displacement_ldu": 4.606267644750588,
+      "checked_stroke_ldu": 19.999402491074576
+    },
+    {
+      "index": 8,
+      "crank": "crank_l",
+      "piston": "84/30",
+      "rod": "84/18",
+      "z": 150.0,
+      "bank_axis": [
+        -0.8,
+        -0.6,
+        0.0
+      ],
+      "phase_radians": 3.1415926535897927,
+      "phase_degrees": 179.99999999999997,
+      "throw_ldu": 10.000000000000005,
+      "rod_length_ldu": 40.00000000000001,
+      "rest_radius_ldu": 30.0,
+      "expected_stroke_ldu": 20.00000000000001,
+      "source_axis_offset_ldu": 1.7763568394002505e-15,
+      "minimum_displacement_ldu": 0.0,
+      "maximum_displacement_ldu": 20.000000000000014,
+      "checked_stroke_ldu": 20.000000000000014
+    },
+    {
+      "index": 9,
+      "crank": "crank_l",
+      "piston": "84/31",
+      "rod": "84/21",
+      "z": 110.0,
+      "bank_axis": [
+        -0.8,
+        -0.6,
+        0.0
+      ],
+      "phase_radians": 4.440892098500626e-16,
+      "phase_degrees": 2.5444437451708134e-14,
+      "throw_ldu": 9.999999999999995,
+      "rod_length_ldu": 40.00000000000001,
+      "rest_radius_ldu": 50.0,
+      "expected_stroke_ldu": 19.99999999999999,
+      "source_axis_offset_ldu": 0.0,
+      "minimum_displacement_ldu": -19.999999999999986,
+      "maximum_displacement_ldu": 0.0,
+      "checked_stroke_ldu": 19.999999999999986
+    },
+    {
+      "index": 10,
+      "crank": "crank_l",
+      "piston": "84/32",
+      "rod": "84/24",
+      "z": 70.0,
+      "bank_axis": [
+        -0.8,
+        -0.6,
+        0.0
+      ],
+      "phase_radians": 3.1415926535897927,
+      "phase_degrees": 179.99999999999997,
+      "throw_ldu": 10.000000000000005,
+      "rod_length_ldu": 40.00000000000001,
+      "rest_radius_ldu": 30.0,
+      "expected_stroke_ldu": 20.00000000000001,
+      "source_axis_offset_ldu": 1.7763568394002505e-15,
+      "minimum_displacement_ldu": 0.0,
+      "maximum_displacement_ldu": 20.000000000000014,
+      "checked_stroke_ldu": 20.000000000000014
+    },
+    {
+      "index": 11,
+      "crank": "crank_l",
+      "piston": "84/33",
+      "rod": "84/27",
+      "z": 30.0,
+      "bank_axis": [
+        -0.8,
+        -0.6,
+        0.0
+      ],
+      "phase_radians": 4.440892098500626e-16,
+      "phase_degrees": 2.5444437451708134e-14,
+      "throw_ldu": 9.999999999999995,
+      "rod_length_ldu": 40.00000000000001,
+      "rest_radius_ldu": 50.0,
+      "expected_stroke_ldu": 19.99999999999999,
+      "source_axis_offset_ldu": 0.0,
+      "minimum_displacement_ldu": -19.999999999999986,
+      "maximum_displacement_ldu": 0.0,
+      "checked_stroke_ldu": 19.999999999999986
+    },
+    {
+      "index": 12,
+      "crank": "crank_r",
+      "piston": "85/30",
+      "rod": "85/18",
+      "z": 150.0,
+      "bank_axis": [
+        0.8,
+        -0.6,
+        0.0
+      ],
+      "phase_radians": 3.1415926535897936,
+      "phase_degrees": 180.00000000000003,
+      "throw_ldu": 10.000000000000005,
+      "rod_length_ldu": 40.00000000000001,
+      "rest_radius_ldu": 30.0,
+      "expected_stroke_ldu": 20.00000000000001,
+      "source_axis_offset_ldu": 1.7763568394002505e-15,
+      "minimum_displacement_ldu": 0.0,
+      "maximum_displacement_ldu": 20.000000000000014,
+      "checked_stroke_ldu": 20.000000000000014
+    },
+    {
+      "index": 13,
+      "crank": "crank_r",
+      "piston": "85/31",
+      "rod": "85/21",
+      "z": 110.0,
+      "bank_axis": [
+        0.8,
+        -0.6,
+        0.0
+      ],
+      "phase_radians": -4.440892098500626e-16,
+      "phase_degrees": -2.5444437451708134e-14,
+      "throw_ldu": 9.999999999999995,
+      "rod_length_ldu": 40.00000000000001,
+      "rest_radius_ldu": 50.0,
+      "expected_stroke_ldu": 19.99999999999999,
+      "source_axis_offset_ldu": 0.0,
+      "minimum_displacement_ldu": -19.999999999999986,
+      "maximum_displacement_ldu": 0.0,
+      "checked_stroke_ldu": 19.999999999999986
+    },
+    {
+      "index": 14,
+      "crank": "crank_r",
+      "piston": "85/32",
+      "rod": "85/24",
+      "z": 70.0,
+      "bank_axis": [
+        0.8,
+        -0.6,
+        0.0
+      ],
+      "phase_radians": 3.1415926535897936,
+      "phase_degrees": 180.00000000000003,
+      "throw_ldu": 10.000000000000005,
+      "rod_length_ldu": 40.00000000000001,
+      "rest_radius_ldu": 30.0,
+      "expected_stroke_ldu": 20.00000000000001,
+      "source_axis_offset_ldu": 1.7763568394002505e-15,
+      "minimum_displacement_ldu": 0.0,
+      "maximum_displacement_ldu": 20.000000000000014,
+      "checked_stroke_ldu": 20.000000000000014
+    },
+    {
+      "index": 15,
+      "crank": "crank_r",
+      "piston": "85/33",
+      "rod": "85/27",
+      "z": 30.0,
+      "bank_axis": [
+        0.8,
+        -0.6,
+        0.0
+      ],
+      "phase_radians": -4.440892098500626e-16,
+      "phase_degrees": -2.5444437451708134e-14,
+      "throw_ldu": 9.999999999999995,
+      "rod_length_ldu": 40.00000000000001,
+      "rest_radius_ldu": 50.0,
+      "expected_stroke_ldu": 19.99999999999999,
+      "source_axis_offset_ldu": 0.0,
+      "minimum_displacement_ldu": -19.999999999999986,
+      "maximum_displacement_ldu": 0.0,
+      "checked_stroke_ldu": 19.999999999999986
+    }
+  ],
+  "samples": [
+    {
+      "requested_drive": 0,
+      "controls": {
+        "drive": 0
+      },
+      "signals": {
+        "drive": 0,
+        "crank_c": -0.0,
+        "crank_l": 0.0,
+        "crank_r": 0.0,
+        "piston0": 0.0,
+        "piston1": 0.0,
+        "piston2": 7.105427357601002e-15,
+        "piston3": 0.0,
+        "piston4": 0.0,
+        "piston5": 0.0,
+        "piston6": 7.105427357601002e-15,
+        "piston7": 0.0,
+        "piston8": 0.0,
+        "piston9": 0.0,
+        "piston10": 0.0,
+        "piston11": 0.0,
+        "piston12": 0.0,
+        "piston13": 0.0,
+        "piston14": 0.0,
+        "piston15": 0.0
+      },
+      "max_closure_error_ldu": 7.105427357601002e-15,
+      "max_mesh_angle_error_rad": 0.0
+    },
+    {
+      "requested_drive": 0.37,
+      "controls": {
+        "drive": 0.37
+      },
+      "signals": {
+        "drive": 0.37,
+        "crank_c": -0.6166666666666667,
+        "crank_l": 0.6166666666666667,
+        "crank_r": 0.6166666666666667,
+        "piston0": -4.582875995419968,
+        "piston1": -2.7320718926195724,
+        "piston2": 3.1442020353485916,
+        "piston3": 4.091274329053576,
+        "piston4": -4.582875995419968,
+        "piston5": -2.7320718926195724,
+        "piston6": 3.1442020353485916,
+        "piston7": 4.091274329053576,
+        "piston8": 1.421618872529855,
+        "piston9": -2.26216681943891,
+        "piston10": 1.421618872529855,
+        "piston11": -2.26216681943891,
+        "piston12": 1.421618872529855,
+        "piston13": -2.262166819438903,
+        "piston14": 1.421618872529855,
+        "piston15": -2.262166819438903
+      },
+      "max_closure_error_ldu": 1.4210854715202004e-14,
+      "max_mesh_angle_error_rad": 0.0
+    },
+    {
+      "requested_drive": -2.9,
+      "controls": {
+        "drive": -2.9
+      },
+      "signals": {
+        "drive": -2.9,
+        "crank_c": 4.833333333333333,
+        "crank_l": -4.833333333333333,
+        "crank_r": -4.833333333333333,
+        "piston0": -12.868721986002946,
+        "piston1": -1.9347368647970953,
+        "piston2": 10.847663915963125,
+        "piston3": 2.8229600786164966,
+        "piston4": -12.868721986002946,
+        "piston5": -1.9347368647970953,
+        "piston6": 10.847663915963125,
+        "piston7": 2.8229600786164966,
+        "piston8": 7.542123921893236,
+        "piston9": -10.044881767457674,
+        "piston10": 7.542123921893236,
+        "piston11": -10.044881767457674,
+        "piston12": 7.54212392189325,
+        "piston13": -10.044881767457653,
+        "piston14": 7.54212392189325,
+        "piston15": -10.044881767457653
+      },
+      "max_closure_error_ldu": 7.105427357601002e-15,
+      "max_mesh_angle_error_rad": 0.0
+    },
+    {
+      "requested_drive": 7.3,
+      "controls": {
+        "drive": 7.3
+      },
+      "signals": {
+        "drive": 7.3,
+        "crank_c": -12.166666666666666,
+        "crank_l": 12.166666666666666,
+        "crank_r": 12.166666666666666,
+        "piston0": 0.8915201039531411,
+        "piston1": 3.1475309894291925,
+        "piston2": -0.5446850343312306,
+        "piston3": -3.947728632669161,
+        "piston4": 0.8915201039531411,
+        "piston5": 3.1475309894291925,
+        "piston6": -0.5446850343312306,
+        "piston7": -3.947728632669161,
+        "piston8": 0.5984946374837747,
+        "piston9": -0.9779805257978325,
+        "piston10": 0.5984946374837747,
+        "piston11": -0.9779805257978325,
+        "piston12": 0.5984946374837747,
+        "piston13": -0.9779805257978325,
+        "piston14": 0.5984946374837747,
+        "piston15": -0.9779805257978325
+      },
+      "max_closure_error_ldu": 1.4210854715202004e-14,
+      "max_mesh_angle_error_rad": 8.881784197001252e-16
+    },
+    {
+      "requested_drive": -12.566370614359172,
+      "controls": {
+        "drive": -12.566370614359172
+      },
+      "signals": {
+        "drive": -12.566370614359172,
+        "crank_c": 20.943951023931955,
+        "crank_l": -20.943951023931955,
+        "crank_r": -20.943951023931955,
+        "piston0": -11.764452085954069,
+        "piston1": 16.829574271022018,
+        "piston2": 9.623514184378742,
+        "piston3": -15.317621853978839,
+        "piston4": -11.764452085954069,
+        "piston5": 16.829574271022018,
+        "piston6": 9.623514184378742,
+        "piston7": -15.317621853978839,
+        "piston8": 14.051248379533291,
+        "piston9": -15.948751620466716,
+        "piston10": 14.051248379533291,
+        "piston11": -15.948751620466716,
+        "piston12": 14.051248379533291,
+        "piston13": -15.948751620466716,
+        "piston14": 14.051248379533291,
+        "piston15": -15.948751620466716
+      },
+      "max_closure_error_ldu": 2.1316282072803006e-14,
+      "max_mesh_angle_error_rad": 0.0
+    },
+    {
+      "requested_drive": 12.566370614359172,
+      "controls": {
+        "drive": 12.566370614359172
+      },
+      "signals": {
+        "drive": 12.566370614359172,
+        "crank_c": -20.943951023931955,
+        "crank_l": 20.943951023931955,
+        "crank_r": 20.943951023931955,
+        "piston0": -17.45150557076662,
+        "piston1": 2.1392410954534355,
+        "piston2": 16.84041459775466,
+        "piston3": -2.7600804910867467,
+        "piston4": -17.45150557076662,
+        "piston5": 2.1392410954534355,
+        "piston6": 16.84041459775466,
+        "piston7": -2.7600804910867467,
+        "piston8": 14.051248379533291,
+        "piston9": -15.948751620466716,
+        "piston10": 14.051248379533291,
+        "piston11": -15.948751620466716,
+        "piston12": 14.051248379533291,
+        "piston13": -15.948751620466716,
+        "piston14": 14.051248379533291,
+        "piston15": -15.948751620466716
+      },
+      "max_closure_error_ldu": 2.842170943040401e-14,
+      "max_mesh_angle_error_rad": 0.0
+    },
+    {
+      "requested_drive": 20,
+      "controls": {
+        "drive": 12.566370614359172
+      },
+      "signals": {
+        "drive": 12.566370614359172,
+        "crank_c": -20.943951023931955,
+        "crank_l": 20.943951023931955,
+        "crank_r": 20.943951023931955,
+        "piston0": -17.45150557076662,
+        "piston1": 2.1392410954534355,
+        "piston2": 16.84041459775466,
+        "piston3": -2.7600804910867467,
+        "piston4": -17.45150557076662,
+        "piston5": 2.1392410954534355,
+        "piston6": 16.84041459775466,
+        "piston7": -2.7600804910867467,
+        "piston8": 14.051248379533291,
+        "piston9": -15.948751620466716,
+        "piston10": 14.051248379533291,
+        "piston11": -15.948751620466716,
+        "piston12": 14.051248379533291,
+        "piston13": -15.948751620466716,
+        "piston14": 14.051248379533291,
+        "piston15": -15.948751620466716
+      },
+      "max_closure_error_ldu": 2.842170943040401e-14,
+      "max_mesh_angle_error_rad": 0.0
+    }
+  ],
+  "sweep": {
+    "passed": true,
+    "samples": 97,
+    "max_closure_error_ldu": 3.552713678800501e-14
+  },
+  "cycles": {
+    "piston_and_crank_input_increment": 3.7699111843077517,
+    "engine_transform_error": 3.552713678800501e-14,
+    "all_body_input_increment": 18.84955592153876,
+    "all_body_transform_error": 1.1368683772161603e-13
+  },
+  "findings": [
+    "The source description says V8/two cranks; the selected section contains 16 pistons and 3 crankshafts.",
+    "The 20T/12T double-bevel pair is used on parallel shafts, not as a right-angle bevel drive.",
+    "Raw gear-mesh ratios use part-local axis directions; convert to the common +Z body axes.",
+    "No new sampled surface crossings in the retained clearance report does not establish bore containment.",
+    "The slider-crank helper assumes a +Z planar crank and a cylinder line through its centre."
+  ],
+  "provenance": {
+    "examples/reference/42083-w16/plan.json": "0dec73f2257f550e4bdbdb8a47adc004c017cacef7da09c321493f28f04b5669",
+    "examples/reference/42083-w16/engine-extracted.mpd": "fd899ff744d5935063b8d37257aef4eb987862ea67094ca2fb78f25b0e204341",
+    "examples/reference/42083-w16/clearance.json": "8642867dab2dce04f93e1bbfab4cb786ce536de90379b1605e2a507f44ac6049",
+    "ldraw_mechanisms/recipes.py": "282dc8ba97c1e76161b3c6363ad1228da14a48b4f7fde86e8e4e8a40402e8f7c",
+    "ldraw_mechanisms/plan.py": "beacc9ffbc82f5c84e1664d17681c727a3564e36f4fed4190acc2b1da5e84817"
+  }
+}

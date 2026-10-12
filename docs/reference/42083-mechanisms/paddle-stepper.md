@@ -8,8 +8,8 @@ and `shift` are separate controls. See [scope and evidence](scope-and-evidence.m
 
 ## Parts and dependency directions
 
-Use the gearbox [plan](../../../output/42083-mechanisms/gearbox/plan.json) and
-[identity map](../../../output/42083-mechanisms/gearbox/source/idmap.json).
+Use the gearbox [plan](../../../examples/reference/42083-mechanisms/gearbox/plan.json) and
+[identity map](../../../examples/reference/42083-mechanisms/gearbox/source/idmap.json).
 
 | Element | Selected-source ID | Extract ID | Motion role |
 | --- | --- | --- | --- |
@@ -113,4 +113,4 @@ reports nor the smooth animation prove a physically feasible stepper.
 
 Implementation: `pawl_signals` and `build_gearbox` in the
 [builder](../../../scripts/build_42083_mechanisms.py). Visual evidence:
-[paddle stroke](../../../output/42083-mechanisms/gearbox/previews/paddle-up.png).
+[paddle stroke](../../../examples/reference/42083-mechanisms/gearbox/previews/paddle-up.png).

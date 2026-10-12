@@ -57,3 +57,8 @@ For a new rig from a saved plan, use the path-relocation command in the
 [example archive guide](../../../examples/README.md). Historical plans and
 reports keep their original path strings and hashes; snapshots are not silently
 rewritten to match a new workstation.
+
+The [archive portability review](../../../examples/reference/reference-portability/verification.json)
+repeated source/reopen checks on **2026-10-12** without the working bundle and
+built, reopened and lifecycle-tested S01 from its relocated plan. All four
+Mermaid blocks in this reference rendered successfully.

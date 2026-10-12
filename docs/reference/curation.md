@@ -79,7 +79,23 @@ Resolve part/body/control IDs against the exact plan and source. Check equations
 and conditions against saved motion; inspect relevant animation states, not only
 the default pose. Render every Mermaid block with Mermaid CLI when available
 and fix syntax/legibility problems. Check local document links. Keep rendering
-and check outputs under `output/`.
+and check outputs under `output/` while working.
+
+Before publishing, copy the relevant inputs and evidence into
+`examples/reference/CASE` and the review evidence into
+`examples/reference/CASE-reference-review`. **Copy, never move** the originals.
+Retain source MPDs and dependencies, occurrence maps, plans, required contact
+evidence, clips, saved playback and selected previews. Keep maintained builders
+under `scripts/`; copy any review code that previously existed only in `output/`.
+Exclude backup blends, logs, bulk frame renders and obsolete automatic diagrams
+unless a claim specifically needs one. Preserve attribution and original hashes.
+
+Follow the [archive guide](../../examples/README.md): record the selection and
+hashes, make copied review code read archived inputs and write new results under
+`output/`, and relocate plan filenames only in a working copy. Check source
+dependencies and LFS assets in a checkout without the original working tree.
+All published artifact links must resolve under `examples/`, `data/` or
+`scripts/`, never `output/`. Generated command destinations still use `output/`.
 
 Create `docs/reference/CASE/README.md` as the case index and
 `scope-and-evidence.md` for provenance, hashes, check coverage and shared limits.
@@ -90,5 +106,6 @@ collision-free.
 
 These documents describe a particular version of a working result. If the
 source, plan, builder or saved animation changes, review the affected claims and
-diagrams. The Markdown does not update itself. Include the needed output evidence
-when sharing a reference; ignored local artifacts may not exist in another clone.
+diagrams. The Markdown does not update itself. Include the archived assets in the
+same change as their documentation. Run `.venv/bin/python scripts/reference_assets.py check`
+to catch missing snapshots, source dependencies, hashes and working-directory links.

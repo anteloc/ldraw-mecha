@@ -68,7 +68,7 @@ pitch `-0.27`, and a seated hip height
 approximately horizontal while avoiding the resting hands sinking into the
 thighs in a fully upright 90-degree sit. Flippers and tanks affect apparent
 ground height; these values are specific approximations. See the
-[seated preview](../../../output/minifigs/previews/figures/MF10_diver-B2-f239.png).
+[seated preview](../../../examples/reference/minifigs/previews/figures/MF10_diver-B2-f239.png).
 
 ```mermaid
 stateDiagram-v2

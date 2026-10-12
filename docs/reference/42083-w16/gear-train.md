@@ -78,15 +78,15 @@ section occurs at type-1 index 157 in `42083 - chassisrear.ldr`.
 Selecting the engine gives it an independent frame and controllable input; it
 does not establish the complete car's transmission ratios.
 
-The original [input contact report](../../../output/42083-w16/evidence/contacts-input.json)
+The original [input contact report](../../../examples/reference/42083-w16/evidence/contacts-input.json)
 contains axle `9` mating with gear `83` and joiner `111`.
-The [rear gear contact report](../../../output/42083-w16/evidence/contacts-24t.json)
+The [rear gear contact report](../../../examples/reference/42083-w16/evidence/contacts-24t.json)
 contains lower axle/gear/crank connections. Its missing central-crank contacts
 were a discovery gap, not evidence that the crank was disconnected.
 
-Fresh [coaxial evidence](../../../output/42083-w16-reference-review/coaxial.json)
+Fresh [coaxial evidence](../../../examples/reference/42083-w16-reference-review/coaxial.json)
 recovers shared connector lines for `38`, `67` and `68`.
-Fresh [gear geometry](../../../output/42083-w16-reference-review/gear-meshes.json)
+Fresh [gear geometry](../../../examples/reference/42083-w16-reference-review/gear-meshes.json)
 recovers exactly the three meshes. These are geometric candidates; their
 agreement with the saved ratios does not prove tooth phase, axial retention,
 backlash or torque capacity.

@@ -32,15 +32,19 @@ def write(path, value):
     path.write_text(json.dumps(value, indent=2, ensure_ascii=False) + "\n")
 
 
-def copy_assets(root=ROOT):
+def copy_assets(root=ROOT, cases=None):
     """Idempotent copy with explicit selection; refuse to replace a changed snapshot."""
     base = root / ARCHIVE
     selection = read(base / "selection.json")
     manifest_path = base / "manifest.json"
     previous = read(manifest_path).get("files", {}) if manifest_path.exists() else {}
+    if cases and set(cases) - selection["bundles"].keys():
+        raise ValueError(f"Unknown bundles: {sorted(set(cases) - selection['bundles'].keys())}")
     selected = {}
     for case, patterns in selection["bundles"].items():
-        if Path(case).name != case:
+        if cases and case not in cases:
+            continue
+        if Path(case).name != case or case in {".", ".."}:
             raise ValueError(f"Bundle must be a directory name: {case}")
         source = root / "output" / case
         for pattern in patterns:
@@ -140,7 +144,7 @@ def check(root=ROOT):
                     raise ValueError(f"Linked artifact is not in the archive manifest: {path}")
             links += 1
     for name in entries:
-        if Path(name).name == "plan.json":
+        if Path(name).name.endswith("plan.json"):
             load_plan(base / name, root)
             plans += 1
     return dict(files=len(entries), links=links, source_plans=plans,
@@ -150,7 +154,8 @@ def check(root=ROOT):
 def main():
     ap = argparse.ArgumentParser(description=__doc__)
     sub = ap.add_subparsers(dest="command", required=True)
-    sub.add_parser("copy", help="Copy the reviewed selection from output; never replace changed snapshots")
+    copying = sub.add_parser("copy", help="Copy reviewed bundles from output; never replace changed snapshots")
+    copying.add_argument("bundles", nargs="*", help="Only copy these selected bundles (default: all)")
     sub.add_parser("check", help="Check archive hashes, published links and source dependencies")
     p = sub.add_parser("plan", help="Write a working plan with source paths resolved in this checkout")
     p.add_argument("snapshot", type=Path)
@@ -158,7 +163,7 @@ def main():
     args = ap.parse_args()
     try:
         if args.command == "copy":
-            result = copy_assets()
+            result = copy_assets(cases=args.bundles)
         elif args.command == "check":
             result = check()
         else:

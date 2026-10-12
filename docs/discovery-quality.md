@@ -151,7 +151,8 @@ and outstanding discovery warnings alongside the implemented controls.
 
 ## Regression evidence
 
-Source-only outputs are under `output/10265-discovery-audit/`; the old
+Source-only evidence is retained in
+[the discovery archive](../examples/reference/10265-discovery-audit/README.md); the old
 `output/10265-v2/` artifacts are not rewritten. With this library and source:
 
 | Evidence | Raw placements | Analysis correction |

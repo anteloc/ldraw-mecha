@@ -1,0 +1,1029 @@
+{
+  "passed": true,
+  "blender": "5.2.2 LTS",
+  "file": "/private/var/folders/f2/2f3xbvns3c7f926qwwqy65r00000gn/T/ldraw-reference-check-ctvwpmy3/examples/reference/plants/plants.blend",
+  "scenes": [
+    "Wind"
+  ],
+  "frames": [
+    1,
+    752
+  ],
+  "fps": 24,
+  "tolerance": 0.002,
+  "clip_actions": 60,
+  "markers": [
+    "A breeze",
+    "B gusty",
+    "C storm",
+    "end"
+  ],
+  "wind_tracks": [
+    "A breeze",
+    "B gusty",
+    "C storm"
+  ],
+  "scene_ok": true,
+  "cases": {
+    "P01_palm_tree": {
+      "embedded_plan_matches": true,
+      "controller": "CTRL_plant_01_palm_tree",
+      "tracks": [
+        {
+          "track": "A breeze",
+          "strips": 1,
+          "action": "P01_palm_tree.breeze",
+          "slot": "OBplant_controller",
+          "start": 1.0,
+          "fake_user": true,
+          "metadata": true
+        },
+        {
+          "track": "B gusty",
+          "strips": 1,
+          "action": "P01_palm_tree.gusty",
+          "slot": "OBplant_controller",
+          "start": 257.0,
+          "fake_user": true,
+          "metadata": true
+        },
+        {
+          "track": "C storm",
+          "strips": 1,
+          "action": "P01_palm_tree.storm",
+          "slot": "OBplant_controller",
+          "start": 513.0,
+          "fake_user": true,
+          "metadata": true
+        }
+      ],
+      "tracks_ok": true,
+      "drivers_ok": true,
+      "driver_passthrough_ok": true,
+      "hierarchy_ok": true,
+      "worst_key_error": 5.944635006471799e-09,
+      "worst_matrix_error": 0.0002460479736328125,
+      "samples": 14,
+      "passed": true
+    },
+    "P02_swordleaf_palm": {
+      "embedded_plan_matches": true,
+      "controller": "CTRL_plant_02_swordleaf_palm",
+      "tracks": [
+        {
+          "track": "A breeze",
+          "strips": 1,
+          "action": "P02_swordleaf_palm.breeze",
+          "slot": "OBplant_controller",
+          "start": 1.0,
+          "fake_user": true,
+          "metadata": true
+        },
+        {
+          "track": "B gusty",
+          "strips": 1,
+          "action": "P02_swordleaf_palm.gusty",
+          "slot": "OBplant_controller",
+          "start": 257.0,
+          "fake_user": true,
+          "metadata": true
+        },
+        {
+          "track": "C storm",
+          "strips": 1,
+          "action": "P02_swordleaf_palm.storm",
+          "slot": "OBplant_controller",
+          "start": 513.0,
+          "fake_user": true,
+          "metadata": true
+        }
+      ],
+      "tracks_ok": true,
+      "drivers_ok": true,
+      "driver_passthrough_ok": true,
+      "hierarchy_ok": true,
+      "worst_key_error": 5.905423205998517e-09,
+      "worst_matrix_error": 0.00011444091796875,
+      "samples": 14,
+      "passed": true
+    },
+    "P03_bamboo": {
+      "embedded_plan_matches": true,
+      "controller": "CTRL_plant_03_bamboo",
+      "tracks": [
+        {
+          "track": "A breeze",
+          "strips": 1,
+          "action": "P03_bamboo.breeze",
+          "slot": "OBplant_controller",
+          "start": 1.0,
+          "fake_user": true,
+          "metadata": true
+        },
+        {
+          "track": "B gusty",
+          "strips": 1,
+          "action": "P03_bamboo.gusty",
+          "slot": "OBplant_controller",
+          "start": 257.0,
+          "fake_user": true,
+          "metadata": true
+        },
+        {
+          "track": "C storm",
+          "strips": 1,
+          "action": "P03_bamboo.storm",
+          "slot": "OBplant_controller",
+          "start": 513.0,
+          "fake_user": true,
+          "metadata": true
+        }
+      ],
+      "tracks_ok": true,
+      "drivers_ok": true,
+      "driver_passthrough_ok": true,
+      "hierarchy_ok": true,
+      "worst_key_error": 1.0410112771808144e-08,
+      "worst_matrix_error": 0.000102996826171875,
+      "samples": 14,
+      "passed": true
+    },
+    "P04_flower_bed": {
+      "embedded_plan_matches": true,
+      "controller": "CTRL_plant_04_flower_bed",
+      "tracks": [
+        {
+          "track": "A breeze",
+          "strips": 1,
+          "action": "P04_flower_bed.breeze",
+          "slot": "OBplant_controller",
+          "start": 1.0,
+          "fake_user": true,
+          "metadata": true
+        },
+        {
+          "track": "B gusty",
+          "strips": 1,
+          "action": "P04_flower_bed.gusty",
+          "slot": "OBplant_controller",
+          "start": 257.0,
+          "fake_user": true,
+          "metadata": true
+        },
+        {
+          "track": "C storm",
+          "strips": 1,
+          "action": "P04_flower_bed.storm",
+          "slot": "OBplant_controller",
+          "start": 513.0,
+          "fake_user": true,
+          "metadata": true
+        }
+      ],
+      "tracks_ok": true,
+      "drivers_ok": true,
+      "driver_passthrough_ok": true,
+      "hierarchy_ok": true,
+      "worst_key_error": 1.474476674090397e-08,
+      "worst_matrix_error": 0.00011539459228515625,
+      "samples": 14,
+      "passed": true
+    },
+    "P05_sunflower": {
+      "embedded_plan_matches": true,
+      "controller": "CTRL_plant_05_sunflower",
+      "tracks": [
+        {
+          "track": "A breeze",
+          "strips": 1,
+          "action": "P05_sunflower.breeze",
+          "slot": "OBplant_controller",
+          "start": 1.0,
+          "fake_user": true,
+          "metadata": true
+        },
+        {
+          "track": "B gusty",
+          "strips": 1,
+          "action": "P05_sunflower.gusty",
+          "slot": "OBplant_controller",
+          "start": 257.0,
+          "fake_user": true,
+          "metadata": true
+        },
+        {
+          "track": "C storm",
+          "strips": 1,
+          "action": "P05_sunflower.storm",
+          "slot": "OBplant_controller",
+          "start": 513.0,
+          "fake_user": true,
+          "metadata": true
+        }
+      ],
+      "tracks_ok": true,
+      "drivers_ok": true,
+      "driver_passthrough_ok": true,
+      "hierarchy_ok": true,
+      "worst_key_error": 1.1576555547510026e-08,
+      "worst_matrix_error": 9.141513146460056e-05,
+      "samples": 14,
+      "passed": true
+    },
+    "P06_pinwheel_daisies": {
+      "embedded_plan_matches": true,
+      "controller": "CTRL_plant_06_pinwheel_daisies",
+      "tracks": [
+        {
+          "track": "A breeze",
+          "strips": 1,
+          "action": "P06_pinwheel_daisies.breeze",
+          "slot": "OBplant_controller",
+          "start": 1.0,
+          "fake_user": true,
+          "metadata": true
+        },
+        {
+          "track": "B gusty",
+          "strips": 1,
+          "action": "P06_pinwheel_daisies.gusty",
+          "slot": "OBplant_controller",
+          "start": 257.0,
+          "fake_user": true,
+          "metadata": true
+        },
+        {
+          "track": "C storm",
+          "strips": 1,
+          "action": "P06_pinwheel_daisies.storm",
+          "slot": "OBplant_controller",
+          "start": 513.0,
+          "fake_user": true,
+          "metadata": true
+        }
+      ],
+      "tracks_ok": true,
+      "drivers_ok": true,
+      "driver_passthrough_ok": true,
+      "hierarchy_ok": true,
+      "worst_key_error": 9.218595806714802e-07,
+      "worst_matrix_error": 6.4849853515625e-05,
+      "samples": 14,
+      "passed": true
+    },
+    "P07_grass_meadow": {
+      "embedded_plan_matches": true,
+      "controller": "CTRL_plant_07_grass_meadow",
+      "tracks": [
+        {
+          "track": "A breeze",
+          "strips": 1,
+          "action": "P07_grass_meadow.breeze",
+          "slot": "OBplant_controller",
+          "start": 1.0,
+          "fake_user": true,
+          "metadata": true
+        },
+        {
+          "track": "B gusty",
+          "strips": 1,
+          "action": "P07_grass_meadow.gusty",
+          "slot": "OBplant_controller",
+          "start": 257.0,
+          "fake_user": true,
+          "metadata": true
+        },
+        {
+          "track": "C storm",
+          "strips": 1,
+          "action": "P07_grass_meadow.storm",
+          "slot": "OBplant_controller",
+          "start": 513.0,
+          "fake_user": true,
+          "metadata": true
+        }
+      ],
+      "tracks_ok": true,
+      "drivers_ok": true,
+      "driver_passthrough_ok": true,
+      "hierarchy_ok": true,
+      "worst_key_error": 7.230358811671778e-09,
+      "worst_matrix_error": 6.103515625e-05,
+      "samples": 14,
+      "passed": true
+    },
+    "P08_reeds": {
+      "embedded_plan_matches": true,
+      "controller": "CTRL_plant_08_reeds",
+      "tracks": [
+        {
+          "track": "A breeze",
+          "strips": 1,
+          "action": "P08_reeds.breeze",
+          "slot": "OBplant_controller",
+          "start": 1.0,
+          "fake_user": true,
+          "metadata": true
+        },
+        {
+          "track": "B gusty",
+          "strips": 1,
+          "action": "P08_reeds.gusty",
+          "slot": "OBplant_controller",
+          "start": 257.0,
+          "fake_user": true,
+          "metadata": true
+        },
+        {
+          "track": "C storm",
+          "strips": 1,
+          "action": "P08_reeds.storm",
+          "slot": "OBplant_controller",
+          "start": 513.0,
+          "fake_user": true,
+          "metadata": true
+        }
+      ],
+      "tracks_ok": true,
+      "drivers_ok": true,
+      "driver_passthrough_ok": true,
+      "hierarchy_ok": true,
+      "worst_key_error": 2.9283913294264607e-08,
+      "worst_matrix_error": 0.0001983642578125,
+      "samples": 14,
+      "passed": true
+    },
+    "P09_hanging_vine": {
+      "embedded_plan_matches": true,
+      "controller": "CTRL_plant_09_hanging_vine",
+      "tracks": [
+        {
+          "track": "A breeze",
+          "strips": 1,
+          "action": "P09_hanging_vine.breeze",
+          "slot": "OBplant_controller",
+          "start": 1.0,
+          "fake_user": true,
+          "metadata": true
+        },
+        {
+          "track": "B gusty",
+          "strips": 1,
+          "action": "P09_hanging_vine.gusty",
+          "slot": "OBplant_controller",
+          "start": 257.0,
+          "fake_user": true,
+          "metadata": true
+        },
+        {
+          "track": "C storm",
+          "strips": 1,
+          "action": "P09_hanging_vine.storm",
+          "slot": "OBplant_controller",
+          "start": 513.0,
+          "fake_user": true,
+          "metadata": true
+        }
+      ],
+      "tracks_ok": true,
+      "drivers_ok": true,
+      "driver_passthrough_ok": true,
+      "hierarchy_ok": true,
+      "worst_key_error": 1.4315399976538856e-08,
+      "worst_matrix_error": 0.000141143798828125,
+      "samples": 14,
+      "passed": true
+    },
+    "P10_rushes": {
+      "embedded_plan_matches": true,
+      "controller": "CTRL_plant_10_rushes",
+      "tracks": [
+        {
+          "track": "A breeze",
+          "strips": 1,
+          "action": "P10_rushes.breeze",
+          "slot": "OBplant_controller",
+          "start": 1.0,
+          "fake_user": true,
+          "metadata": true
+        },
+        {
+          "track": "B gusty",
+          "strips": 1,
+          "action": "P10_rushes.gusty",
+          "slot": "OBplant_controller",
+          "start": 257.0,
+          "fake_user": true,
+          "metadata": true
+        },
+        {
+          "track": "C storm",
+          "strips": 1,
+          "action": "P10_rushes.storm",
+          "slot": "OBplant_controller",
+          "start": 513.0,
+          "fake_user": true,
+          "metadata": true
+        }
+      ],
+      "tracks_ok": true,
+      "drivers_ok": true,
+      "driver_passthrough_ok": true,
+      "hierarchy_ok": true,
+      "worst_key_error": 6.324801321566653e-09,
+      "worst_matrix_error": 9.1552734375e-05,
+      "samples": 14,
+      "passed": true
+    },
+    "P11_hinged_oak": {
+      "embedded_plan_matches": true,
+      "controller": "CTRL_plant_11_hinged_oak",
+      "tracks": [
+        {
+          "track": "A breeze",
+          "strips": 1,
+          "action": "P11_hinged_oak.breeze",
+          "slot": "OBplant_controller",
+          "start": 1.0,
+          "fake_user": true,
+          "metadata": true
+        },
+        {
+          "track": "B gusty",
+          "strips": 1,
+          "action": "P11_hinged_oak.gusty",
+          "slot": "OBplant_controller",
+          "start": 257.0,
+          "fake_user": true,
+          "metadata": true
+        },
+        {
+          "track": "C storm",
+          "strips": 1,
+          "action": "P11_hinged_oak.storm",
+          "slot": "OBplant_controller",
+          "start": 513.0,
+          "fake_user": true,
+          "metadata": true
+        }
+      ],
+      "tracks_ok": true,
+      "drivers_ok": true,
+      "driver_passthrough_ok": true,
+      "hierarchy_ok": true,
+      "worst_key_error": 5.864733282345824e-09,
+      "worst_matrix_error": 3.0517578125e-05,
+      "samples": 14,
+      "passed": true
+    },
+    "P12_aspen": {
+      "embedded_plan_matches": true,
+      "controller": "CTRL_plant_12_aspen",
+      "tracks": [
+        {
+          "track": "A breeze",
+          "strips": 1,
+          "action": "P12_aspen.breeze",
+          "slot": "OBplant_controller",
+          "start": 1.0,
+          "fake_user": true,
+          "metadata": true
+        },
+        {
+          "track": "B gusty",
+          "strips": 1,
+          "action": "P12_aspen.gusty",
+          "slot": "OBplant_controller",
+          "start": 257.0,
+          "fake_user": true,
+          "metadata": true
+        },
+        {
+          "track": "C storm",
+          "strips": 1,
+          "action": "P12_aspen.storm",
+          "slot": "OBplant_controller",
+          "start": 513.0,
+          "fake_user": true,
+          "metadata": true
+        }
+      ],
+      "tracks_ok": true,
+      "drivers_ok": true,
+      "driver_passthrough_ok": true,
+      "hierarchy_ok": true,
+      "worst_key_error": 1.4026975525549545e-08,
+      "worst_matrix_error": 0.00012254714965820312,
+      "samples": 14,
+      "passed": true
+    },
+    "P13_fern": {
+      "embedded_plan_matches": true,
+      "controller": "CTRL_plant_13_fern",
+      "tracks": [
+        {
+          "track": "A breeze",
+          "strips": 1,
+          "action": "P13_fern.breeze",
+          "slot": "OBplant_controller",
+          "start": 1.0,
+          "fake_user": true,
+          "metadata": true
+        },
+        {
+          "track": "B gusty",
+          "strips": 1,
+          "action": "P13_fern.gusty",
+          "slot": "OBplant_controller",
+          "start": 257.0,
+          "fake_user": true,
+          "metadata": true
+        },
+        {
+          "track": "C storm",
+          "strips": 1,
+          "action": "P13_fern.storm",
+          "slot": "OBplant_controller",
+          "start": 513.0,
+          "fake_user": true,
+          "metadata": true
+        }
+      ],
+      "tracks_ok": true,
+      "drivers_ok": true,
+      "driver_passthrough_ok": true,
+      "hierarchy_ok": true,
+      "worst_key_error": 7.428707593515327e-09,
+      "worst_matrix_error": 3.814697265625e-05,
+      "samples": 14,
+      "passed": true
+    },
+    "P14_bouquet": {
+      "embedded_plan_matches": true,
+      "controller": "CTRL_plant_14_bouquet",
+      "tracks": [
+        {
+          "track": "A breeze",
+          "strips": 1,
+          "action": "P14_bouquet.breeze",
+          "slot": "OBplant_controller",
+          "start": 1.0,
+          "fake_user": true,
+          "metadata": true
+        },
+        {
+          "track": "B gusty",
+          "strips": 1,
+          "action": "P14_bouquet.gusty",
+          "slot": "OBplant_controller",
+          "start": 257.0,
+          "fake_user": true,
+          "metadata": true
+        },
+        {
+          "track": "C storm",
+          "strips": 1,
+          "action": "P14_bouquet.storm",
+          "slot": "OBplant_controller",
+          "start": 513.0,
+          "fake_user": true,
+          "metadata": true
+        }
+      ],
+      "tracks_ok": true,
+      "drivers_ok": true,
+      "driver_passthrough_ok": true,
+      "hierarchy_ok": true,
+      "worst_key_error": 1.4741197096324044e-08,
+      "worst_matrix_error": 0.0005589965730905533,
+      "samples": 14,
+      "passed": true
+    },
+    "P15_tiered_shrub": {
+      "embedded_plan_matches": true,
+      "controller": "CTRL_plant_15_tiered_shrub",
+      "tracks": [
+        {
+          "track": "A breeze",
+          "strips": 1,
+          "action": "P15_tiered_shrub.breeze",
+          "slot": "OBplant_controller",
+          "start": 1.0,
+          "fake_user": true,
+          "metadata": true
+        },
+        {
+          "track": "B gusty",
+          "strips": 1,
+          "action": "P15_tiered_shrub.gusty",
+          "slot": "OBplant_controller",
+          "start": 257.0,
+          "fake_user": true,
+          "metadata": true
+        },
+        {
+          "track": "C storm",
+          "strips": 1,
+          "action": "P15_tiered_shrub.storm",
+          "slot": "OBplant_controller",
+          "start": 513.0,
+          "fake_user": true,
+          "metadata": true
+        }
+      ],
+      "tracks_ok": true,
+      "drivers_ok": true,
+      "driver_passthrough_ok": true,
+      "hierarchy_ok": true,
+      "worst_key_error": 1.634630952818128e-08,
+      "worst_matrix_error": 0.0001220703125,
+      "samples": 14,
+      "passed": true
+    },
+    "P16_liana": {
+      "embedded_plan_matches": true,
+      "controller": "CTRL_plant_16_liana",
+      "tracks": [
+        {
+          "track": "A breeze",
+          "strips": 1,
+          "action": "P16_liana.breeze",
+          "slot": "OBplant_controller",
+          "start": 1.0,
+          "fake_user": true,
+          "metadata": true
+        },
+        {
+          "track": "B gusty",
+          "strips": 1,
+          "action": "P16_liana.gusty",
+          "slot": "OBplant_controller",
+          "start": 257.0,
+          "fake_user": true,
+          "metadata": true
+        },
+        {
+          "track": "C storm",
+          "strips": 1,
+          "action": "P16_liana.storm",
+          "slot": "OBplant_controller",
+          "start": 513.0,
+          "fake_user": true,
+          "metadata": true
+        }
+      ],
+      "tracks_ok": true,
+      "drivers_ok": true,
+      "driver_passthrough_ok": true,
+      "hierarchy_ok": true,
+      "worst_key_error": 2.9453629424303074e-08,
+      "worst_matrix_error": 6.29425048828125e-05,
+      "samples": 14,
+      "passed": true
+    },
+    "P17_tendrils": {
+      "embedded_plan_matches": true,
+      "controller": "CTRL_plant_17_tendrils",
+      "tracks": [
+        {
+          "track": "A breeze",
+          "strips": 1,
+          "action": "P17_tendrils.breeze",
+          "slot": "OBplant_controller",
+          "start": 1.0,
+          "fake_user": true,
+          "metadata": true
+        },
+        {
+          "track": "B gusty",
+          "strips": 1,
+          "action": "P17_tendrils.gusty",
+          "slot": "OBplant_controller",
+          "start": 257.0,
+          "fake_user": true,
+          "metadata": true
+        },
+        {
+          "track": "C storm",
+          "strips": 1,
+          "action": "P17_tendrils.storm",
+          "slot": "OBplant_controller",
+          "start": 513.0,
+          "fake_user": true,
+          "metadata": true
+        }
+      ],
+      "tracks_ok": true,
+      "drivers_ok": true,
+      "driver_passthrough_ok": true,
+      "hierarchy_ok": true,
+      "worst_key_error": 1.3909812079937467e-08,
+      "worst_matrix_error": 0.000125885009765625,
+      "samples": 14,
+      "passed": true
+    },
+    "P18_ground_cover": {
+      "embedded_plan_matches": true,
+      "controller": "CTRL_plant_18_ground_cover",
+      "tracks": [
+        {
+          "track": "A breeze",
+          "strips": 1,
+          "action": "P18_ground_cover.breeze",
+          "slot": "OBplant_controller",
+          "start": 1.0,
+          "fake_user": true,
+          "metadata": true
+        },
+        {
+          "track": "B gusty",
+          "strips": 1,
+          "action": "P18_ground_cover.gusty",
+          "slot": "OBplant_controller",
+          "start": 257.0,
+          "fake_user": true,
+          "metadata": true
+        },
+        {
+          "track": "C storm",
+          "strips": 1,
+          "action": "P18_ground_cover.storm",
+          "slot": "OBplant_controller",
+          "start": 513.0,
+          "fake_user": true,
+          "metadata": true
+        }
+      ],
+      "tracks_ok": true,
+      "drivers_ok": true,
+      "driver_passthrough_ok": true,
+      "hierarchy_ok": true,
+      "worst_key_error": 1.4798603398258336e-08,
+      "worst_matrix_error": 0.000125885009765625,
+      "samples": 14,
+      "passed": true
+    },
+    "P19_leaf_vanes": {
+      "embedded_plan_matches": true,
+      "controller": "CTRL_plant_19_leaf_vanes",
+      "tracks": [
+        {
+          "track": "A breeze",
+          "strips": 1,
+          "action": "P19_leaf_vanes.breeze",
+          "slot": "OBplant_controller",
+          "start": 1.0,
+          "fake_user": true,
+          "metadata": true
+        },
+        {
+          "track": "B gusty",
+          "strips": 1,
+          "action": "P19_leaf_vanes.gusty",
+          "slot": "OBplant_controller",
+          "start": 257.0,
+          "fake_user": true,
+          "metadata": true
+        },
+        {
+          "track": "C storm",
+          "strips": 1,
+          "action": "P19_leaf_vanes.storm",
+          "slot": "OBplant_controller",
+          "start": 513.0,
+          "fake_user": true,
+          "metadata": true
+        }
+      ],
+      "tracks_ok": true,
+      "drivers_ok": true,
+      "driver_passthrough_ok": true,
+      "hierarchy_ok": true,
+      "worst_key_error": 1.1281657696926572e-07,
+      "worst_matrix_error": 8.392333984375e-05,
+      "samples": 14,
+      "passed": true
+    },
+    "P20_friends_palm": {
+      "embedded_plan_matches": true,
+      "controller": "CTRL_plant_20_friends_palm",
+      "tracks": [
+        {
+          "track": "A breeze",
+          "strips": 1,
+          "action": "P20_friends_palm.breeze",
+          "slot": "OBplant_controller",
+          "start": 1.0,
+          "fake_user": true,
+          "metadata": true
+        },
+        {
+          "track": "B gusty",
+          "strips": 1,
+          "action": "P20_friends_palm.gusty",
+          "slot": "OBplant_controller",
+          "start": 257.0,
+          "fake_user": true,
+          "metadata": true
+        },
+        {
+          "track": "C storm",
+          "strips": 1,
+          "action": "P20_friends_palm.storm",
+          "slot": "OBplant_controller",
+          "start": 513.0,
+          "fake_user": true,
+          "metadata": true
+        }
+      ],
+      "tracks_ok": true,
+      "drivers_ok": true,
+      "driver_passthrough_ok": true,
+      "hierarchy_ok": true,
+      "worst_key_error": 8.655321737105481e-09,
+      "worst_matrix_error": 0.00010347366333007812,
+      "samples": 14,
+      "passed": true
+    }
+  },
+  "transfer": {
+    "clip": "P02_swordleaf_palm.storm",
+    "target_controller": "CTRL_plant_13_fern",
+    "channels": [
+      "frond_downwind",
+      "frond_upwind",
+      "frond_back",
+      "frond_front"
+    ],
+    "samples": [
+      {
+        "frame": 1,
+        "key_error": 0.0,
+        "clamped_channels": [],
+        "rig_passed": true,
+        "passed": true
+      },
+      {
+        "frame": 12,
+        "key_error": 0.0,
+        "clamped_channels": [],
+        "rig_passed": true,
+        "passed": true
+      },
+      {
+        "frame": 23,
+        "key_error": 4.927248181775182e-07,
+        "clamped_channels": [],
+        "rig_passed": true,
+        "passed": true
+      },
+      {
+        "frame": 34,
+        "key_error": 4.9158263206589e-07,
+        "clamped_channels": [],
+        "rig_passed": true,
+        "passed": true
+      },
+      {
+        "frame": 45,
+        "key_error": 3.2152259349903234e-07,
+        "clamped_channels": [],
+        "rig_passed": true,
+        "passed": true
+      },
+      {
+        "frame": 56,
+        "key_error": 4.69078063947137e-07,
+        "clamped_channels": [
+          "frond_upwind"
+        ],
+        "rig_passed": true,
+        "passed": true
+      },
+      {
+        "frame": 67,
+        "key_error": 3.691148757964391e-07,
+        "clamped_channels": [],
+        "rig_passed": true,
+        "passed": true
+      },
+      {
+        "frame": 78,
+        "key_error": 3.72785806654341e-07,
+        "clamped_channels": [],
+        "rig_passed": true,
+        "passed": true
+      },
+      {
+        "frame": 89,
+        "key_error": 3.374028205854751e-07,
+        "clamped_channels": [],
+        "rig_passed": true,
+        "passed": true
+      },
+      {
+        "frame": 100,
+        "key_error": 4.759750366345461e-07,
+        "clamped_channels": [],
+        "rig_passed": true,
+        "passed": true
+      },
+      {
+        "frame": 111,
+        "key_error": 1.6267758607899085e-07,
+        "clamped_channels": [
+          "frond_upwind"
+        ],
+        "rig_passed": true,
+        "passed": true
+      },
+      {
+        "frame": 122,
+        "key_error": 2.860221862792389e-07,
+        "clamped_channels": [],
+        "rig_passed": true,
+        "passed": true
+      },
+      {
+        "frame": 133,
+        "key_error": 4.216506481191651e-07,
+        "clamped_channels": [
+          "frond_upwind"
+        ],
+        "rig_passed": true,
+        "passed": true
+      },
+      {
+        "frame": 144,
+        "key_error": 4.766359329166914e-07,
+        "clamped_channels": [
+          "frond_upwind"
+        ],
+        "rig_passed": true,
+        "passed": true
+      },
+      {
+        "frame": 155,
+        "key_error": 3.421714305854029e-07,
+        "clamped_channels": [],
+        "rig_passed": true,
+        "passed": true
+      },
+      {
+        "frame": 166,
+        "key_error": 4.029430151000768e-07,
+        "clamped_channels": [],
+        "rig_passed": true,
+        "passed": true
+      },
+      {
+        "frame": 177,
+        "key_error": 4.359359741176738e-07,
+        "clamped_channels": [
+          "frond_upwind"
+        ],
+        "rig_passed": true,
+        "passed": true
+      },
+      {
+        "frame": 188,
+        "key_error": 3.8991260528642435e-07,
+        "clamped_channels": [],
+        "rig_passed": true,
+        "passed": true
+      },
+      {
+        "frame": 199,
+        "key_error": 4.821157455481284e-07,
+        "clamped_channels": [],
+        "rig_passed": true,
+        "passed": true
+      },
+      {
+        "frame": 210,
+        "key_error": 4.4640660286018874e-07,
+        "clamped_channels": [],
+        "rig_passed": true,
+        "passed": true
+      },
+      {
+        "frame": 221,
+        "key_error": 4.760729074484299e-07,
+        "clamped_channels": [],
+        "rig_passed": true,
+        "passed": true
+      },
+      {
+        "frame": 232,
+        "key_error": 2.622224837540814e-07,
+        "clamped_channels": [],
+        "rig_passed": true,
+        "passed": true
+      }
+    ],
+    "clamped_samples": 5,
+    "note": "Expected values are the exported clip clamped to the target controller's ranges.",
+    "passed": true
+  },
+  "coverage": "Saved file reopened in a fresh process; embedded plans compared with the plan files; hierarchy, drivers (valid, pass-through F-curves), NLA tracks, Actions, cameras, markers and the WIND controller inspected; controller values and root-relative rig transforms checked at sampled timeline frames; one clip played on another case's controller and compared with its exported JSON. No collision test."
+}

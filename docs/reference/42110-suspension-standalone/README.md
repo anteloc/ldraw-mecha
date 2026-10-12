@@ -2,7 +2,7 @@
 
 This case isolates the Defender's four suspension corners and their mounting
 frame. The user selected its working animation in
-[output/42110-suspension-standalone](../../../output/42110-suspension-standalone).
+[archived 42110-suspension-standalone](../../../examples/reference/42110-suspension-standalone).
 These references were recovered from the measured builder, saved plan, source
 mapping, checks and previews; the previous generated diagrams were not used.
 Curation date: **2026-10-06**.
@@ -56,20 +56,20 @@ The source pose is **full droop**, with shocks approximately 110 LDU long.
 Zero does not mean normal ride height. Rise is measured along chassis-up,
 perpendicular to the wishbone axes; the chassis has a small source pitch.
 
-- Source: [standalone MPD](../../../output/42110-suspension-standalone/source/42110-suspension-standalone.mpd),
+- Source: [standalone MPD](../../../examples/reference/42110-suspension-standalone/source/42110-suspension-standalone.mpd),
   derived from Philippe Hurbain's [42110 model](../../../data/models-annotated/42110-1.mpd),
   with attribution retained.
 - Section: `42110-suspension-standalone.ldr`. The extract preserves the
   full-model coordinate frame: LDU, up approximately -Y, front -Z, left +X.
 - Bare IDs in the reference tables are the **new standalone IDs**, not full-car
-  paths. [idmap.json](../../../output/42110-suspension-standalone/source/idmap.json)
+  paths. [idmap.json](../../../examples/reference/42110-suspension-standalone/source/idmap.json)
   maps the old paths to them.
 - Angles are radians about explicit axes, relative to the imported source pose.
   Lengths and travel are LDU.
-- [plan.json](../../../output/42110-suspension-standalone/plan.json) contains the
+- [plan.json](../../../examples/reference/42110-suspension-standalone/plan.json) contains the
   complete membership, signals and anchors. The tables show useful representatives.
 
-Open [animated.blend](../../../output/42110-suspension-standalone/animated.blend)
+Open [animated.blend](../../../examples/reference/42110-suspension-standalone/animated.blend)
 for the 612-frame, 24 fps demonstration. `SuspensionCamera` shows the complete
 subsystem; `CornerCamera` shows the rear-left linkage. The controller exposes
 the four `travel_*` properties.

@@ -1,6 +1,6 @@
 # Minifig scope and evidence
 
-Reviewed **2026-10-07**, from [output/minifigs](../../../output/minifigs) and the
+Reviewed **2026-10-07**, from [archived minifigs](../../../examples/reference/minifigs) and the
 implementation in commit `a31034a`. The ten generated standalone figures share
 a seven-joint architecture; themed parts and clips differ. They were constructed
 from separate library parts, not extracted from one existing set. The selected
@@ -13,12 +13,12 @@ MPDs, plans, GLBs and saved blend were left untouched during curation.
 | [build_minifigs.py](../../../scripts/build_minifigs.py) | Roster, taxonomy constants, connector placement, grip choices, source writer and plan author |
 | [minifig_clips.py](../../../scripts/minifig_clips.py) | Thirteen channel conventions, sparse keys/easing, pure evaluator, whole-figure transform |
 | [animate_minifigs.py](../../../scripts/blender/animate_minifigs.py) | Imported roots, controller properties, Action slots, NLA tracks and scene checks |
-| [REPORT.md](../../../output/minifigs/REPORT.md) and [CATALOG.md](../../../output/minifigs/CATALOG.md) | Original implementation notes, reproduction commands and clip compatibility matrix |
+| [REPORT.md](../../../examples/reference/minifigs/REPORT.md) and [CATALOG.md](../../../examples/reference/minifigs/CATALOG.md) | Original implementation notes, reproduction commands and clip compatibility matrix |
 | Per-figure `source/parts.json`, `plan.json`, `kinematics.json` | Occurrence roles, measured axes, semantic sign tests and contact evidence |
 | Per-figure `clearance*.json`, `lifecycle.json` | Original sampled crossing and lifecycle evidence |
 
-Fresh [review.py](../../../output/minifigs-reference-review/review.py) and its
-[report](../../../output/minifigs-reference-review/review.json) check all ten
+Fresh [review.py](../../../examples/reference/minifigs-reference-review/review.py) and its
+[report](../../../examples/reference/minifigs-reference-review/review.json) check all ten
 source hashes, current builder versus saved motion fields, nonzero/asymmetric
 evaluation, semantic sign choices and all thirty exported baked clips. File
 hashes bind that report to the source scripts, plans and selected blend.
@@ -31,7 +31,7 @@ verify these semantics. The dedicated tests and Blender comparisons provide
 that evidence.
 
 A fresh background **Blender 5.2.2 LTS** process reopened the selected blend.
-The [new reopen report](../../../output/minifigs-reference-review/reopen-check.json)
+The [new reopen report](../../../examples/reference/minifigs-reference-review/reopen-check.json)
 passes for ten figures at eleven timeline frames each, thirty Actions and one
 cross-figure Action transfer at fourteen frames. It checks NLA tracks/slots,
 drivers, controller samples, root-relative joint matrices and separate root
@@ -47,7 +47,7 @@ were visually inspected. These are sampled observations, not a review of every
 rendered frame. Fresh diagrams describe the hierarchy, data flow and seated
 clip phases; they are hand-curated views, not executable motion definitions.
 All four Mermaid blocks rendered successfully, and the new/updated documents'
-local links resolved; see the [documentation check](../../../output/minifigs-reference-review/docs-check.json).
+local links resolved; see the [documentation check](../../../examples/reference/minifigs-reference-review/docs-check.json).
 
 ## Boundaries to preserve when reusing
 
@@ -70,14 +70,16 @@ From the repository root with its Python environment and LDraw library:
 
 ```sh
 .venv/bin/pytest -q tests/test_minifigs.py
-.venv/bin/python output/minifigs-reference-review/review.py
-"$BLENDER_BIN" --background output/minifigs/minifigs.blend --python-exit-code 1 \
+.venv/bin/python examples/reference/minifigs-reference-review/review.py
+"$BLENDER_BIN" --background examples/reference/minifigs/minifigs.blend --disable-autoexec --python-exit-code 1 \
   --python scripts/blender/check_minifigs_reopen.py -- \
-  --report output/minifigs-reference-review/reopen-check.json
+  --bundle examples/reference/minifigs \
+  --report output/reference-rechecks/minifigs/reopen-check.json
 ```
 
-Set `BLENDER_BIN` to the installed Blender executable. The review code/reports
-are generated artifacts under `output/`; include them when sharing this case.
+Set `BLENDER_BIN` to the installed Blender executable. The retained code and
+reports are in the [example archive](../../../examples/README.md); these commands
+read those copies and write fresh reports under `output/reference-rechecks/`.
 For a complete rebuild, see the original report. The source/catalog builder and
 case clearance script write to their fixed `output/minifigs` paths: use a
 separate checkout or deliberately adapt those output paths for another study.

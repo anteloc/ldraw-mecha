@@ -1,0 +1,163 @@
+{
+  "date": "2026-10-12",
+  "passed": true,
+  "scope": "Archive portability, retained motion reproduction and sampled Blender persistence. Not new clearance or physical-feasibility proof.",
+  "isolation": {
+    "original_output_copied": false,
+    "source_review_original_output_access_blocked": true,
+    "source_checks": [
+      {
+        "case": "archive",
+        "passed": true,
+        "returncode": 0
+      },
+      {
+        "case": "42083-mechanisms-reference-review",
+        "passed": true,
+        "returncode": 0
+      },
+      {
+        "case": "42083-w16-reference-review",
+        "passed": true,
+        "returncode": 0
+      },
+      {
+        "case": "42110-reference-review",
+        "passed": true,
+        "returncode": 0
+      },
+      {
+        "case": "42110-suspension-standalone-reference-review",
+        "passed": true,
+        "returncode": 0
+      },
+      {
+        "case": "minifigs-reference-review",
+        "passed": true,
+        "returncode": 0
+      },
+      {
+        "case": "movables",
+        "passed": true,
+        "returncode": 0
+      },
+      {
+        "case": "plants",
+        "passed": true,
+        "returncode": 0
+      }
+    ],
+    "blender_checks": [
+      {
+        "case": "movables",
+        "passed": true,
+        "returncode": 0
+      },
+      {
+        "case": "plants",
+        "passed": true,
+        "returncode": 0
+      },
+      {
+        "case": "minifigs",
+        "passed": true,
+        "returncode": 0
+      },
+      {
+        "case": "42083-mechanisms",
+        "passed": true,
+        "returncode": 0
+      },
+      {
+        "case": "42083-w16",
+        "passed": true,
+        "returncode": 0
+      },
+      {
+        "case": "42110-suspension-standalone",
+        "passed": true,
+        "returncode": 0
+      }
+    ]
+  },
+  "pure_tests": {
+    "command": ".venv/bin/pytest -q tests/test_reference_assets.py tests/test_movables.py tests/test_plants.py",
+    "passed": 200,
+    "failed": 0
+  },
+  "archive_at_review": {
+    "files": 1002,
+    "source_plans": 119,
+    "original_source_hashes_checked": 1002,
+    "changed_original_files": 0
+  },
+  "door_plan_relocation_roundtrip": {
+    "checks": [
+      {
+        "step": "relocate",
+        "passed": true,
+        "returncode": 0
+      },
+      {
+        "step": "validate",
+        "passed": true,
+        "returncode": 0
+      },
+      {
+        "step": "rig",
+        "passed": true,
+        "returncode": 0
+      },
+      {
+        "step": "reopen",
+        "passed": true,
+        "returncode": 0
+      },
+      {
+        "step": "lifecycle",
+        "passed": true,
+        "returncode": 0
+      }
+    ],
+    "passed": true
+  },
+  "documentation": {
+    "mermaid_blocks": 7,
+    "all_rendered": true,
+    "wind_python_snippets_passed": true
+  },
+  "evidence": {
+    "rechecks/42083-mechanisms/reopen-check.json": "761b5e50bc5bcf297d0489cbc73e4f18def3f34889f010cedec5b4b4c5101e9c",
+    "rechecks/42083-mechanisms/review.json": "25b49e4f961bfe12e9b45b0fb8d1d366fdac71d43b513154af9ccb58c19998cb",
+    "rechecks/42083-w16/blender-check.json": "347a344231657fdcd44c7630a0ff080f87b8d959d7ae5c3b90fdb94d48d33752",
+    "rechecks/42083-w16/review.json": "9618bfc8346e0300010803a2e17fd6ec77a4d55da424108ecd24d7895c756145",
+    "rechecks/42110/review.json": "b884ce4644ec748b9b274db3b0738597464922f93ecea6406354ffb362e3ba78",
+    "rechecks/42110-suspension-standalone/blender-check.json": "95037cef92f6c3699e1c42599197abab7c61f5ee13502f2e58c6f68df675613f",
+    "rechecks/42110-suspension-standalone/review.json": "a220ee813537aedfb8a5b6ce113cf001b59ebbe49677a1949b20e2f8c6b194d6",
+    "rechecks/minifigs/reopen-check.json": "be610ea4eae235376501cb7cdea4a2b051c2eb7119e243f843d34a959d9104ec",
+    "rechecks/minifigs/review.json": "0d3003988626be93604c02ab6c5c329c7924f448ca2b900c66561560e84eba8d",
+    "rechecks/movables/reopen-check.json": "418d1bab9324eb1e1db53079b59a719d73ce97b6ac5386be3a26e0fdd73f2c5d",
+    "rechecks/movables/review.json": "5c0ddf6b139bc363b0a8b0601ea55675fd38f1c20603405f55326bc8b54e393b",
+    "rechecks/plants/reopen-check.json": "436e87d521b8b998eba768097f6bbef1a70a6d53915313ab008d2abf578e380e",
+    "rechecks/plants/review.json": "44f4f4f96cfb0f37b47aa8dc50cded8c7bd3169c127882c37e92bd0bb77e0401",
+    "door/check.json": "2c5982a310c0c29f57fcf990dcfbce207ebd8e3dacdf1ee3e349ef856b1571cb",
+    "door/lifecycle.json": "b5cf98d7ff86d0ef65c1fa6cf0ad1e99f7fdd4aecb8fbcc51b924d4e41599836",
+    "door/reopen.json": "2c5982a310c0c29f57fcf990dcfbce207ebd8e3dacdf1ee3e349ef856b1571cb"
+  },
+  "code_sha256": {
+    "scripts/reference_assets.py": "b246ae029094557e3ee558a88fea5e7901db5bdd92c8e361e5d79d61e0569c7a",
+    "scripts/review_catalog.py": "49756a87b465472231a8f6196b7b03622e0a0af12b73e1f948ef2eb116b893fd",
+    "tests/test_reference_assets.py": "ccdc1b9303d428890441f9392646222ca977f068b1552e4a017e78a787d5fb49",
+    "examples/reference/42083-mechanisms-reference-review/review.py": "14aefef3953c6b396428fabca08250fd04e46d7a9b019883f0605dbd32165a2d",
+    "examples/reference/42110-suspension-standalone-reference-review/review.py": "ca944a16f07dbb6594836e7e47167d9c19cbfa6954e495c4836066a99cd9fc01",
+    "examples/reference/42110-suspension-standalone-reference-review/inspect_blend.py": "68e627a9f0116e6487f3945bc8ae82f606ea4da05449f3e688cc647b6a9ef424",
+    "examples/reference/42110-reference-review/review.py": "5dd2c40a520240716ff376839de277ad5286513bdb060c302bd3279a78924de8",
+    "examples/reference/42083-w16-reference-review/review.py": "5f5146dd228d2d096f0b293e7946091e4c2733b94e5156c6ce8308e106a60e52",
+    "examples/reference/42083-w16-reference-review/inspect_blend.py": "cb71ff006aca59ce487862a189ed7ad1aa5af8c6b5fb3ad4b66b07dea47d124e",
+    "examples/reference/minifigs-reference-review/review.py": "58b9963e32bbe2e76fd4c36827d17da24b021d3c6a045e61a362406a5ce3d541",
+    "scripts/blender/check_movables_reopen.py": "5e07a42210b9c63b7fdbad7b6b32ddf6ac1071900a49051f46674de619151bed",
+    "scripts/blender/check_plants_reopen.py": "f97728c7e19b42239bc1bff6c42395bd9e1d2a89f0bb6e7ad90f5ad618b4dc2d",
+    "scripts/blender/check_minifigs_reopen.py": "2479f68fbbc1e1691f9704fc92efb9368539f659026052ed90bcadf351c8e929",
+    "scripts/blender/check_42083_reopen.py": "1b577ed95bc56f48024885b202f87cd30a3bfbff6fcc62d24759391bae5ddedf"
+  }
+}

@@ -70,5 +70,5 @@ slider-crank relation instead. Do not infer an internal engine layout from the
 name "six-cylinder" alone.
 
 Implementation: [engine block](../../../scripts/build_defender_rig.py).
-Preview: [cams and pistons](../../../output/42110/preview-engine.png).
+Preview: [cams and pistons](../../../examples/reference/42110/preview-engine.png).
 Input: [range/direction gearbox](range-direction-gearbox.md).

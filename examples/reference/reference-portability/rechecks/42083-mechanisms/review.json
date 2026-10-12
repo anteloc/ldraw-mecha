@@ -1,0 +1,753 @@
+{
+  "date": "2026-10-07",
+  "implementation_commit": "079b6c869b7f2ea0ab98489d317d149b09bd7f65",
+  "source_section": "42083 - chiron.ldr",
+  "cases": {
+    "drivetrain": {
+      "plan_digest": "5bac8d19a49a00ab17cf89e4d8ae69a8a07d3c039bbf799883a4ccc02144c70a",
+      "parts": 337,
+      "moving_parts": 82,
+      "bodies": 24,
+      "signals": 57,
+      "checks": 0,
+      "motion_matches_builder": true,
+      "mapped_source_parts": 337,
+      "max_extraction_matrix_error": 2.842170943040401e-14,
+      "sweep_passed": true,
+      "sweep_samples": 195,
+      "mechanical_states": [
+        {
+          "state": {
+            "drive": 0.37
+          },
+          "worst_mesh_error": 1.1102230246251565e-16,
+          "diff_law_error": 0.0
+        },
+        {
+          "state": {
+            "drive": -2.9,
+            "diff_front": 0.4,
+            "diff_rear": -0.25
+          },
+          "worst_mesh_error": 7.997075224253081e-16,
+          "diff_law_error": 0.0
+        },
+        {
+          "state": {
+            "drive": 7.3,
+            "diff_front": -1.1,
+            "diff_rear": 0.9
+          },
+          "worst_mesh_error": 1.2212453270876722e-15,
+          "diff_law_error": 8.881784197001252e-16
+        }
+      ],
+      "meshes": 9,
+      "timeline_frames": 480,
+      "continuity": {
+        "limit_radians_per_frame": 0.8,
+        "limit_ldu_per_frame": 6.0,
+        "worst": [
+          [
+            0.22400000000000375,
+            "main",
+            "revolute",
+            163
+          ],
+          [
+            0.22400000000000375,
+            "front_pinion",
+            "revolute",
+            163
+          ],
+          [
+            0.22400000000000375,
+            "dnr_reverse_gear",
+            "revolute",
+            163
+          ],
+          [
+            0.1910210911351058,
+            "wheel_rr",
+            "revolute",
+            281
+          ],
+          [
+            0.1910210911351058,
+            "uj_rr_out",
+            "revolute",
+            281
+          ],
+          [
+            0.19100052557535463,
+            "wheel_rl",
+            "revolute",
+            229
+          ],
+          [
+            0.19100052557535463,
+            "uj_rl_out",
+            "revolute",
+            229
+          ],
+          [
+            0.18560000000000088,
+            "wheel_fr",
+            "revolute",
+            245
+          ]
+        ],
+        "violations": {},
+        "passed": true
+      },
+      "max_closure_error_ldu": 0,
+      "saved_clearance": true
+    },
+    "gearbox": {
+      "plan_digest": "4a904977b5fcbbd623fbf020c0429b817eaf4e4effd5bcd6b704c26cb34e7cb0",
+      "parts": 397,
+      "moving_parts": 151,
+      "bodies": 35,
+      "signals": 73,
+      "checks": 0,
+      "motion_matches_builder": true,
+      "mapped_source_parts": 395,
+      "max_extraction_matrix_error": 1.4210854715202004e-14,
+      "sweep_passed": true,
+      "sweep_samples": 325,
+      "mechanical_states": [
+        {
+          "catch1": 0,
+          "catch2": 0,
+          "gear": 1,
+          "output_per_input": 1.6666666666666805,
+          "rings": {
+            "ring_r1_abs": -10.0,
+            "ring_r2": 0.0,
+            "ring_r3": -0.0,
+            "ring_r4_abs": -10.0
+          },
+          "worst_mesh_error": 2.220446049250313e-16
+        },
+        {
+          "catch1": 1,
+          "catch2": 0,
+          "gear": 2,
+          "output_per_input": 1.249999999999998,
+          "rings": {
+            "ring_r1_abs": -0.0,
+            "ring_r2": 10.0,
+            "ring_r3": -0.0,
+            "ring_r4_abs": -10.0
+          },
+          "worst_mesh_error": 9.280770596475918e-17
+        },
+        {
+          "catch1": 2,
+          "catch2": 0,
+          "gear": 3,
+          "output_per_input": 1.0,
+          "rings": {
+            "ring_r1_abs": 10.0,
+            "ring_r2": 0.0,
+            "ring_r3": -0.0,
+            "ring_r4_abs": -10.0
+          },
+          "worst_mesh_error": 4.683753385137379e-17
+        },
+        {
+          "catch1": 3,
+          "catch2": 0,
+          "gear": 4,
+          "output_per_input": 0.800000000000005,
+          "rings": {
+            "ring_r1_abs": 0.0,
+            "ring_r2": -10.0,
+            "ring_r3": -0.0,
+            "ring_r4_abs": -10.0
+          },
+          "worst_mesh_error": 1.6653345369377348e-16
+        },
+        {
+          "catch1": 0,
+          "catch2": 1,
+          "gear": 5,
+          "output_per_input": 0.6000000000000016,
+          "rings": {
+            "ring_r1_abs": -10.0,
+            "ring_r2": -0.0,
+            "ring_r3": -10.0,
+            "ring_r4_abs": -0.0
+          },
+          "worst_mesh_error": 1.0408340855860843e-17
+        },
+        {
+          "catch1": 1,
+          "catch2": 1,
+          "gear": 6,
+          "output_per_input": 0.44999999999999707,
+          "rings": {
+            "ring_r1_abs": -0.0,
+            "ring_r2": 10.0,
+            "ring_r3": -10.0,
+            "ring_r4_abs": -0.0
+          },
+          "worst_mesh_error": 5.551115123125783e-17
+        },
+        {
+          "catch1": 2,
+          "catch2": 1,
+          "gear": 7,
+          "output_per_input": 0.3599999999999985,
+          "rings": {
+            "ring_r1_abs": 10.0,
+            "ring_r2": 0.0,
+            "ring_r3": -10.0,
+            "ring_r4_abs": -0.0
+          },
+          "worst_mesh_error": 3.946495907847236e-17
+        },
+        {
+          "catch1": 3,
+          "catch2": 1,
+          "gear": 8,
+          "output_per_input": 0.2880000000000013,
+          "rings": {
+            "ring_r1_abs": 0.0,
+            "ring_r2": -10.0,
+            "ring_r3": -10.0,
+            "ring_r4_abs": -0.0
+          },
+          "worst_mesh_error": 5.551115123125783e-17
+        },
+        {
+          "catch1": 0,
+          "catch2": 2,
+          "gear": 1,
+          "output_per_input": 1.6666666666666805,
+          "rings": {
+            "ring_r1_abs": -10.0,
+            "ring_r2": -0.0,
+            "ring_r3": -0.0,
+            "ring_r4_abs": 10.0
+          },
+          "worst_mesh_error": 2.220446049250313e-16
+        },
+        {
+          "catch1": 1,
+          "catch2": 2,
+          "gear": 2,
+          "output_per_input": 1.249999999999998,
+          "rings": {
+            "ring_r1_abs": -0.0,
+            "ring_r2": 10.0,
+            "ring_r3": -0.0,
+            "ring_r4_abs": 10.0
+          },
+          "worst_mesh_error": 9.280770596475918e-17
+        },
+        {
+          "catch1": 2,
+          "catch2": 2,
+          "gear": 3,
+          "output_per_input": 1.0,
+          "rings": {
+            "ring_r1_abs": 10.0,
+            "ring_r2": 0.0,
+            "ring_r3": -0.0,
+            "ring_r4_abs": 10.0
+          },
+          "worst_mesh_error": 4.683753385137379e-17
+        },
+        {
+          "catch1": 3,
+          "catch2": 2,
+          "gear": 4,
+          "output_per_input": 0.800000000000005,
+          "rings": {
+            "ring_r1_abs": 0.0,
+            "ring_r2": -10.0,
+            "ring_r3": -0.0,
+            "ring_r4_abs": 10.0
+          },
+          "worst_mesh_error": 1.6653345369377348e-16
+        },
+        {
+          "catch1": 0,
+          "catch2": 3,
+          "gear": 5,
+          "output_per_input": 0.6000000000000016,
+          "rings": {
+            "ring_r1_abs": -10.0,
+            "ring_r2": -0.0,
+            "ring_r3": 10.0,
+            "ring_r4_abs": 0.0
+          },
+          "worst_mesh_error": 1.0408340855860843e-17
+        },
+        {
+          "catch1": 1,
+          "catch2": 3,
+          "gear": 6,
+          "output_per_input": 0.44999999999999707,
+          "rings": {
+            "ring_r1_abs": 0.0,
+            "ring_r2": 10.0,
+            "ring_r3": 10.0,
+            "ring_r4_abs": 0.0
+          },
+          "worst_mesh_error": 5.551115123125783e-17
+        },
+        {
+          "catch1": 2,
+          "catch2": 3,
+          "gear": 7,
+          "output_per_input": 0.3599999999999985,
+          "rings": {
+            "ring_r1_abs": 10.0,
+            "ring_r2": 0.0,
+            "ring_r3": 10.0,
+            "ring_r4_abs": 0.0
+          },
+          "worst_mesh_error": 3.946495907847236e-17
+        },
+        {
+          "catch1": 3,
+          "catch2": 3,
+          "gear": 8,
+          "output_per_input": 0.2880000000000013,
+          "rings": {
+            "ring_r1_abs": 0.0,
+            "ring_r2": -10.0,
+            "ring_r3": 10.0,
+            "ring_r4_abs": 0.0
+          },
+          "worst_mesh_error": 5.551115123125783e-17
+        }
+      ],
+      "meshes": 23,
+      "timeline_frames": 480,
+      "continuity": {
+        "limit_radians_per_frame": 0.8,
+        "limit_ldu_per_frame": 6.0,
+        "worst": [
+          [
+            4.102965217767951,
+            "ring_r4",
+            "prismatic",
+            356
+          ],
+          [
+            4.102965217767951,
+            "ring_r1_abs",
+            "prismatic",
+            190
+          ],
+          [
+            4.102965217767951,
+            "push_r1",
+            "prismatic",
+            190
+          ],
+          [
+            4.1029652177679505,
+            "ring_r3",
+            "prismatic",
+            134
+          ],
+          [
+            4.102965217767945,
+            "ring_r2",
+            "prismatic",
+            50
+          ],
+          [
+            0.6481481481481524,
+            "s5",
+            "revolute",
+            443
+          ],
+          [
+            0.4200000000000017,
+            "input_v",
+            "revolute",
+            55
+          ],
+          [
+            0.38888888888889284,
+            "s3",
+            "revolute",
+            443
+          ]
+        ],
+        "violations": {},
+        "passed": true
+      },
+      "max_closure_error_ldu": 0,
+      "saved_clearance": false
+    },
+    "dnr": {
+      "plan_digest": "a40affb0d1a6e873c9512d78a5485bab5df820407ecf820842dc4388fa68aa79",
+      "parts": 260,
+      "moving_parts": 49,
+      "bodies": 8,
+      "signals": 11,
+      "checks": 0,
+      "motion_matches_builder": true,
+      "mapped_source_parts": 260,
+      "max_extraction_matrix_error": 1.4210854715202004e-14,
+      "sweep_passed": true,
+      "sweep_samples": 195,
+      "mechanical_states": [
+        {
+          "selector": -1.0,
+          "engine_per_main": 2.9999999999999805,
+          "worst_mesh_error": 2.220446049250313e-16
+        },
+        {
+          "selector": 0.0,
+          "engine_per_main": 0.0,
+          "worst_mesh_error": 1.5612511283791264e-17
+        },
+        {
+          "selector": 1.0,
+          "engine_per_main": -1.1999999999999955,
+          "worst_mesh_error": 2.6020852139652106e-17
+        }
+      ],
+      "meshes": 10,
+      "timeline_frames": 480,
+      "continuity": {
+        "limit_radians_per_frame": 0.8,
+        "limit_ldu_per_frame": 6.0,
+        "worst": [
+          [
+            0.9326171875,
+            "ring",
+            "prismatic",
+            58
+          ],
+          [
+            0.6000000000000085,
+            "engine_in",
+            "revolute",
+            319
+          ],
+          [
+            0.3000000000000007,
+            "input_v",
+            "revolute",
+            112
+          ],
+          [
+            0.3000000000000007,
+            "g57",
+            "revolute",
+            112
+          ],
+          [
+            0.20000000000000284,
+            "ring_shaft",
+            "revolute",
+            373
+          ],
+          [
+            0.12000000000000277,
+            "g63",
+            "revolute",
+            174
+          ],
+          [
+            0.10000000000000142,
+            "gb_out",
+            "revolute",
+            168
+          ],
+          [
+            0.023536813301156645,
+            "lever",
+            "revolute",
+            59
+          ]
+        ],
+        "violations": {},
+        "passed": true
+      },
+      "max_closure_error_ldu": 0,
+      "saved_clearance": false
+    },
+    "doors": {
+      "plan_digest": "7a5a937fc2f61fc0ab6157d70d99a8d45e6279633e34749fce5bc30156e96342",
+      "parts": 114,
+      "moving_parts": 92,
+      "bodies": 2,
+      "signals": 4,
+      "checks": 0,
+      "motion_matches_builder": true,
+      "mapped_source_parts": 114,
+      "max_extraction_matrix_error": 7.105427357601002e-15,
+      "sweep_passed": true,
+      "sweep_samples": 130,
+      "mechanical_states": [],
+      "meshes": 0,
+      "timeline_frames": 480,
+      "continuity": {
+        "limit_radians_per_frame": 0.8,
+        "limit_ldu_per_frame": 6.0,
+        "worst": [
+          [
+            0.01999670781893015,
+            "door_right_angle",
+            "revolute",
+            85
+          ],
+          [
+            0.01999670781893015,
+            "door_left_angle",
+            "revolute",
+            135
+          ]
+        ],
+        "violations": {},
+        "passed": true
+      },
+      "max_closure_error_ldu": 0,
+      "saved_clearance": true
+    },
+    "wing": {
+      "plan_digest": "f9ae77f7edd55e27fcb715d701f980c75898459d958fe6cf8a664b4a53350955",
+      "parts": 119,
+      "moving_parts": 50,
+      "bodies": 7,
+      "signals": 22,
+      "checks": 3,
+      "motion_matches_builder": true,
+      "mapped_source_parts": 119,
+      "max_extraction_matrix_error": 5.684341886080802e-14,
+      "sweep_passed": true,
+      "sweep_samples": 65,
+      "mechanical_states": [],
+      "meshes": 0,
+      "timeline_frames": 480,
+      "continuity": {
+        "limit_radians_per_frame": 0.8,
+        "limit_ldu_per_frame": 6.0,
+        "worst": [
+          [
+            0.005459911825850039,
+            "wlr_ang",
+            "revolute",
+            115
+          ],
+          [
+            0.005459911825850039,
+            "wll_ang",
+            "revolute",
+            115
+          ],
+          [
+            0.005453944402704747,
+            "wing_v",
+            "revolute",
+            115
+          ],
+          [
+            0.005453944402704747,
+            "wing_neg",
+            "revolute",
+            115
+          ]
+        ],
+        "violations": {},
+        "passed": true
+      },
+      "max_closure_error_ldu": 6.290216418847194e-07,
+      "saved_clearance": true
+    }
+  },
+  "provenance": {
+    "data/models-annotated/42083-1.mpd": "72df8a1a852d6584eeba935320de411b9dc9dc23582177336341af68156469db",
+    "scripts/build_42083_mechanisms.py": "a27eb6414195630fcc592b40f62c14ea0a162817c74389a706dc2c6a034db060",
+    "scripts/timeline_42083.py": "2d1d7deea29197010e49f808da71cba1bf912d4331137e7e4ed9f9e72a8996e2",
+    "ldraw_mechanisms/blender.py": "534aa36184bc69e2043c82ec34d5c8ee671a66eac82cdbacc60976c7c97793a9",
+    "examples/reference/42083-mechanisms/mechanisms.blend": "8558f8817081d7623d2aa37a8eeac6e8b58384af99aefa3c9190a620abc434f6",
+    "examples/reference/42083-mechanisms/animation-check.json": "f7e8afdbdb761b3148789447dfa64f70bb93122142cfef9e4718ac504b73a1b3",
+    "examples/reference/42083-mechanisms/reopen-check.json": "0ed9e33cdfeeb8f985d95c39cb9554abc868c08f7f531af20b7c47dd8854c7e5",
+    "examples/reference/42083-mechanisms/drivetrain/plan.json": "8e4487346940b8714ea5c96aba6e3ad1841d9fcf24fbcfd049e965f53707fcb8",
+    "examples/reference/42083-mechanisms/drivetrain/source/idmap.json": "62b7a0fc12ec21e96d9a81c575bec7a4c3e479f37597910796767582ad03d3a2",
+    "examples/reference/42083-mechanisms/drivetrain/source/42083-drivetrain.mpd": "8576160116e536080a11e24d1a939efb627f9132c5992adeceae42b711038afa",
+    "examples/reference/42083-mechanisms/drivetrain/kinematics.json": "f8c6beea64f6d4017bafcc90845fec82a212bff749c481e543b8327a403861f6",
+    "examples/reference/42083-mechanisms/drivetrain/clearance.json": "8b63e1571b676e3a5eac827d1d678100f8ed5758d26ae51577d7c7d8c52bf226",
+    "examples/reference/42083-mechanisms/drivetrain/lifecycle.json": "ac6baf65e5c1bcaa9531654c2f79d771b587d2ed6010707ed5d7a2fcb870cd76",
+    "examples/reference/42083-mechanisms/gearbox/plan.json": "64a008c130489d79dfc979e3d7b65e12905a1d83b3fbec22f7fb6496ae69c122",
+    "examples/reference/42083-mechanisms/gearbox/source/idmap.json": "d5165feba875bc1b0487439fb8605b44d0c7bfeb1127b295b6b20f20f3420778",
+    "examples/reference/42083-mechanisms/gearbox/source/42083-gearbox.mpd": "242dbcb20126b9d960571394567a7a430fa8c3eccb9d8ecc3677709e48acbcd0",
+    "examples/reference/42083-mechanisms/gearbox/kinematics.json": "65cf3abb719bf88546119b97de85d04bfd720a79eb20a9b205eb571aee2bc468",
+    "examples/reference/42083-mechanisms/gearbox/clearance.json": "676295355fc7a3ce4bfceb7bbd1f2f4de2c2e7b377d72acc776500963d513a3d",
+    "examples/reference/42083-mechanisms/gearbox/lifecycle.json": "ac6baf65e5c1bcaa9531654c2f79d771b587d2ed6010707ed5d7a2fcb870cd76",
+    "examples/reference/42083-mechanisms/dnr/plan.json": "18e9b74d3f04b475af94a8a089ba9cd38aa3d0342511601a3f975e3745d4c2bd",
+    "examples/reference/42083-mechanisms/dnr/source/idmap.json": "02f374a627897923149ee8c9843d71a78c35ac47cac28934fe1411d7183b955e",
+    "examples/reference/42083-mechanisms/dnr/source/42083-dnr.mpd": "2ab5af6b60995401b886a71fe6f0680868f8be091d2b23d54aab34113c10faa0",
+    "examples/reference/42083-mechanisms/dnr/kinematics.json": "fae321be3c6696ba8c01c10a2cc7adcd2181e3f8aefaa9358a4f1a1af15b299d",
+    "examples/reference/42083-mechanisms/dnr/clearance.json": "f3e881ed9eeae6b982ca03ec612b0c4d26e8aa3c2a82489f0d870e9547407a5a",
+    "examples/reference/42083-mechanisms/dnr/lifecycle.json": "ac6baf65e5c1bcaa9531654c2f79d771b587d2ed6010707ed5d7a2fcb870cd76",
+    "examples/reference/42083-mechanisms/doors/plan.json": "d92399ab5f6e0923c316570001e915e719a7c19881ff919b9cda7286df1fd1f3",
+    "examples/reference/42083-mechanisms/doors/source/idmap.json": "b783faf0f1acaa9045044821c8d4ee57b0a67880b9569546eab205ae75dd38ef",
+    "examples/reference/42083-mechanisms/doors/source/42083-doors.mpd": "48241df77330137b9bce0a6ed4f3b242484383a353f3da21a9410dc345a7ef94",
+    "examples/reference/42083-mechanisms/doors/kinematics.json": "e88d99a97e32ca29055883193051f6c7ba9283c117b8352bb1f1b60e7969d96e",
+    "examples/reference/42083-mechanisms/doors/clearance.json": "61f997e907eff6628f0597ea8537bfb8f856a75dd61cd1b89065cfce383440ec",
+    "examples/reference/42083-mechanisms/doors/lifecycle.json": "ac6baf65e5c1bcaa9531654c2f79d771b587d2ed6010707ed5d7a2fcb870cd76",
+    "examples/reference/42083-mechanisms/wing/plan.json": "c63bf235ef17c596148fc594addc767a397885c3d6d80e8aab80fd4676d3a778",
+    "examples/reference/42083-mechanisms/wing/source/idmap.json": "b9d8909b8d9a1bde43e3ca9aa0ae5004c95d9800b2693195d40d4f9b57d649f9",
+    "examples/reference/42083-mechanisms/wing/source/42083-wing.mpd": "e978e97ddb0fb19aa67856b09879abebea8e39f5c97b391649bbae905530c686",
+    "examples/reference/42083-mechanisms/wing/kinematics.json": "2d11e570cf02fffb2ca4e7a1e34f2e1d7a51b1919bd1238207cb33e94acc743f",
+    "examples/reference/42083-mechanisms/wing/clearance.json": "e6776cb28cf9a05ea4ea6050cf71415a95cfcadf989ccef81c4d9fc55ffd19ed",
+    "examples/reference/42083-mechanisms/wing/lifecycle.json": "5cb49020492a5b7eff74751f434fe93c9e77dd1eda74ffb241eafe554430c281"
+  },
+  "wing_translation": [
+    {
+      "wing": 0,
+      "translation_ldu": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "rotation_error": 0.0,
+      "max_closure_error_ldu": 6.290216418847194e-07
+    },
+    {
+      "wing": 0.13,
+      "translation_ldu": [
+        0.0,
+        -5.095878233278465,
+        1.016840859237032
+      ],
+      "rotation_error": 0.0,
+      "max_closure_error_ldu": 5.974122956331485e-07
+    },
+    {
+      "wing": 0.27,
+      "translation_ldu": [
+        0.0,
+        -10.680570677678473,
+        1.3632836970378737
+      ],
+      "rotation_error": 0.0,
+      "max_closure_error_ldu": 5.506821025846875e-07
+    },
+    {
+      "wing": 0.4,
+      "translation_ldu": [
+        0.0,
+        -15.863053233604926,
+        0.9840544010525658
+      ],
+      "rotation_error": 0.0,
+      "max_closure_error_ldu": 4.96430061502906e-07
+    }
+  ],
+  "pawls": [
+    {
+      "side": "l",
+      "pivot": [
+        100.0,
+        -18.0,
+        -260.0
+      ],
+      "rest_tip": [
+        125.97609604976829,
+        2.0,
+        -339.72473196424056
+      ],
+      "arm_length_ldu": 83.84980890113458,
+      "tip_radius_ldu": 24.652715386488627,
+      "driving_stroke": -0.6,
+      "samples": [
+        {
+          "paddle": -0.15,
+          "radius_error_ldu": 2.842170943040401e-14,
+          "tip_error_ldu": 1.4210854715202004e-14
+        },
+        {
+          "paddle": -0.3,
+          "radius_error_ldu": 4.263256414560601e-14,
+          "tip_error_ldu": 1.4210854715202004e-14
+        },
+        {
+          "paddle": -0.44999999999999996,
+          "radius_error_ldu": 1.4210854715202004e-14,
+          "tip_error_ldu": 1.4210854715202004e-14
+        },
+        {
+          "paddle": -0.6,
+          "radius_error_ldu": 1.7763568394002505e-14,
+          "tip_error_ldu": 6.355287432313019e-14
+        }
+      ]
+    },
+    {
+      "side": "r",
+      "pivot": [
+        180.0,
+        -18.0,
+        -260.0
+      ],
+      "rest_tip": [
+        154.0239039502317,
+        2.0,
+        -339.72473196424056
+      ],
+      "arm_length_ldu": 83.8498089011346,
+      "tip_radius_ldu": 24.65271538648862,
+      "driving_stroke": 0.6,
+      "samples": [
+        {
+          "paddle": 0.15,
+          "radius_error_ldu": 1.0658141036401503e-14,
+          "tip_error_ldu": 6.355287432313019e-14
+        },
+        {
+          "paddle": 0.3,
+          "radius_error_ldu": 7.105427357601002e-15,
+          "tip_error_ldu": 2.842170943040401e-14
+        },
+        {
+          "paddle": 0.44999999999999996,
+          "radius_error_ldu": 9.237055564881302e-14,
+          "tip_error_ldu": 5.684341886080802e-14
+        },
+        {
+          "paddle": 0.6,
+          "radius_error_ldu": 3.552713678800501e-14,
+          "tip_error_ldu": 2.842170943040401e-14
+        }
+      ]
+    }
+  ],
+  "paddle_only_ratchet_angle": -0.0,
+  "reconstruction": {
+    "R/S6_12T": {
+      "id": "395",
+      "centre": [
+        80.0,
+        0.0,
+        40.0
+      ],
+      "like": "0/90/14",
+      "partner": "0/90/84",
+      "shaft": "stage-1 output shaft 0/90/53 (empty slot between beams 0/90/86 and 0/90/68)"
+    },
+    "R/S5_12T": {
+      "id": "396",
+      "centre": [
+        -80.0,
+        -40.0,
+        160.0
+      ],
+      "like": "0/90/14",
+      "partner": "0/90/13",
+      "shaft": "low-range shaft 0/90/30 (empty slot beside 20T 0/90/13)"
+    }
+  },
+  "passed": true
+}

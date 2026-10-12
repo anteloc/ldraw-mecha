@@ -1,0 +1,145 @@
+{
+  "blender_version": "5.2.2 LTS",
+  "controller": "CTRL_defender_42110_suspension_standalone",
+  "file_sha256": "de2c5d398b79e882350a004e75bfcbb0eeee12754cf69b3aeebc4e9367955904",
+  "embedded_motion_matches": {
+    "controls": true,
+    "signals": true,
+    "bodies": true,
+    "anchors": true,
+    "checks": true
+  },
+  "animation_control_samples": [
+    {
+      "frame": 1,
+      "actual": {
+        "fl": 0.0,
+        "fr": 0.0,
+        "rl": 0.0,
+        "rr": 0.0
+      },
+      "max_control_error_ldu": 0.0
+    },
+    {
+      "frame": 90,
+      "actual": {
+        "fl": 1.8023046255111694,
+        "fr": 1.8023046255111694,
+        "rl": 1.8023046255111694,
+        "rr": 1.8023046255111694
+      },
+      "max_control_error_ldu": 1.6270798042228307e-08
+    },
+    {
+      "frame": 200,
+      "actual": {
+        "fl": 1.0908020734786987,
+        "fr": 19.242530822753906,
+        "rl": 1.0908020734786987,
+        "rr": 19.242530822753906
+      },
+      "max_control_error_ldu": 4.0633665676637065e-07
+    },
+    {
+      "frame": 300,
+      "actual": {
+        "fl": 11.627654075622559,
+        "fr": 9.413579940795898,
+        "rl": 9.413579940795898,
+        "rr": 12.353580474853516
+      },
+      "max_control_error_ldu": 3.0611768053745436e-07
+    },
+    {
+      "frame": 402,
+      "actual": {
+        "fl": 0.0,
+        "fr": 29.889999389648438,
+        "rl": 39.689998626708984,
+        "rr": 0.0
+      },
+      "max_control_error_ldu": 1.3732910133512632e-06
+    },
+    {
+      "frame": 460,
+      "actual": {
+        "fl": 10.166666984558105,
+        "fr": 10.166666984558105,
+        "rl": 32.79999923706055,
+        "rr": 10.166666984558105
+      },
+      "max_control_error_ldu": 5.563415399478799e-07
+    },
+    {
+      "frame": 612,
+      "actual": {
+        "fl": 0.0,
+        "fr": 0.0,
+        "rl": 0.0,
+        "rr": 0.0
+      },
+      "max_control_error_ldu": 0.0
+    }
+  ],
+  "verification": {
+    "passed": true,
+    "samples": [
+      {
+        "controls": {
+          "travel_fl": 0.0,
+          "travel_fr": 0.0,
+          "travel_rl": 0.0,
+          "travel_rr": 0.0
+        },
+        "max_matrix_error": 0.0001296401023864746,
+        "max_static_error": 3.0517578125e-05,
+        "max_closure_error": 4.844659250125005e-05,
+        "invalid_drivers": [],
+        "passed": true
+      },
+      {
+        "controls": {
+          "travel_fl": 30.5,
+          "travel_fr": 30.5,
+          "travel_rl": 40.5,
+          "travel_rr": 40.5
+        },
+        "max_matrix_error": 0.0020904541015625,
+        "max_static_error": 3.0517578125e-05,
+        "max_closure_error": 0.0038724437981585424,
+        "invalid_drivers": [],
+        "passed": true
+      },
+      {
+        "controls": {
+          "travel_fl": 9.15,
+          "travel_fr": 30.5,
+          "travel_rl": 0.0,
+          "travel_rr": 28.349999999999998
+        },
+        "max_matrix_error": 0.00156402587890625,
+        "max_static_error": 3.0517578125e-05,
+        "max_closure_error": 0.0029539704069634354,
+        "invalid_drivers": [],
+        "passed": true
+      },
+      {
+        "controls": {
+          "travel_fl": 27.45,
+          "travel_fr": 1.5250000000000001,
+          "travel_rl": 24.3,
+          "travel_rr": 10.125
+        },
+        "max_matrix_error": 0.001373291015625,
+        "max_static_error": 3.0517578125e-05,
+        "max_closure_error": 0.002674547080090406,
+        "invalid_drivers": [],
+        "passed": true
+      }
+    ],
+    "units": "LDU",
+    "tolerance": 0.01,
+    "coverage": "Evaluated transforms, driver validity and declared link closure; no mesh collision test"
+  },
+  "source_blend_saved": false
+}

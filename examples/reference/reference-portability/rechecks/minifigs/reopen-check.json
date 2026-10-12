@@ -1,0 +1,524 @@
+{
+  "passed": true,
+  "blender": "5.2.2 LTS",
+  "file": "/private/var/folders/f2/2f3xbvns3c7f926qwwqy65r00000gn/T/ldraw-reference-check-ctvwpmy3/examples/reference/minifigs/minifigs.blend",
+  "frames": [
+    1,
+    480
+  ],
+  "fps": 24,
+  "tolerance": 0.002,
+  "clip_actions": 30,
+  "figures": {
+    "MF01_police": {
+      "embedded_plan_matches": true,
+      "controller": "CTRL_minifig_01_police",
+      "tracks": [
+        {
+          "track": "A walk_patrol",
+          "strips": 1,
+          "action": "MF01_police.walk_patrol",
+          "slot": "OBminifig_controller",
+          "start": 1.0,
+          "fake_user": true,
+          "metadata": true
+        },
+        {
+          "track": "B look_around",
+          "strips": 1,
+          "action": "MF01_police.look_around",
+          "slot": "OBminifig_controller",
+          "start": 161.0,
+          "fake_user": true,
+          "metadata": true
+        },
+        {
+          "track": "C halt_signal",
+          "strips": 1,
+          "action": "MF01_police.halt_signal",
+          "slot": "OBminifig_controller",
+          "start": 321.0,
+          "fake_user": true,
+          "metadata": true
+        }
+      ],
+      "tracks_ok": true,
+      "hierarchy_and_drivers_ok": true,
+      "worst_key_error": 1.3671250087554654e-06,
+      "worst_matrix_error": 6.103515625e-05,
+      "worst_figure_translation_error_ldu": 4.595545169983209e-05,
+      "samples": 11,
+      "passed": true
+    },
+    "MF02_spaceman": {
+      "embedded_plan_matches": true,
+      "controller": "CTRL_minifig_02_spaceman",
+      "tracks": [
+        {
+          "track": "A moon_hop",
+          "strips": 1,
+          "action": "MF02_spaceman.moon_hop",
+          "slot": "OBminifig_controller",
+          "start": 1.0,
+          "fake_user": true,
+          "metadata": true
+        },
+        {
+          "track": "B zero_g_tumble",
+          "strips": 1,
+          "action": "MF02_spaceman.zero_g_tumble",
+          "slot": "OBminifig_controller",
+          "start": 161.0,
+          "fake_user": true,
+          "metadata": true
+        },
+        {
+          "track": "C wave",
+          "strips": 1,
+          "action": "MF02_spaceman.wave",
+          "slot": "OBminifig_controller",
+          "start": 321.0,
+          "fake_user": true,
+          "metadata": true
+        }
+      ],
+      "tracks_ok": true,
+      "hierarchy_and_drivers_ok": true,
+      "worst_key_error": 1.782527405680412e-07,
+      "worst_matrix_error": 9.310245513916016e-05,
+      "worst_figure_translation_error_ldu": 3.411968959808029e-05,
+      "samples": 11,
+      "passed": true
+    },
+    "MF03_knight": {
+      "embedded_plan_matches": true,
+      "controller": "CTRL_minifig_03_knight",
+      "tracks": [
+        {
+          "track": "A sword_slash",
+          "strips": 1,
+          "action": "MF03_knight.sword_slash",
+          "slot": "OBminifig_controller",
+          "start": 1.0,
+          "fake_user": true,
+          "metadata": true
+        },
+        {
+          "track": "B shield_block",
+          "strips": 1,
+          "action": "MF03_knight.shield_block",
+          "slot": "OBminifig_controller",
+          "start": 161.0,
+          "fake_user": true,
+          "metadata": true
+        },
+        {
+          "track": "C courtly_bow",
+          "strips": 1,
+          "action": "MF03_knight.courtly_bow",
+          "slot": "OBminifig_controller",
+          "start": 321.0,
+          "fake_user": true,
+          "metadata": true
+        }
+      ],
+      "tracks_ok": true,
+      "hierarchy_and_drivers_ok": true,
+      "worst_key_error": 1.9001211093438997e-07,
+      "worst_matrix_error": 6.866455078125e-05,
+      "worst_figure_translation_error_ldu": 4.3186187417712923e-05,
+      "samples": 11,
+      "passed": true
+    },
+    "MF04_builder": {
+      "embedded_plan_matches": true,
+      "controller": "CTRL_minifig_04_builder",
+      "tracks": [
+        {
+          "track": "A hammering",
+          "strips": 1,
+          "action": "MF04_builder.hammering",
+          "slot": "OBminifig_controller",
+          "start": 1.0,
+          "fake_user": true,
+          "metadata": true
+        },
+        {
+          "track": "B carry_load",
+          "strips": 1,
+          "action": "MF04_builder.carry_load",
+          "slot": "OBminifig_controller",
+          "start": 161.0,
+          "fake_user": true,
+          "metadata": true
+        },
+        {
+          "track": "C head_shake_no",
+          "strips": 1,
+          "action": "MF04_builder.head_shake_no",
+          "slot": "OBminifig_controller",
+          "start": 321.0,
+          "fake_user": true,
+          "metadata": true
+        }
+      ],
+      "tracks_ok": true,
+      "hierarchy_and_drivers_ok": true,
+      "worst_key_error": 1.063133176160136e-06,
+      "worst_matrix_error": 9.72747802734375e-05,
+      "worst_figure_translation_error_ldu": 8.36845816363537e-05,
+      "samples": 11,
+      "passed": true
+    },
+    "MF05_chef": {
+      "embedded_plan_matches": true,
+      "controller": "CTRL_minifig_05_chef",
+      "tracks": [
+        {
+          "track": "A stirring",
+          "strips": 1,
+          "action": "MF05_chef.stirring",
+          "slot": "OBminifig_controller",
+          "start": 1.0,
+          "fake_user": true,
+          "metadata": true
+        },
+        {
+          "track": "B pan_flip",
+          "strips": 1,
+          "action": "MF05_chef.pan_flip",
+          "slot": "OBminifig_controller",
+          "start": 161.0,
+          "fake_user": true,
+          "metadata": true
+        },
+        {
+          "track": "C celebrate",
+          "strips": 1,
+          "action": "MF05_chef.celebrate",
+          "slot": "OBminifig_controller",
+          "start": 321.0,
+          "fake_user": true,
+          "metadata": true
+        }
+      ],
+      "tracks_ok": true,
+      "hierarchy_and_drivers_ok": true,
+      "worst_key_error": 2.2888183615066282e-07,
+      "worst_matrix_error": 0.0001811981201171875,
+      "worst_figure_translation_error_ldu": 7.909403996278128e-05,
+      "samples": 11,
+      "passed": true
+    },
+    "MF06_pirate": {
+      "embedded_plan_matches": true,
+      "controller": "CTRL_minifig_06_pirate",
+      "tracks": [
+        {
+          "track": "A hornpipe_jig",
+          "strips": 1,
+          "action": "MF06_pirate.hornpipe_jig",
+          "slot": "OBminifig_controller",
+          "start": 1.0,
+          "fake_user": true,
+          "metadata": true
+        },
+        {
+          "track": "B lookout",
+          "strips": 1,
+          "action": "MF06_pirate.lookout",
+          "slot": "OBminifig_controller",
+          "start": 161.0,
+          "fake_user": true,
+          "metadata": true
+        },
+        {
+          "track": "C cutlass_lunge",
+          "strips": 1,
+          "action": "MF06_pirate.cutlass_lunge",
+          "slot": "OBminifig_controller",
+          "start": 321.0,
+          "fake_user": true,
+          "metadata": true
+        }
+      ],
+      "tracks_ok": true,
+      "hierarchy_and_drivers_ok": true,
+      "worst_key_error": 2.6490953253244243e-07,
+      "worst_matrix_error": 1.71661376953125e-05,
+      "worst_figure_translation_error_ldu": 3.814697265625e-06,
+      "samples": 11,
+      "passed": true
+    },
+    "MF07_firefighter": {
+      "embedded_plan_matches": true,
+      "controller": "CTRL_minifig_07_firefighter",
+      "tracks": [
+        {
+          "track": "A ladder_climb",
+          "strips": 1,
+          "action": "MF07_firefighter.ladder_climb",
+          "slot": "OBminifig_controller",
+          "start": 1.0,
+          "fake_user": true,
+          "metadata": true
+        },
+        {
+          "track": "B run",
+          "strips": 1,
+          "action": "MF07_firefighter.run",
+          "slot": "OBminifig_controller",
+          "start": 161.0,
+          "fake_user": true,
+          "metadata": true
+        },
+        {
+          "track": "C hose_sweep",
+          "strips": 1,
+          "action": "MF07_firefighter.hose_sweep",
+          "slot": "OBminifig_controller",
+          "start": 321.0,
+          "fake_user": true,
+          "metadata": true
+        }
+      ],
+      "tracks_ok": true,
+      "hierarchy_and_drivers_ok": true,
+      "worst_key_error": 1.5273244144964337e-06,
+      "worst_matrix_error": 2.956390380859375e-05,
+      "worst_figure_translation_error_ldu": 1.857600533469279e-05,
+      "samples": 11,
+      "passed": true
+    },
+    "MF08_athlete": {
+      "embedded_plan_matches": true,
+      "controller": "CTRL_minifig_08_athlete",
+      "tracks": [
+        {
+          "track": "A sprint",
+          "strips": 1,
+          "action": "MF08_athlete.sprint",
+          "slot": "OBminifig_controller",
+          "start": 1.0,
+          "fake_user": true,
+          "metadata": true
+        },
+        {
+          "track": "B high_jump",
+          "strips": 1,
+          "action": "MF08_athlete.high_jump",
+          "slot": "OBminifig_controller",
+          "start": 161.0,
+          "fake_user": true,
+          "metadata": true
+        },
+        {
+          "track": "C warmup_leg_swings",
+          "strips": 1,
+          "action": "MF08_athlete.warmup_leg_swings",
+          "slot": "OBminifig_controller",
+          "start": 321.0,
+          "fake_user": true,
+          "metadata": true
+        }
+      ],
+      "tracks_ok": true,
+      "hierarchy_and_drivers_ok": true,
+      "worst_key_error": 1.712674318810059e-06,
+      "worst_matrix_error": 8.7738037109375e-05,
+      "worst_figure_translation_error_ldu": 3.1514571460453614e-05,
+      "samples": 11,
+      "passed": true
+    },
+    "MF09_wizard": {
+      "embedded_plan_matches": true,
+      "controller": "CTRL_minifig_09_wizard",
+      "tracks": [
+        {
+          "track": "A spell_spin",
+          "strips": 1,
+          "action": "MF09_wizard.spell_spin",
+          "slot": "OBminifig_controller",
+          "start": 1.0,
+          "fake_user": true,
+          "metadata": true
+        },
+        {
+          "track": "B levitate",
+          "strips": 1,
+          "action": "MF09_wizard.levitate",
+          "slot": "OBminifig_controller",
+          "start": 161.0,
+          "fake_user": true,
+          "metadata": true
+        },
+        {
+          "track": "C cast_spell",
+          "strips": 1,
+          "action": "MF09_wizard.cast_spell",
+          "slot": "OBminifig_controller",
+          "start": 321.0,
+          "fake_user": true,
+          "metadata": true
+        }
+      ],
+      "tracks_ok": true,
+      "hierarchy_and_drivers_ok": true,
+      "worst_key_error": 5.42497978983647e-07,
+      "worst_matrix_error": 0.000148773193359375,
+      "worst_figure_translation_error_ldu": 6.151014517439689e-05,
+      "samples": 11,
+      "passed": true
+    },
+    "MF10_diver": {
+      "embedded_plan_matches": true,
+      "controller": "CTRL_minifig_10_diver",
+      "tracks": [
+        {
+          "track": "A swim_crawl",
+          "strips": 1,
+          "action": "MF10_diver.swim_crawl",
+          "slot": "OBminifig_controller",
+          "start": 1.0,
+          "fake_user": true,
+          "metadata": true
+        },
+        {
+          "track": "B sit_down_stand_up",
+          "strips": 1,
+          "action": "MF10_diver.sit_down_stand_up",
+          "slot": "OBminifig_controller",
+          "start": 161.0,
+          "fake_user": true,
+          "metadata": true
+        },
+        {
+          "track": "C fall_and_get_up",
+          "strips": 1,
+          "action": "MF10_diver.fall_and_get_up",
+          "slot": "OBminifig_controller",
+          "start": 321.0,
+          "fake_user": true,
+          "metadata": true
+        }
+      ],
+      "tracks_ok": true,
+      "hierarchy_and_drivers_ok": true,
+      "worst_key_error": 9.757373256036317e-07,
+      "worst_matrix_error": 0.0001068115234375,
+      "worst_figure_translation_error_ldu": 6.115424935104904e-05,
+      "samples": 11,
+      "passed": true
+    }
+  },
+  "transfer": {
+    "clip": "MF03_knight.sword_slash",
+    "target_controller": "CTRL_minifig_05_chef",
+    "slot_users_during_transfer": [
+      "CTRL_minifig_03_knight",
+      "CTRL_minifig_05_chef"
+    ],
+    "samples": [
+      {
+        "frame": 1,
+        "key_error": 0.0,
+        "rig_passed": true,
+        "figure_translation_error_ldu": 6.99245558922705e-05,
+        "passed": true
+      },
+      {
+        "frame": 12,
+        "key_error": 4.61734712124684e-07,
+        "rig_passed": true,
+        "figure_translation_error_ldu": 6.99245558922705e-05,
+        "passed": true
+      },
+      {
+        "frame": 23,
+        "key_error": 4.4924592972062083e-07,
+        "rig_passed": true,
+        "figure_translation_error_ldu": 2.7553920820992422e-05,
+        "passed": true
+      },
+      {
+        "frame": 34,
+        "key_error": 4.245424270743481e-07,
+        "rig_passed": true,
+        "figure_translation_error_ldu": 6.860880563580253e-05,
+        "passed": true
+      },
+      {
+        "frame": 45,
+        "key_error": 4.768371586472142e-08,
+        "rig_passed": true,
+        "figure_translation_error_ldu": 6.99245558922705e-05,
+        "passed": true
+      },
+      {
+        "frame": 56,
+        "key_error": 4.768371586472142e-08,
+        "rig_passed": true,
+        "figure_translation_error_ldu": 6.99245558922705e-05,
+        "passed": true
+      },
+      {
+        "frame": 67,
+        "key_error": 4.474124908337984e-07,
+        "rig_passed": true,
+        "figure_translation_error_ldu": 6.866978280388251e-05,
+        "passed": true
+      },
+      {
+        "frame": 78,
+        "key_error": 4.3944358825431795e-07,
+        "rig_passed": true,
+        "figure_translation_error_ldu": 5.5180514442426284e-05,
+        "passed": true
+      },
+      {
+        "frame": 89,
+        "key_error": 4.768371586472142e-08,
+        "rig_passed": true,
+        "figure_translation_error_ldu": 6.99245558922705e-05,
+        "passed": true
+      },
+      {
+        "frame": 100,
+        "key_error": 4.790573120416752e-07,
+        "rig_passed": true,
+        "figure_translation_error_ldu": 6.99245558922705e-05,
+        "passed": true
+      },
+      {
+        "frame": 111,
+        "key_error": 3.0802154540876536e-07,
+        "rig_passed": true,
+        "figure_translation_error_ldu": 6.378409978639243e-05,
+        "passed": true
+      },
+      {
+        "frame": 122,
+        "key_error": 4.93652343724893e-07,
+        "rig_passed": true,
+        "figure_translation_error_ldu": 8.257024893977608e-05,
+        "passed": true
+      },
+      {
+        "frame": 133,
+        "key_error": 1.524696350285737e-07,
+        "rig_passed": true,
+        "figure_translation_error_ldu": 6.99245558922705e-05,
+        "passed": true
+      },
+      {
+        "frame": 144,
+        "key_error": 0.0,
+        "rig_passed": true,
+        "figure_translation_error_ldu": 6.99245558922705e-05,
+        "passed": true
+      }
+    ],
+    "passed": true
+  },
+  "coverage": "Saved file reopened in a fresh process; embedded plans compared with the plan files; NLA tracks, Actions and MOVE_ drivers inspected; controller values, root-relative rig transforms and whole-figure root transforms checked at sampled frames; one clip played on another figure's controller and compared with its exported JSON. No collision test."
+}

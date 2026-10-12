@@ -33,20 +33,20 @@ a separate process and did not save the opened animation.
 
 | Artifact | Purpose |
 | --- | --- |
-| [Fresh review](../../../output/42110-suspension-standalone-reference-review/review.json) | Measured corner roles, geometry, samples, reconstruction and hashes |
-| [Source review script](../../../output/42110-suspension-standalone-reference-review/review.py) | Reproduce the source-only curation checks |
-| [Fresh Blender check](../../../output/42110-suspension-standalone-reference-review/blender-check.json) | Reopened action and evaluated transforms |
-| [Blender inspection script](../../../output/42110-suspension-standalone-reference-review/inspect_blend.py) | Read-only saved-scene review |
-| [ID map](../../../output/42110-suspension-standalone/source/idmap.json) and [selection](../../../output/42110-suspension-standalone/keep.json) | Original occurrences, extracted IDs and retained roles |
-| [Original Blender check](../../../output/42110-suspension-standalone/blender-check.json) | Fourteen sampled poses |
-| [Rig reopen](../../../output/42110-suspension-standalone/reopen-check.json) and [animation reopen](../../../output/42110-suspension-standalone/animated-reopen-check.json) | Saved-scene persistence |
-| [Lifecycle report](../../../output/42110-suspension-standalone/lifecycle.json) | Restore/rebuild, isolated copies, defaults and clamping |
-| [Original animation check](../../../output/42110-suspension-standalone/animation-check.json) | Every-frame closure and 17 Blender frame comparisons |
-| [Standalone clearance](../../../output/42110-suspension-standalone/clearance.json) | Sampled crossings against retained geometry |
-| [Full-model stop sweep](../../../output/42110-suspension/stop-sweep.json) | Front lower-arm contact limit evidence |
-| [Full-model measured geometry](../../../output/42110-suspension/geometry.json) | Original pivot, shock and grouping measurements |
+| [Fresh review](../../../examples/reference/42110-suspension-standalone-reference-review/review.json) | Measured corner roles, geometry, samples, reconstruction and hashes |
+| [Source review script](../../../examples/reference/42110-suspension-standalone-reference-review/review.py) | Reproduce the source-only curation checks |
+| [Fresh Blender check](../../../examples/reference/42110-suspension-standalone-reference-review/blender-check.json) | Reopened action and evaluated transforms |
+| [Blender inspection script](../../../examples/reference/42110-suspension-standalone-reference-review/inspect_blend.py) | Read-only saved-scene review |
+| [ID map](../../../examples/reference/42110-suspension-standalone/source/idmap.json) and [selection](../../../examples/reference/42110-suspension-standalone/keep.json) | Original occurrences, extracted IDs and retained roles |
+| [Original Blender check](../../../examples/reference/42110-suspension-standalone/blender-check.json) | Fourteen sampled poses |
+| [Rig reopen](../../../examples/reference/42110-suspension-standalone/reopen-check.json) and [animation reopen](../../../examples/reference/42110-suspension-standalone/animated-reopen-check.json) | Saved-scene persistence |
+| [Lifecycle report](../../../examples/reference/42110-suspension-standalone/lifecycle.json) | Restore/rebuild, isolated copies, defaults and clamping |
+| [Original animation check](../../../examples/reference/42110-suspension-standalone/animation-check.json) | Every-frame closure and 17 Blender frame comparisons |
+| [Standalone clearance](../../../examples/reference/42110-suspension-standalone/clearance.json) | Sampled crossings against retained geometry |
+| [Full-model stop sweep](../../../examples/reference/42110-suspension/stop-sweep.json) | Front lower-arm contact limit evidence |
+| [Full-model measured geometry](../../../examples/reference/42110-suspension/geometry.json) | Original pivot, shock and grouping measurements |
 
-Run `.venv/bin/python output/42110-suspension-standalone-reference-review/review.py`
+Run `.venv/bin/python examples/reference/42110-suspension-standalone-reference-review/review.py`
 from the repository root to reproduce the source review. It requires the retained
 study inputs, configured LDraw library and local parts database.
 
@@ -111,7 +111,8 @@ record their derivations.
 | Measured builder SHA-256 | `ccfb433ae6c894381c2f484430721754fc65acb23948f275785a96ddba9fd5c0` |
 | Selected animated blend SHA-256 | `de2c5d398b79e882350a004e75bfcbb0eeee12754cf69b3aeebc4e9367955904` |
 
-Keep the generated evidence bundle with these references when sharing them.
+The [example archive](../../../examples/README.md) retains the selected evidence,
+derived source files and playback assets alongside these references.
 A changed source, plan or builder requires a review of the affected measurements
 and claims; the hand-curated diagrams do not update themselves.
 

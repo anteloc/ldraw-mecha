@@ -108,7 +108,7 @@ checks. Keep upstream attribution and the supplied notices when reusing data.
 
 ## Evaluation of this snapshot
 
-The [2026-10-07 audit](../output/minifigs-reference-review/taxonomy-audit.json)
+The [2026-10-07 audit](../examples/reference/minifigs-reference-review/taxonomy-audit.json)
 counts 62 leaf tables (64 Python files), 23,551 string assignments and 20,589
 distinct references. `dimensions.py` has 22,588 entries. These are snapshot
 counts, not a promise of current LDraw coverage.

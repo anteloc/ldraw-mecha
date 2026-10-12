@@ -6,13 +6,16 @@ import json
 import math
 import sys
 
-ROOT = Path(__file__).resolve().parents[2]
+ROOT = Path(__file__).resolve().parents[3]
 sys.path.insert(0, str(ROOT))
+sys.path.insert(0, str(ROOT / "scripts"))
+from reference_assets import load_plan
 from ldraw_mechanisms import plan
 from ldraw_mechanisms.math3d import dot
 
-OUT = Path(__file__).resolve().parent
-BASE = ROOT / "output/42110"
+OUT = ROOT / "output/reference-rechecks/42110"
+OUT.mkdir(parents=True, exist_ok=True)
+BASE = ROOT / "examples/reference/42110"
 
 def module(name, path):
     spec = importlib.util.spec_from_file_location(name, ROOT / path)
@@ -22,9 +25,9 @@ def module(name, path):
 
 builder = module("defender_builder", "scripts/build_defender_rig.py")
 animator = module("defender_animator", "scripts/blender/animate_defender.py")
-p = plan.load(BASE / "plan.json")
+p = load_plan(BASE / "plan.json")
 valid = plan.validate(p, check_source=True)
-built = builder.build(plan.load(BASE / "study/plan.json"), json.loads((BASE / "evidence/contacts-mechanical.json").read_text()))
+built = builder.build(load_plan(BASE / "study/plan.json"), json.loads((BASE / "evidence/contacts-mechanical.json").read_text()))
 same = {k: built[k] == p[k] for k in ("controls", "signals", "bodies", "anchors", "checks")}
 assert all(same.values()), same
 states = builder.verify_kinematics(p, built["meshes"], built["locks"], built["axes"]["ZC"])

@@ -5,7 +5,7 @@ can address the target's channels, the rig can reproduce their transforms, and
 the target meshes can avoid unwanted crossings. Passing the first two does not
 establish the third.
 
-The saved [own-clip report](../../../output/minifigs/clearance-summary.json)
+The saved [own-clip report](../../../examples/reference/minifigs/clearance-summary.json)
 contains new surface crossings for three clips:
 
 | Clip | Reported area |
@@ -53,7 +53,7 @@ The API temporarily releases animation and restores its state; an explicit root
 or rig prevents sampling the wrong copy. See the [API guide](../../discovery-and-blender.md).
 
 With `--all-clips`, the case script samples all thirty clips on every figure.
-The [compatibility matrix](../../../output/minifigs/CATALOG.md) is therefore
+The [compatibility matrix](../../../examples/reference/minifigs/CATALOG.md) is therefore
 more informative than a simple “same rig” flag. Long weapons, tools and wide
 headgear change which gestures are usable. The three bare-handed figures have
 27 of 30 clips without new sampled crossings; do not generalize that count to

@@ -85,5 +85,5 @@ check every ratio transition. An exact ratio table alone does not preserve phase
 
 Implementation and callable source-only functions:
 [`timeline` and `continuity`](../../../scripts/blender/animate_defender.py).
-Evidence: [animation report](../../../output/42110/animation-check.json),
-[curation rerun](../../../output/42110-reference-review/review.json).
+Evidence: [animation report](../../../examples/reference/42110/animation-check.json),
+[curation rerun](../../../examples/reference/42110-reference-review/review.json).

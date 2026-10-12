@@ -30,6 +30,7 @@
     ],
     "42110-suspension": [
       "plan.json",
+      "source/*.mpd",
       "study/plan.json",
       "evidence/contacts-suspension.json",
       "stop-sweep.json",
@@ -126,8 +127,14 @@
     ],
     "10265-discovery-audit": [
       "*.json",
+      "study/plan.json",
       "README.md",
       "ride-height-candidate.svg"
+    ],
+    "reference-portability": [
+      "verification.json",
+      "rechecks/*/*.json",
+      "door/*.json"
     ]
   }
 }

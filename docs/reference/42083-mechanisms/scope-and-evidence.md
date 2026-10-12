@@ -3,10 +3,10 @@
 Reviewed on **2026-10-07**, from the five-mechanism output selected by the user
 and its implementation in commit `079b6c8`. The supplied W16 review directory
 belongs to the [earlier engine case](../42083-w16/README.md); the new bundle is
-[output/42083-mechanisms](../../../output/42083-mechanisms).
+[archived 42083-mechanisms](../../../examples/reference/42083-mechanisms).
 
 Fresh curation evidence lives separately in
-[output/42083-mechanisms-reference-review](../../../output/42083-mechanisms-reference-review).
+[archived 42083-mechanisms-reference-review](../../../examples/reference/42083-mechanisms-reference-review).
 The selected models, plans and saved scene were not rewritten. New diagrams
 were reconstructed from source geometry, executable motion and checks.
 
@@ -25,9 +25,9 @@ than duplicating the earlier differential, Cardan, fork/ring and hinge recipes.
 
 ## Artifacts and fresh checks
 
-The [source review script](../../../output/42083-mechanisms-reference-review/review.py)
+The [source review script](../../../examples/reference/42083-mechanisms-reference-review/review.py)
 reads the original source, plans, maps and contact evidence. Its
-[report](../../../output/42083-mechanisms-reference-review/review.json) records
+[report](../../../examples/reference/42083-mechanisms-reference-review/review.json) records
 full artifact hashes, semantic plan digests and measured errors. It checks:
 
 - All retained source leaves against extracted references, colours and matrices;
@@ -56,8 +56,8 @@ plan. Mesh/clutch claims use the separate mechanical verifier, not its sweep's
 pass flag alone.
 
 A fresh Blender **5.2.2 LTS** process reopened
-[mechanisms.blend](../../../output/42083-mechanisms/mechanisms.blend) with Python
-auto-run disabled. The [reopen report](../../../output/42083-mechanisms-reference-review/reopen-check.json)
+[mechanisms.blend](../../../examples/reference/42083-mechanisms/mechanisms.blend) with Python
+auto-run disabled. The [reopen report](../../../examples/reference/42083-mechanisms-reference-review/reopen-check.json)
 checks all five roots, saved motion definitions, actions, keyed controls and
 evaluated transforms at seven frames each (35 frame/rig samples). All pass at
 0.002 LDU tolerance; the largest moving-matrix error is about 0.000464 LDU.
@@ -65,8 +65,8 @@ The case script now raises on a failed report so a check cannot silently exit
 successfully after reporting failure.
 
 The generic lifecycle check was extended to test translated and
-translated/rotated model roots. Fresh [wing](../../../output/42083-mechanisms-reference-review/wing-lifecycle.json)
-and [W16](../../../output/42083-mechanisms-reference-review/w16-lifecycle.json)
+translated/rotated model roots. Fresh [wing](../../../examples/reference/42083-mechanisms-reference-review/wing-lifecycle.json)
+and [W16](../../../examples/reference/42083-mechanisms-reference-review/w16-lifecycle.json)
 checks pass, including nonzero inputs, rebuild/removal, rest restoration,
 clamping and two-copy isolation. This exercises the rod roll-reference fix from
 the selected commit. The pure Python suite passed **141 tests**, including a

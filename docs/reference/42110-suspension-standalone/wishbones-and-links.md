@@ -98,4 +98,4 @@ holders are omitted. They represent boundary anchors in this extracted rig.
 The [mounting reference](extraction-and-mounts.md) explains that cut.
 
 Implementation: [`Corner` and `build`](../../../scripts/build_defender_suspension.py).
-Evidence: [measured review](../../../output/42110-suspension-standalone-reference-review/review.json).
+Evidence: [measured review](../../../examples/reference/42110-suspension-standalone-reference-review/review.json).

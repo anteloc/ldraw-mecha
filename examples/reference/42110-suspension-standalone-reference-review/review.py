@@ -5,9 +5,10 @@ import importlib.util
 import json
 import sys
 
-ROOT=Path(__file__).resolve().parents[2]
+ROOT=Path(__file__).resolve().parents[3]
 sys.path.insert(0,str(ROOT))
 sys.path.insert(0,str(ROOT/"scripts"))
+from reference_assets import load_plan
 from ldraw_mechanisms import plan
 from ldraw_mechanisms.math3d import add, length, mul, point, sub, unit
 import build_defender_suspension as builder
@@ -18,19 +19,20 @@ def module(name,path):
     result=importlib.util.module_from_spec(spec);spec.loader.exec_module(result);return result
 
 anim=module("suspension_reference_animator",ROOT/"scripts/blender/animate_defender_suspension.py")
-OUT=Path(__file__).resolve().parent
-BASE=ROOT/"output/42110-suspension-standalone"
-FULL=ROOT/"output/42110-suspension"
-p=plan.load(BASE/"plan.json");full=plan.load(FULL/"plan.json")
+OUT = ROOT / "output/reference-rechecks/42110-suspension-standalone"
+OUT.mkdir(parents=True, exist_ok=True)
+BASE=ROOT/"examples/reference/42110-suspension-standalone"
+FULL=ROOT/"examples/reference/42110-suspension"
+p=load_plan(BASE/"plan.json");full=load_plan(FULL/"plan.json")
 valid=plan.validate(p,check_source=True)
 idmap=json.loads((BASE/"source/idmap.json").read_text())["idmap"]
 keep=json.loads((BASE/"keep.json").read_text())
-built=builder.build(plan.load(FULL/"study/plan.json"),
+built=builder.build(load_plan(FULL/"study/plan.json"),
     json.loads((FULL/"evidence/contacts-suspension.json").read_text()),
     stops=dict(fl=30.5,fr=30.5))
 fields=("controls","signals","bodies","anchors","checks")
 full_same={f:built[f]==full[f] for f in fields};assert all(full_same.values())
-mapped=standalone.remap(full,plan.load(BASE/"study/plan.json"),idmap,keep["parts"])
+mapped=standalone.remap(full,load_plan(BASE/"study/plan.json"),idmap,keep["parts"])
 same={f:mapped[f]==p[f] for f in fields};assert all(same.values())
 old={n["id"]:n for n in full["source"]["nodes"]}
 nodes={n["id"]:n for n in p["source"]["nodes"]}

@@ -95,5 +95,5 @@ asymmetric inputs. Show intermediate travel and endpoints. A model whose source
 starts at ride height will need different zero semantics and may support both
 positive and negative travel.
 
-Previews: [whole subsystem](../../../output/42110-suspension-standalone/preview-rest.png),
-[rear-left articulation](../../../output/42110-suspension-standalone/preview-corner-articulation.png).
+Previews: [whole subsystem](../../../examples/reference/42110-suspension-standalone/preview-rest.png),
+[rear-left articulation](../../../examples/reference/42110-suspension-standalone/preview-corner-articulation.png).

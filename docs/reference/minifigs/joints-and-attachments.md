@@ -33,8 +33,8 @@ axis when the shoulder moves.
 
 ## Exact example: chef
 
-Identity map: [MF05_chef/source/parts.json](../../../output/minifigs/MF05_chef/source/parts.json).
-Motion: [MF05_chef/plan.json](../../../output/minifigs/MF05_chef/plan.json).
+Identity map: [MF05_chef/source/parts.json](../../../examples/reference/minifigs/MF05_chef/source/parts.json).
+Motion: [MF05_chef/plan.json](../../../examples/reference/minifigs/MF05_chef/plan.json).
 These are occurrence IDs in `mf05_chef.ldr`, not universal minifig IDs.
 
 | Body or fixed group | Occurrences and part references |

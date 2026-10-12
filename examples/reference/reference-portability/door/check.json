@@ -1,0 +1,46 @@
+{
+  "passed": true,
+  "samples": [
+    {
+      "controls": {},
+      "max_matrix_error": 9.5367431640625e-07,
+      "max_static_error": 7.62939453125e-06,
+      "max_closure_error": 0,
+      "invalid_drivers": [],
+      "passed": true
+    },
+    {
+      "controls": {
+        "door": 0.0
+      },
+      "max_matrix_error": 9.5367431640625e-07,
+      "max_static_error": 7.62939453125e-06,
+      "max_closure_error": 0,
+      "invalid_drivers": [],
+      "passed": true
+    },
+    {
+      "controls": {
+        "door": 0.875
+      },
+      "max_matrix_error": 9.5367431640625e-07,
+      "max_static_error": 7.62939453125e-06,
+      "max_closure_error": 0,
+      "invalid_drivers": [],
+      "passed": true
+    },
+    {
+      "controls": {
+        "door": 1.75
+      },
+      "max_matrix_error": 1.9073486328125e-06,
+      "max_static_error": 7.62939453125e-06,
+      "max_closure_error": 0,
+      "invalid_drivers": [],
+      "passed": true
+    }
+  ],
+  "units": "LDU",
+  "tolerance": 0.002,
+  "coverage": "Evaluated transforms, driver validity and declared link closure; no mesh collision test"
+}

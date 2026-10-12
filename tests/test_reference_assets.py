@@ -51,6 +51,20 @@ def test_copy_refuses_changed_original_before_writing_any_new_file(tmp_path):
     assert not (tmp_path / assets.ARCHIVE / "demo/new.json").exists()
 
 
+def test_new_bundle_can_be_archived_after_earlier_working_files_are_deleted(tmp_path):
+    setup_bundle(tmp_path)
+    assets.copy_assets(tmp_path)
+    shutil.rmtree(tmp_path / "output")
+    assets.write(tmp_path / "output/second/evidence.json", {"passed": True})
+    selection = tmp_path / assets.ARCHIVE / "selection.json"
+    data = assets.read(selection)
+    data["bundles"]["second"] = ["*.json"]
+    assets.write(selection, data)
+    assert assets.copy_assets(tmp_path, cases=["second"])["files"] == 3
+    with pytest.raises(ValueError, match="Unknown bundles"):
+        assets.copy_assets(tmp_path, cases=["missing"])
+
+
 def test_missing_and_stale_sources_fail_without_falling_back_to_output(tmp_path):
     setup_bundle(tmp_path)
     assets.copy_assets(tmp_path)

@@ -174,8 +174,10 @@ signals, limits or other mechanical fields still require a rebuild and checks.
 Run source regressions with `.venv/bin/pytest -q`. Blender regression coverage:
 
 ```sh
+.venv/bin/python scripts/reference_assets.py plan \
+  examples/reference/42083-w16/plan.json --output output/w16-workflows/plan.json
 "$BLENDER_BIN" --background --factory-startup --python-exit-code 1 \
   --python scripts/blender/check_workflows.py -- \
-  --plan output/42083-w16/plan.json --glb output/42083-w16/model.glb \
-  --output output/toolkit-improvements/w16
+  --plan output/w16-workflows/plan.json --glb examples/reference/42083-w16/model.glb \
+  --output output/w16-workflows/checks
 ```

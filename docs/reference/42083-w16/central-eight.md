@@ -97,4 +97,4 @@ Check the target's pin-sharing geometry, cylinder axes and possible rod/head
 interference. Distance closure alone does not prove bore containment.
 
 Implementation: [`slider_cranks` and `w16_42083`](../../../ldraw_mechanisms/recipes.py).
-Preview: [exposed moving assembly](../../../output/42083-w16/pose-crank-quarter.png).
+Preview: [exposed moving assembly](../../../examples/reference/42083-w16/pose-crank-quarter.png).

@@ -5,15 +5,18 @@ import math
 from pathlib import Path
 import sys
 
-ROOT = Path(__file__).resolve().parents[2]
+ROOT = Path(__file__).resolve().parents[3]
 sys.path[:0] = [str(ROOT), str(ROOT / "scripts")]
 import build_42083_mechanisms as builder
 import timeline_42083 as timeline
+from reference_assets import load_plan
 from ldraw_mechanisms import plan as contract
 from ldraw_mechanisms.math3d import point
 
-OUT = Path(__file__).parent
-SOURCE = ROOT / "output/42083-mechanisms"
+OUT = ROOT / "output/reference-rechecks/42083-mechanisms"
+OUT.mkdir(parents=True, exist_ok=True)
+SOURCE = ROOT / "examples/reference/42083-mechanisms"
+builder.EVIDENCE = SOURCE / "evidence/contacts-mechanical.json"
 src = builder.Source()
 plans = {}
 report = dict(date="2026-10-07", implementation_commit="079b6c869b7f2ea0ab98489d317d149b09bd7f65",
@@ -23,7 +26,7 @@ paths = [builder.SOURCE, ROOT / "scripts/build_42083_mechanisms.py",
          SOURCE / "mechanisms.blend", SOURCE / "animation-check.json", SOURCE / "reopen-check.json"]
 for name in builder.NAMES:
     d = SOURCE / name
-    p = contract.load(d / "plan.json")
+    p = load_plan(d / "plan.json")
     plans[name] = p
     contract.validate(p, check_source=True)
     doc = json.loads((d / "source/idmap.json").read_text())
@@ -36,7 +39,7 @@ for name in builder.NAMES:
         identity_error = max(identity_error, max(abs(x-y) for a,b in zip(before["world"], after["world"]) for x,y in zip(a,b)))
     assert identity_error < 1e-6
     a, extra = builder.build(name, src)
-    rebuilt = builder.remap_plan(name, a, extra, contract.load(d / "study/plan.json"), doc["idmap"],
+    rebuilt = builder.remap_plan(name, a, extra, load_plan(d / "study/plan.json"), doc["idmap"],
                                  doc.get("reconstructed", {}), json.loads((d / "keep.json").read_text())["parts"])
     same = all(p[k] == rebuilt[k] for k in ("controls", "signals", "bodies", "anchors", "checks"))
     assert same, name

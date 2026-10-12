@@ -1,6 +1,6 @@
 # Extracted mechanisms, context and movable Blender roots
 
-The [combined scene](../../../output/42083-mechanisms/mechanisms.blend) places five
+The [combined scene](../../../examples/reference/42083-mechanisms/mechanisms.blend) places five
 independent rigs side by side. The reusable technique is keeping source identity,
 mechanical boundary assumptions and presentation placement separate. See
 [scope and evidence](scope-and-evidence.md) for the selected artifacts.
@@ -17,7 +17,7 @@ Pass the exact same section to extraction:
 ```sh
 .venv/bin/python scripts/extract_subsystem.py data/models-annotated/42083-1.mpd \
   --section '42083 - chiron.ldr' \
-  --keep output/42083-mechanisms/wing/keep.json \
+  --keep examples/reference/42083-mechanisms/wing/keep.json \
   --output output/new-wing/source/wing.mpd
 ./ldraw-mecha prepare output/new-wing/source/wing.mpd --output output/new-wing/study
 ```
@@ -113,15 +113,19 @@ will be displayed beside another model.
 ## Reuse the saved scene without overwriting evidence
 
 ```sh
-"$BLENDER_BIN" -b output/42083-mechanisms/mechanisms.blend --disable-autoexec \
+"$BLENDER_BIN" -b examples/reference/42083-mechanisms/mechanisms.blend --disable-autoexec \
   --python-exit-code 1 --python scripts/blender/check_42083_reopen.py -- \
+  --bundle examples/reference/42083-mechanisms \
   --report output/new-42083-review/reopen-check.json
 ```
 
 Inspect the report's `passed` field and measured errors. The case verifier reads
 the five saved plan files and now raises on failed checks. The scene builder can write a
 fresh presentation with `--save` and `--report` paths, using existing plans/GLBs.
-The source builder's selection commands additionally depend on
-`output/42083-mechanisms/evidence/contacts-mechanical.json`; include that evidence
-when sharing the case. Its default output path is the selected bundle, so use
-the generic extraction API and new directories when studying another model.
+The source builder's selection commands additionally need the retained
+[contact evidence](../../../examples/reference/42083-mechanisms/evidence/contacts-mechanical.json).
+The archived review script sets that input explicitly. The builder itself still
+defaults to working paths under `output/42083-mechanisms`; use the generic
+extraction API and new directories when studying another model. To reuse a saved
+plan in a new build, first relocate its source paths as described in the
+[archive guide](../../../examples/README.md).

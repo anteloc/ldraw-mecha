@@ -4,11 +4,11 @@ import hashlib
 import importlib.util
 import json
 import sys
-ROOT=Path(__file__).resolve().parents[2]
+ROOT=Path(__file__).resolve().parents[3]
 sys.path.insert(0,str(ROOT))
 import bpy
 from ldraw_mechanisms import blender as adapter, plan
-BASE=ROOT/"output/42110-suspension-standalone"
+BASE=ROOT/"examples/reference/42110-suspension-standalone"
 p=plan.load(BASE/"plan.json");rig=adapter.context_from_scene(p)
 embedded=json.loads(rig["root"]["mecha_plan"])
 same={k:embedded[k]==p[k] for k in ("controls","signals","bodies","anchors","checks")}
@@ -31,5 +31,7 @@ assert report["passed"]
 result=dict(blender_version=bpy.app.version_string,controller=rig["controller"].name,
     file_sha256=hashlib.sha256(Path(bpy.data.filepath).read_bytes()).hexdigest(),
     embedded_motion_matches=same,animation_control_samples=frame_rows,verification=report,source_blend_saved=False)
-(ROOT/"output/42110-suspension-standalone-reference-review/blender-check.json").write_text(json.dumps(result,indent=2)+"\n")
+target = ROOT / "output/reference-rechecks/42110-suspension-standalone/blender-check.json"
+target.parent.mkdir(parents=True, exist_ok=True)
+target.write_text(json.dumps(result,indent=2)+"\n")
 print("SUSPENSION_REFERENCE_REVIEW",json.dumps(dict(passed=report["passed"],animation_samples=len(frame_rows))))

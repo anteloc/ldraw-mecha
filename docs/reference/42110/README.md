@@ -64,7 +64,7 @@ gearboxes; they are distinct from the front/rear final-drive propshafts.
   `ZC ≈ (0,0.003,0.9999955)` is the normalized longitudinal chassis axis.
   `UP ≈ (0,-0.9999955,0.003)`.
 - Names in backticks identify bodies, signals or controls in
-  [the saved plan](../../../output/42110/plan.json). A body owns the complete
+  [the saved plan](../../../examples/reference/42110/plan.json). A body owns the complete
   `instances` list; tables on these pages show representative parts.
 - A signed ratio means **output angular increment / input angular increment**
   about the specified axes, with selectors and phase offsets held fixed.

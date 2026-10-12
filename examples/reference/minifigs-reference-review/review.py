@@ -7,15 +7,17 @@ from pathlib import Path
 import sqlite3
 import sys
 
-ROOT = Path(__file__).resolve().parents[2]
+ROOT = Path(__file__).resolve().parents[3]
 sys.path[:0] = [str(ROOT), str(ROOT / 'scripts')]
+from reference_assets import load_plan
 from ldraw_mechanisms import plan as contract
 from ldraw_mechanisms.source import library_path
 import build_minifigs as builder
 import minifig_clips as clips
 
-OUT = Path(__file__).parent
-BUNDLE = ROOT / 'output/minifigs'
+OUT = ROOT / "output/reference-rechecks/minifigs"
+OUT.mkdir(parents=True, exist_ok=True)
+BUNDLE = ROOT / 'examples/reference/minifigs'
 
 
 def read(path):
@@ -72,7 +74,7 @@ def figures():
     result = {}
     for fig in builder.ROSTER:
         folder = BUNDLE / fig['key']
-        plan = contract.load(folder / 'plan.json')
+        plan = load_plan(folder / 'plan.json')
         contract.validate(plan)
         role_map = read(folder / 'source/parts.json')
         parts, evidence = builder.assemble(fig)

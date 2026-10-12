@@ -5,16 +5,19 @@ import json
 import math
 import sys
 
-ROOT = Path(__file__).resolve().parents[2]
+ROOT = Path(__file__).resolve().parents[3]
 sys.path.insert(0, str(ROOT))
+sys.path.insert(0, str(ROOT / "scripts"))
+from reference_assets import load_plan
 from ldraw_mechanisms import plan, recipes
 from ldraw_mechanisms.geometry import gear_meshes, coaxial
 from ldraw_mechanisms.math3d import cross, direction, dot, length, point, sub, unit
 from ldraw_mechanisms.source import Document
 
-OUT = Path(__file__).resolve().parent
-BASE = ROOT / "output/42083-w16"
-p = plan.load(BASE / "plan.json")
+OUT = ROOT / "output/reference-rechecks/42083-w16"
+OUT.mkdir(parents=True, exist_ok=True)
+BASE = ROOT / "examples/reference/42083-w16"
+p = load_plan(BASE / "plan.json")
 valid = plan.validate(p, check_source=True)
 manifest = Document(p["source"]["path"]).manifest(p["source"]["section"])
 built = recipes.w16_42083(manifest)
