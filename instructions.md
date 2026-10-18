@@ -5,6 +5,31 @@ was implemented and tested. The workflow is **reference → study → rig and an
 → verify → visual review**. Selected successful results can then become new
 references. See [the workflow](docs/workflow.md) for commands and Python examples.
 
+## Prerequisite: annotate the source
+
+Before analyzing a model's structure/mechanics, inspecting its assemblies or
+running `prepare`, check its source across MPD sections for descriptive type-0
+comments starting with `0 // ` immediately above the corresponding type-1 part
+lines, for example `0 // Plate  2 x  2 (black)`. A descriptive header, a folder
+named `models-annotated` or a few unrelated comments do not establish coverage.
+
+If those annotations are missing or partial, create a separate annotated copy:
+
+```sh
+./ldraw-mecha annotate ORIGINAL.mpd --output output/annotated/MODEL.mpd
+./ldraw-mecha prepare output/annotated/MODEL.mpd --output output/STUDY
+```
+
+Use the annotated path consistently for study, extraction, plans and conversion;
+retain the original source and attribution. Existing adequately annotated files
+can be used directly. Review reported unknown references against the source or
+library before relying on the annotated inventory. Use directory mode for models
+with external subfiles to retain relative paths. Annotation uses the bundled
+description database and the configured library's `LDConfig.ldr`; see
+[annotation options and limits](docs/workflow.md#annotate-before-analysis).
+Do this before creating a plan: adding comments changes source hashes and line
+numbers, so existing plans must be regenerated/rebound after changing source.
+
 ## Rigging and animation
 
 1. Read the [curated reference catalog](docs/reference/README.md) for matching

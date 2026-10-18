@@ -25,6 +25,12 @@ to create new diagrams during rigging.
 
 ## Start a study
 
+First ensure the model has `0 // Part description (colour)` comments immediately
+above its type-1 part lines. For an unannotated source, create a copy with
+`./ldraw-mecha annotate ORIGINAL.mpd --output output/annotated/MODEL.mpd` and use
+that path for the study. See [annotation options](docs/workflow.md#annotate-before-analysis).
+The example below uses an existing annotated model.
+
 ```sh
 ./setup.sh
 export LDRAW_DIR=/path/to/ldraw

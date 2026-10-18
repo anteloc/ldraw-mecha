@@ -12,6 +12,54 @@ dimension hints determine mechanical connections. The
 [minifig case](reference/minifigs/README.md) demonstrates using category constants
 for selection and connector geometry for placement and articulation.
 
+## Annotate before analysis
+
+An annotated source is a prerequisite for structural/mechanical study. Check
+the actual file, including its MPD sections: part descriptions must appear in
+type-0 comments starting with `0 // ` immediately above type-1 part references:
+
+```plaintext
+0 // Plate  2 x  2 (black)
+1 0 80 8 0 1 0 0 0 1 0 0 0 1 3022.dat
+```
+
+Reuse a file already annotated this way. Otherwise generate a copy before
+`submodels`, `inspect`, `prepare`, extraction or motion planning:
+
+```sh
+./ldraw-mecha annotate /path/to/original.mpd --output output/annotated/model.mpd
+./ldraw-mecha prepare output/annotated/model.mpd --output output/model-study
+# For external subfiles, annotate the complete source tree, keeping relative paths:
+./ldraw-mecha annotate /path/to/models --output output/annotated-models
+```
+
+Directory mode recursively processes `.ldr`, `.mpd` and `.dat` files, ignoring
+extension case. Use separate, non-overlapping input/output trees. For single-file
+input, `--output` may be a filename or an existing directory. Keep generated
+copies under `output/`, outside the new study directory that `prepare` creates.
+Single-file mode does not copy external dependencies; directory mode retains
+the paths of LDraw subfiles but does not copy other assets such as textures.
+
+`annotate` uses `data/ldraw-info.db` (`PARTS_DESCRIPTIONS(part, description)`) and
+`LDConfig.ldr` from global `--library`, `LDRAW_DIR` or `LDRAWDIR`. Override them
+with `--database FILE.db` and `--ldconfig FILE.ldr`; explicit `--ldconfig` needs
+no configured library. No sibling checkout or Blender is required. Names match
+case-insensitively; colour names are lowercase, retaining underscores, as in the
+original `add_parts_descriptions.py`. Unknown colours retain their source code.
+
+The command prints a JSON report with counts and per-file `unknown_references`
+and `unknown_colours`. References absent from the part catalog, commonly MPD
+assembly names or custom parts, remain unchanged. Review these before relying
+on coverage; do not invent descriptions for missing entries. Matching existing
+annotations are retained without duplication; other comments are preserved.
+Original lines, transforms, FILE/STEP markers, attribution, UTF-8 BOM and line
+endings are preserved. The command refuses to overwrite its source inputs.
+
+Use the annotated copy consistently throughout the study. Annotation changes
+source hashes and line numbers even though geometry and occurrence order stay
+the same. Annotate before creating a plan, or regenerate/rebind plans after
+switching source files. Comments describe parts; they do not establish joints.
+
 ## Choose the deliverable
 
 When asked to animate a particular mechanism, the default deliverable is **that

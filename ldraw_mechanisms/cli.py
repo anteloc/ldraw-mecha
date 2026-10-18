@@ -17,6 +17,17 @@ def parser():
     )
     p.add_argument("--library", help="LDraw library; otherwise LDRAW_DIR / LDRAWDIR")
     s = p.add_subparsers(dest="command", required=True)
+    q = s.add_parser(
+        "annotate", help="Copy LDraw files with part/colour comments before analysis"
+    )
+    q.add_argument("model", help="Source file or directory tree")
+    q.add_argument("--output", required=True, help="Annotated file or directory tree")
+    q.add_argument(
+        "--database", help="SQLite PARTS_DESCRIPTIONS; defaults to data/ldraw-info.db"
+    )
+    q.add_argument(
+        "--ldconfig", help="Colour definitions; defaults to the library's LDConfig.ldr"
+    )
     for name in (
         "inspect",
         "connectors",
@@ -152,7 +163,17 @@ def main(argv=None):
     args = parser().parse_args(argv)
     try:
         command = args.command
-        if command == "prepare":
+        if command == "annotate":
+            from .annotate import annotate
+
+            result = annotate(
+                args.model,
+                args.output,
+                database=args.database,
+                ldconfig=args.ldconfig,
+                library=args.library,
+            )
+        elif command == "prepare":
             from .prepare import prepare
 
             result = prepare(
@@ -374,6 +395,7 @@ def main(argv=None):
             else:
                 print(rendered)
         elif getattr(args, "output", None) and command not in (
+            "annotate",
             "convert",
             "extract",
             "prepare",

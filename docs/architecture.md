@@ -9,6 +9,7 @@ they are documentation, not another execution format.
 | Layer | Modules | Responsibility |
 | --- | --- | --- |
 | Source | `source.py` | pyldraw3 parsing, attribution, occurrence identities, transforms, section extraction |
+| Source annotation | `annotate.py` | pyldraw3 record parsing, SQLite part names and LDConfig colours; descriptive comments in separate source copies before analysis |
 | Evidence | `analysis.py`, `placements.py`, `discovery.py`, `geometry.py`, `search.py` | Connector expansion, analysis-only frame correction, inventory, bounded contacts/meshes/coaxial candidates, offline FTS and optional Jev |
 | Preparation and scope | `prepare.py`, `mechanisms.py`, `audit.py` | Persist evidence, provisional views, recipe adoption, scope dispositions and optional diagnostic exports |
 | Motion | `plan.py`, `math3d.py`, `linkages.py` | Contract validation, safe expressions, evaluation, linkage maths and sweeps |
