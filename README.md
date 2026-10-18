@@ -25,11 +25,15 @@ to create new diagrams during rigging.
 
 ## Start a study
 
-First ensure the model has `0 // Part description (colour)` comments immediately
-above its type-1 part lines. For an unannotated source, create a copy with
-`./ldraw-mecha annotate ORIGINAL.mpd --output output/annotated/MODEL.mpd` and use
-that path for the study. See [annotation options](docs/workflow.md#annotate-before-analysis).
-The example below uses an existing annotated model.
+For an unannotated source, first run `annotate` to create a copy with
+`0 // Part description (colour)` comments above type-1 lines. The agent then
+authors rich, single-line descriptions for the model and its existing submodels
+and applies them with `annotate-semantics`. Finally, the agent reviews the
+hierarchy, creates and describes missing submodels or nested submodels where
+supported, and verifies preservation of every physical occurrence before `prepare`. See the
+[semantic annotation pipeline](docs/workflow.md#annotate-before-analysis).
+Reuse already annotated sources without semantic rewrites or regrouping unless requested;
+the example below uses one of these existing models.
 
 ```sh
 ./setup.sh

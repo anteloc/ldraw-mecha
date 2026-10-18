@@ -5,30 +5,72 @@ was implemented and tested. The workflow is **reference → study → rig and an
 → verify → visual review**. Selected successful results can then become new
 references. See [the workflow](docs/workflow.md) for commands and Python examples.
 
-## Prerequisite: annotate the source
+## Prerequisite: semantic annotation of unannotated sources
 
-Before analyzing a model's structure/mechanics, inspecting its assemblies or
-running `prepare`, check its source across MPD sections for descriptive type-0
-comments starting with `0 // ` immediately above the corresponding type-1 part
-lines, for example `0 // Plate  2 x  2 (black)`. A descriptive header, a folder
-named `models-annotated` or a few unrelated comments do not establish coverage.
+When starting from an unannotated original, create a separate working copy and
+complete **parts → agent-authored model/submodel descriptions → hierarchy review
+and enrichment → verification** before `prepare` or motion planning. A directory
+name, part comments or rich headers alone do not establish semantic coverage.
 
-If those annotations are missing or partial, create a separate annotated copy:
+1. Run `annotate` to add type-0 `0 // Part description (colour)` comments directly
+   above type-1 part lines. Review unknown references against the source/library.
+2. Immediately inspect this part-annotated copy and its existing hierarchy.
+   Source reading, `submodels` and bounded `inspect` calls are allowed here to
+   establish what to describe. The agent must write a rich **single-line**
+   description for the whole model and each existing submodel/group assembly.
+   Describe its role, distinguishing components and supported visible/mechanical
+   features in context. Use the description line `0 DESCRIPTION` directly after
+   `0 FILE NAME`; this is distinct from a `0 // ` part comment. For plain LDR/DAT
+   files, use the initial description line. Keep existing section names while
+   writing descriptions; assess additional grouping in the final step below.
+3. Apply the authored descriptions with `annotate-semantics`, then review every
+   section for coverage and accuracy. Preserve any already useful rich description.
+   Neither the part catalog nor this helper writes or verifies semantic prose.
+   Do not infer functioning mechanisms, ratios or proven travel from names alone.
+4. Review whether the existing hierarchy expresses the model's meaningful
+   assemblies and their constituent subassemblies. This is required even when
+   the original has no submodels or has already named some of them. Recursively
+   inspect the root, existing submodels and any newly inferred groups. When
+   source evidence supports a missing semantic unit, create an actual `.ldr`
+   submodel and reference it from its parent, nesting further submodels where
+   useful. Give every new section a rich single-line description, retain its
+   part comments and update parent descriptions when needed. Preserve useful
+   existing boundaries; do not split arbitrarily or equate a semantic group
+   with a rigid body. If grouping is already sufficient, explicitly record that
+   conclusion; creating new groups is conditional, reviewing coverage is not.
+5. Save the grouping rationale, provenance, unresolved ambiguities and validation
+   under `output/`, including an old-to-new physical occurrence ID map for any
+   regrouping. Reparse the result with pyldraw3 and verify every original physical
+   occurrence is present exactly once with the same part reference, effective
+   colour and world transform. Keep original files, attribution and metadata;
+   check reused definitions, inherited colours and external dependencies. Finish
+   this verification before creating plans or bound GLBs. See the
+   [hierarchy procedure](docs/workflow.md#review-and-enrich-the-hierarchy).
 
 ```sh
-./ldraw-mecha annotate ORIGINAL.mpd --output output/annotated/MODEL.mpd
+./ldraw-mecha annotate ORIGINAL.mpd --output output/parts-annotated/MODEL.mpd
+# Inspect the copy and author output/descriptions.json: exact section name -> text.
+./ldraw-mecha annotate-semantics output/parts-annotated/MODEL.mpd \
+  --descriptions output/descriptions.json --output output/annotated/MODEL.mpd
+# Agent: review/enrich the hierarchy, describe new groups, and verify the final copy.
+# Keep hierarchy-review.md and any occurrence map/verification report under output/.
 ./ldraw-mecha prepare output/annotated/MODEL.mpd --output output/STUDY
 ```
 
-Use the annotated path consistently for study, extraction, plans and conversion;
-retain the original source and attribution. Existing adequately annotated files
-can be used directly. Review reported unknown references against the source or
-library before relying on the annotated inventory. Use directory mode for models
-with external subfiles to retain relative paths. Annotation uses the bundled
-description database and the configured library's `LDConfig.ldr`; see
-[annotation options and limits](docs/workflow.md#annotate-before-analysis).
-Do this before creating a plan: adding comments changes source hashes and line
-numbers, so existing plans must be regenerated/rebound after changing source.
+Unless the user explicitly requests otherwise, write these semantic descriptions
+and infer/create submodels **only as part of annotating an originally unannotated
+model**, including its intermediate copies in this pipeline. Reuse supplied
+already annotated models and curated references without opportunistic semantic
+rewrites or regrouping. If their descriptions or hierarchy seem insufficient,
+report that limitation during study.
+
+Use the finished annotated path consistently for study, extraction, plans and
+conversion; retain original sources and attribution. External subfiles need
+directory part annotation and per-file semantic edits with relative paths kept
+intact. See [the pipeline, examples and options](docs/workflow.md#annotate-before-analysis).
+Complete the whole pipeline before creating a plan: header/comment edits change
+source hashes and sometimes line numbers; regrouping also changes occurrence
+paths/IDs and may change traversal order. Regenerate/rebind after a source change.
 
 ## Rigging and animation
 

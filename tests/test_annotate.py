@@ -73,6 +73,7 @@ def test_exact_comments_preserve_source_bytes_and_repeat_safely(tmp_path, metada
     assert source.read_bytes() == original
     assert metadata["database"].read_bytes() == before_db
     assert report["summary"] == dict(files=1, references=4, added=4, existing=0)
+    assert "agent must now inspect" in report["next_step"]
     second = tmp_path / "second.mpd"
     report = annotate(destination, second, **metadata)
     assert second.read_bytes() == expected

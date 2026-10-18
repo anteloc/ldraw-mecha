@@ -18,7 +18,8 @@ def parser():
     p.add_argument("--library", help="LDraw library; otherwise LDRAW_DIR / LDRAWDIR")
     s = p.add_subparsers(dest="command", required=True)
     q = s.add_parser(
-        "annotate", help="Copy LDraw files with part/colour comments before analysis"
+        "annotate",
+        help="First annotation step: copy LDraw files with part/colour comments",
     )
     q.add_argument("model", help="Source file or directory tree")
     q.add_argument("--output", required=True, help="Annotated file or directory tree")
@@ -27,6 +28,18 @@ def parser():
     )
     q.add_argument(
         "--ldconfig", help="Colour definitions; defaults to the library's LDConfig.ldr"
+    )
+    q = s.add_parser(
+        "annotate-semantics",
+        help="Apply agent-authored model/submodel descriptions after part annotation",
+    )
+    q.add_argument("model", help="Part-annotated source file")
+    q.add_argument(
+        "--descriptions", required=True,
+        help="JSON object mapping exact section names to single-line descriptions",
+    )
+    q.add_argument(
+        "--output", required=True, help="Separate annotated file or existing directory"
     )
     for name in (
         "inspect",
@@ -172,6 +185,14 @@ def main(argv=None):
                 database=args.database,
                 ldconfig=args.ldconfig,
                 library=args.library,
+            )
+        elif command == "annotate-semantics":
+            from .annotate import annotate_semantics
+
+            result = annotate_semantics(
+                args.model,
+                args.output,
+                json.loads(Path(args.descriptions).read_text(encoding="utf-8")),
             )
         elif command == "prepare":
             from .prepare import prepare
@@ -396,6 +417,7 @@ def main(argv=None):
                 print(rendered)
         elif getattr(args, "output", None) and command not in (
             "annotate",
+            "annotate-semantics",
             "convert",
             "extract",
             "prepare",

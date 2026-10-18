@@ -1,4 +1,4 @@
-"""Add part/colour comments to copies of LDraw sources, without reserializing them.
+"""Add part comments and agent-authored semantics without reserializing sources.
 
 Implements the annotation workflow of ldraw-lib/scripts/add_parts_descriptions.py
 using this repository's catalog and pyldraw3 record parser.
@@ -8,10 +8,26 @@ from pathlib import Path
 import sqlite3
 import tempfile
 
+from ldraw import parse_model_result
 from ldraw.errors import PartError
+from ldraw.lines import Comment
 from ldraw.part import parse_ldraw_line
+from ldraw.utils import ldraw_file_name
 
 from .source import ROOT, library_path, normalized
+
+
+def _write_copy(target, data):
+    target.parent.mkdir(parents=True, exist_ok=True)
+    temporary = None
+    try:
+        with tempfile.NamedTemporaryFile(dir=target.parent, delete=False) as stream:
+            temporary = Path(stream.name)
+            stream.write(data)
+        temporary.replace(target)
+    finally:
+        if temporary is not None:
+            temporary.unlink(missing_ok=True)
 
 
 def _descriptions(path):
@@ -166,17 +182,8 @@ def annotate(source, output, *, database=None, ldconfig=None, library=None):
     reports = []
     for path, target in pairs:
         data, report = _annotated_bytes(path, descriptions, colours)
-        target.parent.mkdir(parents=True, exist_ok=True)
         # A parse/write error must not leave a truncated destination file.
-        temporary = None
-        try:
-            with tempfile.NamedTemporaryFile(dir=target.parent, delete=False) as stream:
-                temporary = Path(stream.name)
-                stream.write(data)
-            temporary.replace(target)
-        finally:
-            if temporary is not None:
-                temporary.unlink(missing_ok=True)
+        _write_copy(target, data)
         reports.append(dict(report, output=str(target)))
     return dict(
         source=str(source),
@@ -191,4 +198,133 @@ def annotate(source, output, *, database=None, ldconfig=None, library=None):
             },
         },
         files=reports,
+        next_step=(
+            "For an unannotated-model pipeline, the agent must now inspect this copy "
+            "and author rich single-line descriptions for the model and its existing "
+            "submodels, then apply them with annotate-semantics. Next, review hierarchy "
+            "coverage and create/describe missing submodels or nested submodels when "
+            "supported, verifying physical occurrence preservation before prepare. "
+            "Preserve existing rich descriptions; do not enrich previously annotated "
+            "models unless requested. Part annotation alone does not complete semantics."
+        ),
+    )
+
+
+def _is_description(line):
+    """Distinguish an ordinary title from attribution, part comments and commands."""
+    record = parse_ldraw_line(line)
+    if not isinstance(record, Comment) or not record.text:
+        return False
+    first = record.text.split()[0].upper()
+    return not record.text.upper().startswith(
+        ("//", "NAME:", "AUTHOR:")
+    ) and first not in {
+        "0",
+        "NAME:",
+        "AUTHOR:",
+        "BFC",
+        "FILE",
+        "NOFILE",
+        "STEP",
+        "ROTSTEP",
+        "WRITE",
+        "PRINT",
+        "SAVE",
+        "CLEAR",
+        "PAUSE",
+    }
+
+
+def annotate_semantics(source, output, descriptions):
+    """Apply explicitly authored section descriptions to a separate source copy.
+
+    Keys are exact FILE names (the input basename for a plain LDR/DAT).
+    Unlisted sections are preserved. This validates placement and single-line
+    syntax, not semantic richness, factual accuracy or completeness.
+    """
+    source = Path(source).expanduser().resolve()
+    target = Path(output).expanduser().resolve()
+    if target.is_dir():
+        target = (target / source.name).resolve()
+    if target == source or (target.exists() and target.samefile(source)):
+        raise ValueError("Semantic annotation must not overwrite its source input")
+    if not isinstance(descriptions, dict) or not descriptions:
+        raise ValueError(
+            "Descriptions must be a nonempty object mapping section names to text"
+        )
+    for name, description in descriptions.items():
+        if (
+            not isinstance(name, str)
+            or not isinstance(description, str)
+            or not description.strip()
+            or len(description.splitlines()) != 1
+            or any(ord(char) < 32 for char in description)
+            or not _is_description("0 " + description.strip())
+        ):
+            raise ValueError(
+                f"Description for {name!r} must be one nonempty line of plain text"
+            )
+
+    data = source.read_bytes()
+    text = data.decode("utf-8-sig")
+    parsed = parse_model_result(text, name=source.name, source=source)
+    if parsed.model is None or not parsed.valid:
+        raise ValueError(
+            f"Invalid LDraw source {source}: {[d.to_dict() for d in parsed.diagnostics][:5]}"
+        )
+    lines = text.splitlines(keepends=True)
+    # pyldraw3 supplies section identity; offsets allow surgical header edits
+    # without serializing transforms, comments or MPD metadata again.
+    starts = {
+        name: index + 1
+        for index, line in enumerate(lines)
+        if (name := ldraw_file_name(line)) is not None
+    }
+    if not starts:
+        starts = {parsed.model.name: 0}
+    unknown = descriptions.keys() - starts.keys()
+    if unknown:
+        raise ValueError(f"Unknown section names: {sorted(unknown)}")
+    default_ending = next(
+        (
+            line[len(line.rstrip("\r\n")) :]
+            for line in lines
+            if line.endswith(("\r", "\n"))
+        ),
+        "\n",
+    )
+    changes = []
+    # Work from the end so insertions cannot move a later section's offset.
+    for name, index in sorted(starts.items(), key=lambda item: item[1], reverse=True):
+        if name not in descriptions:
+            continue
+        description = descriptions[name].strip()
+        old = lines[index] if index < len(lines) else ""
+        replace = bool(old) and _is_description(old)
+        ending = old[len(old.rstrip("\r\n")) :] if replace else default_ending
+        new = "0 " + description + ending
+        if replace and old == new:
+            continue
+        if index and not lines[index - 1].endswith(("\r", "\n")):
+            lines[index - 1] += default_ending
+        lines[index : index + int(replace)] = [new]
+        changes.append(name)
+    bom = b"\xef\xbb\xbf" if data.startswith(b"\xef\xbb\xbf") else b""
+    _write_copy(target, bom + "".join(lines).encode("utf-8"))
+    return dict(
+        source=str(source),
+        output=str(target),
+        updated_sections=sorted(changes),
+        preserved_sections=sorted(starts.keys() - set(changes)),
+        coverage="Applied agent-authored text; the agent must review semantic accuracy and coverage",
+        next_step=(
+            "For an originally unannotated model, the agent must now review whether "
+            "the root and submodel hierarchy adequately express its semantic assemblies, "
+            "including flat models. Infer, create and richly describe missing submodels "
+            "and nested submodels where supported; otherwise record why the hierarchy "
+            "is sufficient. Record grouping evidence and an old-to-new occurrence map "
+            "for any regrouping; verify every physical part's reference, effective colour "
+            "and world transform before prepare. See docs/workflow.md#review-and-enrich-the-hierarchy. "
+            "Do not regroup previously annotated models unless requested."
+        ),
     )
