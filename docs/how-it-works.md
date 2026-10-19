@@ -1,264 +1,297 @@
-# How ldraw-mecha works
+# How I animate a LEGO model
 
-**In one sentence:** ldraw-mecha takes a digital LEGO model, turns it into a
-Blender puppet whose moving parts follow real mechanical rules, and then
-checks that the puppet moves exactly as those rules say.
+*A walk-through, told by the agent while it works.*
 
-This guide explains the idea first, then each step, then how the code is
-organised. It assumes no previous knowledge of LDraw, Blender rigging or the
-codebase. Words in *italics* are listed in the [glossary](#8-glossary).
+Hi. I'm the agent: the one who reads a LEGO model, decides what should move,
+and builds the animation in Blender. ldraw-mecha is my toolbox. Today I'll do
+a real job from start to finish and tell you what I'm doing and why at each
+step.
+
+**Today's job:** make the doors, roof and wheels of LEGO set **106**, a small
+blue UNICEF car, move in Blender.
+
+Every number I quote below comes from an actual run of the tools on this
+model. Words in *italics* are explained in the
+[glossary at the end](#words-i-used).
 
 **Contents**
 
-1. [The big picture](#1-the-big-picture)
-2. [The one idea to remember: strings and a puppet](#2-the-one-idea-to-remember-strings-and-a-puppet)
-3. [Step by step](#3-step-by-step)
-4. [Try it: the 106 car in six commands](#4-try-it-the-106-car-in-six-commands)
-5. [Map of the code](#5-map-of-the-code)
-6. [Class diagrams](#6-class-diagrams)
-7. [What it does not promise](#7-what-it-does-not-promise)
-8. [Glossary](#8-glossary)
+- [My route for today](#my-route-for-today)
+- [Step 1: I look for help that already exists](#step-1-i-look-for-help-that-already-exists)
+- [Step 2: I give every part an address](#step-2-i-give-every-part-an-address)
+- [Step 3: I gather clues](#step-3-i-gather-clues)
+- [Step 4: I work out how the roof moves](#step-4-i-work-out-how-the-roof-moves)
+- [Step 5: I write it down in the plan](#step-5-i-write-it-down-in-the-plan)
+- [Side trip: what bigger models need](#side-trip-what-bigger-models-need)
+- [Step 6: I check my maths before touching Blender](#step-6-i-check-my-maths-before-touching-blender)
+- [Step 7: I put name tags on the 3D model](#step-7-i-put-name-tags-on-the-3d-model)
+- [Step 8: I build the puppet](#step-8-i-build-the-puppet)
+- [Step 9: I make two calculators agree](#step-9-i-make-two-calculators-agree)
+- [Step 10: I check that nothing bumps](#step-10-i-check-that-nothing-bumps)
+- [Step 11: I do the rest of the car](#step-11-i-do-the-rest-of-the-car)
+- [Step 12: Action!](#step-12-action)
+- [Step 13: I look at it and hand it over](#step-13-i-look-at-it-and-hand-it-over)
+- [What I can't promise](#what-i-cant-promise)
+- [My toolbox](#my-toolbox)
+- [Words I used](#words-i-used)
 
 ---
 
-## 1. The big picture
+## My route for today
 
-You start with an *LDraw* file: a plain-text list of LEGO parts with their
-positions, the digital version of a building-instructions booklet. You end
-with a Blender file in which you can drag a slider and watch a door swing,
-a gearbox turn or a piston pump.
-
-The journey has three phases:
+I always travel the same route, in three phases:
 
 ```mermaid
 flowchart LR
-    src[("LDraw model<br/>.mpd or .ldr")]
-    subgraph understand["1 · Understand the model"]
+    src[("LDraw model<br/>106-1.mpd")]
+    subgraph understand["1 · I understand the model"]
         direction TB
-        a1["Add part names<br/>(only if missing)"] --> a2["Give every part<br/>an address"]
-        a2 --> a3["Gather clues:<br/>gears, axles, hinges"]
-        a3 --> a4["Convert the shapes<br/>to a 3D file"]
+        a1["I look for help<br/>that already exists"] --> a2["I give every part<br/>an address"]
+        a2 --> a3["I gather clues"]
     end
-    subgraph describe["2 · Describe the motion"]
+    subgraph describe["2 · I describe the motion"]
         direction TB
-        b1["Write sliders, formulas<br/>and moving groups"] --> b2["Check the maths<br/>in plain Python"]
+        b1["I decide how<br/>things move"] --> b2["I write it<br/>in the plan"]
+        b2 --> b3["I check<br/>my maths"]
     end
-    subgraph play["3 · Build and play in Blender"]
+    subgraph play["3 · I build and play in Blender"]
         direction TB
-        c1["Build the puppet<br/>(the rig)"] --> c2["Check it matches<br/>the plan"]
-        c2 --> c3["Animate and save<br/>the .blend file"]
+        c1["I build<br/>the puppet"] --> c2["I check it<br/>matches my maths"]
+        c2 --> c3["I check that<br/>nothing bumps"]
+        c3 --> c4["I animate<br/>and save"]
     end
     out[("Animated<br/>.blend file")]
     src --> understand --> describe --> play --> out
 ```
 
-The same eight steps, each with an everyday comparison:
-
-| # | Step | Think of it as… | Where it happens |
-| --- | --- | --- | --- |
-| 1 | Add part names | Labelling every bag in a LEGO set | `annotate`, `annotate-semantics` |
-| 2 | Give every part an address | Seat numbers in a stadium | [source.py](../ldraw_mechanisms/source.py), run by `prepare` |
-| 3 | Gather clues | A detective collecting evidence, but not judging | `prepare` ([analysis.py](../ldraw_mechanisms/analysis.py), [geometry.py](../ldraw_mechanisms/geometry.py)) |
-| 4 | Convert to 3D | Exporting a drawing to a 3D model file | `prepare` or `convert` ([glb.py](../ldraw_mechanisms/glb.py)) |
-| 5 | Write the plan | Writing a recipe | edit `plan.json`, or `plan --recipe` |
-| 6 | Check the plan | A spell-checker plus a calculator | `validate`, `evaluate`, `sweep`, `audit` |
-| 7 | Build the puppet | Tying strings to a marionette | `rig` ([blender.py](../ldraw_mechanisms/blender.py)) |
-| 8 | Check and animate | A test drive, then filming it | `rig --animate`, animation scripts |
-
-Everything about the motion lives in **one file, `plan.json`**. Every later
-step reads that file, so there is only one place to edit and one place to look.
-
----
-
-## 2. The one idea to remember: strings and a puppet
-
-A finished rig works like a marionette:
-
-- you pull a few **strings** (the *controls*, sliders in Blender);
-- the strings run over **pulleys** that turn one movement into another (the
-  *signals*, small formulas);
-- the pulleys move **wooden limbs** (the *bodies*, groups of parts that move
-  together);
-- the limbs carry the **LEGO parts**.
+Throughout, I keep one picture in my head. The finished rig is a
+**marionette**:
 
 ```mermaid
 flowchart LR
     subgraph you["You touch only this"]
-        ctl["Control<br/>steering = 0.4"]
+        ctl["Control<br/>roof = 0.8"]
     end
     subgraph auto["Everything here follows automatically"]
         direction LR
-        sig["Signals<br/>formulas such as<br/>rack slide = angle × radius"]
-        bod["Bodies<br/>groups that move together:<br/>rack, wheel knuckles"]
+        sig["Signals<br/>formulas"]
+        bod["Bodies<br/>groups that move together"]
         prt["LEGO parts<br/>the visible pieces"]
         sig --> bod --> prt
     end
     ctl --> sig
 ```
 
-So **an animation is only keyframes on the controls.** Turn the steering slider
-and the gears, rack and front wheels all follow, because formulas connect them.
-
-The same formulas run in two places: in plain Python (to check the maths) and
-inside Blender (to move the model). Because both calculate independently,
-either one can check the other at any moment.
+You pull a few strings (the *controls*, sliders in Blender). The strings run
+over pulleys (the *signals*, small formulas). The pulleys move wooden limbs (the
+*bodies*), and the limbs carry the LEGO parts. My whole job is to set up those
+strings and pulleys correctly. After that, an animation is just a recording of
+the sliders.
 
 ---
 
-## 3. Step by step
+## Step 1: I look for help that already exists
 
-### 3.1 Add part names (only for files that lack them)
+Before measuring anything, I check whether someone has solved this before.
+The [reference catalog](reference/README.md) and the studied *recipes* are my
+notebook from earlier jobs. There is a recipe called `106` for this exact car.
 
-Raw LDraw files list parts by number. This line places part `3022` at
-position (0, 80, 8):
+I'll still work out the roof myself, because that's the best way to show you
+how I think. Afterwards I'll use the recipe for the doors and wheels, and
+check that it agrees with my own measurement.
 
-```plaintext
-1 0 80 8 0 1 0 0 0 1 0 0 0 1 3022.dat
+Next I check whether the file is **annotated**, meaning every part has a
+readable name and every sub-assembly a description. This copy,
+`data/models-annotated/106-1.mpd`, already is, so I can skip that work today.
+
+> **If the file weren't annotated,** I would do three things first:
+>
+> 1. Run `annotate`, which writes a copy with a readable comment above each
+>    part:
+>
+>    ```plaintext
+>    0 // Plate  2 x  2 (black)
+>    1 0 80 8 0 1 0 0 0 1 0 0 0 1 3022.dat
+>    ```
+>
+> 2. Write one descriptive line for the model and each sub-assembly, and apply
+>    them with `annotate-semantics`.
+> 3. Add meaningful groups such as "wheel assembly" where they are missing,
+>    making sure every physical part survives exactly once.
+
+---
+
+## Step 2: I give every part an address
+
+I run one command:
+
+```sh
+./ldraw-mecha prepare data/models-annotated/106-1.mpd --output output/study
 ```
 
-`annotate` writes a copy with a readable comment above each part:
-
-```plaintext
-0 // Plate  2 x  2 (black)
-1 0 80 8 0 1 0 0 0 1 0 0 0 1 3022.dat
-```
-
-Next, the agent (a person or an AI) writes one descriptive line for the model
-and each sub-assembly, applied with `annotate-semantics`. Finally the agent
-checks that sensible groups exist, for example "wheel assembly" or "cab",
-and adds missing ones. Every physical part must survive this regrouping
-exactly once, in the same place and colour. Models that are already annotated
-skip this step.
-
-### 3.2 Give every part an address
-
-LEGO models nest: a car contains wheel assemblies, and each wheel assembly
-contains a rim and a tyre. ldraw-mecha gives every placed part an *occurrence
-ID*, an address that follows that nesting. These are the real addresses in
-the 106 car:
+The first thing it does is read the file and give every placed part an
+*occurrence ID*, which works like a postal address. The model has 72
+placements: 65 physical parts, plus 7 groups (the car, five wheel assemblies
+and the driver). Here is a slice of the real address tree:
 
 ```mermaid
 flowchart TD
-    top["Selected model"]
+    top["Selected model<br/>106 - main.ldr"]
     car["0<br/>car (assembly)"]
+    driver["1<br/>driver minifig (assembly)"]
     door["0/34<br/>right door, part 3821"]
     roof["0/40<br/>roof, part 4213"]
     wa["0/46<br/>wheel assembly"]
-    wb["0/47<br/>another wheel assembly"]
     rim["0/46/0<br/>rim, part 4624"]
     tyre["0/46/1<br/>tyre, part 4084"]
-    rim2["0/47/0<br/>rim, part 4624"]
-    tyre2["0/47/1<br/>tyre, part 4084"]
-    top --> car
-    car --> door & roof & wa & wb
+    head["1/1<br/>head"]
+    top --> car & driver
+    car --> door & roof & wa
     wa --> rim & tyre
-    wb --> rim2 & tyre2
+    driver --> head
     classDef assembly fill:#e0e7ff,stroke:#4338ca,color:#111
     classDef part fill:#dcfce7,stroke:#15803d,color:#111
-    class top,car,wa,wb assembly
-    class door,roof,rim,tyre,rim2,tyre2 part
+    class top,car,driver,wa assembly
+    class door,roof,rim,tyre,head part
 ```
 
-Read `0/46/1` like a postal address: item 1 inside item 46 inside item 0.
-A few properties make addresses useful:
+I read `0/46/1` as "item 1 inside item 46 inside item 0": a tyre on one
+of the wheels. Three things about addresses matter to me:
 
-- **Repeats get different addresses.** All four tyres are part 4084, yet each
-  has its own address, so each can move on its own.
-- **Addresses belong to one version of the file.** The file is fingerprinted
-  (SHA-256). If it changes, the plan reports it as stale rather than silently
-  pointing at the wrong part, much like a seat number that is only valid for
-  one concert.
-- **Positions add up.** A tyre's position in the world is the car's position
-  combined with the tyre's position inside the car:
-  `world = parent's world × local`.
+- **Repeats get different addresses.** All five tyres are part 4084, but each
+  has its own address, so I can spin each wheel separately.
+- **Addresses belong to this exact file.** The tool records a fingerprint
+  (SHA-256) of the file. If someone edits it later, my plan reports itself as
+  stale instead of quietly pointing at the wrong part.
+- **Positions add up.** A tyre's place in the world is the car's place
+  combined with the tyre's place inside the car.
 
-The complete list (address, part, colour, position and description of every
-part) is called the *source manifest*. It is built by `Document.manifest()` in
-[source.py](../ldraw_mechanisms/source.py).
+That complete list (address, part, colour, position and description for every
+part) is the *source manifest*. It goes into `plan.json`, the single file
+where I'll keep all my work.
 
-### 3.3 Gather clues, but do not decide
+---
 
-The tool behaves like a detective. It collects evidence about which parts
-might move, but it never decides on its own. Deciding is the agent's job.
+## Step 3: I gather clues
+
+`prepare` keeps going and collects clues about what might move. It behaves
+like a detective's assistant: it gathers evidence but never makes the
+decision. Deciding is my job.
 
 ```mermaid
 flowchart LR
-    subgraph tool["The tool collects clues"]
+    subgraph tool["The tools collect clues"]
         direction TB
-        k1["Names<br/>'Technic Gear 24 Tooth'"]
-        k2["Connectors that touch<br/>an axle inside an axle hole"]
-        k3["Gears at exactly<br/>the meshing distance"]
+        k1["Part names<br/>'Hinge Car Roof 4 x 4'"]
+        k2["Connectors that touch<br/>a pin in a pin hole"]
+        k3["Gears at meshing<br/>distance"]
         k4["Parts on one<br/>axle line"]
     end
-    cand["Candidate list<br/>clues between parts,<br/>suggested groups"]
-    subgraph agent["The agent decides"]
+    cand["Candidate list<br/>clues and suggested groups"]
+    subgraph me["I decide"]
         direction TB
-        d1["Which parts<br/>move together?"]
-        d2["Where is the pivot,<br/>which way is the axis?"]
-        d3["How far can<br/>it move?"]
+        d1["What moves<br/>together?"]
+        d2["Where is the pivot,<br/>which way is open?"]
+        d3["How far<br/>can it go?"]
     end
     planfile[("plan.json")]
-    tool --> cand --> agent --> planfile
+    tool --> cand --> me --> planfile
 ```
 
-Why not let the tool decide? A clue such as "this axle touches this beam"
-cannot tell whether the axle spins freely in a round hole or is locked in a
-cross-shaped one. Getting that wrong would produce a confident but wrong
-animation, so every clue is stored with the status `candidate` until someone
-reviews it.
+Here's what came back for the 106 car:
 
-The four kinds of clue:
+```plaintext
+contacts: 53 between 37 of the 65 parts
+  stud/stud_receptacle   20
+  pin/pin_hole           25
+  rim_seat/tyre_bead      5
+  bar/clip                2
+  hinge/hinge             1
+```
 
-| Clue | How it is found | Example |
-| --- | --- | --- |
-| **Names** | Searching part descriptions for words like *gear, hinge, axle, piston, spring* | "Hinge Car Roof 4 x 4" |
-| **Touching connectors** | pyldraw3 compares the connection points of neighbouring parts (from the LDCad *shadow library*) | An axle end sitting in an axle hole |
-| **Meshing gears** | Two gears in the same plane whose centres are exactly *radius + radius* apart | See below |
-| **Shared axle lines** | The rotation axes of two parts line up | A gear and the axle through it |
+Reading those like a detective:
 
-**Gear example.** Gear radius is 1.25 LDU per tooth, so an 8-tooth gear has
-radius 10 and a 24-tooth gear has radius 30:
+| Clue | What I make of it |
+| --- | --- |
+| 20 studs in stud holes | Bricks stacked on bricks. Normal building, no motion. |
+| 25 pins in pin holes | 18 are the wheels sitting on their wheel pins. Promising: those can spin. The other 7 are the driver's neck, hips and legs, which aren't part of today's job. |
+| 5 rims in tyres | Each tyre on its rim. A tyre should turn with its rim. |
+| 2 bars in clips | The radio and the shovel held in their clips. Accessories, staying put today. |
+| **1 hinge in hinge** | The roof (`0/40`) on its roof holder (`0/39`). **Very promising.** |
+
+The tools then chain clues into **suggested groups**, like friends of
+friends: if A touches B and B touches C, all three are suggested together.
+For this car I get seven:
 
 ```mermaid
 flowchart LR
-    g8(("8-tooth gear<br/>radius 10 LDU"))
-    g24(("24-tooth gear<br/>radius 30 LDU"))
-    g8 <-->|"centres 40 LDU apart<br/>10 + 30 = 40, so they mesh"| g24
+    all["7 suggested<br/>groups"]
+    all --> g1["<b>Roof</b><br/>0/40 roof and<br/>0/39 roof holder,<br/>joined by a hinge"]
+    all --> g2["<b>Right door</b><br/>0/34"]
+    all --> g3["<b>Left door</b><br/>0/35"]
+    all --> g4["<b>Spare wheel</b><br/>0/19 rim and tyre<br/>on the 0/18 pin plate"]
+    all --> g5["<b>Wheel pair</b><br/>0/47 and 0/48<br/>on the 0/44 pin plate"]
+    all --> g6["<b>Wheel pair</b><br/>0/46 and 0/49<br/>on the 0/45 pin plate"]
+    all --> g7["<b>Steering stand</b><br/>0/13"]
+    classDef root fill:#fef3c7,stroke:#b45309,color:#111
+    classDef group fill:#eef2ff,stroke:#4338ca,color:#111
+    class all root
+    class g1,g2,g3,g4,g5,g6,g7 group
 ```
 
-40 LDU is exactly two studs, the classic Technic spacing. The tool also
-records the ratio: the small gear turns three times for each turn of the big
-one, in the opposite direction.
+These groups are only starting points. They are not yet decisions.
 
-**Suggested groups.** Clues are chained like friends of friends: if gear A
-meshes with gear B, and B sits on axle C, then A, B and C are suggested as
-one group to review:
+The tools also warn me about a few things:
+
+- **Six minifig parts were stored slightly crooked**, from rounded numbers in
+  the file. The tools straightened them for the analysis only; the file
+  itself is never changed.
+- **Four minifig parts (arms and hands) are stretched**, and the right arm
+  (part 3818) made the contact search incomplete. The driver isn't part of
+  today's job, so I note it and move on.
+- **No axle-line search ran,** because this car has no Technic axles or gears.
+  That's expected here.
+
+`prepare` saves all of this into `plan.json` (still with no motion),
+writes a summary to `preparation.json`, and also creates the 3D file
+`model.glb`. I'll come back to that in Step 7.
+
+---
+
+## Step 4: I work out how the roof moves
+
+The hinge clue gives me a **point**, (0, −92, 36), and a **line** through
+it along the X axis. That's where the roof turns. But a line points two ways,
+and the clue can't tell me which way is "open". If I guess wrong, the roof
+will swing down through the seats.
+
+So I test it. I tilt the roof by 30° each way and watch where its centre
+goes. One thing to know about LDraw: **up is negative Y**, so a smaller Y means
+higher.
 
 ```mermaid
-flowchart LR
-    subgraph g1["Suggested group 1"]
-        A["gear A"] ---|meshes with| B["gear B"]
-        B ---|same axle line| C["axle C"]
-    end
-    subgraph g2["Suggested group 2"]
-        D["hinge D"]
-    end
+flowchart TD
+    start["Roof centre at rest<br/>Y = −96"] --> t1{"Tilt 30° around +X"}
+    start --> t2{"Tilt 30° around −X"}
+    t1 --> r1["Y = −77.5<br/>it went down,<br/>into the cabin"]
+    t2 --> r2["Y = −113.5<br/>it went up,<br/>out of the car"]
+    r1 --> no["Wrong way"]
+    r2 --> yes["Right way:<br/>I use −X"]
+    classDef good fill:#dcfce7,stroke:#15803d,color:#111
+    classDef bad fill:#fee2e2,stroke:#b91c1c,color:#111
+    class yes good
+    class no bad
 ```
 
-These groups are starting points for review. They are not final moving parts.
+Now **how far can it open?** I start with a generous 90° and leave the real
+answer to a bumping test later (Step 10). I'd rather measure that than
+guess it.
 
-**A practical detail.** Some files store rotations that are very slightly
-crooked from rounding (0.707 instead of 0.70710678…). That tiny error can hide
-an axle contact, so for analysis only the tool straightens them
-([placements.py](../ldraw_mechanisms/placements.py)). The file itself is never
-changed.
+---
 
-`prepare` saves the clues into `plan.json` (with no motion yet), a summary in
-`preparation.json`, and the 3D model in `model.glb`.
+## Step 5: I write it down in the plan
 
-### 3.4 Write the plan
-
-The plan is the recipe for the motion. It has three areas:
+Everything I decide goes into one file, `plan.json`. It has three areas:
 
 ```mermaid
 flowchart TB
@@ -271,51 +304,102 @@ flowchart TB
         controls["controls<br/>the sliders"] --> signals["signals<br/>the formulas"] --> bodies["bodies<br/>groups of parts that move"]
         anchors["anchors<br/>pin points on bodies"] --> checks["checks<br/>lengths that must not change"]
     end
-    subgraph evidence["Evidence: notes only, never moves anything"]
+    subgraph evidence["Evidence: my notes, never moves anything"]
         direction LR
         connections["connections<br/>clues between two parts"]
-        mechanisms["mechanisms<br/>named groups for review"]
+        mechanisms["mechanisms<br/>groups I review"]
         discovery["discovery<br/>what was searched,<br/>and warnings"]
     end
 ```
 
-The smallest useful plan opens the 106 car's roof by up to 75 degrees
-(1.309 radians):
+To add the roof, I use a small helper. It needs the suggested roof group (by
+its key), the part, the pivot, the direction I just tested, and the range:
 
-```json
-{
-  "controls": {
-    "open": {"default": 0, "min": 0, "max": 1.3089969389957472,
-             "unit": "radian", "description": "Open the roof"}
-  },
-  "signals": {
-    "lid_angle": {"expression": "clamp(a,0,1.3089969389957472)",
-                  "variables": {"a": "control:open"}}
-  },
-  "bodies": {
-    "lid": {"instances": ["0/40"], "kind": "revolute",
-            "origin": [0,-92,36], "axis": [-1,0,0], "signal": "lid_angle"}
-  }
-}
+```python
+from ldraw_mechanisms import mechanisms, plan as contract
+
+p = contract.load("output/study/plan.json")
+p = mechanisms.add_joint(
+    p, mechanism="m_18fe96fb701a", name="roof", instances=["0/40"],
+    origin=[0, -92, 36], axis=[-1, 0, 0],
+    minimum=0, maximum=math.radians(90), description="Open the roof",
+)
 ```
 
-Read it as: *the slider `open` feeds the formula `lid_angle`, which rotates
-part `0/40` (the roof) around a hinge at (0, −92, 36) along the −X axis.*
+That writes three short entries into the plan. Here they are after Step 10
+taught me the real limit, 75° (1.309 radians):
 
-#### Controls and signals work like a spreadsheet
+```json
+"controls": {"roof": {"min": 0, "max": 1.3089969389957472, "default": 0.0,
+                      "unit": "radian", "description": "Open the roof"}},
+"signals":  {"roof": {"expression": "v", "variables": {"v": "control:roof"}}},
+"bodies":   {"roof": {"instances": ["0/40"], "kind": "revolute",
+                      "origin": [0, -92, 36], "axis": [-1, 0, 0], "signal": "roof"}}
+```
 
-If you have used a spreadsheet, you already know how signals work:
+I read it as: *the slider `roof` feeds the formula `roof`, which rotates part
+`0/40` around the hinge at (0, −92, 36), along −X.*
 
-| Spreadsheet | Plan |
-| --- | --- |
-| A cell you type a number into | a **control** |
-| A cell with a formula, `=B1*3` | a **signal** |
-| The cells a formula refers to | the signal's **variables** |
-| Recalculating in the right order | `signal_order` sorts formulas so inputs come first |
-| "Circular reference" error | a loop between signals is rejected |
+**Controls and signals work like a spreadsheet.** A control is a cell you
+type a number into. A signal is a cell with a formula that refers to other
+cells. For the roof the formula is just "copy the slider" (`v`), but it could
+be anything from this list: numbers, `+ - * / ** %`, `pi`, and `sin cos tan
+asin acos atan atan2 sqrt floor ceil min max abs pow clamp`. Each formula is at
+most 255 characters. That limit is deliberate: it lets Blender run my formulas
+natively. Just as a spreadsheet refuses circular references, the plan refuses
+formulas that depend on each other in a loop.
 
-A steering system is a chain of such cells (simplified from the 42000 car
-recipe):
+**How the tools turn "rotate 75°" into motion.** A rotation only makes sense
+around a particular point: a door turns around its hinge, not around the corner
+of the room. So the maths uses three moves:
+
+```mermaid
+flowchart LR
+    s1["1 · Shift everything<br/>so the hinge sits<br/>at the origin"] --> s2["2 · Rotate by<br/>the angle"] --> s3["3 · Shift back<br/>to where the<br/>hinge was"]
+```
+
+As a formula: `move = F · Rotate(angle) · F⁻¹`. Here `F` is the hinge's
+*frame*: where it sits and which way it points, with the axis as its Z
+direction. The roof's new position is `move × its original position`.
+
+The roof is a `revolute` body. Altogether there are five kinds of body I can
+use:
+
+| Kind | Moves by… | Everyday example |
+| --- | --- | --- |
+| `revolute` | rotating around the axis | a door hinge, a wheel |
+| `prismatic` | sliding along the axis | a drawer, a piston |
+| `stretch` | getting longer or shorter | a coil spring (springs only) |
+| `rod` | pointing from one pin to another | the link between a pedal and a pump |
+| `fixed` | not moving on its own, only riding on a parent | a sticker on a door |
+
+One firm rule: **each part belongs to at most one body.** A part can't be in
+two places at once.
+
+---
+
+## Side trip: what bigger models need
+
+This little car only needs hinges and spinning wheels. On a Technic model I
+use more of the toolbox. Here's a quick look, so you'll recognise it.
+
+**Gears.** The tools spot gears that mesh by their spacing: gear radius is
+1.25 LDU per tooth, so an 8-tooth and a 24-tooth gear mesh when their centres
+are exactly 10 + 30 = 40 LDU apart. That's two studs, the classic Technic
+spacing.
+
+```mermaid
+flowchart LR
+    g8(("8-tooth gear<br/>radius 10 LDU"))
+    g24(("24-tooth gear<br/>radius 30 LDU"))
+    g8 <-->|"centres 40 LDU apart<br/>10 + 30 = 40, so they mesh"| g24
+```
+
+The small gear turns three times for each turn of the big one, in the
+opposite direction. I write that as a formula: `big = -small / 3`.
+
+**Chains of formulas.** In a steering system, one slider drives a whole chain
+of formulas (simplified from the 42000 car recipe):
 
 ```mermaid
 flowchart LR
@@ -327,62 +411,17 @@ flowchart LR
     w -.->|drives| W["body: front wheels<br/>rotate"]
 ```
 
-Formulas are deliberately limited so that Blender can run them natively:
-numbers, `+ - * / ** %`, `pi`, and `sin cos tan asin acos atan atan2 sqrt floor
-ceil min max abs pow clamp`. Each formula is at most 255 characters, and
-anything else is refused ([plan.py](../ldraw_mechanisms/plan.py)).
-
-#### Bodies: the five ways a group of parts can move
-
-A *body* is a group of parts that move as one rigid piece. Each body has a
-pivot point (`origin`), a direction (`axis`) and one of five kinds:
-
-| Kind | Moves by… | Everyday example |
-| --- | --- | --- |
-| `revolute` | rotating around the axis | a door hinge, a wheel |
-| `prismatic` | sliding along the axis | a drawer, a piston |
-| `stretch` | getting longer or shorter along the axis | a coil spring (springs only) |
-| `rod` | pointing from one pin to another | the arm linking a bicycle pedal to a pump |
-| `fixed` | not moving on its own, only riding on its parent | a sticker on a door |
-
-Rule: **each part belongs to at most one body.** A part cannot be in two
-places at once.
-
-#### How a rotation around a hinge is calculated
-
-Rotating "by 30 degrees" only makes sense around a particular point. A door
-turns around its hinge, not around the corner of the room. The maths does it
-in three moves:
-
-```mermaid
-flowchart LR
-    s1["1 · Shift everything<br/>so the hinge sits<br/>at the origin"] --> s2["2 · Rotate by the<br/>signal's angle"] --> s3["3 · Shift back<br/>to where the<br/>hinge was"]
-```
-
-As a formula: `move = F · Rotate(angle) · F⁻¹`, where `F` is the hinge's
-position and orientation (its *frame*, built so that the joint axis is the
-frame's Z axis). A part's new position is `move × its original position`.
-Sliding and stretching use the same three moves with "slide along Z" or
-"stretch along Z" in the middle ([math3d.py](../ldraw_mechanisms/math3d.py)).
-
-#### Motion that rides on motion (parents)
-
-A body can have a **parent**. It then moves with its parent and adds its own
-movement on top, like a crane:
+**Parents.** A body can ride on another body, like a crane. Each moves with
+its parent and adds its own motion on top:
 
 ```mermaid
 flowchart LR
     base["Model frame<br/>never moves"] --> turntable["turntable<br/>rotates"] --> arm["crane arm<br/>rotates up and down"] --> hook["hook<br/>slides"]
 ```
 
-The hook's total motion is the turntable's movement, then the arm's, then
-its own: `hook total = turntable × arm × hook`.
-
-#### Rods: links pinned at both ends
-
-A connecting rod has no hinge of its own. Each end is pinned to something
-else that moves. The plan marks the two pin points as *anchors*, and the rod
-simply sits on the first pin and points at the second:
+**Rods.** A connecting rod has no hinge of its own; it is pinned at both
+ends to parts that move. I mark the pins as *anchors*. The rod sits on the
+first pin and points at the second:
 
 ```mermaid
 flowchart LR
@@ -392,26 +431,28 @@ flowchart LR
     a2 --- piston["piston<br/>prismatic body"]
 ```
 
-The rod must never stretch to hide a mistake, so every rod requires a
-**distance check**: the two pins must stay 40 LDU apart, give or take
-0.02 LDU. If the formulas move the piston wrongly, this check fails.
+The tools won't let a rod stretch to hide a mistake in my formulas. Every rod
+needs a **distance check**, so if the pins drift apart, I find out.
 
-#### Helpers that write plans for you
+**Helpers that save me typing:**
 
-| Helper | What it saves you |
+| Helper | What it does for me |
 | --- | --- |
-| `mechanisms.add_joint` | Adds one hinge or slider: a control, its formula and its body |
-| `recipes.Builder` and the recipes `106`, `928`, `42000`, `42083`, `10265` | Complete, studied plans for those exact models |
+| `mechanisms.add_joint` | One hinge or slider, as I used above |
+| `recipes.Builder` and recipes `106`, `928`, `42000`, `42083`, `10265` | Complete studied plans for those exact models |
 | `recipes.slider_cranks` | Piston formulas for an engine |
 | `math3d.signed_gear_ratio`, `rack_ratio` | Gear and rack ratios with the right direction |
 | `linkages.universal_joint`, `ball_link` | Exact formulas for a cardan joint and a ball link |
-| `scripts/build_*.py` | Large builders for specific models: Defender, Chiron, minifigs, movables, plants |
+| `scripts/build_*.py` | Big builders for specific models: Defender, Chiron, minifigs, movables, plants |
 | `scripts/extract_subsystem.py` | Saves one mechanism on its own, without the rest of the vehicle |
 | `scripts/split_shortcuts.py` | Splits a one-piece part (such as a whole shock absorber) into its real sub-parts, so a spring can stretch |
 
-### 3.5 Check the plan, no Blender needed
+---
 
-Four checks run in plain Python:
+## Step 6: I check my maths before touching Blender
+
+Blender is slow to start and hard to debug, so I check everything I can in
+plain Python first:
 
 ```mermaid
 flowchart LR
@@ -420,21 +461,29 @@ flowchart LR
     sw --> au["audit<br/>Has every clue been<br/>dealt with?"]
 ```
 
-| Check | Catches, for example |
+| Check | What it would catch |
 | --- | --- |
 | `validate` | a typo in a formula, a part in two bodies, a rod without a distance check, a changed source file |
-| `evaluate` | shows the position of every moving part for any slider values you choose |
-| `sweep` | a linkage that comes apart halfway through a slider's travel |
-| `audit` | a suggested mechanism nobody has reviewed yet |
+| `evaluate` | nothing by itself; it tells me where every moving part is for any slider values (that's how I ran the 30° test in Step 4) |
+| `sweep` | a linkage that comes apart partway through a slider's travel |
+| `audit` | a suggested group that nobody has reviewed |
 
-When the motion is decided, the plan's `status` changes from `draft` to
-`ready`. Only ready plans can be built into a rig.
+For the roof, `validate` answers:
 
-### 3.6 Convert to 3D and attach name tags
+```json
+{"valid": true, "status": "ready", "moving_parts": 1, "bodies": 1, "signals": 1, "checks": 0}
+```
 
-The exporter `mpd2glb` turns the LDraw file into a standard 3D file
-(`model.glb`). LDraw and Blender measure differently, which the conversion
-handles:
+I set the plan's `status` to `ready` only when I've decided the motion.
+Blender refuses to build anything from a draft.
+
+---
+
+## Step 7: I put name tags on the 3D model
+
+Back in Step 2, `prepare` also converted the model into a standard 3D file,
+`model.glb`, using the exporter `mpd2glb`. LDraw and Blender measure things
+differently, and the conversion handles that:
 
 | | LDraw | Blender |
 | --- | --- | --- |
@@ -442,14 +491,13 @@ handles:
 | Unit | LDU (1 LDU = 0.4 mm; one stud = 20 LDU) | metre |
 | Conversion | `C(x, y, z) = (x, −z, y)`, scale 0.0004 m per LDU | |
 
-The 3D file does not know the part addresses, so
-[glb.py](../ldraw_mechanisms/glb.py) attaches a **name tag** (`mecha_id`) to
-each 3D object. Like a check-in desk comparing a passport photo, it only tags
-an object after confirming the match:
+The 3D file doesn't know my addresses, so the tool sticks a **name tag**
+(`mecha_id`) on every 3D object. It works like a check-in desk comparing a
+passport photo: a tag is only attached after the match is confirmed.
 
 ```mermaid
 flowchart TD
-    m["Part from the address list<br/>for example 0/40, roof 4213"] --> q1{"Same part file?"}
+    m["Part from my address list<br/>for example 0/40, roof 4213"] --> q1{"Same part file?"}
     q1 -- yes --> q2{"Same position<br/>and rotation?"}
     q2 -- yes --> q3{"Same colour?"}
     q3 -- yes --> count{"Exactly one<br/>3D object matches?"}
@@ -460,25 +508,28 @@ flowchart TD
     q3 -- no --> next
 ```
 
-Two identical parts at exactly the same spot are interchangeable and are
-tagged in file order. Every object also gets the file's fingerprint
-(`mecha_source`), so Blender can tell which plan it belongs to.
+For the 106 car, all 72 placements got their tag. Each object also carries
+the file's fingerprint (`mecha_source`), so later Blender can tell which plan
+it belongs to.
 
-### 3.7 Build the puppet in Blender
+---
 
-Blender has a feature called a *driver*: a property whose value is computed
-by a formula, much like a spreadsheet cell. The rig is built entirely from
-drivers and helper objects called *empties* (invisible handles). Nothing else
-is needed, so the rig keeps working after you save, close and reopen the file:
-no add-on and no scripts that run on opening.
+## Step 8: I build the puppet
 
-For the roof, the wiring is:
+Now Blender. Blender has a feature called a *driver*: a property whose value
+comes from a formula, just like a spreadsheet cell. I build the whole rig from
+drivers and *empties* (invisible handles). Nothing else is needed, which is
+why the rig still works after saving and reopening: no add-on, and no scripts
+that run when the file opens.
+
+For the roof, the strings run like this (shown with the names the finished
+car rig will have in Step 11, where the plan is called `car106`):
 
 ```mermaid
 flowchart LR
-    ctrl["CTRL_car106<br/>slider: roof = 0.8"] --> inp["INPUT_…_roof<br/>keeps the value<br/>between 0 and 1.31"]
-    inp --> sig["SIG_…_roof<br/>runs the formula"]
-    sig --> piv["PIV_…_roof<br/>rotation Z = formula result"]
+    ctrl["CTRL_car106<br/>slider: roof = 0.8"] --> inp["INPUT_car106_roof<br/>keeps the value<br/>between 0 and 1.31"]
+    inp --> sig["SIG_car106_roof<br/>runs the formula"]
+    sig --> piv["PIV_car106_roof<br/>rotation Z = formula result"]
     piv --> mesh["roof mesh<br/>part 0/40"]
 ```
 
@@ -496,116 +547,231 @@ flowchart TD
     piv --> child["FRM_ of a child body<br/>if a body has a parent"]
 ```
 
-| Object name | Job |
+| Object | Its job |
 | --- | --- |
-| `CTRL_<plan>` | Holds one slider (custom property) per control. This is what you animate. |
-| `INPUT_<plan>_<control>` | Keeps the slider value within its allowed range |
+| `CTRL_<plan>` | One slider per control. **This is what you animate.** |
+| `INPUT_<plan>_<control>` | Keeps the slider within its allowed range |
 | `SIG_<plan>_<signal>` | Calculates one formula |
 | `FRM_<plan>_<body>` | Marks where the joint sits at rest |
 | `PIV_<plan>_<body>` | Moves: its Z rotation, Z position or Z scale follows the formula |
-| `ANCHOR_<plan>_<anchor>` | A pin point that rides on a body |
+| `ANCHOR_<plan>_<anchor>` | A pin point riding on a body |
 
-A **rod** uses three ordinary Blender constraints: *copy location* (stick to
-the first pin), *damped track* (point at the second pin) and *locked track*
-(keep from rolling over).
+A rod, if I had one, would use three ordinary Blender constraints: *copy
+location* (stick to the first pin), *damped track* (point at the second pin)
+and *locked track* (don't roll over).
 
-Before moving any part into the rig, the builder saves where the part was.
-The rig can therefore be removed later and every part returns exactly to its
-original place. The full plan is also stored inside the .blend file.
-
-### 3.8 Check: two calculators must agree
-
-After building, `verify` acts as an exam: Blender and the Python evaluator
-calculate the same poses separately, and the answers must match.
-
-```mermaid
-sequenceDiagram
-    participant V as verify
-    participant B as Blender rig
-    participant P as Python evaluator
-    loop each test pose (min, middle, max, mixed)
-        V->>B: set the sliders
-        B-->>V: actual position of every part
-        V->>P: same slider values
-        P-->>V: expected position of every part
-        V->>V: compare within 0.002 LDU
-    end
-    V-->>V: passed or failed report
-```
-
-0.002 LDU is less than a thousandth of a millimetre. The check also confirms
-that parts which should stay still did not move, that rods kept their length,
-and that every driver is valid.
-
-### 3.9 Animate
-
-Animating means keyframing the **sliders only**. The drivers then move
-everything else:
-
-```mermaid
-flowchart LR
-    keys["Keyframes<br/>on the sliders only"] --> ctrl["CTRL_ sliders"] --> drv["Drivers<br/>formulas"] --> parts["Every moving part"]
-```
-
-It is like recording only a car's steering wheel and pedals: a replay can
-rebuild everything else. Because every frame is just a set of slider values,
-any frame can be checked with the Python evaluator.
-
-Where the keyframes come from:
-
-| Source | What it does |
-| --- | --- |
-| `rig --animate` | A short demo for every slider: rest at frame 1, maximum at 40, minimum at 80, rest again at 120 |
-| `animate_defender.py` | A driving sequence for the 42110 Defender: wheels at different speeds in corners, gears changing smoothly |
-| `minifig_clips.py`, `movable_clips.py` | Reusable clips (wave, walk, open, close) using Blender's own easing curves, reproduced in Python |
-| `wind_clips.py` | Plants swaying in a simulated wind, calculated step by step and saved as keyframes |
-
-Reusable clips are stored as Blender *Actions* and arranged on *NLA tracks*,
-Blender's clip library and timeline.
-
-Extra checks before delivery:
-
-- **Clearance** (`check_clearance`): moves the sliders step by step and reports
-  parts that start to overlap, like checking that a door does not hit the
-  frame.
-- **Reopen**: opens the saved file in a fresh Blender to confirm the controls
-  still work.
-- **Lifecycle**: moves the whole model, makes copies, and rebuilds and removes
-  the rig to confirm nothing breaks.
+Before I move a part into the rig, I write down where it was. That way I
+can take the rig apart later and every part goes back exactly where it
+started. I also store the whole plan inside the .blend file.
 
 ---
 
-## 4. Try it: the 106 car in six commands
+## Step 9: I make two calculators agree
+
+I never assume Blender did what I meant. Python and Blender each calculate the
+same poses separately, and the answers have to match:
+
+```mermaid
+sequenceDiagram
+    participant Me as Me (verify)
+    participant B as Blender rig
+    participant P as Python evaluator
+    loop each test pose (rest, min, middle, max)
+        Me->>B: set the sliders
+        B-->>Me: actual position of every part
+        Me->>P: same slider values
+        P-->>Me: expected position of every part
+        Me->>Me: compare within 0.002 LDU
+    end
+```
+
+For the roof, all four test poses passed. The biggest difference was
+0.00001 LDU, about four millionths of a millimetre. The allowed margin,
+0.002 LDU, is itself less than a thousandth of a millimetre.
+
+This only works because Blender runs the **same** formulas from the same
+plan. Two calculators agreeing is strong evidence that the rig does what the
+plan says.
+
+---
+
+## Step 10: I check that nothing bumps
+
+Correct maths doesn't stop the roof from passing through other bricks. So I
+run a bumping test (`check_clearance`). It moves the slider step by step and
+reports any part whose surface starts to cross another's:
+
+```mermaid
+flowchart LR
+    s0["0°<br/>clear"] --> s15["15°<br/>clear"] --> s30["30°<br/>clear"] --> s45["45°<br/>clear"] --> s60["60°<br/>clear"] --> s75["75°<br/>clear"] --> s90["90°<br/>roof hits the<br/>rear 4 × 4 plate"]
+    classDef good fill:#dcfce7,stroke:#15803d,color:#111
+    classDef bad fill:#fee2e2,stroke:#b91c1c,color:#111
+    class s0,s15,s30,s45,s60,s75 good
+    class s90 bad
+```
+
+At 90° the roof (`0/40`) cuts into the 4 × 4 plate (`0/43`) at the back of
+the car. So I lower the limit to **75°**, rebuild, and test again in finer
+steps. This time all seven positions from 0° to 75° are clear.
+
+That's why the plan in Step 5 says 75°. I didn't guess the number; this
+test gave it to me.
+
+---
+
+## Step 11: I do the rest of the car
+
+The doors and wheels follow the same pattern as the roof. Since the studied
+recipe `106` already covers them, I adopt it. The recipe's motion replaces my
+hand-made roof joint, while the tool keeps all my clues and notes:
 
 ```sh
-./setup.sh
-export LDRAW_DIR=/path/to/ldraw
-
-# Steps 2–4: addresses, clues and the 3D file
-./ldraw-mecha prepare data/models-annotated/106-1.mpd --output output/study
-
-# Step 5: use the studied recipe for this car as the motion
 ./ldraw-mecha plan data/models-annotated/106-1.mpd --recipe 106 \
   --study output/study/plan.json --output output/study/plan.json
+```
 
-# Step 6: check the plan
-./ldraw-mecha audit output/study/plan.json
-./ldraw-mecha validate output/study/plan.json
-./ldraw-mecha sweep output/study/plan.json --output output/study/sweep.json
+So I check that the recipe agrees with me about the roof. It does exactly:
+pivot (0, −92, 36), direction −X, limit 75°. Good: two independent routes, same
+answer, so nothing is lost by the swap.
 
-# Steps 7–9: build, check and animate in Blender
+The car now has eight sliders:
+
+| Slider | Range | Moves |
+| --- | --- | --- |
+| `roof` | 0° to 75° | the roof, on its finger hinge |
+| `door_left`, `door_right` | 0° to 75° | each door, on its stud hinge |
+| `wheel_1` … `wheel_4` | one turn back to one turn forward | each road wheel, rim and tyre together |
+| `spare` | one turn back to one turn forward | the spare wheel |
+
+Then the audit reminds me that seven of the suggested clue groups from Step 3
+haven't been reviewed yet. I go through them one by one:
+
+- The roof, door and wheel groups are now covered by real motion, so I link
+  each to its bodies and mark it **planned**. The pin plates in those groups
+  stay still as supports.
+- The steering stand (`0/13`) is a single moulded piece, and this car has no
+  steering to animate. I mark it **static** and write down why.
+
+Now `audit --require-reviewed` reports 14 planned groups, 1 static, and
+**review complete**. `validate` and `sweep` pass for all eight sliders.
+
+---
+
+## Step 12: Action!
+
+One command builds the rig, checks it and adds a demonstration animation:
+
+```sh
 ./ldraw-mecha rig output/study/plan.json --glb output/study/model.glb \
   --save output/study/rigged.blend --report output/study/blender-check.json --animate
 ```
 
-Open `output/study/rigged.blend`, select `CTRL_car106` and look under
-**Object Properties → Custom Properties** for the doors, roof and wheels.
+Before animating, the "two calculators" check from Step 9 runs again, this
+time on 26 test poses: rest, plus minimum, middle and maximum for each of the
+eight sliders, plus one pose with everything moved at once. Results:
+
+- Moving parts: largest difference **0.00002 LDU**.
+- Parts that should stay still: within **0.0013 LDU** of where they started.
+  That's rounding inside the 3D file, and still under the 0.002 limit.
+- Broken drivers: **none**.
+
+Then I animate. I never key the LEGO parts themselves. I key **only the
+sliders**, and the drivers move everything else:
+
+```mermaid
+flowchart LR
+    keys["Keyframes<br/>on the sliders only"] --> ctrl["CTRL_car106<br/>sliders"] --> drv["Drivers<br/>formulas"] --> parts["Every moving part"]
+```
+
+It's like recording only a car's steering wheel and pedals: from that, a
+replay can rebuild everything else. And because every frame is just a set of
+slider values, my Python calculator can check any frame I like.
+
+The demonstration gives each slider four keyframes:
+
+| Frame | Roof and doors | Wheels |
+| --- | --- | --- |
+| 1 | closed (0°) | at rest |
+| 40 | fully open (75°) | one turn forward |
+| 80 | closed again (0°) | one turn backward |
+| 120 | closed (0°) | back at rest |
+
+Here's the roof's angle over time:
+
+```mermaid
+%%{init: {"themeVariables": {"xyChart": {"plotColorPalette": "#2563eb"}}}}%%
+xychart-beta
+    title "Roof angle in the demo animation (degrees)"
+    x-axis "frame" [1, 40, 80, 120]
+    y-axis "angle" 0 --> 80
+    line [0, 75, 0, 0]
+```
+
+Blender smooths the curve between keyframes, so the roof eases in and out
+rather than moving in straight lines.
+
+For bigger jobs I write richer animations, still keying only sliders:
+
+| Animation | What it does |
+| --- | --- |
+| `animate_defender.py` | A driving sequence for the 42110 Defender: wheels at different speeds in corners, gears changing smoothly |
+| `minifig_clips.py`, `movable_clips.py` | Reusable clips (wave, walk, open, close) using Blender's own easing curves, reproduced in Python so I can check them |
+| `wind_clips.py` | Plants swaying in simulated wind, calculated step by step and saved as keyframes |
+
+Reusable clips go into Blender *Actions* and are arranged on *NLA tracks*,
+Blender's clip library and timeline.
 
 ---
 
-## 5. Map of the code
+## Step 13: I look at it and hand it over
 
-The code is arranged in layers. Each layer only feeds the ones after it.
+Numbers aren't enough, so I also look. I reopen the saved file in a **fresh**
+Blender, the way you will, and run the calculator check on the existing rig
+without rebuilding it. It passes, with the same tiny 0.00002 LDU difference.
+Then I render a still with the roof and both doors fully open:
+
+![The 106 car rendered from the finished rig: roof tilted up on its rear hinge, both doors swung open, the driver minifig standing beside the car](images/how-it-works-106-open.jpg)
+
+The roof tilts up on its hinge at the back, both doors swing outward, and
+nothing passes through anything. That's what I wanted.
+
+What I hand over:
+
+| File | What it is |
+| --- | --- |
+| `plan.json` | My decisions: sliders, formulas, moving groups, notes and review |
+| `model.glb` | The 3D model with name tags |
+| `rigged.blend` | The finished rig with the demo animation |
+| `blender-check.json` | The calculator comparison report |
+| `sweep.json`, clearance report, render | The rest of my evidence |
+
+To try it, open `rigged.blend`, select `CTRL_car106`, and look under
+**Object Properties → Custom Properties**. Drag `roof` and watch it open.
+
+---
+
+## What I can't promise
+
+I'm careful about what I claim:
+
+- **Clues aren't decisions.** Touching parts and meshing gears are evidence. I
+  decide what moves, and I write down why.
+- **Correct maths isn't physical proof.** My checks show the motion I declared
+  is consistent and that Blender follows it exactly. They don't simulate
+  forces, friction or gear backlash, and they don't prove a real model would
+  work.
+- **No collision guarantee.** The bumping test samples positions. It can't
+  promise that nothing ever overlaps between them.
+- **Recipes fit exact models.** Recipe `106` works for this file. It isn't
+  automatic rigging for any car.
+
+---
+
+## My toolbox
+
+If you'd like to see inside my toolbox, here's how it is organised. Each
+layer feeds the next. The `ldraw-mecha` command (`cli.py`) is the front door,
+and each command calls into one of these layers.
 
 ```mermaid
 flowchart LR
@@ -624,27 +790,20 @@ flowchart LR
     class cli entry
 ```
 
-The command line (`cli.py`) is the front door: each `ldraw-mecha` command
-calls into one of these layers.
-
-| Layer | In one line |
+| Layer | Which steps use it |
 | --- | --- |
-| Read the model | Parse LDraw with pyldraw3, give parts addresses, add names |
-| Gather clues | Find contacts, gear meshes and shared axles, and search the part catalogue |
-| Prepare and review | Save clues and suggested groups, merge recipes, report what is still unreviewed |
-| Motion maths | Check and calculate the plan; no Blender or pyldraw3 needed, so Blender can reuse it |
-| 3D file | Run the exporter, then attach name tags to the 3D objects |
-| Blender | Build, check, show or hide, animate and save the rig |
+| Read the model | Steps 1–2: annotation and addresses ([source.py](../ldraw_mechanisms/source.py)) |
+| Gather clues | Step 3 ([analysis.py](../ldraw_mechanisms/analysis.py), [geometry.py](../ldraw_mechanisms/geometry.py), [placements.py](../ldraw_mechanisms/placements.py)) |
+| Prepare and review | Steps 3, 5 and 11: saving clues, `add_joint`, the audit |
+| Motion maths | Steps 4–6 and 9: formulas, the three-move rotation, the Python calculator ([plan.py](../ldraw_mechanisms/plan.py), [math3d.py](../ldraw_mechanisms/math3d.py)) |
+| 3D file | Step 7: conversion and name tags ([glb.py](../ldraw_mechanisms/glb.py)) |
+| Blender | Steps 8–13: building, checking, bumping test, animation ([blender.py](../ldraw_mechanisms/blender.py)) |
 
----
+### Class diagrams
 
-## 6. Class diagrams
-
-Most of the package is plain functions, so the diagrams draw each **module**
-as a box with its main functions. The only true classes are `Document` and
-`Builder`.
-
-How to read the arrows:
+Most of my toolbox is plain functions, so these diagrams draw each **module**
+as a box listing its main functions. The only true classes are `Document` and
+`Builder`. How to read the arrows:
 
 | Arrow | Meaning |
 | --- | --- |
@@ -653,10 +812,10 @@ How to read the arrows:
 | `A --> B` (solid) | A refers to B |
 | `A .. B` (dotted, no head) | A corresponds to B |
 
-### 6.1 Modules, part one: from LDraw file to checked plan
+#### Part one: from LDraw file to checked plan (Steps 1–6)
 
-To keep the picture readable, only the main links are drawn. `cli.py` calls
-almost every module, so its arrows point at the two entry functions only.
+Only the main links are drawn. `cli.py` calls almost every module, so its
+arrows point at the two entry functions only.
 
 ```mermaid
 classDiagram
@@ -758,10 +917,10 @@ plan ..> math3d
 ```
 
 Also in this half: `discovery.py` (inventories of sub-models) and `search.py`
-(part catalogue search) both read the model through `Document`;
+(part catalogue search) both read the model through `Document`.
 `linkages.py` builds exact linkage formulas on top of `math3d.py`.
 
-### 6.2 Modules, part two: from plan to animated Blender file
+#### Part two: from plan to animated Blender file (Steps 7–13)
 
 ```mermaid
 classDiagram
@@ -821,11 +980,11 @@ case_scripts ..> plan : write plans
 case_scripts ..> blender_tools : build and animate
 ```
 
-`blender.py` imports the same `plan.py` used outside Blender. That shared
-module is what lets the two calculators of [step 3.8](#38-check-two-calculators-must-agree)
-agree.
+`blender.py` imports the same `plan.py` I use outside Blender. That shared
+module is what makes the two calculators in
+[Step 9](#step-9-i-make-two-calculators-agree) agree.
 
-### 6.3 What is inside a plan
+#### What is inside a plan
 
 ```mermaid
 classDiagram
@@ -903,7 +1062,7 @@ Connection --> SourceNode : links two parts
 MechanismView --> Body : groups
 ```
 
-### 6.4 What each plan element becomes in Blender
+#### What each plan element becomes in Blender
 
 ```mermaid
 classDiagram
@@ -977,30 +1136,14 @@ PIV *-- ANCHOR : carries
 
 ---
 
-## 7. What it does not promise
-
-The tool is careful about what it claims:
-
-- **Clues are not decisions.** Touching parts or meshing gears are evidence;
-  the agent decides what moves.
-- **Correct maths is not physical proof.** The checks show the declared
-  motion is consistent and that Blender matches it. They do not simulate
-  forces, friction, gear backlash or whether a real model could be built.
-- **No collision guarantee.** The clearance check samples poses; it cannot
-  promise that nothing ever overlaps.
-- **Recipes are for exact models.** The studied recipes work for those exact
-  files and selections. They are not automatic rigging for any model.
-
----
-
-## 8. Glossary
+## Words I used
 
 | Term | Meaning |
 | --- | --- |
-| **Agent** | The person or AI that reviews clues and writes the motion |
+| **Agent** | Me: the person or AI who reviews clues and writes the motion |
 | **Anchor** | A pin point fixed to a body, used for rod ends and length checks |
 | **Body** | A group of parts that move together as one rigid piece |
-| **Control** | A slider; the only thing you animate |
+| **Control** | A slider; the only thing that gets animated |
 | **Driver** | A Blender property whose value comes from a formula |
 | **Empty** | An invisible Blender object used as a handle or pivot |
 | **Frame** | A position plus an orientation, such as where a hinge sits and which way it points |
@@ -1012,8 +1155,9 @@ The tool is careful about what it claims:
 | **NLA** | Blender's non-linear animation editor, a timeline for reusable clips |
 | **Occurrence ID** | A part's address, such as `0/46/1` |
 | **pyldraw3** | The Python library that reads LDraw files and their connection points |
-| **Rig** | The set of controls, formulas and pivots that moves the model |
-| **Shadow library** | Extra data (from LDCad) describing where parts connect: studs, axle holes, pins |
+| **Recipe** | A studied, ready-made plan for one exact model |
+| **Rig** | The set of sliders, formulas and pivots that moves the model |
+| **Shadow library** | Extra data (from LDCad) describing where parts connect: studs, pins, hinges |
 | **Signal** | A named formula that turns slider values into angles or distances |
 | **Source manifest** | The full list of parts with addresses, positions, colours and the file's fingerprint |
 
