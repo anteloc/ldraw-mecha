@@ -60,7 +60,13 @@ def test_dependency_cycles_and_double_ownership(f1):
 
 @pytest.mark.parametrize(
     "expr",
-    ["__import__('os').system('true')", "x[0]", "(lambda: 1)()", "[x for x in y]", "1+"],
+    [
+        "__import__('os').system('true')",
+        "x[0]",
+        "(lambda: 1)()",
+        "[x for x in y]",
+        "1+",
+    ],
 )
 def test_unsafe_expressions_rejected(expr):
     with pytest.raises(ValueError):
@@ -145,6 +151,29 @@ def test_combined_sample_is_nonzero_mixed_and_within_ranges():
     assert s == pytest.approx(dict(a=0.8, b=-0.4, c=1.2, d=-2.0))
     for name, c in p["controls"].items():
         assert c["min"] <= s[name] <= c["max"]
+
+
+def test_combined_sample_handles_offset_ranges_and_nonzero_defaults():
+    p = dict(
+        controls={
+            "negative": dict(min=-2, max=0, default=0),
+            "positive": dict(min=10, max=20, default=15),
+            "offset_negative": dict(min=-20, max=-10, default=-15),
+            "at_maximum": dict(min=1, max=3, default=3),
+            "fixed": dict(min=2, max=2, default=2),
+        }
+    )
+    sample = plan.combined_sample(p)
+    assert sample == pytest.approx(
+        dict(negative=-0.8, positive=17, offset_negative=-13, at_maximum=2.2, fixed=2)
+    )
+    for name, c in p["controls"].items():
+        assert c["min"] <= sample[name] <= c["max"]
+        if c["min"] != c["max"]:
+            assert sample[name] != c["default"]
+    for fraction in (-0.1, 1.1, float("nan")):
+        with pytest.raises(ValueError, match="fraction"):
+            plan.combined_sample(p, fraction)
 
 
 def _spring_plan():

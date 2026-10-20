@@ -282,12 +282,19 @@ def prepare(
     contact_limit=300,
     convert_glb=True,
     motion=None,
+    recipe=None,
 ):
     out = Path(output).resolve()
     if out.exists() and any(out.iterdir()):
         raise ValueError(
             "Study directory is not empty; edit and validate its plan, or choose a new output directory"
         )
+    if motion is not None and recipe is not None:
+        raise ValueError("Pass motion or recipe, not both")
+    if recipe is not None:
+        from .recipes import create
+
+        motion = create(path, recipe, section)
     manifest = Document(path).manifest(section)
     study = contract.draft(manifest)
     study.update(discover(manifest, library, shadow, contact_limit=contact_limit))

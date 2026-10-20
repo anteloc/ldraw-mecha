@@ -12,6 +12,7 @@ they are documentation, not another execution format.
 | Source annotation | `annotate.py` | Part/colour comments and application of agent-authored model/submodel description lines; reports direct the agent to the final hierarchy review/enrichment and preservation checks |
 | Evidence | `analysis.py`, `placements.py`, `discovery.py`, `geometry.py`, `search.py` | Connector expansion, analysis-only frame correction, inventory, bounded contacts/meshes/coaxial candidates, offline FTS and optional Jev |
 | Preparation and scope | `prepare.py`, `mechanisms.py`, `audit.py` | Persist evidence, provisional views, recipe adoption, scope dispositions and optional diagnostic exports |
+| Routine workflow | `workflow.py` | Combined source/motion checks, conventional study paths and background Blender invocation/reopening; delegates to existing validators and adapter |
 | Motion | `plan.py`, `math3d.py`, `linkages.py` | Contract validation, safe expressions, evaluation, linkage maths and sweeps |
 | Studied examples | `recipes.py`, `recipe_42000_data.py`, `recipe_10265_data.py` | Measured motion for specific source selections |
 | Geometry transfer | `glb.py`, `scripts/mpd2glb.sh` | Existing exporter plus strict source-ID binding in GLB extras |
@@ -21,13 +22,19 @@ they are documentation, not another execution format.
 | Retained examples | `examples/reference/`, `scripts/reference_assets.py` | Selected source/evidence/playback copies, hash manifest, dependency checks and source-path relocation for reuse |
 | Part lookup data | `data/categories`, `data/ldraw-info.db`, description TSV | Family/name/size hints and catalog search; see [source selection](part-information.md), separate from connector geometry |
 
+The short CLI path is `prepare` (optionally `--recipe`), edit `plan.json`, `check`,
+then `rig --reopen`. It uses the same version-1 plan and existing focused APIs;
+there is no new project format or alternate motion implementation. `check`
+stores validation, sweeps, poses and scope in one report. The CLI handles parsing
+and JSON output; `workflow.py` holds reusable orchestration without importing bpy.
+
 Source analysis imports no Blender API. The motion/equation layer uses the
 standard library and imports neither bpy nor pyldraw3, so Blender can evaluate
 the same plan. Source transforms and hashes remain intact; normalized placements
 are analysis evidence only.
 
 For originally unannotated models, the agent completes annotation with a
-[hierarchy review](workflow.md#review-and-enrich-the-hierarchy), creating richly
+[hierarchy review](annotation.md#review-and-enrich-the-hierarchy), creating richly
 described submodels and nested submodels when needed. The annotation commands
 do not infer or create these groups. The agent edits a generated copy using
 pyldraw3, records the grouping evidence and occurrence map, and verifies physical

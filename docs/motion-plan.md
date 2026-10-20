@@ -96,7 +96,9 @@ their official sub-parts first (`scripts/split_shortcuts.py`).
 
 Verification checks expression domains, finite results, dependency cycles,
 double ownership, source freshness and declared closure. `sweep` varies one
-control at a time; add coupled/asymmetric cases with `evaluate` or Python.
+control at a time. `check` combines that sweep with default/mixed poses and a
+scope audit; add mechanism-specific coupled/asymmetric cases with `check --set`,
+`evaluate` or Python. These workflow conveniences do not change the plan format.
 The Blender verifier compares every moving part's evaluated matrix with the
 portable evaluator, checks static parts, driver validity and link lengths.
 These checks do not establish clearance or physical feasibility by themselves.

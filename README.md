@@ -1,111 +1,77 @@
 # LDraw LEGO Mechanical Toolkit
 
-Analyze LDraw models, describe mechanisms in a JSON motion plan, and build
-controllable Blender rigs from metadata-preserving GLB files.
+Study an LDraw model, describe its motion in one JSON plan, and build a
+controllable Blender rig. Agents decide what moves and why; the tools collect
+evidence, execute the plan and check the result.
 
-The workflow is **reuse references → study the model → rig and animate → verify
-→ visual review**. User-selected successful results become documented examples
-for later agents. Start at [instructions.md](instructions.md) and the
-[workflow guide](docs/workflow.md).
+**Prepare → edit the plan → check → rig → visual review.**
+Start with [how it works](docs/how-it-works.md) for the explanation or
+[the workflow](docs/workflow.md) for commands. Agents follow [instructions.md](instructions.md).
 
-The [reference catalog](docs/reference/README.md) covers the 42110 Defender's
-gearboxes, differentials, shafts, steering, engine and winch; the 42083 W16's
-crankshafts, rods and pistons; and standalone suspension with wishbones,
-half-shafts and telescoping shocks. The
-[Chiron mechanism studies](docs/reference/42083-mechanisms/README.md) add a wing
-parallelogram, paddle/pawl geometry and a qualified eight-speed selector cascade.
-The [minifig examples](docs/reference/minifigs/README.md) add articulated limbs,
-held items, reusable animation clips and separate whole-figure staging.
-The [movable elements](docs/reference/movables/README.md) cover doors, windows,
-lids, slides and dependent motion. [Plants and wind](docs/reference/plants/README.md)
-cover plant articulation and reusable wind responses for other objects.
-Each subsystem has diagrams, identities,
-relationships and evidence limits. Agents adapt these references without having
-to create new diagrams during rigging.
-
-## Start a study
-
-For an unannotated source, first run `annotate` to create a copy with
-`0 // Part description (colour)` comments above type-1 lines. The agent then
-authors rich, single-line descriptions for the model and its existing submodels
-and applies them with `annotate-semantics`. Finally, the agent reviews the
-hierarchy, creates and describes missing submodels or nested submodels where
-supported, and verifies preservation of every physical occurrence before `prepare`. See the
-[semantic annotation pipeline](docs/workflow.md#annotate-before-analysis).
-Reuse already annotated sources without semantic rewrites or regrouping unless requested;
-the example below uses one of these existing models.
+## Try an existing example
 
 ```sh
 ./setup.sh
 export LDRAW_DIR=/path/to/ldraw
-./ldraw-mecha prepare data/models-annotated/106-1.mpd --output output/study
+export BLENDER_BIN=/path/to/blender
+
+./ldraw-mecha prepare data/models-annotated/106-1.mpd --recipe 106 --output output/study
+./ldraw-mecha check output/study
+./ldraw-mecha rig output/study --animate --reopen
 ```
 
-This saves `plan.json`, `preparation.json` and `model.glb`. The plan initially has
-candidate evidence and no invented motion. Inspect discovery coverage and the
-model, then author measured motion in that same plan. Preparation and Blender
-inspection do not generate diagrams. The explicit `diagrams` command remains an
-optional diagnostic; curated references are written after reviewing working rigs.
+Open `output/study/rigged.blend`, select `CTRL_car106`, and use **Object
+Properties → Custom Properties** for doors, roof and wheels. Controls persist
+after reopening without an add-on or Python auto-run. The blend includes a
+demonstration animation; verification reports sit beside the plan.
 
-For a runnable example, adopt the studied 106 recipe into the prepared study:
+This recipe declares studied motion for this exact car. Discovery findings
+remain visible for review; `check --require-reviewed` will fail until they are
+reconciled. Reopening checks the saved rig's transforms. Clearance and visual
+review remain separate [delivery checks](docs/validation.md).
 
-```sh
-./ldraw-mecha plan data/models-annotated/106-1.mpd --recipe 106 \
-  --study output/study/plan.json --output output/study/plan.json
-./ldraw-mecha audit output/study/plan.json
-./ldraw-mecha validate output/study/plan.json
-./ldraw-mecha sweep output/study/plan.json --output output/study/sweep.json
-./ldraw-mecha rig output/study/plan.json --glb output/study/model.glb \
-  --save output/study/rigged.blend --report output/study/blender-check.json --animate
-```
+## Work on another model
 
-The audit leaves original candidate views visible until reconciled; adopting a
-recipe does not review them automatically. Open the blend, select `CTRL_car106`,
-and use **Object Properties → Custom Properties** for doors, roof and wheels.
-Drivers and constraints remain ordinary Blender data after reopening; no add-on
-or Python auto-run is needed to operate them. `--animate` adds demonstration
-keyframes. Follow the [validation guide](docs/validation.md) for reopening,
-lifecycle, clearance and visual checks before delivery.
+Run `prepare MODEL --output output/STUDY` without `--recipe`, inspect the
+evidence and geometry, then author measured joints in `plan.json`. A study
+directory contains ordinary files; commands also accept explicit plan paths.
+Existing commands, flags and version-1 plans continue to work.
 
-Studied CLI recipes are `106`, `928`, `42000`, `42083` and `10265`. They are
-executable examples for exact source selections, with explicit limits. They are
-separate from the curated documentation catalog; neither is automatic rigging
-for an arbitrary model. Requests to animate one mechanism default to a standalone
-subsystem, including agreed coupled elements. Study with `--section`, then
-extract the chosen parts so the MPD, GLB and blend contain that subsystem only.
-See [scope selection](docs/workflow.md#choose-the-deliverable).
+For an **unannotated original**, complete [annotation](docs/annotation.md) before
+preparation: part comments, authored model/assembly descriptions, recursive
+hierarchy review and preservation checks. Reuse already annotated sources
+without semantic rewrites unless requested. For a single mechanism, deliver an
+extracted subsystem with its agreed mounts/coupled parts; see [scope selection](docs/workflow.md#choose-the-deliverable).
 
-## Documentation
+The CLI recipes `106`, `928`, `42000`, `42083` and `10265` are executable examples
+for exact source selections. The [reference catalog](docs/reference/README.md)
+explains gears, steering, engines, suspension, minifigs, movable elements and
+plant/wind animation. Adapt their reasoning and checks, then remeasure the target.
 
-- [Workflow](docs/workflow.md): preparation, inspection, authoring and delivery.
-- [Reference catalog](docs/reference/README.md) and [curation guide](docs/reference/curation.md).
-- [Preserved example assets](examples/README.md): retained sources/evidence,
-  playback, path relocation and archive checks independent of `output/`.
-- [Analysis and Blender APIs](docs/discovery-and-blender.md): search, inventory,
-  compact coordinates, contacts, gear/coaxial evidence and callable scene tools.
-- [Discovery quality](docs/discovery-quality.md): coverage, rounded transforms
-  and accounting for unresolved mechanisms.
-- [Part information](docs/part-information.md): when to use the category tables,
-  dimensions, description files, SQLite and connector metadata.
-- [Motion contract](docs/motion-plan.md), [architecture](docs/architecture.md)
-  and [validation](docs/validation.md).
+## Find the details
 
-## Requirements and scope
+| Need | Read |
+| --- | --- |
+| Everyday commands and recovery | [Workflow](docs/workflow.md) |
+| Joint types, equations, frames and fields | [Motion plan](docs/motion-plan.md) |
+| Source discovery and live Blender tools | [API guide](docs/discovery-and-blender.md) |
+| Missed contacts, rounded transforms, coverage | [Discovery quality](docs/discovery-quality.md) |
+| Part families, descriptions and dimensions | [Part information](docs/part-information.md) |
+| Testing, clearance and evidence limits | [Validation](docs/validation.md) |
+| Code boundaries | [Architecture](docs/architecture.md) |
+| Publishing a selected working example | [Curation](docs/reference/curation.md) and [asset archive](examples/README.md) |
 
-Python 3.12+, `uv`, Bun for the supplied exporter, an LDraw parts library, and
-Blender for rigging. `BLENDER_BIN` or `--blender` selects Blender; `LDRAW_DIR`,
-`LDRAWDIR`, or global `--library` selects the parts library. Source analysis needs
-neither Blender nor Jev. Offline FTS search is the default; `jev-rerank` and
-`TYPESAFE_API_KEY` enable optional semantic search.
+## Requirements
 
-The toolkit supplies evidence and executes declared kinematics. An agent still
-decides rigid groups, joints, coupling and supported travel. Force, friction,
-backlash and general contact dynamics are outside that contract; equation and
-transform checks cannot establish physical feasibility. Original source data
-and the supplied 42000 reference rig remain intact.
+Python 3.12+, `uv`, an LDraw library, Bun for conversion, and Blender for rigging.
+Source analysis needs neither Blender nor Jev. `--blender`/`BLENDER_BIN` selects
+Blender; global `--library`, `LDRAW_DIR` or `LDRAWDIR` selects the parts library.
+Offline FTS search is the default; `jev-rerank` and `TYPESAFE_API_KEY` enable
+optional semantic search. No sibling checkout is required. A read-only library
+works with a writable `LDRAW_MECHA_CACHE`; container deployment is untested.
 
-No sibling checkout is required. Library paths are configurable and the library
-can be mounted read-only; set `LDRAW_MECHA_CACHE` to a writable cache location.
-Container deployment has not been tested. Regenerate plans after moving the
-workspace: they record absolute source paths and hashes. Saved Blender rigs
-operate independently of those source paths.
+Plans record source paths/hashes; regenerate after moving the workspace, or use
+the archive's checked path-relocation helper for retained examples. Saved rigs
+operate independently. Declared kinematics do not simulate forces, friction,
+backlash or general contact dynamics; passing checks alone cannot establish
+physical feasibility.

@@ -2,18 +2,19 @@
 
 import argparse
 import json
-import os
 from pathlib import Path
-import shutil
 import subprocess
 import sys
 
 from . import plan
+from .workflow import control_values, plan_path
 
 
 def parser():
     p = argparse.ArgumentParser(
-        description="Analyze LDraw mechanisms, plan motion, convert and rig in Blender"
+        prog="ldraw-mecha",
+        description="Prepare a study, edit its plan, check motion and rig in Blender",
+        epilog="Start: prepare MODEL --output output/study. Then edit plan.json, check output/study, rig output/study --animate --reopen.",
     )
     p.add_argument("--library", help="LDraw library; otherwise LDRAW_DIR / LDRAWDIR")
     s = p.add_subparsers(dest="command", required=True)
@@ -35,23 +36,24 @@ def parser():
     )
     q.add_argument("model", help="Part-annotated source file")
     q.add_argument(
-        "--descriptions", required=True,
+        "--descriptions",
+        required=True,
         help="JSON object mapping exact section names to single-line descriptions",
     )
     q.add_argument(
         "--output", required=True, help="Separate annotated file or existing directory"
     )
-    for name in (
-        "inspect",
-        "connectors",
-        "contacts",
-        "coaxial",
-        "gear-meshes",
-        "extract",
-        "plan",
-        "convert",
-    ):
-        q = s.add_parser(name)
+    for name, help_text in {
+        "inspect": "List source occurrences, positions and candidate roles",
+        "connectors": "Inspect a part's local and world connector frames",
+        "contacts": "Measure connector contacts in a bounded part selection",
+        "coaxial": "Find candidate shared axes in a bounded part selection",
+        "gear-meshes": "Find candidate gear meshes from source geometry",
+        "extract": "Copy one source section into a standalone MPD",
+        "plan": "Create a draft or adopt a studied recipe into an existing study",
+        "convert": "Convert source geometry and bind occurrence IDs in a GLB",
+    }.items():
+        q = s.add_parser(name, help=help_text)
         q.add_argument("model")
         q.add_argument("--section")
         q.add_argument("--output")
@@ -85,29 +87,47 @@ def parser():
             q.add_argument("--recipe", choices=sorted(RECIPES))
             q.add_argument(
                 "--study",
+                type=plan_path,
                 help="Preserve a prepared study's evidence while adopting this recipe",
             )
         if name == "convert":
             q.add_argument(
-                "--plan", help="Use the exact source/section recorded in this plan"
+                "--plan",
+                type=plan_path,
+                help="Use the exact source/section recorded in this plan",
             )
-    for name in ("validate", "evaluate", "sweep", "audit"):
-        q = s.add_parser(name)
-        q.add_argument("plan")
-        q.add_argument("--output")
-        if name == "audit":
+    for name, help_text in {
+        "check": "Validate source, sweep motion, evaluate mixed poses and audit scope",
+        "validate": "Check plan structure, source freshness and default-pose closure",
+        "evaluate": "Evaluate one pose and its declared closure checks",
+        "sweep": "Sweep each control independently through its limits",
+        "audit": "Report reviewed, unresolved and deferred mechanisms",
+    }.items():
+        q = s.add_parser(name, help=help_text)
+        q.add_argument("plan", type=plan_path, help="Plan JSON or study directory")
+        q.add_argument(
+            "--output",
+            help=(
+                "Defaults to check.json beside the plan"
+                if name == "check"
+                else "Save the full JSON report to this file"
+            ),
+        )
+        if name in ("audit", "check"):
             q.add_argument(
                 "--require-reviewed",
                 action="store_true",
                 help="Exit 1 for unresolved/unaccounted mechanisms; deferred items remain explicitly reported",
             )
-        if name == "evaluate":
+        if name in ("evaluate", "check"):
             q.add_argument(
                 "--set", action="append", default=[], metavar="CONTROL=VALUE"
             )
-        if name == "sweep":
+        if name in ("sweep", "check"):
             q.add_argument("--steps", type=int, default=17)
-    q = s.add_parser("search")
+    q = s.add_parser(
+        "search", help="Search the part/model catalog (offline by default)"
+    )
     q.add_argument("kind", choices=["parts", "models", "submodels"])
     q.add_argument("query")
     q.add_argument("--engine", choices=["fts", "keyword", "jev"], default="fts")
@@ -130,14 +150,23 @@ def parser():
     q.add_argument("--shadow")
     q.add_argument("--contact-limit", type=int, default=300)
     q.add_argument("--no-glb", action="store_true", help="Source-only preparation")
-    q.add_argument(
+    motion = q.add_mutually_exclusive_group()
+    motion.add_argument(
         "--plan",
+        type=plan_path,
         help="Optional existing motion plan with exactly matching source identities",
+    )
+    from .recipes import RECIPES
+
+    motion.add_argument(
+        "--recipe",
+        choices=sorted(RECIPES),
+        help="Adopt studied motion while preserving all discovery evidence",
     )
     q = s.add_parser(
         "diagrams", help="Export optional diagnostic Mermaid views from the plan JSON"
     )
-    q.add_argument("plan")
+    q.add_argument("plan", type=plan_path, help="Plan JSON or study directory")
     q.add_argument("--output", help="Directory; defaults to diagrams beside the plan")
     q.add_argument("--view", choices=["auto", "connections", "motion"], default="auto")
     q.add_argument("--mechanism")
@@ -145,7 +174,9 @@ def parser():
         "jev-status", help="One small billable availability probe; no balance endpoint"
     )
     q.add_argument("--output")
-    q = s.add_parser("submodels")
+    q = s.add_parser(
+        "submodels", help="Compare named assemblies and their part inventories"
+    )
     q.add_argument("model")
     q.add_argument("--match", help="Substring in section name or description")
     q.add_argument(
@@ -156,13 +187,20 @@ def parser():
     q.add_argument("--limit", type=int, default=30)
     q.add_argument("--format", choices=["json", "table"], default="json")
     q.add_argument("--output")
-    q = s.add_parser("rig")
-    q.add_argument("plan")
-    q.add_argument("--glb", required=True)
-    q.add_argument("--save", required=True)
+    q = s.add_parser("rig", help="Build and verify a ready plan in background Blender")
+    q.add_argument("plan", type=plan_path, help="Plan JSON or study directory")
+    q.add_argument("--glb", help="Defaults to model.glb beside the plan")
+    q.add_argument("--save", help="Defaults to rigged.blend beside the plan")
     q.add_argument("--blender", help="Blender executable, or BLENDER_BIN")
-    q.add_argument("--report")
+    q.add_argument(
+        "--report", help="Defaults to blender-check.json beside the saved blend"
+    )
     q.add_argument("--animate", action="store_true")
+    q.add_argument(
+        "--reopen",
+        action="store_true",
+        help="Also verify the saved rig in a fresh Blender process",
+    )
     q.add_argument(
         "--tolerance",
         type=float,
@@ -206,6 +244,22 @@ def main(argv=None):
                 contact_limit=args.contact_limit,
                 convert_glb=not args.no_glb,
                 motion=plan.load(args.plan) if args.plan else None,
+                recipe=args.recipe,
+            )
+        elif command == "check":
+            from .workflow import check, protect_inputs
+
+            p = plan.load(args.plan)
+            args.output = args.output or args.plan.with_name("check.json")
+            protect_inputs(
+                [args.plan, p["source"]["path"], *p["source"]["dependencies"]],
+                [args.output],
+            )
+            result = check(
+                p,
+                steps=args.steps,
+                values=control_values(args.set) if args.set else None,
+                require_reviewed=args.require_reviewed,
             )
         elif command == "diagrams":
             from .mechanisms import write_diagrams
@@ -356,53 +410,21 @@ def main(argv=None):
             elif command == "sweep":
                 result = plan.sweep(p, args.steps)
             else:
-                values = {}
-                for pair in args.set:
-                    k, sep, v = pair.partition("=")
-                    if not sep:
-                        raise ValueError("--set needs CONTROL=VALUE")
-                    values[k] = float(v)
-                result = plan.evaluate(p, values)
+                result = plan.evaluate(p, control_values(args.set))
+                result["passed"] = all(c["passed"] for c in result["checks"])
         elif command == "rig":
-            from .source import ROOT
+            from .workflow import rig
 
-            plan.validate(plan.load(args.plan), check_source=True)
-            executable = (
-                args.blender or os.environ.get("BLENDER_BIN") or shutil.which("blender")
+            result = rig(
+                args.plan,
+                glb=args.glb,
+                save=args.save,
+                report=args.report,
+                blender=args.blender,
+                animate=args.animate,
+                tolerance=args.tolerance,
+                reopen=args.reopen,
             )
-            if (
-                not executable
-                and Path("/Applications/Blender.app/Contents/MacOS/Blender").is_file()
-            ):
-                executable = "/Applications/Blender.app/Contents/MacOS/Blender"
-            if not executable:
-                raise ValueError("Set BLENDER_BIN or pass --blender")
-            cmd = [
-                executable,
-                "--background",
-                "--factory-startup",
-                "--python-exit-code",
-                "1",
-                "--python",
-                str(ROOT / "scripts/blender/apply_plan.py"),
-                "--",
-                "--new-scene",
-                "--plan",
-                str(Path(args.plan).resolve()),
-                "--glb",
-                str(Path(args.glb).resolve()),
-                "--save",
-                str(Path(args.save).resolve()),
-            ]
-            if args.report:
-                cmd += ["--report", str(Path(args.report).resolve())]
-            if args.animate:
-                cmd += ["--animate"]
-            cmd += ["--tolerance", repr(args.tolerance)]
-            run = subprocess.run(cmd, stdout=sys.stderr, stderr=sys.stderr)
-            if run.returncode:
-                return 1
-            result = dict(saved=str(Path(args.save).resolve()), verified=True)
         else:
             raise ValueError("Unknown command")
         if getattr(args, "format", None) == "table":
@@ -441,10 +463,11 @@ def main(argv=None):
             print(
                 json.dumps(
                     dict(
-                        plan=result.get("plan", getattr(args, "plan", None)),
+                        plan=str(result.get("plan", getattr(args, "plan", ""))),
                         **(
                             {"diagrams": result["directory"]}
-                            if command == "diagrams" else {}
+                            if command == "diagrams"
+                            else {}
                         ),
                         glb=result.get("glb"),
                         contacts=contact_report.get("summary", contact_report)

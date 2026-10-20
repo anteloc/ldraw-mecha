@@ -9,15 +9,25 @@ nor a passing transform comparison proves mechanical feasibility.
 
 ```sh
 .venv/bin/pytest -q
-./ldraw-mecha validate output/study/plan.json
-./ldraw-mecha sweep output/study/plan.json --output output/study/sweep.json
-./ldraw-mecha audit output/study/plan.json --output output/study/audit.json
+./ldraw-mecha check output/study
+# Once each recorded finding has a reviewed disposition:
+./ldraw-mecha check output/study --require-reviewed
 ```
+
+`check.json` combines source/contract validation, independent sweeps, default
+and mixed poses, and scope auditing. Use `--set NAME=VALUE` repeatedly for one
+additional combined pose, `--steps` for sweep density and `--output` for a
+separate report per case. `validate`, `sweep`, `evaluate` and `audit` remain
+available for focused diagnostics. Failed closure now gives `evaluate` exit 1,
+matching `check` and `sweep`; invalid input gives exit 2.
 
 Tests cover source identities/attribution, parsing boundaries, numerical placement
 correction, discovery coverage, search, evidence views, GLB binding, safe motion
 expressions and case-specific mechanisms. Preparation tests verify that evidence
 survives conversion failure and diagrams are created only by explicit export.
+Workflow tests also cover equivalent recipe adoption, source freshness,
+input preservation, mixed-pose failures hidden by independent sweeps, offset
+control ranges, scope deferrals and background-process failure propagation.
 
 Test meaningful nonzero and asymmetric inputs, limits and relevant selector
 states. Check mechanical invariants such as ratios and rod lengths, not just
@@ -30,6 +40,16 @@ missing mechanisms or validate their physics.
 Adapter changes require background builds, fresh-process reopening and lifecycle
 checks. The original reference scripts remain unchanged. Set `BLENDER_BIN` to
 an available Blender executable; generated reports belong under `output/`.
+
+For routine build and reopen verification:
+
+```sh
+./ldraw-mecha rig output/study --animate --reopen
+```
+
+This writes `blender-check.json` and `blender-check-reopen.json` beside the saved
+blend. The separate commands below remain useful for adapter development and
+verification of files built through the live API.
 
 ```sh
 # Draft inspection -> measured roof joint -> rig on the same imported 106 model.

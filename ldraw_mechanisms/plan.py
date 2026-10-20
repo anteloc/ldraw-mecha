@@ -367,11 +367,15 @@ def evaluate(plan, values=None):
 
 
 def combined_sample(plan, fraction=0.4):
-    """Nonzero, mixed-sign values for every control, to exercise coupled motion."""
+    """Move from each default toward alternating limits, within its range."""
+    if not finite(fraction) or not 0 <= fraction <= 1:
+        raise ValueError("Sample fraction must be between 0 and 1")
     sample = {}
     for i, (name, c) in enumerate(plan["controls"].items()):
-        value = c["min"] if i % 2 and c["min"] < 0 else c["max"]
-        sample[name] = fraction * value
+        target = c["min"] if i % 2 and c["min"] < 0 else c["max"]
+        if target == c["default"]:
+            target = c["max"] if target == c["min"] else c["min"]
+        sample[name] = c["default"] + fraction * (target - c["default"])
     return sample
 
 
