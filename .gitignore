@@ -225,3 +225,5 @@ __marimo__/
 prompts-local/
 
 .DS_Store
+
+docs/sessions
