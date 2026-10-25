@@ -55,6 +55,7 @@ Useful signal relations:
 | --- | --- | --- |
 | Revolute joint | output angle = input angle | Pivot, axis, allowed range, moving group |
 | External parallel gears | `-teeth_a/teeth_b * a` | Actual meshing, tooth counts, directed axes |
+| Parallel gears on moving carrier | `c - teeth_a/teeth_b * (a-c)` | Same directed axis convention; carrier motion and engagement |
 | Coaxial shaft coupling | `a` (or `-a` for reversed axis) | Rigid attachment, not just concentricity |
 | Rack and pinion | pitch radius × pinion angle | Tooth pitch, slide axis, tangent sign |
 | Symmetric differential | carrier = `(left+right)/2` | Equal side gears and consistent axes |
@@ -102,6 +103,79 @@ scope audit; add mechanism-specific coupled/asymmetric cases with `check --set`,
 The Blender verifier compares every moving part's evaluated matrix with the
 portable evaluator, checks static parts, driver validity and link lengths.
 These checks do not establish clearance or physical feasibility by themselves.
+
+## Mechanical checks on physical occurrences
+
+Legacy distance checks remain valid. The additional checks below use actual
+occurrence displacements, including parts without a body (fixed in source
+space). They do not infer joints from candidate `connections` or assembly names.
+The Python evaluator and Blender verifier evaluate the same invariants; Blender
+uses its measured scene matrices, not the expected signal values.
+
+Lock the relative pose of two keyed parts:
+
+```json
+{"kind":"rigid", "name":"keyed_shaft", "a":"0", "b":"1", "tolerance_ldu":0.002, "tolerance_degrees":0.002}
+```
+
+This retains the source offset and orientation, including its initial fit error.
+It detects an independently spinning gear or a wrong rotation centre. It does
+not establish that the source was properly seated. Keep keyed parts in one
+body where appropriate; an internal check is useful for Blender tampering but
+does not count as independent cross-body coverage.
+
+Constrain bearing axes, permit shaft spin and check finite insertion:
+
+```json
+{"kind":"coaxial", "name":"bearing",
+ "a":{"instance":"0", "point":[0,0,0], "axis":[1,0,0], "span":[-40,40]},
+ "b":{"instance":"2", "point":[0,10,0], "axis":[0,0,1], "span":[-10,10]},
+ "tolerance_ldu":0.02, "tolerance_degrees":0.1,
+ "axial_tolerance_ldu":0.02, "min_overlap_ldu":19.9}
+```
+
+Both points/axes are **part-local**, unlike body origins. Directions may oppose.
+`tolerance_ldu` bounds radial offset; `axial_tolerance_ldu`, when present, bounds
+change from the source axial separation. Omit it for a sliding joint. `span`
+is an interval along the directed unit axis from `point`, in LDU. A positive
+`min_overlap_ldu` requires both spans. Select the actual mating section of a
+mixed pin/axle; neither line alignment nor overlap proves keyed engagement or
+retention. Without spans this remains an infinite-line check.
+
+Check a signed gear or differential relation from actual rotations:
+
+```json
+{"kind":"rotation", "name":"gear_mesh", "carrier":"4",
+ "terms":[{"instance":"0", "axis":[0,0,1], "coefficient":8},
+          {"instance":"1", "axis":[0,0,1], "coefficient":24}],
+ "tolerance_radians":0.0001, "axis_tolerance_degrees":0.002}
+```
+
+Term axes are **global rest-frame directed axes**. `carrier` is a physical
+occurrence; its full motion is removed before measuring relative twist. Omit it
+for a fixed frame. A term's axis must stay fixed in that frame. Coefficients are
+nonzero integers so phase residuals remain well-defined modulo 2π: 8/24 for an
+external gear pair, or 1, 1, -2 for equal differential sides/carrier using a
+common directed axis. Source phase is retained. This checks phase, not tooth
+geometry; add axis/engagement checks independently. Wrapped phase does not prove
+continuity or revolution counts; use dense off-grid samples and multi-turn tests.
+
+Mechanical `error` is the largest **normalized tolerance ratio**, with pass at
+≤1; named fields retain physical units. Distance `error` remains LDU for
+compatibility. Do not interpret mixed `sweep.max_error` as one physical unit.
+Mechanical frame checks reject stretched spring instances.
+
+`audit` reports controlled bodies without cross-body check participation.
+`check --require-constrained` fails on those gaps; `rig --require-constrained`
+also runs that sampled preflight before launching Blender. Existing invocations
+remain compatible and emit warnings. Coverage means participation, not sufficient
+constraints or verified physics; this flag does not replace `--require-reviewed`.
+
+For reusable signal authoring, `linkages.gear_pair` applies the carrier-relative
+ratio, `differential` returns carrier mean and relative planet spin, and
+`double_cardan` composes two phased equal-bend joints at fixed articulation.
+Their equations need measured interfaces and independent checks. See the
+[RCVJ failure study](rcvj.md) for actual source mistakes these checks expose.
 
 Coordinate conversion: the GLB exporter keeps LDraw node transforms, rotates the
 root by pi around X and applies `0.0004` metres/LDU. Blender's glTF basis change

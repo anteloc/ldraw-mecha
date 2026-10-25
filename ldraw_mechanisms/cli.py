@@ -115,6 +115,11 @@ def parser():
         )
         if name in ("audit", "check"):
             q.add_argument(
+                "--require-constrained",
+                action="store_true",
+                help="Exit 1 if any controlled body lacks a cross-body mechanical check",
+            )
+            q.add_argument(
                 "--require-reviewed",
                 action="store_true",
                 help="Exit 1 for unresolved/unaccounted mechanisms; deferred items remain explicitly reported",
@@ -188,6 +193,11 @@ def parser():
     q.add_argument("--format", choices=["json", "table"], default="json")
     q.add_argument("--output")
     q = s.add_parser("rig", help="Build and verify a ready plan in background Blender")
+    q.add_argument(
+        "--require-constrained",
+        action="store_true",
+        help="Require passing sampled mechanical checks and coverage before starting Blender",
+    )
     q.add_argument("plan", type=plan_path, help="Plan JSON or study directory")
     q.add_argument("--glb", help="Defaults to model.glb beside the plan")
     q.add_argument("--save", help="Defaults to rigged.blend beside the plan")
@@ -260,6 +270,7 @@ def main(argv=None):
                 steps=args.steps,
                 values=control_values(args.set) if args.set else None,
                 require_reviewed=args.require_reviewed,
+                require_constrained=args.require_constrained,
             )
         elif command == "diagrams":
             from .mechanisms import write_diagrams
@@ -276,6 +287,10 @@ def main(argv=None):
             result = audit(plan.load(args.plan))
             if args.require_reviewed:
                 result["passed"] = result["review_complete"]
+            if args.require_constrained:
+                result["passed"] = (
+                    result.get("passed", True) and result["constraints"]["complete"]
+                )
         elif command == "inspect":
             from .analysis import inspect
 
@@ -424,6 +439,7 @@ def main(argv=None):
                 animate=args.animate,
                 tolerance=args.tolerance,
                 reopen=args.reopen,
+                require_constrained=args.require_constrained,
             )
         else:
             raise ValueError("Unknown command")

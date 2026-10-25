@@ -1,0 +1,13 @@
+0 FILE fixture.ldr
+0 DESCRIPTION Parallel 8/24 gear test with keyed axles and round bearings on a moving carrier; adapter test, not a collision-certified build.
+0 Author: ldraw-mecha regression fixture
+0 !LDRAW_ORG Model
+0 // Driver gear and axle
+1 4 0 0 0 1 0 0 0 1 0 0 0 1 3647.dat
+1 14 40 0 0 1 0 0 0 1 0 0 0 1 3648a.dat
+1 0 0 0 0 0 0 -1 0 1 0 1 0 0 3705.dat
+1 0 40 0 0 0 0 -1 0 1 0 1 0 0 3705.dat
+0 // Bearing blocks carried together
+1 7 0 -10 20 1 0 0 0 1 0 0 0 1 3700.dat
+1 7 40 -10 20 1 0 0 0 1 0 0 0 1 3700.dat
+0 NOFILE

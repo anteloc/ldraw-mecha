@@ -37,6 +37,11 @@ evidence and geometry, then author measured joints in `plan.json`. A study
 directory contains ordinary files; commands also accept explicit plan paths.
 Existing commands, flags and version-1 plans continue to work.
 
+For complex drivetrains, read the [RCVJ study](docs/rcvj.md). New physical
+occurrence checks catch independent gear spin, wrong shaft axes and carrier
+relations; `check` and `rig` accept `--require-constrained` to reject unchecked
+moving bodies before producing an animation.
+
 For an **unannotated original**, complete [annotation](docs/annotation.md) before
 preparation: part comments, authored model/assembly descriptions, recursive
 hierarchy review and preservation checks. Reuse already annotated sources

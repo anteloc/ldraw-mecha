@@ -257,7 +257,23 @@ def validate(plan, check_source=False):
             raise ValueError(f"Invalid anchor: {name}")
     for check in plan["checks"]:
         if check["kind"] != "distance":
-            raise ValueError("Only distance checks are supported")
+            from .constraints import validate as validate_constraint
+
+            validate_constraint(check, nodes)
+            from .constraints import instances as constraint_instances
+
+            owners = {
+                i: b for b, body in plan["bodies"].items() for i in body["instances"]
+            }
+            for instance in constraint_instances(check):
+                if (
+                    instance in owners
+                    and plan["bodies"][owners[instance]]["kind"] == "stretch"
+                ):
+                    raise ValueError(
+                        "Mechanical frame checks require rigid parts, not stretched springs"
+                    )
+            continue
         if any(check[k] not in plan["anchors"] for k in ("a", "b")):
             raise ValueError("Unknown check anchor")
         if (
@@ -346,7 +362,19 @@ def evaluate(plan, values=None):
             current, inverse(frame(b["origin"], b["axis"], b["x_hint"]))
         )
     checks = []
+    if any(c["kind"] != "distance" for c in plan["checks"]):
+        nodes = {n["id"]: n for n in plan["source"]["nodes"]}
+        deltas = {
+            i: transforms[name]
+            for name, b in plan["bodies"].items()
+            for i in b["instances"]
+        }
     for c in plan["checks"]:
+        if c["kind"] != "distance":
+            from .constraints import evaluate as evaluate_constraint
+
+            checks.append(evaluate_constraint(c, nodes, deltas))
+            continue
         measured = length(sub(anchors[c["a"]], anchors[c["b"]]))
         error = abs(measured - c["length"])
         checks.append(

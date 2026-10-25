@@ -17,9 +17,7 @@ def rotate(v, axis, angle):
     """Rodrigues rotation of vector v about unit axis."""
     k = unit(axis)
     c, s = math.cos(angle), math.sin(angle)
-    return add(
-        add(mul(v, c), mul(cross(k, v), s)), mul(k, dot(k, v) * (1 - c))
-    )
+    return add(add(mul(v, c), mul(cross(k, v), s)), mul(k, dot(k, v) * (1 - c)))
 
 
 def _num(v):
@@ -34,6 +32,47 @@ def _put(signals, name, expression, **variables):
         variables={k: v if ":" in v else "signal:" + v for k, v in variables.items()},
     )
     return name
+
+
+def gear_pair(signals, prefix, driver, carrier, ratio):
+    """Follower angle in the carrier's frame: b = c + ratio * (a - c).
+
+    Inputs are absolute angles about consistently directed parallel axes.
+    `ratio` includes the sign (external gears with equally directed axes use
+    -Na/Nb). The caller must establish mesh, tooth counts and rigid shaft groups.
+    Passing zero as a constant carrier signal describes a fixed-axis pair.
+    """
+    if not isinstance(ratio, (int, float)) or not math.isfinite(ratio) or ratio == 0:
+        raise ValueError("Gear ratio must be finite and nonzero")
+    return _put(signals, prefix + "_out", f"c+{_num(ratio)}*(a-c)", a=driver, c=carrier)
+
+
+def differential(
+    signals, prefix, side_a, side_b, *, side_teeth, planet_teeth, planet_sign=1
+):
+    """Equal-side-gear differential: carrier mean and planet spin relative to it.
+
+    Both side angles use the SAME directed shaft axis, even when their part
+    matrices face opposite ways. Planet sign depends on its chosen axis/contact.
+    Parent the planet to the carrier and drive it with the returned relative
+    spin. This is a relation, not automatic discovery of a differential.
+    """
+    if any(
+        not isinstance(n, int) or isinstance(n, bool) or n <= 0
+        for n in (side_teeth, planet_teeth)
+    ) or planet_sign not in (-1, 1):
+        raise ValueError(
+            "Differential needs positive integer tooth counts and planet_sign +/-1"
+        )
+    carrier = _put(signals, prefix + "_carrier", "(a+b)/2", a=side_a, b=side_b)
+    planet = _put(
+        signals,
+        prefix + "_planet",
+        f"{_num(planet_sign * side_teeth / (2 * planet_teeth))}*(a-b)",
+        a=side_a,
+        b=side_b,
+    )
+    return carrier, planet
 
 
 def universal_joint(signals, prefix, theta, d_in, d_out, f_in, f_out, samples=48):
@@ -63,7 +102,9 @@ def universal_joint(signals, prefix, theta, d_in, d_out, f_in, f_out, samples=48
     exact = unit(cross(d_out, f_in))
     exact = exact if dot(exact, f_out) > 0 else mul(exact, -1)
     if dot(exact, f_out) < math.cos(math.radians(1)):
-        raise ValueError(f"Universal joint {prefix}: output fork is more than 1 degree off")
+        raise ValueError(
+            f"Universal joint {prefix}: output fork is more than 1 degree off"
+        )
     f_out = exact
     if dot(d_in, d_out) <= 0.05:
         raise ValueError(f"Universal joint {prefix}: bend must stay below 87 degrees")
@@ -81,11 +122,17 @@ def universal_joint(signals, prefix, theta, d_in, d_out, f_in, f_out, samples=48
     d_c, d_s = q_terms(f_out, f_out), q_terms(f_out, g_out)
 
     def output(t):
-        wrapped = math.atan2(-a * math.sin(t) * sb, (b * math.cos(t) + c * math.sin(t)) * sb)
+        wrapped = math.atan2(
+            -a * math.sin(t) * sb, (b * math.cos(t) + c * math.sin(t)) * sb
+        )
         return t + math.atan2(math.sin(wrapped - t), math.cos(wrapped - t))
 
     def qv(terms, t):
-        return math.cos(t) * terms[0] + math.sin(t) * terms[1] + (1 - math.cos(t)) * terms[2]
+        return (
+            math.cos(t) * terms[0]
+            + math.sin(t) * terms[1]
+            + (1 - math.cos(t)) * terms[2]
+        )
 
     def cross_angle(t, o):
         n = math.cos(o) * qv(n_c, t) + math.sin(o) * qv(n_s, t)
@@ -97,11 +144,15 @@ def universal_joint(signals, prefix, theta, d_in, d_out, f_in, f_out, samples=48
         o = output(t)
         fi, fo = rotate(f_in, d_in, t), rotate(f_out, d_out, o)
         if abs(dot(fi, fo)) > 1e-9:
-            raise ValueError(f"Universal joint {prefix}: output violates the cross constraint")
+            raise ValueError(
+                f"Universal joint {prefix}: output violates the cross constraint"
+            )
         g = cross_angle(t, o)
         arm2 = rotate(rotate(f_out, f_in, g), d_in, t)
         if length(sub(arm2, fo)) > 1e-9:
-            raise ValueError(f"Universal joint {prefix}: cross angle does not reach the output fork")
+            raise ValueError(
+                f"Universal joint {prefix}: cross angle does not reach the output fork"
+            )
     if abs(output(0.0)) > 1e-12:
         raise ValueError(f"Universal joint {prefix}: rest pose is not the zero branch")
 
@@ -127,6 +178,39 @@ def universal_joint(signals, prefix, theta, d_in, d_out, f_in, f_out, samples=48
     _put(signals, p + "_d", f"co*{q_expr(d_c)}+so*{q_expr(d_s)}", **four)
     _put(signals, p + "_cross", "atan2(n,d)", n=p + "_n", d=p + "_d")
     return p + "_out", p + "_cross"
+
+
+def double_cardan(signals, prefix, theta, d_in, d_out, fork):
+    """Phased equal-bend Cardan pair at a fixed articulation.
+
+    `fork` is the common input/output fork axis at rest, perpendicular to both
+    shaft directions. The intermediate shaft is the vector angle bisector;
+    its two forks share the returned `middle_fork` direction. Each joint is
+    solved separately, so the nonuniform intermediate rotation remains visible.
+    This helper does not infer that a real assembly enforces the bisector, and
+    cannot substitute for its centring linkage or differential closure checks.
+    """
+    a, b, f = unit(d_in), unit(d_out), unit(fork)
+    if dot(a, b) <= -0.99 or abs(dot(a, f)) > 1e-6 or abs(dot(b, f)) > 1e-6:
+        raise ValueError(
+            "Double Cardan needs a common perpendicular fork and non-opposed shafts"
+        )
+    middle = unit(add(a, b))
+    middle_fork = unit(cross(middle, f))
+    mid, cross_a = universal_joint(
+        signals, prefix + "_a", theta, a, middle, f, middle_fork
+    )
+    out, cross_b = universal_joint(
+        signals, prefix + "_b", mid, middle, b, middle_fork, f
+    )
+    return dict(
+        middle_axis=middle,
+        middle_fork=middle_fork,
+        middle=mid,
+        output=out,
+        cross_a=cross_a,
+        cross_b=cross_b,
+    )
 
 
 def ball_link(signals, prefix, slide, pivot, axis, ball, socket, direction, length_ldu):

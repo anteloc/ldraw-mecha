@@ -83,6 +83,20 @@ def test_check_catches_coupling_that_independent_sweeps_miss(coupled):
     assert coupled == before
 
 
+def test_strict_constraints_reject_zero_check_animation_before_blender(
+    coupled, tmp_path
+):
+    coupled["checks"] = []
+    assert workflow.check(coupled)["passed"]  # Compatible legacy behaviour.
+    strict = workflow.check(coupled, require_constrained=True)
+    assert not strict["passed"]
+    assert strict["audit"]["constraints"]["unchecked_bodies"] == ["moving"]
+    path = tmp_path / "plan.json"
+    plan.save(path, coupled)
+    # No GLB or Blender is needed: strict preflight must reject this first.
+    assert not workflow.rig(path, require_constrained=True)["passed"]
+
+
 def test_check_reports_domain_failure_at_nonzero_pose(coupled):
     coupled["checks"] = []
     coupled["signals"]["slide"]["expression"] = "sqrt(1-100*a*a*b*b)"

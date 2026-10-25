@@ -42,7 +42,9 @@ def control_values(assignments):
     return values
 
 
-def check(plan, *, steps=17, values=None, require_reviewed=False):
+def check(
+    plan, *, steps=17, values=None, require_reviewed=False, require_constrained=False
+):
     """Validate current source, sweep controls and report scope in one place.
 
     Mixed poses supplement independent sweeps, not mechanism-specific tests.
@@ -84,6 +86,7 @@ def check(plan, *, steps=17, values=None, require_reviewed=False):
     return dict(
         passed=swept["passed"]
         and all(p["passed"] for p in evaluated.values())
+        and (not require_constrained or scope["constraints"]["complete"])
         and (not require_reviewed or scope["review_complete"]),
         plan_digest=contract.digest(plan),
         validation=validated,
@@ -91,6 +94,7 @@ def check(plan, *, steps=17, values=None, require_reviewed=False):
         poses=evaluated,
         audit=scope,
         require_reviewed=require_reviewed,
+        require_constrained=require_constrained,
         summary=dict(
             status=plan["status"],
             moving_parts=validated["moving_parts"],
@@ -127,6 +131,7 @@ def rig(
     animate=False,
     tolerance=0.002,
     reopen=False,
+    require_constrained=False,
 ):
     """Build using conventional paths or explicit overrides; optionally reopen.
 
@@ -136,6 +141,15 @@ def rig(
     path = plan_path(value)
     plan = contract.load(path)
     contract.validate(plan, check_source=True)
+    if require_constrained:
+        preflight = check(plan, require_constrained=True)
+        if not preflight["passed"]:
+            return dict(
+                passed=False,
+                verified=False,
+                reason="Mechanical preflight failed",
+                preflight=preflight,
+            )
     if not contract.finite(tolerance) or tolerance <= 0:
         raise ValueError("Tolerance must be a positive finite number in LDU")
     model = Path(glb).resolve() if glb else path.with_name("model.glb")

@@ -1,0 +1,227 @@
+{
+  "version": 1,
+  "name": "constraint_fixture",
+  "status": "ready",
+  "controls": {
+    "drive": {
+      "unit": "radian",
+      "default": 0,
+      "min": -6.28,
+      "max": 6.28,
+      "description": "Regression drive"
+    },
+    "orbit": {
+      "unit": "radian",
+      "default": 0,
+      "min": -6.28,
+      "max": 6.28,
+      "description": "Regression orbit"
+    }
+  },
+  "signals": {
+    "drive": {
+      "expression": "v",
+      "variables": {
+        "v": "control:drive"
+      }
+    },
+    "orbit": {
+      "expression": "v",
+      "variables": {
+        "v": "control:orbit"
+      }
+    },
+    "follower": {
+      "expression": "-v/3",
+      "variables": {
+        "v": "control:drive"
+      }
+    }
+  },
+  "bodies": {
+    "carrier": {
+      "kind": "revolute",
+      "origin": [
+        0,
+        0,
+        20
+      ],
+      "axis": [
+        1,
+        0,
+        0
+      ],
+      "instances": [
+        "4",
+        "5"
+      ],
+      "signal": "orbit"
+    },
+    "driver": {
+      "kind": "revolute",
+      "origin": [
+        0,
+        0,
+        0
+      ],
+      "axis": [
+        0,
+        0,
+        1
+      ],
+      "instances": [
+        "0",
+        "2"
+      ],
+      "signal": "drive",
+      "parent": "carrier"
+    },
+    "follower": {
+      "kind": "revolute",
+      "origin": [
+        40,
+        0,
+        0
+      ],
+      "axis": [
+        0,
+        0,
+        1
+      ],
+      "instances": [
+        "1",
+        "3"
+      ],
+      "signal": "follower",
+      "parent": "carrier"
+    }
+  },
+  "anchors": {},
+  "checks": [
+    {
+      "kind": "rigid",
+      "a": "0",
+      "b": "2",
+      "tolerance_ldu": 0.002,
+      "tolerance_degrees": 0.002
+    },
+    {
+      "kind": "rigid",
+      "a": "1",
+      "b": "3",
+      "tolerance_ldu": 0.002,
+      "tolerance_degrees": 0.002
+    },
+    {
+      "kind": "coaxial",
+      "a": {
+        "instance": "2",
+        "point": [
+          0,
+          0,
+          0
+        ],
+        "axis": [
+          1,
+          0,
+          0
+        ],
+        "span": [
+          -40,
+          40
+        ]
+      },
+      "b": {
+        "instance": "4",
+        "point": [
+          0,
+          10,
+          0
+        ],
+        "axis": [
+          0,
+          0,
+          1
+        ],
+        "span": [
+          -10,
+          10
+        ]
+      },
+      "tolerance_ldu": 0.002,
+      "tolerance_degrees": 0.002,
+      "axial_tolerance_ldu": 0.002,
+      "min_overlap_ldu": 19.99
+    },
+    {
+      "kind": "coaxial",
+      "a": {
+        "instance": "3",
+        "point": [
+          0,
+          0,
+          0
+        ],
+        "axis": [
+          1,
+          0,
+          0
+        ],
+        "span": [
+          -40,
+          40
+        ]
+      },
+      "b": {
+        "instance": "5",
+        "point": [
+          0,
+          10,
+          0
+        ],
+        "axis": [
+          0,
+          0,
+          1
+        ],
+        "span": [
+          -10,
+          10
+        ]
+      },
+      "tolerance_ldu": 0.002,
+      "tolerance_degrees": 0.002,
+      "axial_tolerance_ldu": 0.002,
+      "min_overlap_ldu": 19.99
+    },
+    {
+      "kind": "rotation",
+      "carrier": "4",
+      "terms": [
+        {
+          "instance": "0",
+          "axis": [
+            0,
+            0,
+            1
+          ],
+          "coefficient": 8
+        },
+        {
+          "instance": "1",
+          "axis": [
+            0,
+            0,
+            1
+          ],
+          "coefficient": 24
+        }
+      ],
+      "tolerance_radians": 0.0001,
+      "axis_tolerance_degrees": 0.002
+    }
+  ],
+  "notes": [
+    "Assign rigid groups and measured joints before setting status to ready."
+  ]
+}

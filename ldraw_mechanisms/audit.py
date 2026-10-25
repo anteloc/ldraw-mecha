@@ -64,7 +64,19 @@ def audit(plan):
         )
     pending = [f["id"] for f in findings if f["disposition"] == "unresolved"]
     deferred = [f["id"] for f in findings if f["disposition"] == "deferred"]
+    from .constraints import coverage
+
+    constrained = coverage(plan)
+    if constrained["unchecked_bodies"]:
+        warnings.append(
+            dict(
+                code="unchecked_motion",
+                message="Controlled bodies lack cross-body mechanical checks: "
+                + ", ".join(constrained["unchecked_bodies"]),
+            )
+        )
     return dict(
+        constraints=constrained,
         summary=dict(Counter(f["disposition"] for f in findings)),
         review_complete=bool(findings)
         and not pending

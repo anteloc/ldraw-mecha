@@ -378,10 +378,7 @@ def verify(rig, plan, samples=None, tolerance=0.002):
                 for instance in b["instances"]:
                     world = rest_world(source_nodes, instance, rig["mapping"])
                     expected_m = (
-                        C
-                        @ Matrix(expected["transforms"][name])
-                        @ Matrix(world)
-                        @ C_INV
+                        C @ Matrix(expected["transforms"][name]) @ Matrix(world) @ C_INV
                     )
                     actual = (
                         root_inverse
@@ -412,7 +409,31 @@ def verify(rig, plan, samples=None, tolerance=0.002):
                     )
                 )
             closure = []
+            mechanical = []
+            measured_deltas = {}
+            from .constraints import (
+                instances as check_instances,
+                evaluate as check_motion,
+            )
+
             for c in plan["checks"]:
+                if c["kind"] == "distance":
+                    continue
+                for instance in check_instances(c):
+                    if instance not in measured_deltas:
+                        actual = (
+                            root_inverse
+                            @ rig["mapping"][instance].evaluated_get(deps).matrix_world
+                        )
+                        rest = Matrix(
+                            rest_world(source_nodes, instance, rig["mapping"])
+                        )
+                        d = C_INV @ actual @ C @ rest.inverted()
+                        measured_deltas[instance] = [list(row) for row in d]
+            for c in plan["checks"]:
+                if c["kind"] != "distance":
+                    mechanical.append(check_motion(c, source_nodes, measured_deltas))
+                    continue
                 a = (
                     root_inverse
                     @ rig["anchors"][c["a"]]
@@ -439,10 +460,12 @@ def verify(rig, plan, samples=None, tolerance=0.002):
                     max_matrix_error=max(errors, default=0),
                     max_static_error=max(static_errors, default=0),
                     max_closure_error=max(closure, default=0),
+                    mechanical_checks=mechanical,
                     invalid_drivers=invalid,
                     passed=max(errors, default=0) <= tolerance
                     and max(static_errors, default=0) <= tolerance
                     and max(closure, default=0) <= 0.02
+                    and all(c["passed"] for c in mechanical)
                     and not invalid,
                 )
             )
@@ -596,7 +619,9 @@ def set_hidden(rig, instances, enabled=True):
     hidden = {
         o for i in instances for o in _objects(rig["mapping"][i]) if o.type == "MESH"
     }
-    shared = {o for i in moving for o in _objects(rig["mapping"][i]) if o.type == "MESH"}
+    shared = {
+        o for i in moving for o in _objects(rig["mapping"][i]) if o.type == "MESH"
+    }
     if hidden & shared:
         raise ValueError("A hidden occurrence shares geometry with a rigged part")
     _show_only(root, meshes, meshes - hidden)

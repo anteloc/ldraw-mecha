@@ -55,6 +55,11 @@ The [workflow guide](docs/workflow.md) is the command reference;
   and sliders. Record coupling meaning, signs, conditions and approximations in
   notes/evidence, not only in scripts or renders. Set `status: ready` when the
   declared motion is decided; this does not assert complete discovery.
+- For drivetrains and machines, follow the [RCVJ constraint lessons](docs/rcvj.md).
+  Resolve keyed shafts, round bearings, mixed pin sections and carriers before
+  assigning spin. Add occurrence-based rigidity, axis, ratio and closure checks;
+  use `check --require-constrained` and `rig --require-constrained`. Empty checks
+  or agreeing driver expressions do not validate a transmission.
 - `check` combines source validation, independent sweeps, default/mixed poses
   and a scope audit. Add meaningful nonzero/asymmetric `--set NAME=VALUE` cases
   and mechanism-specific assertions for ratios, links and selector states.

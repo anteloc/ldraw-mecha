@@ -18,6 +18,11 @@ ROLES = {
     "motor": r"motor",
     "turntable": r"turntable",
     "spring": r"spring|shock absorber",
+    "cam": r"\bcam\b|\beccentric\b",
+    "clutch": r"clutch|driving ring|changeover|wave selector|ratchet|one way",
+    "differential": r"differential",
+    "flexible_drive": r"\bchain\b|\bsprocket\b|\bbelt\b|\bpulley\b|\btread\b|\bwinch\b",
+    "pneumatic": r"pneumatic|\bvalve\b|air tank|\bpump\b",
 }
 
 
