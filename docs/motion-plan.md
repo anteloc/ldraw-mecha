@@ -102,7 +102,13 @@ scope audit; add mechanism-specific coupled/asymmetric cases with `check --set`,
 `evaluate` or Python. These workflow conveniences do not change the plan format.
 The Blender verifier compares every moving part's evaluated matrix with the
 portable evaluator, checks static parts, driver validity and link lengths.
-These checks do not establish clearance or physical feasibility by themselves.
+The Blender workflow samples off-grid inputs as well as limits. For animated
+controllers it additionally checks 33 evaluated timeline positions, including
+subframes, without muting the action, NLA or controller drivers. This runs again
+when reopening the saved file. `blender.verify(current=True)` checks the current
+pose without overriding inputs; `verify_animation` samples playback and restores
+scene time. These checks do not establish clearance or physical feasibility by
+themselves.
 
 ## Mechanical checks on physical occurrences
 
@@ -175,7 +181,8 @@ For reusable signal authoring, `linkages.gear_pair` applies the carrier-relative
 ratio, `differential` returns carrier mean and relative planet spin, and
 `double_cardan` composes two phased equal-bend joints at fixed articulation.
 Their equations need measured interfaces and independent checks. See the
-[RCVJ failure study](rcvj.md) for actual source mistakes these checks expose.
+[mechanism authoring guide](mechanisms.md) for a reproducible supported drive
+and the failure cases these checks expose.
 
 Coordinate conversion: the GLB exporter keeps LDraw node transforms, rotates the
 root by pi around X and applies `0.0004` metres/LDU. Blender's glTF basis change

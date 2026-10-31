@@ -37,10 +37,13 @@ evidence and geometry, then author measured joints in `plan.json`. A study
 directory contains ordinary files; commands also accept explicit plan paths.
 Existing commands, flags and version-1 plans continue to work.
 
-For complex drivetrains, read the [RCVJ study](docs/rcvj.md). New physical
+For complex drivetrains, read the [mechanism authoring guide](docs/mechanisms.md). New physical
 occurrence checks catch independent gear spin, wrong shaft axes and carrier
 relations; `check` and `rig` accept `--require-constrained` to reject unchecked
 moving bodies before producing an animation.
+The original [supported gear drive](examples/gear-drive/README.md) provides a
+small complete source, authoring recipe and validation record. Blender checks
+off-grid inputs and samples saved animation with its timeline active.
 
 For an **unannotated original**, complete [annotation](docs/annotation.md) before
 preparation: part comments, authored model/assembly descriptions, recursive

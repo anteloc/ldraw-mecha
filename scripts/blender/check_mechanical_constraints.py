@@ -19,11 +19,19 @@ def main():
     out = Path(a.output).resolve()
     out.mkdir(parents=True, exist_ok=True)
     plan = contract.load(a.plan)
-    result = blender_tools.apply_plan(plan, glb=a.glb, new_scene=True)
+    result = blender_tools.apply_plan(plan, glb=a.glb, new_scene=True, animate=True)
     rig = result["rig"]
     samples = [dict(drive=0.731, orbit=-0.38), dict(drive=-2.27, orbit=0.61)]
     checked = adapter.verify(rig, plan, samples)
     assert checked["passed"], checked
+    bpy.context.scene.frame_set(23, subframe=0.37)
+    action = rig["controller"].animation_data.action
+    timeline = adapter.verify_animation(rig, plan, steps=19)
+    assert timeline["passed"], timeline
+    assert len({round(s["controls"]["drive"], 3) for s in timeline["samples"]}) > 10
+    assert bpy.context.scene.frame_current == 23
+    assert abs(bpy.context.scene.frame_subframe - 0.37) < 1e-6
+    assert rig["controller"].animation_data.action == action
     # A wrong scene can still contain the correct driver expressions. Measure
     # actual part matrices, including a rotated/translated model root.
     root = rig["root"]
@@ -39,6 +47,9 @@ def main():
     bad = adapter.verify(rig, plan, samples)
     assert not bad["passed"]
     assert any(not c["passed"] for s in bad["samples"] for c in s["mechanical_checks"])
+    bad_current = adapter.verify(rig, plan, current=True)
+    assert not bad_current["passed"]
+    assert any(not c["passed"] for c in bad_current["samples"][0]["mechanical_checks"])
     gear.matrix_basis = old
     bpy.context.view_layer.update()
     adapter.set_controls(rig, **samples[0])
@@ -58,6 +69,8 @@ def main():
         dict(
             passed=True,
             verified=checked,
+            timeline=timeline,
+            changed_animation_rejected=True,
             reopened=reopened,
             changed_scene_rejected=True,
             rebuild_no_leaks=True,

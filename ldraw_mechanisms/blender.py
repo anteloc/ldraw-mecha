@@ -7,7 +7,8 @@ binds verified GLB occurrence IDs, and creates ordinary, persistent drivers.
 from __future__ import annotations
 
 import json
-from contextlib import contextmanager
+import math
+from contextlib import contextmanager, nullcontext
 
 import bpy
 from mathutils import Matrix, Vector
@@ -355,22 +356,29 @@ def set_controls(rig, **values):
     bpy.context.view_layer.update()
 
 
-def verify(rig, plan, samples=None, tolerance=0.002):
-    """Compare the evaluated Blender scene with the independent numeric contract."""
-    samples = samples or [{}]
+def verify(rig, plan, samples=None, tolerance=0.002, *, current=False):
+    """Compare actual matrices to the contract; `current` leaves animation active."""
     ctrl = rig["controller"]
+    if current:
+        if samples is not None:
+            raise ValueError("Current-frame verification cannot override controls")
+        deps = bpy.context.evaluated_depsgraph_get()
+        evaluated_ctrl = ctrl.evaluated_get(deps)
+        samples = [{k: float(evaluated_ctrl[k]) for k in plan["controls"]}]
+    else:
+        samples = samples or [{}]
     moving = {i for b in plan["bodies"].values() for i in b["instances"]}
     source_nodes = {n["id"]: n for n in plan["source"]["nodes"]}
     reports = []
-    with preserve_controls(rig):
+    with nullcontext() if current else preserve_controls(rig):
         for values in samples:
             expected = contract.evaluate(plan, values)
-            for k, v in expected["controls"].items():
-                # Exercise raw values too: the Blender input driver must enforce
-                # the same range as the independent evaluator.
-                ctrl[k] = float(values.get(k, v))
-            ctrl.update_tag()
-            bpy.context.view_layer.update()
+            if not current:
+                for k, v in expected["controls"].items():
+                    # Exercise raw values too: Blender must clamp like Python.
+                    ctrl[k] = float(values.get(k, v))
+                ctrl.update_tag()
+                bpy.context.view_layer.update()
             deps = bpy.context.evaluated_depsgraph_get()
             root_inverse = rig["root"].evaluated_get(deps).matrix_world.inverted()
             errors = []
@@ -474,7 +482,37 @@ def verify(rig, plan, samples=None, tolerance=0.002):
         samples=reports,
         units="LDU",
         tolerance=tolerance,
-        coverage="Evaluated transforms, driver validity and declared link closure; no mesh collision test",
+        coverage="Evaluated transforms, driver validity and declared mechanical/closure checks; no mesh collision test",
+    )
+
+
+def verify_animation(rig, plan, *, steps=33, tolerance=0.002):
+    """Sample the actual timeline, including subframes, without releasing its action.
+
+    Unlike diagnostic input overrides this also observes keyed parts, controller
+    drivers and NLA as evaluated during playback. Scene time is restored.
+    """
+    if not isinstance(steps, int) or not 2 <= steps <= 10000:
+        raise ValueError("Animation steps must be an integer between 2 and 10000")
+    scene = bpy.context.scene
+    original = (scene.frame_current, scene.frame_subframe)
+    reports = []
+    try:
+        for i in range(steps):
+            time = scene.frame_start + (scene.frame_end - scene.frame_start) * i / (
+                steps - 1
+            )
+            frame = math.floor(time)
+            scene.frame_set(frame, subframe=time - frame)
+            result = verify(rig, plan, tolerance=tolerance, current=True)
+            reports.append(dict(frame=time, **result["samples"][0]))
+    finally:
+        scene.frame_set(original[0], subframe=original[1])
+    return dict(
+        passed=all(r["passed"] for r in reports),
+        samples=reports,
+        frame_range=[scene.frame_start, scene.frame_end],
+        coverage="Sampled evaluated timeline with animation active; no collision or between-sample proof",
     )
 
 

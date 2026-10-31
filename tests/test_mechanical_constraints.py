@@ -67,6 +67,17 @@ def test_wrong_pivot_preserves_spin_but_breaks_keyed_assembly():
     assert not c["passed"] and c["displacement_ldu"] > 5
 
 
+def test_eccentric_mount_uses_occupied_hole_instead_of_part_origin():
+    p = machine()
+    p["source"]["nodes"][1]["world"][1][3] = 10
+    c = coaxial()
+    c["b"].update(instance="gear", point=[0, -10, 0])
+    p["checks"] = [c]
+    assert plan.evaluate(p, {"drive": 0.731})["checks"][0]["passed"]
+    p["bodies"]["gear"]["origin"] = [0, 10, 0]
+    assert not plan.evaluate(p, {"drive": 0.731})["checks"][0]["passed"]
+
+
 def coaxial():
     return dict(
         kind="coaxial",

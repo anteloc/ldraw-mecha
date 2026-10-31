@@ -61,7 +61,8 @@ def apply_plan(
         inspect_prepared(plan, root=rig["root"])
     samples = [{}]
     for name, c in plan["controls"].items():
-        for v in (c["min"], (c["min"] + c["max"]) / 2, c["max"]):
+        for fraction in (0, 0.173, 0.5, 0.731, 1):
+            v = c["min"] + fraction * (c["max"] - c["min"])
             samples.append({name: v})
     if "spin_rl" in plan["controls"] and "steering" in plan["controls"]:
         samples += [dict(spin_rl=0.7, spin_rr=-0.2, steering=0.4)]
@@ -85,6 +86,14 @@ def apply_plan(
                 ctrl.keyframe_insert(data_path=f'["{name}"]', frame=frame)
         bpy.context.scene.frame_end = 120
         bpy.context.scene.frame_set(1)
+    animation = rig["controller"].animation_data
+    if animation and (animation.action or animation.nla_tracks or animation.drivers):
+        result["animation"] = adapter.verify_animation(rig, plan, tolerance=tolerance)
+        result["passed"] = result["passed"] and result["animation"]["passed"]
+        if report:
+            contract.save(report, result)
+        if not result["passed"]:
+            raise RuntimeError("Animated frame verification failed; inspect the report")
     if save:
         Path(save).resolve().parent.mkdir(parents=True, exist_ok=True)
         # Save a useful initial viewport as well as the rig and active controller.
