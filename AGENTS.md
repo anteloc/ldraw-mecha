@@ -20,6 +20,13 @@ this unannotated-model pipeline; do not rewrite or regroup already annotated
 models during other work. See `instructions.md` and `docs/workflow.md` for the
 full procedure.
 
+During the initial study of a mechanism's geometry and part interactions, and
+before rigging each authored joint, inspect it visually with the globally
+installed `ldraw-xray` CLI (`docs/xray.md`): build steps, fit in the parent
+model, selections and pivot boards. Get exact arguments from
+`./ldraw-mecha xray-args`; never import or install ldraw-xray. Keep renders in
+the study's `xray/` directory and cite them in plan notes or evidence.
+
 Use pyldraw3 for LDraw parsing and connector expansion; use the supplied
 mpd2glb wrapper for conversion. Preserve source files, model attribution and
 the original Blender reference scripts. Put generated artifacts in `output/`.

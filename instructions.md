@@ -49,6 +49,14 @@ The [workflow guide](docs/workflow.md) is the command reference;
   Record visual findings immediately, including input, output and missing links.
   Candidate views are provisional and may overlap; they are not rigid bodies.
   Retain findings until planned, explicitly deferred or reviewed as static.
+- **Look before authoring** with the [ldraw-xray CLI](docs/xray.md) (check
+  `ldraw-xray doctor`). For each mechanism you plan, run the commands printed by
+  `xray-args MODEL --section S --instances ...`: build steps, fit in its parent,
+  the selection, and a pivot board per candidate axis from `connectors`. After
+  authoring, run `xray-args --plan STUDY --body NAME` for every revolute/prismatic
+  body and confirm pivot, axis, sign, mirrored pairs and limit poses before
+  `rig`; re-run after corrections. xray angles are degrees, plan values radians.
+  Cite the images in view notes or evidence. Renders are not clearance proof.
 - Author in the same [version-1 plan](docs/motion-plan.md). Keep `source` intact.
   Declare moving parts (including rim and tyre), measured origins/axes, limits,
   dependencies, anchors and checks. `mechanisms.add_joint` handles simple hinges

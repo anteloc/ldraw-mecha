@@ -12,6 +12,7 @@ they are documentation, not another execution format.
 | Source annotation | `annotate.py` | Part/colour comments and application of agent-authored model/submodel description lines; reports direct the agent to the final hierarchy review/enrichment and preservation checks |
 | Evidence | `analysis.py`, `placements.py`, `discovery.py`, `geometry.py`, `search.py` | Connector expansion, analysis-only frame correction, inventory, bounded contacts/meshes/coaxial candidates, offline FTS and optional Jev |
 | Preparation and scope | `prepare.py`, `mechanisms.py`, `audit.py` | Persist evidence, provisional views, recipe adoption, scope dispositions and optional diagnostic exports |
+| Visual study bridge | `xray.py` | Map occurrence IDs and plan joints to the external `ldraw-xray` CLI's blocks, line selectors, block-frame axes, degrees and focus recipes; prints commands and never runs or imports the renderer |
 | Routine workflow | `workflow.py` | Combined source/motion checks, conventional study paths and background Blender invocation/reopening; delegates to existing validators and adapter |
 | Motion | `plan.py`, `math3d.py`, `linkages.py` | Contract validation, safe expressions, evaluation, linkage maths and sweeps |
 | Studied examples | `recipes.py`, `recipe_42000_data.py`, `recipe_10265_data.py` | Measured motion for specific source selections |

@@ -192,6 +192,47 @@ def parser():
     q.add_argument("--limit", type=int, default=30)
     q.add_argument("--format", choices=["json", "table"], default="json")
     q.add_argument("--output")
+    q = s.add_parser(
+        "xray-args",
+        help="Print ldraw-xray commands for occurrences or an authored plan body",
+        description=(
+            "Translate occurrence IDs and plan joints into ldraw-xray CLI arguments: "
+            "block, line selectors, block-frame axis and angles in degrees. "
+            "Nothing is rendered; run the printed argv with ldraw-xray."
+        ),
+    )
+    q.add_argument("model", nargs="?", help="Source file; optional with --plan")
+    q.add_argument("--section")
+    q.add_argument(
+        "--instances", nargs="+", help="Occurrence IDs in the selected section"
+    )
+    q.add_argument(
+        "--point",
+        nargs=3,
+        type=float,
+        metavar=("X", "Y", "Z"),
+        help="Candidate pivot in the selected section frame (LDU)",
+    )
+    q.add_argument(
+        "--direction",
+        nargs=3,
+        type=float,
+        metavar=("X", "Y", "Z"),
+        help="Candidate axis in the selected section frame",
+    )
+    q.add_argument(
+        "--angles",
+        nargs="+",
+        type=float,
+        help="Pose angles in degrees (default 0 45 90)",
+    )
+    q.add_argument("--plan", type=plan_path, help="Plan JSON or study directory")
+    q.add_argument("--body", help="Plan body to review; requires --plan")
+    q.add_argument(
+        "--xray-dir",
+        help="Render directory; defaults to xray beside the plan with --plan",
+    )
+    q.add_argument("--output", help="Save the JSON result to this file")
     q = s.add_parser("rig", help="Build and verify a ready plan in background Blender")
     q.add_argument(
         "--require-constrained",
@@ -318,6 +359,46 @@ def main(argv=None):
             from .discovery import submodels
 
             result = submodels(args.model, args.match, args.sort, args.limit)
+        elif command == "xray-args":
+            from . import xray
+
+            if args.plan:
+                if args.instances or args.point or args.direction or args.angles:
+                    raise ValueError(
+                        "--plan uses the body's instances, axis and limits; omit study flags"
+                    )
+                if not args.body:
+                    raise ValueError("--plan requires --body NAME")
+                p = plan.load(args.plan)
+                if args.model and Path(args.model).resolve() != Path(
+                    p["source"]["path"]
+                ):
+                    raise ValueError("Model does not match plan source")
+                if args.section and xray.normalized(args.section) != xray.normalized(
+                    p["source"]["section"]
+                ):
+                    raise ValueError("Section does not match plan source")
+                result = xray.joint(
+                    p, args.body, xray_dir=args.xray_dir, plan_file=args.plan
+                )
+            else:
+                if not args.model or not args.instances:
+                    raise ValueError(
+                        "xray-args needs MODEL --instances ... or --plan --body"
+                    )
+                if args.body:
+                    raise ValueError("--body requires --plan")
+                if not args.xray_dir:
+                    raise ValueError("xray-args without --plan requires --xray-dir")
+                result = xray.study(
+                    args.model,
+                    args.instances,
+                    section=args.section,
+                    origin=args.point,
+                    axis=args.direction,
+                    angles=args.angles,
+                    xray_dir=args.xray_dir,
+                )
         elif command in ("gear-meshes", "coaxial"):
             from .geometry import coaxial, gear_meshes
             from .source import Document

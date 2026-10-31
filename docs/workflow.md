@@ -109,6 +109,27 @@ evidence and unresolved interfaces. Account for findings as planned, deferred or
 static, with review notes. The scope audit cannot discover omissions or establish
 mechanics by itself.
 
+## Inspect geometry with ldraw-xray
+
+Before authoring motion, look at each mechanism in its original source with the
+globally installed [ldraw-xray CLI](xray.md). `xray-args` translates occurrence
+IDs and candidate axes into exact xray blocks, line selectors, block-frame axes
+and degrees; it prints the commands and renders nothing itself:
+
+```sh
+ldraw-xray doctor
+./ldraw-mecha xray-args data/models-annotated/106-1.mpd --section '106 - main.ldr' \
+  --instances 0/40 --point 0 -92 36 --direction -1 0 0 --xray-dir output/study/xray
+# Run the printed argv: overview (build steps), context (fit in parent),
+# selection, pivot and pivot-focus boards, connections and axes reports.
+```
+
+Take candidate axes from `connectors` world fields or `coaxial` lines. Check
+that the selection is the intended part set, the mechanism boundary matches the
+build, and the rod passes through the joint hardware. Record what each image
+showed in view notes or connection evidence. Renders under `output/STUDY/xray/`
+are study evidence, not proof of engagement or clearance.
+
 ## Inspect in Blender before finalizing motion
 
 With this repository on Blender's `sys.path`:
@@ -154,6 +175,10 @@ contract.save('/absolute/path/output/study/plan.json', p)
 This writes ordinary controls, signals and bodies, preserves evidence and leaves
 the plan a draft. The moving part, opening sign and 75-degree limit are deliberate
 decisions from the studied roof. A coincident connector cannot choose them.
+Verify each authored revolute/prismatic body visually before rigging with
+`./ldraw-mecha xray-args --plan output/study --body roof` and the printed pivot
+boards: rod through the hinge, positive values opening outward, limit poses clear
+of the obvious surroundings. Correct the plan and re-run until they agree.
 Coupled motion uses signals, anchors and checks; record the mechanical meaning,
 conditions, signs and approximations alongside those equations.
 
