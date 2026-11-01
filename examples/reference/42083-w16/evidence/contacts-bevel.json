@@ -1,12 +1,3 @@
-{
-  "instances": [
-    "82",
-    "83",
-    "25",
-    "26"
-  ],
-  "complete": true,
-  "contacts": [],
-  "diagnostics": [],
-  "coverage": "pyldraw3 contacts for selected library parts only; no rigid grouping, collision proof or general mobility inference"
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:b904a5d8901a72f8ecfda3f108eff23824b0a3a58e75e2c4e2525682174d73b3
+size 256

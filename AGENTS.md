@@ -33,6 +33,8 @@ the original Blender reference scripts. Put generated artifacts in `output/`.
 For published references, copy the selected source, evidence and playback assets
 to `examples/reference/`; never move or rely on the working copies. Follow
 `docs/reference/curation.md` and check the archive before publishing links.
+To publish a past result under `samples/`, run `./add-sample.sh` and write
+the summary as described in `docs/samples.md`.
 
 For mechanism changes, run the relevant pure Python tests and evaluate
 nonzero/asymmetric inputs. Adapter changes also need a background Blender
