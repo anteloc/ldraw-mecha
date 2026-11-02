@@ -1,234 +1,169 @@
-"""Translate occurrence IDs and plan joints into ldraw-xray CLI arguments.
+"""Render look boards with the globally installed ldraw-xray CLI.
 
-ldraw-xray is an external, globally installed CLI. This module only prints
-commands (and writes recipe files for `ldraw-xray board run`) for agents to
-run; it never imports or executes the renderer. Both
-tools number source lines from 1 across the whole file. An xray `line:` term
-selects direct placements of the rendered block, so nested occurrences are
-expressed through the lowest block that places all of them.
+ldraw-xray is never imported or installed: each board is a recipe run as
+`ldraw-xray board run`. Renders use a flat copy of the selected section, one
+type-1 line per physical occurrence with its world matrix in the section frame,
+so every occurrence is exactly one `line:` term and plan origins and axes pass
+through unchanged; only radians become degrees.
 """
 
+from concurrent.futures import ThreadPoolExecutor
 import json
 import math
-import os
 from pathlib import Path
 import re
-import shlex
+import shutil
+import subprocess
 
 from . import plan as contract
-from .math3d import cross, direction, dot, inverse, point, unit
-from .source import Document, normalized, verify_source
+from .audit import boundary
+from .constraints import KINDS, instances
+from .math3d import unit
+from .source import Document, flatten, verify_source
 
-MOSAIC_LIMIT = 12
-
-
-def _number(value, digits=4):
-    return str(round(value, digits) + 0.0)
+MAX_POSES = 8
+WORKERS = 4
+CHECK = [
+    "Coloured = exactly what moves: mirror twins alike; nothing coloured sits on a grey axle or pin off the rod",
+    "The green rod passes through the hinge barrel, axle, pin or turntable centre",
+    "Positive poses turn the intended way (compare each pose with rest)",
+    "Limit poses do not cut through grey neighbours",
+]
+CHECK_SELECTION = [
+    "Coloured = exactly the parts you meant: mirror twins alike, nothing missing behind the grey"
+]
 
 
 def _slug(name):
     return re.sub(r"[^a-z0-9]+", "-", re.sub(r"\.ldr$", "", name.lower())).strip("-")
 
 
-def _warn(warnings, code, message):
-    warnings.append(dict(code=code, message=message))
-
-
-def _leaves(nodes):
-    """Physical leaves owned by every placement, including the leaf itself."""
-    owned = {i: set() for i in nodes}
-    for i, n in nodes.items():
-        if n["kind"] == "part":
-            parts = i.split("/")
-            for depth in range(1, len(parts) + 1):
-                owned["/".join(parts[:depth])].add(i)
-    return owned
-
-
-def _cover(nodes, owned, ids):
-    """Topmost placements whose subtrees contain only requested leaves."""
-    unknown = [i for i in ids if i not in nodes]
-    if unknown:
-        raise ValueError(f"Unknown occurrence IDs: {unknown[:10]}")
-    wanted = set().union(*(owned[i] for i in ids))
-    if not wanted:
-        raise ValueError("Selection contains no physical parts")
-    cover = set()
-    for leaf in wanted:
-        top, parts = leaf, leaf.split("/")
-        for depth in range(len(parts) - 1, 0, -1):
-            ancestor = "/".join(parts[:depth])
-            if not owned[ancestor] <= wanted:
-                break
-            top = ancestor
-        cover.add(top)
-    return wanted, cover
-
-
-def _parents(doc, block):
-    key = normalized(block)
-    return [
-        (m.name, sum(normalized(p.reference) == key for p in m.pieces))
-        for m in doc.sections.values()
-        if any(normalized(p.reference) == key for p in m.pieces)
-    ]
-
-
-def _block_file(doc, block):
-    """xray reads one file; adjacent .ldr assemblies are rendered from their own file."""
-    local = {normalized(m.name) for m in [doc.root, *doc.root.submodels.values()]}
-    if normalized(block) in local:
-        return doc.path, False
-    external = doc.path.parent / block.replace("\\", "/")
-    if not external.is_file():
-        raise ValueError(f"Cannot locate the file that defines {block!r}")
-    return external.resolve(), True
-
-
-def _subject(doc, nodes, instance, block, selector, warnings):
-    """One rendered block: its file, parent context and selected-section placement."""
-    model, external = _block_file(doc, block)
-    parents = _parents(doc, block)
-    if external:
-        parent = None
-        _warn(
-            warnings,
-            "external_file",
-            f"{block!r} is a separate file; xray renders it alone without parent context",
+def executable():
+    found = shutil.which("ldraw-xray")
+    if not found:
+        raise ValueError(
+            "ldraw-xray is not on PATH: run `ldraw-xray doctor` after installing it, "
+            "or record that xray evidence is unavailable and continue numerically"
         )
-    elif instance:
-        parent = nodes[instance]["section"]
-    else:
-        # The selected section is the frame; show it in its first parent, if any.
-        parent = parents[0][0] if parents else None
-        if len(parents) > 1:
-            _warn(
-                warnings,
-                "several_parents",
-                f"{block!r} has parents {[p for p, _ in parents]}; context uses {parent!r}",
-            )
-    if parent is None and not external:
-        _warn(
-            warnings,
-            "no_parent",
-            f"{block!r} has no parent; context panels are omitted",
-        )
-    count = dict(parents).get(parent, 0)
-    if count > 1:
-        _warn(
-            warnings,
-            "shared_definition",
-            f"{parent!r} places {block!r} {count} times. Context highlights every "
-            "placement and poses edit the definition, so parent panels move every "
-            "instance; trust the isolated panels.",
-        )
-    return dict(
-        model=str(model),
-        block=block,
-        parent=parent,
-        selector=selector,
-        frame_instance=instance or None,
-        nonempty_steps=sum(1 for s in doc.section(block).steps if s),
-        world=nodes[instance]["world"] if instance else None,
+    return found
+
+
+def selector(lines):
+    """Compressed `line:` selector, e.g. line:12-15,20."""
+    out, span = [], []
+    for n in sorted(set(lines)):
+        if span and n != span[-1] + 1:
+            out.append(span)
+            span = []
+        span.append(n)
+    out.append(span)
+    return "line:" + ",".join(
+        str(s[0]) if len(s) == 1 else f"{s[0]}-{s[-1]}" for s in out if s
     )
 
 
-def locate(manifest, ids, doc=None):
-    """Choose the rendered blocks, line selectors and frames for occurrences.
+def render_source(model, section, xray_dir):
+    """Flat render copy of every physical occurrence; returns its path and line map."""
+    manifest = Document(model).manifest(section)
+    parts = [n["id"] for n in manifest["nodes"] if n["kind"] == "part"]
+    path = (Path(xray_dir) / f"{_slug(manifest['section'])}.flat.mpd").resolve()
+    _, lines, _ = flatten(
+        model,
+        parts,
+        path,
+        section=section,
+        name=path.with_suffix(".ldr").name,
+        title=f"{manifest['description']} - xray render copy",
+        note="Derived by ldraw-mecha xray for rendering only: one line per occurrence "
+        "with its world matrix in the selected section frame; original IDs precede each line.",
+    )
+    return manifest, path, lines
 
-    The subject is the lowest block placing every occurrence. When the
-    occurrences are exactly one assembly, the subject is that assembly's own
-    block (moving `all`) and the containing block becomes `surroundings`.
+
+def along(axis):
+    """The axis-aligned view whose line of sight is closest to the axis."""
+    return ("right", "top", "front")[max(range(3), key=lambda i: abs(axis[i]))]
+
+
+def recipe(source, title, select, axis=None, degrees=(), closeup=True):
+    """Moving set coloured and edged, everything else ghosted; poses in close-up.
+
+    Without close-up (no measurable bounds), poses share one whole-block camera.
     """
-    doc = doc or Document(manifest["path"])
-    nodes = {n["id"]: n for n in manifest["nodes"]}
-    owned = _leaves(nodes)
-    wanted, cover = _cover(nodes, owned, ids)
-    prefix = os.path.commonprefix([c.split("/")[:-1] for c in cover])
-    instance = "/".join(prefix)
-    placements = sorted(
-        {"/".join(c.split("/")[: len(prefix) + 1]) for c in cover},
-        key=lambda i: nodes[i]["line"],
-    )
-    block = nodes[placements[0]]["section"]
-    selector = "line:" + ",".join(str(nodes[p]["line"]) for p in placements)
-    warnings = []
-    extra = sorted(set().union(*(owned[p] for p in placements)) - wanted)
-    if extra:
-        _warn(
-            warnings,
-            "over_selects",
-            f"Selecting whole placements in {block!r} also moves {len(extra)} "
-            f"unrequested parts: {extra[:20]}",
-        )
-    subject = _subject(doc, nodes, instance, block, selector, warnings)
-    surroundings = None
-    whole = placements[0]
-    if len(placements) == 1 and whole in cover and nodes[whole]["kind"] == "assembly":
-        surroundings = subject
-        own = doc.section(nodes[whole]["ref"]).name
-        subject = _subject(doc, nodes, whole, own, "all", warnings)
-    occurrences = []
-    for i in ids:
-        parts = i.split("/")
-        chain = ["/".join(parts[:d]) for d in range(1, len(parts) + 1)]
-        occurrences.append(
+    rod = [dict(layer="axis", **axis)] if axis else []
+    marks = [dict(layer="highlight", select=select), dict(layer="ghost")]
+    second = along(axis["direction"]) if axis else "front"
+    panels = [
+        dict(label="Moving set coloured, rest ghosted", view="home", layers=marks + rod),
+        dict(
+            label=f"Same, {second} view" + (" (along the axis)" if axis else ""),
+            view=second,
+            layers=marks + rod,
+        ),
+    ]
+    for a in degrees:
+        pose = [dict(layer="pose", select=select, angle=a, **axis), *rod, *marks]
+        panels.append(
             dict(
-                id=i,
-                ref=nodes[i]["ref"],
-                block=nodes[i]["section"],
-                line=nodes[i]["line"],
-                chain=[
-                    dict(block=nodes[c]["section"], line=nodes[c]["line"])
-                    for c in chain
-                ],
+                label=f"Pose {a:g} degrees",
+                view="home",
+                layers=[dict(layer="closeup", select=select, margin=2.0), *pose],
             )
+            if closeup
+            else dict(label=f"Pose {a:g} degrees", camera=dict(fixed="home"), layers=pose)
         )
-    return dict(
-        subject=subject,
-        surroundings=surroundings,
-        moving=sorted(wanted),
-        extra=extra,
-        occurrences=occurrences,
-        warnings=warnings,
+    return dict(source=str(source), title=title[:120], panels=panels)
+
+
+def run(spec, output):
+    """Render one recipe; return its mosaic and passed-through notes, or an error."""
+    output = Path(output)
+    path = output.with_name(output.name + ".recipe.json")
+    path.parent.mkdir(parents=True, exist_ok=True)
+    path.write_text(json.dumps(spec, indent=2) + "\n")
+    done = subprocess.run(
+        [executable(), "board", "run", str(path), "--output", str(output), "--force"],
+        capture_output=True,
+        text=True,
     )
+    if done.returncode:
+        try:
+            error = json.loads(done.stderr)["error"]
+        except (ValueError, KeyError, TypeError):
+            error = done.stderr.strip() or f"exit {done.returncode}"
+        return dict(error=error)
+    result = json.loads(done.stdout)
+    notes = []
+    for image in result["images"]:
+        for n in image.get("notes", []) + image.get("warnings", []):
+            if n not in notes:
+                notes.append(n)
+    return dict(image=result.get("mosaic"), panels=len(result["images"]), notes=notes)
 
 
-def to_block(world, origin, axis, warnings):
-    """Express a selected-section point/axis in a rendered block's frame."""
-    if world is None:
-        return list(origin), unit(axis), False
-    r = [row[:3] for row in world[:3]]
-    gram = [[dot(a, b) for b in r] for a in r]
-    if max(abs(gram[i][j] - (i == j)) for i in range(3) for j in range(3)) > 1e-3:
-        _warn(
-            warnings,
-            "non_orthonormal",
-            "A block placement has scale or shear; check the axis visually",
+def look(source, name, title, ids, lines, base, axis=None, degrees=(), notes=(), embedded=()):
+    select = selector(lines[i] for i in ids)
+    board = dict(
+        board=name,
+        select=select,
+        degrees=[round(a, 3) for a in degrees],
+        check=CHECK if axis else CHECK_SELECTION,
+        notes=list(notes),
+    )
+    # xray measures library geometry only; embedded parts cannot frame a close-up.
+    closeup = not set(ids) <= set(embedded)
+    rendered = run(recipe(source, title, select, axis, degrees, closeup), Path(base) / name)
+    if closeup and "No measurable geometry" in rendered.get("error", ""):
+        closeup = False
+        rendered = run(recipe(source, title, select, axis, degrees, False), Path(base) / name)
+    if degrees and not closeup:
+        board["notes"].append(
+            "The moving set has no measurable bounds (embedded or unknown parts): "
+            "poses use one whole-block camera instead of a close-up"
         )
-    inv = inverse(world)
-    mirrored = dot(r[0], cross(r[1], r[2])) < 0
-    clean = lambda v: [c + 0.0 for c in v]  # noqa: E731 - avoid printing -0.0
-    return clean(point(inv, origin)), clean(unit(direction(inv, axis))), mirrored
-
-
-def _pose(subject, origin, axis, degrees, warnings):
-    """Attach a block-frame pivot; mirrored placements reverse the angle sign."""
-    block_point, block_direction, mirrored = to_block(
-        subject["world"], origin, axis, warnings
-    )
-    if mirrored:
-        _warn(
-            warnings,
-            "mirrored",
-            f"{subject['block']!r} is placed mirrored; angles are negated to keep the same motion",
-        )
-    subject["pivot"] = dict(
-        point=block_point,
-        direction=block_direction,
-        mirrored=mirrored,
-        angles_degrees=[-a if mirrored else a for a in degrees],
-    )
+    rendered["notes"] = board["notes"] + rendered.get("notes", [])
+    board.update(rendered)
+    return board
 
 
 def _controls(plan, signal):
@@ -250,261 +185,127 @@ def body_values(plan, name):
     return sorted(values)
 
 
-def _command(name, purpose, argv, stdout=None):
-    shell = shlex.join(argv) + (f" > {shlex.quote(stdout)}" if stdout else "")
-    extra = {"stdout": stdout} if stdout else {}
-    return dict(name=name, purpose=purpose, argv=argv, shell=shell, **extra)
+def poses(values):
+    """Degrees to show: full turns as 0/45/90, otherwise at most MAX_POSES values.
 
-
-def _pivot_argv(subject, base):
-    s, p = subject, subject["pivot"]
-    return (
-        ["ldraw-xray", "board", "pivot", s["model"], "--section", s["block"]]
-        + (["--parent", s["parent"]] if s["parent"] else [])
-        + ["--point", *map(_number, p["point"])]
-        + ["--direction", *map(_number, p["direction"])]
-        + ["--moving", s["selector"], "--angles"]
-        + [_number(a, 3) for a in p["angles_degrees"]]
-        + ["--output", str(base)]
-    )
-
-
-def focus_recipe(subject, title):
-    """Pose panels framed on the moving parts' rest bounds, others ghosted.
-
-    `board pivot` frames the whole block, so buried or small moving parts can
-    look identical at every angle; this recipe is for `ldraw-xray board run`.
+    Angles wrap into [-180, 180) so a signal near 2*pi reads as a small turn.
     """
-    sel, p = subject["selector"], subject["pivot"]
-    line = dict(point=p["point"], direction=p["direction"])
-    panels = [
-        dict(
-            label=f"Pose {_number(a, 3)} degrees: moving parts edged, others ghosted",
-            view="home",
-            layers=[
-                dict(layer="closeup", select=sel, margin=2.0),
-                dict(layer="pose", select=sel, angle=a, **line),
-                dict(layer="axis", **line),
-                dict(layer="highlight", select=sel),
-                dict(layer="ghost"),
-            ],
-        )
-        for a in p["angles_degrees"]
-    ]
-    return dict(
-        source=subject["model"],
-        section=subject["block"],
-        title=title[:120],
-        panels=panels,
-    )
+    if values[-1] - values[0] >= 2 * math.pi - 1e-9:
+        return [0.0, 45.0, 90.0]
+    if len(values) > MAX_POSES:
+        step = (len(values) - 1) / (MAX_POSES - 1)
+        values = [values[round(i * step)] for i in range(MAX_POSES)]
+    return sorted({(math.degrees(v) + 180) % 360 - 180 for v in values})
 
 
-def commands(located, base):
-    """Ordered CLI calls plus recipe files to write before running them."""
-    s = located["subject"]
-    subject = [s["model"], "--section", s["block"]]
-    context = ["--parent", s["parent"]] if s["parent"] else []
-    base = Path(base).resolve()
-    # Overview: parent context, isolated home view, one image per step, front view if short.
-    images = bool(s["parent"]) + 1 + s["nonempty_steps"]
-    images += images < 4
-    out = [
-        _command(
-            "overview",
-            "Build steps (cumulative, new parts edged) and the block in its parent",
-            ["ldraw-xray", "board", "overview", *subject, *context, "--steps"]
-            + (["--no-mosaic"] if images > MOSAIC_LIMIT else [])
-            + ["--output", str(base / "overview")],
-        )
-    ]
-    if s["parent"]:
-        out.append(
-            _command(
-                "context",
-                "Highlighted block inside its parent, surroundings ghosted",
-                [
-                    "ldraw-xray",
-                    "render",
-                    *subject,
-                    *context,
-                    "--highlight",
-                    "section",
-                    "--ghost",
-                ]
-                + [
-                    "--view",
-                    "home",
-                    "--view",
-                    "front",
-                    "--output",
-                    str(base / "context"),
-                ],
-            )
-        )
-    if s["selector"] != "all":
-        out.append(
-            _command(
-                "selection",
-                "Selected placements edged in the isolated block",
-                [
-                    "ldraw-xray",
-                    "render",
-                    *subject,
-                    "--highlight",
-                    s["selector"],
-                    "--ghost",
-                ]
-                + [
-                    "--view",
-                    "home",
-                    "--view",
-                    "front",
-                    "--output",
-                    str(base / "selection"),
-                ],
-            )
-        )
-    if "pivot" in s:
-        out.append(
-            _command(
-                "pivot",
-                "Axis rod and the moving selection posed at each angle (degrees)",
-                _pivot_argv(s, base / "pivot"),
-            )
-        )
-    around = located["surroundings"]
-    if around and "pivot" in around:
-        out.append(
-            _command(
-                "pivot-in-parent",
-                f"The same motion inside {around['block']!r}, to judge neighbours",
-                _pivot_argv(around, base / "pivot-in-parent"),
-            )
-        )
-    recipes = {}
-    focus = next(
-        (x for x in (s, around) if x and "pivot" in x and x["selector"] != "all"), None
-    )
-    if focus:
-        path = base / "pivot-focus.recipe.json"
-        recipes[str(path)] = focus_recipe(focus, f"{focus['block']}: focused pivot")
-        out.append(
-            _command(
-                "pivot-focus",
-                "Close-up poses: moving parts edged, everything else ghosted",
-                [
-                    "ldraw-xray",
-                    "board",
-                    "run",
-                    str(path),
-                    "--output",
-                    str(base / "pivot-focus"),
-                ],
-            )
-        )
-    for name, purpose in (
-        (
-            "connections",
-            "Contacts, connected groups and overlap candidates (block frame)",
-        ),
-        ("axes", "Coaxial connector axis candidates (block frame; sign-normalised)"),
-    ):
-        out.append(
-            _command(
-                name,
-                purpose,
-                ["ldraw-xray", name, *subject],
-                str(base / f"{name}.json"),
-            )
-        )
-    return out, recipes
+def descendants(plan, name):
+    out = [name]
+    for child, b in plan["bodies"].items():
+        if b.get("parent") == name:
+            out += descendants(plan, child)
+    return out
 
 
-def _result(manifest, located, axis, base, notes):
-    warnings = located.pop("warnings")
-    cmds, recipes = commands(located, base)
-    for path, recipe in recipes.items():
-        Path(path).parent.mkdir(parents=True, exist_ok=True)
-        Path(path).write_text(json.dumps(recipe, indent=2) + "\n")
-    for s in (located["subject"], located["surroundings"]):
-        if s:
-            s.pop("world")
+def _result(manifest, path, boards, **extra):
+    errors = [dict(board=b["board"], error=b.pop("error")) for b in boards if "error" in b]
     return dict(
         source=manifest["path"],
         section=manifest["section"],
-        **located,
-        axis=axis,
-        commands=cmds,
-        recipes=sorted(recipes),
-        warnings=warnings,
-        notes=notes
-        + [
-            "Run each argv with the globally installed ldraw-xray; add --force to replace earlier output",
-            "Renders are static evidence, not proof of clearance or mechanical engagement",
+        render_source=str(path),
+        boards=boards,
+        **extra,
+        errors=errors,
+        passed=not errors,
+        notes=[
+            "Open each board's image and answer its check list; cite xray/<board>/mosaic.png with what it showed",
+            "Renders are static evidence, not proof of clearance or engagement",
         ],
     )
 
 
-def _posed(located, origin, axis, degrees):
-    for s in (located["subject"], located["surroundings"]):
-        if s:
-            _pose(s, origin, axis, degrees, located["warnings"])
-
-
 def study(
-    model, instances, *, section=None, origin=None, axis=None, angles=None, xray_dir
+    model,
+    ids,
+    *,
+    section=None,
+    origin=None,
+    axis=None,
+    angles=None,
+    xray_dir,
+    name=None,
+    plan=None,
 ):
-    """Commands for candidate occurrences, with an optional axis in the section frame."""
+    """Look at candidate occurrences, optionally posed about a section-frame axis.
+
+    With a plan, the candidate is also audited as one body on that axis against
+    the study's contacts, so a wrong grouping shows before it is authored.
+    """
     if (origin is None) != (axis is None):
         raise ValueError("--point and --direction must be given together")
     if angles and origin is None:
         raise ValueError("--angles needs --point and --direction")
-    doc = Document(model)
-    manifest = doc.manifest(section)
-    located = locate(manifest, instances, doc)
-    frame = None
-    if origin is not None:
-        degrees = list(angles or [0, 45, 90])
-        _posed(located, origin, axis, degrees)
-        frame = dict(point=list(origin), direction=unit(axis), degrees=degrees)
-    base = Path(xray_dir) / _slug(located["subject"]["block"])
-    return _result(manifest, located, frame, base, [])
+    if angles and len(angles) > MAX_POSES:
+        raise ValueError(f"At most {MAX_POSES} angles fit one board")
+    executable()
+    manifest, path, lines = render_source(model, section, xray_dir)
+    unknown = [i for i in ids if i not in lines]
+    if unknown:
+        raise ValueError(
+            f"Not physical occurrences of {manifest['section']!r}: {unknown[:10]}"
+        )
+    line = None if origin is None else dict(point=list(origin), direction=unit(axis))
+    degrees = list(angles or [0, 45, 90]) if line else []
+    name = name or "look-" + _slug(ids[0].replace("/", "-"))
+    extra = {}
+    if plan is not None and line:
+        chosen = set(ids)
+        bodies = {
+            n: dict(b, instances=[i for i in b["instances"] if i not in chosen])
+            for n, b in plan["bodies"].items()
+        }
+        bodies["candidate"] = dict(
+            kind="revolute", instances=sorted(chosen), origin=line["point"], axis=line["direction"]
+        )
+        declared = [instances(c) for c in plan["checks"] if c["kind"] in KINDS]
+        edges = boundary(bodies, plan.get("connections", {}), declared)
+        extra["boundary"] = [g for g in edges["flagged"] if "candidate" in g["bodies"]]
+    embedded = {n["id"] for n in manifest["nodes"] if n.get("embedded")}
+    title = f"{manifest['section']}: {name}"
+    board = look(path, name, title, ids, lines, xray_dir, line, degrees, (), embedded)
+    return _result(manifest, path, [board], **extra)
 
 
-def joint(plan, body, *, xray_dir=None, plan_file=None):
-    """Commands to review one authored body: pivot, axis, sign and limit poses."""
-    manifest = plan["source"]
-    verify_source(manifest)
-    if body not in plan["bodies"]:
-        raise ValueError(f"Unknown body {body!r}; bodies: {sorted(plan['bodies'])}")
-    b = plan["bodies"][body]
-    located = locate(manifest, b["instances"])
-    notes = []
-    if b.get("parent"):
-        notes.append(
-            f"Body moves relative to {b['parent']!r}; poses show it at the parent's rest pose"
+def review(plan, bodies=None, *, xray_dir):
+    """Look boards for authored bodies: each body posed with its descendants."""
+    source = plan["source"]
+    verify_source(source)
+    unknown = sorted(set(bodies or ()) - set(plan["bodies"]))
+    if unknown:
+        raise ValueError(f"Unknown bodies {unknown}; bodies: {sorted(plan['bodies'])}")
+    executable()
+    manifest, path, lines = render_source(source["path"], source["section"], xray_dir)
+    embedded = {n["id"] for n in manifest["nodes"] if n.get("embedded")}
+    jobs = []
+    for name in bodies or [n for n, b in plan["bodies"].items() if b["kind"] != "fixed"]:
+        b = plan["bodies"][name]
+        moving = [i for d in descendants(plan, name) for i in plan["bodies"][d]["instances"]]
+        notes = []
+        if len(moving) > len(b["instances"]):
+            notes.append("Descendant bodies ride along at their rest pose")
+        if b.get("parent"):
+            notes.append(f"Posed about its rest-frame axis; parent {b['parent']!r} stays at rest")
+        axis, degrees = None, []
+        if b["kind"] in ("revolute", "prismatic", "stretch"):
+            axis = dict(point=b["origin"], direction=unit(b["axis"]))
+        if b["kind"] == "revolute":
+            degrees = poses(body_values(plan, name))
+        elif axis:
+            notes.append("xray cannot translate or scale parts: axis and selection only")
+        title = f"{name} ({b['kind']})"
+        jobs.append(
+            (path, _slug(name), title, moving, lines, xray_dir, axis, degrees, notes, embedded)
         )
-    frame = dict(point=b["origin"], direction=unit(b["axis"]), kind=b["kind"])
-    if b["kind"] == "revolute":
-        values = body_values(plan, body)
-        if values[-1] - values[0] >= 2 * math.pi - 1e-9:
-            notes.append("Full-turn range; showing 0, 45 and 90 degrees")
-            degrees = [0.0, 45.0, 90.0]
-        else:
-            degrees = [math.degrees(v) for v in values]
-        frame.update(radians=values, degrees=degrees)
-        _posed(located, b["origin"], b["axis"], degrees)
-    elif b["kind"] in ("prismatic", "stretch"):
-        frame.update(values=body_values(plan, body), degrees=[0.0])
-        _posed(located, b["origin"], b["axis"], [0.0])
-        notes.append(
-            "xray cannot translate or scale parts; the board shows the axis and selection only"
-        )
-    else:
-        notes.append(
-            f"{b['kind']} body: no pivot board; review the selection and context"
-        )
-    base = Path(xray_dir or Path(plan_file).parent / "xray") / _slug(body)
-    result = _result(manifest, located, frame, base, notes)
-    result.update(body=body, kind=b["kind"])
-    return result
+    # Each board is its own LeoCAD process; a few in parallel cut wall time.
+    with ThreadPoolExecutor(max_workers=WORKERS) as pool:
+        boards = list(pool.map(lambda job: look(*job), jobs))
+    return _result(manifest, path, boards)

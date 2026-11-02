@@ -63,7 +63,7 @@ plant/wind animation. Adapt their reasoning and checks, then remeasure the targe
 | Everyday commands and recovery | [Workflow](docs/workflow.md) |
 | Joint types, equations, frames and fields | [Motion plan](docs/motion-plan.md) |
 | Source discovery and live Blender tools | [API guide](docs/discovery-and-blender.md) |
-| Build steps, fit in parent and axis boards before rigging | [Visual inspection with ldraw-xray](docs/xray.md) |
+| Look boards for candidates and authored joints | [Visual inspection with ldraw-xray](docs/xray.md) |
 | Missed contacts, rounded transforms, coverage | [Discovery quality](docs/discovery-quality.md) |
 | Part families, descriptions and dimensions | [Part information](docs/part-information.md) |
 | Testing, clearance and evidence limits | [Validation](docs/validation.md) |
@@ -73,8 +73,8 @@ plant/wind animation. Adapt their reasoning and checks, then remeasure the targe
 ## Requirements
 
 Python 3.12+, `uv`, an LDraw library, Bun for conversion, and Blender for rigging.
-Study-phase visual inspection uses the `ldraw-xray` CLI (with LeoCAD) installed
-on `PATH`; check it with `ldraw-xray doctor`. Source analysis needs neither
+Visual inspection (`./ldraw-mecha xray`) runs the `ldraw-xray` CLI (with LeoCAD)
+installed on `PATH`; check it with `ldraw-xray doctor`. Source analysis needs neither
 Blender, ldraw-xray nor Jev. `--blender`/`BLENDER_BIN` selects
 Blender; global `--library`, `LDRAW_DIR` or `LDRAWDIR` selects the parts library.
 Offline FTS search is the default; `jev-rerank` and `TYPESAFE_API_KEY` enable

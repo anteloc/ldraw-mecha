@@ -49,14 +49,12 @@ The [workflow guide](docs/workflow.md) is the command reference;
   Record visual findings immediately, including input, output and missing links.
   Candidate views are provisional and may overlap; they are not rigid bodies.
   Retain findings until planned, explicitly deferred or reviewed as static.
-- **Look before authoring** with the [ldraw-xray CLI](docs/xray.md) (check
-  `ldraw-xray doctor`). For each mechanism you plan, run the commands printed by
-  `xray-args MODEL --section S --instances ...`: build steps, fit in its parent,
-  the selection, and a pivot board per candidate axis from `connectors`. After
-  authoring, run `xray-args --plan STUDY --body NAME` for every revolute/prismatic
-  body and confirm pivot, axis, sign, mirrored pairs and limit poses before
-  `rig`; re-run after corrections. xray angles are degrees, plan values radians.
-  Cite the images in view notes or evidence. Renders are not clearance proof.
+- **Look** with [`./ldraw-mecha xray`](docs/xray.md) (`ldraw-xray doctor` once).
+  When a candidate's parts or axis are uncertain: `xray STUDY --instances IDS
+  --point X Y Z --direction X Y Z` with the axis from `connectors`. Before `rig`
+  and after each correction: `xray STUDY` (or `--body NAME`). Answer each board's
+  check list and cite `xray/<board>/mosaic.png`. xray angles are degrees, plan
+  values radians. Renders are not clearance proof.
 - Author in the same [version-1 plan](docs/motion-plan.md). Keep `source` intact.
   Declare moving parts (including rim and tyre), measured origins/axes, limits,
   dependencies, anchors and checks. `mechanisms.add_joint` handles simple hinges
@@ -74,7 +72,9 @@ The [workflow guide](docs/workflow.md) is the command reference;
   and a scope audit. Add meaningful nonzero/asymmetric `--set NAME=VALUE` cases
   and mechanism-specific assertions for ratios, links and selector states.
   Review `check.json`; `--require-reviewed` permits explicit deferrals, which
-  still belong in the delivery's omitted-work list.
+  still belong in the delivery's omitted-work list, but fails on every
+  `body_boundary` warning: a pin or axle shared off the joint between two bodies
+  usually means a part sits in the wrong body. Fix membership or declare a check.
 - Apply to the inspected root or use background `rig`. Reuse the bound GLB while
   source/selection stays unchanged. `--reopen` checks persistence in a fresh
   process. Verify the actual demonstration, inspect/render several poses and

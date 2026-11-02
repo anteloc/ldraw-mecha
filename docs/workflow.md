@@ -111,24 +111,24 @@ mechanics by itself.
 
 ## Inspect geometry with ldraw-xray
 
-Before authoring motion, look at each mechanism in its original source with the
-globally installed [ldraw-xray CLI](xray.md). `xray-args` translates occurrence
-IDs and candidate axes into exact xray blocks, line selectors, block-frame axes
-and degrees; it prints the commands and renders nothing itself:
+When a candidate's parts or axis are uncertain, look at them before authoring
+with the globally installed [ldraw-xray CLI](xray.md). Take the axis from
+`connectors` world fields or a `coaxial` line:
 
 ```sh
 ldraw-xray doctor
-./ldraw-mecha xray-args data/models-annotated/106-1.mpd --section '106 - main.ldr' \
-  --instances 0/40 --point 0 -92 36 --direction -1 0 0 --xray-dir output/study/xray
-# Run the printed argv: overview (build steps), context (fit in parent),
-# selection, pivot and pivot-focus boards, connections and axes reports.
+./ldraw-mecha xray data/models-annotated/106-1.mpd --section '106 - main.ldr' \
+  --instances 0/40 --point 0 -92 36 --direction -1 0 0 --angles 0 40 75 \
+  --xray-dir output/study/xray --name roof
 ```
 
-Take candidate axes from `connectors` world fields or `coaxial` lines. Check
-that the selection is the intended part set, the mechanism boundary matches the
-build, and the rod passes through the joint hardware. Record what each image
-showed in view notes or connection evidence. Renders under `output/STUDY/xray/`
-are study evidence, not proof of engagement or clearance.
+One board per call (`output/study/xray/roof/mosaic.png`): the selection
+coloured and the rest ghosted, the axis rod and close-up poses, with a check
+list in the result. Passing a prepared study instead of the model, section and
+directory also audits the candidate against the study's contacts (`boundary`).
+Answer the check list and record what the image showed in view notes or
+connection evidence. Renders are study evidence, not proof of engagement or
+clearance.
 
 ## Inspect in Blender before finalizing motion
 
@@ -175,10 +175,11 @@ contract.save('/absolute/path/output/study/plan.json', p)
 This writes ordinary controls, signals and bodies, preserves evidence and leaves
 the plan a draft. The moving part, opening sign and 75-degree limit are deliberate
 decisions from the studied roof. A coincident connector cannot choose them.
-Verify each authored revolute/prismatic body visually before rigging with
-`./ldraw-mecha xray-args --plan output/study --body roof` and the printed pivot
-boards: rod through the hinge, positive values opening outward, limit poses clear
-of the obvious surroundings. Correct the plan and re-run until they agree.
+Before rigging, `./ldraw-mecha check output/study` must show no `body_boundary`
+warning (a pin or axle shared off the joint between two bodies), and
+`./ldraw-mecha xray output/study --body roof` must show only the roof coloured,
+the rod through the hinge, positive values opening outward and limit poses clear
+of the grey surroundings. Correct the plan and re-run until they agree.
 Coupled motion uses signals, anchors and checks; record the mechanical meaning,
 conditions, signs and approximations alongside those equations.
 

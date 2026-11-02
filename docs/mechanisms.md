@@ -29,6 +29,18 @@ and retaining bushes normally share a body. Round bearing holes allow the axle
 to spin. On a mixed pin/axle, classify the occupied section at each end.
 Assembly names, touching bounds and coincident lines do not establish torque
 transfer. An off-centre keyed hole makes an eccentric, not a centred gear.
+Build order and height cut-offs are not rigidity either.
+
+`check` audits body boundaries against the study's connector contacts. Parts in
+different bodies may share a pin or axle only on the joint between them:
+coaxial with a revolute axis or along a slide. Each `body_boundary` warning names
+the bodies and part pairs of a pin off a revolute axis, a keyed axle off it, a
+pin across a slide, or a static part touching a part beyond its first joint.
+That usually means a part sits in the wrong body: a frame half riding a turret,
+a gear leaving its axle. Fix membership; if the joint is real, declare a check
+covering both parts. `--require-reviewed` fails until each is resolved.
+Linkages between moving bodies and keyed shafts on the joint axis are listed as
+info. Embedded parts, surface contacts and stops are not seen; look at them.
 
 Use a construction tool such as LDraw Nova for parts, supports and editable
 geometry. Keep the official parts library unchanged. Inspect fit, tooth phase,

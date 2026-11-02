@@ -20,12 +20,12 @@ this unannotated-model pipeline; do not rewrite or regroup already annotated
 models during other work. See `instructions.md` and `docs/workflow.md` for the
 full procedure.
 
-During the initial study of a mechanism's geometry and part interactions, and
-before rigging each authored joint, inspect it visually with the globally
-installed `ldraw-xray` CLI (`docs/xray.md`): build steps, fit in the parent
-model, selections and pivot boards. Get exact arguments from
-`./ldraw-mecha xray-args`; never import or install ldraw-xray. Keep renders in
-the study's `xray/` directory and cite them in plan notes or evidence.
+When a candidate's parts or axis are uncertain, and before rigging authored
+joints (again after each correction), render look boards with
+`./ldraw-mecha xray` (`docs/xray.md`). It runs the globally installed
+`ldraw-xray` CLI; never import or install ldraw-xray. Answer each board's check
+list and cite `xray/<board>/mosaic.png` in plan notes or evidence. Fix or review
+every `body_boundary` warning from `check` before rigging.
 
 Use pyldraw3 for LDraw parsing and connector expansion; use the supplied
 mpd2glb wrapper for conversion. Preserve source files, model attribution and

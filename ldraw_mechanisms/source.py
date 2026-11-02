@@ -250,3 +250,129 @@ def verify_source(manifest):
     for name, expected in manifest["dependencies"].items():
         if sha256(name) != expected:
             raise ValueError(f"Stale source: {name}; inspect and regenerate the plan")
+
+
+def _file_blocks(text):
+    """Map normalized FILE names to their raw lines (header to the line before the next FILE)."""
+    blocks, name, lines = {}, None, []
+    for line in text.splitlines():
+        m = re.match(r"^0\s+FILE\s+(.+?)\s*$", line)
+        if m:
+            if name is not None:
+                blocks[normalized(name)] = (name, lines)
+            name, lines = m.group(1), [line]
+        elif name is not None:
+            lines.append(line)
+    if name is not None:
+        blocks[normalized(name)] = (name, lines)
+    return blocks
+
+
+def _references(lines):
+    for line in lines:
+        tokens = line.split()
+        if len(tokens) >= 15 and tokens[0] == "1":
+            yield " ".join(tokens[14:])
+
+
+def _number(v):
+    s = f"{v:.10g}"
+    return "0" if s in ("-0", "0") else s
+
+
+def flatten(model, ids, output, *, section=None, name=None, title=None, note=""):
+    """Write chosen physical occurrences as one flat FILE in the selection's frame.
+
+    Each occurrence becomes one type-1 line with its composed world matrix and
+    effective colour, preceded by a comment naming its original ID. Embedded
+    FILE blocks those parts use (and their own sub-files) are copied verbatim.
+    The output is re-read: references, colours and matrices must be unchanged.
+    Returns the old-to-new ID map, each old ID's 1-based line in the output and
+    the verification report.
+    """
+    model, output = Path(model).resolve(), Path(output).resolve()
+    if output == model:
+        raise ValueError("Refusing to overwrite the source model")
+    manifest = Document(model).manifest(section)
+    nodes = {n["id"]: n for n in manifest["nodes"]}
+    order = sorted(dict.fromkeys(ids), key=lambda s: [int(x) for x in s.split("/")])
+    missing = [i for i in order if i not in nodes]
+    if missing:
+        raise ValueError(f"Unknown occurrences: {missing[:5]}")
+    non_parts = [i for i in order if nodes[i]["kind"] != "part"]
+    if non_parts:
+        raise ValueError(f"Keep physical leaves only: {non_parts[:5]}")
+    blocks = _file_blocks(model.read_text(encoding="utf-8-sig"))
+    first = next(iter(blocks.values()), (None, []))[1]
+    header = [
+        next((ln for ln in first if ln.startswith(p)), None)
+        for p in ("0 Author:", "0 !LDRAW_ORG", "0 !LICENSE")
+    ]
+    name = name or f"{output.stem}.ldr"
+    out = [
+        f"0 FILE {name}",
+        f"0 {title or manifest['description'] + ' - standalone extract'} ({len(order)} parts)",
+        f"0 Name: {name}",
+        *(v for v in header if v),
+        *([f"0 // {note}"] if note else []),
+        "",
+    ]
+    idmap, lines = {}, {}
+    for new, old in enumerate(order):
+        w = nodes[old]["world"]
+        values = [w[0][3], w[1][3], w[2][3], *w[0][:3], *w[1][:3], *w[2][:3]]
+        out.append(f"0 // from {old}")
+        out.append(
+            f"1 {nodes[old]['effective_colour']} "
+            + " ".join(_number(v) for v in values)
+            + f" {nodes[old]['ref']}"
+        )
+        idmap[old], lines[old] = str(new), len(out)
+    # Embedded FILE closure: blocks referenced by kept parts, then by those blocks.
+    pending = [normalized(nodes[i]["ref"]) for i in order if nodes[i]["embedded"]]
+    copied = []
+    while pending:
+        key = pending.pop(0)
+        if key in copied or key not in blocks:
+            continue
+        copied.append(key)
+        pending += [normalized(r) for r in _references(blocks[key][1])]
+    for key in copied:
+        block = blocks[key][1]
+        while block and not block[-1].strip():
+            block = block[:-1]
+        out += ["", *block]
+    output.parent.mkdir(parents=True, exist_ok=True)
+    output.write_text("\n".join(out) + "\n")
+    new = {n["id"]: n for n in Document(output).manifest()["nodes"]}
+    if set(new) != set(idmap.values()):
+        raise ValueError("Flattened occurrences differ from the ID map")
+    worst = 0.0
+    for old, i in idmap.items():
+        a, b = nodes[old], new[i]
+        if (
+            normalized(a["ref"]) != normalized(b["ref"])
+            or a["effective_colour"] != b["effective_colour"]
+        ):
+            raise ValueError(f"{old} -> {i}: reference or colour changed")
+        if b["kind"] != "part":
+            raise ValueError(f"{old} -> {i}: not a physical leaf")
+        worst = max(
+            worst,
+            max(abs(x - y) for ra, rb in zip(a["world"], b["world"]) for x, y in zip(ra, rb)),
+        )
+    if worst > 1e-6:
+        raise ValueError(f"World matrix changed by {worst}")
+    report = dict(
+        kept=len(idmap),
+        max_world_matrix_error=worst,
+        coverage="Every kept leaf re-read from the written file: same reference, effective colour and "
+        "world matrix (max error reported)",
+        source=str(model),
+        source_section=manifest["section"],
+        source_sha256=sha256(model),
+        output=str(output),
+        output_sha256=sha256(output),
+        embedded_files=[blocks[k][0] for k in copied],
+    )
+    return idmap, lines, report

@@ -126,10 +126,11 @@ exclusions. Run it before finalizing limitation notes; `update_plan_notes` can
 update embedded prose without rebuilding, but the revised JSON/blend must be
 saved explicitly.
 
-Pre-rig [ldraw-xray pivot boards](xray.md) show each authored axis and limit
-pose against the original source. They catch wrong frames, signs and selections
-early, but are static images: they complement this clearance test and the review
-of the saved animation, and replace neither.
+Pre-rig [ldraw-xray look boards](xray.md) show each authored body, with its
+descendants, coloured against its ghosted surroundings, plus its axis and limit
+poses. They catch wrong frames, signs and memberships early, but are static
+images: they complement this clearance test and the review of the saved
+animation, and replace neither.
 
 Use `preview_plan.py` to inspect representative poses and limits. Moving-only
 or selective bodywork hiding exposes internal mechanisms without deleting parts.

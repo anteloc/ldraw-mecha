@@ -193,44 +193,38 @@ def parser():
     q.add_argument("--format", choices=["json", "table"], default="json")
     q.add_argument("--output")
     q = s.add_parser(
-        "xray-args",
-        help="Print ldraw-xray commands for occurrences or an authored plan body",
+        "xray",
+        help="Render ldraw-xray look boards for occurrences or authored plan bodies",
         description=(
-            "Translate occurrence IDs and plan joints into ldraw-xray CLI arguments: "
-            "block, line selectors, block-frame axis and angles in degrees. "
-            "Nothing is rendered; run the printed argv with ldraw-xray."
+            "Run the PATH ldraw-xray CLI on a flat copy of the section: moving parts "
+            "coloured, the rest ghosted, the axis rod and close-up poses, one mosaic per "
+            "board with a check list. TARGET is a model file or a study."
         ),
     )
-    q.add_argument("model", nargs="?", help="Source file; optional with --plan")
-    q.add_argument("--section")
-    q.add_argument(
-        "--instances", nargs="+", help="Occurrence IDs in the selected section"
-    )
+    q.add_argument("target", help="Model file, or study directory / plan.json")
+    q.add_argument("--section", help="Model section (model target only)")
+    q.add_argument("--instances", nargs="+", help="Occurrence IDs in the section frame")
+    q.add_argument("--body", nargs="+", help="Plan bodies to review (default: all)")
     q.add_argument(
         "--point",
         nargs=3,
         type=float,
         metavar=("X", "Y", "Z"),
-        help="Candidate pivot in the selected section frame (LDU)",
+        help="Candidate pivot in the section frame (LDU), e.g. from connectors",
     )
     q.add_argument(
         "--direction",
         nargs=3,
         type=float,
         metavar=("X", "Y", "Z"),
-        help="Candidate axis in the selected section frame",
+        help="Candidate axis in the section frame",
     )
     q.add_argument(
-        "--angles",
-        nargs="+",
-        type=float,
-        help="Pose angles in degrees (default 0 45 90)",
+        "--angles", nargs="+", type=float, help="Pose angles in degrees (default 0 45 90)"
     )
-    q.add_argument("--plan", type=plan_path, help="Plan JSON or study directory")
-    q.add_argument("--body", help="Plan body to review; requires --plan")
+    q.add_argument("--name", help="Board name for --instances (default from the first ID)")
     q.add_argument(
-        "--xray-dir",
-        help="Render directory; defaults to xray beside the plan with --plan",
+        "--xray-dir", help="Render directory; defaults to xray beside a study's plan"
     )
     q.add_argument("--output", help="Save the JSON result to this file")
     q = s.add_parser("rig", help="Build and verify a ready plan in background Blender")
@@ -359,45 +353,50 @@ def main(argv=None):
             from .discovery import submodels
 
             result = submodels(args.model, args.match, args.sort, args.limit)
-        elif command == "xray-args":
+        elif command == "xray":
             from . import xray
 
-            if args.plan:
-                if args.instances or args.point or args.direction or args.angles:
-                    raise ValueError(
-                        "--plan uses the body's instances, axis and limits; omit study flags"
+            target = plan_path(args.target)
+            study_target = target.suffix == ".json"
+            if args.instances and args.body:
+                raise ValueError("Choose --instances or --body")
+            if (args.point or args.direction or args.angles) and not args.instances:
+                raise ValueError("--point, --direction and --angles need --instances")
+            if study_target:
+                if args.section:
+                    raise ValueError("A study target uses its plan's section; omit --section")
+                p = plan.load(target)
+                xray_dir = args.xray_dir or target.parent / "xray"
+                if args.instances:
+                    result = xray.study(
+                        p["source"]["path"],
+                        args.instances,
+                        section=p["source"]["section"],
+                        origin=args.point,
+                        axis=args.direction,
+                        angles=args.angles,
+                        xray_dir=xray_dir,
+                        name=args.name,
+                        plan=p,
                     )
-                if not args.body:
-                    raise ValueError("--plan requires --body NAME")
-                p = plan.load(args.plan)
-                if args.model and Path(args.model).resolve() != Path(
-                    p["source"]["path"]
-                ):
-                    raise ValueError("Model does not match plan source")
-                if args.section and xray.normalized(args.section) != xray.normalized(
-                    p["source"]["section"]
-                ):
-                    raise ValueError("Section does not match plan source")
-                result = xray.joint(
-                    p, args.body, xray_dir=args.xray_dir, plan_file=args.plan
-                )
+                else:
+                    result = xray.review(p, args.body, xray_dir=xray_dir)
             else:
-                if not args.model or not args.instances:
-                    raise ValueError(
-                        "xray-args needs MODEL --instances ... or --plan --body"
-                    )
                 if args.body:
-                    raise ValueError("--body requires --plan")
+                    raise ValueError("--body needs a study target")
+                if not args.instances:
+                    raise ValueError("A model target needs --instances")
                 if not args.xray_dir:
-                    raise ValueError("xray-args without --plan requires --xray-dir")
+                    raise ValueError("A model target needs --xray-dir, e.g. output/study/xray")
                 result = xray.study(
-                    args.model,
+                    args.target,
                     args.instances,
                     section=args.section,
                     origin=args.point,
                     axis=args.direction,
                     angles=args.angles,
                     xray_dir=args.xray_dir,
+                    name=args.name,
                 )
         elif command in ("gear-meshes", "coaxial"):
             from .geometry import coaxial, gear_meshes
