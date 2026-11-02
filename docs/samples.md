@@ -9,14 +9,19 @@ Each sample is exactly three sibling items sharing one basename:
 | `samples/NAME.mp4` | Web-sized H.264 encode of the video the user supplied. |
 | `samples/NAME.md` | Agent-written summary: references and chat summary. |
 
-Sometimes the evidence relies on other generated folders, for example a derived
-source model in `output/NAME-source/`. Pass each one with `--extra`. It is copied
-verbatim to `samples/NAME/extra/<folder>/`. This keeps the three-item convention,
-and the original evidence files stay byte-identical. Folders that are already in
-the repo, such as `data/models-annotated/` or `scripts/`, are not extras.
+Sometimes the evidence relies on other things the same run generated, for
+example a derived source model in `output/NAME-source/`, an early study folder,
+or new scripts that exist only in the checkout where the run happened. Pass each
+folder or file with `--extra`. It is copied verbatim to
+`samples/NAME/extra/<folder or file name>`. This keeps the three-item
+convention, and the original evidence files stay byte-identical. Files already
+committed to this repo, such as `data/models-annotated/` or existing `scripts/`,
+are not extras. Neither are artifacts a webapp makes for other purposes, such as
+gallery copies in `ldraw-mecha-docker/data/generated/`.
 
-Only Blender backups (`*.blend1`, `*.blend2`, …) and `.DS_Store` are left out
-of the copy; they are not evidence and stay git-ignored. Everything else,
+Only Blender backups (`*.blend1`, `*.blend2`, …), Python caches (`__pycache__/`,
+`*.pyc`) and `.DS_Store` are left out of the copy; they are not evidence and
+stay git-ignored. Everything else,
 including logs and scripts, is committed as-is. `.blend`, `.glb`, `.mp4` and
 images are LFS-tracked.
 
@@ -28,11 +33,13 @@ The user supplies the evidence folder and a `.mov` or `.mp4` video:
 ./add-sample.sh output/106 path/to/video.mov          # NAME defaults to the folder name
 ./add-sample.sh output/106 path/to/video.mov --name 106-car
 ./add-sample.sh output/3625 3625.mov --extra output/3625-source
+./add-sample.sh ../exp/output/42043-crane crane.mov --extra ../exp/scripts/build_crane_42043.py
 ```
 
 Before you run it, search the evidence for paths outside its folder, such as
-`grep -rhoE '(\.\./|output/)[A-Za-z0-9._-]+' output/NAME`. Pass each generated
-folder you find with `--extra`.
+`grep -rhoE '(\.\./|output/)[A-Za-z0-9._-]+' output/NAME`. Also check the
+source checkout for the run's other output folders and uncommitted scripts
+(`git status` there). Pass each generated folder or file you find with `--extra`.
 
 The script refuses to overwrite an existing sample. It then:
 
@@ -44,7 +51,9 @@ The script refuses to overwrite an existing sample. It then:
 3. prints facts for the summary (evidence time range, `.blend` files, models
    referenced) and ranked chat candidates from Claude
    (`~/.claude/projects/`), Codex (`~/.codex/sessions/`) and the docker webapp
-   (`../ldraw-mecha-docker/data/chats/`, override with `DOCKER_ROOT`).
+   (`../ldraw-mecha-docker/data/chats/`, override with `DOCKER_ROOT`). Claude
+   and Codex chats are searched for this repo and for the git checkout that
+   holds the source, such as an experiment clone.
 
 ## Choosing the chat
 
@@ -71,7 +80,7 @@ merges and squashes never break them. Do not use GitHub URLs or branch names.
 - **Agent(s):** <agent, model, and effort if recorded>
 - **Model:** <.mpd/.ldr filename used for the animation>
 - **Animation video:** [NAME.mp4](NAME.mp4)
-- **Evidences:** [NAME/](NAME/), plus each extra source folder,
+- **Evidences:** [NAME/](NAME/), plus each extra,
   [NAME/extra/FOLDER/](NAME/extra/FOLDER/), and the original path it was copied from
 - **Produced `.blend` files:**
     - `NAME/rigged.blend`: <one-line role>

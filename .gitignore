@@ -231,7 +231,8 @@ movs/
 *.mov
 
 
-# samples/ holds published evidence verbatim; only Blender backups and Finder files stay out.
+# samples/ holds published evidence verbatim; only Blender backups, Python caches and Finder files stay out.
 !samples/**
 samples/**/.DS_Store
 samples/**/*.blend[0-9]*
+samples/**/__pycache__/

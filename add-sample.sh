@@ -1,14 +1,14 @@
 #!/bin/sh
 # Add a generated animation result to samples/ as three sibling items:
-#   samples/NAME/     verbatim copy of the evidence folder (Blender backups skipped);
-#                     each --extra folder is copied verbatim to samples/NAME/extra/<basename>/
+#   samples/NAME/     verbatim copy of the evidence folder (Blender backups and caches skipped);
+#                     each --extra folder or file is copied verbatim to samples/NAME/extra/<basename>
 #   samples/NAME.mp4  web-sized H.264 encode of the supplied video
 #   samples/NAME.md   written afterwards by the agent (see docs/samples.md)
 # Then rank the agent chats that most likely produced the evidence.
 set -eu
 
 usage() {
-  echo "usage: $0 <source-dir> <video.mov|video.mp4> [--name NAME] [--extra DIR]..." >&2
+  echo "usage: $0 <source-dir> <video.mov|video.mp4> [--name NAME] [--extra PATH]..." >&2
   exit 2
 }
 die() { echo "add-sample: $*" >&2; exit 1; }
@@ -40,23 +40,31 @@ video=$(CDPATH= cd -- "$(dirname -- "$video_arg")" && pwd)/$(basename -- "$video
 printf '%s\n' "$name" | grep -Eq '^[A-Za-z0-9][A-Za-z0-9._-]*$' \
   || die "invalid sample name: $name"
 
-# Extra source folders: absolute, distinct basenames, outside the evidence folder.
+# Extra sources (folders or files): absolute, distinct basenames, outside the evidence folder.
 extras=
 if [ -n "$extra_args" ]; then
-  [ ! -e "$src/extra" ] || die "evidence already has an 'extra' entry; cannot add --extra folders"
+  [ ! -e "$src/extra" ] || die "evidence already has an 'extra' entry; cannot add --extra sources"
   while IFS= read -r arg; do
     [ -n "$arg" ] || continue
-    [ -d "$arg" ] || die "extra folder not found: $arg"
-    dir=$(CDPATH= cd -- "$arg" && pwd)
+    if [ -d "$arg" ]; then
+      dir=$(CDPATH= cd -- "$arg" && pwd)
+      case $src/ in
+        "$dir"/*) die "extra folder contains the evidence folder: $arg" ;;
+      esac
+    elif [ -f "$arg" ]; then
+      dir=$(CDPATH= cd -- "$(dirname -- "$arg")" && pwd)/$(basename -- "$arg")
+      case $dir in
+        *.blend[0-9]*|*.pyc|*/.DS_Store) die "extra file is not evidence: $arg" ;;
+      esac
+    else
+      die "extra not found: $arg"
+    fi
     case $dir/ in
-      "$src"/*) die "extra folder is inside the evidence folder: $arg" ;;
-    esac
-    case $src/ in
-      "$dir"/*) die "extra folder contains the evidence folder: $arg" ;;
+      "$src"/*) die "extra is inside the evidence folder: $arg" ;;
     esac
     base=$(basename -- "$dir")
     if printf '%s' "$extras" | while IFS= read -r e; do [ "$(basename -- "$e")" != "$base" ] || exit 1; done; then :
-    else die "two extra folders share the name: $base"; fi
+    else die "two extras share the name: $base"; fi
     extras="$extras$dir
 "
   done <<EOF
@@ -106,14 +114,21 @@ ffmpeg -nostdin -hide_banner -loglevel error -stats -i "$video" -map 0:v:0 -an \
   "$work/video.mp4"
 echo "sample: $(probe "$work/video.mp4")"
 
-# Copy a folder verbatim except Blender backups and Finder files, then prove it.
+# Copy a folder verbatim except Blender backups, Python caches and Finder files, then prove it.
 copy_tree() {
-  rsync -a --exclude .DS_Store --exclude '*.blend[0-9]*' "$1/" "$2/"
-  diff -r -x .DS_Store -x '*.blend[0-9]*' "$1" "$2" >/dev/null \
+  rsync -a --exclude .DS_Store --exclude '*.blend[0-9]*' --exclude __pycache__ --exclude '*.pyc' "$1/" "$2/"
+  diff -r -x .DS_Store -x '*.blend[0-9]*' -x __pycache__ -x '*.pyc' "$1" "$2" >/dev/null \
     || die "copy of $1 does not match the source"
   echo "copied: $(cd "$2" && find . -type f | wc -l | tr -d ' ') files to ${2#"$repo"/}/"
-  (cd "$1" && find . -type f \( -name .DS_Store -o -name '*.blend[0-9]*' \)) \
+  (cd "$1" && find . -type f \( -name .DS_Store -o -name '*.blend[0-9]*' -o -name '*.pyc' \)) \
     | sed "s|^\./|skipped (not evidence): ${1#"$repo"/}/|"
+}
+
+copy_file() {
+  mkdir -p "$(dirname -- "$2")"
+  cp -p "$1" "$2"
+  cmp -s "$1" "$2" || die "copy of $1 does not match the source"
+  echo "copied: ${2#"$repo"/}"
 }
 
 echo "== evidence"
@@ -122,7 +137,11 @@ copied=1
 copy_tree "$src" "$samples/$name"
 while IFS= read -r dir; do
   [ -n "$dir" ] || continue
-  copy_tree "$dir" "$samples/$name/extra/$(basename -- "$dir")"
+  if [ -d "$dir" ]; then
+    copy_tree "$dir" "$samples/$name/extra/$(basename -- "$dir")"
+  else
+    copy_file "$dir" "$samples/$name/extra/$(basename -- "$dir")"
+  fi
 done <<EOF
 $extras
 EOF
@@ -141,7 +160,10 @@ if [ -n "$ignored" ]; then
 fi
 echo "ok: all $(printf '%s\n' "$files" | wc -l | tr -d ' ') files are committable"
 
-python3 -I - "$name" "$src" "$repo" "$docker_root" <<'PY'
+# A source in another checkout (e.g. an experiment clone) has its own chats and paths.
+src_root=$(git -C "$src" rev-parse --show-toplevel 2>/dev/null || true)
+
+python3 -I - "$name" "$src" "$repo" "$docker_root" "$src_root" <<'PY'
 import datetime as dt
 import glob
 import json
@@ -149,13 +171,13 @@ import os
 import re
 import sys
 
-name, src, repo, docker_root = sys.argv[1:]
+name, src, repo, docker_root, src_root = sys.argv[1:]
 docker_root = os.path.realpath(docker_root)
 backup = re.compile(r"\.blend\d+$")
 rels, mtimes = [], []
 for root, _, names in os.walk(src):
     for n in names:
-        if n == ".DS_Store" or backup.search(n):
+        if n == ".DS_Store" or backup.search(n) or n.endswith(".pyc"):
             continue
         path = os.path.join(root, n)
         rels.append(os.path.relpath(path, src))
@@ -181,13 +203,17 @@ print("models referenced:", ", ".join(sorted(models)) or "none found")
 print(f"summary links: [{name}.mp4]({name}.mp4)  [{name}/]({name}/)")
 extra = os.path.join(repo, "samples", name, "extra")
 for e in sorted(os.listdir(extra)) if os.path.isdir(extra) else []:
-    print(f"extra source: [{name}/extra/{e}/]({name}/extra/{e}/)")
+    e += "/" if os.path.isdir(os.path.join(extra, e)) else ""
+    print(f"extra source: [{name}/extra/{e}]({name}/extra/{e})")
 
 # The source as chats would spell it: relative to its project, else parent/name.
 if src.startswith(repo + os.sep):
     key = os.path.relpath(src, repo)
 elif src.startswith(docker_root + os.sep):
     key = os.path.relpath(src, os.path.join(docker_root, "data"))
+    src_root = ""
+elif src_root:
+    key = os.path.relpath(src, src_root)
 else:
     key = os.path.join(os.path.basename(os.path.dirname(src)), os.path.basename(src))
 edge = r"(?<![A-Za-z0-9_.-])"
@@ -253,9 +279,10 @@ claude_model = lambda line: ((record(line, '"type":"assistant"').get("message") 
 codex_model = lambda line: (record(line, '"turn_context"').get("payload") or {}).get("model")
 
 candidates = []
-slug = re.sub(r"[^A-Za-z0-9]", "-", repo)
+projects = {repo, src_root} - {""}
+slugs = {re.sub(r"[^A-Za-z0-9]", "-", p) for p in projects}
 claude_dirs = [d for d in glob.glob(os.path.expanduser("~/.claude/projects/*"))
-               if os.path.basename(d) == slug or os.path.basename(d).startswith(slug + "--")]
+               if any(os.path.basename(d) == s or os.path.basename(d).startswith(s + "--") for s in slugs)]
 for d in claude_dirs:
     for path in glob.glob(os.path.join(d, "**", "*.jsonl"), recursive=True):
         c = score(path, "claude", claude_model)
@@ -268,7 +295,7 @@ for base in ("~/.codex/sessions", "~/.codex/archived_sessions"):
                 meta = json.loads(fh.readline()).get("payload", {})
         except (OSError, ValueError):
             continue
-        if meta.get("cwd") != repo:
+        if meta.get("cwd") not in projects:
             continue
         c = score(path, "codex", codex_model)
         if c:
