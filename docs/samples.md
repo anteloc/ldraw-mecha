@@ -138,9 +138,11 @@ Writing rules:
   out longer gaps (waiting for the user, overnight pauses) and mention the ones
   a reader would wonder about.
 - **What was asked:** the user's exact words in a blockquote. Leave out text
-  the client added automatically, such as IDE or browser context. Replies that
-  changed the work go in "What happened", quoted briefly. If another agent
-  answered for the user, say so.
+  the client added automatically, such as IDE or browser context. For a long
+  request (more than about 10 lines), write a one-sentence gist and put the
+  exact text in a collapsed `<details><summary>Full request</summary>` block.
+  Replies that changed the work go in "What happened", quoted briefly. If
+  another agent answered for the user, say so.
 - **Where:** every file is a relative link whose text is its path, so the path
   is also its location. Use relative links only (`NAME.mp4`, `NAME/...`), never
   GitHub URLs or branch names, so merges and squashes never break them.
