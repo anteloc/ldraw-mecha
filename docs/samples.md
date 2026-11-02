@@ -7,7 +7,7 @@ Each sample is exactly three sibling items sharing one basename:
 | --- | --- |
 | `samples/NAME/` | Verbatim copy of the generated folder (e.g. `output/106/`). Never edited. |
 | `samples/NAME.mp4` | Web-sized H.264 encode of the video the user supplied. |
-| `samples/NAME.md` | Agent-written summary: references and chat summary. |
+| `samples/NAME.md` | Summary for readers: what the sample shows, how it was made, and what each file is. |
 
 Sometimes the evidence relies on other things the same run generated, for
 example a derived source model in `output/NAME-source/`, an early study folder,
@@ -68,32 +68,88 @@ files before summarising it.
 
 ## Summary template
 
-Write `samples/NAME.md` with relative links only (`NAME.mp4`, `NAME/`), so
-merges and squashes never break them. Do not use GitHub URLs or branch names.
+The summary is for people, not agents: someone who never saw the chat should
+understand what the sample shows, when it was made, how long it took, why each
+file exists and where it is. [samples/3625.md](../samples/3625.md) is the
+reference example; follow its layout.
 
 ```markdown
-# Animation: <animation title>, by <agent(s)>
+# <Model number and name>: <what the animation shows>
 
-## References
+<2-3 plain sentences: what you see in the video, which LEGO model, who made
+it, and the outcome.>
 
-- **Date:** <approximate date, with timestamps and time zone if available>
-- **Agent(s):** <agent, model, and effort if recorded>
-- **Model:** <.mpd/.ldr filename used for the animation>
-- **Animation video:** [NAME.mp4](NAME.mp4)
-- **Evidences:** [NAME/](NAME/), plus each extra,
-  [NAME/extra/FOLDER/](NAME/extra/FOLDER/), and the original path it was copied from
-- **Produced `.blend` files:**
-    - `NAME/rigged.blend`: <one-line role>
+▶ [Watch the video](NAME.mp4)
 
-## Chat summary
+## At a glance
 
-- **Prompt:** <exact text of the user request that triggered the work, in
-  italics; for a long prompt, quote it as an italic block below this item.
-  Leave out text the client added automatically, such as IDE context, and
-  say so>
-- **Most relevant:**
-    - <brief decisions by the agent or user, issues found, how they were
-      resolved; keep it short>
+| | |
+|---|---|
+| LEGO model | <number and name>; source file `data/models-annotated/<file>` |
+| Made by | <agent> (<model>) |
+| When | <YYYY-MM-DD>, <start>–<end> Madrid time |
+| Working time | About <N> min of agent work<, plus the pauses worth noting> |
+| Result | [NAME/<main>.blend](NAME/<main>.blend): <frames> frames at <fps> fps |
+
+## How to view it
+
+1. Open [NAME/<main>.blend](NAME/<main>.blend) in Blender 5.2 or later.
+2. Press Play (Space).
+3. <Where the controls are and what each one moves.>
+
+## What was asked
+
+> <the user's exact request>
+
+## What happened
+
+1. <5-8 short steps in time order: plan, user decisions, problems found and
+   how they were fixed, delivery, follow-up questions.>
+
+## Files
+
+All paths are relative to `samples/`.
+
+| File | What it is | Why it exists |
+|---|---|---|
+| [NAME.mp4](NAME.mp4) | <screen recording, made by whom> | To show the result |
+| [NAME/<file>](NAME/<file>) | <...> | <...> |
+
+## Known limits
+
+- <3-6 limits the agent stated, in plain words.>
+
+## Source
+
+<Tool> chat `<session id>`, stored <where>. Times come from the chat log, not
+from file dates.
 ```
+
+Writing rules:
+
+- **Plain words.** Avoid toolkit jargon (LDU, evaluator, coaxial, signals,
+  shortcut parts). If a term is needed, explain it once in passing. Convert
+  LDU to real-world size (1 LDU = 0.4 mm) when a size matters.
+- **Each fact once,** in the section where a reader would look for it.
+- **When:** Madrid time only, in one range from the first request to the last
+  message. Times are approximate.
+- **Working time:** agent activity only. `add-sample.sh` prints it for each
+  chat candidate: the sum of gaps of 5 minutes or less between messages. Leave
+  out longer gaps (waiting for the user, overnight pauses) and mention the ones
+  a reader would wonder about.
+- **What was asked:** the user's exact words in a blockquote. Leave out text
+  the client added automatically, such as IDE or browser context. Replies that
+  changed the work go in "What happened", quoted briefly. If another agent
+  answered for the user, say so.
+- **Where:** every file is a relative link whose text is its path, so the path
+  is also its location. Use relative links only (`NAME.mp4`, `NAME/...`), never
+  GitHub URLs or branch names, so merges and squashes never break them.
+- **Why:** every file, or group of similar files (`NAME/xray/`), gets one row
+  in the files table, and every row says why the file exists. Extras are
+  listed with the path they were copied from.
+- **Composite scenes** (several animations sharing one scene, like
+  `minifigs` and `plants`): say so in the opening paragraph.
+- **Claims:** report the agent's checks and limits as the agent stated them.
+  Do not call motion collision-free or physically proven.
 
 The summary adds context only. Never edit files in `samples/NAME/`.

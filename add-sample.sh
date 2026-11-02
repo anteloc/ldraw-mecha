@@ -230,6 +230,13 @@ def parse(ts):
         return None
 
 
+def working(times):
+    # Agent activity: gaps over 5 minutes are waits for the user or pauses, not work.
+    times = sorted(t for t in times if t)
+    gaps = ((b - a).total_seconds() for a, b in zip(times, times[1:]))
+    return round(sum(g for g in gaps if g <= 300) / 60)
+
+
 def window(start, end):
     if start and start > last:
         return "after"
@@ -261,7 +268,8 @@ def score(path, source, model_of):
     first = parse(first.group(1)) if first else start
     found = sorted({m for m in map(model_of, text.splitlines()) if m and m != "<synthetic>"})
     return dict(path=path, source=source, hits=sorted(hits), total=total, start=start,
-                end=end, first=first, flag=window(first, end), models=found)
+                end=end, first=first, flag=window(first, end), models=found,
+                work=working(map(parse, stamps)))
 
 
 def record(line, marker):
@@ -325,9 +333,14 @@ for i in sorted(ids):
         llms = sorted(set(re.findall(r'"_llm_model"\s*:\s*"([^"]+)"', open(msgs).read())))
     except OSError:
         llms = []
+    try:
+        times = [utc(json.loads(l)["created_at"]) for l in open(msgs) if '"created_at"' in l]
+    except (OSError, ValueError, KeyError):
+        times = []
     start, end = (utc(chat[k]) if chat.get(k) else None for k in ("created_at", "updated_at"))
     docker.append(dict(path=os.path.join(chats, i), exact=i in exact, title=chat.get("title"),
-                       start=start, end=end, flag=window(start, end), models=llms))
+                       start=start, end=end, flag=window(start, end), models=llms,
+                       work=working(times)))
 
 fmt = lambda t: f"{t:%Y-%m-%d %H:%M}" if t else "?"
 print("== chat candidates (best first)")
@@ -336,7 +349,7 @@ print("== chat candidates (best first)")
 def show_docker(c):
     print(f"docker {'exact' if c['exact'] else 'mentions name'}: {c['path']}")
     print(f"  title: {c['title']!r}  {fmt(c['start'])} .. {fmt(c['end'])} UTC  window: {c['flag']}"
-          f"  models: {', '.join(c['models']) or '?'}")
+          f"  working time: ~{c['work']} min  models: {', '.join(c['models']) or '?'}")
 
 
 # An exact chat-ID match is certain; name mentions rank with the other chats.
@@ -355,6 +368,7 @@ for c in candidates[:10]:
     print(f"  {len(c['hits'])}/{len(rels)} evidence files referenced, {c['total']} mentions of {key}, "
           f"{fmt(c['start'])} .. {fmt(c['end'])} UTC, first mention {fmt(c['first'])}, window: {c['flag']}"
           + (" (cannot have produced it)" if c["flag"] == "after" else ""))
+    print(f"  working time: ~{c['work']} min (gaps over 5 min left out)")
     if c["models"]:
         print(f"  models: {', '.join(c['models'])}")
     if c["hits"]:
