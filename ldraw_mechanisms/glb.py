@@ -77,7 +77,7 @@ def bind(path, manifest, merged_refs=()):
         expected_by_parent.setdefault(n["parent"], []).append(n)
     used, duplicates, merged = set(), [], {}
     for n in manifest["nodes"]:
-        candidates = []
+        candidates, deviation = [], {}
         for idx in nodes[bound[n["parent"]]].get("children", []):
             obj = nodes[idx]
             extras = obj.get("extras", {})
@@ -96,6 +96,16 @@ def bind(path, manifest, merged_refs=()):
             if str(extras.get("colorCode")) not in (n["colour"], n["effective_colour"]):
                 continue
             candidates.append(idx)
+            deviation[idx] = max(
+                abs(m[i][j] - n["local"][i][j]) for i in range(3) for j in range(4)
+            )
+        if len(candidates) > 1:
+            # Densely spaced parts (e.g. hose segments under 0.5 LDU apart) pass the
+            # tolerance together; a strictly closest placement is unambiguous.
+            best = min(deviation.values())
+            closest = [i for i in candidates if deviation[i] <= best + 1e-9]
+            if len(closest) == 1:
+                candidates = closest
         if not candidates and n["kind"] == "part" and normalized(n["ref"]) in merged_refs:
             geometry = [
                 i
@@ -104,11 +114,14 @@ def bind(path, manifest, merged_refs=()):
                 and not nodes[i].get("extras", {}).get("fileName")
                 and matrix(nodes[i]) == matrix({})
             ]
-            if len(geometry) != 1:
+            if not geometry:
                 raise ValueError(
-                    f"GLB binding for {n['id']} {n['ref']}: {len(geometry)} merged geometry nodes"
+                    f"GLB binding for {n['id']} {n['ref']}: 0 merged geometry nodes"
                 )
-            merged.setdefault(geometry[0], []).append(n["id"])
+            # The exporter may split one merged mesh by material; every part keeps
+            # the first node as its identity and all of them carry the merged tag.
+            for g in geometry:
+                merged.setdefault(g, []).append(n["id"])
             bound[n["id"]] = geometry[0]
             continue
         twins = [

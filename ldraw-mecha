@@ -2,7 +2,7 @@
 set -eu
 task_dir=$(CDPATH= cd -- "$(dirname -- "$0")" && pwd)
 if [ ! -x "$task_dir/.venv/bin/python" ]; then
-  echo 'Run ./setup-macos.sh first (docs/setup.md).' >&2
+  echo 'Run your setup-*.sh script first (docs/setup.md).' >&2
   exit 2
 fi
 exec "$task_dir/.venv/bin/python" -m ldraw_mechanisms.cli "$@"

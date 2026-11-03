@@ -114,7 +114,8 @@ def blender_executable(value=None):
     return find_tool(
         "blender",
         value or os.environ.get("BLENDER_BIN"),
-        "Blender.app/Contents/MacOS/Blender",
+        "Blender.app/Contents/MacOS/Blender",  # setup-macos.sh
+        "blender/blender",  # setup-linux.sh
     )
 
 

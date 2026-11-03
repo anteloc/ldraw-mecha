@@ -57,12 +57,18 @@ def library_path(value=None):
     return path
 
 
-def find_tool(name, value=None, bundled=None):
-    """External tool: explicit value, else bin/ (bundled or bin/<name>), else PATH."""
-    local = ROOT / "bin" / (bundled or name)
-    found = value or (str(local) if os.access(local, os.X_OK) else shutil.which(name))
+def find_tool(name, value=None, *bundled):
+    """External tool: explicit value, else bin/ (bundled paths or bin/<name>), else PATH."""
+    if value:
+        return value
+    for local in (ROOT / "bin" / b for b in bundled or (name,)):
+        if local.is_file() and os.access(local, os.X_OK):
+            return str(local)
+    found = shutil.which(name)
     if not found:
-        raise ValueError(f"{name} not found in bin/ or on PATH: run ./setup-macos.sh (docs/setup.md)")
+        raise ValueError(
+            f"{name} not found in bin/ or on PATH: run your setup-*.sh script (docs/setup.md)"
+        )
     return found
 
 

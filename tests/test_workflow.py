@@ -321,14 +321,18 @@ def test_tools_prefer_explicit_then_bin_then_path(tmp_path, monkeypatch):
     monkeypatch.setattr(source.shutil, "which", lambda name: f"/usr/bin/{name}")
     monkeypatch.delenv("BLENDER_BIN", raising=False)
     assert workflow.blender_executable() == "/usr/bin/blender"
-    bundled = tmp_path / "bin/Blender.app/Contents/MacOS/Blender"
-    bundled.parent.mkdir(parents=True)
-    bundled.write_text("#!/bin/sh\n")
-    bundled.chmod(0o755)
-    assert workflow.blender_executable() == str(bundled)
+    for layout in ("blender/blender", "Blender.app/Contents/MacOS/Blender"):  # Linux, macOS
+        bundled = tmp_path / "bin" / layout
+        bundled.parent.mkdir(parents=True)
+        bundled.write_text("#!/bin/sh\n")
+        bundled.chmod(0o755)
+        assert workflow.blender_executable() == str(bundled)
+        bundled.unlink()
+    (tmp_path / "bin/leocad").mkdir()  # a directory named like the tool is not the tool
+    assert source.find_tool("leocad") == "/usr/bin/leocad"
     monkeypatch.setenv("BLENDER_BIN", "/opt/blender")
     assert workflow.blender_executable() == "/opt/blender"
     assert workflow.blender_executable("/explicit") == "/explicit"
     monkeypatch.setattr(source.shutil, "which", lambda name: None)
-    with pytest.raises(ValueError, match="setup-macos.sh"):
+    with pytest.raises(ValueError, match="setup-"):
         source.find_tool("jev-rerank")

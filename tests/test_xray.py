@@ -239,7 +239,7 @@ def test_cli_rejects_incomplete_or_mixed_requests(source, tmp_path, capsys, monk
     monkeypatch.setattr(src, "ROOT", tmp_path)
     monkeypatch.setattr(src.shutil, "which", lambda name: None)
     assert main(["xray", str(source), "--instances", "0/0", "--xray-dir", str(tmp_path)]) == 2
-    assert "setup-macos.sh" in capsys.readouterr().err
+    assert "setup-" in capsys.readouterr().err
 
 
 @pytest.mark.skipif(not (XRAY and LIBRARY), reason="needs ldraw-xray and an LDraw library")

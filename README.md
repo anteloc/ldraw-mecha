@@ -11,7 +11,8 @@ Start with [how it works](docs/how-it-works.md) for the explanation or
 ## Try an existing example
 
 ```sh
-./setup-macos.sh  # once per machine (docs/setup.md); add the printed exports to ~/.zshrc
+./setup-macos.sh  # once per machine, or setup-linux.sh / setup-win-wsl.sh (docs/setup.md);
+                  # then add the printed exports to your shell profile
 
 ./ldraw-mecha prepare data/models-annotated/106-1.mpd --recipe 106 --output output/study
 ./ldraw-mecha check output/study
@@ -72,9 +73,9 @@ plant/wind animation. Adapt their reasoning and checks, then remeasure the targe
 ## Requirements
 
 Python 3.12+, `uv`, an LDraw library, Bun for conversion, and Blender for rigging.
-`./setup-macos.sh` installs all of them, with ldraw-xray and LeoCAD, inside the
-project (`bin/`, `data/ldraw`, `.venv`); Linux and WSL2 scripts are planned; see
-[setup](docs/setup.md). Tools are taken from `bin/`, else `PATH`.
+`./setup-macos.sh`, `./setup-linux.sh` or `./setup-win-wsl.sh` (WSL2) installs all
+of them, with ldraw-xray and LeoCAD, inside the project (`bin/`, `data/ldraw`,
+`.venv`); see [setup](docs/setup.md). Tools are taken from `bin/`, else `PATH`.
 Visual inspection (`./ldraw-mecha xray`) runs the `ldraw-xray` CLI (with LeoCAD);
 check it with `bin/ldraw-xray doctor`. Source analysis needs neither
 Blender, ldraw-xray nor Jev. `--blender`/`BLENDER_BIN` selects

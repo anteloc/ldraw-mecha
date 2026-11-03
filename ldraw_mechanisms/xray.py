@@ -44,7 +44,10 @@ def executable():
 
 def leocad():
     return find_tool(
-        "leocad", os.environ.get("LEOCAD"), "LeoCAD.app/Contents/MacOS/LeoCAD"
+        "leocad",
+        os.environ.get("LEOCAD"),
+        "LeoCAD.app/Contents/MacOS/LeoCAD",  # setup-macos.sh
+        "leocad/AppRun",  # setup-linux.sh
     )
 
 
