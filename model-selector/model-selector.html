@@ -1,0 +1,161 @@
+<!doctype html>
+<!--
+  LDraw annotated model selector. Served by model-selector/serve.py, which first
+  writes /models-annotated.json: [{name, path, url, description}, ...].
+
+  Each row: View 3D opens viewer.html (three.js/ldbi, Normal/High/Poly) in a modal;
+  Copy path copies the model's repo-relative path, for the animation agent.
+  The viewer is an iframe so ldbi's classic globals (THREE, LDR) stay out of this page.
+-->
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>LDraw Model Selector</title>
+<style>
+  :root {
+    --bg: #fafafa; --fg: #1d1d1f; --muted: #6b6b70; --line: #e4e4e7; --head: #f4f4f5;
+    --btn: #fff; --btn-border: #d4d4d8; --hover: #eef2ff; --accent: #2563eb; --ok: #15803d;
+    --backdrop: rgba(0,0,0,.5);
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --bg: #18181b; --fg: #f4f4f5; --muted: #a1a1aa; --line: #2e2e33; --head: #202024;
+      --btn: #27272a; --btn-border: #3f3f46; --hover: #1e2235; --accent: #60a5fa; --ok: #4ade80;
+    }
+  }
+  html, body { margin: 0; background: var(--bg); color: var(--fg);
+               font: 15px/1.5 system-ui, -apple-system, "Segoe UI", sans-serif; }
+  header { padding: 16px 20px 8px; }
+  h1 { margin: 0; font-size: 20px; }
+  #count { color: var(--muted); }
+  table { width: 100%; border-collapse: collapse; }
+  th, td { padding: 10px 20px; text-align: left; vertical-align: top; border-bottom: 1px solid var(--line); }
+  th { position: sticky; top: 0; background: var(--head); font-size: 13px; text-transform: uppercase;
+       letter-spacing: .04em; color: var(--muted); z-index: 1; }
+  tbody tr:hover { background: var(--hover); }
+  td.name { font: 14px/1.5 ui-monospace, SFMono-Regular, Menlo, monospace; white-space: nowrap; }
+  td.description { width: 100%; }                 /* wraps; gets all the remaining width */
+  td.actions { white-space: nowrap; }
+  button { font: inherit; font-size: 14px; color: var(--fg); background: var(--btn);
+           border: 1px solid var(--btn-border); border-radius: 6px; padding: 5px 10px; cursor: pointer;
+           display: inline-flex; align-items: center; gap: 6px; }
+  button:hover { border-color: var(--accent); color: var(--accent); }
+  button.view { border-color: var(--accent); color: var(--accent); font-weight: 600; }
+  button.copied { border-color: var(--ok); color: var(--ok); }
+  button svg { width: 16px; height: 16px; }
+  td.actions button + button { margin-left: 6px; }
+  #error { color: #b42318; padding: 0 20px; }
+
+  /* The viewer modal (ldraw-nova's model card / viewer modal, reduced to the 3D view). */
+  #modal { position: fixed; inset: 0; background: var(--backdrop); display: grid; place-items: center; z-index: 10; }
+  #modal[hidden] { display: none; }
+  #modal .box { width: min(1400px, 96vw); height: 92vh; background: var(--bg); border-radius: 10px;
+                display: flex; flex-direction: column; overflow: hidden; box-shadow: 0 10px 40px rgba(0,0,0,.35); }
+  #modal .bar { display: flex; align-items: center; gap: 10px; padding: 8px 12px; border-bottom: 1px solid var(--line); }
+  #modal .bar strong { margin-right: auto; font: 14px ui-monospace, SFMono-Regular, Menlo, monospace; }
+  #modal iframe { flex: 1; border: 0; width: 100%; }
+</style>
+</head>
+<body>
+<header>
+  <h1>LDraw annotated models <span id="count"></span></h1>
+</header>
+<p id="error" hidden></p>
+<table>
+  <thead><tr><th>Name</th><th>Description</th><th></th></tr></thead>
+  <tbody id="rows"></tbody>
+</table>
+
+<div id="modal" hidden>
+  <div class="box" role="dialog" aria-modal="true" aria-labelledby="modal-title">
+    <div class="bar">
+      <strong id="modal-title"></strong>
+      <button id="modal-close" aria-label="Close">✕</button>
+    </div>
+    <iframe id="viewer" title="3D viewer" allow="fullscreen"></iframe>
+  </div>
+</div>
+
+<script>
+const ICONS = {
+  view: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round" aria-hidden="true"><path d="M12 2 3 7v10l9 5 9-5V7z"/><path d="M3 7l9 5 9-5M12 12v10"/></svg>',
+  copy: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round" aria-hidden="true"><rect x="8" y="8" width="13" height="13" rx="2"/><path d="M16 8V5a2 2 0 0 0-2-2H5a2 2 0 0 0-2 2v9a2 2 0 0 0 2 2h3"/></svg>',
+};
+const rows = document.getElementById('rows');
+const modal = document.getElementById('modal');
+const viewer = document.getElementById('viewer');
+let models = [];
+
+function button(cls, icon, label, title) {
+  const b = document.createElement('button');
+  b.className = cls;
+  b.innerHTML = ICONS[icon];
+  b.append(label);
+  b.title = title;
+  return b;
+}
+
+function render() {
+  const frag = document.createDocumentFragment();
+  models.forEach((m, i) => {
+    const tr = document.createElement('tr');
+    tr.dataset.i = i;
+    const name = Object.assign(document.createElement('td'), { className: 'name', textContent: m.name });
+    const desc = Object.assign(document.createElement('td'), { className: 'description', textContent: m.description });
+    const actions = Object.assign(document.createElement('td'), { className: 'actions' });
+    actions.append(button('view', 'view', 'View 3D', `Open ${m.name} in the 3D viewer`),
+                   button('copy', 'copy', 'Copy path', `Copy ${m.path}`));
+    tr.append(name, desc, actions);
+    frag.append(tr);
+  });
+  rows.append(frag);
+  document.getElementById('count').textContent = `(${models.length})`;
+}
+
+async function copyPath(b, path) {
+  const label = b.lastChild;
+  try {
+    await navigator.clipboard.writeText(path);
+    label.textContent = 'Copied ✓';
+    b.classList.add('copied');
+  } catch (err) {
+    label.textContent = 'Copy failed';
+    b.title = err.message;
+  }
+  setTimeout(() => { label.textContent = 'Copy path'; b.classList.remove('copied'); }, 1500);
+}
+
+function openViewer(m) {
+  document.getElementById('modal-title').textContent = m.name;
+  viewer.src = `viewer.html?model=${encodeURIComponent(m.url)}&path=${encodeURIComponent(m.path)}`;
+  modal.hidden = false;
+}
+
+function closeViewer() {
+  modal.hidden = true;
+  viewer.src = 'about:blank';          // stop the 3D scene and free its memory
+}
+
+rows.addEventListener('click', e => {
+  const b = e.target.closest('button');
+  if (!b) return;
+  const m = models[b.closest('tr').dataset.i];
+  if (b.classList.contains('view')) openViewer(m);
+  else copyPath(b, m.path);
+});
+document.getElementById('modal-close').addEventListener('click', closeViewer);
+modal.addEventListener('click', e => { if (e.target === modal) closeViewer(); });
+addEventListener('keydown', e => { if (e.key === 'Escape' && !modal.hidden) closeViewer(); });
+
+fetch('/models-annotated.json')
+  .then(r => { if (!r.ok) throw new Error(r.status + ' ' + r.statusText); return r.json(); })
+  .then(data => { models = data; render(); })
+  .catch(err => {
+    const el = document.getElementById('error');
+    el.textContent = 'Could not load the model index: ' + err.message;
+    el.hidden = false;
+  });
+</script>
+</body>
+</html>

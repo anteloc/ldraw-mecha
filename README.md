@@ -31,6 +31,10 @@ review remain separate [delivery checks](docs/validation.md).
 
 ## Work on another model
 
+To pick one, browse the annotated models with their descriptions and a 3D view:
+`python3 model-selector/serve.py`, then **Copy path** on the model you want
+(see [model-selector/README.md](model-selector/README.md)).
+
 Run `prepare MODEL --output output/STUDY` without `--recipe`, inspect the
 evidence and geometry, then author measured joints in `plan.json`. A study
 directory contains ordinary files; commands also accept explicit plan paths.

@@ -35,6 +35,7 @@ to your shell profile (see [Configuration](#configuration)).
 | jev-rerank | 0.5.0 | `bin/jev-rerank` (uv tool) | same | Optional semantic search; needs `TYPESAFE_API_KEY` |
 | Bun | 1.4.4 | `bin/bun` | same | Runs `bin/mpd2glb.mjs` |
 | mpd2glb | 0.9.1 | `bin/mpd2glb.mjs` | same | GLB conversion (`scripts/mpd2glb.sh`) |
+| LDraw web viewer (ldbi + three.js) | ldraworg-library `a38efc7` | `bin/ldbi-viewer/` | same | 3D view in `model-selector/` |
 | Blender | 5.2.3 | `bin/Blender.app` | `bin/blender/` | `rig`, animation, Blender checks |
 | LeoCAD | 26.09 | `bin/LeoCAD.app` | `bin/leocad/` (unpacked AppImage) | ldraw-xray renders |
 | LDraw parts library | latest `complete.zip` | `data/ldraw` | same | Everything |
@@ -97,6 +98,7 @@ cache, and `mpd2glb.mjs` (1 MB) is always fetched again.
   The versions are repeated in `setup-macos.sh` and `setup-linux.sh`; keep them
   in step.
 - **Refresh the LDraw library**: `rm -rf data/ldraw`, then re-run.
+- **Refresh the web viewer**: change `LDRAWORG_REF`, `rm -rf bin/ldbi-viewer`, then re-run.
 
 ## Configuration
 

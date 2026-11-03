@@ -15,6 +15,7 @@ BUN_VERSION=1.4.4
 MPD2GLB_VERSION=0.9.1
 BLENDER_VERSION=5.2.3
 LEOCAD_VERSION=26.09
+LDRAWORG_REF=a38efc7aca5b1171e888687939d77b6c0b228c7f   # 3D viewer (ldbi), as in ldraw-nova-docker
 
 root=$(CDPATH='' cd -- "$(dirname -- "$0")" && pwd)
 cd "$root"
@@ -98,6 +99,23 @@ fi
 step "mpd2glb $MPD2GLB_VERSION"
 fetch "https://github.com/anteloc/mpd2glb/releases/download/v$MPD2GLB_VERSION/mpd2glb-$MPD2GLB_VERSION.zip" "$tmp/mpd2glb.zip"
 unzip -q -o -j "$tmp/mpd2glb.zip" '*/mpd2glb.mjs' -d "$bin"
+
+# --- 7b. 3D viewer for model-selector/: ldbi + three.js from ldraworg-library --
+# -> bin/ldbi-viewer/{ldbi/js,ldbi/textures,js/ldraworgscene.js,js/WebGL.js}
+# (delete bin/ldbi-viewer to refresh it)
+step "LDraw web viewer (ldraworg-library $LDRAWORG_REF)"
+if [ -f "$bin/ldbi-viewer/js/ldraworgscene.js" ]; then
+  echo "already installed"
+else
+  fetch "https://codeload.github.com/ldraw-org/ldraworg-library/tar.gz/$LDRAWORG_REF" "$tmp/ldraworg.tar.gz"
+  mkdir -p "$tmp/lor"
+  tar -xzf "$tmp/ldraworg.tar.gz" -C "$tmp/lor" --strip-components=1 '*/public/assets/*' '*/LICENSE'
+  rm -rf "$bin/ldbi-viewer"
+  mkdir -p "$bin/ldbi-viewer/js"
+  cp -R "$tmp/lor/public/assets/ldbi" "$bin/ldbi-viewer/ldbi"
+  cp "$tmp/lor/public/assets/js/ldraworgscene.js" "$tmp/lor/public/assets/js/WebGL.js" "$bin/ldbi-viewer/js/"
+  cp "$tmp/lor/LICENSE" "$bin/ldbi-viewer/LICENSE-ldraworg-library.txt"
+fi
 
 # --- 8. Blender (rigging, animation, checks) ----------------------------------
 step "Blender $BLENDER_VERSION"

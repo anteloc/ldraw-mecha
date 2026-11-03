@@ -26,5 +26,11 @@ If you cite this work in writing, a suggested citation can be found at:
   independent mechanism toolkit and does not require that checkout.
 - Original model authors and CCAL notices remain in `data/models-annotated` and
   in extracted source copies. Generated plans preserve source identity and author.
+- `model-selector/viewer.html` is a trimmed copy of ldraw-nova-docker's
+  `web/viewer/viewer.html` (Carlos Antelo, 2026). It runs
+  [buildinginstructions.js](https://github.com/LasseD/buildinginstructions.js)
+  (Lasse Deleuran, Unlicense) and the `LDrawOrg.Model` scene from
+  [ldraworg-library](https://github.com/ldraw-org/ldraworg-library) (MIT), both
+  fetched by `setup-*.sh` into `bin/ldbi-viewer/` with that project's licence.
 - pyldraw3 owns LDraw parsing and connector expansion. LDCad shadow metadata
   retains its authorship and licences under `data/offLibShadow`.
