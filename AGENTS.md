@@ -2,6 +2,8 @@
 
 Read `instructions.md` for the agent workflow and `docs/motion-plan.md` before
 changing the motion contract. Keep source analysis independent of Blender.
+If Blender, LeoCAD, ldraw-xray, Bun or the LDraw library is missing, ask the
+user to run `./bootstrap.sh` (`docs/setup.md`); don't install them yourself.
 
 For an unannotated model, complete the semantic annotation pipeline before
 `prepare` or motion planning: (1) `annotate` adds `0 // ` part/colour comments

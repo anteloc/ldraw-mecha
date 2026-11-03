@@ -11,9 +11,7 @@ Start with [how it works](docs/how-it-works.md) for the explanation or
 ## Try an existing example
 
 ```sh
-./setup.sh
-export LDRAW_DIR=/path/to/ldraw
-export BLENDER_BIN=/path/to/blender
+./bootstrap.sh    # once per machine (docs/setup.md); then open a new terminal
 
 ./ldraw-mecha prepare data/models-annotated/106-1.mpd --recipe 106 --output output/study
 ./ldraw-mecha check output/study
@@ -60,6 +58,7 @@ plant/wind animation. Adapt their reasoning and checks, then remeasure the targe
 
 | Need | Read |
 | --- | --- |
+| Setting up a machine (macOS, Linux, Windows) | [Setup](docs/setup.md) |
 | Everyday commands and recovery | [Workflow](docs/workflow.md) |
 | Joint types, equations, frames and fields | [Motion plan](docs/motion-plan.md) |
 | Source discovery and live Blender tools | [API guide](docs/discovery-and-blender.md) |
@@ -73,6 +72,8 @@ plant/wind animation. Adapt their reasoning and checks, then remeasure the targe
 ## Requirements
 
 Python 3.12+, `uv`, an LDraw library, Bun for conversion, and Blender for rigging.
+`./bootstrap.sh` installs all of them, with ldraw-xray and LeoCAD, on macOS,
+Linux and Windows (WSL2); see [setup](docs/setup.md).
 Visual inspection (`./ldraw-mecha xray`) runs the `ldraw-xray` CLI (with LeoCAD)
 installed on `PATH`; check it with `ldraw-xray doctor`. Source analysis needs neither
 Blender, ldraw-xray nor Jev. `--blender`/`BLENDER_BIN` selects
