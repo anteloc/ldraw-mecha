@@ -75,7 +75,7 @@ def bind(path, manifest, merged_refs=()):
     expected_by_parent = {}
     for n in manifest["nodes"]:
         expected_by_parent.setdefault(n["parent"], []).append(n)
-    used, duplicates, merged = set(), [], {}
+    used, duplicates, merged, folds = set(), [], {}, {}
     for n in manifest["nodes"]:
         candidates, deviation = [], {}
         for idx in nodes[bound[n["parent"]]].get("children", []):
@@ -118,10 +118,11 @@ def bind(path, manifest, merged_refs=()):
                 raise ValueError(
                     f"GLB binding for {n['id']} {n['ref']}: 0 merged geometry nodes"
                 )
-            # The exporter may split one merged mesh by material; every part keeps
-            # the first node as its identity and all of them carry the merged tag.
-            for g in geometry:
-                merged.setdefault(g, []).append(n["id"])
+            # The exporter may split one merged mesh by material. All nodes have the
+            # identity transform, so fold the extras under the first, which carries
+            # the identity and merged tag for every occurrence.
+            merged.setdefault(geometry[0], []).append(n["id"])
+            folds[geometry[0]] = (bound[n["parent"]], geometry[1:])
             bound[n["id"]] = geometry[0]
             continue
         twins = [
@@ -141,6 +142,10 @@ def bind(path, manifest, merged_refs=()):
         idx = candidates[0]
         bound[n["id"]] = idx
         used.add(idx)
+    for first, (parent, extras) in folds.items():
+        siblings = nodes[parent]["children"]
+        nodes[parent]["children"] = [i for i in siblings if i not in extras]
+        nodes[first].setdefault("children", []).extend(extras)
     merged_ids = {i for ids in merged.values() for i in ids}
     # Missing or additional metadata-bearing siblings imply an incomplete conversion.
     for parent, expected in expected_by_parent.items():
