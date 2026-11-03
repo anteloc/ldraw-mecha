@@ -112,11 +112,11 @@ mechanics by itself.
 ## Inspect geometry with ldraw-xray
 
 When a candidate's parts or axis are uncertain, look at them before authoring
-with the globally installed [ldraw-xray CLI](xray.md). Take the axis from
+with the [ldraw-xray CLI](xray.md) (from `bin/`, else `PATH`). Take the axis from
 `connectors` world fields or a `coaxial` line:
 
 ```sh
-ldraw-xray doctor
+bin/ldraw-xray doctor
 ./ldraw-mecha xray data/models-annotated/106-1.mpd --section '106 - main.ldr' \
   --instances 0/40 --point 0 -92 36 --direction -1 0 0 --angles 0 40 75 \
   --xray-dir output/study/xray --name roof

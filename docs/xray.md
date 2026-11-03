@@ -1,10 +1,10 @@
 # Visual inspection with ldraw-xray
 
-`./ldraw-mecha xray` renders **look boards** with the globally installed
-`ldraw-xray` CLI (LeoCAD): the moving set coloured and edged, everything else
+`./ldraw-mecha xray` renders **look boards** with the `ldraw-xray`
+CLI and LeoCAD from `bin/` (else `PATH`; see [setup](setup.md)): the moving set coloured and edged, everything else
 ghosted, the green axis rod and close-up poses. Each board is one `mosaic.png`,
 and the JSON result carries its check list. ldraw-mecha runs the CLI; it never
-imports or installs it. Run `ldraw-xray doctor` once per session (`"renders":
+imports or installs it. Run `bin/ldraw-xray doctor` once per session (`"renders":
 true`); if it fails, record that xray evidence is unavailable and continue
 numerically.
 

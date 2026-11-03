@@ -58,7 +58,7 @@ def test_fts_identities_syntax_and_readonly(database):
 
 def test_jev_402_stops_before_rerank(database, monkeypatch):
     monkeypatch.setenv("TYPESAFE_API_KEY", "test-secret")
-    monkeypatch.setattr(discovery.shutil, "which", lambda _: "/jev-rerank")
+    monkeypatch.setattr(discovery, "find_tool", lambda _: "/jev-rerank")
     calls = []
 
     def fail(*a, **kw):

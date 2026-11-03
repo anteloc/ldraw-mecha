@@ -12,6 +12,7 @@ import hashlib
 import os
 import re
 from pathlib import Path
+import shutil
 
 from ldraw import Parts, parse_model_result
 
@@ -54,6 +55,15 @@ def library_path(value=None):
     if not (path / "parts").is_dir():
         raise ValueError(f"Not an LDraw library: {path}")
     return path
+
+
+def find_tool(name, value=None, bundled=None):
+    """External tool: explicit value, else bin/ (bundled or bin/<name>), else PATH."""
+    local = ROOT / "bin" / (bundled or name)
+    found = value or (str(local) if os.access(local, os.X_OK) else shutil.which(name))
+    if not found:
+        raise ValueError(f"{name} not found in bin/ or on PATH: run ./setup-macos.sh (docs/setup.md)")
+    return found
 
 
 def parts_library(value=None, shadow=None):

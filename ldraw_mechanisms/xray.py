@@ -1,4 +1,4 @@
-"""Render look boards with the globally installed ldraw-xray CLI.
+"""Render look boards with the ldraw-xray CLI from bin/, else PATH.
 
 ldraw-xray is never imported or installed: each board is a recipe run as
 `ldraw-xray board run`. Renders use a flat copy of the selected section, one
@@ -10,16 +10,16 @@ through unchanged; only radians become degrees.
 from concurrent.futures import ThreadPoolExecutor
 import json
 import math
+import os
 from pathlib import Path
 import re
-import shutil
 import subprocess
 
 from . import plan as contract
 from .audit import boundary
 from .constraints import KINDS, instances
 from .math3d import unit
-from .source import Document, flatten, verify_source
+from .source import Document, find_tool, flatten, verify_source
 
 MAX_POSES = 8
 WORKERS = 4
@@ -39,13 +39,13 @@ def _slug(name):
 
 
 def executable():
-    found = shutil.which("ldraw-xray")
-    if not found:
-        raise ValueError(
-            "ldraw-xray is not on PATH: run `ldraw-xray doctor` after installing it, "
-            "or record that xray evidence is unavailable and continue numerically"
-        )
-    return found
+    return find_tool("ldraw-xray")
+
+
+def leocad():
+    return find_tool(
+        "leocad", os.environ.get("LEOCAD"), "LeoCAD.app/Contents/MacOS/LeoCAD"
+    )
 
 
 def selector(lines):
@@ -125,6 +125,7 @@ def run(spec, output):
         [executable(), "board", "run", str(path), "--output", str(output), "--force"],
         capture_output=True,
         text=True,
+        env={**os.environ, "LEOCAD": leocad()},
     )
     if done.returncode:
         try:

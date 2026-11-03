@@ -4,16 +4,24 @@ import json
 import math
 import os
 from pathlib import Path
-import shutil
 
 import pytest
 
-from ldraw_mechanisms import mechanisms, plan, xray
+from ldraw_mechanisms import mechanisms, plan, source as src, xray
 from ldraw_mechanisms.cli import main
 from ldraw_mechanisms.math3d import delta, frame, point, unit
 from ldraw_mechanisms.source import Document
 
-XRAY = shutil.which("ldraw-xray")
+
+
+def _found(name):
+    try:
+        return src.find_tool(name)
+    except ValueError:
+        return None
+
+
+XRAY = _found("ldraw-xray")
 LIBRARY = bool(os.getenv("LDRAW_DIR") or os.getenv("LDRAWDIR"))
 
 # main places frame twice (rotated, then mirrored); frame places the arm.
@@ -228,9 +236,10 @@ def test_cli_rejects_incomplete_or_mixed_requests(source, tmp_path, capsys, monk
     ):
         assert main(["xray", *argv]) == 2, argv
         assert "error" in json.loads(capsys.readouterr().err.splitlines()[-1])
-    monkeypatch.setattr(xray.shutil, "which", lambda name: None)
+    monkeypatch.setattr(src, "ROOT", tmp_path)
+    monkeypatch.setattr(src.shutil, "which", lambda name: None)
     assert main(["xray", str(source), "--instances", "0/0", "--xray-dir", str(tmp_path)]) == 2
-    assert "ldraw-xray doctor" in capsys.readouterr().err
+    assert "setup-macos.sh" in capsys.readouterr().err
 
 
 @pytest.mark.skipif(not (XRAY and LIBRARY), reason="needs ldraw-xray and an LDraw library")

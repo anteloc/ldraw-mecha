@@ -4,13 +4,12 @@ import json
 import os
 from pathlib import Path
 import re
-import shutil
 import sqlite3
 import subprocess
 from urllib.error import HTTPError, URLError
 from urllib.request import Request, urlopen
 
-from .source import ROOT
+from .source import ROOT, find_tool
 
 TABLES = {
     "parts": "PARTS_DESCRIPTIONS",
@@ -92,13 +91,12 @@ def search(
         raise ValueError(f"Missing database {db}")
     table = TABLES[kind]
     if engine == "jev":
-        if not shutil.which("jev-rerank"):
-            raise ValueError("Install jev-rerank; use --engine fts for offline search")
+        jev = find_tool("jev-rerank")
         status = jev_status()
         if not status["available"]:
             raise ValueError(f"Jev preflight: {status['reason']}; use --engine fts")
         command = [
-            "jev-rerank",
+            jev,
             "--db",
             str(db),
             "--table-field",

@@ -230,9 +230,16 @@ docs/sessions
 movs/
 *.mov
 
+.claude/
+
 
 # samples/ holds published evidence verbatim; only Blender backups, Python caches and Finder files stay out.
 !samples/**
 samples/**/.DS_Store
 samples/**/*.blend[0-9]*
 samples/**/__pycache__/
+
+# Portable tools and the LDraw library, installed by setup-macos.sh (docs/setup.md).
+/bin/*
+!/bin/.gitkeep
+/data/ldraw/

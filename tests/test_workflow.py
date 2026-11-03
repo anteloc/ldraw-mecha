@@ -7,7 +7,7 @@ from types import SimpleNamespace
 
 import pytest
 
-from ldraw_mechanisms import mechanisms, plan, workflow
+from ldraw_mechanisms import mechanisms, plan, source, workflow
 from ldraw_mechanisms.cli import main
 from ldraw_mechanisms.prepare import adopt_motion, prepare
 from ldraw_mechanisms.recipes import create
@@ -314,3 +314,21 @@ def test_rig_rejects_missing_geometry_and_output_aliases(rig_files):
     (rig_files / "model.glb").unlink()
     with pytest.raises(ValueError, match="Bound GLB not found"):
         workflow.rig(rig_files, blender="Blender")
+
+
+def test_tools_prefer_explicit_then_bin_then_path(tmp_path, monkeypatch):
+    monkeypatch.setattr(source, "ROOT", tmp_path)
+    monkeypatch.setattr(source.shutil, "which", lambda name: f"/usr/bin/{name}")
+    monkeypatch.delenv("BLENDER_BIN", raising=False)
+    assert workflow.blender_executable() == "/usr/bin/blender"
+    bundled = tmp_path / "bin/Blender.app/Contents/MacOS/Blender"
+    bundled.parent.mkdir(parents=True)
+    bundled.write_text("#!/bin/sh\n")
+    bundled.chmod(0o755)
+    assert workflow.blender_executable() == str(bundled)
+    monkeypatch.setenv("BLENDER_BIN", "/opt/blender")
+    assert workflow.blender_executable() == "/opt/blender"
+    assert workflow.blender_executable("/explicit") == "/explicit"
+    monkeypatch.setattr(source.shutil, "which", lambda name: None)
+    with pytest.raises(ValueError, match="setup-macos.sh"):
+        source.find_tool("jev-rerank")

@@ -6,12 +6,12 @@ convenience for locating plan.json and its neighbouring artifacts.
 
 import os
 from pathlib import Path
-import shutil
 import subprocess
 import sys
 
 from . import plan as contract
 from .audit import audit
+from .source import find_tool
 
 
 def plan_path(value):
@@ -111,14 +111,11 @@ def check(
 
 
 def blender_executable(value=None):
-    executable = value or os.environ.get("BLENDER_BIN") or shutil.which("blender")
-    if not executable:
-        default = Path("/Applications/Blender.app/Contents/MacOS/Blender")
-        if default.is_file():
-            executable = str(default)
-    if not executable:
-        raise ValueError("Set BLENDER_BIN or pass --blender")
-    return executable
+    return find_tool(
+        "blender",
+        value or os.environ.get("BLENDER_BIN"),
+        "Blender.app/Contents/MacOS/Blender",
+    )
 
 
 def rig(

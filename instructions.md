@@ -49,7 +49,7 @@ The [workflow guide](docs/workflow.md) is the command reference;
   Record visual findings immediately, including input, output and missing links.
   Candidate views are provisional and may overlap; they are not rigid bodies.
   Retain findings until planned, explicitly deferred or reviewed as static.
-- **Look** with [`./ldraw-mecha xray`](docs/xray.md) (`ldraw-xray doctor` once).
+- **Look** with [`./ldraw-mecha xray`](docs/xray.md) (`bin/ldraw-xray doctor` once).
   When a candidate's parts or axis are uncertain: `xray STUDY --instances IDS
   --point X Y Z --direction X Y Z` with the axis from `connectors`. Before `rig`
   and after each correction: `xray STUDY` (or `--body NAME`). Answer each board's

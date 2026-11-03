@@ -1,122 +1,112 @@
 # Setting up a machine
 
-One command installs what ldraw-mecha needs on macOS or Linux, and on Windows
-through WSL2:
+On macOS (Apple silicon), one script installs everything ldraw-mecha needs
+**inside this project**: portable tools in `bin/`, the LDraw parts library in
+`data/ldraw`, the Python environment in `.venv`. Nothing goes to
+`/Applications`, `~/.local` or your shell profile.
 
 ```sh
 git clone https://github.com/anteloc/ldraw-mecha.git
 cd ldraw-mecha
-./bootstrap.sh
+./setup-macos.sh
 ```
 
-Then open a new terminal, or restart VS Code, so your shell and agents (Claude
-Code, Codex) see the new variables. `bootstrap.sh` is safe to re-run: it keeps
-whatever is already installed, re-runs `./setup.sh` (the Python environment) and
-rewrites its block in your shell profile. It finishes with `ldraw-xray doctor`;
-you're ready when it prints `ldraw-xray: renders`.
+It ends by printing a few `export` lines. Add them to `~/.zshrc` yourself, then
+open a new terminal, or restart VS Code, so your shell and agents (Claude Code,
+Codex) see them.
+
+Linux (`setup-linux.sh`) and Windows through WSL2 (`setup-win-wsl.sh`) are
+planned. They will follow the same layout.
+
+## Before you run it
+
+- **Python 3.12+**, used through `.venv`.
+- **git-lfs**: the parts database (`data/ldraw-info.db`) and the reference and
+  sample assets are stored in Git LFS. The script stops if `git-lfs` is missing
+  and asks you to run `brew install git-lfs`.
+
+The script also downloads its own uv, so it doesn't depend on a global one.
 
 ## What it installs
 
-| Tool | Version | macOS | Linux | Used for |
-| --- | --- | --- | --- | --- |
-| Git LFS | current | Homebrew | apt | Parts database (`data/ldraw-info.db`), reference assets |
-| uv | current | official installer, if missing | same | Python environment and the tools below |
-| Bun | 1.4.2 | official installer, if missing | same | `scripts/mpd2glb.sh` (GLB conversion) |
-| LDraw parts library | `complete.zip` | `~/ldraw-lib/ldraw` | same | Everything |
-| Blender | 5.2 LTS | Homebrew `blender@lts` | 5.2.2 in `~/.local/opt/` | `rig`, animation, Blender checks |
-| LeoCAD | 25.09 | release DMG, `/Applications` | release AppImage, unpacked in `~/.local/opt/` | ldraw-xray renders |
-| ldraw-xray | 0.5.0 | uv tool | same | `./ldraw-mecha xray` look boards |
-| jev-rerank | 0.5.0 | uv tool | same | Optional semantic search; needs `TYPESAFE_API_KEY` |
-| Python 3.12 venv | | `./setup.sh` → `.venv` | same | `./ldraw-mecha`, tests |
+| Item | Version | Location | Used for |
+| --- | --- | --- | --- |
+| uv | 0.9.3 | `bin/uv` | `.venv` and the two tools below |
+| Python environment | | `.venv` (via `./setup.sh`) | `./ldraw-mecha`, tests |
+| ldraw-xray | 0.5.0 | `bin/ldraw-xray` (uv tool, env in `bin/uv-tools/`) | `./ldraw-mecha xray` look boards |
+| jev-rerank | 0.5.0 | `bin/jev-rerank` (uv tool) | Optional semantic search; needs `TYPESAFE_API_KEY` |
+| Bun | 1.4.4 | `bin/bun` | Runs `bin/mpd2glb.mjs` |
+| mpd2glb | 0.9.1 | `bin/mpd2glb.mjs` | GLB conversion (`scripts/mpd2glb.sh`) |
+| Blender | 5.2.3 | `bin/Blender.app` | `rig`, animation, Blender checks |
+| LeoCAD | 26.09 | `bin/LeoCAD.app` | ldraw-xray renders |
+| LDraw parts library | latest `complete.zip` | `data/ldraw` | Everything |
 
-On Linux it also installs, with `apt` and `sudo`, the libraries Blender and
-LeoCAD need, plus `xvfb`. Other distributions get the package list to install
-themselves. Linux needs x86_64: LeoCAD only ships x86_64 builds.
+It also runs `git lfs install --local` (this repository only) and
+`git lfs pull`. uv's cache goes to `.cache/uv`, and any Python that uv
+downloads goes to `bin/python`. Git ignores everything in `bin/` except
+`bin/.gitkeep`, and it ignores `data/ldraw`.
 
-Not installed: `ffmpeg` (only for `./add-sample.sh`; `brew install ffmpeg` or
-`sudo apt install ffmpeg`) and the Blender MCP server (see [Agents](#agents)).
+## Re-running and upgrading
 
-## Windows: WSL2
+It's safe to re-run. Blender, LeoCAD, Bun and uv are skipped when they already
+match their pinned version. ldraw-xray and jev-rerank are reinstalled from uv's
+cache, and `mpd2glb.mjs` (1 MB) is always fetched again.
 
-The toolkit's scripts are POSIX shell, so on Windows it runs in WSL2's Ubuntu,
-which is the Linux setup above. In PowerShell, once:
-
-```powershell
-wsl --install -d Ubuntu-24.04   # reboot if asked, then create your Linux user
-```
-
-In the Ubuntu terminal, clone into your Linux home (not `/mnt/c`, which is slow
-and loses file permissions) and run the bootstrap:
-
-```sh
-git clone https://github.com/anteloc/ldraw-mecha.git ~/ldraw-mecha
-cd ~/ldraw-mecha && ./bootstrap.sh
-code .
-```
-
-`code .` opens VS Code connected to WSL (it installs the **WSL** extension).
-Install Claude Code or Codex in that window, so agents run inside Ubuntu.
-WSLg, in Windows 11 and current Windows 10 WSL, gives LeoCAD its display;
-without it, follow the next section.
-
-## Headless Linux
-
-LeoCAD needs an X display. On a server, or WSL without WSLg, start a virtual
-one, as the Docker image does:
-
-```sh
-Xvfb :99 -screen 0 1920x1080x24 &
-export DISPLAY=:99
-./bootstrap.sh                  # its last check renders a brick: "ldraw-xray: renders"
-```
-
-Start Xvfb again after each reboot, and keep `DISPLAY` set for agents.
-`ldraw-xray doctor` alone reports `"renders": true` even without a display.
+- **Bump a tool**: change its `*_VERSION` at the top of `setup-macos.sh`, then
+  re-run.
+- **Refresh the LDraw library**: `rm -rf data/ldraw`, then re-run.
 
 ## Configuration
 
-`bootstrap.sh` writes this block to `~/.zshenv` (zsh), or `~/.bashrc` and
-`~/.profile` (bash), and replaces it on every run:
+Add the block that the script prints to `~/.zshrc`, for example:
 
 ```sh
-# >>> ldraw-mecha >>> (written by /home/me/ldraw-mecha/bootstrap.sh; re-run it to update)
-export LDRAW_DIR="/home/me/ldraw-lib/ldraw"
-export BLENDER_BIN="/home/me/.local/opt/blender-5.2.2/blender"
-export LEOCAD="/home/me/.local/opt/leocad-25.09/AppRun"     # Linux only
-case ":$PATH:" in ... PATH="/home/me/.local/bin:$PATH" ;; esac  # uv tools
-case ":$PATH:" in ... PATH="/home/me/.bun/bin:$PATH" ;; esac    # bun
+# >>> ldraw-mecha (from setup-macos.sh) >>>
+export LDRAW_DIR="/Users/me/ldraw-mecha/data/ldraw"
+export LDRAWDIR="$LDRAW_DIR"
+export BLENDER_BIN="/Users/me/ldraw-mecha/bin/Blender.app/Contents/MacOS/Blender"
+export LEOCAD="/Users/me/ldraw-mecha/bin/LeoCAD.app/Contents/MacOS/LeoCAD"
+export LDRAW_XRAY_CACHE="/Users/me/ldraw-mecha/.cache/ldraw-xray"
+# export TYPESAFE_API_KEY=...   # optional: Jev semantic search (jev-rerank)
 # <<< ldraw-mecha <<<
 ```
 
-To use your own installs, set the variable for the first run, for example
-`BLENDER_BIN=/path/to/blender LDRAW_DIR=/path/to/ldraw ./bootstrap.sh`.
-`OPT_DIR` and `LDRAW_LIB` change where downloads go. Versions and checksums are
-the variables at the top of `bootstrap.sh`.
+`bin/` is deliberately left off `PATH`, so its uv and bun don't shadow your own.
+ldraw-mecha finds each tool in this order, and fails if none of them has it:
 
-**Upgrading** a pinned tool: change its version (and checksum) there, then
-remove the old one so the next run installs the new one: `uv tool uninstall
-ldraw-xray`, or `BLENDER_BIN= LEOCAD= ./bootstrap.sh` for Blender and LeoCAD on
-Linux.
+1. an explicit option (`--blender`) or variable (`BLENDER_BIN`, `LEOCAD`);
+2. `bin/` (`bin/Blender.app`, `bin/LeoCAD.app`, `bin/ldraw-xray`, `bin/jev-rerank`, `bin/bun`);
+3. `PATH`.
+
+To call a tool by hand, use its path, for example `bin/ldraw-xray doctor`.
+ldraw-xray 0.5.0 is tested with LeoCAD 25.09, so `doctor` may warn that 26.09
+is untested.
+
+## Optional extras (not installed)
+
+- `ffmpeg`: required only by `./add-sample.sh`. The plant catalog script also
+  uses it, when present, to write an overview video (`brew install ffmpeg`).
+- ImageMagick `montage`: when present, two catalog scripts use it to stitch
+  3×3 contact sheets; without it they skip that step.
 
 ## Agents
 
 Agents read `AGENTS.md` and `instructions.md` and use the variables above, so
-start them after the bootstrap (restart VS Code). The workflow runs Blender in
-the background and needs no Blender add-on. For live Blender inspection
+start them after setup (restart VS Code). The workflow runs Blender in the
+background and needs no Blender add-on. For live Blender inspection
 ([API guide](discovery-and-blender.md)), you can add the Blender Lab MCP add-on
-and server by hand (<https://projects.blender.org/lab/blender_mcp>; the Docker
-image uses 1.0.3) and register the server with `claude mcp add` or `codex mcp add`.
+and server by hand (<https://projects.blender.org/lab/blender_mcp>) and register
+the server with `claude mcp add` or `codex mcp add`.
 
-## Docker
+## What still lands outside the project
 
-The versions at the top of `bootstrap.sh` mirror the ARGs in
-`ldraw-mecha-docker/Dockerfile`; change both together. The variables are the
-ones the image sets as `ENV`. The script asks no questions and skips `sudo` as
-root, so it also runs unattended in an Ubuntu container.
+Blender and LeoCAD save their preferences in `~/Library` when you open them,
+like any macOS app.
 
 ## Uninstall
 
-Delete the `ldraw-mecha` block from your shell profile, then remove
-`~/.local/opt/blender-*` and `~/.local/opt/leocad-*` (Linux), `~/ldraw-lib`,
-`.venv`, and the tools: `uv tool uninstall ldraw-xray jev-rerank`. On macOS,
-Blender and LeoCAD are in `/Applications` (`brew uninstall --cask blender@lts`).
+```sh
+rm -rf bin/* data/ldraw .venv .cache/uv .cache/ldraw-xray   # keeps bin/.gitkeep
+```
+
+Then delete the `ldraw-mecha` block from `~/.zshrc`.
