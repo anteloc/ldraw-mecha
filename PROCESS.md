@@ -3,6 +3,9 @@
 This page walks through the whole process, from a plain LEGO model file to an animated
 Blender file, in five steps. Each step says **what** it does and **why** it's needed.
 
+It's **reverse engineering**. A LEGO model file is just a list of parts: it never says what
+moves. The mechanisms are worked out from the parts, then animated.
+
 ```mermaid
 flowchart LR
     s1["1. Annotate<br/>car.mpd"] --> s2["2. Convert<br/>IDs + model.glb"]
@@ -36,6 +39,9 @@ a named, described submodel, other agents (such as Claude Sonnet 5.5) can spot t
 are mechanisms, like `doors` or `hinged-roof`, and work out how they move.
 
 ### Before and after
+
+The car below was annotated with
+[ldraw-annotator-nova](https://github.com/anteloc/ldraw-annotator-nova).
 
 **Before.** Four submodels with names but no real descriptions. Everything that makes the car
 (chassis, body, doors, roof, lights) is one flat list of 45 parts in `car.ldr`.
@@ -90,9 +96,6 @@ Before                                   After
 1 0 0 0 0 1 0 0 0 1 0 0 0 1 3832.dat     0 // Plate  2 x 10 (black)
                                          1 0 0 0 0 1 0 0 0 1 0 0 0 1 3832.dat
 ```
-
-These results were produced with
-[ldraw-annotator-nova](https://github.com/anteloc/ldraw-annotator-nova).
 
 ---
 
@@ -152,6 +155,9 @@ gears. That list is the starting point for the next step.
 which point and axis, how far, and what drives them. It writes those decisions, by ID, into a
 motion plan: `plan.json`.
 
+This is where the reverse engineering happens. Nothing in `car.mpd` says the roof opens: the
+agent works it out from a roof, a roof holder and the hinge between them.
+
 **Why.** Motion must be measured, not guessed. A door opened around the wrong axis, or a gear
 turning at the wrong speed, looks broken. The plan records every decision with its evidence,
 so it can be checked before anything reaches Blender.
@@ -201,13 +207,14 @@ The strongest check is visual. Mechanisms are usually hidden inside the model, b
 bodywork. An **x-ray view** ghosts everything else, so the agent can **see inside** the model:
 which parts move, where the axis runs, and how the parts look at each test angle.
 
+The car's roof, as seen by the agent (image by [ldraw-xray](https://github.com/anteloc/ldraw-xray),
+which has more examples):
+
 ![X-ray board of the car's roof](img/xray-roof.png)
 
-*The car's roof. The moving part is in colour and the rest of the car is ghosted. The green
-rod is the hinge axis, drawn in for the check (it isn't a LEGO part). Panels 3 to 5 show the
-roof at 0°, 40° and 75°.*
-
-The x-ray tool, with more examples, is [ldraw-xray](https://github.com/anteloc/ldraw-xray).
+*The moving part is in colour and the rest of the car is ghosted. The green rod is the hinge
+axis, drawn in for the check (it isn't a LEGO part). Panels 3 to 5 show the roof at 0°, 40°
+and 75°.*
 
 ### What the planning leaves behind
 
