@@ -1,13 +1,15 @@
 # From LEGO model to Blender animation
 
 This page walks through the whole process, from a plain LEGO model file to an animated
-Blender file, in three steps. Each step says **what** it does and **why** it's needed.
+Blender file, in five steps. Each step says **what** it does and **why** it's needed.
 
 ```mermaid
 flowchart LR
-    raw["car.mpd<br/>(unannotated)"] -->|"1. Annotate"| ann["car.mpd<br/>(annotated)"]
-    ann -->|"2. Analyze"| plan["plan.json<br/>+ model.glb"]
-    plan -->|"3. Animate"| blend["ai-animated.blend"]
+    s1["1. Annotate<br/>car.mpd"] --> s2["2. Convert<br/>IDs + model.glb"]
+    s2 --> s3["3. Plan<br/>plan.json"]
+    s3 --> s4["4. Animate<br/>ai-animated.blend"]
+    s4 --> s5["5. Verify<br/>checks + stills"]
+    s5 -. "fix limits" .-> s3
 ```
 
 **The example.** Every step uses the same small model: LEGO set 106, a blue UNICEF car
@@ -94,86 +96,14 @@ These results were produced with
 
 ---
 
-## Step 2: Analyze
+## Step 2: Convert
 
-**What.** An agent studies the annotated model and decides, for each mechanism, which parts
-move, around which point and axis, how far, and what drives them. It writes those decisions
-into a motion plan.
+**What.** The toolkit gives every piece in `car.mpd` an ID. It then converts the model into
+`model.glb`, a standard 3D file that Blender can open, with each piece's ID and description
+stored inside.
 
-**Why.** Motion must be measured, not guessed. A door opened around the wrong axis, or a gear
-turning at the wrong speed, looks broken. The plan records every decision with its evidence,
-so it can be checked before anything reaches Blender.
-
-### How agents analyze a model
-
-Across the [samples](GALLERY.md), agents use the same handful of strategies:
-
-1. **Read the tree and the descriptions.** Submodels named `doors`, `hinged-roof` or
-   `wheels` are the first candidates.
-2. **Read the connection data.** The toolkit lists which parts touch, hinge, share an axle
-   or mesh as gears. For the car it finds the hinge between the roof and its holder.
-   ([42110](samples/42110.md): gears hidden from the first scan.)
-3. **Ask the user for the scope.** Which mechanisms to animate, and what to deliver:
-   a file, stills or a video. ([42083](samples/42083-mechanisms.md), [42110](samples/42110.md))
-4. **Work on a copy when the source isn't enough.** Take one mechanism out of a big model,
-   split parts stored as one piece, or add parts missing from the file. The original is never
-   changed. ([42043 crane](samples/42043-crane.md), [3625](samples/3625.md),
-   [42083](samples/42083-mechanisms.md))
-5. **Compare with a reference.** Use a hand-made rig or an official LEGO set that uses the same
-   parts. ([42000](samples/42000.md), [movables](samples/movables.md), [plants](samples/plants.md))
-6. **Do the maths.** Gear ratios, connecting-rod lengths, every gear combination.
-   ([42000](samples/42000.md), [42110](samples/42110.md))
-7. **Scan for collisions.** Sample the motion and look for parts passing through each other.
-   That scan sets the limits: the car's doors and roof stop at 75°, because at 90° they hit
-   other parts. ([106](samples/106.md), [hot rod mecha](samples/hot-rod-mecha.md))
-
-### And above all: look at it
-
-The strongest check is visual. Agents render the model and look at the result, as a person
-would. Rendered stills catch what numbers miss: a door opening away from the viewer, a staff
-swinging into a leg, a camera clipping a raised crane.
-
-**X-ray views** go one step further. Mechanisms are usually hidden inside the model, behind
-bodywork. An x-ray board ghosts everything else, so the agent can **see inside** the model:
-which parts move, where the axis runs, and how the parts look at each test angle.
-
-![X-ray board of the car's roof](img/xray-roof.png)
-
-*The car's roof. The moving part is in colour and the rest of the car is ghosted. The green
-rod is the hinge axis, drawn in for the check (it isn't a LEGO part). Panels 3 to 5 show the
-roof at 0°, 40° and 75°.*
-
-The x-ray tool, with more examples, is [ldraw-xray](https://github.com/anteloc/ldraw-xray).
-
-### What the analysis leaves behind
-
-| File | What it is | Why it's kept |
-|---|---|---|
-| `plan.json` | The motion plan: moving parts, axes, limits, controls | Everything else is built from it |
-| `model.glb` | The model converted to 3D, with part IDs inside | What Blender imports (see Step 3) |
-| `preparation.json` | The toolkit's first look: parts, connections, warnings | Starting point for the plan |
-| Connection data (`evidence/`, `*-contact.json`) | Which parts touch, hinge or mesh | Where the axes come from |
-| `xray/<joint>/mosaic.png` | X-ray boards, one per joint | Visual proof of each axis |
-| `kinematics.json` | Gear and linkage maths | Proof that ratios and lengths hold |
-| Extracted source + `idmap.json` | A mechanism taken out as its own model, mapped back to the original | When only part of a model is animated |
-| `check.json` | Automatic checks of the plan | Shows the plan is complete and consistent |
-| `REPORT.md`, `README.md`, `CATALOG.md` | The agent's own notes | Explains choices and limits to people |
-
-Not every model needs all of them: the car needed only the plan, the model and its roof-hinge
-connection data.
-
----
-
-## Step 3: Animate in Blender
-
-**What.** The plan is applied in Blender: each moving group of parts gets a pivot, each control
-gets a slider, and the result is keyed into an animation and saved as `ai-animated.blend`.
-
-**Why.** Blender is where you see and use the result. The rig plays back in plain Blender: no
-add-on, and no agent needed.
-
-The step depends on one simple idea: **every piece has an ID**, and the same ID follows it from
-the `.mpd` file, through the plan, into Blender.
+**Why.** Blender doesn't read `.mpd` files. And from here on, the plan and Blender must talk
+about *exactly the same pieces*. The ID is the name they share.
 
 ### IDs: one name per physical piece
 
@@ -192,9 +122,41 @@ each is a separate piece that may turn on its own. Their IDs tell them apart: `0
 spare), `0/2/3/1`, `0/2/4/1`… IDs are fixed for a given version of the file, so every tool
 points at exactly the same piece.
 
-### IDs in the plan
+### IDs in the 3D model
 
-The analysis (Step 2) writes its decisions against IDs. For the roof:
+The converter (`mpd2glb`) keeps the model's tree: one 3D object per part and submodel. Into each
+object it writes extra data: the part's description from the database, and its ID. When Blender
+imports the file, that extra data becomes the object's **Custom Properties**. Here is what the
+roof shows in **Object Properties → Custom Properties**:
+
+```
+fileName       4213.dat
+description    Hinge Car Roof  4 x  4
+colorCode      1
+mecha_id       0/1/10/2
+mecha_section  106 - main.ldr
+mecha_source   b247a29a…   (fingerprint of car.mpd)
+```
+
+The objects in Blender mirror the `.mpd` file. Any object can be traced back to the exact
+source part, by people and by scripts.
+
+While converting, the toolkit also lists which parts touch, hinge, share an axle or mesh as
+gears. That list is the starting point for the next step.
+
+---
+
+## Step 3: Plan
+
+**What.** An agent studies the model and decides, for each mechanism, which parts move, around
+which point and axis, how far, and what drives them. It writes those decisions, by ID, into a
+motion plan: `plan.json`.
+
+**Why.** Motion must be measured, not guessed. A door opened around the wrong axis, or a gear
+turning at the wrong speed, looks broken. The plan records every decision with its evidence,
+so it can be checked before anything reaches Blender.
+
+For the car's roof, the plan says:
 
 ```json
 "controls": {
@@ -214,27 +176,65 @@ The analysis (Step 2) writes its decisions against IDs. For the roof:
 In words: the control `roof` (0 to 75°) turns piece `0/1/10/2` around the hinge axis.
 Positions are in LDraw units (1 stud = 20).
 
-### IDs in the 3D model
+### How agents work out the plan
 
-Blender doesn't read `.mpd` files. The converter (`mpd2glb`) turns `car.mpd` into
-`model.glb`, a standard 3D format, keeping the same tree: one object per part and submodel.
-Into each object it writes extra data: the part's description from the database, and its ID.
-When Blender imports the file, that extra data becomes the object's **Custom Properties**.
-Here is what the roof shows in **Object Properties → Custom Properties**:
+Across the [samples](GALLERY.md), agents use the same handful of strategies:
 
-```
-fileName       4213.dat
-description    Hinge Car Roof  4 x  4
-colorCode      1
-mecha_id       0/1/10/2
-mecha_section  106 - main.ldr
-mecha_source   b247a29a…   (fingerprint of car.mpd)
-```
+1. **Read the tree and the descriptions.** Submodels named `doors`, `hinged-roof` or
+   `wheels` are the first candidates.
+2. **Read the connection data.** For the car, it shows the hinge between the roof and its
+   holder. ([42110](samples/42110.md): gears hidden from the first scan.)
+3. **Ask the user for the scope.** Which mechanisms to animate, and what to deliver:
+   a file, stills or a video. ([42083](samples/42083-mechanisms.md), [42110](samples/42110.md))
+4. **Work on a copy when the source isn't enough.** Take one mechanism out of a big model,
+   split parts stored as one piece, or add parts missing from the file. The original is never
+   changed. ([42043 crane](samples/42043-crane.md), [3625](samples/3625.md),
+   [42083](samples/42083-mechanisms.md))
+5. **Compare with a reference.** Use a hand-made rig or an official LEGO set that uses the same
+   parts. ([42000](samples/42000.md), [movables](samples/movables.md), [plants](samples/plants.md))
+6. **Do the maths.** Gear ratios, connecting-rod lengths, every gear combination.
+   ([42000](samples/42000.md), [42110](samples/42110.md))
 
-**Why?** The objects in Blender mirror the `.mpd` file. Any object can be traced back to the
-exact source part, by people and by scripts.
+### And above all: look inside
 
-### Matching the plan to Blender objects
+The strongest check is visual. Mechanisms are usually hidden inside the model, behind
+bodywork. An **x-ray view** ghosts everything else, so the agent can **see inside** the model:
+which parts move, where the axis runs, and how the parts look at each test angle.
+
+![X-ray board of the car's roof](img/xray-roof.png)
+
+*The car's roof. The moving part is in colour and the rest of the car is ghosted. The green
+rod is the hinge axis, drawn in for the check (it isn't a LEGO part). Panels 3 to 5 show the
+roof at 0°, 40° and 75°.*
+
+The x-ray tool, with more examples, is [ldraw-xray](https://github.com/anteloc/ldraw-xray).
+
+### What the planning leaves behind
+
+| File | What it is | Why it's kept |
+|---|---|---|
+| `plan.json` | The motion plan: moving parts, axes, limits, controls | Everything after is built from it |
+| `preparation.json` | The toolkit's first look: parts, connections, warnings | Starting point for the plan |
+| Connection data (`evidence/`, `*-contact.json`) | Which parts touch, hinge or mesh | Where the axes come from |
+| `xray/<joint>/mosaic.png` | X-ray boards, one per joint | Visual proof of each axis |
+| `kinematics.json` | Gear and linkage maths | Proof that ratios and lengths hold |
+| Extracted source + `idmap.json` | A mechanism taken out as its own model, mapped back to the original | When only part of a model is animated |
+| `check.json` | Automatic checks of the plan | Shows the plan is complete and consistent |
+| `REPORT.md`, `README.md`, `CATALOG.md` | The agent's own notes | Explains choices and limits to people |
+
+Not every model needs all of them: the car needed only the plan and its roof-hinge
+connection data.
+
+---
+
+## Step 4: Animate
+
+**What.** A script applies the plan in Blender: each moving group of parts gets a pivot, each
+control gets a slider, and the sliders are keyed into an animation saved as
+`ai-animated.blend`.
+
+**Why.** Blender is where you see and use the result. The rig plays back in plain Blender: no
+add-on, and no agent needed.
 
 ```mermaid
 flowchart LR
@@ -244,7 +244,7 @@ flowchart LR
     rig --> blend["ai-animated.blend"]
 ```
 
-The rig script reads the plan, then:
+The script reads the plan, then:
 
 1. finds each Blender object by its `mecha_id`;
 2. checks it's the right model: same file fingerprint, and every part still in its original place;
@@ -252,14 +252,30 @@ The rig script reads the plan, then:
    on one control object (`CTRL_car`);
 4. keys the sliders into an animation and saves `ai-animated.blend`.
 
-Then it checks its own work:
-
-- **Reopen:** the saved file is opened in a fresh Blender and checked against the plan again.
-- **Clearance:** the motion is scanned for parts passing through each other.
-- **Stills:** a few poses are rendered and looked at, like the image at the top of this page.
-
 To move the car yourself, open the `.blend`, select `CTRL_car` and drag its sliders under
 **Object Properties → Custom Properties**.
+
+---
+
+## Step 5: Verify
+
+**What.** The finished file is checked against the plan, scanned for collisions and looked at.
+
+**Why.** A rig can follow the plan exactly and still look wrong: a door can swing through the
+bodywork, or a camera can cut off a raised crane. Each check catches a different kind of
+mistake.
+
+- **Reopen.** The saved file is opened in a fresh Blender and checked against the plan
+  again, so it works on its own.
+- **Collisions.** The motion is sampled and scanned for parts passing through each other.
+  What it finds goes **back to the plan**: the car's doors and roof hit other parts at 90°,
+  so their limit became 75°. ([106](samples/106.md), [hot rod mecha](samples/hot-rod-mecha.md))
+- **Stills.** A few poses are rendered and looked at, like the image at the top of this page.
+  They catch what numbers miss: a window opening away from the viewer, a staff swinging into
+  a leg. ([movables](samples/movables.md), [minifigs](samples/minifigs.md))
+
+These checks sample the motion; they don't prove it is physically possible. Each sample's
+summary lists its known limits.
 
 ---
 
