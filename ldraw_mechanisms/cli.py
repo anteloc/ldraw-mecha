@@ -18,31 +18,6 @@ def parser():
     )
     p.add_argument("--library", help="LDraw library; otherwise LDRAW_DIR / LDRAWDIR")
     s = p.add_subparsers(dest="command", required=True)
-    q = s.add_parser(
-        "annotate",
-        help="First annotation step: copy LDraw files with part/colour comments",
-    )
-    q.add_argument("model", help="Source file or directory tree")
-    q.add_argument("--output", required=True, help="Annotated file or directory tree")
-    q.add_argument(
-        "--database", help="SQLite PARTS_DESCRIPTIONS; defaults to data/ldraw-info.db"
-    )
-    q.add_argument(
-        "--ldconfig", help="Colour definitions; defaults to the library's LDConfig.ldr"
-    )
-    q = s.add_parser(
-        "annotate-semantics",
-        help="Apply agent-authored model/submodel descriptions after part annotation",
-    )
-    q.add_argument("model", help="Part-annotated source file")
-    q.add_argument(
-        "--descriptions",
-        required=True,
-        help="JSON object mapping exact section names to single-line descriptions",
-    )
-    q.add_argument(
-        "--output", required=True, help="Separate annotated file or existing directory"
-    )
     for name, help_text in {
         "inspect": "List source occurrences, positions and candidate roles",
         "connectors": "Inspect a part's local and world connector frames",
@@ -259,25 +234,7 @@ def main(argv=None):
     args = parser().parse_args(argv)
     try:
         command = args.command
-        if command == "annotate":
-            from .annotate import annotate
-
-            result = annotate(
-                args.model,
-                args.output,
-                database=args.database,
-                ldconfig=args.ldconfig,
-                library=args.library,
-            )
-        elif command == "annotate-semantics":
-            from .annotate import annotate_semantics
-
-            result = annotate_semantics(
-                args.model,
-                args.output,
-                json.loads(Path(args.descriptions).read_text(encoding="utf-8")),
-            )
-        elif command == "prepare":
+        if command == "prepare":
             from .prepare import prepare
 
             result = prepare(
@@ -534,8 +491,6 @@ def main(argv=None):
             else:
                 print(rendered)
         elif getattr(args, "output", None) and command not in (
-            "annotate",
-            "annotate-semantics",
             "convert",
             "extract",
             "prepare",

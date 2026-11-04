@@ -11,6 +11,7 @@ set -eu
 UV_VERSION=0.9.3
 LDRAW_XRAY_VERSION=0.5.0
 JEV_RERANK_VERSION=0.5.0
+LDRAW_ANNOTATOR_VERSION=0.5.0
 BUN_VERSION=1.4.4
 MPD2GLB_VERSION=0.9.1
 BLENDER_VERSION=5.2.3
@@ -81,10 +82,11 @@ command -v uv
 step "Python environment"
 ./setup.sh
 
-# --- 5. ldraw-xray and jev-rerank: isolated uv tools in bin/ --------------------
-step "ldraw-xray $LDRAW_XRAY_VERSION and jev-rerank $JEV_RERANK_VERSION"
+# --- 5. ldraw-xray, jev-rerank, ldraw-annotator: isolated uv tools in bin/ -------
+step "ldraw-xray $LDRAW_XRAY_VERSION, jev-rerank $JEV_RERANK_VERSION, ldraw-annotator $LDRAW_ANNOTATOR_VERSION"
 uv tool install --reinstall "https://github.com/anteloc/ldraw-xray/releases/download/v$LDRAW_XRAY_VERSION/ldraw_xray-$LDRAW_XRAY_VERSION-py3-none-any.whl"
 uv tool install --reinstall "https://github.com/anteloc/jev-rerank/releases/download/v$JEV_RERANK_VERSION/jev_rerank-$JEV_RERANK_VERSION-py3-none-any.whl"
+uv tool install --reinstall "https://github.com/anteloc/ldraw-annotator-nova/releases/download/v$LDRAW_ANNOTATOR_VERSION/ldraw_annotator_nova-$LDRAW_ANNOTATOR_VERSION-py3-none-any.whl"
 
 # --- 6. Bun (runs mpd2glb.mjs) ------------------------------------------------
 step "Bun $BUN_VERSION"
@@ -155,6 +157,7 @@ export LDRAWDIR="\$LDRAW_DIR"
 export BLENDER_BIN="$bin/Blender.app/Contents/MacOS/Blender"
 export LEOCAD="$bin/LeoCAD.app/Contents/MacOS/LeoCAD"
 export LDRAW_XRAY_CACHE="$root/.cache/ldraw-xray"
+export LDRAW_ANNOTATOR_DB="$root/data/ldraw-info.db"
 # export TYPESAFE_API_KEY=...   # optional: Jev semantic search (jev-rerank)
 # <<< ldraw-mecha <<<
 

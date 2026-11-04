@@ -29,10 +29,11 @@ to your shell profile (see [Configuration](#configuration)).
 
 | Item | Version | macOS location | Linux / WSL location | Used for |
 | --- | --- | --- | --- | --- |
-| uv | 0.9.3 | `bin/uv` | same | `.venv` and the two tools below |
+| uv | 0.9.3 | `bin/uv` | same | `.venv` and the three tools below |
 | Python environment | | `.venv` (via `./setup.sh`) | same | `./ldraw-mecha`, tests |
 | ldraw-xray | 0.5.0 | `bin/ldraw-xray` (uv tool, env in `bin/uv-tools/`) | same | `./ldraw-mecha xray` look boards |
 | jev-rerank | 0.5.0 | `bin/jev-rerank` (uv tool) | same | Optional semantic search; needs `TYPESAFE_API_KEY` |
+| ldraw-annotator | 0.5.0 | `bin/ldraw-annotator` (uv tool) | same | [Annotating](annotation.md) an unannotated model; reads `data/ldraw-info.db` |
 | Bun | 1.4.4 | `bin/bun` | same | Runs `bin/mpd2glb.mjs` |
 | mpd2glb | 0.9.1 | `bin/mpd2glb.mjs` | same | GLB conversion (`scripts/mpd2glb.sh`) |
 | LDraw web viewer (ldbi + three.js) | ldraworg-library `a38efc7` | `bin/ldbi-viewer/` | same | 3D view in `model-selector/` |
@@ -91,7 +92,7 @@ LeoCAD its display. If it's missing, run `wsl --update`.
 ## Re-running and upgrading
 
 It's safe to re-run. Blender, LeoCAD, Bun and uv are skipped when they already
-match their pinned version. ldraw-xray and jev-rerank are reinstalled from uv's
+match their pinned version. ldraw-xray, jev-rerank and ldraw-annotator are reinstalled from uv's
 cache, and `mpd2glb.mjs` (1 MB) is always fetched again.
 
 - **Bump a tool**: change its `*_VERSION` at the top of the script, then re-run.
@@ -120,6 +121,7 @@ export LDRAWDIR="$LDRAW_DIR"
 export BLENDER_BIN="/Users/me/ldraw-mecha/bin/Blender.app/Contents/MacOS/Blender"
 export LEOCAD="/Users/me/ldraw-mecha/bin/LeoCAD.app/Contents/MacOS/LeoCAD"
 export LDRAW_XRAY_CACHE="/Users/me/ldraw-mecha/.cache/ldraw-xray"
+export LDRAW_ANNOTATOR_DB="/Users/me/ldraw-mecha/data/ldraw-info.db"
 # export TYPESAFE_API_KEY=...   # optional: Jev semantic search (jev-rerank)
 # <<< ldraw-mecha <<<
 ```
@@ -135,7 +137,9 @@ ldraw-mecha finds each tool in this order, and fails if none of them has it:
    `bin/ldraw-xray`, `bin/jev-rerank` and `bin/bun`;
 3. `PATH`.
 
-To call a tool by hand, use its path, for example `bin/ldraw-xray doctor`.
+Agents call `bin/ldraw-annotator` by its path (else from `PATH`), and pass it
+`--db data/ldraw-info.db`; `LDRAW_ANNOTATOR_DB` saves typing that by hand.
+To call any tool by hand, use its path, for example `bin/ldraw-xray doctor`.
 ldraw-xray 0.5.0 is tested with LeoCAD 25.09, so `doctor` may warn that 26.09
 is untested.
 

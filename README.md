@@ -48,10 +48,9 @@ The original [supported gear drive](examples/gear-drive/README.md) provides a
 small complete source, authoring recipe and validation record. Blender checks
 off-grid inputs and samples saved animation with its timeline active.
 
-For an **unannotated original**, complete [annotation](docs/annotation.md) before
-preparation: part comments, authored model/assembly descriptions, recursive
-hierarchy review and preservation checks. Reuse already annotated sources
-without semantic rewrites unless requested. For a single mechanism, deliver an
+An **unannotated original** must be [annotated](docs/annotation.md) first: the
+agent offers to do it with `ldraw-annotator`, with a token estimate, and stops if
+you decline. Already annotated sources are reused as they are. For a single mechanism, deliver an
 extracted subsystem with its agreed mounts/coupled parts; see [scope selection](docs/workflow.md#choose-the-deliverable).
 
 The CLI recipes `106`, `928`, `42000`, `42083` and `10265` are executable examples
@@ -78,7 +77,7 @@ plant/wind animation. Adapt their reasoning and checks, then remeasure the targe
 
 Python 3.12+, `uv`, an LDraw library, Bun for conversion, and Blender for rigging.
 `./setup-macos.sh`, `./setup-linux.sh` or `./setup-win-wsl.sh` (WSL2) installs all
-of them, with ldraw-xray and LeoCAD, inside the project (`bin/`, `data/ldraw`,
+of them, with ldraw-xray, LeoCAD and ldraw-annotator, inside the project (`bin/`, `data/ldraw`,
 `.venv`); see [setup](docs/setup.md). Tools are taken from `bin/`, else `PATH`.
 Visual inspection (`./ldraw-mecha xray`) runs the `ldraw-xray` CLI (with LeoCAD);
 check it with `bin/ldraw-xray doctor`. Source analysis needs neither

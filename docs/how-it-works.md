@@ -48,10 +48,10 @@ Preparation writes three files:
 | `preparation.json` | Discovery coverage, warnings and conversion result |
 | `model.glb` | Geometry tagged with verified source occurrence IDs |
 
-For an unannotated source, [annotation](annotation.md) comes first. The agent
-describes the model and its assemblies, reviews meaningful grouping recursively,
-and verifies every physical occurrence survives. Already annotated sources are
-reused. This improves understanding; it does not determine rigid bodies.
+For an unannotated source, [annotation](annotation.md) comes first, if the user
+agrees to its token cost. The agent groups and describes the model's assemblies
+with `ldraw-annotator`, which verifies that every physical occurrence survives.
+Already annotated sources are reused. This improves understanding; it does not determine rigid bodies.
 
 ## 2. Describe motion in the plan
 

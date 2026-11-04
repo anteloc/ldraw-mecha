@@ -2,25 +2,18 @@
 
 Read `instructions.md` for the agent workflow and `docs/motion-plan.md` before
 changing the motion contract. Keep source analysis independent of Blender.
-If Blender, LeoCAD, ldraw-xray, Bun or the LDraw library is missing, ask the
+If Blender, LeoCAD, ldraw-xray, ldraw-annotator, Bun or the LDraw library is missing, ask the
 user to run their system's `setup-*.sh` script (`docs/setup.md`); don't install them yourself.
 
-For an unannotated model, complete the semantic annotation pipeline before
-`prepare` or motion planning: (1) `annotate` adds `0 // ` part/colour comments
-to a separate copy; (2) the agent immediately inspects that copy and authors rich,
-single-line descriptions for the model and each existing submodel/group assembly,
-placed as `0 DESCRIPTION` directly below its `0 FILE` line, applied with
-`annotate-semantics`; (3) the agent reviews semantic coverage of the hierarchy
-recursively, including flat models, and creates and richly describes missing
-submodels/sub-submodels when supported by the source. Record why retained or
-inferred groupings are sufficient. Preserve every physical occurrence and verify
-references, effective colours and world transforms with an old-to-new ID map
-after regrouping. Use the finished hierarchy for study and plans.
-Preserve originals, section names, attribution and existing rich descriptions.
-Unless explicitly instructed otherwise, semantic enrichment belongs only to
-this unannotated-model pipeline; do not rewrite or regroup already annotated
-models during other work. See `instructions.md` and `docs/workflow.md` for the
-full procedure.
+When the user supplies an unannotated model, offer to annotate it yourself with
+`bin/ldraw-annotator` (else `ldraw-annotator` on `PATH`), following
+`docs/annotation.md`. First run `prep` (no tokens) and give the user its size and
+a token estimate, warning that a large model can take many tokens. If they
+decline, stop: don't prepare, plan or animate an unannotated model. If they
+accept: `prep --mpd` writes a copy, `prompt` gives the instructions for
+structuring and describing it, and `check` must end with `"ok": true`. From then
+on, use the annotated copy as if the user had supplied it. Preserve the original.
+Don't rewrite or regroup already annotated models unless asked to.
 
 When a candidate's parts or axis are uncertain, and before rigging authored
 joints (again after each correction), render look boards with

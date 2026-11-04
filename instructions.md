@@ -13,18 +13,12 @@ The [workflow guide](docs/workflow.md) is the command reference;
    reusing prior user decisions. Explicit whole-model/in-place requests win.
    Study with `--section`, then use `scripts/extract_subsystem.py` and remap IDs;
    the delivered MPD, GLB and blend must contain only the selected subsystem.
-3. For an **unannotated original**, complete [annotation](docs/annotation.md)
-   before `prepare` or motion planning: `annotate` to a separate copy; immediately
-   inspect it and author rich single-line model/assembly descriptions; apply them
-   with `annotate-semantics`; recursively review and enrich the hierarchy,
-   including flat models and newly inferred groups. Descriptions are ordinary
-   `0 DESCRIPTION` lines directly below `0 FILE`, distinct from `0 // ` comments.
-   Create missing submodels/sub-submodels when supported by source evidence;
-   record why retained or inferred boundaries are sufficient. Preserve every
-   physical occurrence, attribution, section names and existing rich descriptions.
-   After regrouping, reparse with pyldraw3 and verify references, effective colours
-   and world matrices using an old-to-new occurrence ID map. Save rationale,
-   ambiguities and checks under `output/`. Use the finished source consistently.
+3. For an **unannotated original**, offer to [annotate](docs/annotation.md) it
+   with `bin/ldraw-annotator`. Run `prep` first (no tokens), then give the user
+   the model's size and a token estimate, with a plain warning for large models.
+   If they decline, stop. If they accept, follow `ldraw-annotator prompt` on the
+   prepped copy until `ldraw-annotator check` says `"ok": true`, then use that
+   copy for everything that follows, as if it were the model supplied.
    **Do not rewrite or regroup already annotated models unless requested.**
 
 ## Prepare, author, check and rig

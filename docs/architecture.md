@@ -9,7 +9,6 @@ they are documentation, not another execution format.
 | Layer | Modules | Responsibility |
 | --- | --- | --- |
 | Source | `source.py` | pyldraw3 parsing, attribution, occurrence identities, transforms, section extraction, verified flat copies |
-| Source annotation | `annotate.py` | Part/colour comments and application of agent-authored model/submodel description lines; reports direct the agent to the final hierarchy review/enrichment and preservation checks |
 | Evidence | `analysis.py`, `placements.py`, `discovery.py`, `geometry.py`, `search.py` | Connector expansion, analysis-only frame correction, inventory, bounded contacts/meshes/coaxial candidates, offline FTS and optional Jev |
 | Preparation and scope | `prepare.py`, `mechanisms.py`, `audit.py` | Persist evidence, provisional views, recipe adoption, scope dispositions, body-boundary audit against contacts and optional diagnostic exports |
 | Visual study | `xray.py` | Run the external `ldraw-xray` CLI (never imported) on a flat render copy: occurrence IDs become exact `line:` selectors in the plan frame; look-board recipes rendered in parallel, with check lists |
@@ -34,12 +33,10 @@ standard library and imports neither bpy nor pyldraw3, so Blender can evaluate
 the same plan. Source transforms and hashes remain intact; normalized placements
 are analysis evidence only.
 
-For originally unannotated models, the agent completes annotation with a
-[hierarchy review](annotation.md#review-and-enrich-the-hierarchy), creating richly
-described submodels and nested submodels when needed. The annotation commands
-do not infer or create these groups. The agent edits a generated copy using
-pyldraw3, records the grouping evidence and occurrence map, and verifies physical
-equivalence before preparation. Regrouping changes source identities even when
+Originally unannotated models are annotated before preparation by the external
+`ldraw-annotator` CLI and the agent ([annotation](annotation.md)). The tool adds
+part comments and verifies that the agent's regrouped copy is lossless; the
+agent structures and describes it. Regrouping changes source identities even when
 the geometry is preserved; existing plans and bindings must be regenerated.
 
 The exporter preserves hierarchy, part descriptions and metadata. Its geometry

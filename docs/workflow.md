@@ -26,18 +26,13 @@ for selection and connector geometry for placement and articulation.
 
 ## Annotate before analysis
 
-For an unannotated original, follow [the annotation procedure](annotation.md)
-first: part comments → agent-authored descriptions → recursive hierarchy review
-and enrichment → occurrence-preservation verification. Keep originals intact.
-Use the finished copy for all subsequent study, extraction and conversion.
-Already annotated sources are reused without semantic rewrites unless requested.
-
-### Review and enrich the hierarchy
-
-The required [hierarchy review](annotation.md#review-and-enrich-the-hierarchy)
-includes flat models, nested assemblies, grouping rationale and an old-to-new
-physical occurrence map after regrouping. Semantic groups describe the model;
-they do not declare rigid bodies or prove mechanics.
+For an unannotated original, offer [annotation](annotation.md) with
+`ldraw-annotator`: `prep` and a token estimate, the user's go-ahead, then
+`prompt`, the edit, and `check` until it says `"ok": true`. If the user declines,
+stop. Keep originals intact, and use the annotated copy for all later study,
+extraction and conversion. Already annotated sources are reused without
+semantic rewrites unless requested. Semantic groups describe the model; they
+don't declare rigid bodies or prove mechanics.
 
 ## Choose the deliverable
 
