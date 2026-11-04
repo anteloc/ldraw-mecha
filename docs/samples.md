@@ -76,6 +76,13 @@ Then write `samples/NAME.md` (see below) and add a section for the sample to
 [GALLERY.md](../GALLERY.md), copying an existing one: the summary's title as a
 `##` heading, the linked thumbnail, and the `▶ Video` and `Summary` links.
 
+The video link points to GitHub Pages
+(`https://anteloc.github.io/ldraw-mecha/samples/NAME.mp4`), because GitHub
+serves LFS files from the repo as downloads. Pages publishes `samples/*.mp4`
+and `pages/` when a version tag such as `v0.7.5` is pushed on a `master` commit
+([.github/workflows/pages.yml](../.github/workflows/pages.yml)), so a new
+sample's video plays once the next release tag is out.
+
 ## Choosing the chat
 
 Candidates are ranked by how many distinct evidence files the chat refers to.

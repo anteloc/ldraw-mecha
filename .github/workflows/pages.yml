@@ -1,0 +1,46 @@
+# Publishes GitHub Pages: pages/ (landing page) plus samples/*.mp4.
+# The videos are hosted here because GitHub serves LFS files from the repo as
+# downloads; Pages serves them as video/mp4, so GALLERY.md links play in the browser.
+# Runs when a version tag (e.g. v0.7.5) is pushed on a master commit.
+name: Pages
+
+on:
+  push:
+    tags: ['v*.*.*']
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: pages
+  cancel-in-progress: false
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - uses: actions/checkout@v7
+        with:
+          fetch-depth: 0  # full history, to check the tag is on master
+
+      - name: Check the tag is on master
+        run: git merge-base --is-ancestor "$GITHUB_SHA" origin/master
+
+      - name: Fetch the sample videos from LFS (nothing else)
+        run: git lfs pull --include="samples/*.mp4"
+
+      - name: Assemble the site
+        run: |
+          mkdir -p _site/samples
+          cp -r pages/. _site/
+          cp samples/*.mp4 _site/samples/
+
+      - uses: actions/configure-pages@v6
+      - uses: actions/upload-pages-artifact@v5
+      - id: deployment
+        uses: actions/deploy-pages@v5
