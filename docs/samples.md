@@ -23,8 +23,9 @@ gallery copies in `ldraw-mecha-docker/data/generated/`.
 Only Blender backups (`*.blend1`, `*.blend2`, …), Python caches (`__pycache__/`,
 `*.pyc`) and `.DS_Store` are left out of the copy; they are not evidence and
 stay git-ignored. Everything else,
-including logs and scripts, is committed as-is. `.blend`, `.glb`, `.mp4` and
-images are LFS-tracked.
+including logs and scripts, is committed as-is. Everything under `samples/` is
+LFS-tracked except the `samples/NAME.md` summaries, which are plain git so
+GitHub renders them.
 
 ## Adding a sample
 
@@ -70,6 +71,10 @@ The script refuses to overwrite an existing sample. It then:
    (`../ldraw-mecha-docker/data/chats/`, override with `DOCKER_ROOT`). Claude
    and Codex chats are searched for this repo and for the git checkout that
    holds the source, such as an experiment clone.
+
+Then write `samples/NAME.md` (see below) and add a section for the sample to
+[GALLERY.md](../GALLERY.md), copying an existing one: the summary's title as a
+`##` heading, the linked thumbnail, and the `▶ Video` and `Summary` links.
 
 ## Choosing the chat
 

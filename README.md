@@ -7,6 +7,7 @@ evidence, execute the plan and check the result.
 **Prepare → edit the plan → check → rig → visual review.**
 Start with [how it works](docs/how-it-works.md) for the explanation or
 [the workflow](docs/workflow.md) for commands. Agents follow [instructions.md](instructions.md).
+See what agents have built with it in the [samples gallery](GALLERY.md).
 
 ## Try an existing example
 
