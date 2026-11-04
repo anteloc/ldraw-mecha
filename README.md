@@ -63,6 +63,7 @@ plant/wind animation. Adapt their reasoning and checks, then remeasure the targe
 
 | Need | Read |
 | --- | --- |
+| The whole process, step by step, on one example | [Process](PROCESS.md) |
 | Setting up a machine (macOS, Linux, Windows) | [Setup](docs/setup.md) |
 | Everyday commands and recovery | [Workflow](docs/workflow.md) |
 | Joint types, equations, frames and fields | [Motion plan](docs/motion-plan.md) |
