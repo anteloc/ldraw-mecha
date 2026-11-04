@@ -1,19 +1,20 @@
 # Samples
 
 `samples/` publishes past generated results as evidence of what agents produced.
-Each sample is exactly three sibling items sharing one basename:
+Each sample is exactly four sibling items sharing one basename:
 
 | Item | Content |
 | --- | --- |
 | `samples/NAME/` | Verbatim copy of the generated folder (e.g. `output/106/`). Never edited. |
 | `samples/NAME.mp4` | Web-sized H.264 encode of the video the user supplied. |
+| `samples/NAME.png` | A "home" still of the result, rendered from its `.blend` for web pages and the gallery. |
 | `samples/NAME.md` | Summary for readers: what the sample shows, how it was made, and what each file is. |
 
 Sometimes the evidence relies on other things the same run generated, for
 example a derived source model in `output/NAME-source/`, an early study folder,
 or new scripts that exist only in the checkout where the run happened. Pass each
 folder or file with `--extra`. It is copied verbatim to
-`samples/NAME/extra/<folder or file name>`. This keeps the three-item
+`samples/NAME/extra/<folder or file name>`. This keeps the four-item
 convention, and the original evidence files stay byte-identical. Files already
 committed to this repo, such as `data/models-annotated/` or existing `scripts/`,
 are not extras. Neither are artifacts a webapp makes for other purposes, such as
@@ -32,6 +33,7 @@ The user supplies the evidence folder and a `.mov` or `.mp4` video:
 ```bash
 ./add-sample.sh output/106 path/to/video.mov          # NAME defaults to the folder name
 ./add-sample.sh output/106 path/to/video.mov --name 106-car
+./add-sample.sh output/minifigs minifigs.mov --blend minifigs.blend   # when there are several
 ./add-sample.sh output/3625 3625.mov --extra output/3625-source
 ./add-sample.sh ../exp/output/42043-crane crane.mov --extra ../exp/scripts/build_crane_42043.py
 ```
@@ -46,9 +48,23 @@ The script refuses to overwrite an existing sample. It then:
 1. encodes the video to `samples/NAME.mp4` (max 1920 px wide, max 30 fps,
    CRF 24, no audio; override with `SAMPLE_MAX_WIDTH`, `SAMPLE_FPS`,
    `SAMPLE_CRF`);
-2. copies the folder, verifies it with `diff -r`, and checks every file is
+2. renders `samples/NAME.png` from the evidence's `.blend` in background
+   Blender. With several `.blend` files it stops and lists them: pick one with
+   `--blend FILE` (relative to the evidence folder). The still shows the file's
+   active scene at its saved frame, everything visible framed from a
+   three-quarter view above the front-right, like Blender's Home (Frame All).
+   Hidden objects, such as hidden bodywork, stay hidden. Every sample gets the
+   same studio look: Cycles (denoised, on the GPU when there is one), soft key,
+   fill and rim lights with shadows instead of the file's own lights, and a
+   mid-grey backdrop with contact shadows, so white and dark parts both stand
+   out. It is a 1600×1200 PNG of about 1.3–1.6 MB, and takes about 20–30 s on
+   an Apple M4 GPU (override the size with `SAMPLE_IMAGE_SIZE=WxH`). The
+   `.blend` is not changed. There is one image only: a gallery page shows it scaled down and
+   links to the full size, e.g.
+   `<a href="NAME.png"><img src="NAME.png" width="320"></a>`;
+3. copies the folder, verifies it with `diff -r`, and checks every file is
    committable;
-3. prints facts for the summary (evidence time range, `.blend` files, models
+4. prints facts for the summary (evidence time range, `.blend` files, models
    referenced) and ranked chat candidates from Claude
    (`~/.claude/projects/`), Codex (`~/.codex/sessions/`) and the docker webapp
    (`../ldraw-mecha-docker/data/chats/`, override with `DOCKER_ROOT`). Claude
@@ -78,6 +94,8 @@ reference example; follow its layout.
 
 <2-3 plain sentences: what you see in the video, which LEGO model, who made
 it, and the outcome.>
+
+[![<model name>](NAME.png)](NAME.png)
 
 ▶ [Watch the video](NAME.mp4)
 
@@ -113,6 +131,7 @@ All paths are relative to `samples/`.
 | File | What it is | Why it exists |
 |---|---|---|
 | [NAME.mp4](NAME.mp4) | <screen recording, made by whom> | To show the result |
+| [NAME.png](NAME.png) | Still rendered from [NAME/<main>.blend](NAME/<main>.blend) by `add-sample.sh` | Preview for pages and the gallery |
 | [NAME/<file>](NAME/<file>) | <...> | <...> |
 
 ## Known limits

@@ -1,14 +1,15 @@
 #!/bin/sh
-# Add a generated animation result to samples/ as three sibling items:
+# Add a generated animation result to samples/ as four sibling items:
 #   samples/NAME/     verbatim copy of the evidence folder (Blender backups and caches skipped);
 #                     each --extra folder or file is copied verbatim to samples/NAME/extra/<basename>
 #   samples/NAME.mp4  web-sized H.264 encode of the supplied video
+#   samples/NAME.png  web-sized "home" still of the evidence .blend (--blend picks one of several)
 #   samples/NAME.md   written afterwards by the agent (see docs/samples.md)
 # Then rank the agent chats that most likely produced the evidence.
 set -eu
 
 usage() {
-  echo "usage: $0 <source-dir> <video.mov|video.mp4> [--name NAME] [--extra PATH]..." >&2
+  echo "usage: $0 <source-dir> <video.mov|video.mp4> [--name NAME] [--blend FILE] [--extra PATH]..." >&2
   exit 2
 }
 die() { echo "add-sample: $*" >&2; exit 1; }
@@ -18,10 +19,12 @@ src_arg=$1
 video_arg=$2
 shift 2
 name=
+blend_arg=
 extra_args=
 while [ $# -gt 0 ]; do
   case $1 in
     --name) [ $# -ge 2 ] || usage; name=$2; shift 2 ;;
+    --blend) [ $# -ge 2 ] || usage; blend_arg=$2; shift 2 ;;
     --extra) [ $# -ge 2 ] || usage; extra_args="$extra_args$2
 "; shift 2 ;;
     *) usage ;;
@@ -39,6 +42,26 @@ video=$(CDPATH= cd -- "$(dirname -- "$video_arg")" && pwd)/$(basename -- "$video
 [ -n "$name" ] || name=$(basename -- "$src")
 printf '%s\n' "$name" | grep -Eq '^[A-Za-z0-9][A-Za-z0-9._-]*$' \
   || die "invalid sample name: $name"
+
+# The .blend for the still: --blend (relative to the source folder, or a path), else the only one.
+if [ -n "$blend_arg" ]; then
+  if [ -f "$src/$blend_arg" ]; then blend=$src/$blend_arg
+  elif [ -f "$blend_arg" ]; then blend=$(CDPATH= cd -- "$(dirname -- "$blend_arg")" && pwd)/$(basename -- "$blend_arg")
+  else die "blend not found: $blend_arg"
+  fi
+  case $blend in
+    *.blend) ;;
+    *) die "--blend must be a .blend file: $blend_arg" ;;
+  esac
+else
+  blends=$(cd "$src" && find . -type f -name '*.blend' | sed 's|^\./||' | sort)
+  case $(printf '%s' "$blends" | grep -c . || true) in
+    1) blend=$src/$blends ;;
+    0) die "no .blend in $src_arg to render NAME.png from; pass --blend FILE" ;;
+    *) die "several .blend files in $src_arg; pick the one to render with --blend:
+$blends" ;;
+  esac
+fi
 
 # Extra sources (folders or files): absolute, distinct basenames, outside the evidence folder.
 extras=
@@ -75,7 +98,7 @@ fi
 repo=$(CDPATH= cd -- "$(dirname -- "$0")" && pwd)
 cd "$repo"
 samples=$repo/samples
-for item in "$samples/$name" "$samples/$name.mp4" "$samples/$name.md"; do
+for item in "$samples/$name" "$samples/$name.mp4" "$samples/$name.png" "$samples/$name.md"; do
   [ ! -e "$item" ] || die "already exists, samples are never overwritten: ${item#"$repo"/}"
 done
 case $src/ in
@@ -83,8 +106,11 @@ case $src/ in
 esac
 command -v ffmpeg >/dev/null || die "ffmpeg not found"
 command -v ffprobe >/dev/null || die "ffprobe not found"
+blender=$("$repo/.venv/bin/python" -c 'from ldraw_mechanisms.workflow import blender_executable as b; print(b())') \
+  || die "Blender not found (BLENDER_BIN, bin/ or PATH): run your setup-*.sh script"
 
 max_width=${SAMPLE_MAX_WIDTH:-1920}
+image_size=${SAMPLE_IMAGE_SIZE:-1600x1200}
 max_fps=${SAMPLE_FPS:-30}
 crf=${SAMPLE_CRF:-24}
 docker_root=${DOCKER_ROOT:-$repo/../ldraw-mecha-docker}
@@ -113,6 +139,14 @@ ffmpeg -nostdin -hide_banner -loglevel error -stats -i "$video" -map 0:v:0 -an \
   -vf "$filters" -c:v libx264 -preset slow -crf "$crf" -movflags +faststart \
   "$work/video.mp4"
 echo "sample: $(probe "$work/video.mp4")"
+
+echo "== image"
+echo "source: ${blend#"$repo"/}"
+"$blender" -b --factory-startup "$blend" --python-exit-code 1 \
+  --python "$repo/scripts/blender/render_home.py" -- --output "$work/image.png" --size "$image_size" \
+  >"$work/render.log" 2>&1 || { tail -20 "$work/render.log" >&2; die "rendering $blend failed"; }
+grep '^WROTE' "$work/render.log" | sed "s|$work/image.png|NAME.png,|"
+echo "sample: $(wc -c <"$work/image.png" | tr -d ' ') bytes"
 
 # Copy a folder verbatim except Blender backups, Python caches and Finder files, then prove it.
 copy_tree() {
@@ -146,10 +180,11 @@ done <<EOF
 $extras
 EOF
 mv "$work/video.mp4" "$samples/$name.mp4"
+mv "$work/image.png" "$samples/$name.png"
 copied=
 
 echo "== publish check"
-files=$(cd "$repo" && find "samples/$name" "samples/$name.mp4" -type f | sort)
+files=$(cd "$repo" && find "samples/$name" "samples/$name.mp4" "samples/$name.png" -type f | sort)
 ignored=$(printf '%s\n' "$files" | git check-ignore --stdin || true)
 large=$(printf '%s\n' "$files" | git check-attr filter --stdin | awk -F': ' '$3 != "lfs" { print $1 }' \
   | while IFS= read -r f; do [ "$(wc -c <"$f")" -le 5242880 ] || echo "$f"; done)
@@ -200,7 +235,7 @@ print(f"sample: samples/{name}/  (source {src})")
 print(f"evidence mtimes (UTC): {first:%Y-%m-%d %H:%M:%S} .. {last:%Y-%m-%d %H:%M:%S}")
 print("blend files:", ", ".join(f"{name}/{b}" for b in blends) or "none")
 print("models referenced:", ", ".join(sorted(models)) or "none found")
-print(f"summary links: [{name}.mp4]({name}.mp4)  [{name}/]({name}/)")
+print(f"summary links: [{name}.mp4]({name}.mp4)  [{name}.png]({name}.png)  [{name}/]({name}/)")
 extra = os.path.join(repo, "samples", name, "extra")
 for e in sorted(os.listdir(extra)) if os.path.isdir(extra) else []:
     e += "/" if os.path.isdir(os.path.join(extra, e)) else ""
