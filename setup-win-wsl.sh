@@ -1,7 +1,7 @@
 #!/bin/sh
 # Set up ldraw-mecha on Windows, inside WSL2 (Ubuntu): WSL-specific checks, then
 # the Linux setup, which installs everything inside this project (see setup-linux.sh).
-#   ./setup-win-wsl.sh
+#   ./setup-win-wsl.sh [--yes]   (passed on to setup-linux.sh)
 # Run it in the Ubuntu terminal, from a clone in your Linux home (not /mnt/c).
 # See docs/setup.md (Windows: WSL2).
 set -eu
@@ -30,4 +30,4 @@ esac
   echo "warning: no WSLg display; update WSL (wsl --update in PowerShell) so LeoCAD can render"
 
 # --- 4. The Linux setup --------------------------------------------------------
-exec "$root/setup-linux.sh"
+exec "$root/setup-linux.sh" "$@"

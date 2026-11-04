@@ -2,7 +2,7 @@
 # Set up ldraw-mecha on Linux (x86_64), self-contained in this project:
 # portable tools in bin/, the LDraw library in data/ldraw, Python in .venv.
 # Nothing is installed system-wide and no shell profile is edited.
-#   ./setup-linux.sh
+#   ./setup-linux.sh [--yes]   (--yes: install without asking for approval)
 # Needs: the system packages checked in step 1 (Debian/Ubuntu names), Python 3.12+.
 # Safe to re-run: up-to-date items are skipped. To bump a tool, change its
 # version below and re-run. Windows: run ./setup-win-wsl.sh inside WSL2. See docs/setup.md.
@@ -26,6 +26,14 @@ BLENDER_PACKAGES="libgl1 libegl1 libxrender1 libxi6 libxfixes3 libxkbcommon0 lib
 LEOCAD_PACKAGES="libosmesa6 libxkbcommon-x11-0 libxcb-cursor0 libxcb-icccm4 libxcb-image0
   libxcb-keysyms1 libxcb-randr0 libxcb-render-util0 libxcb-shape0 libxcb-xinerama0
   libnss3 fontconfig"
+
+# --- Options ------------------------------------------------------------------
+yes=0
+case "${1:-}" in
+  -y | --yes) yes=1 ;;   # approve without asking (e.g. no terminal)
+  "") ;;
+  *) echo "usage: ./setup-linux.sh [--yes]" >&2; exit 2 ;;
+esac
 
 root=$(CDPATH='' cd -- "$(dirname -- "$0")" && pwd)
 cd "$root"
@@ -74,6 +82,55 @@ else
   have git-lfs || die "git-lfs is missing: install it with your package manager, then re-run"
 fi
 echo ok
+
+# --- Summary and approval: nothing has been changed so far ----------------------
+row() { printf '  %-26s %s\n' "$1" "$2"; }
+cat <<EOF
+
+This will install ldraw-mecha's tools for Linux (x86_64), all inside
+  $root
+
+EOF
+row "uv $UV_VERSION" "bin/uv, bin/uvx"
+row "Python environment" ".venv (any Python uv downloads: bin/python)"
+row "ldraw-xray $LDRAW_XRAY_VERSION" "bin/ldraw-xray (environment in bin/uv-tools/)"
+row "jev-rerank $JEV_RERANK_VERSION" "bin/jev-rerank"
+row "ldraw-annotator $LDRAW_ANNOTATOR_VERSION" "bin/ldraw-annotator"
+row "Bun $BUN_VERSION" "bin/bun"
+row "mpd2glb $MPD2GLB_VERSION" "bin/mpd2glb.mjs"
+row "LDraw web viewer" "bin/ldbi-viewer/"
+row "Blender $BLENDER_VERSION" "bin/blender/"
+row "LeoCAD $LEOCAD_VERSION" "bin/leocad/ (unpacked AppImage)"
+row "LDraw parts library" "data/ldraw (latest complete.zip)"
+row "Git LFS files" "data/ldraw-info.db, reference and sample assets"
+row "Download cache" ".cache/uv"
+cat <<EOF
+
+About 2 GB in total. Nothing is installed anywhere else: no sudo, no package
+manager, nothing in /usr, /opt or ~/.local, and your shell profile is not
+edited. Git LFS is enabled for this repository only (git lfs install --local).
+Items already at these versions are skipped.
+
+Afterwards:
+  1. add the export lines printed at the end (LDRAW_DIR, BLENDER_BIN, ...) to
+     ~/.bashrc and ~/.profile (bash), or ~/.zshenv (zsh);
+  2. close VS Code, open a new terminal and start VS Code from it
+     (code .), so your shell and agents (Claude Code, Codex) see them.
+Uninstall: see docs/setup.md.
+
+EOF
+if [ "$yes" = 1 ]; then
+  echo "Approved with --yes."
+elif [ -t 0 ]; then
+  printf 'Install? [y/N] '
+  read -r answer || answer=
+  case "$answer" in
+    [yY] | [yY][eE][sS]) ;;
+    *) echo "Cancelled: nothing was installed."; exit 1 ;;
+  esac
+else
+  die "no terminal to ask for approval; re-run with --yes to install without asking"
+fi
 
 # --- 2. Git LFS objects (this repository's config only) ------------------------
 step "Git LFS objects"
@@ -183,11 +240,6 @@ export LDRAW_XRAY_CACHE="$root/.cache/ldraw-xray"
 export LDRAW_ANNOTATOR_DB="$root/data/ldraw-info.db"
 # export TYPESAFE_API_KEY=...   # optional: Jev semantic search (jev-rerank)
 # <<< ldraw-mecha <<<
-
-Then try:
-  ./ldraw-mecha prepare data/models-annotated/106-1.mpd --recipe 106 --output output/study
-  ./ldraw-mecha check output/study
-  ./ldraw-mecha rig output/study --animate --reopen
 EOF
 if [ -z "${DISPLAY:-}${WAYLAND_DISPLAY:-}" ]; then
   cat <<'EOF'

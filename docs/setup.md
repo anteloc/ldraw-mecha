@@ -22,8 +22,14 @@ cd ldraw-mecha
 
 The scripts never use `sudo` or a package manager. When something from the table
 is missing they stop, explain why it's needed and print the command to install it;
-install it and re-run. At the end they print a few `export` lines for you to add
-to your shell profile (see [Configuration](#configuration)).
+install it and re-run.
+
+Before changing anything, a script shows what it will install and where, and
+what you'll need to do afterwards. It then asks `Install? [y/N]`. To approve
+without being asked, for example when no terminal is attached, pass `--yes`:
+`./setup-linux.sh --yes`. `setup-win-wsl.sh` passes the option on to
+`setup-linux.sh`. At the end they print a few `export` lines for you to add to
+your shell profile (see [Configuration](#configuration)).
 
 ## What gets installed
 
