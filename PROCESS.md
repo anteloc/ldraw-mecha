@@ -1,23 +1,38 @@
-# From LEGO model to Blender animation
+# Reverse engineering a LEGO model into a Blender animation
 
-This page walks through the whole process, from a plain LEGO model file to an animated
-Blender file, in five steps. Each step says **what** it does and **why** it's needed.
-
-It's **reverse engineering**. A LEGO model file is just a list of parts: it never says what
-moves. The mechanisms are worked out from the parts, then animated.
+Agents can reverse engineer an LDraw `.mpd` file, which is only a list of parts, to find the
+mechanisms in the model and animate them in Blender. This document describes how to work with
+an agent through that process, and what it does under the hood.
 
 ```mermaid
 flowchart LR
-    s1["1. Annotate<br/>car.mpd"] --> s2["2. Convert<br/>IDs + model.glb"]
+    s1["1. Annotate<br/>annotated car.mpd"] --> s2["2. Convert<br/>IDs + model.glb"]
     s2 --> s3["3. Plan<br/>plan.json"]
     s3 --> s4["4. Animate<br/>ai-animated.blend"]
     s4 --> s5["5. Verify<br/>checks + stills"]
     s5 -. "fix limits" .-> s3
 ```
 
-**The example.** Every step uses the same small model: LEGO set 106, a blue UNICEF car
-with a minifig standing beside it. Its file is `car.mpd`, an [LDraw](https://www.ldraw.org/)
-model: a text file that lists every LEGO part, its colour and its position.
+| Step | You | The agent | Output |
+|---|---|---|---|
+| 1. Annotate | Accept or decline the token cost | Names and groups the parts | Annotated `car.mpd` |
+| 2. Convert | Nothing | Gives every piece an ID, converts to 3D | `plan.json` (draft), `model.glb` |
+| 3. Plan | Choose what to animate and deliver | Works out what moves and how | `plan.json` (ready) |
+| 4. Animate | Nothing | Builds the rig in Blender | `ai-animated.blend` |
+| 5. Verify | Review the result, give feedback | Scans for collisions, renders stills, fixes | Final `.blend` + notes |
+
+## Before you start
+
+- **Setup.** Run `./setup-macos.sh` (or `setup-linux.sh`, `setup-win-wsl.sh`) once. It installs
+  Blender, the LDraw parts library and the tools the agent uses. See [docs/setup.md](docs/setup.md).
+- **An agent.** Open an LLM coding agent, such as Claude Code or Codex, in this repository. It
+  picks up its instructions from [AGENTS.md](AGENTS.md) and [instructions.md](instructions.md).
+- **A request.** Name the model, what should move and what you want back:
+
+  > Animate `car.mpd`: open the roof and the doors. Deliver a `.blend` file.
+
+**The example.** All the steps use one small model, `car.mpd`: LEGO set 106, a blue UNICEF car
+with a minifig beside it. It has 65 parts, and its roof and doors open.
 
 ![The finished car in Blender, roof and a door open](img/car-open.png)
 
@@ -25,18 +40,24 @@ model: a text file that lists every LEGO part, its colour and its position.
 
 ## Step 1: Annotate
 
-**What.** Annotation turns a bare list of parts into a model a person (or an agent) can read:
+**You.** If the model isn't annotated yet, the agent tells you its size and a token estimate
+and asks before going on. A 65-part car costs little; a model with thousands of parts can cost
+a lot. If you decline, the agent stops: it doesn't animate unannotated models.
 
-1. Every part gets its name and colour from a parts database, such as `Plate 2 x 10 (black)`.
-2. Agents look at those names and their order to find the assemblies the model is made of:
-   chassis, doors, roof, wheels…
-3. The file is rewritten as a main model with a tree of named, described submodels.
+**The agent** turns the flat list of parts into a tree of named, described assemblies:
 
-Nothing is lost: every part, colour and position is still there.
+1. Every part gets its name and colour from a parts database: `0 // Plate  2 x 10 (black)`.
+2. The agent infers the missing submodels from those names and their order.
+3. The file is rewritten as a main model with a tree of submodels, each with a one-line
+   description.
 
-**Why.** An LDraw file says *where* parts are, not *what* they form. Once each assembly is
-a named, described submodel, other agents (such as Claude Sonnet 5.5) can spot the ones that
-are mechanisms, like `doors` or `hinged-roof`, and work out how they move.
+**Why.** An LDraw file says *where* parts are, not *what* they form. Named submodels such as
+`doors` or `hinged-roof` show the agent where to look for mechanisms in Step 3.
+
+**Under the hood.** `ldraw-annotator prep` adds the part names, with no LLM involved.
+`ldraw-annotator prompt` gives the agent its grouping rules. `ldraw-annotator check` verifies
+that every part, colour and position survived, and the agent fixes the file until it passes.
+Your original file is never changed; the agent works on a copy.
 
 ### Before and after
 
@@ -101,36 +122,39 @@ Before                                   After
 
 ## Step 2: Convert
 
-**What.** The toolkit gives every piece in `car.mpd` an ID. It then converts the model into
-`model.glb`, a standard 3D file that Blender can open, with each piece's ID and description
-stored inside.
+**You.** Nothing to do.
 
-**Why.** Blender doesn't read `.mpd` files. And from here on, the plan and Blender must talk
-about *exactly the same pieces*. The ID is the name they share.
+**The agent** gives every piece an ID, lists how the pieces connect, and converts the model to
+`model.glb`, a glTF 3D file that Blender imports, with each piece's ID and description inside.
 
-### IDs: one name per physical piece
+**Why.** Blender can't read `.mpd` files. From here on, the plan and Blender must refer to
+exactly the same pieces, and the ID is how they do it.
 
-An ID is the piece's path through the model's tree. Each number is the position of a part or
+**Under the hood.** One command, `ldraw-mecha prepare`. It writes a draft `plan.json` (every
+piece with its ID and position, plus candidate connections and mechanisms, but no motion yet)
+and `model.glb`.
+
+### IDs
+
+An ID is a piece's path through the model's tree. Each number is the index of a part or
 submodel line inside its parent, counting from 0:
 
 ```
-0            106 - car.ldr            1st line of the main model
-0/1          106 - cabin-body.ldr     2nd line of car.ldr
-0/1/10       106 - hinged-roof.ldr    11th line of cabin-body.ldr
-0/1/10/2     4213.dat                 3rd line of hinged-roof.ldr: the roof
+0            106 - car.ldr            line 0 of the main model
+0/1          106 - cabin-body.ldr     line 1 of car.ldr
+0/1/10       106 - hinged-roof.ldr    line 10 of cabin-body.ldr
+0/1/10/2     4213.dat                 line 2 of hinged-roof.ldr: the roof
 ```
 
-**Why IDs?** Part numbers aren't enough. The car has five identical tyres, all `4084.dat`, but
-each is a separate piece that may turn on its own. Their IDs tell them apart: `0/2/0/1` (the
-spare), `0/2/3/1`, `0/2/4/1`… IDs are fixed for a given version of the file, so every tool
-points at exactly the same piece.
+Part numbers can't do this job. The car has five identical tyres (`4084.dat`), and each one is
+a separate piece that turns on its own: `0/2/0/1` (the spare), `0/2/3/1`, `0/2/4/1`… IDs are
+valid for one version of the file; if the file changes, the agent prepares it again.
 
-### IDs in the 3D model
+### IDs in Blender
 
-The converter (`mpd2glb`) keeps the model's tree: one 3D object per part and submodel. Into each
-object it writes extra data: the part's description from the database, and its ID. When Blender
-imports the file, that extra data becomes the object's **Custom Properties**. Here is what the
-roof shows in **Object Properties → Custom Properties**:
+The converter (`mpd2glb`) keeps the model's tree: one glTF node per part and submodel. It
+writes each node's metadata into glTF `extras`, which Blender imports as **Custom
+Properties**. The roof's, under **Object Properties → Custom Properties**:
 
 ```
 fileName       4213.dat
@@ -138,156 +162,168 @@ description    Hinge Car Roof  4 x  4
 colorCode      1
 mecha_id       0/1/10/2
 mecha_section  106 - main.ldr
-mecha_source   b247a29a…   (fingerprint of car.mpd)
+mecha_source   b247a29a…   (SHA-256 of car.mpd)
 ```
 
-The objects in Blender mirror the `.mpd` file. Any object can be traced back to the exact
-source part, by people and by scripts.
+Any Blender object can be traced back to the exact source line, by you and by the agent's
+scripts.
 
-While converting, the toolkit also lists which parts touch, hinge, share an axle or mesh as
-gears. That list is the starting point for the next step.
+### Connection evidence
+
+`prepare` also lists which pieces touch, hinge, share an axle or mesh as gears. For the roof
+it finds the hinge between the roof holder `0/1/10/1` and the roof `0/1/10/2`:
+
+```json
+"c_5f04a4e8697090b8": {
+  "a": "0/1/10/1", "b": "0/1/10/2", "kind": "revolute", "status": "candidate",
+  "measurements": { "first_kind": "hinge", "position": [0, -92, 36], "axis": [1, 0, 0] }
+}
+```
+
+This is evidence, not a decision: a contact may be rigid or may move. Step 3 decides.
 
 ---
 
 ## Step 3: Plan
 
-**What.** An agent studies the model and decides, for each mechanism, which parts move, around
-which point and axis, how far, and what drives them. It writes those decisions, by ID, into a
-motion plan: `plan.json`.
+**You.** The agent lists the mechanisms it found and asks what you want. Typical questions:
+
+- Which mechanisms to animate? (For the car: roof, doors, wheels.)
+- One animation of the whole model, or each mechanism on its own?
+- What to deliver: a `.blend` file, stills, a video?
+- For big models: hide the bodywork? Leave out hoses and cables?
+
+Answer them; the rest of the work follows from your answers. For examples, see the questions
+asked in [42083](samples/42083-mechanisms.md), [42110](samples/42110.md) and
+[minifigs](samples/minifigs.md).
+
+**The agent** decides, for each mechanism, which pieces move, around which point and axis, how
+far, and what drives them, and records it in `plan.json`.
 
 This is where the reverse engineering happens. Nothing in `car.mpd` says the roof opens: the
-agent works it out from a roof, a roof holder and the hinge between them.
+agent infers it from a roof, a roof holder and the hinge between them.
 
-**Why.** Motion must be measured, not guessed. A door opened around the wrong axis, or a gear
-turning at the wrong speed, looks broken. The plan records every decision with its evidence,
-so it can be checked before anything reaches Blender.
+**Why.** Motion must be measured, not guessed. A wrong axis or gear ratio looks broken. The plan
+keeps every decision with its evidence, and it can be checked without Blender.
 
-For the car's roof, the plan says:
+For the roof, the agent takes the hinge position and axis from the evidence, picks the axis
+sign that lifts the roof (LDraw's up is −Y), and writes:
 
 ```json
-"controls": {
-  "roof": { "min": 0, "max": 1.309, "unit": "radian", "description": "Open the roof" }
-},
-"bodies": {
-  "roof": {
-    "instances": ["0/1/10/2"],
-    "kind": "revolute",
-    "origin": [0, -92, 36],
-    "axis": [-1, 0, 0],
-    "signal": "roof"
-  }
-}
+"controls": { "roof": { "min": 0, "max": 1.309, "unit": "radian", "description": "Open the roof" } },
+"bodies":   { "roof": { "instances": ["0/1/10/2"], "kind": "revolute",
+                        "origin": [0, -92, 36], "axis": [-1, 0, 0], "signal": "roof" } }
 ```
 
-In words: the control `roof` (0 to 75°) turns piece `0/1/10/2` around the hinge axis.
-Positions are in LDraw units (1 stud = 20).
+In words: the control `roof` turns the piece `0/1/10/2` from 0 to 75° (1.309 rad) around the
+hinge. Positions are in LDraw units (LDU; 1 stud = 20). Hinges, sliders, gear trains,
+connecting rods and springs all use this format; see [docs/motion-plan.md](docs/motion-plan.md).
 
-### How agents work out the plan
+**Under the hood.** The agent edits `plan.json` through a small Python API, then runs
+`ldraw-mecha check`, which validates the plan and sweeps every control through its range
+without Blender.
 
-Across the [samples](GALLERY.md), agents use the same handful of strategies:
+### How agents work out a plan
 
-1. **Read the tree and the descriptions.** Submodels named `doors`, `hinged-roof` or
-   `wheels` are the first candidates.
-2. **Read the connection data.** For the car, it shows the hinge between the roof and its
-   holder. ([42110](samples/42110.md): gears hidden from the first scan.)
-3. **Ask the user for the scope.** Which mechanisms to animate, and what to deliver:
-   a file, stills or a video. ([42083](samples/42083-mechanisms.md), [42110](samples/42110.md))
-4. **Work on a copy when the source isn't enough.** Take one mechanism out of a big model,
-   split parts stored as one piece, or add parts missing from the file. The original is never
-   changed. ([42043 crane](samples/42043-crane.md), [3625](samples/3625.md),
+Strategies used across the [samples](GALLERY.md):
+
+1. **Read the tree and descriptions.** Submodels named `doors`, `hinged-roof` or `wheels` are
+   the first candidates.
+2. **Read the connection evidence.** Hinges, shared axles and gear meshes give positions and
+   axes. Scans can miss things: in [42110](samples/42110.md), some gears were hidden from the
+   first scan.
+3. **Ask you for the scope**, as above.
+4. **Work on a copy when the source falls short.** Extract one mechanism, split parts stored as
+   one piece, add missing parts. Your original is never changed.
+   ([42043 crane](samples/42043-crane.md), [3625](samples/3625.md),
    [42083](samples/42083-mechanisms.md))
-5. **Compare with a reference.** Use a hand-made rig or an official LEGO set that uses the same
-   parts. ([42000](samples/42000.md), [movables](samples/movables.md), [plants](samples/plants.md))
-6. **Do the maths.** Gear ratios, connecting-rod lengths, every gear combination.
+5. **Compare with a reference.** Use a hand-made rig or an official set with the same parts.
+   ([42000](samples/42000.md), [movables](samples/movables.md), [plants](samples/plants.md))
+6. **Do the maths.** Gear ratios, rod lengths, every gear combination.
    ([42000](samples/42000.md), [42110](samples/42110.md))
 
-### And above all: look inside
+### Look inside: x-ray boards
 
-The strongest check is visual. Mechanisms are usually hidden inside the model, behind
-bodywork. An **x-ray view** ghosts everything else, so the agent can **see inside** the model:
-which parts move, where the axis runs, and how the parts look at each test angle.
+Mechanisms are usually hidden behind bodywork. Before building anything, the agent renders an
+x-ray board of each moving body: the body in colour, everything else ghosted. It checks every
+board for four things:
 
-The car's roof, as seen by the agent (image by [ldraw-xray](https://github.com/anteloc/ldraw-xray),
-which has more examples):
+1. Exactly the right pieces are coloured.
+2. The axis runs through the hinge, axle or pin.
+3. Positive angles turn the right way.
+4. The limit poses stay clear of grey neighbours.
+
+The car's roof (image by [ldraw-xray](https://github.com/anteloc/ldraw-xray), which has more
+examples):
 
 ![X-ray board of the car's roof](img/xray-roof.png)
 
-*The moving part is in colour and the rest of the car is ghosted. The green rod is the hinge
-axis, drawn in for the check (it isn't a LEGO part). Panels 3 to 5 show the roof at 0°, 40°
-and 75°.*
-
-### What the planning leaves behind
-
-| File | What it is | Why it's kept |
-|---|---|---|
-| `plan.json` | The motion plan: moving parts, axes, limits, controls | Everything after is built from it |
-| `preparation.json` | The toolkit's first look: parts, connections, warnings | Starting point for the plan |
-| Connection data (`evidence/`, `*-contact.json`) | Which parts touch, hinge or mesh | Where the axes come from |
-| `xray/<joint>/mosaic.png` | X-ray boards, one per joint | Visual proof of each axis |
-| `kinematics.json` | Gear and linkage maths | Proof that ratios and lengths hold |
-| Extracted source + `idmap.json` | A mechanism taken out as its own model, mapped back to the original | When only part of a model is animated |
-| `check.json` | Automatic checks of the plan | Shows the plan is complete and consistent |
-| `REPORT.md`, `README.md`, `CATALOG.md` | The agent's own notes | Explains choices and limits to people |
-
-Not every model needs all of them: the car needed only the plan and its roof-hinge
-connection data.
+*Coloured: the moving piece. Ghosted: the rest of the car. Green rod: the hinge axis (drawn
+in, not a LEGO part). Panels 3 to 5: the roof at 0°, 40° and 75°.*
 
 ---
 
 ## Step 4: Animate
 
-**What.** A script applies the plan in Blender: each moving group of parts gets a pivot, each
-control gets a slider, and the sliders are keyed into an animation saved as
-`ai-animated.blend`.
+**You.** Nothing to do.
 
-**Why.** Blender is where you see and use the result. The rig plays back in plain Blender: no
-add-on, and no agent needed.
+**The agent** builds the plan in Blender, adding a pivot per moving body, a slider per control
+and a demonstration animation, and saves `ai-animated.blend`.
+
+**Why.** The result is a standard `.blend` file. It plays in plain Blender with no add-on, no
+Python auto-run and no agent.
 
 ```mermaid
 flowchart LR
-    plan["plan.json<br/>roof → 0/1/10/2"] --> script["Rig script"]
+    plan["plan.json<br/>roof → 0/1/10/2"] --> script["rig"]
     glb["Blender object 4213.dat<br/>mecha_id = 0/1/10/2"] --> script
-    script --> rig["Pivot PIV_car_roof<br/>+ slider roof on CTRL_car"]
+    script --> rig["PIV_car_roof driven by<br/>slider roof on CTRL_car"]
     rig --> blend["ai-animated.blend"]
 ```
 
-The script reads the plan, then:
+**Under the hood.** `ldraw-mecha rig` runs Blender in the background and:
 
-1. finds each Blender object by its `mecha_id`;
-2. checks it's the right model: same file fingerprint, and every part still in its original place;
-3. adds a pivot at each joint, parents the moving parts to it, and drives the pivot from a slider
-   on one control object (`CTRL_car`);
-4. keys the sliders into an animation and saves `ai-animated.blend`.
-
-To move the car yourself, open the `.blend`, select `CTRL_car` and drag its sliders under
-**Object Properties → Custom Properties**.
+1. Imports `model.glb` and finds each object by its `mecha_id`.
+2. Checks it's the right model: the `mecha_source` hash matches the plan, and every object is
+   still at its source position.
+3. Adds a pivot per body at the plan's origin and axis, parents the body's objects to it, and
+   drives the pivot from a custom property on one control object, `CTRL_car`.
+4. Keys the controls into a demonstration animation.
+5. Compares every moving object against the plan, then saves.
+6. Opens the saved file in a fresh Blender and compares again.
 
 ---
 
 ## Step 5: Verify
 
-**What.** The finished file is checked against the plan, scanned for collisions and looked at.
+**The agent** scans the motion for collisions, renders stills and looks at them, and fixes
+what it finds. A rig can match the plan exactly and still be wrong, for example a door that
+swings through the bodywork.
 
-**Why.** A rig can follow the plan exactly and still look wrong: a door can swing through the
-bodywork, or a camera can cut off a raised crane. Each check catches a different kind of
-mistake.
+- **Collisions.** What the scan finds goes **back to Step 3**. At 90° the car's doors and roof
+  hit other parts, so the agent set their limit to 75°. ([106](samples/106.md),
+  [hot rod mecha](samples/hot-rod-mecha.md))
+- **Stills.** These catch what numbers miss: a window opening away from the viewer, a staff
+  swinging into a leg. ([movables](samples/movables.md), [minifigs](samples/minifigs.md))
 
-- **Reopen.** The saved file is opened in a fresh Blender and checked against the plan
-  again, so it works on its own.
-- **Collisions.** The motion is sampled and scanned for parts passing through each other.
-  What it finds goes **back to the plan**: the car's doors and roof hit other parts at 90°,
-  so their limit became 75°. ([106](samples/106.md), [hot rod mecha](samples/hot-rod-mecha.md))
-- **Stills.** A few poses are rendered and looked at, like the image at the top of this page.
-  They catch what numbers miss: a window opening away from the viewer, a staff swinging into
-  a leg. ([movables](samples/movables.md), [minifigs](samples/minifigs.md))
+**You.** Open the `.blend`, select `CTRL_car`, and drag its sliders under **Object Properties →
+Custom Properties**, or press play. Tell the agent what's wrong or missing. In the
+[hot rod mecha](samples/hot-rod-mecha.md) sample, the user pointed out that "the engine on the
+robot's chest … should be animated, too", and the agent added it.
 
-These checks sample the motion; they don't prove it is physically possible. Each sample's
-summary lists its known limits.
+**What you get back:** the `.blend` file, the plan, the check reports, and the agent's notes on
+what it decided, what it left out and the known limits.
+
+**Limits.** The collision scan checks sampled poses, not the continuous motion. Parts are rigid,
+with no friction, play or forces. Passing checks don't prove the model is physically buildable
+or working.
 
 ---
 
 ## Learn more
 
-- [How it works](docs/how-it-works.md): the same process, in more depth.
-- [Workflow](docs/workflow.md): the commands behind each step.
-- [Samples gallery](GALLERY.md): ten models animated this way, with videos.
+- [GALLERY.md](GALLERY.md): ten models done this way, each with the request, what happened and
+  every output file.
+- [docs/how-it-works.md](docs/how-it-works.md): the design behind each step.
+- [docs/motion-plan.md](docs/motion-plan.md): the plan format: joints, gears, rods, equations.
+- [docs/validation.md](docs/validation.md): what each check proves, and what it doesn't.
