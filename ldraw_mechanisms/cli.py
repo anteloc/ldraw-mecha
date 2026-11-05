@@ -210,7 +210,10 @@ def parser():
     )
     q.add_argument("plan", type=plan_path, help="Plan JSON or study directory")
     q.add_argument("--glb", help="Defaults to model.glb beside the plan")
-    q.add_argument("--save", help="Defaults to rigged.blend beside the plan")
+    q.add_argument(
+        "--save",
+        help="Defaults to ai-animated.blend (with --animate) or ai-rigged.blend beside the plan",
+    )
     q.add_argument("--blender", help="Blender executable, or BLENDER_BIN")
     q.add_argument(
         "--report", help="Defaults to blender-check.json beside the saved blend"

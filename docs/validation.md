@@ -109,7 +109,7 @@ those bundles first.
 ## Clearance and visual review
 
 ```sh
-"$BLENDER_BIN" -b output/study/rigged.blend --python-exit-code 1 \
+"$BLENDER_BIN" -b output/study/ai-animated.blend --python-exit-code 1 \
   --python scripts/blender/check_clearance.py -- --plan output/study/plan.json \
   --controls roof --steps 16 --report output/study/clearance.json
 ```

@@ -232,7 +232,8 @@ The example above expects the authored ready roof plan. For a separate process:
 ./ldraw-mecha rig output/study --animate --reopen
 ```
 
-This uses `model.glb` beside the plan, saves `rigged.blend` there, and writes
+This uses `model.glb` beside the plan, saves `ai-animated.blend` there (`ai-rigged.blend`
+without `--animate`), and writes
 `blender-check.json` beside the blend. `--reopen` verifies the saved rig in a fresh
 Blender process with auto-run disabled, writing `blender-check-reopen.json`.
 Explicit `--glb`, `--save`, `--report`, `--blender` and `--tolerance` still work;
@@ -242,7 +243,12 @@ denser Python sweeps and scope audit. Neither command automatically marks
 findings reviewed. Omit `--animate` to build controls without demonstration keys.
 
 The generic animation demonstrates controls; coupled state transitions may need
-a case-specific animation script. Verify the actual saved animation, reopen the
+a case-specific animation script. **The delivered animated file is always named
+`ai-animated.blend`**, whichever way it was made: a case-specific script saves
+its result under that name (for example, it starts from `ai-rigged.blend` and saves
+`ai-animated.blend` beside it). A delivery with several mechanisms keeps them in one
+`ai-animated.blend`, as separate scenes or side by side. A rig delivered without
+animation is always named `ai-rigged.blend`. Verify the actual saved animation, reopen the
 blend and inspect/render its nonzero poses and limits. Run clearance checks
 before finalizing claims; save notes updates explicitly. Follow
 [validation](validation.md) for background, reopening and lifecycle checks.

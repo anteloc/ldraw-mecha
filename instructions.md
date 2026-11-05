@@ -74,7 +74,10 @@ The [workflow guide](docs/workflow.md) is the command reference;
   process. Verify the actual demonstration, inspect/render several poses and
   limits, and run relevant [clearance checks](docs/validation.md#clearance-and-visual-review).
   Deliver the exact source, plan, blend, animation, reports and previews reviewed,
-  with deferred mechanisms and untested assumptions.
+  with deferred mechanisms and untested assumptions. The animated file is always
+  `ai-animated.blend` (the `rig --animate` default), and a rig without animation is
+  `ai-rigged.blend` (the plain `rig` default); custom animation scripts save under
+  these names too.
 - **Hand over** as in [the workflow](docs/workflow.md#hand-over-the-result): clickable
   workspace-relative links to the `.blend` (plus its absolute path), every
   `xray/<board>/mosaic.png`, stills and reports; then offer to open the `.blend` in

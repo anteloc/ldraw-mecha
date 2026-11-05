@@ -31,6 +31,11 @@ to `examples/reference/`; never move or rely on the working copies. Follow
 To publish a past result under `samples/`, run `./add-sample.sh` and write
 the summary as described in `docs/samples.md`.
 
+Always name the delivered animated file `ai-animated.blend`, and a delivered rig
+without animation `ai-rigged.blend`, so users can recognize them. `rig` saves
+under these names by default (with and without `--animate`); custom animation
+scripts must save under them too.
+
 When a run is finished, hand it over as described in `docs/workflow.md`
 ("Hand over the result"): clickable workspace-relative links to the `.blend`, the
 xray boards, stills and reports. Then offer to open the `.blend` in Blender's user

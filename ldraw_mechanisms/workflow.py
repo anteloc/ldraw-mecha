@@ -153,7 +153,9 @@ def rig(
     model = Path(glb).resolve() if glb else path.with_name("model.glb")
     if not model.is_file():
         raise ValueError(f"Bound GLB not found: {model}; run convert or pass --glb")
-    saved = Path(save).resolve() if save else path.with_name("rigged.blend")
+    # Deliverables have recognizable names: ai-animated.blend, or ai-rigged.blend for a bare rig.
+    default = "ai-animated.blend" if animate else "ai-rigged.blend"
+    saved = Path(save).resolve() if save else path.with_name(default)
     report = Path(report).resolve() if report else saved.with_name("blender-check.json")
     reopened = report.with_name(report.stem + "-reopen.json")
     protect_inputs(

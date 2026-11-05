@@ -20,7 +20,7 @@ See what agents have built with it in the [samples gallery](GALLERY.md).
 ./ldraw-mecha rig output/study --animate --reopen
 ```
 
-Open `output/study/rigged.blend`, select `CTRL_car106`, and use **Object
+Open `output/study/ai-animated.blend`, select `CTRL_car106`, and use **Object
 Properties → Custom Properties** for doors, roof and wheels. Controls persist
 after reopening without an add-on or Python auto-run. The blend includes a
 demonstration animation; verification reports sit beside the plan.

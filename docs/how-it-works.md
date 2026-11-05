@@ -139,7 +139,7 @@ every recorded finding to have a disposition; explicit deferrals remain visible.
 
 `rig output/study --animate --reopen` imports the bound geometry, creates native
 Blender drivers and constraints, compares moving and static transforms with the
-Python evaluator, adds demonstration keys, and saves `rigged.blend`. It then
+Python evaluator, adds demonstration keys, and saves `ai-animated.blend`. It then
 reopens the file in a fresh process with Python auto-run disabled and verifies
 again. The user operates ordinary custom properties; no running agent is needed.
 

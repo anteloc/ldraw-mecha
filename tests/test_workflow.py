@@ -257,7 +257,7 @@ def test_rig_defaults_and_reopening_keep_stdout_for_json(rig_files, monkeypatch)
         tolerance=0.004,
     )
     assert result["passed"] and result["verified"] and result["reopened"]
-    assert result["saved"] == str(rig_files / "rigged.blend")
+    assert result["saved"] == str(rig_files / "ai-animated.blend")
     assert result["report"] == str(rig_files / "blender-check.json")
     assert result["reopen_report"] == str(rig_files / "blender-check-reopen.json")
     assert calls[0][0] == "/path with spaces/Blender"
@@ -265,6 +265,14 @@ def test_rig_defaults_and_reopening_keep_stdout_for_json(rig_files, monkeypatch)
     assert "--disable-autoexec" in calls[1] and "--verify-existing" in calls[1]
     assert "--new-scene" not in calls[1] and "--animate" not in calls[1]
     assert all(c[c.index("--tolerance") + 1] == "0.004" for c in calls)
+
+
+def test_rig_without_animation_saves_ai_rigged_blend(rig_files, monkeypatch):
+    monkeypatch.setattr(
+        workflow.subprocess, "run", lambda cmd, **kw: SimpleNamespace(returncode=0)
+    )
+    result = workflow.rig(rig_files, blender="Blender")
+    assert result["saved"] == str(rig_files / "ai-rigged.blend")
 
 
 @pytest.mark.parametrize("fail_stage", [0, 1])
