@@ -248,13 +248,57 @@ before finalizing claims; save notes updates explicitly. Follow
 [validation](validation.md) for background, reopening and lifecycle checks.
 
 Deliver the exact source selection, plan, blend, animation, relevant builder,
-reports and previews under `output/`, with scope and limitations. The user can
+reports and previews under `output/`, with scope and limitations, then
+[hand them over](#hand-over-the-result). The user can
 then visually select a useful case for the reference catalog. Curation is a
 separate requested task; normal rigging agents need not write reference diagrams.
 When a selected result becomes a reference, copy its relevant source, evidence,
 scripts and playback assets into `examples/reference/` before linking them in
 docs. Keep the originals under `output/`. The [archive guide](../examples/README.md)
 explains selection, portable review commands and dependency checks.
+
+### Hand over the result
+
+End every finished run with a hand-over the user can act on without searching for files.
+
+**1. Link every deliverable.** Write each file as a Markdown link with a workspace-relative
+path, and give the `.blend`'s absolute path once:
+
+```markdown
+- [ai-animated.blend](output/car/ai-animated.blend): the animated model.
+  Absolute path: /path/to/ldraw-mecha/output/car/ai-animated.blend
+- [xray/roof/mosaic.png](output/car/xray/roof/mosaic.png): roof axis and 0°/40°/75° poses
+```
+
+In the VS Code extension these links are clickable. Opening one also selects the file in the
+Explorer (VS Code's default `explorer.autoReveal`). From there, right-click gives **Reveal in
+Finder** / **Reveal in File Explorer**, or **Download…** in a remote window. In a terminal, the
+absolute path works with `open` (macOS) or `xdg-open` (Linux).
+
+Link, in this order, one line each saying what it shows:
+- the `.blend` file(s);
+- every xray board (`xray/<board>/mosaic.png`), stills and previews;
+- the plan, `check.json`, `blender-check*.json`, clearance reports;
+- the notes (`REPORT.md`, `README.md`).
+
+Link only files that exist: list them before writing the hand-over.
+
+**2. Offer to open the `.blend` in Blender.** Ask in one line. Launch only on a yes, and use
+the same Blender the workflow uses: `--blender` / `BLENDER_BIN`, else `bin/`, else `PATH`.
+Open it with the user interface (no `-b`, no `--python`), detached so the session is not
+blocked:
+
+```sh
+BLENDER="$(.venv/bin/python -c 'from ldraw_mechanisms.workflow import blender_executable as b; print(b())')"
+nohup "$BLENDER" output/car/ai-animated.blend >/dev/null 2>&1 &
+```
+
+- Linux needs a display (`$DISPLAY` or `$WAYLAND_DISPLAY`; WSLg on Windows). Without one,
+  say so and give the path instead.
+- The rig needs no add-on and no Python auto-run.
+- Tell the user where the controls are: select `CTRL_<plan name>`, then **Object Properties →
+  Custom Properties**. Space plays the animation.
+- Warn that saving in Blender overwrites the delivered file; **File → Save As** keeps it intact.
 
 ## Optional diagnostic exports
 

@@ -75,6 +75,10 @@ The [workflow guide](docs/workflow.md) is the command reference;
   limits, and run relevant [clearance checks](docs/validation.md#clearance-and-visual-review).
   Deliver the exact source, plan, blend, animation, reports and previews reviewed,
   with deferred mechanisms and untested assumptions.
+- **Hand over** as in [the workflow](docs/workflow.md#hand-over-the-result): clickable
+  workspace-relative links to the `.blend` (plus its absolute path), every
+  `xray/<board>/mosaic.png`, stills and reports; then offer to open the `.blend` in
+  Blender's user interface, and launch it detached only if the user agrees.
 
 ## Invariants and focused tools
 

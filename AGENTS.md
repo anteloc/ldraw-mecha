@@ -31,6 +31,11 @@ to `examples/reference/`; never move or rely on the working copies. Follow
 To publish a past result under `samples/`, run `./add-sample.sh` and write
 the summary as described in `docs/samples.md`.
 
+When a run is finished, hand it over as described in `docs/workflow.md`
+("Hand over the result"): clickable workspace-relative links to the `.blend`, the
+xray boards, stills and reports. Then offer to open the `.blend` in Blender's user
+interface (not headless), and launch it detached only if the user agrees.
+
 For mechanism changes, run the relevant pure Python tests and evaluate
 nonzero/asymmetric inputs. Adapter changes also need a background Blender
 verification, reopening and lifecycle checks. Do not claim collision-free or

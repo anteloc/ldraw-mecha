@@ -15,7 +15,7 @@ flowchart LR
 
 | Step | You | The agent | Output |
 |---|---|---|---|
-| 1. Annotate | Accept or decline the token cost | Names and groups the parts | Annotated `car.mpd` |
+| 1. Annotate | Pick an annotated model, or accept the cost of annotating yours | Names and groups the parts | Annotated `car.mpd` |
 | 2. Convert | Nothing | Gives every piece an ID, converts to 3D | `plan.json` (draft), `model.glb` |
 | 3. Plan | Choose what to animate and deliver | Works out what moves and how | `plan.json` (ready) |
 | 4. Animate | Nothing | Builds the rig in Blender | `ai-animated.blend` |
@@ -31,8 +31,9 @@ flowchart LR
 
   > Animate `car.mpd`: open the roof and the doors. Deliver a `.blend` file.
 
-**The example.** All the steps use one small model, `car.mpd`: LEGO set 106, a blue UNICEF car
-with a minifig beside it. It has 65 parts, and its roof and doors open.
+**The example.** We'll use this model, a small car, to illustrate every step of the process:
+`car.mpd`, LEGO set 106, a blue UNICEF car with a minifig beside it. It has 65 parts, and its
+roof and doors open.
 
 ![The finished car in Blender, roof and a door open](img/car-open.png)
 
@@ -40,9 +41,20 @@ with a minifig beside it. It has 65 parts, and its roof and doors open.
 
 ## Step 1: Annotate
 
-**You.** If the model isn't annotated yet, the agent tells you its size and a token estimate
-and asks before going on. A 65-part car costs little; a model with thousands of parts can cost
-a lot. If you decline, the agent stops: it doesn't animate unannotated models.
+**You.** You have two options:
+
+- **A) Give the agent an annotated model.** The repository ships 1,821 annotated models in
+  `data/models-annotated/`. To pick one, run `python3 model-selector/serve.py`. It opens a
+  browser table of every model with its description, a **View 3D** button to inspect it, and
+  **Copy path** to put its path (such as `data/models-annotated/106-1.mpd`) on your clipboard.
+  Paste the path into your request. The agent uses the model as it is and skips to Step 2.
+  See [model-selector/README.md](model-selector/README.md).
+- **B) Give the agent an unannotated model**, any `.ldr` or `.mpd` file. The agent annotates it
+  first. Before it starts, it tells you the model's size and a token estimate, and asks you to
+  confirm. A 65-part car costs little; a model with thousands of parts can cost a lot. If you
+  decline, the agent stops: it doesn't animate unannotated models.
+
+The rest of this step describes option B.
 
 **The agent** turns the flat list of parts into a tree of named, described assemblies:
 
@@ -311,8 +323,11 @@ Custom Properties**, or press play. Tell the agent what's wrong or missing. In t
 [hot rod mecha](samples/hot-rod-mecha.md) sample, the user pointed out that "the engine on the
 robot's chest … should be animated, too", and the agent added it.
 
-**What you get back:** the `.blend` file, the plan, the check reports, and the agent's notes on
-what it decided, what it left out and the known limits.
+**What you get back:** clickable links to the `.blend` file, the x-ray boards, the stills, the
+plan, the check reports, and the agent's notes on what it decided, what it left out and the
+known limits. In VS Code, clicking a link also selects the file in the Explorer. The agent
+then offers to open the `.blend` in Blender for you; say yes, and Blender opens with the
+animated model, ready to play.
 
 **Limits.** The collision scan checks sampled poses, not the continuous motion. Parts are rigid,
 with no friction, play or forces. Passing checks don't prove the model is physically buildable
