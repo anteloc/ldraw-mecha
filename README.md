@@ -402,6 +402,16 @@ Now, I had a draft for a **process**, and to test it, I gave an agent **instruct
 
 *I replaced the original `file-01` description, which was just a file name, with real one-liners, and renamed the root to `curved-hull-section.ldr`. If the outer MPD references `file-01`, that reference will need updating. All 15 original part lines are preserved, and I can save this as a .mpd file if you want a download.*
 
+## Development
+
+This is a **very preliminar release** that, however, yields many [good results](GALLERY.md), but far from being optimal:
+
+- **Complex mechanisms** and **large models** take **too much time and effort to animate.**
+- Also for those, agents would go through **"rabbit holes"** and **get lost during animation sessions.**
+- **Broken animations** for **flexible parts** on models like e.g. hoses or cables.
+- Low-end models, like e.g. **Claude Haiku 5.5** or **GPT-6 Luna**, can produce animations, but most of them have **noticeable defects.**
+- **No proper physics**, it doesn't take into account e.g. **gravity** or any **forces** interactions, **weights**, **inertia**, etc.
+
 
 ## Acknowledgements
 
