@@ -411,6 +411,7 @@ This is a **very preliminar release** that, however, yields many [good results](
 - **Broken animations** for **flexible parts** on models like e.g. hoses or cables.
 - Low-end models, like e.g. **Claude Haiku 5.5** or **GPT-6 Luna**, can produce animations, but most of them have **noticeable defects.**
 - **No proper physics**, it doesn't take into account e.g. **gravity** or any **forces** interactions, **weights**, **inertia**, etc.
+- And **more**... 🤫
 
 
 ## Acknowledgements
