@@ -72,7 +72,7 @@ If you're on **VS Code** or a **terminal**, **restart it** in order to get an **
 
 ## Usage
 
-For **inspecting** and **selecting** one annotated model to animate, open the **annotated models selector** by running:
+For **inspecting** and **selecting** one pre-annotated model to animate, open the **annotated models selector** by running:
 ```sh
 python3 model-selector/serve.py
 ```
@@ -147,7 +147,7 @@ During the development of Nova, I noticed that **adding** some **special annotat
 
 Which gave me the idea that, maybe, an agent would also **understand how a model would work.**
 
-### Reverse-engineering mechanisms sources
+### Reverse-engineering mechanisms from their sources
 
 As a first step to it, I gave **annotated models** to different agents, and prompted them to **infer (reverse-engineer)** their **constituent submodels** (see **Haiku 5.5. experiment** below).
 
@@ -167,23 +167,24 @@ Which would make **handling individual mechanisms** manageable. 🤩
 
 Now, there was the matter of giving agents the **means to actually animate** mechanisms they already knew how they worked.
 
-I was playing with **Blender MCP** at the time, and it looked promising as a tool that would provide agents a way to **manipulate models in 3D**, imported into Blender as **.glb files.**
+I was playing with **Blender MCP** at the time, and Blender looked promising as a tool that would provide agents a way to **manipulate models in 3D**, imported into Blender as **glTF (.glb) files.**
 
 But there was still an **open issue:** 
 
-***How to map from a refined model source code an agent would understand, to a 3D model in .glb format an agent could manipulate?***
+***How to map from a refined model source code an agent would understand, to a 3D model in glTF format an agent could manipulate?***
 
 And the **solution** I found was: 
 
-***Annotate the 3D model's nodes with the same annotations as the source code, so the agent would:
-A) Outside Blender: plan on submodels and parts as source code.
-B) Inside Blender: execute on matching nodes on a 3D model.***
+***Annotate the 3D glTF model's nodes with the same annotations as the source code, so the agent would:
+A) Outside Blender: plan 🤔 on submodels and parts as source code.
+B) Inside Blender: execute ✨ on matching nodes on the 3D glTF model.***
 
 ### Putting the pieces together 😉
 
 Now, I had a draft for a **process**, and to test it, I gave an agent instructions to:
-- **first, plan**
-- then, **annotate a .glb** and **upload it to Blender**
+- **first, plan** from an annotated and refined `.mpd` model
+- then, **annotate a .glb with annotations matching the .mpd** 
+- then, **upload it to Blender**
 - and then, **produce the Blender python scripts** that would **animate the model as planned.**
 
 **And it finally worked!** 🚀🚀🚀
