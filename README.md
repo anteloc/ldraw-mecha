@@ -89,9 +89,9 @@ These are **some samples** of animations by different agents, take a look at the
 
 ## 42043 Mercedes-Benz Arocs flatbed truck: the pneumatic crane on its own
 
-**Agent: Claude Sonnet 5.5**
-**Original model:** [42043-1_Flatbed-Trailer.mpd](data/models-annotated/42043-1_Flatbed-Trailer.mpd)
-**Context:** The model was too large and complex for fully animating it, finally I accepted Sonnet's suggestion about animating the crane alone.
+- **Agent: Claude Sonnet 5.5**
+- **Original model:** [42043-1_Flatbed-Trailer.mpd](data/models-annotated/42043-1_Flatbed-Trailer.mpd)
+- **Context:** The model was too large and complex for fully animating it, finally I accepted Sonnet's suggestion about animating the crane alone.
 
 <a href="samples/42043-crane.png"><img src="samples/42043-crane.png" width="320" alt="42043 Mercedes-Benz Arocs flatbed truck"></a>
 
@@ -103,9 +103,9 @@ These are **some samples** of animations by different agents, take a look at the
 
 ## 3625 Fabuland plane: take-off, flight and landing
 
-**Agent: Claude Sonnet 5.5**
-**Original model:** [3625-1.mpd](data/models-annotated/3625-1.mpd)
-**Context:** Asked for an in-place animation, to avoid the plane moving around.
+- **Agent: Claude Sonnet 5.5**
+- **Original model:** [3625-1.mpd](data/models-annotated/3625-1.mpd)
+- **Context:** Asked for an in-place animation, to avoid the plane moving around.
 
 <a href="samples/3625.png"><img src="samples/3625.png" width="320" alt="3625 Fabuland plane"></a>
 
@@ -113,9 +113,9 @@ These are **some samples** of animations by different agents, take a look at the
 
 ## Minifig movement catalog: ten minifigs, three moves each
 
-**Agent: Claude Opus 5.5**
-**Original model:** None
-**Context:** This one is actually a **generated composition**, from several **different minifigs**, to be used as a **"howto reference"** for other agents also animating minifigs.
+- **Agent: Claude Opus 5.5**
+- **Original model:** None
+- **Context:** This one is actually a **generated composition**, from several **different minifigs**, to be used as a **"howto reference"** for other agents also animating minifigs.
 
 <a href="samples/minifigs.png"><img src="samples/minifigs.png" width="320" alt="Minifig movement catalog"></a>
 
@@ -184,7 +184,7 @@ And the **solution** I found was:
 
 Now, I had a draft for a **process**, and to test it, I gave an agent instructions to:
 - **first, plan** from an annotated and refined `.mpd` model
-- then, **annotate a .glb with annotations matching the .mpd** 
+- then, **annotate a glTF 3D model with annotations matching the annotated .mpd** 
 - then, **upload it to Blender**
 - and then, **produce the Blender python scripts** that would **animate the model as planned.**
 
