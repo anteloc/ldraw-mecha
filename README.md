@@ -175,8 +175,8 @@ But there was still an **open issue:**
 And the **solution** I found was: 
 
 ***Annotate the 3D glTF model's nodes with the same annotations as the source code, so the agent would:***
-- **Outside Blender: plan** 🤔 **on submodels** and parts as **source code.**
-- **Inside Blender: execute** ✨ **on matching nodes** on the **3D glTF model.**
+- **Outside Blender: plan on submodels** 🤔  and parts as **source code.**
+- **Inside Blender: execute on matching nodes** ✨ on the **3D glTF model.**
 
 ### Putting the pieces together 😉
 
