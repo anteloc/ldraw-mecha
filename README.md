@@ -1,6 +1,3 @@
----
-aliases:
----
 # ldraw-mecha
 
 **Give an [LDraw](https://www.ldraw.org/) LEGO© model to an AI agent, get back a Blender-animated version of it.**
@@ -83,6 +80,7 @@ Then, take a look at the [Process](PROCESS.md) guide for a **step-by-step usage 
 
 > [!NOTE]
 > More samples available at: [Gallery](GALLERY.md)
+> 
 > Animations have been generated from **original models**, not from ai-generated ones.
 
 These are **some samples** of animations by different agents, take a look at their **Summaries** for more details.
@@ -177,8 +175,8 @@ But there was still an **open issue:**
 And the **solution** I found was: 
 
 ***Annotate the 3D glTF model's nodes with the same annotations as the source code, so the agent would:***
-- **Outside Blender: plan** 🤔 on submodels and parts as source code.
-- **Inside Blender: execute** ✨ on matching nodes on the 3D glTF model.
+- **Outside Blender: plan** 🤔 **on submodels** and parts as **source code.**
+- **Inside Blender: execute** ✨ **on matching nodes** on the **3D glTF model.**
 
 ### Putting the pieces together 😉
 
