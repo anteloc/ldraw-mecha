@@ -53,7 +53,9 @@ Animate the following model: some/path/car.mpd (your extra instructions if neede
 
 This step will be carried out **only if the provided model is unnanotated.**
 
-**The agent** turns the **source code** of parts into a tree of **described assemblies**, also keeping the pre-existing ones:
+**The agent** will turn the **source code** of parts into a tree of **described assemblies**, also keeping the pre-existing ones.
+
+It will:
 
 1. Run [ldraw-annotator-nova](https://github.com/anteloc/ldraw-annotator-nova) to get **every part's name and colour** from a parts database
 2. ... and then it will add those to the model's `.mpd` source as **comments**:
@@ -125,22 +127,19 @@ Before                                   After
 
 ## Step 2: Convert
 
-**You.** Nothing to do.
 
-**The agent** gives every piece an ID, lists how the pieces connect, and converts the model to
-`model.glb`, a glTF 3D file that Blender imports, with each piece's ID and description inside.
 
-**Why.** Blender can't read `.mpd` files. From here on, the plan and Blender must refer to
-exactly the same pieces, and the ID is how they do it.
+**The agent** will give every part on the model an **ID**, lists **how** the **pieces connect**, and then convert:
 
-**Under the hood.** One command, `ldraw-mecha prepare`. It writes a draft `plan.json` (every
-piece with its ID and position, plus candidate connections and mechanisms, but no motion yet)
-and `model.glb`.
+`car.mpd -> model.glb`
+
+For the conversion bit, it will use this tool: [mpd2glb](https://github.com/anteloc/mpd2glb) 
 
 ### IDs
 
-An ID is a piece's path through the model's tree. Each number is the index of a part or
-submodel line inside its parent, counting from 0:
+An **ID** is a **part's path** through the model's tree, that is both **unique** and also **encodes where every part is**, in hierarchical terms.
+
+**Examples:**
 
 ```
 0            106 - car.ldr            line 0 of the main model
@@ -149,15 +148,18 @@ submodel line inside its parent, counting from 0:
 0/1/10/2     4213.dat                 line 2 of hinged-roof.ldr: the roof
 ```
 
-Part numbers can't do this job. The car has five identical tyres (`4084.dat`), and each one is
-a separate piece that turns on its own: `0/2/0/1` (the spare), `0/2/3/1`, `0/2/4/1`… IDs are
-valid for one version of the file; if the file changes, the agent prepares it again.
-
 ### IDs in Blender
 
-The converter (`mpd2glb`) keeps the model's tree: one glTF node per part and submodel. It
-writes each node's metadata into glTF `extras`, which Blender imports as **Custom
-Properties**. The roof's, under **Object Properties → Custom Properties**:
+The converter ([mpd2glb](https://github.com/anteloc/mpd2glb)) **maps** the **model's tree IDs** from **source code** to the **glTF 3D nodes representing parts and submodels**. 
+
+For that, it will add nodes metadata into glTF `extras`, which Blender imports as **Custom
+Properties**. 
+
+With this, **any Blender object** can be **traced back to the exact source line** by the **agent's scripts.**
+
+**Example:** 
+
+The car's roof Custom Properties, available under Blender's **Object Properties → Custom Properties**:
 
 ```
 fileName       4213.dat
@@ -167,9 +169,6 @@ mecha_id       0/1/10/2
 mecha_section  106 - main.ldr
 mecha_source   b247a29a…   (SHA-256 of car.mpd)
 ```
-
-Any Blender object can be traced back to the exact source line, by you and by the agent's
-scripts.
 
 ### Connection evidence
 

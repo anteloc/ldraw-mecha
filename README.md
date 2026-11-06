@@ -143,7 +143,7 @@ During the development of Nova, I noticed that **adding** some **special annotat
 - **Help** agents in **understanding how to build** other different models.
 - But also, in **understanding how a model was built**.
 
-Which gave me the idea that, maybe, an agent would also **understand how a model would work.**
+Which gave me the idea that, maybe, an agent would **also understand how a model would work.**
 
 ### Reverse-engineering mechanisms from their sources
 
@@ -180,7 +180,13 @@ And the **solution** I found was:
 
 ### Putting the pieces together 😉
 
-Now, I had a draft for a **process**, and to test it, I gave an agent **instructions** to:
+Now, I had a **draft** for a **process**, but **no tools for the agent** to use and carry it forward.
+
+Given that the process would require a **high amount of complex geometric and spatial calculations**, I asked the agent to **derive a new python toolset** from the one created for [ldraw-nova](https://github.com/anteloc/ldraw-nova)
+
+The new **python toolset** I refined **iteratively**, by giving the agent **simple models** at the beginning, and **increasingly complex ones** each time.
+
+And to test it, I gave an agent **instructions** to:
 
 - **first, plan** from an annotated and refined `.mpd` model
 - then, **generate a glTF 3D version of it, with matching annotations** 
