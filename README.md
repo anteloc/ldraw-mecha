@@ -162,15 +162,15 @@ The **result** of an actual **divide-and-conquer process**, right? 🤓
 
 Which would make **handling individual mechanisms** manageable. 🤩
 
-### Correlating LDraw source code with a 3D model
+### Correlating LDraw source code to a 3D model
 
 Now, there was the matter of giving agents the **means to actually animate** mechanisms they already knew how they worked.
 
-I was playing with **Blender MCP** at the time, and Blender looked promising as a tool that would provide agents a way to **manipulate models in 3D**, imported into Blender as **glTF (.glb) files.**
+I was playing with **Blender MCP** at the time, and Blender looked promising as a tool that would provide agents a way to **manipulate LDraw models in 3D**, imported into Blender as **glTF (.glb) files.**
 
 But there was still an **open issue:** 
 
-***How to map from a refined model source code an agent would understand, to a 3D model in glTF format an agent could manipulate?***
+***How to map from a refined model source code an agent would understand, to its equivalent 3D model in glTF format an agent could manipulate?***
 
 And the **solution** I found was: 
 
@@ -180,9 +180,10 @@ And the **solution** I found was:
 
 ### Putting the pieces together 😉
 
-Now, I had a draft for a **process**, and to test it, I gave an agent instructions to:
+Now, I had a draft for a **process**, and to test it, I gave an agent **instructions** to:
+
 - **first, plan** from an annotated and refined `.mpd` model
-- then, **annotate a glTF 3D model with annotations matching the annotated .mpd** 
+- then, **generate a glTF 3D version of it, with matching annotations** 
 - then, **upload it to Blender**
 - and then, **produce the Blender python scripts** that would **animate the model as planned.**
 
