@@ -231,7 +231,8 @@ movs/
 *.mov
 
 .claude/
-
+.obsidian/
+.cache/
 
 # samples/ holds published evidence verbatim; only Blender backups, Python caches and Finder files stay out.
 !samples/**
