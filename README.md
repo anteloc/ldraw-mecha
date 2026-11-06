@@ -193,6 +193,7 @@ Now, I had a draft for a **process**, and to test it, I gave an agent instructio
 ### Experiment - Claude Haiku 5.5
 
 **Prompt:**
+
 *This is a fragment, a submodel, from an LDraw .mpd file model.*
 
 *This is not an executable code fragment, but more like a 3D CAD model fragment written in LDraw language.*  
