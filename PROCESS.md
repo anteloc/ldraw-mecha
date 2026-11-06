@@ -1,9 +1,10 @@
-# Reverse engineering a LEGO model into a Blender animation
+# Animating an LDraw model
 
-Agents can reverse engineer an LDraw `.mpd` file, which is only a list of parts, to find the
-mechanisms in the model and animate them in Blender. This document describes how to work with
-an agent through that process, and what it does under the hood.
+This guide shows the **different steps required** in order to animate an LDraw model. Some of them to be performed by the user, but most of them by the agent itself.
 
+We will **illustrate** this process by **animating an example car.**
+
+The actual process is **iterative** in nature, where **self-corrections** are done by the agent in **feedback loops**, taking into account both **analytical** and **visual aspects**, as shown on this diagram:
 ```mermaid
 flowchart LR
     s1["1. Annotate<br/>annotated car.mpd"] --> s2["2. Convert<br/>IDs + model.glb"]
@@ -13,71 +14,58 @@ flowchart LR
     s5 -. "fix limits" .-> s3
 ```
 
-| Step | You | The agent | Output |
-|---|---|---|---|
-| 1. Annotate | Pick an annotated model, or accept the cost of annotating yours | Names and groups the parts | Annotated `car.mpd` |
-| 2. Convert | Nothing | Gives every piece an ID, converts to 3D | `plan.json` (draft), `model.glb` |
-| 3. Plan | Choose what to animate and deliver | Works out what moves and how | `plan.json` (ready) |
-| 4. Animate | Nothing | Builds the rig in Blender | `ai-animated.blend` |
-| 5. Verify | Review the result, give feedback | Scans for collisions, renders stills, fixes | Final `.blend` + notes |
+| Step | Action   | Output                                     |
+| ---- | -------- | ------------------------------------------ |
+| 1    | Annotate | Annotated `car.mpd`                        |
+| 2    | Convert  | `plan.json` (draft), annotated `model.glb` |
+| 3    | Plan     | `plan.json` (ready)                        |
+| 4    | Animate  | `ai-animated.blend`                        |
+| 5    | Verify   | Final `.blend` + notes                     |
 
-## Before you start
+## Preliminars
 
-- **Setup.** Run `./setup-macos.sh` (or `setup-linux.sh`, `setup-win-wsl.sh`) once. It installs
-  Blender, the LDraw parts library and the tools the agent uses. See [docs/setup.md](docs/setup.md).
-- **An agent.** Open an LLM coding agent, such as Claude Code or Codex, in this repository. It
-  picks up its instructions from [AGENTS.md](AGENTS.md) and [instructions.md](instructions.md).
-- **A request.** Name the model, what should move and what you want back:
+We will assume that this process will be carried out on **Visual Studio Code**, with the **current repo project open** and also **a new chat session with the agent**.
 
-  > Animate `car.mpd`: open the roof and the doors. Deliver a `.blend` file.
+We will need **an LDraw model to start with**, the one that will be **given to an agent** through the chat session.
 
-**The example.** We'll use this model, a small car, to illustrate every step of the process:
-`car.mpd`, LEGO set 106, a blue UNICEF car with a minifig beside it. It has 65 parts, and its
-roof and doors open.
+**Two options** here:
 
-![The finished car in Blender, roof and a door open](img/car-open.png)
+1. **Give your own:** the agent will annotate and refine it in order to make it easier to analyze.
+2. **Select a pre-annotated one:** run the following to open the model **selector app**, and **copy the model's .mpd file path** by clicking the **"Copy path"** button for the selected one.
+3. 
+```sh
+python3 model-selector/serve.py
+```
+
+After choosing a model and getting its path, enter the following **prompt** in the **chat session:**
+
+```
+Animate the following model: some/path/car.mpd (your extra instructions if needed)
+```
+
+**The example car** we will be animating is this one:
+
+<a href="img/car-open.png"><img src="img/car-open.png" width="320" alt="Sample car"></a>
 
 ---
 
 ## Step 1: Annotate
 
-**You.** You have two options:
+This step will be carried out **only if the provided model is unnanotated.**
 
-- **A) Give the agent an annotated model.** The repository ships 1,821 annotated models in
-  `data/models-annotated/`. To pick one, run `python3 model-selector/serve.py`. It opens a
-  browser table of every model with its description, a **View 3D** button to inspect it, and
-  **Copy path** to put its path (such as `data/models-annotated/106-1.mpd`) on your clipboard.
-  Paste the path into your request. The agent uses the model as it is and skips to Step 2.
-  See [model-selector/README.md](model-selector/README.md).
-- **B) Give the agent an unannotated model**, any `.ldr` or `.mpd` file. The agent annotates it
-  first. Before it starts, it tells you the model's size and a token estimate, and asks you to
-  confirm. A 65-part car costs little; a model with thousands of parts can cost a lot. If you
-  decline, the agent stops: it doesn't animate unannotated models.
+**The agent** turns the **source code** of parts into a tree of **described assemblies**, also keeping the pre-existing ones:
 
-The rest of this step describes option B.
-
-**The agent** turns the flat list of parts into a tree of named, described assemblies:
-
-1. Every part gets its name and colour from a parts database: `0 // Plate  2 x 10 (black)`.
-2. The agent infers the missing submodels from those names and their order.
-3. The file is rewritten as a main model with a tree of submodels, each with a one-line
-   description.
-
-**Why.** An LDraw file says *where* parts are, not *what* they form. Named submodels such as
-`doors` or `hinged-roof` show the agent where to look for mechanisms in Step 3.
-
-**Under the hood.** `ldraw-annotator prep` adds the part names, with no LLM involved.
-`ldraw-annotator prompt` gives the agent its grouping rules. `ldraw-annotator check` verifies
-that every part, colour and position survived, and the agent fixes the file until it passes.
-Your original file is never changed; the agent works on a copy.
+1. Run [ldraw-annotator-nova](https://github.com/anteloc/ldraw-annotator-nova) to get **every part's name and colour** from a parts database
+2. ... and then it will add those to the model's `.mpd` source as **comments**:
+	`0 // Plate  2 x 10 (black)`.
+3. The agent **reads the enriched .mpd sources** and **infers (reverse-engineers) the mechanisms present.**
+4. The file is rewritten as a **tree of submodels**, being the **main** one the **root** for the tree.
 
 ### Before and after
 
-The car below was annotated with
-[ldraw-annotator-nova](https://github.com/anteloc/ldraw-annotator-nova).
+**Before:** Four basic submodels, only names but **no real descriptions.** 
 
-**Before.** Four submodels with names but no real descriptions. Everything that makes the car
-(chassis, body, doors, roof, lights) is one flat list of 45 parts in `car.ldr`.
+Every submodel that makes the car is one **flat list** of parts:
 
 ```mermaid
 flowchart TD
@@ -90,8 +78,11 @@ flowchart TD
     car -->|×5| wheel
 ```
 
-**After.** The same 45 parts are grouped into the assemblies a builder would name. Every
-submodel says what it is. The new submodels are highlighted.
+**After:** A **refined version** for the former tree, this time with detailed descriptions.
+
+These **new submodels**, smaller and also better described, encode the **hierarchy** and semantics **found** by the agent:
+
+
 
 ```mermaid
 flowchart TD
@@ -118,7 +109,7 @@ flowchart TD
     class chassis,wheels,body,front,doors,roof new
 ```
 
-Inside each submodel, every part gets a comment naming it and its colour:
+**Source code** comparison:
 
 ```
 Before                                   After
