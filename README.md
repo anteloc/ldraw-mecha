@@ -16,7 +16,7 @@ The **agent** will:
 
 ## Installation
 
-> [!INFO]
+> [!NOTE]
 > The installation process will **install** every required tool and dependency **locally** on this project repo, in order to **avoid polluting the host OS**.
 > 
 > However, there is a requirement of setting several **env vars** on rc files, like e.g. `.bashrc` or `.zshrc`
@@ -81,7 +81,7 @@ Then, take a look at the [Process](PROCESS.md) guide for a **step-by-step usage 
 
 ## Samples
 
-> [!INFO]
+> [!NOTE]
 > More samples available at: [Gallery](GALLERY.md)
 > Animations have been generated from **original models**, not from ai-generated ones.
 
