@@ -191,7 +191,7 @@ Now, I had a draft for a **process**, and to test it, I gave an agent **instruct
 
 (but not perfectly) 😜
 
-## Experiment - Claude Haiku 5.5
+## Experiment - Claude Haiku 5.5 reverse-engineering session
 
 **Prompt:**
 
