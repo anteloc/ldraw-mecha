@@ -161,6 +161,7 @@ At this point, I had the following:
 - Agents would **understand** how **individual** mechanisms **worked**.
 
 The **result** of an actual **divide-and-conquer process**, right? 🤓
+
 Which would make **handling individual mechanisms** manageable. 🤩
 
 ### Correlating LDraw source code with a 3D model
@@ -175,9 +176,9 @@ But there was still an **open issue:**
 
 And the **solution** I found was: 
 
-***Annotate the 3D glTF model's nodes with the same annotations as the source code, so the agent would:
-A) Outside Blender: plan 🤔 on submodels and parts as source code.
-B) Inside Blender: execute ✨ on matching nodes on the 3D glTF model.***
+***Annotate the 3D glTF model's nodes with the same annotations as the source code, so the agent would:***
+- **Outside Blender: plan** 🤔 on submodels and parts as source code.
+- **Inside Blender: execute** ✨ on matching nodes on the 3D glTF model.
 
 ### Putting the pieces together 😉
 
@@ -188,6 +189,7 @@ Now, I had a draft for a **process**, and to test it, I gave an agent instructio
 - and then, **produce the Blender python scripts** that would **animate the model as planned.**
 
 **And it finally worked!** 🚀🚀🚀
+
 (but not perfectly) 😜
 
 ### Experiment - Claude Haiku 5.5
