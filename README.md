@@ -5,14 +5,14 @@ aliases:
 
 **Give an [LDraw](https://www.ldraw.org/) LEGO© model to an AI agent, get back a Blender-animated version of it.**
 
-The agent will:
+The **agent** will:
 
-- **Reverse-engineer** (infer) the **LDraw model's mechanics** from its **.mpd source code file**
+- **Reverse-engineer** (infer) the **LDraw model's mechanics** from its **.mpd source code file** 🤓 
 - **Study** the **discovered** mechanisms.
 - **Plan** the **interactions** between their different mechanical components.
 - And finally, turn those **plans** into **python code for Blender**, that will:
 	- **Create** the required **rigs** for controlling the different mechanisms.
-	- **Animate** them according to **plan**!
+	- **Animate** them according to **plan**! 🤯
 
 ## Installation
 
@@ -72,7 +72,12 @@ If you're on **VS Code** or a **terminal**, **restart it** in order to get an **
 
 ## Usage
 
-Take a look at the [Process](PROCESS.md) guide for a **step-by-step usage example**.
+For **inspecting** and **selecting** one annotated model to animate, open the **annotated models selector** by running:
+```sh
+python3 model-selector/serve.py
+```
+
+Then, take a look at the [Process](PROCESS.md) guide for a **step-by-step usage example**.
 
 ## Samples
 
@@ -80,7 +85,7 @@ Take a look at the [Process](PROCESS.md) guide for a **step-by-step usage exampl
 > More samples available at: [Gallery](GALLERY.md)
 > Animations have been generated from **original models**, not from ai-generated ones.
 
-These are **some samples** of animations by different agents, take a look at their Summaries for more details.
+These are **some samples** of animations by different agents, take a look at their **Summaries** for more details.
 
 ## 42043 Mercedes-Benz Arocs flatbed truck: the pneumatic crane on its own
 
@@ -142,19 +147,23 @@ During the development of Nova, I noticed that **adding** some **special annotat
 
 Which gave me the idea that, maybe, an agent would also **understand how a model would work.**
 
+### Reverse-engineering mechanisms sources
+
 As a first step to it, I gave **annotated models** to different agents, and prompted them to **infer (reverse-engineer)** their **constituent submodels** (see **Haiku 5.5. experiment** below).
 
 Results from **inference experiments** were both pretty **good** and **consistent** across different agents, and I also noticed the following: **many of the submodels inferred were actually mechanisms.**
 
-After questioning several agents about those inferred mechanisms, regarding how would they **actually work**, I also got consistent results: agents would **describe behaviours** based on the **description of the parts** from a **mechanism!**🤯
+After questioning several agents about those inferred mechanisms, regarding how would they **actually work**, I also got consistent results: agents would **describe behaviours** based on the **descriptions for the parts** on a **mechanism!** 🤯
 
 At this point, I had the following:
 - Agents would **split and refine** models into submodels and mechanisms.
 - Agents would **understand** each mechanism in **isolation**.
-- Agents would **understand** how individual mechanisms **worked**.
+- Agents would **understand** how **individual** mechanisms **worked**.
 
 The **result** of an actual **divide-and-conquer process**, right? 🤓
-Which would make **handling individual mechanisms** manageable 🤩
+Which would make **handling individual mechanisms** manageable. 🤩
+
+### Correlating LDraw source code with a 3D model
 
 Now, there was the matter of giving agents the **means to actually animate** mechanisms they already knew how they worked.
 
@@ -164,13 +173,22 @@ But there was still an **open issue:**
 
 ***How to map from a refined model source code an agent would understand, to a 3D model in .glb format an agent could manipulate?***
 
-And the solution I found was: 
+And the **solution** I found was: 
 
 ***Annotate the 3D model's nodes with the same annotations as the source code, so the agent would:
-A) Outside Blender: plan in terms of submodels and parts source code.
-B) Inside Blender: execute on matching nodes as 3D.***
+A) Outside Blender: plan on submodels and parts as source code.
+B) Inside Blender: execute on matching nodes on a 3D model.***
 
-Then, gave the agent instructions to **first plan**, then **annotate a .glb** and **upload it to Blender**, and then **produce the Blender python scripts** that would **animate the model as planned.**
+### Putting the pieces together 😉
+
+Now, I had a draft for a **process**, and to test it, I gave an agent instructions to:
+- **first, plan**
+- then, **annotate a .glb** and **upload it to Blender**
+- and then, **produce the Blender python scripts** that would **animate the model as planned.**
+
+**And it finally worked!** 🚀🚀🚀
+(but not perfectly) 😜
+
 ### Experiment - Claude Haiku 5.5
 
 **Prompt:**
@@ -369,8 +387,6 @@ Then, gave the agent instructions to **first plan**, then **annotate a .glb** an
 </details>
 
 *I replaced the original `file-01` description, which was just a file name, with real one-liners, and renamed the root to `curved-hull-section.ldr`. If the outer MPD references `file-01`, that reference will need updating. All 15 original part lines are preserved, and I can save this as a .mpd file if you want a download.*
-
-
 
 ## Acknowledgements
 
