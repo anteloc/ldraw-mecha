@@ -260,8 +260,11 @@ Now, I had a draft for a **process**, and to test it, I gave an agent instructio
 
 *The split below follows the physical groups, which also match the three build steps in the original. The parent comes first, then its children (`hull-shell.ldr` and `end-cap-tiles.ldr`), then the grandchildren (the two slope rows). Coordinates are unchanged, so each submodel keeps its absolute positions and the parents reference children with an identity transform at the origin.*
 
+---
+
 <details>
 <summary>Expand code...</summary>
+
 ```
 0 FILE curved-hull-section.ldr
 0 Rounded silver hull section on a long dark-grey base plate, with a grille at the -X end and light-grey tiles at the +X end
@@ -320,14 +323,19 @@ Now, I had a draft for a **process**, and to test it, I gave an agent instructio
 1 80 100 8 -20 1 0 0 0 1 0 0 0 1 15068.dat
 ```
 </details>
+
+---
 
 *I replaced the original description `file-01`, which was only a file name, with real one-liners. I also renamed the root from `file-01` to `curved-hull-section.ldr`, so if the outer MPD references `file-01`, that reference needs updating. All 15 original part lines are preserved, and I can save this as a .mpd file if you want it as a download.*
 *This is the same fragment I split a moment ago, so here is the same answer again. It is a rounded silver hull section, probably a spacecraft piece, on a 2x12 dark-grey base plate, with a grille at the -X end and two light-grey inverted tiles at the +X end. The ridge slope has red "NASA" and black "ESA" printing, so it **likely comes from a space-themed LEGO model**, though the parts don't identify the exact set.*
 
 *The parent comes first, then its children (`hull-shell.ldr` and `end-cap-tiles.ldr`), then the grandchildren (the two slope rows). Coordinates are unchanged, and the parents reference their children with an identity transform at the origin.*
 
+---
+
 <details>
 <summary>Expand code...</summary>
+
 ```
 0 FILE curved-hull-section.ldr
 0 Rounded silver hull section on a long dark-grey base plate, with a grille at the -X end and light-grey tiles at the +X end
@@ -385,9 +393,13 @@ Now, I had a draft for a **process**, and to test it, I gave an agent instructio
 0 // Slope Brick Curved  2 x  2 x  0.667 (metallic_silver)
 1 80 100 8 -20 1 0 0 0 1 0 0 0 1 15068.dat
 ```
+
 </details>
 
+---
+
 *I replaced the original `file-01` description, which was just a file name, with real one-liners, and renamed the root to `curved-hull-section.ldr`. If the outer MPD references `file-01`, that reference will need updating. All 15 original part lines are preserved, and I can save this as a .mpd file if you want a download.*
+
 
 ## Acknowledgements
 
