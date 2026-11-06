@@ -14,86 +14,6 @@ The agent will:
 	- **Create** the required **rigs** for controlling the different mechanisms.
 	- **Animate** them according to **plan**!
 
-## Why?
-
-After publishing [LDraw Nova](https://github.com/anteloc/ldraw-nova), a sibling project for **agentic generation of LDraw models**, several people reached out to me asking about if models could be animated somehow.
-
-During the development of Nova, I've noticed that **adding** some **special annotations** to `.mpd` **original** model **source files**, and then giving those to **agents**, would:
-
-- **Help** agents in **understanding how to build** other different models.
-- But also, in **understanding how a model was built**.
-
-Which gave me the idea that, maybe, an agent would also **understand how a model would work.**
-
-As a first step to it, I gave annotated models to different agents, and prompted them to infer (reverse-engineer) their constituent submodels, like e.g. the following experiment:
-
-
-
-**Prompt (Claude Haiku 5.5)**
-
-*This is a fragment, a submodel, from an LDraw .mpd file model.*
-
-*This is not an executable code fragment, but more like a 3D CAD model fragment written in LDraw language.*  
-*Infer what this submodel is, and also split it into submodels (starting with: 0 FILE):*
-
-- *always with relevant, semantical meaning,*
-- *the first 0-line following every 0 FILE line is the "description line" for the submodel, according to the LDaw standard*
-- *add the description for every submodel there, a one-liner, as a person would describe it while looking at it*
-- *at the answer, first place the parent model, then the child one(s) and then the grandchildren, and then descendants... etc.: go from containers or parents to containees or children, children of children. etc.*
-
----
-
-<details>
-<summary>Expand code...</summary>
-
-```
-0 FILE file-01  
-0 file-01  
-0 Name: file-01.ldr  
-0 Author: Unknown  
-0 !LDRAW_ORG Model  
-0 !LICENSE Redistributable under CCAL version 2.0 : see CAreadme.txt
-0 // Plate 2 x 12 (dark_bluish_grey)  
-1 72 0 0 0 1 0 0 0 1 0 0 0 1 2445.dat  
-0 // Tile 1 x 2 Grille with Groove (metallic_silver)  
-1 80 -110 -8 0 0 0 1 0 1 0 -1 0 0 2412b.dat  
-
-0 STEP  
-0 // Slope Brick Curved 2 x 2 x 0.667 (metallic_silver)  
-1 80 -80 8 20 -1 0 0 0 1 0 0 0 -1 15068.dat  
-0 // Slope Brick Curved 2 x 2 x 0.667 (metallic_silver)  
-1 80 -40 8 20 -1 0 0 0 1 0 0 0 -1 15068.dat  
-0 // Slope Brick Curved 2 x 2 x 0.667 (metallic_silver)  
-1 80 0 8 20 -1 0 0 0 1 0 0 0 -1 15068.dat  
-0 // Slope Brick Curved 2 x 2 x 0.667 (metallic_silver)  
-1 80 40 8 20 -1 0 0 0 1 0 0 0 -1 15068.dat  
-0 // Slope Brick Curved 2 x 2 x 0.667 (metallic_silver)  
-1 80 100 8 20 -1 0 0 0 1 0 0 0 -1 15068.dat  
-0 // Slope Brick Curved 2 x 2 x 0.667 (metallic_silver)  
-1 80 100 8 -20 1 0 0 0 1 0 0 0 1 15068.dat  
-0 // Slope Brick Curved 2 x 2 x 0.667 (metallic_silver)  
-1 80 40 8 -20 1 0 0 0 1 0 0 0 1 15068.dat  
-0 // Slope Brick Curved 2 x 2 x 0.667 (metallic_silver)  
-1 80 0 8 -20 1 0 0 0 1 0 0 0 1 15068.dat  
-0 // Slope Brick Curved 2 x 2 x 0.667 (metallic_silver)  
-1 80 -40 8 -20 1 0 0 0 1 0 0 0 1 15068.dat  
-0 // Slope Brick Curved 2 x 2 x 0.667 (metallic_silver)  
-1 80 -80 8 -20 1 0 0 0 1 0 0 0 1 15068.dat  
-0 // Slope Brick Curved 4 x 1 Double with Red "NASA", Black "ESA", and Silver Background Pattern (light_bluish_grey)  
-1 71 70 8 0 -1 0 0 0 1 0 0 0 -1 10283 - 93273p01.dat  
-0 STEP  
-0 // Tile 2 x 2 Inverted (light_bluish_grey)  
-1 71 100 8 -20 1 0 0 0 1 0 0 0 1 11203.dat  
-0 // Tile 2 x 2 Inverted (light_bluish_grey)  
-1 71 100 8 20 1 0 0 0 1 0 0 0 1 11203.dat
-```
-
-</details>
-
----
-
-
-
 ## Installation
 
 > [!INFO]
@@ -210,6 +130,247 @@ These are **some samples** of animations by different agents, take a look at the
 | Testing, clearance and evidence limits          | [Validation](docs/validation.md)                                               |
 | Code boundaries                                 | [Architecture](docs/architecture.md)                                           |
 | Publishing a selected working example           | [Curation](docs/reference/curation.md) and [asset archive](examples/README.md) |
+
+## Why and How?
+
+After publishing [LDraw Nova](https://github.com/anteloc/ldraw-nova), a sibling project for **agentic generation of LDraw models**, several people reached out to me asking about if models could be **animated** somehow.
+
+During the development of Nova, I noticed that **adding** some **special annotations** to `.mpd` **original** model **source files**, and then giving those to **agents**, would:
+
+- **Help** agents in **understanding how to build** other different models.
+- But also, in **understanding how a model was built**.
+
+Which gave me the idea that, maybe, an agent would also **understand how a model would work.**
+
+As a first step to it, I gave **annotated models** to different agents, and prompted them to **infer (reverse-engineer)** their **constituent submodels** (see **Haiku 5.5. experiment** below).
+
+Results from **inference experiments** were both pretty **good** and **consistent** across different agents, and I also noticed the following: **many of the submodels inferred were actually mechanisms.**
+
+After questioning several agents about those inferred mechanisms, regarding how would they **actually work**, I also got consistent results: agents would **describe behaviours** based on the **description of the parts** from a **mechanism!**🤯
+
+At this point, I had the following:
+- Agents would **split and refine** models into submodels and mechanisms.
+- Agents would **understand** each mechanism in **isolation**.
+- Agents would **understand** how individual mechanisms **worked**.
+
+The **result** of an actual **divide-and-conquer process**, right? 🤓
+Which would make **handling individual mechanisms** manageable 🤩
+
+Now, there was the matter of giving agents the **means to actually animate** mechanisms they already knew how they worked.
+
+I was playing with **Blender MCP** at the time, and it looked promising as a tool that would provide agents a way to **manipulate models in 3D**, imported into Blender as **.glb files.**
+
+But there was still an **open issue:** 
+
+***How to map from a refined model source code an agent would understand, to a 3D model in .glb format an agent could manipulate?***
+
+And the solution I found was: 
+
+***Annotate the 3D model's nodes with the same annotations as the source code, so the agent would:
+A) Outside Blender: plan in terms of submodels and parts source code.
+B) Inside Blender: execute on matching nodes as 3D.***
+
+Then, gave the agent instructions to **first plan**, then **annotate a .glb** and **upload it to Blender**, and then **produce the Blender python scripts** that would **animate the model as planned.**
+### Experiment - Claude Haiku 5.5
+
+**Prompt:**
+*This is a fragment, a submodel, from an LDraw .mpd file model.*
+
+*This is not an executable code fragment, but more like a 3D CAD model fragment written in LDraw language.*  
+***Infer what this submodel is, and also split it into submodels** (starting with: 0 FILE):*
+
+- *always with relevant, semantical meaning,*
+- *the first 0-line following every 0 FILE line is the "description line" for the submodel, according to the LDaw standard*
+- *add the description for every submodel there, a one-liner, as a person would describe it while looking at it*
+- *at the answer, first place the parent model, then the child one(s) and then the grandchildren, and then descendants... etc.: go from containers or parents to containees or children, children of children. etc.*
+
+---
+
+<details>
+<summary>Expand code...</summary>
+
+```
+0 FILE file-01  
+0 file-01  
+0 Name: file-01.ldr  
+0 Author: Unknown  
+0 !LDRAW_ORG Model  
+0 !LICENSE Redistributable under CCAL version 2.0 : see CAreadme.txt
+0 // Plate 2 x 12 (dark_bluish_grey)  
+1 72 0 0 0 1 0 0 0 1 0 0 0 1 2445.dat  
+0 // Tile 1 x 2 Grille with Groove (metallic_silver)  
+1 80 -110 -8 0 0 0 1 0 1 0 -1 0 0 2412b.dat  
+
+0 STEP  
+0 // Slope Brick Curved 2 x 2 x 0.667 (metallic_silver)  
+1 80 -80 8 20 -1 0 0 0 1 0 0 0 -1 15068.dat  
+0 // Slope Brick Curved 2 x 2 x 0.667 (metallic_silver)  
+1 80 -40 8 20 -1 0 0 0 1 0 0 0 -1 15068.dat  
+0 // Slope Brick Curved 2 x 2 x 0.667 (metallic_silver)  
+1 80 0 8 20 -1 0 0 0 1 0 0 0 -1 15068.dat  
+0 // Slope Brick Curved 2 x 2 x 0.667 (metallic_silver)  
+1 80 40 8 20 -1 0 0 0 1 0 0 0 -1 15068.dat  
+0 // Slope Brick Curved 2 x 2 x 0.667 (metallic_silver)  
+1 80 100 8 20 -1 0 0 0 1 0 0 0 -1 15068.dat  
+0 // Slope Brick Curved 2 x 2 x 0.667 (metallic_silver)  
+1 80 100 8 -20 1 0 0 0 1 0 0 0 1 15068.dat  
+0 // Slope Brick Curved 2 x 2 x 0.667 (metallic_silver)  
+1 80 40 8 -20 1 0 0 0 1 0 0 0 1 15068.dat  
+0 // Slope Brick Curved 2 x 2 x 0.667 (metallic_silver)  
+1 80 0 8 -20 1 0 0 0 1 0 0 0 1 15068.dat  
+0 // Slope Brick Curved 2 x 2 x 0.667 (metallic_silver)  
+1 80 -40 8 -20 1 0 0 0 1 0 0 0 1 15068.dat  
+0 // Slope Brick Curved 2 x 2 x 0.667 (metallic_silver)  
+1 80 -80 8 -20 1 0 0 0 1 0 0 0 1 15068.dat  
+0 // Slope Brick Curved 4 x 1 Double with Red "NASA", Black "ESA", and Silver Background Pattern (light_bluish_grey)  
+1 71 70 8 0 -1 0 0 0 1 0 0 0 -1 10283 - 93273p01.dat  
+0 STEP  
+0 // Tile 2 x 2 Inverted (light_bluish_grey)  
+1 71 100 8 -20 1 0 0 0 1 0 0 0 1 11203.dat  
+0 // Tile 2 x 2 Inverted (light_bluish_grey)  
+1 71 100 8 20 1 0 0 0 1 0 0 0 1 11203.dat
+```
+
+</details>
+
+---
+
+**Answer:**
+
+*This is a **rounded silver hull section, probably a spacecraft piece such as a fairing, payload-bay shell, or module skin**. It sits on a 2x12 dark-grey base plate, with a grille tile at the -X end and two light-grey inverted tiles at the +X end. The ridge slope carries red "NASA" and black "ESA" printing, so it likely comes from a space-agency-themed LEGO model, though the parts alone don't identify the exact set.*
+
+*The split below follows the physical groups, which also match the three build steps in the original. The parent comes first, then its children (`hull-shell.ldr` and `end-cap-tiles.ldr`), then the grandchildren (the two slope rows). Coordinates are unchanged, so each submodel keeps its absolute positions and the parents reference children with an identity transform at the origin.*
+
+<details>
+<summary>Expand code...</summary>
+```
+0 FILE curved-hull-section.ldr
+0 Rounded silver hull section on a long dark-grey base plate, with a grille at the -X end and light-grey tiles at the +X end
+0 Name: curved-hull-section.ldr
+0 Author: Unknown
+0 !LDRAW_ORG Model
+0 !LICENSE Redistributable under CCAL version 2.0 : see CAreadme.txt
+
+0 // Plate  2 x 12 (dark_bluish_grey)
+1 72 0 0 0 1 0 0 0 1 0 0 0 1 2445.dat
+0 // Tile  1 x  2 Grille with Groove (metallic_silver)
+1 80 -110 -8 0 0 0 1 0 1 0 -1 0 0 2412b.dat
+0 STEP
+1 16 0 0 0 1 0 0 0 1 0 0 0 1 hull-shell.ldr
+0 STEP
+1 16 0 0 0 1 0 0 0 1 0 0 0 1 end-cap-tiles.ldr
+
+0 FILE hull-shell.ldr
+0 Curved silver shell made of two rows of slopes joined by a NASA/ESA-marked ridge piece
+1 16 0 0 0 1 0 0 0 1 0 0 0 1 shell-row-positive-z.ldr
+1 16 0 0 0 1 0 0 0 1 0 0 0 1 shell-row-negative-z.ldr
+0 // Slope Brick Curved 4 x 1 Double with Red "NASA", Black "ESA", and Silver Background Pattern (light_bluish_grey)
+1 71 70 8 0 -1 0 0 0 1 0 0 0 -1 10283 - 93273p01.dat
+
+0 FILE end-cap-tiles.ldr
+0 Two light-grey inverted 2x2 tiles closing off the +X end of the hull shell
+0 // Tile  2 x  2 Inverted (light_bluish_grey)
+1 71 100 8 -20 1 0 0 0 1 0 0 0 1 11203.dat
+0 // Tile  2 x  2 Inverted (light_bluish_grey)
+1 71 100 8 20 1 0 0 0 1 0 0 0 1 11203.dat
+
+0 FILE shell-row-positive-z.ldr
+0 Row of five silver curved slopes forming one side of the shell, on the +Z side
+0 // Slope Brick Curved  2 x  2 x  0.667 (metallic_silver)
+1 80 -80 8 20 -1 0 0 0 1 0 0 0 -1 15068.dat
+0 // Slope Brick Curved  2 x  2 x  0.667 (metallic_silver)
+1 80 -40 8 20 -1 0 0 0 1 0 0 0 -1 15068.dat
+0 // Slope Brick Curved  2 x  2 x  0.667 (metallic_silver)
+1 80 0 8 20 -1 0 0 0 1 0 0 0 -1 15068.dat
+0 // Slope Brick Curved  2 x  2 x  0.667 (metallic_silver)
+1 80 40 8 20 -1 0 0 0 1 0 0 0 -1 15068.dat
+0 // Slope Brick Curved  2 x  2 x  0.667 (metallic_silver)
+1 80 100 8 20 -1 0 0 0 1 0 0 0 -1 15068.dat
+
+0 FILE shell-row-negative-z.ldr
+0 Row of five silver curved slopes forming the other side of the shell, on the -Z side
+0 // Slope Brick Curved  2 x  2 x  0.667 (metallic_silver)
+1 80 -80 8 -20 1 0 0 0 1 0 0 0 1 15068.dat
+0 // Slope Brick Curved  2 x  2 x  0.667 (metallic_silver)
+1 80 -40 8 -20 1 0 0 0 1 0 0 0 1 15068.dat
+0 // Slope Brick Curved  2 x  2 x  0.667 (metallic_silver)
+1 80 0 8 -20 1 0 0 0 1 0 0 0 1 15068.dat
+0 // Slope Brick Curved  2 x  2 x  0.667 (metallic_silver)
+1 80 40 8 -20 1 0 0 0 1 0 0 0 1 15068.dat
+0 // Slope Brick Curved  2 x  2 x  0.667 (metallic_silver)
+1 80 100 8 -20 1 0 0 0 1 0 0 0 1 15068.dat
+```
+</details>
+
+*I replaced the original description `file-01`, which was only a file name, with real one-liners. I also renamed the root from `file-01` to `curved-hull-section.ldr`, so if the outer MPD references `file-01`, that reference needs updating. All 15 original part lines are preserved, and I can save this as a .mpd file if you want it as a download.*
+*This is the same fragment I split a moment ago, so here is the same answer again. It is a rounded silver hull section, probably a spacecraft piece, on a 2x12 dark-grey base plate, with a grille at the -X end and two light-grey inverted tiles at the +X end. The ridge slope has red "NASA" and black "ESA" printing, so it **likely comes from a space-themed LEGO model**, though the parts don't identify the exact set.*
+
+*The parent comes first, then its children (`hull-shell.ldr` and `end-cap-tiles.ldr`), then the grandchildren (the two slope rows). Coordinates are unchanged, and the parents reference their children with an identity transform at the origin.*
+
+<details>
+<summary>Expand code...</summary>
+```
+0 FILE curved-hull-section.ldr
+0 Rounded silver hull section on a long dark-grey base plate, with a grille at the -X end and light-grey tiles at the +X end
+0 Name: curved-hull-section.ldr
+0 Author: Unknown
+0 !LDRAW_ORG Model
+0 !LICENSE Redistributable under CCAL version 2.0 : see CAreadme.txt
+
+0 // Plate  2 x 12 (dark_bluish_grey)
+1 72 0 0 0 1 0 0 0 1 0 0 0 1 2445.dat
+0 // Tile  1 x  2 Grille with Groove (metallic_silver)
+1 80 -110 -8 0 0 0 1 0 1 0 -1 0 0 2412b.dat
+0 STEP
+1 16 0 0 0 1 0 0 0 1 0 0 0 1 hull-shell.ldr
+0 STEP
+1 16 0 0 0 1 0 0 0 1 0 0 0 1 end-cap-tiles.ldr
+
+0 FILE hull-shell.ldr
+0 Curved silver shell made of two rows of slopes joined by a NASA/ESA-marked ridge piece
+1 16 0 0 0 1 0 0 0 1 0 0 0 1 shell-row-positive-z.ldr
+1 16 0 0 0 1 0 0 0 1 0 0 0 1 shell-row-negative-z.ldr
+0 // Slope Brick Curved 4 x 1 Double with Red "NASA", Black "ESA", and Silver Background Pattern (light_bluish_grey)
+1 71 70 8 0 -1 0 0 0 1 0 0 0 -1 10283 - 93273p01.dat
+
+0 FILE end-cap-tiles.ldr
+0 Two light-grey inverted 2x2 tiles closing off the +X end of the hull shell
+0 // Tile  2 x  2 Inverted (light_bluish_grey)
+1 71 100 8 -20 1 0 0 0 1 0 0 0 1 11203.dat
+0 // Tile  2 x  2 Inverted (light_bluish_grey)
+1 71 100 8 20 1 0 0 0 1 0 0 0 1 11203.dat
+
+0 FILE shell-row-positive-z.ldr
+0 Row of five silver curved slopes forming one side of the shell, on the +Z side
+0 // Slope Brick Curved  2 x  2 x  0.667 (metallic_silver)
+1 80 -80 8 20 -1 0 0 0 1 0 0 0 -1 15068.dat
+0 // Slope Brick Curved  2 x  2 x  0.667 (metallic_silver)
+1 80 -40 8 20 -1 0 0 0 1 0 0 0 -1 15068.dat
+0 // Slope Brick Curved  2 x  2 x  0.667 (metallic_silver)
+1 80 0 8 20 -1 0 0 0 1 0 0 0 -1 15068.dat
+0 // Slope Brick Curved  2 x  2 x  0.667 (metallic_silver)
+1 80 40 8 20 -1 0 0 0 1 0 0 0 -1 15068.dat
+0 // Slope Brick Curved  2 x  2 x  0.667 (metallic_silver)
+1 80 100 8 20 -1 0 0 0 1 0 0 0 -1 15068.dat
+
+0 FILE shell-row-negative-z.ldr
+0 Row of five silver curved slopes forming the other side of the shell, on the -Z side
+0 // Slope Brick Curved  2 x  2 x  0.667 (metallic_silver)
+1 80 -80 8 -20 1 0 0 0 1 0 0 0 1 15068.dat
+0 // Slope Brick Curved  2 x  2 x  0.667 (metallic_silver)
+1 80 -40 8 -20 1 0 0 0 1 0 0 0 1 15068.dat
+0 // Slope Brick Curved  2 x  2 x  0.667 (metallic_silver)
+1 80 0 8 -20 1 0 0 0 1 0 0 0 1 15068.dat
+0 // Slope Brick Curved  2 x  2 x  0.667 (metallic_silver)
+1 80 40 8 -20 1 0 0 0 1 0 0 0 1 15068.dat
+0 // Slope Brick Curved  2 x  2 x  0.667 (metallic_silver)
+1 80 100 8 -20 1 0 0 0 1 0 0 0 1 15068.dat
+```
+</details>
+
+*I replaced the original `file-01` description, which was just a file name, with real one-liners, and renamed the root to `curved-hull-section.ldr`. If the outer MPD references `file-01`, that reference will need updating. All 15 original part lines are preserved, and I can save this as a .mpd file if you want a download.*
+
+
 
 ## Acknowledgements
 
