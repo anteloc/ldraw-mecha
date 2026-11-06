@@ -184,7 +184,7 @@ Now, I had a **draft** for a **process**, but **no tools for the agent** to use 
 
 Given that the process would require a **high amount of complex geometric and spatial calculations**, I asked the agent to **derive a new python toolset** from the one created for [ldraw-nova](https://github.com/anteloc/ldraw-nova)
 
-The new **python toolset** I refined **iteratively**, by giving the agent **simple models** at the beginning, and **increasingly complex ones** each time.
+The new [**python toolset**](docs/architecture.md) I refined **iteratively**, by giving the agent **simple models** at the beginning, and **increasingly complex ones** each time.
 
 And to test it, I gave an agent **instructions** to:
 
@@ -193,7 +193,7 @@ And to test it, I gave an agent **instructions** to:
 - then, **upload it to Blender**
 - and then, **produce the Blender python scripts** that would **animate the model as planned.**
 
-**And it finally worked!** 🚀🚀🚀
+**And it finally [worked](GALLERY.md)!** 🚀🚀🚀
 
 (but not perfectly) 😜
 

@@ -43,6 +43,9 @@ After choosing a model and getting its path, enter the following **prompt** in t
 Animate the following model: some/path/car.mpd (your extra instructions if needed)
 ```
 
+> [!IMPORTANT]
+> It is **highly recommended** to provide this initial prompt with the agent set to **Plan mode**
+
 **The example car** we will be animating is this one:
 
 <a href="img/car-open.png"><img src="img/car-open.png" width="320" alt="Sample car"></a>
@@ -62,6 +65,8 @@ It will:
 	`0 // Plate  2 x 10 (black)`.
 3. The agent **reads the enriched .mpd sources** and **infers (reverse-engineers) the mechanisms present.**
 4. The file is rewritten as a **tree of submodels**, being the **main** one the **root** for the tree.
+
+See [docs/annotation.md](docs/annotation.md) for details.
 
 ### Before and after
 
@@ -127,14 +132,13 @@ Before                                   After
 
 ## Step 2: Convert
 
-
-
 **The agent** will give every part on the model an **ID**, lists **how** the **pieces connect**, and then convert:
 
 `car.mpd -> model.glb`
 
 For the conversion bit, it will use this tool: [mpd2glb](https://github.com/anteloc/mpd2glb) 
 
+See: [docs/discovery-and-blender.md](docs/discovery-and-blender.md)
 ### IDs
 
 An **ID** is a **part's path** through the model's tree, that is both **unique** and also **encodes where every part is**, in hierarchical terms.
@@ -170,61 +174,25 @@ mecha_section  106 - main.ldr
 mecha_source   b247a29a…   (SHA-256 of car.mpd)
 ```
 
-### Connection evidence
-
-`prepare` also lists which pieces touch, hinge, share an axle or mesh as gears. For the roof
-it finds the hinge between the roof holder `0/1/10/1` and the roof `0/1/10/2`:
-
-```json
-"c_5f04a4e8697090b8": {
-  "a": "0/1/10/1", "b": "0/1/10/2", "kind": "revolute", "status": "candidate",
-  "measurements": { "first_kind": "hinge", "position": [0, -92, 36], "axis": [1, 0, 0] }
-}
-```
-
-This is evidence, not a decision: a contact may be rigid or may move. Step 3 decides.
-
 ---
 
 ## Step 3: Plan
 
-**You.** The agent lists the mechanisms it found and asks what you want. Typical questions:
+At this stage, the agent (usually!) **lists** the mechanisms it found, and **asks** what you want. 
+
+Typical questions are:
 
 - Which mechanisms to animate? (For the car: roof, doors, wheels.)
 - One animation of the whole model, or each mechanism on its own?
-- What to deliver: a `.blend` file, stills, a video?
 - For big models: hide the bodywork? Leave out hoses and cables?
 
-Answer them; the rest of the work follows from your answers. For examples, see the questions
-asked in [42083](samples/42083-mechanisms.md), [42110](samples/42110.md) and
-[minifigs](samples/minifigs.md).
+Then, the agent **applies** (again) its own **toolset** and **decides**, for each mechanism, which pieces would move, around which point and axis, how far, and what drives them, and records it in `plan.json`.
 
-**The agent** decides, for each mechanism, which pieces move, around which point and axis, how
-far, and what drives them, and records it in `plan.json`.
+This is where the agent **infers how mechanisms would work** for this particular model. 
 
-This is where the reverse engineering happens. Nothing in `car.mpd` says the roof opens: the
-agent infers it from a roof, a roof holder and the hinge between them.
+**Nothing** in `car.mpd` says **"the roof opens"**: the agent **infers it from a roof, a roof holder and the hinge between them.**
 
-**Why.** Motion must be measured, not guessed. A wrong axis or gear ratio looks broken. The plan
-keeps every decision with its evidence, and it can be checked without Blender.
-
-For the roof, the agent takes the hinge position and axis from the evidence, picks the axis
-sign that lifts the roof (LDraw's up is −Y), and writes:
-
-```json
-"controls": { "roof": { "min": 0, "max": 1.309, "unit": "radian", "description": "Open the roof" } },
-"bodies":   { "roof": { "instances": ["0/1/10/2"], "kind": "revolute",
-                        "origin": [0, -92, 36], "axis": [-1, 0, 0], "signal": "roof" } }
-```
-
-In words: the control `roof` turns the piece `0/1/10/2` from 0 to 75° (1.309 rad) around the
-hinge. Positions are in LDraw units (LDU; 1 stud = 20). Hinges, sliders, gear trains,
-connecting rods and springs all use this format; see [docs/motion-plan.md](docs/motion-plan.md).
-
-**Under the hood.** The agent edits `plan.json` through a small Python API, then runs
-`ldraw-mecha check`, which validates the plan and sweeps every control through its range
-without Blender.
-
+See [docs/motion-plan.md](docs/motion-plan.md) for more details.
 ### How agents work out a plan
 
 Strategies used across the [samples](GALLERY.md):
@@ -246,17 +214,13 @@ Strategies used across the [samples](GALLERY.md):
 
 ### Look inside: x-ray boards
 
-Mechanisms are usually hidden behind bodywork. Before building anything, the agent renders an
-x-ray board of each moving body: the body in colour, everything else ghosted. It checks every
-board for four things:
+Mechanisms are usually **hidden inside** models. 
 
-1. Exactly the right pieces are coloured.
-2. The axis runs through the hinge, axle or pin.
-3. Positive angles turn the right way.
-4. The limit poses stay clear of grey neighbours.
+Because of that, very often, **mechanisms cannot be visually inspected when looking at the whole model**, which would leave the agent with **no visual feedback.**
 
-The car's roof (image by [ldraw-xray](https://github.com/anteloc/ldraw-xray), which has more
-examples):
+Which made me **vibe-code** this [ldraw-xray](https://github.com/anteloc/ldraw-xray) tool, a thin wrapper around [LeoCAD](https://github.com/leozide/leocad), that (amazingly!) **renders a mechanism even if hidden inside a model:**
+
+**Example:** the car's roof and axis
 
 ![X-ray board of the car's roof](img/xray-roof.png)
 
@@ -267,13 +231,13 @@ in, not a LEGO part). Panels 3 to 5: the roof at 0°, 40° and 75°.*
 
 ## Step 4: Animate
 
-**You.** Nothing to do.
+An here's the last step!
 
-**The agent** builds the plan in Blender, adding a pivot per moving body, a slider per control
-and a demonstration animation, and saves `ai-animated.blend`.
+**The agent** builds the plan in **Blender**, by means of generating **Blender scripts** that will carry out the job.
 
-**Why.** The result is a standard `.blend` file. It plays in plain Blender with no add-on, no
-Python auto-run and no agent.
+Those scripts will add a pivot per moving body, a slider per control, and the requested animation. The end result will be saved as `ai-animated.blend`.
+
+Process would be as follows:
 
 ```mermaid
 flowchart LR
@@ -283,52 +247,5 @@ flowchart LR
     rig --> blend["ai-animated.blend"]
 ```
 
-**Under the hood.** `ldraw-mecha rig` runs Blender in the background and:
-
-1. Imports `model.glb` and finds each object by its `mecha_id`.
-2. Checks it's the right model: the `mecha_source` hash matches the plan, and every object is
-   still at its source position.
-3. Adds a pivot per body at the plan's origin and axis, parents the body's objects to it, and
-   drives the pivot from a custom property on one control object, `CTRL_car`.
-4. Keys the controls into a demonstration animation.
-5. Compares every moving object against the plan, then saves.
-6. Opens the saved file in a fresh Blender and compares again.
 
 ---
-
-## Step 5: Verify
-
-**The agent** scans the motion for collisions, renders stills and looks at them, and fixes
-what it finds. A rig can match the plan exactly and still be wrong, for example a door that
-swings through the bodywork.
-
-- **Collisions.** What the scan finds goes **back to Step 3**. At 90° the car's doors and roof
-  hit other parts, so the agent set their limit to 75°. ([106](samples/106.md),
-  [hot rod mecha](samples/hot-rod-mecha.md))
-- **Stills.** These catch what numbers miss: a window opening away from the viewer, a staff
-  swinging into a leg. ([movables](samples/movables.md), [minifigs](samples/minifigs.md))
-
-**You.** Open the `.blend`, select `CTRL_car`, and drag its sliders under **Object Properties →
-Custom Properties**, or press play. Tell the agent what's wrong or missing. In the
-[hot rod mecha](samples/hot-rod-mecha.md) sample, the user pointed out that "the engine on the
-robot's chest … should be animated, too", and the agent added it.
-
-**What you get back:** clickable links to the `.blend` file, the x-ray boards, the stills, the
-plan, the check reports, and the agent's notes on what it decided, what it left out and the
-known limits. In VS Code, clicking a link also selects the file in the Explorer. The agent
-then offers to open the `.blend` in Blender for you; say yes, and Blender opens with the
-animated model, ready to play.
-
-**Limits.** The collision scan checks sampled poses, not the continuous motion. Parts are rigid,
-with no friction, play or forces. Passing checks don't prove the model is physically buildable
-or working.
-
----
-
-## Learn more
-
-- [GALLERY.md](GALLERY.md): ten models done this way, each with the request, what happened and
-  every output file.
-- [docs/how-it-works.md](docs/how-it-works.md): the design behind each step.
-- [docs/motion-plan.md](docs/motion-plan.md): the plan format: joints, gears, rods, equations.
-- [docs/validation.md](docs/validation.md): what each check proves, and what it doesn't.
