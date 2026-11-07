@@ -50,6 +50,42 @@ def _driver(obj, path, index, expression, variables):
         raise ValueError(f"Not a simple Blender expression: {expression}")
 
 
+# Driver F-curve keys of a path table sit this far apart on the key axis. Blender
+# snaps an evaluation within about 1e-4 of a key onto that key; spreading the
+# keys makes that window 1e-7 table rows (far below the verifier tolerance).
+PATH_KEY_SPACING = 1000.0
+
+
+def _path_drivers(pivot, rows, source):
+    """Native lookup for a `path` body: keyed LINEAR driver F-curves, cycled.
+
+    The driver returns the table parameter (scaled by PATH_KEY_SPACING); the
+    F-curve keys map it to local X/Y translation and the turn about local Z.
+    No Python driver functions are used, so it evaluates with auto-run off.
+    """
+    period = len(rows) - 1
+    for channel, (path, index) in enumerate(
+        (("location", 0), ("location", 1), ("rotation_euler", 2))
+    ):
+        # Wrap the parameter in the driver so float32 key times stay small.
+        _driver(
+            pivot,
+            path,
+            index,
+            f"(v-{period!r}*floor(v/{period!r}))*{PATH_KEY_SPACING!r}",
+            {"v": (source, '["value"]')},
+        )
+        fc = pivot.animation_data.drivers.find(path, index=index)
+        fc.keyframe_points.add(len(rows))
+        for i, row in enumerate(rows):
+            key = fc.keyframe_points[i]
+            key.co = (i * PATH_KEY_SPACING, row[channel])
+            key.interpolation = "LINEAR"
+        fc.extrapolation = "CONSTANT"
+        fc.modifiers.new("CYCLES")
+        fc.update()
+
+
 def _objects(root):
     return [root, *root.children_recursive]
 
@@ -256,6 +292,8 @@ def build(plan, root=None):
                     "v",
                     {"v": (signal_objects[b["signal"]], '["value"]')},
                 )
+            elif b["kind"] == "path":
+                _path_drivers(pivot, b["path"], signal_objects[b["signal"]])
         anchors = {}
         for name, a in plan["anchors"].items():
             m = C @ Matrix.Translation(a["point"])

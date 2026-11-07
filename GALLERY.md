@@ -27,6 +27,12 @@ How samples are made: [docs/samples.md](docs/samples.md).
 
 [▶ Video](https://anteloc.github.io/ldraw-mecha/samples/42043-crane.mp4) · [Summary](samples/42043-crane.md)
 
+## 42069 Extreme Adventure: running tracks, steering and V8, in place
+
+<a href="samples/42069.png"><img src="samples/42069.png" width="320" alt="42069 Extreme Adventure"></a>
+
+[▶ Video](https://anteloc.github.io/ldraw-mecha/samples/42069.mp4) · [Summary](samples/42069.md)
+
 ## 42083 Bugatti Chiron: five mechanisms, each on its own
 
 <a href="samples/42083-mechanisms.png"><img src="samples/42083-mechanisms.png" width="320" alt="42083 Bugatti Chiron"></a>

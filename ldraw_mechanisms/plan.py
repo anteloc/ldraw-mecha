@@ -21,6 +21,7 @@ from .math3d import (
     inverse,
     length,
     matmul,
+    path_sample,
     point,
     sub,
     unit,
@@ -169,6 +170,28 @@ def draft(manifest, name="model"):
     )
 
 
+
+PATH_ROWS = 4096
+
+
+def validate_path(name, rows):
+    """A `path` body's cyclic [u, v, angle] table (LDU, LDU, radian) in its frame.
+
+    Rows are one signal unit apart, row 0 is the source rest pose and the last
+    row closes the loop: same translation, angle a multiple of 2*pi.
+    """
+    if not isinstance(rows, list) or not 3 <= len(rows) <= PATH_ROWS:
+        raise ValueError(f"Path table needs 3..{PATH_ROWS} rows: {name}")
+    for row in rows:
+        if not isinstance(row, list) or len(row) != 3 or not all(finite(v) for v in row):
+            raise ValueError(f"Invalid path row: {name}")
+    if any(abs(v) > 1e-9 for v in rows[0]):
+        raise ValueError(f"Path row 0 must be the rest pose [0, 0, 0]: {name}")
+    last = rows[-1]
+    turns = last[2] / (2 * math.pi)
+    if abs(last[0]) > 1e-6 or abs(last[1]) > 1e-6 or abs(turns - round(turns)) > 1e-9:
+        raise ValueError(f"Path table must close its loop: {name}")
+
 def validate(plan, check_source=False):
     if plan.get("version") != 1:
         raise ValueError("Unsupported motion plan version")
@@ -207,17 +230,19 @@ def validate(plan, check_source=False):
     signal_order(plan)
     owned = set()
     for name, b in plan["bodies"].items():
-        if b["kind"] not in ("revolute", "prismatic", "fixed", "rod", "stretch"):
+        if b["kind"] not in ("revolute", "prismatic", "fixed", "rod", "stretch", "path"):
             raise ValueError(f"Unsupported joint kind: {name}")
         for key in ("origin", "axis"):
             if len(b[key]) != 3 or not all(finite(v) for v in b[key]):
                 raise ValueError(f"Invalid {key}: {name}")
         frame(b["origin"], b["axis"], b.get("x_hint"))
         if (
-            b["kind"] in ("revolute", "prismatic", "stretch")
+            b["kind"] in ("revolute", "prismatic", "stretch", "path")
             and b.get("signal") not in plan["signals"]
         ):
             raise ValueError(f"Missing motion signal: {name}")
+        if b["kind"] == "path":
+            validate_path(name, b.get("path"))
         if not b["instances"]:
             raise ValueError(f"Empty rigid body: {name}")
         for instance in b["instances"]:
@@ -341,9 +366,12 @@ def evaluate(plan, values=None):
         if b["kind"] == "stretch" and not signals[b["signal"]] > 0:
             raise ValueError(f"Spring scale must stay positive: {name}")
         f = frame(b["origin"], b["axis"], b.get("x_hint"))
+        value = signals.get(b.get("signal"), 0)
+        if b["kind"] == "path":
+            value = path_sample(b["path"], value)
         transforms[name] = matmul(
             transforms[b["parent"]] if b.get("parent") else identity(),
-            delta(f, b["kind"], signals.get(b.get("signal"), 0)),
+            delta(f, b["kind"], value),
         )
     for name, a in plan["anchors"].items():
         anchors[name] = point(transforms[a["body"]], a["point"])

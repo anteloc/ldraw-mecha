@@ -236,3 +236,63 @@ def test_stretch_cannot_parent_anchor_or_collapse():
     q["signals"]["spring_k"]["expression"] = "d/10"
     with pytest.raises(ValueError, match="positive"):
         plan.evaluate(q, dict(squeeze=-5.0))
+
+
+def _path_plan():
+    """928 hatch spring leaf moved along a closed square table (period 4)."""
+    p = _spring_plan()
+    p["bodies"]["spring"] = dict(
+        instances=p["bodies"]["spring"]["instances"],
+        kind="path",
+        origin=[5.0, 2.0, 3.0],
+        axis=[0.0, 0.0, 1.0],
+        x_hint=[1.0, 0.0, 0.0],
+        signal="slot",
+        parent="hatch",
+        path=[[0, 0, 0], [10, 0, math.pi / 2], [10, 10, math.pi], [0, 10, 1.5 * math.pi], [0, 0, 2 * math.pi]],
+    )
+    p["controls"]["advance"] = dict(default=0.0, min=-20.0, max=20.0, unit="scalar", description="Table position")
+    p["signals"]["slot"] = dict(expression="a", variables=dict(a="control:advance"))
+    return p
+
+
+def test_path_interpolates_cyclic_table_in_body_frame():
+    p = _path_plan()
+    assert plan.validate(p)["bodies"] == 2
+    o = [5.0, 2.0, 3.0]
+
+    def local(advance):
+        e = plan.evaluate(p, dict(advance=advance))
+        return matmul(inverse(e["transforms"]["hatch"]), e["transforms"]["spring"])
+
+    # Whole rows reproduce the table: translation (u, v) then a turn about the origin.
+    m = local(1.0)
+    assert point(m, o) == pytest.approx([15.0, 2.0, 3.0])
+    assert point(m, [6.0, 2.0, 3.0]) == pytest.approx([15.0, 3.0, 3.0])
+    # Halfway between rows interpolates translation and angle linearly.
+    m = local(1.5)
+    assert point(m, o) == pytest.approx([15.0, 7.0, 3.0])
+    assert point(m, [6.0, 2.0, 3.0]) == pytest.approx([15.0 + math.cos(0.75 * math.pi), 7.0 + math.sin(0.75 * math.pi), 3.0])
+    # Cyclic in both directions; whole periods return exactly to rest.
+    for advance in (4.0, -4.0, 12.0):
+        assert sum(local(advance), []) == pytest.approx([1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1], abs=1e-9)
+    assert sum(local(-0.5), []) == pytest.approx(sum(local(3.5), []))
+
+
+def test_path_table_is_validated():
+    p = _path_plan()
+    for rows, message in (
+        ([[0, 0, 0], [1, 0, 0]], "3.."),
+        ([[1, 0, 0], [2, 0, 0], [1, 0, 0]], "rest pose"),
+        ([[0, 0, 0], [5, 0, 0], [1, 0, 0]], "close its loop"),
+        ([[0, 0, 0], [5, 0, 1], [0, 0, 1]], "close its loop"),
+        ([[0, 0, 0], [5, 0], [0, 0, 0]], "Invalid path row"),
+    ):
+        q = copy.deepcopy(p)
+        q["bodies"]["spring"]["path"] = rows
+        with pytest.raises(ValueError, match=message):
+            plan.validate(q)
+    q = copy.deepcopy(p)
+    q["bodies"]["spring"].pop("signal")
+    with pytest.raises(ValueError, match="Missing motion signal"):
+        plan.validate(q)

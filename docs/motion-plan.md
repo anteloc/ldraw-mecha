@@ -67,7 +67,7 @@ includes the exact tie-rod circle-intersection solution with a fixed source-pose
 branch; generic branch switching or arbitrary loop solving is not implemented.
 
 A body owns nonempty physical-leaf `instances` exactly once. `kind` is
-`revolute`, `prismatic`, `fixed`, `rod` or `stretch`; every body has `origin` and nonzero
+`revolute`, `prismatic`, `fixed`, `rod`, `stretch` or `path`; every body has `origin` and nonzero
 `axis`, with optional nonparallel `x_hint`. The adapter aligns local Z to that
 axis. Revolute/prismatic bodies reference a signal; positive values rotate by
 the right-hand rule or translate along the axis. A `parent` body composes
@@ -94,6 +94,24 @@ the part that carries its fixed seat and check the moving seat separately (for
 a shock absorber, against the piston rod). It does not relax the rod rule.
 Shortcut parts such as a complete shock absorber are one mesh; split them into
 their official sub-parts first (`scripts/split_shortcuts.py`).
+
+`path` moves a rigid part around a closed planar loop, such as a chain-tread
+link or its rubber pad. `path` is a table of `[u, v, angle]` rows: the
+translation along local X/Y (LDU) and then the turn about local Z (radians) in
+the body frame (`origin`, `axis` = the loop's plane normal, `x_hint` = local X).
+- Its signal is the table position in rows. Rows are one unit apart and are
+  interpolated linearly.
+- The table is cyclic with period `len(path) - 1`. Row 0 must be `[0, 0, 0]`,
+  the source pose. The last row closes the loop: zero translation, and an angle
+  that is a whole number of turns.
+
+For tread links, row j is the source pose of the link j places ahead,
+expressed in this link's frame, so each whole row reproduces a source pose. In
+Blender the pivot's location X/Y and rotation Z are driven through keyed LINEAR
+driver F-curves with a Cycles modifier. The drivers use simple expressions, so
+the rig evaluates with auto-run disabled. A path body can be parented, for
+example to a pivoting track pod, and can parent other bodies. Between rows the
+motion is an interpolation, not a contact solution.
 
 Verification checks expression domains, finite results, dependency cycles,
 double ownership, source freshness and declared closure. `sweep` varies one

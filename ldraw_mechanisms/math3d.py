@@ -94,7 +94,27 @@ def rotation_z(angle):
     return pose([0, 0, 0], [[c, -s, 0], [s, c, 0], [0, 0, 1]])
 
 
+def path_sample(rows, t):
+    """Cyclic piecewise-linear [u, v, angle] lookup of a `path` body table.
+
+    Rows are evenly spaced one parameter unit apart; the period is len(rows) - 1,
+    so the last row closes the loop (same translation, angle may add 2*pi*k).
+    """
+    period = len(rows) - 1
+    t = t - period * math.floor(t / period)
+    i = min(int(math.floor(t)), period - 1)
+    f = t - i
+    a, b = rows[i], rows[i + 1]
+    return [a[k] + (b[k] - a[k]) * f for k in range(3)]
+
+
 def delta(frame_matrix, kind, value):
+    if kind == "path":
+        # Planar pose in the body frame: translate (u, v) in local XY, then turn about local Z.
+        u, v, angle = value
+        m = rotation_z(angle)
+        m[0][3], m[1][3] = u, v
+        return matmul(matmul(frame_matrix, m), inverse(frame_matrix))
     m = rotation_z(value) if kind == "revolute" else identity()
     if kind == "prismatic":
         m[2][3] = value
