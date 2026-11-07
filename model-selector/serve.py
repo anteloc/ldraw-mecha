@@ -3,8 +3,8 @@
 
     python3 model-selector/serve.py [--port 8770] [--no-open]
 
-1. Writes output/model-selector/models-annotated.json (name, path, url, description).
-2. Serves model-selector.html (table) and viewer.html (3D) on 127.0.0.1 only.
+1. Writes output/model-selector/models-annotated.json (name, path, url, description, parts).
+2. Serves model-selector.html (search), search.js and viewer.html (3D) on 127.0.0.1 only.
 
 Standard library only. See model-selector/README.md.
 """
@@ -25,27 +25,70 @@ VENDOR = ROOT / "bin" / "ldbi-viewer"               # fetched by setup-*.sh
 INDEX = ROOT / "output" / "model-selector" / "models-annotated.json"
 
 
-def description(mpd: Path) -> str:
-    """The description is the line after "0 FILE"; without a "0 FILE" line it is the first line.
-    Leading blank lines are skipped (e.g. 4906-1.mpd starts with one)."""
+def describe(mpd: Path) -> tuple[str, int]:
+    """(description, parts) of one model, in a single read.
+
+    The description is the line after "0 FILE"; without a "0 FILE" line it is the first line.
+    Leading blank lines are skipped (e.g. 4906-1.mpd starts with one).
+    parts is the number of parts in the built model, as the 3D viewer counts them: from the
+    main model (see count_parts), each submodel counted once per use. A reference to a library
+    part or to a part defined inside the file ("0 FILE x.dat") counts as one part."""
+    head, sections, current = [], {}, ""            # section name -> its type-1 references ("" before any 0 FILE)
     with mpd.open(encoding="utf-8", errors="replace") as f:
-        lines = (line for line in f if line.strip())
-        first, second = next(lines, ""), next(lines, "")
+        for line in f:
+            line = line.strip()
+            if not line:
+                continue
+            if len(head) < 2:
+                head.append(line)
+            if line.startswith("0 FILE "):
+                current = ref_name(line[len("0 FILE "):])
+                sections.setdefault(current, [])
+            elif line.startswith("1 "):
+                tokens = line.split(maxsplit=14)
+                if len(tokens) == 15:
+                    sections.setdefault(current, []).append(ref_name(tokens[14]))
+    first, second = (head + ["", ""])[:2]
     line = second if first.startswith("0 FILE") else first
-    line = line.strip()
-    return line[2:].strip() if line.startswith("0 ") else line
+    description = line[2:].strip() if line.startswith("0 ") else line
+    return description, count_parts(sections)
+
+
+def ref_name(name: str) -> str:
+    """LDraw file names are case-insensitive and may use either slash."""
+    return name.strip().lower().replace("\\", "/")
+
+
+def count_parts(sections: dict) -> int:
+    """Parts in the main model: the first section with references (like the viewer, which skips
+    an empty first section, e.g. 6360-1.mpd), expanding submodels (not .dat parts) recursively."""
+    counts, open_ = {}, set()
+
+    def count(name):
+        if name not in counts:
+            if name in open_:                       # a submodel that includes itself: stop
+                return 0
+            open_.add(name)
+            counts[name] = sum(count(ref) if ref in sections and not ref.endswith(".dat") else 1
+                               for ref in sections[name])
+            open_.discard(name)
+        return counts[name]
+
+    main = next((name for name, refs in sections.items() if refs), None)
+    return count(main) if main is not None else 0
 
 
 def build_index() -> list[dict]:
-    models = [
-        {
+    models = []
+    for mpd in sorted(MODELS.glob("*.mpd")):
+        description, parts = describe(mpd)
+        models.append({
             "name": mpd.name,
             "path": mpd.relative_to(ROOT).as_posix(),     # what the user gives the agent
             "url": f"/models/{mpd.name}",                 # what the viewer loads
-            "description": description(mpd),
-        }
-        for mpd in sorted(MODELS.glob("*.mpd"))
-    ]
+            "description": description,
+            "parts": parts,
+        })
     INDEX.parent.mkdir(parents=True, exist_ok=True)
     INDEX.write_text(json.dumps(models, indent=1, ensure_ascii=False) + "\n", encoding="utf-8")
     return models

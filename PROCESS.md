@@ -31,13 +31,13 @@ We will need **an LDraw model to start with**, the one that will be **given to a
 **Two options** here:
 
 1. **Give your own:** the agent will annotate and refine it in order to make it easier to analyze.
-2. **Select a pre-annotated one:** run the following to open the model **selector app**, and **copy the model's .mpd file path** by clicking the **"Copy path"** button for the selected one.
+2. **Select a pre-annotated one:** run the following to open the model **selector app**, and click **"Copy prompt"** for the model you choose.
 3. 
 ```sh
 python3 model-selector/serve.py
 ```
 
-After choosing a model and getting its path, enter the following **prompt** in the **chat session:**
+Paste the copied **prompt** in the **chat session**, adding extra instructions after it if needed:
 
 ```
 Animate the following model: some/path/car.mpd (your extra instructions if needed)

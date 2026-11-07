@@ -7,7 +7,7 @@
 
   Copied from ldraw-nova-docker's web/viewer/viewer.html and trimmed for the model
   selector (model-selector/serve.py): no GLB loading, .glb download or animation
-  playback; adds "Copy path" for the model's path in this repository.
+  playback; adds "Copy prompt" ("Animate the following model: <path in this repository>").
 
   Usage: /viewer.html?model=<url of an .ldr/.mpd>&path=<repo-relative path>[&parts=<count>]
   (`parts` shows a known part count; otherwise the viewer counts them.)
@@ -77,7 +77,7 @@
     <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 9V5a2 2 0 0 1 2-2h4v2H5v4zm12-6h4a2 2 0 0 1 2 2v4h-2V5h-4zM3 15h2v4h4v2H5a2 2 0 0 1-2-2zm16 0h2v4a2 2 0 0 1-2 2h-4v-2h4zM12 8.5a3.5 3.5 0 1 1 0 7 3.5 3.5 0 0 1 0-7z"/></svg>
   </button>
   <a class="btn" id="download" href="#" download>.mpd</a>
-  <button id="copy-path" title="Copy the model's path, to give to the animation agent">Copy path</button>
+  <button id="copy-prompt" title="Copy the prompt that animates this model, to paste in the chat">Copy prompt</button>
 </div>
 <div id="stage"><canvas id="ldbi-canvas"></canvas></div>
 <div id="status">Loading…</div>
@@ -684,18 +684,23 @@ var scene = null;
     if (view.framed) resetView();
   });
 
-  // Copy path: the model's path in this repository, for the animation agent.
-  const modelPath = params.get('path') || fileName;
-  const copyButton = document.getElementById('copy-path');
-  copyButton.title = 'Copy ' + modelPath;
+  // Copy prompt: what to paste in the chat to animate this model (its path in this repository).
+  const modelPrompt = `Animate the following model: ${params.get('path') || fileName}`;
+  const copyButton = document.getElementById('copy-prompt');
+  copyButton.title = `Copy “${modelPrompt}”, to paste in the chat`;
+  // Inside the model selector, its page shows the message (a toast); alone, the status line does.
+  const tell = (text, isError) => {
+    if (window.parent !== window) { window.parent.postMessage({ toast: text, error: isError }, location.origin); return; }
+    setStatus(text, isError);
+    setTimeout(() => setStatus(restingStatus.text, restingStatus.isError), 2000);
+  };
   copyButton.addEventListener('click', async () => {
     try {
-      await navigator.clipboard.writeText(modelPath);
-      copyButton.textContent = 'Copied ✓';
+      await navigator.clipboard.writeText(modelPrompt);
+      tell('Prompt copied to clipboard', false);
     } catch (e) {
-      setStatus('Could not copy: ' + e.message, true);
+      tell('Could not copy the prompt: ' + e.message, true);
     }
-    setTimeout(() => { copyButton.textContent = 'Copy path'; }, 1500);
   });
   [...modeButtons, ...cameraButtons, homeButton].forEach(b => { b.disabled = true; });
 
