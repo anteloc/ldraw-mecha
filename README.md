@@ -13,7 +13,7 @@ The **agent** will:
 
 Take a look at the [▶ HOWTO video](https://youtu.be/P4aKXKNOBig)!
 
-<a href="https://youtu.be/P4aKXKNOBig"><img src="img/demo-video.png" width="500" alt="YouTube demo video"></a>
+<a href="https://youtu.be/P4aKXKNOBig" target="_blank"><img src="img/demo-video.png" width="500" alt="YouTube demo video"></a>
 
 ## Installation
 
