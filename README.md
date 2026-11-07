@@ -11,6 +11,10 @@ The **agent** will:
 	- **Create** the required **rigs** for controlling the different mechanisms.
 	- **Animate** them according to **plan**! 🤯
 
+Take a look at the [HOWTO video](https://youtu.be/P4aKXKNOBig)!
+
+<a href="https://youtu.be/P4aKXKNOBig"><img src="img/demo-video.png" width="500" alt="YouTube demo video"></a>
+
 ## Installation
 
 > [!NOTE]
